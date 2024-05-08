@@ -1,0 +1,6 @@
+Verify that clicking on a product card navigates the user to the product's detail page with all specified information.
+Verify that for products with many options, the product's detail page displays all options with appropriate titles along with other specified information.
+Verify that for products out of stock, the product's detail page displays a 'Sold out' sticker on the product picture along with other specified information.
+Verify that the dropdown menu allows selection of 'color' for products that have options like color or flavor.
+Verify that the dropdown menu allows selection of 'flavor' for products that have options like color or flavor.
+Verify that the dropdown menu does not allow selection of options for products that do not have any options like color or flavor.

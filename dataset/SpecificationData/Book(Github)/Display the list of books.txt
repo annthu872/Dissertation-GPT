@@ -1,0 +1,20 @@
+Display the list of books
+Description
+The page is designed to list all the books and filter them by publishing date with a user-provided date range.
+
+Main scenario:
+User selects item "Books";
+Application displays the list of the books (up to 10 items on each page);
+To see the next 10 records of the books in the database, the user needs to click the "Next" button (below the records in the pagination block) or the following number of the page the user wants to see.
+
+Filtering by date:
+User specifies dates range in the specific input forms above data;
+User hits the refresh button to the right from dates inputs;
+The application displays the list of books with publication dates in the user-provided dates range.
+
+The list displays the following columns:
+id - unique book number
+Title
+Author
+Genre
+Publication date

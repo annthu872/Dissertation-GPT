@@ -1,0 +1,7 @@
+1. Successful navigation to product detail page			0
+2. Product detail page loads with incomplete information	excess
+3. Product detail page fails to load				excess
+4. Navigation to product detail page with an out-of-stock product	a2
+5. Navigation to product detail page with no user ratings available	
+6. Product with Single Option	dup
+7. Product with Multiple Options	a1

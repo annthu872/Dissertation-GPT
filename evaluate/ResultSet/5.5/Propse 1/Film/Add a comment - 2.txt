@@ -1,0 +1,5 @@
+1. User Clicks on Film Cover and is Redirected to Video Page
+2. User Chooses an Episode and is Redirected to Video Page
+3. System Detects Violation in User Comment and Shows Notification
+4. Post a comment with valid content
+5. Attempt to post a comment without typing anything

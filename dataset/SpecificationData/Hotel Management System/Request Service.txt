@@ -1,0 +1,21 @@
+4.12.1 Summary :
+This use case is used to request room services.
+4.12.2 Actors :
+Guest
+4.12.3 Preconditions :
+The user must have valid room ID
+4.12.4 Basic course of events/happy path :
+1. Actor Enters Room ID
+2. Actor Press submit button
+3. System Validate room ID
+4. System Show list of room services
+5. Actor User choose services
+6. System Calculate the charges and update on the database.
+7. System Show the total charges and show success message
+8. System Go to main page
+4.12.5 Alternative path :
+3. If validation fails show “Invalid Id”.
+5. Request services that are available.
+4.12.6 Post condition :
+User will be shown the total and a “room service request successful” message and will be
+directed to the main page

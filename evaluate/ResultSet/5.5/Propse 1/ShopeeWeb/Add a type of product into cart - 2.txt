@@ -1,0 +1,6 @@
+1. Add product to cart with valid product and no options
+2. Add product to cart with valid product and valid option
+3. Add product to cart with valid product after adjusting quantity
+4. Add product to cart with valid product and option after adjusting quantity
+5. Attempt to add out of stock product to cart
+6. Attempt to add product to cart with out of stock option

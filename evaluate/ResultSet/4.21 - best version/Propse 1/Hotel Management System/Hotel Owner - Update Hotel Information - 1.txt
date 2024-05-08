@@ -1,0 +1,3 @@
+Verify that the system shows an error message when validation fails.
+Verify that the system successfully updates hotel information with all fields meeting specific criteria
+Verify that the system shows an error message when one or more fields do not meet the criteria

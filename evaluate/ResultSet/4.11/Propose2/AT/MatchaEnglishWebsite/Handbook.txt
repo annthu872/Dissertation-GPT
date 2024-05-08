@@ -1,0 +1,35 @@
+1. **Scenario: Viewing Vocabulary List**
+   - This scenario involves the user accessing the vocabulary list to simply view the words without any further action.
+
+2. **Scenario: Searching for a Specific Vocabulary Word**
+   - The user browses the vocabulary list and decides to search for a specific word to see its details or to check its presence.
+
+3. **Scenario: Refining the Vocabulary List for Review Preparation**
+   - The learner prepares for a review test by searching for vocabulary words of a certain type or memorization level to focus their study on specific areas.
+
+4. **Scenario: Verifying the Presence of Newly Learned Vocabulary**
+   - After learning new vocabulary outside the handbook, the learner checks the handbook to verify these new words' presence or to add them to their review list.
+
+5. **Scenario: Searching for a Non-Existent Vocabulary Word**
+   - The learner uses the search function to look for a specific word that does not exist in the vocabulary list, leading to a message indicating no suitable search results.
+
+6. **Scenario: Searching for a Misspelled Vocabulary Word**
+   - The learner attempts to search for a word in their vocabulary list but misspells it, potentially leading to no search results due to the error.
+
+7. **Scenario: Searching with Special Characters or Numbers**
+   - The learner tries to search for a vocabulary word using special characters or numbers, which might not be expected in a typical vocabulary word search.
+
+8. **Review Test Customization Scenario**
+   - The learner customizes their review test by excluding specific words from their vocabulary list for future review tests.
+
+9. **Vocabulary Focus Adjustment Scenario**
+   - The learner adjusts their review focus by unticking checkboxes next to words they feel confident about, ensuring these words won't appear in their daily review test.
+
+10. **Successful Navigation and Viewing of Vocabulary List**
+    - Covers the user successfully navigating to view the vocabulary list without marking any vocabulary for review.
+
+11. **Marking Vocabulary for Daily Review**
+    - The user decides to mark one or more vocabulary words for review in the daily test, transitioning to an alternative flow.
+
+12. **Scroll and Mark for Review**
+    - Involves the user scrolling through the vocabulary list to find specific words and then marking them for review.

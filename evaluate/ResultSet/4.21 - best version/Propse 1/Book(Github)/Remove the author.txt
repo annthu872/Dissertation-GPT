@@ -1,0 +1,2 @@
+Verify that a user can successfully delete an author record after confirming the deletion.
+Verify that an author record is not deleted and remains in the database when the user cancels the deletion operation.

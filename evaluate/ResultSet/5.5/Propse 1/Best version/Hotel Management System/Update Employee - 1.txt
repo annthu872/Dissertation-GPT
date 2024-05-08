@@ -1,0 +1,5 @@
+1. Verify system response when an invalid ID is provided at step 3
+2. Verify system response when an invalid field entry is made at step 6
+3. Search and update employee with valid ID and allowed fields
+4. Search employee with non-existing ID
+5. Update employee with invalid field

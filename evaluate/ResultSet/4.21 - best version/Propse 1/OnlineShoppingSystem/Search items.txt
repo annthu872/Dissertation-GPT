@@ -1,0 +1,2 @@
+Verify that the system allows browsing for items when criteria is entered in the criteria input field.
+Verify that the system prevents browsing for items when no criteria is entered in the criteria input field.

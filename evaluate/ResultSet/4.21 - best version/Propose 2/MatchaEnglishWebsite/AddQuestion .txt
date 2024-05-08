@@ -1,0 +1,16 @@
+1. Successful Creation of a Selection Test Question
+2. Creation of a Selection Test Question with Invalid Sentence (Exceeds Character Limit)
+3. Creation of a Selection Test Question with Invalid Sentence (Contains Special Characters)
+4. Creation of a Selection Test Question with Duplicate Incorrect Options
+5. Creation of a Selection Test Question with Correct Answer Matching One of the Incorrect Options
+6. Cancellation of Selection Test Question Creation
+7. Admin Accesses Lesson Management from Homepage
+8. Admin skips the "sentence" field while creating a new question for the selection test
+9. Admin skips the 'correct answer' field while creating a new question for the selection test.
+10. Admin Skips 'Other Option 2' Field
+11. Admin Skips 'Other Option 3' Field
+12. Admin skips compulsory field 'other option 1'
+13. Admin decides to cancel but then chooses to stay and continue editing
+14. Admin leaves by pressing the back button on the browser without saving the question.
+15. Admin decides to cancel question creation after filling in some fields.
+16. Admin decides to cancel question creation without filling any fields.

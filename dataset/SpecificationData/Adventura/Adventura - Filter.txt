@@ -1,0 +1,21 @@
+use case id: U03
+use case name: Filter search results.
+objective: The "Filter search results" use case allows users to filter search results to get better results that are closer to what the user is looking for.
+actor: user 
+Preconditions: The user is on the 'Search' page.
+Included use case: Search attractions by Attraction's title
+Extended use case: None
+Basic flow:
+Step 1: The system show a list of type of destination included museum, zoo, aquarium, mall, cuisine, hotel.
+Step 2: User click on a specific type of destination.
+Step 3: System filter the search result related to selected type of desitination.
+
+Alternative Flows:
+Alternative flow 1: System has no suitable result for the filter.
+At step 3 of the basic flow: The system show message 'there is no suitable result. Please try another keyword or type of desitination.'
+
+Postcondition: 
+None
+
+
+

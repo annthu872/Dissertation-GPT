@@ -1,0 +1,20 @@
+Condition test scenario:
+
+1.Verify that the system filters orders by 'All' status when the 'All' tab is clicked.
+2.Verify that the system filters orders by 'Waiting for payment' status when the 'Waiting for payment' tab is clicked.
+3.Verify that the system filters orders by 'Delivering' status when the 'Delivering' tab is clicked.
+4.Verify that the system filters orders by 'Waiting to deliver' status when the 'Waiting to deliver' tab is clicked.
+5.Verify that the system filters orders by 'Finished' status when the 'Finished' tab is clicked.
+6.Verify that the system filters orders by 'Cancelled' status when the 'Cancelled' tab is clicked.
+7.Verify that the system filters orders by 'Returned' status when the 'Returned' tab is clicked.
+8.Verify that the system can filter orders using the search bar with valid shop's name, order's ID, or product's ID.
+
+No Condition test scenario:
+
+1.Verify that after clicking on the personal name and avatar section, the user is redirected to their personal bought order page, where they can see a list of all their orders along with their information and status. Additionally, ensure the presence of a status bar with tabs for All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled, and Returned states, and a functional search bar below the status bar.
+
+2.Verify that when a user fills in the search bar with a shop's name, order's ID, or product's ID and presses enter, the system accurately displays orders that match the keyword entered by the user.
+
+Duplicate: 
+(No Condition test scenario:)
+2.Verify that when a user fills in the search bar with a shop's name, order's ID, or product's ID and presses enter, the system accurately displays orders that match the keyword entered by the user.

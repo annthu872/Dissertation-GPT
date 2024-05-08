@@ -1,0 +1,22 @@
+4.7.1 Summary :
+This use case is used to update rooms availability and details.
+4.7.2 Actors :
+Employee
+4.7.3 Preconditions :
+Employees must be logged in the system and the room which needs to be updated must exist in the database.
+4.7.4 Basic course of events/happy path :
+1. Actor Select Room panel on dashboard.
+2. System Show room panel menu.
+3. Actor Search or select a room which needs to be updated. (by id)
+4. System Load Room fields data from database.
+5. Actor Fill the fields that need to be updated.
+6. Actor Press update button
+7. System Validate fields.
+8. System Update database.
+9. System Show success message.
+4.7.5 Alternative path :
+3. If the room doesn’t exist, show a NOT FOUND message.
+7. If invalid field is entered, show invalid field entered for every individual error.
+9. In case of any error show a failure message.
+4.7.6 Post condition :
+Rooms updated; Show the tables where all rooms exist on the same page.

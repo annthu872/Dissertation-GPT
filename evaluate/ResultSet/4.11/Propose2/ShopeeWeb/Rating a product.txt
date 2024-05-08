@@ -1,0 +1,32 @@
+1. Successful Product Rating Submission
+2. Product Rating Submission with Added Comment
+3. Product Rating Submission with Added Picture
+4. Product Rating Submission with Added Video
+5. Product Rating Submission with Adjusted Product Quality Rating
+6. Product Rating Submission with Adjusted Seller Rating
+7. Product Rating Submission with Adjusted Shipping Rating
+8. User Gives a Lower Quality Rating
+9. User Gives a Higher Service Rating
+10. User Adds Detailed Feedback and Adjusts Rating
+11. User Adjusts Rating After Re-evaluating the Product
+12. User Submits Rating Without Adjusting Seller Rating
+13. User Adjusts Both Seller and Shipping Ratings
+14. User Adds Comment or Media Before Adjusting Seller Rating
+15. User Satisfied with Product but Not with Shipping
+16. User Leaves a Comment and Adjusts Shipping Rating
+17. User Adds Picture/Video and Adjusts Shipping Rating
+18. User Adjusts Shipping Rating After Reconsideration
+19. User Completes Rating Without Adding a Comment
+20. User Adds a Comment Before Completing the Rating
+21. Successful Rating Submission Without Media
+22. Successful Rating Submission With Picture Addition
+23. Attempt to Add Non-Image File
+24. Successful Rating Submission With Maximum Pictures Added
+25. Attempt to Add More Than Maximum Pictures
+26. Successful Rating Submission With Single Picture
+27. Successful Rating Submission With Multiple Pictures
+28. Successful Rating Submission With a Picture and a Video
+29. User Attempts to Add More Than One Video
+30. User Adds a Non-Video File
+31. User Adds a Video Then Proceeds to Complete the Rating
+32. User Adds a Video, Attempts to Add Another, and Receives Error or Limitation Message

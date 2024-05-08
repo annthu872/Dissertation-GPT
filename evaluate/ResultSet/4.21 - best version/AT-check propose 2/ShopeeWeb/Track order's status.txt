@@ -1,0 +1,10 @@
+1. Scenario: Viewing All Orders 0
+2. Scenario: Filtering Orders by Waiting for Payment a1-s
+3. Scenario: Filtering Orders by Delivering Status	a1-s
+4. Scenario: Filtering Orders by Waiting to Deliver Status	a1-s
+5. Scenario: Filtering Orders by Finished Status	a1-s
+6. Scenario: Filtering Orders by Cancelled Status	a1-s
+7. Scenario: Filtering Orders by Returned Status	a1-s
+8. Scenario: Searching for a Specific Order using the shop's name	a2-c1
+9. Scenario: Searching for a Specific Order using the order's ID	a2-c2
+10. Scenario: Searching for a Specific Order using the product's ID	a2-c3

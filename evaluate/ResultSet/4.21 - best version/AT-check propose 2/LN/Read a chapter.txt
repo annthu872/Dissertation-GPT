@@ -1,0 +1,7 @@
+1. Successful Chapter Selection and Redirection 0
+2. Chapter Selection with Slow Internet Connection 	exc
+3. Chapter Selection with Server Error		exc
+4. User selects a recently updated chapter directly from the homepage or updates section.	dup a2
+5. User navigates to a book from a notification about a recently updated chapter.	a2
+
+miss a1

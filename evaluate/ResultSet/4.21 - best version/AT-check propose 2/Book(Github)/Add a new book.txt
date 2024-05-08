@@ -1,0 +1,7 @@
+1. Successful Book Creation				0
+2. Book Creation with Incorrect Data			0-fail	
+3. Book Creation Failure Due to System Error		exc
+4. Cancel Operation Before Data Entry			e1
+5. Cancel Operation After Partial Data Entry		dup
+6. Navigation to Another Menu Item Before Submission	e1
+7. Cancel Operation After Completing Data Entry		dup

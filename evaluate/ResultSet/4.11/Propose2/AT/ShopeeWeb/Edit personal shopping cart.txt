@@ -1,0 +1,59 @@
+1. Cart Display with Multiple Products
+2. Cart Display with a Single Product
+3. Cart Display with Products from Multiple Shops
+4. Cart Display with Products Having Multiple Options Selected
+5. Cart Display with Products Having Promotions Applied
+6. Empty Cart Display
+7. Removing a Single Product from the Cart
+8. Removing Multiple Products from the Cart
+9. Accidental Product Removal and Cancellation
+10. Removing a Product and Continuing Shopping
+11. Removing a Product to Replace with a Different Option or Quantity
+12. Removing a Product and Then Cancelling the Removal
+13. Accidental Product Removal Attempt
+14. Changing Mind After Initiating Product Removal
+15. Cart Adjustment for Budget Constraints
+16. Updating Product Quantity Due to Insufficient Stock
+17. Applying a Promotion That Requires a Minimum Quantity
+18. Adjusting Product Quantity for Bulk Purchase
+19. Correcting Quantity Before Checkout
+20. Updating Product Quantity in Cart
+21. Applying Promotions Affecting Product Quantity
+22. Correcting Mistaken Quantity Before Checkout
+23. Adjusting Quantity Based on Stock Availability
+24. Changing Product Option Due to Preference Change
+25. Correcting a Mistaken Option Selection
+26. Adjusting Product Options Based on Availability
+27. Optimizing Cart for Promotions
+
+Choose:
+1. Cart Display with Multiple Products
+2. Cart Display with a Single Product
+3. Cart Display with Products from Multiple Shops
+5. Cart Display with Products Having Promotions Applied
+6. Empty Cart Display
+7. Removing a Single Product from the Cart
+8. Removing Multiple Products from the Cart
+9. Accidental Product Removal and Cancellation
+12. Removing a Product and Then Cancelling the Removal
+14. Changing Mind After Initiating Product Removal
+16. Updating Product Quantity Due to Insufficient Stock
+20. Updating Product Quantity in Cart
+24. Changing Product Option Due to Preference Change
+
+Excess:
+10. Removing a Product and Continuing Shopping
+11. Removing a Product to Replace with a Different Option or Quantity
+15. Cart Adjustment for Budget Constraints
+17. Applying a Promotion That Requires a Minimum Quantity
+18. Adjusting Product Quantity for Bulk Purchase
+21. Applying Promotions Affecting Product Quantity
+22. Correcting Mistaken Quantity Before Checkout
+25. Correcting a Mistaken Option Selection
+26. Adjusting Product Options Based on Availability
+27. Optimizing Cart for Promotions
+
+Dup:
+13. Accidental Product Removal Attempt
+19. Correcting Quantity Before Checkout
+23. Adjusting Quantity Based on Stock Availability

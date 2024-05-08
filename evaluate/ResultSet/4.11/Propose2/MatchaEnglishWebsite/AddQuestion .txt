@@ -1,0 +1,21 @@
+1. Successful Creation of a Selection Test Question
+2. Creation of a Selection Test Question with Invalid Sentence (Exceeds Character Limit)
+3. Creation of a Selection Test Question with Invalid Sentence (Contains Special Characters)
+4. Creation of a Selection Test Question with Duplicate Wrong Answers
+5. Creation of a Selection Test Question with Correct Answer Not Matching the Blank
+6. Cancellation of Selection Test Question Creation
+7. Accessing Lesson Management from Homepage
+8. Admin Attempts to Save Question Without Filling 'Sentence' Field
+9. Admin Fills 'Sentence' Field With Invalid Content
+10. Admin Fills 'Sentence' Field With Valid Content But Skips Other Compulsory Fields
+11. Failing to create a selection test question due to skipping the 'correct answer' field
+12. Admin Skips Mandatory Field 'Other Option 1'
+13. Admin Skips Mandatory Field 'Other Option 2'
+14. Admin Skips Mandatory Field 'Other Option 3'
+15. Admin Decides to Modify the Question Before Saving
+16. Admin Accidentally Presses 'Cancel'
+17. Creating a New Question for a Selection Test with Valid Inputs
+18. Attempting to Create a New Question with an Invalid Sentence
+19. Abandon Question Creation by Using Browser Back Button
+20. Admin decides to cancel question creation after filling in some fields
+21. Admin intentionally cancels question creation before entering any information

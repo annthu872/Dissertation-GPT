@@ -1,0 +1,24 @@
+Edit the genre
+Description
+The edit page is designed to edit an existing genre record in the database.
+
+Main scenario:
+User clicks the "Update" button (to the right from the genre he/she wants to update) on the genre list/details page;
+Application displays form to enter genre data;
+User enters genre data he/she wants to update and presses "Submit" button;
+If any data is entered incorrectly, incorrect data messages are displayed;
+If entered data is valid, then the genre is updated in the database;
+If an error occurs, then the error message is displayed;
+If a new genre record is successfully updated, then the list of the genres with updated records is displayed.
+
+Cancel operation scenario:
+User clicks the "Update" button (to the right from the genre he/she wants to update) on the genre list/details page;
+Application displays form to enter genre data;
+User may start entering the data into the form fields;
+Before pressing "Submit" button user presses “Cancel” button;
+Data doesn’t update in the database, then a list of genres records is displayed to the user;
+If the user selects the menu item "Books”, "Genres”, "Authors", "Home" or "API", the data will not be update in the database, and the corresponding form with updated data will be opened.
+
+When editing a genre, the following details are entered:
+Name
+Description

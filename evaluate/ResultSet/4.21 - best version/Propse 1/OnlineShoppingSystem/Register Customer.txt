@@ -1,0 +1,2 @@
+Verify that users can successfully create a new account with a unique email ID.
+Verify that the system prompts the user to log in or use a different email ID if the entered email ID is already associated with an account.

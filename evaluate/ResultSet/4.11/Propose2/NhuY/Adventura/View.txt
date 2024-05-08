@@ -1,0 +1,5 @@
+1. User selects an attraction with complete details available.
+2. User selects an attraction with some details missing (e.g., no reviews or missing opening times).
+3. User selects an attraction with no details available.
+4. User navigates to attraction details from the recommended list.
+5. User navigates to attraction details via the search function.

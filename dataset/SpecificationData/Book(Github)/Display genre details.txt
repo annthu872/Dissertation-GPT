@@ -1,0 +1,10 @@
+Display genre details
+
+Main scenario:
+User clicks on the "Name" of the specific genre from the list on the genre list page;
+Application displays the user-chosen genre details;
+
+On genre details page the application displays the following columns:
+id - unique genre number
+Name
+Description

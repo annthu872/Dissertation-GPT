@@ -1,0 +1,21 @@
+Verify that the system allows the creation of a workspace without entering a workspace description.
+Verify that a user can invite another person to the workspace by copying and sharing an invitation link on social media.
+Verify that a new workspace can be created with a valid workspace name and without inviting any members.
+Verify that a new workspace can be created with a valid workspace name and by inviting a member using a valid username.
+Verify that a new workspace can be created with a valid workspace name and by inviting a member using a valid email.
+Verify that a new workspace can be created with a valid workspace name and by inviting up to 9 members.
+Verify that the system shows a notification for invalid workspace name when the workspace name field is empty.
+Verify that the system prevents inviting more than 9 members to the workspace.
+Verify that the system shows the dropdown menu with options: Create board, start with a template, create workspace, when the user clicks the 'Create' button on the navbar.
+Verify that the system does not proceed when 'Workspace type' is not selected in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Operations' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Human Resources' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Engineering' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Marketing' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Small Business' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Sales' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Education' in the 'Build a workspace' dialog.
+Verify that the system allows the user to proceed when 'Workspace type' is selected as 'Other' in the 'Build a workspace' dialog.
+
+Miss: 0 
+Dup: Verify that the system shows the dropdown menu with options: Create board, start with a template, create workspace, when the user clicks the 'Create' button on the navbar.

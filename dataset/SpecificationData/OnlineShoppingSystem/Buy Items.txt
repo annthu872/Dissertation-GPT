@@ -1,0 +1,22 @@
+Buy Items
+
+Description 
+This use case allows the registered customer to buy items from the online shopping system. A registered user can buy items of his choice.
+
+Basic Flow
+This use case starts when the actor wishes to purchase items from the online shopping system.
+1.The system requests the user to enter the item name.
+2.The user enters the name of the item. 
+3.The system checks for the availability of the item.
+4.If the item is available then the item is added to the cart.
+
+Alternative flows
+Item is out of stock
+If, in the Basic flow, the item entered by the actor is not available, then the item is saved for later.
+
+Pre-Conditions
+The actor must be a registered user and must be logged into the system.
+
+Post-Conditions
+If the use case was successful, the item is added to the shopping cart, otherwise the shopping cart remains unchanged.
+

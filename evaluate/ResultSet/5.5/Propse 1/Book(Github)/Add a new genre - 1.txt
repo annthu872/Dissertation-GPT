@@ -1,0 +1,6 @@
+1. User Fills Genre Details and Saves
+2. Create new genre with valid data
+3. Cancel operation before submitting
+4. Submit with Genre Name not entered
+5. Submit with Genre Description not entered
+6. Submit with all data entered incorrectly

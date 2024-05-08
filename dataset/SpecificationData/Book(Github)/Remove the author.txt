@@ -1,0 +1,13 @@
+Remove the author
+
+Main scenario:
+User clicks the "Delete" button (to the right from the author he/she wants to delete) on the author list/details page;
+Application displays a dialog page to confirm destroying the record for chosen author;
+User confirms deletion by pressing "Confirm" button.
+
+Cancel operation scenario:
+User clicks the "Delete" button (to the right from the author he/she wants to delete) on the author list/details page;
+Application displays a dialog page to confirm destroying the record for chosen author;
+User presses “Cancel” button;
+Data doesn’t delete in the database, then a list of authors records is displayed to the user;
+If the user selects the menu item "Books”, "Genres”, "Authors", "Home" or "API", the data will not be deleted from the database, and the corresponding form with updated data will be opened.

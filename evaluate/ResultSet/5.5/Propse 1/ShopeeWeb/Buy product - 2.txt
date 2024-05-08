@@ -1,0 +1,13 @@
+1. User Successfully Purchases a Product
+2. User Buys Products from a Single Store
+3. User Changes Delivery Location Successfully
+4. User Applies Product's Promotion Successfully
+5. User Applies Platform's Promotion Successfully
+6. User Changes Shipping Option Successfully
+7. User Changes Payment Method Successfully
+8. Change delivery location with valid name, phone number, and address
+9. Change delivery location with invalid name
+10. Change delivery location with invalid phone number
+11. Change delivery location with invalid address
+12. Change delivery location and select Location type as 'own house'.
+13. Change delivery location and select Location type as 'working place'.

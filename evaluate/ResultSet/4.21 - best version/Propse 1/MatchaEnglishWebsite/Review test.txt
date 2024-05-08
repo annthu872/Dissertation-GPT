@@ -1,0 +1,5 @@
+Verify that learners can successfully review words using the main flow by selecting the correct answer and proceeding to the next word.
+Verify that when learners choose the wrong answer, the system shows a red word, decreases the memory level, and allows continuation to the next word.
+Verify that upon reviewing the last word in the list, pressing 'Continue' saves the review and redirects learners to the Home page.
+Verify that pressing the 'Exit' button and choosing 'Stay' returns learners to the same review step.
+Verify that pressing the 'Exit' button and choosing 'Confirm' redirects learners to the Home page without saving the review.

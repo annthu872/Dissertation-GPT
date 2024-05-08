@@ -1,0 +1,19 @@
+4.11.1 Summary :
+This use case is used to check out from the room.
+4.11.2 Actors :
+Guest
+4.11.3 Preconditions :
+The user must have valid booking ID
+The booking ID must have a valid room ID linked to it
+4.11.4 Basic course of events/happy path :
+1. Actor Enters Booking ID
+2. Actor Press submit button
+3. System Validate Booking ID
+4. System Upon successful validation remove the linked room ID from the Booking ID
+5. System Update Booking status as complete
+6. System Show success and go to main page
+4.11.5 Alternative path :
+4. If user Enters incorrect Booking ID go back to main page and show error
+4. If there is no room linked to the booking ID in database go back to main page show error message
+4.11.6 Post condition :
+User will be shown a “check out successful” message and will be directed to the main page

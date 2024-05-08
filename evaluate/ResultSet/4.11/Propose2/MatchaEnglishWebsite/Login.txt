@@ -1,0 +1,6 @@
+1. **Successful Login with Username**
+2. **Successful Login with Email**
+3. **Login with Wrong Password**
+4. **Unregistered Username Login Attempt**
+5. **Login Attempt with Blank Username**
+6. **Login Attempt with Blank Password Field**

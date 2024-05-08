@@ -1,0 +1,8 @@
+1. Successful Video Playback Scenario
+2. Video Playback Error Scenario
+3. Video Not Available Scenario
+4. Film Has Multiple Episodes Scenario
+5. Film Is Region-Restricted
+6. Film Has Been Removed
+7. Film Is Age-Restricted and User Is Not Logged In
+8. Film Is Temporarily Unavailable Due to Technical Issues

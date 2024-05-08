@@ -1,0 +1,8 @@
+   "Verify that when a user clicks on a product card, they are navigated to the product's detail page where they can view all product details, and successfully add the product to their shopping cart by clicking the add to cart button.",
+    "Verify that when a product has multiple options, the user is able to view all available options on the product's detail page, select an option, and successfully add the chosen option of the product to their shopping cart.",
+    "Verify that when a product has multiple options and the user attempts to add the product to the cart without selecting an option, the system prompts the user to select an option before successfully adding the product to the shopping cart.",
+    "Verify that on the product's detail page, the user can adjust the quantity of the product they wish to purchase using the plus or minus buttons and successfully add the adjusted quantity of the product to their shopping cart.",
+    "Verify that for a product with multiple options, the user can select an option, adjust the quantity of the product, and successfully add the chosen option with the adjusted quantity to their shopping cart.",
+    "Verify that if a product is out of stock, the product's detail page displays a 'Sold out' sticker on the product picture and the add to cart button is not clickable.",
+    "Verify that if one of the product's options is out of stock, the option is displayed in grey, indicating it is not selectable, and the user cannot add this option to their shopping cart."
+ 

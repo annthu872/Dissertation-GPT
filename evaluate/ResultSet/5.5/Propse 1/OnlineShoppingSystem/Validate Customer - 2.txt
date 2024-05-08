@@ -1,0 +1,4 @@
+1. Registered User Successfully Checks Out After Authentication
+2. Login with valid User ID and matching Password
+3. Login with invalid User ID
+4. Login with valid User ID and non-matching Password

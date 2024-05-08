@@ -1,0 +1,12 @@
+1. Admin Navigates to Lesson Management from Homepage
+2. Admin Cancels Question Creation and Chooses to Stay
+3. Admin Leaves Question Creation by Browser Back Button Without Saving
+4. Admin Cancels Question Creation and Confirms Cancellation
+5. Create a new question with valid sentence, correct answer, and other options
+6. Create a new question with sentence over 250 characters
+7. Create a new question with sentence containing special characters
+8. Create a new question with sentence not including '...'
+9. Create a new question with empty correct answer
+10. Create a new question with empty other option 1
+11. Create a new question with empty other option 2
+12. Create a new question with empty other option 3

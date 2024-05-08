@@ -1,0 +1,4 @@
+Verify that the system redirects to the main page and shows an error message when there is no room linked to the booking ID in the database.
+Verify that the system successfully removes the linked room ID from the Booking ID upon entering a valid Booking ID and pressing the submit button.
+Verify that the system shows an error and redirects to the main page when the Booking ID does not match any booking ID in the system.
+Verify that the system shows an error and redirects to the main page when no room is linked to the Booking ID entered.

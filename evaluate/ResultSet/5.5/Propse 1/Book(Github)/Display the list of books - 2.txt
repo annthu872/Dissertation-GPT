@@ -1,0 +1,9 @@
+1. User Navigates Through Book List Pagination
+2. Select a valid date range with start date before the end date
+3. Select a date range with start date after the end date
+4. Select a date range with an invalid date format
+5. Filter Book list by column 'id'.
+6. Filter Book list by column 'Title'.
+7. Filter Book list by column 'Author'.
+8. Filter Book list by column 'Genre'.
+9. Filter Book list by column 'Publication date'.

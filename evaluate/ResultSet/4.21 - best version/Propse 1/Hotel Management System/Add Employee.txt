@@ -1,0 +1,4 @@
+Verify that the system shows 'all fields are required' message when fields are left unfilled.
+Verify that the system shows 'invalid field entered' message when an invalid field is entered.
+Verify that the system successfully adds an employee when all fields are filled and the Add button is clicked.
+Verify that the system shows an error notification when trying to add an employee with one or more fields left unfilled.

@@ -1,0 +1,44 @@
+use case id: U09
+use case name: Listening pronunciation test
+objective: This use case allows learners to take a test of listening to the pronunciation of the word to test the users’ memory levels.
+actor: learner
+
+basic flow:
+Step 1: Learner select the review button on the Home page.
+Step 2: The system redirects learners to the review's screen.
+Step 3: The screen displays the test with a speaker button. 
+Step 4: Learner can guess the entire word and choose answer.
+Step 5: The system compares Vietnamese meanings and English vocabulary that the user chooses.
+Step 6: If the answer is correct, the pop up screen is green.
+Step 7: Learner click “Next” button to go to the next question.
+Step 8: Step 2 to step 7 is repeated until user reach the last word.
+Step 9: Once all the questions have been listened, the “Next” button on the last question will redirect system to the “completion notification” page with a congratulatory message and option buttons to “continue studying” and “return to the lesson page”.
+Step 10: Learner clicks "return to the lesson page" 
+Step 11: The system redirect to the lesson page.
+
+Alternative flow 1:
+At anywhere from step 3 to step 8 of basic flow: Learner click “Exit” to exit review mode.
+Step 9: The pop up screen displays “Do you really want to exit?” with “Stay” and “Exit without saving changes” options.
+Step 10: Learner chooses “Stay”.
+Go back to the step that user choose to branch in the basic flow and continue with the steps from step that user choose to branch in the basic flow.
+
+Alternative flow 2: Learner chooses wrong answer
+At step 6 of basic flow: If the answer is wrong, the pop up screen is red.
+Go back to step 7 in the basic flow and continue with the steps from step 7.
+
+Exception flow: Learner chooses to exit.
+At anywhere from step 3 to step 8 of basic flow: Learner click “Exit” to exit review mode.
+Step 9: The pop up screen displays “Do you really want to exit?” with “Stay” and “Exit without saving changes” options.
+Step 10: Learner chooses “Exit without saving changes”.
+Step 11: The system do not update new words status and redirect to the lesson page.
+Go back to the step that user choose to branch in the basic flow and continue with the steps from step that user choose to branch in the basic flow.
+
+Preconditions:
+Learner must be logged into the application.
+
+Postconditions:
+Topic is marked as completed. 
+Vocabulary words are marked as studied.
+Learner can review completed topics and studied vocabulary later.
+
+

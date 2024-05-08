@@ -1,0 +1,7 @@
+1. Validation Error Displayed on Incorrect Data Entry
+2. Edit hotel information with valid name, address, phone number, and email
+3. Edit hotel information with empty hotel name
+4. Edit hotel information with empty hotel address
+5. Edit hotel information with empty hotel phone number
+6. Edit hotel information with empty hotel email
+7. Edit hotel information with invalid email format

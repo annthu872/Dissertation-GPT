@@ -1,0 +1,6 @@
+1. Registered User Successfully Proceeds to Checkout
+2. Login with valid User ID and Password
+3. Login with unregistered User ID
+4. Login with empty User ID
+5. Login with incorrect Password
+6. Login with empty Password

@@ -1,0 +1,57 @@
+use case id: 
+use case name: flashcard
+objective: This use case allows learners to study vocabulary words through interactive flashcards categorized by topics and lessons. Learners can navigate through different topics within a lesson and flip through flashcards to learn new words and their meanings.
+actor: learner 
+Preconditions:
+Learner must be logged into the application.
+
+basic flow:
+Step 1: Learner clicks the "Learn New Word" tab on the navigation bar.
+Step 2:The system displays a list of available lessons.
+Step 3:Learner selects a lesson from the list.
+Step 4:The system displays the details of the selected lesson, including the topics associated with it.
+Step 5:Learner chooses a topic to study.
+Step 6:The system redirects the learner to the corresponding Flashcard page for the selected topic.
+Step 7:The system displays the first flashcard of the vocabulary words for the selected topic. The front of the flashcard shows the vocabulary name, pronunciation, and Vietnamese meaning.
+Step 8:Learner click on the flashcard to flip it and view the back, which contains illustrations and examples of real-life usage.
+Step 9:Learner click the "Next" button to go to the flashcard of the next vocabulary word.
+Step 10:If there is a flashcard of the previous word, learner click the "Previous" button to go back to the previous flashcard.
+Step 11:Steps 8-11 are repeated for all flashcards in the topic.
+Step 12:Once all the flashcards have been studied, the 'Next' button on the last flashcard will redirect system to the 'completion notification' page with a congratulatory message and option buttons to 'continue studying' and 'return to the lesson page'.
+Step 13: learner clicks "return to the lesson page" 
+Step 14: the system redirect to the lesson page.
+
+Alternative Flows:
+Alternative flow 1: Learner presses the 'back' button during flashcard study and presses 'stay'.
+At step 7 of the basic flow: Learner presses the 'back button.
+Step 8: Exit confirmation dialog box appears, asking "Are you sure you want to exit?"
+Step 9: Learner clicks 'stay'.
+Go back to step 7 in the basic flow and continue with the steps from step 7.
+
+Alternative flow 2:Learner presses the 'continue studying'
+At step 13 of the basic flow: learner clicks 'continue studying'
+Step 14: Topic is marked as completed. Vocabulary words are marked as studied.Learner can review completed topics and studied vocabulary later.
+Step 15: The system redirects the learner to the corresponding Flashcard page for the continuous topic.
+
+Alternative flow 3: Continuing from Home Page with incomplete topic displayed on the home page
+At step 1 of the basic flow: Learner clicks one incomplete topic.
+Go back to step 6 in the basic flow and continue with the steps from step 6.
+
+Alternative flow 4: learner tries to click 'Previous' button when on the first flashcard, the button is disabled.
+At step 9 of the basic flow: Learner clicks 'Previous' button.
+Step 10: the system display message 'there is no previous vocabulary to display'.
+Go back to step 9 in the basic flow and continue with the steps from step 9.
+
+Exception flow:
+Exception flow 1: Learner presses the 'back' button during flashcard study and presses 'exit'.
+At step 7 of the basic flow: Learner presses the 'back' button.
+Step 8: Exit confirmation dialog box appears, asking "Are you sure you want to exit?"
+Step 9: Learner clicks 'exit'.
+Step 10: System returns learner to the topic page and the topic is marked as incomplete topic and be displayed on the home page.
+Postcondition: 
+Topic is marked as completed. 
+Vocabulary words are marked as studied.
+Learner can review completed topics and studied vocabulary later.
+
+
+

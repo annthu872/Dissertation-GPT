@@ -1,0 +1,12 @@
+Verify that when a learner selects the 'Handbook' tab, the system displays the learner's vocabulary list with details such as word name, word type, word meaning, memorization level, and a checkbox for review test inclusion, and that the learner can scroll through the list.	basic flow:
+
+
+Condition test scenario:
+
+Verify that learners can successfully search for a vocabulary containing specific characters in the Handbook	Alternative flow 1:
+
+Verify that learners can successfully exclude a vocabulary from the daily test review by unticking the checkbox	Alternative flow 3:
+
+Verify that learners can successfully include a vocabulary in the daily test review by ticking the checkbox	Alternative flow 4:
+
+Verify that the system notifies there are no suitable search results when a meaningless word is entered in the search bar	Alternative flow 2:

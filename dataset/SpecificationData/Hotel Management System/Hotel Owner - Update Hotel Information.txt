@@ -1,0 +1,21 @@
+4.2.1 Summary:
+Hotel Owner should be able to update hotel information. Such as the name of the hotel and address, etc.
+4.2.2 Actors:
+- Hotel Owner
+4.2.3 Preconditions:
+- User is authenticated
+- User has role of Hotel Owner
+- User has access to Hotel information page
+4.2.4 Basic course of events/happy path:
+1. Actor Press edit hotel information button
+2. System Show Edit Hotel Information page, with fields already filled from last
+values.
+3. Actor Update or change field values
+4. System Validate the fields
+5. System Update Hotel Information in the database.
+6. System Show success message.
+7. System Go back to Dashboard
+4.2.5 Alternative path:
+1. (4) If validation fails show error
+4.2.6 Post condition:
+1. User will get redirected to the dashboard for his specific user

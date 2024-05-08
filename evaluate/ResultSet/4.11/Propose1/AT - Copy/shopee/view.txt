@@ -1,0 +1,20 @@
+Condition test scenario:
+
+Verify that the product detail page displays all required information for a product with many options, including appropriate option titles based on the product type.	Alternative flow 1:
+
+
+Verify that the product detail page does not display options when they are not available for the product.
+Verify that the product detail page displays an error or alternative message when option titles are not appropriate for the product type.
+
+No Condition test scenario:
+
+Verify that when a user clicks on a product card, the system navigates the user to the product's detail page displaying the product's name, picture, shipping options, stock availability, store information, descriptions, and user ratings.	Main flow:
+
+
+Verify that when a product is out of stock, the system navigates the user to the product's detail page where the product's picture displays a 'Sold out' sticker, and the page shows the product's name, shipping options, stock status, store information, descriptions, and user ratings.	Alternative flow 2: 
+
+
+Excess:
+
+ Verify that the product detail page does not display options when they are not available for the product.
+Verify that the product detail page displays an error or alternative message when option titles are not appropriate for the product type.

@@ -1,0 +1,8 @@
+Verify that clicking on the film cover redirects the user to a page with a video.
+Verify that choosing an episode of the film redirects the user to a page with a video.
+Verify that the system shows a notification for comments that violate community rules.
+Verify that users can successfully post a comment with a valid, non-violating comment
+Verify that the system shows a notification for an empty comment field when the comment is not typed
+Verify that the system prevents posting a comment that contains words violating the community rules
+
+Dup: Verify that the system prevents posting a comment that contains words violating the community rules

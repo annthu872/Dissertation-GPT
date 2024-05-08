@@ -1,0 +1,4 @@
+Verify that users can successfully log in with valid credentials and are redirected to the main page. 	0 
+Verify that entering incorrect credentials redirects users back to the login page with an error message. 	a4
+
+

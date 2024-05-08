@@ -1,0 +1,3 @@
+Verify that the system successfully removes the linked room ID from the Booking ID and updates booking status as complete with a correct Booking ID
+Verify that the system shows an error and goes back to the main page when an incorrect Booking ID is entered
+Verify that the system shows an error message and goes back to the main page when a Booking ID with no room linked in the database is entered

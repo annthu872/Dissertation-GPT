@@ -1,0 +1,14 @@
+1. Create Workspace with Operations Type and No Description  0
+2. Create Workspace with Human Resources Type and Description
+3. Create Workspace with Engineering Type and Skip Description
+4. Create Workspace with Marketing Type and Add Description
+5. Create Workspace with Small Business Type Without Inviting Members
+6. Create Workspace with Sales Type and Do It Later for Invites
+7. Create Workspace with Education Type, Description, and Skip Invites
+8. Create Workspace with Other Type, Add Description, and Do Not Invite Members
+9. User Skips Workspace Description	A1
+10. User invite member by their username	a2
+11. User invite member by link	a3
+12. User invites members by email during workspace creation	a4
+13. Invite Exactly 9 Members Scenario: User follows the main flow but decides to invite exactly 9 members at step 10, successfully staying within the limit.
+14. Invite More Than 9 Members Scenario: User attempts to invite more than 9 members, triggering the exception flow.	e1

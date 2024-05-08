@@ -1,0 +1,17 @@
+Register Customer
+
+Description
+This use case describes how a new user registers himself on the system. A new user can only browse the items.
+
+Basic Flow
+This use case starts when the actor wishes to register himself on the system.
+1.The system requests that the actor enter his/her details.
+2.The actor enters his/her details.
+3.The system creates the actor’s account and saves his/her information.
+
+Alternative Flows
+Account already exists 
+If,in the basic flow the actor enters an email id which is already associated with an account the actor is said to log in to the system or use a different email id.
+
+Post-Conditions
+The account is created successfully and the actor is now a registered user of the system.

@@ -1,0 +1,3 @@
+Verify that a user can successfully watch a single-episode film by clicking on its card, cover, and then starting the video.
+Verify that a user can select and watch an episode from a multi-episode film.
+Verify that the system shows a notification if the film is not available when attempting to watch.

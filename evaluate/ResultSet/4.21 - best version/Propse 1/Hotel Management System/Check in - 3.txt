@@ -1,0 +1,2 @@
+Verify that users can successfully update booking details with a correct Booking ID and pressing the submit button.
+Verify that the system redirects to the main page and shows an error when an incorrect Booking ID is entered.

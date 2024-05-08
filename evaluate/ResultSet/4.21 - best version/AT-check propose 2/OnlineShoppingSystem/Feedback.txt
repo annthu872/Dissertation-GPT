@@ -1,0 +1,4 @@
+1. Successful Checkout Process					0
+2. Checkout Process with Missing Details			exc
+3. Checkout Process with Invalid Details			exc
+4. Checkout Process with System Error During Save		exc

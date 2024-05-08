@@ -1,0 +1,13 @@
+Verify that users can successfully create a new account with a valid username and password.
+Verify that users can successfully create a new account with a valid email and password.
+Verify that the system shows a notification for invalid username when the username is below 8 characters.
+Verify that the system shows a notification for invalid username when the username is over 30 characters.
+Verify that the system shows a notification for invalid password when the password is below 8 characters.
+Verify that the system shows a notification for invalid password when the password is over 30 characters.
+Verify that the system shows a notification for invalid password when missing a normal character.
+Verify that the system shows a notification for invalid password when missing a capitalize character.
+Verify that the system shows a notification for invalid password when missing a number.
+Verify that the system shows a notification for invalid password when missing a special character.
+Verify that the system shows a notification for invalid password when it is the same as the username.
+Verify that the system shows a notification for invalid email when the email does not exist.
+Verify that the system shows a notification for invalid email when the email format is wrong.

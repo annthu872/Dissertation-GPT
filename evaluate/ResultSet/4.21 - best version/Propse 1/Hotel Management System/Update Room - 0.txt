@@ -1,0 +1,9 @@
+Verify that a NOT FOUND message is displayed when a non-existent room is searched. e3
+Verify that an invalid field entry shows individual error messages for each invalid input.	e7
+Verify that a failure message is displayed in case of an update failure.	e9
+Verify that the system successfully loads room fields data when a valid room id exists in the database	0-dup
+Verify that the system successfully updates the room information in the database and shows a success message when all fields are valid and the update button is pressed	0
+Verify that the system shows an error message when the entered room id does not exist in the database e3-dup
+
+dup:2
+

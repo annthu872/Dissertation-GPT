@@ -1,0 +1,6 @@
+Verify that users can successfully create a new genre by providing valid name and description.
+Verify that a new genre record can be successfully added with valid Name and Description entered
+Verify that pressing the 'Cancel' button after entering data but before submission does not save the data to the database
+Verify that navigating away from the genre creation page by selecting another menu item does not save the entered data
+Verify that the system shows an error message when the Name field is not entered
+Verify that the system shows an error message when the Description field is not entered

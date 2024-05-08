@@ -1,0 +1,26 @@
+use case id: U01
+use case name: See detailed attraction.
+objective: The "See detailed attraction" use case allows users to access detailed information about a specific attraction of interest. Users can view descriptions, ratings, images, and other relevant details.
+actor: user 
+Preconditions: The user is on the homepage of the system.
+Included use case: None
+Extended use case: Save Favorite Attraction
+View Related Attractions
+Write attraction review
+Basic flow:
+Step 1: The homepage show a list of recommend attractions.
+Step 2: The user clicks a specific attraction from list of recommend attractions.
+Step 3: The system show detailed information about the selected attraction include the attraction’s description, ratings, images, address, and other
+relevant details (open time, price, rating, description, review from other users) if there is information. 
+
+Alternative Flows:
+Alternative flow 1: User See detailed attraction description from Search function.
+At step 1 of the basic flow: User perform 'Search' feature.
+Step 2: The user clicks a specific attraction from list of search result attractions.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Postcondition: 
+None
+
+
+

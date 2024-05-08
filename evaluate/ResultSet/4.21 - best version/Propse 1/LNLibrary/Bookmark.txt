@@ -1,0 +1,2 @@
+Verify that users can successfully bookmark content by clicking the bookmark icon and then clicking on Create bookmark button.
+Verify that if the content has already been bookmarked, the Create bookmark button does not appear but the content is shown in the bookmark's list.

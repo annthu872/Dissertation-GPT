@@ -1,0 +1,23 @@
+Verify that a user can successfully rate a product by clicking the Rating button, automatically giving a 5-star rating, and clicking Done to save and display the rating on the product's detail page.
+Verify that a user can leave a comment in the rating form's comment section and the comment is saved and displayed along with the product rating on the product's detail page.
+Verify that a user can add a single picture to their product rating by clicking the Add picture button, selecting an image file, and confirming that the image is displayed in the rating form.
+Verify that a user can add multiple pictures (up to 5) to their product rating by repeatedly clicking the camera icon, selecting image files, and confirming that all selected images are displayed in the rating form.
+Verify that a user can add a video to their product rating by clicking the Add video button, selecting a video file, and confirming that the video is displayed in the rating form.
+Verify that users can select 1 star for the quality rating and it is considered a valid selection.
+Verify that users can select 2 stars for the quality rating and it is considered a valid selection.
+Verify that users can select 3 stars for the quality rating and it is considered a valid selection.
+Verify that users can select 4 stars for the quality rating and it is considered a valid selection.
+Verify that users can select 5 stars for the quality rating and it is considered a valid selection.
+Verify that selecting 0 stars for the quality rating is considered an invalid selection.
+Verify that users can select 1 star for the seller rating and it is considered a valid selection.
+Verify that users can select 2 stars for the seller rating and it is considered a valid selection.
+Verify that users can select 3 stars for the seller rating and it is considered a valid selection.
+Verify that users can select 4 stars for the seller rating and it is considered a valid selection.
+Verify that users can select 5 stars for the seller rating and it is considered a valid selection.
+Verify that selecting 0 stars for the seller rating is considered an invalid selection.
+Verify that users can select 1 star for the shipping rating and it is considered a valid selection.
+Verify that users can select 2 stars for the shipping rating and it is considered a valid selection.
+Verify that users can select 3 stars for the shipping rating and it is considered a valid selection.
+Verify that users can select 4 stars for the shipping rating and it is considered a valid selection.
+Verify that users can select 5 stars for the shipping rating and it is considered a valid selection.
+Verify that selecting 0 stars for the shipping rating is considered an invalid selection.

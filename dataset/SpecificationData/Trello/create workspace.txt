@@ -1,0 +1,47 @@
+use case id:
+use case name: create a workspace
+precondition: user has been logged in.
+main flow: 
+Step 1: User click button 'Create' on the navbar.
+Step 2: system show up drop down with options: Create board, start with a template, create workspace.
+Step 3: user click create workspace.
+Step 4: System open a diaglog 'Build a workspace' with text field 'Workspace name', combo box 'Workspace type' with options: Operations, Human Resources, Engineering, Marketing, Small Bussiness, Sales, Education, Other and text field 'Workspace description'. 'Workspace name' and 'Workspace type' are complusary and 'Workspace description' is optional. The button 'Continue' is disable.
+Step 5: User input 'Workspace name' is the name of user's company, team or orgainization. 
+Step 5: User select values for 'Workspace type'.
+Step 6: The button 'Continue' is clickable.
+Step 7: User input 'Workspace description'.
+Step 8: User click button 'Continue'.
+Step 9: System open 'Invite' dialog with text field 'Workspace members', button 'copy link', button 'Invite' with is disable and button 'Do it later'. a valid 'Workspace members' is a name of application's user or is an email. The 'Workspace members' can only invite up to 9 member.
+Step 10: User click button 'Do it later' to create Workspace without inviting anyone.
+Step 11: New workspace is created and system redirect user to that new workspace page.
+
+Alternative flow:
+Alternative flow 1: User skip 'Workspace description',
+At step 7 of the basic flow: User skip the 'Workspace description' field.
+
+Alternative flow 2: User invite member by their username.
+At step 10 of the basic flow: User enter a valid username of application.
+Step 11: button 'Invite' is clickable.
+Step 12: User click button 'Invite'.
+Step 13: New workspace is created and system redirect user to that new workspace page.
+
+Alternative flow 3: User invite member by link.
+At step 10 of the basic flow: User click button 'copy link' .
+Step 11: The link is copied into clipboard.
+Step 12: User sent link to one another person on other social media.
+Step 13: User click button 'Invite'.
+
+Alternative flow 4: User invite member by their email.
+At step 10 of the basic flow: User enter a valid email.
+Step 11: button 'Invite' is clickable.
+Step 12: User click button 'Invite'.
+Step 13:New workspace is created and system redirect user to that new workspace page.
+
+
+Exception flow:
+Exception flow 1: User invite more than 9 member to "Workspace members".
+At step 10 of the basic flow: User enter 9 valid username/email/member of application to "Workspace members".
+Step 11: System sent notification that can not invite more people.
+
+
+Postcondition: New workspace is created and system redirect user to that new workspace page.

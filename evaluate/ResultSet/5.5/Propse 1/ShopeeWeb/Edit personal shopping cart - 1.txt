@@ -1,0 +1,10 @@
+1. User Successfully Navigates to Shopping Cart and Views Products
+2. User Successfully Removes a Product from Their Shopping Cart
+3. User Decides Not to Remove a Product from Their Shopping Cart After Initiating Removal
+4. User Successfully Increases a Product's Quantity in Their Shopping Cart
+5. User Successfully Decreases a Product's Quantity in Their Shopping Cart
+6. User Successfully Changes Options of a Product in Their Shopping Cart
+7. Decrease quantity with more than one item in cart
+8. Confirm removal of last item in cart
+9. Cancel removal of last item in cart
+10. Attempt to decrease quantity when only one item in cart without confirming removal

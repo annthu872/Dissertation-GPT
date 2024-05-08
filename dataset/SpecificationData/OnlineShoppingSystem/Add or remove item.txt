@@ -1,0 +1,14 @@
+Add or remove item
+
+Description
+This use case allows the shop owner to add or remove particular items from the online shopping system.
+
+Basic Flow
+This use case starts when the customer gives feedback and it is recorded by the shop owner.
+1.The shop owner selects either to add an item or remove an item.
+2.The system asks for the item name.
+3.The shop owner inputs the item name.
+4.The selected item is updated.
+
+Post-Conditions
+If ,the use case was successful, the particular item’s stock is updated.

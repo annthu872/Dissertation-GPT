@@ -1,0 +1,6 @@
+Verify that users can successfully edit a genre by entering valid 'Name' and 'Description'.
+Verify that the genre can be successfully updated with valid Genre Name and Genre Description entered
+Verify that pressing the 'Cancel' button after entering data but before submitting does not update the genre in the database
+Verify that navigating away from the update page by selecting menu items like 'Books', 'Genres', 'Authors', 'Home', or 'API' after entering data but before submitting does not update the genre in the database
+Verify that the system shows an error message when the Genre Name is not entered
+Verify that the system shows an error message when the Genre Description is not entered

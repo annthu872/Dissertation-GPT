@@ -1,0 +1,13 @@
+Display book details
+
+Main scenario:
+User clicks on the "Title" of the specific book from the list on the book list page;
+Application displays the user-chosen book details;
+
+On book details page the application displays the following columns:
+id - unique book number
+Title
+Author
+Genre
+Description
+Publication date

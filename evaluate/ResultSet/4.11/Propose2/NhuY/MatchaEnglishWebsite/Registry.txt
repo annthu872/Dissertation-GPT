@@ -1,0 +1,15 @@
+1. Successful Registration
+2. Registration with Username Below Minimum Length
+3. Registration with Username Above Maximum Length
+4. Registration with Password Below Minimum Length
+5. Registration with Password Above Maximum Length
+6. Registration with Password Missing a Normal Character
+7. Registration with Password Missing a Capitalized Character
+8. Registration with Password Missing a Number
+9. Registration with Password Missing a Special Character
+10. Registration with Password Same as Username
+12. Username Already Exists
+13. Registration with Invalid Email
+
+Dup:
+11. Registration with Invalid Username

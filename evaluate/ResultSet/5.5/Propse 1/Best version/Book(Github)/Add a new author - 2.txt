@@ -1,0 +1,7 @@
+1. Author Details Entered Including Name and Biography
+2. Create new author record with all valid data
+3. Cancel operation before submitting with all data entered
+4. Navigate away from author creation form before submitting
+5. Submit with missing Name field
+6. Submit with missing Bio field
+7. Submit with any book data entered incorrectly

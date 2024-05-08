@@ -1,0 +1,12 @@
+1. User Accesses Personal Bought Order Page and Views Order Status
+2. Search with valid shop's name
+3. Search with valid order's ID
+4. Search with valid product's ID
+5. Search with invalid input
+6. filter order by status 'All'.
+7. filter order by status 'Waiting for payment'.
+8. filter order by status 'Delivering'.
+9. filter order by status 'Waiting to deliver'.
+10. filter order by status 'Finished'.
+11. filter order by status 'Cancelled'.
+12. filter order by status 'Returned'.

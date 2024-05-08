@@ -1,0 +1,6 @@
+1. User Successfully Adds an Available Item to the Cart
+2. User Tries to Add an Out-of-Stock Item and It Is Saved for Later
+3. Add item to cart with available item
+4. Save item for later when item is not available
+5. Attempt to add item to cart when item is not available
+6. Attempt to save item for later when item is available

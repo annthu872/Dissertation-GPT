@@ -1,0 +1,8 @@
+Verify that the system shows 'Invalid Id' when validation fails at step 3. a1
+Verify that the system requests services that are available at step 5.	a2
+Verify that users can successfully view the list of room services after entering a valid Room ID and pressing the submit button.	a2
+Verify that users can successfully choose services and view the total charges with a success message after entering a valid Room ID.		0
+Verify that after viewing the total charges and success message, the system navigates to the main page.	0-dup
+Verify that the system shows an error message when the Room ID validation fails upon submission.	a1 dup
+
+dup: 2

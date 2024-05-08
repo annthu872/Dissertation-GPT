@@ -1,0 +1,8 @@
+1. Booking Update with Non-existent Booking
+2. Update Booking without Prior Payment Computation
+3. Update Booking with Invalid Field Entries
+4. Booking Update Process Encountering an Error
+5. Update booking with valid booking id and correctly filled fields
+6. Update booking with invalid booking id
+7. Update booking with incorrectly filled fields
+8. Update booking with valid fields but payment not computed

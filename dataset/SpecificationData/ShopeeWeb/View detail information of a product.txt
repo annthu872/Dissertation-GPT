@@ -1,0 +1,16 @@
+View detail information of a product
+
+Objective: this use case allow users to view more information of a product including all options of that product, the store selling the product, shipping options, descriptions and the rating of users who have bought it. 
+Actor: users
+
+Main flow:
+Step 1: User clicks on a product card.
+Step 2: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product.
+
+Alternative flow 1: Product with many options 
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, there are all options of that product with appropriate title (Ex: if the product is lipstick, the title of options should be color, if the product is cake, the title should be flavor) shipping options, how many products left, information of the store sells that product store sells that product, descriptions and ratings of users who have bought the product.
+
+Alternative flow 2: Product out of stock
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, shipping options, how many products left, information of the store sells that product store sells that product, descriptions and ratings of users who have bought the product. On the picture of the product must have a black sticker with white note "Sold out".
+
+

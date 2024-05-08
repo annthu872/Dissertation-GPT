@@ -1,0 +1,8 @@
+1. Verify Booking Addition Fails Without Total Amount Calculation
+2. Verify Error Message for Each Invalid Field Entry During Booking
+3. Verify Failure Message Display on Booking Error
+4. Complete booking with all fields filled and valid total amount
+5. Attempt to book with one or more fields empty
+6. Attempt to add booking without calculating total amount
+7. Attempt to add booking with invalid field data
+8. create Record with Initial status value 'checked in'.

@@ -1,0 +1,3 @@
+Verify that a user can successfully add a booking with all required fields correctly filled and see the booking added with initial status as checked in.
+Verify that the system correctly displays the 'Initial status' as 'checked in' for a valid condition.
+Verify that the system displays an error or different status when an invalid condition is attempted for the 'Initial status'.

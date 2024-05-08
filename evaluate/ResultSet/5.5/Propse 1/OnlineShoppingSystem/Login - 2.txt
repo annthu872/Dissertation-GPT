@@ -1,0 +1,6 @@
+1. Login with valid name and password
+2. Login with name not entered
+3. Login with password not entered
+4. Login with invalid name and valid password
+5. Login with valid name and invalid password
+6. Login with both name and password invalid

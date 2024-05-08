@@ -1,0 +1,2 @@
+Verify that a user can successfully add a booking with all required fields filled correctly and see the booking added with initial status as checked in.
+Verify that the status indicator correctly displays 'checked in' for a valid initial status.

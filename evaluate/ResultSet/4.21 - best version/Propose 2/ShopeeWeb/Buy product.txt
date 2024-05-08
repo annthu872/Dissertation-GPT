@@ -1,0 +1,12 @@
+1. Successful Purchase with Default Delivery Location and Payment Method
+2. Purchase with Change of Delivery Location
+3. Purchase with Change of Payment Method
+4. Purchase with Application of Shop Promotion
+5. Purchase with Application of Platform Promotion
+6. Single Store Purchase Scenario
+7. Multiple Stores Purchase Scenario
+8. Change Delivery Location with Incorrect Name Format
+9. Change Delivery Location with Incorrect Phone Number Format
+10. Change Delivery Location with Unavailable Address
+11. User Applies Product Promotion
+12. User Changes Shipping Option

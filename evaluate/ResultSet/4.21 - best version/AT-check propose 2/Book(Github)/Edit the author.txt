@@ -1,0 +1,6 @@
+1. Successful Author Update  				0
+2. Author Update with Incorrect Data			0
+3. Author Update with System Error			exc
+4. Database Error Scenario				exc
+5. Cancel Operation Scenario				e1
+6. Navigation Away Scenario				e1

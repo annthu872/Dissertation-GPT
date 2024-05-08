@@ -1,0 +1,5 @@
+Verify that the system successfully updates the selected item when a valid item name is provided.
+Verify that the system shows an error when the item name field is empty.
+Verify that the shop owner can successfully add an item when selecting the 'add' option and providing a valid item name.
+Verify that the shop owner can successfully remove an item when selecting the 'remove' option and providing a valid item name.
+Dup: Verify that the system successfully updates the selected item when a valid item name is provided.

@@ -1,0 +1,28 @@
+Condition test scenario:
+Verify that learners can successfully login with a registered username and correct password.	Main flow
+Verify that learners can successfully login with a registered email and correct password.		Alternative flow 1: Login by email
+
+Verify that the system shows a notification for wrong password when a learner tries to login with a registered username but enters a wrong password.		Exception flow 1: Wrong password
+
+Verify that the system shows a notification for unregistered username when a learner tries to login with a username that has not been registered.	Exception flow 2: Unregistered username
+
+Verify that the system shows a notification for unregistered email when a learner tries to login with an email that has not been registered.
+
+Verify that the system shows a notification that the password field needs to be filled when a learner tries to login without entering a password.	Exception flow 4: Blank password fields
+
+Verify that the system shows a notification that the password field needs to be filled when a learner tries to login with a registered email but without entering a password.
+
+Verify that the system shows a notification for unregistered username when a learner tries to login with a blank username field.		Exception flow 2: Unregistered username
+
+
+No Condition test scenario:
+['Verify that the system shows a notification that the username field needs to be filled when a learner attempts to proceed without filling in the username field.']	
+
+
+Excess:
+Verify that the system shows a notification for unregistered email when a learner tries to login with an email that has not been registered.
+
+Verify that the system shows a notification that the password field needs to be filled when a learner tries to login with a registered email but without entering a password.
+
+Dup:
+['Verify that the system shows a notification that the username field needs to be filled when a learner attempts to proceed without filling in the username field.'] 

@@ -1,0 +1,18 @@
+4.6.1 Summary :
+This use case is used for adding a room to the system
+4.6.2 Actors :
+Manager
+4.6.3 Preconditions :
+Manager is logged in with manager account, Room does not already exists in database
+4.6.4 Basic course of events/happy path :
+1. System Shows Room fields
+2. Actor Fills all the fields
+3. Actor Presses add room
+4. System Validate fields
+5. System Add room to database
+6. System Shows room added
+4.6.5 Alternative path :
+6. If invalid field entered show invalid field entered
+11. If invalid field entered show invalid field entered
+4.6.6 Post condition :
+Employee updates; shows Employee page

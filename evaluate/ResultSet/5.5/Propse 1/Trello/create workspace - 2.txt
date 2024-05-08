@@ -1,0 +1,18 @@
+1. Create workspace with valid name, type, and description
+2. Create workspace with valid name and type, skip description
+3. Invite member by username to workspace
+4. Invite member by email to workspace
+5. Create workspace and skip inviting members
+6. Invite member by link to workspace
+7. Create workspace without workspace name
+8. Create workspace without selecting workspace type
+9. Invite more than 9 members to workspace
+10. Invite member with invalid username or email
+11. create Workspace with Workspace type value 'Operations'.
+12. create Workspace with Workspace type value 'Human Resources'.
+13. create Workspace with Workspace type value 'Engineering'.
+14. create Workspace with Workspace type value 'Marketing'.
+15. create Workspace with Workspace type value 'Small Business'.
+16. create Workspace with Workspace type value 'Sales'.
+17. create Workspace with Workspace type value 'Education'.
+18. create Workspace with Workspace type value 'Other'.

@@ -1,0 +1,11 @@
+1. Create Boards Using Template from Start Button
+2. Create New Boards Directly from Template Tab
+3. Create a new board with filled Board title
+4. Attempt to create a new board with Board title not filled
+5. create board with 'Create board' option selected from dropdown options button.
+6. create board with 'start with a template' option selected from dropdown options button.
+7. create board with 'create workspace' option selected from dropdown options button.
+8. create board with 'Workspace' combo box selecting a user's created workspace.
+9. create board with 'Visibility' combo box value 'Private'.
+10. create board with 'Visibility' combo box value 'Workspace'.
+11. create board with 'Visibility' combo box value 'Public'.

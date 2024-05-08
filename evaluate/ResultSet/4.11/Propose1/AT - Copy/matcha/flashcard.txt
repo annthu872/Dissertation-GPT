@@ -1,0 +1,13 @@
+No Condition test scenario:
+
+Verify that a learner can successfully navigate through the 'Learn New Word' tab to study a topic, flip flashcards, navigate between them, and return to the lesson page upon completion.	basic flow:
+
+Verify that when a learner presses the 'back' button during flashcard study and then selects 'stay', they are returned to the current flashcard without losing progress.	Alternative flow 1:
+
+Verify that after completing a topic and selecting 'continue studying', the topic is marked as completed, vocabulary words are marked as studied, and the learner is redirected to the next topic's Flashcard page.	Alternative flow 2:
+
+Verify that a learner can continue studying an incomplete topic directly from the Home Page, resuming from the last unviewed flashcard.	Alternative flow 3
+
+Verify that when a learner tries to click the 'Previous' button on the first flashcard, the button is disabled and a message is displayed indicating there is no previous vocabulary to display.	Alternative flow 4: 
+
+Verify that when a learner presses the 'back' button during flashcard study and selects 'exit', they are returned to the topic page, the topic is marked as incomplete, and displayed on the home page.	Exception flow:

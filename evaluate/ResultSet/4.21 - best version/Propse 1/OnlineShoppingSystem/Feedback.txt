@@ -1,0 +1,3 @@
+Verify that after checkout, the user can enter details, which are then saved and acknowledged, and feedback is sent to the shop owner.
+
+Missing:     "If the use case is successful, The feedback will be sent to the shop owner.

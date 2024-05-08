@@ -1,0 +1,8 @@
+1. User Navigates to Shopping Cart and Views Products
+2. User Removes a Product from Their Shopping Cart by Erasing It
+3. User Attempts to Remove a Product by Erasing but Cancels
+4. User Removes a Product by Decreasing Quantity to Zero
+5. User Attempts to Remove a Product by Decreasing Quantity to Zero but Cancels
+6. User Increases a Product's Quantity in Their Shopping Cart
+7. User Decreases a Product's Quantity in Their Shopping Cart
+8. User Changes Options of a Product in Their Shopping Cart

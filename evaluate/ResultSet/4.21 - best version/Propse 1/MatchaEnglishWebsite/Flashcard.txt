@@ -1,0 +1,6 @@
+Verify that a learner can successfully navigate through the 'Learn New Word' tab, select a lesson and topic, study flashcards, and return to the lesson page after completing the flashcards.
+Verify that when a learner presses the 'back' button during flashcard study and then presses 'stay', they are kept on the current flashcard page.
+Verify that after completing a topic, clicking 'continue studying' marks the topic as completed, allows for review, and redirects to the next topic's flashcards.
+Verify that clicking an incomplete topic from the Home Page redirects the learner to the corresponding flashcard page of that topic.
+Verify that the 'Previous' button is disabled and displays a message when the learner is on the first flashcard.
+Verify that pressing the 'back' button during flashcard study and then pressing 'exit' returns the learner to the topic page, marking the topic as incomplete.

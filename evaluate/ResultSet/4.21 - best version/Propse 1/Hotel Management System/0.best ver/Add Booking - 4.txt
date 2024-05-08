@@ -1,0 +1,5 @@
+Verify that a user can successfully add a booking with all required fields filled correctly and see the booking added with initial status as checked in. 0
+Verify that the system correctly displays the 'Initial status' as 'checked in' for a valid condition. 0-dup
+
+dup: 1
+mis: 3

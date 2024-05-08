@@ -1,0 +1,13 @@
+1. Admin Navigates to Lesson Management Page from Homepage
+2. Admin Skips Compulsory Field 'Correct Answer' and Attempts to Save
+3. Admin Chooses to Stay When Prompted to Cancel the Question
+4. Admin Leaves by Browser Back Button Without Saving the Question
+5. Admin Chooses to Confirm Cancellation of the Question
+6. Create a new question with valid sentence and all options filled
+7. Create a new question with sentence over 250 characters
+8. Create a new question with sentence containing special characters
+9. Create a new question without '...' in the sentence
+10. Create a new question without filling the correct answer
+11. Create a new question without filling other option 1
+12. Create a new question without filling other option 2
+13. Create a new question without filling other option 3

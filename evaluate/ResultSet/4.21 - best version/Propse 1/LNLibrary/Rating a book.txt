@@ -1,0 +1,8 @@
+Verify that users can successfully post a review with a valid review text
+Verify that the system shows a notification for missing review text when the review box is empty
+Verify that users can successfully rate a book with 1 star and their review is saved and shown on the book's page.
+Verify that users can successfully rate a book with 2 stars and their review is saved and shown on the book's page.
+Verify that users can successfully rate a book with 3 stars and their review is saved and shown on the book's page.
+Verify that users can successfully rate a book with 4 stars and their review is saved and shown on the book's page.
+Verify that users can successfully rate a book with 5 stars and their review is saved and shown on the book's page.
+Verify that the system shows a notification saying that rating point cannot be below 1 if the user did not click on any star.

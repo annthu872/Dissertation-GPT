@@ -1,0 +1,4 @@
+1. Add an item successfully
+2. Remove an item successfully
+3. Attempt to add an item that already exists
+4. Attempt to remove an item that does not exist

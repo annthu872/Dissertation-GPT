@@ -1,0 +1,27 @@
+use case name: create boards
+main flow: 
+Step 1: User click button 'Create' on the navbar.
+Step 2: system show up drop down with options button: Create board, start with a template, create workspace.
+Step 3: user click create board.
+Step 4: System show up dropdown with text field 'Board title', combo box 'Workspace', combo box 'Visibility', button 'Create' is disable, button 'Use template'. 'Board title' is required and the button 'Create' will be change to clickable when 'Board title' is filled . 'Workspace''s value default is your lastest open workspace, 'Workspace''s options are the user's created workspace . 'Visibility' value default is Workspace, 'Visibility' option is Private, Workspace, Public.
+Step 5: User enter 'Board title'.
+Step 6: User select 'Workspace' value.
+Step 7: User select 'Visibility' value.
+Step 8: The button 'Create' is clickable.
+Step 9: User click 'Create' button.
+Step 10: New board is created and the system redirect user to that new board.
+
+alternative flow:
+alternative flow 1: create boards with create button and template.
+At step 3 of the basic flow: user click 'start with a template'
+step 4: system display a list of template.
+step 5: user click one of the template.
+step 6: the system enter the board's name with the template's name. 
+Go back to step 9 in the basic flow and continue with the steps from step 9.
+
+alternative flow 2: create new boards by template tab.
+At step 1 of the basic flow: user click templates tab.
+step 2: system display a list of template.
+step 3: user click one of the template.
+step 4: the system enter the board's name with the template's name. 
+Go back to step 9 in the basic flow and continue with the steps from step 9.

@@ -1,0 +1,15 @@
+Validate Customer
+
+Description
+This use case is necessary for the user to checkout. This use case authenticates the credentials of the user.
+
+Basic Flow
+This use case starts when the actor proceeds to checkout of the online shopping system.
+1.The system checks the user id and password.
+2.The system authenticates the user and is allowed to continue.
+
+Pre-Conditions
+The actor must be a registered user and must be logged into the system.
+
+Post-Conditions
+If the use case was successful, the authenticated actor will be allowed to checkout.

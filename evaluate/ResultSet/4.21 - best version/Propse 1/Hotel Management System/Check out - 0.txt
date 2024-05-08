@@ -1,0 +1,3 @@
+Verify that the system redirects to the main page and shows an error message when there is no room linked to the booking ID in the database.-a2
+Verify that the system successfully completes the booking process with a valid Booking ID  - 0
+Verify that the system shows an error and redirects to the main page when an invalid Booking ID is entered a1

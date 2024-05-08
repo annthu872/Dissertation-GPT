@@ -1,0 +1,4 @@
+Verify that users can successfully search from the 'Attraction' page after selecting the 'Attraction' tab on the navbar.
+Verify that users can successfully search by entering a valid attraction keyword and pressing enter.
+Verify that users can successfully search by clicking a specific keyword from the system's keyword suggestion.
+Verify that the system shows an error or does not proceed when the search bar input is empty and enter is pressed.

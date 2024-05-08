@@ -1,0 +1,20 @@
+4.4.1 Summary :
+This use case is used for adding an employee to the system
+4.4.2 Actors :
+Manager
+4.4.3 Preconditions :
+Manager is logged in with manager account
+4.4.4 Basic course of events/happy path :
+1. Actor Clicks Employee
+2. System Shows Employee menu
+3. Actor Fill all the fields and clicks Add
+4. System Validate fields
+5. System Add employee to database
+6. System Shows employee added
+7. System Generates id and password
+4.4.5. Alternative path :
+(4) If fields are left unfilled shows message all fields are required
+(4) If invalid field entered show invalid field entered
+4.4.6. Post condition :
+1. Employee added
+2. Shows Employee page

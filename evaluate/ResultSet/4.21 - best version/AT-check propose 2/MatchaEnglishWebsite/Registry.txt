@@ -1,0 +1,13 @@
+1. Successful Registration 0 
+2. Registration with Username Below Minimum Length	e1
+3. Registration with Username Above Maximum Length	e1
+4. Registration with Password Below Minimum Length	e2
+5. Registration with Password Above Maximum Length	e2
+6. Registration with Password Missing a Normal Character	e2
+7. Registration with Password Missing a Capitalized Character	e2
+8. Registration with Password Missing a Number	e2
+9. Registration with Password Missing a Special Character	e2
+10. Registration with Password Same as Username	e2
+11. Register By Email With Invalid Format	e4
+12. Register By Email With Non-Existent Email	e4
+13. Username Already Exists Scenario	e3

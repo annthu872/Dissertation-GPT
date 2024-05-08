@@ -1,0 +1,7 @@
+dict_keys(['Verify that users can successfully login with a registered username and correct password.'])
+dict_keys(['Verify that users can successfully login with a registered email and correct password.'])
+dict_keys(['Verify that users cannot login with an unregistered username.'])
+dict_keys(['Verify that users cannot login with a blank username field.'])
+dict_keys(['Verify that users cannot login with a wrong password for a registered username.'])
+dict_keys(['Verify that users cannot login with a wrong password for a registered email.'])
+dict_keys(['Verify that users cannot login with a blank password field.'])

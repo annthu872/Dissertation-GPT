@@ -1,0 +1,20 @@
+4.3.1 Summary:
+Hotel Owner should be able to view statistics and generate reports about things like his
+4.3.2 Actors:
+- Hotel Owner
+4.3.3 Preconditions:
+- User is authenticated
+- User has role of Hotel Owner
+- User has access to Reports Page
+4.3.4 Basic course of events/happy path:
+1. User Click on Reports Button
+2. System Show parameters for reports
+3. User Enters the parameters to generate a report. I.e. Date period selection.
+4. System Check if parameters are valid
+5. System Generate the report according to the selected date and other parameters
+6. User opens specific report
+7. System Show Report Details
+4.3.5 Alternative path:
+(4) If validation fails show error
+4.3.6 Post condition:
+2. User will be on the report details page

@@ -1,0 +1,6 @@
+1. Add product without options to cart
+2. Add product with available options to cart
+3. Adjust quantity and add product without options to cart
+4. Adjust quantity and add product with available options to cart
+5. Attempt to add out of stock product to cart
+6. Attempt to select an out of stock product option

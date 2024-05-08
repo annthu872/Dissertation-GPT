@@ -1,0 +1,35 @@
+Search feature
+
+Objectives: This use case allows user to search for what product, brand or shop they are interested in.
+
+Preconditions: User is in Home page
+
+Main flow: 
+Step 1: User types a product name in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows a list of shops that sells the product and list of all the related products from many shops.
+
+Alternative flow 1:
+Step 1: User types a brand name in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows list of all the products from that brand from many shops. If that brand has it own official stores, system will shows that store
+
+Alternative flow 2:
+Step 1: User types a shop name in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows all the shop that has the same name and product that has the same word that user typed in.
+
+Exception flow 1:
+Step 1: User types an unavailable keyword that is not the same with any shop, brand or product available in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows a blank list and recommend user to try another keywords.
+
+Exception flow 2:
+Step 1: User types an unavailable keyword that is not the same with any brand or product available in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows all the shop that has the same name a blank product list and recommend user to try another keywords.
+
+Exception flow 3:
+Step 1: User types an unavailable keyword that is not the same with any shop available in the search bar.
+Step 2: User clicks on the search icon or press enter.
+Step 3: System shows a blank shop listm recommend user to try another keywords and shows list of all the related products from many shops.

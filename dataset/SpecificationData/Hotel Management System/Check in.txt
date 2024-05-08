@@ -1,0 +1,16 @@
+4.10.1 Summary :
+This use case is used to check into the room.
+4.10.2 Actors :
+Guest
+4.10.3 Preconditions :
+The user must have valid booking ID
+4.10.4 Basic course of events/happy path :
+1. Actor Enters Booking ID
+2. Actor Press submit button
+3. System Validate Booking ID
+4. System Upon successful validation update the booking details with room ID
+5. System Show success and go to main page
+4.10.5 Alternative path :
+4. If user Enters incorrect Booking ID go back to main page and show error
+4.10.6 Post condition :
+User will be shown a “check in successful” message and will be directed to the main page

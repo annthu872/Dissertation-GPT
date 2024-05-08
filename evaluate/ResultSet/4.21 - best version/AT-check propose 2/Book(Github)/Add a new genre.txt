@@ -1,0 +1,5 @@
+1. Successful Genre Creation		0
+2. Genre Creation with Incorrect Data	0-fail
+3. Genre Creation Failure Due to System Error	exc
+4. Cancel Operation Before Data Submission	e1
+5. Navigation Away Before Submission		e1

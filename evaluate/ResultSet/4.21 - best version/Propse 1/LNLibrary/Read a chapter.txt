@@ -1,0 +1,3 @@
+Verify that users can successfully navigate to a chapter's content page by selecting a chapter from the book's detail page.
+Verify that users can continue reading from the last chapter they read by selecting it from the Recently list.
+Verify that users can access a recently updated chapter directly from the homepage and be redirected to the chapter's content page.

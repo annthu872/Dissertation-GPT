@@ -1,0 +1,27 @@
+Add a new book
+Description
+The creation page is designed to create a record of the new book in the database.
+
+Main scenario:
+User clicks the "Create new" button in the book list page;
+Application displays form to enter book data;
+User enters book data and presses "Submit" button;
+If any data is entered incorrectly, incorrect data messages are displayed;
+If entered data is valid, then record is adding to database;
+If error occurs, then error message is displaying;
+If new book record is successfully added, then list of books with added records is displaying.
+
+Cancel operation scenario:
+User clicks the "Create new" button in the book list page;
+Application displays form to enter book data;
+User may start entering the data into the form fields;
+Before pressing "Submit" button user presses “Cancel” button;
+Data doesn’t save in the database, then a list of books records is displayed to the user;
+If the user selects the menu item "Books”, "Genres”, "Authors", "Home" or "API", the data will not be saved to the database, and the corresponding form with updated data will be opened.
+
+When creating a new book, the following details are entered:
+Title
+Author
+Genre
+Description
+Publication date

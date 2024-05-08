@@ -1,0 +1,2 @@
+Verify that a user can successfully delete a genre by confirming the deletion in the confirmation dialog.
+Verify that a genre is not deleted and the user is redirected back to the genre list when the 'Cancel' button is clicked in the deletion confirmation dialog.

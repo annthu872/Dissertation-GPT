@@ -1,0 +1,7 @@
+1. Successful Comment Posting	0
+2. Comment Posting with Network Error	exc
+3. Comment Posting with Empty Comment Field	e1
+4. Comment Posting with Exceeding Character Limit	0-fail
+5. User Clicks on Film Cover Instead of Scrolling to Comment Section	a1
+6. User Comments on a Specific Episode of a Film	a2
+7. User comments with prohibited words	e2

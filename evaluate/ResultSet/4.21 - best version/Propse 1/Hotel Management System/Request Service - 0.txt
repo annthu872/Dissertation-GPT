@@ -1,0 +1,6 @@
+Verify that the system shows 'Invalid Id' when validation fails at step 3 and requests services that are available at step 5.		a1+a2
+Verify that users can successfully view the list of room services after entering a valid Room ID and pressing the submit button.	a2
+Verify that the system shows 'Invalid Id' notification when the Room ID validation fails.	a1
+
+mis: main flow (1)
+dup: 1

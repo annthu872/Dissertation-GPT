@@ -1,0 +1,6 @@
+Verify that pressing the 'Cancel' button while updating an author's details does not save changes and returns to the author list.
+Verify that the author data is successfully updated with valid Name and Bio data entered
+Verify that the system shows a notification for invalid Name when no data is entered in the Name field
+Verify that the system shows a notification for invalid Bio when no data is entered in the Bio field
+Verify that the author data is not updated and the user is redirected to the authors list without changes when the Cancel button is pressed
+Verify that the author data is not updated in the database when the user navigates away by selecting menu items before submitting

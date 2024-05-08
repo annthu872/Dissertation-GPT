@@ -1,0 +1,47 @@
+Add a type of product into cart
+
+Objective: This use case allow users to add a type of product into their shopping cart. When adding product into shopping cart, users can choose quantity and any options available of the product.
+Actor: users
+
+Preconditions: User must have loged in to be able to add a product into shopping cart. User is in any page that has product card.
+
+Main flow:
+Step 1: User clicks on a product card.
+Step 2: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product.
+Step 3: User clicks add to cart button.
+Step 4: System adds the product into the user's shopping cart.
+
+Alternative flow 1: Product has many options
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product. There must be a section that infors all of the available options of the product.
+Step 3: User chooses one of product's available options.
+Step 4: User clicks add to cart button.
+Step 5: System adds the product into the user's shopping cart.
+
+Alternative flow 2: Product has many options
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product. There must be a section that infors all of the available options of the product.
+Step 3: User clicks add to cart button.
+Step 4: System infors user that they did not selected one option yet.
+Step 5: User chooses one of product's available options
+Step 6: User clicks add to cart button.
+Step 7: System adds the product into the user's shopping cart.
+
+Alternative flow 3: User adjust quantity of product
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product.
+Step 3: User adjust quantity of product by clicking plus or minus button of the quantity section until the number reachs what user want.
+Step 4: User clicks add to cart button.
+Step 5: System adds the product into the user's shopping cart.
+
+Alternative flow 4: User adjust quantity of product has many options
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product. There must be a section that infors all of the available options of the product.
+Step 3: User chooses one of product's available options.
+Step 4: User adjust quantity of product by clicking plus or minus button of the quantity section until the number reachs what user want.
+Step 5: User clicks add to cart button.
+Step 6: System adds the product into the user's shopping cart.
+
+Exception flow 1: Product out of stock
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product. On the picture of the product must have a black sticker with white note "Sold out".
+Step 3: User tries to click add to cart button but the button is not clickable.
+
+Exception flow 2: One of product option is out of stock
+At step 2 of the main flow: System navigates user to the product's detail page of the chosen product. There should be information about the product's name, a picture of the product, shipping options, how many products left, information of the store sells that product, descriptions and ratings of users who have bought the product. There must be a section that infors all of the available options of the product.
+Step 3: User chooses one of product's option that is colored grey and cannot choose it because it is not clickable.

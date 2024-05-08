@@ -1,0 +1,6 @@
+1. Login with valid username and correct password
+2. Login with valid email and correct password
+3. Login with wrong password
+4. Login with unregistered username
+5. Login with blank username field
+6. Login with blank password field

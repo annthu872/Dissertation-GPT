@@ -1,0 +1,5 @@
+Verify that the system shows a 'all fields are required' message when fields are left unfilled at step 4. e5
+Verify that the system shows an 'invalid field entered' message when an invalid field is entered at step 4.	e5
+Verify that the system successfully adds an employee when all fields are filled correctly. 0
+Verify that the system shows an error when trying to add an employee with one or more fields left unfilled.
+Verify that the system shows an error when trying to add an employee with one or more fields filled incorrectly.

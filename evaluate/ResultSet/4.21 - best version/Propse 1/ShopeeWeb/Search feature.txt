@@ -1,0 +1,6 @@
+Verify that the system shows a list of shops and related products when a valid product name is typed in the search bar and the search is initiated.
+Verify that the system shows the official store and related products from that brand when a valid brand name is typed in the search bar and the search is initiated.
+Verify that the system shows all shops with the same name and products with the same word when a valid shop name is typed in the search bar and the search is initiated.
+Verify that the system shows a blank list and recommends trying another keyword when the keyword does not match any product, brand, or shop name, and the search is initiated.
+Verify that the system shows all shops with the same name, a blank product list, and recommends trying another keyword when the keyword does not match any brand or product available, and the search is initiated.
+Verify that the system shows a blank shop list, recommends trying another keyword, and shows related products when the keyword does not match any shop available, and the search is initiated.

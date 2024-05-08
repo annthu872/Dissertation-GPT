@@ -1,0 +1,8 @@
+Verify that users can successfully edit a book's details including Title, Author, Genre, Description, and Publication date.
+Verify that the book record is successfully updated with valid Title, Author, Genre, Description, and Publication date
+Verify that the system shows a notification for invalid Title when the Title is not entered
+Verify that the system shows a notification for invalid Author when the Author is not entered
+Verify that the system shows a notification for invalid Genre when the Genre is not entered
+Verify that the system shows a notification for invalid Description when the Description is not entered
+Verify that the system shows a notification for invalid Publication date when the Publication date is not entered
+Verify that the system shows a notification for invalid Publication date when the Publication date is entered in an incorrect format

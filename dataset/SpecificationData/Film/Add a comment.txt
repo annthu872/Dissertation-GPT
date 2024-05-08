@@ -1,0 +1,34 @@
+Add a comment
+Objective: this use case allow users to add a comment for a film.
+
+Actor: users
+
+Preconditions: User is in any page with film's card.
+
+Main flow:
+Step 1: User clicks on a film's card that user want to comment.
+Step 2: User scrolls down to comment section.
+Step 3: User types their comment in the field.
+Step 4: User clicks on the Comment button.
+Step 5: System posts user's comment succesfully,
+
+Alternative flow 1:
+At step 2 of the main flow: User clicks on the film cover.
+Step 3: System redirects user to a page with a video.
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+
+Alternative flow 2:
+At step 2 of the main flow: User chooses one episode of the film.
+Step 3: System redirects user to a page with a video.
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+
+Exception flow 1:
+At step 3 of the main flow: User does not type anything in the comment field.
+Step 4: User clicks on the Comment button.
+Step 5: System shows a notification to inform that user must type in the field.
+
+Exception flow 2:
+At step 5 of the main flow: System finds out there are words that violate the community rules.
+Step 6: System shows a notification indicates user to check their comment.
+
+

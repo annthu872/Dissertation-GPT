@@ -1,0 +1,11 @@
+No Condition test scenario:
+Verify that learners are redirected to the review screen upon selecting the review button on the Home page, can interact with the review mechanism (selecting answers, proceeding with correct or incorrect answers), and successfully proceed to the next word or complete the review session.		Main flow:
+
+
+Verify that upon selecting a wrong answer during a review session, the system shows a red word, decreases the memory level of the word, and allows the learner to continue to the next word.	Alternative flow 1:
+
+Verify that upon reviewing the last word in the review list and pressing the 'Continue' button, learners are redirected back to the Home page and the review session is saved.	Alternative flow 2:
+
+Verify that upon pressing the 'Exit' button during a review session and then selecting 'Stay' on the pop-up, learners are returned to the same point in the review session without losing progress.	Alternative flow 3:
+
+Verify that upon pressing the 'Exit' button and confirming the action to exit during a review session, learners are redirected to the Home page without saving the review progress.	Exception flow 1:

@@ -1,0 +1,31 @@
+use case id: U27
+use case name: Edit test
+objective: This use case allows administrator to edit tests to test users’ vocabulary memorization level.
+actor: administrators
+
+basic flow:
+Step 1: On the home page, administrator select “Topic” on the navbar
+Step 2: Administrator chooses the topic that has the test needed editing, then select “Edit”
+Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test appear, displaying the lists of vocabulary in the topic and category of vocabulary exercises. 
+Step 4: Administrator edits the exercises
+Step 5: Administrator selects “Save”
+Step 6: System save all edited exercises.
+
+Alternative flow :
+At step 5 of the basic flow: Administrator press the button to exit exercise editing mode.
+Step 6: The pop up screen appears “Save changes?” with “Save” and “Do not save” options.
+Step 7: Administrator selects “Save”.
+Step 8: System save all edited exercises.
+
+Exception flow: 
+At step 5 of the basic flow: Administrator press the button to exit exercise editing mode.
+Step 6: The pop up screen appears “Save changes?” with “Save” and “Do not save” options.
+Step 7: Administrator selects “Do not save”.
+Step 6: System deletes and not record the edited exercises
+
+Preconditions:
+Vocabulary that administrator adds to exercises must existed in the system before.
+The fill in the blanks in sentences exercises must have existed vocabulary in the system.
+
+Postconditions:
+Edited English vocabulary exercises is updated and recorded in the system.

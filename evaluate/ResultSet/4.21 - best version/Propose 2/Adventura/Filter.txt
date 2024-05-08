@@ -1,0 +1,7 @@
+1. Scenario: User selects "Museum" from the list of destinations.
+2. Scenario: User selects "Zoo" from the list of destinations.
+3. Scenario: User selects "Aquarium" from the list of destinations.
+4. Scenario: User selects "Mall" from the list of destinations.
+5. Scenario: User selects "Cuisine" from the list of destinations.
+6. Scenario: User selects "Hotel" from the list of destinations.
+7. Scenario: User selects a type of destination with no available results.

@@ -1,0 +1,39 @@
+Context + use case specification -> test scenario -> extract steps to cover scenario -> test scenario + steps -> test case
+Review test
+Main flow:
+Step 1: Learners select the review button on the Home page. 
+Step 2: The system redirects learners to the review's screen.
+Step 3: System randomly selects one of four methods including questions, sound, image or meanings of one word for each words in learner's daily review words list with four selections of answer in the bottom of the screen. 
+Step 4: Learners chooses by clicking on one of four selections.
+Step 5: Learners click the right answer. 
+Step 6: System shows a green word for learners to read. 
+Step 7: This word is increased by the system in memory level.
+Step 8: Learners press "Continue" button to go to the next word in the review words list.
+
+Alternative flow 1: Learners choose the wrong answer
+At step 5 of the basic flow: Learners click the wrong answer. 
+Step 6: System shows a red word for learners to read. . 
+Step 7: This word is decreased by the system in memory level.
+Go back to step 8 in the basic flow and continue with the steps from step 8.
+
+Alternative flow 2: Learners have done the review by coming to the last word in the review list
+At step 8 of the basic flow: Learners press "Continue" button to go back to the Home page.
+Step 9: System saved the review.
+
+Alternative flow 3: Learners press "Exit" button and choose to stay
+At step 4 of the basic flow: Learners press "Exit" button.
+Step 5: System displays a pop up with two buttons "Confirm" and "Stay". 
+Step 6: Learners choose "Stay".
+Go back to step 4 in the basic flow and continue with the steps from step 4
+
+Exception flow 1: Learners press "Exit" button and choose to exit
+At step 3 of the basic flow: Learners press "Exit" button.
+Step 4: System displays a pop up with two buttons "Confirm" and "Stay". 
+Step 5: Learners choose "Confirm". 
+Step 6: System redirect learners to Home page and the review will not be saved.
+
+Pre condition:
+User has login as learner. In their account, there are some words has been learned so there will be a review words list for today.
+
+Post condition:
+Update the status of vocabulary (memory level, review time) corresponding to the results of exercise checking. The status of the vocabulary to be reviewed is changed. The done review is saved and user could look back.

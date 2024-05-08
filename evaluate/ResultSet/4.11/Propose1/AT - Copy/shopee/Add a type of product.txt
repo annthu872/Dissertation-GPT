@@ -1,0 +1,23 @@
+Condition test scenario:
+
+Verify that user can successfully adjust quantity and add a product without options to the cart	Alternative flow 3:
+
+Verify that user can successfully choose an option, adjust quantity, and add a product with options to the cart 	Alternative flow 4
+
+Verify that user cannot select a product option that is out of stock Exception flow 1:
+
+No Condition test scenario:
+
+Verify that when a user clicks on a product card, they are navigated to the product's detail page where they can view product information and successfully add the product to their shopping cart by clicking the add to cart button. 	Main flow:
+
+
+Verify that for products with multiple options, when a user is on the product's detail page, they can view all available options, select one, and successfully add the chosen option to their shopping cart.	Alternative flow 1:
+
+Verify that if a user attempts to add a product with multiple options to their shopping cart without selecting an option, the system prompts the user to select an option before successfully adding the product to the cart.	Alternative flow 2:
+
+Verify that if a product is out of stock, the product's detail page displays a 'Sold out' sticker on the product picture, and the add to cart button is not clickable. Exception flow 1:
+
+Verify that if one of the product's options is out of stock, the option is displayed in grey, is not selectable, and the user cannot add this out-of-stock option to their shopping cart. 	Exception flow 2:
+
+
+Dup : Verify that user cannot select a product option that is out of stock Exception flow 1:

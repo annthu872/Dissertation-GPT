@@ -1,0 +1,1 @@
+Verify that selecting 'Genres' displays a paginated list of genres with columns id, Name, and Description, and that navigation through pages works correctly.

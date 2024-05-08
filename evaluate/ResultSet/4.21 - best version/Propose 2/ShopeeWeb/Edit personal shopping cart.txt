@@ -1,0 +1,17 @@
+1. Cart Display with Multiple Products
+2. Cart Display with a Single Product
+3. Cart Display with Products from Multiple Shops
+4. Cart Display with Products Having Multiple Options Selected
+5. Cart Display with Products Having Promotions Applied
+6. Empty Cart Display
+7. Cart Display with Products Having Quantity Adjustments
+8. Removing a Product from the Shopping Cart
+9. User decides to remove a product but cancels the removal
+10. Removing a Product by Decreasing Quantity to Zero
+11. Product Quantity Adjustment with Cancellation
+12. Product Quantity Increase Due to Stock Availability
+13. Product Quantity Increase with Promotion Applied
+14. Product Quantity Increase for Different Options
+15. Product Quantity Increase and Price Update
+16. Decrease Product Quantity to Desired Number Scenario
+17. Product Option Change Scenario

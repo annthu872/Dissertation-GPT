@@ -1,0 +1,12 @@
+<<<<<<< Updated upstream
+1. Scenario: Viewing Vocabulary List in Handbook
+2. Learner Uses Search Function in Handbook
+3. Learner Searches for a Meaningless Vocabulary
+4. Learner Unticks a Vocabulary Checkbox
+5. Learner Marks Vocabulary for Review
+=======
+1. Learner Searches for a Specific Vocabulary Word	a1
+2. Learner searches for a meaningless vocabulary in the Handbook	a2
+3. Learner Unticks a Vocabulary Checkbox	a3
+4. Marking a Vocabulary for Review	a4
+>>>>>>> Stashed changes

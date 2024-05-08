@@ -1,0 +1,2 @@
+Verify that a user can successfully delete a book record after confirming the deletion.
+Verify that a book record is not deleted and the user is redirected back to the book list when the cancel button is clicked during the deletion confirmation.

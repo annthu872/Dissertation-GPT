@@ -1,0 +1,17 @@
+"Verify that a user can successfully purchase a product by selecting it, proceeding to payment, and confirming the order with default delivery and payment options.",
+    "Verify that selecting a store automatically selects all products from that store in the shopping cart and allows the user to proceed with the purchase.",
+    "Verify that a user can change the delivery location to a previously saved location during checkout and successfully complete the purchase.",
+    "Verify that a user can apply a shop or product's promotion voucher to their order, see the price recalculated, and successfully complete the purchase.",
+    "Verify that a user can apply a platform's promotion voucher to their order, see the order's price recalculated, and successfully complete the purchase.",
+    "Verify that a user can change the shipping option for their order, see the order's price recalculated based on the new shipping method, and successfully complete the purchase.",
+    "Verify that a user can change the payment method for their order and successfully complete the purchase with the new payment method."
+  "Verify that user can successfully change delivery location with a valid name, phone number, and exact location address",
+  "Verify that user cannot change delivery location with a name less than 2 letters",
+  "Verify that user cannot change delivery location with a name containing non-letter characters",
+  "Verify that user cannot change delivery location with a phone number not in the format (+84) xxx xxx xxx",
+  "Verify that user cannot change delivery location with an exact location address not found on the map provided by platform"
+ "Verify that users can successfully select 'own house' as the location type when adding a new delivery location.",
+    "Verify that users can successfully select 'working place' as the location type when adding a new delivery location."
+
+Dup: 0 
+Excess: 0

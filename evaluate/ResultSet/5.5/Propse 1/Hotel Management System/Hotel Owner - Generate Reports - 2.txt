@@ -1,0 +1,5 @@
+1. Display Error on Failed Validation
+2. Generate report with valid date range and format
+3. Generate report with parameters outside the allowed date range
+4. Generate report with start date after end date
+5. Generate report with dates outside the allowed range

@@ -1,0 +1,18 @@
+Login
+
+Description
+This use case describes how a registered user logs into his account. A registered user can log in and, upon verification, can initiate subsequent actions.
+
+Basic Flow
+This use case starts when the actor wishes to Login to the Payroll System.
+1. The system requests that the actor enter his/her name and password
+2. The actor enters his/her name and password.
+3. The system validates the entered name and password and logs the actor into the system.
+
+Alternative Flows
+Invalid Name/Password
+If, in the Basic Flow, the actor enters an invalid name and/or password, the system displays an error message. The actor can choose to either return to the beginning of the Basic Flow or cancel the login, at which point the use case ends.
+
+Post-Conditions
+If the use case was successful, the actor is now logged into the system.  If not, the system state is unchanged.
+

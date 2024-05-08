@@ -1,0 +1,21 @@
+Condition test scenario:
+
+1.Verify that user can successfully remove a product from their shopping cart by ticking the product selection checkbox and clicking the Erase button, then confirming the action by clicking Yes on the popup.
+2.Verify that user can change their mind after clicking the Erase button by selecting No on the confirmation popup, keeping the product in the shopping cart.
+3.Verify that user can successfully change the option of a product in the shopping cart by using the product option dropdown.
+
+No Condition test scenario:
+
+4.Verify that when a user clicks on the shopping cart icon at the top right of the screen, they are navigated to the cart's page displaying all added but not yet purchased products with their details such as shop name, price, promotions, quantity, and selected options.
+
+5.Verify that when a user decreases the quantity of a product to zero by repeatedly clicking the minus button, a confirmation pop-up appears, and upon clicking 'Yes', the product is removed from the shopping cart.
+
+6.Verify that when a user decreases the quantity of a product to zero by repeatedly clicking the minus button and then clicks 'No' on the confirmation pop-up, the product remains in the shopping cart with the last set quantity.
+
+7.Verify that a user can increase the quantity of a product in their shopping cart to a desired number by clicking the plus button in the quantity section.
+
+8.Verify that a user can decrease the quantity of a product in their shopping cart to a desired number by clicking the minus button in the quantity section.
+
+
+Excess: None
+Dup: None

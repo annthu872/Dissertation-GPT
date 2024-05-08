@@ -1,0 +1,16 @@
+Bookmark
+Objective: this use case allow users to bookmark something in the book they like or where they are reading so they can come back to that part later.
+
+Actor: users
+
+Preconditions: User must be logged in and is in a chapter's page.
+
+Main flow:
+Step 1: User points their mouse on the content they want to bookmark.
+Step 2: User clicks on the bookmark icon appears next to the content.
+Step 3: A bookmark list appears.
+Step 4: User clicks on Create bookmark button on the bookmark list.
+Step 5: System saves the bookmark into the bookmark's list.
+
+Exception flow 1:
+At step 4 of the main flow: If the content has been bookmarked, there will be no button but the bookmark appear in the bookmark's list.

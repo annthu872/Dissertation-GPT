@@ -1,0 +1,3 @@
+Verify that an existing booking can be successfully updated with valid changes and payment recalculated, resulting in a success message.
+
+mis: 4

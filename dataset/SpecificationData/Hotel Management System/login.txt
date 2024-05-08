@@ -1,0 +1,21 @@
+4.1 Login
+4.1.1 Summary:
+The Actors who have access to the system will authenticate into the system using the Login
+Page.
+4.1.2 Actors:
+- Hotel Owner
+- Manager
+- Employee
+4.1.3 Preconditions:
+- The User is not authenticated.
+- User is on the login page
+4.1.4 Basic course of events/happy path:
+1. Actor Enters Credentials (username and password)
+2. Actor Press submit button
+3. System Validate Credentials
+4. System Upon successful validation go to Main
+page for relevant user
+4.1.5 Alternative path:
+- (4) If user Enters incorrect credentials go back to login page and show error
+4.1.6 Post condition:
+1. User will get redirected to the dashboard for his specific user

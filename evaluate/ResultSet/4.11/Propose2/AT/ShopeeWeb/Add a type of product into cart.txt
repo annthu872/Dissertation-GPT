@@ -1,0 +1,38 @@
+1. Successful Product Addition to Cart
+2. Product Out of Stock Scenario
+3. User Not Logged In Before Adding to Cart
+4. Product Details Page Load Failure
+5. Shopping Cart Update Failure
+6. Product With Multiple Options Scenario: Requires user selection before adding to cart.
+7. Single Option Product Scenario: Direct addition to cart without additional selections.
+8. Product Addition With Mandatory Options Not Selected: Transition to alternative flow due to unselected required options.
+9. User Adds Multiple Quantities of a Product to Cart: Adjusting quantity before adding to cart.
+10. User Decreases Quantity Before Adding to Cart: Reducing quantity before addition to cart.
+11. User Adjusts Quantity to Available Stock: Matching quantity to stock before adding to cart.
+12. Adding a Product with Multiple Options to Cart: Involves selecting options and adjusting quantity.
+13. Product Becomes Out of Stock Before User Clicks Add to Cart: Transition to exception flow due to stock changes.
+14. Product is Already Out of Stock When User Opens Product Detail Page: Encountering out of stock status upon detail page load.
+15. Last Product is Purchased by Another User Simultaneously: Stock status changes to out of stock due to concurrent purchase.
+16. Product Option Out of Stock Scenario
+
+Choose:
+1. Successful Product Addition to Cart
+2. Product Out of Stock Scenario
+6. Product With Multiple Options Scenario: Requires user selection before adding to cart.
+8. Product Addition With Mandatory Options Not Selected: Transition to alternative flow due to unselected required options.
+9. User Adds Multiple Quantities of a Product to Cart: Adjusting quantity before adding to cart.
+10. User Decreases Quantity Before Adding to Cart: Reducing quantity before addition to cart.
+11. User Adjusts Quantity to Available Stock: Matching quantity to stock before adding to cart.
+12. Adding a Product with Multiple Options to Cart: Involves selecting options and adjusting quantity.
+13. Product Becomes Out of Stock Before User Clicks Add to Cart: Transition to exception flow due to stock changes.
+15. Last Product is Purchased by Another User Simultaneously: Stock status changes to out of stock due to concurrent purchase.
+16. Product Option Out of Stock Scenario
+
+Excess:
+3. User Not Logged In Before Adding to Cart
+4. Product Details Page Load Failure
+5. Shopping Cart Update Failure
+
+Dup:
+7. Single Option Product Scenario: Direct addition to cart without additional selections.
+14. Product is Already Out of Stock When User Opens Product Detail Page: Encountering out of stock status upon detail page load.

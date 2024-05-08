@@ -1,0 +1,8 @@
+1. Successful Login with Email and Password
+2. Successful Login with Google Account
+3. Successful Login with Microsoft Account
+4. Successful Login with Apple Account
+5. Successful Login with Slack Account
+6. Email Not Registered Scenario: This scenario starts with the user attempting to log in with an email that is valid in format but not registered in the system. This leads directly into the alternative flow where the user is redirected to a wait page and must verify their email to complete the login process.
+7. Incorrect Password Scenario
+8. Login with an email in incorrect format

@@ -1,0 +1,6 @@
+1. Search with valid product name
+2. Search with valid brand name
+3. Search with valid shop name
+4. Search with an unavailable keyword not matching any product, brand, or shop
+5. Search with an unavailable keyword not matching any brand or product
+6. Search with an unavailable keyword not matching any shop

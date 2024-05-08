@@ -1,0 +1,32 @@
+Registry
+Main flow
+Step 1: Learner fills in the username field by a valid username, a valid username must be over 8 characters and below 30 characters.
+Step 2: Learner fills in the password field by a valid password, a valid password must be over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalize character, a number and a special character. A valid password cannot be the same as the username.
+Step 3: Learner press "Registry" button
+Step 4: System redirects learner to Home page
+
+Alternative flow 1: Learner register by email
+At step 1 of the basic flow: Learner clicks on the Mail icon
+Step 2: Learner fills in the email field by a valid email, a valid email must be an exist email with the right format
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+
+Exception flow 1: Learner enters invalid username
+At step 1 of the basic flow: Learner fills in the username field by an invalid username
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+At step 4 of the basic flow: System shows a notification that the username is invalid
+
+Exception flow 2: Learner enters invalid password
+At step 2 of the basic flow: Learner fills in the password field by an invalid password
+Go back to step 3 in the basic flow and take only step 3.
+At step 4 of the basic flow: System shows a notification that the passowrd is invalid
+
+Exception flow 3: Learner enters an existed username
+At step 1 of the basic flow: Learner fills in the username field by an username that has been registered
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+At step 4 of the basic flow: System shows a notification that this username has been registered and ask the learner to choose another username.
+
+Exception flow 4: Learner enters invalid email
+At step 2 of the alternative flow 1: Learner fills in the email field by an invalid email, an invalid email must be an inexist email or email with the wrong format
+Go back to step 3 in the alternative flow 1 and continue with the steps from step 3.
+At step 4 of the basic flow: System shows a notification that the mail is invalid
+

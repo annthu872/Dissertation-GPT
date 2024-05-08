@@ -1,0 +1,21 @@
+Condition test scenario:
+Verify that Admin can successfully create a new question for the selection test with all valid fields 	Main flow: 
+
+
+Verify that the system shows an error when the 'Sentence' field is not a complete sentence 	 Alternative flow 8: 
+Verify that the system shows an error when the 'Sentence' field does not contain a symbol '...'	Alternative flow 8: 
+Verify that the system shows an error when the 'Sentence' field exceeds 250 characters
+	Alternative flow 8: 
+Verify that the system shows an error when the 'Sentence' field contains special characters
+	Alternative flow 8: 
+Verify that the system shows an error when the 'Correct answer' field is not filled
+Verify that the system shows an error when the 'Other option 1' field is not filled
+Verify that the system shows an error when the 'Other option 2' field is not filled
+Verify that the system shows an error when the 'Other option 3' field is not filled
+
+No Condition test scenario:
+Verify that when an admin navigates to the 'Lesson Management' page from the Homepage by pressing the 'Lesson Management' tab, they can continue with the subsequent steps starting from step 2 in the basic flow. 	Alternative flow 1:
+Verify that when an admin chooses to cancel a question and then selects the 'Stay' option from the confirmation dialog, the dialog closes, the work on the question is preserved, and the admin can successfully save the question by pressing the 'Save' button.
+	Alternative flow 7:
+Verify that when an admin leaves the question creation process by pressing the back button on the browser at step 13, the system redirects the admin to the 'Word Information' page of the selected word and the question is not saved. 	Exception flow 1:
+Verify that when an admin chooses to cancel a question and confirms the cancellation by selecting the 'Confirm' option from the confirmation dialog, the system redirects the admin to the 'Word Information' page of the selected word and the question is not saved.	Admin choose cancel the question and confirm the cancel.

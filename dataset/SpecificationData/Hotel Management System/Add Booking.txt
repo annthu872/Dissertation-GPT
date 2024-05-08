@@ -1,0 +1,25 @@
+4.8.1 Summary :
+This use case is used to add bookings.
+4.8.2 Actors :
+Employee
+4.8.3 Preconditions :
+Employees must be logged in the system.
+4.8.4 Basic course of events/happy path :
+1. Actor Select Booking panel on dashboard.
+2. System Show booking panel menu.
+3. System Shows Booking fields
+4. Actor Fills all the fields
+5. Actor Click the calculate amount button to get total payable payment.
+6. System Validate fields
+7. System Generate Booking Id
+8. Actor Press the add booking button.
+9. System Validate fields
+10. System Add booking to database
+11. System Show initial status as checked in.
+12. System Shows booking added.
+4.8.5 Alternative path :
+5. If the total amount is not calculated, booking cannot be added.
+6. If invalid field is entered, show invalid field entered for every individual error.
+12. In case of any error show a failure message.
+4.8.6 Post condition :
+Bookings updated; Show the tables where all new booking is added on the same booking page.

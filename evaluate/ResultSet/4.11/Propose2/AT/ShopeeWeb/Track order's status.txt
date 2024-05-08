@@ -1,0 +1,36 @@
+1. Successful navigation to personal bought order page.
+2. Viewing all orders.
+3. Filtering orders by "Waiting for payment".
+4. Filtering orders by "Delivering".
+5. Filtering orders by "Waiting to deliver".
+6. Filtering orders by "Finished".
+7. Filtering orders by "Cancelled".
+8. Filtering orders by "Returned".
+9. Searching for an order.
+10. Filtering Orders by Status: This scenario starts with the user accessing their personal bought order page and decides to filter the orders by a specific status (e.g., "Waiting for payment", "Delivering", etc.) to narrow down the list of orders they are viewing.
+11. Searching and Filtering for Specific Orders: In this scenario, the user initially attempts to use the search bar to find a specific order but then decides to further refine the search results by using the status tabs to filter the orders.
+12. Revisiting to Check Order Status: The user logs in to check the status of their orders and directly clicks on a status tab to filter orders, bypassing the need to view all orders.
+13. Searching for an Order by Shop's Name.
+14. Searching for an Order by Order's ID.
+15. Searching for an Order by Product's ID.
+
+Choose:
+2. Viewing all orders.
+3. Filtering orders by "Waiting for payment".
+4. Filtering orders by "Delivering".
+5. Filtering orders by "Waiting to deliver".
+6. Filtering orders by "Finished".
+7. Filtering orders by "Cancelled".
+8. Filtering orders by "Returned".
+13. Searching for an Order by Shop's Name.
+14. Searching for an Order by Order's ID.
+15. Searching for an Order by Product's ID.
+
+Dup:
+1. Successful navigation to personal bought order page.
+9. Searching for an order.
+10. Filtering Orders by Status: This scenario starts with the user accessing their personal bought order page and decides to filter the orders by a specific status (e.g., "Waiting for payment", "Delivering", etc.) to narrow down the list of orders they are viewing.
+11. Searching and Filtering for Specific Orders: In this scenario, the user initially attempts to use the search bar to find a specific order but then decides to further refine the search results by using the status tabs to filter the orders.
+
+Excess:
+12. Revisiting to Check Order Status: The user logs in to check the status of their orders and directly clicks on a status tab to filter orders, bypassing the need to view all orders.

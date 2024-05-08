@@ -1,0 +1,13 @@
+Verify that admin can navigate to 'Lesson Management' page from Homepage.
+Verify that system prompts an error when 'sentence' field is skipped and allows saving after it's filled.
+Verify that selecting 'Stay' on cancel confirmation dialog retains the question work.
+Verify that using browser back button without saving redirects to 'Word Information' page and doesn't save the question.
+Verify that confirming question cancelation redirects to 'Word Information' page without saving the question.
+Verify that Admin can successfully create a new question for the selection test with a valid sentence, correct answer, and three other options filled.
+Verify that the system shows an error when the sentence is over 250 characters.
+Verify that the system shows an error when the sentence contains special characters.
+Verify that the system shows an error when the sentence does not include '...'
+Verify that the system shows an error when the 'correct answer' field is not filled.
+Verify that the system shows an error when the 'other option 1' field is not filled.
+Verify that the system shows an error when the 'other option 2' field is not filled.
+Verify that the system shows an error when the 'other option 3' field is not filled.

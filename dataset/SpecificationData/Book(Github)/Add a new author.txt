@@ -1,0 +1,24 @@
+Add a new author
+Description
+The creation page is designed to create a record of the new author in the database.
+
+Main scenario:
+User clicks the "Create new" button in the author list page;
+Application displays form to enter book data;
+User enters book data and presses "Submit" button;
+If any data is entered incorrectly, incorrect data messages are displayed;
+If entered data is valid, then record is adding to database;
+If error occurs, then error message is displaying;
+If new author record is successfully added, then list of authors with added records is displaying.
+
+Cancel operation scenario:
+User clicks the "Create new" button in the author list page;
+Application displays form to enter author data;
+User may start entering the data into the form fields;
+Before pressing "Submit" button user presses “Cancel” button;
+Data doesn’t save in the database, then a list of authors records is displayed to the user;
+If the user selects the menu item "Books”, "Genres”, "Authors", "Home" or "API", the data will not be saved to the database, and the corresponding form with updated data will be opened.
+
+When creating a new author, the following details are entered:
+Name
+Bio - author's biography

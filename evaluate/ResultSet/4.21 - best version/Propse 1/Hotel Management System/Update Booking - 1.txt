@@ -1,0 +1,9 @@
+Verify that a NOT FOUND message is displayed if the booking doesn't exist at step 3. a3
+Ensure that payment is computed before an update is done at step 6.	a6
+Check that an 'invalid field entered' message is shown for every individual error at step 8. a8
+Confirm that a failure message is displayed in case of any error at step 10. 	a10
+Verify that users can successfully update a booking with all fields correctly filled. 0
+Verify that the system shows an error message when trying to update a booking with one or more fields incorrectly filled.	a8 dup
+7.Verify that the system shows an error message when trying to update a booking with one or more fields empty.		a8
+
+dup: 1

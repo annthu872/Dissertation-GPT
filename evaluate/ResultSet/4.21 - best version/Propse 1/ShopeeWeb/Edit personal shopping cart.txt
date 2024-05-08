@@ -1,0 +1,8 @@
+Verify that users can navigate to the cart's page and view all added products with their details after clicking the shopping cart icon.
+Verify that users can remove a product from their shopping cart by selecting it and confirming the removal.
+Verify that users can cancel the removal of a product from their shopping cart after initiating the erase action.
+Verify that users can remove a product from their shopping cart by decreasing its quantity to zero and confirming the removal.
+Verify that users can cancel the removal of a product from their shopping cart by decreasing its quantity to zero but then choosing not to confirm the removal.
+Verify that users can increase the quantity of a product in their shopping cart using the plus button.
+Verify that users can decrease the quantity of a product in their shopping cart using the minus button.
+Verify that users can change the option of a product in their shopping cart using the option dropdown.

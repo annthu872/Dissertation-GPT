@@ -1,0 +1,9 @@
+Verify that users can create boards using a template by clicking the 'start with a template' button and successfully proceed from step 9 in the basic flow.
+Verify that users can create new boards by selecting a template from the templates tab and successfully proceed from step 9 in the basic flow.
+Verify that the system shows options 'Create board', 'start with a template', 'create workspace' when the 'Create' button is clicked on the navbar.
+Verify that the user can select a workspace from the combo box that lists the user's created workspaces.
+Verify that the 'Visibility' combo box allows the user to select 'Private' and the board creation process proceeds as expected.
+Verify that the 'Visibility' combo box allows the user to select 'Workspace' and the board creation process proceeds as expected.
+Verify that the 'Visibility' combo box allows the user to select 'Public' and the board creation process proceeds as expected.
+Verify that users can successfully create a new board with a filled 'Board title'.
+Verify that the 'Create' button remains disabled when the 'Board title' is empty.

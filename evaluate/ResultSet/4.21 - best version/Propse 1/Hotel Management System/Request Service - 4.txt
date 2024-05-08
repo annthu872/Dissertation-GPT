@@ -1,0 +1,8 @@
+Verify that users can successfully view the list of room services after entering a valid Room ID and pressing the submit button.	a2
+Verify that users can successfully choose services and view the total charges with a success message after entering a valid Room ID.	0
+Verify that after viewing the total charges and success message, the system navigates to the main page.	0-dup
+Verify that the system shows an error notification when the Room ID validation fails upon submission.		a1
+Verify that users can see a list of available services in multiple tabs or dropdown menu when choosing services for a room.	a2 dup
+
+dup: 2
+mis: 0 

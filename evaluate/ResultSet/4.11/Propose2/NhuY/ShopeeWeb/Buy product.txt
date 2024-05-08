@@ -1,0 +1,32 @@
+1. Successful Purchase with Default Delivery Location and Payment Method
+2. Purchase with Change of Delivery Location
+3. Purchase with Change of Payment Method
+4. Purchase with Application of Platform Promotion
+5. Purchase with Application of Product-specific Promotion
+6. Buying Products from Multiple Stores
+7. Buying All Products from a Single Store
+8. Invalid Name When Adding New Location
+9. Invalid Phone Number When Adding New Location
+10. Unavailable Address When Adding New Location
+11. User Decides to Use a Voucher After Reviewing the Order Summary
+12. Changing the Applied Voucher
+13. User Changes Shipping Option Before Placing Order
+14. User Proceeds Without Changing Shipping Option
+
+Choose:
+1. Successful Purchase with Default Delivery Location and Payment Method
+2. Purchase with Change of Delivery Location
+3. Purchase with Change of Payment Method
+4. Purchase with Application of Platform Promotion
+5. Purchase with Application of Product-specific Promotion
+6. Buying Products from Multiple Stores
+7. Buying All Products from a Single Store
+8. Invalid Name When Adding New Location
+9. Invalid Phone Number When Adding New Location
+10. Unavailable Address When Adding New Location
+12. Changing the Applied Voucher
+13. User Changes Shipping Option Before Placing Order
+
+Excess:
+11. User Decides to Use a Voucher After Reviewing the Order Summary
+14. User Proceeds Without Changing Shipping Option

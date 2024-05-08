@@ -1,0 +1,20 @@
+4.5.1 Summary :
+This use case is used for updating an employee to the system
+4.5.2 Actors :
+Manager
+4.5.3 Preconditions :
+Manager is logged in with manager account, Employee exists in database
+4.5.4 Basic course of events/happy path :
+1. Actor Click Employee
+2. System Shows Employee menu
+3. Actor Searches employee (from table or with id)
+4. System Auto fill all the fields with old values
+5. Actor Changes desired fields (which are allowed) & presses update
+6. System Validate fields
+7. System Updates Employee in database
+8. System Shows employee updated
+4.5.5 Alternative path :
+3. If id does not exist shows incorrect value for id
+6. If invalid field entered show invalid field entered
+4.5.6 Post condition :
+Employee updates; shows Employee page

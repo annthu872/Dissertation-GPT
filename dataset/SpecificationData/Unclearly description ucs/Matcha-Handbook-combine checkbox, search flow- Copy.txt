@@ -1,0 +1,16 @@
+Element: Search bar ,Vocabulary checkbox.
+Use case flow: 
+Use case flow: Use case flow: basic flow:
+Step 1: Learner selects the "Handbook" tab on the navigation bar.
+Step 2:The system displays a list of leaner's vocabulary list. The list of vocabulary is displayed in vertical rows, each word is a horizontal row displaying the word name, word type, word meaning, memorization level and has a checkbox to mark the appearance of the vocabulary in the review test.
+Step 3:Learners can scroll the scroll bar to see more vocabulary.
+
+Alternative Flows:
+Alternative flow 1: Learner search vocabulary in Handbook.
+At step 3 of the basic flow: Learner presses the search bar.
+Step 4: Learner enters the word to search.
+Step 5: The system filters vocabulary in handbook wordlist containing characters entered by learners in the search bar. If the word to search is meaningless or not in handbook wordlist, the system notifies that there are no suitable search results.
+
+Alternative flow 3: Learner set up 1 word to not be review or not in the review daily test
+At step 3 of the basic flow: Learner untick a checkbox of a vocabulary to set that vocabulary will not appear in the daily test review or Learner tick one checkbox of a vocabulary to set that vocabulary will appear in the daily test review.
+Step 4: the system mark those selected vocabulary will appear or not appear in the daily test review based on the user tick.

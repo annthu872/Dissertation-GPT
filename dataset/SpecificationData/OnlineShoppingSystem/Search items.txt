@@ -1,0 +1,14 @@
+Search items
+
+Description
+This use describes how a user browses the online shopping system for items. Any user can browse the system.
+
+Basic Flow
+The use case starts when the actor wishes to browse the system for items he likes.
+1.The system requests the actor to enter the criteria.
+2.The actor enters the criteria.
+3.The system searches for items matching the entered criteria.
+4.The system displays the list of items.
+
+Post-Conditions
+If the use case was successful, A list of items will be displayed for the actor, if not an “no items found” message will be displayed.

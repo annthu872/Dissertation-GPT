@@ -1,0 +1,4 @@
+1. Successful Genre Deletion		0
+2. User Cancels Deletion		e1
+3. Deletion Attempt of a Non-Existent Genre		?
+4. User Navigates Away Using Menu Before Confirming Deletion	e1

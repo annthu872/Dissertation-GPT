@@ -1,0 +1,7 @@
+Verify that the system shows an 'incorrect value for id' error when a non-existent id is entered at step 3.	a3
+Verify that the system auto-fills all fields with old values when a valid employee ID is entered in the search field and the employee is found 0
+Verify that the system updates the employee in the database and shows 'employee updated' message when all fields are valid according to field requirements after changes 0-dup
+Verify that the system shows an error message when an invalid employee ID is entered in the search field	dup
+Verify that the system shows 'invalid field entered' message when an invalid field entry is made	a6
+
+dup:2 

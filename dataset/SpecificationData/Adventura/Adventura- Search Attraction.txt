@@ -1,0 +1,30 @@
+use case id: U02
+use case name: Search attractions by Attraction's title.
+objective: The "Search attractions by Attraction's title" use case allows users to search for local destinations, sightseeing spots based on their input. Users can search for nearby locations, view detailed information, and explore events happening at those locations.
+
+actor: user 
+Preconditions: The user is on the homepage of the system.
+Included use case: None
+Extended use case: Save Favorite Attraction
+See detailed attraction
+Basic flow:
+Step 1: User click the search bar.
+Step 2: User enter the a attraction keyword.
+Step 3: User press enter.
+Step 4: System redirect to 'Search' page and show the related results to the keyword user entered.
+
+Alternative Flows:
+Alternative flow 1: System show suggestion.
+At step 3 of the basic flow: The system show suggestion attraction title base on the keyword user has inputted.
+Step 2: The user clicks a specific keyword from system's keyword suggestion.
+Step 4: System redirect to 'Search' page and show the related results to the keyword user clicked.
+Alternative flow 2: User search from the 'Attration' page.
+At step 1 of the basic flow: User click 'Attraction' tab on navbar.
+Step 2: System redirect user to page 'Attraction'.
+Go back to step 1 in the basic flow and continue with the steps from step 1.
+
+Postcondition: 
+None
+
+
+

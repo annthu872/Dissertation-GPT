@@ -1,0 +1,7 @@
+1. Edit Author Details Including Name and Biography
+2. Update author with valid Name and Bio
+3. Cancel update operation before submission
+4. Update author with invalid Name
+5. Update author with invalid Bio
+6. Update author with empty Name
+7. Update author with empty Bio

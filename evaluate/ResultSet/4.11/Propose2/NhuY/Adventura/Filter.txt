@@ -1,0 +1,12 @@
+1. User selects "Museum" from the list of destination types.
+2. User selects "Zoo" from the list of destination types.
+3. User selects "Aquarium" from the list of destination types.
+4. User selects "Mall" from the list of destination types.
+5. User selects "Cuisine" from the list of destination types.
+6. User selects "Hotel" from the list of destination types.
+7. User selects a rare or uncommon destination type, leading to no suitable results found.
+8. User selects a destination type with temporarily no listings, resulting in no suitable results.
+9. User selects a highly specific destination type, causing the system to fail in returning any suitable results.
+
+Excess:
+9. User selects a highly specific destination type, causing the system to fail in returning any suitable results.

@@ -1,0 +1,27 @@
+Condition test scenario:
+
+Verify user can change delivery location with valid name, phone number, city, district, ward, exact address, and location type 	Alternative flow 3:
+
+Verify user can add shop or product's promotion by selecting a valid voucher	Alternative flow 4:
+
+Verify user can add platform's promotion by selecting a valid voucher	Alternative flow 5:
+
+Verify user can change shipping option by selecting a valid shipping option 	
+Alternative flow 6:
+
+Verify user can change payment method by selecting a valid payment method	
+Alternative flow 7:
+
+Verify user cannot add location with an invalid location name	Alternative flow 3: (thiếu COVER điều kiện)
+
+Verify user cannot add location with an invalid phone number  Alternative flow 3:
+
+Verify user cannot add location with an invalid exact location address Alternative flow 3:
+
+No Condition test scenario:
+
+Verify that a user can successfully purchase a product by selecting it, proceeding to payment, and confirming the order, ensuring the product is then removed from the shopping cart and a new order is formed. 	Main flow:
+	
+Verify that when a user selects a store, all products from that store in the shopping cart are automatically selected, and the user can successfully proceed to purchase these products.	Alternative flow 1:
+
+Verify that a user can successfully change the delivery location to one of their saved locations during the checkout process and that the system updates the delivery information accordingly.	Alternative flow 2:

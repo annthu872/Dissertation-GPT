@@ -1,0 +1,16 @@
+use case id: U11
+use case name: learning days history
+objective: This use case allows to see the days that learner has spent learning.
+actor: learner
+
+basic flow:
+Step 1: Learner selects "History" on Home page.
+Step 2: The system redirects learner to History page.
+Step 3: Learner selects "Day History" on History page.
+Step 4: The system redirects learner to a page show how many days learner has learned continuously in number. If learner break their chain, the number reset to one.
+
+Preconditions:
+Learner must be logged into the application.
+
+Postconditions:
+System shows the days learner has spent learning. 

@@ -1,0 +1,4 @@
+1. Successful Payment and Order Completion		0
+2. Payment Failure due to Insufficient Funds		0-f
+3. Payment Failure due to Network Error			exc
+4. Payment Failure due to Expired Payment Method	0-f

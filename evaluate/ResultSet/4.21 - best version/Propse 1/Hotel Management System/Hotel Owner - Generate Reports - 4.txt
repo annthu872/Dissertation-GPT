@@ -1,0 +1,4 @@
+Verify that the system shows an error when validation fails at step 4. a4
+Verify that users can successfully generate a report with parameters within the allowed date range and format. 0
+Verify that the system shows an error notification when the date period selection is outside the allowed date range. 0-fail
+Verify that the system shows an error notification when the date period selection is in an incorrect format.	0-fail

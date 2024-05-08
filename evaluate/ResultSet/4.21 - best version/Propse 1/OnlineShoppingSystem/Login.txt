@@ -1,0 +1,3 @@
+Verify that the user can successfully login with a valid name and valid password.
+Verify that the system shows an error message when the name entered does not match any account name in the system.
+Verify that the system shows an error message when the password entered does not match the account password in the system.

@@ -1,0 +1,11 @@
+Verify the system shows 'incorrect value for id' when a non-existent id is entered at step 3. 	a3
+Verify the system shows 'invalid field entered' when an invalid field is entered at step 6.	a6
+Verify that users can successfully search for an employee using a valid employee ID and update allowed fields with correct formatting	0
+Verify that the system shows an error when searching with an employee ID that does not exist	a3 -dup
+Verify that the system shows an error when searching with an incorrect employee ID format	a3
+Verify that the system prevents updates when trying to change fields that are not allowed
+	0-fail
+7. Verify that the system shows an error when fields to be updated are incorrectly formatted
+	0-fail
+
+dup: 1

@@ -1,0 +1,20 @@
+Read a chapter
+Objective: this use case allow users to read a chapter of a book.
+
+Actor: users
+
+Preconditions: User is in any page with book's card.
+
+Main flow:
+Step 1: User clicks on a card of a book that user want to read.
+Step 2: User rolls down to the chapters section of that book.
+Step 3: User chooses the chapter they want to read by clicking on it.
+Step 4: System redirects user to that chapter's page containing all the chapter's content.
+
+Alternative flow 1:
+Step 1: User clicks on the chapter they are reading last time which is shown on the Recently list
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 2:
+Step 1: User clicks on the recently updated chapter of a book in the page.
+Go back to step 3 in the basic flow and continue with the steps from step 3.

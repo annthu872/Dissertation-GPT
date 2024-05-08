@@ -1,0 +1,4 @@
+Verify that selecting 'Books' displays a list of up to 10 books per page with columns for id, Title, Author, Genre, and Publication date, and that users can navigate through pages using the 'Next' button or page numbers.
+Verify that users can successfully input a valid date range in the date range input field.
+Verify that the system shows an error for invalid date format when the date range input does not follow the correct date format.
+Verify that the system shows an error when the end date is before the start date in the date range input.

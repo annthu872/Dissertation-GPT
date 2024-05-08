@@ -1,0 +1,34 @@
+Condition test scenario:
+
+Verify that users can adjust the quality rating by selecting 1 to 5 stars.	Alternative flow 1:
+
+Verify that users can adjust the seller rating by selecting 1 to 5 stars.	Alternative flow 2:
+
+Verify that users can adjust the shipping rating by selecting 1 to 5 stars.	Alternative flow 3:
+
+Verify that users can leave a comment in the comment section.	Alternative flow 4:
+
+Verify that users can add a picture by selecting an image file.		Alternative flow 5:
+
+Verify that users can add multiple pictures up to the maximum limit by selecting image files.		Alternative flow 6: 
+
+Verify that users can add a video by selecting a video file.	Alternative flow 7: 
+
+Verify that users cannot adjust the quality rating by selecting 0 stars.
+
+Verify that users cannot adjust the seller rating by selecting 0 stars.
+
+Verify that users cannot adjust the shipping rating by selecting 0 stars.
+
+Verify that the system does not save the file when users select a file that is not an image for picture upload. 	Alternative flow 5, 6 :
+
+Verify that the system does not save the file when users select a file that is not a video for video upload.	Alternative flow 7:
+
+
+No Condition test scenario:
+
+Verify that a user can successfully submit a product rating by clicking the Rating button on a finished order, filling out the rating form with the default 5-star quality, seller, and shipping ratings, adding a comment, and clicking the Done button, and then confirming that the rating appears in the product's detail page's rating section. 	Main flow:
+
+Excess: 0
+
+Dup: 0

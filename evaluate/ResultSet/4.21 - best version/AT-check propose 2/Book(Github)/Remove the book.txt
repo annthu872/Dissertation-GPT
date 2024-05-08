@@ -1,0 +1,5 @@
+1. Successful Book Deletion		0
+2. User Cancels Deletion		e1
+3. Deletion Attempt for Non-Existent Book	?
+4. User Cancels Deletion from Confirmation Dialog	dup
+5. User Navigates Away Using Menu Before Confirming Deletion	e1

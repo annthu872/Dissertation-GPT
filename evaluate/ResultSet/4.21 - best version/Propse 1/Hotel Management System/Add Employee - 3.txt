@@ -1,0 +1,5 @@
+Verify that an employee can be successfully added to the database with all fields filled correctly. 0
+Verify that the system shows a message indicating all fields are required if any field is left unfilled. 0- fail
+Verify that the system shows a message indicating an invalid field entry if an invalid field is entered. 	e6
+
+mis: 2

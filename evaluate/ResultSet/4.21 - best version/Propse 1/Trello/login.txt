@@ -1,0 +1,5 @@
+Verify that users can successfully log in using an alternative social account and are redirected to the 'Choose account' page of that social account, select an account, and log in successfully.
+Verify that users can successfully login with a registered and properly formatted email and correct password
+Verify that users with an unregistered but valid email are redirected to a wait page for verification
+Verify that the system shows a message for invalid email format when the email is not properly formatted
+Verify that the system shows a notification for incorrect password when the password does not match the email

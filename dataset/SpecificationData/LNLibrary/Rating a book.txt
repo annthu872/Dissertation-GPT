@@ -1,0 +1,25 @@
+Rating a book
+Objective: this use case allow users to rate a book.
+
+Actor: users
+
+Preconditions: User must be logged in and is in any page with book's card.
+
+Main flow:
+Step 1: User clicks on a card of a book that user want to rate.
+Step 2: User clicks on the star icon next to the book's cover.
+Step 3: System redirects user to the rating page for that book.
+Step 4: User gives the point by clicking on how many stars they want to give the book.
+Step 5: User types their review in the box. 
+Step 6: User clicks on Post button.
+Step 7: User's rating is saved and shown in the book's page.
+
+Exception flow 1:
+At step 4 of the main flow: User did not click on any star.
+Go back to step 5 in the basic flow and continue with the steps from step 5.
+Step 7: System shows a notification said that rating point cannot below 1.
+
+Exception flow 2:
+At step 5 of the main flow: User did not type any review in the box.
+Go back to step 6 in the basic flow and continue with the steps from step 6.
+Step 7: System shows a notification said that user must leave a comment.

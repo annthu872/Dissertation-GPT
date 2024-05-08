@@ -1,0 +1,5 @@
+Verify the system shows 'incorrect value for id' when a non-existent ID is entered at step 3.	a3
+Verify the system shows 'invalid field entered' when an invalid field entry is made at step 6.	a6
+Verify that users can successfully search for an employee using a valid employee ID and update the employee's information with valid data.	
+Verify that the system shows an 'incorrect value for id' notification when the employee ID does not exist in the search field.
+Verify that the system shows an 'invalid field entered' notification when invalid data is entered in the fields to be updated.

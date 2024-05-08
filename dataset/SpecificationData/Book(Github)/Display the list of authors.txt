@@ -1,0 +1,13 @@
+Display the list of authors
+Description
+The page is designed to list all the authors.
+
+Main scenario:
+User selects item "Authors";
+Application displays the list of the authors (up to 10 items on each page);
+To see the next 10 records of the authors in the database, the user needs to click the "Next" button (below the records in the pagination block) or the following number of the page the user wants to see.
+
+The list displays the following columns:
+id - unique author number
+Name
+Bio - author's biography

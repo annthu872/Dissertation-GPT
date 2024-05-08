@@ -1,0 +1,6 @@
+1. Verify NOT FOUND message when room doesn't exist
+2. Verify individual error messages for invalid fields entered
+3. Verify failure message is shown in case of any error
+4. Select and update room with valid room ID and correctly filled fields
+5. Select room with invalid room ID
+6. Update room with at least one incorrectly filled field

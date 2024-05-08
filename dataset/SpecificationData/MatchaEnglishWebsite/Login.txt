@@ -1,0 +1,34 @@
+Relogin
+Login
+Main flow
+Step 1: Learner fills in the username field by a valid username that has been registered
+Step 2: Learner fills in the password field by the correct password for the corresponding username
+Step 3: Learner press "Login" button
+Step 4: System redirects learner to Home page
+
+Alternative flow 1: Login by email
+At step 1 of the basic flow: Learner fills in the username field by a valid email that has been registered
+Step 2: Learner fills in the password field by the correct password for the corresponding email
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Exception flow 1: Wrong password
+At step 2 of the basic flow: Learner fills in the password field by a wrong password
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+At step 4 of the basic flow: System shows a notification that the password is wrong
+
+Exception flow 2: Unregistered username
+At step 1 of the basic flow: Learner fills in the username field by a valid username that has not been registered
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+At step 4 of the basic flow: System shows a notification that this username is not registered yet
+
+Exception flow 3: Blank username fields
+At step 1 of the basic flow: Learner does not fill in the username field
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+At step 4 of the basic flow: System shows a notification that the username field needs to be filled.
+
+Exception flow 4: Blank password fields
+At step 2 of the basic flow: Learner does not fill in the password field
+Go back to step 3 in the basic flow and take only step 3.
+At step 4 of the basic flow: System shows a notification that the password field needs to be filled.
+
+ 

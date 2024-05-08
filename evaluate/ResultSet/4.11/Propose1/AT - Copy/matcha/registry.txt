@@ -1,0 +1,22 @@
+Condition test scenario:
+Verify that learners can successfully register with a valid username and a valid password.
+
+Verify that learners can successfully register with a valid email, valid username, and valid password.
+
+Verify that the system shows a notification for invalid username when the username is less than 8 characters.
+
+Verify that the system shows a notification for invalid username when the username is more than 30 characters.
+
+Verify that the system shows a notification for an already registered username.
+
+Verify that the system shows a notification for invalid password when the password is less than 8 characters.
+
+Verify that the system shows a notification for invalid password when the password is more than 30 characters.
+
+Verify that the system shows a notification for invalid password when it does not contain at least one of each kind: a normal character, a capitalize character, a number, and a special character.
+
+Verify that the system shows a notification for invalid password when it is the same as the username.
+
+Verify that the system shows a notification for invalid email when the email does not exist.
+
+Verify that the system shows a notification for invalid email when the email is in the wrong format.

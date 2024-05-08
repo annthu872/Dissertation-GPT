@@ -1,0 +1,16 @@
+Verify that clicking on the personal name and avatar section redirects the user to their personal bought order page with a list of all orders, status tabs, and a search bar.
+Verify that users can successfully search for orders by filling in the shop's name in the search bar and pressing enter.
+Verify that users can successfully search for orders by filling in the order's ID in the search bar and pressing enter.
+Verify that users can successfully search for orders by filling in the product's ID in the search bar and pressing enter.
+Verify that the system shows a notification for invalid search when the search bar is left empty and enter is pressed.
+Verify that clicking on the 'All' tab filters and shows all orders regardless of their status.
+Verify that clicking on the 'Waiting for payment' tab filters and shows only orders that are waiting for payment.
+Verify that clicking on the 'Delivering' tab filters and shows only orders that are currently being delivered.
+Verify that clicking on the 'Waiting to deliver' tab filters and shows only orders that are waiting to be delivered.
+Verify that clicking on the 'Finished' tab filters and shows only orders that have been completed.
+Verify that clicking on the 'Cancelled' tab filters and shows only orders that have been cancelled.
+Verify that clicking on the 'Returned' tab filters and shows only orders that have been returned.
+
+
+Dup: 0
+Excess: 0

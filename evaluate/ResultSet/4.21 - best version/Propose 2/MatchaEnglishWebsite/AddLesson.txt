@@ -1,0 +1,8 @@
+1. Successful Lesson Creation
+2. Lesson Creation with Missing Name
+3. Lesson Creation with Missing Description
+4. Lesson Creation with Duplicate Name
+5. Direct Navigation to Add New Lesson Scenario
+6. Admin cancels adding a new lesson before entering the name.
+7. Admin cancels adding a new lesson after entering the name but before entering the description.
+8. Admin cancels adding a new lesson after entering both the name and description but before saving.

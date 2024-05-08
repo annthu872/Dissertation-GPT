@@ -1,0 +1,8 @@
+Verify that a book record can be successfully created with valid details for Title, Author, Genre, Description, and Publication date.
+Verify that a new book record is successfully added with valid Title, Author, and Publication date
+Verify that pressing the 'Cancel' button after entering data but before submission does not save the data
+Verify that navigating away from the book data form by selecting another menu item does not save the data
+Verify that the system shows a notification for invalid Title when the Title field is left blank
+Verify that the system shows a notification for invalid Author when the Author field is left blank
+Verify that the system shows a notification for invalid Publication date when the Publication date field is left blank
+Verify that the system shows a notification for invalid Publication date when the date is in an invalid format

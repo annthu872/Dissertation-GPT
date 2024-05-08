@@ -1,0 +1,1 @@
+Verify that clicking on the 'Title' of a book from the book list page successfully displays the book details page with the columns: id, Title, Author, Genre, Description, and Publication date.

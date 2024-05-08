@@ -1,0 +1,19 @@
+1. Successful Rating Submission	0
+2. Rating Submission with Added Comment	a1
+3. Rating Submission with Added Picture	a5-su
+4. Rating Submission with Added Video	a7-su
+5. Rating Submission with Modified Star Rating - mơ hồ
+6. Rating Submission with Modified Service Ratings a2
+7. User Adjusts Quality Rating to 1 Star	a1-2
+8. User Adjusts Quality Rating to 2 Stars	a1-s
+9. User Adjusts Quality Rating to 3 Stars	a1-s
+10. User Adjusts Quality Rating to 4 Stars	a1-s
+11. Adjust Seller Rating to 1 Star	a2-s
+12. Adjust Seller Rating to 2 Stars	a2-s
+13. Adjust Seller Rating to 3 Stars	a2-s
+14. Adjust Seller Rating to 4 Stars	a2-s
+15. User Adjusts Shipping Rating Before Submitting	a3
+16. User Leaves a Comment Before Clicking Done	a4
+17. User attempts to add a non-image file as a picture to the rating.	a5-f
+18. User Adds Multiple Pictures to Rating	a6
+19. User attempts to add a non-video file.	a7-f

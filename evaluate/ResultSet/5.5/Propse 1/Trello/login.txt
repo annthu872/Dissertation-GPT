@@ -1,0 +1,9 @@
+1.Login with valid email and correct password
+2.Login with valid but unregistered email and verification
+3.Login attempt with unregistered email without verification
+4.Login attempt with invalid email format
+5.Login attempt with incorrect password
+6.login by selecting Google social account option.
+7.login by selecting Microsoft social account option.
+8.login by selecting Apple social account option.
+9.login by selecting Slack social account option.

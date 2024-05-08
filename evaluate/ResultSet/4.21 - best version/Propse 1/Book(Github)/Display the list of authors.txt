@@ -1,0 +1,1 @@
+Verify that selecting 'Authors' displays a paginated list of authors with columns for id, Name, and Bio, and allows navigation through pages using 'Next' button or page numbers.

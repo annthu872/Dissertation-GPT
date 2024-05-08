@@ -1,0 +1,9 @@
+Verify that the payment process is repeated if the initial payment attempt was unsuccessful.
+Verify that users can successfully complete the order using a valid Credit Card as the payment option.
+Verify that users receive an error message when attempting to complete the order using an invalid Credit Card as the payment option.
+Verify that users can successfully complete the order using a valid Debit Card as the payment option.
+Verify that users receive an error message when attempting to complete the order using an invalid Debit Card as the payment option.
+Verify that users can successfully complete the order using a valid PayPal account as the payment option.
+Verify that users receive an error message when attempting to complete the order using an invalid PayPal account as the payment option.
+Verify that users can successfully complete the order using a valid Bank Transfer as the payment option.
+Verify that users receive an error message when attempting to complete the order using an invalid Bank Transfer as the payment option.

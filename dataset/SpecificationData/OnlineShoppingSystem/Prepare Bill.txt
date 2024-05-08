@@ -1,0 +1,15 @@
+Prepare Bill
+
+Description
+This use case generates the bill for checkout. It calculates the total amount to be paid.
+
+Basic Flow
+This use case starts when the actor is authenticated and proceeds to checkout.
+1.The system adds all the items in the shopping cart.
+2.The total amount to be paid is displayed.
+
+Pre-Conditions
+The actor must be logged in and authenticated.
+
+Post-Conditions
+If the use case was successful, the bill is generated and the actor is proceeded to checkout.

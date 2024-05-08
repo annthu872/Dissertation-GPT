@@ -1,0 +1,8 @@
+1. Successful Product Search	0
+2. No Results Found	e1
+3. Partial Match Results Found	mơ hồ
+4. Searching by Brand Name with Official Store Present	a1
+5. Searching by Brand Name without Official Store Present	a1	
+6. Search by Shop Name Scenario	a2
+7. Search with an Unavailable Keyword	mơ hồ
+8. Search with a Misspelled Product Name	e2

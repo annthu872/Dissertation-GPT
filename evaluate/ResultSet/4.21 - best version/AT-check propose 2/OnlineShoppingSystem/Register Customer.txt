@@ -1,0 +1,4 @@
+1. Successful Account Registration		0
+2. Registration with Missing Details		e1
+3. Registration with Invalid Details		e1
+4. Registration with Already Used Email		e1

@@ -1,0 +1,16 @@
+Feedback
+
+Description
+This use case allows the user to give feedback about the items. Based on the feedback the shop owner operates.
+
+Basic Flow
+This use case starts when the actor finishes checkout.
+1.The system asks the user for details.
+2.The user enters the requested details.
+3.The entered details are saved and the user is acknowledged.
+
+Pre-Conditions
+The actor has finished checkout successfully.
+
+Post-Conditions 
+If the use case is successful, The feedback will be sent to the shop owner.

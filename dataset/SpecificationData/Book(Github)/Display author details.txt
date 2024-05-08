@@ -1,0 +1,10 @@
+Display author details
+
+Main scenario:
+User clicks on the "Title" of the specific author from the list on the author list page;
+Application displays the user-chosen author details;
+
+On author details page the application displays the following columns:
+id - unique author number
+Name
+Bio - author's biography

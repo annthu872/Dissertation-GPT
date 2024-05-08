@@ -1,0 +1,5 @@
+1. Verify message 'all fields are required' is shown when fields are left unfilled
+2. Verify 'invalid field entered' message is displayed for invalid field input
+3. Add Employee with All Fields Correctly Filled
+4. Add Employee with One or More Fields Unfilled
+5. Add Employee with One or More Fields Filled Incorrectly

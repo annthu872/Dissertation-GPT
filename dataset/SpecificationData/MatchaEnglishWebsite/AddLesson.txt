@@ -1,0 +1,39 @@
+use case id: U16
+use case name: adding new lesson
+objective: This use case allows administrator to add a new english learning lesson.
+actor: administrator
+
+basic flow:
+Step 1: Admin presses the tab "Lesson Management" on the navbar.
+Step 2: The system open dropdown menu for Lesson with options: "Add new Lesson", "View list of Lesson", "Lesson statistics".
+Step 3: Administrator selects "View list of Lesson" options.
+Step 4: The system redirects Admin to the Lesson Management page which show lesson list which admins created.
+Step 5: Administrator select button "Add new Lesson"
+Step 6: The system redirects Admin to the "Add new Lesson" page.
+Step 7: Administrator adds the name of the lesson in the name field.
+Step 8: Administrator adds the description of the lesson in the description field.
+Step 9: Administrator selects "Save" to create a new lesson.
+
+Alternative flow 1: Administrator adds an already used name for the lesson.
+At step 3 of the basic flow: Administrator adds a name that is already used in the existed lessons in the name field.
+step 4: Administrator adds the description of the lesson in the description field.
+step 5: Administrator selects "Save" to create a new lesson.
+step 6: The system shows notification that the name is already used, prompting Administrator to add another name in the name field.
+step 7: Administrator adds a new name in the name field.
+step 8: Administrator selects "Save" to create a new lesson.
+
+Alternative flow 2: Navigate to Add new lesson page by options in navbar. 
+At step 3 of the basic flow: Administrator selects "Add new Lesson".
+Go back to step 6 in the basic flow and continue with the steps from step 6.
+
+Exception flow:
+At step 3 of the basic flow: Administrator can select "Cancel" to stop adding a new lesson at anytime.
+
+Preconditions:
+Administrator must be logged into the application.
+Administrator is allowed to add new lesson. 
+
+Postconditions:
+After successfully adding new lesson, the system will redirect Administrator to the adding topic to new lesson section.
+New lesson will appear in the lesson list.
+

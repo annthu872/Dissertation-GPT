@@ -1,0 +1,5 @@
+1. Verify system behavior when an invalid ID is entered at step 3
+2. Verify system behavior when an invalid field entry is made at step 6
+3. Search for an existing employee and update with valid data
+4. Search for an employee with a non-existing ID
+5. Update an employee with invalid data in fields

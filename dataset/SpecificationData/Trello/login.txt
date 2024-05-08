@@ -1,0 +1,43 @@
+use case id: 001
+use case name: Login
+objective: 
+main flow:
+precondition: None
+main flow:
+Step 1: User click "Login" in the navbar.
+Step 2: System redirect user to login page with Your Email input field and button "Continue". A valid email is one that is properly formatted and registered. Beside, system show some other social account login options button: Google, Microsoft, Apple, Slack.
+Step 3: User input valid and registered email to Your Email field.
+Step 4: User click button "Continue".
+Step 4: System show up Password input field and button change to "Sign In".
+Step 5: User input correct Password corresponding with the inputed email.
+Step 6: User click button "Sign In".
+Step 7:  The system show message login completed
+
+alternative flow:
+alternative flow 1: email not registered
+At Step 3 of the basic flow: User input valid email to Your Email field but did not registr.
+Step 4: User click button "Continue".
+Step 5: System redirect user to wait page and wait for the user to verify with their logged in email account.
+Step 6: User verify by their gmail.
+Step 7: The system show message login completed.
+
+alternative flow 2: login by other social account.
+At step 3 of the basic flow: User clicks one of the other social account button.
+Step 4: system redirect user to the page "Choose account" of that social account.
+Step 5: User click one account.
+Step 6: System login successfully.
+
+Exception flow:
+Exception flow 1:
+At Step 5 of the basic flow: User input incorrect password.
+Step 6: User click button "Sign In".
+Step 7: System show message "Email or Password incorrected".
+
+Exception flow 2: login by invalid email.
+At step 3 of the basic flow: User input invalid email to Your Email field.
+Step 4: User click button "Continue".
+Step 5: System show message "Invalid email format".
+
+Postcondition: User login successfully to dashboard page.
+ 
+

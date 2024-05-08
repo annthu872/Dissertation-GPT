@@ -1,0 +1,8 @@
+Verify that users can successfully login with a registered username and correct password.
+Verify that users can successfully login with a registered email and correct password.
+Verify that login fails with a correct username but wrong password.
+Verify that login fails with a correct email but wrong password.
+Verify that login fails with an unregistered username.
+Verify that login fails with an unregistered email.
+Verify that login fails with a blank username field.
+Verify that login fails with a blank password field.

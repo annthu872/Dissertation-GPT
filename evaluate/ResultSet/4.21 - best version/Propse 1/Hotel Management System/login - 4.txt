@@ -1,0 +1,3 @@
+Verify that users can successfully log in with valid username and password.
+Verify that the system shows an error message when the username is invalid.
+Verify that the system shows an error message when the password is invalid.

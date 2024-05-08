@@ -1,0 +1,25 @@
+1. User Successfully Rates a Product Including Leaving a Comment
+2. Submit review with valid quality, seller, and shipping ratings
+3. Submit review with a valid image file
+4. Submit review with multiple valid image files up to the maximum limit
+5. Submit review with a valid video file
+6. Submit review with 0 star quality rating
+7. Submit review with 0 star seller rating
+8. Submit review with 0 star shipping rating
+9. Submit review with a non-image file for image upload
+10. Submit review with a non-video file for video upload
+11. adjust Quality rating with 1 star value.
+12. adjust Quality rating with 2 stars value.
+13. adjust Quality rating with 3 stars value.
+14. adjust Quality rating with 4 stars value.
+15. adjust Quality rating with 5 stars value.
+16. adjust Seller rating with 1 star value.
+17. adjust Seller rating with 2 stars value.
+18. adjust Seller rating with 3 stars value.
+19. adjust Seller rating with 4 stars value.
+20. adjust Seller rating with 5 stars value.
+21. adjust Shipping rating with 1 star value.
+22. adjust Shipping rating with 2 stars value.
+23. adjust Shipping rating with 3 stars value.
+24. adjust Shipping rating with 4 stars value.
+25. adjust Shipping rating with 5 stars value.

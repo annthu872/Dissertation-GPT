@@ -1,0 +1,5 @@
+Verify that a new author record is successfully added with valid Name and Bio
+Verify that pressing the 'Cancel' button after entering valid Name and Bio does not save the data
+Verify that navigating away from the author form by selecting menu items does not save the entered valid Name and Bio
+Verify that the system shows a notification for invalid Name when the Name field is left blank
+Verify that the system shows a notification for invalid Bio when the Bio field is left blank

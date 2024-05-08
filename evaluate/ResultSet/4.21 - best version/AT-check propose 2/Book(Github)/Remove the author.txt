@@ -1,0 +1,9 @@
+1. Successful Author Deletion			0
+2. User Cancels Deletion			e1
+3. Deletion Attempt of Non-Existent Author	?
+4. Deletion Attempt with Insufficient Permissions	?
+5. Cancel Deletion and Navigate to Books		e1
+6. Cancel Deletion and Navigate to Genres		e1
+7. Cancel Deletion and Navigate to Authors		e1
+8. Cancel Deletion and Navigate to Home			e1
+9. Cancel Deletion and Navigate to API			e1

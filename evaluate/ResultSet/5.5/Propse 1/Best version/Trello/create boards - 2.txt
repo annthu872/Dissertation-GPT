@@ -1,0 +1,7 @@
+1. Create Board Using Template From Start Button
+2. Create Board Directly From Template Tab
+3. Create a new board with filled Board title
+4. Attempt to create a new board with Board title not filled
+5. create board with Visibility value 'Private'.
+6. create board with Visibility value 'Workspace'.
+7. create board with Visibility value 'Public'.

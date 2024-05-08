@@ -1,0 +1,24 @@
+4.9.1 Summary :
+This use case is used to update bookings details.
+4.9.2 Actors :
+Employee
+4.9.3 Preconditions :
+Employees must be logged in the system and the booking which needs to be updated must exist in the database.
+4.9.4 Basic course of events/happy path :
+1. Actor Select Booking panel on dashboard.
+2. System Show booking panel menu.
+3. Actor Search or select a booking which needs to be updated. (by id)
+4. System Load Booking fields data from database.
+5. Actor Fill the fields that need to be updated.
+6. Actor Compute payment again if new services or new room types are added.
+7. Actor Press the update button.
+8. System Validate fields.
+9. System Update database for same booking id.
+10. System Show success message.
+4.9.5 Alternative path :
+3. If the booking doesn’t exist, show a NOT FOUND message.
+6. Payment must be computed first then update can be done.
+8. If invalid field is entered, show invalid field entered for every individual error.
+10. In case of any error show a failure message.
+4.9.6 Post condition :
+Booking updated; Show the tables where all bookings exist on the same booking page.

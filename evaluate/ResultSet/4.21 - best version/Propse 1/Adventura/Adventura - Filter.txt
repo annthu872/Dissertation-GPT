@@ -1,0 +1,7 @@
+Verify that the system displays the message 'there is no suitable result. Please try another keyword or type of destination.' when no suitable results are found for the filter.
+Verify that the system filters the search results correctly when the user selects 'museum' as the type of destination.
+Verify that the system filters the search results correctly when the user selects 'zoo' as the type of destination.
+Verify that the system filters the search results correctly when the user selects 'aquarium' as the type of destination.
+Verify that the system filters the search results correctly when the user selects 'mall' as the type of destination.
+Verify that the system filters the search results correctly when the user selects 'cuisine' as the type of destination.
+Verify that the system filters the search results correctly when the user selects 'hotel' as the type of destination.

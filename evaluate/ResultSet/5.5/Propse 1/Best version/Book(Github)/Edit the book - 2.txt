@@ -1,0 +1,4 @@
+1. Update book with all required fields filled correctly
+2. Cancel update operation before submitting
+3. Submit with one or more required fields filled incorrectly
+4. Submit with all required fields empty

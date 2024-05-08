@@ -1,0 +1,7 @@
+1. Author Enters Name and Biography Details
+2. Create new author record with all valid data
+3. Cancel operation before submitting with all fields filled
+4. Navigate away from form after entering data without saving
+5. Submit with one or more fields incorrectly filled
+6. Submit with Name field not entered
+7. Submit with Bio field not entered

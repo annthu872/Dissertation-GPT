@@ -1,0 +1,14 @@
+1. Register with valid username, password, and email
+2. Register with valid username and password
+3. Register with username below 8 characters
+4. Register with username over 30 characters
+5. Register with username that has been registered
+6. Register with password below 8 characters
+7. Register with password over 30 characters
+8. Register with password missing a normal character
+9. Register with password missing a capitalize character
+10. Register with password missing a number
+11. Register with password missing a special character
+12. Register with password same as username
+13. Register with invalid email format
+14. Register with inexist email

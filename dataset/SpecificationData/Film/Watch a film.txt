@@ -1,0 +1,19 @@
+Watch a film
+Objective: this use case allow users to watch a film.
+
+Actor: users
+
+Preconditions: User is in any page with film's card.
+
+Main flow:
+Step 1: User clicks on a film's card that user want to watch.
+Step 2: User clicks on the film cover.
+Step 3: System redirects user to a page with a video.
+Step 4: User clicks on the video to start watching.
+
+Alternative flow 1:
+At step 2 of the main flow: If the film has many episodes, user chooses one episode.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Exception flow 1:
+At step 3 of the main flow: System shows notification that the film is not available.

@@ -1,0 +1,15 @@
+users successfully complete a purchase with default delivery and payment options.
+users successfully complete a purchase with products from multiple stores.
+users successfully complete a purchase with products from a single store.
+users change the delivery location before completing the purchase.
+users change the payment method before completing the purchase.
+users apply a shop's promotion before completing the purchase.
+users apply a platform's promotion before completing the purchase.
+users cannot complete the purchase if the product is out of stock after adding to the cart but before payment.
+users cannot complete the purchase if the payment method is declined.
+users review and edit product options and quantity before completing the purchase.
+users receive an error if the shipping information is incomplete or incorrect.
+users cannot add a new delivery location with an address not available on the map.
+users cannot add a new delivery location if the name field contains non-letter characters.
+users cannot add a new delivery location if the name field is less than 2 letters.
+users cannot add a new delivery location with a phone number in the wrong format.

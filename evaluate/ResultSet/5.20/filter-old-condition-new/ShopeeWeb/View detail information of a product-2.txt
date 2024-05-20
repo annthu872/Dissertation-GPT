@@ -1,0 +1,10 @@
+1. users successfully navigate to a product's detail page.
+2. users navigate to a product's detail page with no user ratings available.
+3. users navigate to a product's detail page with no shipping options available.
+4. users navigate to a product's detail page with the product out of stock.
+5. users cannot navigate to the product's detail page if the product card is unresponsive.
+6. users see incomplete product details if some product information fails to load.
+7. users view details of a product without options.
+8. users view details of a product with multiple options.
+9. users can view product details when the product is in stock.
+10. users can view product details with a "sold out" sticker when the product is out of stock.

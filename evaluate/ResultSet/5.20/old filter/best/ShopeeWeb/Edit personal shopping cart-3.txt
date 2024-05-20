@@ -1,0 +1,24 @@
+- Cart Display with Multiple Products
+- Cart Display with a Single Product
+- Empty Cart Display
+- Cart Display with Products from the Same Shop
+- Cart Display with Expired Promotions
+- Cart Display with Updated Product Information
+- Cart Display with Out-of-Stock Products
+- Cart Display with Products Having Limited Quantity Options
+- User Removes a Product from Their Shopping Cart
+- Removing a Product by Decreasing Quantity to Zero
+- User Decides Not to Remove a Product After Decreasing Quantity to Zero
+- Product Quantity Increase Due to Stock Availability
+- Product Quantity Increase with Promotion Adjustment
+- Product Quantity Increase Affects Shipping Options
+- Product Quantity Increase with Price Update
+- Product Quantity Increase Leads to Option Re-selection
+- Decreasing Product Quantity to Desired Number
+- Decreasing Product Quantity to Zero Leading to Product Removal
+- Decreasing Product Quantity for a Product with Promotions
+- Decreasing Product Quantity for a Product with Multiple Options Selected
+- Change Product Option Due to Preference Change
+- Change Product Option Due to Availability
+- Change Product Option for Better Price or Promotion
+- Change Product Option After Comparing with Similar Products

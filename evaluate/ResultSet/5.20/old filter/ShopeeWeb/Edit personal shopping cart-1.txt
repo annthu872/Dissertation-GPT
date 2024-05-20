@@ -1,0 +1,26 @@
+- Cart Display with Multiple Products
+- Cart Display with a Single Product
+- Cart Display with Products from Multiple Shops
+- Cart Display with Products Having Multiple Options Selected
+- Cart Display with Products Having Promotions Applied
+- Empty Cart Display
+- Cart Display with Products, Including Out-of-Stock Items
+- Removing a Single Product from the Cart
+- Removing Multiple Products from the Cart
+- Removing a Product and Then Cancelling the Removal
+- User decides to keep a product after initiating its removal from the cart
+- Removing a Product by Decreasing Quantity to Zero
+- Removing a Product by Decreasing Quantity to Zero and Confirming Removal
+- Removing a Product by Decreasing Quantity to Zero and Cancelling Removal
+- Product Quantity Increase Due to Stock Availability
+- Product Quantity Increase for Bulk Purchase Discount
+- Product Quantity Adjustment After Cart Review
+- Product Quantity Increase After Price Verification
+- Decreasing Product Quantity to Desired Number
+- Adjusting Quantity for Promotional Eligibility
+- Correcting Accidental Quantity Increase
+- Updating Cart Based on Budget Constraints
+- Modifying Quantity After Price Check
+- User changes product option due to preference change
+- User changes product option due to incorrect initial selection
+- User changes product option after noticing a better promotion on another option

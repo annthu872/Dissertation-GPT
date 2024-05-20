@@ -1,0 +1,8 @@
+users successfully find a list of shops and related products by searching for a product name.
+users successfully search for a brand and see all products and official stores.
+users successfully find shops and products by typing a shop name.
+users cannot find any shops or related products if the product name does not exist in the database.
+users cannot find products, brands, or shops if the search keyword is unavailable.
+users can use the enter key to initiate the search instead of clicking the search icon.
+users encounter an error message when the search service is unavailable.
+users see shop names and a recommendation to try another keyword when searching an unavailable product name.

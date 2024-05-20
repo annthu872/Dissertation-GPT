@@ -1,0 +1,25 @@
+use case id: U20
+use case name: view event information.
+objective: The " view event information" use case allows users to access detailed information about a specific event of interest. Users can view descriptions, ratings, images, and other relevant details.
+actor: user 
+Preconditions: The user is on the homepage of the system.
+Included use case: None
+Extended use case: Save Favorite
+View Related Event
+Write Event review
+Basic flow:
+Step 1: User scroll homepage to meet 'Standout Event' section. 'Standout Event' section show a list of recommend events.
+Step 2: The user clicks a specific event from list of recommend events.
+Step 3: The system show detailed information about the selected Event include the event's description, status, ratings, images, address, and other relevant details (open time, price, rating, description, review from other users) if there is information. 
+
+Alternative Flows:
+Alternative flow 1: User See detailed Event description from Search event function.
+At step 1 of the basic flow: User perform 'Search event' feature.
+Step 2: The user clicks a specific event from list of search result events.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Postcondition: 
+None
+
+
+

@@ -1,0 +1,17 @@
+- users successfully complete a purchase with default delivery and payment options.
+- users successfully purchase a product by selecting it directly.
+- users successfully purchase products by selecting the store first.
+- users change the delivery location before completing the purchase.
+- users change the payment method before completing the purchase.
+- users successfully change delivery location to a new location.
+- users change shipping option before completing the purchase.
+- users apply a shop promotion before completing the purchase.
+- users apply a platform promotion before completing the purchase.
+- users cannot complete the purchase if the product is out of stock after adding to the cart but before payment.
+- users cannot complete the purchase due to a payment error.
+- users review and edit product options and quantity before completing the purchase.
+- users receive an error if the shipping information is incomplete or incorrect.
+- users cannot change delivery location if the address is not available on the map.
+- users cannot change delivery location if the name field is in the wrong format.
+- users cannot change delivery location if the phone number is in the wrong format.
+- users cannot proceed to payment if no product is selected.

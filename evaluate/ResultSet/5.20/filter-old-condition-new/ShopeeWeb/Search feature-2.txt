@@ -1,0 +1,9 @@
+users successfully find shops and related products by typing a product name.
+users find shops and related products by pressing enter instead of clicking the search icon.
+users successfully search for a brand and see all products and official stores.
+users successfully find shops and products by typing a shop name.
+users cannot find any shops or products due to typing a non-existent product name.
+users cannot find any shops but can see related products with unavailable keywords.
+users cannot find products if the search keyword is unavailable and not matching any shop, brand, or product.
+users encounter an error message when the search function is temporarily unavailable.
+users see shop names and receive recommendations to try other keywords when searching for an unavailable product.

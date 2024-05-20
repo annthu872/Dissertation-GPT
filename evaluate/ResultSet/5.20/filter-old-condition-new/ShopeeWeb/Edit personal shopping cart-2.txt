@@ -1,0 +1,12 @@
+users successfully navigate to the cart's page with all added products and their details.
+users navigate to an empty cart's page if no products have been added.
+users see updated product details in the cart if product options or quantities have been changed.
+users see correct promotion information for products in the cart.
+users cannot navigate to the cart's page if there is a system error.
+users can remove a product from their shopping cart successfully.
+users can remove a product from their shopping cart but decide to keep it by selecting no on the confirmation pop-up.
+users cannot remove a product from their shopping cart when choosing not to confirm removal.
+users remove a product from their shopping cart by decreasing the quantity to zero and confirm removal.
+users increase a product's quantity in the cart.
+users decrease a product's quantity to their desired amount.
+users can change options of a product in the shopping cart.

@@ -1,0 +1,29 @@
+- Cart Display with Multiple Products
+- Cart Display with a Single Product
+- Empty Cart Display
+- Cart Display with Products from the Same Shop
+- Cart Display with Expired Promotions
+- Cart Update after Product Option Change
+- Cart Update after Quantity Change
+- Cart Display with Unavailable Products
+- Removing a Single Product from the Cart
+- Removing Multiple Products from the Cart
+- Removing a Product and Cancelling the Removal
+- User decides to keep a product after initiating its removal
+- User accidentally selects the wrong product to remove and cancels the removal process
+- Removing a Product by Decreasing Quantity to Zero
+- User Decides Not to Remove a Product After Decreasing Quantity to Zero
+- Product Quantity Update Due to Stock Limitation
+- Product Quantity Update with Promotion Adjustment
+- Product Quantity Update Affecting Shipping Options
+- Product Quantity Update Leading to Price Adjustment
+- Product Quantity Update with Option Change
+- Decrease Quantity to Update Cart
+- Adjust Quantity for Promotional Eligibility
+- Correcting Mistaken Quantity Addition
+- Budget Adjustment
+- Preference Change
+- Change Product Option Due to Preference Change
+- Change Product Option After Noticing a Mistake
+- Change Product Option for Better Deal or Promotion
+- Change Product Option Based on Availability

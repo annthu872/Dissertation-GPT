@@ -1,0 +1,26 @@
+use case id: U17
+use case name: Save Favorite.
+objective: The "Save Favorite" use case allows users to save attractions/events to favorite list for later view.
+actor: user 
+Preconditions: The user is on the homepage of the system.
+Included use case: None 
+Extended use case: None
+Basic flow:
+Step 1: User find attraction/ event card that user find interest.
+Step 2: User tick on the heart icon to save attraction/event to Favorite List.
+
+Alternative Flows:
+Alternative flow 1: User save attraction/event in search page.
+At step 1 of the basic flow: User perform "Search Attraction" or "Search Event" function.
+Go back to step 1 in the basic flow and continue with the steps from step 1.
+
+Exception Flow:
+Exception flow 1: User untick (erase) a attraction/event.
+Step 1: User find attraction/ event card that has been tick the heart icon that user find not interest anymore. 
+Step 2: User untick the heart icon to erase attraction/event out of Favorite List.
+Step 3: System remove the attraction/event that has the heart icon untick out of Favorite List.
+
+Postcondition: 
+System save attraction/event that has the heart icon tick into Favorite List.
+
+

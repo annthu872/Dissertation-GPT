@@ -1,0 +1,11 @@
+- user successfully views items in the shopping cart with detailed information.
+- user views an empty shopping cart if no items have been added.
+- user views updated shopping cart after adding new items.
+- user views updated shopping cart after changing the quantity of an existing item.
+- user views updated shopping cart after applying a promotion to an item.
+- user views updated shopping cart after removing an item.
+- user views updated shopping cart after selecting a different option for an item with multiple options.
+- users cannot remove a product from their shopping cart if they do not confirm the removal action.
+- users can increase a product's quantity in the cart.
+- users can decrease a product's quantity in the cart.
+- users can change options of a product in the shopping cart.

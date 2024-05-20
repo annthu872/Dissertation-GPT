@@ -1,0 +1,7 @@
+1. Successful Navigation to Product Detail Page
+2. Product Detail Page Displays with Incomplete Information
+3. Product Detail Page Shows Out-of-Stock Status
+4. Navigation to Product Detail Page with No User Ratings Available
+5. Navigation to Product Detail Page with Error due to System Issue
+6. User selects a product with multiple options
+7. User selects a product that has just sold out

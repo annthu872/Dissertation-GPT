@@ -1,0 +1,5 @@
+users view detailed product information before adding to the shopping cart.
+users add a product to the shopping cart from the product's detail page.
+users successfully add a product to the shopping cart after choosing an option and adjusting quantity.
+users cannot add a product to the shopping cart without selecting an option when options are available.
+users cannot add a product to the shopping cart if the chosen product option is out of stock.

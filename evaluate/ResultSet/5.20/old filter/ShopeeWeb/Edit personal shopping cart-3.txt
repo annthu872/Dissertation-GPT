@@ -1,0 +1,21 @@
+- Cart Display with Multiple Products
+- Cart Display with a Single Product
+- Cart Display with Products from Multiple Shops
+- Cart Display with Products Having Multiple Options Selected
+- Cart Display with Products Having Promotions
+- Empty Cart Display
+- Cart Display with Products but No Available Promotions
+- Removing a Single Product from the Cart
+- Removing Multiple Products from the Cart
+- User Removes Product but Decides to Keep It
+- Removing a Product by Decreasing Quantity to Zero
+- Product Quantity Decrease and Cancel Removal
+- Product Quantity Adjustment Scenario
+- Decreasing Product Quantity to Update Cart
+- Adjusting Product Quantity for Promotional Eligibility
+- Correcting Mistaken Quantity Added
+- Decreasing Quantity to Stay Within Budget
+- Optimizing Shipping Costs by Adjusting Product Quantities
+- Changing product options due to preference change
+- Updating product options for better pricing or promotion
+- Correcting a mistake in initially selected product options

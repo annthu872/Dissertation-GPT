@@ -1,0 +1,12 @@
+user successfully navigates to personal bought order page and views all orders.
+users can navigate to their personal bought order page via personal name and avatar section.
+user filters orders by selecting the "waiting for payment" tab.
+user filters orders by selecting the "delivering" tab.
+user filters orders by selecting the "waiting to deliver" tab.
+user filters orders by selecting the "finished" tab.
+user filters orders by selecting the "cancelled" tab.
+user filters orders by selecting the "returned" tab.
+users can search orders using shop's name.
+users can search orders using order's id.
+users can search orders using product's id.
+users cannot find orders if the search keyword does not match any shop's name, order's id, or product's id.

@@ -1,0 +1,16 @@
+- Successful Purchase with Default Settings
+- Purchase with Changed Delivery Location
+- Purchase with Modified Quantity
+- Purchase with Different Payment Method
+- Purchase with Applied Platform Promotion
+- Single Store Purchase Scenario
+- User Changes Delivery Location Successfully
+- User Enters Incorrect Name Format When Adding New Location
+- User Enters Incorrect Phone Number Format When Adding New Location
+- User Cannot Find Address on Platform's Map When Adding New Location
+- User Changes Shipping Option Before Placing Order
+- Add new delivery location with name containing numbers
+- Add new delivery location with name less than 2 letters
+- Add new delivery location with phone number not in format (+84) xxx xxx xxx
+- Add new delivery location with phone number containing letters
+- Add new delivery location with an address not available on the platform's map

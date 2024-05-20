@@ -3,7 +3,7 @@ Buy product
 Objective: This use case helps user to buy product.
 Actor: Users
 
-Preconditions: User must have loged in to be able to access to buy product. User is in the shopping cart page.
+Preconditions: User must have logged in to be able to access to buy product. User is in the shopping cart page.
 
 Main flow:
 Step 1: User choose what product they want to buy by clicking the tick box at the head of the product's block. 

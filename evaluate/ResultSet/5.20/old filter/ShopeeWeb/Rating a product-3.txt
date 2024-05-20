@@ -1,0 +1,21 @@
+1. Successful Rating Submission with Default 5-Star Ratings
+2. Successful Rating Submission with Modified Star Ratings
+3. Successful Rating Submission with Comment Only
+4. Successful Rating Submission with Pictures Added
+5. Successful Rating Submission with Video Added
+6. Successful Rating Submission with Both Pictures and Video Added
+7. Rating Submission Attempt Without Internet Connection
+8. User Adjusts Quality Rating to 1 Star
+9. User Adjusts Quality Rating to 2 Stars
+10. User Adjusts Quality Rating to 3 Stars
+11. User Adjusts Quality Rating to 4 Stars
+12. Adjust Shipping Rating Before Submitting
+13. User Leaves a Comment Before Clicking Done
+14. User adds a picture successfully to the rating
+15. User attempts to add a non-image file as a picture to the rating
+16. User adds exactly one picture to the rating
+17. User adds exactly five pictures to the rating
+18. User attempts to add more than five pictures to the rating
+19. User Adds a Video Successfully
+20. User Attempts to Add a Non-Video File
+21. User Adds a Video and Then Completes the Rating

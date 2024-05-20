@@ -12,8 +12,8 @@ Step 8:The system redirects Admin to the "Word Information" page of selected wor
 Step 9:Admin presses button "Add new question".
 Step 10:The system pop up dialog to choose type of question Admin want to create.
 Step 11: Admin presses option add "Create questions for the selection test".
-Step 12: The system redirects Admin to the "Add new question for selection test" page of selected word which show all the fields that admin need to input to create a selection test and button 'Save' and 'Cancel'. These complusary fields are: one textfield "sentence" for Admins to input sentence that learner need to fill in blank and the position that the word learner need to fill must present by symbol '...',  a valid sentence must be below 250 characters and not contains any specical character. one textfield 'correct answer' for Admins to input the correct answer word, three textfield 'other option 1', 'other option 2', 'other option 3' for Admins to input the 3 different wrong answer word.
-Step 13: Admin fills the field "sentence" with a complete sentense has a symbol '...', 'correct answer' with the correct word form of the blank in the sentence, 'other option 1', 'other option 2', 'other option 3' with 3 different wrong answer word.
+Step 12: The system redirects Admin to the "Add new question for selection test" page of selected word which show all the fields that admin need to input to create a selection test and button 'Save' and 'Cancel'. These compulsory fields are: text field "sentence" for inputting sentence that learner need to fill in blank and the position that the word learner need to fill must present by symbol '...'and "sentence" must not be skip,  a valid sentence must be below 250 characters and not contains any special character. one text field 'correct answer' for Admins to input the correct answer word, three text field 'other option 1', 'other option 2', 'other option 3' for Admins to input the 3 different wrong answer word.
+Step 13: Admin fills the field "sentence" with a valid sentence has a symbol '...', 'correct answer' with the correct word form of the blank in the sentence, 'other option 1', 'other option 2', 'other option 3' with 3 different wrong answer word.
 Step 14: Admin presses button 'Save' to save the question information.
 Step 15: System save the question and redirect Admin to the "Word Information" page of selected word.
 
@@ -22,36 +22,36 @@ Alternative flow 1: Admin go to "Lesson Management" page from Homepage.
 At step 1 of the basic flow: Admin presses the "Lesson Management" tab at Homepage.
 Go back to step 2 in the basic flow and continue with the steps from step 2.
 
-Alternative flow 2: Admin skip complusary field "sentence".
-At step 13 of the basic flow: Admin field all the complusary field except field "sentence".
+Alternative flow 2: Admin skip compulsory field "sentence".
+At step 13 of the basic flow: Admin field all the compulsory field except field "sentence".
 Step 14: Admin presses button 'Save'.
 Step 15: System show notification that 'Admin did not fill all the fields', prompt Admin to fill the missing "sentence" field.
 Step 16: Admin re-fill the missing field.
 Step 17: Admin presses button 'Save'.
 
-Alternative flow 3: Admin skip complusary field "'correct answer'.
-At step 13 of the basic flow: Admin field all the complusary field except field 'correct answer'.
+Alternative flow 3: Admin skip compulsory field "'correct answer'.
+At step 13 of the basic flow: Admin field all the compulsory field except field 'correct answer'.
 Step 14: Admin presses button 'Save'.
 Step 15: System show notification that 'Admin did not fill all the fields', prompt Admin to fill the missing 'correct answer' field.
 Step 16: Admin re-fill the missing field.
 Step 17: Admin presses button 'Save'.
 
-Alternative flow 4: Admin skip complusary field 'other option 1'.
-At step 13 of the basic flow: Admin field all the complusary field except field 'other option 1'.
+Alternative flow 4: Admin skip compulsory field 'other option 1'.
+At step 13 of the basic flow: Admin field all the compulsory field except field 'other option 1'.
 Step 14: Admin presses button 'Save'.
 Step 15: System show notification that 'Admin did not fill all the fields', prompt Admin to fill the missing 'other option 1' field.
 Step 16: Admin re-fill the missing field.
 Step 17: Admin presses button 'Save'.
 
-Alternative flow 5: Admin skip complusary field 'other option 2'.
-At step 13 of the basic flow: Admin field all the complusary field except field 'other option 2'.
+Alternative flow 5: Admin skip compulsory field 'other option 2'.
+At step 13 of the basic flow: Admin field all the compulsory field except field 'other option 2'.
 Step 14: Admin presses button 'Save'.
 Step 15: System show notification that 'Admin did not fill all the fields', prompt Admin to fill the missing 'other option 2' field.
 Step 16: Admin re-fill the missing field.
 Step 17: Admin presses button 'Save'.
 
-Alternative flow 6: Admin skip complusary field 'other option 3'.
-At step 13 of the basic flow: Admin field all the complusary field except field 'other option 3'.
+Alternative flow 6: Admin skip compulsory field 'other option 3'.
+At step 13 of the basic flow: Admin field all the compulsory field except field 'other option 3'.
 Step 14: Admin presses button 'Save'.
 Step 15: System show notification that 'Admin did not fill all the fields', prompt Admin to fill the missing 'other option 3'field.
 Step 16: Admin re-fill the missing field.
@@ -65,7 +65,7 @@ Step 16: The dialog closed and the work on that question was kept.
 Step 17: Admin presses button 'Save'.
 
 Alternative flow 8: Admin enters invalid sentences.
-At step 13 of the basic flow: Admin fills all the complusary field and Admin fills in the 'sentence' field by an invalid sentence.
+At step 13 of the basic flow: Admin fills all the other compulsory field but fills in the 'sentence' field by an invalid sentence.
 Step 14: System show notification that 'Sentence is invalid', prompt Admin to re-enter the "sentence" field.
 Step 16: Admin re-enter the missing field.
 Step 17: Admin presses button 'Save'.
@@ -73,7 +73,7 @@ Step 17: Admin presses button 'Save'.
 Exception flow: 
 Exception flow 1: Admin leave by button back on browser without saving the question.
 At step 13 of the basic flow: Admin presses the button back on the browser. 
-Step 14: The system redirects Admin to the "Word Information" page of selected word and Question is not saved.Question is not saved.
+Step 14: The system redirects Admin to the "Word Information" page of selected word and Question is not saved. Question is not saved.
 
 Exception flow 2: Admin choose cancel the question and confirm the cancel.
 At step 13 of the basic flow: Admin presses button 'Cancel'.

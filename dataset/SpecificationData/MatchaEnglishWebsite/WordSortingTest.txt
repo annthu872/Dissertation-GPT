@@ -4,39 +4,16 @@ objective: This use case allows learners to take a test of word arranging test w
 actor: learner
 
 basic flow:
-Step 1: Learner select the review button on the Home page.
-Step 2: The system redirects learners to the review's screen.
-Step 3: The screen displays a question or the meaning of a vocabulary or an image showing the word and those letters of that vocabulary arranged randomly. 
-Step 4: Learner arrange letters in order and press enter
-Step 5: If the answer is correct, the pop up screen is green.
-Step 6: Learner click “Next” button to go to the next question.
-Step 7: Step 2 to step 6 is repeated until user reach the last word.
-Step 7: Once all the questions have been listened, the “Next” button on the last question will redirect system to the “completion notification” page with a congratulatory message and option buttons to “continue studying” and “return to the lesson page”.
-Step 8: Learner clicks "return to the lesson page" 
-Step 9: The system redirect to the lesson page.
+Step 1: The screen displays a question or the meaning of a vocabulary or an image showing the word and those letters of that vocabulary arranged randomly, not in correct order. 
+Step 2: Learner arrange letters by clicking on letters button in correct order and press enter after finish arranging.
+Step 3: The system compares user answer and the right English vocabulary for the question.
+Step 4: If the answer is correct, the pop up screen is green.
 
-Alternative flow 1:
-At anywhere from step 3 to step 7 of basic flow: Learner click “Exit” to exit review mode.
-Step 8: The pop up screen displays “Do you really want to exit?” with “Stay” and “Exit without saving changes” options.
-Step 9: Learner chooses “Stay”.
-Step 11: The vocabulary exercises continue.
-Go back to the step that user choose to branch in the basic flow and continue with the steps from step that user choose to branch in the basic flow.
-
-Alternative flow 2: Learner chooses wrong answer
-At step 5 of basic flow: If the answer is wrong, the pop up screen is red.
-Go back to step 7 in the basic flow and continue with the steps from step 7.
-
-Exception flow: Learner chooses to exit.
-At anywhere from step 3 to step 7 of basic flow: Learner click “Exit” to exit review mode.
-Step 8: The pop up screen displays “Do you really want to exit?” with “Stay” and “Exit without saving changes” options.
-Step 9: Learner chooses “Exit without saving changes”.
-Step 10: The system do not update new words status and redirect to the lesson page.
+Alternative flow 1: Learner chooses wrong answer
+At step 4 of basic flow: If the answer is wrong, the pop up screen is red.
 
 Preconditions:
 Learner must be logged into the application.
 
 Postconditions:
-Topic is marked as completed. 
 Vocabulary words are marked as studied.
-Learner can review completed topics and studied vocabulary later.
-

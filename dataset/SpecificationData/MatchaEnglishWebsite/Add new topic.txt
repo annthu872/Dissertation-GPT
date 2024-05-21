@@ -1,0 +1,30 @@
+use case id: U17
+use case name: adding new topic
+objective: This use case allows administrator to add a new english learning topic.
+actor: administrator
+
+basic flow:
+step 1: Administrator selects "Add new topic" tab on the navigation bar.
+step 2: The system redirects Administrator to the adding topic viewing page.
+step 3: Administrator adds the name of the topic in the name field.
+step 4: Administrator adds the description of the topic in the description field.
+step 5: Administrator selects "Save" to create a new topic.
+
+Alternative flow: Administrator adds an already used name for the topic.
+At step 3 of the basic flow: Administrator adds a name that is already used in the existed topics in the name field.
+step 4: Administrator adds the description of the topic in the description field.
+step 5: Administrator selects "Save" to create a new topic.
+step 6: The system shows notification that the name is already used, prompting Administrator to add another name in the name field.
+step 7: Administrator adds a new name in the name field.
+step 8: Administrator selects "Save" to create a new topic.
+
+Exception flow:
+At step 3 of the basic flow: Administrator can select "Cancel" to stop adding a new topic at anytime.
+
+Preconditions:
+Administrator must be logged into the application.
+Administrator is allowed to add new topic. 
+
+Postconditions:
+After successfully adding new topic, the system will redirect Administrator to the adding vocabulary to new topic section.
+New topic will appear in the topic list.

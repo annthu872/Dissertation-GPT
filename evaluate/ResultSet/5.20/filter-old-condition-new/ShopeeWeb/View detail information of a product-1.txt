@@ -1,0 +1,12 @@
+1. user successfully views product details from product card.
+2. users can view product details when the product is in stock.
+3. users can view product details with a 'sold out' sticker when the product is out of stock.
+4. user cannot navigate to product's detail page if the product card is unresponsive.
+5. user views product details but finds missing product information.
+6. user views product details with incorrect or outdated product information.
+7. user views product details but shipping options are not displayed.
+8. user views product details with an inaccurate count of products left.
+9. user views product details but store information is missing or incorrect.
+10. user views product details with missing or incomplete user ratings and reviews.
+11. users view details of a product without options.
+12. users view details of a product with multiple options.

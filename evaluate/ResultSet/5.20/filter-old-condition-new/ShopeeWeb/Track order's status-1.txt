@@ -1,0 +1,6 @@
+1. users successfully navigate to their personal bought order page.
+2. users successfully filter orders by status.
+3. users can search for orders using shop's name.
+4. users can search for orders using order's id.
+5. users can search for orders using product's id.
+6. users cannot filter orders if the search bar input is empty.

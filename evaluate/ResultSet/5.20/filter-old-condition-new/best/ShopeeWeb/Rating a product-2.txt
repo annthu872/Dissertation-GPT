@@ -1,0 +1,22 @@
+- user successfully submits a product rating with all sections filled.
+- user submits a product rating with only the default ratings and no additional comments or media.
+- user submits a product rating with comments but without adding pictures or videos.
+- user submits a product rating with pictures but without comments or videos.
+- user submits a product rating with videos but without comments or pictures.
+- user submits a product rating with both pictures and videos but without comments.
+- users successfully rate a product without leaving a comment.
+- users successfully rate a product and leave a comment.
+- users successfully add an image to their product rating.
+- users successfully rate a product and add a single picture.
+- users successfully rate a product and add multiple pictures up to the maximum limit.
+- user cannot submit a product rating without clicking the done button.
+- user views their submitted rating on the product's detail page.
+- users can adjust the quality rating point for the product before submitting.
+- users adjust seller rating before submitting a product rating.
+- users can adjust shipping rating before submitting a product review.
+- users cannot add a non-image file to their product rating.
+- users cannot add more than the maximum allowed number of pictures while rating a product.
+- users cannot add more than 5 images in the rating form.
+- users cannot add more than 1 video in the rating form.
+- users cannot add a non-image file as a picture in the rating form.
+- users cannot add a non-video file as a video in the rating form.

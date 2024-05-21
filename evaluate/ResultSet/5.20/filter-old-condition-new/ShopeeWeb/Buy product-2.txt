@@ -1,0 +1,17 @@
+1. users successfully complete a purchase with default delivery and payment options.
+2. users successfully purchase a product by selecting individual products.
+3. users successfully purchase products by selecting the store when all desired products are from the same store.
+4. users successfully complete a purchase without applying a platform's promotion.
+5. users change the delivery location before completing the purchase.
+6. users change shipping option before completing the purchase.
+7. users apply a shop promotion before completing the purchase.
+8. users apply a platform promotion before completing the purchase.
+9. users cannot complete the purchase if the product is out of stock after adding to the cart but before payment.
+10. users review and edit product options and quantity before completing the purchase.
+11. users cannot proceed to payment if the delivery location is not serviceable.
+12. users receive an error if the payment method fails.
+13. users successfully change delivery location to a new location.
+14. users cannot add a new location with an address not available on the map.
+15. user cannot add new delivery location with name field less than 2 letters.
+16. user cannot add new delivery location with name field containing non-letter characters.
+17. users cannot add a new location with a phone number in the wrong format.

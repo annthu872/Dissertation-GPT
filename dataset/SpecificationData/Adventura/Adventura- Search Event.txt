@@ -1,0 +1,31 @@
+use case id: U22
+use case name: Search event by Events title.
+objective: The "Search event by Events title" use case allows users to search for event based on their input.
+actor: user 
+Preconditions: The user is on the homepage of the system.
+Included use case: None
+Extended use case: View Event's Information, Filter/Sort event.
+Basic flow:
+Step 1: User click tab 'Event' on navbar.
+Step 2: System redirect User to event page.
+Step 3: User click on search bar.
+Step 4: User enter a keyword.
+Step 5: User press enter.
+Step 4: System filter all the event that related with the user inputted keyword.
+
+Alternative Flows:
+Alternative flow 1: System show suggestion.
+At step 5 of the basic flow: The system show suggestion event title base on the keyword user has inputted.
+Step 6: The user clicks a specific keyword from system's keyword suggestion.
+Step 7: System filter all the event that related with the user selected keyword suggestion.
+
+Alternative flow 2: User navigate to event page by button 'Show more' of 'Standout Event' section.
+At step 1 of the basic flow: User scroll homepage to meet 'Standout Event' section.
+Step 2: User press button 'Show more' in 'Standout Event' section.
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+
+Postcondition: 
+None
+
+
+

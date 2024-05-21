@@ -1,0 +1,22 @@
+Successful Purchase with Default Settings
+Purchase with Changed Delivery Location
+Purchase with Modified Quantity
+Purchase with Different Payment Method
+Purchase with Applied Platform Promotion
+Purchase with Applied Product Promotion
+Single Store Selection Scenario
+User Changes Delivery Location to a Saved Address
+User decides to change the delivery location to a new one during checkout
+User enters a name in an incorrect format when adding a new delivery location
+User enters a phone number in an incorrect format when adding a new delivery location
+User attempts to add an address not available on the platform's map when adding a new delivery location
+User applies a shop promotion before completing the order
+User applies a product promotion before completing the order
+User applies a platform's promotion voucher before completing the order
+User changes shipping option before placing an order
+Add new location with name field containing numbers
+Add new location with name field containing special characters
+Add new location with name field containing only one letter
+Add new location with phone number field not following the (+84) xxx xxx xxx format
+Add new location with phone number field containing letters
+Add new location with exact location's address not available on the platform's map

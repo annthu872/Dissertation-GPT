@@ -1,0 +1,11 @@
+users successfully add a product to the shopping cart.
+users add a product to the shopping cart and continue shopping.
+users add a product to the shopping cart and proceed to checkout.
+users can add a product without options to the shopping cart.
+users can add a product with options to the shopping cart.
+users can add a product to the cart with default quantity.
+users can adjust quantity of product before adding to cart.
+users cannot add a product to the shopping cart if the product is out of stock.
+users cannot add a product with options to the shopping cart without selecting an option.
+users cannot add a product option to the shopping cart if the option is out of stock.
+users view detailed product information before adding to cart.

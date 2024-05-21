@@ -1,0 +1,7 @@
+1. users successfully find shops and related products using the search function
+2. users successfully search for a brand and see all products and official stores
+3. users successfully search for a shop by name and view matching shops and products with similar names
+4. users cannot find any shops or products if the product name is misspelled
+5. users cannot find products, brands, or shops if the search keyword is unavailable
+6. users find shops and related products using the search function with partial product name
+7. users encounter an error message when the search service is unavailable

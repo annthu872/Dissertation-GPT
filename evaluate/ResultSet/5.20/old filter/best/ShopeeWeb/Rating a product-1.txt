@@ -1,0 +1,30 @@
+- Successful Rating Submission with Default 5-Star Ratings
+- Successful Rating Submission with Modified Star Ratings
+- Successful Rating Submission with Comment Added
+- Successful Rating Submission with Picture Added
+- Successful Rating Submission with Video Added
+- Successful Rating Submission with All Optional Fields Utilized (Comment, Picture, and Video)
+- Rating Submission with Mandatory Fields Only (No Comment, Picture, or Video)
+- Attempt to Submit Rating Without Completing Mandatory Fields
+- Rating Submission with Invalid File Format for Picture or Video
+- Rating Submission with File Size Exceeding Limit for Picture or Video
+- User Adjusts Quality Rating to 1 Star
+- User Adjusts Quality Rating to 2 Stars
+- User Adjusts Quality Rating to 3 Stars
+- User Adjusts Quality Rating to 4 Stars
+- User adjusts seller rating to 1 star
+- User adjusts seller rating to 2 stars
+- User adjusts seller rating to 3 stars
+- User adjusts seller rating to 4 stars
+- User adjusts shipping rating to 1 star
+- User adjusts shipping rating to 2 stars
+- User adjusts shipping rating to 3 stars
+- User adjusts shipping rating to 4 stars
+- User Leaves a Comment Before Clicking Done
+- User adds a picture successfully
+- User attempts to add a non-image file
+- User Adds Maximum Allowed Pictures
+- User Attempts to Add More Than Maximum Allowed Pictures
+- User Adds Less Than Maximum Allowed Pictures
+- User Adds a Video Successfully
+- User Attempts to Add a Non-Video File

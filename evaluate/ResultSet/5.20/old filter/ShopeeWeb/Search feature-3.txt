@@ -1,0 +1,12 @@
+- Successful Product Search
+- No Results Found
+- Partial Match Results Found
+- Search by Brand Name Instead of Product Name
+- Misinterpretation of Product Name as Brand Name
+- Searching for a Shop Name Instead of a Product Name
+- User searches for a product using a misspelled keyword
+- User searches for a product that is not available in any shop or does not exist
+- Search for Unavailable Product
+- Search Using Non-Product Keywords
+- Search with Typographical Errors
+- Search with Discontinued or Out-of-Stock Products

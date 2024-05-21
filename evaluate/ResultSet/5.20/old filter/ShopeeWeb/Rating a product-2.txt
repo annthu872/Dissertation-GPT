@@ -1,0 +1,23 @@
+- Successful Rating Submission
+- Rating Submission with Pictures
+- Rating Submission with Video
+- Rating Submission with Both Pictures and Video
+- Rating Submission with Comment Only
+- Rating Submission with Lower Star Rating
+- User Adjusts Quality Rating to 1 Star
+- User Adjusts Quality Rating to 2 Stars
+- User Adjusts Quality Rating to 3 Stars
+- User Adjusts Quality Rating to 4 Stars
+- User Adjusts Seller Rating Before Submitting the Review
+- User Adjusts Shipping Rating to 1 Star
+- User Adjusts Shipping Rating to 2 Stars
+- User Adjusts Shipping Rating to 3 Stars
+- User Adjusts Shipping Rating to 4 Stars
+- User Leaves a Comment Before Submitting Rating
+- User Adds a Picture Successfully
+- User Attempts to Add a Non-Image File
+- User Adds Maximum Allowed Pictures
+- User Attempts to Add More Than Maximum Allowed Pictures
+- User Adds Less Than Maximum Allowed Pictures
+- User Adds a Video Successfully
+- User Attempts to Add a Non-Video File

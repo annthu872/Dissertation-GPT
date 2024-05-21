@@ -1,0 +1,12 @@
+1. View All Orders Scenario
+2. View Orders Waiting for Payment Scenario
+3. View Delivering Orders Scenario
+4. View Orders Waiting to Deliver Scenario
+5. View Finished Orders Scenario
+6. View Cancelled Orders Scenario
+7. View Returned Orders Scenario
+8. Search for a Specific Order Scenario
+9. User searches for an order by shop's name
+10. User searches for an order by order's ID
+11. User searches for an order by product's ID
+12. SearchOrders_WithEmptySearchInput

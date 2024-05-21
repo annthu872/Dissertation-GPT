@@ -1,0 +1,5 @@
+Users successfully view the first page of authors.
+Users successfully navigate to the next page of authors using the "Next" button.
+Users successfully navigate to a specific page of authors using page numbers.
+Users cannot navigate to the next page of authors if it is the last page.
+Users cannot navigate to a previous page of authors if it is the first page.

@@ -1,0 +1,5 @@
+User successfully views details of a chosen book from the book list.
+User cannot view book details if the book title link is broken.
+User views details of a different book than intended due to incorrect title link mapping.
+User cannot view book details due to server error after clicking the book title.
+User views incomplete book details due to missing information in the database.

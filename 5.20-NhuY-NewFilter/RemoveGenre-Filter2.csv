@@ -1,0 +1,4 @@
+User successfully deletes a genre.
+User cancels deletion of a genre.
+User attempts to delete a genre that does not exist.
+User attempts to delete a genre but the server is unresponsive.

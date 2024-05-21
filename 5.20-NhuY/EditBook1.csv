@@ -1,0 +1,12 @@
+1. EditBook_WithEmptyTitle
+2. EditBook_WithEmptyAuthor
+3. EditBook_WithEmptyGenre
+4. EditBook_WithEmptyDescription
+5. EditBook_WithEmptyPublicationDate
+6. Successful Book Update
+7. Book Update with Incorrect Data
+8. Book Update with System Error
+9. Incorrect Data Entry Scenario
+10. Database Error Scenario
+11. Cancel Update Before Submission Scenario
+12. Navigation Away During Update Scenario

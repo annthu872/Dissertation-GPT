@@ -1,0 +1,8 @@
+Users cannot add a new book if the Title field is empty.
+Users cannot add a new book if the Author field is empty.
+Users cannot add a new book if the Genre field is empty.
+Users cannot add a new book if the Description field is empty.
+Users cannot add a new book if the Publication date field is empty.
+User views updated list of books after successfully adding a new book record.
+Users cancel the book creation process using the "Cancel" button.
+Users navigate away from the book creation form by selecting another menu item.

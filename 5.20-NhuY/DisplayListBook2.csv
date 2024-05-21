@@ -1,0 +1,13 @@
+Display books with date range not specified
+Display books with incorrect date format in date range input
+Successful display of the first page of books
+Navigation to the next page of books using the "Next" button
+Navigation to a specific page of books by clicking the page number
+Display of the last page of books with fewer than 10 items
+Attempt to navigate beyond the last page of books
+Refreshing the page while viewing a specific page of books
+Navigation back to the first page of books after viewing subsequent pages
+Viewing a specific page of books directly via a bookmarked URL
+Filtering by Date with No Results
+Filtering by Date with Results Spanning Multiple Pages
+Filtering by Date with Single Page Results

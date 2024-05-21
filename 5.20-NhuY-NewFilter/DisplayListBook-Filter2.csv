@@ -1,0 +1,10 @@
+Users can display the list of books by selecting "Books".
+Users can filter books by a valid publishing date range.
+Users cannot filter books if the date range input is invalid.
+Users cannot filter books if the date range input is left empty.
+Users successfully navigate to the next page of books using the "Next" button.
+Users successfully navigate to a specific page of books using page numbers.
+Users cannot navigate to the next page of books when on the last page.
+Users cannot navigate to a previous page of books when on the first page.
+Users see an empty list when there are no books to display.
+Users can view a filtered list of books within a valid date range.

@@ -1,0 +1,18 @@
+1. Date range input with start date after end date
+2. Date range input with empty start date
+3. Date range input with empty end date
+4. Date range input with both fields empty
+5. Successful display of the first page of books
+6. Navigation to the next page of books
+7. Navigation to a specific page of books
+8. Last page of books display
+9. Navigation back to the previous page of books
+10. Display of a page with fewer than 10 books (end of list scenario)
+11. Attempt to navigate beyond the last page of books
+12. Refreshing the page while viewing books
+13. Navigation to a non-existent page number
+14. User Filters Books by Date Range After Viewing First Page
+15. User Filters Books by Date Range After Navigating to a Subsequent Page
+16. User Applies Date Filter with No Results
+17. User Modifies Date Range to Include More Books
+18. User Clears Date Range After Applying Filter

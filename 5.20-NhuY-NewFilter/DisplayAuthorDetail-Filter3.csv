@@ -1,0 +1,4 @@
+User cannot view author details if the author does not exist.
+User views an error message when clicking on a title that leads to a broken link.
+User experiences a delay in loading author details due to slow network connection.
+User is redirected to a login page if not authenticated when trying to view author details.

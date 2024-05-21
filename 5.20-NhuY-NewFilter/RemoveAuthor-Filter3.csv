@@ -1,0 +1,5 @@
+User cancels deletion of an author record from the confirmation dialog.
+User attempts to delete an author record but encounters a server error.
+User tries to delete an author record but the record does not exist or has already been deleted.
+User navigates away from the confirmation dialog without making a choice.
+Users navigate to another page without deleting the author record.

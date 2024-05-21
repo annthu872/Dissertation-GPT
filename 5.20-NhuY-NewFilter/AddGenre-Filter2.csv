@@ -1,0 +1,10 @@
+Users cannot add a new genre if the Name field is empty.
+Users cannot add a new genre if the Description field is empty.
+User receives incorrect data messages for invalid inputs.
+User encounters an error message due to system failure.
+User views updated list of genres after successfully adding a new record.
+Users successfully add a new genre record.
+Users cannot add a new genre record if entered data is invalid.
+Users encounter an error while adding a new genre record.
+Users cancel adding a new genre record by pressing the "Cancel" button.
+Users navigate away from the genre creation form without saving data by selecting another menu item.

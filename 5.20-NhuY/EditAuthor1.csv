@@ -1,0 +1,11 @@
+Scenario_Name_Not_Entered
+Scenario_Bio_Not_Entered
+Successful Author Update
+Author Update with Incorrect Data
+Author Update with System Error
+User presses "Cancel" after partially entering data
+User navigates to "Books" before submitting the form
+User navigates to "Genres" before submitting the form
+User navigates to "Authors" before submitting the form
+User navigates to "Home" before submitting the form
+User navigates to "API" before submitting the form

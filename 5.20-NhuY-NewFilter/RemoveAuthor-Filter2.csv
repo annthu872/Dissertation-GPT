@@ -1,0 +1,10 @@
+User successfully deletes an author record.
+User cancels the deletion of an author record.
+User attempts to delete an author record but encounters a server error.
+User tries to delete an author record but the record does not exist.
+Users can cancel author deletion via the Cancel button in the confirmation dialog.
+Users can navigate to Books without deleting the author after initiating deletion.
+Users can navigate to Genres without deleting the author after initiating deletion.
+Users can navigate to Authors without deleting the author after initiating deletion.
+Users can navigate to Home without deleting the author after initiating deletion.
+Users can navigate to API without deleting the author after initiating deletion.

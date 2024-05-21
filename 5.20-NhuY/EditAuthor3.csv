@@ -1,0 +1,9 @@
+1. Scenario_Name_Incorrect_Name_Entry
+2. Scenario_Name_Incorrect_Bio_Entry
+3. Successful Author Update
+4. Author Update with Incorrect Data
+5. Author Update with System Error
+6. Incorrect Data Entered
+7. Database Error Occurs
+8. Cancel Operation Before Data Submission
+9. Navigation Away Using Menu Before Submission

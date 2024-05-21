@@ -1,0 +1,4 @@
+User cancels deletion of a book record from the confirmation dialog.
+User attempts to delete a book record but encounters a server error.
+User tries to delete a book record that has already been deleted or does not exist.
+Users navigate to another page without deleting the book record.

@@ -1,0 +1,6 @@
+Users cannot update an author if the Name field is not mentioned.
+Users cannot update an author if the Bio field is not mentioned.
+User encounters an error message when an error occurs during author record update.
+User sees the list of authors with updated records after successful update.
+Users cancel the update operation before submitting the form.
+Users navigate away from the update form by selecting a menu item before submitting.

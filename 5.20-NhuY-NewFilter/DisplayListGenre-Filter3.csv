@@ -1,0 +1,6 @@
+Users successfully view the first page of genres.
+Users successfully navigate to the next page of genres using the "Next" button.
+Users successfully navigate to a specific page of genres using page numbers.
+Users cannot navigate to the next page of genres when on the last page.
+Users cannot navigate to a previous page of genres when on the first page.
+Users see an empty list when there are no genres in the database.

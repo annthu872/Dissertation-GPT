@@ -1,0 +1,9 @@
+1. Successful Genre Deletion
+2. User Cancels Deletion
+3. Deletion Attempt of Non-Existent Genre
+4. Deletion Attempt with Insufficient Permissions
+5. Cancel Deletion and Return to Genre List
+6. Cancel Deletion and Navigate to Books
+7. Cancel Deletion and Navigate to Authors
+8. Cancel Deletion and Navigate to Home
+9. Cancel Deletion and Navigate to API

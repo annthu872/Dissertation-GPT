@@ -1,0 +1,5 @@
+1. Successful Genre Deletion
+2. User Cancels Deletion
+3. Deletion Attempt of Non-Existent Genre
+4. Deletion Attempt with Insufficient Permissions
+5. User Navigates Away Using Menu Before Confirming Deletion

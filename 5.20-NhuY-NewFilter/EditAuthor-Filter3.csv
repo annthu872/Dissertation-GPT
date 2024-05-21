@@ -1,0 +1,6 @@
+Users cannot update author if Name field is blank.
+Users cannot update author if Bio field is blank.
+User receives incorrect data messages when entering invalid author data.
+User views the list of authors with updated records after a successful update.
+Users cancel the update operation before submitting the form.
+Users navigate away from the update form by selecting a menu item before submitting.

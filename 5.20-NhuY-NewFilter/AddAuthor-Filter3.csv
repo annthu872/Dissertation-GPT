@@ -1,0 +1,5 @@
+Users cannot add a new author if the Name field is empty.
+Users cannot add a new author if the Bio field is empty.
+User cannot add a new author record if book data is entered incorrectly.
+Users cancel author data entry and return to the author list.
+Users navigate away from author data entry without saving.

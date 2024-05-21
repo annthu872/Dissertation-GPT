@@ -1,0 +1,8 @@
+User cancels genre deletion from the confirmation dialog.
+User attempts to delete a genre that no longer exists or has already been deleted.
+User tries to delete a genre but encounters a server or network error during the process.
+Users cancel genre deletion and navigate to the Books page.
+Users cancel genre deletion and navigate to the Genres page.
+Users cancel genre deletion and navigate to the Authors page.
+Users cancel genre deletion and navigate to the Home page.
+Users cancel genre deletion and navigate to the API page.

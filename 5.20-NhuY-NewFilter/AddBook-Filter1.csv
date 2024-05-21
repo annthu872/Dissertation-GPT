@@ -1,0 +1,12 @@
+Users cannot add a new book if the Title field is empty.
+Users cannot add a new book if the Author field is empty.
+Users cannot add a new book if the Genre field is empty.
+Users cannot add a new book if the Description field is empty.
+Users cannot add a new book if the Publication date field is empty.
+User successfully adds a new book record.
+Users cancel adding a new book record by pressing the "Cancel" button.
+Users navigate away from the book data form without saving by selecting "Books" menu item.
+Users navigate away from the book data form without saving by selecting "Genres" menu item.
+Users navigate away from the book data form without saving by selecting "Authors" menu item.
+Users navigate away from the book data form without saving by selecting "Home" menu item.
+Users navigate away from the book data form without saving by selecting "API" menu item.

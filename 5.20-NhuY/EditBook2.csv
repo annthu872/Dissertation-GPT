@@ -1,0 +1,14 @@
+EditBook_WithEmptyTitle
+EditBook_WithEmptyAuthor
+EditBook_WithEmptyGenre
+EditBook_WithEmptyDescription
+EditBook_WithEmptyPublicationDate
+Successful Book Update
+Book Update with Incorrect Data
+Book Update with System Error
+User presses “Cancel” button before submitting the update form
+User navigates away by selecting "Books" menu item before submitting the update form
+User navigates away by selecting "Genres" menu item before submitting the update form
+User navigates away by selecting "Authors" menu item before submitting the update form
+User navigates away by selecting "Home" menu item before submitting the update form
+User navigates away by selecting "API" menu item before submitting the update form

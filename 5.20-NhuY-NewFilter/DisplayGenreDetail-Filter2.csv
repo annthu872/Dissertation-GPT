@@ -1,0 +1,5 @@
+User successfully views details of a chosen genre.
+User cannot view genre details if the genre does not exist.
+User views details of a different genre than intended due to misclick.
+User attempts to view genre details with a slow internet connection.
+User views genre details with accessibility features enabled.

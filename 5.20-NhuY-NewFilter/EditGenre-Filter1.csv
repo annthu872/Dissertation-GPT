@@ -1,0 +1,7 @@
+User cannot update genre if the Genre Name field is left empty.
+User cannot update genre if the Genre Description field is left empty.
+User receives incorrect data messages when entering invalid genre data.
+User encounters an error message during the genre update process.
+User views updated genre list after successful record update.
+Users cancel the update operation before submitting the form.
+Users navigate away from the update form by selecting another menu item before submitting.

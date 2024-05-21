@@ -1,0 +1,12 @@
+1. Scenario_TitleEmpty
+2. Scenario_AuthorEmpty
+3. Scenario_GenreEmpty
+4. Scenario_DescriptionEmpty
+5. Scenario_PublicationDateEmpty
+6. Successful Book Creation
+7. Book Creation with Incorrect Data
+8. Book Creation Failure Due to System Error
+9. Cancel Operation Before Data Entry
+10. Cancel Operation After Partial Data Entry
+11. Navigation to Another Section Before Submission
+12. Cancel Operation After Completing Data Entry

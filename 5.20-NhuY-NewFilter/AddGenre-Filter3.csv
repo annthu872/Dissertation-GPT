@@ -1,0 +1,5 @@
+Users cannot add a new genre if the Name field is blank.
+Users cannot add a new genre if the Description field is blank.
+User successfully adds a new genre record.
+Users cancel adding a new genre record by pressing the "Cancel" button.
+Users navigate away from the genre creation form without saving data by selecting another menu item.

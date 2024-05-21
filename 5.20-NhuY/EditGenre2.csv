@@ -1,0 +1,11 @@
+1. EditGenre_WithEmptyGenreName
+2. EditGenre_WithEmptyGenreDescription
+3. Successful Genre Update
+4. Genre Update with Incorrect Data
+5. Genre Update Failure Due to System Error
+6. User presses "Cancel" before submitting updated genre data
+7. User navigates to "Books" before submitting updated genre data
+8. User navigates to "Genres" before submitting updated genre data
+9. User navigates to "Authors" before submitting updated genre data
+10. User navigates to "Home" before submitting updated genre data
+11. User navigates to "API" before submitting updated genre data

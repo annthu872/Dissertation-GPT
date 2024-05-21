@@ -1,0 +1,11 @@
+Update genre with incorrectly entered genre name
+Update genre with incorrectly entered genre description
+Successful Genre Update
+Genre Update with Incorrect Data
+Genre Update with System Error
+User presses "Cancel" after partially entering data
+User navigates away by selecting "Books" before submitting the form
+User navigates away by selecting "Genres" before submitting the form
+User navigates away by selecting "Authors" before submitting the form
+User navigates away by selecting "Home" before submitting the form
+User navigates away by selecting "API" before submitting the form

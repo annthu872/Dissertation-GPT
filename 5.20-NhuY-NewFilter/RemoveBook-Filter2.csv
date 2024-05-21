@@ -1,0 +1,6 @@
+User successfully deletes a book record.
+User cancels deletion of a book record from the confirmation dialog.
+User attempts to delete a book record but encounters a server error.
+User tries to delete a book record but the record does not exist anymore.
+Users cancel book deletion via the Cancel button.
+Users navigate away from deletion confirmation without deleting the book.

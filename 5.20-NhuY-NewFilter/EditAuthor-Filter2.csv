@@ -1,0 +1,5 @@
+Users cannot update an author if the Name field is not mentioned.
+Users cannot update an author if the Bio field is not mentioned.
+User successfully updates an author record.
+Users cancel the update operation before submitting the form.
+Users navigate away from the update form by selecting a menu item before submitting.

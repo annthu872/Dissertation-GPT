@@ -1,0 +1,11 @@
+Condition scenario:
+User successfully deletes a book record.
+User cancels the deletion of a book record.
+User attempts to delete a book record but encounters a server error.
+User tries to delete a book record but the book does not exist anymore.
+Users navigate to "Books" without deleting the book record.
+Users navigate to "Genres" without deleting the book record.
+Users navigate to "Authors" without deleting the book record.
+Users navigate to "Home" without deleting the book record.
+Users navigate to "API" without deleting the book record.
+Users cancel the deletion of a book record via the "Cancel" button.

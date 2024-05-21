@@ -1,0 +1,7 @@
+Scenario_CreateGenre_WithoutName
+Scenario_CreateGenre_WithoutDescription
+Successful Genre Creation
+Genre Creation with Incorrect Data
+Genre Creation Failure Due to System Error
+Cancel Operation Before Data Submission
+Navigation Away Before Data Submission

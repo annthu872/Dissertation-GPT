@@ -1,0 +1,19 @@
+1. EditBook_InvalidTitle_EmptyField
+2. EditBook_InvalidTitle_IncorrectFormat
+3. EditBook_InvalidAuthor_EmptyField
+4. EditBook_InvalidAuthor_IncorrectFormat
+5. EditBook_InvalidGenre_EmptyField
+6. EditBook_InvalidGenre_IncorrectFormat
+7. EditBook_InvalidDescription_EmptyField
+8. EditBook_InvalidDescription_IncorrectFormat
+9. EditBook_InvalidPublicationDate_EmptyField
+10. EditBook_InvalidPublicationDate_IncorrectFormat
+11. Successful Book Update
+12. Book Update with Incorrect Data
+13. Book Update with System Error
+14. User starts updating book data and then cancels the operation
+15. User navigates away to "Books" before submitting updated book data
+16. User navigates away to "Genres" before submitting updated book data
+17. User navigates away to "Authors" before submitting updated book data
+18. User navigates away to "Home" before submitting updated book data
+19. User navigates away to "API" before submitting updated book data

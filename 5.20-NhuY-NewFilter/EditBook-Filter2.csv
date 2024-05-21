@@ -1,0 +1,10 @@
+Users cannot update a book if the Title is entered incorrectly.
+Users cannot update a book if the Author is entered incorrectly.
+Users cannot update a book if the Genre is entered incorrectly.
+Users cannot update a book if the Description is entered incorrectly.
+Users cannot update a book if the Publication date is entered incorrectly.
+User cannot update a book record if required fields are left blank.
+User receives incorrect data messages when entering invalid book data.
+User views updated book list after successfully updating a book record.
+Users cancel the update operation before submitting the form.
+Users navigate away from the update form by selecting a menu item before submitting.

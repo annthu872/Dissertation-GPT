@@ -1,0 +1,15 @@
+1. Successful display of the first page of books.
+2. Navigation to the next page of books using the "Next" button.
+3. Navigation to a specific page of books by clicking the page number.
+4. Display of the last page of books with fewer than 10 items.
+5. Attempt to navigate beyond the last page of books.
+6. Refreshing the page while viewing a specific page of books.
+7. Navigation back to the first page of books after viewing subsequent pages.
+8. Viewing a specific page of books directly via a bookmarked URL.
+9. Attempt to navigate to a non-existent page number.
+10. Display of books when there are exactly 10 items on the last page.
+11. User Filters Books by Date Range After Viewing Initial List.
+12. User Filters Books by Date Range Before Navigating Pages.
+13. User Applies Date Filter with No Results Leading Back to Full List.
+14. User Modifies Date Range After Initial Filter to Widen Search.
+15. User Clears Date Filter to Return to Full List View.

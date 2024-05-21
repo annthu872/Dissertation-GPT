@@ -1,0 +1,9 @@
+Users can view a list of books without applying a date filter.
+Users cannot filter books if the date range input is left empty.
+Users cannot filter books if an invalid date range is entered.
+Users successfully navigate to the second page of books list using the "Next" button.
+Users successfully navigate to a specific page of books list using page number.
+Users cannot navigate to the next page of books list if it is the last page.
+Users cannot navigate to a previous page of books list if it is the first page.
+Users see an empty list if there are no books available.
+Users can filter books by specifying a date range and see the filtered books list.

@@ -1,0 +1,8 @@
+Users cannot add a new author if the Name field is empty.
+Users cannot add a new author if the Bio field is empty.
+User successfully adds a new author record.
+User cannot add a new author record if book data is entered incorrectly.
+User encounters an error message when adding a new author record fails due to a system error.
+User views updated list of authors after successfully adding a new author record.
+Users cancel the author creation process by pressing the "Cancel" button.
+Users navigate away from the author creation form by selecting another menu item before submitting.

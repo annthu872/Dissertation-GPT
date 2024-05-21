@@ -1,0 +1,9 @@
+1. Scenario_GenreNameNotEntered
+2. Scenario_GenreNameEnteredIncorrectly
+3. Scenario_GenreDescriptionNotEntered
+4. Scenario_GenreDescriptionEnteredIncorrectly
+5. Successful Genre Update
+6. Genre Update with Incorrect Data
+7. Genre Update Failure Due to System Error
+8. User Cancels Update Before Submission
+9. User Navigates Away Using Menu Before Submission

@@ -1,0 +1,8 @@
+Users can display the list of books by selecting "Books".
+Users can navigate through book list pages using the "Next" button or page numbers.
+Users can filter books by specifying a date range.
+Users cannot filter books if the date range input is not specified.
+Users cannot filter books if the date range format is incorrect.
+Users cannot navigate beyond the last page of books.
+Users cannot navigate to a non-existent page number.
+Users navigate back to the first page of books after reaching the last page.

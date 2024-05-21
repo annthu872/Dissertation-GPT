@@ -1,0 +1,7 @@
+Condition scenario:
+Users cannot navigate to the next page of genres when on the last page.
+Users cannot navigate to a previous page of genres when on the first page.
+Users see an error message when the server is down.
+Users see a loading indicator while the genres are being fetched.
+Users can filter genres by their name.
+Users can sort genres alphabetically.

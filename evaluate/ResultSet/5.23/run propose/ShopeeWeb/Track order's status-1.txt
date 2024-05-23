@@ -1,0 +1,12 @@
+User Views All Orders
+User Filters Orders by Waiting for Payment
+User Filters Orders by Delivering
+User Filters Orders by Waiting to Deliver
+User Filters Orders by Finished
+User Filters Orders by Cancelled
+User Filters Orders by Returned
+User Searches for a Specific Order
+Scenario: User searches for an order by shop's name.
+Scenario: User searches for an order by order's ID.
+Scenario: User searches for an order by product's ID.
+Search Orders with Empty Input

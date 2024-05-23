@@ -1,0 +1,13 @@
+1. Successful Navigation to Cart Page with All Product Details Displayed
+2. Cart Page Displays Incorrect Product Information
+3. Cart Page Displays Outdated Promotion Information
+4. Cart Page Shows Incorrect Product Quantity
+5. Cart Page Displays Incorrect Product Options Selected
+6. Removing a Product by Decreasing Quantity to Zero
+7. User Decides Not to Remove a Product After Decreasing Quantity to Zero
+8. Product Quantity Update Due to Stock Availability
+9. Product Quantity Update for Bulk Purchase Discount
+10. Product Quantity Adjustment After Promotion Information Review
+11. Product Option Selection Leading to Quantity Adjustment
+12. Decrease Product Quantity to Desired Number
+13. Product Option Change Scenario

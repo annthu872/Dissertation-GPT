@@ -1,0 +1,8 @@
+Search feature-2.txt
+""
+1. Successful Product Search
+2. No Results Found
+3. Partial Match Results
+4. Searching by Brand Name Scenario
+5. Searching by Shop Name Instead of Product Name
+6. SearchWithUnavailableKeywordNotMatchingAnyShopBrandOrProduct

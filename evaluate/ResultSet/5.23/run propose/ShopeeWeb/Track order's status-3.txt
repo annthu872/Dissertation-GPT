@@ -1,0 +1,12 @@
+1. Successful navigation to personal bought order page
+2. Filtering orders by status
+3. Searching for an order
+4. User Filters Orders by "Waiting for Payment" Status
+5. User Filters Orders by "Delivering" Status
+6. User Filters Orders by "Waiting to Deliver" Status
+7. User Filters Orders by "Finished" Status
+8. User Filters Orders by "Cancelled" Status
+9. User Filters Orders by "Returned" Status
+10. User searches order by shop's name
+11. User searches order by order's ID
+12. User searches order by product's ID

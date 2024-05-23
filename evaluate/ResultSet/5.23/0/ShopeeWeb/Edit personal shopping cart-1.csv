@@ -1,0 +1,10 @@
+Edit personal shopping cart-1.txt
+""
+1. Successful Navigation to Cart Page with Product Details Displayed
+2. User removes a product from their shopping cart by erasing it
+3. Scenario: User decides not to remove a product after initiating the removal process.
+4. Removing a Product by Decreasing Quantity to Zero
+5. User Decides Not to Remove a Product After Decreasing Quantity to Zero
+6. Product Quantity Increase
+7. Decrease Product Quantity to Desired Number
+8. Product Option Change Scenario

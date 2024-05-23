@@ -1,0 +1,13 @@
+1. Successful Purchase with Default Settings
+2. Buying Products from a Single Store Scenario
+3. Change of Delivery Location Before Purchase
+4. Change of Payment Method Before Purchase
+5. Applying Platform Promotion Before Purchase
+6. User Changes Delivery Location to a New Location with Correct Details
+7. Add new delivery location with location name containing numbers
+8. Add new delivery location with location name less than 2 letters
+9. Add new delivery location with phone number not in format (+84) xxx xxx xxx
+10. Add new delivery location with phone number containing letters
+11. Add new delivery location with exact address not found on the platform's map
+12. User Applies Shop or Product's Promotion Before Placing Order
+13. User changes shipping option

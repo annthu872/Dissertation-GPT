@@ -1,0 +1,25 @@
+1. Successful Rating Submission
+2. Rating Submission with Comment Only
+3. Rating Submission with Photos Only
+4. Rating Submission with Video Only
+5. Rating Submission with Both Photos and Video
+6. Rating Submission with Adjusted Product Quality Rating
+7. Rating Submission with Adjusted Seller Rating
+8. Rating Submission with Adjusted Shipping Rating
+9. Rating Submission with Adjustments to All Ratings
+10. User adjusts quality rating to 1 star
+11. User adjusts quality rating to 2 stars
+12. User adjusts quality rating to 3 stars
+13. User adjusts quality rating to 4 stars
+14. User adjusts seller rating to 1 star
+15. User adjusts seller rating to 2 stars
+16. User adjusts seller rating to 3 stars
+17. User adjusts seller rating to 4 stars
+18. User Adjusts Shipping Rating Before Submitting
+19. User Leaves a Comment Before Submitting Rating
+20. User Adds Exactly One Picture
+21. User Adds Multiple Pictures Up to Maximum Limit
+22. User Attempts to Add More Than Maximum Picture Limit
+23. User Attempts to Add a Non-image File
+24. User adds a video file successfully
+25. User attempts to add a non-video file

@@ -1,0 +1,12 @@
+1. User Views All Orders
+2. User Filters Orders by Waiting for Payment
+3. User Filters Orders by Delivering
+4. User Filters Orders by Waiting to Deliver
+5. User Filters Orders by Finished
+6. User Filters Orders by Cancelled
+7. User Filters Orders by Returned
+8. User Searches for a Specific Order
+9. User searches order by shop's name
+10. User searches order by order's ID
+11. User searches order by product's ID
+12. Search Orders with Empty Input

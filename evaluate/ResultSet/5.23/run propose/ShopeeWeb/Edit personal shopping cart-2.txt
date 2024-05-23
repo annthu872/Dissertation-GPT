@@ -1,0 +1,9 @@
+1. Successful Navigation to Cart Page with Product Details Displayed
+2. Removing a Product from the Shopping Cart
+3. User decides not to remove a product after initiating the removal process
+4. Removing a Product by Decreasing Quantity to Zero
+5. User Attempts to Remove a Product but Decides Against It
+6. Product Quantity Increase for Bulk Purchase
+7. Product Quantity Adjustment After Reviewing Cart
+8. Decreasing Product Quantity to Desired Number
+9. User changes the option of a product in the shopping cart

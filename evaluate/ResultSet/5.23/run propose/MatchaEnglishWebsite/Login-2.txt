@@ -1,0 +1,6 @@
+1. Successful Login Scenario
+2. Login by email
+3. Attempt to login with an unregistered username
+4. Attempt to login with a blank username field
+5. Attempt to login with a wrong password
+6. Attempt to login with a blank password field

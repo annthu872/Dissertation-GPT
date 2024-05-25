@@ -1,0 +1,6 @@
+1. Successful Login
+2. Login with Registered Email
+3. LoginWithUnregisteredUsername
+4. LoginWithBlankUsernameField
+5. LoginWithWrongPassword
+6. LoginWithBlankPasswordField

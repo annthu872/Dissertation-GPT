@@ -1,0 +1,11 @@
+1. Scenario: Sentence field skipped
+2. Scenario: Sentence field contains over 250 characters
+3. Scenario: Sentence field contains special characters
+4. Scenario: Sentence field does not contain '...'
+5. Scenario: Correct answer field skipped
+6. Scenario: Other option 1 field skipped
+7. Scenario: Other option 2 field skipped
+8. Scenario: Other option 3 field skipped
+9. Successful Creation of a Selection Test Question
+10. Creation of a Selection Test Question with Invalid Sentence
+11. Cancellation of Selection Test Question Creation

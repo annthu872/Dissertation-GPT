@@ -1,0 +1,11 @@
+1. Scenario_SentenceField_Skipped
+2. Scenario_CorrectAnswerField_Skipped
+3. Scenario_OtherOption1Field_Skipped
+4. Scenario_OtherOption2Field_Skipped
+5. Scenario_OtherOption3Field_Skipped
+6. Scenario_SentenceField_Over250Characters
+7. Scenario_SentenceField_ContainsSpecialCharacters
+8. Scenario_SentenceField_DoesNotContainEllipsis
+9. Successful Creation of a Selection Test Question
+10. Creation of a Selection Test Question with Invalid Sentence
+11. Cancellation of Selection Test Question Creation

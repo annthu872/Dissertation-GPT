@@ -1,0 +1,10 @@
+1. Scenario: Update Genre with Incorrectly Entered Genre Name
+2. Scenario: Update Genre with Incorrectly Entered Genre Description
+3. Successful Genre Update
+4. Genre Update Failure with Error Message
+5. Cancel operation before data submission
+6. Navigation to "Books" before data submission
+7. Navigation to "Genres" before data submission
+8. Navigation to "Authors" before data submission
+9. Navigation to "Home" before data submission
+10. Navigation to "API" before data submission

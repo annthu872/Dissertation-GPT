@@ -1,0 +1,13 @@
+UpdateBook_InvalidTitle
+UpdateBook_InvalidAuthor
+UpdateBook_InvalidGenre
+UpdateBook_InvalidDescription
+UpdateBook_InvalidPublicationDate
+Successful Book Update
+Book Update with Incorrect Data
+User presses “Cancel” button before submitting updated book data
+User navigates to "Books" menu item before submitting updated book data
+User navigates to "Genres" menu item before submitting updated book data
+User navigates to "Authors" menu item before submitting updated book data
+User navigates to "Home" menu item before submitting updated book data
+User navigates to "API" menu item before submitting updated book data

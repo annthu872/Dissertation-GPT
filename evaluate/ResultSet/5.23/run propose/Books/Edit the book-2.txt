@@ -1,0 +1,19 @@
+UpdateBook_InvalidTitle_EmptyField
+UpdateBook_InvalidTitle_IncorrectFormat
+UpdateBook_InvalidAuthor_EmptyField
+UpdateBook_InvalidAuthor_IncorrectFormat
+UpdateBook_InvalidGenre_EmptyField
+UpdateBook_InvalidGenre_IncorrectFormat
+UpdateBook_InvalidDescription_EmptyField
+UpdateBook_InvalidDescription_IncorrectFormat
+UpdateBook_InvalidPublicationDate_EmptyField
+UpdateBook_InvalidPublicationDate_IncorrectFormat
+Successful Book Update
+Book Update with Incorrect Data
+Cancel Operation Before Data Submission
+Cancel Operation After Partial Data Entry
+Navigation to "Books" Before Submission
+Navigation to "Genres" Before Submission
+Navigation to "Authors" Before Submission
+Navigation to "Home" Before Submission
+Navigation to "API" Before Submission

@@ -1,0 +1,6 @@
+Scenario 1: DateRangeInput_NoDatesSpecified
+Scenario 2: DateRangeInput_IncorrectDateFormat
+Scenario 3: Successful display of the first page of books
+Scenario 4: Navigation to the next page of books using the "Next" button
+Scenario 5: Navigation to a specific page of books using page numbers
+Scenario 6: Display of the last page of books with fewer than 10 items

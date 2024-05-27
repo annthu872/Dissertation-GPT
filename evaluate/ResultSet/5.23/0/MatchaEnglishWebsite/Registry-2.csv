@@ -1,0 +1,16 @@
+Registry-2.txt
+""
+1. Successful Registration
+2. Username Below Minimum Length
+3. Username Above Maximum Length
+4. UsernameAlreadyRegistered
+5. Password Below Minimum Length
+6. Password Above Maximum Length
+7. Password Missing Normal Character
+8. Password Missing Capitalized Character
+9. Password Missing Number
+10. Password Missing Special Character
+11. Password Same as Username
+12. Learner chooses to register by email instead of username
+13. EmailWrongFormat
+14. EmailInexistent

@@ -6,5 +6,7 @@
 6. Scenario: Other option 2 field skipped
 7. Scenario: Other option 3 field skipped
 8. Scenario: Successful Creation of a Selection Test Question
-9. Scenario: Creation of a Selection Test Question with Invalid Sentence
-10. Scenario: Admin Cancels Creation of a Selection Test Question
+9. Scenario: Cancel Creation of a Selection Test Question
+10. Scenario: Attempt to Save with Incomplete Required Fields
+11. Scenario: Attempt to Save with Invalid Sentence (Exceeds Character Limit)
+12. Scenario: Attempt to Save with Invalid Sentence (Contains Special Characters)

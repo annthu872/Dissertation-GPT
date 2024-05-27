@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Waiting for Payment Status
+objective: Verify that the user can filter orders by 'Waiting for Payment' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: From the personal bought order page, click on the 'Waiting for Payment' tab on the status bar.
+expectedResult: Only orders with the 'Waiting for Payment' status are displayed on the user's order page.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of filtering orders by the 'Waiting for Payment' status. It follows the exact steps a user would take to filter their orders by this specific status, ensuring that the system's response aligns with the expected outcome.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Status Tabs Functionality
+objective: Ensure that the status tabs correctly filter orders based on their respective statuses.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, verify the presence of status tabs including All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled, and Returned.
+  - Step 4: Click on each status tab one by one and observe the filtered results.
+expectedResult: For each status tab clicked, only orders corresponding to the selected status are displayed.
+reflect: yes
+explanation: Although this test case does not exclusively focus on the 'Waiting for Payment' status, it is relevant to the test scenario as it includes testing the functionality of the 'Waiting for Payment' tab among others. By verifying that each status tab, including 'Waiting for Payment', correctly filters orders, it indirectly supports the scenario of filtering orders by 'Waiting for Payment'. It ensures the filtering mechanism works as intended for all statuses, thereby validating the specific functionality of filtering by 'Waiting for Payment' as part of a broader test.
+

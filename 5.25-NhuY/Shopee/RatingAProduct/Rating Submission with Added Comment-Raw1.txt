@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Basic Information
+objective: Verify that a user can submit a rating with the default 5-star quality, seller, and shipping ratings without adding a comment, picture, or video.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Verify the rating form popup appears with 5-star ratings pre-selected for quality, seller, and shipping.
+  - Step 5: Click the Done button without making any changes.
+expectedResult: The system saves the rating and displays it in the product's detail page's rating section with 5 stars for quality, seller, and shipping.
+explanation: This test case ensures that the basic flow of submitting a rating works as expected without any additional user input.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Added Comment
+objective: Verify that a user can submit a rating with an added comment.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Enter a comment in the comment section.
+  - Step 5: Click the Done button.
+expectedResult: The system saves the rating along with the comment and displays it in the product's detail page's rating section.
+explanation: This test case verifies that users can add comments to their ratings, following the alternative flow 4.
+
+Test Case: Test Case 3
+testCaseName: Rating Submission with Multiple Pictures
+objective: Verify that a user can submit a rating with multiple pictures added.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add picture button.
+  - Step 5: Choose an image file and confirm.
+  - Step 6: Repeat steps 4 and 5 for the number of images you want to add, up to 5 images.
+  - Step 7: Click the Done button.
+expectedResult: The system saves the rating with all the added images and displays them in the product's detail page's rating section.
+explanation: This test case ensures that users can add multiple pictures to their rating, following the alternative flow 6.
+
+Test Case: Test Case 4
+testCaseName: Rating Submission with a Video
+objective: Verify that a user can submit a rating with a video added.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add video button.
+  - Step 5: Choose a video file and confirm.
+  - Step 6: Click the Done button.
+expectedResult: The system saves the rating with the added video and displays it in the product's detail page's rating section.
+explanation: This test case verifies that users can add a video to their rating, following the alternative flow 7.
+

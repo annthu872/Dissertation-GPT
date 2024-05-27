@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Default Star Ratings
+objective: Verify that the user can submit a rating with the default 5-star ratings for quality, seller, and shipping.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button for the desired product.
+  - Step 4: Verify the rating form popup appears with 5 stars pre-selected for quality, seller, and shipping ratings.
+  - Step 5: Click the Done button without making any changes.
+expectedResult: The system saves the rating with 5 stars for quality, seller, and shipping and displays it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Rating Submission with Modified Star Ratings' by verifying the system's handling of default star ratings, which is a part of the overall rating submission process.
+
+Test Case: Test Case 2
+testCaseName: Adjusting Quality Rating Before Submission
+objective: Verify that the user can adjust the quality rating before submitting the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button for the desired product.
+  - Step 4: In the rating form, click to adjust the quality rating to a different number of stars.
+  - Step 5: Click the Done button.
+expectedResult: The system saves the rating with the adjusted number of stars for quality and displays it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the functionality of modifying star ratings (specifically the quality rating) before submission, which is a key aspect of the 'Rating Submission with Modified Star Ratings' scenario.
+

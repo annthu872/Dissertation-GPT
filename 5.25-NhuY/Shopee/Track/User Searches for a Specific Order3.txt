@@ -1,0 +1,12 @@
+Test Case: Test Case 3
+testCaseName: Verify Order Search Functionality
+objective: Verify that the user can search for orders using shop's name, order's ID, or product's ID.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the personal bought order page by clicking on the personal name and avatar section.
+  - Step 3: Enter a keyword related to the shop's name, order's ID, or product's ID in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system displays orders that match the keyword entered by the user, based on shop's name, order's ID, or product's ID.
+reflect: yes
+explanation: This test case directly tests the functionality of searching for a specific order using various criteria (shop's name, order's ID, or product's ID), which is the exact focus of the given test scenario.
+

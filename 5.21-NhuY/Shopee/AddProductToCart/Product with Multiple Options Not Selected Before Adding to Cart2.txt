@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Add product with multiple options without selecting an option
+objective: Verify that the system prompts the user to select an option when they attempt to add a product with multiple options to the cart without selecting any.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card to go to the product's detail page.
+  - Step 4: Without selecting any of the available options, click the add to cart button.
+expectedResult: The system should inform the user that they did not select one option yet.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the system's behavior when a user attempts to add a product with multiple options to the cart without making a selection. It verifies that the system prompts the user to select an option, which is the core requirement of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Successfully add a product with multiple options after selecting an option
+objective: Verify that the system allows the product to be added to the cart after the user selects an option.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card to go to the product's detail page.
+  - Step 4: Select one of the available options for the product.
+  - Step 5: Click the add to cart button.
+expectedResult: The system adds the product with the selected option into the user's shopping cart.
+reflect: yes
+explanation: Although this test case focuses on the successful addition of a product with selected options to the cart, it indirectly supports the given test scenario by demonstrating the correct flow of selecting an option before adding to the cart. It shows the desired system behavior when the user follows the correct steps, complementing the scenario's focus.
+

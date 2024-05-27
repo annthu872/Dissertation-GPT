@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Add new delivery location with exact address not found
+objective: Verify that the system prevents adding a new delivery location when the exact address is not found on the platform's map
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Proceed to the payment page by selecting a product and clicking the buy button.
+  - Step 4: On the payment page, click on the Change title in the delivery location section.
+  - Step 5: Click on the Add new location button.
+  - Step 6: Fill in the name field with a valid name.
+  - Step 7: Fill in the phone number field with a valid phone number.
+  - Step 8: Choose a city from the list provided by the platform.
+  - Step 9: Choose a district from the list provided by the platform.
+  - Step 10: Choose a ward from the list provided by the platform.
+  - Step 11: Fill in an exact location's address that is not available on the map provided by the platform.
+  - Step 12: Choose an option indicating whether the location is a house or working place.
+  - Step 13: Click on the Finish button to save the location.
+expectedResult: A notification appears under the address field indicating the address cannot be found on the map, and the location is not added.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new delivery location with an exact address not found on the platform's map. The steps guide the tester through the process of adding a new location, from login to the final attempt to save the location with an unavailable address. The expected result of a notification indicating the address cannot be found confirms whether the platform properly handles such cases, thus reflecting the given test scenario accurately.
+

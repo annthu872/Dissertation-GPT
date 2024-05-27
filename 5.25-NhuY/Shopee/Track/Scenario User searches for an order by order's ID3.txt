@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Search for an order using order's ID
+objective: Verify that the user can search for an order using the order's ID and view the correct order details.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Enter a known order's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays the order that matches the entered order's ID.
+reflect: yes
+explanation: This test case directly tests the given scenario by verifying the functionality of searching for an order using the order's ID. It follows the exact steps a user would take to achieve the scenario's objective.
+
+Test Case: Test Case 2
+testCaseName: Search for an order using invalid order's ID
+objective: Verify that the system handles searches with invalid order's IDs appropriately by not displaying any order.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Enter an invalid order's ID into the search bar (ensure the ID does not exist in the system).
+  - Step 5: Press enter.
+expectedResult: The system does not display any order and may show a message indicating no orders found or invalid search term.
+reflect: yes
+explanation: Although this test case focuses on the negative path where an invalid ID is used, it still reflects the given scenario by testing the search functionality with an order's ID. It ensures the system behaves as expected even when the search criteria do not match any existing orders.
+
+Test Case: Test Case 3
+testCaseName: Filter orders by status and search with order's ID
+objective: Verify that the user can filter orders by a specific status and then successfully search for an order within that filtered list using the order's ID.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on a tab with a specific status name to filter orders by that status.
+  - Step 4: In the search bar below the status bar, enter a known order's ID that matches the previously selected status.
+  - Step 5: Press enter.
+expectedResult: The system displays the order that matches the entered order's ID and the selected status.
+reflect: yes
+explanation: This test case extends the given scenario by adding an additional step of filtering orders by status before searching with an order's ID. It still directly tests the scenario's objective by ensuring the search functionality works as expected, even when an additional filtering step is involved.
+

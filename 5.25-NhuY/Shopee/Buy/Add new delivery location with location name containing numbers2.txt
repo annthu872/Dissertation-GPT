@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Add new delivery location with location name containing numbers
+objective: Verify that the system prevents adding a new delivery location with a name that contains numbers
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, click on Change title in the delivery location section.
+  - Step 6: Click Add new location button.
+  - Step 7: Fill in the location name with a name that contains numbers (e.g., 'Home123').
+  - Step 8: Fill in the rest of the required fields with valid information (phone number, city, district, ward, exact location's address).
+  - Step 9: Choose an option for the location type (own house or working place).
+  - Step 10: Click on Finish button to save the location.
+expectedResult: A notification appears under the location name field indicating that the name format is incorrect because it contains numbers.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to add a new delivery location with a name that includes numbers. The objective clearly states the purpose of the test, and the test steps guide the tester through the process of attempting to add a location with a numerical name. The expected result is aligned with the scenario's requirement to prevent such names, thereby validating the system's input validation rules for delivery location names.
+

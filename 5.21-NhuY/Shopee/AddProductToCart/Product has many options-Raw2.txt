@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Add product with options into cart
+objective: Verify that users can add a product with options into their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available.
+  - Step 4: On the product's detail page, choose one of the available options for the product.
+  - Step 5: Click the add to cart button.
+expectedResult: The system adds the selected product with the chosen option into the user's shopping cart.
+explanation: This test case ensures that users can successfully add products that have multiple options to their shopping cart by selecting an option.
+
+Test Case: Test Case 2
+testCaseName: Attempt to add product without selecting options
+objective: Verify that the system prompts the user to select an option if they attempt to add a product with options to their cart without selecting one.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available.
+  - Step 4: Without selecting any of the available options, click the add to cart button.
+expectedResult: The system informs the user that they did not select an option and prompts them to choose one before adding the product to the cart.
+explanation: This test case checks the system's behavior when a user tries to add a product with options to their cart without making a selection, ensuring the system prompts for an option selection.
+
+Test Case: Test Case 3
+testCaseName: Add product with options and adjust quantity
+objective: Verify that users can adjust the quantity of a product with options before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available.
+  - Step 4: Choose one of the available options for the product.
+  - Step 5: Adjust the quantity of the product by clicking the plus or minus button.
+  - Step 6: Click the add to cart button.
+expectedResult: The system adds the selected product with the chosen option and specified quantity into the user's shopping cart.
+explanation: This test case ensures that users can select an option for a product and adjust its quantity before adding it to their shopping cart.
+
+Test Case: Test Case 4
+testCaseName: Product option out of stock
+objective: Verify that users cannot select an option that is out of stock for a product.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available, including at least one option that is out of stock.
+  - Step 4: Attempt to select the out of stock option.
+expectedResult: The out of stock option is colored grey and not clickable, preventing the user from selecting it.
+explanation: This test case checks that the system correctly handles out of stock options by making them unselectable, ensuring users are aware of the availability.
+

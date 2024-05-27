@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Change Product Option in Shopping Cart
+objective: Verify that a user can change the option of a product in their shopping cart and the system updates the product option accordingly.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Navigate to a product in the shopping cart that has multiple options available.
+  - Step 4: Click on the option dropdown of the product.
+  - Step 5: Select a different option from the dropdown list.
+expectedResult: The system should update the product option in the shopping cart to the new selection made by the user.
+reflect: yes
+explanation: This test case directly addresses the given test scenario, which is to verify the ability to change a product option in the shopping cart and ensure the system updates accordingly. The steps outlined are specific to changing a product option, making it a perfect reflection of the scenario.
+

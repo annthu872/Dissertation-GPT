@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity of a Simple Product Before Adding to Cart
+objective: Verify that the user can adjust the quantity of a simple product before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Adjust the quantity of the product by clicking the plus or minus button in the quantity section.
+  - Step 5: Click the add to cart button.
+expectedResult: The system should add the product with the adjusted quantity into the user's shopping cart.
+reflect: yes
+explanation: This test case directly tests the scenario of adjusting the quantity of a simple product before adding it to the cart, making it a perfect reflection of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity of a Product with Options Before Adding to Cart
+objective: Verify that the user can adjust the quantity of a product with options before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that leads to a product's detail page with multiple options available.
+  - Step 4: Choose one of the available product options.
+  - Step 5: Adjust the quantity of the product by clicking the plus or minus button in the quantity section.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should add the product with the selected option and adjusted quantity into the user's shopping cart.
+reflect: yes
+explanation: This test case expands on the scenario by including products with options, still aligning with the core requirement of adjusting quantity before adding to cart.
+
+Test Case: Test Case 4
+testCaseName: Adjust Quantity of a Product with an Out of Stock Option
+objective: Verify that the user can adjust the quantity and add to cart a product with options, where one of the options is out of stock.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that leads to a product's detail page with multiple options, one of which is out of stock (indicated by being colored grey and not clickable).
+  - Step 4: Choose one of the available (in-stock) product options.
+  - Step 5: Adjust the quantity of the product by clicking the plus or minus button in the quantity section.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should add the product with the selected in-stock option and adjusted quantity into the user's shopping cart.
+reflect: yes
+explanation: This test case is relevant to the scenario as it tests the ability to adjust quantity and add a product to the cart even when some options are out of stock, focusing on the functionality of adjusting quantity for available options.
+

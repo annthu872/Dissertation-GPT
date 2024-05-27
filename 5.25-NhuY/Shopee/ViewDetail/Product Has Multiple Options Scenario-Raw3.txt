@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: View Detail of a Product with Multiple Options
+objective: Verify that users can view detailed information of a product including all options (e.g., color for lipstick, flavor for cake), shipping options, stock availability, store information, descriptions, and user ratings.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to have multiple options (e.g., a lipstick with different color options).
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays all relevant information including the product's name, a picture of the product, all available options with appropriate titles based on the product type, shipping options, the quantity of products left in stock, information about the store selling the product, product descriptions, and ratings from users who have purchased the product.
+explanation: This test case ensures that products with multiple options are correctly displayed with all necessary information, allowing users to make informed decisions. It directly matches the scenario of viewing detailed information of a product with multiple options.
+
+Test Case: Test Case 2
+testCaseName: View Detail of an Out of Stock Product
+objective: Verify that users can view detailed information of an out-of-stock product, including a 'Sold Out' sticker on the product's picture.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays all relevant information including the product's name, shipping options, stock availability (indicating none are left), store information, descriptions, and user ratings. A black sticker with a white note saying 'Sold Out' is prominently displayed on the product's picture.
+explanation: This test case verifies the system's ability to correctly display out-of-stock products, including visual cues (such as a 'Sold Out' sticker) to inform users of the product's availability status. It addresses the scenario where a product is out of stock.
+

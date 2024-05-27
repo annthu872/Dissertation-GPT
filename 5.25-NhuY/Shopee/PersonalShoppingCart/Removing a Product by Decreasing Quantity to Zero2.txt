@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Removing a Product by Decreasing Quantity to Zero and Confirming Removal
+objective: Verify that a user can remove a product from their shopping cart by decreasing its quantity to zero and confirming the removal.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Identify a product in the shopping cart with a quantity greater than one.
+  - Step 4: Decrease the quantity of the product by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: In the pop-up confirmation, click Yes.
+expectedResult: The product is removed from the user's shopping cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to decrease a product's quantity to zero and confirming its removal, which is the core action the scenario aims to verify.
+

@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify user can cancel product removal by clicking 'No' in confirmation popup after initiating erase
+objective: Ensure that the user can cancel the removal of a product from the shopping cart after initiating the removal process by selecting 'No' in the confirmation popup.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the 'Erase' button at the bottom of the screen.
+  - Step 5: In the confirmation popup, click 'No'.
+expectedResult: The product remains in the shopping cart, and the user is returned to the shopping cart page with no changes made to the product list.
+explanation: This test case is created to verify that users have the option to cancel the removal of a product after they have initiated the process, ensuring they can make changes to their decision without impacting their shopping cart.
+
+Test Case: Test Case 2
+testCaseName: Verify user can cancel product removal by clicking 'No' in confirmation popup after decreasing quantity to zero
+objective: Ensure that the user can cancel the removal of a product from the shopping cart after decreasing its quantity to zero by selecting 'No' in the confirmation popup.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Decrease the quantity of the product by clicking the minus button until it reaches one.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: In the confirmation popup, click 'No'.
+expectedResult: The product's quantity is reverted back to one, and it remains in the shopping cart. The user is returned to the shopping cart page with no changes made to the product list.
+explanation: This test case ensures that users can reconsider their decision to remove a product by decreasing its quantity to zero and then choosing not to confirm the removal, thus maintaining control over their shopping cart contents.
+

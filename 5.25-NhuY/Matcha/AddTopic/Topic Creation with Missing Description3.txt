@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Add New Topic with Missing Description
+objective: Verify that the system prompts an error or a warning when the administrator tries to add a new topic without entering a description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Leave the description field empty.
+  - Step 5: Select 'Save' to attempt creating the new topic.
+expectedResult: The system should display an error or a warning indicating that the description field cannot be left blank.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the specific case where a topic is added without a description, which is the main focus of the scenario.
+

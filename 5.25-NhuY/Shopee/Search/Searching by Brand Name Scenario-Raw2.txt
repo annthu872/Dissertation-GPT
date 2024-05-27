@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Search by Brand Name and Display Products
+objective: Verify that the system displays all products from the searched brand and its official store if available.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a known brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from various shops. If the brand has its own official store, the system should also display the store.
+explanation: This test case directly tests the Alternative flow 1 from the scenario, focusing on searching by brand name and ensuring the system responds correctly by displaying products and the official store if available.
+
+Test Case: Test Case 2
+testCaseName: Search by Brand Name with No Official Store
+objective: Verify that the system correctly displays products from a brand that does not have an official store.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a brand name known not to have an official store into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from various shops, without showing an official store.
+explanation: This test case is a variation of the Alternative flow 1, tailored for brands without an official store. It ensures the system can handle such cases appropriately by only displaying available products.
+
+Test Case: Test Case 3
+testCaseName: Search by Brand Name with Unavailable Keyword
+objective: Verify that the system shows a recommendation to try another keyword when the searched brand name is unavailable.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should show a blank list and recommend the user to try another keyword.
+explanation: This test case addresses the Exception flow 1, focusing on the scenario where the user searches for a brand name that does not match any available brands, products, or shops.
+

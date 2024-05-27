@@ -1,0 +1,11 @@
+Test Case: Test Case 2
+testCaseName: Verify product detail page for an out-of-stock product
+objective: Ensure that the product detail page for an out-of-stock product displays the 'Sold out' sticker and other essential details without the option to purchase.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, shipping options, the quantity of products left as '0', information about the store selling the product, product descriptions, and ratings from users who have bought the product. A black sticker with a white note 'Sold out' should be visible on the product's picture.
+reflect: yes
+explanation: This test case directly reflects the 'Product Out of Stock Scenario' by focusing on verifying the display and information presentation for products that are out of stock, including the visibility of a 'Sold out' sticker, which is a key aspect of the scenario.
+

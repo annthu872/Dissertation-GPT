@@ -1,0 +1,14 @@
+Test Case: Test Case 2
+testCaseName: Verify Lesson Creation with Duplicate Name
+objective: Ensure that the system prevents the creation of a new lesson with a name that is already in use.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when attempting to create a lesson with a duplicate name. It tests the specific condition and expected outcome related to the scenario of 'Lesson Creation with Duplicate Name'.
+

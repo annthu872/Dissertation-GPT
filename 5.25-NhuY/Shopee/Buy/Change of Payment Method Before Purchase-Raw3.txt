@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Change of Payment Method Before Purchase
+objective: Verify that the user can successfully change the payment method before finalizing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the product(s) you wish to purchase by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, click on the Change title in the payment method section.
+  - Step 6: From the list of available payment methods, choose a different payment method by clicking on it.
+expectedResult: The system should successfully change the payment method to the newly selected option.
+explanation: This test case ensures that users can change their payment method before making a purchase, which is a critical functionality for user convenience and flexibility in payment options. It directly tests the ability to modify payment methods as described in the alternative flow 7 of the use case.
+

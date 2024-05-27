@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Apply Shop Promotion Before Placing Order
+objective: Verify that the user can successfully apply a shop's promotion to a product before placing an order.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, click on Choose voucher in the product's information section.
+  - Step 6: From the list of available vouchers, choose a shop's promotion by clicking on it.
+  - Step 7: Click the order button.
+expectedResult: The chosen shop's promotion is applied, and the product's price is recalculated accordingly on the payment page.
+reflect: yes
+explanation: This test case directly tests the scenario of applying a shop's promotion before placing an order, making it a perfect reflection of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Apply Product's Promotion Before Placing Order
+objective: Verify that the user can successfully apply a product's promotion before finalizing their purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, click on Choose voucher in the product's information section.
+  - Step 6: From the list of available vouchers, choose a product's promotion by clicking on it.
+  - Step 7: Click the order button.
+expectedResult: The chosen product's promotion is applied, and the product's price is recalculated accordingly on the payment page.
+reflect: yes
+explanation: This test case aligns with the scenario by testing the application of a product-specific promotion before placing an order, thus reflecting the given test scenario accurately.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Apply Shop Promotion Before Placing Order
+objective: Verify that the user can successfully apply a shop's promotion to their order before placing it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose the product(s) you want to buy by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on 'Choose voucher' in the product's information section.
+  - Step 6: From the list of available vouchers, choose a shop's promotion voucher by clicking on it.
+expectedResult: The chosen shop's promotion is applied, and the product's price is recalculated to reflect the promotion.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to apply a shop's promotion before placing an order, which is the exact functionality the scenario aims to test.
+
+Test Case: Test Case 2
+testCaseName: Apply Product's Promotion Before Placing Order
+objective: Verify that the user can successfully apply a product's promotion to their order before placing it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose the product(s) you want to buy by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on 'Choose voucher' in the product's information section.
+  - Step 6: From the list of available vouchers, choose a product's promotion voucher by clicking on it.
+expectedResult: The chosen product's promotion is applied, and the product's price is recalculated to reflect the promotion.
+reflect: yes
+explanation: This test case aligns with the given test scenario by ensuring that a product's promotion can be applied before placing an order. It tests a specific aspect of the scenario, which is applying promotions directly to products.
+

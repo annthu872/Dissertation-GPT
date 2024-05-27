@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Name
+objective: Verify that the system prevents the creation of a new lesson without a lesson name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, leave the name field empty.
+  - Step 5: Fill in the description of the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the lesson name is required and prevent the lesson from being created.
+explanation: This test case is created to ensure that the system enforces the requirement for a lesson name during the lesson creation process, which is a critical validation step to avoid creating unnamed lessons.
+

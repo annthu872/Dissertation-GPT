@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Search Orders with Empty Input
+objective: Verify that the system handles empty input in the search bar correctly and displays all orders
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Leave the search bar empty and press enter.
+expectedResult: The system should display all orders without filtering any out, as if the user selected the 'All' tab.
+reflect: yes
+explanation: This test case directly addresses the test scenario of 'Search Orders with Empty Input' by verifying the system's response to an empty search query. It aims to ensure that the system displays all orders, which is the expected behavior when no specific search criteria are provided. The steps are designed to simulate a user's actions under the given scenario, making it relevant and reflective of the scenario.
+

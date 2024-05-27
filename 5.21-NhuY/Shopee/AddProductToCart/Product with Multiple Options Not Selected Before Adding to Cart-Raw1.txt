@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Add product without selecting options
+objective: Verify that the system prompts the user to select options before adding a product with multiple options to the cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card.
+  - Step 4: On the product's detail page, directly click the 'Add to Cart' button without selecting any options.
+expectedResult: The system should inform the user that they did not select one option yet.
+explanation: This test case ensures that users are prompted to make necessary selections for products with options before they can add them to their shopping cart. It directly relates to the scenario where a product with multiple options is not selected before adding to the cart.
+
+Test Case: Test Case 2
+testCaseName: Successfully add product after selecting options
+objective: Verify that the user can successfully add a product to the cart after selecting available options
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card.
+  - Step 4: On the product's detail page, select one of the available options.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The system adds the product with the selected option into the user's shopping cart.
+explanation: This test case verifies that once the user selects an option for a product with multiple options, they can successfully add it to their shopping cart. It addresses the scenario where options need to be selected before adding a product to the cart.
+
+Test Case: Test Case 3
+testCaseName: Attempt to add out-of-stock product option
+objective: Verify that the system prevents adding a product to the cart when the selected option is out of stock
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with one of its options out of stock.
+  - Step 3: Click on the product card.
+  - Step 4: Try to select the option that is out of stock.
+expectedResult: The out-of-stock option should be greyed out and not selectable, preventing the user from adding it to the cart.
+explanation: This test case checks the system's behavior when a user attempts to select an out-of-stock option for a product. It ensures that users are prevented from adding such products to their cart, aligning with the scenario of handling products with multiple options.
+

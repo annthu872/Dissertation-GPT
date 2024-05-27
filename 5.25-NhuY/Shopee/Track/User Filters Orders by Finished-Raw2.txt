@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Finished Status
+objective: Verify that the user can filter orders by the 'Finished' status and only see orders that are in the 'Finished' state.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: On the personal bought order page, locate the status bar with multiple tabs.
+  - Step 4: Click on the 'Finished' tab in the status bar.
+expectedResult: The system should display only the orders that are in the 'Finished' status, filtering out orders in all other statuses.
+explanation: This test case is designed to verify that the filtering functionality works as expected for the 'Finished' status. It directly matches the scenario name by focusing on the action of filtering orders by the 'Finished' status, using the main flow and the relevant part of the alternative flow 1.
+

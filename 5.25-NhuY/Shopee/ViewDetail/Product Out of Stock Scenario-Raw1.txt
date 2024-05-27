@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify product detail page for a product with options
+objective: Ensure that the product detail page displays all options of the product along with other essential details.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to have multiple options (e.g., a lipstick with different colors).
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, a picture of the product, all available options with appropriate titles (e.g., colors for lipstick), shipping options, the quantity of products left, information about the store selling the product, product descriptions, and ratings from users who have bought the product.
+explanation: This test case verifies that the system correctly displays products with multiple options, as described in the alternative flow 1. It ensures that users can view all available options for a product, which is crucial for making informed purchasing decisions.
+
+Test Case: Test Case 2
+testCaseName: Verify product detail page for an out-of-stock product
+objective: Ensure that the product detail page indicates when a product is out of stock.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, shipping options, the quantity of products left as '0', information about the store selling the product, product descriptions, and ratings from users who have bought the product. Additionally, there should be a black sticker with a white note 'Sold out' on the picture of the product.
+explanation: This test case ensures that the system correctly indicates when a product is out of stock, as described in the alternative flow 2. It is important for the system to clearly communicate the availability of products to prevent user frustration and to manage expectations.
+

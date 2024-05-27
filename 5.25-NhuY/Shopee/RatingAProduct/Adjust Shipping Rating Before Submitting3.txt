@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Adjust Shipping Rating Before Submitting
+objective: Verify that the user can adjust the shipping rating before submitting the product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, locate the Service rating section for shipping.
+  - Step 5: Adjust the shipping rating by clicking on the desired number of stars.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted shipping rating and display it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly tests the scenario of adjusting the shipping rating before submitting the final product rating. It includes steps for logging in, navigating to the appropriate section, adjusting the rating, and submitting it, which are all necessary actions to verify the scenario.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by 'Waiting to Deliver' Status
+objective: Verify that the user can filter orders by 'Waiting to Deliver' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on the 'Waiting to deliver' tab in the status bar.
+expectedResult: Only orders with the 'Waiting to Deliver' status are displayed on the page.
+explanation: This test case ensures that the filtering functionality works as expected for the 'Waiting to Deliver' status, allowing users to easily track orders that are pending delivery.
+

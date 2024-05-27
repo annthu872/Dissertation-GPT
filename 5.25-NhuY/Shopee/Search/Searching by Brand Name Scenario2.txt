@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Search by Brand Name and Display Products
+objective: Verify that the system displays all products from the searched brand and its official store if available.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a known brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from various shops. If the brand has its own official store, the system should also display the store.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of searching by brand name and checking if the system displays both the products and the official store if available.
+
+Test Case: Test Case 2
+testCaseName: Search by Brand Name with No Official Store
+objective: Verify that the system correctly displays products from a brand that does not have an official store.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a brand name known not to have an official store into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from various shops, without showing an official store.
+reflect: yes
+explanation: This test case still reflects the given test scenario by focusing on a specific condition where the brand does not have an official store. It verifies that the system behaves as expected under this condition.
+
+Test Case: Test Case 3
+testCaseName: Search by Brand Name with Unavailable Keyword
+objective: Verify that the system shows a recommendation to try another keyword when the searched brand name is unavailable.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should show a blank list and recommend the user to try another keyword.
+reflect: yes
+explanation: Although this test case explores an exception flow, it still reflects the given test scenario by testing the system's response to a search query for an unavailable brand name. It ensures the system provides useful feedback to the user in such cases.
+

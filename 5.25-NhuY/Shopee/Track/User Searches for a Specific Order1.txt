@@ -1,0 +1,12 @@
+Test Case: Test Case 2
+testCaseName: Verify Order Search by Order ID
+objective: Verify that the user can search for a specific order using the order's ID.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, enter an order's ID in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system should display the order(s) that match the entered order ID.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of searching for a specific order using the order ID, which is the exact action described in the scenario.
+

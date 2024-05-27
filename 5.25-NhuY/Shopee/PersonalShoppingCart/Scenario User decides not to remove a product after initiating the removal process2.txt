@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify user can cancel product removal by clicking 'No' in confirmation popup after initiating erase
+objective: Ensure that when a user initiates the removal of a product by clicking the Erase button but decides to keep the product by selecting 'No' in the confirmation popup, the product remains in the shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you want to remove.
+  - Step 4: Click the Erase button at the bottom of the screen.
+  - Step 5: In the confirmation popup, click 'No'.
+expectedResult: The product should remain in the shopping cart, and the user should be returned to the shopping cart page with all previously added items still present.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the user's ability to cancel the removal of a product after initiating the process, ensuring the product remains in the shopping cart as intended.
+

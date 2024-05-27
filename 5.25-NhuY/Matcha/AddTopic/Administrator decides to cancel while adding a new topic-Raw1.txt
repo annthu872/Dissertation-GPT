@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Administrator cancels adding a new topic
+objective: Verify that the Administrator can cancel the process of adding a new topic at any step before saving.
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Begin to add a new topic by entering a name in the name field.
+  - Step 4: Add a description for the topic in the description field.
+  - Step 5: Select 'Cancel' to stop adding the new topic.
+expectedResult: The system should cancel the process of adding a new topic and possibly redirect the Administrator to the previous page or a main page without creating a new topic.
+explanation: This test case ensures that the Administrator has the ability to cancel the process of adding a new topic at any point before the final submission. It directly relates to the exception flow mentioned in the use case, where the Administrator can select 'Cancel' to stop adding a new topic at any time.
+

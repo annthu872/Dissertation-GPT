@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Video Addition
+objective: Verify that a user can submit a product rating with an added video.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating and service ratings (seller and shipping) as the default 5 stars.
+  - Step 5: Click on the Add video button.
+  - Step 6: In the pop-up, choose a valid video file and click to select it.
+  - Step 7: Click the Done button to submit the rating.
+expectedResult: The system should save the rating with the video and display it in the product's detail page rating section, indicating that a video has been added with a video icon showing 1/1.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Rating Submission with Added Video' by outlining steps to add a video to a product rating and verifying the expected outcome.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Video and Multiple Pictures
+objective: Verify that a user can submit a product rating with both multiple pictures and a video.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating and service ratings (seller and shipping) as the default 5 stars.
+  - Step 5: Click on the Add picture button and select a valid image file. Repeat this step until you have added the desired number of pictures (up to 4).
+  - Step 6: Click on the Add video button and select a valid video file.
+  - Step 7: Click the Done button to submit the rating.
+expectedResult: The system should save the rating with the video and pictures, displaying them in the product's detail page rating section. The icons should indicate 4/5 for pictures and 1/1 for the video.
+reflect: yes
+explanation: Although this test case includes testing for adding multiple pictures along with a video, it still reflects the given test scenario by ensuring the functionality of adding a video to a product rating is tested. The inclusion of multiple media types does not detract from the scenario's focus but rather extends it to verify additional functionality.
+

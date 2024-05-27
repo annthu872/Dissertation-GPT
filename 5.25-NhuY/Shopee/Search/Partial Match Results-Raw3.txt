@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Search by Product Name
+objective: Verify that the system shows a list of shops selling the product and all related products from many shops when searching by product name.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a specific product name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: A list of shops that sell the specified product and a list of all related products from many shops are displayed.
+explanation: This test case ensures that the main flow of searching by product name functions correctly, displaying both shops and related products.
+
+Test Case: Test Case 2
+testCaseName: Search by Brand Name
+objective: Verify that the system shows all products from the searched brand and, if available, the brand's official store.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a brand name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: A list of all products from the specified brand from many shops is displayed. If the brand has an official store, it is also shown.
+explanation: This test case checks the alternative flow where users search by brand name, ensuring the system correctly displays products and the official store if available.
+
+Test Case: Test Case 3
+testCaseName: Search by Shop Name
+objective: Verify that the system shows all shops with the searched name and products containing the search term.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: All shops with the same name and products that contain the search term are displayed.
+explanation: This test case validates the alternative flow for searching by shop name, ensuring shops and relevant products are correctly listed.
+
+Test Case: Test Case 4
+testCaseName: Search with Unavailable Keyword
+objective: Verify that the system shows a blank list and recommends trying another keyword when an unavailable keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: A blank list is displayed with a recommendation to try another keyword.
+explanation: This test case covers the exception flow where the search term does not match any product, brand, or shop, ensuring the system provides appropriate feedback.
+
+Test Case: Test Case 5
+testCaseName: Search Unavailable Keyword with Shop Name Match
+objective: Verify that the system shows all shops with the same name, a blank product list, and recommends trying another keyword when an unavailable keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that matches a shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: All shops with the same name are displayed, a blank product list is shown, and a recommendation to try another keyword is provided.
+explanation: This test case ensures that when an unavailable keyword matches a shop name, the system correctly displays the shops and advises on searching again.
+
+Test Case: Test Case 6
+testCaseName: Search Unavailable Keyword with Related Products Display
+objective: Verify that the system shows a blank shop list, recommends trying another keyword, and displays related products when an unavailable shop name is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: A blank shop list is displayed, a recommendation to try another keyword is provided, and a list of related products from many shops is shown.
+explanation: This test case addresses the exception flow where the search term does not match any shop, ensuring the system still provides related product suggestions.
+

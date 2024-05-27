@@ -1,0 +1,11 @@
+Test Case: Test Case 2
+testCaseName: Verify product detail page for an out-of-stock product
+objective: Ensure that the product detail page indicates when a product is out of stock.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, shipping options, the quantity of products left as '0', information about the store selling the product, product descriptions, and ratings from users who have bought the product. Additionally, there should be a black sticker with a white note 'Sold out' on the picture of the product.
+reflect: yes
+explanation: This test case directly reflects the 'Product Out of Stock Scenario' by specifically testing for the indication of a product being out of stock on the product detail page. It verifies that the system correctly displays a 'Sold out' note, which is essential for communicating product availability to users.
+

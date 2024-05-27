@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Add New Topic with Complete Information
+objective: Verify that the administrator can successfully add a new topic with both name and description filled.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+explanation: This test case ensures that the basic flow of adding a new topic, as described in the use case, functions correctly when all required information is provided.
+
+Test Case: Test Case 2
+testCaseName: Add New Topic with Missing Description
+objective: Verify that the system prompts an error or a warning when the administrator tries to add a new topic without entering a description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Leave the description field empty.
+  - Step 5: Select 'Save' to attempt creating the new topic.
+expectedResult: The system should display an error or a warning indicating that the description field cannot be left blank.
+explanation: This test case checks the system's handling of incomplete topic creation attempts, specifically when the description is missing, which directly relates to the scenario name.
+
+Test Case: Test Case 3
+testCaseName: Add New Topic with Duplicate Name
+objective: Verify that the system prevents the administrator from adding a new topic with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the existing topics.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt creating the new topic.
+expectedResult: The system should show a notification that the name is already used, prompting the administrator to add another name.
+explanation: This test case verifies the alternative flow where an administrator attempts to add a new topic with a duplicate name, ensuring the system's ability to handle such cases.
+

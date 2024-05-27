@@ -1,0 +1,61 @@
+Test Case: Test Case 1
+testCaseName: Successful Rating Submission with Default Values
+objective: Verify that a user can successfully submit a rating with default star ratings and without adding comments, pictures, or videos.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Verify the rating form popup appears with default 5 stars selected for both product quality and service (seller and shipping) ratings.
+  - Step 5: Click the Done button without making any changes.
+expectedResult: The system saves the rating and displays it in the product's detail page's rating section.
+explanation: This test case ensures that the basic flow of submitting a rating with default values works as expected.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quality Rating and Submit
+objective: Verify that a user can adjust the quality rating of a product and successfully submit the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the quality rating by clicking on a different number of stars.
+  - Step 5: Click the Done button.
+expectedResult: The system saves the adjusted quality rating and displays it in the product's detail page's rating section.
+explanation: This test case verifies that users can adjust the quality rating of a product and that the system correctly saves and displays this rating.
+
+Test Case: Test Case 3
+testCaseName: Submit Rating with Comment
+objective: Verify that a user can leave a comment along with the rating and successfully submit it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Enter a comment in the comment section.
+  - Step 5: Click the Done button.
+expectedResult: The system saves the rating along with the comment and displays them in the product's detail page's rating section.
+explanation: This test case ensures that users can add comments to their ratings and that these comments are correctly saved and displayed.
+
+Test Case: Test Case 4
+testCaseName: Submit Rating with Multiple Pictures
+objective: Verify that a user can add multiple pictures to their rating and successfully submit it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add picture button and select an image file.
+  - Step 5: Repeat Step 4 to add the desired number of pictures (up to 5).
+  - Step 6: Click the Done button.
+expectedResult: The system saves the rating with all added pictures and displays them in the product's detail page's rating section.
+explanation: This test case verifies that users can add multiple pictures to their rating and that these pictures are correctly saved and displayed.
+
+Test Case: Test Case 5
+testCaseName: Submit Rating with a Video
+objective: Verify that a user can add a video to their rating and successfully submit it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add video button and select a video file.
+  - Step 5: Click the Done button.
+expectedResult: The system saves the rating with the added video and displays it in the product's detail page's rating section.
+explanation: This test case ensures that users can add a video to their rating and that this video is correctly saved and displayed.
+

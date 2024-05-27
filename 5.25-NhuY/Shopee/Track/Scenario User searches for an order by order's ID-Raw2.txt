@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Search for an Order by Order's ID
+objective: Verify that the user can search for an order using the order's ID and view the correct order details.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter a valid order's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays the order that matches the entered order's ID, showing correct details and status.
+explanation: This test case ensures that users can successfully search for their orders using the order's ID, which is a critical functionality for tracking order status. It directly matches the scenario of searching for an order by order's ID.
+
+Test Case: Test Case 2
+testCaseName: Search for an Order by Order's ID with No Results
+objective: Verify that the system correctly handles searches for an order by order's ID when no matching order exists.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter an invalid or non-existent order's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays a message indicating that no orders match the entered order's ID.
+explanation: This test case checks the system's response when a user searches for an order by an order's ID that does not exist in the system, ensuring the system can handle such cases gracefully.
+

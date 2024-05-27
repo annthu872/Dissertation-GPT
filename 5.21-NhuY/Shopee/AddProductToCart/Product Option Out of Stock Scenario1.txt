@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify product out of stock scenario
+objective: Ensure that when a product is out of stock, the add to cart button is not clickable and displays correctly.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has a 'Sold out' sticker on its picture.
+  - Step 4: Observe the product detail page.
+expectedResult: The add to cart button should be not clickable, indicating the product is out of stock.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the behavior of the system when a product is out of stock. It checks that the add to cart button is not clickable, which is the expected outcome for an out of stock product.
+
+Test Case: Test Case 2
+testCaseName: Verify product option out of stock scenario
+objective: Ensure that when an option of a product is out of stock, it is displayed as not selectable.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that leads to a product with multiple options.
+  - Step 4: Attempt to select an option that is displayed in grey or indicated as out of stock.
+expectedResult: The out of stock option should be not clickable, clearly indicating to the user that this option is not available.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario by focusing on product options that are out of stock. It ensures that the system correctly displays these options as not selectable, which is crucial for the scenario where a specific option of a product is out of stock.
+

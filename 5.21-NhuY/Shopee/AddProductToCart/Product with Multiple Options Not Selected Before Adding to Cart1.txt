@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Add product without selecting options
+objective: Verify that the system prompts the user to select options before adding a product with multiple options to the cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card.
+  - Step 4: On the product's detail page, directly click the 'Add to Cart' button without selecting any options.
+expectedResult: The system should inform the user that they did not select one option yet.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by attempting to add a product to the cart without selecting the required options and expecting the system to prompt the user to make a selection.
+
+Test Case: Test Case 2
+testCaseName: Successfully add product after selecting options
+objective: Verify that the user can successfully add a product to the cart after selecting available options
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains a product card for a product with multiple options.
+  - Step 3: Click on the product card.
+  - Step 4: On the product's detail page, select one of the available options.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The system adds the product with the selected option into the user's shopping cart.
+reflect: yes
+explanation: Although this test case demonstrates a successful addition of a product to the cart after selecting an option, it indirectly supports the given scenario by showing the correct flow of selecting options before adding to the cart. It complements the scenario by showing the expected behavior when the necessary conditions are met.
+

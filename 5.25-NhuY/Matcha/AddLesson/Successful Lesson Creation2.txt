@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful New Lesson Creation
+objective: Verify that an administrator can successfully add a new English learning lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Lesson Creation' by outlining the steps an administrator would take to successfully add a new lesson, including logging in, navigating to the lesson management section, entering lesson details, and saving the new lesson.
+

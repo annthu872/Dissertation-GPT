@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Search by Product Name
+objective: Verify that the system displays a list of shops and related products when searching by product name.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a specific product name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of shops that sell the specified product and a list of all related products from various shops.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by focusing on the functionality of searching by product name and verifying the display of relevant shops and products.
+

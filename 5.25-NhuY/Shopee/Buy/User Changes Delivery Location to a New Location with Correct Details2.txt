@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Change Delivery Location to a New Location with Correct Details
+objective: Verify that the user can change the delivery location to a new location with correct details during the checkout process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on the Change title in the delivery location section.
+  - Step 6: Click the Add new location button.
+  - Step 7: Fill in the name field with a correct name (only letters, at least 2 letters).
+  - Step 8: Fill in the phone number field with a correct format (+84) xxx xxx xxx.
+  - Step 9: Choose a city from the list provided by the platform.
+  - Step 10: Choose a district from the list provided by the platform.
+  - Step 11: Choose a ward from the list provided by the platform.
+  - Step 12: Fill in the exact location's address in the provided field with an address available on the map.
+  - Step 13: Select if the location is your own house or your working place.
+  - Step 14: Click on the Finish button to save the location.
+  - Step 15: Verify the location information in the delivery location section has been updated.
+  - Step 16: Click the order button to proceed with the purchase.
+expectedResult: The delivery location should be successfully changed to the new location with the correct details, and the user should be able to complete the purchase with this new delivery address.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'User Changes Delivery Location to a New Location with Correct Details' by outlining steps to change the delivery location during the checkout process with all necessary details. It covers the process from logging in to completing the purchase with the new delivery address, ensuring the functionality works as intended.
+

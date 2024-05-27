@@ -1,0 +1,66 @@
+Test Case: Test Case 1
+testCaseName: Successful Product Addition Without Options
+objective: Verify that a user can successfully add a product without options to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card.
+  - Step 4: On the product's detail page, click the 'Add to Cart' button.
+expectedResult: The product is added to the user's shopping cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successfully adding a product to the cart, specifically focusing on products without options.
+
+Test Case: Test Case 2
+testCaseName: Successful Product Addition With Options
+objective: Verify that a user can successfully add a product with options to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has options available.
+  - Step 4: On the product's detail page, choose one of the available options.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case aligns with the test scenario by ensuring a product with options can be successfully added to the cart, thus testing a more complex addition flow.
+
+Test Case: Test Case 3
+testCaseName: Product Addition With Mandatory Option Selection
+objective: Verify that the system prompts the user to select an option if they attempt to add a product with options to their shopping cart without selecting one.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has options available.
+  - Step 4: Without selecting an option, click the 'Add to Cart' button.
+  - Step 5: After seeing the prompt, select one of the available options.
+  - Step 6: Click the 'Add to Cart' button again.
+expectedResult: The system prompts the user to select an option and, after selection, the product is added to the shopping cart.
+reflect: yes
+explanation: This test case is relevant to the scenario as it tests the system's handling of mandatory option selection before adding a product to the cart, which is a critical path in the product addition flow.
+
+Test Case: Test Case 4
+testCaseName: Successful Product Addition With Quantity Adjustment
+objective: Verify that a user can adjust the quantity of a product before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card.
+  - Step 4: On the product's detail page, adjust the quantity using the plus or minus button.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the adjusted quantity, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case supports the scenario by testing the functionality of quantity adjustment before adding a product to the cart, which is an important aspect of the shopping experience.
+
+Test Case: Test Case 5
+testCaseName: Successful Product Addition With Options and Quantity Adjustment
+objective: Verify that a user can select product options and adjust quantity before adding the product to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has options available.
+  - Step 4: Choose one of the available options.
+  - Step 5: Adjust the quantity using the plus or minus button.
+  - Step 6: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option and adjusted quantity, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case is highly relevant to the given scenario as it combines both the selection of options and the adjustment of quantity, ensuring a comprehensive test of the product addition process.
+

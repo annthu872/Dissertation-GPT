@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Waiting for Payment Status
+objective: Verify that the user can filter orders by 'Waiting for Payment' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on the 'Waiting for Payment' tab in the status bar.
+expectedResult: Only orders with the 'Waiting for Payment' status are displayed on the user's personal bought order page.
+explanation: This test case ensures that the system correctly filters and displays orders that are specifically marked as 'Waiting for Payment'. It directly matches the scenario name by testing the functionality of filtering orders based on their status.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Status Tabs Functionality
+objective: Ensure that the status tabs including 'All', 'Delivering', 'Waiting to deliver', 'Finished', 'Cancelled', and 'Returned' are functional and display the correct orders when selected.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, sequentially click on each status tab ('All', 'Delivering', 'Waiting to deliver', 'Finished', 'Cancelled', 'Returned') and observe the orders displayed.
+expectedResult: For each status tab clicked, only orders corresponding to the selected status are displayed.
+explanation: While this test case does not directly match the scenario name, it is necessary to ensure the overall functionality of the order status filtering feature, which includes the 'Waiting for Payment' status. It verifies that all status tabs work as expected.
+

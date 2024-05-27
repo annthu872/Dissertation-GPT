@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Adjust Seller Rating Before Submitting
+objective: Verify that the user can adjust the seller rating before submitting the rating form.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, adjust the seller rating by clicking on a different number of stars than the default 5 stars.
+  - Step 5: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted seller rating and display it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly tests the scenario of adjusting the seller rating before submitting, as it includes steps for adjusting the rating and verifying that the adjustment is saved.
+
+Test Case: Test Case 2
+testCaseName: Adjust Seller Rating and Leave a Comment
+objective: Verify that the user can adjust the seller rating and leave a comment before submitting the rating form.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the seller rating by clicking on a different number of stars than the default 5 stars.
+  - Step 5: Enter a comment in the comment section.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted seller rating and the comment, then display them in the product's detail page's rating section.
+reflect: yes
+explanation: Although this test case adds the action of leaving a comment, it still reflects the given test scenario because the primary action of adjusting the seller rating before submitting is tested. The addition of leaving a comment does not detract from the scenario being tested but rather adds depth to the user interaction being verified.
+
+Test Case: Test Case 3
+testCaseName: Adjust Seller Rating and Add a Picture
+objective: Verify that the user can adjust the seller rating and add a picture before submitting the rating form.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the seller rating by clicking on a different number of stars than the default 5 stars.
+  - Step 5: Click on the Add picture button and select an image file.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted seller rating and the picture, then display them in the product's detail page's rating section.
+reflect: yes
+explanation: Similar to Test Case 2, this test case includes an additional action (adding a picture) alongside adjusting the seller rating. It still reflects the given test scenario because the core action of adjusting the seller rating before submission is present and tested. The inclusion of adding a picture complements the scenario by testing another aspect of the review process.
+

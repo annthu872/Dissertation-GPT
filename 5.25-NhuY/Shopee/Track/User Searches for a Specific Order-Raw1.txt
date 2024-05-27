@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Order Tracking by Status Filter
+objective: Verify that the user can filter orders by their status (e.g., Delivering, Finished, Cancelled) and view the filtered list.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: From the personal bought order page, click on one of the tabs named after an order status (e.g., Delivering, Finished, Cancelled).
+expectedResult: The system should display only the orders that match the selected status.
+explanation: This test case ensures that users can filter their orders based on specific statuses, making it easier to track the progress or history of their orders.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Search by Order ID
+objective: Verify that the user can search for a specific order using the order's ID.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, enter an order's ID in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system should display the order(s) that match the entered order ID.
+explanation: This test case checks if the search functionality works correctly when users search for orders using order IDs, helping them to quickly find specific orders.
+
+Test Case: Test Case 3
+testCaseName: Verify Order Search by Shop's Name
+objective: Verify that the user can search for orders by entering a shop's name in the search bar.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, enter a shop's name in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system should display the order(s) that match the entered shop's name.
+explanation: This test case verifies the search functionality when users use a shop's name as the keyword, facilitating users in finding orders related to specific shops.
+
+Test Case: Test Case 4
+testCaseName: Verify Order Search by Product's ID
+objective: Verify that the user can search for orders by entering a product's ID in the search bar.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, enter a product's ID in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system should display the order(s) that match the entered product's ID.
+explanation: This test case ensures the search functionality is effective when users are looking for orders based on a product's ID, aiding in the quick location of specific product orders.
+

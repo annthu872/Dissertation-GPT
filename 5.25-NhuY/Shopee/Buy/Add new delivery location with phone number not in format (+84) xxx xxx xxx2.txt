@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Add new delivery location with invalid phone number format
+objective: Verify that the system prevents adding a new delivery location with a phone number not in the format (+84) xxx xxx xxx
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Proceed to the payment page by selecting a product and clicking the buy button.
+  - Step 4: On the payment page, click on the Change title in the delivery location section.
+  - Step 5: Click on the Add new location button.
+  - Step 6: Fill in the name field with a valid name.
+  - Step 7: Enter a phone number not in the format (+84) xxx xxx xxx in the phone number field.
+  - Step 8: Choose a city, district, and ward from the provided options.
+  - Step 9: Fill in a valid exact location's address.
+  - Step 10: Select if the location is a house or working place.
+  - Step 11: Click on the Finish button to attempt saving the new location.
+expectedResult: A notification appears under the phone number field indicating the incorrect format, and the system does not allow adding the location.
+reflect: yes
+explanation: This test case directly tests the scenario's requirement by attempting to add a new delivery location with a phone number not adhering to the specified format. It verifies the system's validation mechanism for phone number formats, ensuring that only correctly formatted numbers are accepted.
+

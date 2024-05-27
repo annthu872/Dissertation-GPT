@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Default Settings
+objective: Verify that a user can successfully purchase a product with default settings including delivery location and payment method.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: Verify that the payment page is displayed with the default delivery location, product information, shipping information, platform's promotion information, and the default payment method.
+  - Step 6: Click the order button.
+expectedResult: The product is removed from the shopping cart, and a new order is formed with the product.
+explanation: This test case ensures that users can complete a purchase using the default settings without making any changes to delivery location or payment method, directly reflecting the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Successful Purchase with Store Selection
+objective: Verify that a user can successfully purchase all products from a single store by selecting the store.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page where all products come from one store.
+  - Step 3: Choose the store by clicking the tick box at the head of the store.
+  - Step 4: Verify that all products from that store are automatically selected.
+  - Step 5: Click the buy button at the right bottom of the screen.
+  - Step 6: Proceed through the payment page without making any changes and click the order button.
+expectedResult: All products from the selected store are removed from the shopping cart, and a new order is formed with those products.
+explanation: This test case verifies the alternative flow where a user selects all products from a single store, simplifying the purchase process for multiple items from the same store.
+
+Test Case: Test Case 3
+testCaseName: Successful Purchase with Changed Delivery Location
+objective: Verify that a user can successfully change the delivery location to one of the saved locations before completing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button at the right bottom of the screen.
+  - Step 4: On the payment page, click on 'Change' in the delivery location section.
+  - Step 5: Choose one of the saved location options.
+  - Step 6: Verify that the delivery location information is updated.
+  - Step 7: Click the order button.
+expectedResult: The product is removed from the shopping cart, and a new order is formed with the updated delivery location.
+explanation: This test case checks the functionality of changing the delivery location to a previously saved address, ensuring users can customize their delivery preferences per order.
+
+Test Case: Test Case 4
+testCaseName: Successful Purchase with New Delivery Location
+objective: Verify that a user can add a new delivery location and use it for the current purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button at the right bottom of the screen.
+  - Step 4: On the payment page, click on 'Change' in the delivery location section.
+  - Step 5: Click 'Add new location' button.
+  - Step 6: Fill in all required fields with valid information and click on 'Finish' to save the location.
+  - Step 7: Verify that the delivery location information is updated to the newly added location.
+  - Step 8: Click the order button.
+expectedResult: The product is removed from the shopping cart, and a new order is formed with the newly added delivery location.
+explanation: This test case ensures that users can add a new delivery location during the purchase process and that the new location is correctly applied to the current order.
+

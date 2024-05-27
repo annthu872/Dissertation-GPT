@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: View Detail Information of a Product with Multiple Options
+objective: Verify that users can view detailed information of a product including all options of that product, the store selling the product, shipping options, descriptions, and the ratings of users who have bought it.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to have multiple options (e.g., a lipstick with different colors).
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, a picture of the product, all options of that product with appropriate titles (e.g., colors for lipstick), shipping options, how many products left, information of the store selling that product, descriptions, and ratings of users who have bought the product.
+explanation: This test case ensures that when a product with multiple options is selected, all relevant information including the options are displayed correctly to the user.
+
+Test Case: Test Case 2
+testCaseName: View Detail Information of an Out of Stock Product
+objective: Verify that users can view detailed information of an out of stock product, including a 'Sold Out' sticker on the product's picture.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page should display the product's name, shipping options, how many products left (indicating none are available), information of the store selling that product, descriptions, and ratings of users who have bought the product. A black sticker with a white note 'Sold out' should be visible on the picture of the product.
+explanation: This test case verifies that products which are out of stock are properly indicated as such on the product's detail page, ensuring clear communication to the user about the product's availability.
+

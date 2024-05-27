@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Increase Product Quantity in Shopping Cart
+objective: Verify that the user can successfully increase the quantity of a product in their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Identify a product in the shopping cart whose quantity you want to increase.
+  - Step 4: Click the plus button in the quantity section of the identified product until the quantity reaches the desired number.
+expectedResult: The quantity of the product in the shopping cart should increase to the desired number.
+explanation: This test case is created to ensure that users can increase the quantity of products in their shopping cart, which is a direct action mentioned in the scenario 'Product Quantity Increase'. It follows the main flow of viewing and editing the shopping cart and specifically tests the functionality described in Alternative flow 5.
+

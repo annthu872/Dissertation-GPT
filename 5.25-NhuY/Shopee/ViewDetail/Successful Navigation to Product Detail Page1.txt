@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Product Detail Page with In-stock Product
+objective: Verify that users can successfully navigate to a product's detail page and view all necessary information for an in-stock product.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that is in stock.
+expectedResult: User is navigated to the product's detail page displaying the product's name, a picture of the product, shipping options, available stock, store information, product descriptions, and user ratings.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the successful navigation to a product detail page and ensuring all necessary information for an in-stock product is displayed, which is the core objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Product Detail Page with Product Having Multiple Options
+objective: Verify that users can view all options of a product with multiple options on the product's detail page.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that has multiple options (e.g., different colors or flavors).
+expectedResult: User is navigated to the product's detail page displaying the product's name, a picture of the product, all available options with appropriate titles, shipping options, available stock, store information, product descriptions, and user ratings.
+reflect: yes
+explanation: Although this test case introduces a product with multiple options, it still aligns with the given test scenario's objective of successful navigation to a product detail page and viewing detailed information. It tests a specific case within the scenario's scope.
+
+Test Case: Test Case 3
+testCaseName: Navigate to Product Detail Page with Out-of-Stock Product
+objective: Verify that users can navigate to a product's detail page for an out-of-stock product and see the 'Sold Out' sticker.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that is out of stock.
+expectedResult: User is navigated to the product's detail page displaying the product's name, shipping options, store information, product descriptions, and user ratings. The product picture should have a black sticker with a white note 'Sold out'.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the navigation to a product detail page under a specific condition (out-of-stock), ensuring the scenario's objective is met even in this particular situation.
+

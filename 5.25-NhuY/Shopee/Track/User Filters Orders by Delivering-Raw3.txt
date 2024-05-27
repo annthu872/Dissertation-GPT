@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Delivering Status
+objective: Verify that the user can filter orders by the 'Delivering' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on the 'Delivering' tab in the status bar.
+expectedResult: Only orders with the 'Delivering' status are displayed on the page.
+explanation: This test case ensures that the system correctly filters and displays orders that are currently in the 'Delivering' status, allowing users to easily track the progress of these orders.
+
+Test Case: Test Case 2
+testCaseName: Verify Tabs Presence for Order Status Filtering
+objective: Verify that the tabs for filtering orders by status (All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled, and Returned) are present.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: Observe the top of the list on the personal bought order page for the presence of the status bar with multiple tabs.
+expectedResult: The status bar with tabs named All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled, and Returned is present above the list of orders.
+explanation: This test case verifies the presence of the filtering mechanism through tabs based on order status, which is crucial for users to navigate and manage their orders efficiently.
+

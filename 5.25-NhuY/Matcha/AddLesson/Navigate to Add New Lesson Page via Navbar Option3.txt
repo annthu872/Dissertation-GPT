@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+expectedResult: The system should redirect the administrator to the 'Add new Lesson' page.
+reflect: yes
+explanation: This test case directly tests the given test scenario, which is navigating to the 'Add New Lesson' page via the navbar option. It follows the exact steps an administrator would take to reach the 'Add New Lesson' page, thus accurately reflecting the scenario.
+

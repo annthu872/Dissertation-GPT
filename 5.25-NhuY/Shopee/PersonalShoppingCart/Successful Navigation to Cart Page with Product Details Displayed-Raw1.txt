@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Cart Page and Verify Product Details
+objective: Verify that the user can successfully navigate to the cart page and all product details are correctly displayed.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Observe the products listed on the cart's page.
+expectedResult: The user is navigated to the cart page where all added products are listed with their corresponding shop, price, promotions, quantity, and selected options.
+explanation: This test case ensures that users can navigate to their shopping cart and see all relevant details of the products they intend to purchase, matching the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Remove Product from Cart Using Erase Button and Confirm Removal
+objective: Verify that a user can remove a product from their shopping cart using the erase button and confirm the removal.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the shopping cart page by clicking the cart icon.
+  - Step 3: Tick the box next to the product intended for removal.
+  - Step 4: Click the 'Erase' button at the bottom of the screen.
+  - Step 5: In the confirmation pop-up, click 'Yes'.
+expectedResult: The product is removed from the user's shopping cart, and the cart updates to reflect this change.
+explanation: This test case follows Alternative flow 1, ensuring users can remove items from their cart using the erase functionality and confirming the action.
+
+Test Case: Test Case 3
+testCaseName: Decrease Product Quantity to Zero and Confirm Removal
+objective: Verify that decreasing a product's quantity to zero prompts a removal confirmation, and confirming this removes the product from the cart.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the shopping cart page by clicking the cart icon.
+  - Step 3: Decrease the product's quantity to one using the minus button.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: In the confirmation pop-up, click 'Yes'.
+expectedResult: The product is removed from the user's shopping cart, and the cart updates to reflect this change.
+explanation: This test case follows Alternative flow 3, testing the functionality that allows users to remove a product by decreasing its quantity to zero and confirming the removal.
+
+Test Case: Test Case 4
+testCaseName: Change Product Option from Cart
+objective: Verify that users can change the option of a product from their shopping cart and the system updates accordingly.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the shopping cart page by clicking the cart icon.
+  - Step 3: Click on the option dropdown of a product.
+  - Step 4: Select a different option from the dropdown.
+  - Step 5: Observe the option update for the product in the cart.
+expectedResult: The selected product's option is updated in the user's shopping cart to reflect the new selection.
+explanation: This test case follows Alternative flow 7, ensuring that users can change product options directly from their shopping cart and the system accurately reflects these changes.
+

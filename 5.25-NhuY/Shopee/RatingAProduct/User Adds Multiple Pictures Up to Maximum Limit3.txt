@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Add Single Picture to Product Rating
+objective: Verify that a user can add a single picture to their product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, click on the Add picture button.
+  - Step 5: In the pop-up, choose an image file and click to select it.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the rating with the image, and the image should be visible in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly supports the test scenario by verifying a subset of the functionality, specifically the ability to add a single picture to a product rating. It reflects the scenario's focus on adding pictures to ratings, even though it doesn't test the maximum limit.
+
+Test Case: Test Case 2
+testCaseName: Add Maximum Pictures to Product Rating
+objective: Verify that a user can add multiple pictures up to the maximum limit to their product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add picture button.
+  - Step 5: In the pop-up, choose an image file and click to select it.
+  - Step 6: After the first image is added, click on the camera icon to add another picture.
+  - Step 7: Repeat Step 5 and 6 until you have added 5 pictures.
+  - Step 8: Attempt to add a 6th picture following the same steps.
+  - Step 9: Click the Done button to submit the rating.
+expectedResult: The system should save the rating with the 5 images, and all 5 images should be visible in the product's detail page's rating section. The system should not allow adding more than 5 images.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's ability to handle multiple picture uploads up to the maximum limit for a product rating. It tests the core functionality described in the scenario, ensuring that users can add multiple pictures up to a specified limit.
+

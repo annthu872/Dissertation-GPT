@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Waiting for Payment Status
+objective: Verify that the user can filter orders by 'Waiting for Payment' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on the 'Waiting for Payment' tab in the status bar.
+expectedResult: Only orders with the 'Waiting for Payment' status are displayed on the user's personal bought order page.
+reflect: yes
+explanation: This test case directly tests the functionality of filtering orders by the 'Waiting for Payment' status, which is the exact scenario described. It verifies that the system correctly filters and displays only the orders with the specified status, making it a perfect reflection of the given test scenario.
+

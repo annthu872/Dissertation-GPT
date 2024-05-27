@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity of a Product Without Options Before Adding to Cart
+objective: Verify that a user can adjust the quantity of a product without options before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Adjust the quantity of the product by clicking the plus or minus button in the quantity section until it reaches the desired amount.
+  - Step 5: Click the add to cart button.
+expectedResult: The system adds the specified quantity of the product into the user's shopping cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to adjust the quantity of a product without options before adding it to the cart. It follows the exact steps a user would take to perform this action, thus accurately testing the scenario.
+

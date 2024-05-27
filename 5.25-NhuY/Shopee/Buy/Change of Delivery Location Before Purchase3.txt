@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Change of Delivery Location to a Saved Location Before Purchase
+objective: Verify that the user can change the delivery location to one of the saved locations before completing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the product(s) you wish to purchase.
+  - Step 4: Click the buy button to proceed to the payment page.
+  - Step 5: On the payment page, click the 'Change' title in the delivery location section.
+  - Step 6: Choose one of the saved location options.
+  - Step 7: Click the order button to complete the purchase.
+expectedResult: The delivery location should be updated to the selected saved location, and the purchase should be completed with this new delivery location.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to change the delivery location to a saved address before finalizing the purchase. It covers the necessary steps to achieve this functionality, from logging in to completing the purchase with the new delivery location.
+
+Test Case: Test Case 2
+testCaseName: Change of Delivery Location to a New Location Before Purchase
+objective: Verify that the user can add a new delivery location and select it for the delivery before completing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the product(s) you wish to purchase.
+  - Step 4: Click the buy button to proceed to the payment page.
+  - Step 5: On the payment page, click the 'Change' title in the delivery location section.
+  - Step 6: Click the 'Add new location' button.
+  - Step 7: Fill in the new location details correctly, including name, phone number, city, district, ward, and exact address.
+  - Step 8: Choose the location type (own house or working place).
+  - Step 9: Click on the 'Finish' button to save the location.
+  - Step 10: Click the order button to complete the purchase.
+expectedResult: The new delivery location should be saved and selected for the current purchase, and the purchase should be completed with this new delivery location.
+reflect: yes
+explanation: This test case also accurately reflects the given test scenario by testing the functionality of adding and selecting a new delivery location before purchase completion. It goes beyond the scenario of selecting a saved location by verifying the process of adding a new location, which is a critical extension of the scenario's functionality.
+

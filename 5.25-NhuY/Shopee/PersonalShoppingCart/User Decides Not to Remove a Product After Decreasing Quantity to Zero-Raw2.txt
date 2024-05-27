@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify user decides not to remove a product after decreasing quantity to zero
+objective: Ensure that when a user decreases a product's quantity to zero and decides not to remove it, the product remains in the cart.
+testSteps:
+  - Step 1: Log in to the platform to access the personal shopping cart.
+  - Step 2: Click on the shopping cart icon at the top right of the screen to navigate to the cart's page.
+  - Step 3: Identify a product in the cart whose quantity you want to decrease to zero.
+  - Step 4: Decrease the product's quantity by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: When the system shows a pop-up to confirm the removal of the product with options Yes or No, click No.
+expectedResult: The product should remain in the shopping cart with the quantity displayed as one, indicating the user's decision not to remove the product after decreasing its quantity to zero.
+explanation: This test case is designed to verify the functionality where a user can decide not to remove a product from their shopping cart even after decreasing its quantity to zero, as described in Alternative flow 4 of the use case specification. It ensures the system correctly handles the user's decision to keep the product in the cart.
+

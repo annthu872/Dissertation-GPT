@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Waiting for Payment Status
+objective: Verify that the user can filter orders by 'Waiting for Payment' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on the 'Waiting for Payment' tab in the status bar.
+expectedResult: Only orders with the 'Waiting for Payment' status are displayed on the user's personal bought order page.
+reflect: yes
+explanation: This test case directly tests the given test scenario, which is to verify the functionality of filtering orders by 'Waiting for Payment' status. The steps lead to the expected outcome where only orders with the specified status are displayed, thus reflecting the scenario accurately.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Status Tabs Functionality
+objective: Ensure that the status tabs correctly filter orders according to their respective statuses.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, observe the status bar with multiple tabs including All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled, and Returned.
+  - Step 4: Sequentially click on each status tab and observe the filtered orders.
+expectedResult: For each status tab clicked, only orders corresponding to that specific status are displayed.
+reflect: yes
+explanation: Although this test case tests the functionality of all status tabs, including 'Waiting for Payment', it still reflects the given test scenario. The scenario is to verify the ability to filter orders by 'Waiting for Payment' status, and this test case includes that functionality as part of a broader test. Therefore, it indirectly tests the given scenario by ensuring the 'Waiting for Payment' tab functions as expected among others.
+

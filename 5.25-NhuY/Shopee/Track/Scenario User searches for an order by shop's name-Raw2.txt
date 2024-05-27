@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Search for an order by shop's name
+objective: Verify that the user can search for orders by entering the shop's name in the search bar and view the results.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Enter a specific shop's name into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays orders that match the entered shop's name.
+explanation: This test case ensures that users can effectively search for their orders by using the shop's name, which is part of the main flow of tracking an order's status. It directly tests the functionality described in the 'User search order' alternative flow.
+
+Test Case: Test Case 2
+testCaseName: Search for an order with an empty shop's name
+objective: Verify that the system handles empty search queries appropriately when searching by shop's name.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Leave the search bar empty and press enter.
+expectedResult: The system either displays a message indicating that the search query cannot be empty or shows no change in the order list.
+explanation: This test case checks how the system responds to an empty search query when users attempt to search for an order by shop's name, ensuring robustness in handling different user inputs.
+

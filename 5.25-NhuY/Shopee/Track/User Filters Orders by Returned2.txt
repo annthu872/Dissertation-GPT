@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Returned Status
+objective: Verify that the user can filter orders by the 'Returned' status and only see orders with that status.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the status bar with multiple tabs.
+  - Step 4: Click on the 'Returned' tab.
+expectedResult: The system should display only the orders with the 'Returned' status.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of filtering orders by their 'Returned' status. It follows a logical sequence of steps that a user would take to filter their orders, and the expected result aligns perfectly with the scenario's requirement. Therefore, it reflects the given test scenario accurately.
+

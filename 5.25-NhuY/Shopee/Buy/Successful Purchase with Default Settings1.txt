@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Default Settings
+objective: Verify that a user can successfully purchase a product with default settings including delivery location and payment method.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: Verify that the payment page is displayed with the default delivery location, product information, shipping information, platform's promotion information section, and the default payment method.
+  - Step 6: Click the order button.
+expectedResult: The product is removed from the shopping cart, and a new order is formed for that product.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to complete a purchase with the default settings for delivery location and payment method.
+

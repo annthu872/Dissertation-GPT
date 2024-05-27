@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: View All Orders
+objective: Verify that the user can view all orders after logging in
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: Observe the redirected page to confirm it is the personal bought order page.
+expectedResult: The user should be redirected to their personal bought order page displaying a list of all orders they have chosen to buy, along with their information and status.
+explanation: This test case ensures that users can successfully navigate to and view their complete order history, matching the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Filter Orders by Status
+objective: Verify that the user can filter orders by their status
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, click on one of the tabs named after an order status (e.g., 'Delivering').
+expectedResult: The system should display only the orders that match the selected status.
+explanation: This test case verifies the functionality of filtering orders by status, as described in Alternative flow 1 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Search Orders by Keyword
+objective: Verify that the user can search for orders using keywords
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, enter a keyword (shop's name, order's ID, or product's ID) into the search bar.
+  - Step 4: Press enter.
+expectedResult: The system should display orders that match the keyword entered by the user.
+explanation: This test case checks the search functionality using keywords, as outlined in Alternative flow 2 of the use case.
+

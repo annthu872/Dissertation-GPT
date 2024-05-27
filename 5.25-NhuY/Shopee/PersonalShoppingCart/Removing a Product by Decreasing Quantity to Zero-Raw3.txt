@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Removing a Product by Decreasing Quantity to Zero
+objective: Verify that the system removes a product from the shopping cart when its quantity is decreased to zero and the user confirms the removal.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Identify a product in the shopping cart with a quantity greater than one.
+  - Step 4: Decrease the quantity of the product by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: A pop-up appears asking for confirmation of the changes with two options: Yes or No. Click Yes.
+expectedResult: The product is removed from the user's shopping cart.
+explanation: This test case directly addresses the scenario of removing a product by decreasing its quantity to zero, following the specified alternative flow 3. It ensures that the system correctly interprets a quantity of zero as a request to remove the item from the cart.
+
+Test Case: Test Case 2
+testCaseName: Cancel Removing a Product by Decreasing Quantity to Zero
+objective: Verify that the system does not remove a product from the shopping cart when its quantity is decreased to zero but the user cancels the removal.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Identify a product in the shopping cart with a quantity greater than one.
+  - Step 4: Decrease the quantity of the product by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: A pop-up appears asking for confirmation of the changes with two options: Yes or No. Click No.
+expectedResult: The product remains in the user's shopping cart with a quantity of one.
+explanation: This test case is based on alternative flow 4, where the user decides not to remove the product after decreasing its quantity to zero. It verifies that the system correctly cancels the removal process upon the user's request.
+

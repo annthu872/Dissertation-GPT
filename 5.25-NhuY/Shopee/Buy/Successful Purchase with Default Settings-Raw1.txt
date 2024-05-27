@@ -1,0 +1,111 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Default Settings
+objective: Verify that a user can successfully purchase a product with default settings including delivery location and payment method.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: Verify that the payment page is displayed with the default delivery location, product information, shipping information, platform's promotion information section, and the default payment method.
+  - Step 6: Click the order button.
+expectedResult: The product is removed from the shopping cart, and a new order is formed for that product.
+explanation: This test case ensures that users can complete a purchase using the default settings for delivery location and payment method without making any changes.
+
+Test Case: Test Case 2
+testCaseName: Successful Purchase by Selecting Store
+objective: Verify that a user can successfully purchase all products from a single store by selecting the store.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a store by clicking the tick box at the head of the store.
+  - Step 4: Verify that all products from that store are automatically selected.
+  - Step 5: Click the buy button at the right bottom of the screen.
+  - Step 6: Proceed through the payment page without making changes and click the order button.
+expectedResult: All products from the selected store are purchased, and new orders are formed for those products.
+explanation: This test case verifies the functionality of purchasing all products from a single store by selecting the store, simplifying the buying process for users.
+
+Test Case: Test Case 3
+testCaseName: Successful Purchase with Changed Delivery Location
+objective: Verify that a user can successfully change the delivery location to one of the saved locations during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Change' in the delivery location section.
+  - Step 5: Choose one of the saved location options.
+  - Step 6: Verify that the delivery location information is updated.
+  - Step 7: Click the order button.
+expectedResult: The delivery location is successfully changed to the selected saved location, and the purchase is completed with this new delivery location.
+explanation: This test case ensures that users can change the delivery location to a previously saved location during the purchase process.
+
+Test Case: Test Case 4
+testCaseName: Successful Purchase with New Delivery Location
+objective: Verify that a user can add a new delivery location during the purchase process and complete the purchase with this new location.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Change' in the delivery location section.
+  - Step 5: Click 'Add new location' button.
+  - Step 6: Fill in all required fields with valid information and click 'Finish'.
+  - Step 7: Verify that the delivery location information is updated to the newly added location.
+  - Step 8: Click the order button.
+expectedResult: The new delivery location is successfully added and selected for the purchase, and the purchase is completed with this new delivery location.
+explanation: This test case verifies the functionality for users to add a new delivery location during the purchase process and use it for the current purchase.
+
+Test Case: Test Case 5
+testCaseName: Successful Purchase with Shop or Product's Promotion
+objective: Verify that a user can successfully apply a shop or product's promotion during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Choose voucher' in the product's information section.
+  - Step 5: Select one of the available vouchers.
+  - Step 6: Verify that the voucher is applied and the product's price is recalculated.
+  - Step 7: Click the order button.
+expectedResult: The selected voucher is successfully applied to the purchase, and the product's price is recalculated accordingly.
+explanation: This test case ensures that users can apply a shop or product's promotion to their purchase, allowing them to benefit from available discounts.
+
+Test Case: Test Case 6
+testCaseName: Successful Purchase with Platform's Promotion
+objective: Verify that a user can successfully apply a platform's promotion during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Choose voucher' in the platform's promotion information section.
+  - Step 5: Select one of the available vouchers.
+  - Step 6: Verify that the voucher is applied and the order's price is recalculated.
+  - Step 7: Click the order button.
+expectedResult: The selected platform's promotion is successfully applied to the purchase, and the order's price is recalculated accordingly.
+explanation: This test case verifies that users can apply a platform's promotion to their purchase, maximizing their savings.
+
+Test Case: Test Case 7
+testCaseName: Successful Purchase with Changed Shipping Option
+objective: Verify that a user can successfully change the shipping option during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Change' in the shipping information section.
+  - Step 5: Select one of the available shipping options.
+  - Step 6: Verify that the shipping method is updated and the order's price is recalculated if necessary.
+  - Step 7: Click the order button.
+expectedResult: The shipping option is successfully changed, and the purchase is completed with the new shipping method.
+explanation: This test case ensures that users can change the shipping option to suit their preferences or requirements during the purchase process.
+
+Test Case: Test Case 8
+testCaseName: Successful Purchase with Changed Payment Method
+objective: Verify that a user can successfully change the payment method during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select a product.
+  - Step 3: Click the buy button to proceed to the payment page.
+  - Step 4: Click on 'Change' in the payment method section.
+  - Step 5: Select one of the available payment methods.
+  - Step 6: Verify that the payment method is updated.
+  - Step 7: Click the order button.
+expectedResult: The payment method is successfully changed, and the purchase is completed with the new payment method.
+explanation: This test case verifies that users have the flexibility to change the payment method during the purchase process to their preferred option.
+

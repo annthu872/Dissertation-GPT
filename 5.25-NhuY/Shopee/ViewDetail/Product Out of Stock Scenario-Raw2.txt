@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: View Detail of In-Stock Product with Single Option
+objective: Verify that users can view details of an in-stock product with a single option including product name, picture, shipping options, stock availability, store information, descriptions, and user ratings.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card of a product that is in stock and has only one option.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays the product's name, a picture of the product, shipping options, the quantity of products left in stock, information of the store selling the product, product descriptions, and ratings from users who have bought the product.
+explanation: This test case ensures that the main flow of viewing a product's detail is functioning correctly for products that are in stock and have a single option.
+
+Test Case: Test Case 2
+testCaseName: View Detail of In-Stock Product with Multiple Options
+objective: Verify that users can view details of an in-stock product with multiple options including all options of the product, product name, picture, shipping options, stock availability, store information, descriptions, and user ratings.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card of a product that is in stock and has multiple options.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays the product's name, a picture of the product, all options of the product with appropriate titles, shipping options, the quantity of products left in stock, information of the store selling the product, product descriptions, and ratings from users who have bought the product.
+explanation: This test case verifies the alternative flow 1, ensuring that products with multiple options are displayed correctly, including all available options.
+
+Test Case: Test Case 3
+testCaseName: View Detail of Out-of-Stock Product
+objective: Verify that users can view details of an out-of-stock product including product name, shipping options, stock status, store information, descriptions, and user ratings, with a 'Sold out' sticker on the product picture.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card of a product that is out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays the product's name, shipping options, a 'Sold out' sticker on the product picture, information of the store selling the product, product descriptions, and ratings from users who have bought the product. The stock status shows that the product is out of stock.
+explanation: This test case verifies the alternative flow 2, ensuring that out-of-stock products are displayed correctly with a 'Sold out' sticker on the product picture.
+

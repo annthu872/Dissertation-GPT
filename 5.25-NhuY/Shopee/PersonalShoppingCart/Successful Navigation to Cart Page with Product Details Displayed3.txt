@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Successful Navigation to Cart Page
+objective: Verify that the user can successfully navigate to the cart page by clicking the shopping cart icon
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+expectedResult: The system navigates the user to the cart's page displaying all the products added but not yet purchased, including details such as the shop name, product price, promotions, quantity added, and chosen options for products with multiple options.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing both the navigation to the cart page and the display of product details, which are the main objectives of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Display of Product Details in Cart
+objective: Verify that the product details are correctly displayed in the user's cart
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the cart page by clicking the shopping cart icon at the top right of the screen.
+expectedResult: The cart page displays all products the user has added but not yet purchased, with accurate details including the shop name, product price, promotions, quantity added, and chosen options for products with multiple options.
+reflect: yes
+explanation: Although this test case seems to focus more on the verification of product details rather than the navigation process, it still reflects the given test scenario. The scenario encompasses both navigation to the cart page and the display of product details, which this test case effectively tests.
+

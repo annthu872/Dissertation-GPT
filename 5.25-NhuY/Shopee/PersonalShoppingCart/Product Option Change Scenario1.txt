@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify product option change in shopping cart
+objective: Ensure that users can change the option of a product in their shopping cart and the system updates accordingly.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen to navigate to the cart's page.
+  - Step 3: Identify a product in the shopping cart that has multiple options available.
+  - Step 4: Click on the option dropdown of the identified product.
+  - Step 5: Select a different option from the dropdown list.
+expectedResult: The system should update the product's option in the shopping cart to the newly selected option.
+reflect: yes
+explanation: This test case directly addresses the 'Product Option Change Scenario' by outlining steps to change a product's option within the shopping cart and expecting the system to update accordingly. It is a clear reflection of the scenario as it tests the core functionality of changing product options.
+
+Test Case: Test Case 2
+testCaseName: Verify product option remains unchanged on cancellation
+objective: Ensure that if a user initiates an option change for a product but cancels the action, the original option remains unchanged.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen to navigate to the cart's page.
+  - Step 3: Identify a product in the shopping cart that has multiple options available.
+  - Step 4: Click on the option dropdown of the identified product.
+  - Step 5: Hover or click on a different option but do not confirm the change.
+  - Step 6: Click outside the dropdown to cancel the option change.
+expectedResult: The system should keep the original option of the product unchanged in the shopping cart.
+reflect: yes
+explanation: Although this test case explores a different flow by testing the cancellation of an option change, it still falls under the 'Product Option Change Scenario'. It verifies the system's behavior when a user decides against changing the option, ensuring the product option remains unchanged. This is a critical part of testing the overall functionality of product option changes.
+

@@ -1,0 +1,59 @@
+Test Case: Test Case 1
+testCaseName: Verify user can remove a product by erasing it from the shopping cart
+objective: Ensure that users can remove a product from their shopping cart by using the erase functionality and confirming the action.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the Erase button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click Yes.
+expectedResult: The product is removed from the user's shopping cart, and the cart updates to reflect this change.
+explanation: This test case ensures that the erase functionality works as intended, allowing users to remove unwanted items from their cart.
+
+Test Case: Test Case 2
+testCaseName: Verify user can cancel removing a product by erasing it from the shopping cart
+objective: Ensure that users can cancel the removal of a product from their shopping cart after initiating the erase action.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you initially thought to remove.
+  - Step 4: Click the Erase button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click No.
+expectedResult: The product remains in the user's shopping cart, and no changes are made.
+explanation: This test case verifies that users have the option to cancel the removal of a product from their cart after clicking the erase button.
+
+Test Case: Test Case 3
+testCaseName: Verify user can remove a product by decreasing its quantity to zero
+objective: Ensure that users can remove a product from their shopping cart by decreasing its quantity to zero and confirming the action.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For the product you wish to remove, decrease the quantity by clicking the minus button until it reaches one.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: On the pop-up confirmation, click Yes.
+expectedResult: The product is removed from the user's shopping cart, and the cart updates to reflect this change.
+explanation: This test case ensures that users can effectively remove a product by reducing its quantity to zero, simulating an alternative method of product removal.
+
+Test Case: Test Case 4
+testCaseName: Verify user can cancel removing a product by decreasing its quantity to zero
+objective: Ensure that users can cancel the removal of a product from their shopping cart after decreasing its quantity to zero.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For the product you initially wanted to remove, decrease the quantity by clicking the minus button until it reaches one.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: On the pop-up confirmation, click No.
+expectedResult: The quantity of the product resets to one, and the product remains in the user's shopping cart.
+explanation: This test case verifies that users have the option to cancel the removal of a product from their cart after decreasing its quantity to zero.
+
+Test Case: Test Case 5
+testCaseName: Verify user can change the option of a product in the shopping cart
+objective: Ensure that users can change the option of a product in their shopping cart and the system updates accordingly.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Click on the option dropdown of a product in the shopping cart's list.
+  - Step 4: Select the new option you wish to change to.
+expectedResult: The system updates the product's option to the new selection, and the shopping cart reflects this change.
+explanation: This test case ensures that the functionality to change a product's option within the shopping cart works as intended, allowing for customization before purchase.
+

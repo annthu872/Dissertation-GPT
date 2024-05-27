@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by 'Waiting to Deliver' Status
+objective: Verify that the user can filter orders by 'Waiting to Deliver' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with a valid user account.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: On the status bar at the top of the order list, click on the 'Waiting to deliver' tab.
+expectedResult: Only orders with the 'Waiting to Deliver' status are displayed on the page.
+explanation: This test case ensures that the system correctly filters and displays orders that are in the 'Waiting to Deliver' status when the user selects this filter. It directly matches the scenario name by testing the functionality of filtering orders by a specific status.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Status Tabs Functionality
+objective: Ensure that the status tabs including 'Waiting to Deliver' are interactive and filter orders accordingly.
+testSteps:
+  - Step 1: Log in to the platform with a valid user account.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Observe the status bar with multiple tabs including 'All', 'Waiting for payment', 'Delivering', 'Waiting to deliver', 'Finished', 'Cancelled', and 'Returned'.
+  - Step 4: Click on each tab starting with 'Waiting to deliver' and observe the change in the order list.
+expectedResult: Upon clicking each status tab, the order list updates to only show orders corresponding to the selected status. Specifically, when 'Waiting to deliver' is selected, only orders with that status are shown.
+explanation: This test case verifies the functionality of all status tabs, including 'Waiting to Deliver', to ensure they are interactive and accurately filter the orders based on their status. It is related to the scenario by testing a crucial part of the order filtering process.
+

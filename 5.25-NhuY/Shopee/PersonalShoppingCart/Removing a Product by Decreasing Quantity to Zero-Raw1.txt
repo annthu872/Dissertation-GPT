@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Removing a Product by Decreasing Quantity to Zero
+objective: Verify that a user can remove a product from their shopping cart by decreasing its quantity to zero and confirming the removal.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product intended to be removed from the shopping cart.
+  - Step 4: Decrease the quantity of the product by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: Confirm the removal by clicking 'Yes' on the pop-up confirmation.
+expectedResult: The product is removed from the user's shopping cart, and the cart is updated to reflect this change.
+explanation: This test case directly tests the scenario of removing a product by decreasing its quantity to zero, as described in Alternative flow 3 of the use case specification. It ensures that the system correctly interprets a quantity decrease to zero as a request to remove the item from the cart.
+
+Test Case: Test Case 2
+testCaseName: Cancel Removing a Product by Decreasing Quantity to Zero
+objective: Verify that a user can cancel the removal of a product from their shopping cart after decreasing its quantity to zero.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product intended not to be removed from the shopping cart.
+  - Step 4: Decrease the quantity of the product by clicking the minus button until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: Cancel the removal by clicking 'No' on the pop-up confirmation.
+expectedResult: The removal of the product is canceled, and the product remains in the user's shopping cart with the quantity set to one.
+explanation: This test case is based on Alternative flow 4, testing the scenario where a user decides not to remove a product after decreasing its quantity to zero. It checks the system's ability to revert the removal process upon user's request.
+

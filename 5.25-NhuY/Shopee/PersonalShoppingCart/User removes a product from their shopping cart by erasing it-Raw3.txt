@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Remove Product from Shopping Cart by Erasing
+objective: Verify that a user can successfully remove a product from their shopping cart by erasing it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the Erase button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click Yes.
+expectedResult: The product should be removed from the user's shopping cart, and the cart should update to reflect this change.
+explanation: This test case ensures that users can remove items from their shopping cart by using the erase functionality, directly testing the main objective of the use case.
+
+Test Case: Test Case 2
+testCaseName: Cancel Removal of Product from Shopping Cart by Erasing
+objective: Verify that a user can cancel the removal of a product from their shopping cart after initiating the erase action.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you initially wanted to remove.
+  - Step 4: Click the Erase button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click No.
+expectedResult: The product should remain in the user's shopping cart, and no changes should be made.
+explanation: This test case verifies the functionality allowing users to cancel the removal of a product from their shopping cart after they have clicked the erase button but decide not to proceed.
+
+Test Case: Test Case 3
+testCaseName: Remove Product by Decreasing Quantity to Zero
+objective: Verify that a user can remove a product from their shopping cart by decreasing its quantity to zero.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For the product you wish to remove, decrease the quantity by clicking the minus button until it reaches one.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: On the pop-up confirmation, click Yes.
+expectedResult: The product should be removed from the user's shopping cart, and the cart should update to reflect this change.
+explanation: This test case ensures that users can remove items from their shopping cart by decreasing the item's quantity to zero, offering an alternative method to remove items.
+
+Test Case: Test Case 4
+testCaseName: Cancel Removal of Product by Decreasing Quantity to Zero
+objective: Verify that a user can cancel the removal of a product from their shopping cart after decreasing its quantity to zero.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For the product you initially wanted to remove, decrease the quantity by clicking the minus button until it reaches one.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: On the pop-up confirmation, click No.
+expectedResult: The product's quantity should revert back to one, and it should remain in the user's shopping cart.
+explanation: This test case verifies the functionality allowing users to cancel the removal of a product from their shopping cart after decreasing its quantity to zero but deciding not to proceed.
+

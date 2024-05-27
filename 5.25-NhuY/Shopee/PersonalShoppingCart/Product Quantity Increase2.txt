@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Increase Product Quantity in Shopping Cart
+objective: Verify that the user can successfully increase the quantity of a product in their shopping cart
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be increased.
+  - Step 4: Click the plus button in the quantity section of the product until the desired quantity is reached.
+expectedResult: The quantity of the product in the shopping cart should be updated to reflect the new quantity as specified by the user.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Product Quantity Increase' by outlining steps to increase a product's quantity within the shopping cart and verifying that the action is successful. It focuses on the core functionality of adjusting product quantities, which is the primary objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Increase Product Quantity and Verify Cart Update
+objective: Verify that the shopping cart updates correctly after increasing a product's quantity
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For a chosen product, increase the quantity by clicking the plus button in the quantity section until the desired quantity is reached.
+  - Step 4: Observe the updated quantity in the shopping cart.
+  - Step 5: Check the subtotal for the product to ensure it has been recalculated correctly based on the new quantity.
+expectedResult: The product's quantity and the subtotal in the shopping cart should both update to reflect the increased quantity.
+reflect: yes
+explanation: This test case expands on the 'Product Quantity Increase' scenario by not only testing the increase in product quantity but also verifying that the shopping cart accurately reflects this change through the updated quantity and recalculated subtotal. It ensures the functionality works as intended and that the user interface correctly displays the changes, which is essential for a complete test of the product quantity increase scenario.
+

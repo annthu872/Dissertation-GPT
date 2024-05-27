@@ -1,0 +1,11 @@
+Test Case: Test Case 3
+testCaseName: View Detail of Out-of-Stock Product
+objective: Verify that users can view details of an out-of-stock product including product name, shipping options, stock status, store information, descriptions, and user ratings, with a 'Sold out' sticker on the product picture.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card of a product that is out of stock.
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays the product's name, shipping options, a 'Sold out' sticker on the product picture, information of the store selling the product, product descriptions, and ratings from users who have bought the product. The stock status shows that the product is out of stock.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, focusing on verifying the display and information presentation of out-of-stock products, which is the core of the 'Product Out of Stock Scenario'.
+

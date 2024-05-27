@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: View All Orders
+objective: Verify that the user can view all orders after logging in
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: Observe the redirected page to confirm it is the personal bought order page.
+expectedResult: The user should be redirected to their personal bought order page displaying a list of all orders they have chosen to buy, along with their information and status.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that a user can view all their orders, which is the primary objective of the scenario.
+

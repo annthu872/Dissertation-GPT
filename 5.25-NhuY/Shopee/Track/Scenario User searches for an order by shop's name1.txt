@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Search for an order by shop's name
+objective: Verify that the user can search for an order using the shop's name and view the correct search results.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: In the search bar, fill in the shop's name you want to search for.
+  - Step 5: Press enter.
+expectedResult: The system displays orders that match the shop's name entered in the search bar.
+reflect: yes
+explanation: This test case directly addresses the given scenario by detailing the steps required for a user to search for an order by the shop's name. It outlines the process from login to the expected outcome of seeing orders related to the shop's name, thus reflecting the scenario accurately.
+
+Test Case: Test Case 2
+testCaseName: Search for an order by shop's name with no matching results
+objective: Verify that the system displays an appropriate message or indication when no orders match the searched shop's name.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: In the search bar, fill in a shop's name that does not exist or has no orders associated with it.
+  - Step 5: Press enter.
+expectedResult: The system displays a message or indication that no orders match the search criteria.
+reflect: yes
+explanation: Although this test case explores an edge case where no orders match the searched shop's name, it still falls within the scope of the given scenario. It tests the search functionality by shop's name, specifically focusing on the system's response to a search that yields no results. Therefore, it reflects the scenario by ensuring the search feature works correctly even in situations where no matching orders are found.
+

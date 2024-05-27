@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Cancelled Status
+objective: Verify that the user can filter orders by the 'Cancelled' status and view only the orders that are cancelled.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: On the personal bought order page, locate the status bar with multiple tabs.
+  - Step 4: Click on the 'Cancelled' tab in the status bar.
+expectedResult: The system should display only the orders with the 'Cancelled' status in the user's order list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'User Filters Orders by Cancelled'. The objective clearly states the purpose of the test, which is to verify the functionality of filtering orders by their 'Cancelled' status. The test steps guide the tester through the process of logging in, navigating to the appropriate page, and selecting the 'Cancelled' filter. The expected result confirms that the system should only display orders that have been cancelled, which is the exact outcome the test scenario aims to verify.
+

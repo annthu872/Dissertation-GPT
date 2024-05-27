@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Search by Shop Name
+objective: Verify that the system shows all shops with the same name and products with the same word as typed in the search bar.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays all shops that have the same name as the keyword entered and all products that contain the same word as typed.
+explanation: This test case directly tests the scenario of searching by shop name instead of product name, following the alternative flow 2 of the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Search by Shop Name with Unavailable Keyword
+objective: Verify that the system shows a blank shop list and recommends trying another keyword when an unavailable shop name is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank shop list, recommends trying another keyword, and shows a list of all related products from many shops.
+explanation: This test case is designed to handle the scenario where the user searches for a shop name that does not exist in the system, following exception flow 3.
+

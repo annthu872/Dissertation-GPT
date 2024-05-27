@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Successful Product Search by Product Name
+objective: Verify that the system shows a list of shops selling the product and all related products from many shops when searching by product name.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a valid product name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a list of shops that sell the product and a list of all related products from many shops.
+explanation: This test case ensures that users can successfully search for products by their names and receive relevant results, matching the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Successful Brand Search
+objective: Verify that the system shows all products from a brand and the brand's official store if available when searching by brand name.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a valid brand name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a list of all products from that brand from many shops and the brand's official store if it has one.
+explanation: This test case verifies that users can search for brands specifically and see all products associated with that brand, as well as the official store, according to the alternative flow 1.
+
+Test Case: Test Case 3
+testCaseName: Successful Shop Search
+objective: Verify that the system shows all shops with the searched name and products with similar names when searching by shop name.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a valid shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays all shops with the same name and products that have the same word that the user typed in.
+explanation: This test case ensures that users can search for shops by name and see both the shops and related products, aligning with alternative flow 2.
+
+Test Case: Test Case 4
+testCaseName: Search with Unavailable Keyword
+objective: Verify that the system shows a blank list and recommends trying another keyword when an unavailable keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank list and recommends the user to try another keyword.
+explanation: This test case checks the system's behavior when users search for a keyword that does not match any product, brand, or shop, as described in exception flow 1.
+
+Test Case: Test Case 5
+testCaseName: Search with Unavailable Brand/Product Keyword
+objective: Verify that the system shows shops with the same name and a blank product list with a recommendation to try another keyword when an unavailable brand/product keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable brand or product keyword in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays all shops with the same name, a blank product list, and recommends the user to try another keyword.
+explanation: This test case ensures that the system behaves as expected under exception flow 2, showing shops with the same name and a recommendation when no matching brand or product is found.
+
+Test Case: Test Case 6
+testCaseName: Search with Unavailable Shop Keyword
+objective: Verify that the system shows a blank shop list and recommends trying another keyword, but still shows related products from many shops when an unavailable shop keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable shop keyword in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank shop list, recommends the user to try another keyword, and shows a list of all related products from many shops.
+explanation: This test case checks the system's response to searches for unavailable shop keywords, ensuring it follows exception flow 3 by providing product suggestions and a recommendation to try other keywords.
+

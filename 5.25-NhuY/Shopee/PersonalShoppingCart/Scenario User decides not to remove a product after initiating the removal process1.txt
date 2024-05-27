@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify user can cancel product removal by clicking 'No' in confirmation popup after initiating erase
+objective: Ensure that the user can cancel the removal of a product from their shopping cart after initiating the erase process and clicking 'No' in the confirmation popup.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the 'Erase' button at the bottom of the screen.
+  - Step 5: In the confirmation popup, click 'No'.
+expectedResult: The product remains in the shopping cart, and the user is returned to the cart's page with all previously added items still present.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the user's ability to cancel the removal of a product after initiating the process. It specifically verifies that the product remains in the cart after the user decides not to proceed with the removal, which is the core of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify user can cancel product removal by clicking 'No' in confirmation popup after decreasing quantity to zero
+objective: Ensure that the user can cancel the removal of a product from their shopping cart after decreasing the product's quantity to zero and clicking 'No' in the confirmation popup.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Decrease the quantity of the product until it reaches one by clicking the minus button in the quantity section.
+  - Step 4: Click the minus button again when the quantity is one.
+  - Step 5: In the confirmation popup, click 'No'.
+expectedResult: The product's quantity is reset to one, and it remains in the shopping cart. The user is returned to the cart's page with all previously added items still present.
+reflect: yes
+explanation: Although this test case introduces a different method of initiating the removal process (decreasing the product's quantity to zero), it still aligns with the scenario's core objective: allowing the user to cancel the removal process. It tests the scenario from a slightly different angle but ultimately verifies the user's ability to decide not to remove a product after initiating its removal, thus reflecting the given test scenario.
+

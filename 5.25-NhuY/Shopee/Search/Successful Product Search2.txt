@@ -1,0 +1,4 @@
+Test Case: Test Case 1
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful product search by detailing the steps to search for a product by name and expecting the system to display relevant shops and products, which is the core functionality of the scenario.
+

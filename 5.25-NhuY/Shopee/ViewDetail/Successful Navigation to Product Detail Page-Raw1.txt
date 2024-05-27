@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Product Detail Page with In-stock Product
+objective: Verify that users can successfully navigate to a product's detail page and view all necessary information for an in-stock product.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that is in stock.
+expectedResult: User is navigated to the product's detail page displaying the product's name, a picture of the product, shipping options, available stock, store information, product descriptions, and user ratings.
+explanation: This test case ensures that the main flow of navigating to a product's detail page and viewing all relevant information for an in-stock product works as expected.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Product Detail Page with Product Having Multiple Options
+objective: Verify that users can view all options of a product with multiple options on the product's detail page.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that has multiple options (e.g., different colors or flavors).
+expectedResult: User is navigated to the product's detail page displaying the product's name, a picture of the product, all available options with appropriate titles, shipping options, available stock, store information, product descriptions, and user ratings.
+explanation: This test case verifies the alternative flow where a product has multiple options, ensuring that all options are displayed correctly on the product's detail page.
+
+Test Case: Test Case 3
+testCaseName: Navigate to Product Detail Page with Out-of-Stock Product
+objective: Verify that users can navigate to a product's detail page for an out-of-stock product and see the 'Sold Out' sticker.
+testSteps:
+  - Step 1: Navigate to the main page where products are listed.
+  - Step 2: Click on a product card for a product that is out of stock.
+expectedResult: User is navigated to the product's detail page displaying the product's name, shipping options, store information, product descriptions, and user ratings. The product picture should have a black sticker with a white note 'Sold out'.
+explanation: This test case checks the alternative flow for out-of-stock products, ensuring that the 'Sold Out' sticker is displayed correctly on the product's detail page.
+

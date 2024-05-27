@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Increase Product Quantity in Shopping Cart
+objective: Verify that the user can successfully increase the quantity of a product in their shopping cart.
+testSteps:
+  - Step 1: Log in to the website.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be increased.
+  - Step 4: Click the plus button in the quantity section of the product until the desired quantity is reached.
+expectedResult: The quantity of the product in the shopping cart should be updated to the new value.
+explanation: This test case is created to ensure that users can increase the quantity of products in their shopping cart, which is a direct action related to the 'Product Quantity Increase' scenario.
+
+Test Case: Test Case 2
+testCaseName: Increase Product Quantity Beyond Stock Limit
+objective: Verify that the system prevents the user from increasing the product quantity beyond the available stock.
+testSteps:
+  - Step 1: Log in to the website.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be increased beyond the available stock.
+  - Step 4: Attempt to increase the quantity of the product beyond the available stock by clicking the plus button in the quantity section.
+expectedResult: The system should display an error message or prevent further increase when the quantity reaches the stock limit.
+explanation: This test case ensures that the system correctly handles attempts to increase product quantities beyond available stock, which is an important aspect of managing product quantities in a shopping cart.
+

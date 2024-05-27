@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by Delivering Status
+objective: Verify that the user can filter orders by the 'Delivering' status and only see orders in that specific status.
+testSteps:
+  - Step 1: Log in to the platform with a valid user account.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: From the personal bought order page, locate the status bar on the top of the list.
+  - Step 4: Click on the 'Delivering' tab in the status bar.
+expectedResult: The system should display only the orders that are currently in the 'Delivering' status.
+reflect: yes
+explanation: This test case directly addresses the test scenario of filtering orders by 'Delivering' status. It outlines the steps to achieve this filter and sets the expectation that only orders with the 'Delivering' status should be visible after these steps, which is the core objective of the given test scenario.
+

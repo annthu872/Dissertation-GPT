@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Search for an Order by Order's ID
+objective: Verify that the user can search for an order using the order's ID and view the correct order details.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter a valid order's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays the order that matches the entered order's ID, showing correct details and status.
+reflect: yes
+explanation: This test case directly addresses the scenario of searching for an order by the order's ID. It outlines the steps to perform the search and specifies the expected outcome, which is to find and display the order with the correct details. Therefore, it reflects the given test scenario accurately.
+
+Test Case: Test Case 2
+testCaseName: Search for an Order by Order's ID with No Results
+objective: Verify that the system correctly handles searches for an order by order's ID when no matching order exists.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter an invalid or non-existent order's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays a message indicating that no orders match the entered order's ID.
+reflect: yes
+explanation: Although this test case explores a negative path (searching for an order by an ID that does not exist), it is still within the scope of the given scenario, which is searching for an order by order's ID. It tests the system's behavior in a specific situation related to the scenario, ensuring that the system can handle searches with no results appropriately.
+

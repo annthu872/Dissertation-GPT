@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Adjust quantity of a product before adding to cart
+objective: Verify that the user can adjust the quantity of a product before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that has a product card.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Adjust the quantity of the product by clicking the plus or minus button in the quantity section.
+  - Step 5: Click the add to cart button.
+expectedResult: The system should add the specified quantity of the product into the user's shopping cart.
+reflect: yes
+explanation: This test case directly tests the scenario by verifying that users can adjust the quantity of a product before adding it to their cart. It follows the exact steps a user would take to adjust quantity, thus reflecting the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Adjust quantity and select options for a product before adding to cart
+objective: Verify that the user can adjust the quantity and select options for a product before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that has a product card with multiple options available.
+  - Step 3: Click on the product card to go to the product's detail page.
+  - Step 4: Choose one of the available options for the product.
+  - Step 5: Adjust the quantity of the product by clicking the plus or minus button in the quantity section.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should add the specified quantity of the selected option of the product into the user's shopping cart.
+reflect: yes
+explanation: This test case accurately reflects the scenario by including steps for both adjusting the quantity and selecting options for a product before adding it to the cart. It addresses the scenario's focus on products with multiple options.
+

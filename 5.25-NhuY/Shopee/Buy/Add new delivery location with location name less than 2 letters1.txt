@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Add new delivery location with invalid location name
+objective: Verify that the system prevents adding a new delivery location with a location name less than 2 letters
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click the Change title in the delivery location section.
+  - Step 6: Click the Add new location button.
+  - Step 7: Enter a location name with less than 2 letters in the name field.
+  - Step 8: Attempt to fill in the rest of the form with valid information (phone number, city, district, ward, exact location's address) and choose an option for the location type (own house or working place).
+  - Step 9: Click on the Finish button to save the location.
+expectedResult: A notification appears under the location name field indicating that the name must contain only letters and cannot be less than 2 letters. The system should not allow the location to be added.
+reflect: yes
+explanation: This test case directly addresses the test scenario of adding a new delivery location with a location name less than 2 letters. It outlines steps to reproduce the scenario, specifies the expected behavior (a validation message and prevention of the addition), and thus, accurately reflects the given test scenario.
+

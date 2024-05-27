@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Increase Product Quantity in Shopping Cart
+objective: Verify that the user can successfully increase the quantity of a product in their shopping cart
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be increased.
+  - Step 4: Click the plus button in the quantity section of the product until the desired quantity is reached.
+expectedResult: The quantity of the product in the shopping cart should be updated to reflect the new quantity as specified by the user.
+explanation: This test case is created to ensure that users can increase the quantity of products in their shopping cart directly, which is a common action for users who wish to purchase more than one unit of a product. It directly relates to the 'Product Quantity Increase' scenario by testing the functionality that allows users to adjust product quantities in their cart.
+
+Test Case: Test Case 2
+testCaseName: Increase Product Quantity and Verify Cart Update
+objective: Verify that the shopping cart updates correctly after increasing a product's quantity
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: For a chosen product, increase the quantity by clicking the plus button in the quantity section until the desired quantity is reached.
+  - Step 4: Observe the updated quantity in the shopping cart.
+  - Step 5: Check the subtotal for the product to ensure it has been recalculated correctly based on the new quantity.
+expectedResult: The product's quantity and the subtotal in the shopping cart should both update to reflect the increased quantity.
+explanation: This test case verifies not only the functionality of increasing a product's quantity but also ensures that the shopping cart's interface correctly updates to display the new quantity and recalculates the subtotal accordingly. It's crucial for maintaining accurate shopping cart summaries for users.
+

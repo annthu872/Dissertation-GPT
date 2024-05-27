@@ -1,0 +1,66 @@
+Test Case: Test Case 1
+testCaseName: Buying Products from a Single Store
+objective: Verify that a user can successfully buy products from a single store.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Click the tick box at the head of the store to select all products from that store.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: Verify that the payment page displays with the correct product, quantity, price, shop, and promotion information.
+  - Step 6: Click the order button.
+expectedResult: The product should be removed from the shopping cart, and a new order should be formed.
+explanation: This test case ensures that users can select and buy all products from a single store, following the main flow and alternative flow 1.
+
+Test Case: Test Case 2
+testCaseName: Change Delivery Location to a Saved Location
+objective: Verify that a user can change the delivery location to one of their saved locations during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select products to buy.
+  - Step 3: Proceed to the payment page by clicking the buy button.
+  - Step 4: On the payment page, click on 'Change' in the delivery location section.
+  - Step 5: Choose one of the saved location options.
+  - Step 6: Click the order button.
+expectedResult: The delivery location should be updated to the selected saved location, and the order should be processed with this new location.
+explanation: This test case verifies the functionality of changing the delivery location to a saved one, as described in alternative flow 2.
+
+Test Case: Test Case 3
+testCaseName: Add New Delivery Location During Purchase
+objective: Verify that a user can add a new delivery location during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select products to buy.
+  - Step 3: Proceed to the payment page by clicking the buy button.
+  - Step 4: On the payment page, click on 'Change' in the delivery location section.
+  - Step 5: Click 'Add new location' button.
+  - Step 6: Fill in all required fields with valid information and click on 'Finish' button.
+  - Step 7: Click the order button.
+expectedResult: A new delivery location should be added and selected for the order, and the order should be processed with this new location.
+explanation: This test case ensures that users can add a new delivery location during the purchase process, following the steps outlined in alternative flow 3.
+
+Test Case: Test Case 4
+testCaseName: Apply Shop/Product Promotion During Purchase
+objective: Verify that a user can apply a shop or product's promotion during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select products to buy.
+  - Step 3: Proceed to the payment page by clicking the buy button.
+  - Step 4: Click on 'Choose voucher' in the product's information section.
+  - Step 5: Select one of the available vouchers.
+  - Step 6: Click the order button.
+expectedResult: The selected voucher should be applied, and the product's price should be recalculated accordingly.
+explanation: This test case verifies the functionality of applying a shop or product's promotion during the purchase process, as described in alternative flow 4.
+
+Test Case: Test Case 5
+testCaseName: Apply Platform's Promotion During Purchase
+objective: Verify that a user can apply a platform's promotion during the purchase process.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page and select products to buy.
+  - Step 3: Proceed to the payment page by clicking the buy button.
+  - Step 4: Click on 'Choose voucher' in the platform's promotion information section.
+  - Step 5: Select one of the available vouchers.
+  - Step 6: Click the order button.
+expectedResult: The selected platform's promotion should be applied, and the order's price should be recalculated accordingly.
+explanation: This test case verifies the functionality of applying a platform's promotion during the purchase process, as described in alternative flow 5.
+

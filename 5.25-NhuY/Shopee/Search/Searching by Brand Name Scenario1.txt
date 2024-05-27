@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Search by Brand Name and Display Products
+objective: Verify that the system displays all products from the searched brand and the brand's official store if available.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a known brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from many shops. If the brand has its own official store, the system should also display that store.
+reflect: yes
+explanation: This test case directly addresses the main objective of the 'Searching by Brand Name Scenario' by verifying that products and the official store of a searched brand are displayed correctly. It covers the primary flow of searching by brand name.
+
+Test Case: Test Case 2
+testCaseName: Search by Brand Name with No Official Store
+objective: Verify that the system displays all products from the searched brand correctly when the brand does not have an official store.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a known brand name that does not have an official store into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a list of all the products from the searched brand from many shops, without showing an official store.
+reflect: yes
+explanation: This test case is relevant to the given scenario as it tests a specific condition (absence of an official store) within the 'Searching by Brand Name Scenario'. It ensures that the system behaves correctly even when the brand does not have an official store.
+
+Test Case: Test Case 3
+testCaseName: Search by Unavailable Brand Name
+objective: Verify that the system shows a recommendation to try another keyword when the searched brand name is unavailable.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable brand name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should show a blank list and recommend the user to try another keyword.
+reflect: yes
+explanation: This test case fits within the 'Searching by Brand Name Scenario' as it tests the system's response to an invalid or unavailable brand name search. It verifies the system's ability to guide users towards a more successful search attempt, addressing an exception flow.
+

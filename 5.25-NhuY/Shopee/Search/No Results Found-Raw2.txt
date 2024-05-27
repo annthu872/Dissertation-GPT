@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Search for a specific product
+objective: Verify that the system shows a list of shops selling the product and all related products from many shops when a product name is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a specific product name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a list of shops that sell the specified product and a list of all related products from various shops.
+explanation: This test case verifies the main flow of the search feature by searching for a specific product name.
+
+Test Case: Test Case 2
+testCaseName: Search for a specific brand
+objective: Verify that the system shows all products from the searched brand and, if available, the brand's official store.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a specific brand name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a list of all products from the searched brand and, if available, the brand's official store.
+explanation: This test case verifies the alternative flow 1 of the search feature by searching for a specific brand name.
+
+Test Case: Test Case 3
+testCaseName: Search for a specific shop
+objective: Verify that the system shows all shops with the searched name and products that contain the search keyword.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a specific shop name in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays all shops with the searched name and products that contain the search keyword.
+explanation: This test case verifies the alternative flow 2 of the search feature by searching for a specific shop name.
+
+Test Case: Test Case 4
+testCaseName: Search with an unavailable keyword
+objective: Verify that the system shows a blank list and recommends trying another keyword when an unavailable keyword is searched.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank list and recommends the user to try another keyword.
+explanation: This test case verifies the exception flow 1 of the search feature by searching with an unavailable keyword.
+
+Test Case: Test Case 5
+testCaseName: Search with an unavailable keyword for brand or product
+objective: Verify that the system shows shops with the same name, a blank product list, and recommends trying another keyword.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any brand or product in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays shops with the same name, a blank product list, and recommends the user to try another keyword.
+explanation: This test case verifies the exception flow 2 by searching with an unavailable keyword that does not match any brand or product.
+
+Test Case: Test Case 6
+testCaseName: Search with an unavailable keyword for shop
+objective: Verify that the system shows a blank shop list, recommends trying another keyword, and displays related products from many shops.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any shop in the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank shop list, recommends trying another keyword, and shows a list of all related products from various shops.
+explanation: This test case verifies the exception flow 3 by searching with an unavailable keyword that does not match any shop.
+

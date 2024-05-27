@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Change of Delivery Location to a Saved Location Before Purchase
+objective: Verify that the user can change the delivery location to one of the saved locations before completing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the product(s) you wish to purchase.
+  - Step 4: Click the buy button to proceed to the payment page.
+  - Step 5: On the payment page, click the 'Change' title in the delivery location section.
+  - Step 6: Choose one of the saved location options.
+  - Step 7: Click the order button to complete the purchase.
+expectedResult: The delivery location should be updated to the selected saved location, and the purchase should be completed with this new delivery location.
+explanation: This test case ensures that users can successfully change their delivery location to a previously saved address before finalizing their purchase, which is a critical functionality for user convenience and flexibility.
+
+Test Case: Test Case 2
+testCaseName: Change of Delivery Location to a New Location Before Purchase
+objective: Verify that the user can add a new delivery location and select it for the delivery before completing the purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the product(s) you wish to purchase.
+  - Step 4: Click the buy button to proceed to the payment page.
+  - Step 5: On the payment page, click the 'Change' title in the delivery location section.
+  - Step 6: Click the 'Add new location' button.
+  - Step 7: Fill in the new location details including name, phone number, city, district, ward, and exact address.
+  - Step 8: Choose if the location is a house or working place.
+  - Step 9: Click on 'Finish' button to save the location.
+  - Step 10: Click the order button to complete the purchase.
+expectedResult: The new delivery location should be saved and selected for the current purchase, and the purchase should be completed with this new delivery location.
+explanation: This test case verifies the functionality for users to add a new delivery location during the purchase process, enhancing the flexibility and user experience by allowing for different delivery addresses.
+

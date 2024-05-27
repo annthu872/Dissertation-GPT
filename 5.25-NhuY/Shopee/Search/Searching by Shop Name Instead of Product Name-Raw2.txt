@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Search by Shop Name
+objective: Verify that the system shows all shops with the same name and products containing the search keyword when a shop name is entered in the search bar.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type a known shop name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays all shops with the same name as the keyword and all products containing the keyword in their names.
+explanation: This test case verifies the functionality of searching by shop name, ensuring that users can find shops and products related to the shop name they search for.
+
+Test Case: Test Case 2
+testCaseName: Search by Shop Name with Unavailable Keyword
+objective: Verify that the system shows a blank shop list and recommends trying another keyword when an unavailable shop name is entered.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable shop name into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system displays a blank shop list, recommends trying another keyword, and shows a list of related products from many shops.
+explanation: This test case ensures the system's behavior when users search for a shop name that does not exist in the database, guiding them to try other keywords.
+

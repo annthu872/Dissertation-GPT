@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Successful New Lesson Creation
+objective: Verify that an administrator can successfully add a new English learning lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case ensures that the basic flow of adding a new lesson as described in the use case is functioning correctly.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add Lesson with Duplicate Name
+objective: Verify that the system prevents the creation of a new lesson with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new Lesson' page via the 'Lesson Management' tab on the navbar.
+  - Step 3: Enter a name for the lesson that is already used in the name field.
+  - Step 4: Enter a description for the lesson in the description field.
+  - Step 5: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+explanation: This test case checks the system's ability to handle duplicate lesson names as described in the alternative flow 1, ensuring data integrity and uniqueness of lesson names.
+
+Test Case: Test Case 3
+testCaseName: Cancel Lesson Creation
+objective: Verify that an administrator can cancel the creation of a new lesson at any point.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new Lesson' page via the 'Lesson Management' tab on the navbar.
+  - Step 3: Enter a name for the lesson in the name field.
+  - Step 4: Enter a description for the lesson in the description field.
+  - Step 5: Select 'Cancel' to stop the creation of the new lesson.
+expectedResult: The action of adding a new lesson should be cancelled, and the administrator should remain on the 'Add new Lesson' page or be redirected to the previous page without creating a new lesson.
+explanation: This test case verifies the exception flow where the administrator decides to cancel the lesson creation process, ensuring the system properly handles cancellation actions.
+

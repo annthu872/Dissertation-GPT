@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Buying Products from a Single Store
+objective: Verify that a user can successfully buy products from a single store.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Click the tick box at the head of the store to select all products from that store.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: Verify that the payment page displays with the correct product, quantity, price, shop, and promotion information.
+  - Step 6: Click the order button.
+expectedResult: The product should be removed from the shopping cart, and a new order should be formed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to buy products from a single store, covering the main flow of the scenario.
+

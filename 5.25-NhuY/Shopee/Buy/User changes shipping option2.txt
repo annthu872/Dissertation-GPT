@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Change Shipping Option During Purchase
+objective: Verify that the user can change the shipping option during the purchase process and the order's price is recalculated accordingly.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, click on Change title in the shipping information section.
+  - Step 6: From the list of available shipping options, choose one by clicking on it.
+expectedResult: The system should change the shipping method to the selected option and recalculate the order's price accordingly.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the functionality of changing shipping options during the purchase process. It includes steps to change the shipping option and checks if the order's price is recalculated, aligning perfectly with the scenario's requirements.
+

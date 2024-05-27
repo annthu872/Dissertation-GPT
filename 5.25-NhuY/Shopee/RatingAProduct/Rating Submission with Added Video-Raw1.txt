@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Video Addition
+objective: Verify that a user can submit a product rating with an added video.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating and service ratings (seller and shipping) as the default 5 stars.
+  - Step 5: Click on the Add video button.
+  - Step 6: In the pop-up, select a valid video file and click to add it.
+  - Step 7: Verify the video is shown as selected with a video icon indicating 1/1.
+  - Step 8: Click the Done button to submit the rating.
+expectedResult: The system saves the rating with the video and displays it in the product's detail page rating section.
+explanation: This test case ensures that users can add a video to their product rating submission, following the specified steps in the use case. It combines steps from the main flow and alternative flow 7, focusing on the video addition functionality.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Video and Adjusted Quality Rating
+objective: Verify that a user can submit a product rating with an added video and an adjusted quality rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the quality rating by clicking on a different number of stars.
+  - Step 5: Click on the Add video button.
+  - Step 6: In the pop-up, select a valid video file and click to add it.
+  - Step 7: Verify the video is shown as selected with a video icon indicating 1/1.
+  - Step 8: Click the Done button to submit the rating.
+expectedResult: The system saves the rating with the adjusted quality rating and the added video, displaying it in the product's detail page rating section.
+explanation: This test case verifies that users can adjust the quality rating and add a video to their product rating, combining steps from the main flow, alternative flow 1, and alternative flow 7.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Search for an order using product's ID
+objective: Verify that the user can search for an order by entering the product's ID in the search bar and view the correct order details.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter a valid product's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays orders that contain the product with the entered ID, showing correct details and status of the orders.
+reflect: yes
+explanation: This test case directly addresses the given scenario by detailing the steps to search for an order using a product's ID and expecting the system to display the relevant order details. It matches the scenario's requirement for functionality testing.
+
+Test Case: Test Case 2
+testCaseName: Search for an order with an invalid product's ID
+objective: Verify that the system handles searches with invalid product's ID appropriately by not displaying any orders or showing an error message.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter an invalid product's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system either displays no orders or shows an appropriate message indicating that no orders match the entered product's ID.
+reflect: yes
+explanation: Although this test case explores a negative path by using an invalid product's ID, it still reflects the given scenario by testing the search functionality's robustness and error handling, which is essential for a comprehensive test coverage.
+

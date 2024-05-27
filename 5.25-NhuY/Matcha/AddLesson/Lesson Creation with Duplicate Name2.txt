@@ -1,0 +1,30 @@
+Test Case: Test Case 2
+testCaseName: Lesson Creation with Duplicate Name
+objective: Verify that the system prevents the creation of a new lesson with a name that already exists.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when attempting to create a lesson with a duplicate name.
+
+Test Case: Test Case 3
+testCaseName: Lesson Creation with Duplicate Name and Correction
+objective: Verify that the administrator can successfully add a new lesson after initially attempting to use a duplicate name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+  - Step 7: After receiving the notification that the name is already used, enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the lesson.
+expectedResult: The system should create the new lesson with the new, unique name and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the system's handling of a duplicate lesson name and the subsequent correction process, aligning with the scenario's focus on managing duplicate names.
+

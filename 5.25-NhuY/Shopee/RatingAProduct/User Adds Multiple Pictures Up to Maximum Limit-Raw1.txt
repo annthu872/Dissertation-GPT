@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Add Single Picture to Product Rating
+objective: Verify that a user can add a single picture to their product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, click on the Add picture button.
+  - Step 5: In the pop-up, select an image file and click Open.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should display the chosen image in the rating section of the product's detail page, indicating the image has been successfully added to the rating.
+explanation: This test case ensures that users can add a single image to their product rating, which is a part of the functionality described in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Add Maximum Number of Pictures to Product Rating
+objective: Verify that a user can add up to the maximum limit of pictures (5 pictures) to their product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add picture button.
+  - Step 5: In the pop-up, select an image file and click Open.
+  - Step 6: Repeat steps 4 and 5 four more times, each time selecting a different image file.
+  - Step 7: After adding the fifth picture, check the icon indicating the number of added pictures.
+  - Step 8: Click the Done button to submit the rating.
+expectedResult: The system should display all five chosen images in the rating section of the product's detail page, with the icon indicating 5/5 pictures added, confirming that the maximum number of pictures has been successfully added to the rating.
+explanation: This test case verifies the system's ability to handle the maximum number of pictures a user can add to their product rating, as specified in the use case.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add More Than Maximum Pictures to Product Rating
+objective: Verify that the system prevents a user from adding more than the maximum limit of pictures (5 pictures) to their product rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Add 5 pictures to the rating by repeating the process of clicking the Add picture button, selecting an image, and confirming the selection.
+  - Step 5: Attempt to add a sixth picture by clicking the camera icon.
+  - Step 6: In the pop-up, select an image file and click Open.
+expectedResult: The system should not allow the sixth picture to be added and may display a message or indication that the maximum number of pictures has been reached.
+explanation: This test case checks the system's functionality to enforce the limit on the number of pictures a user can add to their product rating, ensuring the integrity of the rating system.
+

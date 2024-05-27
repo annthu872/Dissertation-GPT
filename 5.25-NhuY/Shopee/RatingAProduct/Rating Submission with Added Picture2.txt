@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Single Picture Addition
+objective: Verify that a user can submit a rating with a single picture added to the product review.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating at the default 5 stars.
+  - Step 5: Click on the Add picture button.
+  - Step 6: In the pop-up, select an image file and click Open.
+  - Step 7: Verify the image is shown in the form.
+  - Step 8: Click the Done button.
+expectedResult: The rating with the added picture should be saved and displayed in the product's detail page rating section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to submit a rating with an added picture, which is the core functionality being tested.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Multiple Pictures
+objective: Verify that a user can submit a rating with multiple pictures added to the product review.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating at the default 5 stars.
+  - Step 5: Click on the Add picture button.
+  - Step 6: In the pop-up, select an image file and click Open.
+  - Step 7: After the first image is shown, click on the camera icon to add another picture.
+  - Step 8: Repeat steps 6 and 7 for the number of pictures you want to add, not exceeding the maximum limit of 5.
+  - Step 9: Click the Done button.
+expectedResult: The rating with all added pictures should be saved and displayed in the product's detail page rating section, showing all selected images next to each other.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by extending the functionality to include multiple pictures in a rating submission, thus covering a broader aspect of the scenario.
+

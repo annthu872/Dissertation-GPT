@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify product option change in shopping cart
+objective: Ensure that users can change the option of a product in their shopping cart and the system updates accordingly.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen to navigate to the cart's page.
+  - Step 3: Identify a product in the shopping cart that has multiple options available.
+  - Step 4: Click on the option dropdown of the identified product.
+  - Step 5: Select a different option from the dropdown list.
+expectedResult: The system should update the product's option in the shopping cart to the newly selected option.
+explanation: This test case is created to verify that users can successfully change the option of a product in their shopping cart, which is a direct match to the 'Product Option Change Scenario'. It focuses on the functionality of changing product options as described in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Verify product option remains unchanged on cancellation
+objective: Ensure that if a user initiates an option change for a product but cancels the action, the original option remains unchanged.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen to navigate to the cart's page.
+  - Step 3: Identify a product in the shopping cart that has multiple options available.
+  - Step 4: Click on the option dropdown of the identified product.
+  - Step 5: Hover or click on a different option but do not confirm the change.
+  - Step 6: Click outside the dropdown to cancel the option change.
+expectedResult: The system should keep the original option of the product unchanged in the shopping cart.
+explanation: This test case ensures that if a user decides not to proceed with changing the option of a product in their shopping cart, the system does not apply any changes. It's important to verify that the cancellation of an option change behaves as expected, maintaining the integrity of the user's selection.
+

@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Search for an order by shop's name
+objective: Verify that the user can search for orders by entering the shop's name in the search bar and view the results.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Enter a specific shop's name into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays orders that match the entered shop's name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of searching for an order using the shop's name. It follows the exact steps a user would take to perform this action, thus accurately testing the scenario.
+
+Test Case: Test Case 2
+testCaseName: Search for an order with an empty shop's name
+objective: Verify that the system handles empty search queries appropriately when searching by shop's name.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Leave the search bar empty and press enter.
+expectedResult: The system either displays a message indicating that the search query cannot be empty or shows no change in the order list.
+reflect: yes
+explanation: Although this test case explores an edge case (empty search query) rather than the main functionality of searching by shop's name, it still pertains to the given scenario by testing the system's behavior under a specific condition related to the search functionality. It ensures the system's robustness in handling searches, which is a critical aspect of the user's ability to search for orders by shop's name.
+

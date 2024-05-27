@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson Before Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, do not enter any information in the name field.
+  - Step 5: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+explanation: This test case ensures that administrators have the option to cancel the process of adding a new lesson at an early stage, specifically before entering any information for the lesson name. It directly relates to the exception flow mentioned in the use case, providing a way to test the system's ability to handle user changes of mind or mistakes before committing any data.
+

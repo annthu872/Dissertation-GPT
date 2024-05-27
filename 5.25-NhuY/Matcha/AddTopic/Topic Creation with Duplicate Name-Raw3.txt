@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Add New Topic with Unique Name
+objective: Verify that an administrator can successfully add a new topic with a unique name and navigate to the adding vocabulary section.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+explanation: This test case ensures that the basic flow of adding a new topic with a unique name works as expected, following the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add New Topic with Duplicate Name
+objective: Verify that the system prevents the addition of a new topic with a name that is already used and prompts the administrator to use a different name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field after the prompt.
+  - Step 7: Select 'Save' again to create the topic with the new name.
+expectedResult: The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created, and the administrator should be redirected to the adding vocabulary section.
+explanation: This test case verifies the alternative flow where an administrator attempts to add a new topic with a duplicate name and ensures the system handles it correctly by prompting for a new name.
+

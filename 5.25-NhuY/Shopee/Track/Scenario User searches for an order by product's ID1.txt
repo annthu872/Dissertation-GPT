@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Search for an order using product's ID
+objective: Verify that the user can search for an order by entering the product's ID in the search bar and view the corresponding order details.
+testSteps:
+  - Step 1: Log in to the platform with valid user credentials.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Locate the search bar below the status bar on the personal bought order page.
+  - Step 4: Enter a valid product's ID into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays the order(s) that contain the product with the entered ID, showing their information and status.
+reflect: yes
+explanation: This test case directly addresses the scenario of searching for an order by product's ID. It outlines a clear sequence of actions that lead to the use of a product's ID to find an order, which is the core functionality being tested. The expected result aligns with the scenario's requirement to display the order details associated with the entered product ID, confirming that this test case is appropriate for testing the given scenario.
+

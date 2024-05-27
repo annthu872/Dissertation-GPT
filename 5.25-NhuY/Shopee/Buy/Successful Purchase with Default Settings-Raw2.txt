@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Default Settings
+objective: Verify that a user can successfully make a purchase with default delivery location and payment method
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, verify that the default delivery location is selected and the default payment method is chosen.
+  - Step 6: Click the order button.
+expectedResult: The product should be removed from the shopping cart and a new order should be formed for that product, indicating a successful purchase.
+explanation: This test case ensures that users can complete a purchase using the default settings for delivery location and payment method, directly matching the scenario name 'Successful Purchase with Default Settings'. It follows the main flow of the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Successful Purchase with Default Settings and Store Selection
+objective: Verify that a user can successfully make a purchase with default settings after selecting all products from a single store
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a store by clicking the tick box at the head of the store to automatically select all products from that store.
+  - Step 4: Click the buy button at the right bottom of the screen.
+  - Step 5: On the payment page, verify that the default delivery location is selected and the default payment method is chosen.
+  - Step 6: Click the order button.
+expectedResult: All products from the selected store should be included in the order, and the order should be successfully placed with the default settings.
+explanation: This test case verifies the functionality of selecting all products from a single store and completing the purchase with default settings, aligning with the alternative flow 1 and the main scenario objective.
+

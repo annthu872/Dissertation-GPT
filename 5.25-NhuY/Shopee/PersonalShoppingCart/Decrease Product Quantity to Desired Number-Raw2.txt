@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Decrease Product Quantity to Desired Number
+objective: Verify that the user can decrease the quantity of a product in their shopping cart to a desired number
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be decreased.
+  - Step 4: Click the minus button in the quantity section of the product until the quantity reaches the desired number.
+expectedResult: The quantity of the product in the shopping cart should decrease to the desired number.
+explanation: This test case ensures that users can adjust the quantity of products in their shopping cart, directly matching the scenario of decreasing product quantity to a desired number.
+
+Test Case: Test Case 2
+testCaseName: Decrease Product Quantity to Zero and Confirm Removal
+objective: Verify that the user can decrease the quantity of a product to zero and confirm the removal of the product from the shopping cart
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be decreased to zero.
+  - Step 4: Click the minus button in the quantity section of the product until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: In the pop-up confirmation, click Yes.
+expectedResult: The product should be removed from the user's shopping cart.
+explanation: This test case verifies the functionality of decreasing a product's quantity to zero and then removing it from the cart, aligning with the scenario's focus on adjusting product quantities.
+
+Test Case: Test Case 3
+testCaseName: Decrease Product Quantity to Zero and Cancel Removal
+objective: Verify that the user can decrease the quantity of a product to zero and then cancel the removal of the product from the shopping cart
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be decreased to zero.
+  - Step 4: Click the minus button in the quantity section of the product until the quantity reaches one.
+  - Step 5: Click the minus button again when the quantity is one.
+  - Step 6: In the pop-up confirmation, click No.
+expectedResult: The product's quantity should remain at one, and the product should not be removed from the shopping cart.
+explanation: This test case ensures that users have the option to cancel the removal of a product after decreasing its quantity to zero, providing flexibility in managing their shopping cart.
+

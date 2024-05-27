@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Search for an order by shop's name
+objective: Verify that the user can search for orders by entering the shop's name in the search bar and view the corresponding orders.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+  - Step 3: On the personal bought order page, locate the search bar below the status bar.
+  - Step 4: Enter a specific shop's name into the search bar.
+  - Step 5: Press enter.
+expectedResult: The system displays orders that match the entered shop's name.
+reflect: yes
+explanation: This test case directly addresses the scenario of searching for an order by the shop's name. It follows the steps a user would take to perform this action and verifies the expected outcome, which is to see orders associated with the entered shop's name. Therefore, it accurately reflects the given test scenario.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Decrease Product Quantity to Desired Number
+objective: Verify that the user can decrease the quantity of a product in their shopping cart to a desired number
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Locate the product for which the quantity needs to be decreased.
+  - Step 4: Click the minus button in the quantity section of the product until the quantity reaches the desired number.
+expectedResult: The quantity of the product in the shopping cart should decrease to the desired number.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that users can decrease the quantity of a product in their shopping cart to a specific number, which is the core functionality being tested.
+

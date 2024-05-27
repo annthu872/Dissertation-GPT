@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Apply Shop Promotion Before Placing Order
+objective: Verify that the user can successfully apply a shop's promotion to a product before placing the order.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on Choose voucher in the product's information section.
+  - Step 6: From the list of available vouchers, choose a shop's promotion voucher by clicking on it.
+  - Step 7: Click the order button to place the order.
+expectedResult: The chosen shop's promotion is applied, and the product's price is recalculated accordingly. The order is placed successfully with the promotion applied.
+explanation: This test case ensures that users can apply a shop's promotion to their order before finalizing the purchase, which is a critical functionality for users looking to utilize discounts.
+
+Test Case: Test Case 2
+testCaseName: Apply Product's Promotion Before Placing Order
+objective: Verify that the user can successfully apply a product's promotion before placing the order.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on Choose voucher in the product's information section.
+  - Step 6: From the list of available vouchers, choose a product's promotion voucher by clicking on it.
+  - Step 7: Click the order button to place the order.
+expectedResult: The chosen product's promotion is applied, and the product's price is recalculated accordingly. The order is placed successfully with the promotion applied.
+explanation: This test case verifies the functionality for users to apply specific promotions directly to a product before completing their purchase, ensuring the discount is reflected in the final order.
+
+Test Case: Test Case 3
+testCaseName: Apply Platform's Promotion Before Placing Order
+objective: Verify that the user can successfully apply a platform's promotion before placing the order.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose a product by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, click on Choose voucher in the platform's promotion information section.
+  - Step 6: From the list of available vouchers, choose a platform's promotion voucher by clicking on it.
+  - Step 7: Click the order button to place the order.
+expectedResult: The chosen platform's promotion is applied, and the order's price is recalculated accordingly. The order is placed successfully with the promotion applied.
+explanation: This test case ensures that users can apply platform-wide promotions to their orders before finalizing the purchase, which is essential for users looking to maximize savings across the platform.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Personal Bought Order Page
+objective: Verify that the user can navigate to their personal bought order page after clicking on the personal name and avatar section.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page.
+expectedResult: User is redirected to their personal bought order page, displaying a list of all orders they have chosen to buy, including their information and status.
+explanation: This test case ensures that users can successfully navigate to their order page to track their orders' status, which is the first step in the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Filtering by Status
+objective: Verify that the user can filter orders by selecting a specific status tab.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the personal bought order page by clicking on the personal name and avatar section.
+  - Step 3: Click on one of the status tabs (e.g., 'Waiting for payment', 'Delivering').
+expectedResult: The system displays only the orders that match the selected status, filtering out all other orders.
+explanation: This test case checks the functionality of filtering orders by their status, which is described in the alternative flow 1 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Verify Order Search Functionality
+objective: Verify that the user can search for orders using shop's name, order's ID, or product's ID.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the personal bought order page by clicking on the personal name and avatar section.
+  - Step 3: Enter a keyword related to the shop's name, order's ID, or product's ID in the search bar.
+  - Step 4: Press enter.
+expectedResult: The system displays orders that match the keyword entered by the user, based on shop's name, order's ID, or product's ID.
+explanation: This test case verifies the search functionality that allows users to find specific orders based on different criteria, as outlined in alternative flow 2 of the use case.
+

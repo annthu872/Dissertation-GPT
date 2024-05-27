@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Successful New Topic Creation
+objective: Verify that an administrator can successfully add a new English learning topic.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+explanation: This test case ensures that the basic flow of adding a new topic by an administrator works as expected, following the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add Topic with Existing Name
+objective: Verify that the system prevents the creation of a new topic with a name that already exists.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the existing topics.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field.
+  - Step 7: Select 'Save' again to create the topic.
+expectedResult: The system should display a notification that the name is already used, prompting the administrator to add another name. After entering a new name, the topic should be successfully created.
+explanation: This test case checks the alternative flow where an administrator attempts to add a new topic with a name that already exists and ensures the system handles it correctly.
+
+Test Case: Test Case 3
+testCaseName: Cancel Topic Creation
+objective: Verify that an administrator can cancel the process of adding a new topic at any time.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Begin to enter details for the new topic.
+  - Step 4: Select 'Cancel' to stop adding the new topic.
+expectedResult: The system should cancel the topic creation process and possibly redirect the administrator to the previous page or the main dashboard.
+explanation: This test case validates the exception flow where an administrator decides to cancel the process of adding a new topic, ensuring the system allows for cancellation at any point.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Search with Unavailable Keyword Not Matching Any Shop, Brand, or Product
+objective: Verify that the system shows a blank list and recommends the user to try another keyword when an unavailable keyword not matching any shop, brand, or product is entered.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any shop, brand, or product into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a blank list and recommend the user to try another keyword.
+explanation: This test case is created to ensure that when users search for a keyword that does not match any shop, brand, or product, the system correctly handles the query by showing a blank list and suggesting the user to try different keywords. It directly matches the scenario name by testing the system's response to an unavailable keyword.
+
+Test Case: Test Case 2
+testCaseName: Search with Unavailable Keyword Not Matching Any Brand or Product
+objective: Verify that the system shows all shops with the same name, a blank product list, and recommends the user to try another keyword when an unavailable keyword not matching any brand or product is entered.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any brand or product into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display all shops with the same name, a blank product list, and recommend the user to try another keyword.
+explanation: This test case verifies the system's behavior when a user searches with a keyword that does not match any brand or product but might match a shop name. It ensures that the system can differentiate between matching shop names and non-matching product or brand names, providing appropriate recommendations to the user.
+
+Test Case: Test Case 3
+testCaseName: Search with Unavailable Keyword Not Matching Any Shop
+objective: Verify that the system shows a blank shop list, recommends the user to try another keyword, and shows a list of all the related products from many shops when an unavailable keyword not matching any shop is entered.
+testSteps:
+  - Step 1: Navigate to the Home page.
+  - Step 2: Type an unavailable keyword that does not match any shop into the search bar.
+  - Step 3: Click on the search icon or press enter.
+expectedResult: The system should display a blank shop list, recommend the user to try another keyword, and show a list of all the related products from many shops.
+explanation: This test case ensures that when a user searches with a keyword that does not match any shop, the system still attempts to provide value by showing related products and suggesting the user to try different keywords. It tests the system's ability to handle searches that do not directly match shop names but may still have relevant product matches.
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Topic Creation with Missing Name
+objective: Verify that the system prevents the creation of a new topic without a name and prompts for a name input
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Leave the name field empty.
+  - Step 4: Fill in the description of the topic in the description field.
+  - Step 5: Select 'Save' to attempt creating a new topic.
+expectedResult: The system should display an error message or notification indicating that the name field is required and prevent the creation of the topic until a name is provided.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a topic without a name. It accurately tests the system's validation for the name field during topic creation.
+

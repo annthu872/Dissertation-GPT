@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Video Addition
+objective: Verify that a user can submit a product rating with an added video.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating and service ratings (seller and shipping) as the default 5 stars.
+  - Step 5: Click on the Add video button.
+  - Step 6: In the pop-up, select a valid video file and click to add it.
+  - Step 7: Verify the video is shown as selected with a video icon indicating 1/1.
+  - Step 8: Click the Done button to submit the rating.
+expectedResult: The system saves the rating with the video and displays it in the product's detail page rating section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to submit a product rating with an added video. It follows the exact steps required to achieve the scenario's objective, including logging in, navigating to the rating section, adding a video, and submitting the rating.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Video and Adjusted Quality Rating
+objective: Verify that a user can submit a product rating with an added video and an adjusted quality rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the quality rating by clicking on a different number of stars.
+  - Step 5: Click on the Add video button.
+  - Step 6: In the pop-up, select a valid video file and click to add it.
+  - Step 7: Verify the video is shown as selected with a video icon indicating 1/1.
+  - Step 8: Click the Done button to submit the rating.
+expectedResult: The system saves the rating with the adjusted quality rating and the added video, displaying it in the product's detail page rating section.
+reflect: yes
+explanation: This test case also accurately reflects the given test scenario by including an additional step of adjusting the quality rating before adding a video and submitting the rating. It tests the scenario's objective with an extra layer of interaction (adjusting the quality rating), ensuring the system's capability to handle both actions in one submission.
+

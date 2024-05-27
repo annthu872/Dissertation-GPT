@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Filter Orders by 'Waiting to Deliver' Status
+objective: Verify that the user can filter orders by 'Waiting to Deliver' status and only those orders are displayed.
+testSteps:
+  - Step 1: Log in to the platform with a valid user account.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: On the status bar at the top of the order list, click on the 'Waiting to deliver' tab.
+expectedResult: Only orders with the 'Waiting to Deliver' status are displayed on the page.
+reflect: yes
+explanation: This test case directly tests the functionality described in the given test scenario, which is filtering orders by the 'Waiting to Deliver' status. The steps lead to the expected outcome that aligns with the scenario's objective.
+
+Test Case: Test Case 2
+testCaseName: Verify Order Status Tabs Functionality
+objective: Ensure that the status tabs including 'Waiting to Deliver' are interactive and filter orders accordingly.
+testSteps:
+  - Step 1: Log in to the platform with a valid user account.
+  - Step 2: Click on the personal name and avatar section at the top right of the platform's page to navigate to the personal bought order page.
+  - Step 3: Observe the status bar with multiple tabs including 'All', 'Waiting for payment', 'Delivering', 'Waiting to deliver', 'Finished', 'Cancelled', and 'Returned'.
+  - Step 4: Click on each tab starting with 'Waiting to deliver' and observe the change in the order list.
+expectedResult: Upon clicking each status tab, the order list updates to only show orders corresponding to the selected status. Specifically, when 'Waiting to deliver' is selected, only orders with that status are shown.
+reflect: yes
+explanation: Although this test case checks the functionality of all status tabs, it includes and specifically tests the 'Waiting to Deliver' filter as part of its steps. Therefore, it still reflects the given test scenario by ensuring the 'Waiting to Deliver' filter works as intended within the context of all status filters.
+

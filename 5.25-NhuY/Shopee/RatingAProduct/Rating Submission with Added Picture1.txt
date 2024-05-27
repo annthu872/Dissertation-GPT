@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Rating Submission with Single Picture Addition
+objective: Verify that a user can submit a product rating with a single picture added.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating at the default 5 stars.
+  - Step 5: Click on the Add picture button.
+  - Step 6: In the pop-up, select an image file and click Open.
+  - Step 7: Verify the image is shown in the form.
+  - Step 8: Click Done button.
+expectedResult: The system saves the rating with the picture and displays it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly tests the scenario of submitting a rating with an added picture, making it a perfect reflection of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Rating Submission with Multiple Pictures
+objective: Verify that a user can submit a product rating with multiple pictures added.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, leave the quality rating at the default 5 stars.
+  - Step 5: Click on the Add picture button.
+  - Step 6: In the pop-up, select an image file and click Open.
+  - Step 7: Verify the image is shown in the form.
+  - Step 8: Click on the camera icon to add another picture.
+  - Step 9: Repeat steps 5 to 7 for each additional picture, up to the maximum limit of 5 pictures.
+  - Step 10: Click Done button.
+expectedResult: The system saves the rating with all the added pictures and displays them in the product's detail page's rating section.
+reflect: yes
+explanation: This test case expands on the scenario by testing the ability to add multiple pictures to a rating, which is still within the scope of the Rating Submission with Added Picture scenario.
+
+Test Case: Test Case 3
+testCaseName: Rating Submission with Picture and Adjusted Quality Rating
+objective: Verify that a user can submit a product rating with an adjusted quality rating and a picture added.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Adjust the quality rating by clicking on a different number of stars.
+  - Step 5: Click on the Add picture button.
+  - Step 6: In the pop-up, select an image file and click Open.
+  - Step 7: Verify the image is shown in the form.
+  - Step 8: Click Done button.
+expectedResult: The system saves the rating with the adjusted quality rating and the added picture, displaying it in the product's detail page's rating section.
+reflect: yes
+explanation: Although this test case includes adjusting the quality rating, it still tests the core functionality of adding a picture to a rating submission, thus reflecting the given test scenario.
+

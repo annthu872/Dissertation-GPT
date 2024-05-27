@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Adjust Seller Rating Before Submitting
+objective: Verify that the user can adjust the seller rating before submitting the rating form.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, click on the Service rating section for seller's rating.
+  - Step 5: Adjust the seller rating by clicking on a different number of stars (1 to 4 stars, since 5 stars is default and 0 is not an option).
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted seller rating and display it in the product's detail page's rating section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that a user can adjust the seller rating before submitting the form. It covers the process from logging in to submitting the adjusted rating, which is the core action the scenario aims to test.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Rating Adjustment and Submission
+objective: Ensure that the seller rating adjustment is saved correctly and reflected on the product's detail page.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the rating form, click on the Service rating section for seller's rating.
+  - Step 5: Adjust the seller rating to a different number of stars (choose 3 stars).
+  - Step 6: Optionally, fill in other parts of the rating form such as product quality rating, comments, or adding pictures/videos.
+  - Step 7: Click the Done button to submit the rating.
+expectedResult: The product's detail page's rating section should now reflect the new seller rating of 3 stars, along with any other provided feedback.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by not only verifying the adjustment of the seller rating but also ensuring that the adjustment is saved and displayed correctly on the product's detail page. It adds an additional layer of verification by including the submission of other feedback forms, which, while not strictly necessary to test the scenario, does not detract from its relevance.
+

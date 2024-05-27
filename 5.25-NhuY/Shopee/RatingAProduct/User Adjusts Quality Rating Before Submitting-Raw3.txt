@@ -1,0 +1,75 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quality Rating Before Submitting
+objective: Verify that the user can adjust the quality rating of a product before submitting the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, click on the star rating in the quality rating section to adjust the quality rating to a desired number of stars (1 to 5 stars).
+  - Step 5: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted quality rating and display it in the product's detail page's rating section.
+explanation: This test case ensures that users can adjust the quality rating of a product using the star rating system before finalizing their rating submission.
+
+Test Case: Test Case 2
+testCaseName: Adjust Seller Rating Before Submitting
+objective: Verify that the user can adjust the seller rating in the service rating section before submitting the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, click on the star rating in the Service rating section for seller's rating to adjust the seller rating to a desired number of stars (1 to 5 stars).
+  - Step 5: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted seller rating and display it in the product's detail page's rating section.
+explanation: This test case verifies that users have the ability to adjust the seller rating as part of their overall service rating before they submit their final rating.
+
+Test Case: Test Case 3
+testCaseName: Adjust Shipping Rating Before Submitting
+objective: Verify that the user can adjust the shipping rating in the service rating section before submitting the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, click on the star rating in the Service rating section for shipping's rating to adjust the shipping rating to a desired number of stars (1 to 5 stars).
+  - Step 5: Click the Done button to submit the rating.
+expectedResult: The system should save the adjusted shipping rating and display it in the product's detail page's rating section.
+explanation: This test case ensures that users can adjust the shipping rating as part of their overall service rating before they submit their final rating.
+
+Test Case: Test Case 4
+testCaseName: Add a Comment Before Submitting
+objective: Verify that the user can add a comment in the rating form before submitting the rating.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: In the pop-up rating form, enter a comment in the comment section.
+  - Step 5: Click the Done button to submit the rating.
+expectedResult: The system should save the comment and display it in the product's detail page's rating section along with the rating.
+explanation: This test case verifies that users can leave a comment about the product in the rating form before they submit their final rating.
+
+Test Case: Test Case 5
+testCaseName: Add Multiple Pictures Before Submitting
+objective: Verify that the user can add multiple pictures to their rating before submitting.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add picture button.
+  - Step 5: Choose an image file and click Open to upload it.
+  - Step 6: Repeat steps 4 and 5 until you have added the desired number of pictures (up to 5).
+  - Step 7: Click the Done button to submit the rating.
+expectedResult: The system should save the pictures and display them in the product's detail page's rating section.
+explanation: This test case ensures that users can add multiple pictures to their product rating, enhancing the detail and credibility of their review before submitting.
+
+Test Case: Test Case 6
+testCaseName: Add a Video Before Submitting
+objective: Verify that the user can add a video to their rating before submitting.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the tracking order status page and select the 'Finished' tab.
+  - Step 3: Click on the Rating button of the product you want to rate.
+  - Step 4: Click on the Add video button.
+  - Step 5: Choose a video file and click Open to upload it.
+  - Step 6: Click the Done button to submit the rating.
+expectedResult: The system should save the video and display it in the product's detail page's rating section.
+explanation: This test case verifies that users can add a video to their product rating, providing a more comprehensive review before submitting.
+

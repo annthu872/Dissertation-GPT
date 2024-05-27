@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: View Detail of a Product with Multiple Options
+objective: Verify that users can view detailed information of a product including all options (e.g., color for lipstick, flavor for cake), shipping options, stock availability, store information, descriptions, and user ratings.
+testSteps:
+  - Step 1: Navigate to the homepage of the online store.
+  - Step 2: Browse through the product listings and click on a product card that is known to have multiple options (e.g., a lipstick with different color options).
+  - Step 3: Observe the product's detail page.
+expectedResult: The product's detail page displays all relevant information including the product's name, a picture of the product, all available options with appropriate titles based on the product type, shipping options, the quantity of products left in stock, information about the store selling the product, product descriptions, and ratings from users who have purchased the product.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that a product with multiple options is displayed with comprehensive details, including options, shipping, stock availability, store information, descriptions, and user ratings. It matches the scenario's requirement for showing detailed information for products with multiple options.
+

@@ -1,0 +1,15 @@
+Test Case: Test Case 2
+testCaseName: Attempt to Add New Topic with Duplicate Name
+objective: Verify that the system prevents the addition of a new topic with a name that is already used and prompts the administrator to use a different name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field after the prompt.
+  - Step 7: Select 'Save' again to create the topic with the new name.
+expectedResult: The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created, and the administrator should be redirected to the adding vocabulary section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'Topic Creation with Duplicate Name', by testing the system's response to an attempt to add a new topic with a name that already exists. It verifies that the system correctly prevents duplication and guides the user to resolve the issue.
+

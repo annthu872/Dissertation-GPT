@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Applying Platform Promotion Before Purchase
+objective: Verify that the user can successfully apply a platform's promotion voucher before making a purchase.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Choose the product(s) to buy by clicking the tick box at the head of the product's block.
+  - Step 4: Click the buy button at the right bottom of the screen to proceed to the payment page.
+  - Step 5: On the payment page, verify the default delivery location, product information, and default payment method are displayed.
+  - Step 6: Click on 'Choose voucher' in the platform's promotion information section.
+  - Step 7: From the list of available vouchers, choose one by clicking on it.
+  - Step 8: Click the order button to finalize the purchase.
+expectedResult: The chosen platform's promotion voucher is applied, and the order's price is recalculated to reflect the promotion. The product is then removed from the shopping cart, and a new order is formed.
+explanation: This test case ensures that users can apply platform promotions to their purchases before finalizing the order, directly matching the scenario of applying platform promotion before purchase.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Successful New Topic Creation
+objective: Verify that an administrator can successfully add a new English learning topic.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Topic Creation' by outlining the steps an administrator would take to successfully add a new topic, including the expected outcome of seeing the new topic in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add Topic with Existing Name
+objective: Verify that the system prevents the creation of a new topic with a name that already exists.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the existing topics.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field.
+  - Step 7: Select 'Save' again to create the topic.
+expectedResult: The system should display a notification that the name is already used, prompting the administrator to add another name. After entering a new name, the topic should be successfully created.
+reflect: yes
+explanation: Although this test case explores an alternative flow where the initial attempt to create a topic fails due to a name conflict, it still falls under the broader scenario of 'Successful Topic Creation' by ultimately verifying that a topic can be successfully created once a unique name is provided.
+

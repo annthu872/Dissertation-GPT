@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Remove a product from the shopping cart by erasing
+objective: Verify that a user can successfully remove a product from their shopping cart by selecting and erasing it.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the 'Erase' button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click 'Yes'.
+expectedResult: The product should be removed from the user's shopping cart, and the cart should update to reflect this change.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to remove a product from the shopping cart by erasing it, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to remove a product by erasing but cancel the action
+objective: Verify that a user can cancel the removal of a product from their shopping cart after initiating the erase action.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Click on the shopping cart icon at the top right of the screen.
+  - Step 3: Tick the box next to the product you wish to remove.
+  - Step 4: Click the 'Erase' button at the bottom of the screen.
+  - Step 5: On the pop-up confirmation, click 'No'.
+expectedResult: The product should remain in the user's shopping cart, and no changes should be made.
+reflect: yes
+explanation: Although this test case explores a cancellation path, it still reflects the given test scenario by testing the functionality of erasing a product from the cart but then cancelling the action.
+

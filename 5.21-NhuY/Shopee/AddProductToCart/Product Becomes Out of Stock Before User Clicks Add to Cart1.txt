@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify product becomes out of stock before user clicks add to cart
+objective: Ensure that when a product becomes out of stock before the user attempts to add it to the cart, the add to cart button is not clickable.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Verify that the product detail page displays a 'Sold out' sticker on the product picture.
+  - Step 5: Attempt to click the add to cart button.
+expectedResult: The add to cart button is not clickable.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by simulating a situation where a product becomes unavailable before the user tries to add it to their cart. It checks if the system appropriately disables the add to cart button for out-of-stock products, which is the main focus of the test scenario.
+

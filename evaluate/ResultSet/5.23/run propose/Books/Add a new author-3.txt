@@ -1,0 +1,7 @@
+1. CreateNewAuthor_WithoutName
+2. CreateNewAuthor_WithoutBio
+3. Successful Author Record Creation
+4. Incorrect Data Submission
+5. Database Error During Record Creation
+6. Cancel Operation Before Data Submission
+7. Navigation Away Using Menu Before Submission

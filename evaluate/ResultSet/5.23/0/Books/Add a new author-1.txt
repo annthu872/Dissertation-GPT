@@ -1,0 +1,11 @@
+CreateNewAuthor_WithoutName
+CreateNewAuthor_WithoutBio
+Successful Author Record Creation
+Incorrect Data Submission
+Database Error During Record Addition
+User starts entering data and decides to cancel
+User navigates to "Books" before submitting data
+User navigates to "Genres" before submitting data
+User navigates to "Authors" before submitting data
+User navigates to "Home" before submitting data
+User navigates to "API" before submitting data

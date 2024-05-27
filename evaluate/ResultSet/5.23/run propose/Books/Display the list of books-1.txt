@@ -1,0 +1,7 @@
+Scenario 1: FilterBooks_WithoutStartDate
+Scenario 2: FilterBooks_WithoutEndDate
+Scenario 3: Successful display of the first page of books
+Scenario 4: Navigation to the next page of books
+Scenario 5: Navigation to a specific page of books
+Scenario 6: Last page of books display
+Scenario 7: Attempt to navigate beyond the last page

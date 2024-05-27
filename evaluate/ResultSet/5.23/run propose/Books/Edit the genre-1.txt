@@ -1,0 +1,11 @@
+UpdateGenre_WithEmptyGenreName
+UpdateGenre_WithEmptyGenreDescription
+Successful Genre Update
+Genre Update with Incorrect Data
+Cancel Operation Before Data Entry
+Cancel Operation After Partial Data Entry
+Navigation to "Books" Before Submitting
+Navigation to "Genres" Before Submitting
+Navigation to "Authors" Before Submitting
+Navigation to "Home" Before Submitting
+Navigation to "API" Before Submitting

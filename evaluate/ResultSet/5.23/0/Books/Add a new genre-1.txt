@@ -1,0 +1,10 @@
+CreateGenre_WithoutName
+CreateGenre_WithoutDescription
+Successful Genre Creation
+Genre Creation with Incorrect Data
+User Cancels While Entering Data
+User Navigates Away by Selecting "Books"
+User Navigates Away by Selecting "Genres"
+User Navigates Away by Selecting "Authors"
+User Navigates Away by Selecting "Home"
+User Navigates Away by Selecting "API"

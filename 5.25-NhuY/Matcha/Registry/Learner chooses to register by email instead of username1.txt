@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Register by Email with Valid Information
+objective: Verify that a learner can register using an email address with all valid information
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with a valid email address.
+  - Step 4: Fill in the password field with a valid password that meets the criteria (over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, one number, and one special character, and is not the same as the username).
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the process of registration using an email address with valid information, which is the primary flow of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Register by Email with Invalid Email Format
+objective: Verify that the system shows an error notification when a learner tries to register with an invalid email format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an invalid email address (wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system shows a notification that the email is invalid.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing an alternative path where the user attempts to register with an invalid email format, which is crucial for verifying the system's validation mechanisms.
+

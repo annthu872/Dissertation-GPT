@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Create a valid selection test question
+objective: Verify that an admin can successfully create a selection test question with all required fields filled correctly.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+explanation: This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out.
+
+Test Case: Test Case 2
+testCaseName: Attempt to create a selection test question with missing 'sentence' field
+objective: Verify that the system prompts the admin to fill the missing 'sentence' field when attempting to save a question without it.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select any Lesson from the list.
+  - Step 4: Choose a Topic from the Topic list.
+  - Step 5: Pick a word from the vocabulary list.
+  - Step 6: Click on 'Add new question' button.
+  - Step 7: Choose 'Create questions for the selection test' option.
+  - Step 8: Leave the 'sentence' field empty.
+  - Step 9: Fill in the 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.
+explanation: This test case checks the system's validation for the 'sentence' field to ensure that it cannot be skipped when creating a new selection test question.
+
+Test Case: Test Case 3
+testCaseName: Cancel creating a selection test question and choose to stay
+objective: Verify that the admin can cancel the creation of a selection test question and choose to stay on the page to continue editing.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Access the 'Lesson Management' page through the navbar.
+  - Step 3: Select a Lesson, then a Topic, and finally a word from the respective lists.
+  - Step 4: Initiate adding a new question by clicking 'Add new question'.
+  - Step 5: Opt for 'Create questions for the selection test'.
+  - Step 6: Fill in all required fields with valid data.
+  - Step 7: Press the 'Cancel' button.
+  - Step 8: In the confirmation dialog, select the 'Stay' option.
+expectedResult: The cancellation confirmation dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered data intact.
+explanation: This test case ensures that admins have the option to cancel the creation of a new question but choose to stay on the page, potentially to correct or complete the question.
+

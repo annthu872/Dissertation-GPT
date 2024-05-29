@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Vocabulary List
+objective: Verify that the vocabulary list is successfully displayed with all details as per the basic flow.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the displayed list of vocabulary.
+expectedResult: The vocabulary list is displayed in vertical rows with each word in a horizontal row showing the word name, word type, word meaning, memorization level, and a checkbox for review test inclusion.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Display of Vocabulary List' by verifying the basic functionality of displaying the vocabulary list with all necessary details.
+

@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Continuing an Incomplete Topic from the Home Page
+objective: Verify that a learner can continue studying an incomplete topic directly from the Home Page and complete it.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Navigate to the Home Page.
+  - Step 3: Click on an incomplete topic displayed on the Home Page.
+  - Step 4: Verify that the system redirects to the corresponding Flashcard page for the selected topic.
+  - Step 5: Click on the flashcard to flip it and view the back.
+  - Step 6: Use the 'Next' button to go through all the flashcards in the topic.
+  - Step 7: Once on the last flashcard, click the 'Next' button to be redirected to the 'completion notification' page.
+  - Step 8: On the 'completion notification' page, click 'return to the lesson page'.
+expectedResult: The learner is able to continue an incomplete topic from the Home Page, go through all the flashcards, and upon completion, is redirected to the lesson page with the topic marked as completed.
+explanation: This test case ensures that learners can efficiently resume their learning process for incomplete topics directly from the Home Page, following the alternative flow 3. It tests the system's ability to save progress and allow learners to pick up where they left off, enhancing the learning experience.
+

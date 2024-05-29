@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Search for a Meaningless Vocabulary in Handbook
+objective: Verify that the system correctly notifies the user when a search for a meaningless vocabulary is performed in the Handbook.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar displayed on the Handbook page.
+  - Step 4: Enter a meaningless word (e.g., 'xyzabc') into the search bar.
+  - Step 5: Submit the search request.
+expectedResult: The system notifies that there are no suitable search results for the meaningless word entered.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's response to a search query with a meaningless vocabulary. It tests the specific functionality of handling non-existent or irrelevant search terms in the Handbook.
+

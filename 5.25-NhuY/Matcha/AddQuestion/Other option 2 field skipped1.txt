@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a question for the selection test
+objective: Ensure that an admin can successfully create a question for the selection test with all required fields filled correctly
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining the steps to successfully create a question for the selection test, ensuring all required fields are filled, which is the main objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify error message when 'sentence' field is skipped
+objective: To ensure the system prompts an error when the 'sentence' field is skipped and prevents saving the question
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.
+  - Step 3: Skip the 'sentence' field and fill the other required fields.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing an alternative flow where a required field ('sentence') is skipped, verifying the system's validation and error handling which is crucial for ensuring data integrity in the question creation process.
+
+Test Case: Test Case 3
+testCaseName: Verify error message when 'correct answer' field is skipped
+objective: To ensure the system prompts an error when the 'correct answer' field is skipped and prevents saving the question
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.
+  - Step 3: Skip the 'correct answer' field and fill the other required fields.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.
+reflect: yes
+explanation: This test case aligns with the given test scenario by ensuring the system checks for the completion of all required fields, specifically the 'correct answer' field in this case, which is essential for the functionality of creating a selection test question.
+
+Test Case: Test Case 4
+testCaseName: Verify error message when 'other option 2' field is skipped
+objective: To ensure the system prompts an error when the 'other option 2' field is skipped and prevents saving the question
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.
+  - Step 3: Fill all required fields except for 'other option 2'.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the system's response to incomplete data submission, specifically the omission of 'other option 2'. It ensures that the system enforces the requirement of filling all options to create a valid selection test question.
+

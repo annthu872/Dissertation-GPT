@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Register with Username Below Minimum Length
+objective: Verify that the system shows a notification that the username is invalid when a username below the minimum length is entered
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is below 8 characters.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters, below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character, and is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that the username is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Username Below Minimum Length' by specifically testing the system's response to a username input that does not meet the minimum length criteria. The steps are designed to trigger the scenario where the username is too short, and the expected result is aligned with the scenario's requirement for the system to notify the user that the username is invalid.
+

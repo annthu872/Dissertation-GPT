@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Exit and Choose to Stay during Review
+objective: Ensure that when learners press 'Exit' and then choose 'Stay', they can continue with their review without losing progress.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen and start the review process.
+  - Step 4: At any point during the review (before finishing all words), press the 'Exit' button.
+  - Step 5: On the pop-up, choose the 'Stay' button.
+expectedResult: The system should return the learner to the same point in the review process where they pressed 'Exit', allowing them to continue their review without any loss of progress.
+explanation: This test case ensures that the functionality for learners to exit and choose to stay works as intended, allowing them to continue their review seamlessly. It directly tests the alternative flow 3 where learners decide to stay after pressing the 'Exit' button.
+
+Test Case: Test Case 2
+testCaseName: Verify Exit and Choose to Confirm during Review
+objective: Ensure that when learners press 'Exit' and then choose 'Confirm', they are redirected to the Home page and the review progress is not saved.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen and start the review process.
+  - Step 4: At any point during the review (before finishing all words), press the 'Exit' button.
+  - Step 5: On the pop-up, choose the 'Confirm' button.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress.
+explanation: This test case verifies the functionality for learners to exit and confirm exit during a review session, ensuring that the system behaves as expected by not saving the review progress and redirecting the user to the Home page. It directly tests the exception flow 1 where learners decide to exit the review.
+
+Test Case: Test Case 3
+testCaseName: Verify Completing Review and Returning to Home Page
+objective: Ensure that upon completing the review by going through all words in the list, learners are redirected back to the Home page and the review is saved.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review for all words in the list by pressing 'Continue' after each word.
+  - Step 4: After reviewing the last word, press the 'Continue' button.
+expectedResult: The system should redirect the learner to the Home page and save the review progress, updating the status of vocabulary accordingly.
+explanation: This test case ensures that the system correctly handles the completion of a review session by saving the progress and updating the vocabulary status as per the post conditions. It tests the alternative flow 2, focusing on the process completion and saving of the review.
+

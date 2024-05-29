@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Exclude Vocabulary from Review Test
+objective: Verify that a learner can exclude a specific vocabulary from the review test by unchecking the checkbox associated with that vocabulary.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the list of vocabulary to find a specific word.
+  - Step 4: Uncheck the checkbox next to the vocabulary that the learner wishes to exclude from the review test.
+expectedResult: The system marks the vocabulary as excluded, and it will not appear in the daily review test.
+reflect: yes
+explanation: This test case directly tests the scenario of excluding vocabulary from a review test, which is the main focus of the given test scenario.
+
+Test Case: Test Case 3
+testCaseName: Search and Exclude Vocabulary from Review Test
+objective: Verify that a learner can search for a specific vocabulary and exclude it from the review test.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+  - Step 5: From the filtered search results, uncheck the checkbox next to the vocabulary to exclude it from the review test.
+expectedResult: The system filters the vocabulary list based on the search and allows the learner to exclude a specific word from the review test.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the functionality of excluding vocabulary from a review test, with the added complexity of using the search function to find the vocabulary.
+

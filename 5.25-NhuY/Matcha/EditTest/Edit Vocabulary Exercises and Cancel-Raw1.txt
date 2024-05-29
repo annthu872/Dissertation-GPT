@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Edit Vocabulary Exercises Successfully
+objective: Verify that the administrator can successfully edit vocabulary exercises and save changes.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: On the editing interface, make the desired changes to the vocabulary exercises.
+  - Step 5: Select 'Save' to apply the changes.
+expectedResult: The system saves all edited exercises, and the changes are reflected in the topic's vocabulary exercises.
+explanation: This test case ensures that administrators can edit and save changes to vocabulary exercises, directly reflecting the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Cancel Editing Vocabulary Exercises with Save Prompt
+objective: Verify that the administrator can cancel editing vocabulary exercises and choose to save changes when prompted.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: On the editing interface, make some changes to the vocabulary exercises.
+  - Step 5: Attempt to exit the exercise editing mode.
+  - Step 6: On the 'Save changes?' prompt, select 'Save'.
+expectedResult: The system saves all edited exercises, and the changes are reflected in the topic's vocabulary exercises.
+explanation: This test case verifies that administrators can cancel their editing session but still choose to save their changes when prompted, aligning with the alternative flow of the use case.
+
+Test Case: Test Case 3
+testCaseName: Cancel Editing Vocabulary Exercises without Saving
+objective: Verify that the administrator can cancel editing vocabulary exercises and choose not to save changes when prompted.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: On the editing interface, make some changes to the vocabulary exercises.
+  - Step 5: Attempt to exit the exercise editing mode.
+  - Step 6: On the 'Save changes?' prompt, select 'Do not save'.
+expectedResult: The system discards the changes made during the editing session, and the vocabulary exercises remain unchanged.
+explanation: This test case ensures that administrators have the option to cancel their editing session and not save changes, in line with the exception flow of the use case.
+

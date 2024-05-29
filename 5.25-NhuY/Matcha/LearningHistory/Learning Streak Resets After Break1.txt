@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Verify Learning Streak Resets After One Day Break
+objective: To verify that the learning streak resets to one after the learner fails to learn for one day.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, learner selects 'Day History' on the History page.
+  - Step 4: Verify the current learning streak is displayed.
+  - Step 5: Simulate a break by not logging any learning activity for one day.
+  - Step 6: Repeat steps 2 and 3 after the break day.
+expectedResult: After the break day, the learning streak should reset to one, indicating the learner has started a new learning streak.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a learner does not engage in learning activities for one day. It checks if the learning streak resets to one, which is the core functionality described in the scenario.
+

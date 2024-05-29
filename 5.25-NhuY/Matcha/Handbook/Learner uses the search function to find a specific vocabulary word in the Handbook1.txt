@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Search for a specific vocabulary word in the Handbook
+objective: Verify that the learner can use the search function to find a specific vocabulary word in the Handbook
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the specific word to search.
+expectedResult: The system filters vocabulary containing characters entered by the learner and displays the matching vocabulary words.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the search functionality within the Handbook for finding specific vocabulary words.
+
+Test Case: Test Case 2
+testCaseName: Search for a meaningless vocabulary word in the Handbook
+objective: Verify that the system notifies the learner when there are no suitable search results for a meaningless word
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+expectedResult: The system notifies that there are no suitable search results.
+reflect: yes
+explanation: Although this test case explores a negative path (searching for a word that doesn't exist), it still tests the search functionality within the Handbook, which is the focus of the given test scenario.
+

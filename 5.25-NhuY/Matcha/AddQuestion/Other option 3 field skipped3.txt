@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify question creation with all fields filled correctly
+objective: Ensure that an admin can successfully create a question for the selection test by filling all fields correctly and saving the question.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word.
+  - Step 10: Fill the 'other option 1', 'other option 2', and 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of creating a question with all required fields filled, which is the primary objective of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify error notification when 'other option 3' field is skipped
+objective: To confirm that the system prompts an error notification when the 'other option 3' field is skipped and prevents question creation until the field is filled.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Choose a Lesson and then a Topic within that Lesson.
+  - Step 4: Select a word from the vocabulary list to create a question for.
+  - Step 5: Initiate the question creation process by clicking 'Add new question'.
+  - Step 6: Choose 'Create questions for the selection test' option.
+  - Step 7: Fill in the 'sentence' and 'correct answer' fields correctly.
+  - Step 8: Fill in the 'other option 1' and 'other option 2' fields with valid wrong answers.
+  - Step 9: Leave the 'other option 3' field empty.
+  - Step 10: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'other option 3' field, and does not save the question.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the system's behavior when a required field ('other option 3') is skipped during question creation, which is a specific condition outlined in the scenario.
+

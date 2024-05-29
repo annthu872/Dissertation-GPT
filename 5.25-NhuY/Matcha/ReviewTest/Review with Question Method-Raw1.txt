@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Review with Question Method - Correct Answer Flow
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Answer a question correctly by clicking on the right one of the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, the system should display a green word indicating the correct choice and increase the memory level of the word.
+explanation: This test case ensures that the system behaves as expected when a learner answers a question correctly during a review session, by increasing the memory level of the word.
+
+Test Case: Test Case 2
+testCaseName: Review with Question Method - Incorrect Answer Flow
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Answer a question incorrectly by clicking on the wrong one of the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display a red word indicating the incorrect choice and decrease the memory level of the word.
+explanation: This test case verifies that the system behaves as expected when a learner answers a question incorrectly by decreasing the memory level of the word.
+
+Test Case: Test Case 3
+testCaseName: Review with Question Method - Exiting Review Early and Choosing to Stay
+objective: Verify that the system allows learners to attempt to exit the review session and then choose to stay and continue the review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Press the 'Exit' button during a review session.
+  - Step 5: On the pop-up, select the 'Stay' button.
+expectedResult: After choosing to stay, the learner should remain on the review screen to continue with the review session.
+explanation: This test case ensures that learners can opt to stay and continue their review session if they accidentally press the 'Exit' button.
+
+Test Case: Test Case 4
+testCaseName: Review with Question Method - Exiting Review Early and Choosing to Exit
+objective: Verify that the system saves the review progress and redirects the learner to the Home page when they choose to exit the review session early.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Press the 'Exit' button during a review session.
+  - Step 5: On the pop-up, select the 'Confirm' button.
+expectedResult: After confirming the exit, the learner should be redirected to the Home page and the review progress should not be saved.
+explanation: This test case verifies that the system behaves as expected when a learner decides to exit the review session early, ensuring that the review progress is not saved.
+

@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Admin can create a question for the selection test with valid inputs
+objective: Ensure that the Admin can successfully create a question for the selection test by filling all compulsory fields with valid inputs and saving it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining the process for an Admin to create a question for the selection test with all required fields correctly filled, which is the main objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify system prompts when 'other option 2' field is skipped
+objective: To ensure that the system prompts Admin to fill the 'other option 2' field if it is skipped before saving the question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select any Lesson from the list.
+  - Step 4: Choose a Topic from the Topic list.
+  - Step 5: Pick a word from the vocabulary list.
+  - Step 6: Click on 'Add new question' button.
+  - Step 7: Choose the option to 'Create questions for the selection test'.
+  - Step 8: Enter a valid sentence in the 'sentence' field including '...'.
+  - Step 9: Input the correct answer in the 'correct answer' field.
+  - Step 10: Fill in 'other option 1' and 'other option 3' fields with wrong answers, leave 'other option 2' empty.
+  - Step 11: Attempt to save by pressing the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario by testing the system's validation for the 'other option 2' field. It ensures that the system prompts the user to fill in all compulsory fields, aligning with the scenario's focus on validating input completeness.
+

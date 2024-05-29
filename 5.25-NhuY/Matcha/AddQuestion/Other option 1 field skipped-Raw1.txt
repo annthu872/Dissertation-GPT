@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify successful question creation for selection test with all fields filled
+objective: Ensure that the admin can successfully create a question for the selection test by filling all the required fields and saving it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+explanation: This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are filled out and saved by the admin.
+
+Test Case: Test Case 2
+testCaseName: Verify system behavior when 'other option 1' field is skipped
+objective: To check if the system prompts the admin to fill the 'other option 1' field when it is skipped and ensures the question is not saved until the field is filled.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson and then a Topic from the lists provided.
+  - Step 4: Choose a word from the vocabulary list to create a question for.
+  - Step 5: Initiate adding a new question by pressing 'Add new question'.
+  - Step 6: Choose 'Create questions for the selection test' option.
+  - Step 7: Fill in the 'sentence' and 'correct answer' fields appropriately.
+  - Step 8: Leave the 'other option 1' field empty, but fill in 'other option 2' and 'other option 3' fields.
+  - Step 9: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 1' field. The question is not saved until the field is filled.
+explanation: This test case verifies the system's validation process for the 'other option 1' field when creating a new question for the selection test, ensuring that all required fields must be filled before saving.
+

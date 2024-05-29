@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Register with an already registered username
+objective: Verify that the system shows a notification that the username has been registered when a learner tries to register with a username that already exists in the system.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is known to have been previously registered.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+explanation: This test case is created to verify the system's behavior when a learner attempts to register with a username that is already in use, which directly relates to the 'UsernameAlreadyRegistered' scenario by testing the exception flow 3.
+
+Test Case: Test Case 2
+testCaseName: Register with a valid username and password
+objective: Verify that the system allows registration with a valid username and password and redirects the learner to the Home page.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username that is not already registered. Ensure the username is over 8 characters and below 30 characters.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system redirects the learner to the Home page, indicating successful registration.
+explanation: Although the scenario name 'UsernameAlreadyRegistered' suggests focusing on the error handling of a duplicate username, this test case is included to ensure the system behaves as expected when provided with valid registration information, contrasting the error scenario with a successful registration flow.
+

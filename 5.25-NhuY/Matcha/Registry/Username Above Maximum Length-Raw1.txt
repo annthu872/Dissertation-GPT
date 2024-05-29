@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Register with Username Above Maximum Length
+objective: Verify that the system shows a notification of invalid username when a learner attempts to register with a username above the maximum length.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is above 30 characters.
+  - Step 3: Fill in the password field with a valid password that meets the criteria of being over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that the username is invalid.
+explanation: This test case is created to directly test the scenario 'Username Above Maximum Length' by attempting to register with a username length that exceeds the specified maximum limit. It follows the exception flow 1 where an invalid username is entered, and the system is expected to validate and show an appropriate error message.
+

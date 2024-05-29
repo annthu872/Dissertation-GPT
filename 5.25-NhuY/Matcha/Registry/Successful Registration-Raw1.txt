@@ -1,0 +1,74 @@
+Test Case: Test Case 1
+testCaseName: Successful Registration with Username and Password
+objective: Verify that a learner can successfully register using a valid username and password
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).
+  - Step 3: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the username).
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+explanation: This test case ensures that the registration process works correctly when a learner provides valid username and password according to the main flow.
+
+Test Case: Test Case 2
+testCaseName: Successful Registration with Email
+objective: Verify that a learner can successfully register using a valid email
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to register by email.
+  - Step 3: Fill in the email field with a valid email (an existing email with the right format).
+  - Step 4: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the email).
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration using email.
+explanation: This test case verifies the alternative flow where a learner can register using their email instead of a username.
+
+Test Case: Test Case 3
+testCaseName: Registration with Invalid Username
+objective: Verify that the system shows a notification for invalid username during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with an invalid username (below 8 characters or above 30 characters).
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify that a notification about the invalid username is shown.
+expectedResult: A notification about the invalid username is displayed to the learner.
+explanation: This test case checks the system's response to an invalid username input, as described in exception flow 1.
+
+Test Case: Test Case 4
+testCaseName: Registration with Invalid Password
+objective: Verify that the system shows a notification for invalid password during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Fill in the password field with an invalid password (below 8 characters, above 30 characters, missing a character type, or same as username).
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify that a notification about the invalid password is shown.
+expectedResult: A notification about the invalid password is displayed to the learner.
+explanation: This test case ensures that the system correctly notifies the user of an invalid password input, following exception flow 2.
+
+Test Case: Test Case 5
+testCaseName: Registration with Existed Username
+objective: Verify that the system shows a notification for an already registered username
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify that a notification about the username already being registered is shown.
+expectedResult: A notification that the username has already been registered is displayed, asking the learner to choose another username.
+explanation: This test case checks the system's response to a registration attempt with a username that has already been taken, as per exception flow 3.
+
+Test Case: Test Case 6
+testCaseName: Registration with Invalid Email
+objective: Verify that the system shows a notification for invalid email during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to register by email.
+  - Step 3: Fill in the email field with an invalid email (an inexist email or email with the wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify that a notification about the invalid email is shown.
+expectedResult: A notification about the invalid email is displayed to the learner.
+explanation: This test case verifies the system's behavior when a learner attempts to register with an invalid email, following exception flow 4.
+

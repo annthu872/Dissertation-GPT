@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Admin Leaves Without Saving by Using Browser Back Button
+objective: Verify that the question is not saved when the Admin leaves the 'Add new question for selection test' page by using the browser back button without saving.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select one Lesson from the Lesson list.
+  - Step 4: Select one Topic from the Topic list of the selected Lesson.
+  - Step 5: Select one word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Use the browser back button to leave the page without pressing 'Save'.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a specific flow where an Admin fills out a form to add a new question but leaves the page using the browser's back button without saving. The expected result confirms whether the system behaves as intended in this scenario, ensuring that unsaved changes are not persisted, which is the core aspect of the test scenario.
+

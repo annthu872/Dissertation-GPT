@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Review with Meaning Method - Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the meaning method for a word.
+  - Step 5: Choose the correct meaning by clicking on one of the four selections.
+  - Step 6: Click the right answer.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, a green word should be displayed, indicating the word's memory level has been increased.
+explanation: This test case ensures that the review process using the meaning method functions correctly when the learner selects the correct answer. It directly relates to the main flow of the review test scenario.
+
+Test Case: Test Case 2
+testCaseName: Review with Meaning Method - Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the meaning method for a word.
+  - Step 5: Choose the wrong meaning by clicking on one of the four selections.
+  - Step 6: Click the wrong answer.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased.
+explanation: This test case verifies the functionality of the review process when the learner selects an incorrect answer using the meaning method, as described in the alternative flow 1.
+
+Test Case: Test Case 3
+testCaseName: Review with Meaning Method - Exiting and Saving Review
+objective: Verify that the review progress is saved and the learner is redirected to the Home page upon exiting the review after completing all words.
+testSteps:
+  - Step 1: Log in as a learner with exactly one word left in the review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Complete the review for the last word by selecting any answer.
+  - Step 5: Press the 'Continue' button, which should now redirect back to the Home page.
+expectedResult: The system saves the review progress and redirects the learner to the Home page, as described in alternative flow 2.
+explanation: This test case checks the functionality of saving the review progress and redirecting to the Home page after the learner has reviewed the last word in their list.
+
+Test Case: Test Case 4
+testCaseName: Review with Meaning Method - Exiting Review Without Saving
+objective: Verify that the review progress is not saved and the learner is redirected to the Home page upon choosing to exit the review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Press the 'Exit' button before completing the review.
+  - Step 5: In the pop-up, choose the 'Confirm' button to exit the review.
+expectedResult: The system does not save the review progress and redirects the learner to the Home page, as described in exception flow 1.
+explanation: This test case ensures that the system behaves as expected when a learner chooses to exit the review without completing it, specifically not saving the review progress.
+

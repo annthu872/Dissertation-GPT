@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Register with invalid email
+objective: Verify that the system shows a notification that the email is invalid when a learner tries to register with an invalid email
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose email registration.
+  - Step 3: Fill in the email field with an invalid email (e.g., 'test@invalid').
+  - Step 4: Fill in the password field with a valid password that meets the criteria (e.g., 'Password1!').
+  - Step 5: Press the 'Registry' button.
+expectedResult: System shows a notification that the email is invalid.
+explanation: This test case is created to ensure that the system correctly validates email inputs during the registration process and provides appropriate feedback to the user when an invalid email is entered, as described in Exception flow 4.
+
+Test Case: Test Case 2
+testCaseName: Register with valid email
+objective: Verify that a learner can successfully register using a valid email and is redirected to the Home page
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose email registration.
+  - Step 3: Fill in the email field with a valid email (e.g., 'test@example.com').
+  - Step 4: Fill in the password field with a valid password that meets the criteria (e.g., 'Password1!').
+  - Step 5: Press the 'Registry' button.
+expectedResult: Learner is redirected to the Home page after successful registration.
+explanation: This test case ensures that the system allows for successful registration with a valid email and proper redirection to the Home page, following the steps outlined in Alternative flow 1 and the main flow.
+

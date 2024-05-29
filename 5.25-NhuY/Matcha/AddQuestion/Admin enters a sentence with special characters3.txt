@@ -1,0 +1,19 @@
+Test Case: Test Case 2
+testCaseName: Admin enters a sentence with special characters
+objective: Verify that the system prevents the admin from saving a question when the sentence contains special characters
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list.
+  - Step 4: Select a topic from the topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that includes the symbol '...' and contains special characters.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field without special characters.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's response to an admin entering a sentence with special characters, which is the exact situation described in the scenario.
+

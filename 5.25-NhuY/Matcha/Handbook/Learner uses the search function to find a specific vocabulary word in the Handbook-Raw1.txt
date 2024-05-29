@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Search for a specific vocabulary word in the Handbook
+objective: Verify that the learner can use the search function to find a specific vocabulary word in the Handbook
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the specific word to search.
+expectedResult: The system filters vocabulary containing characters entered by the learner and displays the matching vocabulary words.
+explanation: This test case verifies that the search functionality within the Handbook works as expected, allowing learners to find specific vocabulary words.
+
+Test Case: Test Case 2
+testCaseName: Search for a meaningless vocabulary word in the Handbook
+objective: Verify that the system notifies the learner when there are no suitable search results for a meaningless word
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+expectedResult: The system notifies that there are no suitable search results.
+explanation: This test case ensures that the search functionality properly handles searches for words that do not exist in the learner's vocabulary list, providing appropriate feedback.
+
+Test Case: Test Case 3
+testCaseName: Exclude a vocabulary word from the review test
+objective: Verify that the learner can exclude a vocabulary word from appearing in the review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary word.
+  - Step 4: Untick the checkbox of the vocabulary word.
+expectedResult: The system marks that vocabulary will not appear in the daily test review.
+explanation: This test case checks the functionality that allows learners to customize their review tests by excluding specific vocabulary words.
+
+Test Case: Test Case 4
+testCaseName: Include a vocabulary word in the review test
+objective: Verify that the learner can include a vocabulary word in the review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary word.
+  - Step 4: Tick the checkbox of the vocabulary word.
+expectedResult: The system marks that vocabulary will appear in the daily test review.
+explanation: This test case ensures that learners can add specific vocabulary words to their review tests, allowing for personalized review experiences.
+

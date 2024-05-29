@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Create a valid selection test question
+objective: Verify that an admin can successfully create a selection test question with all required fields filled correctly.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answers.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the process of creating a selection test question with all required fields, which is the primary objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to create a selection test question with a missing compulsory field
+objective: Verify that the system prevents the creation of a selection test question if a compulsory field is missing.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select any Lesson and then a Topic within that Lesson.
+  - Step 4: Choose a word from the vocabulary list and press 'Add new question'.
+  - Step 5: Select the option to 'Create questions for the selection test'.
+  - Step 6: Fill in all compulsory fields except for one (e.g., skip 'other option 1').
+  - Step 7: Attempt to press the button 'Save'.
+expectedResult: The system displays a notification that a compulsory field is missing and prompts the Admin to fill in the missing field.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the system's validation mechanism for compulsory fields during the creation of a selection test question, which is a critical part of ensuring data integrity and functionality.
+
+Test Case: Test Case 3
+testCaseName: Cancel the creation of a selection test question and choose to stay
+objective: Verify that an admin can cancel the creation of a selection test question and choose to stay on the page.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Access the 'Lesson Management' page and select a Lesson and Topic.
+  - Step 3: Choose a word and press 'Add new question'.
+  - Step 4: Select 'Create questions for the selection test' and fill in all fields.
+  - Step 5: Press the button 'Cancel'.
+  - Step 6: In the confirmation dialog, select the option 'Stay'.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the entered information preserved.
+reflect: yes
+explanation: This test case reflects the given test scenario by verifying the functionality of the cancel operation during the creation process of a selection test question, ensuring that users can opt to stay and make changes instead of losing their progress.
+

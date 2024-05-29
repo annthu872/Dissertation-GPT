@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Successful Registration with Username and Password
+objective: Verify that a learner can successfully register using a valid username and password
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).
+  - Step 3: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the username).
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successful registration by ensuring that a learner can register with a valid username and password.
+
+Test Case: Test Case 2
+testCaseName: Successful Registration with Email
+objective: Verify that a learner can successfully register using a valid email
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to register by email.
+  - Step 3: Fill in the email field with a valid email (an existing email with the right format).
+  - Step 4: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the email).
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration using email.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing an alternative registration method (email) and ensuring successful registration.
+

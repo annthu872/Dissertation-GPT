@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Review with Meaning Method - Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the meaning method for a word.
+  - Step 5: Choose the correct meaning by clicking on one of the four selections.
+  - Step 6: Click the right answer.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, a green word should be displayed, indicating the word's memory level has been increased.
+reflect: yes
+explanation: This test case directly tests the given test scenario by verifying the system's behavior when the correct answer is selected using the meaning method. It aligns with the objective of increasing the memory level of a word upon correct selection.
+
+Test Case: Test Case 2
+testCaseName: Review with Meaning Method - Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the meaning method for a word.
+  - Step 5: Choose the wrong meaning by clicking on one of the four selections.
+  - Step 6: Click the wrong answer.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the system's behavior when an incorrect answer is selected using the meaning method, which is an essential part of the review process.
+

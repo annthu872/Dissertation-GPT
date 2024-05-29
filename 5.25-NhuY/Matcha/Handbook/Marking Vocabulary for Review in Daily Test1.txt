@@ -1,0 +1,24 @@
+Test Case: Test Case 4
+testCaseName: Excluding Vocabulary from Review Test
+objective: Verify that learners can exclude specific vocabulary from appearing in the review test.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Untick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's marking of the vocabulary.
+expectedResult: The system marks the unticked vocabulary as not to appear in the daily review test.
+reflect: yes
+explanation: This test case directly tests the functionality of excluding vocabulary from the review test, which is the core action in the given test scenario.
+
+Test Case: Test Case 5
+testCaseName: Including Vocabulary in Review Test
+objective: Verify that learners can include specific vocabulary to appear in the review test.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Tick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's marking of the vocabulary.
+expectedResult: The system marks the ticked vocabulary to appear in the daily review test.
+reflect: yes
+explanation: This test case directly addresses the process of marking vocabulary for inclusion in the review test, aligning perfectly with the given test scenario.
+

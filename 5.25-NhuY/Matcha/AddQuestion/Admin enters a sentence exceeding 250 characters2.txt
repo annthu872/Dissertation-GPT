@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Admin enters a sentence exceeding 250 characters
+objective: Verify that the system prompts an error when an admin enters a sentence exceeding 250 characters in the 'sentence' field while creating a question for the selection test.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, enter a sentence exceeding 250 characters that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system should display a notification that the sentence exceeds the maximum character limit and prompt the Admin to enter a valid sentence.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's behavior when an admin attempts to enter a sentence exceeding the specified character limit in the 'sentence' field during the creation of a question for the selection test. It includes all necessary steps to replicate the scenario and checks for the expected error message, thus accurately reflecting the given test scenario.
+

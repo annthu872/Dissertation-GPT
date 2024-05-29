@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Learner chooses to 'continue studying' after completing a topic
+objective: Verify that after completing a topic, the learner can choose to 'continue studying' and is redirected to the Flashcard page for the continuous topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Study all the flashcards in the topic by clicking 'Next' to go through each flashcard and clicking on the flashcard to flip it.
+  - Step 6: Once all flashcards have been studied, click the 'Next' button on the last flashcard to be redirected to the 'completion notification' page.
+  - Step 7: On the 'completion notification' page, click the 'continue studying' button.
+expectedResult: The learner is redirected to the Flashcard page for the continuous topic, indicating the topic has been marked as completed and the vocabulary words have been marked as studied.
+explanation: This test case ensures that learners can seamlessly continue their study journey by moving on to the next topic after completing one, as per the alternative flow 2 of the use case specification.
+

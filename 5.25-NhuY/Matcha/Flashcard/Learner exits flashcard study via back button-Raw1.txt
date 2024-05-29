@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify learner can exit flashcard study via back button and choose to stay
+objective: Ensure that when a learner presses the back button during flashcard study and chooses 'stay', they are kept on the current flashcard page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: On the Flashcard page, press the 'back' button on the browser or device.
+  - Step 6: In the exit confirmation dialog box, click 'stay'.
+expectedResult: The learner remains on the current flashcard page, allowing them to continue studying without interruption.
+explanation: This test case ensures that the application correctly handles the scenario where a learner accidentally or intentionally presses the back button but decides to continue studying. It is directly related to the alternative flow 1 of the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify learner can exit flashcard study via back button and choose to exit
+objective: Ensure that when a learner presses the back button during flashcard study and chooses 'exit', they are redirected to the topic page with the topic marked as incomplete.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: On the Flashcard page, press the 'back' button on the browser or device.
+  - Step 6: In the exit confirmation dialog box, click 'exit'.
+expectedResult: The learner is redirected to the topic page, and the topic is marked as incomplete, which will be displayed on the home page for later completion.
+explanation: This test case verifies the application's behavior when a learner chooses to exit the flashcard study session via the back button, aligning with the exception flow 1 of the use case. It ensures that the topic is correctly marked as incomplete for future study.
+

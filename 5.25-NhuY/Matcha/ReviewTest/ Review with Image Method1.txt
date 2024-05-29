@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Review with Image Method - Correct Answer
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the image method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the image method for a word in the learner's daily review words list.
+  - Step 5: Choose the correct answer by clicking on one of the four selections.
+  - Step 6: Click the right answer.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, the system should show a green word indicating the correct choice and increase the memory level of the word.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a correct answer is selected using the image method, focusing on the memory level increase.
+
+Test Case: Test Case 2
+testCaseName: Review with Image Method - Wrong Answer
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the image method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system randomly selects the image method for a word in the learner's daily review words list.
+  - Step 5: Choose the wrong answer by clicking on one of the four selections.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should show a red word indicating the incorrect choice and decrease the memory level of the word.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by verifying the system's behavior when a wrong answer is selected using the image method, focusing on the memory level decrease.
+
+Test Case: Test Case 3
+testCaseName: Review with Image Method - Completion
+objective: Verify that the system saves the review and updates the vocabulary status upon completion of the review session using the image method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Complete the review session by going through all words in the list using the image method, selecting answers for each.
+  - Step 5: After reviewing the last word, press the 'Continue' button to finish the review session.
+expectedResult: Upon completion of the review session, the system should redirect the learner to the Home page and save the review, updating the status of the vocabulary accordingly.
+reflect: yes
+explanation: This test case reflects the given test scenario by ensuring the system correctly saves and updates the vocabulary status upon completion of a review session using the image method, although it focuses more on the completion process rather than the immediate effect of right or wrong answers.
+

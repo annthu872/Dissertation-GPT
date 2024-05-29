@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Direct Save
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the direct save option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test to be edited and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Click the 'Save' button to save the edited exercises.
+expectedResult: The system should save all edited exercises, and the changes should be reflected immediately.
+reflect: yes
+explanation: This test case directly tests the given scenario by verifying the ability of an administrator to edit and directly save changes to vocabulary exercises, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Confirmation Dialog
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the confirmation dialog.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test to be edited and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen, select 'Save' to confirm saving the changes.
+expectedResult: The system should save all edited exercises, and the changes should be reflected immediately, confirming the successful save through the confirmation dialog.
+reflect: yes
+explanation: This test case reflects the given scenario by testing an alternative method of saving edits (via confirmation dialog), which is a valid part of the editing and saving process for vocabulary exercises.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify successful lesson and topic selection with flashcard review completion
+objective: Ensure that a learner can successfully select a lesson and topic, review all flashcards, and receive a completion notification.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list of available lessons.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Review all flashcards in the topic by clicking on the flashcard to flip it and view the back, then click the 'Next' button to go to the next vocabulary word.
+  - Step 6: Continue reviewing until the last flashcard, then click the 'Next' button on the last flashcard.
+  - Step 7: Click 'return to the lesson page' on the 'completion notification' page.
+expectedResult: After completing the review of all flashcards, the learner should be redirected to a 'completion notification' page with a congratulatory message. Upon clicking 'return to the lesson page', the system should redirect the learner to the lesson page.
+explanation: This test case verifies the entire process of selecting a lesson and topic, reviewing flashcards, and confirming completion as described in the basic flow of the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation to next flashcard and back to previous flashcard
+objective: Ensure that a learner can navigate to the next flashcard and back to the previous flashcard within a topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to a topic by following steps 2 to 6 from the basic flow.
+  - Step 3: Click on the 'Next' button to move to the next flashcard.
+  - Step 4: Click on the 'Previous' button to return to the previous flashcard.
+expectedResult: The learner should be able to navigate to the next flashcard and back to the previous flashcard without any issues. The 'Previous' button on the first flashcard should be disabled.
+explanation: This test case ensures that the navigation buttons 'Next' and 'Previous' function correctly within the flashcard review process.
+
+Test Case: Test Case 3
+testCaseName: Verify completion notification and options after reviewing all flashcards
+objective: To confirm that upon completing the review of all flashcards in a topic, the learner receives a completion notification with options to 'continue studying' or 'return to the lesson page'.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Complete the review of all flashcards in a topic by following steps 2 to 6 from the basic flow.
+  - Step 3: On the 'completion notification' page, observe the options provided.
+expectedResult: The learner should see a congratulatory message along with option buttons to 'continue studying' and 'return to the lesson page'.
+explanation: This test case verifies that the system correctly marks a topic as completed and provides appropriate options to the learner, as described in the basic flow and alternative flows of the use case specification.
+

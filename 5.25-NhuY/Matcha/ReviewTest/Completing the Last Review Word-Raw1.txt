@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Completing a review with correct answers
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer and navigates through the review process successfully.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: On the review screen, wait for the system to present a word with four selections of answers.
+  - Step 4: Choose the correct answer by clicking on one of the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+  - Step 6: Repeat steps 3 to 5 until the last word in the review words list is reached.
+  - Step 7: After completing the last word, press the 'Continue' button to go back to the Home page.
+expectedResult: For each correct answer, the system shows a green word indicating the correct selection and increases the memory level of the word. After completing the last review word, the system should save the review and redirect the learner to the Home page.
+explanation: This test case ensures that the system behaves as expected when a learner correctly answers review questions, including the correct handling of the memory level adjustment and navigation through the review process.
+
+Test Case: Test Case 2
+testCaseName: Completing a review with incorrect answers
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer and allows the learner to continue the review process.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: On the review screen, wait for the system to present a word with four selections of answers.
+  - Step 4: Choose the wrong answer by clicking on one of the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+  - Step 6: Repeat steps 3 to 5 until the last word in the review words list is reached.
+  - Step 7: After completing the last word, press the 'Continue' button to go back to the Home page.
+expectedResult: For each wrong answer, the system shows a red word indicating the incorrect selection and decreases the memory level of the word. After completing the last review word, the system should save the review and redirect the learner to the Home page.
+explanation: This test case verifies the system's behavior when a learner incorrectly answers review questions, focusing on the memory level adjustment and the continuation of the review process.
+
+Test Case: Test Case 3
+testCaseName: Exiting and saving the review midway through
+objective: Verify that the system does not save the review progress if a learner chooses to exit the review midway through and confirms the exit.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: On the review screen, press the 'Exit' button before completing all review words.
+  - Step 4: On the pop-up, select the 'Confirm' button to exit the review.
+  - Step 5: Verify that the system redirects the learner to the Home page.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress, maintaining the original memory levels and review status of the vocabulary.
+explanation: This test case checks the system's handling of an early exit from the review process, ensuring that the review progress is not saved and the learner is redirected appropriately.
+

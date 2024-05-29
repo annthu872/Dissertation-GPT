@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Navigation to Previous Flashcard
+objective: Verify that the learner can navigate to the previous flashcard after moving to the next one
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: On the Flashcard page, view the first flashcard and click on it to flip and view the back.
+  - Step 6: Click the 'Next' button to go to the flashcard of the next vocabulary word.
+  - Step 7: Click the 'Previous' button to go back to the previous flashcard.
+expectedResult: The system should display the previous flashcard, showing the front side with the vocabulary name, pronunciation, and Vietnamese meaning.
+explanation: This test case ensures that learners can navigate back to a previously viewed flashcard, which is crucial for effective learning and review. It directly matches the scenario name by testing the navigation to a previous flashcard.
+
+Test Case: Test Case 2
+testCaseName: Navigation to Previous Flashcard on the First Flashcard
+objective: Verify that the 'Previous' button is disabled when the learner is on the first flashcard
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: On the Flashcard page, view the first flashcard and click on it to flip and view the back.
+  - Step 6: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button should be disabled, and no action should be taken by the system.
+explanation: This test case verifies the functionality of the 'Previous' button when the learner is viewing the first flashcard, ensuring that the application prevents navigation to a non-existent previous flashcard. It is related to the scenario by focusing on the navigation to a previous flashcard, specifically when such navigation is not applicable.
+

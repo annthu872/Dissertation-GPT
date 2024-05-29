@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a question for the selection test
+objective: Ensure that an admin can successfully create a question for the selection test with all required fields filled correctly
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the field 'sentence' with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question is visible.
+explanation: This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are properly filled out.
+
+Test Case: Test Case 2
+testCaseName: Verify system behavior when 'sentence' field is skipped
+objective: To check if the system prompts the admin to fill the missing 'sentence' field when trying to save a question for the selection test without it
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Choose a Lesson and then a Topic within that Lesson.
+  - Step 4: Select a word from the vocabulary list to create a question for.
+  - Step 5: Initiate the process to 'Add new question' for the selection test.
+  - Step 6: Leave the 'sentence' field empty, but fill in all other required fields correctly.
+  - Step 7: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'sentence' field.
+explanation: This test case verifies that the system correctly identifies and prompts for the completion of the compulsory 'sentence' field if it is skipped.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation and staying on the question creation page
+objective: Ensure that an admin can cancel the question creation process and choose to stay on the page to continue working on it
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Proceed through the steps to add a new question for a word in a topic.
+  - Step 3: Fill in all required fields for the question.
+  - Step 4: Press the 'Cancel' button.
+  - Step 5: On the dialog 'Are you sure you want to cancel the question?', press the 'Stay' button.
+expectedResult: The cancellation dialog closes, and the admin remains on the question creation page with all previously entered information intact.
+explanation: This test case checks the functionality of the cancellation process, ensuring that admins can opt to stay and continue working on the question without losing entered data.
+

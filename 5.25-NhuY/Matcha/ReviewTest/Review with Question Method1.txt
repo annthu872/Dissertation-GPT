@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Review with Question Method - Correct Answer Flow
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Answer a question correctly by clicking on the right one of the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, the system should display a green word indicating the correct choice and increase the memory level of the word.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a correct answer is selected during a review session, specifically the increase in the memory level of the word.
+
+Test Case: Test Case 2
+testCaseName: Review with Question Method - Incorrect Answer Flow
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Answer a question incorrectly by clicking on the wrong one of the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display a red word indicating the incorrect choice and decrease the memory level of the word.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by verifying the system's behavior when an incorrect answer is selected during a review session, specifically the decrease in the memory level of the word.
+

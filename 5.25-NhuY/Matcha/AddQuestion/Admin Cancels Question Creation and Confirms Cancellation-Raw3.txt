@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Admin Cancels Question Creation and Chooses to Stay
+objective: Verify that the admin can cancel the question creation process and choose to stay on the page to continue working on it.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: Begin to fill in the fields for creating a new question but do not complete.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, press the 'Stay' button.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered information intact.
+explanation: This test case ensures that when an admin decides to cancel the creation of a new question but then chooses to stay, their work is not lost, and they can continue editing the question.
+
+Test Case: Test Case 2
+testCaseName: Admin Cancels Question Creation and Confirms Cancellation
+objective: Verify that the admin can cancel the question creation process and confirm the cancellation, leading to the loss of entered data.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: Begin to fill in the fields for creating a new question but do not complete.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.
+explanation: This test case verifies that the cancellation process works as intended, allowing admins to cancel the creation of a new question and confirming their decision leads to the expected redirection without saving the question.
+

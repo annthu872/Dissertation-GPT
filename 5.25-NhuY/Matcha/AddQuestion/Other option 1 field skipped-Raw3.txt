@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Create a valid selection test question
+objective: Verify that an admin can successfully create a selection test question with all required fields filled correctly.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+explanation: This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out.
+
+Test Case: Test Case 2
+testCaseName: Attempt to create a question with 'sentence' field skipped
+objective: Verify that the system prompts an admin to fill the 'sentence' field if it is skipped.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' and select a lesson, topic, and word as in Test Case 1.
+  - Step 3: Press the button 'Add new question' and select 'Create questions for the selection test'.
+  - Step 4: Skip the 'sentence' field and fill the other required fields.
+  - Step 5: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.
+explanation: This test case verifies the system's validation for the 'sentence' field to ensure it is not skipped, aligning with the use case requirements.
+
+Test Case: Test Case 3
+testCaseName: Attempt to create a question with 'correct answer' field skipped
+objective: Verify that the system prompts an admin to fill the 'correct answer' field if it is skipped.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Follow the steps to navigate to the 'Add new question for selection test' page as described in Test Case 1.
+  - Step 3: Fill all required fields except for the 'correct answer'.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.
+explanation: This test case checks the system's validation for the 'correct answer' field to ensure it is not skipped, which is crucial for the integrity of the selection test question.
+
+Test Case: Test Case 4
+testCaseName: Attempt to create a question with one of the 'other options' fields skipped
+objective: Verify that the system prompts an admin to fill all 'other options' fields if any is skipped.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Proceed to the 'Add new question for selection test' page as per the previous test cases.
+  - Step 3: Fill all required fields except for one of the 'other options' fields ('other option 1', 'other option 2', or 'other option 3').
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other options' field.
+explanation: This test case ensures that the system enforces the requirement for all 'other options' fields to be filled, which are essential for creating a valid selection test question.
+

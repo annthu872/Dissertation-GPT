@@ -1,0 +1,66 @@
+Test Case: Test Case 1
+testCaseName: Successful Login with Username
+objective: Verify that a learner can successfully log in using a registered username and correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Fill in the password field with the correct password for the corresponding username.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+explanation: This test case verifies the main flow of the login process, ensuring that users can log in with valid credentials.
+
+Test Case: Test Case 2
+testCaseName: Successful Login with Email
+objective: Verify that a learner can successfully log in using a registered email and correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered email.
+  - Step 3: Fill in the password field with the correct password for the corresponding email.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+explanation: This test case verifies the alternative flow of the login process, allowing users to log in using their email.
+
+Test Case: Test Case 3
+testCaseName: Login with Wrong Password
+objective: Verify that the system shows a notification for wrong password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password is wrong.
+explanation: This test case checks the exception flow for entering a wrong password, ensuring the system notifies the user appropriately.
+
+Test Case: Test Case 4
+testCaseName: Login with Unregistered Username
+objective: Verify that the system shows a notification for unregistered username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with an unregistered username.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that this username is not registered yet.
+explanation: This test case ensures the system correctly notifies the user when attempting to log in with an unregistered username.
+
+Test Case: Test Case 5
+testCaseName: Login with Blank Username Field
+objective: Verify that the system shows a notification for blank username field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the username field needs to be filled.
+explanation: This test case checks the exception flow for leaving the username field blank, ensuring the system prompts the user to fill it.
+
+Test Case: Test Case 6
+testCaseName: Login with Blank Password Field
+objective: Verify that the system shows a notification for blank password field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password field needs to be filled.
+explanation: This test case checks the exception flow for leaving the password field blank, ensuring the system prompts the user to fill it.
+

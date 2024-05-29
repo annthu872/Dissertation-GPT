@@ -1,0 +1,15 @@
+Test Case: Test Case 2
+testCaseName: Verify system behavior when 'sentence' field is skipped
+objective: To check if the system prompts the admin to fill the missing 'sentence' field when trying to save a question for the selection test without it
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Choose a Lesson and then a Topic within that Lesson.
+  - Step 4: Select a word from the vocabulary list to create a question for.
+  - Step 5: Initiate the process to 'Add new question' for the selection test.
+  - Step 6: Leave the 'sentence' field empty, but fill in all other required fields correctly.
+  - Step 7: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'sentence' field.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the system's behavior when the 'sentence' field is skipped during the question creation process for the selection test.
+

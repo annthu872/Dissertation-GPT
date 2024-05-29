@@ -1,0 +1,17 @@
+Test Case: Test Case 2
+testCaseName: Verify system behavior when 'other option 1' field is skipped
+objective: To check if the system prompts the admin to fill the 'other option 1' field when it is skipped and ensures the question is not saved until the field is filled.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson and then a Topic from the lists provided.
+  - Step 4: Choose a word from the vocabulary list to create a question for.
+  - Step 5: Initiate adding a new question by pressing 'Add new question'.
+  - Step 6: Choose 'Create questions for the selection test' option.
+  - Step 7: Fill in the 'sentence' and 'correct answer' fields appropriately.
+  - Step 8: Leave the 'other option 1' field empty, but fill in 'other option 2' and 'other option 3' fields.
+  - Step 9: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 1' field. The question is not saved until the field is filled.
+reflect: yes
+explanation: This test case directly reflects the given test scenario ('Other option 1 field skipped') by specifically testing the system's behavior when the 'other option 1' field is skipped during question creation for a selection test. The objective, test steps, and expected result align with verifying the system's validation and error handling for the skipped field.
+

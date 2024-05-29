@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Admin enters a valid sentence without special characters
+objective: Verify that the system allows the admin to save a question when a valid sentence without special characters is entered
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...', but does not contain any special characters.
+  - Step 9: Fill the 'correct answer' and the three 'other option' fields with appropriate words.
+  - Step 10: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the admin to the 'Word Information' page of the selected word.
+explanation: This test case ensures that the system correctly handles valid input without special characters for question creation.
+
+Test Case: Test Case 2
+testCaseName: Admin enters a sentence with special characters
+objective: Verify that the system prevents saving a question when the sentence contains special characters
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that includes special characters.
+  - Step 9: Fill the 'correct answer' and the three 'other option' fields with appropriate words.
+  - Step 10: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field without special characters.
+explanation: This test case verifies that the system enforces the rule against special characters in sentences for question creation.
+

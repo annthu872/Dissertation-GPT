@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Scroll Through Vocabulary List
+objective: Verify that the learner can scroll through the vocabulary list in the Handbook tab.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the list of vocabulary displayed.
+  - Step 4: Use the scroll bar to scroll through the list.
+expectedResult: The learner should be able to scroll through the entire list of vocabulary, viewing more vocabulary as they scroll.
+reflect: yes
+explanation: This test case directly tests the given scenario by verifying the scrolling functionality within the vocabulary list in the Handbook tab.
+

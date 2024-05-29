@@ -1,0 +1,57 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a question for the selection test with all fields filled correctly
+objective: Ensure that the admin can successfully create a question for the selection test by filling all required fields correctly and saving it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question is visible.
+explanation: This test case verifies that the system correctly handles the creation of a new question for the selection test when all required fields are filled out correctly, aligning with the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify system behavior when 'sentence' field is skipped
+objective: To ensure that the system prompts the admin to fill the missing 'sentence' field when attempting to save a question for the selection test without it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson and then a Topic from the lists provided.
+  - Step 4: Choose a word from the vocabulary list and press 'Add new question'.
+  - Step 5: Select the option to 'Create questions for the selection test'.
+  - Step 6: Leave the 'sentence' field empty, but fill in the 'correct answer' and 'other options' fields.
+  - Step 7: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.
+explanation: This test case checks the system's validation for the 'sentence' field to ensure that it cannot be skipped, as per the alternative flow 2 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Verify system behavior when 'correct answer' field is skipped
+objective: To check if the system correctly prompts the admin to fill the missing 'correct answer' field when it is skipped.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Access the 'Lesson Management' page and select a Lesson and a Topic.
+  - Step 3: Choose a word to create a question for and press 'Add new question'.
+  - Step 4: Opt to 'Create questions for the selection test'.
+  - Step 5: Fill all fields except for the 'correct answer' field.
+  - Step 6: Press the 'Save' button.
+expectedResult: A notification appears stating that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.
+explanation: This test case ensures that the system enforces the requirement for the 'correct answer' field, following the alternative flow 3.
+
+Test Case: Test Case 4
+testCaseName: Verify system behavior when 'other option 3' field is skipped
+objective: To verify that the system prompts the admin to fill the 'other option 3' field if it is skipped during question creation.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Go to 'Lesson Management', select a Lesson, then a Topic, and finally a word.
+  - Step 3: Click on 'Add new question' and choose to 'Create questions for the selection test'.
+  - Step 4: Fill in all required fields except for 'other option 3'.
+  - Step 5: Try to save the question by pressing the 'Save' button.
+expectedResult: The system alerts that 'Admin did not fill all the fields', specifically pointing out the missing 'other option 3' field.
+explanation: This test case checks the system's handling of incomplete question submissions, particularly when the 'other option 3' field is omitted, as described in alternative flow 6.
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Administrator exits editing mode without saving changes
+objective: Verify that the system deletes and does not record the edited exercises when the administrator exits editing mode without saving.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Edit the exercises as required.
+  - Step 5: Press the button to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Do not save'.
+expectedResult: The system should not save the changes made to the exercises, effectively discarding any edits made during the session.
+explanation: This test case ensures that when an administrator decides not to save the changes made to a test, the system respects this choice and does not record the edits. It directly tests the exception flow of the use case where the administrator exits editing mode without saving.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Learners choose the wrong answer during review
+objective: Verify that when learners choose the wrong answer, the system shows a red word, decreases the memory level of the word, and allows continuation to the next word
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: Engage with the review by waiting for the system to present a word with four selections of answers.
+  - Step 5: Intentionally choose the wrong answer from the four selections.
+  - Step 6: Observe the feedback provided by the system.
+  - Step 7: Press the 'Continue' button to proceed to the next word.
+expectedResult: After choosing the wrong answer, the system should display a red word indicating the mistake, decrease the memory level of the word, and allow the learner to press 'Continue' to move to the next word.
+explanation: This test case directly addresses the scenario of learners choosing the wrong answer by following the alternative flow 1. It ensures that the system behaves as expected when a wrong answer is selected, including the visual feedback and the adjustment of the word's memory level.
+
+Test Case: Test Case 2
+testCaseName: Learners choose the wrong answer and reach the last word in the review list
+objective: Verify that after choosing the wrong answer for the last word in the review list, the system shows a red word, decreases the memory level, and redirects learners back to the Home page.
+testSteps:
+  - Step 1: Log in as a learner with only one word left in the review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: Engage with the review by waiting for the system to present the last word with four selections of answers.
+  - Step 5: Intentionally choose the wrong answer from the four selections for the last word.
+  - Step 6: Observe the feedback provided by the system.
+  - Step 7: Press the 'Continue' button.
+expectedResult: After choosing the wrong answer for the last word, the system should display a red word indicating the mistake, decrease the memory level of the word, and then redirect the learner back to the Home page as the review session is completed.
+explanation: This test case combines the alternative flow 1 (choosing the wrong answer) with alternative flow 2 (reaching the last word in the review list). It tests the system's behavior in handling the end of a review session when the last answer selected is wrong.
+

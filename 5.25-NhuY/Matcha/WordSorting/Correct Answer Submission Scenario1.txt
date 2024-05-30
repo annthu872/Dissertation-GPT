@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Correct Answer Submission
+objective: Verify that the system correctly identifies and accepts a correct answer submission from the learner.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word with its letters arranged randomly.
+  - Step 4: Arrange the letters in the correct order by clicking on the letter buttons and press enter after finishing.
+expectedResult: A green pop-up screen should appear, indicating that the answer is correct.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's ability to recognize and accept a correct answer submission. The steps lead to a situation where a correct answer is submitted, and the expected result is a green pop-up screen, which is a direct indication of success in the context of the scenario.
+

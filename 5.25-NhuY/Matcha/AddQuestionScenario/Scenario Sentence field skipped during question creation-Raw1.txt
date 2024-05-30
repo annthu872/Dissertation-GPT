@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify skipping 'Sentence' field during question creation
+objective: Ensure the system prompts for missing 'Sentence' field when creating a selection test question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data, but leave the 'sentence' field empty.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+explanation: This test case ensures that the system correctly validates the presence of the 'sentence' field, which is compulsory for creating a selection test question. It directly relates to the scenario of skipping the 'Sentence' field during question creation.
+
+Test Case: Test Case 2
+testCaseName: Verify successful question creation without skipping fields
+objective: Ensure the system allows for successful question creation when all fields are filled
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in all fields ('sentence', 'correct answer', 'other option 1', 'other option 2', 'other option 3') with valid data.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system saves the question and redirects Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+explanation: This test case verifies that the system functions as expected when all compulsory fields are filled out correctly, without skipping any, especially the 'Sentence' field. It serves as a positive test case against the scenario of skipping fields.
+

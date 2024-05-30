@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify learner can exit review session before selecting an answer
+objective: Ensure that learners can exit the review session by pressing the 'Exit' button before selecting any answer and confirm to exit, and the review progress is not saved.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: On the Home page, select the review button.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: Observe a question, sound, image, or meaning displayed with four selections of answer at the bottom of the screen.
+  - Step 5: Press the 'Exit' button before selecting any of the four answer options.
+  - Step 6: On the pop-up, choose the 'Confirm' button to exit the review session.
+expectedResult: The learner is redirected to the Home page without the review progress being saved.
+explanation: This test case is designed to verify that learners can exit the review session at any point before making a selection and ensure that their progress is not saved, aligning with the exception flow 1 of the use case specification.
+

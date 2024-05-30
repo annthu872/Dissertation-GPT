@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify skipping 'other option 1' field displays correct notification
+objective: Ensure the system prompts Admin to fill the missing 'other option 1' field when attempting to save a question without it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list on the 'Lesson Information' page.
+  - Step 5: Select a word from the vocabulary word list on the 'Topic Information' page.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Leave the 'other option 1' field empty.
+  - Step 11: Fill in the 'other option 2' and 'other option 3' fields with different wrong answers.
+  - Step 12: Press the 'Save' button.
+expectedResult: A notification appears stating 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 1' field.
+reflect: yes
+explanation: This test case directly addresses the scenario of skipping the 'other option 1' field. It follows a logical sequence of steps that an Admin would take when adding a new question and intentionally leaves out the 'other option 1' field to test the system's response. The expected result of receiving a notification to fill the missing field confirms that this test case accurately reflects the given test scenario.
+

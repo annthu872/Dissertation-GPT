@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Admin Decides to Cancel but Then Chooses to Stay and Continue Editing
+objective: Verify that when an admin decides to cancel the creation of a question but then chooses to stay, they can continue editing the question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Cancel'.
+  - Step 12: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+  - Step 13: Make any additional changes to the question if needed.
+  - Step 14: Press the button 'Save'.
+expectedResult: The system should keep the admin on the 'Add new question for selection test' page with all previously entered information intact, allowing the admin to continue editing and then successfully save the question.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a sequence of actions where an admin initiates the cancellation of a question creation but then decides to stay and continue editing. The steps provided guide the tester through the process of creating a question, attempting to cancel, choosing to stay, making further edits, and finally saving the question. The expected result confirms that the system behaves as intended by allowing the admin to retain all previously entered information and continue editing, which is the core functionality being tested in the scenario.
+

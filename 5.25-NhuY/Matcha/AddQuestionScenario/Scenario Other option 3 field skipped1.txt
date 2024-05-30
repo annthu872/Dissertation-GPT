@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify skipping 'other option 3' field shows prompt
+objective: To ensure the system prompts the user when 'other option 3' field is skipped and prevents saving the question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in the 'other option 1' field with a wrong answer.
+  - Step 11: Fill in the 'other option 2' field with a wrong answer.
+  - Step 12: Leave the 'other option 3' field empty.
+  - Step 13: Press the button 'Save'.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 3' field.
+reflect: yes
+explanation: This test case directly addresses the scenario of skipping the 'other option 3' field. It includes steps that lead to the situation where this field is left empty and checks for the system's response to this action. The expected result is aligned with the scenario's requirement for the system to prompt the user about the missing field, thus reflecting the given test scenario accurately.
+

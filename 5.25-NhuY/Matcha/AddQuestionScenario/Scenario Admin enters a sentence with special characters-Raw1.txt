@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Admin enters a sentence with special characters for selection test question
+objective: Verify that the system prevents the admin from saving a question if the sentence contains special characters
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that includes special characters (e.g., 'This is a test sentence with special characters @#$%^&*').
+  - Step 9: Fill the 'correct answer' and the 'other option' fields with valid data.
+  - Step 10: Press the button 'Save'.
+expectedResult: System shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field without special characters.
+explanation: This test case ensures that the system enforces the rule that sentences in selection test questions must not contain any special characters, as per the use case specification.
+

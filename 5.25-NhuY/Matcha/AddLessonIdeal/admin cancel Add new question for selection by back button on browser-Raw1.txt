@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Admin Cancels Adding New Question for Selection Test Using Browser Back Button
+objective: Ensure that when an admin uses the browser's back button during the process of adding a new question for a selection test, the action cancels the addition and no new question is saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted by the system.
+  - Step 8: Begin filling out the fields for the new question but do not press 'Save'.
+  - Step 9: Use the browser's back button to attempt to navigate away from the 'Add new question for selection test' page.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+explanation: This test case ensures that the system correctly handles the scenario where an admin decides to cancel the creation of a new question for a selection test by using the browser's back button, aligning with the exception flow described.
+
+Test Case: Test Case 2
+testCaseName: Verify Admin Cancels Adding New Question for Selection Test and Chooses to Stay
+objective: To verify that when an admin cancels the addition of a new question for a selection test and then chooses to stay, the system does not discard the entered information.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted by the system.
+  - Step 8: Begin filling out the fields for the new question.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, choose the 'Stay' option.
+expectedResult: The dialog should close, and the admin should remain on the 'Add new question for selection test' page with all previously entered information intact.
+explanation: This test case verifies the system's behavior when an admin decides to cancel the creation of a new question but then chooses to continue working on it, as described in alternative flow 7.
+

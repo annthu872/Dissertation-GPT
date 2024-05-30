@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 2' field
+objective: Ensure the system prompts an error when 'other option 2' field is left empty while adding a new question for the selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted to select the type of question.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with another different wrong answer word.
+  - Step 13: Press the 'Save' button to attempt saving the question.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+explanation: This test case is designed to verify that the system enforces the requirement of filling all compulsory fields, specifically 'other option 2', when creating a new question for the selection test. It directly addresses the scenario where an admin attempts to add a new question with an empty 'other option 2' field, ensuring the system's data validation functionality is working as expected.
+

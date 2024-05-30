@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Successfully add a new question for selection test with all valid fields
+objective: Verify that an admin can successfully add a new question for a selection test with all required fields filled correctly
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different incorrect words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+explanation: This test case ensures that the system correctly handles the creation of a new question for a selection test when all required fields are filled out correctly by the admin. It verifies the system's ability to validate and store the input data in the database, and to display the newly added question appropriately.
+

@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 3' field
+objective: Ensure the system prevents adding a new question for the selection test if the 'other option 3' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' and 'other option 2' fields with different wrong answer words.
+  - Step 11: Leave the 'other option 3' field empty.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 3' field.
+explanation: This test case ensures that the system enforces the rule that all compulsory fields, including 'other option 3', must be filled before a new question for the selection test can be added. It directly tests the system's response to the scenario where the 'other option 3' field is left empty, which is aligned with the specified test scenario.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test and chooses to stay
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and choose to stay on the page to continue editing
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, press the 'Stay' button.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the work on that question kept.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the admin's ability to cancel the process of adding a new question for a selection test and choose to stay on the page, ensuring their work is not lost.
+
+Test Case: Test Case 2
+testCaseName: Admin cancels adding a new question for selection test and confirms cancellation
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and confirm the cancellation to return to the 'Word Information' page
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing the alternative outcome where the admin cancels the addition of a new question for a selection test and confirms the cancellation, leading to no changes being saved and a return to the previous page.
+

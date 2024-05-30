@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question with 'sentence' field over 250 characters
+objective: Ensure the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains more than 250 characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, input a sentence that is more than 250 characters long and includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that the 'sentence' is invalid due to exceeding 250 characters and prevent the question from being saved.
+explanation: This test case ensures that the system enforces the rule that sentences in questions for the selection test must not exceed 250 characters, as per the use case specification. It directly tests the system's ability to validate input data according to specified requirements.
+

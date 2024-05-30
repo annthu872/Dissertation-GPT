@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Verify admin can cancel adding a new question for selection test by using browser back button
+objective: Ensure that the admin can cancel the process of adding a new question for a selection test by navigating back using the browser's back button, and verify that the question is not saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by clicking on the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: On the 'Word Information' page, click on the 'Add new question' button.
+  - Step 7: On the pop-up dialog, choose the option 'Create questions for the selection test'.
+  - Step 8: On the 'Add new question for selection test' page, fill in all the required fields with valid data.
+  - Step 9: Use the browser's back button to navigate back to the 'Word Information' page.
+expectedResult: The system should navigate back to the 'Word Information' page without saving the question. The new question should not appear in the list of questions for the selected word.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the browser's back button to cancel the addition of a new question for a selection test. It ensures that the action does not save the question, which is the main objective of the test scenario.
+

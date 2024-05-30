@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test and chooses to stay
+objective: Verify that when an admin cancels the action of adding a new question for a selection test and chooses to stay, the system keeps the work on that question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence, 'correct answer' with the correct word, and 'other option 1', 'other option 2', 'other option 3' with different wrong answers.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+expectedResult: The dialog closes and the admin remains on the 'Add new question for selection test' page with the previously entered information still displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the functionality of cancelling the addition of a new question for a selection test and choosing to stay, ensuring that the work is not lost.
+
+Test Case: Test Case 2
+testCaseName: Admin cancels adding a new question for selection test and confirms cancellation
+objective: Verify that when an admin cancels the action of adding a new question for a selection test and confirms the cancellation, the system does not save the question and redirects the admin to the 'Word Information' page.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence, 'correct answer' with the correct word, and 'other option 1', 'other option 2', 'other option 3' with different wrong answers.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Confirm'.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word and the question is not saved.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by testing the functionality of cancelling the addition of a new question for a selection test and confirming the cancellation, ensuring that the system behaves as expected by not saving the question and redirecting the admin.
+

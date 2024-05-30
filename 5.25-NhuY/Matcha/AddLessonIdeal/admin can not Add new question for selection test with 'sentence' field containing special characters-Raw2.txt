@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question with special characters in 'sentence' field
+objective: Ensure that the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains special characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list.
+  - Step 4: Select a topic from the topic list of the selected lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a sentence that includes special characters (e.g., '@#$%').
+  - Step 9: Fill in the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system displays a notification that 'Sentence is invalid', preventing the admin from saving the question.
+explanation: This test case ensures that the system enforces the rule that sentences in questions for the selection test must not contain any special characters, as per the use case specification.
+

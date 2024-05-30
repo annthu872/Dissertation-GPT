@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test but chooses to stay
+objective: Verify that when an admin cancels the process of adding a new question for a selection test and chooses to stay, the system retains the entered information and does not navigate away from the 'Add new question for selection test' page.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: On the 'Add new question for selection test' page, fill in the 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, choose the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data retained.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality where an admin cancels the addition of a new question but chooses to stay on the page. It checks if the system behaves as expected by not discarding the entered data and not navigating away from the 'Add new question for selection test' page, which is the core objective of the given test scenario.
+

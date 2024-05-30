@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 2' field
+objective: Ensure the system prompts an error when 'other option 2' field is left empty while adding a new question for the selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with a different wrong answer word.
+  - Step 13: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with the 'other option 2' field left empty, which is the exact condition the scenario aims to test. The steps lead to a situation where the system's response to this specific missing field is observed, making it a perfect reflection of the given test scenario.
+

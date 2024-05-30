@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test but decides to stay
+objective: Verify that when an admin cancels the process of adding a new question for a selection test and chooses to stay, the work on that question is kept and not lost.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill in the fields 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' with valid data.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact.
+explanation: This test case ensures that if an admin accidentally or intentionally presses cancel while adding a new question but decides to stay, their work is not lost, allowing them to continue without re-entering data.
+

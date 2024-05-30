@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with 'sentence' field not containing '...'
+objective: Ensure the system prevents adding a new question for the selection test if the 'sentence' field does not include '...'
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that does not contain '...', fill in the 'correct answer' field with the correct word, and fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field with '...'.
+explanation: This test case ensures that the system enforces the rule that the 'sentence' field must contain '...' for a question to be valid for the selection test. It directly tests the scenario's requirement that a new question cannot be added if this condition is not met.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify admin can cancel adding a new question for selection test by using browser back button
+objective: Ensure that the admin can cancel the process of adding a new question for a selection test by navigating back using the browser's back button, and verify that the question is not saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by clicking on the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: On the 'Word Information' page, click on the 'Add new question' button.
+  - Step 7: On the pop-up dialog, choose the option 'Create questions for the selection test'.
+  - Step 8: On the 'Add new question for selection test' page, fill in all the required fields with valid data.
+  - Step 9: Use the browser's back button to navigate back to the 'Word Information' page.
+expectedResult: The system should navigate back to the 'Word Information' page without saving the question. The new question should not appear in the list of questions for the selected word.
+explanation: This test case ensures that when an admin decides to cancel the process of adding a new question by using the browser's back button, the action is processed correctly, and no data is saved, maintaining the integrity of the question list.
+
+Test Case: Test Case 2
+testCaseName: Verify admin can cancel adding a new question for selection test and confirm cancellation
+objective: To confirm that the admin can cancel the process of adding a new question for a selection test by pressing the 'Cancel' button and confirming the cancellation, ensuring the question is not saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by clicking on the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: On the 'Word Information' page, click on the 'Add new question' button.
+  - Step 7: On the pop-up dialog, choose the option 'Create questions for the selection test'.
+  - Step 8: On the 'Add new question for selection test' page, fill in all the required fields with valid data.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, select the 'Confirm' option.
+expectedResult: The system should navigate back to the 'Word Information' page without saving the question. The new question should not be saved or appear in the list of questions for the selected word.
+explanation: This test case verifies that the cancellation process works as expected when an admin decides not to proceed with adding a new question for a selection test. It ensures that the system correctly handles the cancellation and does not save any part of the unfinished question.
+

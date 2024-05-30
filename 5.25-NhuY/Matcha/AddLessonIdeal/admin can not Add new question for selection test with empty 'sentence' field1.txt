@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'sentence' field
+objective: Ensure the system prompts an error when admin attempts to save a new question for the selection test without filling the 'sentence' field
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'correct answer' field with a valid word.
+  - Step 9: Fill in 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 10: Leave the 'sentence' field empty.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an empty 'sentence' field and expecting the system to prevent this action and prompt for the missing information. It reflects the given test scenario accurately by testing the specific condition where the 'sentence' field is left empty.
+

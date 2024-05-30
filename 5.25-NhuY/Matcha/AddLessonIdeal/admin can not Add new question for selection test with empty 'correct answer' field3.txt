@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'correct answer' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'correct answer' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Leave the 'correct answer' field empty.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new question for the selection test with the 'correct answer' field left empty. It checks if the system correctly prevents the admin from proceeding without filling in all required fields, specifically the 'correct answer' field, thus reflecting the given test scenario accurately.
+

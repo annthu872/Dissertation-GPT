@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Question for Selection Test Page via Homepage
+objective: Verify that the admin can navigate to the 'Add new question for selection test' page from the Homepage by following the specified navigation path.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar from the Homepage.
+  - Step 3: From the Lesson Management page, press one Lesson on the Lesson list.
+  - Step 4: On the 'Lesson Information' page, press one Topic on the Topic list.
+  - Step 5: On the 'Topic Information' page, press one word on the vocabulary word list.
+  - Step 6: On the 'Word Information' page, press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+expectedResult: The system should redirect the Admin to the 'Add new question for selection test' page, displaying all the fields required for creating a selection test question.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear and specific path from the Homepage to the 'Add new question for selection test' page. It includes all necessary steps an admin must follow to reach the intended page, thus verifying the navigation flow as described in the scenario.
+

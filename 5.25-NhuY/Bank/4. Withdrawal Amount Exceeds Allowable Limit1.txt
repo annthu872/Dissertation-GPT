@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Withdrawal Amount Exceeds Allowable Limit
+objective: Verify that the ATM displays an error message and prompts the user to re-enter a new amount when the withdrawal amount exceeds the allowable limit
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter the correct PIN when prompted.
+  - Step 3: Select 'Withdraw Cash' from the available actions displayed by the ATM.
+  - Step 4: Select an account from which to withdraw cash when prompted by the ATM.
+  - Step 5: Enter an amount that exceeds the allowable limit when prompted by the ATM for the amount.
+expectedResult: The ATM displays an error message indicating the amount exceeds the allowable limit, shows the allowable limit, and asks the customer to re-enter the cash amount.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'Withdrawal Amount Exceeds Allowable Limit'. It specifically tests the system's behavior when a withdrawal request exceeds the set limit by including steps that mimic a real user's actions leading up to and including the action of attempting to withdraw an amount above the allowable limit. The expected result clearly states that the system should inform the user of the error and prompt for a corrective action, which is the essence of the test scenario.
+

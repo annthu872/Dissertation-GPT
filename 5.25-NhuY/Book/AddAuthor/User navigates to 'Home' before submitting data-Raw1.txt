@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Home' before submitting new author data
+objective: Verify that navigating to 'Home' before submitting new author data does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the new author's details into the form fields (Name, Bio).
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the form.
+expectedResult: The application does not save the entered data and displays the Home page. When navigating back to the author list, the new author's data should not be present.
+explanation: This test case ensures that if a user navigates away to the 'Home' page before submitting the new author form, the data is not saved. It directly matches the scenario name by testing the navigation to 'Home' before data submission.
+
+Test Case: Test Case 2
+testCaseName: Submit new author data after navigating to 'Home'
+objective: Verify that after navigating back from 'Home' to the author creation form, the user can still submit new author data successfully
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the new author's details into the form fields (Name, Bio).
+  - Step 4: Select the 'Home' menu item to navigate away from the form.
+  - Step 5: Navigate back to the author list page and click the 'Create new' button again.
+  - Step 6: Re-enter the new author's details into the form fields.
+  - Step 7: Press the 'Submit' button.
+expectedResult: The application saves the new author's data and displays the updated list of authors including the newly added record.
+explanation: This test case verifies that a user can complete the submission of a new author's data after initially navigating to 'Home' and then returning to the form. It tests the user's ability to successfully add a new author after an interrupted process.
+

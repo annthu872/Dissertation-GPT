@@ -1,0 +1,14 @@
+Test Case: Test Case 2
+testCaseName: Withdraw Money with Insufficient ATM Cash
+objective: Verify that the ATM displays an error message and does not dispense money when it has insufficient cash for the withdrawal
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter a valid PIN when prompted.
+  - Step 3: Select 'Withdraw Cash' from the available actions displayed by the ATM.
+  - Step 4: Select an account from which to withdraw cash when prompted.
+  - Step 5: Enter a desired amount that exceeds the ATM's available cash but is within the allowable limit and for which the account has sufficient funds.
+  - Step 6: Confirm the withdrawal amount.
+expectedResult: The ATM displays an error message indicating it cannot dispense the requested amount due to insufficient cash, and no money is dispensed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'ATM Cash Insufficiency', by testing the ATM's behavior when it does not have enough cash to fulfill a withdrawal request.
+

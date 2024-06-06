@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify successful display of the first page of books without filters
+objective: Verify that the application successfully displays the first page of books without applying any date filters
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Books' from the main menu or the designated area.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application displays the first page of the list of books, showing up to 10 items. Each item should display the book's id, title, author, genre, and publication date.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of displaying the first page of books without any filters, which is the core objective of the scenario.
+

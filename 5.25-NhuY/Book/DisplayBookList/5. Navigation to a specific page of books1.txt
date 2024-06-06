@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Navigation to a specific page of books via pagination
+objective: Verify that the user can navigate to a specific page of books using the pagination feature
+testSteps:
+  - Step 1: Navigate to the 'Books' section from the main menu.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of books.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The user should be able to see the next 10 records of books on the second page after clicking the 'Next' button.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the pagination feature, allowing navigation to a specific page (in this case, the second page) of books.
+
+Test Case: Test Case 2
+testCaseName: Navigation to a specific page of books by page number
+objective: Verify that the user can navigate to a specific page of books by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the 'Books' section from the main menu.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the page number '2' in the pagination block below the list of books.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The user should be able to see the next 10 records of books on the second page after clicking on the page number '2'.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by testing another aspect of the pagination feature, which is navigating to a specific page by selecting its number. It ensures that users can jump to a desired page without sequentially navigating through pages.
+

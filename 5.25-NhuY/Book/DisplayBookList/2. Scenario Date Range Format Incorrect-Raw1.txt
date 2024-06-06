@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify date range format incorrect message for book list filtering
+objective: Verify that the application displays an error or warning message when the user inputs an incorrect date range format for filtering the book list.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format. For example, use 'dd/mm/yyyy' instead of 'mm/dd/yyyy', or input text that is not a date.
+  - Step 3: Click the refresh button to the right from the date inputs.
+expectedResult: The application should display an error or warning message indicating that the date range format is incorrect.
+explanation: This test case ensures that the application validates the date range input format when filtering the list of books by publication date. It is directly related to the scenario of handling incorrect date range formats.
+
+Test Case: Test Case 2
+testCaseName: Verify no books displayed with incorrect date range format
+objective: Verify that the application does not display any books when the user inputs an incorrect date range format for filtering.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format (e.g., 'abcd' or '32/13/2020').
+  - Step 3: Click the refresh button to the right from the date inputs.
+expectedResult: The application should not display any books and may show a message indicating no books found due to incorrect date range format.
+explanation: This test case checks the application's behavior when an incorrect date range format is entered for filtering the book list. It ensures that the application does not proceed with an invalid filter, which is a crucial aspect of the scenario dealing with date range format errors.
+

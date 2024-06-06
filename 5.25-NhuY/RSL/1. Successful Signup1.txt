@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful User Signup
+objective: Verify that an anonymous user can successfully sign up to become a registered user
+testSteps:
+  - Step 1: Navigate to the signup page in the browser.
+  - Step 2: Fill in a unique name in the name field.
+  - Step 3: Fill in a unique email address in the email field.
+  - Step 4: Fill in a password in the password field.
+  - Step 5: Fill in the same password in the confirm password field.
+  - Step 6: Click on the signup action button.
+expectedResult: A message is displayed confirming that the user was successfully created in the system.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful signup by outlining steps that lead to a new user registration, which is the primary objective of the scenario.
+

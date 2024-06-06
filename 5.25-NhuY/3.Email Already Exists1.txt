@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Signup with an email that already exists
+objective: Verify that the system prevents signup with an email that already exists and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the signup page in the browser.
+  - Step 2: Fill in a name in the name field.
+  - Step 3: Fill in an email that already exists in the system in the email field.
+  - Step 4: Fill in a password in the password field.
+  - Step 5: Fill in the same password in the confirm password field.
+  - Step 6: Click the signup action button.
+expectedResult: The system displays a message indicating that the email already exists.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Email Already Exists' by attempting to sign up with an email that is already registered in the system, which is the exact condition the scenario aims to test.
+

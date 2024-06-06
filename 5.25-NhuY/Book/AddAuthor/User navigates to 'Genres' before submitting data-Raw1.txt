@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Genres' before submitting new author data
+objective: Verify that navigating to 'Genres' before submitting new author data does not save the data in the database and displays the Genres page.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the new author's Name and Bio in the provided form fields.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Genres'.
+expectedResult: The application does not save the entered author data to the database and displays the Genres page with updated data.
+explanation: This test case ensures that if a user navigates away from the new author creation page by selecting 'Genres' from the menu, the data entered is not saved, adhering to the specified use case scenario. It tests the functionality of data not being saved upon navigation to another page without submission.
+
+Test Case: Test Case 2
+testCaseName: Submit new author data successfully and then navigate to 'Genres'
+objective: Verify that after successfully submitting new author data, the user can navigate to 'Genres' and the new author data is saved in the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Correctly enter the new author's Name and Bio in the provided form fields.
+  - Step 4: Press the 'Submit' button to save the new author data.
+  - Step 5: After seeing the list of authors with the newly added record, select the menu item 'Genres'.
+expectedResult: The application saves the new author data to the database, displays the list of authors including the newly added author, and upon selecting 'Genres', navigates to the Genres page with updated data.
+explanation: This test case verifies that new author data is correctly saved to the database upon submission and that subsequent navigation to 'Genres' does not affect the integrity of the saved data. It ensures the application's data submission and navigation functionalities work as intended.
+

@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Successful Cash Withdrawal
+objective: Verify that a bank customer can successfully withdraw cash if they have a valid ATM card, enter a valid PIN, select a valid account, and request an amount within their balance and the ATM's dispensable limit.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter a valid PIN associated with the ATM card.
+  - Step 3: From the available actions displayed by the ATM, select 'Withdraw Cash'.
+  - Step 4: When prompted, select an account from which to withdraw cash.
+  - Step 5: Enter an amount to withdraw that is within the customer's balance and the ATM's dispensable limit.
+  - Step 6: Confirm the withdrawal amount.
+expectedResult: The ATM dispenses the requested amount of cash, and a receipt is printed confirming the transaction details.
+explanation: This test case ensures that the main success scenario of withdrawing cash is functional, covering the basic flow from card insertion to cash dispensation and receipt printing, as described in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Withdrawal with Insufficient Funds
+objective: Verify that the ATM displays an error message when a customer attempts to withdraw more money than they have in their account.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter a valid PIN associated with the ATM card.
+  - Step 3: From the available actions displayed by the ATM, select 'Withdraw Cash'.
+  - Step 4: When prompted, select an account from which to withdraw cash.
+  - Step 5: Enter an amount to withdraw that exceeds the customer's current account balance.
+  - Step 6: Confirm the withdrawal amount.
+expectedResult: The ATM displays an error message indicating insufficient funds and does not dispense any cash.
+explanation: This test case checks the system's handling of withdrawal attempts that exceed the customer's account balance, as outlined in the extensions of the use case specification.
+
+Test Case: Test Case 3
+testCaseName: Withdrawal Exceeding ATM's Dispensable Limit
+objective: Verify that the ATM prompts the customer to re-enter a withdrawal amount when the requested amount exceeds the ATM's dispensable limit.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter a valid PIN associated with the ATM card.
+  - Step 3: From the available actions displayed by the ATM, select 'Withdraw Cash'.
+  - Step 4: When prompted, select an account from which to withdraw cash.
+  - Step 5: Enter an amount to withdraw that exceeds the ATM's dispensable limit.
+  - Step 6: Confirm the withdrawal amount.
+expectedResult: The ATM displays a message showing the allowable limit and asks the customer to re-enter a cash amount within this limit.
+explanation: This test case verifies the ATM's response to withdrawal requests exceeding its dispensable cash limit, ensuring compliance with the specified extensions in the use case.
+

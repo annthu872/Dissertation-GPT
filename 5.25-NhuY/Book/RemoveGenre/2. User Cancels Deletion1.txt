@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that when a user cancels the deletion of a genre, the genre is not deleted from the database and the user is redirected back to the genre list with the data unchanged.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The genre should not be deleted from the database, and the user should be redirected back to the list of genres with all data unchanged.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the cancellation process of genre deletion and ensuring the genre remains in the database, which is the core objective of the scenario.
+

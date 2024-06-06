@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: CreateNewAuthor_WithoutName
+objective: Verify that the system prevents the creation of a new author record without a name and displays the correct error message.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter valid data into the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the 'Name' field is required.
+explanation: This test case ensures that the application enforces the requirement for the 'Name' field when creating a new author record. It is directly related to the test scenario 'CreateNewAuthor_WithoutName' by testing the system's response to the omission of the 'Name' field, which is a mandatory field for creating a new author record.
+
+Test Case: Test Case 2
+testCaseName: CreateNewAuthor_CancelOperation
+objective: Verify that the author creation process can be canceled without saving data and the user is redirected back to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The author creation form is closed, no data is saved, and the user is redirected to the list of authors.
+explanation: This test case checks the functionality of the 'Cancel' button in the author creation process, ensuring that it allows users to abort the creation process at any time without saving any entered data. It is related to the 'Cancel operation scenario' described in the use case specification.
+

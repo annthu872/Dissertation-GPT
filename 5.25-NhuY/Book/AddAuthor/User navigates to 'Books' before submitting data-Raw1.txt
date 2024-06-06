@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Books' before submitting new author data
+objective: Verify that navigating to 'Books' before submitting new author data does not save the data in the database and opens the 'Books' page.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the new author's Name and Bio in the provided form fields.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The application does not save the entered author data in the database and the 'Books' page is displayed with updated data.
+explanation: This test case ensures that if a user navigates away from the author creation form by selecting 'Books' from the menu, the data entered is not saved, adhering to the specified use case scenario. It tests the application's ability to discard unsaved data and navigate correctly.
+
+Test Case: Test Case 2
+testCaseName: Submit new author data successfully and then navigate to 'Books'
+objective: Verify that after successfully submitting new author data, the user can navigate to 'Books' and the new author data is saved correctly.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Correctly enter the new author's Name and Bio in the provided form fields.
+  - Step 4: Press the 'Submit' button to save the new author data.
+  - Step 5: After the new author record is successfully added and the list of authors is displayed, select the menu item 'Books'.
+expectedResult: The new author data is saved successfully in the database, the list of authors with the added record is displayed, and upon selecting 'Books', the 'Books' page is displayed with updated data.
+explanation: This test case verifies the application's functionality to save new author data correctly and allows navigation to 'Books' after the submission. It ensures the data integrity and the navigation flow as per the use case.
+

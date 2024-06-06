@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Cash Withdrawal
+objective: Verify that a bank customer can successfully withdraw cash if they have a valid ATM card, enter a valid PIN, select a valid account, and request an amount within their balance and the ATM's dispensable limit.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter a valid PIN associated with the ATM card.
+  - Step 3: From the available actions displayed by the ATM, select 'Withdraw Cash'.
+  - Step 4: When prompted, select an account from which to withdraw cash.
+  - Step 5: Enter an amount to withdraw that is within the customer's balance and the ATM's dispensable limit.
+  - Step 6: Confirm the withdrawal amount.
+expectedResult: The ATM dispenses the requested amount of cash, and a receipt is printed confirming the transaction details.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful cash withdrawal, as it covers all the necessary steps and conditions (valid card, PIN, account selection, and withdrawal within limits) to achieve the desired outcome.
+

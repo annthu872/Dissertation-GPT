@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Signup with an email that already exists
+objective: Verify that the system prevents signup with an email that is already registered and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the signup page in the browser.
+  - Step 2: Fill in a name in the name field.
+  - Step 3: Enter an email that is already registered in the system in the email field.
+  - Step 4: Fill in a password in the password field.
+  - Step 5: Fill in the same password in the confirm password field.
+  - Step 6: Click the signup button to submit the form.
+expectedResult: The system displays a message indicating that the submitted email already exists.
+explanation: This test case is designed to verify the system's behavior when a user attempts to sign up with an email address that is already registered in the system. It directly relates to the 'Email Already Exists' scenario by testing the exception flow for an existing email during the signup process.
+
+Test Case: Test Case 2
+testCaseName: Signup with different passwords
+objective: Verify that the system prevents signup when the password and confirm password fields do not match and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the signup page in the browser.
+  - Step 2: Fill in a name in the name field.
+  - Step 3: Enter an email that is not registered in the system in the email field.
+  - Step 4: Fill in a password in the password field.
+  - Step 5: Fill in a different password in the confirm password field.
+  - Step 6: Click the signup button to submit the form.
+expectedResult: The system displays a message indicating that the passwords are different.
+explanation: This test case checks the system's response to mismatched passwords during the signup process, ensuring that users are informed of the discrepancy and prevented from proceeding. It addresses the 'Signup with different passwords' exception flow.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to API before submitting new author data
+objective: Verify that navigating to 'API' before submitting new author data cancels the operation and does not save data to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the author's name and biography into the form fields.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The operation is canceled, data is not saved to the database, and the API page is displayed with updated data.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by outlining steps that lead to navigating away from a data submission form to the 'API' page before the data submission is completed. It verifies that this action cancels the data submission process, which is the core of the test scenario.
+

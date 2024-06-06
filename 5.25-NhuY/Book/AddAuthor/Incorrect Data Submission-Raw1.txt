@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify incorrect data submission for new author creation
+objective: Ensure that the application displays incorrect data messages when invalid data is submitted in the new author creation form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the new author creation form.
+  - Step 3: Enter invalid data into the 'Name' and 'Bio' fields of the form. For example, leave 'Name' field empty and fill 'Bio' with less than the minimum required characters.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display messages indicating the incorrect data for each field that was filled out incorrectly.
+explanation: This test case is designed to verify that the application correctly handles the submission of invalid data by displaying appropriate error messages, ensuring data integrity and user guidance.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of new author creation
+objective: To verify that the new author creation process can be cancelled without saving data to the database and the user is redirected back to the list of authors
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the new author creation form.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields but do not complete the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should redirect the user back to the list of authors, displaying the existing records without the addition of a new record.
+explanation: This test case ensures that users can safely cancel the creation of a new author at any point before submission without affecting the database, providing a fail-safe against accidental data entry.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from new author creation cancels operation
+objective: Ensure that navigating away from the new author creation form without submitting it cancels the operation and does not save any data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the new author creation form.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save any data entered in the new author form and should display the selected page without adding a new author record.
+explanation: This test case checks that the application properly handles the scenario where a user navigates away from the new author creation form without submitting it, ensuring that no partial data is saved and maintaining the integrity of the author list.
+

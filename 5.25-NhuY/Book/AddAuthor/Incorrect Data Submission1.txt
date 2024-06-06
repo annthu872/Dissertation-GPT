@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify incorrect data submission for new author creation
+objective: Ensure that the application displays incorrect data messages when invalid data is submitted in the new author creation form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the new author creation form.
+  - Step 3: Enter invalid data into the 'Name' and 'Bio' fields of the form. For example, leave 'Name' field empty and fill 'Bio' with less than the minimum required characters.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display messages indicating the incorrect data for each field that was filled out incorrectly.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Incorrect Data Submission' by verifying the application's response to invalid data input during the creation of a new author. It ensures that error messages are displayed, which is the core objective of the given test scenario.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre deletion
+objective: Ensure that a user can successfully delete a genre and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with deletion.
+expectedResult: The genre should be successfully deleted from the database, and the user should no longer see the deleted genre in the list.
+explanation: This test case ensures that the main scenario for deleting a genre is functioning as expected. It verifies that upon confirmation, the genre is removed from the database.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that a user can cancel the deletion of a genre and the record remains in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete but decide to keep and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort deletion.
+expectedResult: The deletion process should be aborted, and the genre should remain in the database. The user should still see the genre in the list.
+explanation: This test case verifies the cancel operation scenario where the user decides not to delete a genre. It ensures that the record is not removed from the database upon cancellation.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling genre deletion
+objective: Ensure that after cancelling a genre deletion, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' does not delete the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to a genre.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any of the following pages: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: After cancellation and navigation to another page, the genre should still exist in the database and be visible to the user.
+explanation: This test case checks the system behavior after a user cancels a deletion and then navigates to other sections of the application. It ensures that the cancellation is respected across different pages.
+

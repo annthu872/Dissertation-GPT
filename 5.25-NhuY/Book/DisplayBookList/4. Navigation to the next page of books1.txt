@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Books Using 'Next' Button
+objective: Verify that the user can navigate to the next page of books by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Books' from the available options.
+  - Step 3: Ensure the list of books is displayed with up to 10 items on the current page.
+  - Step 4: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next 10 records of the books in the database on a new page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the 'Next' button in navigating to the next page of books, which is the core action described in the scenario.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Authors' and Submit Valid Author Data
+objective: Verify that a user can navigate to the 'Authors' section, submit valid author data, and successfully add a new author record to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Enter valid data into the form fields, including the author's Name and Bio.
+  - Step 4: Press the 'Submit' button to submit the form.
+expectedResult: A message or indication that the new author record has been successfully added is displayed, followed by the updated list of authors including the newly added record.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the process of navigating to the 'Authors' section and submitting data to add a new author, which is the core action described in the scenario.
+

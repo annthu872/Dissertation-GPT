@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Incorrect PIN Entry - Error Message Display
+objective: Verify that the ATM displays an error message when an incorrect PIN is entered
+testSteps:
+  - Step 1: Insert an ATM card into the ATM machine.
+  - Step 2: Enter an incorrect PIN when prompted.
+expectedResult: The ATM displays an error message indicating that the PIN entered is incorrect.
+explanation: This test case is designed to validate the system's response to an incorrect PIN entry, which is a critical part of the 'Withdraw Money' use case. It directly tests the extension 2a, ensuring that the system correctly handles authentication errors.
+
+Test Case: Test Case 2
+testCaseName: Incorrect PIN Entry - Retry Limit
+objective: Verify that the ATM allows for a limited number of incorrect PIN entries before taking further action
+testSteps:
+  - Step 1: Insert an ATM card into the ATM machine.
+  - Step 2: Enter an incorrect PIN when prompted.
+  - Step 3: Repeat Step 2 for the maximum allowed attempts.
+expectedResult: After the maximum number of incorrect attempts, the ATM takes a predefined action (e.g., retains the card, alerts the bank, etc.), rather than simply displaying an error message.
+explanation: This test case explores the system's handling of multiple incorrect PIN entries, which is an important security feature. Although not explicitly mentioned in the provided scenario, it's a common extension of handling incorrect PIN entries in real-world ATM systems.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Create New Author Without Entering Bio
+objective: Verify that a new author can be added without entering the biography and the record is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter the author's name in the 'Name' field.
+  - Step 4: Leave the 'Bio' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new author record is successfully added to the database without the biography, and the list of authors with the newly added record is displayed.
+explanation: This test case verifies that the biography field is not mandatory for creating a new author record, aligning with the scenario requirement to create a new author without a bio.
+
+Test Case: Test Case 2
+testCaseName: Create New Author and Cancel Operation
+objective: Verify that the operation of adding a new author can be canceled before submission and no record is added to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the author's name and bio in the respective fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: No new author record is added to the database, and the list of author records is displayed without the new entry.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to abort the creation of a new author record without saving any data to the database.
+
+Test Case: Test Case 3
+testCaseName: Create New Author With Incorrect Data
+objective: Verify that the system displays error messages for incorrectly entered data when creating a new author.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter incorrect data into the 'Name' field (e.g., using numbers or special characters).
+  - Step 4: Attempt to submit the form by pressing the 'Submit' button.
+expectedResult: The system displays messages indicating the data entered is incorrect, and the new author record is not added to the database.
+explanation: This test case checks the system's ability to validate input data and provide feedback to the user, preventing the addition of invalid author records.
+

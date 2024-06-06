@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Range Specified
+objective: Verify that the application displays the list of books without any date range specified by the user.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed without entering any date range.
+expectedResult: The application displays the list of books without filtering by date range. The list should show up to 10 items per page with columns for id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: This test case directly addresses the scenario by verifying the application's behavior when no date range is specified. It checks if the list of books is displayed without any date filtering, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality Without Date Range
+objective: Verify that the pagination functionality works correctly without any date range specified.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the initial list of books displayed without entering any date range.
+  - Step 3: Click the 'Next' button below the records in the pagination block.
+  - Step 4: Observe the next set of books displayed.
+expectedResult: Upon clicking the 'Next' button, the application should display the next 10 records of books without applying any date range filter. The list should continue to show columns for id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: Although this test case focuses on the pagination functionality, it still reflects the given scenario by ensuring that the application does not apply a date range filter when navigating through pages. It tests a specific aspect (pagination) of the scenario's broader requirement (displaying books without a date range).
+

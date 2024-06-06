@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Attempt to navigate beyond the last page of books via Next button
+objective: Verify that the user cannot navigate beyond the last page of books when using the Next button
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: If not already on the last page, click the 'Next' button repeatedly until reaching the last page of books.
+  - Step 3: Once on the last page, attempt to click the 'Next' button again.
+expectedResult: The application should not navigate to a new page or display an error message indicating there are no more pages/books to display.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to navigate beyond the last page of books using the Next button, which is the specific action the scenario aims to test.
+
+Test Case: Test Case 2
+testCaseName: Attempt to navigate beyond the last page of books by selecting a page number
+objective: Verify that the user cannot navigate beyond the last available page by selecting a page number that doesn't exist
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Identify the last available page number by observing the pagination block.
+  - Step 3: Attempt to select a page number greater than the last available page by modifying the URL or using developer tools (if the UI does not allow direct input).
+expectedResult: The application should either redirect the user to the last available page or display an error message indicating the requested page does not exist.
+reflect: yes
+explanation: Although this test case explores a different method (selecting a page number directly) to navigate beyond the last page, it still aligns with the test scenario's objective of testing the system's behavior when attempting to go beyond the last page of books. It provides a comprehensive approach by covering another possible user action that wasn't explicitly mentioned but is within the scope of the scenario.
+

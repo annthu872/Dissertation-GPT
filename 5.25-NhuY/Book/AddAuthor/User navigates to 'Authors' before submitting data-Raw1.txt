@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Authors' and Submit Valid Author Data
+objective: Verify that a user can navigate to the 'Authors' section, submit valid author data, and successfully add a new author record to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Enter valid data into the form fields, including the author's Name and Bio.
+  - Step 4: Press the 'Submit' button to submit the form.
+expectedResult: A message or indication that the new author record has been successfully added is displayed, followed by the updated list of authors including the newly added record.
+explanation: This test case ensures that users can navigate to the 'Authors' section and add a new author by submitting valid data, which is directly related to the main scenario of the test scenario input.
+
+Test Case: Test Case 2
+testCaseName: Navigate to 'Authors' and Cancel Author Data Submission
+objective: Verify that a user can navigate to the 'Authors' section, start entering author data, but cancel the operation before submission.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Start entering data into the form fields, including the author's Name and Bio.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The form is closed without saving the data, and the user is redirected back to the list of authors without the new author being added.
+explanation: This test case verifies the cancel operation scenario, ensuring that users can navigate away from the author data submission form without saving the data, which is a part of the test scenario input.
+
+Test Case: Test Case 3
+testCaseName: Navigate to 'Authors' and Submit Invalid Author Data
+objective: Verify that the application displays error messages when invalid data is entered in the author creation form.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Enter invalid data into the form fields (e.g., leaving the Name or Bio field empty).
+  - Step 4: Press the 'Submit' button to attempt to submit the form with invalid data.
+expectedResult: The application displays messages indicating which data was entered incorrectly, without adding a new author record to the database.
+explanation: This test case checks the application's response to invalid data submission in the author creation form, ensuring error handling is in place as described in the main scenario of the test scenario input.
+

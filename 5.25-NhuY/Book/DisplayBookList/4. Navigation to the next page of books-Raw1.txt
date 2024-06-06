@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Books Using 'Next' Button
+objective: Verify that the user can navigate to the next page of books by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Books' from the available options.
+  - Step 3: Ensure the list of books is displayed with up to 10 items on the current page.
+  - Step 4: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next 10 records of the books in the database on a new page.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate through the list of books by pages.
+
+Test Case: Test Case 2
+testCaseName: Navigate to the Next Page of Books Using Page Number
+objective: Verify that the user can navigate to the next page of books by clicking the following number of the page
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Books' from the available options.
+  - Step 3: Ensure the list of books is displayed with up to 10 items on the current page.
+  - Step 4: Click on the number '2' in the pagination block to navigate to the second page of the books list.
+expectedResult: The application displays the next 10 records of the books in the database on the second page.
+explanation: This test case verifies that users can navigate through the list of books using the pagination numbers, allowing for direct access to other pages besides the next one.
+

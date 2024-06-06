@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify successful display of the first page of books without filters
+objective: Verify that the application successfully displays the first page of books without applying any date filters
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Books' from the main menu or the designated area.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application displays the first page of the list of books, showing up to 10 items. Each item should display the book's id, title, author, genre, and publication date.
+explanation: This test case ensures that the basic functionality of displaying the first page of books works as intended without any filters applied.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality on the books list page
+objective: Ensure that the user can navigate through different pages of the book list using the pagination feature
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Books' to view the list of books.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a specific page number from the pagination block below the records.
+  - Step 3: Observe the list of books displayed on the selected page.
+expectedResult: The application displays the next 10 records of books on the page selected by the user, showing the book's id, title, author, genre, and publication date for each item.
+explanation: This test case verifies that users can navigate through the book list using the pagination feature, ensuring the application can handle multiple pages of book records.
+
+Test Case: Test Case 3
+testCaseName: Verify filtering books by publication date
+objective: Ensure that the user can filter the list of books by specifying a date range and that the application displays the correct filtered results
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Books' to view the list of books.
+  - Step 2: Specify a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the refresh button to the right of the date inputs.
+  - Step 4: Observe the list of books displayed after applying the date filter.
+expectedResult: The application displays a list of books that were published within the specified date range. Each item in the list should display the book's id, title, author, genre, and publication date.
+explanation: This test case ensures that users can filter the list of books based on publication date, verifying the application's ability to display filtered results accurately.
+

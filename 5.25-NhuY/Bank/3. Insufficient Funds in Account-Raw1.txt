@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Withdraw Money with Insufficient Funds
+objective: Verify that the ATM displays an error message when a customer attempts to withdraw money but has insufficient funds in their account.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter the correct PIN when prompted.
+  - Step 3: Select 'Withdraw Cash' from the available actions displayed by the ATM.
+  - Step 4: Select an account from which to withdraw the money.
+  - Step 5: Enter an amount to withdraw that exceeds the available balance in the selected account.
+expectedResult: The ATM displays an error message indicating insufficient funds.
+explanation: This test case ensures that the ATM correctly handles scenarios where a customer attempts to withdraw an amount greater than their account balance, aligning with the 'Insufficient Funds in Account' scenario. It tests the system's ability to validate account balances and enforce withdrawal limits.
+
+Test Case: Test Case 2
+testCaseName: Withdraw Money within Allowable Limit but Insufficient Funds
+objective: Verify that the ATM displays an error message when a customer attempts to withdraw money within the allowable limit but has insufficient funds in their account.
+testSteps:
+  - Step 1: Insert a valid ATM card into the ATM machine.
+  - Step 2: Enter the correct PIN when prompted.
+  - Step 3: Select 'Withdraw Cash' from the available actions displayed by the ATM.
+  - Step 4: Select an account from which to withdraw the money.
+  - Step 5: Enter an amount to withdraw that is within the ATM's allowable limit but exceeds the available balance in the selected account.
+expectedResult: The ATM displays an error message indicating insufficient funds.
+explanation: This test case is designed to verify the ATM's response when a withdrawal request is within the machine's dispensing limit but cannot be completed due to insufficient account balance. It directly addresses the 'Insufficient Funds in Account' scenario by testing the system's ability to cross-check withdrawal requests against account balances.
+

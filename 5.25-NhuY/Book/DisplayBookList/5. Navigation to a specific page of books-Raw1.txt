@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Navigation to a specific page of books via pagination
+objective: Verify that the user can navigate to a specific page of books using the pagination feature
+testSteps:
+  - Step 1: Navigate to the 'Books' section from the main menu.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of books.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The user should be able to see the next 10 records of books on the second page after clicking the 'Next' button.
+explanation: This test case ensures that the pagination feature works correctly, allowing users to navigate through different pages to view more books.
+
+Test Case: Test Case 2
+testCaseName: Navigation to a specific page of books by page number
+objective: Verify that the user can navigate to a specific page of books by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the 'Books' section from the main menu.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the page number '2' in the pagination block below the list of books.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The user should be able to see the next 10 records of books on the second page after clicking on the page number '2'.
+explanation: This test case verifies that users can directly navigate to a specific page by selecting the page number, ensuring the pagination feature's usability.
+
+Test Case: Test Case 3
+testCaseName: Filtering books by publication date
+objective: Verify that users can filter the list of books by specifying a publication date range
+testSteps:
+  - Step 1: Navigate to the 'Books' section from the main menu.
+  - Step 2: Enter a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the 'Refresh' button located to the right of the date inputs.
+  - Step 4: Observe the list of books filtered by the specified publication date range.
+expectedResult: The list of books should be updated to only display books with publication dates within the user-specified range.
+explanation: This test case ensures that the filtering feature by publication date works correctly, allowing users to narrow down the list of books based on their publication dates.
+

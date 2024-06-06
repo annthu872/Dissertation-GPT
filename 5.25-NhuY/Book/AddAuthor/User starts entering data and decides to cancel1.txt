@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Author Creation Before Submission
+objective: Verify that the author creation process can be cancelled before submission and no data is saved
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new author.
+  - Step 3: Start entering data into the form fields for 'Name' and 'Bio'.
+  - Step 4: Before pressing the 'Submit' button, click the 'Cancel' button.
+expectedResult: The application should not save the entered data and should display the list of authors records.
+reflect: yes
+explanation: This test case directly reflects the given test scenario where a user starts entering data for a new author but decides to cancel before submission. It checks that the cancellation process works as intended and that no data is saved, which is exactly what the scenario describes.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away from New Author Creation Before Submission
+objective: Verify that navigating away from the author creation page before submission does not save data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for adding a new author.
+  - Step 3: Begin entering 'Name' and 'Bio' data into the form.
+  - Step 4: Without pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The application should not save the entered data and should display the 'Books' page with updated data.
+reflect: yes
+explanation: Although this test case explores a different user action (navigating away instead of explicitly clicking 'Cancel'), it still tests the core aspect of the given scenario: ensuring that partially entered data is not saved when the user decides not to complete the action. It verifies the system's behavior in a situation where the user changes their mind and moves to a different part of the application, which is a valid path within the described scenario.
+

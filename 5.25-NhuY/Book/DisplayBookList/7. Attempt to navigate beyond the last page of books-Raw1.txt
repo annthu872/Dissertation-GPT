@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Attempt to navigate beyond the last page of books via Next button
+objective: Verify that the user cannot navigate beyond the last page of books when using the Next button
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: If not already on the last page, click the 'Next' button repeatedly until reaching the last page of books.
+  - Step 3: Once on the last page, attempt to click the 'Next' button again.
+expectedResult: The application should not navigate to a new page or display an error message indicating there are no more pages/books to display.
+explanation: This test case ensures that the pagination functionality properly prevents users from navigating beyond the available list of books, maintaining a good user experience and preventing potential errors.
+
+Test Case: Test Case 2
+testCaseName: Attempt to navigate beyond the last page of books by selecting a page number
+objective: Verify that the user cannot navigate beyond the last available page by selecting a page number that doesn't exist
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Identify the last available page number by observing the pagination block.
+  - Step 3: Attempt to select a page number greater than the last available page by modifying the URL or using developer tools (if the UI does not allow direct input).
+expectedResult: The application should either redirect the user to the last available page or display an error message indicating the requested page does not exist.
+explanation: This test case checks the application's robustness in handling user attempts to manually navigate to a page number beyond the available range, ensuring the integrity of the navigation system.
+

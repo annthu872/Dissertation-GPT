@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify date range format incorrect message for book list filtering
+objective: Verify that the application displays an error or warning message when the user inputs an incorrect date range format for filtering the book list.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format. For example, use 'dd/mm/yyyy' instead of 'mm/dd/yyyy', or input text that is not a date.
+  - Step 3: Click the refresh button to the right from the date inputs.
+expectedResult: The application should display an error or warning message indicating that the date range format is incorrect.
+reflect: yes
+explanation: This test case directly addresses the scenario by verifying the application's response to an incorrect date range format. It tests the system's ability to recognize and alert the user about the incorrect format, which is the core of the given scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify no books displayed with incorrect date range format
+objective: Verify that the application does not display any books when the user inputs an incorrect date range format for filtering.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format (e.g., 'abcd' or '32/13/2020').
+  - Step 3: Click the refresh button to the right from the date inputs.
+expectedResult: The application should not display any books and may show a message indicating no books found due to incorrect date range format.
+reflect: yes
+explanation: Although this test case focuses on the outcome of entering an incorrect date range format (i.e., no books displayed), it still reflects the given scenario. It tests a different aspect of the system's handling of incorrect date formats by checking the filtering functionality's robustness against invalid inputs. It complements the first test case by ensuring that the system not only alerts the user about the error but also prevents incorrect data from affecting the displayed results.
+

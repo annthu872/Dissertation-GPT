@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidAuthor_ErrorMessage
+objective: Verify that the system displays an error message when attempting to update a book with an invalid author name
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter a valid title, genre, description, and publication date for the book.
+  - Step 4: Enter an invalid author name (e.g., using numbers or special characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the author name is invalid.
+explanation: This test case ensures that the system validates the author name field correctly and prevents the update of a book record with an invalid author name, maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperation_NoUpdate
+objective: Verify that no book record is updated in the database when the 'Cancel' button is pressed during an update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, start entering new data for the book's title, author, genre, description, and publication date.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book record in the database and should display the list of book records without applying the changes.
+explanation: This test case verifies that the cancel operation works as expected, allowing users to abort the update process without making any changes to the book record in the database.
+

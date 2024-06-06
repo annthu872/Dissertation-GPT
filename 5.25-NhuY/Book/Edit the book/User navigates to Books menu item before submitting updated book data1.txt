@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu and Submit Updated Book Data
+objective: Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.
+testSteps:
+  - Step 1: Log in to the application to reach the dashboard.
+  - Step 2: Navigate to the Books menu item by selecting it from the navigation bar.
+  - Step 3: On the book list/details page, click the 'Update' button to the right of the book you wish to update.
+  - Step 4: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication Date.
+  - Step 5: Press the 'Submit' button to submit the updated book data.
+expectedResult: The book's data is updated in the database, and the user is redirected to the list of books with the updated records displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the steps required for a user to navigate to the Books menu, update a book's data, and submit those changes. It covers the entire flow as described in the scenario.
+

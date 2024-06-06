@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidPublicationDate_FormatError
+objective: Verify that the system displays an error message when the publication date is entered in an incorrect format during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.
+  - Step 4: Enter an invalid format for the Publication date (e.g., 'dd/mm/yyyy').
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect format of the Publication date.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by specifically testing the system's response to an invalid publication date format during a book update operation.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidPublicationDate_FutureDate
+objective: Verify that the system displays an error message when the publication date is set to a future date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.
+  - Step 4: Enter a future date in the Publication date field (e.g., a date that is after today's date).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the publication date cannot be in the future.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests another aspect of invalid publication dates (future dates), ensuring the system's validation process for publication dates during book updates.
+

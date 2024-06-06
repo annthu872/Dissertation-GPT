@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Title
+objective: Verify that the system displays an error message when trying to update a book with an invalid title
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter an invalid title (e.g., using special characters or leaving it blank).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid title is displayed, and the book record is not updated in the database.
+explanation: This test case ensures that the system validates the title field correctly and prevents the update of a book record with an invalid title, maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Valid Data Except Title
+objective: Verify that the system prevents updating a book when only the title is invalid while other fields are valid
+testSteps:
+  - Step 1: Go to the book list/details page.
+  - Step 2: Press the 'Update' button for the book you want to edit.
+  - Step 3: Enter a title that is too long or contains invalid characters.
+  - Step 4: Enter valid data for the Author, Genre, Description, and Publication date fields.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system displays an error message indicating the title is invalid, and the book's information remains unchanged in the database.
+explanation: This test case is designed to check the system's ability to validate the title independently from the other fields, ensuring that a book's information cannot be updated with an invalid title.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation on Book with Invalid Title
+objective: Verify that cancelling the update operation discards changes, even if the title entered is invalid
+testSteps:
+  - Step 1: Access the book list/details page.
+  - Step 2: Click on the 'Update' button for a selected book.
+  - Step 3: Enter an invalid title and valid information for other fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system discards the changes, and the book record remains unchanged in the database. The user is redirected to the list of book records.
+explanation: This test case verifies that the cancel operation works correctly, even when the form contains invalid data, ensuring that users can safely exit the update process without unintentionally modifying records.
+

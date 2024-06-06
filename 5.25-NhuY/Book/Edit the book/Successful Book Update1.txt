@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful Book Record Update
+objective: Verify that a user can successfully update a book record with valid data and the updated record is reflected in the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the user is redirected to the list of books where the updated record is displayed.
+reflect: yes
+explanation: This test case directly addresses the test scenario of successfully updating a book record with valid data and seeing the changes reflected in the book list, making it a perfect match.
+

@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidTitle_EmptyField
+objective: Verify that the system displays an incorrect data message when the title field is left empty during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Clear the 'Title' field leaving it empty.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the empty 'Title' field is displayed.
+explanation: This test case ensures that the application validates the 'Title' field and prevents updates with an empty title, which is a part of the main scenario where data validation occurs.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidTitle_SpecialCharacters
+objective: Verify that the system displays an incorrect data message when the title field contains special characters.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title that contains special characters (e.g., @#$%^&*).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Title' field containing special characters is displayed.
+explanation: This test case checks the application's ability to validate the 'Title' field against special characters, ensuring data integrity and adherence to the main scenario's validation process.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidTitle_TooLong
+objective: Verify that the system displays an incorrect data message when the title field exceeds the maximum length limit.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title that exceeds the maximum length limit (e.g., a string longer than 255 characters).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Title' field exceeding the maximum length limit is displayed.
+explanation: This test case ensures that the application enforces length constraints on the 'Title' field, preventing excessively long titles from being entered, in line with the main scenario's data validation.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Genres menu item before submitting updated book data
+objective: Verify that navigating to the Genres menu item before submitting updated book data cancels the update operation and displays the Genres page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book's details (Title, Author, Genre, Description, Publication Date) in the provided form fields.
+  - Step 4: Before pressing the 'Submit' button, navigate to the 'Genres' menu item by selecting it from the navigation menu.
+expectedResult: The book update operation is canceled, and the Genres page is displayed without updating the book in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps that lead to navigating away from the book update form before the submission is completed. It checks if the application properly cancels the update operation and redirects the user to the Genres page, which is the core objective of the given test scenario.
+

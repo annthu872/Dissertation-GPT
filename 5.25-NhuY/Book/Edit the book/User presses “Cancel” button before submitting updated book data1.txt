@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify cancel operation during book data update
+objective: Ensure that pressing the 'Cancel' button before submitting updated book data does not update the book in the database and redirects the user to the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click the 'Cancel' button.
+expectedResult: The book data is not updated in the database, and the user is redirected to the list of book records.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of the 'Cancel' button during the book data update process. It ensures that the action of pressing 'Cancel' does not commit changes to the database and redirects the user appropriately, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancel operation during book update
+objective: To confirm that after pressing the 'Cancel' button during book update, the user is redirected to the book list and can navigate to other sections without updating the book.
+testSteps:
+  - Step 1: Go to the book list/details page and click the 'Update' button for a book.
+  - Step 2: Begin to enter or modify the book's details in the form.
+  - Step 3: Press the 'Cancel' button before submitting the updated data.
+  - Step 4: After being redirected to the book list, select another menu item such as 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: User is redirected to the book list after pressing 'Cancel', and can navigate to other sections without the book data being updated in the database.
+reflect: yes
+explanation: While this test case extends the scenario by verifying the user's ability to navigate to other sections post-cancel, it still reflects the core scenario by ensuring the 'Cancel' operation's effect on data integrity and user redirection. It tests additional aspects of the user experience following the cancel action, which is within the scope of the given scenario.
+

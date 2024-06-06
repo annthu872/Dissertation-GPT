@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Title
+objective: Verify that the system displays an error message when trying to update a book with an invalid title
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter an invalid title (e.g., using special characters or leaving it blank).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid title is displayed, and the book record is not updated in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateBook_InvalidTitle' by attempting to update a book with an invalid title and expecting an error message, which is the core objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Valid Data Except Title
+objective: Verify that the system prevents updating a book when only the title is invalid while other fields are valid
+testSteps:
+  - Step 1: Go to the book list/details page.
+  - Step 2: Press the 'Update' button for the book you want to edit.
+  - Step 3: Enter a title that is too long or contains invalid characters.
+  - Step 4: Enter valid data for the Author, Genre, Description, and Publication date fields.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system displays an error message indicating the title is invalid, and the book's information remains unchanged in the database.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it specifically tests the system's response to an invalid title input while ensuring other fields are valid, which aligns with the scenario's focus on title validation.
+

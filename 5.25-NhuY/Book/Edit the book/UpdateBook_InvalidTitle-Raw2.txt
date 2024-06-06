@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidTitle_EmptyField
+objective: Verify that the system displays an error message when the Title field is left empty during book update
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Leave the 'Title' field empty, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot be empty.
+explanation: This test case ensures that the system validates the Title field to prevent updating a book with an empty title, which is part of the invalid data handling in the update book process.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidTitle_SpecialCharacters
+objective: Verify that the system displays an error message when the Title field contains special characters
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter special characters (e.g., @#$%) in the 'Title' field, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot contain special characters.
+explanation: This test case checks the system's ability to validate the Title field for special characters, ensuring that titles are kept in a readable and expected format.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidTitle_ExceedCharacterLimit
+objective: Verify that the system displays an error message when the Title field exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter a title in the 'Title' field that exceeds the character limit (if applicable), fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field exceeds the character limit.
+explanation: This test case ensures that the system enforces a character limit on the Title field, preventing excessively long titles that could cause display or database issues.
+

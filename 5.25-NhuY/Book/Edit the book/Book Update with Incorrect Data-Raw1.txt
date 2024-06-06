@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Edit Book with Incorrect Title
+objective: Verify that the system displays an incorrect data message when a user attempts to update a book with an incorrect title format.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter an incorrect format for the book title (e.g., using special characters).
+  - Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the book title is displayed.
+explanation: This test case ensures that the system validates the title field correctly and informs the user about the incorrect format before updating the book record.
+
+Test Case: Test Case 2
+testCaseName: Edit Book with Future Publication Date
+objective: Verify that the system displays an incorrect data message when a user attempts to update a book with a future publication date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Fill in the Title, Author, Genre, and Description fields with valid data.
+  - Step 4: Enter a future date in the 'Publication date' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the publication date is displayed.
+explanation: This test case checks if the system prevents users from entering a future date as the publication date, ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Edit Book and Cancel Operation
+objective: Verify that no data is updated in the database when a user cancels the edit operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of book records without any changes being made to the selected book.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to exit the edit process without making any changes.
+

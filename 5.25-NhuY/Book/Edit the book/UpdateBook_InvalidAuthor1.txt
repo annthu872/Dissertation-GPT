@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidAuthor_ErrorMessage
+objective: Verify that the system displays an error message when attempting to update a book with an invalid author name
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter a valid title, genre, description, and publication date for the book.
+  - Step 4: Enter an invalid author name (e.g., using numbers or special characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the author name is invalid.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateBook_InvalidAuthor' by attempting to update a book with an invalid author name and expecting an error message, which is the core objective of the scenario.
+

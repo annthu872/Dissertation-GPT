@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Home Before Submitting Updated Book Data
+objective: Verify that navigating to the Home menu item before submitting updated book data cancels the update operation and displays the home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click on the 'Home' menu item.
+expectedResult: The book data update operation is canceled, and the home page is displayed without updating the book in the database.
+explanation: This test case ensures that if a user navigates away from the book update form by selecting the 'Home' menu item before submitting the updated data, the update operation is canceled, and the user is redirected to the home page. It directly matches the scenario of navigating to the Home menu item before submitting updated book data.
+
+Test Case: Test Case 2
+testCaseName: Successful Book Data Update and Navigate to Home
+objective: Verify that after successfully updating a book's data, navigating to the Home menu item displays the home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data for all fields (Title, Author, Genre, Description, Publication Date) in the displayed form.
+  - Step 4: Click the 'Submit' button to update the book.
+  - Step 5: After seeing the success message and the updated book list, click on the 'Home' menu item.
+expectedResult: The book is successfully updated in the database, and after navigating to the Home menu, the home page is displayed.
+explanation: This test case verifies that after a successful book update, the user can navigate to the Home menu item to view the home page. It demonstrates the flow of updating a book and then navigating away from the update context.
+

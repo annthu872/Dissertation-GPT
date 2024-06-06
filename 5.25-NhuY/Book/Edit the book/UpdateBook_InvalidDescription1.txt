@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidDescription_EmptyField
+objective: Verify that the system displays an incorrect data message when the description field is left empty during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, leave the 'Description' field empty.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field cannot be empty.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'UpdateBook_InvalidDescription' by specifically testing the scenario where the 'Description' field is left empty, which is a form of invalid description.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidDescription_TooShort
+objective: Verify that the system displays an incorrect data message when the description field contains text that is too short.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, enter a very short text (e.g., 'abc') in the 'Description' field.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field contains text that is too short.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests another form of invalid description—specifically, a description that is too short, thus ensuring the system enforces a minimum length requirement on the description field.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidDescription_SpecialCharacters
+objective: Verify that the system displays an incorrect data message when the description field contains invalid special characters.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, enter a description with invalid special characters (e.g., '@#$%^&*').
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field contains invalid special characters.
+reflect: yes
+explanation: This test case aligns with the given test scenario by testing for invalid special characters in the description field, which is another way the description can be considered invalid. It ensures that the system validates the content of the description field for character validity.
+

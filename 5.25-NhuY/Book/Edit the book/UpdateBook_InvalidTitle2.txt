@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidTitle_EmptyField
+objective: Verify that the system displays an error message when the Title field is left empty during book update
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Leave the 'Title' field empty, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot be empty.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateBook_InvalidTitle' by verifying the system's response to an empty Title field, which is a specific instance of an invalid title.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidTitle_SpecialCharacters
+objective: Verify that the system displays an error message when the Title field contains special characters
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter special characters (e.g., @#$%) in the 'Title' field, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot contain special characters.
+reflect: yes
+explanation: This test case is relevant to the test scenario 'UpdateBook_InvalidTitle' as it tests the system's handling of titles with invalid characters, ensuring that only valid titles are accepted.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidTitle_ExceedCharacterLimit
+objective: Verify that the system displays an error message when the Title field exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter a title in the 'Title' field that exceeds the character limit (if applicable), fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field exceeds the character limit.
+reflect: yes
+explanation: This test case aligns with the test scenario 'UpdateBook_InvalidTitle' by testing the system's response to titles that exceed a predefined character limit, which is another form of invalid title input.
+

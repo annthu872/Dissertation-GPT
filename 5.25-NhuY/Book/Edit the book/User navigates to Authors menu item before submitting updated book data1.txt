@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Authors menu before submitting updated book data
+objective: Verify that navigating to 'Authors' menu before submitting updated book data cancels the update operation and displays the Authors page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click on the 'Authors' menu item.
+expectedResult: The book data update operation is canceled, and the Authors page is displayed without updating the book in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the behavior of the system when a user navigates away from the book update form to the 'Authors' menu before completing the update operation. It checks if the operation is indeed canceled and if the user is redirected appropriately, thus reflecting the given test scenario accurately.
+

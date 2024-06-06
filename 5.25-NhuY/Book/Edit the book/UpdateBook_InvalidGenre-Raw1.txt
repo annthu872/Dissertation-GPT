@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidGenre_ErrorMessage
+objective: Verify that the system displays an error message when an invalid genre is entered during the book update process.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter or modify the book's title, author, description, and publication date with valid data.
+  - Step 4: Enter an invalid genre in the 'Genre' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid genre input is displayed, indicating that the genre entered is not valid.
+explanation: This test case ensures that the system correctly validates the genre field during the book update process and provides feedback to the user when invalid data is entered.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperationWithInvalidGenre
+objective: Verify that the book update operation is successfully cancelled and no changes are made in the database when invalid genre data is entered and the user presses the 'Cancel' button.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter or modify the book's title, author, description, publication date with valid data, and enter an invalid genre.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The book update operation is cancelled, no changes are made to the database, and the user is redirected to the list of book records.
+explanation: This test case checks the functionality of the 'Cancel' button during the book update process, ensuring that even with invalid data entered, no changes are made when the operation is cancelled.
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Genres
+objective: Verify that after cancelling the deletion of an author, the user can navigate to the Genres page without deleting the data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the menu item 'Genres'.
+expectedResult: The Genres page is displayed with updated data, and the author's data previously selected for deletion remains unchanged in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps that involve cancelling a deletion operation and then navigating to the Genres page. It checks that the operation does not affect the data integrity or the user's ability to navigate to other sections of the application, which is the core of the test scenario.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation for a book
+objective: Ensure that the user can delete a book after confirming the deletion operation
+testSteps:
+  - Step 1: Navigate to the book list or details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book record is deleted from the database, and the user is redirected to the updated list of books without the deleted record.
+reflect: yes
+explanation: This test case directly tests the given test scenario by verifying the deletion process after confirmation, which is the core action of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of book deletion
+objective: Ensure that the book record is not deleted when the user cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the book list or details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book record is not deleted from the database, and the user is redirected to the updated list of books with the record still present.
+reflect: yes
+explanation: Although this test case focuses on the cancellation of the deletion process, it is relevant to the given test scenario as it tests the alternative flow where the user decides not to delete the book, which is an important part of the deletion process.
+

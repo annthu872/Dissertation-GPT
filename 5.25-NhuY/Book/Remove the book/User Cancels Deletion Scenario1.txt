@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of book deletion from the book list page
+objective: Ensure that when a user initiates a deletion of a book from the book list page and then cancels, the book is not deleted from the database and the user is returned to the updated book list.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Locate the book intended for deletion and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The book list is displayed without any changes to the book records, indicating the cancellation was successful and no deletion occurred.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify that cancelling a deletion action does not remove the book from the list. The steps clearly outline the process of initiating a deletion and then cancelling it, with the expected result being no change to the book list, thus ensuring the cancellation functionality works as intended.
+

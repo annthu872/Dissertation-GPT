@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify successful author deletion
+objective: Ensure that the user can successfully delete an author and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
+expectedResult: The author's record should be successfully deleted from the database, and the user should be redirected to the updated list of authors without the deleted record.
+explanation: This test case verifies that the deletion process works as intended when the user confirms the deletion. It ensures the application correctly removes the author's record from the database.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of author deletion
+objective: Ensure that the user can cancel the deletion of an author and the record remains in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort the deletion process.
+expectedResult: The deletion process should be aborted, and the user should be redirected to the list of authors with all records intact, including the one intended for deletion.
+explanation: This test case ensures that when a user decides not to delete an author by pressing 'Cancel', the record remains unchanged in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling author deletion
+objective: Ensure that after cancelling the deletion of an author, the user can navigate to other pages without affecting the author's record
+testSteps:
+  - Step 1: Navigate to the author list/details page and click the 'Delete' button next to an author's name.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any other page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: After cancelling the deletion and navigating to another page, the author's record should remain in the database, and the user should be able to view updated data on the navigated page.
+explanation: This test case checks the application's behavior after cancelling an author deletion and ensures that navigation to other pages does not inadvertently affect the author's record.
+

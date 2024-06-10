@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify canceling the deletion of a book
+objective: Ensure that when a user cancels the deletion of a book, the book is not deleted from the database and the user is redirected back to the list of book records.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended to be deleted.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The book should not be deleted from the database, and the user should be redirected back to the list of book records.
+explanation: This test case verifies that the cancel operation works as expected, preventing the deletion of the book and ensuring the integrity of the data.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation to 'Books' after canceling deletion
+objective: To confirm that after canceling the deletion of a book, navigating to 'Books' displays the updated list without the book being deleted.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended to be deleted.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books'.
+expectedResult: The user should be redirected to the 'Books' page with an updated list showing that the book was not deleted.
+explanation: This test case ensures that after canceling a deletion, the user can successfully navigate to the 'Books' section and see that the book remains in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation to 'Genres' after canceling deletion
+objective: To confirm that after canceling the deletion of a book, navigating to 'Genres' displays the corresponding form with updated data.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended to be deleted.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Genres'.
+expectedResult: The user should be redirected to the 'Genres' page with the corresponding form and updated data, indicating the book was not deleted.
+explanation: This test case checks if the cancel operation allows the user to navigate to the 'Genres' section without the book being deleted, ensuring the application behaves as expected after the cancellation.
+

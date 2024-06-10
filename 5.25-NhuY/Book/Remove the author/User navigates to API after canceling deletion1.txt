@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Cancel deletion and navigate to API
+objective: Verify that after canceling the deletion of an author, the user can navigate to the API page without deleting the data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the menu item 'API'.
+expectedResult: The application navigates to the API page without deleting any author data, and the API page displays with updated data.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the user's ability to cancel the deletion process and then successfully navigate to the API page, ensuring the data remains unchanged. It follows the exact steps outlined in the scenario, from attempting to delete an author, cancelling the deletion, to navigating to the API page.
+

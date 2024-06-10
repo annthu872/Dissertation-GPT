@@ -1,0 +1,853 @@
+Scenario: admin can not Add new question for selection test with 'sentence' field containing special characters1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question with special characters in 'sentence' field
+objective: Ensure that the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains special characters
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that includes special characters (e.g., '@#$%^&*').
+  - Step 9: Fill the 'correct answer' field with a valid word.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Sentence is invalid', preventing the admin from saving the question.
+reflect: yes
+explanation: This test case ensures that the system enforces the rule that sentences in the 'sentence' field must not contain any special characters, as per the use case specification. It directly tests the scenario where an admin attempts to add a new question with a 'sentence' containing special characters, which should not be allowed.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field containing special characters2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question with special characters in 'sentence' field
+objective: Ensure that the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains special characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list.
+  - Step 4: Select a topic from the topic list of the selected lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a sentence that includes special characters (e.g., '@#$%').
+  - Step 9: Fill in the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system displays a notification that 'Sentence is invalid', preventing the admin from saving the question.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the system prevents the admin from adding a new question with special characters in the 'sentence' field. It follows the exact steps an admin would take to add a new question and checks for the specific condition (presence of special characters) that should trigger the system's validation rule. The expected result aligns with the scenario's requirement, making it a valid and reflective test case.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field containing special characters3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question with special characters in 'sentence' field
+objective: Ensure that the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains special characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, input a valid sentence that includes special characters (e.g., 'This is a test sentence with special characters @#$%^&*').
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Sentence is invalid', preventing the admin from saving the question.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by verifying that the system does not allow the admin to add a new question for the selection test when the 'sentence' field contains special characters. It follows the exact steps an admin would take to add a new question and checks for the specific condition (presence of special characters) that should trigger the system to prevent the question from being saved. The expected result matches the scenario's requirement, making this test case a valid reflection of the scenario.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field more than 250 characters1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question with 'sentence' field exceeding 250 characters
+objective: Ensure the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains more than 250 characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list.
+  - Step 4: Select a topic from the topic list of the selected lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, input a sentence that is more than 250 characters long, including a symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with a valid word, and fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system should display a notification or error message indicating that the 'sentence' field cannot exceed 250 characters and prevent the question from being saved.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the system enforces a limit on the 'sentence' field length during the question creation process for a selection test. It includes steps to attempt adding a question with a sentence exceeding the specified character limit and checks for the appropriate system response, which is to prevent the question from being saved and to display an error message. Therefore, it accurately reflects the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field more than 250 characters2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question with 'sentence' field exceeding 250 characters
+objective: Ensure the system prevents the addition of a new question for the selection test when the 'sentence' field contains more than 250 characters
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, input a sentence that is more than 250 characters long, ensuring it includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' and the three 'other options' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system should display a notification or error message indicating that the 'sentence' field cannot exceed 250 characters and prevent the question from being saved.
+reflect: yes
+explanation: This test case directly tests the given scenario by attempting to add a new question with a 'sentence' field exceeding the specified character limit. The steps are designed to replicate the exact conditions under which the scenario should be tested, including the process of logging in as an admin, navigating to the appropriate section, and attempting to save a question with an overly long sentence. The expected result of receiving an error message if the 'sentence' field exceeds 250 characters confirms that this test case accurately reflects the scenario.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field more than 250 characters3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question with 'sentence' field over 250 characters
+objective: Ensure the system prevents the admin from adding a new question for the selection test if the 'sentence' field contains more than 250 characters.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: In the 'sentence' field, input a sentence that is more than 250 characters long and includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that the 'sentence' is invalid due to exceeding 250 characters and prevent the question from being saved.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new question with a 'sentence' field exceeding the specified limit of 250 characters. It checks if the system correctly validates the length of the input and provides appropriate feedback, thus reflecting the scenario accurately.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field not containing '...'1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test without '...' in sentence field
+objective: Ensure that the system prevents adding a new question for the selection test if the 'sentence' field does not contain '...'
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence without the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: System shows notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field with '...'.
+reflect: yes
+explanation: This test case ensures that the system enforces the rule that the 'sentence' field must contain '...' for a question to be valid for the selection test. It directly tests the scenario's requirement that a new question cannot be added if this condition is not met.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field not containing '...'2.txt
+Test Case: Test Case 1
+testCaseName: Add new question for selection test with 'sentence' field not containing '...'
+objective: Verify that the system prevents adding a new question for the selection test if the 'sentence' field does not contain '...'
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that does not contain '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: System shows notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field with '...'.
+reflect: yes
+explanation: This test case directly tests the given scenario by attempting to add a new question without the required '...' in the 'sentence' field and expecting the system to prevent this action. It verifies the system's validation rule for the 'sentence' field in the context of adding a new question for the selection test, making it a perfect reflection of the test scenario.
+
+
+Scenario: admin can not Add new question for selection test with 'sentence' field not containing '...'3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with 'sentence' field not containing '...'
+objective: Ensure the system prevents adding a new question for the selection test if the 'sentence' field does not include '...'
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that does not contain '...', fill in the 'correct answer' field with the correct word, and fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field with '...'.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new question without the required '...' in the 'sentence' field. The steps lead to an action that should trigger the system's validation rule against the scenario's condition, and the expected result confirms whether the system correctly enforces this rule. Therefore, it accurately reflects the test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'correct answer' field1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'correct answer' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'correct answer' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Leave the 'correct answer' field empty.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an empty 'correct answer' field and expecting the system to prevent this action. It accurately reflects the scenario by detailing the steps that lead to the system's validation process for the 'correct answer' field, ensuring that the objective of not allowing the addition of a question without a correct answer is met.
+
+
+Scenario: admin can not Add new question for selection test with empty 'correct answer' field2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'correct answer' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'correct answer' field is empty
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Leave the 'correct answer' field empty.
+  - Step 10: Fill in the 'other option 1', 'other option 2', and 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an empty 'correct answer' field and expecting the system to prevent this action. It follows the exact steps an admin would take to encounter the scenario described, making it a perfect reflection of the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'correct answer' field3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'correct answer' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'correct answer' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Leave the 'correct answer' field empty.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new question for the selection test with the 'correct answer' field left empty. It checks if the system correctly prevents the admin from proceeding without filling in all required fields, specifically the 'correct answer' field, thus reflecting the given test scenario accurately.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 1' field1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 1' field
+objective: Ensure the system prevents adding a new question for the selection test if the 'other option 1' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Leave the 'other option 1' field empty.
+  - Step 11: Fill in the 'other option 2' and 'other option 3' fields with different wrong answer words.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 1' field.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a specific flow where the admin attempts to add a new question for a selection test without filling the 'other option 1' field. It checks the system's validation mechanism for compulsory fields and ensures that the scenario where an admin can not add a new question with an empty 'other option 1' field is tested. The steps are clear and lead to an expected result that matches the scenario's requirements.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 1' field2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 1' field
+objective: Ensure the system prevents adding a new question for the selection test if the 'other option 1' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Press a Topic from the Topic list of the selected Lesson.
+  - Step 5: Press a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Leave the 'other option 1' field empty.
+  - Step 11: Fill the 'other option 2' and 'other option 3' fields with different wrong answer words.
+  - Step 12: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 1' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps to attempt adding a new question with a specific field ('other option 1') left empty, and expecting the system to prevent this action. It confirms the scenario's requirement that all fields must be filled, particularly 'other option 1', for a question to be successfully added, thus reflecting the given test scenario accurately.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 1' field3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 1' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'other option 1' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Leave the 'other option 1' field empty.
+  - Step 11: Fill in the 'other option 2' and 'other option 3' fields with different wrong answer words.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 1' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps that lead to the attempt of adding a new question with a specific field ('other option 1') left empty. It checks if the system correctly prevents this action and prompts for the missing information, which is the exact requirement stated in the test scenario. Therefore, it accurately reflects the scenario being tested.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 2' field1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 2' field
+objective: Ensure the system prompts an error when 'other option 2' field is left empty while adding a new question for the selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted to select the type of question.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with another different wrong answer word.
+  - Step 13: Press the 'Save' button to attempt saving the question.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a specific flow where an admin attempts to add a new question for a selection test but leaves the 'other option 2' field empty. It checks if the system correctly prevents the admin from proceeding without filling all required fields, specifically targeting the 'other option 2' field as per the scenario's requirement. The steps are clearly designed to trigger the scenario where the system's validation for compulsory fields is tested, making it a perfect match for the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 2' field2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 2' field
+objective: Ensure the system prompts an error when 'other option 2' field is left empty while adding a new question for the selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with a different wrong answer word.
+  - Step 13: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with the 'other option 2' field left empty, which is the exact condition the scenario aims to test. The steps lead to a situation where the system's response to this specific missing field is observed, making it a perfect reflection of the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 2' field3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 2' field
+objective: Ensure the system prevents adding a new question for the selection test if the 'other option 2' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list of the selected Topic.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with another different wrong answer word.
+  - Step 13: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 2' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with a specific field ('other option 2') left empty. It follows the exact steps an admin would take to add a question for a selection test, including the step where the error is expected to occur (leaving 'other option 2' empty). The expected result is aligned with the scenario's requirement that the system should prevent the question from being added without all compulsory fields filled, thereby accurately reflecting the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 3' field1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 3' field
+objective: Ensure the system prevents adding a new question for the selection test if the 'other option 3' field is left empty by the admin
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' and 'other option 2' fields with different wrong answer words.
+  - Step 11: Leave the 'other option 3' field empty.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 3' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps that lead to an attempt to add a new question with a specific field ('other option 3') left empty. It checks if the system correctly prevents the action and provides appropriate feedback, which is the exact purpose of the given test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 3' field2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question for selection test with empty 'other option 3' field
+objective: Ensure the system prompts an error when 'other option 3' field is left empty while adding a new question for a selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' and 'other option 2' fields with different wrong answer words.
+  - Step 11: Leave the 'other option 3' field empty.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 3' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an essential field ('other option 3') left empty. It checks if the system correctly prevents the action and prompts for the missing information, thus reflecting the given test scenario accurately.
+
+
+Scenario: admin can not Add new question for selection test with empty 'other option 3' field3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'other option 3' field
+objective: Ensure the system prompts an error when 'other option 3' field is left empty while adding a new question for the selection test
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Fill in the 'other option 2' field with a different wrong answer word.
+  - Step 12: Leave the 'other option 3' field empty.
+  - Step 13: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 3' field.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a specific flow where the admin attempts to add a new question for a selection test but leaves the 'other option 3' field empty. It checks if the system correctly prevents the question from being added without all required fields being filled, which is the exact purpose of the test scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'sentence' field1.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add new question for selection test with empty 'sentence' field
+objective: Ensure the system prompts an error when admin attempts to save a new question for the selection test without filling the 'sentence' field
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'correct answer' field with a valid word.
+  - Step 9: Fill in 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 10: Leave the 'sentence' field empty.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an empty 'sentence' field and expecting the system to prevent this action and prompt for the missing information. It reflects the given test scenario accurately by testing the specific condition where the 'sentence' field is left empty.
+
+
+Scenario: admin can not Add new question for selection test with empty 'sentence' field2.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question for selection test with empty 'sentence' field
+objective: Ensure the system prevents adding a new question for the selection test when the 'sentence' field is left empty
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Leave the 'sentence' field empty, fill in the 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new question with an empty 'sentence' field and expecting the system to prevent this action. It reflects the given test scenario accurately by focusing on the requirement that the 'sentence' field must not be empty for the question to be added, which is the core aspect of the scenario.
+
+
+Scenario: admin can not Add new question for selection test with empty 'sentence' field3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin cannot add a new question for selection test with empty 'sentence' field
+objective: Ensure the system prompts an error when admin tries to save a new question for the selection test without filling the 'sentence' field
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'correct answer' field with a valid word form.
+  - Step 9: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 10: Leave the 'sentence' field empty.
+  - Step 11: Press the button 'Save'.
+expectedResult: System shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new question with an empty 'sentence' field and expecting the system to prevent this action and prompt for the missing information. It reflects the scenario accurately by focusing on the 'sentence' field requirement.
+
+
+Scenario: admin cancel Add new question for selection but changes mind and stay1.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test but decides to stay
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and choose to stay on the same page without losing entered data
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' and the three 'other option' fields with appropriate words.
+  - Step 10: Press the 'Cancel' button.
+  - Step 11: In the dialog that appears, press the 'Stay' button.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data still present.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the steps an admin would take to cancel the addition of a new question for a selection test but then decides to stay on the page. It specifically tests the functionality of retaining entered data upon choosing to stay after initiating a cancel action, which is the core aspect of the scenario.
+
+
+Scenario: admin cancel Add new question for selection but changes mind and stay2.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test but decides to stay
+objective: Verify that when an admin cancels the process of adding a new question for a selection test and chooses to stay, the work on that question is kept and not lost.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill in the fields 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' with valid data.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by simulating the actions an admin would take to add a new question for a selection test, then canceling the process but deciding to stay. It verifies that the system behaves as expected by keeping the entered data intact, which is the core objective of the given test scenario.
+
+
+Scenario: admin cancel Add new question for selection but changes mind and stay3.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test but chooses to stay
+objective: Verify that when an admin cancels the process of adding a new question for a selection test and chooses to stay, the system retains the entered information and does not navigate away from the 'Add new question for selection test' page.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: On the 'Add new question for selection test' page, fill in the 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, choose the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data retained.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality where an admin cancels the addition of a new question but chooses to stay on the page. It checks if the system behaves as expected by not discarding the entered data and not navigating away from the 'Add new question for selection test' page, which is the core objective of the given test scenario.
+
+
+Scenario: admin cancel Add new question for selection by back button on browser1.txt
+Test Case: Test Case 1
+testCaseName: Verify Admin Cancels Adding New Question for Selection Test Using Browser Back Button
+objective: Ensure that when an admin uses the browser's back button during the process of adding a new question for a selection test, the action cancels the addition and no new question is saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted by the system.
+  - Step 8: Begin filling out the fields for the new question but do not press 'Save'.
+  - Step 9: Use the browser's back button to attempt to navigate away from the 'Add new question for selection test' page.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the specific action of using the browser's back button to cancel the addition of a new question for a selection test. It follows the exact steps an admin would take to add a new question and then cancels the action using the browser's back button, verifying that the system behaves as expected by not saving the question.
+
+
+Scenario: admin cancel Add new question for selection by back button on browser2.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding new question for selection test using browser back button
+objective: Verify that the question is not saved and the admin is redirected to the 'Word Information' page when using the browser back button during question creation
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list to view its details.
+  - Step 4: Select a topic from the topic list to view its details.
+  - Step 5: Select a word from the vocabulary word list to view its details.
+  - Step 6: Press the 'Add new question' button to start creating a new question for the selection test.
+  - Step 7: Press the option 'Create questions for the selection test' when prompted to choose the type of question.
+  - Step 8: Fill in the required fields with valid data but do not press 'Save'.
+  - Step 9: Press the browser back button.
+expectedResult: The system should redirect the admin to the 'Word Information' page of the selected word, and the question should not be saved.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps that simulate the admin's action of cancelling the addition of a new question for the selection test using the browser's back button. It verifies the objective by ensuring the question is not saved and the admin is redirected back to the 'Word Information' page, which is the expected behavior when cancelling the operation in this manner.
+
+
+Scenario: admin cancel Add new question for selection by back button on browser3.txt
+Test Case: Test Case 1
+testCaseName: Verify admin can cancel adding a new question for selection test by using browser back button
+objective: Ensure that the admin can cancel the process of adding a new question for a selection test by navigating back using the browser's back button, and verify that the question is not saved.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by clicking on the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: On the 'Word Information' page, click on the 'Add new question' button.
+  - Step 7: On the pop-up dialog, choose the option 'Create questions for the selection test'.
+  - Step 8: On the 'Add new question for selection test' page, fill in all the required fields with valid data.
+  - Step 9: Use the browser's back button to navigate back to the 'Word Information' page.
+expectedResult: The system should navigate back to the 'Word Information' page without saving the question. The new question should not appear in the list of questions for the selected word.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the browser's back button to cancel the addition of a new question for a selection test. It ensures that the action does not save the question, which is the main objective of the test scenario.
+
+
+Scenario: admin cancel Add new question for selection with confirmation1.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test and chooses to stay
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and choose to stay on the page to continue editing
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, press the 'Stay' button.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the work on that question kept.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the admin's ability to cancel the process of adding a new question for a selection test and choose to stay on the page, ensuring their work is not lost.
+
+Test Case: Test Case 2
+testCaseName: Admin cancels adding a new question for selection test and confirms cancellation
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and confirm the cancellation to return to the 'Word Information' page
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing the alternative outcome where the admin cancels the addition of a new question for a selection test and confirms the cancellation, leading to no changes being saved and a return to the previous page.
+
+
+Scenario: admin cancel Add new question for selection with confirmation2.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test and chooses to stay
+objective: Verify that when an admin cancels the action of adding a new question for a selection test and chooses to stay, the system keeps the work on that question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence, 'correct answer' with the correct word, and 'other option 1', 'other option 2', 'other option 3' with different wrong answers.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+expectedResult: The dialog closes and the admin remains on the 'Add new question for selection test' page with the previously entered information still displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the functionality of cancelling the addition of a new question for a selection test and choosing to stay, ensuring that the work is not lost.
+
+Test Case: Test Case 2
+testCaseName: Admin cancels adding a new question for selection test and confirms cancellation
+objective: Verify that when an admin cancels the action of adding a new question for a selection test and confirms the cancellation, the system does not save the question and redirects the admin to the 'Word Information' page.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence, 'correct answer' with the correct word, and 'other option 1', 'other option 2', 'other option 3' with different wrong answers.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Confirm'.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word and the question is not saved.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by testing the functionality of cancelling the addition of a new question for a selection test and confirming the cancellation, ensuring that the system behaves as expected by not saving the question and redirecting the admin.
+
+
+Scenario: admin cancel Add new question for selection with confirmation3.txt
+Test Case: Test Case 1
+testCaseName: Admin cancels adding a new question for selection test and chooses to stay
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and choose to stay on the page without losing entered data
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in all the compulsory fields with valid data.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the dialog that appears, press the 'Stay' button.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data still present.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the admin's ability to cancel the process of adding a new question for a selection test and choose to stay on the page without losing any entered data. It follows the exact steps that would be taken in the scenario and checks for the expected outcome.
+
+Test Case: Test Case 2
+testCaseName: Admin cancels adding a new question for selection test and confirms cancellation
+objective: Verify that the admin can cancel the process of adding a new question for a selection test and confirm the cancellation, leading to loss of entered data
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill in all the compulsory fields with valid data.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the dialog that appears, press the 'Confirm' button.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.
+reflect: yes
+explanation: This test case also accurately reflects the given test scenario by testing the admin's ability to cancel the process of adding a new question for a selection test and confirm the cancellation. It ensures that the cancellation process works as intended, leading to the admin being redirected away and the data not being saved, which is a critical part of the scenario.
+
+
+Scenario: navigate to Add new question for selection test page via from Homepage1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Question for Selection Test Page via Homepage
+objective: Verify that the admin can navigate to the 'Add new question for selection test' page via the homepage by following the specified navigation path.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the Lesson Management page, press one Lesson on the Lesson list.
+  - Step 4: On the 'Lesson Information' page, press one Topic on the Topic list.
+  - Step 5: On the 'Topic Information' page, press one word on the vocabulary word list.
+  - Step 6: On the 'Word Information' page, press the button 'Add new question'.
+  - Step 7: From the pop-up dialog, press the option 'Create questions for the selection test'.
+expectedResult: The system should redirect the Admin to the 'Add new question for selection test' page, displaying all the fields required for creating a selection test question.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear and specific path from the homepage to the 'Add new question for selection test' page. Each step is designed to verify the navigation flow and ensure that the admin can reach the intended page without any issues, thus accurately testing the scenario.
+
+
+Scenario: navigate to Add new question for selection test page via from Homepage2.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Question for Selection Test Page via Homepage
+objective: Verify that the admin can navigate to the 'Add new question for selection test' page from the Homepage by following the specified navigation path.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar from the Homepage.
+  - Step 3: From the Lesson Management page, press one Lesson on the Lesson list.
+  - Step 4: On the 'Lesson Information' page, press one Topic on the Topic list.
+  - Step 5: On the 'Topic Information' page, press one word on the vocabulary word list.
+  - Step 6: On the 'Word Information' page, press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+expectedResult: The system should redirect the Admin to the 'Add new question for selection test' page, displaying all the fields required for creating a selection test question.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear and specific navigation path from the Homepage to the 'Add new question for selection test' page. It verifies the functionality and accessibility of the system's UI to ensure that the admin can successfully reach the intended page to add a new question for a selection test, which is the primary objective of the given test scenario.
+
+
+Scenario: navigate to Add new question for selection test page via from Homepage3.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Question for Selection Test Page via Homepage
+objective: Verify that the admin can navigate to the 'Add new question for selection test' page from the Homepage by following the specified navigation path.
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar from the Homepage.
+  - Step 3: From the Lesson Management page, press one Lesson on the Lesson list.
+  - Step 4: On the 'Lesson Information' page, press one Topic on the Topic list.
+  - Step 5: On the 'Topic Information' page, press one word on the vocabulary word list.
+  - Step 6: On the 'Word Information' page, press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+expectedResult: The system should redirect the Admin to the 'Add new question for selection test' page, displaying all the fields required for creating a selection test question.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear and specific path from the Homepage to the 'Add new question for selection test' page. It includes all necessary steps an admin must follow to reach the intended page, thus verifying the navigation flow as described in the scenario.
+
+
+Scenario: successful Add new question for selection test with all valid field1.txt
+Test Case: Test Case 1
+testCaseName: Successfully add a new question for selection test with all valid fields
+objective: Verify that an admin can successfully add a new question for a selection test with all required fields filled correctly
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different incorrect words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the successful addition of a new question for a selection test with all valid fields. The test steps clearly outline the process from logging in as an Admin to saving the new question, ensuring that all required fields are correctly filled. The expected result confirms that the system should save and display the new question, indicating a successful test case for the given scenario.
+
+
+Scenario: successful Add new question for selection test with all valid field2.txt
+Test Case: Test Case 1
+testCaseName: Add new question for selection test with all valid fields
+objective: Verify that an admin can successfully add a new question for a selection test with all required fields filled correctly.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question is visible.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the successful addition of a new question for a selection test with all valid fields. The test steps clearly outline the process from logging in as an admin to saving a new question with all required fields correctly filled. The expected result confirms that the test scenario's objective is met by checking that the system saves and displays the new question appropriately.
+
+
+Scenario: successful Add new question for selection test with all valid field3.txt
+Test Case: Test Case 1
+testCaseName: Successfully add a new question for selection test with all valid fields
+objective: Verify that an admin can successfully add a new question for a selection test with all required fields filled correctly
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list of the selected Topic.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successfully adding a new question for a selection test with all valid fields. It outlines a clear and detailed process starting from logging in as an Admin to the final step of saving the question. The expected result confirms that the test scenario's objective is met by verifying the successful addition and visibility of the new question in the system.
+
+

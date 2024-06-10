@@ -1,0 +1,43 @@
+{
+    "Learning Streak Resets After Break-Raw1.txt0": {},
+    "Learning Streak Resets After Break-Raw1.txt1": {
+        "testCaseName": "Verify Learning Streak Resets After One Day Break",
+        "objective": "To verify that the learning streak resets to one after the learner fails to learn for one day.",
+        "testSteps": [
+            "- Step 1: Ensure the learner is logged into the application.",
+            "- Step 2: Learner selects 'History' on the Home page.",
+            "- Step 3: After being redirected, learner selects 'Day History' on the History page.",
+            "- Step 4: Verify the current learning streak is displayed.",
+            "- Step 5: Simulate a break by not logging any learning activity for one day.",
+            "- Step 6: Repeat steps 2 and 3 after the break day."
+        ],
+        "expectedResult": "After the break day, the learning streak should reset to one, indicating the learner has started a new learning streak.",
+        "explanation": "This test case ensures that the system accurately tracks learning streaks and resets the count to one if the learner does not continue their learning activities every day, as per the basic flow described in the use case."
+    },
+    "Learning Streak Resets After Break-Raw1.txt2": {
+        "testCaseName": "Verify Continuous Learning Streak Does Not Reset",
+        "objective": "To verify that the learning streak does not reset if the learner continues to learn every day.",
+        "testSteps": [
+            "- Step 1: Ensure the learner is logged into the application.",
+            "- Step 2: Learner selects 'History' on the Home page.",
+            "- Step 3: After being redirected, learner selects 'Day History' on the History page.",
+            "- Step 4: Verify the current learning streak is displayed.",
+            "- Step 5: Log learning activity for consecutive days without a break.",
+            "- Step 6: Repeat steps 2 and 3 after logging learning activities for several days."
+        ],
+        "expectedResult": "The learning streak should accurately reflect the number of consecutive days the learner has engaged in learning activities without resetting.",
+        "explanation": "This test case verifies that the system correctly maintains the count of consecutive learning days as long as the learner does not take a break, aligning with the basic flow of the use case."
+    },
+    "Successful Continuous Learning Streak Display-Raw1.txt0": {},
+    "Successful Continuous Learning Streak Display-Raw1.txt1": {
+        "testCaseName": "Verify Continuous Learning Streak Display",
+        "objective": "Verify that the system correctly displays the number of days a learner has learned continuously without breaking the chain.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Select 'History' on the Home page.",
+            "- Step 3: On the History page, select 'Day History'."
+        ],
+        "expectedResult": "The system should redirect the learner to a page showing the number of days they have learned continuously. If the learner has not broken their learning chain, this number should accurately reflect their streak.",
+        "explanation": "This test case is created to ensure that the system accurately tracks and displays the continuous learning streak of a learner, as per the basic flow described in the use case 'learning days history'. It verifies that the system correctly calculates and presents the streak based on the learner's daily learning activities."
+    }
+}

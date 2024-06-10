@@ -1,0 +1,385 @@
+Scenario: Cancel Adding New Lesson After Entering Description1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Description
+objective: Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's description.
+testSteps:
+  - Step 1: Log in to the application as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Cancel' to stop adding the new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to verify the cancellation process after entering a description for a new lesson. It specifically tests the functionality of the 'Cancel' button in the context of adding a new lesson, ensuring that the action does not result in the creation of a new lesson and that the user is redirected appropriately, which is the main objective of the given test scenario.
+
+
+Scenario: Cancel Adding New Lesson After Entering Description2.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Description
+objective: Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's description.
+testSteps:
+  - Step 1: Log in to the application as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Cancel' to stop adding the new lesson.
+expectedResult: The process of adding a new lesson is cancelled, and the administrator is redirected away from the 'Add new Lesson' page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality that allows an administrator to cancel the process of adding a new lesson after entering details such as the lesson's description. It covers the steps from initiating the add lesson process to the point of cancellation, ensuring the system behaves as expected without creating a new lesson.
+
+
+Scenario: Cancel Adding New Lesson After Entering Description3.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Description
+objective: Verify that the administrator can cancel the process of adding a new lesson after entering the description but before saving.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Cancel' to stop adding the new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator back to the previous page or a main/admin dashboard without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality that allows an administrator to cancel the process of adding a new lesson after entering the description. It covers the steps from logging in as an administrator to selecting 'Cancel' after entering the lesson's description, which is the exact flow described in the scenario.
+
+
+Scenario: Cancel Adding New Lesson After Entering Name1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Name
+objective: Verify that the administrator can cancel adding a new lesson after entering the lesson name but before saving.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 5: Press 'Cancel' to stop adding the new lesson.
+expectedResult: The system should cancel the lesson creation process and redirect the administrator to the previous page or a main dashboard without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear path for verifying the ability to cancel the process of adding a new lesson after entering its name. It covers the specific action of cancellation after the entry of a lesson name, which is the core of the test scenario.
+
+
+Scenario: Cancel Adding New Lesson After Entering Name2.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining the steps to verify if the cancellation process works as intended after entering a lesson name. It focuses on the specific action of cancelling the addition of a new lesson post-name entry, which is the core of the test scenario.
+
+
+Scenario: Cancel Adding New Lesson After Entering Name3.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson After Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the functionality of cancelling the addition of a new lesson after entering its name. The test steps clearly outline the process from logging in as an administrator to cancelling the addition after entering the lesson name, which aligns perfectly with the scenario's requirements.
+
+
+Scenario: Cancel Adding New Lesson Before Entering Name1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson Before Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, do not enter any information in the name field.
+  - Step 5: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of cancelling the addition of a new lesson before any information is entered. It follows the exact steps an administrator would take to initiate the process of adding a lesson and then cancel it before entering a lesson name, which is the core action the scenario aims to test. The expected result confirms that the cancellation should lead to no new lesson being created, aligning perfectly with the scenario's requirements.
+
+
+Scenario: Cancel Adding New Lesson Before Entering Name2.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson Before Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.
+testSteps:
+  - Step 1: Log in to the application as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, directly select 'Cancel' without entering any information in the name field.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page or a relevant page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the ability to cancel the process of adding a new lesson before entering any lesson name. The steps outlined guide the tester through the process of initiating the addition of a new lesson and then cancelling this process before any information is entered, which is the exact flow the scenario aims to test.
+
+
+Scenario: Cancel Adding New Lesson Before Entering Name3.txt
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson Before Entering Name
+objective: Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.
+testSteps:
+  - Step 1: Log in to the application as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, do not enter any information in the name field.
+  - Step 5: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of cancelling the addition of a new lesson before any information is entered. It follows the exact steps an administrator would take to initiate the process of adding a lesson and then cancel it before entering a lesson name, which is the core action the scenario aims to test.
+
+
+Scenario: Lesson Creation with Duplicate Name1.txt
+Test Case: Test Case 2
+testCaseName: Lesson Creation with Duplicate Name
+objective: Verify that the system prevents the creation of a new lesson with a name that is already used and prompts for a new name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when attempting to create a lesson with a duplicate name. It tests the specific condition and expected outcome related to the scenario.
+
+
+Scenario: Lesson Creation with Duplicate Name2.txt
+Test Case: Test Case 2
+testCaseName: Lesson Creation with Duplicate Name
+objective: Verify that the system prevents the creation of a new lesson with a name that already exists.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when attempting to create a lesson with a duplicate name.
+
+Test Case: Test Case 3
+testCaseName: Lesson Creation with Duplicate Name and Correction
+objective: Verify that the administrator can successfully add a new lesson after initially attempting to use a duplicate name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+  - Step 7: After receiving the notification that the name is already used, enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the lesson.
+expectedResult: The system should create the new lesson with the new, unique name and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the system's handling of a duplicate lesson name and the subsequent correction process, aligning with the scenario's focus on managing duplicate names.
+
+
+Scenario: Lesson Creation with Duplicate Name3.txt
+Test Case: Test Case 2
+testCaseName: Verify Lesson Creation with Duplicate Name
+objective: Ensure that the system prevents the creation of a new lesson with a name that is already in use.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when attempting to create a lesson with a duplicate name. It tests the specific condition and expected outcome related to the scenario of 'Lesson Creation with Duplicate Name'.
+
+
+Scenario: Lesson Creation with Missing Description1.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Description
+objective: Verify that the system prevents the creation of a new lesson without a description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 5: Leave the description field empty.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the description field is required and prevent the lesson from being created.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a lesson without a description. It specifically tests the scenario where the description is missing, aligning perfectly with the scenario's objective.
+
+
+Scenario: Lesson Creation with Missing Description2.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Description
+objective: Verify that the system prevents the creation of a new lesson without a description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Leave the description field empty.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the description field cannot be empty and the lesson is not created.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a lesson without providing a description. The steps guide the tester through the process of trying to create a lesson while intentionally omitting the description, and the expected result clearly states that the system should prevent the lesson creation and display an appropriate error message. Therefore, it accurately tests the scenario in question.
+
+
+Scenario: Lesson Creation with Missing Description3.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Description
+objective: Verify that the system prevents the creation of a new lesson without a description
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Leave the description field empty.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the description field cannot be empty and the lesson is not created.
+reflect: yes
+explanation: This test case directly tests the given scenario by attempting to create a lesson without a description and expecting an error message, ensuring the system's validation process is functioning as intended.
+
+
+Scenario: Lesson Creation with Missing Name1.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Name
+objective: Verify that the system prevents the creation of a new lesson without a lesson name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, leave the name field empty.
+  - Step 5: Fill in the description of the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the lesson name is required and prevent the lesson from being created.
+reflect: yes
+explanation: This test case directly addresses the test scenario of 'Lesson Creation with Missing Name' by outlining steps that attempt to create a lesson without providing a name. The expected result of displaying an error message and preventing lesson creation aligns perfectly with the objective of verifying the system's handling of this specific validation error. Therefore, it reflects the given test scenario accurately.
+
+
+Scenario: Lesson Creation with Missing Name2.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Name
+objective: Verify that the system prevents the creation of a new lesson without a lesson name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Leave the name field empty.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message indicating that the lesson name is required and prevent the lesson from being created.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a lesson without a name. The steps guide the tester through the process of trying to create a lesson without filling in the name field, which is the exact condition the scenario aims to test. The expected result of displaying an error message and preventing the lesson creation aligns perfectly with the objective of ensuring that a lesson cannot be created without a name, thus confirming that the test case accurately tests the given scenario.
+
+
+Scenario: Lesson Creation with Missing Name3.txt
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Name
+objective: Verify that the system prevents the creation of a new lesson without a lesson name and prompts for a lesson name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Leave the name field empty.
+  - Step 5: Add a description of the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display a notification or message indicating that the lesson name is required and prevent the lesson from being created.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a lesson without providing a name. It accurately tests the system's validation process for lesson creation, ensuring that a lesson name is mandatory.
+
+
+Scenario: Navigate to Add New Lesson Page via Navbar Option1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.
+testSteps:
+  - Step 1: Log in to the application as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, select 'Add new Lesson'.
+expectedResult: The system should redirect the administrator to the 'Add new Lesson' page.
+reflect: yes
+explanation: This test case directly tests the given scenario by outlining steps to navigate to the 'Add New Lesson' page via the navbar, which is the exact action the scenario intends to verify.
+
+
+Scenario: Navigate to Add New Lesson Page via Navbar Option2.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+expectedResult: The system should redirect the administrator to the 'Add New Lesson' page.
+reflect: yes
+explanation: This test case directly tests the given scenario by outlining the steps to navigate to the 'Add New Lesson' page via the navbar, which is the exact action the scenario describes.
+
+
+Scenario: Navigate to Add New Lesson Page via Navbar Option3.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+expectedResult: The system should redirect the administrator to the 'Add new Lesson' page.
+reflect: yes
+explanation: This test case directly tests the given test scenario, which is navigating to the 'Add New Lesson' page via the navbar option. It follows the exact steps an administrator would take to reach the 'Add New Lesson' page, thus accurately reflecting the scenario.
+
+
+Scenario: Successful Lesson Creation1.txt
+Test Case: Test Case 1
+testCaseName: Successful New Lesson Creation
+objective: Verify that the administrator can successfully add a new English learning lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Lesson Creation' by outlining the steps to create a new lesson and the expected successful outcome.
+
+
+Scenario: Successful Lesson Creation2.txt
+Test Case: Test Case 1
+testCaseName: Successful New Lesson Creation
+objective: Verify that an administrator can successfully add a new English learning lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Lesson Creation' by outlining the steps an administrator would take to successfully add a new lesson, including logging in, navigating to the lesson management section, entering lesson details, and saving the new lesson.
+
+
+Scenario: Successful Lesson Creation3.txt
+Test Case: Test Case 1
+testCaseName: Successful Lesson Creation via Lesson Management
+objective: Verify that an administrator can successfully add a new English learning lesson through the Lesson Management page.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'View list of Lesson' from the dropdown menu.
+  - Step 4: On the Lesson Management page, select the button 'Add new Lesson'.
+  - Step 5: On the 'Add new Lesson' page, enter a unique name for the lesson in the name field.
+  - Step 6: Add a description for the lesson in the description field.
+  - Step 7: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Lesson Creation' by outlining the steps an administrator would take to successfully add a new lesson through the Lesson Management interface.
+
+

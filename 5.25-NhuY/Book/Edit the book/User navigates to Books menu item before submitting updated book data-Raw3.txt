@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu and Submit Updated Book Data
+objective: Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button to submit the updated book data.
+expectedResult: The book's data is updated in the database, and the list of books with the updated records is displayed.
+explanation: This test case ensures that users can navigate to the Books menu, update a book's details, and submit the changes, which directly matches the scenario name.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Books Menu and Cancel Book Data Update
+objective: Verify that the user can navigate to the Books menu item, attempt to edit a book's details, but cancel the operation before submitting.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering the updated book data including Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Cancel' button before submitting the updated data.
+expectedResult: The book's data is not updated in the database, and the list of book records is displayed without applying the changes.
+explanation: This test case verifies that users have the option to cancel the book data update operation, which is a critical part of the user's ability to control data submission.
+
+Test Case: Test Case 3
+testCaseName: Submit Updated Book Data with Incorrect Fields
+objective: Verify that the system displays error messages for incorrectly entered data when updating a book's details.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter incorrect data for at least one of the fields (e.g., an invalid publication date).
+  - Step 4: Press the 'Submit' button to attempt to submit the updated book data.
+expectedResult: The system displays messages indicating which data was entered incorrectly.
+explanation: This test case ensures that the system validates user input and provides feedback on incorrect data, which is essential for maintaining data integrity.
+

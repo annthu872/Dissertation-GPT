@@ -1,0 +1,128 @@
+{
+    "Administrator exits editing mode without saving directly-Raw1.txt0": {},
+    "Administrator exits editing mode without saving directly-Raw1.txt1": {
+        "testCaseName": "Administrator exits editing mode without saving changes",
+        "objective": "Verify that the system deletes and does not record the edited exercises when the administrator exits editing mode without saving.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose the topic that has the test needed editing, then select 'Edit'.",
+            "- Step 4: Edit the exercises as required.",
+            "- Step 5: Press the button to exit exercise editing mode.",
+            "- Step 6: On the pop-up screen, select 'Do not save'."
+        ],
+        "expectedResult": "The system should not save the changes made to the exercises, effectively discarding any edits made during the session.",
+        "explanation": "This test case ensures that when an administrator decides not to save the changes made to a test, the system respects this choice and does not record the edits. It directly tests the exception flow of the use case where the administrator exits editing mode without saving."
+    },
+    "Edit Vocabulary Exercises and Cancel-Raw1.txt0": {},
+    "Edit Vocabulary Exercises and Cancel-Raw1.txt1": {
+        "testCaseName": "Edit Vocabulary Exercises Successfully",
+        "objective": "Verify that the administrator can successfully edit vocabulary exercises and save changes.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.",
+            "- Step 4: On the editing interface, make the desired changes to the vocabulary exercises.",
+            "- Step 5: Select 'Save' to apply the changes."
+        ],
+        "expectedResult": "The system saves all edited exercises, and the changes are reflected in the topic's vocabulary exercises.",
+        "explanation": "This test case ensures that administrators can edit and save changes to vocabulary exercises, directly reflecting the basic flow of the use case."
+    },
+    "Edit Vocabulary Exercises and Cancel-Raw1.txt2": {
+        "testCaseName": "Cancel Editing Vocabulary Exercises with Save Prompt",
+        "objective": "Verify that the administrator can cancel editing vocabulary exercises and choose to save changes when prompted.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.",
+            "- Step 4: On the editing interface, make some changes to the vocabulary exercises.",
+            "- Step 5: Attempt to exit the exercise editing mode.",
+            "- Step 6: On the 'Save changes?' prompt, select 'Save'."
+        ],
+        "expectedResult": "The system saves all edited exercises, and the changes are reflected in the topic's vocabulary exercises.",
+        "explanation": "This test case verifies that administrators can cancel their editing session but still choose to save their changes when prompted, aligning with the alternative flow of the use case."
+    },
+    "Edit Vocabulary Exercises and Cancel-Raw1.txt3": {
+        "testCaseName": "Cancel Editing Vocabulary Exercises without Saving",
+        "objective": "Verify that the administrator can cancel editing vocabulary exercises and choose not to save changes when prompted.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.",
+            "- Step 4: On the editing interface, make some changes to the vocabulary exercises.",
+            "- Step 5: Attempt to exit the exercise editing mode.",
+            "- Step 6: On the 'Save changes?' prompt, select 'Do not save'."
+        ],
+        "expectedResult": "The system discards the changes made during the editing session, and the vocabulary exercises remain unchanged.",
+        "explanation": "This test case ensures that administrators have the option to cancel their editing session and not save changes, in line with the exception flow of the use case."
+    },
+    "Edit Vocabulary Exercises with Invalid Inputs-Raw1.txt0": {},
+    "Edit Vocabulary Exercises with Invalid Inputs-Raw1.txt1": {
+        "testCaseName": "Edit Vocabulary Exercises with Invalid Vocabulary Inputs",
+        "objective": "Verify that the system prevents saving when the administrator edits a vocabulary exercise with vocabulary that does not exist in the system.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose a topic that contains the test you wish to edit, then select 'Edit'.",
+            "- Step 4: In the editing interface, attempt to add or edit vocabulary in the exercises with words that do not exist in the system.",
+            "- Step 5: Select 'Save' to attempt saving the edited exercises."
+        ],
+        "expectedResult": "The system should display an error message indicating that the vocabulary does not exist in the system and prevent saving the changes.",
+        "explanation": "This test case ensures that the system enforces the precondition that vocabulary added to exercises must exist in the system, thereby preventing the entry of invalid data."
+    },
+    "Edit Vocabulary Exercises with Invalid Inputs-Raw1.txt2": {
+        "testCaseName": "Edit Vocabulary Exercises with Invalid Fill in the Blanks Inputs",
+        "objective": "Verify that the system prevents saving when the administrator edits a fill in the blanks exercise with vocabulary that does not exist in the system.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: On the home page, select 'Topic' on the navbar.",
+            "- Step 3: Choose a topic that contains the test you wish to edit, then select 'Edit'.",
+            "- Step 4: In the editing interface, attempt to edit a fill in the blanks exercise by inserting vocabulary that does not exist in the system.",
+            "- Step 5: Select 'Save' to attempt saving the edited exercises."
+        ],
+        "expectedResult": "The system should display an error message indicating that the vocabulary for the fill in the blanks exercise does not exist in the system and prevent saving the changes.",
+        "explanation": "This test case checks that the system adheres to the precondition requiring that vocabulary for fill in the blanks exercises must exist in the system, preventing incorrect exercise creation."
+    },
+    "Successful Edit and Save of Vocabulary Exercises-Raw1.txt0": {},
+    "Successful Edit and Save of Vocabulary Exercises-Raw1.txt1": {
+        "testCaseName": "Successful Edit and Save of Vocabulary Exercises via Direct Save",
+        "objective": "Verify that the administrator can successfully edit and save vocabulary exercises using the direct save option.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Topic' on the navbar.",
+            "- Step 3: Select a topic that contains the test to be edited and click 'Edit'.",
+            "- Step 4: On the editing interface, make changes to the vocabulary exercises as required.",
+            "- Step 5: Click the 'Save' button to save the edited exercises."
+        ],
+        "expectedResult": "The system should save all edited exercises, and the changes should be reflected immediately.",
+        "explanation": "This test case ensures that administrators can directly save changes made to vocabulary exercises without encountering issues, directly following the basic flow of the use case."
+    },
+    "Successful Edit and Save of Vocabulary Exercises-Raw1.txt2": {
+        "testCaseName": "Successful Edit and Save of Vocabulary Exercises via Confirmation Dialog",
+        "objective": "Verify that the administrator can successfully edit and save vocabulary exercises using the confirmation dialog.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Topic' on the navbar.",
+            "- Step 3: Select a topic that contains the test to be edited and click 'Edit'.",
+            "- Step 4: On the editing interface, make changes to the vocabulary exercises as required.",
+            "- Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.",
+            "- Step 6: On the pop-up screen, select 'Save' to confirm saving the changes."
+        ],
+        "expectedResult": "The system should save all edited exercises, and the changes should be reflected immediately, confirming the successful save through the confirmation dialog.",
+        "explanation": "This test case verifies the alternative flow where the administrator uses the confirmation dialog to save changes, ensuring the system correctly handles this scenario."
+    },
+    "Successful Edit and Save of Vocabulary Exercises-Raw1.txt3": {
+        "testCaseName": "Unsuccessful Edit of Vocabulary Exercises via Do Not Save Option",
+        "objective": "Verify that the administrator can edit but not save vocabulary exercises by selecting 'Do not save' option.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Topic' on the navbar.",
+            "- Step 3: Select a topic that contains the test to be edited and click 'Edit'.",
+            "- Step 4: On the editing interface, make changes to the vocabulary exercises as required.",
+            "- Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.",
+            "- Step 6: On the pop-up screen, select 'Do not save' to discard the changes."
+        ],
+        "expectedResult": "The system should not save the edited exercises, and no changes should be reflected, ensuring the edits are not recorded.",
+        "explanation": "This test case covers the exception flow where changes made by the administrator are not saved, testing the system's ability to discard unsaved changes."
+    }
+}

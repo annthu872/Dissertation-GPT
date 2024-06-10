@@ -1,0 +1,87 @@
+{
+    "Correct Answer Scenario-Raw1.txt0": {},
+    "Correct Answer Scenario-Raw1.txt1": {
+        "testCaseName": "Correct Answer Submission for Listening Pronunciation Test",
+        "objective": "Verify that the system correctly identifies and responds to a correct answer submission in a listening pronunciation test question.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Navigate to the review test function within the application.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word based on the pronunciation and select the correct answer.",
+            "- Step 6: Submit the answer."
+        ],
+        "expectedResult": "A green pop-up screen should appear, indicating that the answer is correct.",
+        "explanation": "This test case ensures that when a learner submits a correct answer in a listening pronunciation test, the system accurately recognizes the correct answer and provides positive feedback through a green pop-up screen."
+    },
+    "Correct Answer Scenario-Raw1.txt2": {
+        "testCaseName": "Incorrect Answer Submission for Listening Pronunciation Test",
+        "objective": "Verify that the system correctly identifies and responds to an incorrect answer submission in a listening pronunciation test question.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Navigate to the review test function within the application.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word based on the pronunciation and select an incorrect answer.",
+            "- Step 6: Submit the answer."
+        ],
+        "expectedResult": "A red pop-up screen should appear, indicating that the answer is incorrect.",
+        "explanation": "This test case verifies that the system can accurately detect when a learner submits an incorrect answer in a listening pronunciation test and provides immediate feedback through a red pop-up screen."
+    },
+    "Incorrect Answer Scenario-Raw.txt0": {},
+    "Incorrect Answer Scenario-Raw.txt1": {
+        "testCaseName": "Verify correct answer for listening pronunciation test",
+        "objective": "Ensure that the system correctly validates a learner's answer as correct and displays a green pop-up screen.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Navigate to the review test function.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word and choose the correct answer."
+        ],
+        "expectedResult": "A green pop-up screen should appear indicating the answer is correct.",
+        "explanation": "This test case verifies that the system can accurately assess when a learner selects the correct answer in a listening pronunciation test and provides the appropriate positive feedback through a green pop-up screen."
+    },
+    "Incorrect Answer Scenario-Raw.txt2": {
+        "testCaseName": "Verify incorrect answer for listening pronunciation test",
+        "objective": "Ensure that the system correctly validates a learner's answer as incorrect and displays a red pop-up screen.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Navigate to the review test function.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word and choose the wrong answer."
+        ],
+        "expectedResult": "A red pop-up screen should appear indicating the answer is incorrect.",
+        "explanation": "This test case ensures that the system can accurately assess when a learner selects the wrong answer in a listening pronunciation test and provides the appropriate negative feedback through a red pop-up screen."
+    },
+    "Incorrect Answer Scenario-Raw1.txt0": {},
+    "Incorrect Answer Scenario-Raw1.txt1": {
+        "testCaseName": "Verify correct answer for listening pronunciation test question",
+        "objective": "Ensure that the system correctly validates a learner's answer as correct and displays a green pop-up screen.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Navigate to the review test function.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word and choose the correct answer based on the pronunciation.",
+            "- Step 6: Submit the answer."
+        ],
+        "expectedResult": "A green pop-up screen should appear, indicating the answer is correct.",
+        "explanation": "This test case verifies that the system can accurately assess when a learner selects the correct answer for a listening pronunciation test question, following the basic flow."
+    },
+    "Incorrect Answer Scenario-Raw1.txt2": {
+        "testCaseName": "Verify incorrect answer for listening pronunciation test question",
+        "objective": "Ensure that the system correctly validates a learner's answer as incorrect and displays a red pop-up screen.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Navigate to the review test function.",
+            "- Step 3: Start a listening pronunciation test question.",
+            "- Step 4: Click on the speaker button to listen to the word's pronunciation.",
+            "- Step 5: Guess the entire word and choose an incorrect answer intentionally.",
+            "- Step 6: Submit the answer."
+        ],
+        "expectedResult": "A red pop-up screen should appear, indicating the answer is incorrect.",
+        "explanation": "This test case ensures that the system can accurately assess when a learner selects the wrong answer for a listening pronunciation test question, aligning with the alternative flow 2."
+    }
+}

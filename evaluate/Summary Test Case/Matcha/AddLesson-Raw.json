@@ -1,0 +1,522 @@
+{
+    "Cancel Adding New Lesson After Entering Description-Raw1.txt0": {},
+    "Cancel Adding New Lesson After Entering Description-Raw1.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Description",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's description.",
+        "testSteps": [
+            "- Step 1: Log in to the application as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Cancel' to stop adding the new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the ability to cancel the process of adding a new lesson after they have entered information into the description field, without the system saving any entered data. It directly tests the exception flow mentioned in the use case specification."
+    },
+    "Cancel Adding New Lesson After Entering Description-Raw2.txt0": {},
+    "Cancel Adding New Lesson After Entering Description-Raw2.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Description",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's description.",
+        "testSteps": [
+            "- Step 1: Log in to the application as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Cancel' to stop adding the new lesson."
+        ],
+        "expectedResult": "The process of adding a new lesson is cancelled, and the administrator is redirected away from the 'Add new Lesson' page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the ability to cancel the process of adding a new lesson after they have entered information into the description field, which aligns with the exception flow of the use case specification."
+    },
+    "Cancel Adding New Lesson After Entering Description-Raw3.txt0": {},
+    "Cancel Adding New Lesson After Entering Description-Raw3.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Description",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson after entering the description but before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Cancel' to stop adding the new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator back to the previous page or a main/admin dashboard without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the ability to cancel the process of adding a new lesson after they have entered information but decided not to proceed with saving it. It directly relates to the exception flow where the administrator can select 'Cancel' to stop adding a new lesson at any time."
+    },
+    "Cancel Adding New Lesson After Entering Name-Raw1.txt0": {},
+    "Cancel Adding New Lesson After Entering Name-Raw1.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Name",
+        "objective": "Verify that the administrator can cancel adding a new lesson after entering the lesson name but before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: On the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Press 'Cancel' to stop adding the new lesson."
+        ],
+        "expectedResult": "The system should cancel the lesson creation process and redirect the administrator to the previous page or a main dashboard without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the flexibility to cancel the process of adding a new lesson after they have started it. It is based on the exception flow where the administrator can select 'Cancel' at any time during the lesson creation process."
+    },
+    "Cancel Adding New Lesson After Entering Name-Raw2.txt0": {},
+    "Cancel Adding New Lesson After Entering Name-Raw2.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Name",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.",
+            "- Step 5: Select 'Cancel' to stop adding a new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the flexibility to cancel the process of adding a new lesson after they have started it, specifically after entering the lesson's name. It directly relates to the exception flow mentioned in the use case, providing a way to test the system's ability to handle cancellation requests at this stage."
+    },
+    "Cancel Adding New Lesson After Entering Name-Raw3.txt0": {},
+    "Cancel Adding New Lesson After Entering Name-Raw3.txt1": {
+        "testCaseName": "Cancel Adding New Lesson After Entering Name",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson after entering the lesson's name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.",
+            "- Step 5: Select 'Cancel' to stop adding a new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the flexibility to cancel the process of adding a new lesson after they have started it, specifically after entering the lesson's name. It is directly related to the scenario of cancelling the addition of a new lesson after entering the name, as described in the use case."
+    },
+    "Cancel Adding New Lesson Before Entering Name-Raw1.txt0": {},
+    "Cancel Adding New Lesson Before Entering Name-Raw1.txt1": {
+        "testCaseName": "Cancel Adding New Lesson Before Entering Name",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: On the 'Add new Lesson' page, do not enter any information in the name field.",
+            "- Step 5: Select 'Cancel' to stop adding a new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the option to cancel the process of adding a new lesson at an early stage, specifically before entering any information for the lesson name. It directly relates to the exception flow mentioned in the use case, providing a way to test the system's ability to handle user changes of mind or mistakes before committing any data."
+    },
+    "Cancel Adding New Lesson Before Entering Name-Raw2.txt0": {},
+    "Cancel Adding New Lesson Before Entering Name-Raw2.txt1": {
+        "testCaseName": "Cancel Adding New Lesson Before Entering Name",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.",
+        "testSteps": [
+            "- Step 1: Log in to the application as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: On the 'Add new Lesson' page, directly select 'Cancel' without entering any information in the name field."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page or a relevant page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the option to cancel the process of adding a new lesson at an early stage without the need to enter any lesson details. It directly relates to the exception flow where the administrator can select 'Cancel' to stop adding a new lesson at any time."
+    },
+    "Cancel Adding New Lesson Before Entering Name-Raw3.txt0": {},
+    "Cancel Adding New Lesson Before Entering Name-Raw3.txt1": {
+        "testCaseName": "Cancel Adding New Lesson Before Entering Name",
+        "objective": "Verify that the administrator can cancel the process of adding a new lesson before entering the lesson name.",
+        "testSteps": [
+            "- Step 1: Log in to the application as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: On the 'Add new Lesson' page, do not enter any information in the name field.",
+            "- Step 5: Select 'Cancel' to stop adding a new lesson."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new lesson and redirect the administrator to the previous page without creating a new lesson.",
+        "explanation": "This test case ensures that administrators have the option to cancel the process of adding a new lesson at an early stage, specifically before entering any information for the lesson name. It directly relates to the exception flow mentioned in the use case, demonstrating the system's ability to handle user actions that deviate from the main flow of adding a lesson."
+    },
+    "Lesson Creation with Duplicate Name-Raw1.txt0": {},
+    "Lesson Creation with Duplicate Name-Raw1.txt1": {
+        "testCaseName": "Lesson Creation with Unique Name",
+        "objective": "Verify that the administrator can successfully add a new lesson with a unique name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a unique name in the name field on the 'Add new Lesson' page.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.",
+        "explanation": "This test case ensures that the basic flow of adding a new lesson with a unique name works as expected."
+    },
+    "Lesson Creation with Duplicate Name-Raw1.txt2": {
+        "testCaseName": "Lesson Creation with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that is already used and prompts for a new name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to add another name.",
+        "explanation": "This test case verifies the system's behavior when attempting to add a new lesson with a duplicate name, following the alternative flow 1."
+    },
+    "Lesson Creation with Duplicate Name-Raw2.txt0": {},
+    "Lesson Creation with Duplicate Name-Raw2.txt1": {
+        "testCaseName": "Lesson Creation with Unique Name",
+        "objective": "Verify that the administrator can successfully add a new lesson with a unique name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a unique name in the name field on the 'Add new Lesson' page.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.",
+        "explanation": "This test case ensures that the basic flow of adding a new lesson with a unique name works as expected."
+    },
+    "Lesson Creation with Duplicate Name-Raw2.txt2": {
+        "testCaseName": "Lesson Creation with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that already exists.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name that is already used by an existing lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to add another name.",
+        "explanation": "This test case verifies the system's ability to handle duplicate lesson names according to the alternative flow 1, ensuring data integrity and uniqueness."
+    },
+    "Lesson Creation with Duplicate Name-Raw2.txt3": {
+        "testCaseName": "Lesson Creation with Duplicate Name and Correction",
+        "objective": "Verify that the administrator can successfully add a new lesson after initially attempting to use a duplicate name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name that is already used by an existing lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt to create the new lesson.",
+            "- Step 7: After receiving the notification that the name is already used, enter a new, unique name in the name field.",
+            "- Step 8: Select 'Save' again to create the lesson."
+        ],
+        "expectedResult": "The system should create the new lesson with the new, unique name and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.",
+        "explanation": "This test case follows the alternative flow 1 where the administrator corrects a duplicate name error by providing a unique name, ensuring the system handles name uniqueness properly."
+    },
+    "Lesson Creation with Duplicate Name-Raw3.txt0": {},
+    "Lesson Creation with Duplicate Name-Raw3.txt1": {
+        "testCaseName": "Verify Lesson Creation with Unique Name",
+        "objective": "Ensure that the administrator can successfully add a new lesson with a unique name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a unique name in the name field on the 'Add new Lesson' page.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should create the new lesson and redirect the administrator to the 'adding topic to new lesson' section. The new lesson should appear in the lesson list.",
+        "explanation": "This test case verifies that the system allows for the creation of new lessons with unique names, following the basic flow of the use case."
+    },
+    "Lesson Creation with Duplicate Name-Raw3.txt2": {
+        "testCaseName": "Verify Lesson Creation with Duplicate Name",
+        "objective": "Ensure that the system prevents the creation of a new lesson with a name that is already in use.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to add another name.",
+        "explanation": "This test case ensures that the system implements a check for duplicate lesson names, preventing the creation of lessons with names that are already in use, as described in the alternative flow 1."
+    },
+    "Lesson Creation with Missing Description-Raw1.txt0": {},
+    "Lesson Creation with Missing Description-Raw1.txt1": {
+        "testCaseName": "Lesson Creation with Missing Description",
+        "objective": "Verify that the system prevents the creation of a new lesson without a description.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Leave the description field empty.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display an error message indicating that the description field is required and prevent the lesson from being created.",
+        "explanation": "This test case is designed to ensure that the system enforces the requirement for a lesson description, which is a critical part of lesson creation. It directly addresses the scenario of attempting to create a lesson with a missing description."
+    },
+    "Lesson Creation with Missing Description-Raw1.txt2": {
+        "testCaseName": "Lesson Creation with Valid Data",
+        "objective": "Verify that the system allows the creation of a new lesson with all required fields filled.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should successfully create the new lesson and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.",
+        "explanation": "This test case verifies the basic flow of creating a new lesson with all required information, ensuring the system functions as intended for standard lesson creation."
+    },
+    "Lesson Creation with Missing Description-Raw2.txt0": {},
+    "Lesson Creation with Missing Description-Raw2.txt1": {
+        "testCaseName": "Lesson Creation with Missing Description",
+        "objective": "Verify that the system prevents the creation of a new lesson without a description.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, enter a unique name in the name field.",
+            "- Step 5: Leave the description field empty.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display an error message indicating that the description field cannot be empty and the lesson is not created.",
+        "explanation": "This test case is created to ensure that the system enforces the requirement for a lesson description, which is a critical part of the lesson creation process. It directly addresses the scenario of attempting to create a lesson with a missing description."
+    },
+    "Lesson Creation with Missing Description-Raw3.txt0": {},
+    "Lesson Creation with Missing Description-Raw3.txt1": {
+        "testCaseName": "Lesson Creation with Missing Description",
+        "objective": "Verify that the system prevents the creation of a new lesson without a description",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a unique name for the lesson in the name field.",
+            "- Step 5: Leave the description field empty.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display an error message indicating that the description field cannot be empty and the lesson is not created.",
+        "explanation": "This test case is created to ensure that the system enforces the requirement for a lesson description during lesson creation, directly addressing the scenario of attempting to create a lesson with a missing description."
+    },
+    "Lesson Creation with Missing Name-Raw1.txt0": {},
+    "Lesson Creation with Missing Name-Raw1.txt1": {
+        "testCaseName": "Lesson Creation with Missing Name",
+        "objective": "Verify that the system prevents the creation of a new lesson without a lesson name",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Redirected to the 'Add new Lesson' page, leave the name field empty.",
+            "- Step 5: Fill in the description of the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display an error message indicating that the lesson name is required and prevent the lesson from being created.",
+        "explanation": "This test case is created to ensure that the system enforces the requirement for a lesson name during the lesson creation process, which is a critical validation step to avoid creating unnamed lessons."
+    },
+    "Lesson Creation with Missing Name-Raw2.txt0": {},
+    "Lesson Creation with Missing Name-Raw2.txt1": {
+        "testCaseName": "Lesson Creation with Missing Name",
+        "objective": "Verify that the system prevents the creation of a new lesson without a lesson name",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Leave the name field empty.",
+            "- Step 5: Add a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display an error message indicating that the lesson name is required and prevent the lesson from being created.",
+        "explanation": "This test case is created to ensure that the system enforces the requirement for a lesson name during the lesson creation process. It directly addresses the scenario of attempting to create a lesson without providing a name, which is not covered explicitly in the use case but is a critical validation to ensure data integrity and usability."
+    },
+    "Lesson Creation with Missing Name-Raw3.txt0": {},
+    "Lesson Creation with Missing Name-Raw3.txt1": {
+        "testCaseName": "Lesson Creation with Missing Name",
+        "objective": "Verify that the system prevents the creation of a new lesson without a lesson name and prompts for a lesson name",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Leave the name field empty.",
+            "- Step 5: Add a description of the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display a notification or message indicating that the lesson name is required and prevent the lesson from being created.",
+        "explanation": "This test case is designed to ensure that the system enforces the requirement for a lesson name during the lesson creation process. It directly addresses the scenario of attempting to create a lesson without providing a name, which is a critical validation step in maintaining the integrity of lesson data."
+    },
+    "Lesson Creation with Missing Name-Raw3.txt2": {
+        "testCaseName": "Lesson Creation with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that is already used and prompts for a unique lesson name",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name that is already used by an existing lesson in the name field.",
+            "- Step 5: Add a description of the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt creating a new lesson."
+        ],
+        "expectedResult": "The system should display a notification or message indicating that the lesson name is already used and prompt the administrator to enter a different name.",
+        "explanation": "This test case checks the system's ability to enforce unique names for lessons, preventing duplication and potential confusion. It is based on the alternative flow 1 of the use case, which specifically deals with the scenario of adding a lesson with an already used name."
+    },
+    "Navigate to Add New Lesson Page via Navbar Option-Raw1.txt0": {},
+    "Navigate to Add New Lesson Page via Navbar Option-Raw1.txt1": {
+        "testCaseName": "Navigate to Add New Lesson Page via Navbar",
+        "objective": "Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.",
+        "testSteps": [
+            "- Step 1: Log in to the application as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: From the dropdown menu, select 'Add new Lesson'."
+        ],
+        "expectedResult": "The system should redirect the administrator to the 'Add new Lesson' page.",
+        "explanation": "This test case ensures that the navigation to the 'Add New Lesson' page via the navbar works as expected, aligning with the basic flow and alternative flow 2 of the use case."
+    },
+    "Navigate to Add New Lesson Page via Navbar Option-Raw2.txt0": {},
+    "Navigate to Add New Lesson Page via Navbar Option-Raw2.txt1": {
+        "testCaseName": "Navigate to Add New Lesson Page via Navbar",
+        "objective": "Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu."
+        ],
+        "expectedResult": "The system should redirect the administrator to the 'Add New Lesson' page.",
+        "explanation": "This test case ensures that the navigation to the 'Add New Lesson' page via the navbar works as expected, aligning with the basic flow and alternative flow 2 of the use case."
+    },
+    "Navigate to Add New Lesson Page via Navbar Option-Raw3.txt0": {},
+    "Navigate to Add New Lesson Page via Navbar Option-Raw3.txt1": {
+        "testCaseName": "Navigate to Add New Lesson Page via Navbar",
+        "objective": "Verify that the administrator can navigate to the 'Add New Lesson' page using the navbar option.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu."
+        ],
+        "expectedResult": "The system should redirect the administrator to the 'Add new Lesson' page.",
+        "explanation": "This test case ensures that the navigation to the 'Add New Lesson' page via the navbar works as expected, aligning with the basic flow and alternative flow 2 of the use case."
+    },
+    "Successful Lesson Creation-Raw1.txt0": {},
+    "Successful Lesson Creation-Raw1.txt1": {
+        "testCaseName": "Successful New Lesson Creation",
+        "objective": "Verify that the administrator can successfully add a new English learning lesson.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a unique name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.",
+        "explanation": "This test case ensures that the basic flow of adding a new lesson by an administrator is functioning as expected."
+    },
+    "Successful Lesson Creation-Raw1.txt2": {
+        "testCaseName": "Attempt to Add Lesson with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that is already used.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name for the lesson that is already used in the existing lessons.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should show a notification that the name is already used, prompting the administrator to add another name.",
+        "explanation": "This test case verifies the system's ability to handle duplicate lesson names by enforcing uniqueness, as described in the alternative flow 1."
+    },
+    "Successful Lesson Creation-Raw1.txt3": {
+        "testCaseName": "Navigate to Add New Lesson Page via Navbar",
+        "objective": "Verify that the administrator can navigate to the 'Add new Lesson' page using the navbar.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' directly from the dropdown menu."
+        ],
+        "expectedResult": "The system should redirect the administrator to the 'Add new Lesson' page.",
+        "explanation": "This test case ensures that the navigation to the 'Add new Lesson' page via the navbar works as expected, covering the alternative flow 2."
+    },
+    "Successful Lesson Creation-Raw1.txt4": {
+        "testCaseName": "Cancel Lesson Creation",
+        "objective": "Verify that the administrator can cancel the lesson creation process.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: Enter a name for the lesson in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Cancel' to stop adding the new lesson."
+        ],
+        "expectedResult": "The lesson creation process should be canceled, and the administrator should remain on the 'Add new Lesson' page or be redirected to the previous page without creating a new lesson.",
+        "explanation": "This test case checks the functionality of the cancel option during the lesson creation process, as mentioned in the exception flow."
+    },
+    "Successful Lesson Creation-Raw2.txt0": {},
+    "Successful Lesson Creation-Raw2.txt1": {
+        "testCaseName": "Successful New Lesson Creation",
+        "objective": "Verify that an administrator can successfully add a new English learning lesson.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu.",
+            "- Step 4: On the 'Add new Lesson' page, enter a unique name in the name field.",
+            "- Step 5: Enter a description for the lesson in the description field.",
+            "- Step 6: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.",
+        "explanation": "This test case ensures that the basic flow of adding a new lesson as described in the use case is functioning correctly."
+    },
+    "Successful Lesson Creation-Raw2.txt2": {
+        "testCaseName": "Attempt to Add Lesson with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that is already used.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Add new Lesson' page via the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Enter a name for the lesson that is already used in the name field.",
+            "- Step 4: Enter a description for the lesson in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to add another name.",
+        "explanation": "This test case checks the system's ability to handle duplicate lesson names as described in the alternative flow 1, ensuring data integrity and uniqueness of lesson names."
+    },
+    "Successful Lesson Creation-Raw2.txt3": {
+        "testCaseName": "Cancel Lesson Creation",
+        "objective": "Verify that an administrator can cancel the creation of a new lesson at any point.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Add new Lesson' page via the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Enter a name for the lesson in the name field.",
+            "- Step 4: Enter a description for the lesson in the description field.",
+            "- Step 5: Select 'Cancel' to stop the creation of the new lesson."
+        ],
+        "expectedResult": "The action of adding a new lesson should be cancelled, and the administrator should remain on the 'Add new Lesson' page or be redirected to the previous page without creating a new lesson.",
+        "explanation": "This test case verifies the exception flow where the administrator decides to cancel the lesson creation process, ensuring the system properly handles cancellation actions."
+    },
+    "Successful Lesson Creation-Raw3.txt0": {},
+    "Successful Lesson Creation-Raw3.txt1": {
+        "testCaseName": "Successful Lesson Creation via Lesson Management",
+        "objective": "Verify that an administrator can successfully add a new English learning lesson through the Lesson Management page.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'View list of Lesson' from the dropdown menu.",
+            "- Step 4: On the Lesson Management page, select the button 'Add new Lesson'.",
+            "- Step 5: On the 'Add new Lesson' page, enter a unique name for the lesson in the name field.",
+            "- Step 6: Add a description for the lesson in the description field.",
+            "- Step 7: Select 'Save' to create the new lesson."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.",
+        "explanation": "This test case ensures that the basic flow of adding a new lesson through the Lesson Management page works as intended."
+    },
+    "Successful Lesson Creation-Raw3.txt2": {
+        "testCaseName": "Lesson Creation with Already Used Name",
+        "objective": "Verify that the system prevents the creation of a new lesson with a name that is already used.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Add new Lesson' page by selecting 'Lesson Management' > 'View list of Lesson' > 'Add new Lesson'.",
+            "- Step 3: Enter a name for the lesson that is already used in the name field.",
+            "- Step 4: Add a description for the lesson in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new lesson."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to add another name.",
+        "explanation": "This test case checks the system's ability to handle duplicate lesson names and enforce uniqueness."
+    },
+    "Successful Lesson Creation-Raw3.txt3": {
+        "testCaseName": "Direct Navigation to Add New Lesson Page",
+        "objective": "Verify that an administrator can navigate directly to the 'Add new Lesson' page via the navbar.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select 'Add new Lesson' from the dropdown menu."
+        ],
+        "expectedResult": "The system should redirect the administrator to the 'Add new Lesson' page.",
+        "explanation": "This test case verifies the alternative navigation flow to the 'Add new Lesson' page, ensuring that the navbar provides a direct path as described."
+    }
+}

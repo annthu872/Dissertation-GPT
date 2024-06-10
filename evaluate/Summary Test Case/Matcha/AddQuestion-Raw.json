@@ -1,0 +1,1133 @@
+{
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw1.txt0": {},
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw1.txt1": {
+        "testCaseName": "Admin Cancels Question Creation and Chooses to Stay",
+        "objective": "Verify that when an admin cancels the question creation process and chooses to stay, the system keeps the work on that question.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill in the fields required for question creation.",
+            "- Step 9: Press the 'Cancel' button.",
+            "- Step 10: In the dialog that appears, press the 'Stay' button."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered information still present.",
+        "explanation": "This test case ensures that when an admin decides to cancel the question creation but then chooses to stay, their work is not lost, allowing them to continue working on the question without having to re-enter all the information."
+    },
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw1.txt2": {
+        "testCaseName": "Admin Cancels Question Creation and Confirms Cancellation",
+        "objective": "Verify that when an admin cancels the question creation process and confirms the cancellation, the system does not save the question and redirects the admin to the 'Word Information' page.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill in the fields required for question creation.",
+            "- Step 9: Press the 'Cancel' button.",
+            "- Step 10: In the dialog that appears, press the 'Confirm' button."
+        ],
+        "expectedResult": "The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.",
+        "explanation": "This test case verifies the functionality of cancelling the question creation process. It ensures that the system behaves as expected by not saving any part of the cancelled question and returning the admin to the 'Word Information' page."
+    },
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw2.txt0": {},
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw2.txt1": {
+        "testCaseName": "Admin Cancels Question Creation and Chooses to Stay",
+        "objective": "Verify that the admin can cancel the question creation process and choose to stay on the page to continue working on it",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test' when prompted.",
+            "- Step 8: On the 'Add new question for selection test' page, press the 'Cancel' button.",
+            "- Step 9: In the confirmation dialog, press the 'Stay' button."
+        ],
+        "expectedResult": "The confirmation dialog should close, and the admin should remain on the 'Add new question for selection test' page with the work on that question kept.",
+        "explanation": "This test case ensures that when an admin decides to cancel the question creation process but then chooses to stay, their progress is not lost, and they can continue working on the question."
+    },
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw2.txt2": {
+        "testCaseName": "Admin Cancels Question Creation and Confirms Cancellation",
+        "objective": "Verify that the admin can cancel the question creation process and confirm the cancellation to return to the 'Word Information' page without saving the question",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test' when prompted.",
+            "- Step 8: On the 'Add new question for selection test' page, press the 'Cancel' button.",
+            "- Step 9: In the confirmation dialog, press the 'Confirm' button."
+        ],
+        "expectedResult": "The system should redirect the admin to the 'Word Information' page of the selected word, and the question should not be saved.",
+        "explanation": "This test case verifies that admins have the ability to cancel the creation of a new question and confirm their decision, ensuring that no unwanted changes are saved and the admin is returned to the previous page as expected."
+    },
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw3.txt0": {},
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw3.txt1": {
+        "testCaseName": "Admin Cancels Question Creation and Chooses to Stay",
+        "objective": "Verify that the admin can cancel the question creation process and choose to stay on the page to continue working on it.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test' when prompted.",
+            "- Step 8: Begin to fill in the fields for creating a new question but do not complete.",
+            "- Step 9: Press the 'Cancel' button.",
+            "- Step 10: In the confirmation dialog, press the 'Stay' button."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered information intact.",
+        "explanation": "This test case ensures that when an admin decides to cancel the creation of a new question but then chooses to stay, their work is not lost, and they can continue editing the question."
+    },
+    "Admin Cancels Question Creation and Confirms Cancellation-Raw3.txt2": {
+        "testCaseName": "Admin Cancels Question Creation and Confirms Cancellation",
+        "objective": "Verify that the admin can cancel the question creation process and confirm the cancellation, leading to the loss of entered data.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test' when prompted.",
+            "- Step 8: Begin to fill in the fields for creating a new question but do not complete.",
+            "- Step 9: Press the 'Cancel' button.",
+            "- Step 10: In the confirmation dialog, press the 'Confirm' button."
+        ],
+        "expectedResult": "The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.",
+        "explanation": "This test case verifies that the cancellation process works as intended, allowing admins to cancel the creation of a new question and confirming their decision leads to the expected redirection without saving the question."
+    },
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw1.txt0": {},
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw1.txt1": {
+        "testCaseName": "Admin decides to cancel but then chooses to stay and continue editing",
+        "objective": "Verify that when an admin decides to cancel the creation of a question but then chooses to stay, they can continue editing without losing data",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill in the fields 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' with valid data.",
+            "- Step 9: Press the button 'Cancel'.",
+            "- Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact, allowing them to continue editing.",
+        "explanation": "This test case ensures that when an admin accidentally or intentionally presses cancel while creating a question, they have the option to stay and continue their work without losing any entered data. It directly tests the functionality described in Alternative flow 7 of the use case."
+    },
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw2.txt0": {},
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw2.txt1": {
+        "testCaseName": "Admin decides to cancel but then chooses to stay and continue editing",
+        "objective": "Verify that when an admin decides to cancel the creation of a question but then chooses to stay, they can continue editing without losing data",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill in the 'sentence' field with a valid sentence, 'correct answer', and three different wrong answers in 'other option 1', 'other option 2', 'other option 3'.",
+            "- Step 9: Press the button 'Cancel'.",
+            "- Step 10: In the dialog 'Are you sure you want to cancel the question?', press the button 'Stay'."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact, allowing them to continue editing.",
+        "explanation": "This test case ensures that if an admin accidentally or intentionally presses cancel while creating a question but decides to stay, they do not lose their progress. It tests the functionality of the 'Stay' option in the cancellation confirmation dialog."
+    },
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw3.txt0": {},
+    "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing-Raw3.txt1": {
+        "testCaseName": "Admin Decides to Cancel but Then Chooses to Stay and Continue Editing",
+        "objective": "Verify that when an admin decides to cancel the creation of a question but then chooses to stay, they can continue editing the question",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.",
+            "- Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Cancel'.",
+            "- Step 12: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.",
+            "- Step 13: Make any additional changes if needed and press the button 'Save'."
+        ],
+        "expectedResult": "After pressing 'Stay', the admin should be able to continue editing the question without losing any previously entered information and successfully save the question.",
+        "explanation": "This test case ensures that the functionality for an admin to reconsider their decision to cancel and continue editing works as intended, allowing them to save the question afterward."
+    },
+    "Admin enters a sentence exceeding 250 characters-Raw1.txt0": {},
+    "Admin enters a sentence exceeding 250 characters-Raw1.txt1": {
+        "testCaseName": "Admin enters a sentence exceeding 250 characters",
+        "objective": "Verify that the system prevents saving a question when the sentence exceeds 250 characters",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a sentence exceeding 250 characters, ensuring the sentence contains the symbol '...'.",
+            "- Step 9: Fill the 'correct answer' field with a valid word.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "System shows a notification that the sentence exceeds the maximum character limit and prevents saving the question.",
+        "explanation": "This test case ensures that the system enforces the character limit for sentences in questions, preventing admins from entering excessively long sentences that could disrupt the test's format or user experience."
+    },
+    "Admin enters a sentence exceeding 250 characters-Raw2.txt0": {},
+    "Admin enters a sentence exceeding 250 characters-Raw2.txt1": {
+        "testCaseName": "Admin enters a sentence exceeding 250 characters",
+        "objective": "Verify that the system prompts an error when an admin enters a sentence exceeding 250 characters in the 'sentence' field while creating a question for the selection test.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: In the 'sentence' field, enter a sentence exceeding 250 characters that includes the symbol '...'.",
+            "- Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system should display a notification that the sentence exceeds the maximum character limit and prompt the Admin to enter a valid sentence.",
+        "explanation": "This test case ensures that the system enforces the rule that sentences must be below 250 characters when creating questions for the selection test, which is crucial for maintaining question quality and consistency."
+    },
+    "Admin enters a sentence exceeding 250 characters-Raw3.txt0": {},
+    "Admin enters a sentence exceeding 250 characters-Raw3.txt1": {
+        "testCaseName": "Admin enters a sentence exceeding 250 characters",
+        "objective": "Verify that the system prompts an error when an admin enters a sentence exceeding 250 characters in the 'sentence' field while creating a question for the selection test.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: In the 'sentence' field, enter a sentence exceeding 250 characters. Fill in the 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid inputs.",
+            "- Step 9: Press the button 'Save'."
+        ],
+        "expectedResult": "The system should display a notification or error message indicating that the sentence exceeds the maximum character limit of 250 characters.",
+        "explanation": "This test case ensures that the system enforces the character limit for sentences in questions for the selection test, preventing admins from entering excessively long sentences."
+    },
+    "Admin enters a sentence with special characters-Raw1.txt0": {},
+    "Admin enters a sentence with special characters-Raw1.txt1": {
+        "testCaseName": "Admin enters a valid sentence without special characters",
+        "objective": "Verify that the system allows the admin to save a question when a valid sentence without special characters is entered",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...', but does not contain any special characters.",
+            "- Step 9: Fill the 'correct answer' and the 'other option 1', 'other option 2', 'other option 3' fields with appropriate words.",
+            "- Step 10: Press the 'Save' button."
+        ],
+        "expectedResult": "The system saves the question and redirects the admin to the 'Word Information' page of the selected word, indicating the question was successfully saved.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when the sentence entered by the admin is valid and does not contain any special characters, adhering to the use case specifications."
+    },
+    "Admin enters a sentence with special characters-Raw1.txt2": {
+        "testCaseName": "Admin enters a sentence with special characters",
+        "objective": "Verify that the system prevents the admin from saving a question when the sentence contains special characters",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a sentence that includes '...' and at least one special character.",
+            "- Step 9: Fill the 'correct answer' and the 'other option 1', 'other option 2', 'other option 3' fields with appropriate words.",
+            "- Step 10: Press the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field without special characters.",
+        "explanation": "This test case verifies that the system enforces the rule that sentences must not contain any special characters, as per the use case specifications. It ensures data integrity and adherence to the defined input format for creating questions for the selection test."
+    },
+    "Admin enters a sentence with special characters-Raw2.txt0": {},
+    "Admin enters a sentence with special characters-Raw2.txt1": {
+        "testCaseName": "Admin enters a valid sentence without special characters",
+        "objective": "Verify that the system allows the admin to save a question when a valid sentence without special characters is entered",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...', but does not contain any special characters.",
+            "- Step 9: Fill the 'correct answer' and the three 'other option' fields with appropriate words.",
+            "- Step 10: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the admin to the 'Word Information' page of the selected word.",
+        "explanation": "This test case ensures that the system correctly handles valid input without special characters for question creation."
+    },
+    "Admin enters a sentence with special characters-Raw2.txt2": {
+        "testCaseName": "Admin enters a sentence with special characters",
+        "objective": "Verify that the system prevents saving a question when the sentence contains special characters",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a sentence that includes special characters.",
+            "- Step 9: Fill the 'correct answer' and the three 'other option' fields with appropriate words.",
+            "- Step 10: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field without special characters.",
+        "explanation": "This test case verifies that the system enforces the rule against special characters in sentences for question creation."
+    },
+    "Admin enters a sentence with special characters-Raw3.txt0": {},
+    "Admin enters a sentence with special characters-Raw3.txt1": {
+        "testCaseName": "Admin enters a valid sentence without special characters",
+        "objective": "Verify that the system allows the admin to save a question when a valid sentence without special characters is entered",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Select a lesson from the lesson list.",
+            "- Step 4: Select a topic from the topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes the symbol '...' and does not contain any special characters.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the 'Save' button."
+        ],
+        "expectedResult": "The system saves the question and redirects the admin to the 'Word Information' page of the selected word, indicating the question was successfully saved.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when a valid sentence without special characters is provided, adhering to the use case specifications."
+    },
+    "Admin enters a sentence with special characters-Raw3.txt2": {
+        "testCaseName": "Admin enters a sentence with special characters",
+        "objective": "Verify that the system prevents the admin from saving a question when the sentence contains special characters",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' tab on the navbar.",
+            "- Step 3: Select a lesson from the lesson list.",
+            "- Step 4: Select a topic from the topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a sentence that includes the symbol '...' and contains special characters.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the 'Save' button."
+        ],
+        "expectedResult": "The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field without special characters.",
+        "explanation": "This test case verifies that the system enforces the rule that sentences must not contain any special characters, as specified in the use case. It ensures data integrity and adherence to the defined input validation rules."
+    },
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw1.txt0": {},
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw1.txt1": {
+        "testCaseName": "Admin Leaves Without Saving by Using Browser Back Button",
+        "objective": "Verify that the question is not saved when the Admin leaves the 'Add new question for selection test' page by using the browser back button without saving.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select one Lesson from the Lesson list.",
+            "- Step 4: Select one Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select one word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the field 'sentence' with a valid sentence that includes the symbol '...', 'correct answer' with the correct word form of the blank in the sentence, 'other option 1', 'other option 2', 'other option 3' with 3 different wrong answer words.",
+            "- Step 9: Use the browser back button to leave the page without pressing the 'Save' button."
+        ],
+        "expectedResult": "The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.",
+        "explanation": "This test case ensures that when an Admin accidentally or intentionally leaves the question creation page without saving, by using the browser back button, the question is not saved. It directly matches the scenario name by testing the specific action of leaving without saving through browser navigation."
+    },
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw2.txt0": {},
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw2.txt1": {
+        "testCaseName": "Admin Leaves Without Saving by Using Browser Back Button",
+        "objective": "Verify that the question is not saved when the admin leaves the 'Add new question for selection test' page by using the browser back button",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test' when prompted.",
+            "- Step 8: On the 'Add new question for selection test' page, fill in the 'sentence' field with a valid sentence, 'correct answer' field with the correct word, and 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.",
+            "- Step 9: Instead of saving, press the browser back button."
+        ],
+        "expectedResult": "The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.",
+        "explanation": "This test case ensures that if an admin accidentally or intentionally leaves the question creation page without saving, by using the browser back button, the question is not saved. This is crucial for maintaining data integrity and preventing the creation of incomplete or unintended entries."
+    },
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw3.txt0": {},
+    "Admin Leaves Without Saving by Using Browser Back Button-Raw3.txt1": {
+        "testCaseName": "Admin Leaves Without Saving by Using Browser Back Button",
+        "objective": "Verify that the question is not saved when the Admin leaves the 'Add new question for selection test' page by using the browser back button without saving.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select one Lesson from the Lesson list.",
+            "- Step 4: Select one Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select one word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill in the 'sentence' field with a valid sentence that includes the symbol '...'.",
+            "- Step 9: Fill in the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Use the browser back button to leave the page without pressing 'Save'."
+        ],
+        "expectedResult": "The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.",
+        "explanation": "This test case ensures that when an Admin navigates away from the 'Add new question for selection test' page by using the browser back button without saving, the question is not saved. It directly tests the system's handling of unsaved changes when the Admin leaves the page unexpectedly."
+    },
+    "Correct answer field skipped-Raw1.txt0": {},
+    "Correct answer field skipped-Raw1.txt1": {
+        "testCaseName": "Create a valid selection test question",
+        "objective": "Verify that an admin can successfully create a selection test question with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence including the symbol '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out."
+    },
+    "Correct answer field skipped-Raw1.txt2": {
+        "testCaseName": "Attempt to create a selection test question with missing 'sentence' field",
+        "objective": "Verify that the system prompts the admin to fill the missing 'sentence' field when attempting to save a question without it.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select any Lesson from the list.",
+            "- Step 4: Choose a Topic from the Topic list.",
+            "- Step 5: Pick a word from the vocabulary list.",
+            "- Step 6: Click on 'Add new question' button.",
+            "- Step 7: Choose 'Create questions for the selection test' option.",
+            "- Step 8: Leave the 'sentence' field empty.",
+            "- Step 9: Fill in the 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields.",
+            "- Step 10: Press the 'Save' button."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case checks the system's validation for the 'sentence' field to ensure that it cannot be skipped when creating a new selection test question."
+    },
+    "Correct answer field skipped-Raw1.txt3": {
+        "testCaseName": "Cancel creating a selection test question and choose to stay",
+        "objective": "Verify that the admin can cancel the creation of a selection test question and choose to stay on the page to continue editing.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Access the 'Lesson Management' page through the navbar.",
+            "- Step 3: Select a Lesson, then a Topic, and finally a word from the respective lists.",
+            "- Step 4: Initiate adding a new question by clicking 'Add new question'.",
+            "- Step 5: Opt for 'Create questions for the selection test'.",
+            "- Step 6: Fill in all required fields with valid data.",
+            "- Step 7: Press the 'Cancel' button.",
+            "- Step 8: In the confirmation dialog, select the 'Stay' option."
+        ],
+        "expectedResult": "The cancellation confirmation dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered data intact.",
+        "explanation": "This test case ensures that admins have the option to cancel the creation of a new question but choose to stay on the page, potentially to correct or complete the question."
+    },
+    "Correct answer field skipped-Raw2.txt0": {},
+    "Correct answer field skipped-Raw2.txt1": {
+        "testCaseName": "Create a valid selection test question",
+        "objective": "Verify that an admin can successfully create a selection test question with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answers.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out."
+    },
+    "Correct answer field skipped-Raw2.txt2": {
+        "testCaseName": "Attempt to create a selection test question with a missing compulsory field",
+        "objective": "Verify that the system prevents the creation of a selection test question if a compulsory field is missing.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select any Lesson and then a Topic within that Lesson.",
+            "- Step 4: Choose a word from the vocabulary list and press 'Add new question'.",
+            "- Step 5: Select the option to 'Create questions for the selection test'.",
+            "- Step 6: Fill in all compulsory fields except for one (e.g., skip 'other option 1').",
+            "- Step 7: Attempt to press the button 'Save'."
+        ],
+        "expectedResult": "The system displays a notification that a compulsory field is missing and prompts the Admin to fill in the missing field.",
+        "explanation": "This test case checks the system's validation mechanism for ensuring all compulsory fields are filled before allowing a selection test question to be created."
+    },
+    "Correct answer field skipped-Raw2.txt3": {
+        "testCaseName": "Cancel the creation of a selection test question and choose to stay",
+        "objective": "Verify that an admin can cancel the creation of a selection test question and choose to stay on the page.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Access the 'Lesson Management' page and select a Lesson and Topic.",
+            "- Step 3: Choose a word and press 'Add new question'.",
+            "- Step 4: Select 'Create questions for the selection test' and fill in all fields.",
+            "- Step 5: Press the button 'Cancel'.",
+            "- Step 6: In the confirmation dialog, select the option 'Stay'."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with the entered information preserved.",
+        "explanation": "This test case ensures that admins have the option to cancel the creation of a new question but choose to stay on the page, potentially to correct or complete the question."
+    },
+    "Correct answer field skipped-Raw3.txt0": {},
+    "Correct answer field skipped-Raw3.txt1": {
+        "testCaseName": "Create a valid question for the selection test",
+        "objective": "Verify that an admin can successfully create a question for the selection test with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are properly filled out, adhering to the main flow of the use case."
+    },
+    "Correct answer field skipped-Raw3.txt2": {
+        "testCaseName": "Attempt to create a question with missing 'sentence' field",
+        "objective": "Verify that the system prevents the creation of a question for the selection test when the 'sentence' field is left blank.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Choose a Lesson and then a Topic.",
+            "- Step 4: Select a word to create a question for.",
+            "- Step 5: Initiate adding a new question for the selection test.",
+            "- Step 6: Leave the 'sentence' field empty, but fill in the 'correct answer' and all 'other option' fields.",
+            "- Step 7: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case checks the system's validation for the 'sentence' field to ensure that it cannot be skipped, aligning with the alternative flow 2 of the use case."
+    },
+    "Correct answer field skipped-Raw3.txt3": {
+        "testCaseName": "Cancel the creation of a question and choose to stay",
+        "objective": "Verify that an admin can cancel the creation of a question for the selection test and choose to stay on the page to continue editing.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Access the 'Lesson Management' section and select a Lesson and Topic.",
+            "- Step 3: Choose a word and start the process to add a new question.",
+            "- Step 4: Press the 'Cancel' button during question creation.",
+            "- Step 5: In the confirmation dialog, select the 'Stay' option."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with the previously entered information intact.",
+        "explanation": "This test case verifies the functionality of cancelling the question creation process and choosing to stay on the page, as described in alternative flow 7."
+    },
+    "Other option 1 field skipped-Raw1.txt0": {},
+    "Other option 1 field skipped-Raw1.txt1": {
+        "testCaseName": "Verify successful question creation for selection test with all fields filled",
+        "objective": "Ensure that the admin can successfully create a question for the selection test by filling all the required fields and saving it.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are filled out and saved by the admin."
+    },
+    "Other option 1 field skipped-Raw1.txt2": {
+        "testCaseName": "Verify system behavior when 'other option 1' field is skipped",
+        "objective": "To check if the system prompts the admin to fill the 'other option 1' field when it is skipped and ensures the question is not saved until the field is filled.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select a Lesson and then a Topic from the lists provided.",
+            "- Step 4: Choose a word from the vocabulary list to create a question for.",
+            "- Step 5: Initiate adding a new question by pressing 'Add new question'.",
+            "- Step 6: Choose 'Create questions for the selection test' option.",
+            "- Step 7: Fill in the 'sentence' and 'correct answer' fields appropriately.",
+            "- Step 8: Leave the 'other option 1' field empty, but fill in 'other option 2' and 'other option 3' fields.",
+            "- Step 9: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 1' field. The question is not saved until the field is filled.",
+        "explanation": "This test case verifies the system's validation process for the 'other option 1' field when creating a new question for the selection test, ensuring that all required fields must be filled before saving."
+    },
+    "Other option 1 field skipped-Raw2.txt0": {},
+    "Other option 1 field skipped-Raw2.txt1": {
+        "testCaseName": "Verify successful question creation for selection test with all fields filled",
+        "objective": "Ensure that the admin can successfully create a question for the selection test by filling all the required fields and saving it.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence including the symbol '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the main flow of creating a question for the selection test is functioning as expected when all required fields are filled correctly."
+    },
+    "Other option 1 field skipped-Raw2.txt2": {
+        "testCaseName": "Verify system behavior when 'other option 1' field is skipped",
+        "objective": "To check if the system prompts the admin to fill the 'other option 1' field when it is skipped and prevents question creation until the field is filled.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.",
+            "- Step 3: Select any Lesson from the list.",
+            "- Step 4: Choose a Topic from the displayed list.",
+            "- Step 5: Pick a word from the vocabulary list.",
+            "- Step 6: Click on the 'Add new question' button.",
+            "- Step 7: Choose the 'Create questions for the selection test' option.",
+            "- Step 8: Correctly fill in the 'sentence' and 'correct answer' fields.",
+            "- Step 9: Leave the 'other option 1' field empty, but fill in 'other option 2' and 'other option 3' fields.",
+            "- Step 10: Attempt to save by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', specifically indicating the 'other option 1' field needs to be filled, and prevents saving until it is completed.",
+        "explanation": "This test case checks the system's validation for the 'other option 1' field to ensure that all necessary fields must be filled for a question to be created successfully."
+    },
+    "Other option 1 field skipped-Raw3.txt0": {},
+    "Other option 1 field skipped-Raw3.txt1": {
+        "testCaseName": "Create a valid selection test question",
+        "objective": "Verify that an admin can successfully create a selection test question with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence including the symbol '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out."
+    },
+    "Other option 1 field skipped-Raw3.txt2": {
+        "testCaseName": "Attempt to create a question with 'sentence' field skipped",
+        "objective": "Verify that the system prompts an admin to fill the 'sentence' field if it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' and select a lesson, topic, and word as in Test Case 1.",
+            "- Step 3: Press the button 'Add new question' and select 'Create questions for the selection test'.",
+            "- Step 4: Skip the 'sentence' field and fill the other required fields.",
+            "- Step 5: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case verifies the system's validation for the 'sentence' field to ensure it is not skipped, aligning with the use case requirements."
+    },
+    "Other option 1 field skipped-Raw3.txt3": {
+        "testCaseName": "Attempt to create a question with 'correct answer' field skipped",
+        "objective": "Verify that the system prompts an admin to fill the 'correct answer' field if it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Follow the steps to navigate to the 'Add new question for selection test' page as described in Test Case 1.",
+            "- Step 3: Fill all required fields except for the 'correct answer'.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.",
+        "explanation": "This test case checks the system's validation for the 'correct answer' field to ensure it is not skipped, which is crucial for the integrity of the selection test question."
+    },
+    "Other option 1 field skipped-Raw3.txt4": {
+        "testCaseName": "Attempt to create a question with one of the 'other options' fields skipped",
+        "objective": "Verify that the system prompts an admin to fill all 'other options' fields if any is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Proceed to the 'Add new question for selection test' page as per the previous test cases.",
+            "- Step 3: Fill all required fields except for one of the 'other options' fields ('other option 1', 'other option 2', or 'other option 3').",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other options' field.",
+        "explanation": "This test case ensures that the system enforces the requirement for all 'other options' fields to be filled, which are essential for creating a valid selection test question."
+    },
+    "Other option 2 field skipped-Raw1.txt0": {},
+    "Other option 2 field skipped-Raw1.txt1": {
+        "testCaseName": "Verify successful creation of a question for the selection test",
+        "objective": "Ensure that an admin can successfully create a question for the selection test with all required fields filled correctly",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the main flow of creating a question for the selection test is functioning as expected by verifying that all necessary steps can be completed without error and that the question is saved correctly."
+    },
+    "Other option 2 field skipped-Raw1.txt2": {
+        "testCaseName": "Verify error message when 'sentence' field is skipped",
+        "objective": "To ensure the system prompts an error when the 'sentence' field is skipped and prevents saving the question",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Skip the 'sentence' field and fill the other required fields.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case verifies the system's validation for the 'sentence' field to ensure that it cannot be skipped, aligning with the alternative flow 2."
+    },
+    "Other option 2 field skipped-Raw1.txt3": {
+        "testCaseName": "Verify error message when 'correct answer' field is skipped",
+        "objective": "To ensure the system prompts an error when the 'correct answer' field is skipped and prevents saving the question",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Skip the 'correct answer' field and fill the other required fields.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.",
+        "explanation": "This test case checks the system's validation for the 'correct answer' field to ensure that it cannot be skipped, following the alternative flow 3."
+    },
+    "Other option 2 field skipped-Raw1.txt4": {
+        "testCaseName": "Verify error message when 'other option 2' field is skipped",
+        "objective": "To ensure the system prompts an error when the 'other option 2' field is skipped and prevents saving the question",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Fill all required fields except for 'other option 2'.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 2' field.",
+        "explanation": "This test case ensures the system's validation for the 'other option 2' field to confirm it cannot be skipped, in line with the alternative flow 5."
+    },
+    "Other option 2 field skipped-Raw2.txt0": {},
+    "Other option 2 field skipped-Raw2.txt1": {
+        "testCaseName": "Verify Admin can create a question for the selection test with valid inputs",
+        "objective": "Ensure that the Admin can successfully create a question for the selection test by filling all compulsory fields with valid inputs and saving it.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case verifies that the Admin can create a new question for the selection test by following the main flow and filling all required fields correctly."
+    },
+    "Other option 2 field skipped-Raw2.txt2": {
+        "testCaseName": "Verify system prompts when 'other option 2' field is skipped",
+        "objective": "To ensure that the system prompts Admin to fill the 'other option 2' field if it is skipped before saving the question.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.",
+            "- Step 3: Select any Lesson from the list.",
+            "- Step 4: Choose a Topic from the Topic list.",
+            "- Step 5: Pick a word from the vocabulary list.",
+            "- Step 6: Click on 'Add new question' button.",
+            "- Step 7: Choose the option to 'Create questions for the selection test'.",
+            "- Step 8: Enter a valid sentence in the 'sentence' field including '...'.",
+            "- Step 9: Input the correct answer in the 'correct answer' field.",
+            "- Step 10: Fill in 'other option 1' and 'other option 3' fields with wrong answers, leave 'other option 2' empty.",
+            "- Step 11: Attempt to save by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.",
+        "explanation": "This test case ensures that the system checks for the completion of all compulsory fields, specifically 'other option 2', and prompts for completion if necessary."
+    },
+    "Other option 2 field skipped-Raw3.txt0": {},
+    "Other option 2 field skipped-Raw3.txt1": {
+        "testCaseName": "Create a valid selection test question",
+        "objective": "Verify that an admin can successfully create a selection test question with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with three different wrong answers.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the main flow of creating a selection test question works as expected when all required fields are correctly filled."
+    },
+    "Other option 2 field skipped-Raw3.txt2": {
+        "testCaseName": "Attempt to create question with 'sentence' field skipped",
+        "objective": "Verify that the system prompts an admin to fill the 'sentence' field if it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Skip the 'sentence' field and fill the other required fields.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case checks the system's validation for the 'sentence' field to ensure it is mandatory for creating a selection test question."
+    },
+    "Other option 2 field skipped-Raw3.txt3": {
+        "testCaseName": "Attempt to create question with 'correct answer' field skipped",
+        "objective": "Verify that the system prompts an admin to fill the 'correct answer' field if it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Skip the 'correct answer' field and fill the other required fields.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.",
+        "explanation": "This test case verifies the system's requirement for the 'correct answer' field to be filled for question creation."
+    },
+    "Other option 2 field skipped-Raw3.txt4": {
+        "testCaseName": "Attempt to create question with 'other option 2' field skipped",
+        "objective": "Verify that the system prompts an admin to fill the 'other option 2' field if it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Add new question for selection test' page by following steps 2 to 7 from Test Case 1.",
+            "- Step 3: Skip the 'other option 2' field and fill the other required fields.",
+            "- Step 4: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'other option 2' field.",
+        "explanation": "This test case is designed to ensure that all options fields are mandatory for the creation of a selection test question, focusing on the 'other option 2' field."
+    },
+    "Other option 3 field skipped-Raw1.txt0": {},
+    "Other option 3 field skipped-Raw1.txt1": {
+        "testCaseName": "Verify question creation with all fields filled correctly",
+        "objective": "Ensure that the admin can successfully create a question for the selection test by filling all fields correctly and saving the information.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence including '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case verifies that the system correctly handles the creation of a new question when all required fields are filled out properly, aligning with the main flow of the use case."
+    },
+    "Other option 3 field skipped-Raw1.txt2": {
+        "testCaseName": "Verify system behavior when 'other option 3' field is skipped",
+        "objective": "Ensure that the system prompts the admin to fill the 'other option 3' field if it is skipped and prevents question creation until the field is filled.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select a Lesson and then a Topic within that Lesson.",
+            "- Step 4: Choose a word from the vocabulary list and press 'Add new question'.",
+            "- Step 5: Select 'Create questions for the selection test' option.",
+            "- Step 6: Correctly fill in the 'sentence' and 'correct answer' fields.",
+            "- Step 7: Fill in the 'other option 1' and 'other option 2' fields with different wrong answers, but skip the 'other option 3' field.",
+            "- Step 8: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'other option 3' field, and prompts the admin to fill it.",
+        "explanation": "This test case checks the system's validation for the 'other option 3' field based on the alternative flow 6, ensuring that questions cannot be saved with incomplete information."
+    },
+    "Other option 3 field skipped-Raw2.txt0": {},
+    "Other option 3 field skipped-Raw2.txt1": {
+        "testCaseName": "Verify successful creation of a question for the selection test with all fields filled correctly",
+        "objective": "Ensure that the admin can successfully create a question for the selection test by filling all required fields correctly and saving it.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question is visible.",
+        "explanation": "This test case verifies that the system correctly handles the creation of a new question for the selection test when all required fields are filled out correctly, aligning with the main flow of the use case."
+    },
+    "Other option 3 field skipped-Raw2.txt2": {
+        "testCaseName": "Verify system behavior when 'sentence' field is skipped",
+        "objective": "To ensure that the system prompts the admin to fill the missing 'sentence' field when attempting to save a question for the selection test without it.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select a Lesson and then a Topic from the lists provided.",
+            "- Step 4: Choose a word from the vocabulary list and press 'Add new question'.",
+            "- Step 5: Select the option to 'Create questions for the selection test'.",
+            "- Step 6: Leave the 'sentence' field empty, but fill in the 'correct answer' and 'other options' fields.",
+            "- Step 7: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case checks the system's validation for the 'sentence' field to ensure that it cannot be skipped, as per the alternative flow 2 of the use case."
+    },
+    "Other option 3 field skipped-Raw2.txt3": {
+        "testCaseName": "Verify system behavior when 'correct answer' field is skipped",
+        "objective": "To check if the system correctly prompts the admin to fill the missing 'correct answer' field when it is skipped.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Access the 'Lesson Management' page and select a Lesson and a Topic.",
+            "- Step 3: Choose a word to create a question for and press 'Add new question'.",
+            "- Step 4: Opt to 'Create questions for the selection test'.",
+            "- Step 5: Fill all fields except for the 'correct answer' field.",
+            "- Step 6: Press the 'Save' button."
+        ],
+        "expectedResult": "A notification appears stating that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'correct answer' field.",
+        "explanation": "This test case ensures that the system enforces the requirement for the 'correct answer' field, following the alternative flow 3."
+    },
+    "Other option 3 field skipped-Raw2.txt4": {
+        "testCaseName": "Verify system behavior when 'other option 3' field is skipped",
+        "objective": "To verify that the system prompts the admin to fill the 'other option 3' field if it is skipped during question creation.",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Go to 'Lesson Management', select a Lesson, then a Topic, and finally a word.",
+            "- Step 3: Click on 'Add new question' and choose to 'Create questions for the selection test'.",
+            "- Step 4: Fill in all required fields except for 'other option 3'.",
+            "- Step 5: Try to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system alerts that 'Admin did not fill all the fields', specifically pointing out the missing 'other option 3' field.",
+        "explanation": "This test case checks the system's handling of incomplete question submissions, particularly when the 'other option 3' field is omitted, as described in alternative flow 6."
+    },
+    "Other option 3 field skipped-Raw3.txt0": {},
+    "Other option 3 field skipped-Raw3.txt1": {
+        "testCaseName": "Verify question creation with all fields filled correctly",
+        "objective": "Ensure that an admin can successfully create a question for the selection test by filling all fields correctly and saving the question.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word.",
+            "- Step 10: Fill the 'other option 1', 'other option 2', and 'other option 3' fields with different wrong answers.",
+            "- Step 11: Press the 'Save' button."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question when all required fields are filled out properly, adhering to the main flow of the use case."
+    },
+    "Other option 3 field skipped-Raw3.txt2": {
+        "testCaseName": "Verify error notification when 'other option 3' field is skipped",
+        "objective": "To confirm that the system prompts an error notification when the 'other option 3' field is skipped and prevents question creation until the field is filled.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Choose a Lesson and then a Topic within that Lesson.",
+            "- Step 4: Select a word from the vocabulary list to create a question for.",
+            "- Step 5: Initiate the question creation process by clicking 'Add new question'.",
+            "- Step 6: Choose 'Create questions for the selection test' option.",
+            "- Step 7: Fill in the 'sentence' and 'correct answer' fields correctly.",
+            "- Step 8: Fill in the 'other option 1' and 'other option 2' fields with valid wrong answers.",
+            "- Step 9: Leave the 'other option 3' field empty.",
+            "- Step 10: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'other option 3' field, and does not save the question.",
+        "explanation": "This test case verifies the system's response to incomplete question creation attempts, focusing on the scenario where 'other option 3' is omitted, as outlined in Alternative flow 6."
+    },
+    "Scenario Correct answer field skipped-Raw.txt0": {},
+    "Scenario Correct answer field skipped-Raw.txt1": {
+        "testCaseName": "Verify system behavior when 'correct answer' field is skipped",
+        "objective": "Ensure the system prompts for missing 'correct answer' field and does not save the question until the field is filled",
+        "testSteps": [
+            "- Step 1: Log in as Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.",
+            "- Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.",
+            "- Step 6: Press the 'Add new question' button on the 'Word Information' page.",
+            "- Step 7: Choose the option 'Create questions for the selection test'.",
+            "- Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Skip the 'correct answer' field and fill in 'other option 1', 'other option 2', 'other option 3' with different wrong answers.",
+            "- Step 10: Press the 'Save' button."
+        ],
+        "expectedResult": "The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.",
+        "explanation": "This test case is designed to verify that the system correctly handles the scenario when the 'correct answer' field is skipped, ensuring data integrity and prompting the user to complete all required fields before saving."
+    },
+    "Sentence field skipped during question creation-Raw1.txt0": {},
+    "Sentence field skipped during question creation-Raw1.txt1": {
+        "testCaseName": "Create a valid selection test question",
+        "objective": "Verify that an admin can successfully create a selection test question with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new selection test question when all required fields are properly filled out."
+    },
+    "Sentence field skipped during question creation-Raw1.txt2": {
+        "testCaseName": "Attempt to create a selection test question with 'sentence' field skipped",
+        "objective": "Verify that the system prevents the creation of a selection test question if the 'sentence' field is skipped and prompts the admin to fill it.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select a Lesson and then a Topic within that Lesson.",
+            "- Step 4: Choose a word from the vocabulary list and press 'Add new question'.",
+            "- Step 5: Select the option to 'Create questions for the selection test'.",
+            "- Step 6: Skip filling the 'sentence' field, but fill in the 'correct answer' and the three 'other options' fields.",
+            "- Step 7: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case verifies the system's validation for the compulsory 'sentence' field when creating a new selection test question."
+    },
+    "Sentence field skipped during question creation-Raw1.txt3": {
+        "testCaseName": "Cancel the creation of a selection test question and choose to stay",
+        "objective": "Verify that an admin can cancel the creation of a selection test question and choose to stay on the current page without losing entered data.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Access the 'Lesson Management' page and select a Lesson and a Topic.",
+            "- Step 3: Choose a word and press 'Add new question'.",
+            "- Step 4: Opt to 'Create questions for the selection test' and fill in all fields.",
+            "- Step 5: Press the button 'Cancel'.",
+            "- Step 6: In the dialog 'Are you sure you want to cancel the question?', press the button 'Stay'."
+        ],
+        "expectedResult": "The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact.",
+        "explanation": "This test case ensures that admins have the option to cancel the creation of a new question but choose to stay on the page without losing their progress."
+    },
+    "Sentence field skipped during question creation-Raw2.txt0": {},
+    "Sentence field skipped during question creation-Raw2.txt1": {
+        "testCaseName": "Create a valid question for the selection test",
+        "objective": "Verify that an admin can successfully create a question for the selection test with all required fields filled correctly.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the field 'sentence' with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are filled out correctly, adhering to the main flow of the use case."
+    },
+    "Sentence field skipped during question creation-Raw2.txt2": {
+        "testCaseName": "Attempt to create a question with 'sentence' field skipped",
+        "objective": "Verify that the system prevents the creation of a question for the selection test if the 'sentence' field is skipped and prompts the admin to fill it.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Select a Lesson and then a Topic within that Lesson.",
+            "- Step 4: Choose a word from the vocabulary list and press 'Add new question'.",
+            "- Step 5: Select the option to 'Create questions for the selection test'.",
+            "- Step 6: Skip filling the 'sentence' field, but fill in the 'correct answer' and all 'other option' fields.",
+            "- Step 7: Press the button 'Save'."
+        ],
+        "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing 'sentence' field.",
+        "explanation": "This test case verifies the system's validation for the 'sentence' field, ensuring that it cannot be skipped according to the alternative flow 2."
+    },
+    "Sentence field skipped during question creation-Raw2.txt3": {
+        "testCaseName": "Cancel the creation of a question and choose to stay",
+        "objective": "Verify that an admin can cancel the creation of a question and choose to stay on the page to continue editing.",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page and select a Lesson and a Topic.",
+            "- Step 3: Choose a word and press 'Add new question'.",
+            "- Step 4: Select 'Create questions for the selection test' and fill in all required fields.",
+            "- Step 5: Press the button 'Cancel'.",
+            "- Step 6: In the dialog 'Are you sure you want to cancel the question?', press the button 'Stay'."
+        ],
+        "expectedResult": "The cancellation dialog closes, and the admin remains on the 'Add new question for selection test' page with the information previously entered intact.",
+        "explanation": "This test case checks the functionality of cancelling the question creation process and choosing to stay on the page, as described in alternative flow 7."
+    },
+    "Sentence field skipped during question creation-Raw3.txt0": {},
+    "Sentence field skipped during question creation-Raw3.txt1": {
+        "testCaseName": "Verify successful creation of a question for the selection test",
+        "objective": "Ensure that an admin can successfully create a question for the selection test with all required fields filled correctly",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Press the tab 'Lesson Management' on the navbar.",
+            "- Step 3: Select a Lesson from the Lesson list.",
+            "- Step 4: Select a Topic from the Topic list of the selected Lesson.",
+            "- Step 5: Select a word from the vocabulary word list.",
+            "- Step 6: Press the button 'Add new question'.",
+            "- Step 7: Press option add 'Create questions for the selection test'.",
+            "- Step 8: Fill the field 'sentence' with a valid sentence that includes '...'.",
+            "- Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.",
+            "- Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.",
+            "- Step 11: Press the button 'Save'."
+        ],
+        "expectedResult": "The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the newly created question is visible.",
+        "explanation": "This test case ensures that the system correctly handles the creation of a new question for the selection test when all required fields are properly filled out."
+    },
+    "Sentence field skipped during question creation-Raw3.txt2": {
+        "testCaseName": "Verify system behavior when 'sentence' field is skipped",
+        "objective": "To check if the system prompts the admin to fill the missing 'sentence' field when trying to save a question for the selection test without it",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Navigate to the 'Lesson Management' page via the navbar.",
+            "- Step 3: Choose a Lesson and then a Topic within that Lesson.",
+            "- Step 4: Select a word from the vocabulary list to create a question for.",
+            "- Step 5: Initiate the process to 'Add new question' for the selection test.",
+            "- Step 6: Leave the 'sentence' field empty, but fill in all other required fields correctly.",
+            "- Step 7: Attempt to save the question by pressing the 'Save' button."
+        ],
+        "expectedResult": "The system displays a notification that 'Admin did not fill all the fields', specifically indicating the missing 'sentence' field.",
+        "explanation": "This test case verifies that the system correctly identifies and prompts for the completion of the compulsory 'sentence' field if it is skipped."
+    },
+    "Sentence field skipped during question creation-Raw3.txt3": {
+        "testCaseName": "Verify cancellation and staying on the question creation page",
+        "objective": "Ensure that an admin can cancel the question creation process and choose to stay on the page to continue working on it",
+        "testSteps": [
+            "- Step 1: Log in as an Admin.",
+            "- Step 2: Proceed through the steps to add a new question for a word in a topic.",
+            "- Step 3: Fill in all required fields for the question.",
+            "- Step 4: Press the 'Cancel' button.",
+            "- Step 5: On the dialog 'Are you sure you want to cancel the question?', press the 'Stay' button."
+        ],
+        "expectedResult": "The cancellation dialog closes, and the admin remains on the question creation page with all previously entered information intact.",
+        "explanation": "This test case checks the functionality of the cancellation process, ensuring that admins can opt to stay and continue working on the question without losing entered data."
+    }
+}

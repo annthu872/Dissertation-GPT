@@ -1,0 +1,157 @@
+{
+    "CreateNewAuthor_WithoutBio1.txt0": {},
+    "CreateNewAuthor_WithoutBio1.txt1": {
+        "testCaseName": "Create New Author Without Entering Bio",
+        "objective": "Verify that a new author can be added without entering the biography and the record is successfully added to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering new author data.",
+            "- Step 3: Enter the author's name in the 'Name' field.",
+            "- Step 4: Leave the 'Bio' field empty.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The new author record is successfully added to the database without the biography, and the list of authors with the newly added record is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to verify the ability to create a new author without providing a biography. It follows the exact steps that would be taken to achieve this, from navigating to the author list page to submitting the new author form with the 'Bio' field left empty."
+    },
+    "CreateNewAuthor_WithoutName1.txt0": {},
+    "CreateNewAuthor_WithoutName1.txt1": {
+        "testCaseName": "CreateNewAuthor_WithoutName",
+        "objective": "Verify that the system prevents the creation of a new author record without a name and displays the correct error message.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering author data.",
+            "- Step 3: Leave the 'Name' field empty.",
+            "- Step 4: Enter valid data into the 'Bio' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the 'Name' field is required.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'CreateNewAuthor_WithoutName' by attempting to create a new author without providing a name. It verifies the system's behavior in this specific situation, ensuring that it correctly prevents the creation and provides appropriate feedback to the user, which is the core objective of the given test scenario."
+    },
+    "Incorrect Data Submission1.txt0": {},
+    "Incorrect Data Submission1.txt1": {
+        "testCaseName": "Verify incorrect data submission for new author creation",
+        "objective": "Ensure that the application displays incorrect data messages when invalid data is submitted in the new author creation form",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the new author creation form.",
+            "- Step 3: Enter invalid data into the 'Name' and 'Bio' fields of the form. For example, leave 'Name' field empty and fill 'Bio' with less than the minimum required characters.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The application should display messages indicating the incorrect data for each field that was filled out incorrectly.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'Incorrect Data Submission' by verifying the application's response to invalid data input during the creation of a new author. It ensures that error messages are displayed, which is the core objective of the given test scenario."
+    },
+    "Successful Author Record Creation1.txt0": {},
+    "Successful Author Record Creation1.txt1": {
+        "testCaseName": "Successful Author Record Creation with Valid Data",
+        "objective": "Verify that a new author record can be successfully added to the database with valid data",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the author creation form.",
+            "- Step 3: Enter valid data into the form fields (Name and Bio).",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "A new author record is successfully added to the database, and the list of authors with the newly added record is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is 'Successful Author Record Creation.' It outlines the steps to create a new author record with valid data and expects the successful addition of the record, aligning perfectly with the scenario's objective."
+    },
+    "User navigates to 'API' before submitting data1.txt0": {},
+    "User navigates to 'API' before submitting data1.txt1": {
+        "testCaseName": "Navigate to API before submitting new author data",
+        "objective": "Verify that navigating to 'API' before submitting new author data cancels the operation and does not save data to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering new author data.",
+            "- Step 3: Start entering the author's name and biography into the form fields.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'API'."
+        ],
+        "expectedResult": "The operation is canceled, data is not saved to the database, and the API page is displayed with updated data.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the given test scenario by outlining steps that lead to navigating away from a data submission form to the 'API' page before the data submission is completed. It verifies that this action cancels the data submission process, which is the core of the test scenario."
+    },
+    "User navigates to 'Authors' before submitting data1.txt0": {},
+    "User navigates to 'Authors' before submitting data1.txt1": {
+        "testCaseName": "Navigate to 'Authors' and Submit Valid Author Data",
+        "objective": "Verify that a user can navigate to the 'Authors' section, submit valid author data, and successfully add a new author record to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering author data.",
+            "- Step 3: Enter valid data into the form fields, including the author's Name and Bio.",
+            "- Step 4: Press the 'Submit' button to submit the form."
+        ],
+        "expectedResult": "A message or indication that the new author record has been successfully added is displayed, followed by the updated list of authors including the newly added record.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the process of navigating to the 'Authors' section and submitting data to add a new author, which is the core action described in the scenario."
+    },
+    "User navigates to 'Books' before submitting data1.txt0": {},
+    "User navigates to 'Books' before submitting data1.txt1": {
+        "testCaseName": "Navigate to 'Books' before submitting new author data",
+        "objective": "Verify that navigating to 'Books' before submitting new author data does not save the data in the database and opens the 'Books' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering new author data.",
+            "- Step 3: Start entering the new author's Name and Bio in the provided form fields.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'Books'."
+        ],
+        "expectedResult": "The application does not save the entered author data in the database and the 'Books' page is displayed with updated data.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the behavior of the application when a user navigates away from the data entry form to the 'Books' page without submitting the data. It checks that the data is not saved, which is the core aspect of the scenario."
+    },
+    "User navigates to 'Genres' before submitting data1.txt0": {},
+    "User navigates to 'Genres' before submitting data1.txt1": {
+        "testCaseName": "Navigate to 'Genres' before submitting new author data",
+        "objective": "Verify that navigating to 'Genres' before submitting new author data does not save the data in the database and displays the Genres page.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering new author data.",
+            "- Step 3: Start entering the new author's Name and Bio in the provided form fields.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'Genres'."
+        ],
+        "expectedResult": "The application does not save the entered author data to the database and displays the Genres page with updated data.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the given test scenario by verifying that the action of navigating away to 'Genres' before data submission results in no data being saved. It effectively tests the user's ability to navigate without affecting unsaved data, which is the core of the scenario."
+    },
+    "User navigates to 'Home' before submitting data1.txt0": {},
+    "User navigates to 'Home' before submitting data1.txt1": {
+        "testCaseName": "Navigate to 'Home' before submitting new author data",
+        "objective": "Verify that navigating to 'Home' before submitting new author data does not save the data",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for entering new author data.",
+            "- Step 3: Start entering the new author's details into the form fields (Name, Bio).",
+            "- Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the form."
+        ],
+        "expectedResult": "The application does not save the entered data and displays the Home page. When navigating back to the author list, the new author's data should not be present.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the behavior of the application when a user navigates to 'Home' before submitting the data. It checks that the data is not saved, which is the core aspect of the scenario."
+    },
+    "User starts entering data and decides to cancel1.txt0": {},
+    "User starts entering data and decides to cancel1.txt1": {
+        "testCaseName": "Cancel New Author Creation Before Submission",
+        "objective": "Verify that the author creation process can be cancelled before submission and no data is saved",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new author.",
+            "- Step 3: Start entering data into the form fields for 'Name' and 'Bio'.",
+            "- Step 4: Before pressing the 'Submit' button, click the 'Cancel' button."
+        ],
+        "expectedResult": "The application should not save the entered data and should display the list of authors records.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario where a user starts entering data for a new author but decides to cancel before submission. It checks that the cancellation process works as intended and that no data is saved, which is exactly what the scenario describes."
+    },
+    "User starts entering data and decides to cancel1.txt2": {
+        "testCaseName": "Navigate Away from New Author Creation Before Submission",
+        "objective": "Verify that navigating away from the author creation page before submission does not save data",
+        "testSteps": [
+            "- Step 1: Navigate to the author list page.",
+            "- Step 2: Click the 'Create new' button to open the form for adding a new author.",
+            "- Step 3: Begin entering 'Name' and 'Bio' data into the form.",
+            "- Step 4: Without pressing the 'Submit' button, select the menu item 'Books'."
+        ],
+        "expectedResult": "The application should not save the entered data and should display the 'Books' page with updated data.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores a different user action (navigating away instead of explicitly clicking 'Cancel'), it still tests the core aspect of the given scenario: ensuring that partially entered data is not saved when the user decides not to complete the action. It verifies the system's behavior in a situation where the user changes their mind and moves to a different part of the application, which is a valid path within the described scenario."
+    }
+}

@@ -1,0 +1,383 @@
+{
+    "Book Update with Incorrect Data1.txt0": {},
+    "Book Update with Incorrect Data1.txt1": {
+        "testCaseName": "Edit Book with Incorrect Title",
+        "objective": "Verify that the system displays an incorrect data message when a user attempts to update a book with an incorrect title format.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the edit form, enter an incorrect format for the book title (e.g., using special characters).",
+            "- Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the book title is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the system's response to incorrect data input in the book title field, which is a specific instance of updating a book with incorrect data."
+    },
+    "Book Update with Incorrect Data1.txt2": {
+        "testCaseName": "Edit Book with Future Publication Date",
+        "objective": "Verify that the system displays an incorrect data message when a user attempts to update a book with a future publication date.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Fill in the Title, Author, Genre, and Description fields with valid data.",
+            "- Step 4: Enter a future date in the 'Publication date' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the publication date is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case also directly reflects the given test scenario by testing the system's handling of incorrect data, in this case, a future publication date, which is an invalid input for the book update process."
+    },
+    "Successful Book Update1.txt0": {},
+    "Successful Book Update1.txt1": {
+        "testCaseName": "Successful Book Record Update",
+        "objective": "Verify that a user can successfully update a book record with valid data and the updated record is reflected in the book list.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The book record is successfully updated in the database, and the user is redirected to the list of books where the updated record is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario of successfully updating a book record with valid data and seeing the changes reflected in the book list, making it a perfect match."
+    },
+    "UpdateBook_InvalidAuthor1.txt0": {},
+    "UpdateBook_InvalidAuthor1.txt1": {
+        "testCaseName": "UpdateBook_InvalidAuthor_ErrorMessage",
+        "objective": "Verify that the system displays an error message when attempting to update a book with an invalid author name",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the edit form, enter a valid title, genre, description, and publication date for the book.",
+            "- Step 4: Enter an invalid author name (e.g., using numbers or special characters).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display an error message indicating that the author name is invalid.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'UpdateBook_InvalidAuthor' by attempting to update a book with an invalid author name and expecting an error message, which is the core objective of the scenario."
+    },
+    "UpdateBook_InvalidDescription1.txt0": {},
+    "UpdateBook_InvalidDescription1.txt1": {
+        "testCaseName": "UpdateBook_InvalidDescription_EmptyField",
+        "objective": "Verify that the system displays an incorrect data message when the description field is left empty during book update.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: In the book data form, leave the 'Description' field empty.",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the 'Description' field cannot be empty.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario 'UpdateBook_InvalidDescription' by specifically testing the scenario where the 'Description' field is left empty, which is a form of invalid description."
+    },
+    "UpdateBook_InvalidDescription1.txt2": {
+        "testCaseName": "UpdateBook_InvalidDescription_TooShort",
+        "objective": "Verify that the system displays an incorrect data message when the description field contains text that is too short.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: In the book data form, enter a very short text (e.g., 'abc') in the 'Description' field.",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the 'Description' field contains text that is too short.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the given test scenario as it tests another form of invalid description\u2014specifically, a description that is too short, thus ensuring the system enforces a minimum length requirement on the description field."
+    },
+    "UpdateBook_InvalidDescription1.txt3": {
+        "testCaseName": "UpdateBook_InvalidDescription_SpecialCharacters",
+        "objective": "Verify that the system displays an incorrect data message when the description field contains invalid special characters.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: In the book data form, enter a description with invalid special characters (e.g., '@#$%^&*').",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the 'Description' field contains invalid special characters.",
+        "reflect": "yes",
+        "explanation": "This test case aligns with the given test scenario by testing for invalid special characters in the description field, which is another way the description can be considered invalid. It ensures that the system validates the content of the description field for character validity."
+    },
+    "UpdateBook_InvalidGenre1.txt0": {},
+    "UpdateBook_InvalidGenre1.txt1": {
+        "testCaseName": "UpdateBook_InvalidGenre_ErrorMessage",
+        "objective": "Verify that the system displays an error message when an invalid genre is entered during the book update process.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the form displayed, enter or modify the book's title, author, description, and publication date with valid data.",
+            "- Step 4: Enter an invalid genre in the 'Genre' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message related to the invalid genre input is displayed, indicating that the genre entered is not valid.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to verify the system's response to an invalid genre during the book update process. The steps guide the tester through the process of updating a book with an invalid genre and the expected result is aligned with the scenario's objective."
+    },
+    "UpdateBook_InvalidPublicationDate1.txt0": {},
+    "UpdateBook_InvalidPublicationDate1.txt1": {
+        "testCaseName": "UpdateBook_InvalidPublicationDate_FormatError",
+        "objective": "Verify that the system displays an error message when the publication date is entered in an incorrect format during book update.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.",
+            "- Step 4: Enter an invalid format for the Publication date (e.g., 'dd/mm/yyyy').",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating the incorrect format of the Publication date.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by specifically testing the system's response to an invalid publication date format during a book update operation."
+    },
+    "UpdateBook_InvalidPublicationDate1.txt2": {
+        "testCaseName": "UpdateBook_InvalidPublicationDate_FutureDate",
+        "objective": "Verify that the system displays an error message when the publication date is set to a future date.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.",
+            "- Step 4: Enter a future date in the Publication date field (e.g., a date that is after today's date).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the publication date cannot be in the future.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the given test scenario as it tests another aspect of invalid publication dates (future dates), ensuring the system's validation process for publication dates during book updates."
+    },
+    "UpdateBook_InvalidTitle1.txt0": {},
+    "UpdateBook_InvalidTitle1.txt1": {
+        "testCaseName": "Update Book with Invalid Title",
+        "objective": "Verify that the system displays an error message when trying to update a book with an invalid title",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: In the book data form, enter an invalid title (e.g., using special characters or leaving it blank).",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message related to the invalid title is displayed, and the book record is not updated in the database.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'UpdateBook_InvalidTitle' by attempting to update a book with an invalid title and expecting an error message, which is the core objective of the scenario."
+    },
+    "UpdateBook_InvalidTitle1.txt2": {
+        "testCaseName": "Update Book with Valid Data Except Title",
+        "objective": "Verify that the system prevents updating a book when only the title is invalid while other fields are valid",
+        "testSteps": [
+            "- Step 1: Go to the book list/details page.",
+            "- Step 2: Press the 'Update' button for the book you want to edit.",
+            "- Step 3: Enter a title that is too long or contains invalid characters.",
+            "- Step 4: Enter valid data for the Author, Genre, Description, and Publication date fields.",
+            "- Step 5: Click the 'Submit' button."
+        ],
+        "expectedResult": "The system displays an error message indicating the title is invalid, and the book's information remains unchanged in the database.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the given test scenario as it specifically tests the system's response to an invalid title input while ensuring other fields are valid, which aligns with the scenario's focus on title validation."
+    },
+    "UpdateBook_InvalidTitle2.txt0": {},
+    "UpdateBook_InvalidTitle2.txt1": {
+        "testCaseName": "UpdateBook_InvalidTitle_EmptyField",
+        "objective": "Verify that the system displays an error message when the Title field is left empty during book update",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Leave the 'Title' field empty, fill in other mandatory fields with valid data, and press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the Title field cannot be empty.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'UpdateBook_InvalidTitle' by verifying the system's response to an empty Title field, which is a specific instance of an invalid title."
+    },
+    "UpdateBook_InvalidTitle2.txt2": {
+        "testCaseName": "UpdateBook_InvalidTitle_SpecialCharacters",
+        "objective": "Verify that the system displays an error message when the Title field contains special characters",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Enter special characters (e.g., @#$%) in the 'Title' field, fill in other mandatory fields with valid data, and press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the Title field cannot contain special characters.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the test scenario 'UpdateBook_InvalidTitle' as it tests the system's handling of titles with invalid characters, ensuring that only valid titles are accepted."
+    },
+    "UpdateBook_InvalidTitle2.txt3": {
+        "testCaseName": "UpdateBook_InvalidTitle_ExceedCharacterLimit",
+        "objective": "Verify that the system displays an error message when the Title field exceeds the character limit",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Enter a title in the 'Title' field that exceeds the character limit (if applicable), fill in other mandatory fields with valid data, and press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the Title field exceeds the character limit.",
+        "reflect": "yes",
+        "explanation": "This test case aligns with the test scenario 'UpdateBook_InvalidTitle' by testing the system's response to titles that exceed a predefined character limit, which is another form of invalid title input."
+    },
+    "UpdateBook_InvalidTitle3.txt0": {},
+    "UpdateBook_InvalidTitle3.txt1": {
+        "testCaseName": "UpdateBook_InvalidTitle_EmptyField",
+        "objective": "Verify that the system displays an incorrect data message when the title field is left empty during book update.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: Clear the 'Title' field leaving it empty.",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the empty 'Title' field is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'UpdateBook_InvalidTitle' by validating the behavior of the system when the 'Title' field is left empty. It is a specific instance of the scenario where the title is invalid due to being empty."
+    },
+    "UpdateBook_InvalidTitle3.txt2": {
+        "testCaseName": "UpdateBook_InvalidTitle_SpecialCharacters",
+        "objective": "Verify that the system displays an incorrect data message when the title field contains special characters.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: Enter a title that contains special characters (e.g., @#$%^&*).",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the 'Title' field containing special characters is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the test scenario 'UpdateBook_InvalidTitle' as it tests the system's response to a title containing invalid characters. It verifies that the system correctly identifies and flags titles with special characters as invalid, which is a crucial part of the scenario."
+    },
+    "UpdateBook_InvalidTitle3.txt3": {
+        "testCaseName": "UpdateBook_InvalidTitle_TooLong",
+        "objective": "Verify that the system displays an incorrect data message when the title field exceeds the maximum length limit.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you want to update.",
+            "- Step 3: Enter a title that exceeds the maximum length limit (e.g., a string longer than 255 characters).",
+            "- Step 4: Fill in the rest of the fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the 'Title' field exceeding the maximum length limit is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case aligns with the 'UpdateBook_InvalidTitle' scenario by testing the system's handling of titles that are too long. It ensures that the system enforces length restrictions on the title field, which is a key aspect of validating title data."
+    },
+    "User navigates to API menu item before submitting updated book data1.txt0": {},
+    "User navigates to API menu item before submitting updated book data1.txt1": {
+        "testCaseName": "Navigate to API menu item before submitting updated book data",
+        "objective": "Verify that navigating to the API menu item before submitting updated book data cancels the update operation and displays the API page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, navigate to the 'API' menu item."
+        ],
+        "expectedResult": "The book update operation is canceled, and the API page is displayed without updating the book data in the database.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the behavior of navigating away from the update operation before it is completed. It checks if the operation is indeed canceled and if the user is redirected to the API page, which is the core of the test scenario."
+    },
+    "User navigates to Authors menu item before submitting updated book data1.txt0": {},
+    "User navigates to Authors menu item before submitting updated book data1.txt1": {
+        "testCaseName": "Navigate to Authors menu before submitting updated book data",
+        "objective": "Verify that navigating to 'Authors' menu before submitting updated book data cancels the update operation and displays the Authors page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, click on the 'Authors' menu item."
+        ],
+        "expectedResult": "The book data update operation is canceled, and the Authors page is displayed without updating the book in the database.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario by verifying the behavior of the system when a user navigates away from the book update form to the 'Authors' menu before completing the update operation. It checks if the operation is indeed canceled and if the user is redirected appropriately, thus reflecting the given test scenario accurately."
+    },
+    "User navigates to Books menu item before submitting updated book data1.txt0": {},
+    "User navigates to Books menu item before submitting updated book data1.txt1": {
+        "testCaseName": "Navigate to Books Menu and Submit Updated Book Data",
+        "objective": "Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.",
+        "testSteps": [
+            "- Step 1: Log in to the application to reach the dashboard.",
+            "- Step 2: Navigate to the Books menu item by selecting it from the navigation bar.",
+            "- Step 3: On the book list/details page, click the 'Update' button to the right of the book you wish to update.",
+            "- Step 4: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication Date.",
+            "- Step 5: Press the 'Submit' button to submit the updated book data."
+        ],
+        "expectedResult": "The book's data is updated in the database, and the user is redirected to the list of books with the updated records displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by detailing the steps required for a user to navigate to the Books menu, update a book's data, and submit those changes. It covers the entire flow as described in the scenario."
+    },
+    "User navigates to Books menu item before submitting updated book data2.txt0": {},
+    "User navigates to Books menu item before submitting updated book data2.txt1": {
+        "testCaseName": "Navigate to Books Menu and Submit Updated Book Data",
+        "objective": "Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.",
+        "testSteps": [
+            "- Step 1: Log in to the application with valid credentials.",
+            "- Step 2: Navigate to the Books menu item using the navbar.",
+            "- Step 3: On the list of books, click the 'Update' button next to the book you wish to edit.",
+            "- Step 4: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.",
+            "- Step 5: Press the 'Submit' button to update the book's data."
+        ],
+        "expectedResult": "The application updates the book in the database and redirects the user to the list of books, displaying the updated records.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by detailing the steps required for a user to navigate to the Books menu, update a book's data, and submit those changes. It captures the essence of the scenario, which is to test the update functionality within the Books menu."
+    },
+    "User navigates to Books menu item before submitting updated book data3.txt0": {},
+    "User navigates to Books menu item before submitting updated book data3.txt1": {
+        "testCaseName": "Navigate to Books Menu and Submit Updated Book Data",
+        "objective": "Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.",
+        "testSteps": [
+            "- Step 1: Navigate to the Books menu item from the main navigation bar.",
+            "- Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.",
+            "- Step 3: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication date.",
+            "- Step 4: Press the 'Submit' button to submit the updated book data."
+        ],
+        "expectedResult": "The book's data is updated in the database, and the list of books with the updated records is displayed.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the process of navigating to the Books menu, updating a book's details, and submitting the updated data."
+    },
+    "User navigates to Genres menu item before submitting updated book data1.txt0": {},
+    "User navigates to Genres menu item before submitting updated book data1.txt1": {
+        "testCaseName": "Navigate to Genres menu item before submitting updated book data",
+        "objective": "Verify that navigating to the Genres menu item before submitting updated book data cancels the update operation and displays the Genres page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: Begin entering or modifying the book's details (Title, Author, Genre, Description, Publication Date) in the provided form fields.",
+            "- Step 4: Before pressing the 'Submit' button, navigate to the 'Genres' menu item by selecting it from the navigation menu."
+        ],
+        "expectedResult": "The book update operation is canceled, and the Genres page is displayed without updating the book in the database.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by outlining steps that lead to navigating away from the book update form before the submission is completed. It checks if the application properly cancels the update operation and redirects the user to the Genres page, which is the core objective of the given test scenario."
+    },
+    "User navigates to Home menu item before submitting updated book data1.txt0": {},
+    "User navigates to Home menu item before submitting updated book data1.txt1": {
+        "testCaseName": "Navigate to Home Before Submitting Updated Book Data",
+        "objective": "Verify that navigating to the Home menu item before submitting updated book data cancels the update operation and displays the home page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, click on the 'Home' menu item."
+        ],
+        "expectedResult": "The book data update operation is canceled, and the home page is displayed without updating the book in the database.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario by verifying the behavior of navigating away from the update operation before it is completed. It confirms that the action cancels the update and redirects the user to the home page, which is the core of the given test scenario."
+    },
+    "User presses \u201cCancel\u201d button before submitting updated book data1.txt0": {},
+    "User presses \u201cCancel\u201d button before submitting updated book data1.txt1": {
+        "testCaseName": "Verify cancel operation during book data update",
+        "objective": "Ensure that pressing the 'Cancel' button before submitting updated book data does not update the book in the database and redirects the user to the book list.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list/details page.",
+            "- Step 2: Click the 'Update' button next to the book you wish to update.",
+            "- Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, click the 'Cancel' button."
+        ],
+        "expectedResult": "The book data is not updated in the database, and the user is redirected to the list of book records.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario by verifying the functionality of the 'Cancel' button during the book data update process. It ensures that the action of pressing 'Cancel' does not commit changes to the database and redirects the user appropriately, which is the core of the given test scenario."
+    },
+    "User presses \u201cCancel\u201d button before submitting updated book data1.txt2": {
+        "testCaseName": "Verify navigation after cancel operation during book update",
+        "objective": "To confirm that after pressing the 'Cancel' button during book update, the user is redirected to the book list and can navigate to other sections without updating the book.",
+        "testSteps": [
+            "- Step 1: Go to the book list/details page and click the 'Update' button for a book.",
+            "- Step 2: Begin to enter or modify the book's details in the form.",
+            "- Step 3: Press the 'Cancel' button before submitting the updated data.",
+            "- Step 4: After being redirected to the book list, select another menu item such as 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "User is redirected to the book list after pressing 'Cancel', and can navigate to other sections without the book data being updated in the database.",
+        "reflect": "yes",
+        "explanation": "While this test case extends the scenario by verifying the user's ability to navigate to other sections post-cancel, it still reflects the core scenario by ensuring the 'Cancel' operation's effect on data integrity and user redirection. It tests additional aspects of the user experience following the cancel action, which is within the scope of the given scenario."
+    }
+}

@@ -1,0 +1,356 @@
+{
+    "Review with Image Method-Raw1.txt0": {},
+    "Review with Image Method-Raw1.txt1": {
+        "testCaseName": "Review with Image Method - Correct Answer",
+        "objective": "Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the image method.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the image method for a word in the learner's daily review words list.",
+            "- Step 5: Choose the correct answer by clicking on one of the four selections.",
+            "- Step 6: Click the right answer.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the right answer, the system should show a green word indicating the correct choice and increase the memory level of the word.",
+        "explanation": "This test case ensures that when using the image method for review, the system behaves as expected by increasing the memory level of a word when the learner selects the correct answer."
+    },
+    "Review with Image Method-Raw1.txt2": {
+        "testCaseName": "Review with Image Method - Wrong Answer",
+        "objective": "Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the image method.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the image method for a word in the learner's daily review words list.",
+            "- Step 5: Choose the wrong answer by clicking on one of the four selections.",
+            "- Step 6: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the wrong answer, the system should show a red word indicating the incorrect choice and decrease the memory level of the word.",
+        "explanation": "This test case verifies the system's functionality in decreasing the memory level of a word when the learner selects the wrong answer using the image method."
+    },
+    "Review with Image Method-Raw1.txt3": {
+        "testCaseName": "Review with Image Method - Completion",
+        "objective": "Verify that the system saves the review and updates the vocabulary status upon completion of the review session using the image method.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Complete the review session by going through all words in the list using the image method, selecting answers for each.",
+            "- Step 5: After reviewing the last word, press the 'Continue' button to finish the review session."
+        ],
+        "expectedResult": "Upon completion of the review session, the system should redirect the learner to the Home page and save the review, updating the status of the vocabulary accordingly.",
+        "explanation": "This test case ensures that the system correctly saves the review session and updates the vocabulary status upon completion when using the image method."
+    },
+    "Completing the Last Review Word-Raw1.txt0": {},
+    "Completing the Last Review Word-Raw1.txt1": {
+        "testCaseName": "Completing a review with correct answers",
+        "objective": "Verify that the system correctly increases the memory level of a word when the learner selects the right answer and navigates through the review process successfully.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: On the review screen, wait for the system to present a word with four selections of answers.",
+            "- Step 4: Choose the correct answer by clicking on one of the four selections.",
+            "- Step 5: Click the 'Continue' button to proceed to the next word.",
+            "- Step 6: Repeat steps 3 to 5 until the last word in the review words list is reached.",
+            "- Step 7: After completing the last word, press the 'Continue' button to go back to the Home page."
+        ],
+        "expectedResult": "For each correct answer, the system shows a green word indicating the correct selection and increases the memory level of the word. After completing the last review word, the system should save the review and redirect the learner to the Home page.",
+        "explanation": "This test case ensures that the system behaves as expected when a learner correctly answers review questions, including the correct handling of the memory level adjustment and navigation through the review process."
+    },
+    "Completing the Last Review Word-Raw1.txt2": {
+        "testCaseName": "Completing a review with incorrect answers",
+        "objective": "Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer and allows the learner to continue the review process.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: On the review screen, wait for the system to present a word with four selections of answers.",
+            "- Step 4: Choose the wrong answer by clicking on one of the four selections.",
+            "- Step 5: Click the 'Continue' button to proceed to the next word.",
+            "- Step 6: Repeat steps 3 to 5 until the last word in the review words list is reached.",
+            "- Step 7: After completing the last word, press the 'Continue' button to go back to the Home page."
+        ],
+        "expectedResult": "For each wrong answer, the system shows a red word indicating the incorrect selection and decreases the memory level of the word. After completing the last review word, the system should save the review and redirect the learner to the Home page.",
+        "explanation": "This test case verifies the system's behavior when a learner incorrectly answers review questions, focusing on the memory level adjustment and the continuation of the review process."
+    },
+    "Completing the Last Review Word-Raw1.txt3": {
+        "testCaseName": "Exiting and saving the review midway through",
+        "objective": "Verify that the system does not save the review progress if a learner chooses to exit the review midway through and confirms the exit.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: On the review screen, press the 'Exit' button before completing all review words.",
+            "- Step 4: On the pop-up, select the 'Confirm' button to exit the review.",
+            "- Step 5: Verify that the system redirects the learner to the Home page."
+        ],
+        "expectedResult": "The system should redirect the learner to the Home page without saving the review progress, maintaining the original memory levels and review status of the vocabulary.",
+        "explanation": "This test case checks the system's handling of an early exit from the review process, ensuring that the review progress is not saved and the learner is redirected appropriately."
+    },
+    "Exit and Choose to Stay Scenario-Raw1.txt0": {},
+    "Exit and Choose to Stay Scenario-Raw1.txt1": {
+        "testCaseName": "Verify Exit and Choose to Stay during Review",
+        "objective": "Ensure that when learners press 'Exit' and then choose 'Stay', they can continue with their review without losing progress.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review's screen and start the review process.",
+            "- Step 4: At any point during the review (before finishing all words), press the 'Exit' button.",
+            "- Step 5: On the pop-up, choose the 'Stay' button."
+        ],
+        "expectedResult": "The system should return the learner to the same point in the review process where they pressed 'Exit', allowing them to continue their review without any loss of progress.",
+        "explanation": "This test case ensures that the functionality for learners to exit and choose to stay works as intended, allowing them to continue their review seamlessly. It directly tests the alternative flow 3 where learners decide to stay after pressing the 'Exit' button."
+    },
+    "Exit and Choose to Stay Scenario-Raw1.txt2": {
+        "testCaseName": "Verify Exit and Choose to Confirm during Review",
+        "objective": "Ensure that when learners press 'Exit' and then choose 'Confirm', they are redirected to the Home page and the review progress is not saved.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review's screen and start the review process.",
+            "- Step 4: At any point during the review (before finishing all words), press the 'Exit' button.",
+            "- Step 5: On the pop-up, choose the 'Confirm' button."
+        ],
+        "expectedResult": "The system should redirect the learner to the Home page without saving the review progress.",
+        "explanation": "This test case verifies the functionality for learners to exit and confirm exit during a review session, ensuring that the system behaves as expected by not saving the review progress and redirecting the user to the Home page. It directly tests the exception flow 1 where learners decide to exit the review."
+    },
+    "Exit and Choose to Stay Scenario-Raw1.txt3": {
+        "testCaseName": "Verify Completing Review and Returning to Home Page",
+        "objective": "Ensure that upon completing the review by going through all words in the list, learners are redirected back to the Home page and the review is saved.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Complete the review for all words in the list by pressing 'Continue' after each word.",
+            "- Step 4: After reviewing the last word, press the 'Continue' button."
+        ],
+        "expectedResult": "The system should redirect the learner to the Home page and save the review progress, updating the status of vocabulary accordingly.",
+        "explanation": "This test case ensures that the system correctly handles the completion of a review session by saving the progress and updating the vocabulary status as per the post conditions. It tests the alternative flow 2, focusing on the process completion and saving of the review."
+    },
+    "Learner decides to exit during review session before selecting an answer.-Raw1.txt0": {},
+    "Learner decides to exit during review session before selecting an answer.-Raw1.txt1": {
+        "testCaseName": "Learner decides to exit during review session before selecting an answer and confirms to exit",
+        "objective": "Verify that the learner can exit the review session before selecting an answer and ensure the session is not saved",
+        "testSteps": [
+            "- Step 1: Log in as a learner with an account that has words for review.",
+            "- Step 2: Select the review button on the Home page to start the review session.",
+            "- Step 3: Wait for the system to redirect to the review screen and display a question, sound, image, or meaning of one word from the daily review words list.",
+            "- Step 4: Before selecting any of the four answer options, press the 'Exit' button.",
+            "- Step 5: On the pop-up, choose the 'Confirm' button to exit the review session."
+        ],
+        "expectedResult": "The learner is redirected to the Home page without the review session being saved.",
+        "explanation": "This test case ensures that learners can exit the review session at any point before making a selection and that their progress is not saved, aligning with the exception flow 1 where the learner chooses to exit without completing the review."
+    },
+    "Learner decides to exit during review session before selecting an answer.-Raw1.txt2": {
+        "testCaseName": "Learner decides to exit during review session before selecting an answer but chooses to stay",
+        "objective": "Verify that the learner can attempt to exit the review session before selecting an answer but then choose to continue the review",
+        "testSteps": [
+            "- Step 1: Log in as a learner with an account that has words for review.",
+            "- Step 2: Select the review button on the Home page to start the review session.",
+            "- Step 3: Wait for the system to redirect to the review screen and display a question, sound, image, or meaning of one word from the daily review words list.",
+            "- Step 4: Before selecting any of the four answer options, press the 'Exit' button.",
+            "- Step 5: On the pop-up, choose the 'Stay' button to continue the review session."
+        ],
+        "expectedResult": "The learner remains on the review screen, allowing them to continue with the review session.",
+        "explanation": "This test case verifies the functionality of the 'Stay' option in the exit confirmation pop-up, ensuring learners can cancel the exit action and continue their review session as described in alternative flow 3."
+    },
+    "Learners choose the wrong answer-Raw1.txt0": {},
+    "Learners choose the wrong answer-Raw1.txt1": {
+        "testCaseName": "Learners choose the wrong answer during review",
+        "objective": "Verify that when learners choose the wrong answer, the system shows a red word, decreases the memory level of the word, and allows continuation to the next word",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review's screen.",
+            "- Step 4: Engage with the review by waiting for the system to present a word with four selections of answers.",
+            "- Step 5: Intentionally choose the wrong answer from the four selections.",
+            "- Step 6: Observe the feedback provided by the system.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After choosing the wrong answer, the system should display a red word indicating the mistake, decrease the memory level of the word, and allow the learner to press 'Continue' to move to the next word.",
+        "explanation": "This test case directly addresses the scenario of learners choosing the wrong answer by following the alternative flow 1. It ensures that the system behaves as expected when a wrong answer is selected, including the visual feedback and the adjustment of the word's memory level."
+    },
+    "Learners choose the wrong answer-Raw1.txt2": {
+        "testCaseName": "Learners choose the wrong answer and reach the last word in the review list",
+        "objective": "Verify that after choosing the wrong answer for the last word in the review list, the system shows a red word, decreases the memory level, and redirects learners back to the Home page.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with only one word left in the review words list for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review's screen.",
+            "- Step 4: Engage with the review by waiting for the system to present the last word with four selections of answers.",
+            "- Step 5: Intentionally choose the wrong answer from the four selections for the last word.",
+            "- Step 6: Observe the feedback provided by the system.",
+            "- Step 7: Press the 'Continue' button."
+        ],
+        "expectedResult": "After choosing the wrong answer for the last word, the system should display a red word indicating the mistake, decrease the memory level of the word, and then redirect the learner back to the Home page as the review session is completed.",
+        "explanation": "This test case combines the alternative flow 1 (choosing the wrong answer) with alternative flow 2 (reaching the last word in the review list). It tests the system's behavior in handling the end of a review session when the last answer selected is wrong."
+    },
+    "Review with Meaning Method-Raw1.txt0": {},
+    "Review with Meaning Method-Raw1.txt1": {
+        "testCaseName": "Review with Meaning Method - Correct Answer Selection",
+        "objective": "Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the meaning method.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the meaning method for a word.",
+            "- Step 5: Choose the correct meaning by clicking on one of the four selections.",
+            "- Step 6: Click the right answer.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the right answer, a green word should be displayed, indicating the word's memory level has been increased.",
+        "explanation": "This test case ensures that the review process using the meaning method functions correctly when the learner selects the correct answer. It directly relates to the main flow of the review test scenario."
+    },
+    "Review with Meaning Method-Raw1.txt2": {
+        "testCaseName": "Review with Meaning Method - Incorrect Answer Selection",
+        "objective": "Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the meaning method.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the meaning method for a word.",
+            "- Step 5: Choose the wrong meaning by clicking on one of the four selections.",
+            "- Step 6: Click the wrong answer.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased.",
+        "explanation": "This test case verifies the functionality of the review process when the learner selects an incorrect answer using the meaning method, as described in the alternative flow 1."
+    },
+    "Review with Meaning Method-Raw1.txt3": {
+        "testCaseName": "Review with Meaning Method - Exiting and Saving Review",
+        "objective": "Verify that the review progress is saved and the learner is redirected to the Home page upon exiting the review after completing all words.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with exactly one word left in the review words list for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Complete the review for the last word by selecting any answer.",
+            "- Step 5: Press the 'Continue' button, which should now redirect back to the Home page."
+        ],
+        "expectedResult": "The system saves the review progress and redirects the learner to the Home page, as described in alternative flow 2.",
+        "explanation": "This test case checks the functionality of saving the review progress and redirecting to the Home page after the learner has reviewed the last word in their list."
+    },
+    "Review with Meaning Method-Raw1.txt4": {
+        "testCaseName": "Review with Meaning Method - Exiting Review Without Saving",
+        "objective": "Verify that the review progress is not saved and the learner is redirected to the Home page upon choosing to exit the review.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Press the 'Exit' button before completing the review.",
+            "- Step 5: In the pop-up, choose the 'Confirm' button to exit the review."
+        ],
+        "expectedResult": "The system does not save the review progress and redirects the learner to the Home page, as described in exception flow 1.",
+        "explanation": "This test case ensures that the system behaves as expected when a learner chooses to exit the review without completing it, specifically not saving the review progress."
+    },
+    "Review with Question Method-Raw1.txt0": {},
+    "Review with Question Method-Raw1.txt1": {
+        "testCaseName": "Review with Question Method - Correct Answer Flow",
+        "objective": "Verify that the system correctly increases the memory level of a word when the learner selects the right answer during a review session.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Answer a question correctly by clicking on the right one of the four selections provided.",
+            "- Step 5: Click the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the right answer, the system should display a green word indicating the correct choice and increase the memory level of the word.",
+        "explanation": "This test case ensures that the system behaves as expected when a learner answers a question correctly during a review session, by increasing the memory level of the word."
+    },
+    "Review with Question Method-Raw1.txt2": {
+        "testCaseName": "Review with Question Method - Incorrect Answer Flow",
+        "objective": "Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Answer a question incorrectly by clicking on the wrong one of the four selections provided.",
+            "- Step 5: Click the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the wrong answer, the system should display a red word indicating the incorrect choice and decrease the memory level of the word.",
+        "explanation": "This test case verifies that the system behaves as expected when a learner answers a question incorrectly by decreasing the memory level of the word."
+    },
+    "Review with Question Method-Raw1.txt3": {
+        "testCaseName": "Review with Question Method - Exiting Review Early and Choosing to Stay",
+        "objective": "Verify that the system allows learners to attempt to exit the review session and then choose to stay and continue the review.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Press the 'Exit' button during a review session.",
+            "- Step 5: On the pop-up, select the 'Stay' button."
+        ],
+        "expectedResult": "After choosing to stay, the learner should remain on the review screen to continue with the review session.",
+        "explanation": "This test case ensures that learners can opt to stay and continue their review session if they accidentally press the 'Exit' button."
+    },
+    "Review with Question Method-Raw1.txt4": {
+        "testCaseName": "Review with Question Method - Exiting Review Early and Choosing to Exit",
+        "objective": "Verify that the system saves the review progress and redirects the learner to the Home page when they choose to exit the review session early.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Press the 'Exit' button during a review session.",
+            "- Step 5: On the pop-up, select the 'Confirm' button."
+        ],
+        "expectedResult": "After confirming the exit, the learner should be redirected to the Home page and the review progress should not be saved.",
+        "explanation": "This test case verifies that the system behaves as expected when a learner decides to exit the review session early, ensuring that the review progress is not saved."
+    },
+    "Review with Sound Method-Raw1.txt0": {},
+    "Review with Sound Method-Raw1.txt1": {
+        "testCaseName": "Review with Sound Method - Correct Answer",
+        "objective": "Verify that the system correctly increases the memory level of a word when the learner selects the correct answer in the sound method review.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the sound method for one of the words in the review list.",
+            "- Step 5: Listen to the sound and choose the correct answer among the four selections provided.",
+            "- Step 6: Click the right answer.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the correct answer, a green word should be displayed, indicating the word's memory level has been increased.",
+        "explanation": "This test case ensures that the review process with the sound method functions correctly when the learner selects the correct answer, directly relating to the 'Review with Sound Method' scenario."
+    },
+    "Review with Sound Method-Raw1.txt2": {
+        "testCaseName": "Review with Sound Method - Incorrect Answer",
+        "objective": "Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer in the sound method review.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the sound method for one of the words in the review list.",
+            "- Step 5: Listen to the sound and choose the wrong answer among the four selections provided.",
+            "- Step 6: Click the wrong answer.",
+            "- Step 7: Press the 'Continue' button to proceed to the next word."
+        ],
+        "expectedResult": "After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased.",
+        "explanation": "This test case verifies the functionality of the review process with the sound method when the learner selects an incorrect answer, which is a crucial part of the 'Review with Sound Method' scenario."
+    },
+    "Review with Sound Method-Raw1.txt3": {
+        "testCaseName": "Review with Sound Method - Completion",
+        "objective": "Verify that the system correctly navigates the learner back to the Home page and saves the review upon completing the last word in the review list.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with only one word left in the review words list for today.",
+            "- Step 2: Select the review button on the Home page.",
+            "- Step 3: Wait for the system to redirect to the review screen.",
+            "- Step 4: Ensure the system randomly selects the sound method for the word in the review list.",
+            "- Step 5: Choose the correct or wrong answer for the word.",
+            "- Step 6: Press the 'Continue' button after answering the last word."
+        ],
+        "expectedResult": "The system should navigate the learner back to the Home page and save the review session.",
+        "explanation": "This test case checks the functionality of completing a review session with the sound method and ensuring the session is saved, aligning with the 'Review with Sound Method' scenario."
+    },
+    "Scenario Learner decides to exit during review session before selecting an answer.-Raw.txt0": {},
+    "Scenario Learner decides to exit during review session before selecting an answer.-Raw.txt1": {
+        "testCaseName": "Verify learner can exit review session before selecting an answer",
+        "objective": "Ensure that learners can exit the review session by pressing the 'Exit' button before selecting any answer and confirm to exit, and the review progress is not saved.",
+        "testSteps": [
+            "- Step 1: Log in as a learner with a review words list available for today.",
+            "- Step 2: On the Home page, select the review button.",
+            "- Step 3: Wait for the system to redirect to the review's screen.",
+            "- Step 4: Observe a question, sound, image, or meaning displayed with four selections of answer at the bottom of the screen.",
+            "- Step 5: Press the 'Exit' button before selecting any of the four answer options.",
+            "- Step 6: On the pop-up, choose the 'Confirm' button to exit the review session."
+        ],
+        "expectedResult": "The learner is redirected to the Home page without the review progress being saved.",
+        "explanation": "This test case is designed to verify that learners can exit the review session at any point before making a selection and ensure that their progress is not saved, aligning with the exception flow 1 of the use case specification."
+    }
+}

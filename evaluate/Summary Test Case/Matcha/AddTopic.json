@@ -1,0 +1,237 @@
+{
+    "Administrator decides to cancel while adding a new topic1.txt0": {},
+    "Administrator decides to cancel while adding a new topic1.txt1": {
+        "testCaseName": "Administrator cancels adding a new topic",
+        "objective": "Verify that the Administrator can cancel the process of adding a new topic at any step before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an Administrator.",
+            "- Step 2: Navigate to the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Begin to add a new topic by entering a name in the name field.",
+            "- Step 4: Add a description for the topic in the description field.",
+            "- Step 5: Select 'Cancel' to stop adding the new topic."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new topic and possibly redirect the Administrator to the previous page or a main page without creating a new topic.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario where the Administrator decides to cancel while adding a new topic. It covers the process from the beginning of adding a new topic to the point where the Administrator decides to cancel the operation, which is the exact flow described in the scenario."
+    },
+    "Administrator decides to cancel while adding a new topic2.txt0": {},
+    "Administrator decides to cancel while adding a new topic2.txt1": {
+        "testCaseName": "Administrator cancels adding a new topic",
+        "objective": "Verify that the Administrator can cancel the process of adding a new topic at any step before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an Administrator.",
+            "- Step 2: Navigate to the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Begin adding a new topic by entering a name in the name field.",
+            "- Step 4: Add a description for the topic in the description field.",
+            "- Step 5: Select 'Cancel' to stop adding the new topic."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new topic and redirect the Administrator to the previous page or dashboard without creating a new topic.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality that allows an Administrator to cancel the process of adding a new topic. It covers the entire process from initiation to cancellation, ensuring that the system behaves as expected when the Administrator decides not to proceed with adding a new topic."
+    },
+    "Administrator decides to cancel while adding a new topic3.txt0": {},
+    "Administrator decides to cancel while adding a new topic3.txt1": {
+        "testCaseName": "Administrator cancels adding a new topic",
+        "objective": "Verify that the Administrator can cancel the process of adding a new topic at any step before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an Administrator.",
+            "- Step 2: Navigate to the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Begin to add a new topic by entering a name in the name field.",
+            "- Step 4: Add a description for the topic in the description field.",
+            "- Step 5: Select 'Cancel' to stop adding the new topic."
+        ],
+        "expectedResult": "The system should cancel the process of adding a new topic and not save any entered information. The Administrator should be redirected to the previous page or to a default page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality that allows an Administrator to cancel the process of adding a new topic. It covers the steps from initiating the process to cancelling it before final submission, which is exactly what the scenario describes."
+    },
+    "Successful Topic Creation1.txt0": {},
+    "Successful Topic Creation1.txt1": {
+        "testCaseName": "Successful New Topic Creation",
+        "objective": "Verify that an administrator can successfully add a new English learning topic.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a unique name for the topic in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to create the new topic."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario of 'Successful Topic Creation' by outlining the steps an administrator would take to successfully add a new topic, including the expected outcome of the process."
+    },
+    "Successful Topic Creation2.txt0": {},
+    "Successful Topic Creation2.txt1": {
+        "testCaseName": "Successful New Topic Creation",
+        "objective": "Verify that an administrator can successfully add a new English learning topic.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a unique name for the topic in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to create the new topic."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario of 'Successful Topic Creation' by outlining the steps an administrator would take to successfully add a new topic, including the expected outcome of the process."
+    },
+    "Successful Topic Creation2.txt2": {
+        "testCaseName": "Attempt to Add Topic with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new topic with a name that is already used.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a name for the topic that is already used in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new topic.",
+            "- Step 6: Observe the notification and enter a new, unique name in the name field.",
+            "- Step 7: Select 'Save' again to create the topic."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores an alternative flow (handling duplicate topic names), it still aligns with the overall scenario of 'Successful Topic Creation' by ensuring that the system has checks in place to prevent duplicate names, which is a critical part of successfully creating a new topic."
+    },
+    "Successful Topic Creation2.txt3": {
+        "testCaseName": "Cancel Topic Creation",
+        "objective": "Verify that an administrator can cancel the creation of a new topic at any step before saving.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Begin to enter details for the new topic.",
+            "- Step 4: Select 'Cancel' to stop adding the new topic."
+        ],
+        "expectedResult": "The action of adding a new topic should be cancelled, and no new topic should be created.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the given test scenario as it tests the functionality of cancelling the creation of a new topic, which is an important aspect of the topic creation process. It ensures that users can opt-out at any moment before the final submission, which is a critical part of the user experience in the topic creation workflow."
+    },
+    "Successful Topic Creation3.txt0": {},
+    "Successful Topic Creation3.txt1": {
+        "testCaseName": "Successful New Topic Creation",
+        "objective": "Verify that an administrator can successfully add a new English learning topic.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a unique name for the topic in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to create the new topic."
+        ],
+        "expectedResult": "The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario of 'Successful Topic Creation' by outlining the steps an administrator would take to successfully add a new topic, including the expected outcome of seeing the new topic in the topic list."
+    },
+    "Successful Topic Creation3.txt2": {
+        "testCaseName": "Attempt to Add Topic with Existing Name",
+        "objective": "Verify that the system prevents the creation of a new topic with a name that already exists.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a name for the topic that is already used in the existing topics.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new topic.",
+            "- Step 6: Observe the notification and enter a new, unique name in the name field.",
+            "- Step 7: Select 'Save' again to create the topic."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used, prompting the administrator to add another name. After entering a new name, the topic should be successfully created.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores an alternative flow where the initial attempt to create a topic fails due to a name conflict, it still falls under the broader scenario of 'Successful Topic Creation' by ultimately verifying that a topic can be successfully created once a unique name is provided."
+    },
+    "Topic Creation with Duplicate Name1.txt0": {},
+    "Topic Creation with Duplicate Name1.txt1": {
+        "testCaseName": "Adding New Topic with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new topic with a name that is already used and prompts the administrator to use a different name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a name that is already used by an existing topic in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new topic.",
+            "- Step 6: Observe the notification and enter a new, unique name in the name field after being prompted.",
+            "- Step 7: Select 'Save' again to create the topic with the new name."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created, and the system should redirect to the adding vocabulary section.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, 'Topic Creation with Duplicate Name', by testing the system's behavior when an administrator attempts to add a new topic with a name that already exists. It verifies that the system correctly prevents the creation of a topic with a duplicate name and prompts for a new name."
+    },
+    "Topic Creation with Duplicate Name2.txt0": {},
+    "Topic Creation with Duplicate Name2.txt1": {
+        "testCaseName": "Adding a New Topic with Duplicate Name",
+        "objective": "Verify that the system prevents the creation of a new topic with a name that is already used and prompts the administrator to use a different name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a name that is already used by an existing topic in the name field on the adding topic viewing page.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new topic.",
+            "- Step 6: Observe the notification that the name is already used.",
+            "- Step 7: Enter a new, unique name in the name field.",
+            "- Step 8: Select 'Save' again to create the topic."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used after step 5, and after entering a new name and saving again, the system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the system's behavior when attempting to add a new topic with a duplicate name, which is the core focus of the scenario."
+    },
+    "Topic Creation with Duplicate Name3.txt0": {},
+    "Topic Creation with Duplicate Name3.txt1": {
+        "testCaseName": "Attempt to Add New Topic with Duplicate Name",
+        "objective": "Verify that the system prevents the addition of a new topic with a name that is already used and prompts the administrator to use a different name.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a name that is already used by an existing topic in the name field.",
+            "- Step 4: Enter a description for the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt to create the new topic.",
+            "- Step 6: Observe the notification and enter a new, unique name in the name field after the prompt.",
+            "- Step 7: Select 'Save' again to create the topic with the new name."
+        ],
+        "expectedResult": "The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created, and the administrator should be redirected to the adding vocabulary section.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, 'Topic Creation with Duplicate Name', by testing the system's response to an attempt to add a new topic with a name that already exists. It verifies that the system correctly prevents duplication and guides the user to resolve the issue."
+    },
+    "Topic Creation with Missing Description1.txt0": {},
+    "Topic Creation with Missing Description2.txt0": {},
+    "Topic Creation with Missing Description2.txt1": {
+        "testCaseName": "Topic Creation with Missing Description",
+        "objective": "Verify that the system prevents the creation of a new topic without a description",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Navigate to the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a unique name for the topic in the name field.",
+            "- Step 4: Leave the description field empty.",
+            "- Step 5: Click on 'Save' to attempt creating a new topic."
+        ],
+        "expectedResult": "The system should display an error message indicating that the description field cannot be empty and the topic should not be created.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a topic without providing a description. It accurately tests the scenario's main objective."
+    },
+    "Topic Creation with Missing Description3.txt0": {},
+    "Topic Creation with Missing Description3.txt1": {
+        "testCaseName": "Add New Topic with Missing Description",
+        "objective": "Verify that the system prompts an error or a warning when the administrator tries to add a new topic without entering a description.",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Enter a unique name for the topic in the name field.",
+            "- Step 4: Leave the description field empty.",
+            "- Step 5: Select 'Save' to attempt creating the new topic."
+        ],
+        "expectedResult": "The system should display an error or a warning indicating that the description field cannot be left blank.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by testing the specific case where a topic is added without a description, which is the main focus of the scenario."
+    },
+    "Topic Creation with Missing Name1.txt0": {},
+    "Topic Creation with Missing Name1.txt1": {
+        "testCaseName": "Topic Creation with Missing Name",
+        "objective": "Verify that the system prevents the creation of a new topic without a name and prompts for a name input",
+        "testSteps": [
+            "- Step 1: Log in as an administrator.",
+            "- Step 2: Select the 'Add new topic' tab on the navigation bar.",
+            "- Step 3: Leave the name field empty.",
+            "- Step 4: Fill in the description of the topic in the description field.",
+            "- Step 5: Select 'Save' to attempt creating a new topic."
+        ],
+        "expectedResult": "The system should display an error message or notification indicating that the name field is required and prevent the creation of the topic until a name is provided.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to verify the system's behavior when attempting to create a topic without a name. It accurately tests the system's validation for the name field during topic creation."
+    },
+    "Topic Creation with Missing Name2.txt0": {},
+    "Topic Creation with Missing Name3.txt0": {}
+}

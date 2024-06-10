@@ -1,0 +1,164 @@
+{
+    "Login by email1.txt0": {},
+    "Login by email1.txt1": {
+        "testCaseName": "Login by Email with Correct Credentials",
+        "objective": "Verify that a learner can login using a valid registered email and correct password",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid registered email.",
+            "- Step 3: Fill in the password field with the correct password for the corresponding email.",
+            "- Step 4: Press the 'Login' button."
+        ],
+        "expectedResult": "The system should redirect the learner to the Home page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the ability to login with a valid email and correct password."
+    },
+    "Login by email1.txt2": {
+        "testCaseName": "Login by Email with Incorrect Password",
+        "objective": "Verify that the system shows a notification for wrong password when a learner tries to login with a valid registered email and incorrect password",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid registered email.",
+            "- Step 3: Fill in the password field with an incorrect password for the corresponding email.",
+            "- Step 4: Press the 'Login' button."
+        ],
+        "expectedResult": "The system should show a notification that the password is wrong.",
+        "reflect": "yes",
+        "explanation": "This test case reflects the given test scenario by testing the login functionality with an incorrect password, which is an important part of verifying login by email."
+    },
+    "Login by email1.txt3": {
+        "testCaseName": "Login by Email with Unregistered Email",
+        "objective": "Verify that the system shows a notification for unregistered email when a learner tries to login with an email that has not been registered",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with an unregistered email.",
+            "- Step 3: Fill in the password field with any password.",
+            "- Step 4: Press the 'Login' button."
+        ],
+        "expectedResult": "The system should show a notification that this email is not registered yet.",
+        "reflect": "yes",
+        "explanation": "This test case is relevant to the test scenario as it verifies the system's behavior when attempting to login with an email that is not registered, which is a critical part of the login process."
+    },
+    "Login by email1.txt4": {
+        "testCaseName": "Login by Email with Blank Email Field",
+        "objective": "Verify that the system shows a notification that the email field needs to be filled when the email field is left blank",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Leave the username field blank.",
+            "- Step 3: Fill in the password field with any password.",
+            "- Step 4: Press the 'Login' button."
+        ],
+        "expectedResult": "The system should show a notification that the username field needs to be filled.",
+        "reflect": "yes",
+        "explanation": "This test case is applicable to the test scenario as it tests the validation of the email field, which is essential for the login process."
+    },
+    "Login by email1.txt5": {
+        "testCaseName": "Login by Email with Blank Password Field",
+        "objective": "Verify that the system shows a notification that the password field needs to be filled when the password field is left blank",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid registered email.",
+            "- Step 3: Leave the password field blank.",
+            "- Step 4: Press the 'Login' button."
+        ],
+        "expectedResult": "The system should show a notification that the password field needs to be filled.",
+        "reflect": "yes",
+        "explanation": "This test case aligns with the test scenario by ensuring the password field is validated, which is a crucial part of the login mechanism."
+    },
+    "Login with Blank Password Field1.txt0": {},
+    "Login with Blank Password Field1.txt1": {
+        "testCaseName": "Login with Blank Password Field",
+        "objective": "Verify that the system shows a notification that the password field needs to be filled when attempting to login with a blank password field.",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid username that has been registered.",
+            "- Step 3: Leave the password field blank.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "A notification is displayed stating that the password field needs to be filled.",
+        "reflect": "yes",
+        "explanation": "This test case directly tests the given scenario by attempting to login with a blank password field and expecting a notification about the missing password, which is the exact behavior the scenario aims to verify."
+    },
+    "Login with Blank Username Field1.txt0": {},
+    "Login with Blank Username Field1.txt1": {
+        "testCaseName": "Login with Blank Username Field",
+        "objective": "Verify that the system shows a notification that the username field needs to be filled when attempting to login with a blank username field.",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Leave the username field blank.",
+            "- Step 3: Fill in the password field with any password.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "A notification is displayed stating that the username field needs to be filled.",
+        "reflect": "yes",
+        "explanation": "This test case directly tests the scenario of attempting to login with a blank username field by specifying steps that leave the username field empty, fill in the password, and attempt to login, expecting a notification about the blank username field. It accurately reflects the given test scenario."
+    },
+    "Login with Unregistered Username1.txt0": {},
+    "Login with Unregistered Username1.txt1": {
+        "testCaseName": "Login with Unregistered Username",
+        "objective": "Verify that the system shows a notification that the username is not registered yet when attempting to login with an unregistered username",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid username that has not been registered.",
+            "- Step 3: Fill in the password field with any password.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "The system shows a notification that this username is not registered yet.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'Login with Unregistered Username' by simulating an attempt to log in with a username that is not in the system's database. The steps are designed to trigger the specific condition under test (an unregistered username attempt), and the expected result is precisely what the scenario aims to verify. Therefore, it accurately reflects the given test scenario."
+    },
+    "Login with Wrong Password1.txt0": {},
+    "Login with Wrong Password1.txt1": {
+        "testCaseName": "Login with Wrong Password Using Username",
+        "objective": "Verify that the system shows a notification that the password is wrong when a learner attempts to login with a valid username but enters a wrong password.",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid username that has been registered.",
+            "- Step 3: Fill in the password field with a wrong password.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "The system shows a notification that the password is wrong.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by testing the system's response to a login attempt with a valid username and an incorrect password."
+    },
+    "Login with Wrong Password1.txt2": {
+        "testCaseName": "Login with Wrong Password Using Email",
+        "objective": "Verify that the system shows a notification that the password is wrong when a learner attempts to login with a valid email but enters a wrong password.",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid email that has been registered.",
+            "- Step 3: Fill in the password field with a wrong password.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "The system shows a notification that the password is wrong.",
+        "reflect": "yes",
+        "explanation": "Although this test case uses an email instead of a username, it still tests the same scenario: logging in with a wrong password. It reflects the given test scenario by verifying the system's behavior in a slightly different context (using email), ensuring comprehensive coverage."
+    },
+    "Successful Login1.txt0": {},
+    "Successful Login1.txt1": {
+        "testCaseName": "Successful Login with Username",
+        "objective": "Verify that a learner can successfully log in using a registered username and correct password",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid, registered username.",
+            "- Step 3: Fill in the password field with the correct password for the corresponding username.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "The learner is redirected to the Home page after successful login.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario of a successful login by using valid credentials."
+    },
+    "Successful Login1.txt2": {
+        "testCaseName": "Successful Login with Email",
+        "objective": "Verify that a learner can successfully log in using a registered email and correct password",
+        "testSteps": [
+            "- Step 1: Navigate to the login page.",
+            "- Step 2: Fill in the username field with a valid, registered email.",
+            "- Step 3: Fill in the password field with the correct password for the corresponding email.",
+            "- Step 4: Press the \"Login\" button."
+        ],
+        "expectedResult": "The learner is redirected to the Home page after successful login.",
+        "reflect": "yes",
+        "explanation": "This test case also reflects the given test scenario by verifying an alternative login method (email instead of username) but still achieving a successful login."
+    }
+}

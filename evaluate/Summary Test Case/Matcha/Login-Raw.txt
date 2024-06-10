@@ -1,0 +1,188 @@
+Scenario: Login by email-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Login by Email with Correct Credentials
+objective: Verify that a learner can login using a valid registered email and correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid registered email.
+  - Step 3: Fill in the password field with the correct password for the corresponding email.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system should redirect the learner to the Home page.
+explanation: This test case verifies the alternative flow of logging in by email, ensuring that users can access their account using their email and password.
+
+Test Case: Test Case 2
+testCaseName: Login by Email with Incorrect Password
+objective: Verify that the system shows a notification for wrong password when a learner tries to login with a valid registered email and incorrect password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid registered email.
+  - Step 3: Fill in the password field with an incorrect password for the corresponding email.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system should show a notification that the password is wrong.
+explanation: This test case checks the system's behavior when a user attempts to log in with a valid email but enters the wrong password, based on the exception flow 1.
+
+Test Case: Test Case 3
+testCaseName: Login by Email with Unregistered Email
+objective: Verify that the system shows a notification for unregistered email when a learner tries to login with an email that has not been registered
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with an unregistered email.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system should show a notification that this email is not registered yet.
+explanation: This test case is designed to verify the system's response to login attempts using an email that has not been registered, aligning with exception flow 2.
+
+Test Case: Test Case 4
+testCaseName: Login by Email with Blank Email Field
+objective: Verify that the system shows a notification that the email field needs to be filled when the email field is left blank
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system should show a notification that the username field needs to be filled.
+explanation: This test case ensures that the system prompts the user to fill in the email field if it is left blank, based on exception flow 3.
+
+Test Case: Test Case 5
+testCaseName: Login by Email with Blank Password Field
+objective: Verify that the system shows a notification that the password field needs to be filled when the password field is left blank
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid registered email.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system should show a notification that the password field needs to be filled.
+explanation: This test case checks the system's response when a user attempts to log in with a valid email but leaves the password field blank, according to exception flow 4.
+
+
+Scenario: Login with Blank Password Field-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Login with Blank Password Field
+objective: Verify that the system shows a notification that the password field needs to be filled when attempting to login with a blank password field.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username that has been registered.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the "Login" button.
+expectedResult: A notification is displayed stating that the password field needs to be filled.
+explanation: This test case is designed to validate the system's behavior when a user attempts to login without entering a password, which directly relates to the 'Exception flow 4: Blank password fields' from the use case specification.
+
+
+Scenario: Login with Blank Username Field-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Login with Blank Username Field
+objective: Verify that the system shows a notification that the username field needs to be filled when attempting to login with a blank username field.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: A notification is displayed stating that the username field needs to be filled.
+explanation: This test case is designed to validate the system's behavior when the username field is left blank during the login process, directly matching the scenario name and covering the specified exception flow.
+
+
+Scenario: Login with Unregistered Username-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Login with Unregistered Username
+objective: Verify that the system shows a notification that the username is not registered yet when attempting to login with an unregistered username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username that has not been registered.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that this username is not registered yet.
+explanation: This test case is created to ensure that the system correctly handles attempts to log in with a username that does not exist in the database. It directly matches the scenario name and follows the exception flow 2 for unregistered usernames.
+
+
+Scenario: Login with Wrong Password-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Login with Wrong Password Using Username
+objective: Verify that the system shows a notification that the password is wrong when a learner attempts to login with a valid username but enters a wrong password.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username that has been registered.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password is wrong.
+explanation: This test case ensures that the system correctly handles login attempts with a valid username but an incorrect password, providing appropriate feedback to the user.
+
+Test Case: Test Case 2
+testCaseName: Login with Wrong Password Using Email
+objective: Verify that the system shows a notification that the password is wrong when a learner attempts to login with a valid email but enters a wrong password.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid email that has been registered.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password is wrong.
+explanation: This test case verifies the system's behavior when a user tries to log in using an email address instead of a username, with a wrong password, ensuring the system provides the correct feedback.
+
+
+Scenario: Successful Login-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Successful Login with Username
+objective: Verify that a learner can successfully log in using a registered username and correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Fill in the password field with the correct password for the corresponding username.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+explanation: This test case verifies the main flow of the login process, ensuring that users can log in with valid credentials.
+
+Test Case: Test Case 2
+testCaseName: Successful Login with Email
+objective: Verify that a learner can successfully log in using a registered email and correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered email.
+  - Step 3: Fill in the password field with the correct password for the corresponding email.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+explanation: This test case verifies the alternative flow of the login process, allowing users to log in using their email.
+
+Test Case: Test Case 3
+testCaseName: Login with Wrong Password
+objective: Verify that the system shows a notification for wrong password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password is wrong.
+explanation: This test case checks the exception flow for entering a wrong password, ensuring the system notifies the user appropriately.
+
+Test Case: Test Case 4
+testCaseName: Login with Unregistered Username
+objective: Verify that the system shows a notification for unregistered username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with an unregistered username.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that this username is not registered yet.
+explanation: This test case ensures the system correctly notifies the user when attempting to log in with an unregistered username.
+
+Test Case: Test Case 5
+testCaseName: Login with Blank Username Field
+objective: Verify that the system shows a notification for blank username field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the username field needs to be filled.
+explanation: This test case checks the exception flow for leaving the username field blank, ensuring the system prompts the user to fill it.
+
+Test Case: Test Case 6
+testCaseName: Login with Blank Password Field
+objective: Verify that the system shows a notification for blank password field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that the password field needs to be filled.
+explanation: This test case checks the exception flow for leaving the password field blank, ensuring the system prompts the user to fill it.
+
+

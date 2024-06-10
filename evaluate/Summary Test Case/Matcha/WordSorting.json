@@ -1,0 +1,31 @@
+{
+    "Correct Answer Submission Scenario1.txt0": {},
+    "Correct Answer Submission Scenario1.txt1": {
+        "testCaseName": "Correct Answer Submission",
+        "objective": "Verify that the system correctly identifies and accepts a correct answer submission from the learner.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Navigate to the word sorting test.",
+            "- Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word with its letters arranged randomly.",
+            "- Step 4: Arrange the letters in the correct order by clicking on the letter buttons and press enter after finishing."
+        ],
+        "expectedResult": "A green pop-up screen should appear, indicating that the answer is correct.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the system's ability to recognize and accept a correct answer submission. The steps lead to a situation where a correct answer is submitted, and the expected result is a green pop-up screen, which is a direct indication of success in the context of the scenario."
+    },
+    "Incorrect Answer Submission Scenario1.txt0": {},
+    "Incorrect Answer Submission Scenario1.txt1": {
+        "testCaseName": "Incorrect Answer Submission for Word Sorting Test",
+        "objective": "Verify that the system correctly identifies and responds to an incorrect answer submission by displaying a red pop-up screen.",
+        "testSteps": [
+            "- Step 1: Log into the application as a learner.",
+            "- Step 2: Navigate to the word sorting test.",
+            "- Step 3: The screen displays a question with letters of a vocabulary arranged randomly.",
+            "- Step 4: Incorrectly arrange the letters by clicking on the letter buttons in the wrong order.",
+            "- Step 5: Press enter after finishing arranging the letters."
+        ],
+        "expectedResult": "A red pop-up screen should appear, indicating that the answer is wrong.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is 'Incorrect Answer Submission Scenario'. It specifically tests the system's response to an incorrect answer submission in a word sorting test, aligning perfectly with the scenario's focus on handling incorrect answers."
+    }
+}

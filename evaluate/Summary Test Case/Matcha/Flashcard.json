@@ -1,0 +1,162 @@
+{
+    "Attempt to Navigate to Previous Flashcard on First Flashcard1.txt0": {},
+    "Attempt to Navigate to Previous Flashcard on First Flashcard1.txt1": {
+        "testCaseName": "Attempt to Navigate to Previous Flashcard on First Flashcard",
+        "objective": "Verify that the 'Previous' button is disabled or shows a message when the learner is on the first flashcard, preventing navigation to a non-existent previous flashcard.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: On the Flashcard page, ensure you are viewing the first flashcard of the vocabulary words for the selected topic.",
+            "- Step 6: Attempt to click the 'Previous' button."
+        ],
+        "expectedResult": "The system should display a message 'there is no previous vocabulary to display' or the 'Previous' button should be disabled, indicating that the learner cannot navigate to a previous flashcard when on the first flashcard.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by specifically testing the functionality and expected behavior of the 'Previous' button when the learner is on the first flashcard. It covers the steps to reach the first flashcard and the action of attempting to navigate to a previous flashcard, which is the exact scenario described. The expected result aligns with the scenario's requirement that the user should not be able to navigate back from the first flashcard, ensuring the test case is a valid method to verify the scenario."
+    },
+    "Learner chooses to 'continue studying' after completing a topic1.txt0": {},
+    "Learner chooses to 'continue studying' after completing a topic1.txt1": {
+        "testCaseName": "Learner chooses to 'continue studying' after completing a topic",
+        "objective": "Verify that after completing a topic, the learner can choose to 'continue studying' and is redirected to the Flashcard page for the continuous topic.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: Study all the flashcards in the topic by clicking 'Next' to go through each flashcard and clicking on the flashcard to flip it.",
+            "- Step 6: Once all flashcards have been studied, click the 'Next' button on the last flashcard to be redirected to the 'completion notification' page.",
+            "- Step 7: On the 'completion notification' page, click the 'continue studying' button."
+        ],
+        "expectedResult": "The learner is redirected to the Flashcard page for the continuous topic, indicating the topic has been marked as completed and the vocabulary words have been marked as studied.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by outlining the steps a learner would take to 'continue studying' after completing a topic, including the action of being redirected to the next topic's Flashcard page. It verifies the functionality and flow as described in the scenario."
+    },
+    "Learner continues an incomplete topic from the Home Page1.txt0": {},
+    "Learner continues an incomplete topic from the Home Page1.txt1": {
+        "testCaseName": "Continuing an Incomplete Topic from the Home Page",
+        "objective": "Verify that a learner can continue studying an incomplete topic directly from the Home Page and complete it.",
+        "testSteps": [
+            "- Step 1: Ensure the learner is logged into the application.",
+            "- Step 2: Navigate to the Home Page.",
+            "- Step 3: Click on an incomplete topic displayed on the Home Page.",
+            "- Step 4: Verify that the system redirects to the corresponding Flashcard page for the selected topic.",
+            "- Step 5: Click on the flashcard to flip it and view the back.",
+            "- Step 6: Use the 'Next' button to go through all the flashcards in the topic.",
+            "- Step 7: Once on the last flashcard, click the 'Next' button to be redirected to the 'completion notification' page.",
+            "- Step 8: On the 'completion notification' page, click 'return to the lesson page'."
+        ],
+        "expectedResult": "The learner is able to continue an incomplete topic from the Home Page, go through all the flashcards, and upon completion, is redirected to the lesson page with the topic marked as completed.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the given test scenario by outlining steps that a learner would follow to continue and complete an incomplete topic from the Home Page. It covers the process from logging in, navigating to the Home Page, selecting an incomplete topic, and completing it. The expected result aligns with the scenario's objective, confirming that the test case accurately reflects the scenario."
+    },
+    "Learner Decides to Stay After Accidentally Pressing 'Back' Button During Flashcard Study1.txt0": {},
+    "Learner Decides to Stay After Accidentally Pressing 'Back' Button During Flashcard Study1.txt1": {
+        "testCaseName": "Verify learner can continue studying after accidentally pressing 'Back' button during flashcard study",
+        "objective": "Ensure that when a learner accidentally presses the 'Back' button during a flashcard study session, they can choose to stay and continue their study without losing progress.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: Start studying the flashcards for the selected topic.",
+            "- Step 6: During the flashcard study, accidentally press the 'Back' button.",
+            "- Step 7: On the exit confirmation dialog box asking 'Are you sure you want to exit?', click 'Stay'."
+        ],
+        "expectedResult": "The system should return the learner to the flashcard they were studying, allowing them to continue their study session without any loss of progress.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by testing the functionality that allows a learner to continue their study session after accidentally pressing the 'Back' button. It ensures that the learner can stay and not lose their progress, which is the core aspect of the scenario."
+    },
+    "Learner exits flashcard study via back button1.txt0": {},
+    "Learner exits flashcard study via back button1.txt1": {
+        "testCaseName": "Verify learner can exit flashcard study via back button and choose to stay",
+        "objective": "Ensure that when a learner presses the back button during flashcard study and chooses 'stay', they are kept on the current flashcard page.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the lesson details.",
+            "- Step 5: On the Flashcard page, press the 'back' button on the browser or device.",
+            "- Step 6: In the exit confirmation dialog box, click 'stay'."
+        ],
+        "expectedResult": "The learner remains on the current flashcard page, allowing them to continue studying without interruption.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by testing the functionality of the back button during a flashcard study session and ensuring the learner can choose to stay on the page, which is the core action of the scenario."
+    },
+    "Learner exits flashcard study via back button1.txt2": {
+        "testCaseName": "Verify learner can exit flashcard study via back button and choose to exit",
+        "objective": "Ensure that when a learner presses the back button during flashcard study and chooses 'exit', they are redirected to the topic page with the topic marked as incomplete.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the lesson details.",
+            "- Step 5: On the Flashcard page, press the 'back' button on the browser or device.",
+            "- Step 6: In the exit confirmation dialog box, click 'exit'."
+        ],
+        "expectedResult": "The learner is redirected to the topic page, and the topic is marked as incomplete, which will be displayed on the home page for later completion.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores the alternative outcome of the given scenario (choosing to exit instead of stay), it still directly tests the functionality of the back button during a flashcard study session. It verifies the process and consequences of exiting, which is a critical part of understanding the full scenario."
+    },
+    "Navigation to Previous Flashcard1.txt0": {},
+    "Navigation to Previous Flashcard1.txt1": {
+        "testCaseName": "Navigation to Previous Flashcard",
+        "objective": "Verify that the learner can navigate to the previous flashcard after moving to the next one",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: On the Flashcard page, view the first flashcard and click on it to flip and view the back.",
+            "- Step 6: Click the 'Next' button to go to the flashcard of the next vocabulary word.",
+            "- Step 7: Click the 'Previous' button to go back to the previous flashcard."
+        ],
+        "expectedResult": "The system should display the previous flashcard, showing the front side with the vocabulary name, pronunciation, and Vietnamese meaning.",
+        "reflect": "yes",
+        "explanation": "This test case directly tests the functionality of navigating to a previous flashcard after viewing a subsequent one, which is the core of the given test scenario. It accurately reflects the scenario by detailing the steps to navigate back to a previously viewed flashcard."
+    },
+    "Navigation to Previous Flashcard1.txt2": {
+        "testCaseName": "Navigation to Previous Flashcard on the First Flashcard",
+        "objective": "Verify that the 'Previous' button is disabled when the learner is on the first flashcard",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the list displayed.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: On the Flashcard page, view the first flashcard and click on it to flip and view the back.",
+            "- Step 6: Attempt to click the 'Previous' button."
+        ],
+        "expectedResult": "The 'Previous' button should be disabled, and no action should be taken by the system.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores a specific condition (being on the first flashcard), it is still within the scope of the given test scenario. It tests the navigation functionality by ensuring that the user cannot navigate to a previous flashcard when it does not exist, which is a critical aspect of navigating between flashcards."
+    },
+    "Successful Lesson and Topic Selection with Flashcard Review Completion1.txt0": {},
+    "Successful Lesson and Topic Selection with Flashcard Review Completion1.txt1": {
+        "testCaseName": "Verify successful lesson and topic selection with flashcard review completion",
+        "objective": "Ensure that a learner can successfully select a lesson and topic, review all flashcards, and receive a completion notification.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Click the 'Learn New Word' tab on the navigation bar.",
+            "- Step 3: Select a lesson from the displayed list of available lessons.",
+            "- Step 4: Choose a topic to study from the details of the selected lesson.",
+            "- Step 5: Review all flashcards in the topic by clicking on the flashcard to flip it and view the back, then click the 'Next' button to go to the next vocabulary word.",
+            "- Step 6: Continue reviewing until the last flashcard, then click the 'Next' button on the last flashcard.",
+            "- Step 7: Click 'return to the lesson page' on the 'completion notification' page."
+        ],
+        "expectedResult": "After completing the review of all flashcards, the learner should be redirected to a 'completion notification' page with a congratulatory message. Upon clicking 'return to the lesson page', the system should redirect the learner to the lesson page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by covering the entire process of selecting a lesson and topic, reviewing flashcards, and confirming completion, which is the core of the test scenario."
+    },
+    "Successful Lesson and Topic Selection with Flashcard Review Completion1.txt2": {
+        "testCaseName": "Verify completion notification and options after reviewing all flashcards",
+        "objective": "To confirm that upon completing the review of all flashcards in a topic, the learner receives a completion notification with options to 'continue studying' or 'return to the lesson page'.",
+        "testSteps": [
+            "- Step 1: Log into the application.",
+            "- Step 2: Complete the review of all flashcards in a topic by following steps 2 to 6 from the basic flow.",
+            "- Step 3: On the 'completion notification' page, observe the options provided."
+        ],
+        "expectedResult": "The learner should see a congratulatory message along with option buttons to 'continue studying' and 'return to the lesson page'.",
+        "reflect": "yes",
+        "explanation": "This test case aligns with the given test scenario by verifying the completion aspect of the scenario. It ensures that after reviewing all flashcards, the learner receives appropriate feedback and options, which is a critical part of the scenario."
+    }
+}

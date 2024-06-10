@@ -1,0 +1,320 @@
+{
+    "EmailInexistent-Raw1.txt0": {},
+    "EmailInexistent-Raw1.txt1": {
+        "testCaseName": "Register with invalid email",
+        "objective": "Verify that the system shows a notification that the email is invalid when a learner tries to register with an invalid email",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose email registration.",
+            "- Step 3: Fill in the email field with an invalid email (e.g., 'test@invalid').",
+            "- Step 4: Fill in the password field with a valid password that meets the criteria (e.g., 'Password1!').",
+            "- Step 5: Press the 'Registry' button."
+        ],
+        "expectedResult": "System shows a notification that the email is invalid.",
+        "explanation": "This test case is created to ensure that the system correctly validates email inputs during the registration process and provides appropriate feedback to the user when an invalid email is entered, as described in Exception flow 4."
+    },
+    "EmailInexistent-Raw1.txt2": {
+        "testCaseName": "Register with valid email",
+        "objective": "Verify that a learner can successfully register using a valid email and is redirected to the Home page",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose email registration.",
+            "- Step 3: Fill in the email field with a valid email (e.g., 'test@example.com').",
+            "- Step 4: Fill in the password field with a valid password that meets the criteria (e.g., 'Password1!').",
+            "- Step 5: Press the 'Registry' button."
+        ],
+        "expectedResult": "Learner is redirected to the Home page after successful registration.",
+        "explanation": "This test case ensures that the system allows for successful registration with a valid email and proper redirection to the Home page, following the steps outlined in Alternative flow 1 and the main flow."
+    },
+    "EmailWrongFormat-Raw1.txt0": {},
+    "EmailWrongFormat-Raw1.txt1": {
+        "testCaseName": "Register with invalid email format",
+        "objective": "Verify that the system shows a notification of invalid email when a learner tries to register with an email in the wrong format",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose registration by email.",
+            "- Step 3: Enter a valid username in the username field.",
+            "- Step 4: Enter an email with the wrong format in the email field (example: 'testemail.com').",
+            "- Step 5: Enter a valid password in the password field.",
+            "- Step 6: Press the 'Registry' button."
+        ],
+        "expectedResult": "The system shows a notification that the email is invalid.",
+        "explanation": "This test case is created to ensure that the system correctly validates the format of the email address entered during registration. It directly relates to the 'EmailWrongFormat' scenario by testing the system's response to an email in an incorrect format."
+    },
+    "Learner chooses to register by email instead of username-Raw1.txt0": {},
+    "Learner chooses to register by email instead of username-Raw1.txt1": {
+        "testCaseName": "Register by Email with Valid Information",
+        "objective": "Verify that a learner can register using an email address with all valid information",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose registration by email.",
+            "- Step 3: Fill in the email field with a valid email address.",
+            "- Step 4: Fill in the password field with a valid password that meets the criteria (over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, one number, and one special character, and is not the same as the username).",
+            "- Step 5: Press the 'Register' button.",
+            "- Step 6: Verify redirection to the Home page."
+        ],
+        "expectedResult": "The learner is redirected to the Home page after successful registration.",
+        "explanation": "This test case ensures that learners can successfully register using their email address when all provided information is valid, following the alternative flow 1."
+    },
+    "Learner chooses to register by email instead of username-Raw1.txt2": {
+        "testCaseName": "Register by Email with Invalid Email Format",
+        "objective": "Verify that the system shows an error notification when a learner tries to register with an invalid email format",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose registration by email.",
+            "- Step 3: Fill in the email field with an invalid email address (wrong format).",
+            "- Step 4: Fill in the password field with a valid password.",
+            "- Step 5: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that the email is invalid.",
+        "explanation": "This test case checks the system's ability to validate email formats during registration, as described in exception flow 4."
+    },
+    "Learner chooses to register by email instead of username-Raw1.txt3": {
+        "testCaseName": "Register by Email with Inexistent Email Address",
+        "objective": "Verify that the system shows an error notification when a learner tries to register with an inexistent email address",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to choose registration by email.",
+            "- Step 3: Fill in the email field with an inexistent email address.",
+            "- Step 4: Fill in the password field with a valid password.",
+            "- Step 5: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that the email is invalid.",
+        "explanation": "This test case is designed to verify the system's response to an inexistent email address during registration, aligning with exception flow 4."
+    },
+    "Password Above Maximum Length-Raw1.txt0": {},
+    "Password Above Maximum Length-Raw1.txt1": {
+        "testCaseName": "Register with Password Above Maximum Length",
+        "objective": "Verify that the system shows a notification that the password is invalid when a learner attempts to register with a password length above the maximum limit.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username (e.g., 'UserExample123').",
+            "- Step 3: Fill in the password field with a password that is above 30 characters (e.g., 'P@ssw0rd123456789012345678901234567890').",
+            "- Step 4: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that the password is invalid.",
+        "explanation": "This test case is created to ensure that the system correctly validates the length of the password during the registration process, specifically checking that passwords exceeding the maximum length are not accepted. It directly matches the scenario name by testing the behavior when a password is above the maximum length allowed."
+    },
+    "Password Below Minimum Length-Raw1.txt0": {},
+    "Password Below Minimum Length-Raw1.txt1": {
+        "testCaseName": "Register with Password Below Minimum Length",
+        "objective": "Verify that the system shows a notification that the password is invalid when a password below the minimum length is entered",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).",
+            "- Step 2: Fill in the password field with a password below the minimum length requirement (less than 8 characters).",
+            "- Step 3: Press the 'Register' button."
+        ],
+        "expectedResult": "System shows a notification that the password is invalid.",
+        "explanation": "This test case directly addresses the scenario 'Password Below Minimum Length' by attempting to register with a password that does not meet the minimum length requirement, thus expecting the system to validate and show an error message."
+    },
+    "Password Missing Capitalized Character-Raw1.txt0": {},
+    "Password Missing Capitalized Character-Raw1.txt1": {
+        "testCaseName": "Password Missing Capitalized Character",
+        "objective": "Verify that the system shows a notification that the password is invalid when the password is missing a capitalized character.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.",
+            "- Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one normal character, a number, and a special character, but no capitalized character.",
+            "- Step 4: Press the \"Registry\" button."
+        ],
+        "expectedResult": "System shows a notification that the password is invalid.",
+        "explanation": "This test case is created to ensure that the system correctly validates password requirements, specifically the requirement for having at least one capitalized character. It directly addresses the scenario of a password missing a capitalized character by following the exception flow 2 for entering an invalid password."
+    },
+    "Password Missing Normal Character-Raw1.txt0": {},
+    "Password Missing Normal Character-Raw1.txt1": {
+        "testCaseName": "Register with password missing normal character",
+        "objective": "Verify that the system shows a notification that the password is invalid when the password is missing a normal character",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.",
+            "- Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one capitalized character, a number, and a special character but no normal characters.",
+            "- Step 4: Press the \"Register\" button."
+        ],
+        "expectedResult": "System shows a notification that the password is invalid.",
+        "explanation": "This test case ensures that passwords must meet the specified criteria, including having at least one normal character. It directly matches the scenario name by testing the condition where a password is missing a normal character."
+    },
+    "Password Missing Number-Raw1.txt0": {},
+    "Password Missing Number-Raw1.txt1": {
+        "testCaseName": "Password Missing Number",
+        "objective": "Verify that the system shows a notification that the password is invalid when the password is missing a number",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.",
+            "- Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, and one special character, but no numbers, and is not the same as the username.",
+            "- Step 4: Press the \"Registry\" button."
+        ],
+        "expectedResult": "System shows a notification that the password is invalid.",
+        "explanation": "This test case is created to directly test the scenario where a password is missing a number, which is a requirement for a valid password as per the use case specification. It ensures that the validation for password requirements, specifically the inclusion of a number, is functioning correctly."
+    },
+    "Password Missing Special Character-Raw1.txt0": {},
+    "Password Missing Special Character-Raw1.txt1": {
+        "testCaseName": "Password Missing Special Character",
+        "objective": "Verify that the system shows a notification that the password is invalid when the password is missing a special character",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.",
+            "- Step 3: Fill in the password field with a password that is over 8 characters, below 30 characters, contains at least one normal character, one capitalize character, and one number but missing a special character.",
+            "- Step 4: Press the \"Registry\" button."
+        ],
+        "expectedResult": "System shows a notification that the password is invalid.",
+        "explanation": "This test case is created to ensure that the system correctly validates the password according to the specified rules, particularly focusing on the requirement for a special character in the password. It directly matches the scenario name by testing the specific condition where the password is missing a special character."
+    },
+    "Password Same as Username-Raw1.txt0": {},
+    "Password Same as Username-Raw1.txt1": {
+        "testCaseName": "Verify password cannot be the same as username during registration",
+        "objective": "Ensure that the system prevents the user from setting a password identical to their username during the registration process.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Enter a valid username in the username field (ensure the username is over 8 characters and below 30 characters).",
+            "- Step 3: Enter the same value as the username in the password field, ensuring it meets the basic password criteria (over 8 characters and below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character).",
+            "- Step 4: Click on the 'Register' button."
+        ],
+        "expectedResult": "The system should display a notification that the password cannot be the same as the username and prevent the user from proceeding to the Home page.",
+        "explanation": "This test case directly addresses the scenario of preventing a password from being the same as the username, which is a critical security measure in the registration process. It ensures that users cannot use easily guessable passwords, thereby enhancing the security of user accounts."
+    },
+    "Password Same as Username-Raw1.txt2": {
+        "testCaseName": "Verify successful registration with distinct username and password",
+        "objective": "Confirm that the system allows the registration process to complete successfully when the username and password are distinct and meet all validity criteria.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Enter a valid username in the username field (ensure the username is over 8 characters and below 30 characters).",
+            "- Step 3: Enter a valid password in the password field that is not the same as the username (ensure the password is over 8 characters and below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character).",
+            "- Step 4: Click on the 'Register' button."
+        ],
+        "expectedResult": "The system should successfully register the user and redirect them to the Home page.",
+        "explanation": "This test case ensures that the registration process functions correctly when all criteria for username and password are met, including the requirement for the password to be different from the username. It verifies the system's ability to handle valid registration data."
+    },
+    "Successful Registration-Raw1.txt0": {},
+    "Successful Registration-Raw1.txt1": {
+        "testCaseName": "Successful Registration with Username and Password",
+        "objective": "Verify that a learner can successfully register using a valid username and password",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).",
+            "- Step 3: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the username).",
+            "- Step 4: Press the 'Register' button.",
+            "- Step 5: Verify redirection to the Home page."
+        ],
+        "expectedResult": "The learner is redirected to the Home page after successful registration.",
+        "explanation": "This test case ensures that the registration process works correctly when a learner provides valid username and password according to the main flow."
+    },
+    "Successful Registration-Raw1.txt2": {
+        "testCaseName": "Successful Registration with Email",
+        "objective": "Verify that a learner can successfully register using a valid email",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to register by email.",
+            "- Step 3: Fill in the email field with a valid email (an existing email with the right format).",
+            "- Step 4: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the email).",
+            "- Step 5: Press the 'Register' button.",
+            "- Step 6: Verify redirection to the Home page."
+        ],
+        "expectedResult": "The learner is redirected to the Home page after successful registration using email.",
+        "explanation": "This test case verifies the alternative flow where a learner can register using their email instead of a username."
+    },
+    "Successful Registration-Raw1.txt3": {
+        "testCaseName": "Registration with Invalid Username",
+        "objective": "Verify that the system shows a notification for invalid username during registration",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with an invalid username (below 8 characters or above 30 characters).",
+            "- Step 3: Fill in the password field with a valid password.",
+            "- Step 4: Press the 'Register' button.",
+            "- Step 5: Verify that a notification about the invalid username is shown."
+        ],
+        "expectedResult": "A notification about the invalid username is displayed to the learner.",
+        "explanation": "This test case checks the system's response to an invalid username input, as described in exception flow 1."
+    },
+    "Successful Registration-Raw1.txt4": {
+        "testCaseName": "Registration with Invalid Password",
+        "objective": "Verify that the system shows a notification for invalid password during registration",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username.",
+            "- Step 3: Fill in the password field with an invalid password (below 8 characters, above 30 characters, missing a character type, or same as username).",
+            "- Step 4: Press the 'Register' button.",
+            "- Step 5: Verify that a notification about the invalid password is shown."
+        ],
+        "expectedResult": "A notification about the invalid password is displayed to the learner.",
+        "explanation": "This test case ensures that the system correctly notifies the user of an invalid password input, following exception flow 2."
+    },
+    "Successful Registration-Raw1.txt5": {
+        "testCaseName": "Registration with Existed Username",
+        "objective": "Verify that the system shows a notification for an already registered username",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a username that has already been registered.",
+            "- Step 3: Fill in the password field with a valid password.",
+            "- Step 4: Press the 'Register' button.",
+            "- Step 5: Verify that a notification about the username already being registered is shown."
+        ],
+        "expectedResult": "A notification that the username has already been registered is displayed, asking the learner to choose another username.",
+        "explanation": "This test case checks the system's response to a registration attempt with a username that has already been taken, as per exception flow 3."
+    },
+    "Successful Registration-Raw1.txt6": {
+        "testCaseName": "Registration with Invalid Email",
+        "objective": "Verify that the system shows a notification for invalid email during registration",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Click on the Mail icon to register by email.",
+            "- Step 3: Fill in the email field with an invalid email (an inexist email or email with the wrong format).",
+            "- Step 4: Fill in the password field with a valid password.",
+            "- Step 5: Press the 'Register' button.",
+            "- Step 6: Verify that a notification about the invalid email is shown."
+        ],
+        "expectedResult": "A notification about the invalid email is displayed to the learner.",
+        "explanation": "This test case verifies the system's behavior when a learner attempts to register with an invalid email, following exception flow 4."
+    },
+    "Username Above Maximum Length-Raw1.txt0": {},
+    "Username Above Maximum Length-Raw1.txt1": {
+        "testCaseName": "Register with Username Above Maximum Length",
+        "objective": "Verify that the system shows a notification of invalid username when a learner attempts to register with a username above the maximum length.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a username that is above 30 characters.",
+            "- Step 3: Fill in the password field with a valid password that meets the criteria of being over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and is not the same as the username.",
+            "- Step 4: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that the username is invalid.",
+        "explanation": "This test case is created to directly test the scenario 'Username Above Maximum Length' by attempting to register with a username length that exceeds the specified maximum limit. It follows the exception flow 1 where an invalid username is entered, and the system is expected to validate and show an appropriate error message."
+    },
+    "Username Below Minimum Length-Raw1.txt0": {},
+    "Username Below Minimum Length-Raw1.txt1": {
+        "testCaseName": "Register with Username Below Minimum Length",
+        "objective": "Verify that the system shows a notification that the username is invalid when a username below the minimum length is entered",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a username that is below 8 characters.",
+            "- Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters, below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character, and is not the same as the username.",
+            "- Step 4: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that the username is invalid.",
+        "explanation": "This test case is created to directly test the scenario 'Username Below Minimum Length' by attempting to register with a username that does not meet the minimum length requirement. It follows the exception flow 1 where the system is expected to validate the username length and provide feedback accordingly."
+    },
+    "UsernameAlreadyRegistered-Raw1.txt0": {},
+    "UsernameAlreadyRegistered-Raw1.txt1": {
+        "testCaseName": "Register with an already registered username",
+        "objective": "Verify that the system shows a notification that the username has been registered when a learner tries to register with a username that already exists in the system.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a username that is known to have been previously registered.",
+            "- Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.",
+            "- Step 4: Press the 'Register' button."
+        ],
+        "expectedResult": "The system shows a notification that this username has been registered and asks the learner to choose another username.",
+        "explanation": "This test case is created to verify the system's behavior when a learner attempts to register with a username that is already in use, which directly relates to the 'UsernameAlreadyRegistered' scenario by testing the exception flow 3."
+    },
+    "UsernameAlreadyRegistered-Raw1.txt2": {
+        "testCaseName": "Register with a valid username and password",
+        "objective": "Verify that the system allows registration with a valid username and password and redirects the learner to the Home page.",
+        "testSteps": [
+            "- Step 1: Navigate to the registration page.",
+            "- Step 2: Fill in the username field with a valid username that is not already registered. Ensure the username is over 8 characters and below 30 characters.",
+            "- Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.",
+            "- Step 4: Press the 'Register' button."
+        ],
+        "expectedResult": "The system redirects the learner to the Home page, indicating successful registration.",
+        "explanation": "Although the scenario name 'UsernameAlreadyRegistered' suggests focusing on the error handling of a duplicate username, this test case is included to ensure the system behaves as expected when provided with valid registration information, contrasting the error scenario with a successful registration flow."
+    }
+}

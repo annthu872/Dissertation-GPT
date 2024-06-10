@@ -1,0 +1,31 @@
+{
+    "Learning Streak Resets After Break1.txt0": {},
+    "Learning Streak Resets After Break1.txt1": {
+        "testCaseName": "Verify Learning Streak Resets After One Day Break",
+        "objective": "To verify that the learning streak resets to one after the learner fails to learn for one day.",
+        "testSteps": [
+            "- Step 1: Ensure the learner is logged into the application.",
+            "- Step 2: Learner selects 'History' on the Home page.",
+            "- Step 3: After being redirected, learner selects 'Day History' on the History page.",
+            "- Step 4: Verify the current learning streak is displayed.",
+            "- Step 5: Simulate a break by not logging any learning activity for one day.",
+            "- Step 6: Repeat steps 2 and 3 after the break day."
+        ],
+        "expectedResult": "After the break day, the learning streak should reset to one, indicating the learner has started a new learning streak.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the system's behavior when a learner does not engage in learning activities for one day. It checks if the learning streak resets to one, which is the core functionality described in the scenario."
+    },
+    "Successful Continuous Learning Streak Display1.txt0": {},
+    "Successful Continuous Learning Streak Display1.txt1": {
+        "testCaseName": "Verify Continuous Learning Streak Display",
+        "objective": "Verify that the system correctly displays the number of days a learner has learned continuously without breaking the chain.",
+        "testSteps": [
+            "- Step 1: Log into the application with a learner account.",
+            "- Step 2: Select 'History' on the Home page.",
+            "- Step 3: On the History page, select 'Day History'."
+        ],
+        "expectedResult": "The system should redirect the learner to a page showing the number of days they have learned continuously. If the learner has not broken their learning chain, this number should accurately reflect their streak.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario of verifying the continuous learning streak display. It follows the steps a user would take to view their learning streak, ensuring the functionality meets the user's expectations and the system's requirements. The objective, test steps, and expected result align perfectly with the scenario of ensuring the learning streak is accurately displayed, making it a relevant test case."
+    }
+}

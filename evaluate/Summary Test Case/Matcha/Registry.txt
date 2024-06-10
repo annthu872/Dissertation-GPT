@@ -1,0 +1,229 @@
+Scenario: EmailInexistent1.txt
+Test Case: Test Case 1
+testCaseName: Register with invalid email
+objective: Verify that the system shows a notification that the email is invalid when a learner tries to register with an invalid email
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose email registration.
+  - Step 3: Fill in the email field with an invalid email (e.g., 'test@invalid').
+  - Step 4: Fill in the password field with a valid password that meets the criteria (e.g., 'Password1!').
+  - Step 5: Press the 'Registry' button.
+expectedResult: System shows a notification that the email is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'EmailInexistent' by verifying the system's response to an invalid email input during registration. It tests the system's ability to recognize and notify about an invalid email format, which is the core of the test scenario.
+
+
+Scenario: EmailWrongFormat1.txt
+Test Case: Test Case 1
+testCaseName: Register with invalid email format
+objective: Verify that the system shows a notification of invalid email when a learner tries to register with an email in the wrong format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Enter a valid username in the username field.
+  - Step 4: Enter an email with the wrong format in the email field (example: 'testemail.com').
+  - Step 5: Enter a valid password in the password field.
+  - Step 6: Press the 'Registry' button.
+expectedResult: The system shows a notification that the email is invalid.
+reflect: yes
+explanation: This test case directly addresses the 'EmailWrongFormat' scenario by attempting to register with an improperly formatted email address and expecting the system to identify and notify the error. It effectively tests the system's ability to validate email formats, which is the core of the given test scenario.
+
+
+Scenario: Learner chooses to register by email instead of username1.txt
+Test Case: Test Case 1
+testCaseName: Register by Email with Valid Information
+objective: Verify that a learner can register using an email address with all valid information
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with a valid email address.
+  - Step 4: Fill in the password field with a valid password that meets the criteria (over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, one number, and one special character, and is not the same as the username).
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the process of registration using an email address with valid information, which is the primary flow of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Register by Email with Invalid Email Format
+objective: Verify that the system shows an error notification when a learner tries to register with an invalid email format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an invalid email address (wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system shows a notification that the email is invalid.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing an alternative path where the user attempts to register with an invalid email format, which is crucial for verifying the system's validation mechanisms.
+
+
+Scenario: Password Above Maximum Length1.txt
+Test Case: Test Case 1
+testCaseName: Register with Password Above Maximum Length
+objective: Verify that the system shows a notification that the password is invalid when a learner attempts to register with a password length above the maximum limit.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (e.g., 'UserExample123').
+  - Step 3: Fill in the password field with a password that is above 30 characters (e.g., 'P@ssw0rd123456789012345678901234567890').
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Password Above Maximum Length' by verifying the system's response to a password input that exceeds the predefined maximum length. The steps are designed to simulate a user's attempt to register with an overly long password, and the expected result is aligned with the scenario's focus on handling invalid password lengths.
+
+
+Scenario: Password Below Minimum Length1.txt
+Test Case: Test Case 1
+testCaseName: Register with Password Below Minimum Length
+objective: Verify that the system shows a notification that the password is invalid when a password below the minimum length is entered
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).
+  - Step 2: Fill in the password field with a password below the minimum length requirement (less than 8 characters).
+  - Step 3: Press the 'Register' button.
+expectedResult: System shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly addresses the scenario 'Password Below Minimum Length' by attempting to register with a password that does not meet the minimum length requirement, thus expecting the system to validate and show an error message.
+
+
+Scenario: Password Missing Capitalized Character1.txt
+Test Case: Test Case 1
+testCaseName: Password Missing Capitalized Character
+objective: Verify that the system shows a notification that the password is invalid when the password is missing a capitalized character.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.
+  - Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one normal character, a number, and a special character, but no capitalized character.
+  - Step 4: Press the "Registry" button.
+expectedResult: System shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly tests the given scenario by attempting to register with a password that lacks a capitalized character, which is a specific requirement. The steps lead to a situation where the system's response to this specific missing requirement can be observed, thus reflecting the scenario accurately.
+
+
+Scenario: Password Missing Normal Character1.txt
+Test Case: Test Case 1
+testCaseName: Register with password missing normal character
+objective: Verify that the system shows a notification that the password is invalid when the password is missing a normal character
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.
+  - Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one capitalized character, a number, and a special character but no normal characters.
+  - Step 4: Press the "Register" button.
+expectedResult: System shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Password Missing Normal Character' by specifying a password input that lacks normal characters (assumed to be lowercase letters in this context) and expecting the system to show an invalid password notification. It effectively tests the scenario's requirement.
+
+
+Scenario: Password Missing Number1.txt
+Test Case: Test Case 1
+testCaseName: Password Missing Number
+objective: Verify that the system shows a notification that the password is invalid when the password is missing a number
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.
+  - Step 3: Fill in the password field with a password that is over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, and one special character, but no numbers, and is not the same as the username.
+  - Step 4: Press the "Registry" button.
+expectedResult: System shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by specifically testing the condition where the password is missing a number. It follows the exact steps that would lead to the scenario being tested, from navigating to the registration page to attempting to register with a password that meets all specified criteria except for including a number. The expected result of receiving a notification that the password is invalid due to the absence of a number confirms that this test case is designed to validate the specific requirement outlined in the test scenario.
+
+
+Scenario: Password Missing Special Character1.txt
+Test Case: Test Case 1
+testCaseName: Password Missing Special Character
+objective: Verify that the system shows a notification that the password is invalid when the password is missing a special character
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.
+  - Step 3: Fill in the password field with a password that is over 8 characters, below 30 characters, contains at least one normal character, one capitalize character, and one number but missing a special character.
+  - Step 4: Press the "Registry" button.
+expectedResult: System shows a notification that the password is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's response when a password is missing a special character. The objective clearly states the purpose of the test, and the test steps are designed to simulate a user action that would trigger the scenario in question. The expected result is aligned with the scenario's requirement for the system to notify the user of an invalid password due to the absence of a special character.
+
+
+Scenario: Password Same as Username1.txt
+Test Case: Test Case 1
+testCaseName: Verify password cannot be the same as username during registration
+objective: Ensure that the system prevents the user from setting a password identical to their username during the registration process.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Enter a valid username in the username field (ensure the username is over 8 characters and below 30 characters).
+  - Step 3: Enter the same value as the username in the password field, ensuring it meets the basic password criteria (over 8 characters and below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character).
+  - Step 4: Click on the 'Register' button.
+expectedResult: The system should display a notification that the password cannot be the same as the username and prevent the user from proceeding to the Home page.
+reflect: yes
+explanation: This test case directly addresses the scenario of preventing a password from being the same as the username, which is a critical security measure in the registration process. It ensures that users cannot use easily guessable passwords, thereby enhancing the security of user accounts.
+
+
+Scenario: Successful Registration1.txt
+Test Case: Test Case 1
+testCaseName: Successful Registration with Username and Password
+objective: Verify that a learner can successfully register using a valid username and password
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).
+  - Step 3: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the username).
+  - Step 4: Press the 'Register' button.
+  - Step 5: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successful registration by ensuring that a learner can register with a valid username and password.
+
+Test Case: Test Case 2
+testCaseName: Successful Registration with Email
+objective: Verify that a learner can successfully register using a valid email
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to register by email.
+  - Step 3: Fill in the email field with a valid email (an existing email with the right format).
+  - Step 4: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and not the same as the email).
+  - Step 5: Press the 'Register' button.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration using email.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing an alternative registration method (email) and ensuring successful registration.
+
+
+Scenario: Username Above Maximum Length1.txt
+Test Case: Test Case 1
+testCaseName: Register with Username Above Maximum Length
+objective: Verify that the system shows a notification of invalid username when a learner attempts to register with a username above the maximum length.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is above 30 characters.
+  - Step 3: Fill in the password field with a valid password that meets the criteria of being over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that the username is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Username Above Maximum Length' by specifically testing the system's response to a username input that exceeds the maximum allowed length. The steps are designed to trigger the scenario where the username length validation fails, and the expected result is aligned with the scenario's requirement for the system to notify the user of the invalid username.
+
+
+Scenario: Username Below Minimum Length1.txt
+Test Case: Test Case 1
+testCaseName: Register with Username Below Minimum Length
+objective: Verify that the system shows a notification that the username is invalid when a username below the minimum length is entered
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is below 8 characters.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters, below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character, and is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that the username is invalid.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Username Below Minimum Length' by specifically testing the system's response to a username input that does not meet the minimum length criteria. The steps are designed to trigger the scenario where the username is too short, and the expected result is aligned with the scenario's requirement for the system to notify the user that the username is invalid.
+
+
+Scenario: UsernameAlreadyRegistered1.txt
+Test Case: Test Case 1
+testCaseName: Register with an already registered username
+objective: Verify that the system shows a notification that the username has been registered when a learner tries to register with a username that already exists in the system.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is known to have been previously registered.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+reflect: yes
+explanation: This test case directly tests the scenario 'UsernameAlreadyRegistered' by attempting to register with a username that is already in use. It checks the system's ability to recognize duplicate usernames and appropriately notify the user, which is the core of the given test scenario.
+
+

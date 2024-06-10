@@ -1,0 +1,514 @@
+Scenario: Book Update with Incorrect Data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Edit Book with Incorrect Title
+objective: Verify that the system displays an incorrect data message when a user attempts to update a book with an incorrect title format.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter an incorrect format for the book title (e.g., using special characters).
+  - Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the book title is displayed.
+explanation: This test case ensures that the system validates the title field correctly and informs the user about the incorrect format before updating the book record.
+
+Test Case: Test Case 2
+testCaseName: Edit Book with Future Publication Date
+objective: Verify that the system displays an incorrect data message when a user attempts to update a book with a future publication date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Fill in the Title, Author, Genre, and Description fields with valid data.
+  - Step 4: Enter a future date in the 'Publication date' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the publication date is displayed.
+explanation: This test case checks if the system prevents users from entering a future date as the publication date, ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Edit Book and Cancel Operation
+objective: Verify that no data is updated in the database when a user cancels the edit operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of book records without any changes being made to the selected book.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to exit the edit process without making any changes.
+
+
+Scenario: Successful Book Update-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Successful Book Record Update
+objective: Verify that a user can successfully update a book record with valid data and the updated record is reflected in the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the user is redirected to the list of books where the updated record is displayed.
+explanation: This test case ensures that the system correctly updates a book record when valid data is entered and the 'Submit' button is clicked. It directly matches the scenario of successfully updating a book.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Book Update with Invalid Data
+objective: Verify that the system displays error messages for incorrect data entry during a book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter invalid data for one or more fields (e.g., leaving the Title field empty).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays messages indicating the incorrect data entry, and the book record is not updated in the database.
+explanation: This test case checks the system's ability to validate input data during the book update process and ensure that incorrect data does not lead to an update.
+
+Test Case: Test Case 3
+testCaseName: Cancel Book Update Operation
+objective: Verify that a user can cancel the book update operation, and no changes are made to the book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The book update operation is canceled, no data is updated in the database, and the user is redirected to the list of book records.
+explanation: This test case ensures that users have the option to cancel the update operation if they decide not to proceed, without making any changes to the book record.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Update Page Without Saving
+objective: Verify that navigating away from the update page without saving does not update the book record in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', select a menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The book record is not updated in the database, and the user is redirected to the selected page without saving any changes.
+explanation: This test case verifies that accidental navigation away from the update page does not result in unintended updates to the book record.
+
+
+Scenario: UpdateBook_InvalidAuthor-Raw1.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidAuthor_ErrorMessage
+objective: Verify that the system displays an error message when attempting to update a book with an invalid author name
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter a valid title, genre, description, and publication date for the book.
+  - Step 4: Enter an invalid author name (e.g., using numbers or special characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the author name is invalid.
+explanation: This test case ensures that the system validates the author name field correctly and prevents the update of a book record with an invalid author name, maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperation_NoUpdate
+objective: Verify that no book record is updated in the database when the 'Cancel' button is pressed during an update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, start entering new data for the book's title, author, genre, description, and publication date.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book record in the database and should display the list of book records without applying the changes.
+explanation: This test case verifies that the cancel operation works as expected, allowing users to abort the update process without making any changes to the book record in the database.
+
+
+Scenario: UpdateBook_InvalidDescription-Raw1.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidDescription_EmptyField
+objective: Verify that the system displays an incorrect data message when the description field is left empty during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, leave the 'Description' field empty.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field cannot be empty.
+explanation: This test case ensures that the system validates the 'Description' field for non-empty input during the book update process.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidDescription_TooShort
+objective: Verify that the system displays an incorrect data message when the description field contains text that is too short.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, enter a very short text (e.g., 'abc') in the 'Description' field.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field contains text that is too short.
+explanation: This test case checks if the system properly validates the 'Description' field for a minimum length requirement.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidDescription_SpecialCharacters
+objective: Verify that the system displays an incorrect data message when the description field contains invalid special characters.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: In the book data form, enter a description with invalid special characters (e.g., '@#$%^&*').
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the 'Description' field contains invalid special characters.
+explanation: This test case verifies that the system checks the 'Description' field for invalid characters, ensuring data integrity.
+
+
+Scenario: UpdateBook_InvalidGenre-Raw1.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidGenre_ErrorMessage
+objective: Verify that the system displays an error message when an invalid genre is entered during the book update process.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter or modify the book's title, author, description, and publication date with valid data.
+  - Step 4: Enter an invalid genre in the 'Genre' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid genre input is displayed, indicating that the genre entered is not valid.
+explanation: This test case ensures that the system correctly validates the genre field during the book update process and provides feedback to the user when invalid data is entered.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperationWithInvalidGenre
+objective: Verify that the book update operation is successfully cancelled and no changes are made in the database when invalid genre data is entered and the user presses the 'Cancel' button.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter or modify the book's title, author, description, publication date with valid data, and enter an invalid genre.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The book update operation is cancelled, no changes are made to the database, and the user is redirected to the list of book records.
+explanation: This test case checks the functionality of the 'Cancel' button during the book update process, ensuring that even with invalid data entered, no changes are made when the operation is cancelled.
+
+
+Scenario: UpdateBook_InvalidPublicationDate-Raw1.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidPublicationDate_FormatError
+objective: Verify that the system displays an error message when the publication date is entered in an incorrect format during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.
+  - Step 4: Enter an invalid format for the Publication date (e.g., 'dd/mm/yyyy').
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect format of the Publication date.
+explanation: This test case ensures that the system validates the format of the Publication date field and prevents updates with incorrect data formats, maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidPublicationDate_FutureDate
+objective: Verify that the system displays an error message when the publication date is set to a future date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter or modify the details for Title, Author, Genre, and Description as required.
+  - Step 4: Enter a future date in the Publication date field (e.g., a date that is after today's date).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the publication date cannot be in the future.
+explanation: This test case checks that the system correctly validates the Publication date against future dates to ensure that only realistic publication dates are entered, reflecting the actual or historical publication dates.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_CancelOperationWithInvalidPublicationDate
+objective: Verify that the book update is not saved and no error message for invalid publication date is shown when the user cancels the operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter or modify the details for Title, Author, Genre, Description, and enter an invalid Publication date.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of book records without updating any book and without showing any error message related to the invalid Publication date.
+explanation: This test case ensures that when a user decides to cancel the update operation, the system does not proceed with data validation or update, thus not saving any changes or displaying validation errors.
+
+
+Scenario: UpdateBook_InvalidTitle-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Title
+objective: Verify that the system displays an error message when trying to update a book with an invalid title
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the book data form, enter an invalid title (e.g., using special characters or leaving it blank).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid title is displayed, and the book record is not updated in the database.
+explanation: This test case ensures that the system validates the title field correctly and prevents the update of a book record with an invalid title, maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Valid Data Except Title
+objective: Verify that the system prevents updating a book when only the title is invalid while other fields are valid
+testSteps:
+  - Step 1: Go to the book list/details page.
+  - Step 2: Press the 'Update' button for the book you want to edit.
+  - Step 3: Enter a title that is too long or contains invalid characters.
+  - Step 4: Enter valid data for the Author, Genre, Description, and Publication date fields.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system displays an error message indicating the title is invalid, and the book's information remains unchanged in the database.
+explanation: This test case is designed to check the system's ability to validate the title independently from the other fields, ensuring that a book's information cannot be updated with an invalid title.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation on Book with Invalid Title
+objective: Verify that cancelling the update operation discards changes, even if the title entered is invalid
+testSteps:
+  - Step 1: Access the book list/details page.
+  - Step 2: Click on the 'Update' button for a selected book.
+  - Step 3: Enter an invalid title and valid information for other fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system discards the changes, and the book record remains unchanged in the database. The user is redirected to the list of book records.
+explanation: This test case verifies that the cancel operation works correctly, even when the form contains invalid data, ensuring that users can safely exit the update process without unintentionally modifying records.
+
+
+Scenario: UpdateBook_InvalidTitle-Raw2.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidTitle_EmptyField
+objective: Verify that the system displays an error message when the Title field is left empty during book update
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Leave the 'Title' field empty, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot be empty.
+explanation: This test case ensures that the system validates the Title field to prevent updating a book with an empty title, which is part of the invalid data handling in the update book process.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidTitle_SpecialCharacters
+objective: Verify that the system displays an error message when the Title field contains special characters
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter special characters (e.g., @#$%) in the 'Title' field, fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field cannot contain special characters.
+explanation: This test case checks the system's ability to validate the Title field for special characters, ensuring that titles are kept in a readable and expected format.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidTitle_ExceedCharacterLimit
+objective: Verify that the system displays an error message when the Title field exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter a title in the 'Title' field that exceeds the character limit (if applicable), fill in other mandatory fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the Title field exceeds the character limit.
+explanation: This test case ensures that the system enforces a character limit on the Title field, preventing excessively long titles that could cause display or database issues.
+
+
+Scenario: UpdateBook_InvalidTitle-Raw3.txt
+Test Case: Test Case 1
+testCaseName: UpdateBook_InvalidTitle_EmptyField
+objective: Verify that the system displays an incorrect data message when the title field is left empty during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Clear the 'Title' field leaving it empty.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the empty 'Title' field is displayed.
+explanation: This test case ensures that the application validates the 'Title' field and prevents updates with an empty title, which is a part of the main scenario where data validation occurs.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_InvalidTitle_SpecialCharacters
+objective: Verify that the system displays an incorrect data message when the title field contains special characters.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title that contains special characters (e.g., @#$%^&*).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Title' field containing special characters is displayed.
+explanation: This test case checks the application's ability to validate the 'Title' field against special characters, ensuring data integrity and adherence to the main scenario's validation process.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_InvalidTitle_TooLong
+objective: Verify that the system displays an incorrect data message when the title field exceeds the maximum length limit.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title that exceeds the maximum length limit (e.g., a string longer than 255 characters).
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Title' field exceeding the maximum length limit is displayed.
+explanation: This test case ensures that the application enforces length constraints on the 'Title' field, preventing excessively long titles from being entered, in line with the main scenario's data validation.
+
+
+Scenario: User navigates to API menu item before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to API menu item before submitting updated book data
+objective: Verify that navigating to the API menu item before submitting updated book data cancels the update operation and displays the API page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, navigate to the 'API' menu item.
+expectedResult: The book update operation is canceled, and the API page is displayed without updating the book data in the database.
+explanation: This test case ensures that if a user navigates away from the book update form to the API menu item before submitting the form, the update operation is canceled, and the user is redirected to the API page as per the cancel operation scenario.
+
+Test Case: Test Case 2
+testCaseName: Successfully update book data and then navigate to API menu item
+objective: Verify that after successfully updating book data, the user can navigate to the API menu item and the book list with updated records is displayed.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter or modify the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Press the 'Submit' button to update the book data.
+  - Step 5: After the book record is successfully updated and the updated book list is displayed, navigate to the 'API' menu item.
+expectedResult: The book data is successfully updated in the database, the updated book list is displayed, and after navigating to the API menu item, the API page is displayed.
+explanation: This test case verifies that book data can be successfully updated and, following this, the user can navigate to other sections of the application, such as the API page, without affecting the update operation.
+
+
+Scenario: User navigates to Authors menu item before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Authors menu before submitting updated book data
+objective: Verify that navigating to 'Authors' menu before submitting updated book data cancels the update operation and displays the Authors page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click on the 'Authors' menu item.
+expectedResult: The book data update operation is canceled, and the Authors page is displayed without updating the book in the database.
+explanation: This test case ensures that if a user navigates away from the book update form by selecting the 'Authors' menu item, the update operation is canceled, and the user is redirected to the Authors page without making any changes to the book data in the database. It directly matches the scenario of navigating to the Authors menu item before submitting updated book data.
+
+Test Case: Test Case 2
+testCaseName: Successful book data update and navigation to Authors menu
+objective: Verify that updating book data successfully and then navigating to 'Authors' menu displays the Authors page without affecting the update operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Correctly enter or modify the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Click the 'Submit' button to update the book data.
+  - Step 5: After seeing the success message or the updated book list, click on the 'Authors' menu item.
+expectedResult: The book data is successfully updated in the database, and navigating to the 'Authors' menu item displays the Authors page.
+explanation: This test case verifies that after successfully updating a book's data, the user can navigate to the 'Authors' menu without affecting the update operation. It demonstrates the system's ability to handle navigation post-update successfully.
+
+
+Scenario: User navigates to Books menu item before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu and Submit Updated Book Data
+objective: Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.
+testSteps:
+  - Step 1: Log in to the application to reach the dashboard.
+  - Step 2: Navigate to the Books menu item by selecting it from the navigation bar.
+  - Step 3: On the book list/details page, click the 'Update' button to the right of the book you wish to update.
+  - Step 4: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication Date.
+  - Step 5: Press the 'Submit' button to submit the updated book data.
+expectedResult: The book's data is updated in the database, and the user is redirected to the list of books with the updated records displayed.
+explanation: This test case ensures that users can navigate to the Books menu item, access the edit form for a book, submit updated data, and see the changes reflected in the book list. It directly matches the scenario of navigating to the Books menu item before submitting updated book data.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Books Menu and Cancel Book Data Update
+objective: Verify that the user can navigate to the Books menu item, begin editing a book's details, but cancel the update operation.
+testSteps:
+  - Step 1: Log in to the application to reach the dashboard.
+  - Step 2: Navigate to the Books menu item by selecting it from the navigation bar.
+  - Step 3: On the book list/details page, click the 'Update' button to the right of the book you wish to update.
+  - Step 4: Start entering or modifying the book's data in the form fields.
+  - Step 5: Press the 'Cancel' button before submitting the updated data.
+expectedResult: The book's data is not updated in the database, and the user is redirected to the list of books without any changes to the records.
+explanation: This test case verifies that users have the option to cancel the update operation after navigating to the Books menu item and accessing the edit form, ensuring that no changes are made if the operation is cancelled.
+
+
+Scenario: User navigates to Books menu item before submitting updated book data-Raw2.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu and Submit Updated Book Data
+objective: Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the Books menu item using the navbar.
+  - Step 3: On the list of books, click the 'Update' button next to the book you wish to edit.
+  - Step 4: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 5: Press the 'Submit' button to update the book's data.
+expectedResult: The application updates the book in the database and redirects the user to the list of books, displaying the updated records.
+explanation: This test case ensures that the user can navigate to the Books menu, edit a book's details through the provided form, and submit the updated data successfully. It covers the main scenario of editing and updating a book record.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Books Menu and Cancel Book Data Update
+objective: Verify that the user can navigate to the Books menu item, initiate editing a book's details but cancel the operation before submitting.
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the Books menu item using the navbar.
+  - Step 3: On the list of books, click the 'Update' button next to the book you wish to edit.
+  - Step 4: Start entering data into the form fields for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 5: Press the 'Cancel' button before submitting the updated data.
+expectedResult: The application does not update the book in the database and redirects the user to the list of books, showing the original records without changes.
+explanation: This test case verifies that users have the option to cancel the book data update operation if they decide not to proceed with the changes. It aligns with the cancel operation scenario, ensuring the application behaves as expected when the cancel action is taken.
+
+
+Scenario: User navigates to Books menu item before submitting updated book data-Raw3.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu and Submit Updated Book Data
+objective: Verify that the user can navigate to the Books menu item, edit a book's details, and successfully submit the updated data.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter the updated book data including Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button to submit the updated book data.
+expectedResult: The book's data is updated in the database, and the list of books with the updated records is displayed.
+explanation: This test case ensures that users can navigate to the Books menu, update a book's details, and submit the changes, which directly matches the scenario name.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Books Menu and Cancel Book Data Update
+objective: Verify that the user can navigate to the Books menu item, attempt to edit a book's details, but cancel the operation before submitting.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering the updated book data including Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Cancel' button before submitting the updated data.
+expectedResult: The book's data is not updated in the database, and the list of book records is displayed without applying the changes.
+explanation: This test case verifies that users have the option to cancel the book data update operation, which is a critical part of the user's ability to control data submission.
+
+Test Case: Test Case 3
+testCaseName: Submit Updated Book Data with Incorrect Fields
+objective: Verify that the system displays error messages for incorrectly entered data when updating a book's details.
+testSteps:
+  - Step 1: Navigate to the Books menu item from the main navigation bar.
+  - Step 2: On the Books list/details page, click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter incorrect data for at least one of the fields (e.g., an invalid publication date).
+  - Step 4: Press the 'Submit' button to attempt to submit the updated book data.
+expectedResult: The system displays messages indicating which data was entered incorrectly.
+explanation: This test case ensures that the system validates user input and provides feedback on incorrect data, which is essential for maintaining data integrity.
+
+
+Scenario: User navigates to Genres menu item before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Genres menu item before submitting updated book data
+objective: Verify that navigating to the Genres menu item before submitting updated book data cancels the update operation and displays the Genres page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book's details (Title, Author, Genre, Description, Publication Date) in the provided form fields.
+  - Step 4: Before pressing the 'Submit' button, navigate to the 'Genres' menu item by selecting it from the navigation menu.
+expectedResult: The book update operation is canceled, and the Genres page is displayed without updating the book in the database.
+explanation: This test case ensures that if a user navigates away from the book update form before submitting it, the update operation is canceled, and the user is redirected to the selected menu item, in this case, 'Genres'. It verifies the application's behavior in handling navigation actions during data entry, aligning with the cancel operation scenario.
+
+
+Scenario: User navigates to Home menu item before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Home Before Submitting Updated Book Data
+objective: Verify that navigating to the Home menu item before submitting updated book data cancels the update operation and displays the home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click on the 'Home' menu item.
+expectedResult: The book data update operation is canceled, and the home page is displayed without updating the book in the database.
+explanation: This test case ensures that if a user navigates away from the book update form by selecting the 'Home' menu item before submitting the updated data, the update operation is canceled, and the user is redirected to the home page. It directly matches the scenario of navigating to the Home menu item before submitting updated book data.
+
+Test Case: Test Case 2
+testCaseName: Successful Book Data Update and Navigate to Home
+objective: Verify that after successfully updating a book's data, navigating to the Home menu item displays the home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data for all fields (Title, Author, Genre, Description, Publication Date) in the displayed form.
+  - Step 4: Click the 'Submit' button to update the book.
+  - Step 5: After seeing the success message and the updated book list, click on the 'Home' menu item.
+expectedResult: The book is successfully updated in the database, and after navigating to the Home menu, the home page is displayed.
+explanation: This test case verifies that after a successful book update, the user can navigate to the Home menu item to view the home page. It demonstrates the flow of updating a book and then navigating away from the update context.
+
+
+Scenario: User presses “Cancel” button before submitting updated book data-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Verify cancel operation during book data update
+objective: Ensure that pressing the 'Cancel' button before submitting updated book data does not update the book in the database and redirects the user to the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click the 'Cancel' button.
+expectedResult: The book data is not updated in the database, and the user is redirected to the list of book records.
+explanation: This test case verifies that the cancel operation works as intended by ensuring that no data is updated in the database when the 'Cancel' button is pressed before submitting the form. It directly matches the scenario name by testing the functionality of the 'Cancel' button in the book data update process.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancel operation during book update
+objective: To confirm that after pressing the 'Cancel' button during book update, the user is redirected to the book list and can navigate to other sections without updating the book.
+testSteps:
+  - Step 1: Go to the book list/details page and click the 'Update' button for a book.
+  - Step 2: Begin to enter or modify the book's details in the form.
+  - Step 3: Press the 'Cancel' button before submitting the updated data.
+  - Step 4: After being redirected to the book list, select another menu item such as 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: User is redirected to the book list after pressing 'Cancel', and can navigate to other sections without the book data being updated in the database.
+explanation: This test case ensures that the cancel operation not only prevents data from being updated but also allows the user to navigate to other sections of the application without unintended data submission. It complements the scenario by testing the post-cancel navigation behavior.
+
+

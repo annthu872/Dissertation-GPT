@@ -1,0 +1,47 @@
+Scenario: Correct Answer Scenario1.txt
+Test Case: Test Case 1
+testCaseName: Correct Answer Submission for Listening Pronunciation Test
+objective: Verify that the system correctly identifies and responds to a correct answer submission in a listening pronunciation test question.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test function within the application.
+  - Step 3: Start a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word based on the pronunciation and select the correct answer.
+  - Step 6: Submit the answer.
+expectedResult: A green pop-up screen should appear, indicating that the answer is correct.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to verify the system's response to a correct answer in a listening pronunciation test, aligning with the scenario's objective.
+
+
+Scenario: Incorrect Answer Scenario.txt
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer for listening pronunciation test
+objective: Ensure that the system correctly validates a learner's answer as incorrect and displays a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to the review test function.
+  - Step 3: Start a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word and choose the wrong answer.
+expectedResult: A red pop-up screen should appear indicating the answer is incorrect.
+reflect: yes
+explanation: This test case directly reflects the 'Incorrect Answer Scenario' by testing the system's ability to validate an incorrect answer in a listening pronunciation test and provide the corresponding negative feedback through a red pop-up screen.
+
+
+Scenario: Incorrect Answer Scenario1.txt
+Test Case: Test Case 1
+testCaseName: Verify correct answer for listening pronunciation test question
+objective: Ensure that the system correctly validates a learner's answer as correct and displays a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test function.
+  - Step 3: Start a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word and choose the correct answer based on the pronunciation.
+  - Step 6: Submit the answer.
+expectedResult: A green pop-up screen should appear, indicating the answer is correct.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's ability to correctly identify and validate a correct answer in a listening pronunciation test, which is the primary objective of the scenario.
+
+

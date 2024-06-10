@@ -1,0 +1,60 @@
+{
+    "1. Successful Genre Deletion-Raw1.txt0": {},
+    "1. Successful Genre Deletion-Raw1.txt1": {
+        "testCaseName": "Verify successful genre deletion",
+        "objective": "Ensure that a user can successfully delete a genre and the record is removed from the database",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.",
+            "- Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with deletion."
+        ],
+        "expectedResult": "The genre should be successfully deleted from the database, and the user should no longer see the deleted genre in the list.",
+        "explanation": "This test case ensures that the main scenario for deleting a genre is functioning as expected. It verifies that upon confirmation, the genre is removed from the database."
+    },
+    "1. Successful Genre Deletion-Raw1.txt2": {
+        "testCaseName": "Verify cancellation of genre deletion",
+        "objective": "Ensure that a user can cancel the deletion of a genre and the record remains in the database",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Locate the genre you wish to delete but decide to keep and click the 'Delete' button next to it.",
+            "- Step 3: On the confirmation dialog, click the 'Cancel' button to abort deletion."
+        ],
+        "expectedResult": "The deletion process should be aborted, and the genre should remain in the database. The user should still see the genre in the list.",
+        "explanation": "This test case verifies the cancel operation scenario where the user decides not to delete a genre. It ensures that the record is not removed from the database upon cancellation."
+    },
+    "1. Successful Genre Deletion-Raw1.txt3": {
+        "testCaseName": "Verify navigation after cancelling genre deletion",
+        "objective": "Ensure that after cancelling a genre deletion, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' does not delete the genre",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page and click the 'Delete' button next to a genre.",
+            "- Step 2: On the confirmation dialog, click the 'Cancel' button.",
+            "- Step 3: Navigate to any of the following pages: 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "After cancellation and navigation to another page, the genre should still exist in the database and be visible to the user.",
+        "explanation": "This test case checks the system behavior after a user cancels a deletion and then navigates to other sections of the application. It ensures that the cancellation is respected across different pages."
+    },
+    "2. User Cancels Deletion-Raw1.txt0": {},
+    "2. User Cancels Deletion-Raw1.txt1": {
+        "testCaseName": "Verify cancellation of genre deletion",
+        "objective": "Ensure that when a user cancels the deletion of a genre, the genre is not deleted from the database and the user is redirected back to the genre list with the data unchanged.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Delete' button next to the genre intended for deletion.",
+            "- Step 3: On the confirmation dialog, press the 'Cancel' button."
+        ],
+        "expectedResult": "The genre should not be deleted from the database, and the user should be redirected back to the list of genres with all data unchanged.",
+        "explanation": "This test case verifies that the cancel operation works as intended, preventing unwanted deletion of genres and ensuring data integrity."
+    },
+    "2. User Cancels Deletion-Raw1.txt2": {
+        "testCaseName": "Verify navigation after cancelling genre deletion",
+        "objective": "To confirm that after cancelling the deletion of a genre, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays the corresponding form with updated data without deleting the genre.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page and click the 'Delete' button next to a genre.",
+            "- Step 2: On the confirmation dialog, press the 'Cancel' button.",
+            "- Step 3: After cancellation, select the menu item 'Books'.",
+            "- Step 4: Repeat step 3 for 'Genres', 'Authors', 'Home', and 'API' menu items."
+        ],
+        "expectedResult": "After cancelling the deletion, navigating to 'Books', 'Genres', 'Authors', 'Home', or 'API' should display the corresponding page with updated data, and the genre should not be deleted from the database.",
+        "explanation": "This test case ensures that the application behaves correctly after a user cancels a deletion operation, by not deleting the genre and allowing the user to navigate to other sections of the application without data loss."
+    }
+}

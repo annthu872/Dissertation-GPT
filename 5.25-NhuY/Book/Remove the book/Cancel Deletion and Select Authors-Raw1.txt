@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify canceling the deletion of a book
+objective: Ensure that when a user cancels the deletion of a book, the book is not deleted from the database and the user is redirected back to the list of books.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The book should not be deleted from the database, and the user should be redirected back to the list of books with all records intact.
+explanation: This test case ensures that the cancel operation works as intended, preventing accidental deletions and allowing the user to back out of a delete operation.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after canceling deletion
+objective: To verify that after canceling the deletion of a book, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays the corresponding form with updated data without deleting the book.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected section and display the corresponding form with updated data, ensuring the book was not deleted from the database.
+explanation: This test case checks the application's behavior after canceling a deletion, ensuring that the user can safely navigate to other sections without the data being affected by the canceled delete operation.
+

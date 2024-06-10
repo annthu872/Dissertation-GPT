@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation for a book
+objective: Ensure that the user can delete a book after confirming the deletion operation
+testSteps:
+  - Step 1: Navigate to the book list or details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book record is deleted from the database, and the user is redirected to the updated list of books without the deleted record.
+explanation: This test case verifies that the deletion process works as expected when the user confirms the deletion. It directly matches the main scenario of removing a book.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of book deletion
+objective: Ensure that the book record is not deleted when the user cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the book list or details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book record is not deleted from the database, and the user is redirected to the updated list of books with the record still present.
+explanation: This test case ensures that the cancellation functionality works correctly, preventing the deletion of the book record when the user decides not to proceed with the deletion.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling book deletion
+objective: Ensure that navigation works correctly after cancelling the deletion of a book
+testSteps:
+  - Step 1: Navigate to the book list or details page and initiate the deletion process for a book.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Select any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application navigates to the selected menu item's page with updated data, and the book record remains undeleted in the database.
+explanation: This test case checks that the application behaves as expected when navigating away after cancelling a deletion operation, ensuring data integrity and correct navigation.
+

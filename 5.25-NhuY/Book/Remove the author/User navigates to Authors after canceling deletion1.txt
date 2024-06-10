@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Authors
+objective: Verify that after cancelling the deletion of an author, the user can navigate back to the Authors page without the data being deleted.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is displayed again.
+  - Step 5: Select the menu item 'Authors' to navigate to the Authors page.
+expectedResult: The user is taken to the Authors page where all authors, including the one that was selected for deletion, are listed. This confirms that the deletion was successfully canceled and the data was not deleted from the database.
+reflect: yes
+explanation: This test case ensures that the cancel operation works as intended and that the user can navigate back to the Authors page without any data loss. It directly matches the scenario name by testing the navigation to Authors after canceling the deletion operation.
+

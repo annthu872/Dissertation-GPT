@@ -1,0 +1,13 @@
+AddBookWithEmptyTitle
+AddBookWithEmptyAuthor
+AddBookWithEmptyGenre
+AddBookWithEmptyDescription
+AddBookWithEmptyPublicationDate
+Successful Book Creation
+Book Creation with Incorrect Data
+Cancel Operation by Pressing "Cancel" Button
+Cancel Operation by Navigating to "Books"
+Cancel Operation by Navigating to "Genres"
+Cancel Operation by Navigating to "Authors"
+Cancel Operation by Navigating to "Home"
+Cancel Operation by Navigating to "API"

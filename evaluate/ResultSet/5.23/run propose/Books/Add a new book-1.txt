@@ -1,0 +1,9 @@
+1. AddBookWithEmptyTitle
+2. AddBookWithEmptyAuthor
+3. AddBookWithEmptyGenre
+4. AddBookWithEmptyDescription
+5. AddBookWithEmptyPublicationDate
+6. Successful Book Creation
+7. Book Creation with Incorrect Data
+8. Cancel Operation Scenario
+9. Navigation Away Scenario

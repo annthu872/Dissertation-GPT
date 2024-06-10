@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away by Selecting 'API' During Genre Creation
+objective: Verify that when a user navigates away by selecting 'API' during the genre creation process, the data is not saved and the API page is displayed.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The application does not save the entered genre data and displays the API page.
+explanation: This test case ensures that if a user decides to navigate away from the genre creation process by selecting 'API', the operation is safely cancelled, and the user is redirected without saving any partial data. It directly tests the navigation aspect mentioned in the scenario.
+

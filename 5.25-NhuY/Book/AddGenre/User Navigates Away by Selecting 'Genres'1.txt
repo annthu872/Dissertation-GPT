@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away by Selecting 'Genres' During Genre Creation
+objective: Verify that navigating away by selecting 'Genres' from the menu during the genre creation process cancels the operation and does not save the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Start entering genre data into the form fields.
+  - Step 4: Before pressing the 'Submit' button, select 'Genres' from the menu to navigate away.
+expectedResult: The genre creation process is cancelled, data is not saved in the database, and the list of genre records is displayed without the new genre.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the behavior of the system when a user navigates away from the genre creation process by selecting 'Genres'. It checks that the operation is cancelled and no data is saved, which is the core of the test scenario.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away by Selecting 'Genres' During Genre Creation
+objective: Verify that navigating away by selecting 'Genres' from the menu during the genre creation process cancels the operation and does not save the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Start entering genre data into the form fields.
+  - Step 4: Before pressing the 'Submit' button, select 'Genres' from the menu to navigate away.
+expectedResult: The genre creation process is cancelled, data is not saved in the database, and the list of genre records is displayed without the new genre.
+explanation: This test case ensures that if a user accidentally or intentionally navigates away to 'Genres' during the creation process, the operation is safely cancelled without saving incomplete or unwanted data.
+
+Test Case: Test Case 2
+testCaseName: Successful Genre Creation and Verification
+objective: Verify that a new genre can be successfully added through the form and is displayed in the list of genres.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Correctly fill in the form with genre data.
+  - Step 4: Press the 'Submit' button to save the new genre.
+expectedResult: The new genre record is successfully added to the database and is visible in the list of genres.
+explanation: This test case confirms that the system correctly adds a new genre to the database when valid data is entered and the 'Submit' button is clicked, following the main scenario.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation Operation
+objective: Verify that the genre creation operation can be cancelled by pressing the 'Cancel' button, and no data is saved.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Start entering genre data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The genre creation process is cancelled, no data is saved in the database, and the list of genre records is displayed.
+explanation: This test case ensures that users have the option to cancel the genre creation process at any point before submission, preventing unwanted data from being saved.
+

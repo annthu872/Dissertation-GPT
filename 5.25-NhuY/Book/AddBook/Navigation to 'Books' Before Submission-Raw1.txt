@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to 'Books' Before Submission via Cancel Button
+objective: Ensure that the user can navigate back to the 'Books' list without submitting the form by clicking the 'Cancel' button.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the form fields for a new book.
+  - Step 4: Click the 'Cancel' button before pressing the 'Submit' button.
+expectedResult: The application should navigate the user back to the list of books without saving any entered data.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to return to the book list without making any changes.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to 'Books' Before Submission via Navigation Menu
+objective: Ensure that the user can navigate back to the 'Books' list without submitting the form by selecting 'Books' from the navigation menu.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the form fields for a new book.
+  - Step 4: Without pressing the 'Submit' button, select the 'Books' menu item from the navigation menu.
+expectedResult: The application should navigate the user back to the list of books without saving any entered data, displaying the updated list of books.
+explanation: This test case verifies that users can safely navigate away from the book creation form to the 'Books' list via the navigation menu without unintentionally saving data.
+

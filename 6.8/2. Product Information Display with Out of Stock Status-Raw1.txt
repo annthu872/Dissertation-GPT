@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with In-Stock Status
+objective: Ensure that all product information is correctly displayed for an in-stock product, including stock availability status.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is in stock.
+  - Step 3: Verify that the product's title and description are prominently displayed.
+  - Step 4: Ensure that high-quality images and videos of the product are showcased.
+  - Step 5: Check that detailed product specifications are listed.
+  - Step 6: Confirm that the current price and any discounts or special offers are highlighted.
+  - Step 7: Verify that real-time stock availability shows the product as in stock.
+  - Step 8: Check for the display of available shipping methods, estimated delivery times, and shipping fees.
+  - Step 9: Ensure the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 10: Confirm that there is an option to contact the seller directly.
+  - Step 11: Verify the presence of a link to the seller's store page.
+  - Step 12: Check that the average rating and 3 latest detailed reviews are displayed under customer reviews and ratings.
+  - Step 13: Ensure that a list of related product cards is displayed.
+expectedResult: All specified product information should be correctly displayed for an in-stock product, including the stock availability status as in stock.
+explanation: This test case ensures that the basic flow of displaying product information is followed correctly for products that are in stock, as per the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display with Out of Stock Status
+objective: Ensure that the product information display correctly indicates when a product is out of stock, including disabling buttons.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is out of stock.
+  - Step 3: Verify that a black sticker with the message 'Out of stock' is displayed on the product's images.
+  - Step 4: Ensure that all buttons on the page are disabled due to the out of stock status.
+  - Step 5: Check that the product's title, description, images, videos, specifications, price information, seller information, delivery options, and customer reviews are still displayed.
+  - Step 6: Confirm that the option to contact the seller and the link to the seller's store page are present.
+expectedResult: The product page should correctly indicate that the product is out of stock by displaying a black sticker and disabling all actionable buttons, while still displaying all other product information.
+explanation: This test case verifies the alternative flow where a product is out of stock, ensuring that the system correctly displays the out of stock status and disables buttons, in line with the use case specification.
+

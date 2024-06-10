@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Attempt to Add Out of Stock Option to Cart
+objective: Verify that a user cannot add a product to their shopping cart if the selected option is out of stock.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options, with at least one option being out of stock.
+  - Step 4: Attempt to select an out of stock option.
+  - Step 5: Try to click the add to cart button.
+expectedResult: The system prevents the user from selecting the out of stock option and displays a message indicating the option is unavailable.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by verifying the system's behavior when a user attempts to add an out of stock option to their cart.
+

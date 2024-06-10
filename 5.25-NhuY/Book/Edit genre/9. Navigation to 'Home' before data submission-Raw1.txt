@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigation to 'Home' before data submission during genre edit
+objective: Verify that navigating to 'Home' before submitting the updated genre data cancels the edit operation and does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the genre edit form, start entering new values for the genre's Name and Description fields.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the edit page.
+expectedResult: The application navigates to the 'Home' page without updating the genre in the database, and no changes are made to the genre's information.
+explanation: This test case ensures that if a user navigates away to the 'Home' page before completing the genre update process, the operation is canceled, and no data is updated in the database. It directly matches the scenario of navigating to 'Home' before data submission, focusing on the cancel operation scenario when the 'Home' navigation occurs.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Authors' before submitting edited genre data
+objective: Verify that navigating to 'Authors' before submitting the form cancels the edit operation and displays the 'Authors' page.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to edit.
+  - Step 3: Begin entering or modifying the data in the genre edit form.
+  - Step 4: Before pressing 'Submit', select the menu item 'Authors'.
+expectedResult: The edit operation is cancelled, and the 'Authors' page is displayed without updating the genre in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to verify the application's behavior when a user navigates away from an edit form without submitting it. It specifically tests the scenario where the user is editing genre data and decides to navigate to the 'Authors' page before completing the submission, which should cancel the edit operation and not save any changes made. The expected result aligns with the scenario's requirement that the edit is cancelled and the 'Authors' page is displayed, confirming that this test case is appropriate for testing the given scenario.
+

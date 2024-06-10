@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Add Product Without Options to Cart
+objective: Verify that a user can successfully add a product without options to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card.
+  - Step 4: On the product's detail page, click the 'Add to Cart' button.
+expectedResult: The product is added to the user's shopping cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successfully adding a product to the cart, specifically focusing on products without options.
+
+Test Case: Test Case 2
+testCaseName: Add Product With Options to Cart
+objective: Verify that a user can successfully add a product with options to their shopping cart by selecting an option.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has options.
+  - Step 4: On the product's detail page, select one of the available options.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case aligns with the test scenario by demonstrating the process of adding a product with options to the cart, which is a successful addition scenario.
+
+Test Case: Test Case 4
+testCaseName: Add Product With Quantity Adjustment to Cart
+objective: Verify that a user can successfully add a product to their shopping cart with adjusted quantity.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card.
+  - Step 4: On the product's detail page, adjust the quantity of the product using the plus or minus button.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the adjusted quantity, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case reflects the given test scenario by showing a successful product addition to the cart with the added complexity of quantity adjustment.
+
+Test Case: Test Case 5
+testCaseName: Add Product With Options and Quantity Adjustment to Cart
+objective: Verify that a user can successfully add a product with options to their shopping cart by selecting an option and adjusting the quantity.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has options.
+  - Step 4: Select one of the available options.
+  - Step 5: Adjust the quantity of the product using the plus or minus button.
+  - Step 6: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option and adjusted quantity, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario by covering the successful addition of a product with both options and quantity adjustments to the cart.
+

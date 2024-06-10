@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that users can adjust the quantity of a product before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card.
+  - Step 4: On the product's detail page, adjust the quantity of the product by clicking the plus or minus button until the desired quantity is reached.
+  - Step 5: Click the add to cart button.
+expectedResult: The system adds the specified quantity of the product into the user's shopping cart.
+explanation: This test case ensures that users can successfully adjust the quantity of a product before adding it to their cart, which is a critical functionality for a shopping platform.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity and Select Options Before Adding Product to Cart
+objective: Verify that users can adjust the quantity and select options for a product before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available.
+  - Step 4: On the product's detail page, choose one of the available options for the product.
+  - Step 5: Adjust the quantity of the product by clicking the plus or minus button until the desired quantity is reached.
+  - Step 6: Click the add to cart button.
+expectedResult: The system adds the specified quantity of the product with the selected options into the user's shopping cart.
+explanation: This test case verifies the functionality for users to both select product options and adjust quantity before adding the product to their cart, catering to products with multiple options.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Out of Stock Product to Cart
+objective: Verify that users cannot add an out-of-stock product to their shopping cart.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that is marked as 'Sold out'.
+expectedResult: The add to cart button is not clickable, preventing the user from adding the out-of-stock product to their cart.
+explanation: This test case ensures that users are prevented from adding out-of-stock products to their shopping cart, improving the shopping experience by avoiding frustration.
+
+Test Case: Test Case 4
+testCaseName: Attempt to Select Out of Stock Option for a Product
+objective: Verify that users cannot select an out-of-stock option for a product.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card that has multiple options available.
+  - Step 4: Try to select an option that is colored grey and marked as out of stock.
+expectedResult: The out-of-stock option is not selectable, preventing the user from choosing it.
+explanation: This test case checks that users are prevented from selecting options for a product that are out of stock, ensuring they can only choose from available options.
+

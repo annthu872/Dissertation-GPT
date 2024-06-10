@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Books' before submitting updated genre data
+objective: Verify that navigating to 'Books' before data submission cancels the update operation and displays the 'Books' page.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Before pressing 'Submit', navigate to the 'Books' page by selecting the 'Books' menu item.
+expectedResult: The genre update operation is canceled, and the 'Books' page is displayed without updating the genre in the database.
+explanation: This test case ensures that if a user navigates away to 'Books' before completing the genre update submission, the update process is canceled, and the user is redirected to the 'Books' page as per the scenario requirement.
+
+Test Case: Test Case 2
+testCaseName: Successful genre update and then navigate to 'Books'
+objective: Verify that after successfully updating a genre, navigating to 'Books' displays the 'Books' page.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Correctly enter all required genre data into the form fields.
+  - Step 4: Press the 'Submit' button to update the genre.
+  - Step 5: After seeing the success message, navigate to the 'Books' page by selecting the 'Books' menu item.
+expectedResult: After updating the genre successfully, the 'Books' page is displayed.
+explanation: This test case verifies that the user can successfully update a genre and then navigate to the 'Books' page, ensuring the update operation completes before navigation.
+
+Test Case: Test Case 3
+testCaseName: Cancel genre update and navigate to 'Books'
+objective: Verify that canceling the genre update operation and then navigating to 'Books' displays the 'Books' page without updating the genre.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Press the 'Cancel' button to cancel the update operation.
+  - Step 5: Navigate to the 'Books' page by selecting the 'Books' menu item.
+expectedResult: The genre update operation is canceled, and the 'Books' page is displayed without updating the genre in the database.
+explanation: This test case ensures that if a user decides to cancel the update operation and then navigates to 'Books', the update is canceled as expected, and the user is redirected to the 'Books' page.
+

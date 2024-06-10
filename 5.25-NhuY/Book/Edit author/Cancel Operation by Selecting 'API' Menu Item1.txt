@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Edit Operation by Selecting 'API' Menu Item
+objective: Verify that the book edit operation is canceled and no data is updated in the database when the 'API' menu item is selected before submitting the form.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the book edit form, start entering or modifying the book details such as Title, Author, Genre, Description, and Publication date.
+  - Step 4: Before clicking the 'Submit' button, select the 'API' menu item.
+expectedResult: The book edit operation is canceled, no data is updated in the database, and the user is redirected to the API page without saving any changes made to the book details.
+reflect: yes
+explanation: This test case directly addresses the test scenario of canceling an edit operation by navigating away from the edit page, specifically by selecting the 'API' menu item. It clearly outlines the steps to replicate the scenario, the expected outcome of the operation being canceled, and ensures that the application's behavior aligns with the requirement of not saving any changes when the operation is canceled in this manner.
+

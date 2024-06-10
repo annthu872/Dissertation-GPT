@@ -1,0 +1,53 @@
+Rating a product
+Objective: This use case helps user to rate a product's quality for other users to know.
+Actor: Users
+
+Preconditions: User must have loged in to be able to access to tracking order status page. The product user want to rate must be in an order with status "Finished". User is in the tracking order status page at the tab Finished.
+
+Main flow:
+Step 1: User clicks on the Rating button of the product user wants to rate in the Finished order.
+Step 2: System shows a pop up with rating form including the instruction of how to leave a good rating for receiving promotions from the platform, name of the product, the quality rating uses star rating system automatically tick 5 star by the system, there are comment section for user to leave a comment, an add picture button and an add video button. There are also Service rating section with seller rating and shipping rating both use star rating system automatically tick 5 star by the system.
+Step 3: User clicks Done button.
+Step 4: System saves and shows user rating in the product's detail page's rating section.
+
+Alternative flow 1: User adjust quality rating point for product
+At step 3 of the basic flow: User clicks on how many star they want to give in the quality rating section. There are no option to choose 0 star.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 2: User adjust seller rating point for service rating section
+At step 3 of the basic flow: User clicks on how many star they want to give in the Service rating section for seller's rating. There are no option to choose 0 star.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 3: User adjust shipping rating point for service rating section
+At step 3 of the basic flow: User clicks on how many star they want to give in the Service rating section for shipping's rating. There are no option to choose 0 star.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 4: User leave a comment
+At step 3 of the basic flow: User leaves a comment in the comment box.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 5: User add a picture
+At step 3 of the basic flow: User clicks on the Add picture button.
+Step 4: A pop up shows up for user to choose a file. 
+Step 5: User clicks on an image file. The files must be an image file, if user choose a file that is not an image, the system will not save that file.
+Step 6: System shows the image chosen. The add image button and add video button are now change to a camera icon with 4/5 indicates maximum image can be add is 5 and a video icon with 0/1 indicates maximum image can be add is 1.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 6: User add multiple pictures
+At step 3 of the basic flow: User clicks on the Add picture button.
+Step 4: A pop up shows up for user to choose a file. 
+Step 5: User clicks on an image file. The files must be an image file, if user choose a file that is not an image, the system will not save that file.
+Step 6: System shows the image chosen. The add image button and add video button are now change to a camera icon with 4/5 indicates maximum image can be add is 5 and a video icon with 0/1 indicates maximum image can be add is 1.
+Step 7: User clicks on the camera icon.
+Step 8: A pop up shows up for user to choose a file.
+Step 9: User clicks on an image file.
+Step 10: System shows the image chosen next to the previous chosen image.
+Step 11: Repeat step 7 to 10 until it reaches the quantity of images user want or reaches maximum 5 of the system.
+Go back to step 3 in the basic flow and continue with the steps from step 3.
+
+Alternative flow 7: User add a video
+At step 3 of the basic flow: User clicks on the Add video button.
+Step 4: A pop up shows up for user to choose a file. 
+Step 5: User clicks on a video file. The files must be a video file, if user choose a file that is not a video, the system will not save that file.
+Step 6: System shows the video chosen. The add image button and add video button are now change to a camera icon with 0/5 indicates maximum image can be add is 5 and a video icon with 1/1 indicates maximum image can be add is 1.
+Go back to step 3 in the basic flow and continue with the steps from step 3.

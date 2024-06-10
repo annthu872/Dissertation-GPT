@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display without Customer Reviews
+objective: Ensure that the product information page displays all necessary information except for customer reviews and ratings.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Observe the displayed product information, ensuring all sections except 'Customer Reviews and Ratings' are present.
+expectedResult: The product information page should display all sections including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, and Related Products, but without the 'Customer Reviews and Ratings' section.
+explanation: This test case is created to verify that the product information page correctly displays all necessary information for a product without showing customer reviews and ratings, as per the scenario requirement.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display with 'Out of Stock' Status
+objective: Ensure that the product information page correctly displays the 'Out of Stock' status and disables buttons accordingly.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is known to be out of stock.
+  - Step 3: Observe the product's images for an 'Out of stock' sticker.
+  - Step 4: Attempt to interact with any buttons on the page.
+expectedResult: The product's images should have a visible 'Out of stock' sticker, and all interactive buttons on the page should be disabled, preventing any further action.
+explanation: This test case ensures that when a product is out of stock, the system correctly displays an 'Out of stock' sticker on the product's images and disables all buttons to prevent actions such as adding the product to the cart.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Ensure that all product information is correctly displayed when accessed from the homepage
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on a product card displayed on the homepage.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all details including title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Product Information Display' by verifying that all necessary product details are visible when a product is accessed from the homepage, which is a primary entry point for viewing product information.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display from Search Page
+objective: Ensure that all product information is correctly displayed when accessed from the search page
+testSteps:
+  - Step 1: Navigate to the search page and perform a product search.
+  - Step 2: Click on one of the product cards from the search results.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all details including title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+reflect: yes
+explanation: Although this test case explores the product information display from the search page, it still aligns with the overall scenario of ensuring successful product information display. It tests another critical path users might take to view product details, thus reflecting the scenario from a broader perspective.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Information Display from Cart Page
+objective: Ensure that all product information is correctly displayed when accessed from the cart page
+testSteps:
+  - Step 1: Add a product to the cart and navigate to the cart page.
+  - Step 2: Click on the product card in the cart.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all details including title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it ensures that product information is accurately displayed even when accessed from the cart page. It tests the scenario from the perspective of a user who is reviewing their cart before making a purchase, which is a crucial step in the shopping process.
+

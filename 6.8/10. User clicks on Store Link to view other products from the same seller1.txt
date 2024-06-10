@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: View Other Products from the Same Seller via Store Link
+objective: Verify that users can view other products from the same seller by clicking on the Store Link on the product's information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+  - Step 3: On the product's information page, locate and click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The system should navigate the user to the seller's store page, displaying other products offered by the same seller.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of the 'Store Link' on a product's information page, ensuring it leads to the seller's store page where other products from the same seller are displayed. It matches the scenario's requirement for users to be able to view other products from the same seller through the Store Link.
+

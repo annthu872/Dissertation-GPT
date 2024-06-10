@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify cancel operation by selecting 'Authors' menu item during book edit
+objective: Ensure that selecting 'Authors' menu item while editing a book cancels the operation and navigates to the Authors page without updating the book data in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Begin entering or modifying the book data in the provided form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Authors' menu item.
+expectedResult: The application should navigate to the Authors page without updating the book data in the database, and the list of books should not reflect any changes made during the edit attempt.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to verify that the cancel operation (navigating away by selecting 'Authors') works as intended during a book edit process. It checks that the operation does not save any changes, aligning perfectly with the scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Verify data integrity after canceling book edit by selecting 'Authors'
+objective: To confirm that no data is altered in the database for the book being edited when the user cancels the edit operation by selecting 'Authors' from the menu.
+testSteps:
+  - Step 1: Note down or take a screenshot of the current data of a book you are going to edit.
+  - Step 2: Navigate to the book list/details page and click the 'Update' button next to the chosen book.
+  - Step 3: Make some changes in the book data fields but do not submit these changes.
+  - Step 4: Select the 'Authors' menu item to cancel the operation and navigate away from the edit page.
+expectedResult: After navigating to the Authors page, if you return to the book details page of the book you attempted to edit, the data should remain unchanged from what was noted in Step 1, confirming that the database was not updated.
+reflect: yes
+explanation: This test case also accurately reflects the given test scenario by focusing on the data integrity aspect after the cancel operation is performed. It ensures that the application behaves as expected by not saving any changes made during an aborted edit operation, which is the core of the test scenario.
+

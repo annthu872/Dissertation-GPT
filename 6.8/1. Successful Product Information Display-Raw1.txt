@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Ensure that all product information is correctly displayed when accessed from the homepage
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title and description are prominently displayed.
+  - Step 4: Check for high-quality images and videos of the product.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Verify the display of price information, including any discounts or special pricing.
+  - Step 7: Check the real-time stock availability.
+  - Step 8: Verify the display of delivery options and shipping fees.
+  - Step 9: Confirm that the seller's profile, including name, ratings, and reviews, is visible.
+  - Step 10: Ensure there is an option to contact the seller directly.
+  - Step 11: Check for a link to the seller's store page.
+  - Step 12: Verify the display of customer reviews and ratings, including the 3 latest detailed reviews.
+  - Step 13: Confirm that related product cards are displayed.
+expectedResult: All product information should be accurately displayed as per the basic flow, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, customer reviews, and related products.
+explanation: This test case ensures that the basic flow of displaying product information is functional when a user accesses it from the homepage, covering all critical elements listed in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display from Search Page
+objective: Ensure that all product information is correctly displayed when accessed from the search page
+testSteps:
+  - Step 1: Navigate to the search page and perform a product search.
+  - Step 2: Click on one of the product cards from the search results.
+  - Step 3: Follow steps 3 to 13 from Test Case 1.
+expectedResult: All product information should be accurately displayed as per the basic flow, ensuring that users accessing product information from the search page have a consistent experience.
+explanation: This test case verifies that the product information display functionality works correctly when a product is accessed through the search page, maintaining consistency in information display across different access points.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Information Display from Cart Page
+objective: Ensure that all product information is correctly displayed when accessed from the cart page
+testSteps:
+  - Step 1: Add a product to the cart and navigate to the cart page.
+  - Step 2: Click on the product card in the cart.
+  - Step 3: Follow steps 3 to 13 from Test Case 1.
+expectedResult: All product information should be accurately displayed as per the basic flow, ensuring that users can review detailed product information from the cart page before proceeding to checkout.
+explanation: This test case ensures that users can access and verify all relevant product information from the cart page, which is crucial for making informed purchasing decisions.
+
+Test Case: Test Case 4
+testCaseName: Verify Out of Stock Product Information Display
+objective: Ensure that out of stock products display the correct information and disabled buttons
+testSteps:
+  - Step 1: Navigate to a product page that is known to be out of stock.
+  - Step 2: Verify that there is a black sticker on the product's images with the message 'Out of stock'.
+  - Step 3: Ensure that all actionable buttons (e.g., Add to Cart, Buy Now) are disabled.
+expectedResult: The product page should clearly indicate that the product is out of stock with a visible sticker and have all purchasing-related buttons disabled.
+explanation: This test case checks the functionality and user interface adjustments for out of stock products, ensuring that users are clearly informed and prevented from attempting to purchase unavailable items.
+

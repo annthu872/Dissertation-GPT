@@ -1,0 +1,62 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Product Information
+objective: Ensure that all product information is displayed correctly when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that high-quality images of the product from multiple angles are showcased.
+  - Step 5: Ensure that videos demonstrating the product's features and usage are included.
+  - Step 6: Confirm that detailed product specifications are listed.
+  - Step 7: Verify that the current price, including any discounts or special pricing, is displayed.
+  - Step 8: Check real-time stock availability.
+  - Step 9: Ensure available shipping methods, estimated delivery times, and shipping fees are displayed.
+  - Step 10: Verify the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 11: Confirm there is an option to contact the seller directly through the platform's messaging system.
+  - Step 12: Check that a link to the seller's store page on Shopee is provided.
+  - Step 13: Verify that the average rating based on customer reviews is displayed.
+  - Step 14: Ensure that 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown.
+  - Step 15: Confirm that a list of related product cards is displayed.
+expectedResult: All product information, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, and customer reviews, is correctly displayed along with related product cards.
+explanation: This test case ensures that when a user clicks on a product card, they are presented with all necessary product information accurately, fulfilling the basic flow of the Product Information Display scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of Viewing More Customer Reviews
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The 'Customer Reviews and Ratings' section expands, and more customer reviews are displayed to the user.
+explanation: This test case verifies the alternative flow where users can view more customer reviews, enhancing their understanding of the product through other customers' experiences.
+
+Test Case: Test Case 3
+testCaseName: Verify Scrolling Functionality for Related Products
+objective: Ensure that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Related Products' section.
+  - Step 3: Scroll horizontally or vertically (as designed) to view more related product cards.
+expectedResult: Users are able to scroll through the 'Related Products' section and view additional product cards.
+explanation: This test case ensures that the functionality for users to explore more related products through scrolling works as intended, part of the alternative flow.
+
+Test Case: Test Case 4
+testCaseName: Verify Direct Seller Contact Functionality
+objective: Ensure that users can click on seller contact to directly message the seller through the platform's messaging system.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate and click on the 'Seller Contact' option.
+  - Step 3: Verify that the platform's messaging system opens, allowing the user to message the seller directly.
+expectedResult: The platform's messaging system opens, enabling direct communication between the user and the seller.
+explanation: This test case verifies the alternative flow where users have the option to contact the seller directly, enhancing user-seller interaction.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: Ensure that users can navigate to the seller's store page on Shopee by clicking on the Store Link.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate and click on the 'Store Link'.
+  - Step 3: Verify that the user is redirected to the seller's store page on Shopee.
+expectedResult: The user is successfully redirected to the seller's store page on Shopee, where they can view other products from the same seller.
+explanation: This test case ensures that the Store Link functions correctly, allowing users to explore more products from the same seller, as mentioned in the alternative flow.
+

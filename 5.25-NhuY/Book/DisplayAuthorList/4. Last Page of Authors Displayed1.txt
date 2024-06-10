@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Last Page of Authors
+objective: Verify that the application correctly displays the last page of authors when navigating through pagination.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the pagination block below the list of authors.
+  - Step 3: Click on the highest page number visible in the pagination block.
+  - Step 4: If a 'Next' button is visible, click on it until it is no longer available.
+expectedResult: The application displays the last page of authors, showing up to 10 items. The 'Next' button is either not visible or disabled. The columns for id, Name, and Bio are correctly displayed for each author.
+reflect: yes
+explanation: This test case directly addresses the test scenario by ensuring that the application can navigate to and correctly display the last page of authors, including the correct handling of pagination and the display of author information. It matches the scenario's focus on the display and navigation to the last page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Last Page Content When Less Than 10 Authors
+objective: Ensure that the application correctly handles and displays the last page when there are less than 10 authors to display.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: If the total number of authors is less than 10, observe the displayed list.
+  - Step 3: If the total number of authors is more than 10, click on the highest page number in the pagination block until reaching the last page.
+expectedResult: The application displays the last page of authors correctly, even if there are less than 10 authors on this page. All available author records are shown with their id, Name, and Bio.
+reflect: yes
+explanation: This test case complements the first by focusing on a specific condition within the scenario—handling the last page when there are fewer than 10 authors. It ensures that the application's functionality and display requirements are met for this condition, directly reflecting the scenario's aim to verify the display of the last page of authors under varying conditions.
+

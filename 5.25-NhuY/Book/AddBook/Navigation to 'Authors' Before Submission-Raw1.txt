@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Authors' before submitting new book data
+objective: Verify that navigating to 'Authors' before submitting new book data does not save the entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, click on the 'Authors' menu item to navigate away from the book creation page.
+expectedResult: The application should navigate to the 'Authors' page without saving the entered book data, and no new book record should be added to the database.
+explanation: This test case ensures that if a user navigates away from the book creation page by selecting 'Authors' from the menu before submitting the form, the entered data is not saved. It verifies the application's behavior in handling unsaved data when the user navigates away during the creation process.
+
+Test Case: Test Case 2
+testCaseName: Verify data is not saved when canceling book creation
+objective: Ensure that pressing the 'Cancel' button while creating a new book does not save the book data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter data into the book form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Press the 'Cancel' button instead of 'Submit'.
+expectedResult: The application should return to the book list page without saving the entered data, and no new book record should be added to the database.
+explanation: This test case checks the functionality of the 'Cancel' button in the book creation form to ensure that it properly discards the entered data and does not add a new record to the database, aligning with the user's intention to cancel the operation.
+

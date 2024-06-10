@@ -1,0 +1,19 @@
+Track order's status
+Objective: This use case helps user to track every order's status they have bought or cancelled.
+
+Actor: Users
+
+Preconditions: User must have loged in to be able to track order's status. 
+
+Main flow:
+Step 1: User clicks on the personal name and avatar section at the top right of the platform's page.
+Step 2: System redirects user to their personal bought order page. There are a list of all orders user have choose to bought and their information and status. On the top of the list there is a bar with multiple tabs, each tab is named after a state of an order including All, Waiting for payment, Delivering, Waiting to deliver, Finished, Cancelled and Returned. There is a search bar below the status bar for searching order.
+
+Alternative flow 1: User filter order by status
+Step 3: User clicks on the tab with the status name they want system to filter the order.
+Step 4: System shows only order with the corresponding chosen status.
+
+Alternative flow 2: User search order
+Step 3: User fills in one of these options of shop's name, order's ID or product's ID in the search bar.
+Step 4: User press enter.
+Step 5: System shows orders with keyword corresponding to user input.

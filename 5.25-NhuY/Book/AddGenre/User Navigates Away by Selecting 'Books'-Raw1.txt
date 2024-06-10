@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away by Selecting 'Books' During Genre Creation
+objective: Ensure that when a user navigates away by selecting 'Books' during the genre creation process, the data is not saved and the user is redirected to the Books page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The data entered in the form is not saved to the database, and the Books page is displayed with updated data.
+explanation: This test case ensures that the application behaves as expected when a user decides to navigate away from the genre creation process by selecting 'Books'. It verifies that the action interrupts the creation process, preventing any partial data from being saved and correctly redirects the user.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Genre Creation and Navigation Away by 'Books'
+objective: Verify that after successfully adding a new genre, selecting 'Books' navigates away without affecting the newly added record.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Correctly fill in the form fields for the new genre and press the 'Submit' button.
+  - Step 4: Confirm that the new genre has been added by observing it in the list of genres.
+  - Step 5: Select the menu item 'Books'.
+expectedResult: After adding a new genre successfully, selecting 'Books' navigates the user away to the Books page without affecting the newly added genre record.
+explanation: This test case is designed to verify that navigation actions taken after a successful genre creation do not impact the integrity of the newly added record. It ensures that the application's navigation and data handling mechanisms work independently and correctly.
+

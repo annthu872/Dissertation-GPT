@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity to Zero Before Adding to Cart
+objective: Verify that the system prevents the user from adjusting the product quantity to less than one before adding it to the shopping cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Attempt to adjust the product quantity to zero by clicking the minus button next to the quantity field.
+expectedResult: The system should not allow the quantity to be adjusted to less than one, keeping the quantity at one.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the system prevents users from adjusting the quantity of a product to less than one before adding it to the cart. It follows the exact flow where a user might attempt to reduce the quantity to an invalid number (less than one) and checks for the correct system behavior.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity to Negative Before Adding to Cart
+objective: Verify that the system prevents the user from adjusting the product quantity to a negative number before adding it to the shopping cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Attempt to input a negative number directly into the quantity field if possible, or repeatedly click the minus button next to the quantity field.
+expectedResult: The system should prevent the quantity from being adjusted to a negative number, either by reverting to one or not allowing the input.
+reflect: yes
+explanation: This test case is also directly relevant to the test scenario. It explores a different method (inputting a negative number directly or using the minus button excessively) by which a user might try to set the quantity to less than one. It ensures that the system has safeguards against both direct input of invalid numbers and attempts to decrease the quantity to an invalid state using the UI controls, thus reflecting the scenario's requirement.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Create Genre Without Entering Description
+objective: Verify that the genre can be created without entering a description and is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'CreateGenre_WithoutDescription,' by specifically testing the ability to create a genre without providing a description. It aligns perfectly with the scenario's requirement.
+
+Test Case: Test Case 3
+testCaseName: Create Genre Without Description and Encounter an Error
+objective: Verify that the application displays an error message when an error occurs during the creation of a new genre without a description.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button.
+expectedResult: An error message is displayed, indicating that the new genre record could not be added due to an error.
+reflect: yes
+explanation: Although this test case introduces an error condition, it still reflects the given test scenario by focusing on the process of creating a genre without a description. It tests the system's behavior under error conditions without deviating from the scenario's core requirement.
+

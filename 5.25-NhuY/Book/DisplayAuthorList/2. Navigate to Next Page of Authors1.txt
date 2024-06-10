@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Next Page of Authors Using Next Button
+objective: Verify that the user can navigate to the next page of authors by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the page.
+  - Step 4: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on a new page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to navigate to the next page of authors. It specifically tests the functionality of the 'Next' button in the pagination block, aligning perfectly with the scenario's objective.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Authors Using Page Number
+objective: Verify that the user can navigate to the next page of authors by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the first page.
+  - Step 4: Identify the pagination block below the list of authors.
+  - Step 5: Click on the number '2' or the next sequential number available in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on the page corresponding to the number clicked in the pagination block.
+reflect: yes
+explanation: Although this test case explores a different method (using page numbers) to navigate to the next page of authors, it still directly supports the given test scenario's goal of navigating to the next page of authors. It provides an alternative navigation method, thus reflecting the scenario's broader objective of page navigation within the authors' section.
+

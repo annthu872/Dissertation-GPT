@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display for In-Stock Product
+objective: Ensure that all product information is correctly displayed for an in-stock product, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is in stock.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Verify that a detailed product description is provided.
+  - Step 5: Verify that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Verify that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Verify that the current price of the product is displayed.
+  - Step 9: Verify that any discounts, offers, or special pricing available are highlighted.
+  - Step 10: Verify that real-time stock availability for the product is shown.
+  - Step 11: Verify that available shipping methods and estimated delivery times are displayed.
+  - Step 12: Verify that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 13: Verify that an option to contact the seller directly through the platform's messaging system is provided.
+  - Step 14: Verify that a link to the seller's store page on the platform is provided.
+  - Step 15: Verify that the average rating based on customer reviews is displayed.
+  - Step 16: Verify that 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown.
+  - Step 17: Verify that a list of related product cards is displayed.
+expectedResult: All specified product information should be correctly displayed for an in-stock product.
+explanation: This test case ensures that the basic flow of displaying product information is correctly implemented for products that are in stock, covering all aspects mentioned in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display for Out-of-Stock Product
+objective: Ensure that the product information display correctly indicates when a product is out of stock.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is out of stock.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Verify that a detailed product description is provided.
+  - Step 5: Verify that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Verify that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Verify that the current price of the product is displayed.
+  - Step 9: Verify that any discounts, offers, or special pricing available are highlighted.
+  - Step 10: Verify that a message indicating the product is out of stock is shown.
+  - Step 11: Verify that available shipping methods and estimated delivery times are displayed, if applicable.
+  - Step 12: Verify that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 13: Verify that an option to contact the seller directly through the platform's messaging system is provided.
+  - Step 14: Verify that a link to the seller's store page on the platform is provided.
+  - Step 15: Verify that the average rating based on customer reviews is displayed.
+  - Step 16: Verify that 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown.
+  - Step 17: Verify that a list of related product cards is displayed.
+expectedResult: All specified product information should be correctly displayed for an out-of-stock product, with a clear indication that the product is out of stock.
+explanation: This test case verifies that the system correctly displays product information for out-of-stock products, including a clear message about the stock status, ensuring users are well informed.
+

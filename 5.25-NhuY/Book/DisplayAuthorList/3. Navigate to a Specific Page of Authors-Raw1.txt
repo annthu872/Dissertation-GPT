@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Authors Page via Navbar
+objective: Verify that users can navigate to the Authors page using the navigation bar and see the list of authors.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the navigation bar.
+  - Step 3: Click on the 'Authors' item in the navigation bar.
+expectedResult: The application displays the Authors page with a list of authors, showing the columns for id, Name, and Bio. Up to 10 authors are displayed on the page.
+explanation: This test case ensures that users can successfully navigate to the Authors page using the navigation bar, which is a primary method of navigation. It verifies the functionality and the display of the initial list of authors as per the main scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality on Authors Page
+objective: Verify that users can navigate through different pages of authors using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the Authors page by clicking on the 'Authors' item in the navigation bar.
+  - Step 2: Scroll down to the bottom of the list of authors to locate the pagination block.
+  - Step 3: Click on the 'Next' button in the pagination block.
+  - Step 4: Alternatively, click on a page number in the pagination block to navigate to that specific page.
+expectedResult: Upon clicking the 'Next' button, the application displays the next 10 records of authors. When a specific page number is clicked, the application displays the authors corresponding to that page. Each page shows up to 10 items, with columns for id, Name, and Bio.
+explanation: This test case verifies the pagination functionality on the Authors page, allowing users to navigate through different sets of authors. It ensures that the pagination controls work as expected for both sequential and direct page selection.
+

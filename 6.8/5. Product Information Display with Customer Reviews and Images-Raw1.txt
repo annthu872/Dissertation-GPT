@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Ensure that all product information is correctly displayed including title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check that a detailed product description is provided.
+  - Step 5: Ensure that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Check that the current price of the product is displayed along with any discounts or special pricing.
+  - Step 9: Confirm that real-time stock availability is shown.
+  - Step 10: Verify that available shipping methods and estimated delivery times are displayed.
+  - Step 11: Check that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 12: Confirm that an option to contact the seller directly is provided.
+  - Step 13: Verify that a link to the seller's store page is available.
+  - Step 14: Check that the average rating based on customer reviews is displayed.
+  - Step 15: Confirm that 3 latest detailed reviews with ratings, written feedback, and user-uploaded images are shown.
+  - Step 16: Verify that a list of related product cards is displayed.
+expectedResult: All product information is displayed correctly as per the specifications.
+explanation: This test case ensures that the basic flow of displaying product information, as described in the use case, is followed correctly, covering all aspects of product information display.
+
+Test Case: Test Case 2
+testCaseName: Verify Customer Reviews Expansion
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 4: Verify that more reviews are displayed upon expansion.
+expectedResult: The 'Customer Reviews and Ratings' section expands to show more reviews.
+explanation: This test case verifies the functionality of expanding the customer reviews section, allowing users to view more detailed reviews, which is an alternative flow in the use case.
+
+Test Case: Test Case 3
+testCaseName: Verify Out of Stock Product Display
+objective: Ensure that out of stock products are correctly marked and buttons are disabled.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on an out of stock product card.
+  - Step 3: Verify that a black sticker with the message 'Out of stock' is displayed on the product's images.
+  - Step 4: Confirm that buttons on the page are disabled.
+expectedResult: Out of stock products are marked with a black sticker, and buttons are disabled.
+explanation: This test case checks the alternative flow for out of stock products, ensuring that they are correctly marked and that the user interface reflects the unavailability for purchase.
+

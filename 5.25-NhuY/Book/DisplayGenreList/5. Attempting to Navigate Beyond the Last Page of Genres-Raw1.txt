@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Attempting to Navigate Beyond the Last Page of Genres
+objective: Verify that the application prevents navigation beyond the last page of genres and handles the attempt gracefully
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Identify the last page number by observing the pagination block.
+  - Step 3: Click the 'Next' button on the last page of genres.
+  - Step 4: Alternatively, if there is a way to input a page number, enter a page number greater than the last page and submit.
+expectedResult: The application should either disable the 'Next' button on the last page, not respond to the click, or display a message indicating the user is on the last page. If a page number greater than the last is entered, the application should display an error message or redirect the user to the last page.
+explanation: This test case ensures that the application's navigation logic correctly handles attempts to navigate beyond the available data set. It is directly related to the scenario of navigating through the genres and specifically tests the application's behavior at the boundary condition (the last page).
+

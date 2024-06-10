@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Attempt to create a new genre without entering a name
+objective: Verify that the system prevents the creation of a new genre without a name and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the genre record is not added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'CreateGenre_WithoutName' by attempting to create a genre without providing a name and expecting the system to prevent the creation and display an error message. It validates the system's handling of missing mandatory information.
+

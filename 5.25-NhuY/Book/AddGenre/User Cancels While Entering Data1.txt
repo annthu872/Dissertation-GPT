@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Genre Creation Before Submission
+objective: Verify that the genre creation process can be canceled before submission and no data is saved
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should display the list of genre records.
+reflect: yes
+explanation: This test case directly addresses the scenario of a user canceling the data entry process for creating a new genre before submission. It checks if the application behaves as expected by not saving the data and returning the user to the genre list, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away From Genre Creation Form Before Submission
+objective: Verify that navigating away from the genre creation form before submission does not save the data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the entered data in the genre creation form and should display the selected page.
+reflect: yes
+explanation: Although this test case explores a different user action (navigating away instead of explicitly pressing 'Cancel'), it still falls under the umbrella of the user canceling the data entry process. It tests the application's handling of unsaved data when the user exits the form in a manner other than the 'Cancel' button, which is a relevant aspect of the broader scenario of canceling while entering data.
+

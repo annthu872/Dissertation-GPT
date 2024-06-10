@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Edit Operation Before Data Submission
+objective: Verify that the genre edit operation can be canceled before data submission and ensure no data is updated in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the genre edit form, start entering new values for the genre details such as Name and Description.
+  - Step 4: Before pressing the 'Submit' button, click the 'Cancel' button.
+expectedResult: The application should not update the genre in the database and should redirect the user to the list of genre records, displaying them without applying the changes.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the cancel operation before data submission. It specifically tests the functionality of the 'Cancel' button in an edit operation context, ensuring that no data is updated in the database if the user decides to cancel the operation before submitting the form.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away from Genre Edit Page Before Submission
+objective: Ensure that navigating away from the genre edit page before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering or modifying the genre's Name and Description in the provided form fields.
+  - Step 4: Without pressing the 'Submit' button, select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not update the genre in the database and should display the selected page without applying any changes to the genre data.
+reflect: yes
+explanation: Although this test case explores a different user action (navigating away instead of explicitly clicking 'Cancel'), it still directly addresses the given test scenario's objective: to ensure that an operation can be canceled (or not completed) without submitting data. It tests the application's ability to handle unsaved changes properly, which is a crucial aspect of the cancel operation before data submission.
+

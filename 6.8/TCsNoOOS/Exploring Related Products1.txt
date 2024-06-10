@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Product Information
+objective: Ensure that all product information is displayed correctly when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that high-quality images of the product from multiple angles are showcased.
+  - Step 5: Ensure that videos demonstrating the product's features and usage are included.
+  - Step 6: Confirm that detailed product specifications are listed.
+  - Step 7: Verify that the current price, including any discounts or special pricing, is displayed.
+  - Step 8: Check real-time stock availability.
+  - Step 9: Ensure available shipping methods, estimated delivery times, and shipping fees are displayed.
+  - Step 10: Verify the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 11: Confirm there is an option to contact the seller directly through the platform's messaging system.
+  - Step 12: Check that a link to the seller's store page on Shopee is provided.
+  - Step 13: Verify that the average rating based on customer reviews is displayed.
+  - Step 14: Ensure that 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown.
+  - Step 15: Confirm that a list of related product cards is displayed.
+expectedResult: All product information, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, and customer reviews, is correctly displayed along with related product cards.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Exploring Related Products' by ensuring that the list of related product cards is displayed as part of the product information, which is crucial for exploring related products.
+
+Test Case: Test Case 3
+testCaseName: Verify Scrolling Functionality for Related Products
+objective: Ensure that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Related Products' section.
+  - Step 3: Scroll horizontally or vertically (as designed) to view more related product cards.
+expectedResult: Users are able to scroll through the 'Related Products' section and view additional product cards.
+reflect: yes
+explanation: This test case directly tests the 'Exploring Related Products' scenario by ensuring users can view and explore more related product cards through scrolling functionality, which is a key aspect of exploring related products.
+

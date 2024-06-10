@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with All Details Present
+objective: Ensure that all product information is displayed correctly when all details are present.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is known to have all details filled.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that high-quality images and videos of the product are showcased.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Ensure the current price, including any discounts or special pricing, is displayed.
+  - Step 7: Verify real-time stock availability is shown.
+  - Step 8: Check that shipping methods, estimated delivery times, and shipping fees are displayed.
+  - Step 9: Confirm the seller's profile, including their name, ratings, and reviews, is visible.
+  - Step 10: Ensure there is an option to contact the seller directly.
+  - Step 11: Verify the link to the seller's store page is present.
+  - Step 12: Check that the average rating and 3 latest detailed reviews are displayed under Customer Reviews and Ratings.
+  - Step 13: Confirm that a list of related product cards is displayed.
+expectedResult: All product information, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, and customer reviews, should be correctly displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by ensuring all product details are displayed when present, which is the ideal scenario for product information display.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display with Missing Details
+objective: Ensure that the product information display handles missing details gracefully.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is known to have some details missing (e.g., no videos, missing specifications).
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that available high-quality images of the product are showcased.
+  - Step 5: Confirm that any available product specifications are listed.
+  - Step 6: Ensure the current price, including any discounts or special pricing, is displayed.
+  - Step 7: Verify real-time stock availability is shown.
+  - Step 8: Check that available shipping methods, estimated delivery times, and shipping fees are displayed.
+  - Step 9: Confirm the seller's profile, including their name, ratings, and reviews, is visible.
+  - Step 10: Ensure there is an option to contact the seller directly.
+  - Step 11: Verify the link to the seller's store page is present.
+  - Step 12: Check that the average rating and any available detailed reviews are displayed under Customer Reviews and Ratings.
+  - Step 13: Confirm that a list of related product cards is displayed.
+expectedResult: Product information is displayed correctly with available details. Missing details should not disrupt the layout or functionality of the product information page.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by verifying how the system handles and displays product information when certain details are missing, ensuring the scenario of partial product information display due to missing details is tested.
+

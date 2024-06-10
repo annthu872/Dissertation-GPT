@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Last Page of Authors
+objective: Verify that the application correctly displays the last page of authors when navigating through pagination.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the pagination block below the list of authors.
+  - Step 3: Click on the highest page number visible in the pagination block.
+  - Step 4: If a 'Next' button is visible, click on it until it is no longer available.
+expectedResult: The application displays the last page of authors, showing up to 10 items. The 'Next' button is either not visible or disabled. The columns for id, Name, and Bio are correctly displayed for each author.
+explanation: This test case ensures that users can navigate to the last page of authors using the pagination feature, and verifies that the last page displays the authors' information correctly. It directly matches the scenario name by focusing on the display and navigation to the last page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Last Page Content When Less Than 10 Authors
+objective: Ensure that the application correctly handles and displays the last page when there are less than 10 authors to display.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: If the total number of authors is less than 10, observe the displayed list.
+  - Step 3: If the total number of authors is more than 10, click on the highest page number in the pagination block until reaching the last page.
+expectedResult: The application displays the last page of authors correctly, even if there are less than 10 authors on this page. All available author records are shown with their id, Name, and Bio.
+explanation: This test case verifies that the application can handle and display pages with less than 10 authors, which is a common scenario towards the end of the authors list. It ensures the functionality and display requirements are met regardless of the number of authors on the last page.
+

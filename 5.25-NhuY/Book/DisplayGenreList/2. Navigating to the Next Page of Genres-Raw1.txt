@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area.
+  - Step 3: Observe the list of genres displayed on the first page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click the 'Next' button located in the pagination block.
+expectedResult: The application should navigate to the next page, displaying the next 10 records of genres. The list should include the columns: id, Name, and Description for each genre.
+explanation: This test case ensures that the pagination feature works as expected, allowing users to navigate through the list of genres by using the 'Next' button. It directly relates to the test scenario of navigating to the next page of genres, focusing on the functionality of the 'Next' button in the pagination block.
+
+Test Case: Test Case 2
+testCaseName: Navigate to the Second Page of Genres Using Page Number
+objective: Verify that the user can navigate to the second page of genres by clicking the page number in the pagination block and that the correct records are displayed.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area.
+  - Step 3: Observe the list of genres displayed on the first page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on the number '2' in the pagination block to navigate to the second page.
+expectedResult: The application should navigate to the second page, displaying the next 10 records of genres. The list should include the columns: id, Name, and Description for each genre.
+explanation: This test case verifies the functionality of navigating through pages by selecting a specific page number in the pagination block. It ensures that users can directly jump to another page of genres, in this case, the second page, and see the next set of records as expected.
+

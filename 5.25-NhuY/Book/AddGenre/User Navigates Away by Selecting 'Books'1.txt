@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away by Selecting 'Books' During Genre Creation
+objective: Ensure that when a user navigates away by selecting 'Books' during the genre creation process, the data is not saved and the user is redirected to the Books page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The data entered in the form is not saved to the database, and the Books page is displayed with updated data.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by simulating a user navigating away from the genre creation process by selecting 'Books'. It checks the critical behavior of not saving the data and redirecting to the Books page, which is the core of the test scenario.
+

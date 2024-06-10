@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Ensure that all product information is correctly displayed including title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check that a detailed product description is provided.
+  - Step 5: Ensure that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Check that the current price of the product is displayed along with any discounts or special pricing.
+  - Step 9: Confirm that real-time stock availability is shown.
+  - Step 10: Verify that available shipping methods and estimated delivery times are displayed.
+  - Step 11: Check that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 12: Ensure there is an option to contact the seller directly through the platform's messaging system.
+  - Step 13: Verify that a link to the seller's store page on the platform is provided.
+  - Step 14: Confirm that the average rating based on customer reviews is displayed.
+  - Step 15: Check that 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+expectedResult: All product information including title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, and customer reviews are correctly displayed as per the basic flow.
+explanation: This test case ensures that the product information display functionality works as intended, providing users with all necessary details to make an informed purchase decision.
+
+Test Case: Test Case 2
+testCaseName: Verify Customer Reviews and Ratings Expansion
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 4: Verify that more customer reviews are displayed upon expansion.
+expectedResult: The 'Customer Reviews and Ratings' section expands to show more customer reviews, beyond the initial 3 detailed reviews.
+explanation: This test case verifies the functionality allowing users to view more customer reviews, which can influence their purchase decision by providing additional feedback from other buyers.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: Ensure that users can navigate to the seller's store page on the platform by clicking on the Store Link.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate the 'Store Link' that links to the seller's store page on the platform.
+  - Step 3: Click on the 'Store Link'.
+  - Step 4: Verify that the user is redirected to the seller's store page on the platform.
+expectedResult: The user is successfully redirected to the seller's store page on the platform, where they can view other products from the same seller.
+explanation: This test case ensures that the Store Link functions correctly, allowing users to explore more products from the same seller, potentially influencing their purchase decision.
+

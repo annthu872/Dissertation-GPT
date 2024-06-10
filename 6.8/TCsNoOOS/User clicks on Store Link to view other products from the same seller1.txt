@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Store Link Navigation from Product Page
+objective: Ensure that the Store Link on the product page navigates the user to the seller's store page to view other products from the same seller.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+  - Step 3: On the product's information page, locate and click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The user is redirected to the seller's store page, where other products from the same seller are displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the Store Link on a product page, ensuring it leads to the seller's store page to view other products. The steps are clear and directly test the scenario's objective.
+

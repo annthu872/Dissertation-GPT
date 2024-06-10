@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Incorrectly Entered Description
+objective: Verify that the system displays incorrect data messages when a genre description is entered incorrectly during an update operation.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter or modify the genre's name to a valid name.
+  - Step 4: Enter an incorrectly formatted description for the genre.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display messages indicating the description was entered incorrectly.
+explanation: This test case ensures that the system correctly validates genre descriptions during the update process and provides feedback when the input does not meet the expected format or criteria.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Correctly Entered Data but Server Error Occurs
+objective: Verify that the system displays an error message when a server error occurs after submitting correctly entered genre data.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter a valid name in the genre's name field.
+  - Step 4: Enter a valid description in the genre's description field.
+  - Step 5: Press the 'Submit' button and simulate a server error (This step might involve using a testing tool or a mock to simulate the server error condition).
+expectedResult: The system should display an error message indicating that an error occurred while updating the genre.
+explanation: This test case checks the system's behavior when an update operation is correctly performed by the user, but an unexpected server error prevents the genre from being updated.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Update Operation
+objective: Verify that no changes are made to the genre data when the 'Cancel' button is pressed during an update operation.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin to enter or modify the genre's name and description.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the genre in the database and should display the list of genre records, showing that no changes have been made.
+explanation: This test case ensures that the system properly cancels the update operation without making any changes to the genre data when the user decides not to proceed with the update.
+

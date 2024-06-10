@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify messaging seller from product information page
+objective: Ensure that users can initiate a message to the seller from the product information page
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section.
+  - Step 4: Click on the 'Seller Contact' option to initiate messaging.
+expectedResult: The platform's messaging system should open, allowing the user to compose and send a message to the seller.
+explanation: This test case ensures that the functionality to contact the seller directly through the platform's messaging system, as described in the basic flow, works as intended. It directly matches the scenario name by testing the user's ability to click on seller contact to message the seller.
+
+Test Case: Test Case 2
+testCaseName: Verify out of stock product disables contact seller option
+objective: Ensure that the 'Seller Contact' option is disabled for out of stock products
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on an out of stock product card to view its details. Look for a product with a 'Out of stock' sticker.
+  - Step 3: Scroll to the 'Seller Profile' section.
+  - Step 4: Attempt to click on the 'Seller Contact' option.
+expectedResult: The 'Seller Contact' option should be disabled or unclickable for out of stock products.
+explanation: This test case verifies that the system correctly disables the option to contact the seller for products that are out of stock, ensuring users are not led to believe they can inquire about purchasing unavailable items.
+

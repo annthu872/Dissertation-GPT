@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away to 'Home' Before Submitting New Genre
+objective: Verify that navigating away to 'Home' before submitting a new genre cancels the operation and does not save data to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away.
+expectedResult: The application does not save the entered data to the database and the Home page is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that the action of navigating away to 'Home' before submitting a new genre form cancels the operation and ensures no data is saved. It follows the exact steps a user would take to trigger this scenario and checks for the expected outcome.
+

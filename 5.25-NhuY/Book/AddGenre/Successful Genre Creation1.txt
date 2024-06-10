@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created and added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new genre is added to the list of genres.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Genre Creation' by outlining steps to create a genre with valid data and expecting a success message, which indicates successful creation.
+

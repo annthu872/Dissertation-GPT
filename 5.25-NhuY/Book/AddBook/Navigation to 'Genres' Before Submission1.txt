@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Genres' before submitting new book data
+objective: Verify that navigating to 'Genres' from the book creation form before submitting discards the entered data and displays the 'Genres' page.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book creation form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Genres'.
+expectedResult: The book creation form is closed, the entered data is not saved to the database, and the 'Genres' page is displayed with updated data.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Navigation to 'Genres' Before Submission' by verifying the behavior of navigating away from the book creation form without submitting it. It checks if the action discards the entered data and correctly navigates to the 'Genres' page, which is the core of the given test scenario.
+

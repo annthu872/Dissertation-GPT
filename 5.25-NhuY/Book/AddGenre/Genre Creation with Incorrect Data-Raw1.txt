@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Empty Name Field
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with the Name field left empty
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field cannot be empty.
+explanation: This test case ensures that the system validates the Name field for non-empty inputs during the genre creation process.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation with Excessively Long Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with a Name that exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name that exceeds the character limit (e.g., 256 characters long).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field exceeds the character limit.
+explanation: This test case checks that the system enforces a character limit on the Name field during the genre creation process.
+
+Test Case: Test Case 3
+testCaseName: Genre Creation with Invalid Characters in Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with invalid characters in the Name field
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name containing invalid characters (e.g., special symbols).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field contains invalid characters.
+explanation: This test case ensures that the system validates the Name field for character validity during the genre creation process.
+
+Test Case: Test Case 4
+testCaseName: Cancel Genre Creation
+objective: Verify that no data is saved and the user is redirected to the genre list page when the 'Cancel' button is pressed during genre creation
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the genre list page without any new genre being added to the database.
+explanation: This test case verifies that the cancel operation works as expected, discarding any entered data and not adding a new genre record.
+

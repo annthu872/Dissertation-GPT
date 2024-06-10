@@ -1,0 +1,66 @@
+Buy product
+
+Objective: This use case helps user to buy product.
+Actor: Users
+
+Preconditions: User must have logged in to be able to access to buy product. User is in the shopping cart page.
+
+Main flow:
+Step 1: User choose what product they want to buy by clicking the tick box at the head of the product's block. 
+Step 2: User clicks the buy button at the right bottom of the screen.
+Step 3: System redirects user to the payment page. There should be the default deliver location already chosen for the user in the delivery location section, the information section of the product including name, options, quantity, price, which shop sells it, promotion information, the shipping information section, the platform's promotion information section and the payment section with the default payment method.
+Step 4: User clicks the order button.
+Step 5: System removes the product from the shopping cart and forms a new order of that product.
+
+Alternative flow 1: User choose what store they want to buy from
+At step 1 of the basic flow: In case all the products they want to buy come from one store, user choose by clicking the tick box at the head of the store.
+Step 2: System automatically ticks all the product comes from that store in the user's shopping cart.
+Go back to step 2 in the basic flow and continue with the steps from step 2.
+
+Alternative flow 2: User change delivery location to one of the saved location
+At step 4 of the basic flow: User clicks on Change title in the delivery location section.
+Step 5: User choose other saved location options.
+Step 6: System changes the location information in the delivery location section corresponding to what user have chosen.
+Go back to step 4 in the basic flow and continue with the steps from step 4.
+
+Alternative flow 3: User change delivery location to a new location
+At step 4 of the basic flow: User clicks on Change title in the delivery location section.
+Step 5: User clicks Add new location button.
+Step 6: User fills in name, a correct name contains only letter and cannot be less than 2 letters. If user fills in wrong format, a notification will appears under the incorrect field and user cannot add location.
+Step 7: User fills in phone number, a correct phone number must be in format (+84) xxx xxx xxx with all the x is number. If user fills in wrong format, a notification will appears under the incorrect field and user cannot add location.
+Step 8: User chooses city by clicking one of the cities provided by the platform.
+Step 9: User chooses district by clicking one of the districts provided by the platform.
+Step 10: User chooses ward by clicking one of the wards provided by the platform.
+Step 11: User fills in the exact location's address. A correct address must be an address available on the map provided by platform, if it cannot be found in the map, a notification will appears under the incorrect field and user cannot add location.
+Step 12: User choose between two options if the location is their own house or their working place.
+Step 13: User clicks on Finish button to save the location.
+Step 14: System changes the location information in the delivery location section corresponding to what user have chosen.
+Go back to step 4 in the basic flow and continue with the steps from step 4.
+
+Alternative flow 4: User adds shop or product's promotion
+At step 4 of the basic flow: User clicks on Choose voucher in the product's information section.
+Step 5: System shows a list of available vouchers.
+Step 6: User chooses one of the available vouchers by clicking on it.
+Step 7: System applies the voucher and recalculate the product's price.
+Go back to step 4 in the basic flow and continue with the steps from step 4.
+
+Alternative flow 5: User adds platform's promotion
+At step 4 of the basic flow: User clicks on Choose voucher in the platform's promotion information section.
+Step 5: System shows a list of available vouchers.
+Step 6: User chooses one of the available vouchers by clicking on it.
+Step 7: System applies the voucher and recalculate the order's price.
+Go back to step 4 in the basic flow and continue with the steps from step 4.
+
+Alternative flow 6: User changes shipping option
+At step 4 of the basic flow: User clicks on Change title in the shipping information section.
+Step 5: System shows a list of available shipping options.
+Step 6: User chooses one of the available shipping options by clicking on it.
+Step 7: System changes shipping method and recalculate the order's price.
+Go back to step 4 in the basic flow and continue with the steps from step 4.
+
+Alternative flow 7: User changes payment method
+At step 4 of the basic flow: User clicks on Change title in the payment method section.
+Step 5: System shows a list of available payment methods.
+Step 6: User chooses one of the available payment methods by clicking on it.
+Step 7: System changes payment method.
+Go back to step 4 in the basic flow and continue with the steps from step 4.

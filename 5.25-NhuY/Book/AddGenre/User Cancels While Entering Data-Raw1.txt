@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Genre Creation Before Submission
+objective: Verify that the genre creation process can be canceled before submission and no data is saved
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should display the list of genre records.
+explanation: This test case ensures that when a user decides to cancel the creation of a new genre after entering some data but before pressing the 'Submit' button, the data is not saved, and the user is redirected back to the list of genres. It directly tests the cancel operation scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away From Genre Creation Form Before Submission
+objective: Verify that navigating away from the genre creation form before submission does not save the data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the entered data in the genre creation form and should display the selected page.
+explanation: This test case verifies that if a user navigates away from the genre creation form to another section of the application without submitting the form, the entered data is not saved. It tests the user's ability to cancel the creation process by navigating away, as described in the cancel operation scenario.
+

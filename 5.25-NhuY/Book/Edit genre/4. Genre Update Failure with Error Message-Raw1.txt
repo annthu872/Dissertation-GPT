@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Update with Incorrect Data
+objective: Ensure that the application displays error messages when incorrect data is entered during genre update.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter incorrect data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display error messages related to the incorrect data entered.
+explanation: This test case ensures that the system validates input data during the genre update process and provides feedback to the user when the data does not meet the expected format or requirements.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Update Failure with System Error Message
+objective: To confirm that the application displays an appropriate error message when a system error occurs during the genre update process.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Simulate a system error or disconnect the network before pressing 'Submit'.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the genre could not be updated due to a system error.
+explanation: This test case is designed to verify that the application handles system errors gracefully during the genre update process and informs the user appropriately.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Genre Update
+objective: To ensure that no data is updated in the database when the 'Cancel' button is pressed during genre update.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not update the genre in the database and should display the list of genre records.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to abort the update process without making any changes to the database.
+

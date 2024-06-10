@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Ensure that all product information is correctly displayed when accessed from the homepage
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title and description are prominently displayed.
+  - Step 4: Check for high-quality images and videos of the product.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Verify the display of price information, including any discounts or special pricing.
+  - Step 7: Check the real-time stock availability.
+  - Step 8: Verify the display of delivery options and shipping fees.
+  - Step 9: Confirm that the seller's profile, including name, ratings, and reviews, is visible.
+  - Step 10: Ensure there is an option to contact the seller directly.
+  - Step 11: Check for a link to the seller's store page.
+  - Step 12: Verify the display of customer reviews and ratings, including the 3 latest detailed reviews.
+  - Step 13: Confirm that related product cards are displayed.
+expectedResult: All product information should be accurately displayed as per the basic flow, including title, description, images, videos, specifications, price, stock availability, delivery options, seller information, customer reviews, and related products.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Product Information Display' by ensuring that all aspects of product information are correctly displayed when accessed from the homepage.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display from Search Page
+objective: Ensure that all product information is correctly displayed when accessed from the search page
+testSteps:
+  - Step 1: Navigate to the search page and perform a product search.
+  - Step 2: Click on one of the product cards from the search results.
+  - Step 3: Follow steps 3 to 13 from Test Case 1.
+expectedResult: All product information should be accurately displayed as per the basic flow, ensuring that users accessing product information from the search page have a consistent experience.
+reflect: yes
+explanation: Although this test case involves accessing product information from the search page, it still tests the 'Successful Product Information Display' scenario by ensuring that all product details are correctly displayed, similar to accessing from the homepage. It tests the same functionality but from a different entry point.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Information Display from Cart Page
+objective: Ensure that all product information is correctly displayed when accessed from the cart page
+testSteps:
+  - Step 1: Add a product to the cart and navigate to the cart page.
+  - Step 2: Click on the product card in the cart.
+  - Step 3: Follow steps 3 to 13 from Test Case 1.
+expectedResult: All product information should be accurately displayed as per the basic flow, ensuring that users can review detailed product information from the cart page before proceeding to checkout.
+reflect: yes
+explanation: This test case also reflects the 'Successful Product Information Display' scenario by verifying that product information is accessible and correctly displayed from the cart page, ensuring a consistent user experience across different parts of the site.
+

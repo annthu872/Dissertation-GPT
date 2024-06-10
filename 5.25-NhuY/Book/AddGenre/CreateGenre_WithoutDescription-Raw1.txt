@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Create Genre Without Entering Description
+objective: Verify that the genre can be created without entering a description and is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+explanation: This test case ensures that the description field is not mandatory for creating a new genre record. It directly tests the scenario's requirement by omitting the description during genre creation.
+
+Test Case: Test Case 2
+testCaseName: Create Genre With Description Then Cancel
+objective: Verify that when a user cancels the genre creation process after entering data, the data is not saved to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a name in the 'Name' field.
+  - Step 4: Enter some text in the 'Description' field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The genre creation process is cancelled, no data is saved to the database, and the user is redirected to the list of genres without the new genre being added.
+explanation: This test case checks the functionality of the 'Cancel' button in the genre creation form, ensuring that no data is saved when the creation process is cancelled, regardless of whether the description was entered.
+
+Test Case: Test Case 3
+testCaseName: Create Genre Without Description and Encounter an Error
+objective: Verify that the application displays an error message when an error occurs during the creation of a new genre without a description.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button.
+expectedResult: An error message is displayed, indicating that the new genre record could not be added due to an error.
+explanation: This test case is designed to verify the application's error handling capabilities during the genre creation process, specifically when the description is omitted. It ensures that users are properly informed when an error prevents the addition of a new genre.
+

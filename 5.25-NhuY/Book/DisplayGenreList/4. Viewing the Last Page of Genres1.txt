@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Viewing the Last Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the last page of genres by repeatedly clicking the 'Next' button and ensure the last page displays the correct genres information.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the list of genres displayed on the first page.
+  - Step 3: Click the 'Next' button below the list of genres.
+  - Step 4: Repeat Step 3 until the 'Next' button is disabled (indicating you have reached the last page).
+  - Step 5: Observe the list of genres on the last page.
+expectedResult: The last page of genres should be displayed with up to 10 items, including their 'id', 'Name', and 'Description'. The 'Next' button should be disabled, indicating that the user is on the last page.
+reflect: yes
+explanation: This test case directly addresses the test scenario of viewing the last page of genres. It specifically tests the functionality and user experience of navigating through the genres using the 'Next' button until reaching the last page, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Viewing the Last Page of Genres Using Page Number
+objective: Verify that the user can navigate to the last page of genres by clicking the last page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the pagination block below the list of genres.
+  - Step 3: Click the last page number shown in the pagination block.
+  - Step 4: Observe the list of genres on the last page.
+expectedResult: The user should be taken directly to the last page of genres, displaying up to 10 items with their 'id', 'Name', and 'Description'.
+reflect: yes
+explanation: Although this test case explores a different navigation method (direct page selection) than the first test case, it still accurately reflects the given test scenario of viewing the last page of genres. It tests the functionality of the pagination block, which is an essential part of the user interface for navigating between pages of genres, including reaching the last page directly.
+

@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Next Page of Authors Using Next Button
+objective: Verify that the user can navigate to the next page of authors by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the page.
+  - Step 4: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on a new page.
+explanation: This test case ensures that users can navigate through the list of authors using the 'Next' button, which is a critical functionality for accessing multiple records in the database.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Authors Using Page Number
+objective: Verify that the user can navigate to the next page of authors by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the first page.
+  - Step 4: Identify the pagination block below the list of authors.
+  - Step 5: Click on the number '2' or the next sequential number available in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on the page corresponding to the number clicked in the pagination block.
+explanation: This test case verifies that users can navigate to the next page of authors by selecting a specific page number, allowing for direct access to later records without sequentially navigating through each page.
+

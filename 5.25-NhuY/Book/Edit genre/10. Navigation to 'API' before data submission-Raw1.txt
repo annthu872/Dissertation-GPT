@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation to 'API' before data submission during genre edit
+objective: Ensure that navigating to 'API' before submitting the edited genre data cancels the edit operation and does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new values for the genre's 'Name' and 'Description'.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The application should navigate to the 'API' page without updating the genre in the database, and the genre's details should remain unchanged.
+explanation: This test case ensures that if a user navigates away from the genre edit page by selecting 'API' from the menu before submitting the form, the edit operation is canceled, and no changes are made to the genre in the database. It directly matches the scenario of navigating to 'API' before data submission during the genre edit process.
+
+Test Case: Test Case 2
+testCaseName: Verify data integrity after canceling genre edit by navigating to 'API'
+objective: To confirm that the original genre data remains intact in the database after the user navigates to 'API' without submitting the edited data.
+testSteps:
+  - Step 1: Note down the current details of a genre from the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you noted.
+  - Step 3: Begin to modify the 'Name' and 'Description' fields but do not submit the form.
+  - Step 4: Navigate to 'API' by selecting it from the menu.
+  - Step 5: Return to the genre list/details page and locate the same genre.
+expectedResult: The genre's details should match the original data noted in Step 1, indicating that no changes were made to the database.
+explanation: This test case is designed to verify that the system preserves the integrity of the genre data if the edit operation is canceled by navigating away to 'API'. It checks that the original genre details remain unchanged in the database, aligning with the scenario's focus on navigation before data submission.
+

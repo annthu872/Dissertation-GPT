@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display Including Discounts and Special Offers
+objective: Ensure that the product information display includes all necessary details such as title, description, images, videos, specifications, price information highlighting discounts and special offers, stock availability, delivery options, seller information, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information should include title, detailed description, high-quality images, videos, detailed specifications, current price with highlighted discounts or special offers, real-time stock availability, shipping methods with estimated delivery times and fees, seller's profile with ratings and reviews, an option to contact the seller, a link to the seller's store, and a list of related products. The customer reviews section should display the average rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Discounts and Special Offers Highlighted' by ensuring that discounts and special offers are prominently displayed along with other product information. It covers the main objective of highlighting discounts and special offers in the product information.
+

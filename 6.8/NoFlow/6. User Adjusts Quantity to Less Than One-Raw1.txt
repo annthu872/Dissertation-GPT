@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity to Zero Before Adding to Cart
+objective: Verify that the system prevents the user from adjusting the product quantity to less than one before adding it to the shopping cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Attempt to adjust the product quantity to zero by clicking the minus button next to the quantity field.
+expectedResult: The system should not allow the quantity to be adjusted to less than one, keeping the quantity at one.
+explanation: This test case ensures that the system enforces the rule that users cannot adjust a product's quantity to less than one before adding it to the cart, which is part of the alternative flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity to Negative Before Adding to Cart
+objective: Verify that the system prevents the user from adjusting the product quantity to a negative number before adding it to the shopping cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to go to the product's detail page.
+  - Step 4: Attempt to input a negative number directly into the quantity field if possible, or repeatedly click the minus button next to the quantity field.
+expectedResult: The system should prevent the quantity from being adjusted to a negative number, either by reverting to one or not allowing the input.
+explanation: This test case checks the system's ability to prevent users from setting a product's quantity to a negative number before adding it to the cart, aligning with the alternative flow restrictions.
+

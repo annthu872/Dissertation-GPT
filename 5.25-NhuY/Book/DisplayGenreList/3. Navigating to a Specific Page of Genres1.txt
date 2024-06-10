@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Genres Page via Menu Selection
+objective: Verify that the user can navigate to the Genres page by selecting the 'Genres' item from the menu and that the first page of genres is displayed correctly.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the menu item labeled 'Genres' and click on it.
+expectedResult: The application displays the Genres page with a list of genres. The list should show up to 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to navigate to the Genres page and ensuring the first page of genres is displayed as expected.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Genres
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Click on the 'Next' button located in the pagination block.
+expectedResult: The application displays the second page of genres with the next 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the functionality of navigating to the next page of genres, which is a part of navigating to a specific page within the genres section.
+
+Test Case: Test Case 3
+testCaseName: Navigate to a Specific Page of Genres Using Page Number
+objective: Verify that the user can navigate to a specific page of genres by clicking on the corresponding page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Identify the page number the user wants to navigate to and click on that number in the pagination block.
+expectedResult: The application displays the selected page of genres with up to 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario by verifying the ability to navigate to a specific page of genres using the pagination feature, which is the core functionality being tested.
+

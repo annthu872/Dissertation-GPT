@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Add a new book with empty Title field
+objective: Verify that the system prevents adding a new book with an empty Title field and displays an incorrect data message.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Leave the Title field empty.
+  - Step 4: Fill in the Author, Genre, Description, and Publication date fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an incorrect data message for the Title field, indicating that it cannot be empty and the book record should not be added to the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by attempting to add a new book with an empty Title field and expecting the system to prevent the addition while displaying an error message. It tests the system's validation mechanism for the Title field specifically.
+

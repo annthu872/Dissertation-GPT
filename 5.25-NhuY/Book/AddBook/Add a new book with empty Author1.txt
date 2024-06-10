@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Add a new book with empty Author field
+objective: Verify that the system prevents adding a new book with an empty Author field and displays the correct error message.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data in the Title, Genre, Description, and Publication date fields.
+  - Step 4: Leave the Author field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the Author field cannot be empty and the book record should not be added to the database.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by attempting to add a new book with an empty Author field and expecting the system to prevent this action with an appropriate error message. It verifies the system's validation mechanism for the Author field.
+

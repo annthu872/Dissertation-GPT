@@ -1,0 +1,47 @@
+Personal shopping cart
+
+Objective: This use case helps user to view and edit their personal shopping cart like remove item they do not want to buy more or adjust the quantity of each item.
+Actor: Users
+
+Preconditions: User must have logged in to be able to access to their shopping cart.
+
+Main flow
+Step 1: User clicks on the shopping cart icon at the top right of the screen.
+Step 2: System navigates user to the cart's page. There should be all the products that user have added but haven't bought yet and their corresponding information about which shop sells that product, the product's price, promotions information, quantity of the product that user have added and which option of the product the user have chosen if that product has many options.
+
+Alternative flow 1: User remove a product from their shopping cart by erasing it
+Step 3: User ticks the box choosing the product they want to remove.
+Step 4: User clicks at the Erase button at the bottom of the screen.
+Step 5: System shows a pop up to confirm the changes with two options Yes or No.
+Step 6: User clicks Yes.
+Step 7: System removes the product from user's shopping cart.
+
+Alternative flow 2: User remove a product from their shopping cart by erasing it but change mind
+Step 3: User ticks the box choosing the product they want to remove.
+Step 4: User clicks at the Erase button at the bottom of the screen.
+Step 5: System shows a pop up to confirm the changes with two options Yes or No.
+Step 6: User clicks No.
+
+Alternative flow 3: User remove a product from their shopping cart by decreasing the quantity to zero
+Step 3: User decreases the quantity of the product until it reached one by clicking the minus button in the quantity section.
+Step 4: User clicks the minus button when the quantity is one.
+Step 5: System shows a pop up to confirm the changes with two options Yes or No.
+Step 6: User clicks Yes.
+Step 7: System removes the product from user's shopping cart.
+
+Alternative flow 4: User remove a product from their shopping cart by decreasing the quantity to zero
+Step 3: User decreases the quantity of the product until the number reached one by clicking the minus button in the quantity section.
+Step 4: User clicks the minus button when the quantity is one.
+Step 5: System shows a pop up to confirm the changes with two options Yes or No.
+Step 6: User clicks No.
+
+Alternative flow 5: User increase a product's quantity
+Step 3: User increases the quantity of the product until the number reachs what user want by clicking the plus button in the quantity section.
+
+Alternative flow 6: User decrease a product's quantity
+Step 3: User decreases the quantity of the product until the number reachs what user want by clicking the plus button in the quantity section.
+
+Alternative flow 7: User change options of a product
+Step 3: User clicks on the option dropdown of a product in shopping cart's list
+Step 4: User clicks on the option they want to change to.
+Step 5: System changes the option of that product to what user has chosen. 

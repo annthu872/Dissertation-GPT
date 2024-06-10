@@ -1,0 +1,25 @@
+Test Case: Test Case 2
+testCaseName: Add Product With Options to Cart
+objective: Verify that a user can add a product with options to their shopping cart by selecting an available option.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card that has additional options.
+  - Step 4: On the product's detail page, select one of the available options.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option, is added to the user's shopping cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario as it tests the process of a user choosing an option for a product with many options before adding it to the cart.
+
+Test Case: Test Case 5
+testCaseName: Prevent Adding Product With Out of Stock Option to Cart
+objective: Verify that a user cannot add a product to their shopping cart if the selected option is out of stock.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card that has options, one of which is out of stock.
+  - Step 4: Attempt to select the out of stock option.
+expectedResult: The out of stock option cannot be selected, or if selected, the 'Add to Cart' button is disabled, preventing the product from being added to the cart.
+reflect: yes
+explanation: This test case aligns with the given test scenario as it specifically addresses the situation where a user must choose among options for a product, and tests the system's handling of out of stock options.
+

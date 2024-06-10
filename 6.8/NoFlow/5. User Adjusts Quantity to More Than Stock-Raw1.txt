@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity to More Than Stock and Attempt to Add to Cart
+objective: Verify that the system prevents a user from adding a quantity of a product to their shopping cart that exceeds the available stock
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to view its details.
+  - Step 4: Observe the available stock for the product.
+  - Step 5: Attempt to increase the product quantity to a number greater than the available stock by clicking the plus button next to the quantity.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should prevent the quantity from being increased beyond the available stock and display an appropriate error message or disable the add to cart button.
+explanation: This test case ensures that the system enforces the rule that users cannot add to their cart a quantity of a product that exceeds the current stock, as outlined in the alternative flow of the use case. It directly tests the functionality related to adjusting product quantities and adding them to the shopping cart.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity Within Stock Limit and Add to Cart
+objective: Verify that the system allows a user to adjust the quantity of a product to a value within the available stock and successfully add it to their shopping cart
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to view its details.
+  - Step 4: Observe the available stock for the product.
+  - Step 5: Adjust the product quantity to a number less than or equal to the available stock by clicking the plus or minus button next to the quantity.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should successfully update the quantity of the product in the user's shopping cart to reflect the chosen amount and not display any error messages.
+explanation: This test case verifies that users can adjust the quantity of a product to a number that does not exceed the available stock and then add that product to their shopping cart, following the main and alternative flows of the use case.
+

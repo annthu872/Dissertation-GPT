@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify messaging seller from product information page
+objective: Ensure that users can initiate a message to the seller from the product information page
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section.
+  - Step 4: Click on the 'Seller Contact' option to initiate messaging.
+expectedResult: The platform's messaging system should open, allowing the user to compose and send a message to the seller.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps to contact the seller from the product information page, which is the core action the scenario intends to verify. It confirms the functionality of initiating a message to the seller, making it a perfect reflection of the given test scenario.
+

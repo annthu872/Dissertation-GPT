@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Attempt to create a new genre without entering a name
+objective: Verify that the system prevents the creation of a new genre without a name and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the genre record is not added to the database.
+explanation: This test case ensures that the system enforces the requirement for a genre to have a name before it can be created. It directly relates to the scenario 'CreateGenre_WithoutName' by testing the system's response to the absence of a genre name during the creation process.
+
+Test Case: Test Case 2
+testCaseName: Cancel genre creation without entering a name
+objective: Verify that cancelling the genre creation process without entering a name does not result in any record being added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Optionally enter a description in the 'Description' field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The genre creation form is closed, no new genre record is added to the database, and the user is redirected back to the list of genres.
+explanation: This test case checks the functionality of the 'Cancel' button during the genre creation process, especially when the 'Name' field is left empty. It ensures that the cancellation process works correctly and does not add incomplete records to the database, aligning with the scenario 'CreateGenre_WithoutName'.
+

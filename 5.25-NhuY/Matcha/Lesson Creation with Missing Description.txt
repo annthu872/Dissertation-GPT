@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Missing Description
+objective: Verify that the system allows the creation of a new lesson without a description
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, add a unique name in the name field.
+  - Step 5: Leave the description field empty.
+  - Step 6: Select 'Save' to create a new lesson.
+expectedResult: The system should create the new lesson and redirect the Administrator to the adding topic to new lesson section without requiring a description, indicating that the description field is optional.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Lesson Creation with Missing Description' by outlining steps to create a lesson without providing a description, and expecting the system to successfully create the lesson, which is the exact purpose of the given test scenario.
+

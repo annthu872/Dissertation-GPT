@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Empty Name Field
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with the Name field left empty
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field cannot be empty.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the system's response to an empty Name field during genre creation, which is a case of incorrect data.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation with Excessively Long Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with a Name that exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name that exceeds the character limit (e.g., 256 characters long).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field exceeds the character limit.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it verifies the system's handling of incorrect data, specifically a Name field with too many characters, during genre creation.
+
+Test Case: Test Case 3
+testCaseName: Genre Creation with Invalid Characters in Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with invalid characters in the Name field
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name containing invalid characters (e.g., special symbols).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field contains invalid characters.
+reflect: yes
+explanation: This test case aligns with the test scenario by assessing the system's validation of the Name field for character restrictions, which is a form of incorrect data entry.
+

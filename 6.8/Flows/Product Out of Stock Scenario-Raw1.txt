@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Add product to cart - Product in stock
+objective: Verify that a user can add a product to their shopping cart when the product is in stock.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card for a product that is in stock.
+  - Step 4: On the product's detail page, click the 'Add to Cart' button.
+expectedResult: The product should be added to the user's shopping cart.
+explanation: This test case ensures that users can successfully add in-stock products to their shopping cart, following the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Add product to cart - Product out of stock
+objective: Verify that a user cannot add a product to their shopping cart when the product is out of stock.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card for a product that is out of stock, indicated by a 'Sold out' sticker on the product's picture.
+expectedResult: The 'Add to Cart' button should be not clickable, preventing the product from being added to the shopping cart.
+explanation: This test case checks the system's behavior when a user attempts to add an out-of-stock product to their shopping cart, following Exception flow 1.
+
+Test Case: Test Case 3
+testCaseName: Add product to cart - Product option out of stock
+objective: Verify that a user cannot select an out-of-stock option for a product.
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card for a product that has multiple options.
+  - Step 4: Attempt to select an option that is out of stock, indicated by being colored grey and not clickable.
+expectedResult: The out-of-stock product option should be not selectable, preventing the user from adding it to their shopping cart.
+explanation: This test case verifies that users are prevented from selecting out-of-stock options for products, as described in Exception flow 2.
+

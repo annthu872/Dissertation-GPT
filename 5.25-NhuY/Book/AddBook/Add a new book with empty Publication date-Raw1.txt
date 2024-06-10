@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Add a new book with empty Publication date
+objective: Verify that the system allows adding a new book with the Publication date field left empty
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the Title, Author, Genre, and Description fields.
+  - Step 4: Leave the Publication date field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new book record is successfully added to the database without a Publication date, and the list of books with the newly added record is displayed.
+explanation: This test case verifies that the system can handle the creation of a new book record with an optional Publication date field. It is based on the main scenario of the use case specification for adding a new book, focusing on the functionality of adding a book with minimal required fields.
+
+Test Case: Test Case 2
+testCaseName: Cancel adding a new book with empty Publication date
+objective: Verify that the system does not save the new book record when the 'Cancel' button is pressed, even if the Publication date is left empty
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering valid data into the Title, Author, Genre, and Description fields.
+  - Step 4: Leave the Publication date field empty.
+  - Step 5: Press the 'Cancel' button before submitting the form.
+expectedResult: The new book record is not saved to the database, and the user is redirected to the list of book records without the addition of a new record.
+explanation: This test case ensures that the cancel operation works correctly for the scenario of adding a new book, specifically testing the functionality when the Publication date is not provided. It is derived from the cancel operation scenario in the use case specification.
+

@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'Genres' before submitting new book data
+objective: Verify that navigating to 'Genres' from the book creation form before submitting discards the entered data and displays the 'Genres' page.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book creation form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Genres'.
+expectedResult: The book creation form is closed, the entered data is not saved to the database, and the 'Genres' page is displayed with updated data.
+explanation: This test case ensures that if a user navigates away from the book creation form to 'Genres' before submitting the form, the entered data is not saved, and the user is correctly redirected to the 'Genres' page. It directly matches the scenario name by testing the navigation to 'Genres' before submission.
+
+Test Case: Test Case 2
+testCaseName: Cancel operation and navigate to 'Genres'
+objective: Verify that cancelling the book creation form and then navigating to 'Genres' discards the entered data and displays the 'Genres' page.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book creation form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Click on the 'Cancel' button to close the book creation form.
+  - Step 5: After the form is closed, select the menu item 'Genres'.
+expectedResult: The book creation form is closed without saving the entered data, and the 'Genres' page is displayed with updated data.
+explanation: This test case verifies the functionality of the 'Cancel' button in the book creation form and ensures that after cancelling, navigating to 'Genres' does not save any data and displays the 'Genres' page correctly. It complements the scenario by testing the cancel operation followed by navigation to 'Genres'.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigation to 'Home' Before Submission
+objective: Verify that navigating to 'Home' before submitting a new book record cancels the operation and does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Start entering data into the form fields for the new book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the creation page.
+expectedResult: The operation is canceled, the data is not saved in the database, and the user is redirected to the 'Home' page.
+explanation: This test case ensures that if a user navigates away to 'Home' before completing the submission of a new book, the operation is canceled and the data is not saved, adhering to the specified behavior in the cancel operation scenario.
+

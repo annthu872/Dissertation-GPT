@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to 'API' before submitting new book data
+objective: Verify that navigating to 'API' before submitting new book data does not save the entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Start entering book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, select the 'API' menu item to navigate away from the book creation page.
+expectedResult: The application should navigate to the 'API' page without saving the entered book data, and no new book record should be added to the database.
+explanation: This test case ensures that if a user navigates away from the book creation page by selecting 'API' from the menu before submitting the form, the entered data is not saved. It directly tests the navigation aspect mentioned in the scenario, focusing on the behavior when the 'API' menu item is selected.
+
+Test Case: Test Case 2
+testCaseName: Cancel operation before submitting new book data
+objective: Verify that pressing the 'Cancel' button before submitting new book data discards the entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should discard the entered book data and display the list of book records without adding a new record.
+explanation: This test case verifies the functionality of the 'Cancel' button in the book creation form. It ensures that if a user decides not to proceed with creating a new book record and presses 'Cancel', the entered data is not saved, aligning with the cancel operation scenario.
+

@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Authors Page via Navbar
+objective: Verify that users can navigate to the Authors page using the navigation bar and see the list of authors.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the navigation bar.
+  - Step 3: Click on the 'Authors' item in the navigation bar.
+expectedResult: The application displays the Authors page with a list of authors, showing the columns for id, Name, and Bio. Up to 10 authors are displayed on the page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to navigate to a specific page of authors. It tests the primary functionality of accessing the Authors page through the navigation bar, which is a key aspect of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality on Authors Page
+objective: Verify that users can navigate through different pages of authors using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the Authors page by clicking on the 'Authors' item in the navigation bar.
+  - Step 2: Scroll down to the bottom of the list of authors to locate the pagination block.
+  - Step 3: Click on the 'Next' button in the pagination block.
+  - Step 4: Alternatively, click on a page number in the pagination block to navigate to that specific page.
+expectedResult: Upon clicking the 'Next' button, the application displays the next 10 records of authors. When a specific page number is clicked, the application displays the authors corresponding to that page. Each page shows up to 10 items, with columns for id, Name, and Bio.
+reflect: yes
+explanation: Although this test case explores the pagination functionality, which is a step further from simply navigating to the Authors page, it still reflects the given test scenario. It tests an essential part of navigating within the specific page of authors, ensuring users can access different sets of authors beyond the initial page. Therefore, it complements the scenario by testing the functionality that allows users to navigate to specific pages of authors through pagination.
+

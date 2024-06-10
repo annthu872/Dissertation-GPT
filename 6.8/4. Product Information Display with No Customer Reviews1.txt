@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display without Customer Reviews
+objective: Ensure that the product information page displays all necessary information except for customer reviews and ratings.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Observe the displayed product information, ensuring all sections except 'Customer Reviews and Ratings' are present.
+expectedResult: The product information page should display all sections including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, and Related Products, but without the 'Customer Reviews and Ratings' section.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify that the product information page displays all necessary information except for customer reviews and ratings. The test steps and expected result align with the scenario's requirement to ensure all product details are shown except for the reviews and ratings.
+

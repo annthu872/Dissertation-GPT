@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Discounted Price
+objective: Ensure that the product information page correctly displays all the required information including the discounted price.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that has a discounted price.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that high-quality images of the product from multiple angles are showcased.
+  - Step 5: Ensure that videos demonstrating the product's features and usage are included.
+  - Step 6: Confirm that detailed product specifications are listed.
+  - Step 7: Verify that the current price and the discounted price are displayed, with the discount highlighted.
+  - Step 8: Check the real-time stock availability for the product.
+  - Step 9: Verify that available shipping methods, estimated delivery times, and shipping fees are displayed.
+  - Step 10: Ensure the seller's profile, including their name, ratings, and reviews, is visible.
+  - Step 11: Confirm that there is an option to contact the seller directly through the platform's messaging system.
+  - Step 12: Check that a link to the seller's store page on the platform is provided.
+  - Step 13: Verify that the average rating based on customer reviews is displayed.
+  - Step 14: Ensure that the 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown.
+  - Step 15: Confirm that a list of related product cards is displayed.
+expectedResult: The product information page displays all the required information accurately, including the discounted price, ensuring the user has all the necessary details to make an informed purchase decision.
+explanation: This test case is designed to verify that the product information display functionality works as expected, particularly focusing on the display of discounted prices alongside other essential product details. It covers the basic flow of viewing a product's information from the homepage, search page, or cart page.
+
+Test Case: Test Case 2
+testCaseName: Verify Out of Stock Product Information Display
+objective: Ensure that the product information page correctly displays the out of stock status and disables buttons accordingly.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is out of stock.
+  - Step 3: Verify that a black sticker with the message 'Out of stock' is displayed on the product's images.
+  - Step 4: Check that all actionable buttons on the page are disabled.
+  - Step 5: Confirm that the product title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products are still displayed.
+expectedResult: The product information page for an out of stock product correctly displays the out of stock status with a black sticker and disables all actionable buttons, while still showing all other product details.
+explanation: This test case ensures that when a product is out of stock, the system appropriately indicates this status to the user and disables any actions that cannot be performed due to the lack of stock, without compromising the display of essential product information.
+

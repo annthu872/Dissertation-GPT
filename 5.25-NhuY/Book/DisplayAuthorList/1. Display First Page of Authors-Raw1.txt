@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of First Page of Authors
+objective: Verify that the application correctly displays the first page of authors including id, Name, and Bio columns when the 'Authors' item is selected.
+testSteps:
+  - Step 1: Launch the application.
+  - Step 2: Navigate to the 'Authors' section by selecting the item 'Authors'.
+expectedResult: The application displays the first page of authors showing up to 10 items. Each item includes the columns: id, Name, and Bio.
+explanation: This test case ensures that when users navigate to the 'Authors' section, they are presented with a list of authors. It directly matches the scenario name by testing the display functionality of the first page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality on Authors Page
+objective: Verify that users can navigate through different pages of authors using the 'Next' button and page numbers.
+testSteps:
+  - Step 1: Launch the application and navigate to the 'Authors' section by selecting the item 'Authors'.
+  - Step 2: Observe the list of authors displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of authors.
+  - Step 4: Alternatively, click on the number '2' (or any subsequent page number) to navigate to the second page of authors.
+expectedResult: Upon clicking the 'Next' button or a page number, the application displays the next 10 records of authors. The list updates to show the authors corresponding to the selected page.
+explanation: This test case verifies the pagination functionality within the 'Authors' section, allowing users to view additional records beyond the first 10 displayed. It is crucial for user navigation and access to the full list of authors.
+

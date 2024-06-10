@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity to More Than Stock and Attempt to Add to Cart
+objective: Verify that the system prevents a user from adding a quantity of a product to their shopping cart that exceeds the available stock
+testSteps:
+  - Step 1: Log in to the system.
+  - Step 2: Navigate to a page that contains product cards.
+  - Step 3: Click on a product card to view its details.
+  - Step 4: Observe the available stock for the product.
+  - Step 5: Attempt to increase the product quantity to a number greater than the available stock by clicking the plus button next to the quantity.
+  - Step 6: Click the add to cart button.
+expectedResult: The system should prevent the quantity from being increased beyond the available stock and display an appropriate error message or disable the add to cart button.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to adjust the product quantity to more than the available stock and observing the system's response, which is to prevent the action and provide feedback, thus reflecting the given test scenario accurately.
+

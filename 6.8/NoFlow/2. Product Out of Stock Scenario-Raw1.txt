@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Add In-Stock Product to Cart
+objective: Verify that a user can successfully add an in-stock product to their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card for a product that is in stock.
+  - Step 4: On the product's detail page, verify the product has stock available.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product is added to the user's shopping cart.
+explanation: This test case ensures that users can add products that are in stock to their shopping cart, following the main flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Add Product with Options to Cart
+objective: Verify that a user can add a product with selected options to their shopping cart, given the product and options are in stock.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card for a product that has options and is in stock.
+  - Step 4: On the product's detail page, select an available option.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The product, with the selected option, is added to the user's shopping cart.
+explanation: This test case verifies that users can add products with options to their cart, as long as those options are in stock, aligning with the alternative flow of the use case.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Out-of-Stock Product to Cart
+objective: Verify that a user cannot add an out-of-stock product to their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card for a product that is out of stock.
+  - Step 4: Attempt to click the 'Add to Cart' button.
+expectedResult: The 'Add to Cart' button is either disabled or an error message is displayed, preventing the product from being added to the cart.
+explanation: This test case ensures that users cannot add out-of-stock products to their shopping cart, adhering to the alternative flow where users cannot add to cart product with no stock.
+
+Test Case: Test Case 4
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that a user can adjust the quantity of a product, within stock limits, before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log in to the platform.
+  - Step 2: Navigate to a page that displays product cards.
+  - Step 3: Click on a product card for a product that is in stock.
+  - Step 4: Adjust the quantity of the product using the minus or plus button, ensuring the selected quantity does not exceed the available stock.
+  - Step 5: Click the 'Add to Cart' button.
+expectedResult: The specified quantity of the product is added to the user's shopping cart.
+explanation: This test case checks that users can adjust the quantity of a product before adding it to the cart, as long as the quantity does not exceed the available stock, following the alternative flow of the use case.
+

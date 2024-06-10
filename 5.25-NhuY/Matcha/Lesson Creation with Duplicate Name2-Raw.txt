@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify Lesson Creation with Unique Name
+objective: Ensure that the administrator can successfully add a new lesson with a unique name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a unique name in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case verifies that the system allows the creation of a new lesson with a unique name, following the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify Lesson Creation with Duplicate Name
+objective: Ensure that the system prevents the creation of a new lesson with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a name that is already used for another lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should show an error for the name field as 'This name is already used', prompting the Administrator to add another name.
+explanation: This test case verifies the system's behavior when attempting to add a new lesson with a duplicate name, following the alternative flow 1 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Verify Lesson Creation without Name
+objective: Ensure that the system prevents the creation of a new lesson without a name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, leave the name field empty.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should mark the title text box with a red highlight and show the error below this text box as: 'Title is required'.
+explanation: This test case verifies the system's validation for the lesson creation form, ensuring that a lesson cannot be created without a name, as per the validation flow.
+

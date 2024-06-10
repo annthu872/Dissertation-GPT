@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display Including Discounts and Special Offers
+objective: Ensure that the product information display includes all necessary details such as title, description, images, videos, specifications, price information highlighting discounts and special offers, stock availability, delivery options, seller information, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information should include title, detailed description, high-quality images, videos, detailed specifications, current price with highlighted discounts or special offers, real-time stock availability, shipping methods with estimated delivery times and fees, seller's profile with ratings and reviews, an option to contact the seller, a link to the seller's store, and a list of related products. The customer reviews section should display the average rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+explanation: This test case ensures that all necessary product information, especially discounts and special offers, are highlighted as per the basic flow of the use case specification. It verifies the comprehensive display of product details to the user.
+
+Test Case: Test Case 2
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: To check if users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate and click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 3: Observe the expanded section for more reviews.
+expectedResult: Upon clicking the option to expand, the 'Customer Reviews and Ratings' section should display more than the initial 3 detailed reviews, allowing the user to view additional customer feedback.
+explanation: This test case verifies the functionality of expanding the 'Customer Reviews and Ratings' section, allowing users to access more detailed reviews, as mentioned in the alternative flow.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Seller Contact Through Messaging System
+objective: Ensure that users can contact the seller directly through the platform's messaging system by clicking on the seller contact option.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Seller Contact' option.
+  - Step 3: Observe if the platform's messaging system is opened to send a message to the seller.
+expectedResult: Clicking on the 'Seller Contact' option should open the platform's messaging system, allowing the user to send a direct message to the seller.
+explanation: This test case checks the functionality of the direct seller contact feature through the platform's messaging system, as outlined in the alternative flow.
+

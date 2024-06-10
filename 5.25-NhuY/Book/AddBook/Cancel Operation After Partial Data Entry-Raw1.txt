@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Book Creation After Partial Data Entry by Cancel Button
+objective: Verify that the book creation process can be canceled after partially entering data by using the 'Cancel' button, and ensure that no data is saved to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Title and Author).
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should redirect the user to the list of book records, displaying the list without the partially entered book.
+explanation: This test case ensures that when a user decides not to complete the book creation process after entering some data, the operation can be successfully canceled without affecting the database. It directly tests the cancel operation scenario after partial data entry.
+
+Test Case: Test Case 2
+testCaseName: Cancel New Book Creation After Partial Data Entry by Navigation
+objective: Verify that navigating away from the book creation page after partially entering data cancels the creation process without saving data to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Genre and Description).
+  - Step 4: Without submitting the form, select a different menu item (e.g., 'Authors').
+expectedResult: The application should not save the partially entered data and should display the selected page (e.g., Authors page) without any impact from the canceled book creation process.
+explanation: This test case verifies that if a user navigates away from the book creation form after entering some data, the creation process is canceled and no data is saved. It tests the cancel operation scenario's aspect of navigating away to cancel the operation.
+

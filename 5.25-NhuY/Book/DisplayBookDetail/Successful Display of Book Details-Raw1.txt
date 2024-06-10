@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details
+objective: Ensure that clicking on the title of a book from the book list page successfully displays all the book details as specified.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Identify a book from the list and click on the 'Title' of that specific book.
+  - Step 3: Observe the information displayed on the book details page.
+expectedResult: The book details page should display the following columns with correct information: id (unique book number), Title, Author, Genre, Description, Publication date.
+explanation: This test case ensures that the application correctly displays all the specified details of a book when a user selects a book by clicking its title from the book list. It directly matches the scenario of displaying book details upon user action, covering the main scenario flow.
+

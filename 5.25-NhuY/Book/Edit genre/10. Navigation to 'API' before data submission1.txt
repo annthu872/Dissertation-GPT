@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation to 'API' before data submission during genre edit
+objective: Ensure that navigating to 'API' before submitting the edited genre data cancels the edit operation and does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new values for the genre's 'Name' and 'Description'.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The application should navigate to the 'API' page without updating the genre in the database, and the genre's details should remain unchanged.
+reflect: yes
+explanation: This test case directly addresses the test scenario by ensuring that navigation to the 'API' page before data submission interrupts the edit process and does not result in any changes to the genre data in the database. It accurately reflects the scenario's focus on the effect of navigating away before completing the submission.
+
+Test Case: Test Case 2
+testCaseName: Verify data integrity after canceling genre edit by navigating to 'API'
+objective: To confirm that the original genre data remains intact in the database after the user navigates to 'API' without submitting the edited data.
+testSteps:
+  - Step 1: Note down the current details of a genre from the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you noted.
+  - Step 3: Begin to modify the 'Name' and 'Description' fields but do not submit the form.
+  - Step 4: Navigate to 'API' by selecting it from the menu.
+  - Step 5: Return to the genre list/details page and locate the same genre.
+expectedResult: The genre's details should match the original data noted in Step 1, indicating that no changes were made to the database.
+reflect: yes
+explanation: This test case complements the first by not only ensuring that navigation to 'API' cancels the edit operation but also by verifying that the original data remains unchanged in the database. It provides a practical approach to confirm the scenario's outcome by checking the integrity of the genre data after the navigation event, thus reflecting the given test scenario accurately.
+

@@ -1,0 +1,16 @@
+Successful Checkout with Single Shop Products
+Successful Checkout with Multiple Shops Products
+Checkout with Default Payment and Delivery Options
+Checkout with Promotion Applied
+Checkout with Platform Promotion Applied
+User selects all items from one store in the shopping cart page
+User purchases a product directly from the product detail page without options
+User purchases a product with options from the product detail page
+User adjusts the quantity of a product before purchasing from the product detail page
+Product is out of stock
+Product is erased by the seller
+Attempt to purchase without selecting an option for a product with multiple options
+Attempt to purchase with a quantity greater than current stock
+Attempt to purchase with a quantity less than one
+Attempt to purchase a product with no stock
+Attempt to purchase an out-of-stock option of a product with multiple options

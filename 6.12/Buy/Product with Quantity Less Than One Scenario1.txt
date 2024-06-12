@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify purchasing a product with quantity less than one is not allowed from product detail page
+objective: Ensure that users cannot proceed to checkout with a product quantity less than one from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the product quantity to less than one by clicking the minus button next to the quantity field.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user should not be able to proceed to checkout.
+reflect: yes
+explanation: This test case directly addresses the scenario by testing the functionality of purchasing a product with a quantity less than one from the product detail page, ensuring that the system prevents such actions.
+
+Test Case: Test Case 2
+testCaseName: Verify purchasing a product with quantity less than one is not allowed from shopping cart
+objective: Ensure that users cannot proceed to checkout with a product quantity less than one from the shopping cart
+testSteps:
+  - Step 1: Add any product to the shopping cart.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Adjust the quantity of the product to less than one by clicking the minus button next to the quantity field.
+  - Step 4: Attempt to select the product by clicking on the checkbox before the item.
+  - Step 5: Attempt to click the 'Checkout' button.
+expectedResult: The product should not be selectable, and the 'Checkout' button should either be disabled or not proceed with the checkout process for the product with quantity less than one.
+reflect: yes
+explanation: Although this test case explores the scenario from the shopping cart perspective, it still aligns with the overall scenario of preventing purchases with quantities less than one. It tests a different flow but aims to achieve the same objective, ensuring the system's compliance with the rule.
+

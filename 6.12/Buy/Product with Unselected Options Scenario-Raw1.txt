@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Purchase with unselected product options from product detail page
+objective: Verify that the system prevents the user from purchasing a product with multiple options without selecting an option
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Adjust the quantity of the product, if necessary, without selecting any of the available options.
+  - Step 3: Click the 'Buy Now' button.
+expectedResult: The system should prevent the checkout process and possibly display a message indicating that an option must be selected before proceeding.
+explanation: This test case is created to ensure that the system enforces the rule that products with multiple options cannot be purchased without selecting one of the options, as mentioned in the exception flow of the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Purchase product with quantity more than stock from product detail page
+objective: Verify that the system prevents the user from purchasing a product with a quantity that exceeds the current stock
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: Increase the quantity of the product to a number greater than the current stock using the plus button.
+  - Step 3: Attempt to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button should be disabled, or an error message should be displayed indicating that the selected quantity exceeds the available stock.
+explanation: This test case checks the system's handling of attempts to purchase a product in quantities greater than what is available in stock, aligning with the exception flow that restricts purchasing products in quantities not supported by current stock levels.
+
+Test Case: Test Case 3
+testCaseName: Attempt to purchase an out-of-stock product from product detail page
+objective: Verify that the system prevents the user from purchasing a product that is out of stock
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that is out of stock.
+  - Step 2: Observe the quantity and 'Buy Now' button status.
+expectedResult: The quantity should be set to a value that indicates no stock (e.g., '0' or 'Out of Stock'), and the 'Buy Now' button should be disabled or not clickable.
+explanation: This test case ensures that products that are out of stock cannot be purchased, in line with the exception flow that prevents purchasing products with no stock.
+

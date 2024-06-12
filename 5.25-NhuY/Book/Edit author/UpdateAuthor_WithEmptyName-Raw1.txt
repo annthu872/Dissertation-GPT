@@ -1,34 +1,34 @@
 Test Case: Test Case 1
-testCaseName: Update Book with Empty Author Name
-objective: Verify that the system prevents updating a book record with an empty author name and displays the correct error message.
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the application prevents updating an author with an empty name field and displays an appropriate error message.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: In the edit form, clear the 'Author' field to make it empty.
-  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Enter or modify data in the 'Bio' field.
   - Step 5: Press the 'Submit' button.
-expectedResult: The system should display an error message indicating that the author name cannot be empty and the book record should not be updated in the database.
-explanation: This test case ensures that the system enforces the requirement for an author name when updating a book record, preventing incomplete or incorrect data from being saved.
+expectedResult: The application should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.
+explanation: This test case ensures that the application enforces the requirement for the author's name to be present when updating an author record. It directly relates to the scenario of updating an author with empty name field by testing the validation mechanism for the name input.
 
 Test Case: Test Case 2
-testCaseName: Cancel Update Operation on Book
-objective: Verify that the update operation can be canceled without saving any changes to the database.
+testCaseName: Cancel Update Operation for Author
+objective: Verify that the update operation can be canceled after making changes and that no data is updated in the database.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: Start entering or modifying the data in the form fields.
-  - Step 4: Press the 'Cancel' button before submitting the form.
-expectedResult: The system should not save any changes to the database and should display the list of book records, showing that no updates have been made.
-explanation: This test case verifies that users have the option to cancel the update operation, ensuring that accidental or unwanted changes are not saved.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter or modify data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The application should not update the author record in the database and should display the list of authors, showing that no changes have been made.
+explanation: This test case checks the functionality of the 'Cancel' button in the update author form, ensuring that it negates any changes made by the user before submission, thus maintaining data integrity.
 
 Test Case: Test Case 3
-testCaseName: Update Book with Valid Data
-objective: Verify that a book record can be successfully updated with valid data and that the updated record is correctly displayed in the book list.
+testCaseName: Navigate Away During Author Update
+objective: Verify that navigating away from the update author form without submitting does not update the author in the database.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: Enter valid data into all fields, including a non-empty author name.
-  - Step 4: Press the 'Submit' button.
-expectedResult: The system should update the book record in the database with the provided data and display the updated book list with the changes reflected.
-explanation: This test case confirms that the system correctly updates book records when provided with valid data, maintaining data integrity and accuracy.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter or modify data in the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', select the menu item 'Books'.
+expectedResult: The application should not update the author record in the database and should display the 'Books' page, indicating that the update operation was not completed.
+explanation: This test case ensures that if a user navigates away from the update author form without submitting it, the changes are not saved, thus preventing unintended updates.
 

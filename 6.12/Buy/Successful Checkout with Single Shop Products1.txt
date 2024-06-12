@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Single Shop Products from Shopping Cart
+objective: Verify that a user can successfully checkout items from a single shop in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Add items from a single shop to the shopping cart if not already added.
+  - Step 3: Select items to checkout by clicking on the checkbox before each item.
+  - Step 4: Verify that the system displays the summary costs.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Verify that the user is redirected to a page that shows new orders of all the items chosen.
+  - Step 7: Confirm that for each product, there is an information section including name, options, quantity, price, shop details, promotion information, shipping information, and the payment section with the default payment method.
+  - Step 8: Verify that the default delivery location is chosen by the system.
+expectedResult: The user successfully checks out the items from a single shop, and all relevant order details are correctly displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a clear path for a user to successfully checkout items from a single shop in the shopping cart, covering all necessary steps and verifications to ensure the process works as intended.
+

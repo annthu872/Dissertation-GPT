@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Select All Items from One Store in Shopping Cart
+objective: Verify that a user can select all items from one store in the shopping cart and proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the shopping cart page after adding items from at least two different stores.
+  - Step 2: Locate the group of items belonging to one store.
+  - Step 3: Click the checkbox at the head of the store's section to select all items from that store.
+  - Step 4: Verify that all items from that store are selected.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The user is redirected to a new order page showing only the items selected from the one store, with the summary costs, shipping, and payment information displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality that allows a user to select all items from one store in the shopping cart and proceed to checkout, which is the core action described in the scenario.
+

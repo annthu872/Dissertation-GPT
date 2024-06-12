@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify No Results Found displays random products
+objective: Ensure that when a search yields no results, the system displays random product cards as per the exception flow.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Enter a keyword that does not match any products, shops, or brands in the system.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards, indicating no direct search matches were found.
+explanation: This test case is designed to verify the system's behavior when a search query does not match any existing products, shops, or brands. According to the exception flow, the system should display random product cards in such scenarios.
+
+Test Case: Test Case 2
+testCaseName: Verify search with keyword related to non-existent shop or brand
+objective: To confirm that the system displays random product cards when the search keyword is related to a shop or brand name that does not exist in the system.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Enter a keyword that is supposedly related to a shop or brand name but does not actually exist in the system.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards, as the keyword does not match any existing shops or brands.
+explanation: This test case ensures that when users search using keywords related to shops or brands that do not exist, the system defaults to displaying random product cards, adhering to the exception flow for no search results found.
+

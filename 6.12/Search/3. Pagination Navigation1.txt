@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Pagination Navigation on Search Results
+objective: Verify that the user can navigate through search results pages using the pagination bar.
+testSteps:
+  - Step 1: Navigate to the search page.
+  - Step 2: Enter a keyword in the search bar that will yield more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 5: Click on the '2' button in the pagination bar to navigate to the second page of search results.
+  - Step 6: Once on the second page, click the 'left' button in the pagination bar to return to the first page.
+  - Step 7: Click the 'right' button in the pagination bar to move to the second page again.
+expectedResult: After Step 5, the user should see the second page of search results, indicating that pagination navigation is working. After Step 6, the user should return to the first page of search results. After Step 7, the user should navigate back to the second page of search results.
+reflect: yes
+explanation: This test case directly tests the pagination navigation functionality by ensuring that users can navigate forward and backward through search results pages using the pagination bar. It aligns perfectly with the test scenario's objective of verifying pagination navigation on search results.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Most Related
+objective: Verify that the user can filter search results by the most related option and the system displays the results prioritized by exact name match, partial name match, and then match by description.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword related to a product name or description in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the initial list of relevant search matches displayed.
+  - Step 5: Locate the filter options below the search bar and above the search results.
+  - Step 6: Select the radio button for 'result most related with the keyword'.
+expectedResult: The search results are refreshed to display products prioritized by exactly matching the search keyword by name first, followed by partial matches by name, and finally matches by description.
+explanation: This test case ensures that the filtering functionality for search results works as intended when the 'most related' option is selected. It directly tests the system's ability to prioritize search results based on the relevance to the search keyword, which is crucial for user experience.
+
+Test Case: Test Case 2
+testCaseName: Filter Search Results by Most Related with No Exact Name Match
+objective: Verify that the system correctly prioritizes partial name matches and matches by description when there are no exact name matches available.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that is unlikely to have an exact name match but may have partial matches or description matches in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the initial list of relevant search matches displayed.
+  - Step 5: Locate the filter options below the search bar and above the search results.
+  - Step 6: Select the radio button for 'result most related with the keyword'.
+expectedResult: The search results are refreshed to display products, prioritizing those with partial name matches to the keyword first, followed by those with matches in the description, ensuring no exact name matches are available.
+explanation: This test case is designed to verify the system's behavior in scenarios where no exact name matches are found. It tests the system's ability to fall back on partial name matches and description matches, maintaining a relevant user experience.
+

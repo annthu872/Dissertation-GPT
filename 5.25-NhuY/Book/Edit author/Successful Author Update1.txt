@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful Author Record Update
+objective: Verify that the author record is successfully updated in the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author record is successfully updated in the database, and the list of authors with the updated record is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Successful Author Update' by verifying that the author's record can be updated with valid data and that the update is reflected in the database.
+

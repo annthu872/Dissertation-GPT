@@ -1,24 +1,24 @@
 Test Case: Test Case 1
-testCaseName: Update Author with Empty Bio
-objective: Verify that the book's author bio can be updated with an empty value
+testCaseName: Update Author with Empty Bio Field
+objective: Verify that the system allows updating an author's record with an empty 'Bio' field and displays the updated list of authors.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you want to update.
-  - Step 3: In the form displayed, clear any existing data in the 'Author Bio' field.
-  - Step 4: Fill in or confirm the remaining required fields with valid data.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field, leaving it empty.
+  - Step 4: Fill in other required fields with valid data.
   - Step 5: Press the 'Submit' button.
-expectedResult: The book record is successfully updated in the database without an author bio, and the list of books with updated records is displayed.
-explanation: This test case ensures that the system allows updating a book's author information with an empty biography, which is a valid scenario for authors without a detailed bio.
+expectedResult: The author's record is updated with an empty 'Bio' field, and the updated list of authors is displayed without any error messages.
+explanation: This test case ensures that the 'Bio' field can be left empty when updating an author's record, which is a valid scenario according to the use case specification. It directly matches the scenario name by focusing on updating an author with an empty 'Bio'.
 
 Test Case: Test Case 2
-testCaseName: Cancel Update Operation with Empty Author Bio
-objective: Verify that the update operation can be canceled after clearing the author bio
+testCaseName: Cancel Update Operation for Author with Empty Bio Field
+objective: Verify that the system does not update the author's record in the database when the 'Cancel' button is pressed after clearing the 'Bio' field.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you want to update.
-  - Step 3: In the form displayed, clear any existing data in the 'Author Bio' field.
-  - Step 4: Start to fill in or confirm the remaining required fields.
-  - Step 5: Press the 'Cancel' button before submitting the form.
-expectedResult: The update operation is canceled, no data is updated in the database, and the list of book records is displayed to the user.
-explanation: This test case checks the functionality of the cancel operation in the scenario where the author's bio is intended to be emptied but the update is canceled. It ensures that no changes are made to the database upon cancellation.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field, leaving it empty.
+  - Step 4: Fill in other required fields with valid data.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The author's record remains unchanged in the database, and the list of authors is displayed without the updates to the 'Bio' field.
+explanation: This test case verifies the functionality of the 'Cancel' button in the update operation, specifically after clearing the 'Bio' field. It ensures that the system behaves correctly by not updating the author's record when the operation is canceled, which is aligned with the cancel operation scenario.
 

@@ -1,22 +1,22 @@
 Test Case: Test Case 1
-testCaseName: Verify Cancel Operation on Edit Book Page
-objective: Ensure that pressing the 'Cancel' button while editing a book's information cancels the operation and returns the user to the book list without making changes.
+testCaseName: Cancel Editing Author by Pressing 'Cancel' Button
+objective: Verify that pressing the 'Cancel' button while editing an author's details cancels the operation and does not update the author's information in the database.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: On the edit book page, start entering or modifying the book's details such as Title, Author, Genre, Description, and Publication date.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the author's Name and Bio.
   - Step 4: Press the 'Cancel' button before submitting the form.
-expectedResult: The application should not update the book information in the database and should redirect the user to the list of book records, showing the original data before the attempted edit.
-explanation: This test case ensures that the cancel operation works as intended, allowing users to abort the edit operation if they decide not to proceed with changes. It directly tests the cancel operation scenario by simulating a user's action to cancel the edit process.
+expectedResult: The operation is canceled, no data is updated in the database, and the list of author records is displayed to the user.
+explanation: This test case ensures that the 'Cancel' operation works as intended, allowing users to abort the edit operation without making any changes to the author's information in the database. It directly matches the scenario name by testing the cancel operation through the 'Cancel' button.
 
 Test Case: Test Case 2
-testCaseName: Verify Navigation after Cancel Operation on Edit Book Page
-objective: To verify that after pressing the 'Cancel' button on the edit book page, the user can successfully navigate to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' without the data being updated.
+testCaseName: Navigate Away from Edit Page Without Saving
+objective: Verify that navigating away from the edit page by selecting a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API') without saving does not update the author's information in the database.
 testSteps:
-  - Step 1: Navigate to the book list/details page and click the 'Update' button next to a book.
-  - Step 2: Begin to enter or change the book's information on the edit page.
-  - Step 3: Press the 'Cancel' button.
-  - Step 4: After being redirected to the list of books, select any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
-expectedResult: The application should not save any changes made in the edit form, and the user should be able to navigate to the selected section without issues, displaying the appropriate content without the attempted updates.
-explanation: This test case checks the functionality of the cancel operation in conjunction with the application's navigation. It ensures that canceling an edit operation properly resets any temporary data and allows for normal navigation thereafter.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the author's Name and Bio in the displayed form.
+  - Step 4: Without pressing the 'Submit' button, select a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The user is navigated to the selected page without updating the author's information in the database, ensuring the edit operation is effectively canceled.
+explanation: This test case verifies that the system properly handles an implicit cancel operation when the user navigates away from the edit page without saving changes. It is relevant to the scenario as it tests the system's behavior in a situation where the user decides not to complete the edit operation by navigating away.
 

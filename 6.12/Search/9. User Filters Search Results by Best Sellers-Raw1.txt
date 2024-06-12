@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Best Sellers
+objective: Verify that the user can filter search results by selecting the 'best seller' option and the system displays the products accordingly.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Enter a keyword related to products (e.g., 'electronics') in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: After the search results are displayed, locate the filter options below the search bar.
+  - Step 5: Select the 'best seller' radio button from the filter options.
+expectedResult: The system should refresh the search results, displaying products sorted by best-selling status, prioritizing products with higher sales.
+explanation: This test case ensures that the filter function for best sellers works correctly, allowing users to sort search results based on product sales. It directly matches the scenario name by testing the ability to filter search results by best sellers.
+
+Test Case: Test Case 2
+testCaseName: Filter Search Results by Best Sellers with No Initial Keyword
+objective: Verify that the system allows filtering by best sellers even when no initial keyword is entered, displaying best-selling products across all categories.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage without entering any keyword.
+  - Step 2: Press enter or click the search icon to initiate the search with an empty query.
+  - Step 3: After the search results are displayed, locate the filter options below the search bar.
+  - Step 4: Select the 'best seller' radio button from the filter options.
+expectedResult: The system should display random product cards initially, and after selecting the 'best seller' filter, it should refresh the results to show best-selling products across all categories.
+explanation: This test case checks the functionality of the best seller filter without an initial search keyword, ensuring the filter works independently of the search functionality.
+
+Test Case: Test Case 3
+testCaseName: Filter Search Results by Best Sellers with Brand Keyword
+objective: Verify that the user can filter search results by 'best seller' when the search keyword is related to a brand name.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Enter a brand name (e.g., 'Samsung') in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: After the search results are displayed, showing the most related/best sold shop's products that sell the brand, locate the filter options below the search bar.
+  - Step 5: Select the 'best seller' radio button from the filter options.
+expectedResult: The system should refresh the search results, displaying products related to the 'Samsung' brand, sorted by best-selling status, prioritizing products with higher sales.
+explanation: This test case verifies that the best seller filter works correctly when the search is initiated with a brand name, ensuring that users can sort brand-related products by sales.
+

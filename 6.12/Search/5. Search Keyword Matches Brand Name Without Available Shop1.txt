@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Search Keyword Matches Brand Name Without Available Shop
+objective: Verify that the system displays the most related/best sold shops that sell the brand and related product cards when a keyword matching a brand name without an available shop is entered.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that matches a brand name known to not have any directly associated shop in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays the most related/best sold shops that sell the brand at the top of the search results, including shop name, number of items, ratings, response rate, and average response time, followed by related product cards that match the search keyword.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's ability to display relevant shops and product cards for a brand name search without an available shop. It covers the expected behavior and outcome for such a search, ensuring that users are presented with the most relevant shopping options.
+
+Test Case: Test Case 2
+testCaseName: Search Keyword Matches Brand Name Without Available Shop and No Related Shops
+objective: Verify that the system displays related product cards when a keyword matching a brand name without an available shop or related shops is entered.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that matches a brand name known to not have any directly associated shop or related shops in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays related product cards that match the search keyword, without showing any shop information at the top of the search results.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it explores a specific condition where not only is there no available shop for the brand name searched, but there are also no related shops. It ensures that the system can still provide value to the user by displaying related product cards, aligning with the scenario's focus on maintaining a useful search experience under these conditions.
+

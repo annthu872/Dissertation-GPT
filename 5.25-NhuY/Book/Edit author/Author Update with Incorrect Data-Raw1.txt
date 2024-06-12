@@ -1,34 +1,35 @@
 Test Case: Test Case 1
-testCaseName: Edit Book with Incorrect Data
-objective: Verify that the application displays incorrect data messages when user attempts to update a book with invalid data
+testCaseName: Edit Author with Incorrect Name Data
+objective: Verify that the application displays an incorrect data message when attempting to update an author with an invalid name
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: On the displayed form, enter incorrect data for one or more fields (e.g., an invalid publication date format).
-  - Step 4: Press the 'Submit' button.
-expectedResult: The application displays messages indicating which fields have been filled incorrectly.
-explanation: This test case ensures that the system properly validates user input and provides feedback when data does not meet the expected format or criteria. It directly relates to the scenario where incorrect data is entered during the book update process.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter an invalid name (e.g., using numbers or special characters) in the 'Name' field.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Name' field is displayed.
+explanation: This test case ensures that the system validates the 'Name' field correctly and provides feedback when the data does not meet the expected format.
 
 Test Case: Test Case 2
-testCaseName: Edit Book and Cancel
-objective: Verify that no changes are made to the book record in the database when the user cancels the update operation
+testCaseName: Edit Author with Incorrect Bio Data
+objective: Verify that the application displays an incorrect data message when attempting to update an author with an invalid biography
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: Enter new data into one or more of the book's fields.
-  - Step 4: Press the 'Cancel' button.
-expectedResult: The application does not update the book in the database and displays the list of book records, showing the original data for the book that was being edited.
-explanation: This test case checks the functionality of the cancel operation during the book update process to ensure that no changes are committed if the user decides not to proceed.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: In the 'Bio' field, enter invalid data (e.g., inserting script tags or unsupported characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Bio' field is displayed.
+explanation: This test case checks if the system properly validates the 'Bio' field and informs the user about incorrect or potentially harmful input.
 
 Test Case: Test Case 3
-testCaseName: Edit Book with Valid Data and Encounter an Error
-objective: Verify that the application displays an error message if an error occurs while updating a book with valid data
+testCaseName: Cancel Edit Author Operation
+objective: Verify that no changes are made to the author's record in the database when the 'Cancel' button is pressed during an edit operation
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: Enter valid data into all required fields.
-  - Step 4: Simulate an error condition (this step may involve conditions like disconnecting the database connection, which might not be directly testable in a standard testing environment).
-  - Step 5: Press the 'Submit' button.
-expectedResult: The application displays an error message indicating that the book could not be updated.
-explanation: This test case is designed to verify the application's error handling capabilities when an update operation fails due to an error, ensuring that users are properly informed of issues during the update process.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of author records without any changes being made to the selected author's record.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to abort the edit operation without making any unintended changes to the database.
 

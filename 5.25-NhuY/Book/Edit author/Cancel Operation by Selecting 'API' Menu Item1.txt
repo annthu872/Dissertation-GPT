@@ -1,12 +1,12 @@
-Test Case: Test Case 1
-testCaseName: Cancel Edit Operation by Selecting 'API' Menu Item
-objective: Verify that the book edit operation is canceled and no data is updated in the database when the 'API' menu item is selected before submitting the form.
+Test Case: Test Case 2
+testCaseName: Cancel Editing Author by Selecting 'API' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the 'API' form when the 'API' menu item is selected during the edit operation.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: On the book edit form, start entering or modifying the book details such as Title, Author, Genre, Description, and Publication date.
-  - Step 4: Before clicking the 'Submit' button, select the 'API' menu item.
-expectedResult: The book edit operation is canceled, no data is updated in the database, and the user is redirected to the API page without saving any changes made to the book details.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields for the author.
+  - Step 4: Select the 'API' menu item before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'API' form.
 reflect: yes
-explanation: This test case directly addresses the test scenario of canceling an edit operation by navigating away from the edit page, specifically by selecting the 'API' menu item. It clearly outlines the steps to replicate the scenario, the expected outcome of the operation being canceled, and ensures that the application's behavior aligns with the requirement of not saving any changes when the operation is canceled in this manner.
+explanation: This test case directly reflects the given test scenario by testing the specific action of selecting the 'API' menu item during an edit operation, which is intended to cancel the update process and redirect the user without making changes.
 

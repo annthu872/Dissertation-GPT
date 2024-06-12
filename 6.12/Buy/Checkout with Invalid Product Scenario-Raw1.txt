@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Checkout with an out-of-stock product in the shopping cart
+objective: Verify that the system prevents checkout when an out-of-stock product is in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Add an out-of-stock product to the shopping cart.
+  - Step 3: Attempt to select the out-of-stock product by clicking on the checkbox before the item.
+  - Step 4: Try to click the 'Checkout' button.
+expectedResult: The checkbox for the out-of-stock product should not be selectable, and the 'Checkout' button should be disabled.
+explanation: This test case ensures that users cannot proceed to checkout with products that are out of stock, as per the exception flow. It directly tests the scenario's requirement that invalid products (in this case, out-of-stock items) prevent checkout.
+
+Test Case: Test Case 2
+testCaseName: Checkout with a product having unselected options
+objective: Verify that the system prevents checkout when a product with options is added to the cart without selecting an option
+testSteps:
+  - Step 1: Navigate to a product detail page for a product with multiple options.
+  - Step 2: Without selecting any options, click the 'Buy Now' button to add the product to the cart.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled because the product options were not selected.
+explanation: This test case checks the scenario where a user tries to purchase a product that requires option selection without choosing any. It aligns with the exception flow that prevents checkout with products having unselected options.
+
+Test Case: Test Case 3
+testCaseName: Checkout with a product exceeding available stock
+objective: Verify that the system prevents checkout when a product's selected quantity exceeds the available stock
+testSteps:
+  - Step 1: Navigate to a product detail page for a product with available stock.
+  - Step 2: Increase the product quantity to exceed the available stock using the plus button.
+  - Step 3: Click the 'Buy Now' button to add the product to the cart.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled because the selected quantity exceeds the available stock.
+explanation: This test case ensures that users cannot proceed to checkout with a quantity of a product that exceeds the current stock, adhering to the exception flow criteria.
+

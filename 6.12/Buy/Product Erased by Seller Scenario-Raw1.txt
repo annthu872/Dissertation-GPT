@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify checkout process with valid items in shopping cart
+objective: Ensure that users can successfully checkout items that they have added to their shopping cart and are redirected to the order summary page with correct order details.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Add any available items to the shopping cart if not already added.
+  - Step 3: Select items to checkout by clicking on the checkbox before each item.
+  - Step 4: Verify that the system displays the summary costs.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Verify that the user is redirected to the new orders page with all the chosen items listed correctly.
+expectedResult: The user should see a new orders page with the correct information for each product including name, options, quantity, price, shop details, promotion information, shipping information, and the payment section with the default payment method and delivery location.
+explanation: This test case verifies the basic flow of the purchase feature, ensuring that users can checkout items from their shopping cart and are provided with the correct order details.
+
+Test Case: Test Case 2
+testCaseName: Verify inability to checkout erased items
+objective: Ensure that users cannot proceed to checkout with items that have been erased by the seller.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Attempt to select an item that has been erased by the seller by clicking on the checkbox before the item.
+  - Step 3: Verify that the checkbox cannot be selected.
+  - Step 4: Verify that the 'Checkout' button is disabled or an appropriate message is displayed indicating that some items cannot be purchased.
+expectedResult: The user should not be able to select erased items and should either see the 'Checkout' button disabled or receive a message indicating that some items in the cart cannot be purchased.
+explanation: This test case ensures that the system correctly handles the exception flow where items erased by the seller cannot be checked out, preventing users from purchasing unavailable items.
+
+Test Case: Test Case 3
+testCaseName: Verify purchase from product detail page with valid options
+objective: Ensure that users can successfully purchase a product from the product detail page by selecting valid options and quantities.
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature to navigate to a product detail page.
+  - Step 2: If the product has multiple options, select one available option.
+  - Step 3: Adjust the quantity of the product within the available stock using the minus or plus button.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button on the cart page.
+  - Step 6: Verify that the user is redirected to the new orders page with the correct product details.
+expectedResult: The user should be redirected to the new orders page with the correct information for the product including name, selected options, quantity, price, shop details, promotion information, shipping information, and the payment section with the default payment method and delivery location.
+explanation: This test case verifies the alternative flow of purchasing a product directly from the product detail page, ensuring that users can select valid options and quantities and successfully checkout.
+

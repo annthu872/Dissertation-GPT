@@ -1,12 +1,12 @@
 Test Case: Test Case 1
-testCaseName: Cancel Edit Operation by Selecting 'Genres' Menu Item
-objective: Verify that the book editing operation is canceled and no data is updated in the database when the 'Genres' menu item is selected before submitting the form.
+testCaseName: Cancel Edit Author Operation by Selecting 'Genres' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is navigated to the 'Genres' page when selecting 'Genres' from the menu during an author edit operation.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to edit.
-  - Step 3: Start entering or modifying the book details in the form fields provided (Title, Author, Genre, Description, Publication date).
-  - Step 4: Before pressing the 'Submit' button, select the 'Genres' menu item to navigate away from the edit page.
-expectedResult: The book editing operation is canceled, no data is updated in the database, and the user is redirected to the 'Genres' page.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the author's edit form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Genres' menu item.
+expectedResult: The author's data remains unchanged in the database, and the user is redirected to the 'Genres' page.
 reflect: yes
-explanation: This test case directly addresses the test scenario by verifying the cancel operation when the 'Genres' menu item is selected. It confirms that the action of navigating away from the edit page effectively cancels the edit operation, which is the core of the given test scenario.
+explanation: This test case directly reflects the given test scenario by outlining steps to initiate an edit operation on an author's data and then canceling this operation by navigating away to the 'Genres' page. It checks both the non-updation of data and the redirection, which are the core aspects of the scenario.
 

@@ -1,0 +1,12 @@
+1. Successful Checkout with Multiple Items from Different Shops
+2. Successful Checkout with Multiple Items from the Same Shop
+3. Successful Checkout with Single Item
+4. User selects all items from one store for checkout
+5. User purchases a product directly from the product detail page
+6. User adjusts the quantity of a product before adding it to the cart from the product detail page
+7. Product in the cart becomes out of stock before checkout
+8. Product in the cart is erased by the seller before checkout
+9. Attempt to purchase a product without selecting an available option
+10. Attempt to purchase a product with a quantity larger than the current stock
+11. Attempt to purchase a product with a quantity less than one
+12. Attempt to purchase a product that has no stock or an out of stock option

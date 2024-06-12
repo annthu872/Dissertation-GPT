@@ -1,0 +1,22 @@
+Test Case: Test Case 2
+testCaseName: Verify inability to select out-of-stock items in the shopping cart
+objective: Ensure that users cannot select out-of-stock items for checkout in the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page with items already added, including at least one out-of-stock item.
+  - Step 2: Attempt to select the out-of-stock item by clicking on the checkbox before the item.
+  - Step 3: Verify that the checkbox for the out-of-stock item cannot be selected.
+expectedResult: The system prevents selection of out-of-stock items by disabling their checkboxes, ensuring they cannot be included in the checkout process.
+reflect: yes
+explanation: This test case directly reflects the 'Product Out of Stock Scenario' by testing the system's behavior when attempting to select out-of-stock items during the checkout process.
+
+Test Case: Test Case 4
+testCaseName: Verify checkout button is disabled for invalid product selections
+objective: Ensure the checkout button is disabled when attempting to purchase a product without selecting an available option or with an invalid quantity.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with multiple options and select an out-of-stock option, or do not select any option if all are in stock.
+  - Step 2: Attempt to adjust the quantity to a number not within the valid range (e.g., higher than stock or less than one).
+  - Step 3: Verify that the 'Checkout' button is disabled.
+expectedResult: The 'Checkout' button remains disabled, preventing the user from proceeding with an invalid product selection.
+reflect: yes
+explanation: This test case reflects the 'Product Out of Stock Scenario' by testing the system's behavior when a user attempts to proceed with a purchase involving out-of-stock options or invalid quantities, ensuring proper stock management.
+

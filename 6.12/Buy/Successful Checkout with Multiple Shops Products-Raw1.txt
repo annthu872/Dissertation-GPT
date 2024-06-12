@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Products from Multiple Shops via Shopping Cart
+objective: Verify that a user can successfully checkout items from multiple shops in their shopping cart, and the system correctly separates products from different shops into different orders.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there are items from at least two different shops added to the shopping cart.
+  - Step 3: Select items to checkout by clicking on the checkbox before each item.
+  - Step 4: Verify the summary costs are displayed.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Verify the user is redirected to a page that shows new orders for all the items chosen.
+  - Step 7: For each product, verify the information section includes name, options, quantity, price, which shop sells it, promotion information, shipping information, platform's promotion information, and the payment section with the default payment method.
+  - Step 8: Verify that products from different shops are separated into different orders, while products from the same shop are in one order.
+  - Step 9: Confirm that a default delivery location is chosen by the system.
+expectedResult: The user successfully checks out, and the system correctly processes and separates the orders based on the shop origin of each product.
+explanation: This test case ensures that the system can handle checkouts involving multiple shops correctly by separating products from different shops into their respective orders, as described in the basic flow.
+
+Test Case: Test Case 2
+testCaseName: Successful Checkout with Products from Multiple Shops via Product Detail Page
+objective: Verify that a user can successfully checkout a product from the product detail page, including selecting options and adjusting quantity, and the system processes the checkout correctly when products are from multiple shops.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item from Shop A.
+  - Step 2: If the product has multiple options, select one available option.
+  - Step 3: Adjust the quantity of the product by clicking on the minus or plus button next to the quantity.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Repeat steps 1 to 4 for a product from Shop B.
+  - Step 6: Verify the user is redirected to a page that shows new orders for all the items chosen.
+  - Step 7: For each product, verify the information section includes name, options, quantity, price, which shop sells it, promotion information, shipping information, platform's promotion information, and the payment section with the default payment method.
+  - Step 8: Verify that products from different shops are separated into different orders, while products from the same shop are in one order.
+  - Step 9: Confirm that a default delivery location is chosen by the system.
+expectedResult: The user successfully checks out from the product detail page, and the system correctly processes the checkout, separating the orders based on the shop origin of each product.
+explanation: This test case verifies the system's ability to handle checkouts initiated from the product detail page, including the selection of product options and quantity adjustments, and ensures that products from different shops are processed into separate orders.
+

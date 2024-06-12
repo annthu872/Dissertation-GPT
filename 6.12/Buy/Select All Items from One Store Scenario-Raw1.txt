@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Select All Items from One Store in Shopping Cart
+objective: Verify that a user can select all items from one store in the shopping cart and proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the shopping cart page after adding items from at least two different stores.
+  - Step 2: Locate the group of items belonging to one store.
+  - Step 3: Click the checkbox at the head of the store's section to select all items from that store.
+  - Step 4: Verify that all items from that store are selected.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The user is redirected to a new order page showing only the items selected from the one store, with the summary costs, shipping, and payment information displayed.
+explanation: This test case ensures that users can easily select all items from a single store in their shopping cart and proceed to checkout, which is part of the alternative flow of the purchase feature.
+
+Test Case: Test Case 2
+testCaseName: Purchase Single Product from Product Detail Page
+objective: Verify that a user can purchase a single product from the product detail page by selecting options and quantity.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options and is in stock.
+  - Step 2: Select one available option for the product.
+  - Step 3: Adjust the quantity of the product within the available stock limit.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button on the page that appears after adding the product to the cart.
+expectedResult: The user is redirected to the checkout page with the selected product's details, including the chosen options, quantity, and price, ready for purchase.
+explanation: This test case verifies the functionality of purchasing a product directly from the product detail page, including the selection of options and quantity, as described in the alternative flow.
+
+Test Case: Test Case 3
+testCaseName: Prevent Checkout with Out-of-Stock Product in Cart
+objective: Verify that the checkout process is blocked if the shopping cart contains an out-of-stock product.
+testSteps:
+  - Step 1: Add multiple products to the shopping cart, ensuring at least one product is out of stock.
+  - Step 2: Attempt to select the out-of-stock product by clicking its checkbox.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The system prevents the selection of the out-of-stock product and disables the 'Checkout' button, indicating the user cannot proceed with these items.
+explanation: This test case checks the exception flow where the user cannot proceed to checkout if the cart contains out-of-stock items, ensuring the integrity of the purchase process.
+

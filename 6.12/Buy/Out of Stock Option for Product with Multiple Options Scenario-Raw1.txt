@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify out of stock option for product with multiple options in product detail page
+objective: Ensure that users cannot proceed to checkout with products that have out of stock options in the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options, where at least one option is out of stock.
+  - Step 2: Attempt to select the out of stock option for the product.
+  - Step 3: Try to adjust the quantity of the product, if the system allows selection of the out of stock option.
+  - Step 4: Click on the 'Buy Now' button.
+expectedResult: The out of stock option should not be selectable. If selected by default or attempted, the 'Buy Now' button should be disabled, preventing the user from adding the product to the cart or proceeding to checkout.
+explanation: This test case ensures that the system correctly handles out of stock options for products with multiple options, preventing users from purchasing unavailable items. It directly addresses the exception flow where a user cannot purchase a product with an out of stock option.
+
+Test Case: Test Case 2
+testCaseName: Verify out of stock products are not selectable in shopping cart
+objective: Ensure that users cannot select out of stock products for checkout in the shopping cart
+testSteps:
+  - Step 1: Add multiple products to the shopping cart, ensuring at least one product is out of stock.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Attempt to select the checkbox next to the out of stock product.
+  - Step 4: Attempt to proceed to checkout by clicking the 'Checkout' button after selecting other available products.
+expectedResult: The checkbox next to the out of stock product should not be selectable, and the user should be able to proceed to checkout with only the available products.
+explanation: This test case verifies the exception flow where users cannot select out of stock or erased products for checkout, ensuring a smooth checkout process for available items only.
+

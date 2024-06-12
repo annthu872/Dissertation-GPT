@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Quantity Exceeding Stock from Product Detail Page
+objective: Verify that the system prevents a user from purchasing a product with a quantity exceeding the available stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with limited stock.
+  - Step 2: If the product has options, select an available option.
+  - Step 3: Increase the product quantity to a number greater than the available stock using the plus button.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user should not be able to proceed to checkout with a quantity exceeding the available stock.
+reflect: yes
+explanation: This test case directly addresses the given test scenario by ensuring that the system prevents a user from purchasing more units of a product than are available in stock, specifically from the product detail page. It tests the system's ability to recognize and enforce stock limits at the point of purchase.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Quantity Exceeding Stock from Shopping Cart
+objective: Verify that the system prevents a user from checking out items from the shopping cart when the quantity exceeds the available stock.
+testSteps:
+  - Step 1: Add a product to the shopping cart and navigate to the shopping cart page.
+  - Step 2: Increase the quantity of the product to a number greater than the available stock.
+  - Step 3: Select the item by clicking on the checkbox before the item.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user should not be able to proceed to checkout with a quantity exceeding the available stock.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing a different user flow that leads to the same issue: attempting to purchase a quantity of a product that exceeds the stock, but this time from the shopping cart. It ensures that the system's stock validation works not only on the product detail page but also during the checkout process from the cart, adhering to the scenario's requirement to prevent purchases exceeding stock.
+

@@ -1,0 +1,11 @@
+Select All Items from One Store Scenario
+Direct Purchase from Product Detail Page Scenario
+Product Out of Stock Scenario
+Product Erased by Seller Scenario
+Product with Unselected Options Scenario
+Product with Quantity Exceeding Stock Scenario
+Product with Quantity Less Than One Scenario
+Out of Stock Option for Product with Multiple Options Scenario
+Checkout with Invalid Product Scenario
+Successful Checkout with Single Shop Products
+Successful Checkout with Multiple Shops Products

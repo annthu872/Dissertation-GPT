@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Price from Lowest to Highest
+objective: Verify that the user can filter search results by price from lowest to highest successfully
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword related to the product you wish to find in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: After the search results are displayed, locate the filter options.
+  - Step 5: Select the 'sort the product by price' dropdown filter.
+  - Step 6: Choose the option 'from lowest to highest' from the dropdown.
+expectedResult: The search results should now be reordered to display products sorted by price from lowest to highest.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the functionality of filtering search results by price from lowest to highest. The test steps clearly outline the process of performing a search and applying the specific filter to sort the results accordingly, which is the core objective of the test scenario.
+

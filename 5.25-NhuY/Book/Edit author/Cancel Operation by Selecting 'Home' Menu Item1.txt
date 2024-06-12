@@ -1,12 +1,12 @@
 Test Case: Test Case 1
-testCaseName: Cancel Edit Operation by Selecting 'Home' Menu Item
-objective: Verify that the edit operation is canceled and no data is updated in the database when the 'Home' menu item is selected before submitting the form.
+testCaseName: Cancel Edit Author Operation by Selecting 'Home' Menu Item
+objective: Verify that the author's data update operation is cancelled and the user is navigated to the Home page without updating the data in the database when selecting 'Home' from the menu.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: Begin entering or modifying the data in the form fields for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields for the author.
   - Step 4: Instead of clicking the 'Submit' button, select the 'Home' menu item.
-expectedResult: The application does not update the book data in the database and redirects the user to the Home page. The book list/details page should display without the changes made during the edit attempt.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the Home page. The list of authors should reflect no changes to the updated author's record.
 reflect: yes
-explanation: This test case directly addresses the test scenario of canceling an operation by selecting the 'Home' menu item. It specifically tests the cancellation of an edit operation, which is a clear instance of the scenario. The steps lead the tester through initiating an edit operation and then canceling it by navigating away, which is exactly what the scenario describes. Therefore, it reflects the given test scenario accurately.
+explanation: This test case ensures that when a user decides to cancel the update operation by navigating away from the edit page through the 'Home' menu item, the operation is indeed cancelled, and no data is updated in the database. It directly relates to the cancel operation scenario by testing the specific action of selecting 'Home' to cancel the operation.
 

@@ -1,13 +1,13 @@
 Test Case: Test Case 1
-testCaseName: Update Book with Empty Author Name
-objective: Verify that the system prevents updating a book record with an empty author name and displays the correct error message.
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the application prevents updating an author with an empty name field and displays an appropriate error message.
 testSteps:
-  - Step 1: Navigate to the book list/details page.
-  - Step 2: Click the 'Update' button next to the book you wish to update.
-  - Step 3: In the edit form, clear the 'Author' field to make it empty.
-  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Enter or modify data in the 'Bio' field.
   - Step 5: Press the 'Submit' button.
-expectedResult: The system should display an error message indicating that the author name cannot be empty and the book record should not be updated in the database.
+expectedResult: The application should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.
 reflect: yes
-explanation: This test case directly addresses the test scenario 'UpdateAuthor_WithEmptyName' by attempting to update a book record with an empty author name and expecting the system to prevent the update, which is the core requirement of the scenario.
+explanation: This test case directly addresses the test scenario 'UpdateAuthor_WithEmptyName' by attempting to update an author with an empty name field and expecting an error message, which is the core functionality being tested.
 

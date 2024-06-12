@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Direct Purchase from Product Detail Page with Single Option
+objective: Verify that a user can directly purchase a product from the product detail page when the product has a single option.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with a single option.
+  - Step 2: Click on the 'Buy Now' button.
+  - Step 3: Verify that the quantity of the product is set to 1 by default.
+  - Step 4: Click on the 'Checkout' button.
+expectedResult: User is redirected to the checkout page showing the order summary for the selected product, including product information, quantity, price, shipping information, and the default payment method.
+explanation: This test case ensures that users can successfully initiate a purchase from the product detail page for products with a single option, bypassing the need to add the item to the shopping cart.
+
+Test Case: Test Case 2
+testCaseName: Direct Purchase from Product Detail Page with Multiple Options
+objective: Verify that a user can directly purchase a product from the product detail page when the product has multiple options and one must be selected.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with multiple options.
+  - Step 2: Select one of the available options for the product.
+  - Step 3: Adjust the quantity if necessary using the plus or minus button.
+  - Step 4: Click on the 'Buy Now' button.
+  - Step 5: Click on the 'Checkout' button.
+expectedResult: User is redirected to the checkout page showing the order summary for the selected product, including the chosen option, adjusted quantity, price, shipping information, and the default payment method.
+explanation: This test case verifies that users can successfully purchase a product with multiple options directly from the product detail page by selecting an option and proceeding to checkout.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Direct Purchase Without Selecting an Option
+objective: Verify that the system prevents a user from purchasing a product with multiple options without selecting one.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with multiple options.
+  - Step 2: Without selecting an option, attempt to click on the 'Buy Now' button.
+expectedResult: The 'Buy Now' button is disabled or an error message is displayed prompting the user to select an option before proceeding.
+explanation: This test case ensures that the system enforces the rule that an option must be selected for products with multiple options before a purchase can be initiated.
+
+Test Case: Test Case 4
+testCaseName: Attempt to Direct Purchase Out of Stock Product
+objective: Verify that the system prevents a user from purchasing a product that is out of stock.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that is out of stock.
+  - Step 2: Attempt to click on the 'Buy Now' button.
+expectedResult: The 'Buy Now' button is disabled or an error message is displayed indicating that the product is out of stock.
+explanation: This test case checks that the system correctly prevents purchases of out-of-stock products directly from the product detail page.
+

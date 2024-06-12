@@ -1,0 +1,12 @@
+Test Case: Test Case 2
+testCaseName: Verify inability to checkout erased items
+objective: Ensure that users cannot proceed to checkout with items that have been erased by the seller.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Attempt to select an item that has been erased by the seller by clicking on the checkbox before the item.
+  - Step 3: Verify that the checkbox cannot be selected.
+  - Step 4: Verify that the 'Checkout' button is disabled or an appropriate message is displayed indicating that some items cannot be purchased.
+expectedResult: The user should not be able to select erased items and should either see the 'Checkout' button disabled or receive a message indicating that some items in the cart cannot be purchased.
+reflect: yes
+explanation: This test case directly reflects the 'Product Erased by Seller Scenario' by testing the system's behavior when a user attempts to checkout items that have been erased by the seller, ensuring that such items cannot be purchased.
+

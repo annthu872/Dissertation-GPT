@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Search Keyword Matching No Shop or Brand
+objective: Verify that the system displays related product cards when the search keyword does not match any shop or brand.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that is known not to match any shop or brand into the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display related product cards that have names or descriptions matching or related to the keyword.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's response when a search keyword does not match any shop or brand. It checks if the system can still provide value by displaying related product cards, thus accurately testing the scenario.
+
+Test Case: Test Case 2
+testCaseName: Search Keyword Matching No Shop or Brand with No Related Products
+objective: Verify that the system displays random product cards when the search keyword does not match any shop, brand, or related products.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that is known not to match any shop, brand, or related products into the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards as no search results are found related to the keyword.
+reflect: yes
+explanation: This test case also reflects the given test scenario but explores a different outcome where not only does the search keyword not match any shop or brand, but it also does not match any related products. It verifies the system's fallback mechanism of displaying random product cards, ensuring that the scenario is thoroughly tested with an alternative path.
+

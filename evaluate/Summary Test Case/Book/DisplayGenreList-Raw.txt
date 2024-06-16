@@ -1,0 +1,117 @@
+Scenario: 1. Viewing the First Page of Genres-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Viewing the First Page of Genres
+objective: Verify that the user can view the first page of genres with up to 10 items displayed
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Select the item 'Genres' from the main menu or navigation bar.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application displays the first page of the genres list, showing up to 10 items. Each item should display an id, name, and description.
+explanation: This test case ensures that users can successfully view the first page of genres, verifying the application's ability to display the initial set of genres as per the main scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Controls on Genres Page
+objective: Verify that the pagination controls are visible and correctly positioned below the list of genres
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Select the item 'Genres' from the main menu or navigation bar.
+  - Step 3: Scroll down to the bottom of the genres list.
+expectedResult: The 'Next' button and pagination numbers should be visible below the list of genres, allowing the user to navigate to other pages of genres.
+explanation: This test case checks the presence and correct positioning of pagination controls, ensuring users can navigate through different pages of genres.
+
+
+Scenario: 2. Navigating to the Next Page of Genres-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area.
+  - Step 3: Observe the list of genres displayed on the first page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click the 'Next' button located in the pagination block.
+expectedResult: The application should navigate to the next page, displaying the next 10 records of genres. The list should include the columns: id, Name, and Description for each genre.
+explanation: This test case ensures that the pagination feature works as expected, allowing users to navigate through the list of genres by using the 'Next' button. It directly relates to the test scenario of navigating to the next page of genres, focusing on the functionality of the 'Next' button in the pagination block.
+
+Test Case: Test Case 2
+testCaseName: Navigate to the Second Page of Genres Using Page Number
+objective: Verify that the user can navigate to the second page of genres by clicking the page number in the pagination block and that the correct records are displayed.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area.
+  - Step 3: Observe the list of genres displayed on the first page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on the number '2' in the pagination block to navigate to the second page.
+expectedResult: The application should navigate to the second page, displaying the next 10 records of genres. The list should include the columns: id, Name, and Description for each genre.
+explanation: This test case verifies the functionality of navigating through pages by selecting a specific page number in the pagination block. It ensures that users can directly jump to another page of genres, in this case, the second page, and see the next set of records as expected.
+
+
+Scenario: 3. Navigating to a Specific Page of Genres-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Genres Page via Menu Selection
+objective: Verify that the user can navigate to the Genres page by selecting the 'Genres' item from the menu and that the first page of genres is displayed correctly.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the menu item labeled 'Genres' and click on it.
+expectedResult: The application displays the Genres page with a list of genres. The list should show up to 10 items, each with an id, name, and description.
+explanation: This test case ensures that users can successfully navigate to the Genres page using the menu and that the initial list of genres is displayed as per the requirements.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Genres
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Click on the 'Next' button located in the pagination block.
+expectedResult: The application displays the second page of genres with the next 10 items, each with an id, name, and description.
+explanation: This test case verifies that the pagination feature works correctly for navigating through the list of genres, specifically testing the 'Next' button functionality.
+
+Test Case: Test Case 3
+testCaseName: Navigate to a Specific Page of Genres Using Page Number
+objective: Verify that the user can navigate to a specific page of genres by clicking on the corresponding page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Identify the page number the user wants to navigate to and click on that number in the pagination block.
+expectedResult: The application displays the selected page of genres with up to 10 items, each with an id, name, and description.
+explanation: This test case ensures that users can navigate to a specific page within the list of genres using the pagination block, testing the functionality of selecting a page number directly.
+
+
+Scenario: 4. Viewing the Last Page of Genres-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Viewing the Last Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the last page of genres by repeatedly clicking the 'Next' button and ensure the last page displays the correct genres information.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the list of genres displayed on the first page.
+  - Step 3: Click the 'Next' button below the list of genres.
+  - Step 4: Repeat Step 3 until the 'Next' button is disabled (indicating you have reached the last page).
+  - Step 5: Observe the list of genres on the last page.
+expectedResult: The last page of genres should be displayed with up to 10 items, including their 'id', 'Name', and 'Description'. The 'Next' button should be disabled, indicating that the user is on the last page.
+explanation: This test case ensures that the pagination feature works correctly and that users can navigate to the last page of genres using the 'Next' button. It directly matches the scenario of viewing the last page of genres as described.
+
+Test Case: Test Case 2
+testCaseName: Viewing the Last Page of Genres Using Page Number
+objective: Verify that the user can navigate to the last page of genres by clicking the last page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the pagination block below the list of genres.
+  - Step 3: Click the last page number shown in the pagination block.
+  - Step 4: Observe the list of genres on the last page.
+expectedResult: The user should be taken directly to the last page of genres, displaying up to 10 items with their 'id', 'Name', and 'Description'.
+explanation: This test case verifies that users can directly navigate to the last page of genres by selecting the last page number, ensuring the application supports direct page selection in addition to sequential navigation.
+
+
+Scenario: 5. Attempting to Navigate Beyond the Last Page of Genres-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Attempting to Navigate Beyond the Last Page of Genres
+objective: Verify that the application prevents navigation beyond the last page of genres and handles the attempt gracefully
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Identify the last page number by observing the pagination block.
+  - Step 3: Click the 'Next' button on the last page of genres.
+  - Step 4: Alternatively, if there is a way to input a page number, enter a page number greater than the last page and submit.
+expectedResult: The application should either disable the 'Next' button on the last page, not respond to the click, or display a message indicating the user is on the last page. If a page number greater than the last is entered, the application should display an error message or redirect the user to the last page.
+explanation: This test case ensures that the application's navigation logic correctly handles attempts to navigate beyond the available data set. It is directly related to the scenario of navigating through the genres and specifically tests the application's behavior at the boundary condition (the last page).
+
+

@@ -1,0 +1,113 @@
+Scenario: Successful Author Deletion1.txt
+Test Case: Test Case 1
+testCaseName: Verify successful author deletion
+objective: Ensure that the user can successfully delete an author and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
+expectedResult: The author's record should be successfully deleted from the database, and the user should be redirected to the updated list of authors without the deleted record.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'Successful Author Deletion', by outlining steps to delete an author and confirming the deletion's success.
+
+
+Scenario: User Cancels Deletion1.txt
+Test Case: Test Case 1
+testCaseName: Verify cancellation of author deletion via Cancel button
+objective: Ensure that pressing the 'Cancel' button during the deletion confirmation dialog cancels the deletion process and retains the author's data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The author's data is not deleted from the database, and the user is redirected back to the list of authors, where the previously selected author's data remains unchanged.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'User Cancels Deletion' by verifying that the 'Cancel' button effectively stops the deletion process, ensuring the author's data remains intact.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancelling author deletion
+objective: To confirm that after cancelling the deletion of an author, the user can navigate to other sections ('Books', 'Genres', 'Authors', 'Home', 'API') without the author's data being deleted
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select any menu item ('Books', 'Genres', 'Authors', 'Home', 'API').
+expectedResult: After cancellation, navigating to other sections does not delete the author's data, and the corresponding form or page opens with updated data.
+reflect: yes
+explanation: Although this test case explores the application's behavior post-cancellation, it still reflects the given test scenario by ensuring that the cancellation action preserves the author's data, allowing the user to navigate freely without unintended consequences.
+
+
+Scenario: User navigates to API after canceling deletion1.txt
+Test Case: Test Case 1
+testCaseName: Cancel deletion and navigate to API
+objective: Verify that after canceling the deletion of an author, the user can navigate to the API page without deleting the data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the menu item 'API'.
+expectedResult: The application navigates to the API page without deleting any author data, and the API page displays with updated data.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the user's ability to cancel the deletion process and then successfully navigate to the API page, ensuring the data remains unchanged. It follows the exact steps outlined in the scenario, from attempting to delete an author, cancelling the deletion, to navigating to the API page.
+
+
+Scenario: User navigates to Authors after canceling deletion1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Authors
+objective: Verify that after cancelling the deletion of an author, the user can navigate back to the Authors page without the data being deleted.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is displayed again.
+  - Step 5: Select the menu item 'Authors' to navigate to the Authors page.
+expectedResult: The user is taken to the Authors page where all authors, including the one that was selected for deletion, are listed. This confirms that the deletion was successfully canceled and the data was not deleted from the database.
+reflect: yes
+explanation: This test case ensures that the cancel operation works as intended and that the user can navigate back to the Authors page without any data loss. It directly matches the scenario name by testing the navigation to Authors after canceling the deletion operation.
+
+
+Scenario: User navigates to Books after canceling deletion1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Books
+objective: Verify that after cancelling the deletion of an author, the user can navigate to the Books page without the data being deleted.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the menu item 'Books'.
+expectedResult: The Books page is displayed with updated data, and the author's data previously selected for deletion remains unchanged in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the functionality of cancelling a deletion operation and then navigating to the Books page. It ensures that the cancellation of the deletion does not affect the database and that navigation to other pages works as expected without any data loss.
+
+
+Scenario: User navigates to Genres after canceling deletion1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Genres
+objective: Verify that after cancelling the deletion of an author, the user can navigate to the Genres page without deleting the data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the menu item 'Genres'.
+expectedResult: The Genres page is displayed with updated data, and the author's data previously selected for deletion remains unchanged in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps that involve cancelling a deletion operation and then navigating to the Genres page. It checks that the operation does not affect the data integrity or the user's ability to navigate to other sections of the application, which is the core of the test scenario.
+
+
+Scenario: User navigates to Home after canceling deletion1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Home
+objective: Verify that after canceling the deletion of an author, the user can navigate to the Home page without the author's data being deleted.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the 'Home' menu item to navigate to the Home page.
+expectedResult: The author's data is not deleted from the database, and the user is successfully navigated to the Home page with all data intact.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps that involve canceling a deletion operation and then navigating to the Home page, ensuring that the author's data remains intact. It tests the specific flow of canceling a deletion and verifies the expected outcome, which aligns with the scenario's requirement.
+
+

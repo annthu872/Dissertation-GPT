@@ -1,0 +1,363 @@
+{
+    "Add a new book with empty Author-Raw1.txt0": {},
+    "Add a new book with empty Author-Raw1.txt1": {
+        "testCaseName": "Add a new book with empty Author field",
+        "objective": "Verify that the system prevents adding a new book with an empty Author field and displays the correct error message.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data in the Title, Genre, Description, and Publication date fields.",
+            "- Step 4: Leave the Author field empty.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display an error message indicating that the Author field cannot be empty and the book record should not be added to the database.",
+        "explanation": "This test case ensures that the system enforces the requirement for all book records to have an author specified. It directly tests the functionality described in the main scenario where incorrect data entry is handled by displaying error messages."
+    },
+    "Add a new book with empty Author-Raw1.txt2": {
+        "testCaseName": "Cancel adding a new book with empty Author field",
+        "objective": "Verify that the system does not save the book record when the 'Cancel' button is pressed, even if the Author field is empty.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter data in the Title, Genre, Description, and Publication date fields.",
+            "- Step 4: Leave the Author field empty.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The system should not save the book record and should display the list of book records without adding the new book.",
+        "explanation": "This test case checks the cancel operation scenario to ensure that incomplete or unsubmitted book records (even with mandatory fields like Author empty) are not saved to the database. It verifies the system's behavior in discarding the creation process upon user cancellation."
+    },
+    "Add a new book with empty Description-Raw1.txt0": {},
+    "Add a new book with empty Description-Raw1.txt1": {
+        "testCaseName": "Add a new book with empty Description",
+        "objective": "Verify that the system allows adding a new book with all required fields filled except for the Description field",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data into the Title, Author, Genre, and Publication date fields.",
+            "- Step 4: Leave the Description field empty.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The new book record is successfully added to the database without a description, and the list of books with the newly added record is displayed.",
+        "explanation": "This test case verifies that the Description field is not mandatory for adding a new book record to the database. It is based on the main scenario of the use case specification for adding a new book, focusing on the ability to omit the Description field."
+    },
+    "Add a new book with empty Publication date-Raw1.txt0": {},
+    "Add a new book with empty Publication date-Raw1.txt1": {
+        "testCaseName": "Add a new book with empty Publication date",
+        "objective": "Verify that the system allows adding a new book with the Publication date field left empty",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data into the Title, Author, Genre, and Description fields.",
+            "- Step 4: Leave the Publication date field empty.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The new book record is successfully added to the database without a Publication date, and the list of books with the newly added record is displayed.",
+        "explanation": "This test case verifies that the system can handle the creation of a new book record with an optional Publication date field. It is based on the main scenario of the use case specification for adding a new book, focusing on the functionality of adding a book with minimal required fields."
+    },
+    "Add a new book with empty Publication date-Raw1.txt2": {
+        "testCaseName": "Cancel adding a new book with empty Publication date",
+        "objective": "Verify that the system does not save the new book record when the 'Cancel' button is pressed, even if the Publication date is left empty",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering valid data into the Title, Author, Genre, and Description fields.",
+            "- Step 4: Leave the Publication date field empty.",
+            "- Step 5: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The new book record is not saved to the database, and the user is redirected to the list of book records without the addition of a new record.",
+        "explanation": "This test case ensures that the cancel operation works correctly for the scenario of adding a new book, specifically testing the functionality when the Publication date is not provided. It is derived from the cancel operation scenario in the use case specification."
+    },
+    "Add a new book with empty Title-Raw1.txt0": {},
+    "Add a new book with empty Title-Raw1.txt1": {
+        "testCaseName": "Add a new book with empty Title field",
+        "objective": "Verify that the system prevents adding a new book with an empty Title field and displays an incorrect data message.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Leave the Title field empty.",
+            "- Step 4: Fill in the Author, Genre, Description, and Publication date fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display an incorrect data message for the Title field, indicating that it cannot be empty and the book record should not be added to the database.",
+        "explanation": "This test case ensures that the system enforces the requirement for a book to have a title before it can be added to the database, which is crucial for maintaining data integrity and usability."
+    },
+    "Add a new book with empty Title-Raw1.txt2": {
+        "testCaseName": "Cancel adding a new book with empty Title field",
+        "objective": "Verify that the system does not save the book record when the 'Cancel' button is pressed, even if the Title field is empty.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Leave the Title field empty.",
+            "- Step 4: Fill in the Author, Genre, Description, and Publication date fields with valid data.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The system should not save the book record and should display the list of book records without adding the new book.",
+        "explanation": "This test case verifies that the cancel operation works correctly, even when mandatory fields such as the Title are left empty, ensuring that incomplete records are not inadvertently saved."
+    },
+    "Book Creation with Incorrect Data-Raw1.txt0": {},
+    "Book Creation with Incorrect Data-Raw1.txt1": {
+        "testCaseName": "Book Creation with Incorrect Title Data",
+        "objective": "Verify that the system displays an incorrect data message when a book is created with an incorrect title format.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter an incorrect format for the Title (e.g., using special characters or numbers if not allowed).",
+            "- Step 4: Fill in the rest of the fields (Author, Genre, Description, Publication date) with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the Title field is displayed.",
+        "explanation": "This test case ensures that the system validates the Title field's data format during the book creation process and provides feedback when the data does not meet the expected format."
+    },
+    "Book Creation with Incorrect Data-Raw1.txt2": {
+        "testCaseName": "Book Creation with Incorrect Author Data",
+        "objective": "Verify that the system displays an incorrect data message when a book is created with an incorrect author name format.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data for the Title, Genre, Description, and Publication date fields.",
+            "- Step 4: Enter an incorrect format for the Author (e.g., using special characters or numbers if not allowed).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the Author field is displayed.",
+        "explanation": "This test case checks if the system properly validates the Author field's data format and informs the user when the input does not match the expected criteria."
+    },
+    "Book Creation with Incorrect Data-Raw1.txt3": {
+        "testCaseName": "Book Creation with Incorrect Genre Data",
+        "objective": "Verify that the system displays an incorrect data message when a book is created with an incorrect genre format.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data for the Title, Author, Description, and Publication date fields.",
+            "- Step 4: Enter an incorrect format for the Genre (e.g., using numbers if not allowed).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the Genre field is displayed.",
+        "explanation": "This test case ensures that the system validates the Genre field's data format and provides feedback when the data does not meet the expected format."
+    },
+    "Book Creation with Incorrect Data-Raw1.txt4": {
+        "testCaseName": "Book Creation with Incorrect Publication Date",
+        "objective": "Verify that the system displays an incorrect data message when a book is created with an incorrect publication date format.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data for the Title, Author, Genre, and Description fields.",
+            "- Step 4: Enter an incorrect format for the Publication date (e.g., using letters or incorrect date format).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the Publication date field is displayed.",
+        "explanation": "This test case verifies that the system checks the Publication date field's format and alerts the user if the input is in an incorrect format."
+    },
+    "Cancel Operation After Partial Data Entry-Raw1.txt0": {},
+    "Cancel Operation After Partial Data Entry-Raw1.txt1": {
+        "testCaseName": "Cancel New Book Creation After Partial Data Entry by Cancel Button",
+        "objective": "Verify that the book creation process can be canceled after partially entering data by using the 'Cancel' button, and ensure that no data is saved to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new book.",
+            "- Step 3: On the book creation form, enter partial data for the new book (e.g., Title and Author).",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The application should not save the entered data and should redirect the user to the list of book records, displaying the list without the partially entered book.",
+        "explanation": "This test case ensures that when a user decides not to complete the book creation process after entering some data, the operation can be successfully canceled without affecting the database. It directly tests the cancel operation scenario after partial data entry."
+    },
+    "Cancel Operation After Partial Data Entry-Raw1.txt2": {
+        "testCaseName": "Cancel New Book Creation After Partial Data Entry by Navigation",
+        "objective": "Verify that navigating away from the book creation page after partially entering data cancels the creation process without saving data to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new book.",
+            "- Step 3: On the book creation form, enter partial data for the new book (e.g., Genre and Description).",
+            "- Step 4: Without submitting the form, select a different menu item (e.g., 'Authors')."
+        ],
+        "expectedResult": "The application should not save the partially entered data and should display the selected page (e.g., Authors page) without any impact from the canceled book creation process.",
+        "explanation": "This test case verifies that if a user navigates away from the book creation form after entering some data, the creation process is canceled and no data is saved. It tests the cancel operation scenario's aspect of navigating away to cancel the operation."
+    },
+    "Cancel Operation Before Data Submission-Raw1.txt0": {},
+    "Cancel Operation Before Data Submission-Raw1.txt1": {
+        "testCaseName": "Cancel New Book Creation Before Submission",
+        "objective": "Verify that the book creation process can be canceled before data submission and ensures data is not saved",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new book.",
+            "- Step 3: On the book creation form, start entering data for the new book (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, click the 'Cancel' button."
+        ],
+        "expectedResult": "The book creation process is canceled, no data is saved to the database, and the user is redirected to the list of book records.",
+        "explanation": "This test case ensures that when a user decides not to proceed with adding a new book to the database, they can cancel the operation. It verifies that the cancel functionality works as expected, preventing any partial or full data submission."
+    },
+    "Cancel Operation Before Data Submission-Raw1.txt2": {
+        "testCaseName": "Cancel New Book Creation and Navigate to Another Page",
+        "objective": "Verify that navigating away from the book creation page before submission cancels the operation and no data is saved",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Begin entering book details (Title, Author, Genre, Description, Publication Date) into the form.",
+            "- Step 4: Without submitting the form, select a different menu item (e.g., 'Genres', 'Authors', 'Home', or 'API')."
+        ],
+        "expectedResult": "Navigation away from the book creation page is successful, the book creation process is canceled, no data is saved to the database, and the user is taken to the selected page.",
+        "explanation": "This test case checks the application's behavior when a user navigates away from the book creation page without submitting the form. It ensures that the application correctly cancels the book creation process, preventing any unintended data submission."
+    },
+    "Navigation to 'API' Before Submission-Raw1.txt0": {},
+    "Navigation to 'API' Before Submission-Raw1.txt1": {
+        "testCaseName": "Navigate to 'API' before submitting new book data",
+        "objective": "Verify that navigating to 'API' before submitting new book data does not save the entered data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click on the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering book data into the form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, select the 'API' menu item to navigate away from the book creation page."
+        ],
+        "expectedResult": "The application should navigate to the 'API' page without saving the entered book data, and no new book record should be added to the database.",
+        "explanation": "This test case ensures that if a user navigates away from the book creation page by selecting 'API' from the menu before submitting the form, the entered data is not saved. It directly tests the navigation aspect mentioned in the scenario, focusing on the behavior when the 'API' menu item is selected."
+    },
+    "Navigation to 'API' Before Submission-Raw1.txt2": {
+        "testCaseName": "Cancel operation before submitting new book data",
+        "objective": "Verify that pressing the 'Cancel' button before submitting new book data discards the entered data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click on the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The application should discard the entered book data and display the list of book records without adding a new record.",
+        "explanation": "This test case verifies the functionality of the 'Cancel' button in the book creation form. It ensures that if a user decides not to proceed with creating a new book record and presses 'Cancel', the entered data is not saved, aligning with the cancel operation scenario."
+    },
+    "Navigation to 'Authors' Before Submission-Raw1.txt0": {},
+    "Navigation to 'Authors' Before Submission-Raw1.txt1": {
+        "testCaseName": "Navigate to 'Authors' before submitting new book data",
+        "objective": "Verify that navigating to 'Authors' before submitting new book data does not save the entered data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the book form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, click on the 'Authors' menu item to navigate away from the book creation page."
+        ],
+        "expectedResult": "The application should navigate to the 'Authors' page without saving the entered book data, and no new book record should be added to the database.",
+        "explanation": "This test case ensures that if a user navigates away from the book creation page by selecting 'Authors' from the menu before submitting the form, the entered data is not saved. It verifies the application's behavior in handling unsaved data when the user navigates away during the creation process."
+    },
+    "Navigation to 'Authors' Before Submission-Raw1.txt2": {
+        "testCaseName": "Verify data is not saved when canceling book creation",
+        "objective": "Ensure that pressing the 'Cancel' button while creating a new book does not save the book data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter data into the book form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Press the 'Cancel' button instead of 'Submit'."
+        ],
+        "expectedResult": "The application should return to the book list page without saving the entered data, and no new book record should be added to the database.",
+        "explanation": "This test case checks the functionality of the 'Cancel' button in the book creation form to ensure that it properly discards the entered data and does not add a new record to the database, aligning with the user's intention to cancel the operation."
+    },
+    "Navigation to 'Books' Before Submission-Raw1.txt0": {},
+    "Navigation to 'Books' Before Submission-Raw1.txt1": {
+        "testCaseName": "Verify Navigation to 'Books' Before Submission via Cancel Button",
+        "objective": "Ensure that the user can navigate back to the 'Books' list without submitting the form by clicking the 'Cancel' button.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the form fields for a new book.",
+            "- Step 4: Click the 'Cancel' button before pressing the 'Submit' button."
+        ],
+        "expectedResult": "The application should navigate the user back to the list of books without saving any entered data.",
+        "explanation": "This test case ensures that the cancel operation works as expected, allowing users to return to the book list without making any changes."
+    },
+    "Navigation to 'Books' Before Submission-Raw1.txt2": {
+        "testCaseName": "Verify Navigation to 'Books' Before Submission via Navigation Menu",
+        "objective": "Ensure that the user can navigate back to the 'Books' list without submitting the form by selecting 'Books' from the navigation menu.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the form fields for a new book.",
+            "- Step 4: Without pressing the 'Submit' button, select the 'Books' menu item from the navigation menu."
+        ],
+        "expectedResult": "The application should navigate the user back to the list of books without saving any entered data, displaying the updated list of books.",
+        "explanation": "This test case verifies that users can safely navigate away from the book creation form to the 'Books' list via the navigation menu without unintentionally saving data."
+    },
+    "Navigation to 'Genres' Before Submission-Raw1.txt0": {},
+    "Navigation to 'Genres' Before Submission-Raw1.txt1": {
+        "testCaseName": "Navigate to 'Genres' before submitting new book data",
+        "objective": "Verify that navigating to 'Genres' from the book creation form before submitting discards the entered data and displays the 'Genres' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click on the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the book creation form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'Genres'."
+        ],
+        "expectedResult": "The book creation form is closed, the entered data is not saved to the database, and the 'Genres' page is displayed with updated data.",
+        "explanation": "This test case ensures that if a user navigates away from the book creation form to 'Genres' before submitting the form, the entered data is not saved, and the user is correctly redirected to the 'Genres' page. It directly matches the scenario name by testing the navigation to 'Genres' before submission."
+    },
+    "Navigation to 'Genres' Before Submission-Raw1.txt2": {
+        "testCaseName": "Cancel operation and navigate to 'Genres'",
+        "objective": "Verify that cancelling the book creation form and then navigating to 'Genres' discards the entered data and displays the 'Genres' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click on the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the book creation form fields (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Click on the 'Cancel' button to close the book creation form.",
+            "- Step 5: After the form is closed, select the menu item 'Genres'."
+        ],
+        "expectedResult": "The book creation form is closed without saving the entered data, and the 'Genres' page is displayed with updated data.",
+        "explanation": "This test case verifies the functionality of the 'Cancel' button in the book creation form and ensures that after cancelling, navigating to 'Genres' does not save any data and displays the 'Genres' page correctly. It complements the scenario by testing the cancel operation followed by navigation to 'Genres'."
+    },
+    "Navigation to 'Home' Before Submission-Raw1.txt0": {},
+    "Navigation to 'Home' Before Submission-Raw1.txt1": {
+        "testCaseName": "Navigation to 'Home' Before Submission",
+        "objective": "Verify that navigating to 'Home' before submitting a new book record cancels the operation and does not save the data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to start adding a new book.",
+            "- Step 3: Start entering data into the form fields for the new book (Title, Author, Genre, Description, Publication Date).",
+            "- Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the creation page."
+        ],
+        "expectedResult": "The operation is canceled, the data is not saved in the database, and the user is redirected to the 'Home' page.",
+        "explanation": "This test case ensures that if a user navigates away to 'Home' before completing the submission of a new book, the operation is canceled and the data is not saved, adhering to the specified behavior in the cancel operation scenario."
+    },
+    "Successful Book Creation-Raw1.txt0": {},
+    "Successful Book Creation-Raw1.txt1": {
+        "testCaseName": "Successful Book Creation with Valid Data",
+        "objective": "Verify that a new book record can be successfully added to the database with valid data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter valid data into all fields: Title, Author, Genre, Description, and Publication Date.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.",
+        "explanation": "This test case ensures that when valid data is entered into the book creation form and submitted, a new book record is successfully created and stored in the database."
+    },
+    "Successful Book Creation-Raw1.txt2": {
+        "testCaseName": "Book Creation with Invalid Data",
+        "objective": "Verify that the system displays error messages for invalid data during book creation",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Enter invalid data into one or more fields: Title, Author, Genre, Description, and Publication Date. For example, leave the Title field empty.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system displays error messages related to the invalid data entered, and the book record is not added to the database.",
+        "explanation": "This test case checks that the system properly validates the data entered in the book creation form and provides feedback to the user when invalid data is submitted."
+    },
+    "Successful Book Creation-Raw1.txt3": {
+        "testCaseName": "Cancel Book Creation Operation",
+        "objective": "Verify that the book creation operation can be canceled without saving data to the database",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the form fields but do not press 'Submit'.",
+            "- Step 4: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The book creation form is closed, no data is saved to the database, and the user is redirected to the list of book records.",
+        "explanation": "This test case ensures that users have the option to cancel the book creation process at any point before submitting the form, without any data being saved."
+    },
+    "Successful Book Creation-Raw1.txt4": {
+        "testCaseName": "Navigation Away from Book Creation Cancels Operation",
+        "objective": "Verify that navigating away from the book creation form cancels the operation without saving data",
+        "testSteps": [
+            "- Step 1: Navigate to the book list page.",
+            "- Step 2: Click the 'Create new' button to open the book creation form.",
+            "- Step 3: Start entering data into the form fields but do not press 'Submit'.",
+            "- Step 4: Select a different menu item such as 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The book creation operation is canceled, no data is saved to the database, and the user is redirected to the selected page.",
+        "explanation": "This test case verifies that if a user navigates away from the book creation form without submitting it, the operation is canceled and no data is saved, ensuring the user does not accidentally lose other work."
+    }
+}

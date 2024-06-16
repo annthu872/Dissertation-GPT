@@ -1,0 +1,297 @@
+{
+    "CreateGenre_WithoutDescription-Raw1.txt0": {},
+    "CreateGenre_WithoutDescription-Raw1.txt1": {
+        "testCaseName": "Create Genre Without Entering Description",
+        "objective": "Verify that the genre can be created without entering a description and is successfully added to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Enter a unique name for the genre in the 'Name' field.",
+            "- Step 4: Leave the 'Description' field empty.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "A new genre record without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.",
+        "explanation": "This test case ensures that the description field is not mandatory for creating a new genre record. It directly tests the scenario's requirement by omitting the description during genre creation."
+    },
+    "CreateGenre_WithoutDescription-Raw1.txt2": {
+        "testCaseName": "Create Genre With Description Then Cancel",
+        "objective": "Verify that when a user cancels the genre creation process after entering data, the data is not saved to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Enter a name in the 'Name' field.",
+            "- Step 4: Enter some text in the 'Description' field.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The genre creation process is cancelled, no data is saved to the database, and the user is redirected to the list of genres without the new genre being added.",
+        "explanation": "This test case checks the functionality of the 'Cancel' button in the genre creation form, ensuring that no data is saved when the creation process is cancelled, regardless of whether the description was entered."
+    },
+    "CreateGenre_WithoutDescription-Raw1.txt3": {
+        "testCaseName": "Create Genre Without Description and Encounter an Error",
+        "objective": "Verify that the application displays an error message when an error occurs during the creation of a new genre without a description.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Enter a unique name for the genre in the 'Name' field.",
+            "- Step 4: Leave the 'Description' field empty.",
+            "- Step 5: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed, indicating that the new genre record could not be added due to an error.",
+        "explanation": "This test case is designed to verify the application's error handling capabilities during the genre creation process, specifically when the description is omitted. It ensures that users are properly informed when an error prevents the addition of a new genre."
+    },
+    "CreateGenre_WithoutName-Raw1.txt0": {},
+    "CreateGenre_WithoutName-Raw1.txt1": {
+        "testCaseName": "Attempt to create a new genre without entering a name",
+        "objective": "Verify that the system prevents the creation of a new genre without a name and displays an appropriate error message.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Leave the 'Name' field empty.",
+            "- Step 4: Enter a valid description in the 'Description' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating that the name field is required and the genre record is not added to the database.",
+        "explanation": "This test case ensures that the system enforces the requirement for a genre to have a name before it can be created. It directly relates to the scenario 'CreateGenre_WithoutName' by testing the system's response to the absence of a genre name during the creation process."
+    },
+    "CreateGenre_WithoutName-Raw1.txt2": {
+        "testCaseName": "Cancel genre creation without entering a name",
+        "objective": "Verify that cancelling the genre creation process without entering a name does not result in any record being added to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Leave the 'Name' field empty.",
+            "- Step 4: Optionally enter a description in the 'Description' field.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The genre creation form is closed, no new genre record is added to the database, and the user is redirected back to the list of genres.",
+        "explanation": "This test case checks the functionality of the 'Cancel' button during the genre creation process, especially when the 'Name' field is left empty. It ensures that the cancellation process works correctly and does not add incomplete records to the database, aligning with the scenario 'CreateGenre_WithoutName'."
+    },
+    "Genre Creation with Incorrect Data-Raw1.txt0": {},
+    "Genre Creation with Incorrect Data-Raw1.txt1": {
+        "testCaseName": "Genre Creation with Empty Name Field",
+        "objective": "Verify that the system displays an incorrect data message when attempting to create a new genre with the Name field left empty",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Leave the 'Name' field empty.",
+            "- Step 4: Enter valid data into the 'Description' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the Name field cannot be empty.",
+        "explanation": "This test case ensures that the system validates the Name field for non-empty inputs during the genre creation process."
+    },
+    "Genre Creation with Incorrect Data-Raw1.txt2": {
+        "testCaseName": "Genre Creation with Excessively Long Name",
+        "objective": "Verify that the system displays an incorrect data message when attempting to create a new genre with a Name that exceeds the character limit",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Enter a Name that exceeds the character limit (e.g., 256 characters long).",
+            "- Step 4: Enter valid data into the 'Description' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the Name field exceeds the character limit.",
+        "explanation": "This test case checks that the system enforces a character limit on the Name field during the genre creation process."
+    },
+    "Genre Creation with Incorrect Data-Raw1.txt3": {
+        "testCaseName": "Genre Creation with Invalid Characters in Name",
+        "objective": "Verify that the system displays an incorrect data message when attempting to create a new genre with invalid characters in the Name field",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Enter a Name containing invalid characters (e.g., special symbols).",
+            "- Step 4: Enter valid data into the 'Description' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message is displayed indicating that the Name field contains invalid characters.",
+        "explanation": "This test case ensures that the system validates the Name field for character validity during the genre creation process."
+    },
+    "Genre Creation with Incorrect Data-Raw1.txt4": {
+        "testCaseName": "Cancel Genre Creation",
+        "objective": "Verify that no data is saved and the user is redirected to the genre list page when the 'Cancel' button is pressed during genre creation",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The user is redirected to the genre list page without any new genre being added to the database.",
+        "explanation": "This test case verifies that the cancel operation works as expected, discarding any entered data and not adding a new genre record."
+    },
+    "Successful Genre Creation-Raw1.txt0": {},
+    "Successful Genre Creation-Raw1.txt1": {
+        "testCaseName": "Successful Genre Creation with Valid Data",
+        "objective": "Verify that a new genre can be successfully created and added to the database with valid data",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button.",
+            "- Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre form.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "A success message is displayed, and the new genre is added to the list of genres.",
+        "explanation": "This test case ensures that the system correctly adds a new genre record to the database when all required fields are filled with valid data."
+    },
+    "Successful Genre Creation-Raw1.txt2": {
+        "testCaseName": "Genre Creation with Invalid Data",
+        "objective": "Verify that the system displays error messages for invalid data during genre creation",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button.",
+            "- Step 3: Enter invalid data into the 'Name' and/or 'Description' fields of the genre form.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "Error messages related to the invalid data are displayed, and the genre is not added to the database.",
+        "explanation": "This test case checks the system's ability to validate input data and prevent the addition of a genre with invalid data."
+    },
+    "Successful Genre Creation-Raw1.txt3": {
+        "testCaseName": "Cancel Genre Creation",
+        "objective": "Verify that the genre creation process can be canceled without saving data to the database",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The genre creation form is closed, and no data is saved to the database. The user is redirected back to the list of genres.",
+        "explanation": "This test case ensures that users can cancel the genre creation process at any time without affecting the database."
+    },
+    "Successful Genre Creation-Raw1.txt4": {
+        "testCaseName": "Navigate Away During Genre Creation",
+        "objective": "Verify that navigating away from the genre creation form discards the entered data",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The user is navigated to the selected page, and the data entered in the genre creation form is not saved to the database.",
+        "explanation": "This test case verifies that if a user navigates away from the genre creation form without submitting, the entered data is not saved, preventing accidental data loss or database corruption."
+    },
+    "User Cancels While Entering Data-Raw1.txt0": {},
+    "User Cancels While Entering Data-Raw1.txt1": {
+        "testCaseName": "Cancel New Genre Creation Before Submission",
+        "objective": "Verify that the genre creation process can be canceled before submission and no data is saved",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new genre.",
+            "- Step 3: Begin entering data into the 'Name' and 'Description' fields of the genre form.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The application should not save the entered data and should display the list of genre records.",
+        "explanation": "This test case ensures that when a user decides to cancel the creation of a new genre after entering some data but before pressing the 'Submit' button, the data is not saved, and the user is redirected back to the list of genres. It directly tests the cancel operation scenario."
+    },
+    "User Cancels While Entering Data-Raw1.txt2": {
+        "testCaseName": "Navigate Away From Genre Creation Form Before Submission",
+        "objective": "Verify that navigating away from the genre creation form before submission does not save the data",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to open the genre creation form.",
+            "- Step 3: Start entering data into the 'Name' and 'Description' fields.",
+            "- Step 4: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The application should not save the entered data in the genre creation form and should display the selected page.",
+        "explanation": "This test case verifies that if a user navigates away from the genre creation form to another section of the application without submitting the form, the entered data is not saved. It tests the user's ability to cancel the creation process by navigating away, as described in the cancel operation scenario."
+    },
+    "User Navigates Away by Selecting 'API'-Raw1.txt0": {},
+    "User Navigates Away by Selecting 'API'-Raw1.txt1": {
+        "testCaseName": "Navigate Away by Selecting 'API' During Genre Creation",
+        "objective": "Verify that when a user navigates away by selecting 'API' during the genre creation process, the data is not saved and the API page is displayed.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new genre.",
+            "- Step 3: Begin entering data into the form fields for the new genre.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'API'."
+        ],
+        "expectedResult": "The application does not save the entered genre data and displays the API page.",
+        "explanation": "This test case ensures that if a user decides to navigate away from the genre creation process by selecting 'API', the operation is safely cancelled, and the user is redirected without saving any partial data. It directly tests the navigation aspect mentioned in the scenario."
+    },
+    "User Navigates Away by Selecting 'Authors'-Raw1.txt0": {},
+    "User Navigates Away by Selecting 'Authors'-Raw1.txt1": {
+        "testCaseName": "Navigate Away to 'Authors' Before Submitting New Genre",
+        "objective": "Verify that navigating away to 'Authors' before submitting a new genre cancels the operation and does not save data",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start adding a new genre.",
+            "- Step 3: Start entering data into the form fields for the new genre.",
+            "- Step 4: Before pressing 'Submit', select 'Authors' from the menu to navigate away."
+        ],
+        "expectedResult": "The application does not save the entered genre data and displays the 'Authors' page.",
+        "explanation": "This test case ensures that when a user navigates away by selecting 'Authors' from the menu before submitting the new genre form, the operation is canceled, and no data is saved. It directly tests the navigation aspect mentioned in the scenario name."
+    },
+    "User Navigates Away by Selecting 'Books'-Raw1.txt0": {},
+    "User Navigates Away by Selecting 'Books'-Raw1.txt1": {
+        "testCaseName": "Verify Navigation Away by Selecting 'Books' During Genre Creation",
+        "objective": "Ensure that when a user navigates away by selecting 'Books' during the genre creation process, the data is not saved and the user is redirected to the Books page.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new genre.",
+            "- Step 3: Begin entering data into the form fields for the new genre.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'Books'."
+        ],
+        "expectedResult": "The data entered in the form is not saved to the database, and the Books page is displayed with updated data.",
+        "explanation": "This test case ensures that the application behaves as expected when a user decides to navigate away from the genre creation process by selecting 'Books'. It verifies that the action interrupts the creation process, preventing any partial data from being saved and correctly redirects the user."
+    },
+    "User Navigates Away by Selecting 'Books'-Raw1.txt2": {
+        "testCaseName": "Verify Successful Genre Creation and Navigation Away by 'Books'",
+        "objective": "Verify that after successfully adding a new genre, selecting 'Books' navigates away without affecting the newly added record.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the process of adding a new genre.",
+            "- Step 3: Correctly fill in the form fields for the new genre and press the 'Submit' button.",
+            "- Step 4: Confirm that the new genre has been added by observing it in the list of genres.",
+            "- Step 5: Select the menu item 'Books'."
+        ],
+        "expectedResult": "After adding a new genre successfully, selecting 'Books' navigates the user away to the Books page without affecting the newly added genre record.",
+        "explanation": "This test case is designed to verify that navigation actions taken after a successful genre creation do not impact the integrity of the newly added record. It ensures that the application's navigation and data handling mechanisms work independently and correctly."
+    },
+    "User Navigates Away by Selecting 'Genres'-Raw1.txt0": {},
+    "User Navigates Away by Selecting 'Genres'-Raw1.txt1": {
+        "testCaseName": "Navigate Away by Selecting 'Genres' During Genre Creation",
+        "objective": "Verify that navigating away by selecting 'Genres' from the menu during the genre creation process cancels the operation and does not save the data.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the genre creation process.",
+            "- Step 3: Start entering genre data into the form fields.",
+            "- Step 4: Before pressing the 'Submit' button, select 'Genres' from the menu to navigate away."
+        ],
+        "expectedResult": "The genre creation process is cancelled, data is not saved in the database, and the list of genre records is displayed without the new genre.",
+        "explanation": "This test case ensures that if a user accidentally or intentionally navigates away to 'Genres' during the creation process, the operation is safely cancelled without saving incomplete or unwanted data."
+    },
+    "User Navigates Away by Selecting 'Genres'-Raw1.txt2": {
+        "testCaseName": "Successful Genre Creation and Verification",
+        "objective": "Verify that a new genre can be successfully added through the form and is displayed in the list of genres.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the genre creation process.",
+            "- Step 3: Correctly fill in the form with genre data.",
+            "- Step 4: Press the 'Submit' button to save the new genre."
+        ],
+        "expectedResult": "The new genre record is successfully added to the database and is visible in the list of genres.",
+        "explanation": "This test case confirms that the system correctly adds a new genre to the database when valid data is entered and the 'Submit' button is clicked, following the main scenario."
+    },
+    "User Navigates Away by Selecting 'Genres'-Raw1.txt3": {
+        "testCaseName": "Cancel Genre Creation Operation",
+        "objective": "Verify that the genre creation operation can be cancelled by pressing the 'Cancel' button, and no data is saved.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start the genre creation process.",
+            "- Step 3: Start entering genre data into the form fields.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The genre creation process is cancelled, no data is saved in the database, and the list of genre records is displayed.",
+        "explanation": "This test case ensures that users have the option to cancel the genre creation process at any point before submission, preventing unwanted data from being saved."
+    },
+    "User Navigates Away by Selecting 'Home'-Raw1.txt0": {},
+    "User Navigates Away by Selecting 'Home'-Raw1.txt1": {
+        "testCaseName": "Navigate Away to 'Home' Before Submitting New Genre",
+        "objective": "Verify that navigating away to 'Home' before submitting a new genre cancels the operation and does not save data to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list page.",
+            "- Step 2: Click the 'Create new' button to start adding a new genre.",
+            "- Step 3: Start entering data into the form fields for the new genre.",
+            "- Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away."
+        ],
+        "expectedResult": "The application does not save the entered data to the database and the Home page is displayed.",
+        "explanation": "This test case ensures that when a user navigates away to 'Home' without submitting the new genre form, the operation is canceled and no data is saved, adhering to the specified use case scenario for canceling the operation."
+    }
+}

@@ -1,52 +1,81 @@
-Given the use case specifications for adding a new English learning topic by an administrator, the following test scenarios are designed to cover the basic flow, alternative flow, and exception flow of the use case, as well as the preconditions related to login functionalities:
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
 
-### Basic Flow Test Scenarios
-1. **Add New Topic Successfully**: 
-   - Preconditions: Administrator successfully logs in.
-   - Steps: Follow steps 1 to 5 of the basic flow.
-   - Expected Result: The system redirects the Administrator to the adding vocabulary to the new topic section, and the new topic appears in the topic list.
+### Test Case 1: Successful Login with Username
 
-### Alternative Flow Test Scenarios
-2. **Add Topic with Duplicate Name**:
-   - Preconditions: Administrator successfully logs in and a topic with the name "Grammar Basics" already exists.
-   - Steps: Follow the alternative flow from steps 1 to 8, using "Grammar Basics" as the name in step 3 and a unique name in step 7.
-   - Expected Result: The system shows a notification about the duplicate name after step 5 and allows the Administrator to save the topic with a new name after step 8.
+**Objective**: Verify that a learner can successfully log in using a registered username and correct password.
 
-### Exception Flow Test Scenarios
-3. **Cancel Adding New Topic**:
-   - Preconditions: Administrator successfully logs in.
-   - Steps: Follow steps 1 and 2 of the basic flow, then execute the exception flow at step 3.
-   - Expected Result: The adding process is canceled, and no new topic is added to the system.
+**Steps**:
+1. Navigate to the login page.
+2. Enter a valid, registered username in the username field.
+3. Enter the correct password associated with the username in the password field.
+4. Click the "Login" button.
 
-### Login Related Test Scenarios
-4. **Successful Login with Username**:
-   - Preconditions: The Administrator has a valid username and password.
-   - Steps: Administrator enters their username and correct password on the login page and selects the login button.
-   - Expected Result: Administrator successfully logs into the application.
+**Expected Result**:
+- The system should redirect the learner to the Home page.
 
-5. **Successful Login with Email**:
-   - Preconditions: The Administrator has a valid email and password.
-   - Steps: Administrator enters their email and correct password on the login page and selects the login button.
-   - Expected Result: Administrator successfully logs into the application.
+### Test Case 2: Successful Login with Email
 
-6. **Login with Wrong Password**:
-   - Preconditions: The Administrator enters a valid username or email.
-   - Steps: Administrator enters a wrong password on the login page and selects the login button.
-   - Expected Result: The system shows an error message indicating the password is incorrect.
+**Objective**: Verify that a learner can successfully log in using a registered email and correct password.
 
-7. **Login with Unregistered Username**:
-   - Preconditions: The Administrator enters a username not registered in the system.
-   - Steps: Administrator enters an unregistered username and any password on the login page and selects the login button.
-   - Expected Result: The system shows an error message indicating the username does not exist.
+**Steps**:
+1. Navigate to the login page.
+2. Enter a valid, registered email in the username field.
+3. Enter the correct password associated with the email in the password field.
+4. Click the "Login" button.
 
-8. **Login with Blank Username Field**:
-   - Preconditions: The Administrator accesses the login page.
-   - Steps: Administrator leaves the username field blank, enters a password, and selects the login button.
-   - Expected Result: The system shows an error message indicating the username field cannot be blank.
+**Expected Result**:
+- The system should redirect the learner to the Home page.
 
-9. **Login with Blank Password Field**:
-   - Preconditions: The Administrator accesses the login page.
-   - Steps: Administrator enters a username and leaves the password field blank, then selects the login button.
-   - Expected Result: The system shows an error message indicating the password field cannot be blank.
+### Test Case 3: Login with Wrong Password
 
-These scenarios ensure comprehensive testing of the use case, covering successful paths, handling of duplicate names, cancellation of the operation, and various login conditions.
+**Objective**: Verify that the system shows a notification for wrong password entry.
+
+**Steps**:
+1. Navigate to the login page.
+2. Enter a valid, registered username in the username field.
+3. Enter an incorrect password in the password field.
+4. Click the "Login" button.
+
+**Expected Result**:
+- The system should display a notification that the password is wrong.
+
+### Test Case 4: Login with Unregistered Username
+
+**Objective**: Verify that the system shows a notification for an unregistered username.
+
+**Steps**:
+1. Navigate to the login page.
+2. Enter a username that has not been registered in the username field.
+3. Enter any password in the password field.
+4. Click the "Login" button.
+
+**Expected Result**:
+- The system should display a notification that this username is not registered yet.
+
+### Test Case 5: Login with Blank Username Field
+
+**Objective**: Verify that the system shows a notification when the username field is left blank.
+
+**Steps**:
+1. Navigate to the login page.
+2. Leave the username field blank.
+3. Enter any password in the password field.
+4. Click the "Login" button.
+
+**Expected Result**:
+- The system should display a notification that the username field needs to be filled.
+
+### Test Case 6: Login with Blank Password Field
+
+**Objective**: Verify that the system shows a notification when the password field is left blank.
+
+**Steps**:
+1. Navigate to the login page.
+2. Enter a valid, registered username in the username field.
+3. Leave the password field blank.
+4. Click the "Login" button.
+
+**Expected Result**:
+- The system should display a notification that the password field needs to be filled.
+
+Each of these test cases should be executed separately to ensure that the login functionality works as expected under different conditions and inputs.

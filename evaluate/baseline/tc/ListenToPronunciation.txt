@@ -1,55 +1,154 @@
-Given the use case specifications for "adding new topic" by an administrator, the provided test scenarios seem to be unrelated to the use case. Let's create relevant test scenarios based on the given use case specifications:
+### Test Case 1: SuccessfulPronunciationTestAttempt
 
-### Test Scenarios for "Adding New Topic"
+**Objective**: To verify that the learner can successfully complete a pronunciation test attempt with a correct answer.
 
-#### Scenario 1: Successful Topic Addition
-1. Preconditions: Administrator is logged in and on the dashboard.
-2. Steps: Administrator follows the basic flow from steps 1 to 5.
-3. Expected Result: The system successfully adds the new topic, redirects the Administrator to the adding vocabulary section, and the new topic appears in the topic list.
+**Preconditions**: Learner is logged in and has accessed the review test function.
 
-#### Scenario 2: Adding a Topic with an Already Used Name
-1. Preconditions: Administrator is logged in and an existing topic name is known.
-2. Steps: Administrator follows the alternative flow from steps 1 to 8.
-3. Expected Result: The system prompts the Administrator at step 6 that the name is already used, and after changing the name, the new topic is successfully created.
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select the correct Vietnamese meaning or English vocabulary that matches the pronunciation.
+4. Submit the answer.
 
-#### Scenario 3: Cancellation of Topic Addition
-1. Preconditions: Administrator is logged in and on the "Add new topic" page.
-2. Steps: Administrator selects "Cancel" at step 3 of the basic flow.
-3. Expected Result: The action of adding a new topic is stopped, and the Administrator remains on the "Add new topic" page or is redirected to the previous page.
+**Expected Result**: A green pop-up screen appears indicating the answer is correct. The vocabulary word is marked as studied.
 
-#### Scenario 4: Adding a Topic Without a Name
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator follows the basic flow but leaves the name field empty and attempts to save.
-3. Expected Result: The system prevents the topic from being saved and prompts the Administrator to enter a name.
+---
 
-#### Scenario 5: Adding a Topic Without a Description
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator follows the basic flow but leaves the description field empty and attempts to save.
-3. Expected Result: The system allows the topic to be saved without a description, or prompts the Administrator to enter a description, depending on system requirements.
+### Test Case 2: IncorrectPronunciationTestAttempt
 
-#### Scenario 6: Adding a Topic with Special Characters in the Name
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator enters a name with special characters for the topic and attempts to save.
-3. Expected Result: The system either saves the topic with the special characters (if allowed) or prompts the Administrator to use only valid characters.
+**Objective**: To verify the system's response when a learner chooses an incorrect answer in a pronunciation test.
 
-#### Scenario 7: Adding a Topic with a Very Long Name
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator enters a very long name for the topic and attempts to save.
-3. Expected Result: The system either saves the topic with the long name (if allowed) or prompts the Administrator that the name is too long.
+**Preconditions**: Learner is logged in and has accessed the review test function.
 
-#### Scenario 8: Adding a Topic with a Very Long Description
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator enters a very long description for the topic and attempts to save.
-3. Expected Result: The system either saves the topic with the long description (if allowed) or prompts the Administrator that the description is too long.
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select an incorrect Vietnamese meaning or English vocabulary that does not match the pronunciation.
+4. Submit the answer.
 
-#### Scenario 9: Adding a Topic When Not Logged In
-1. Preconditions: Administrator is not logged in.
-2. Steps: Attempt to access the "Add new topic" functionality directly via URL or navigation.
-3. Expected Result: The system redirects the user to the login page or denies access to the "Add new topic" functionality.
+**Expected Result**: A red pop-up screen appears indicating the answer is incorrect.
 
-#### Scenario 10: Adding a Topic with HTML Tags in the Description
-1. Preconditions: Administrator is logged in.
-2. Steps: Administrator enters a description with HTML tags for the topic and attempts to save.
-3. Expected Result: The system either saves the topic and sanitizes the HTML tags (preventing XSS attacks) or prompts the Administrator to remove the HTML tags.
+---
 
-These scenarios are directly related to the use case of adding a new topic by an administrator and cover a range of successful, alternative, and exception flows.
+### Test Case 3: PronunciationTestWithNoUserInput
+
+**Objective**: To verify the system's response when no answer is selected in a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Do not select any answer.
+4. Attempt to submit the answer.
+
+**Expected Result**: The system prevents submission and prompts the user to select an answer.
+
+---
+
+### Test Case 4: PronunciationTestAttemptWithNetworkError
+
+**Objective**: To verify the system's behavior during a network error while attempting a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Induce a network error (e.g., by disconnecting from the internet).
+3. Click on the speaker button to listen to the word's pronunciation.
+4. Attempt to select an answer and submit it.
+
+**Expected Result**: An error message is displayed indicating a network issue.
+
+---
+
+### Test Case 5: PronunciationTestAttemptAfterSessionTimeout
+
+**Objective**: To verify the system's response when a session times out during a pronunciation test attempt.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Wait for the session to timeout.
+3. Click on the speaker button to listen to the word's pronunciation.
+4. Attempt to select an answer and submit it.
+
+**Expected Result**: The user is redirected to the login screen due to session timeout.
+
+---
+
+### Test Case 6: PronunciationTestWithAudioPlaybackIssue
+
+**Objective**: To verify the system's response when there is an issue with audio playback during a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Encounter an audio playback issue (e.g., no sound).
+
+**Expected Result**: An error message or notification about the audio playback issue is displayed.
+
+---
+
+### Test Case 7: PronunciationTestAttemptWithMultipleChoiceSelection
+
+**Objective**: To verify that the system only allows one answer selection in a pronunciation test with multiple choices.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Attempt to select more than one answer.
+4. Submit the answer.
+
+**Expected Result**: The system only accepts one answer and prevents multiple selections.
+
+---
+
+### Test Case 8: PronunciationTestAttemptWithCorrectAnswerOnFirstTry
+
+**Objective**: To verify that the system correctly processes a correct answer on the first try during a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select the correct answer on the first try.
+4. Submit the answer.
+
+**Expected Result**: A green pop-up screen appears indicating the answer is correct.
+
+---
+
+### Test Case 9: PronunciationTestAttemptWithCorrectAnswerAfterIncorrectTries
+
+**Objective**: To verify the system's response when the correct answer is selected after one or more incorrect attempts in a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select an incorrect answer and submit it.
+4. After the incorrect attempt, select the correct answer and submit it.
+
+**Expected Result**: A green pop-up screen appears after the correct answer is submitted, regardless of previous attempts.
+
+---
+
+### Test Case 10: PronunciationTestAttemptWhileNotLoggedIn
+
+**Objective**: To verify the system's behavior when attempting to take a pronunciation test without being logged in.
+
+**Preconditions**: Learner is not logged in.
+
+**Steps**:
+1. Attempt to navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+
+**Expected Result**: The system redirects the user to the login screen or displays a message indicating that login is required.

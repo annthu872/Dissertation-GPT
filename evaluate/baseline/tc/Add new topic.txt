@@ -1,98 +1,97 @@
-Given the use case specifications for adding a new English learning topic by an administrator, here are detailed test scenarios based on the provided list:
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
 
 ### 1. SuccessfulNewTopicAddition
-**Objective:** Verify that the administrator can successfully add a new topic.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that an administrator can successfully add a new topic.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
   2. Enter a unique name in the name field.
   3. Enter a description in the description field.
   4. Click "Save".
-- **Expected Result:** The system adds the new topic and redirects the administrator to the adding vocabulary section. The new topic appears in the topic list.
+- **Expected Result**: The system should redirect the administrator to the adding vocabulary to the new topic section, and the new topic should appear in the topic list.
 
 ### 2. AddTopicWithDuplicateName
-**Objective:** Verify that the system prevents adding a new topic with a name that already exists.
-- **Preconditions:** Administrator is logged in and a topic with the name "Grammar Basics" already exists.
-- **Steps:**
+**Objective**: Verify that the system prevents adding a new topic with a name that already exists.
+- **Preconditions**: Administrator is logged in, and there is at least one topic already created.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter "Grammar Basics" in the name field.
-  3. Enter a description in the description field.
+  2. Enter a name that is already used by an existing topic.
+  3. Enter a description.
   4. Click "Save".
-- **Expected Result:** The system displays a notification that the name is already used and prompts the administrator to use another name.
+  5. Observe the notification and enter a new unique name in the name field.
+  6. Click "Save" again.
+- **Expected Result**: The system should show a notification that the name is already used after step 4. After step 6, the system should successfully create the new topic with the new name.
 
 ### 3. CancelAddingNewTopic
-**Objective:** Verify that the administrator can cancel the process of adding a new topic.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that an administrator can cancel the process of adding a new topic.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter a name in the name field.
-  3. Click "Cancel".
-- **Expected Result:** The action is canceled and the administrator remains on the current page or is redirected to the previous page without creating a new topic.
+  2. Click "Cancel".
+- **Expected Result**: The system should not create a new topic and should return the administrator to the previous page.
 
 ### 4. AddTopicWithoutName
-**Objective:** Verify that the system prevents adding a new topic without a name.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system prevents adding a new topic without a name.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
   2. Leave the name field empty.
-  3. Enter a description in the description field.
+  3. Enter a description.
   4. Click "Save".
-- **Expected Result:** The system displays an error message indicating that the name field is required.
+- **Expected Result**: The system should show an error message indicating that the name field is required.
 
 ### 5. AddTopicWithoutDescription
-**Objective:** Verify that the system allows adding a new topic without a description.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system allows adding a new topic without a description.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter a unique name in the name field.
+  2. Enter a unique name.
   3. Leave the description field empty.
   4. Click "Save".
-- **Expected Result:** The system adds the new topic without a description and redirects the administrator to the adding vocabulary section.
+- **Expected Result**: The system should successfully create the new topic without a description.
 
 ### 6. AddTopicWithSpecialCharactersInName
-**Objective:** Verify that the system handles special characters in the topic name appropriately.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system handles special characters in the topic name appropriately.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter a name with special characters (e.g., "Grammar & Syntax!") in the name field.
-  3. Enter a description in the description field.
+  2. Enter a name with special characters (e.g., "@#$%").
+  3. Enter a description.
   4. Click "Save".
-- **Expected Result:** The system either accepts the special characters and creates the topic or displays an error message indicating invalid characters.
+- **Expected Result**: The system should either successfully create the new topic with the special characters in its name or show an error message if special characters are not allowed.
 
 ### 7. AddTopicWithLongName
-**Objective:** Verify that the system handles long names for topics appropriately.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system handles long names for topics appropriately.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter a very long name (e.g., 255 characters) in the name field.
-  3. Enter a description in the description field.
+  2. Enter a very long name (e.g., 255 characters).
+  3. Enter a description.
   4. Click "Save".
-- **Expected Result:** The system either accepts the long name and creates the topic or displays an error message indicating the name is too long.
+- **Expected Result**: The system should either successfully create the new topic with the long name or show an error message if there is a character limit.
 
 ### 8. AddTopicWithLongDescription
-**Objective:** Verify that the system handles long descriptions for topics appropriately.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system handles long descriptions for topics appropriately.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
-  2. Enter a name in the name field.
-  3. Enter a very long description (e.g., more than 1000 characters) in the description field.
+  2. Enter a name.
+  3. Enter a very long description (e.g., 1000 characters).
   4. Click "Save".
-- **Expected Result:** The system either accepts the long description and creates the topic or displays an error message indicating the description is too long.
+- **Expected Result**: The system should either successfully create the new topic with the long description or show an error message if there is a character limit.
 
 ### 9. RedirectAfterSuccessfulTopicAddition
-**Objective:** Verify that the system redirects the administrator to the adding vocabulary section after successfully adding a new topic.
-- **Preconditions:** Administrator is logged in and has just added a new topic.
-- **Steps:**
-  1. Follow the steps to successfully add a new topic.
-- **Expected Result:** After clicking "Save", the system redirects the administrator to the adding vocabulary to new topic section.
+**Objective**: Verify that the system redirects the administrator to the adding vocabulary to the new topic section after successful topic creation.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
+  1. Successfully add a new topic following the basic flow.
+- **Expected Result**: The system should redirect the administrator to the adding vocabulary to the new topic section.
 
 ### 10. AddTopicWithEmptyFields
-**Objective:** Verify that the system prevents adding a new topic with all fields empty.
-- **Preconditions:** Administrator is logged in.
-- **Steps:**
+**Objective**: Verify that the system prevents adding a new topic with all fields empty.
+- **Preconditions**: Administrator is logged in.
+- **Steps**:
   1. Navigate to "Add new topic" tab.
   2. Leave both the name and description fields empty.
   3. Click "Save".
-- **Expected Result:** The system displays an error message indicating that the fields cannot be empty.
-
-Each of these scenarios targets a specific aspect of the use case, ensuring comprehensive testing of the functionality for adding new English learning topics by an administrator.
+- **Expected Result**: The system should show an error message indicating that the fields cannot be empty.

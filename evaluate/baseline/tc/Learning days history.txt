@@ -1,23 +1,100 @@
-Given the use case specifications for "adding new topic" by an administrator, the test scenarios provided seem to be unrelated to the use case. Let's create relevant test scenarios based on the given use case specifications:
+### Test Case 1: SuccessfulViewLearningDaysHistory
 
-1. **AddNewTopicSuccessfully** - Tests the basic flow where the administrator successfully adds a new English learning topic, including entering a unique name and description, and verifies if the topic appears in the topic list.
+**Objective**: Verify that the learner can successfully view their learning days history following the basic flow.
 
-2. **AddTopicWithExistingName** - Follows the alternative flow where the administrator attempts to add a new topic with a name that already exists. This scenario tests if the system correctly prevents the topic from being added and displays the appropriate notification.
+**Steps**:
+1. Ensure the learner is logged into the application.
+2. Navigate to the Home page.
+3. Select "History".
+4. On the History page, select "Day History".
 
-3. **CancelAddingNewTopic** - Tests the exception flow where the administrator selects "Cancel" after initiating the process of adding a new topic, verifying if the action stops without creating a new topic.
+**Expected Result**: The system redirects the learner to a page showing the number of days they have learned continuously.
 
-4. **AddTopicWithoutName** - Tests the scenario where the administrator attempts to save a new topic without entering a name. This scenario checks if the system validates the input and prevents the topic from being added without a name.
+---
 
-5. **AddTopicWithoutDescription** - Similar to the previous scenario but tests if a topic can be added without a description, checking for system validation on the description field.
+### Test Case 2: ViewLearningDaysHistoryWithoutLogin
 
-6. **AddTopicWithSpecialCharactersInName** - Tests the system's ability to handle special characters in the topic name field, verifying if there are any restrictions or encoding issues.
+**Objective**: Verify that the system prevents access to the learning days history when the learner is not logged in.
 
-7. **AddTopicWithLongName** - Tests the system's handling of unusually long names for topics, to check if there's a maximum character limit and how the system behaves when it's exceeded.
+**Steps**:
+1. Navigate to the Home page without logging in.
+2. Attempt to select "History".
 
-8. **AddTopicWithLongDescription** - Similar to testing with a long name, this scenario checks how the system handles a very long description for a topic, including any potential character limits.
+**Expected Result**: The system should either redirect the user to the login page or display a message indicating that login is required to view the history.
 
-9. **AddTopicAfterLoggingOut** - Tests the precondition where the administrator logs out before saving a new topic, verifying if the system correctly prevents adding the topic without an active session.
+---
 
-10. **RedirectAfterAddingTopic** - Tests the postcondition where, after successfully adding a new topic, the system should redirect the administrator to the adding vocabulary to the new topic section, verifying the redirection and the appearance of the new topic in the appropriate list.
+### Test Case 3: ViewLearningDaysHistoryAfterBreakingChain
 
-These test scenarios are designed to cover the basic, alternative, and exception flows described in the use case, as well as to validate the preconditions and postconditions. They ensure comprehensive testing of the functionality for adding a new English learning topic by an administrator.
+**Objective**: Verify that the learning days count resets to one after the learner breaks their continuous learning chain.
+
+**Steps**:
+1. Log into the application.
+2. Break the continuous learning chain by not learning for at least one day.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the learning days count as 1.
+
+---
+
+### Test Case 4: ViewLearningDaysHistoryWithContinuousLearning
+
+**Objective**: Verify that the system correctly tracks and displays the number of continuous learning days without breaks.
+
+**Steps**:
+1. Log into the application.
+2. Ensure continuous learning for a number of days.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the correct number of continuous learning days.
+
+---
+
+### Test Case 5: ViewLearningDaysHistoryWithZeroDays
+
+**Objective**: Verify that the system shows zero days for learners who have not started learning.
+
+**Steps**:
+1. Log into the application with a new or reset account.
+2. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows 0 days.
+
+---
+
+### Test Case 6: ViewLearningDaysHistoryAfterReset
+
+**Objective**: Verify that the system correctly shows the learning days history after it has been reset.
+
+**Steps**:
+1. Log into the application.
+2. Reset the learning days history through the application settings or support.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the learning days count as 1 or 0, depending on whether the learner has started learning again after the reset.
+
+---
+
+### Test Case 7: ViewLearningDaysHistoryWithMultipleBreaksInChain
+
+**Objective**: Verify that the system correctly handles and displays learning days history with multiple breaks in the learning chain.
+
+**Steps**:
+1. Log into the application.
+2. Create multiple breaks in the learning chain by not learning on non-consecutive days.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the number of days since the last break in learning.
+
+---
+
+### Test Case 8: ViewLearningDaysHistoryWithMaximumDays
+
+**Objective**: Verify that the system can handle and display the maximum number of learning days tracked.
+
+**Steps**:
+1. Log into the application.
+2. Ensure continuous learning up to the maximum days limit set by the system.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system correctly displays the maximum number of continuous learning days tracked without errors.

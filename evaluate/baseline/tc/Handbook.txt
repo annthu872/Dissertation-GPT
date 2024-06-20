@@ -1,60 +1,83 @@
-Given the use case specifications for "adding new topic" by an administrator, the test scenarios provided seem to be unrelated to the use case. Let's create relevant test scenarios that align with the use case of adding a new English learning topic by an administrator.
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
 
-### Test Scenario 1: Add New Topic - Basic Flow
-**Objective**: Verify that the administrator can successfully add a new topic.
-- **Steps**:
-  1. Log in as an administrator.
-  2. Navigate to the "Add new topic" tab.
-  3. Enter a unique name in the name field.
-  4. Enter a description in the description field.
-  5. Click "Save".
-- **Expected Result**: 
-  - The system redirects the administrator to the adding vocabulary to the new topic section.
-  - The new topic appears in the topic list.
+### Test Case 1: ViewVocabularyList
 
-### Test Scenario 2: Add New Topic with Duplicate Name - Alternative Flow
-**Objective**: Verify that the system prevents adding a new topic with a name that already exists.
-- **Steps**:
-  1. Log in as an administrator.
-  2. Navigate to the "Add new topic" tab.
-  3. Enter a name that is already used for another topic.
-  4. Enter a description.
-  5. Click "Save".
-  6. Observe the notification and enter a new unique name in the name field.
-  7. Click "Save" again.
-- **Expected Result**: 
-  - The system shows a notification that the name is already used.
-  - After entering a new name, the topic is successfully added, and the administrator is redirected to the adding vocabulary section.
+**Objective**: Verify that the learner can view their vocabulary list in the handbook.
 
-### Test Scenario 3: Cancel Adding New Topic - Exception Flow
-**Objective**: Verify that the administrator can cancel the process of adding a new topic at any step.
-- **Steps**:
-  1. Log in as an administrator.
-  2. Navigate to the "Add new topic" tab.
-  3. Start adding a new topic but click "Cancel" before saving.
-- **Expected Result**: 
-  - The adding process is canceled, and the administrator remains or is redirected to the previous page without creating a new topic.
+**Preconditions**: Learner is logged into the application.
 
-### Test Scenario 4: Add New Topic without Description
-**Objective**: Verify the system behavior when adding a new topic without entering a description.
-- **Steps**:
-  1. Log in as an administrator.
-  2. Navigate to the "Add new topic" tab.
-  3. Enter a unique name in the name field.
-  4. Leave the description field empty.
-  5. Click "Save".
-- **Expected Result**: 
-  - The system either allows creating a topic without a description or shows a validation message requiring a description.
+**Steps**:
+1. Navigate to the "Handbook" tab on the navigation bar.
+2. Observe the displayed list of vocabulary.
 
-### Test Scenario 5: Add New Topic with Long Name and Description
-**Objective**: Verify the system's ability to handle long names and descriptions for a new topic.
-- **Steps**:
-  1. Log in as an administrator.
-  2. Navigate to the "Add new topic" tab.
-  3. Enter a very long unique name in the name field.
-  4. Enter a very long description in the description field.
-  5. Click "Save".
-- **Expected Result**: 
-  - The system either successfully creates a new topic with the long name and description or shows a validation message about maximum length restrictions.
+**Expected Result**:
+- The system displays the learner's vocabulary list in vertical rows.
+- Each word is displayed in a horizontal row showing the word name, word type, word meaning, memorization level, and has a checkbox next to it.
 
-These test scenarios are directly related to the use case and cover the basic, alternative, and exception flows described in the use case specifications.
+**Postconditions**: None.
+
+### Test Case 2: SearchVocabularySuccessfully
+
+**Objective**: Verify that the learner can successfully search for a vocabulary in the handbook.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Press the search bar.
+2. Enter a valid word that exists in the vocabulary list.
+3. Observe the filtered results.
+
+**Expected Result**:
+- The system filters and displays vocabulary containing characters entered by the learner in the search bar.
+
+**Postconditions**: None.
+
+### Test Case 3: SearchMeaninglessVocabulary
+
+**Objective**: Verify that the system notifies the learner when searching for a meaningless word.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Press the search bar.
+2. Enter a meaningless word or a word that does not exist in the vocabulary list.
+3. Observe the system's response.
+
+**Expected Result**:
+- The system notifies that there are no suitable search results.
+
+**Postconditions**: None.
+
+### Test Case 4: ExcludeWordFromReviewTest
+
+**Objective**: Verify that the learner can exclude a word from the review test.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Scroll to find a specific vocabulary.
+2. Untick the checkbox of the vocabulary you wish to exclude from the review test.
+3. Observe the checkbox status and any system confirmation if available.
+
+**Expected Result**:
+- The system marks that vocabulary will not appear in the daily test review.
+
+**Postconditions**: None.
+
+### Test Case 5: IncludeWordInReviewTest
+
+**Objective**: Verify that the learner can include a word in the review test.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Scroll to find a specific vocabulary.
+2. Tick the checkbox of the vocabulary you wish to include in the review test.
+3. Observe the checkbox status and any system confirmation if available.
+
+**Expected Result**:
+- The system marks that vocabulary will appear in the daily test review.
+
+**Postconditions**: None.
+
+These test cases cover the basic and alternative flows of the use case, ensuring that the handbook functionality works as expected for the learner.

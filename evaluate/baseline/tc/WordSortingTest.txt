@@ -1,0 +1,76 @@
+Based on the provided use case specifications for "adding new topic" and the test scenarios that seem to be for a different use case related to word sorting, I will generate relevant test scenarios for the "adding new topic" use case.
+
+### Test Scenarios for "Adding New Topic"
+
+#### Scenario 1: Successful Topic Addition
+**Objective**: Verify that the administrator can successfully add a new topic.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters a unique name and description for the topic.
+  3. Administrator selects "Save".
+- Expected Result: The system adds the new topic and redirects the administrator to the adding vocabulary to the new topic section. The new topic appears in the topic list.
+
+#### Scenario 2: Adding a Topic with an Already Used Name
+**Objective**: Verify that the system prevents adding a new topic with a name that is already used.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters a name that is already used for another topic.
+  3. Administrator enters a description for the topic.
+  4. Administrator selects "Save".
+- Expected Result: The system shows a notification that the name is already used and prompts the administrator to add another name.
+
+#### Scenario 3: Cancellation of Adding a New Topic
+**Objective**: Verify that the administrator can cancel the process of adding a new topic.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters a name and description for the topic.
+  3. Administrator selects "Cancel".
+- Expected Result: The system cancels the adding process and does not add the new topic. The administrator remains on the same page or is redirected to the previous page.
+
+#### Scenario 4: Adding a Topic Without a Name
+**Objective**: Verify that the system prevents adding a new topic without a name.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator leaves the name field empty and fills in the description.
+  3. Administrator selects "Save".
+- Expected Result: The system shows an error message indicating that the name field is required.
+
+#### Scenario 5: Adding a Topic Without a Description
+**Objective**: Verify that the system allows adding a new topic without a description.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters a name but leaves the description field empty.
+  3. Administrator selects "Save".
+- Expected Result: The system adds the new topic without a description and redirects the administrator to the adding vocabulary to the new topic section.
+
+#### Scenario 6: Adding a Topic with Special Characters in the Name
+**Objective**: Verify how the system handles special characters in the topic name.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters a name with special characters and fills in the description.
+  3. Administrator selects "Save".
+- Expected Result: The system either adds the new topic with the special characters in the name or shows an error message indicating that special characters are not allowed.
+
+#### Scenario 7: Adding a Topic When Not Logged In
+**Objective**: Verify that the system prevents adding a new topic when the user is not logged in as an administrator.
+- Preconditions: User is not logged in.
+- Steps:
+  1. User navigates to the "Add new topic" tab.
+- Expected Result: The system redirects the user to the login page or shows a message indicating that only administrators can add new topics.
+
+#### Scenario 8: Adding a Topic with Excessively Long Name or Description
+**Objective**: Verify the system's behavior when adding a topic with an excessively long name or description.
+- Preconditions: Administrator is logged in.
+- Steps:
+  1. Administrator selects "Add new topic" tab.
+  2. Administrator enters an excessively long name and/or description for the topic.
+  3. Administrator selects "Save".
+- Expected Result: The system either truncates the name/description to a maximum length, shows an error message indicating the maximum allowed length, or successfully adds the topic if there is no length limit.
+
+These scenarios cover various paths through the "adding new topic" use case, including the basic flow, alternative flow, and exception handling.

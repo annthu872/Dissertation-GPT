@@ -1,7 +1,0 @@
-1. EditTest_SuccessfulEdit
-2. EditTest_ExitWithSave
-3. EditTest_ExitWithoutSave
-4. EditTest_InvalidVocabulary
-5. EditTest_EmptyExerciseField
-6. EditTest_NavigationFromHomePage
-7. EditTest_SaveWithoutChanges

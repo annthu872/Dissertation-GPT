@@ -1,0 +1,53 @@
+Given the use case specifications for "adding new topic" by an administrator, the test scenarios provided seem to be misaligned with the use case. They appear to be related to question creation rather than topic addition. Based on the provided use case details, here are the corrected and relevant test scenarios:
+
+1. **SuccessfulTopicCreation**: 
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator enters a unique name and description for the topic and clicks "Save".
+   - Expected Result: The system saves the new topic and redirects the Administrator to the "adding vocabulary to new topic" section. The new topic appears in the topic list.
+
+2. **AddTopicWithDuplicateName**:
+   - Preconditions: Administrator is logged in and a topic with the name "Basic English" already exists.
+   - Test Steps: Administrator tries to add another topic named "Basic English", fills out the description, and clicks "Save".
+   - Expected Result: The system shows a notification that the name is already used and prompts the Administrator to use a different name.
+
+3. **CancelTopicCreation**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator fills out the name and description but clicks "Cancel" instead of "Save".
+   - Expected Result: The action is canceled and the Administrator remains on the current page or is redirected to a previous page without creating a new topic.
+
+4. **AddTopicWithoutName**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator leaves the name field empty, fills out the description, and clicks "Save".
+   - Expected Result: The system shows an error message indicating that the name field is required.
+
+5. **AddTopicWithoutDescription**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator fills out the name but leaves the description field empty and clicks "Save".
+   - Expected Result: The system shows an error message indicating that the description field is required.
+
+6. **AddTopicWithLongName**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator enters a very long name (exceeding the maximum character limit, if any) and a description, then clicks "Save".
+   - Expected Result: The system either saves the topic with the long name or shows an error message indicating that the name is too long.
+
+7. **AddTopicWithSpecialCharactersInName**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator enters a name with special characters (e.g., "@#$%") and a description, then clicks "Save".
+   - Expected Result: The system either saves the topic with the special characters in the name or shows an error message indicating that special characters are not allowed.
+
+8. **NavigateAwayWithoutSaving**:
+   - Preconditions: Administrator is logged in and has started creating a new topic but hasn't saved it yet.
+   - Test Steps: Administrator navigates away from the "Add new topic" page without clicking "Save".
+   - Expected Result: The system either prompts the Administrator to save the changes or allows the Administrator to navigate away without saving, depending on the design.
+
+9. **AddTopicWithScriptInjectionAttempt**:
+   - Preconditions: Administrator is logged in and on the "Add new topic" page.
+   - Test Steps: Administrator attempts to add a topic name or description with a script tag (e.g., `<script>alert('test')</script>`) and clicks "Save".
+   - Expected Result: The system sanitizes the input and either saves the topic without executing the script or shows an error message.
+
+10. **AddTopicWithHTMLTagsInDescription**:
+    - Preconditions: Administrator is logged in and on the "Add new topic" page.
+    - Test Steps: Administrator enters a name and a description containing HTML tags (e.g., `<b>bold</b>`) and clicks "Save".
+    - Expected Result: The system either saves the topic with the HTML tags in the description, strips the tags, or shows an error message, depending on the design.
+
+These scenarios are more aligned with the use case of adding a new English learning topic by an administrator and cover a range of expected, alternative, and exceptional flows.

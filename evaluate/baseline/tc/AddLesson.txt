@@ -1,0 +1,95 @@
+Given the use case specifications for adding a new English learning topic by an administrator, here are detailed test scenarios based on the provided list:
+
+### 1. SuccessfulLessonAddition
+**Objective:** Verify that the administrator can successfully add a new topic.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a unique name in the name field.
+  3. Enter a description in the description field.
+  4. Click "Save".
+- **Expected Result:** A new topic is created, and the administrator is redirected to the adding vocabulary section. The new topic appears in the topic list.
+
+### 2. LessonAdditionWithAlreadyUsedName
+**Objective:** Ensure the system prevents the addition of a topic with a name that already exists.
+- **Preconditions:** Administrator is logged in, and there is at least one topic already created.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a name that is already used.
+  3. Enter a description.
+  4. Click "Save".
+  5. After receiving the notification, enter a new unique name.
+  6. Click "Save" again.
+- **Expected Result:** The system shows a notification about the name being already used. After entering a new name, the topic is successfully created.
+
+### 3. NavigateToAddNewLessonViaNavbar
+**Objective:** Verify navigation to the "Add new topic" page works as expected.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Click on the "Add new topic" tab on the navigation bar.
+- **Expected Result:** The administrator is redirected to the adding topic viewing page.
+
+### 4. CancelLessonAddition
+**Objective:** Test the functionality of the "Cancel" button during topic addition.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a name and description.
+  3. Click "Cancel".
+- **Expected Result:** The action of adding a new topic is canceled, and the administrator remains or is redirected to a safe page without creating a new topic.
+
+### 5. LessonAdditionWithoutName
+**Objective:** Verify that the system prevents the addition of a topic without a name.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Leave the name field empty.
+  3. Enter a description.
+  4. Click "Save".
+- **Expected Result:** The system shows an error or notification indicating that the name field is required.
+
+### 6. LessonAdditionWithoutDescription
+**Objective:** Ensure the system allows the addition of a topic without a description.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a unique name.
+  3. Leave the description field empty.
+  4. Click "Save".
+- **Expected Result:** The topic is successfully created without a description.
+
+### 7. LessonAdditionWithSpecialCharactersInName
+**Objective:** Test the system's handling of special characters in the topic name.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a name with special characters.
+  3. Enter a description.
+  4. Click "Save".
+- **Expected Result:** The system either allows the creation of the topic with special characters in the name or shows an error/notification about invalid characters.
+
+### 8. LessonAdditionWithLongDescription
+**Objective:** Verify the system's handling of long descriptions.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Enter a name.
+  3. Enter a very long description.
+  4. Click "Save".
+- **Expected Result:** The system either successfully creates the topic with a long description or shows an error/notification about description length limits.
+
+### 9. RedirectAfterSuccessfulLessonAddition
+**Objective:** Confirm that the system redirects the administrator to the correct page after successful topic addition.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Successfully add a new topic following the basic flow.
+- **Expected Result:** After adding a new topic, the administrator is redirected to the adding vocabulary to the new topic section.
+
+### 10. LessonAdditionWithEmptyFields
+**Objective:** Test the system's response to an attempt to add a topic with all fields empty.
+- **Preconditions:** Administrator is logged in.
+- **Steps:**
+  1. Navigate to "Add new topic" tab.
+  2. Leave all fields empty.
+  3. Click "Save".
+- **Expected Result:** The system shows an error or notification indicating that the required fields are empty and prevents the creation of the topic.

@@ -1,0 +1,54 @@
+Given the use case specifications for "adding new topic" by an administrator, the test scenarios provided seem to be misaligned with the use case. They appear to be related to a review process rather than the process of adding a new topic. Below are corrected and newly generated test scenarios that are relevant to the specified use case:
+
+1. **TestScenario_AddNewTopic_MainFlow_SuccessfulAddition**
+   - Description: Test the successful addition of a new topic by following the basic flow.
+   - Steps: Follow the basic flow from steps 1 to 5.
+   - Expected Result: The new topic is successfully added, and the system redirects the administrator to the adding vocabulary to the new topic section. The new topic appears in the topic list.
+
+2. **TestScenario_AddNewTopic_AlternativeFlow_NameAlreadyUsed**
+   - Description: Test the system's response when an administrator attempts to add a new topic with a name that is already used.
+   - Steps: Follow the alternative flow from steps 1 to 8.
+   - Expected Result: The system shows a notification that the name is already used and prompts the administrator to add another name. After adding a new name, the topic is successfully created.
+
+3. **TestScenario_AddNewTopic_ExceptionFlow_CancelAddition**
+   - Description: Test the functionality of canceling the addition of a new topic.
+   - Steps: Follow the basic flow up to step 2, then execute the exception flow by selecting "Cancel."
+   - Expected Result: The addition of a new topic is canceled, and no new topic is added to the system.
+
+4. **TestScenario_AddNewTopic_PreCondition_AdministratorNotLoggedIn**
+   - Description: Verify that the system prevents access to adding a new topic if the administrator is not logged in.
+   - Preconditions: Administrator is logged out.
+   - Steps: Attempt to access the "Add new topic" tab.
+   - Expected Result: The system does not allow access to the adding topic page and prompts for administrator login.
+
+5. **TestScenario_AddNewTopic_PostCondition_CheckTopicListUpdate**
+   - Description: Verify that the topic list is updated after a new topic is successfully added.
+   - Steps: Follow the basic flow from steps 1 to 5 and then check the topic list.
+   - Expected Result: The newly added topic appears in the topic list.
+
+6. **TestScenario_AddNewTopic_MainFlow_EmptyNameField**
+   - Description: Test the system's response when the name field is left empty.
+   - Steps: Follow the basic flow but leave the name field empty in step 3, then select "Save."
+   - Expected Result: The system shows an error message indicating that the name field is required.
+
+7. **TestScenario_AddNewTopic_MainFlow_EmptyDescriptionField**
+   - Description: Test the system's response when the description field is left empty.
+   - Steps: Follow the basic flow but leave the description field empty in step 4, then select "Save."
+   - Expected Result: The system shows an error message indicating that the description field is required.
+
+8. **TestScenario_AddNewTopic_AlternativeFlow_InvalidCharactersInName**
+   - Description: Test the system's response when the name contains invalid characters.
+   - Steps: Follow the basic flow but input a name with invalid characters in step 3, then select "Save."
+   - Expected Result: The system shows an error message indicating that the name contains invalid characters.
+
+9. **TestScenario_AddNewTopic_MainFlow_VerifyRedirectionToAddVocabulary**
+   - Description: Verify that the system redirects the administrator to the adding vocabulary to the new topic section after a successful topic addition.
+   - Steps: Follow the basic flow from steps 1 to 5.
+   - Expected Result: After adding a new topic, the system redirects the administrator to the adding vocabulary to the new topic section as expected.
+
+10. **TestScenario_AddNewTopic_ExceptionFlow_LogoutMidProcess**
+    - Description: Test the system's behavior if the administrator logs out in the middle of adding a new topic.
+    - Steps: Follow the basic flow up to step 3, then simulate an administrator logout action.
+    - Expected Result: The process of adding a new topic is halted, and any unsaved changes are not stored.
+
+These scenarios are designed to cover the main, alternative, and exception flows of the use case, ensuring comprehensive testing of the functionality for adding a new topic by an administrator.

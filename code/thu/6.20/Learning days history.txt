@@ -1,8 +1,0 @@
-1. SuccessfulViewLearningDaysHistory - Covers the basic flow where the learner successfully views their learning days history.
-2. ViewLearningDaysHistoryWithoutLogin - Tests the precondition where the learner attempts to view the learning days history without being logged in.
-3. ViewLearningDaysHistoryAfterBreakingChain - Tests the scenario where the learner views their learning days history after breaking their continuous learning chain.
-4. ViewLearningDaysHistoryWithContinuousLearning - Tests the scenario where the learner has a continuous learning streak and views their learning days history.
-5. ViewLearningDaysHistoryWithZeroDays - Tests the scenario where the learner has not started learning and views their learning days history, expecting to see zero days.
-6. ViewLearningDaysHistoryAfterReset - Tests the scenario where the learner's learning days history has been reset, and they view it.
-7. ViewLearningDaysHistoryWithMultipleBreaksInChain - Tests the scenario where the learner has multiple breaks in their learning chain and views their history.
-8. ViewLearningDaysHistoryWithMaximumDays - Tests the scenario where the learner views their learning days history at the maximum number of days tracked by the system.

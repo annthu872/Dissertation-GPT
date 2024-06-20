@@ -1,0 +1,23 @@
+Given the use case specifications for "adding new topic" by an administrator, the test scenarios provided seem to be unrelated to the use case. Let's create relevant test scenarios based on the given use case specifications:
+
+1. **AddNewTopicSuccessfully** - Tests the basic flow where the administrator successfully adds a new English learning topic, including entering a unique name and description, and verifies if the topic appears in the topic list.
+
+2. **AddTopicWithExistingName** - Follows the alternative flow where the administrator attempts to add a new topic with a name that already exists. This scenario tests if the system correctly prevents the topic from being added and displays the appropriate notification.
+
+3. **CancelAddingNewTopic** - Tests the exception flow where the administrator selects "Cancel" after initiating the process of adding a new topic, verifying if the action stops without creating a new topic.
+
+4. **AddTopicWithoutName** - Tests the scenario where the administrator attempts to save a new topic without entering a name. This scenario checks if the system validates the input and prevents the topic from being added without a name.
+
+5. **AddTopicWithoutDescription** - Similar to the previous scenario but tests if a topic can be added without a description, checking for system validation on the description field.
+
+6. **AddTopicWithSpecialCharactersInName** - Tests the system's ability to handle special characters in the topic name field, verifying if there are any restrictions or encoding issues.
+
+7. **AddTopicWithLongName** - Tests the system's handling of unusually long names for topics, to check if there's a maximum character limit and how the system behaves when it's exceeded.
+
+8. **AddTopicWithLongDescription** - Similar to testing with a long name, this scenario checks how the system handles a very long description for a topic, including any potential character limits.
+
+9. **AddTopicAfterLoggingOut** - Tests the precondition where the administrator logs out before saving a new topic, verifying if the system correctly prevents adding the topic without an active session.
+
+10. **RedirectAfterAddingTopic** - Tests the postcondition where, after successfully adding a new topic, the system should redirect the administrator to the adding vocabulary to the new topic section, verifying the redirection and the appearance of the new topic in the appropriate list.
+
+These test scenarios are designed to cover the basic, alternative, and exception flows described in the use case, as well as to validate the preconditions and postconditions. They ensure comprehensive testing of the functionality for adding a new English learning topic by an administrator.

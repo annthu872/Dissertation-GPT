@@ -1,0 +1,72 @@
+Based on the provided use case specifications for "adding new topic" and the given test scenarios which seem to be more aligned with editing rather than adding a new topic, I will generate test scenarios specifically tailored to the "adding new topic" use case.
+
+### Test Scenarios for Adding New Topic
+
+1. **AddTopic_SuccessfulAddition**
+   - **Objective**: Verify that the administrator can successfully add a new English learning topic.
+   - **Steps**:
+     1. Administrator logs into the application.
+     2. Administrator navigates to "Add new topic" tab.
+     3. Administrator enters a unique name and description for the topic.
+     4. Administrator clicks "Save".
+   - **Expected Result**: The system adds the new topic and redirects the Administrator to the adding vocabulary section. The new topic appears in the topic list.
+
+2. **AddTopic_UsingExistingName**
+   - **Objective**: Verify that the system prevents the addition of a new topic with a name that already exists.
+   - **Steps**:
+     1. Administrator attempts to add a new topic using a name that is already in use.
+     2. Administrator fills in the description field.
+     3. Administrator clicks "Save".
+   - **Expected Result**: The system displays a notification about the name being already used and prompts for a new name.
+
+3. **AddTopic_CancelAddition**
+   - **Objective**: Verify that the administrator can cancel the process of adding a new topic at any time.
+   - **Steps**:
+     1. Administrator initiates the process to add a new topic.
+     2. Administrator clicks "Cancel" before saving the new topic.
+   - **Expected Result**: The system cancels the addition process and does not add a new topic.
+
+4. **AddTopic_EmptyNameField**
+   - **Objective**: Verify that the system prevents the addition of a new topic without a name.
+   - **Steps**:
+     1. Administrator leaves the name field empty and fills in the description.
+     2. Administrator clicks "Save".
+   - **Expected Result**: The system displays an error message indicating that the name field is required.
+
+5. **AddTopic_EmptyDescriptionField**
+   - **Objective**: Verify that the system allows the addition of a new topic without a description.
+   - **Steps**:
+     1. Administrator fills in the name field but leaves the description field empty.
+     2. Administrator clicks "Save".
+   - **Expected Result**: The system adds the new topic without a description.
+
+6. **AddTopic_SpecialCharactersInName**
+   - **Objective**: Verify how the system handles special characters in the topic name.
+   - **Steps**:
+     1. Administrator enters a name with special characters for the topic.
+     2. Administrator fills in the description field.
+     3. Administrator clicks "Save".
+   - **Expected Result**: The system either adds the topic with the special characters in the name or displays an error message, depending on the system's handling of special characters.
+
+7. **AddTopic_NavigationAfterAdding**
+   - **Objective**: Verify that the system redirects the administrator to the correct page after successfully adding a new topic.
+   - **Steps**:
+     1. Administrator successfully adds a new topic.
+   - **Expected Result**: The system redirects the Administrator to the adding vocabulary to the new topic section.
+
+8. **AddTopic_InvalidCharactersInDescription**
+   - **Objective**: Verify how the system handles invalid characters in the topic description.
+   - **Steps**:
+     1. Administrator enters a valid name.
+     2. Administrator enters a description with invalid characters.
+     3. Administrator clicks "Save".
+   - **Expected Result**: The system either accepts the description with invalid characters or displays an error message, depending on the system's validation rules.
+
+9. **AddTopic_LogoutMidProcess**
+   - **Objective**: Verify the system's behavior if the administrator logs out in the middle of adding a new topic.
+   - **Steps**:
+     1. Administrator initiates the process to add a new topic.
+     2. Before clicking "Save", Administrator logs out.
+   - **Expected Result**: The system cancels the addition process, and the topic is not added.
+
+These scenarios cover a range of successful and unsuccessful attempts to add a new topic, including handling of special cases and validation of input fields.

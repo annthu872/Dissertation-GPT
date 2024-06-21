@@ -1,0 +1,12 @@
+Successful Checkout Process
+Select All Items from One Store
+Purchase from Product Detail Page with Single Option
+Purchase from Product Detail Page with Multiple Options
+Adjust Quantity Before Checkout from Product Detail Page
+Attempt to select an out-of-stock product in the shopping cart
+Attempt to checkout with a product that has not had its options selected
+Attempt to checkout with a product quantity exceeding current stock
+Attempt to checkout with a product quantity less than one
+Attempt to checkout with a product that has no stock
+Attempt to checkout with an out-of-stock option of a product with multiple options
+Attempt to proceed to checkout with an invalid product causing the "Checkout" button to be disabled

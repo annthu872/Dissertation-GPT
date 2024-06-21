@@ -1,0 +1,154 @@
+### Test Case 1: SuccessfulPronunciationTestAttempt
+
+**Objective**: To verify that the learner can successfully complete a pronunciation test attempt with a correct answer.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select the correct Vietnamese meaning or English vocabulary that matches the pronunciation.
+4. Submit the answer.
+
+**Expected Result**: A green pop-up screen appears indicating the answer is correct. The vocabulary word is marked as studied.
+
+---
+
+### Test Case 2: IncorrectPronunciationTestAttempt
+
+**Objective**: To verify the system's response when a learner chooses an incorrect answer in a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select an incorrect Vietnamese meaning or English vocabulary that does not match the pronunciation.
+4. Submit the answer.
+
+**Expected Result**: A red pop-up screen appears indicating the answer is incorrect.
+
+---
+
+### Test Case 3: PronunciationTestWithNoUserInput
+
+**Objective**: To verify the system's response when no answer is selected in a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Do not select any answer.
+4. Attempt to submit the answer.
+
+**Expected Result**: The system prevents submission and prompts the user to select an answer.
+
+---
+
+### Test Case 4: PronunciationTestAttemptWithNetworkError
+
+**Objective**: To verify the system's behavior during a network error while attempting a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Induce a network error (e.g., by disconnecting from the internet).
+3. Click on the speaker button to listen to the word's pronunciation.
+4. Attempt to select an answer and submit it.
+
+**Expected Result**: An error message is displayed indicating a network issue.
+
+---
+
+### Test Case 5: PronunciationTestAttemptAfterSessionTimeout
+
+**Objective**: To verify the system's response when a session times out during a pronunciation test attempt.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Wait for the session to timeout.
+3. Click on the speaker button to listen to the word's pronunciation.
+4. Attempt to select an answer and submit it.
+
+**Expected Result**: The user is redirected to the login screen due to session timeout.
+
+---
+
+### Test Case 6: PronunciationTestWithAudioPlaybackIssue
+
+**Objective**: To verify the system's response when there is an issue with audio playback during a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Encounter an audio playback issue (e.g., no sound).
+
+**Expected Result**: An error message or notification about the audio playback issue is displayed.
+
+---
+
+### Test Case 7: PronunciationTestAttemptWithMultipleChoiceSelection
+
+**Objective**: To verify that the system only allows one answer selection in a pronunciation test with multiple choices.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Attempt to select more than one answer.
+4. Submit the answer.
+
+**Expected Result**: The system only accepts one answer and prevents multiple selections.
+
+---
+
+### Test Case 8: PronunciationTestAttemptWithCorrectAnswerOnFirstTry
+
+**Objective**: To verify that the system correctly processes a correct answer on the first try during a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select the correct answer on the first try.
+4. Submit the answer.
+
+**Expected Result**: A green pop-up screen appears indicating the answer is correct.
+
+---
+
+### Test Case 9: PronunciationTestAttemptWithCorrectAnswerAfterIncorrectTries
+
+**Objective**: To verify the system's response when the correct answer is selected after one or more incorrect attempts in a pronunciation test.
+
+**Preconditions**: Learner is logged in and has accessed the review test function.
+
+**Steps**:
+1. Navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+3. Select an incorrect answer and submit it.
+4. After the incorrect attempt, select the correct answer and submit it.
+
+**Expected Result**: A green pop-up screen appears after the correct answer is submitted, regardless of previous attempts.
+
+---
+
+### Test Case 10: PronunciationTestAttemptWhileNotLoggedIn
+
+**Objective**: To verify the system's behavior when attempting to take a pronunciation test without being logged in.
+
+**Preconditions**: Learner is not logged in.
+
+**Steps**:
+1. Attempt to navigate to the pronunciation test question.
+2. Click on the speaker button to listen to the word's pronunciation.
+
+**Expected Result**: The system redirects the user to the login screen or displays a message indicating that login is required.

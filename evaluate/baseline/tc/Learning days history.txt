@@ -1,0 +1,100 @@
+### Test Case 1: SuccessfulViewLearningDaysHistory
+
+**Objective**: Verify that the learner can successfully view their learning days history following the basic flow.
+
+**Steps**:
+1. Ensure the learner is logged into the application.
+2. Navigate to the Home page.
+3. Select "History".
+4. On the History page, select "Day History".
+
+**Expected Result**: The system redirects the learner to a page showing the number of days they have learned continuously.
+
+---
+
+### Test Case 2: ViewLearningDaysHistoryWithoutLogin
+
+**Objective**: Verify that the system prevents access to the learning days history when the learner is not logged in.
+
+**Steps**:
+1. Navigate to the Home page without logging in.
+2. Attempt to select "History".
+
+**Expected Result**: The system should either redirect the user to the login page or display a message indicating that login is required to view the history.
+
+---
+
+### Test Case 3: ViewLearningDaysHistoryAfterBreakingChain
+
+**Objective**: Verify that the learning days count resets to one after the learner breaks their continuous learning chain.
+
+**Steps**:
+1. Log into the application.
+2. Break the continuous learning chain by not learning for at least one day.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the learning days count as 1.
+
+---
+
+### Test Case 4: ViewLearningDaysHistoryWithContinuousLearning
+
+**Objective**: Verify that the system correctly tracks and displays the number of continuous learning days without breaks.
+
+**Steps**:
+1. Log into the application.
+2. Ensure continuous learning for a number of days.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the correct number of continuous learning days.
+
+---
+
+### Test Case 5: ViewLearningDaysHistoryWithZeroDays
+
+**Objective**: Verify that the system shows zero days for learners who have not started learning.
+
+**Steps**:
+1. Log into the application with a new or reset account.
+2. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows 0 days.
+
+---
+
+### Test Case 6: ViewLearningDaysHistoryAfterReset
+
+**Objective**: Verify that the system correctly shows the learning days history after it has been reset.
+
+**Steps**:
+1. Log into the application.
+2. Reset the learning days history through the application settings or support.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the learning days count as 1 or 0, depending on whether the learner has started learning again after the reset.
+
+---
+
+### Test Case 7: ViewLearningDaysHistoryWithMultipleBreaksInChain
+
+**Objective**: Verify that the system correctly handles and displays learning days history with multiple breaks in the learning chain.
+
+**Steps**:
+1. Log into the application.
+2. Create multiple breaks in the learning chain by not learning on non-consecutive days.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system shows the number of days since the last break in learning.
+
+---
+
+### Test Case 8: ViewLearningDaysHistoryWithMaximumDays
+
+**Objective**: Verify that the system can handle and display the maximum number of learning days tracked.
+
+**Steps**:
+1. Log into the application.
+2. Ensure continuous learning up to the maximum days limit set by the system.
+3. Navigate to the History page and select "Day History".
+
+**Expected Result**: The system correctly displays the maximum number of continuous learning days tracked without errors.

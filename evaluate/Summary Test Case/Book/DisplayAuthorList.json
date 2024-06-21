@@ -1,0 +1,94 @@
+{
+    "1. Display First Page of Authors1.txt0": {},
+    "1. Display First Page of Authors1.txt1": {
+        "testCaseName": "Verify Display of First Page of Authors",
+        "objective": "Verify that the application correctly displays the first page of authors including id, Name, and Bio columns when the 'Authors' item is selected.",
+        "testSteps": [
+            "- Step 1: Launch the application.",
+            "- Step 2: Navigate to the 'Authors' section by selecting the item 'Authors'."
+        ],
+        "expectedResult": "The application displays the first page of authors showing up to 10 items. Each item includes the columns: id, Name, and Bio.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario 'Display First Page of Authors' by verifying that the first page of authors is displayed correctly with the specified columns when the 'Authors' section is accessed. It matches the scenario's requirement to show the first page with specific details for each author."
+    },
+    "2. Navigate to Next Page of Authors1.txt0": {},
+    "2. Navigate to Next Page of Authors1.txt1": {
+        "testCaseName": "Navigate to Next Page of Authors Using Next Button",
+        "objective": "Verify that the user can navigate to the next page of authors by clicking the 'Next' button",
+        "testSteps": [
+            "- Step 1: Navigate to the application's main page.",
+            "- Step 2: Select the item 'Authors' from the main menu or page list.",
+            "- Step 3: Verify that the list of authors is displayed with up to 10 items on the page.",
+            "- Step 4: Click the 'Next' button located below the records in the pagination block."
+        ],
+        "expectedResult": "The application displays the next 10 records of authors in the database on a new page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to navigate to the next page of authors. It specifically tests the functionality of the 'Next' button in the pagination block, aligning perfectly with the scenario's objective."
+    },
+    "2. Navigate to Next Page of Authors1.txt2": {
+        "testCaseName": "Navigate to Next Page of Authors Using Page Number",
+        "objective": "Verify that the user can navigate to the next page of authors by clicking on the page number in the pagination block",
+        "testSteps": [
+            "- Step 1: Navigate to the application's main page.",
+            "- Step 2: Select the item 'Authors' from the main menu or page list.",
+            "- Step 3: Verify that the list of authors is displayed with up to 10 items on the first page.",
+            "- Step 4: Identify the pagination block below the list of authors.",
+            "- Step 5: Click on the number '2' or the next sequential number available in the pagination block."
+        ],
+        "expectedResult": "The application displays the next 10 records of authors in the database on the page corresponding to the number clicked in the pagination block.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores a different method (using page numbers) to navigate to the next page of authors, it still directly supports the given test scenario's goal of navigating to the next page of authors. It provides an alternative navigation method, thus reflecting the scenario's broader objective of page navigation within the authors' section."
+    },
+    "3. Navigate to a Specific Page of Authors1.txt0": {},
+    "3. Navigate to a Specific Page of Authors1.txt1": {
+        "testCaseName": "Navigate to Authors Page via Navbar",
+        "objective": "Verify that users can navigate to the Authors page using the navigation bar and see the list of authors.",
+        "testSteps": [
+            "- Step 1: Open the application.",
+            "- Step 2: Locate the navigation bar.",
+            "- Step 3: Click on the 'Authors' item in the navigation bar."
+        ],
+        "expectedResult": "The application displays the Authors page with a list of authors, showing the columns for id, Name, and Bio. Up to 10 authors are displayed on the page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario, which is to navigate to a specific page of authors. It tests the primary functionality of accessing the Authors page through the navigation bar, which is a key aspect of the scenario."
+    },
+    "3. Navigate to a Specific Page of Authors1.txt2": {
+        "testCaseName": "Pagination Functionality on Authors Page",
+        "objective": "Verify that users can navigate through different pages of authors using the pagination controls.",
+        "testSteps": [
+            "- Step 1: Navigate to the Authors page by clicking on the 'Authors' item in the navigation bar.",
+            "- Step 2: Scroll down to the bottom of the list of authors to locate the pagination block.",
+            "- Step 3: Click on the 'Next' button in the pagination block.",
+            "- Step 4: Alternatively, click on a page number in the pagination block to navigate to that specific page."
+        ],
+        "expectedResult": "Upon clicking the 'Next' button, the application displays the next 10 records of authors. When a specific page number is clicked, the application displays the authors corresponding to that page. Each page shows up to 10 items, with columns for id, Name, and Bio.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores the pagination functionality, which is a step further from simply navigating to the Authors page, it still reflects the given test scenario. It tests an essential part of navigating within the specific page of authors, ensuring users can access different sets of authors beyond the initial page. Therefore, it complements the scenario by testing the functionality that allows users to navigate to specific pages of authors through pagination."
+    },
+    "4. Last Page of Authors Displayed1.txt0": {},
+    "4. Last Page of Authors Displayed1.txt1": {
+        "testCaseName": "Verify Display of Last Page of Authors",
+        "objective": "Verify that the application correctly displays the last page of authors when navigating through pagination.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Authors' section of the application.",
+            "- Step 2: Observe the pagination block below the list of authors.",
+            "- Step 3: Click on the highest page number visible in the pagination block.",
+            "- Step 4: If a 'Next' button is visible, click on it until it is no longer available."
+        ],
+        "expectedResult": "The application displays the last page of authors, showing up to 10 items. The 'Next' button is either not visible or disabled. The columns for id, Name, and Bio are correctly displayed for each author.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario by ensuring that the application can navigate to and correctly display the last page of authors, including the correct handling of pagination and the display of author information. It matches the scenario's focus on the display and navigation to the last page of authors."
+    },
+    "4. Last Page of Authors Displayed1.txt2": {
+        "testCaseName": "Verify Last Page Content When Less Than 10 Authors",
+        "objective": "Ensure that the application correctly handles and displays the last page when there are less than 10 authors to display.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Authors' section of the application.",
+            "- Step 2: If the total number of authors is less than 10, observe the displayed list.",
+            "- Step 3: If the total number of authors is more than 10, click on the highest page number in the pagination block until reaching the last page."
+        ],
+        "expectedResult": "The application displays the last page of authors correctly, even if there are less than 10 authors on this page. All available author records are shown with their id, Name, and Bio.",
+        "reflect": "yes",
+        "explanation": "This test case complements the first by focusing on a specific condition within the scenario\ufffdhandling the last page when there are fewer than 10 authors. It ensures that the application's functionality and display requirements are met for this condition, directly reflecting the scenario's aim to verify the display of the last page of authors under varying conditions."
+    }
+}

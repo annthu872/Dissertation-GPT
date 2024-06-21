@@ -1,0 +1,320 @@
+{
+    "1. Scenario Update Genre with Incorrectly Entered Genre Name-Raw1.txt0": {},
+    "1. Scenario Update Genre with Incorrectly Entered Genre Name-Raw1.txt1": {
+        "testCaseName": "Update Genre with Incorrectly Entered Genre Name",
+        "objective": "Verify that the system displays incorrect data messages when a genre name is entered incorrectly during an update operation",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: In the form displayed, enter an incorrectly formatted genre name in the 'Name' field.",
+            "- Step 4: Fill in the 'Description' field with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display messages indicating the incorrect data entry for the genre name.",
+        "explanation": "This test case ensures that the system correctly validates the genre name input during an update operation and provides feedback to the user when the input does not meet the expected format or criteria."
+    },
+    "1. Scenario Update Genre with Incorrectly Entered Genre Name-Raw1.txt2": {
+        "testCaseName": "Cancel Update Operation on Genre with Incorrectly Entered Name",
+        "objective": "Verify that the update operation is cancelled and no changes are made to the database when the 'Cancel' button is pressed after entering incorrect genre name",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Enter an incorrectly formatted genre name in the 'Name' field.",
+            "- Step 4: Fill in the 'Description' field with valid data.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The system should not update the genre in the database and should display the list of genre records without applying the changes.",
+        "explanation": "This test case checks the functionality of the 'Cancel' button to ensure that it cancels the update operation without saving any incorrectly entered data, maintaining the integrity of the database."
+    },
+    "10. Navigation to 'API' before data submission-Raw1.txt0": {},
+    "10. Navigation to 'API' before data submission-Raw1.txt1": {
+        "testCaseName": "Verify navigation to 'API' before data submission during genre edit",
+        "objective": "Ensure that navigating to 'API' before submitting the edited genre data cancels the edit operation and does not update the genre in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, start entering new values for the genre's 'Name' and 'Description'.",
+            "- Step 4: Before pressing the 'Submit' button, select the menu item 'API'."
+        ],
+        "expectedResult": "The application should navigate to the 'API' page without updating the genre in the database, and the genre's details should remain unchanged.",
+        "explanation": "This test case ensures that if a user navigates away from the genre edit page by selecting 'API' from the menu before submitting the form, the edit operation is canceled, and no changes are made to the genre in the database. It directly matches the scenario of navigating to 'API' before data submission during the genre edit process."
+    },
+    "10. Navigation to 'API' before data submission-Raw1.txt2": {
+        "testCaseName": "Verify data integrity after canceling genre edit by navigating to 'API'",
+        "objective": "To confirm that the original genre data remains intact in the database after the user navigates to 'API' without submitting the edited data.",
+        "testSteps": [
+            "- Step 1: Note down the current details of a genre from the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you noted.",
+            "- Step 3: Begin to modify the 'Name' and 'Description' fields but do not submit the form.",
+            "- Step 4: Navigate to 'API' by selecting it from the menu.",
+            "- Step 5: Return to the genre list/details page and locate the same genre."
+        ],
+        "expectedResult": "The genre's details should match the original data noted in Step 1, indicating that no changes were made to the database.",
+        "explanation": "This test case is designed to verify that the system preserves the integrity of the genre data if the edit operation is canceled by navigating away to 'API'. It checks that the original genre details remain unchanged in the database, aligning with the scenario's focus on navigation before data submission."
+    },
+    "2. Scenario Update Genre with Incorrectly Entered Genre Description-Raw1.txt0": {},
+    "2. Scenario Update Genre with Incorrectly Entered Genre Description-Raw1.txt1": {
+        "testCaseName": "Update Genre with Incorrectly Entered Description",
+        "objective": "Verify that the system displays incorrect data messages when a genre description is entered incorrectly during an update operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: In the form displayed, enter or modify the genre's name to a valid name.",
+            "- Step 4: Enter an incorrectly formatted description for the genre.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display messages indicating the description was entered incorrectly.",
+        "explanation": "This test case ensures that the system correctly validates genre descriptions during the update process and provides feedback when the input does not meet the expected format or criteria."
+    },
+    "2. Scenario Update Genre with Incorrectly Entered Genre Description-Raw1.txt2": {
+        "testCaseName": "Update Genre with Correctly Entered Data but Server Error Occurs",
+        "objective": "Verify that the system displays an error message when a server error occurs after submitting correctly entered genre data.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Enter a valid name in the genre's name field.",
+            "- Step 4: Enter a valid description in the genre's description field.",
+            "- Step 5: Press the 'Submit' button and simulate a server error (This step might involve using a testing tool or a mock to simulate the server error condition)."
+        ],
+        "expectedResult": "The system should display an error message indicating that an error occurred while updating the genre.",
+        "explanation": "This test case checks the system's behavior when an update operation is correctly performed by the user, but an unexpected server error prevents the genre from being updated."
+    },
+    "2. Scenario Update Genre with Incorrectly Entered Genre Description-Raw1.txt3": {
+        "testCaseName": "Cancel Genre Update Operation",
+        "objective": "Verify that no changes are made to the genre data when the 'Cancel' button is pressed during an update operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Begin to enter or modify the genre's name and description.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The system should not update the genre in the database and should display the list of genre records, showing that no changes have been made.",
+        "explanation": "This test case ensures that the system properly cancels the update operation without making any changes to the genre data when the user decides not to proceed with the update."
+    },
+    "3. Successful Genre Update-Raw1.txt0": {},
+    "3. Successful Genre Update-Raw1.txt1": {
+        "testCaseName": "Successful Genre Update with Valid Data",
+        "objective": "Verify that the genre can be successfully updated with valid data and the updated genre list is displayed.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, enter valid data for the genre 'Name' and 'Description'.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The genre should be updated in the database, and the list of genres with the updated record should be displayed.",
+        "explanation": "This test case ensures that when valid data is entered for a genre, the update operation is successful and the updated genre list is correctly displayed."
+    },
+    "3. Successful Genre Update-Raw1.txt2": {
+        "testCaseName": "Unsuccessful Genre Update with Invalid Data",
+        "objective": "Verify that the genre update operation fails with appropriate error messages when invalid data is entered.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, enter invalid data for the genre 'Name' and/or 'Description'.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The genre should not be updated in the database, and error messages related to the incorrect data should be displayed.",
+        "explanation": "This test case checks that the system correctly handles invalid data during a genre update by preventing the update and displaying error messages."
+    },
+    "3. Successful Genre Update-Raw1.txt3": {
+        "testCaseName": "Cancel Genre Update Operation",
+        "objective": "Verify that the genre update operation can be canceled and no changes are made to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Press the 'Cancel' button before pressing 'Submit'."
+        ],
+        "expectedResult": "The update operation should be canceled, no data should be updated in the database, and the list of genre records should be displayed.",
+        "explanation": "This test case ensures that users have the option to cancel the update operation, preventing any unintended changes to the genre data."
+    },
+    "3. Successful Genre Update-Raw1.txt4": {
+        "testCaseName": "Navigate Away from Genre Update Without Saving",
+        "objective": "Verify that navigating away from the genre update form without saving does not update the genre in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Without pressing 'Submit', select a menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The genre should not be updated in the database, and the user is taken to the selected page without any changes to the genre data.",
+        "explanation": "This test case verifies that if a user navigates away from the update form without submitting, no changes are made to the genre."
+    },
+    "4. Genre Update Failure with Error Message-Raw1.txt0": {},
+    "4. Genre Update Failure with Error Message-Raw1.txt1": {
+        "testCaseName": "Verify Genre Update with Incorrect Data",
+        "objective": "Ensure that the application displays error messages when incorrect data is entered during genre update.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, enter incorrect data into the 'Name' and/or 'Description' fields.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The application should display error messages related to the incorrect data entered.",
+        "explanation": "This test case ensures that the system validates input data during the genre update process and provides feedback to the user when the data does not meet the expected format or requirements."
+    },
+    "4. Genre Update Failure with Error Message-Raw1.txt2": {
+        "testCaseName": "Verify Genre Update Failure with System Error Message",
+        "objective": "To confirm that the application displays an appropriate error message when a system error occurs during the genre update process.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Enter valid data into the 'Name' and 'Description' fields.",
+            "- Step 4: Simulate a system error or disconnect the network before pressing 'Submit'.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message should be displayed indicating that the genre could not be updated due to a system error.",
+        "explanation": "This test case is designed to verify that the application handles system errors gracefully during the genre update process and informs the user appropriately."
+    },
+    "4. Genre Update Failure with Error Message-Raw1.txt3": {
+        "testCaseName": "Verify Cancel Operation During Genre Update",
+        "objective": "To ensure that no data is updated in the database when the 'Cancel' button is pressed during genre update.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Begin entering data into the 'Name' and 'Description' fields.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The application should not update the genre in the database and should display the list of genre records.",
+        "explanation": "This test case ensures that the cancel operation works as expected, allowing users to abort the update process without making any changes to the database."
+    },
+    "5. Cancel operation before data submission-Raw1.txt0": {},
+    "5. Cancel operation before data submission-Raw1.txt1": {
+        "testCaseName": "Cancel Genre Edit Operation Before Data Submission",
+        "objective": "Verify that the genre edit operation can be canceled before data submission and ensure no data is updated in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the genre edit form, start entering new values for the genre details such as Name and Description.",
+            "- Step 4: Before pressing the 'Submit' button, click the 'Cancel' button."
+        ],
+        "expectedResult": "The application should not update the genre in the database and should redirect the user to the list of genre records, displaying them without applying the changes.",
+        "explanation": "This test case ensures that users have the ability to cancel the edit operation if they decide not to proceed with the changes. It verifies the functionality of the 'Cancel' button in preventing data submission and ensuring data integrity by not updating the database with the partially entered data."
+    },
+    "5. Cancel operation before data submission-Raw1.txt2": {
+        "testCaseName": "Navigate Away from Genre Edit Page Before Submission",
+        "objective": "Ensure that navigating away from the genre edit page before submitting the form does not update the genre in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Begin entering or modifying the genre's Name and Description in the provided form fields.",
+            "- Step 4: Without pressing the 'Submit' button, select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The application should not update the genre in the database and should display the selected page without applying any changes to the genre data.",
+        "explanation": "This test case checks the application's behavior when a user navigates away from the genre edit page without submitting the changes. It is important to ensure that unsaved changes are not inadvertently saved, maintaining the integrity of the genre data."
+    },
+    "6. Navigation to 'Books' before data submission-Raw1.txt0": {},
+    "6. Navigation to 'Books' before data submission-Raw1.txt1": {
+        "testCaseName": "Navigate to 'Books' before submitting updated genre data",
+        "objective": "Verify that navigating to 'Books' before data submission cancels the update operation and displays the 'Books' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Begin entering new data into the genre form fields.",
+            "- Step 4: Before pressing 'Submit', navigate to the 'Books' page by selecting the 'Books' menu item."
+        ],
+        "expectedResult": "The genre update operation is canceled, and the 'Books' page is displayed without updating the genre in the database.",
+        "explanation": "This test case ensures that if a user navigates away to 'Books' before completing the genre update submission, the update process is canceled, and the user is redirected to the 'Books' page as per the scenario requirement."
+    },
+    "6. Navigation to 'Books' before data submission-Raw1.txt2": {
+        "testCaseName": "Successful genre update and then navigate to 'Books'",
+        "objective": "Verify that after successfully updating a genre, navigating to 'Books' displays the 'Books' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Correctly enter all required genre data into the form fields.",
+            "- Step 4: Press the 'Submit' button to update the genre.",
+            "- Step 5: After seeing the success message, navigate to the 'Books' page by selecting the 'Books' menu item."
+        ],
+        "expectedResult": "After updating the genre successfully, the 'Books' page is displayed.",
+        "explanation": "This test case verifies that the user can successfully update a genre and then navigate to the 'Books' page, ensuring the update operation completes before navigation."
+    },
+    "6. Navigation to 'Books' before data submission-Raw1.txt3": {
+        "testCaseName": "Cancel genre update and navigate to 'Books'",
+        "objective": "Verify that canceling the genre update operation and then navigating to 'Books' displays the 'Books' page without updating the genre.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Begin entering new data into the genre form fields.",
+            "- Step 4: Press the 'Cancel' button to cancel the update operation.",
+            "- Step 5: Navigate to the 'Books' page by selecting the 'Books' menu item."
+        ],
+        "expectedResult": "The genre update operation is canceled, and the 'Books' page is displayed without updating the genre in the database.",
+        "explanation": "This test case ensures that if a user decides to cancel the update operation and then navigates to 'Books', the update is canceled as expected, and the user is redirected to the 'Books' page."
+    },
+    "7. Navigation to 'Genres' before data submission-Raw1.txt0": {},
+    "7. Navigation to 'Genres' before data submission-Raw1.txt1": {
+        "testCaseName": "Edit Genre and Submit Valid Data",
+        "objective": "Verify that the user can successfully edit a genre's details and submit the updated information.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, enter valid data for the genre's 'Name' and 'Description'.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The genre should be updated in the database, and the user should be redirected to the list of genres with the updated record displayed.",
+        "explanation": "This test case ensures that the system correctly updates a genre's information in the database when valid data is submitted, which directly relates to the main scenario of editing a genre."
+    },
+    "7. Navigation to 'Genres' before data submission-Raw1.txt2": {
+        "testCaseName": "Edit Genre and Submit Invalid Data",
+        "objective": "Verify that the system displays error messages when invalid data is submitted while editing a genre.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the displayed form, enter invalid data for the genre's 'Name' and/or 'Description'.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The system should display error messages related to the invalid data entered, and the genre should not be updated in the database.",
+        "explanation": "This test case checks the system's ability to validate input data and provide feedback to the user, which is a crucial part of the main scenario of editing a genre."
+    },
+    "7. Navigation to 'Genres' before data submission-Raw1.txt3": {
+        "testCaseName": "Cancel Genre Edit Operation",
+        "objective": "Verify that the user can cancel the genre edit operation and no changes are made to the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The user should be redirected to the list of genre records without any changes being made to the database.",
+        "explanation": "This test case ensures that the cancel operation works as expected, allowing users to abort the edit operation without making any changes, which is part of the cancel operation scenario."
+    },
+    "7. Navigation to 'Genres' before data submission-Raw1.txt4": {
+        "testCaseName": "Navigate Away from Edit Genre Page Without Saving",
+        "objective": "Verify that navigating away from the edit genre page without saving does not update the genre in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The system should not update the genre in the database and should display the selected page.",
+        "explanation": "This test case verifies the system's behavior when a user navigates away from the edit page without submitting changes, ensuring data integrity by not applying unsaved changes, as described in the cancel operation scenario."
+    },
+    "8. Navigation to 'Authors' before data submission-Raw1.txt0": {},
+    "8. Navigation to 'Authors' before data submission-Raw1.txt1": {
+        "testCaseName": "Navigate to 'Authors' before submitting edited genre data",
+        "objective": "Verify that navigating to 'Authors' before submitting the form cancels the edit operation and displays the 'Authors' page.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to edit.",
+            "- Step 3: Begin entering or modifying the data in the genre edit form.",
+            "- Step 4: Before pressing 'Submit', select the menu item 'Authors'."
+        ],
+        "expectedResult": "The edit operation is cancelled, and the 'Authors' page is displayed without updating the genre in the database.",
+        "explanation": "This test case ensures that if a user navigates away from the genre edit page by selecting 'Authors' from the menu before submitting the form, the edit operation is cancelled, and the user is redirected to the 'Authors' page. It verifies the application's behavior in handling navigation actions during data entry, as specified in the scenario."
+    },
+    "9. Navigation to 'Home' before data submission-Raw1.txt0": {},
+    "9. Navigation to 'Home' before data submission-Raw1.txt1": {
+        "testCaseName": "Navigation to 'Home' before data submission during genre edit",
+        "objective": "Verify that navigating to 'Home' before submitting the updated genre data cancels the edit operation and does not update the genre in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the genre list/details page.",
+            "- Step 2: Click the 'Update' button next to the genre you wish to update.",
+            "- Step 3: On the genre edit form, start entering new values for the genre's Name and Description fields.",
+            "- Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the edit page."
+        ],
+        "expectedResult": "The application navigates to the 'Home' page without updating the genre in the database, and no changes are made to the genre's information.",
+        "explanation": "This test case ensures that if a user navigates away to the 'Home' page before completing the genre update process, the operation is canceled, and no data is updated in the database. It directly matches the scenario of navigating to 'Home' before data submission, focusing on the cancel operation scenario when the 'Home' navigation occurs."
+    }
+}

@@ -1,0 +1,194 @@
+Scenario: CreateGenre_WithoutDescription1.txt
+Test Case: Test Case 1
+testCaseName: Create Genre Without Entering Description
+objective: Verify that the genre can be created without entering a description and is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'CreateGenre_WithoutDescription,' by specifically testing the ability to create a genre without providing a description. It aligns perfectly with the scenario's requirement.
+
+Test Case: Test Case 3
+testCaseName: Create Genre Without Description and Encounter an Error
+objective: Verify that the application displays an error message when an error occurs during the creation of a new genre without a description.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button.
+expectedResult: An error message is displayed, indicating that the new genre record could not be added due to an error.
+reflect: yes
+explanation: Although this test case introduces an error condition, it still reflects the given test scenario by focusing on the process of creating a genre without a description. It tests the system's behavior under error conditions without deviating from the scenario's core requirement.
+
+
+Scenario: CreateGenre_WithoutName1.txt
+Test Case: Test Case 1
+testCaseName: Attempt to create a new genre without entering a name
+objective: Verify that the system prevents the creation of a new genre without a name and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the genre record is not added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'CreateGenre_WithoutName' by attempting to create a genre without providing a name and expecting the system to prevent the creation and display an error message. It validates the system's handling of missing mandatory information.
+
+
+Scenario: Genre Creation with Incorrect Data1.txt
+Test Case: Test Case 1
+testCaseName: Genre Creation with Empty Name Field
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with the Name field left empty
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field cannot be empty.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the system's response to an empty Name field during genre creation, which is a case of incorrect data.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation with Excessively Long Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with a Name that exceeds the character limit
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name that exceeds the character limit (e.g., 256 characters long).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field exceeds the character limit.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it verifies the system's handling of incorrect data, specifically a Name field with too many characters, during genre creation.
+
+Test Case: Test Case 3
+testCaseName: Genre Creation with Invalid Characters in Name
+objective: Verify that the system displays an incorrect data message when attempting to create a new genre with invalid characters in the Name field
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a Name containing invalid characters (e.g., special symbols).
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the Name field contains invalid characters.
+reflect: yes
+explanation: This test case aligns with the test scenario by assessing the system's validation of the Name field for character restrictions, which is a form of incorrect data entry.
+
+
+Scenario: Successful Genre Creation1.txt
+Test Case: Test Case 1
+testCaseName: Successful Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created and added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new genre is added to the list of genres.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Genre Creation' by outlining steps to create a genre with valid data and expecting a success message, which indicates successful creation.
+
+
+Scenario: User Cancels While Entering Data1.txt
+Test Case: Test Case 1
+testCaseName: Cancel New Genre Creation Before Submission
+objective: Verify that the genre creation process can be canceled before submission and no data is saved
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should display the list of genre records.
+reflect: yes
+explanation: This test case directly addresses the scenario of a user canceling the data entry process for creating a new genre before submission. It checks if the application behaves as expected by not saving the data and returning the user to the genre list, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away From Genre Creation Form Before Submission
+objective: Verify that navigating away from the genre creation form before submission does not save the data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the entered data in the genre creation form and should display the selected page.
+reflect: yes
+explanation: Although this test case explores a different user action (navigating away instead of explicitly pressing 'Cancel'), it still falls under the umbrella of the user canceling the data entry process. It tests the application's handling of unsaved data when the user exits the form in a manner other than the 'Cancel' button, which is a relevant aspect of the broader scenario of canceling while entering data.
+
+
+Scenario: User Navigates Away by Selecting 'API'1.txt
+Test Case: Test Case 1
+testCaseName: Navigate Away by Selecting 'API' During Genre Creation
+objective: Verify that when a user navigates away by selecting 'API' during the genre creation process, the data is not saved and the API page is displayed.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The application does not save the entered genre data and displays the API page.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps to navigate away during genre creation by selecting 'API', and it verifies that the data is not saved, which is the core aspect of the scenario.
+
+
+Scenario: User Navigates Away by Selecting 'Authors'1.txt
+Test Case: Test Case 1
+testCaseName: Navigate Away to 'Authors' Before Submitting New Genre
+objective: Verify that navigating away to 'Authors' before submitting a new genre cancels the operation and does not save data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the form fields for the new genre.
+  - Step 4: Before pressing 'Submit', select 'Authors' from the menu to navigate away.
+expectedResult: The application does not save the entered genre data and displays the 'Authors' page.
+reflect: yes
+explanation: This test case directly addresses the test scenario of a user navigating away by selecting 'Authors' before completing a specific action (submitting a new genre). It clearly outlines the steps to replicate the scenario, what the expected outcome is, and thus, reflects the given test scenario accurately.
+
+
+Scenario: User Navigates Away by Selecting 'Books'1.txt
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away by Selecting 'Books' During Genre Creation
+objective: Ensure that when a user navigates away by selecting 'Books' during the genre creation process, the data is not saved and the user is redirected to the Books page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Begin entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The data entered in the form is not saved to the database, and the Books page is displayed with updated data.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by simulating a user navigating away from the genre creation process by selecting 'Books'. It checks the critical behavior of not saving the data and redirecting to the Books page, which is the core of the test scenario.
+
+
+Scenario: User Navigates Away by Selecting 'Genres'1.txt
+Test Case: Test Case 1
+testCaseName: Navigate Away by Selecting 'Genres' During Genre Creation
+objective: Verify that navigating away by selecting 'Genres' from the menu during the genre creation process cancels the operation and does not save the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Start entering genre data into the form fields.
+  - Step 4: Before pressing the 'Submit' button, select 'Genres' from the menu to navigate away.
+expectedResult: The genre creation process is cancelled, data is not saved in the database, and the list of genre records is displayed without the new genre.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the behavior of the system when a user navigates away from the genre creation process by selecting 'Genres'. It checks that the operation is cancelled and no data is saved, which is the core of the test scenario.
+
+
+Scenario: User Navigates Away by Selecting 'Home'1.txt
+Test Case: Test Case 1
+testCaseName: Navigate Away to 'Home' Before Submitting New Genre
+objective: Verify that navigating away to 'Home' before submitting a new genre cancels the operation and does not save data to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the form fields for the new genre.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away.
+expectedResult: The application does not save the entered data to the database and the Home page is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that the action of navigating away to 'Home' before submitting a new genre form cancels the operation and ensures no data is saved. It follows the exact steps a user would take to trigger this scenario and checks for the expected outcome.
+
+

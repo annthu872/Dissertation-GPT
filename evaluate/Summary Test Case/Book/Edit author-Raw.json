@@ -1,0 +1,281 @@
+{
+    "Author Update with Incorrect Data-Raw1.txt0": {},
+    "Author Update with Incorrect Data-Raw1.txt1": {
+        "testCaseName": "Edit Author with Incorrect Name Data",
+        "objective": "Verify that the application displays an incorrect data message when attempting to update an author with an invalid name",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: In the form displayed, enter an invalid name (e.g., using numbers or special characters) in the 'Name' field.",
+            "- Step 4: Fill in the 'Bio' field with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the 'Name' field is displayed.",
+        "explanation": "This test case ensures that the system validates the 'Name' field correctly and provides feedback when the data does not meet the expected format."
+    },
+    "Author Update with Incorrect Data-Raw1.txt2": {
+        "testCaseName": "Edit Author with Incorrect Bio Data",
+        "objective": "Verify that the application displays an incorrect data message when attempting to update an author with an invalid biography",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Enter a valid name in the 'Name' field.",
+            "- Step 4: In the 'Bio' field, enter invalid data (e.g., inserting script tags or unsupported characters).",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "An incorrect data message related to the 'Bio' field is displayed.",
+        "explanation": "This test case checks if the system properly validates the 'Bio' field and informs the user about incorrect or potentially harmful input."
+    },
+    "Author Update with Incorrect Data-Raw1.txt3": {
+        "testCaseName": "Cancel Edit Author Operation",
+        "objective": "Verify that no changes are made to the author's record in the database when the 'Cancel' button is pressed during an edit operation",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Start entering or modifying the data in the form fields.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The user is redirected to the list of author records without any changes being made to the selected author's record.",
+        "explanation": "This test case ensures that the cancel operation works as expected, allowing users to abort the edit operation without making any unintended changes to the database."
+    },
+    "Cancel Operation by Pressing 'Cancel' Button-Raw1.txt0": {},
+    "Cancel Operation by Pressing 'Cancel' Button-Raw1.txt1": {
+        "testCaseName": "Cancel Editing Author by Pressing 'Cancel' Button",
+        "objective": "Verify that pressing the 'Cancel' button while editing an author's details cancels the operation and does not update the author's information in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: On the displayed form, start entering or modifying the author's Name and Bio.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The operation is canceled, no data is updated in the database, and the list of author records is displayed to the user.",
+        "explanation": "This test case ensures that the 'Cancel' operation works as intended, allowing users to abort the edit operation without making any changes to the author's information in the database. It directly matches the scenario name by testing the cancel operation through the 'Cancel' button."
+    },
+    "Cancel Operation by Pressing 'Cancel' Button-Raw1.txt2": {
+        "testCaseName": "Navigate Away from Edit Page Without Saving",
+        "objective": "Verify that navigating away from the edit page by selecting a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API') without saving does not update the author's information in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the author's Name and Bio in the displayed form.",
+            "- Step 4: Without pressing the 'Submit' button, select a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The user is navigated to the selected page without updating the author's information in the database, ensuring the edit operation is effectively canceled.",
+        "explanation": "This test case verifies that the system properly handles an implicit cancel operation when the user navigates away from the edit page without saving changes. It is relevant to the scenario as it tests the system's behavior in a situation where the user decides not to complete the edit operation by navigating away."
+    },
+    "Cancel Operation by Selecting 'API' Menu Item-Raw1.txt0": {},
+    "Cancel Operation by Selecting 'API' Menu Item-Raw1.txt1": {
+        "testCaseName": "Cancel Editing Author by Pressing 'Cancel' Button",
+        "objective": "Verify that the author's data is not updated in the database and the user is redirected to the list of authors when the 'Cancel' button is pressed during the edit operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the form fields for the author.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the list of authors records.",
+        "explanation": "This test case ensures that the cancel operation works as intended by stopping the update process and redirecting the user without making changes to the author's data."
+    },
+    "Cancel Operation by Selecting 'API' Menu Item-Raw1.txt2": {
+        "testCaseName": "Cancel Editing Author by Selecting 'API' Menu Item",
+        "objective": "Verify that the author's data is not updated in the database and the user is redirected to the 'API' form when the 'API' menu item is selected during the edit operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the form fields for the author.",
+            "- Step 4: Select the 'API' menu item before submitting the form."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the 'API' form.",
+        "explanation": "This test case verifies that selecting the 'API' menu item during an edit operation cancels the update process and redirects the user appropriately without updating the author's data."
+    },
+    "Cancel Operation by Selecting 'Authors' Menu Item-Raw1.txt0": {},
+    "Cancel Operation by Selecting 'Authors' Menu Item-Raw1.txt1": {
+        "testCaseName": "Cancel Edit Author Operation by Selecting 'Authors' Menu Item",
+        "objective": "Verify that the author's data is not updated in the database and the user is redirected to the list of authors when the 'Authors' menu item is selected during an edit operation",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the form fields provided for the author's Name and Bio.",
+            "- Step 4: Before submitting the form, select the 'Authors' menu item."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the list of authors records.",
+        "explanation": "This test case ensures that if a user decides to cancel the edit operation by navigating away from the edit page using the 'Authors' menu item, the changes are not saved, and the user is shown the list of authors, maintaining data integrity and confirming the navigation functions as intended."
+    },
+    "Cancel Operation by Selecting 'Authors' Menu Item-Raw1.txt2": {
+        "testCaseName": "Cancel Edit Author Operation by Pressing 'Cancel' Button",
+        "objective": "Verify that the author's data is not updated in the database and the user is redirected to the list of authors when the 'Cancel' button is pressed during an edit operation",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the form fields provided for the author's Name and Bio.",
+            "- Step 4: Press the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the list of authors records.",
+        "explanation": "This test case verifies the functionality of the 'Cancel' button during an author edit operation, ensuring that unsaved changes are discarded and the user is returned to the list of authors, thus confirming the cancel operation works as expected."
+    },
+    "Cancel Operation by Selecting 'Books' Menu Item-Raw1.txt0": {},
+    "Cancel Operation by Selecting 'Books' Menu Item-Raw1.txt1": {
+        "testCaseName": "Cancel Edit Author Operation by Selecting 'Books' Menu Item",
+        "objective": "Verify that the author's data is not updated in the database and the user is navigated to the 'Books' page when the 'Books' menu item is selected during the author edit operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the author edit form fields.",
+            "- Step 4: Instead of clicking the 'Submit' button, select the 'Books' menu item."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the 'Books' page displaying the list of books or book details.",
+        "explanation": "This test case ensures that when a user decides to cancel the edit operation by navigating away from the edit page through the 'Books' menu item, the operation is indeed cancelled, and no data is updated in the database. It also checks the application's ability to redirect the user to the 'Books' page correctly."
+    },
+    "Cancel Operation by Selecting 'Books' Menu Item-Raw1.txt2": {
+        "testCaseName": "Verify Cancel Button Functionality During Author Edit Operation",
+        "objective": "Ensure that selecting the 'Cancel' button during an author edit operation cancels the update and returns the user to the list of authors without making changes.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the author edit form fields.",
+            "- Step 4: Click the 'Cancel' button before submitting the form."
+        ],
+        "expectedResult": "The author's data remains unchanged in the database, and the user is redirected back to the list of authors, showing no updates to the author's record.",
+        "explanation": "This test case verifies the functionality of the 'Cancel' button in the author edit form, ensuring that it properly cancels the edit operation and does not commit any changes to the database, while also returning the user to the authors list page."
+    },
+    "Cancel Operation by Selecting 'Genres' Menu Item-Raw1.txt0": {},
+    "Cancel Operation by Selecting 'Genres' Menu Item-Raw1.txt1": {
+        "testCaseName": "Cancel Edit Author Operation by Selecting 'Genres' Menu Item",
+        "objective": "Verify that the author's data is not updated in the database and the user is navigated to the 'Genres' page when selecting 'Genres' from the menu during an author edit operation.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the author's edit form fields.",
+            "- Step 4: Without pressing the 'Submit' button, select the 'Genres' menu item."
+        ],
+        "expectedResult": "The author's data remains unchanged in the database, and the user is redirected to the 'Genres' page.",
+        "explanation": "This test case ensures that the cancel operation works as intended when a user decides to navigate away from the author edit page by selecting a different menu item ('Genres') instead of submitting the form. It verifies that the operation does not result in unintended data updates and that the application correctly redirects the user."
+    },
+    "Cancel Operation by Selecting 'Home' Menu Item-Raw1.txt0": {},
+    "Cancel Operation by Selecting 'Home' Menu Item-Raw1.txt1": {
+        "testCaseName": "Cancel Edit Author Operation by Selecting 'Home' Menu Item",
+        "objective": "Verify that the author's data update operation is cancelled and the user is navigated to the Home page without updating the data in the database when selecting 'Home' from the menu.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Begin entering or modifying the data in the form fields for the author.",
+            "- Step 4: Instead of clicking the 'Submit' button, select the 'Home' menu item."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is redirected to the Home page. The list of authors should reflect no changes to the updated author's record.",
+        "explanation": "This test case ensures that when a user decides to cancel the update operation by navigating away from the edit page through the 'Home' menu item, the operation is indeed cancelled, and no data is updated in the database. It directly relates to the cancel operation scenario by testing the specific action of selecting 'Home' to cancel the operation."
+    },
+    "Successful Author Update-Raw1.txt0": {},
+    "Successful Author Update-Raw1.txt1": {
+        "testCaseName": "Successful Author Record Update",
+        "objective": "Verify that the author record is successfully updated in the database with valid data",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: On the displayed form, enter valid data for the author's Name and Bio.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "The author record is successfully updated in the database, and the list of authors with the updated record is displayed.",
+        "explanation": "This test case ensures that when valid data is entered and submitted, the author record is updated in the database, and the updated list is displayed to the user."
+    },
+    "Successful Author Update-Raw1.txt2": {
+        "testCaseName": "Display Error Message for Incorrect Author Data",
+        "objective": "Verify that an error message is displayed when incorrect data is entered for an author",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: On the displayed form, enter invalid data for the author's Name and/or Bio.",
+            "- Step 4: Press the 'Submit' button."
+        ],
+        "expectedResult": "An error message is displayed indicating the incorrect data.",
+        "explanation": "This test case checks the system's ability to validate entered data and provide feedback to the user when the data does not meet the required criteria."
+    },
+    "Successful Author Update-Raw1.txt3": {
+        "testCaseName": "Cancel Author Update Operation",
+        "objective": "Verify that the author update operation can be canceled and no changes are saved to the database",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Press the 'Cancel' button before pressing 'Submit'."
+        ],
+        "expectedResult": "No data is updated in the database, and the list of author records is displayed to the user.",
+        "explanation": "This test case ensures that users can cancel the update operation at any point before submission, preventing any unintended changes from being saved."
+    },
+    "Successful Author Update-Raw1.txt4": {
+        "testCaseName": "Navigate Away Without Saving Author Update",
+        "objective": "Verify that navigating away from the update form without saving does not update the author in the database",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Start entering data into the form fields.",
+            "- Step 4: Without pressing 'Submit', select a menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'."
+        ],
+        "expectedResult": "The author's data is not updated in the database, and the user is taken to the selected page.",
+        "explanation": "This test case verifies that if a user navigates away from the update form without submitting it, no changes are made to the author's record."
+    },
+    "UpdateAuthor_WithEmptyBio-Raw1.txt0": {},
+    "UpdateAuthor_WithEmptyBio-Raw1.txt1": {
+        "testCaseName": "Update Author with Empty Bio Field",
+        "objective": "Verify that the system allows updating an author's record with an empty 'Bio' field and displays the updated list of authors.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Clear the 'Bio' field, leaving it empty.",
+            "- Step 4: Fill in other required fields with valid data.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The author's record is updated with an empty 'Bio' field, and the updated list of authors is displayed without any error messages.",
+        "explanation": "This test case ensures that the 'Bio' field can be left empty when updating an author's record, which is a valid scenario according to the use case specification. It directly matches the scenario name by focusing on updating an author with an empty 'Bio'."
+    },
+    "UpdateAuthor_WithEmptyBio-Raw1.txt2": {
+        "testCaseName": "Cancel Update Operation for Author with Empty Bio Field",
+        "objective": "Verify that the system does not update the author's record in the database when the 'Cancel' button is pressed after clearing the 'Bio' field.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Clear the 'Bio' field, leaving it empty.",
+            "- Step 4: Fill in other required fields with valid data.",
+            "- Step 5: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The author's record remains unchanged in the database, and the list of authors is displayed without the updates to the 'Bio' field.",
+        "explanation": "This test case verifies the functionality of the 'Cancel' button in the update operation, specifically after clearing the 'Bio' field. It ensures that the system behaves correctly by not updating the author's record when the operation is canceled, which is aligned with the cancel operation scenario."
+    },
+    "UpdateAuthor_WithEmptyName-Raw1.txt0": {},
+    "UpdateAuthor_WithEmptyName-Raw1.txt1": {
+        "testCaseName": "Update Author with Empty Name Field",
+        "objective": "Verify that the application prevents updating an author with an empty name field and displays an appropriate error message.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Clear the 'Name' field to make it empty.",
+            "- Step 4: Enter or modify data in the 'Bio' field.",
+            "- Step 5: Press the 'Submit' button."
+        ],
+        "expectedResult": "The application should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.",
+        "explanation": "This test case ensures that the application enforces the requirement for the author's name to be present when updating an author record. It directly relates to the scenario of updating an author with empty name field by testing the validation mechanism for the name input."
+    },
+    "UpdateAuthor_WithEmptyName-Raw1.txt2": {
+        "testCaseName": "Cancel Update Operation for Author",
+        "objective": "Verify that the update operation can be canceled after making changes and that no data is updated in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Enter or modify data in the 'Name' and 'Bio' fields.",
+            "- Step 4: Press the 'Cancel' button."
+        ],
+        "expectedResult": "The application should not update the author record in the database and should display the list of authors, showing that no changes have been made.",
+        "explanation": "This test case checks the functionality of the 'Cancel' button in the update author form, ensuring that it negates any changes made by the user before submission, thus maintaining data integrity."
+    },
+    "UpdateAuthor_WithEmptyName-Raw1.txt3": {
+        "testCaseName": "Navigate Away During Author Update",
+        "objective": "Verify that navigating away from the update author form without submitting does not update the author in the database.",
+        "testSteps": [
+            "- Step 1: Navigate to the author list/details page.",
+            "- Step 2: Click the 'Update' button next to the author you wish to update.",
+            "- Step 3: Enter or modify data in the 'Name' and 'Bio' fields.",
+            "- Step 4: Without pressing 'Submit', select the menu item 'Books'."
+        ],
+        "expectedResult": "The application should not update the author record in the database and should display the 'Books' page, indicating that the update operation was not completed.",
+        "explanation": "This test case ensures that if a user navigates away from the update author form without submitting it, the changes are not saved, thus preventing unintended updates."
+    }
+}

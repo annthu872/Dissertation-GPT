@@ -1,0 +1,74 @@
+Given the use case and test scenarios, here are detailed test cases for each scenario:
+
+### Test Case 1: Successful Flashcard Learning Flow
+
+**Objective**: Verify that the learner can successfully navigate through the flashcards, learn new words, and complete a topic.
+
+**Steps**:
+1. Log into the application.
+2. Click the "Learn New Word" tab.
+3. Select a lesson from the displayed list.
+4. Choose a topic from the selected lesson.
+5. Click on the flashcard to flip it and view the back.
+6. Click the "Next" button to navigate through all the flashcards.
+7. After the last flashcard, click the "Next" button which should redirect to the 'completion notification' page.
+8. Click "return to the lesson page".
+
+**Expected Result**: The learner should be able to navigate through all steps without issues, and the topic should be marked as completed.
+
+### Test Case 2: Flashcard Learning with Back Button Stay Decision
+
+**Objective**: Ensure that the learner can stay on the current flashcard after accidentally pressing the 'back' button.
+
+**Steps**:
+1. Follow steps 1-6 from Test Case 1.
+2. Press the 'back' button.
+3. On the exit confirmation dialog box, click 'stay'.
+4. Continue navigating through the flashcards.
+
+**Expected Result**: The learner stays on the current flashcard and can continue the learning process.
+
+### Test Case 3: Flashcard Learning with Continue Studying Option
+
+**Objective**: Verify that the learner can continue studying after completing a topic.
+
+**Steps**:
+1. Complete a topic following steps 1-7 from Test Case 1.
+2. On the 'completion notification' page, click 'continue studying'.
+3. Verify that the topic is marked as completed and the learner is redirected to the next topic.
+
+**Expected Result**: The learner is able to continue studying with the next topic, and the completed topic is marked accordingly.
+
+### Test Case 4: Flashcard Learning from Incomplete Topic on Home Page
+
+**Objective**: Ensure that learners can resume learning from an incomplete topic displayed on the home page.
+
+**Steps**:
+1. Log into the application.
+2. From the home page, click on an incomplete topic.
+3. Verify that the system redirects to the corresponding Flashcard page for the selected topic.
+4. Continue with the flashcard learning process.
+
+**Expected Result**: The learner should be redirected to the correct flashcard page and be able to continue learning.
+
+### Test Case 5: Flashcard Learning with Disabled Previous Button on First Card
+
+**Objective**: Ensure that the 'Previous' button is disabled on the first flashcard.
+
+**Steps**:
+1. Follow steps 1-5 from Test Case 1 to reach the first flashcard of a topic.
+2. Attempt to click the 'Previous' button.
+
+**Expected Result**: The 'Previous' button is disabled, and a message is displayed indicating there is no previous vocabulary to display.
+
+### Test Case 6: Flashcard Learning with Back Button Exit Decision
+
+**Objective**: Verify that the learner can exit to the topic page after pressing the 'back' button and choosing to exit.
+
+**Steps**:
+1. Follow steps 1-6 from Test Case 1.
+2. Press the 'back' button.
+3. On the exit confirmation dialog box, click 'exit'.
+4. Verify that the learner is returned to the topic page and the topic is marked as incomplete.
+
+**Expected Result**: The learner is returned to the topic page, and the topic is correctly marked as incomplete.

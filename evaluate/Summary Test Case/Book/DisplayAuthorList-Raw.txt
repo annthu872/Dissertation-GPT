@@ -1,0 +1,93 @@
+Scenario: 1. Display First Page of Authors-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Verify Display of First Page of Authors
+objective: Verify that the application correctly displays the first page of authors including id, Name, and Bio columns when the 'Authors' item is selected.
+testSteps:
+  - Step 1: Launch the application.
+  - Step 2: Navigate to the 'Authors' section by selecting the item 'Authors'.
+expectedResult: The application displays the first page of authors showing up to 10 items. Each item includes the columns: id, Name, and Bio.
+explanation: This test case ensures that when users navigate to the 'Authors' section, they are presented with a list of authors. It directly matches the scenario name by testing the display functionality of the first page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality on Authors Page
+objective: Verify that users can navigate through different pages of authors using the 'Next' button and page numbers.
+testSteps:
+  - Step 1: Launch the application and navigate to the 'Authors' section by selecting the item 'Authors'.
+  - Step 2: Observe the list of authors displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of authors.
+  - Step 4: Alternatively, click on the number '2' (or any subsequent page number) to navigate to the second page of authors.
+expectedResult: Upon clicking the 'Next' button or a page number, the application displays the next 10 records of authors. The list updates to show the authors corresponding to the selected page.
+explanation: This test case verifies the pagination functionality within the 'Authors' section, allowing users to view additional records beyond the first 10 displayed. It is crucial for user navigation and access to the full list of authors.
+
+
+Scenario: 2. Navigate to Next Page of Authors-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Next Page of Authors Using Next Button
+objective: Verify that the user can navigate to the next page of authors by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the page.
+  - Step 4: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on a new page.
+explanation: This test case ensures that users can navigate through the list of authors using the 'Next' button, which is a critical functionality for accessing multiple records in the database.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Authors Using Page Number
+objective: Verify that the user can navigate to the next page of authors by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or page list.
+  - Step 3: Verify that the list of authors is displayed with up to 10 items on the first page.
+  - Step 4: Identify the pagination block below the list of authors.
+  - Step 5: Click on the number '2' or the next sequential number available in the pagination block.
+expectedResult: The application displays the next 10 records of authors in the database on the page corresponding to the number clicked in the pagination block.
+explanation: This test case verifies that users can navigate to the next page of authors by selecting a specific page number, allowing for direct access to later records without sequentially navigating through each page.
+
+
+Scenario: 3. Navigate to a Specific Page of Authors-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Authors Page via Navbar
+objective: Verify that users can navigate to the Authors page using the navigation bar and see the list of authors.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the navigation bar.
+  - Step 3: Click on the 'Authors' item in the navigation bar.
+expectedResult: The application displays the Authors page with a list of authors, showing the columns for id, Name, and Bio. Up to 10 authors are displayed on the page.
+explanation: This test case ensures that users can successfully navigate to the Authors page using the navigation bar, which is a primary method of navigation. It verifies the functionality and the display of the initial list of authors as per the main scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality on Authors Page
+objective: Verify that users can navigate through different pages of authors using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the Authors page by clicking on the 'Authors' item in the navigation bar.
+  - Step 2: Scroll down to the bottom of the list of authors to locate the pagination block.
+  - Step 3: Click on the 'Next' button in the pagination block.
+  - Step 4: Alternatively, click on a page number in the pagination block to navigate to that specific page.
+expectedResult: Upon clicking the 'Next' button, the application displays the next 10 records of authors. When a specific page number is clicked, the application displays the authors corresponding to that page. Each page shows up to 10 items, with columns for id, Name, and Bio.
+explanation: This test case verifies the pagination functionality on the Authors page, allowing users to navigate through different sets of authors. It ensures that the pagination controls work as expected for both sequential and direct page selection.
+
+
+Scenario: 4. Last Page of Authors Displayed-Raw1.txt
+Test Case: Test Case 1
+testCaseName: Verify Display of Last Page of Authors
+objective: Verify that the application correctly displays the last page of authors when navigating through pagination.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the pagination block below the list of authors.
+  - Step 3: Click on the highest page number visible in the pagination block.
+  - Step 4: If a 'Next' button is visible, click on it until it is no longer available.
+expectedResult: The application displays the last page of authors, showing up to 10 items. The 'Next' button is either not visible or disabled. The columns for id, Name, and Bio are correctly displayed for each author.
+explanation: This test case ensures that users can navigate to the last page of authors using the pagination feature, and verifies that the last page displays the authors' information correctly. It directly matches the scenario name by focusing on the display and navigation to the last page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Last Page Content When Less Than 10 Authors
+objective: Ensure that the application correctly handles and displays the last page when there are less than 10 authors to display.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: If the total number of authors is less than 10, observe the displayed list.
+  - Step 3: If the total number of authors is more than 10, click on the highest page number in the pagination block until reaching the last page.
+expectedResult: The application displays the last page of authors correctly, even if there are less than 10 authors on this page. All available author records are shown with their id, Name, and Bio.
+explanation: This test case verifies that the application can handle and display pages with less than 10 authors, which is a common scenario towards the end of the authors list. It ensures the functionality and display requirements are met regardless of the number of authors on the last page.
+
+

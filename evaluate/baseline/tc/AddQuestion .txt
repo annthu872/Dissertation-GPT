@@ -1,0 +1,119 @@
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
+
+### 1. SuccessfulQuestionCreation
+**Objective**: Verify that an admin can successfully create a question for the selection test.
+- **Preconditions**: Admin is logged in.
+- **Steps**:
+  1. Admin navigates to "Lesson Management" on the navbar.
+  2. Admin selects a Lesson from the Lesson list.
+  3. Admin selects a Topic from the Topic list.
+  4. Admin selects a word from the vocabulary word list.
+  5. Admin clicks on "Add new question".
+  6. Admin selects "Create questions for the selection test".
+  7. Admin fills in all compulsory fields with valid data.
+  8. Admin clicks on 'Save'.
+- **Expected Result**: The system saves the question and redirects the Admin to the "Word Information" page, where the new question is visible.
+
+### 2. AccessLessonManagementFromHomepage
+**Objective**: Verify that an admin can access the Lesson Management page from the Homepage.
+- **Preconditions**: Admin is logged in.
+- **Steps**:
+  1. Admin presses the "Lesson Management" tab at the Homepage.
+- **Expected Result**: The system redirects Admin to the Lesson Management page showing the list of lessons created by the admin.
+
+### 3. SkipSentenceField
+**Objective**: Verify the system behavior when the 'sentence' field is skipped.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields except the 'sentence' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing "sentence" field.
+
+### 4. SkipCorrectAnswerField
+**Objective**: Verify the system behavior when the 'correct answer' field is skipped.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields except the 'correct answer' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+
+### 5. SkipOtherOption1Field
+**Objective**: Verify the system behavior when the 'other option 1' field is skipped.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields except the 'other option 1' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 1' field.
+
+### 6. SkipOtherOption2Field
+**Objective**: Verify the system behavior when the 'other option 2' field is skipped.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields except the 'other option 2' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+
+### 7. SkipOtherOption3Field
+**Objective**: Verify the system behavior when the 'other option 3' field is skipped.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields except the 'other option 3' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 3' field.
+
+### 8. CancelQuestionCreationAndStay
+**Objective**: Verify that an admin can cancel the question creation process and choose to stay on the page.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin clicks on 'Cancel'.
+  2. Admin chooses the 'Stay' option when prompted.
+- **Expected Result**: The dialog closes, and the admin remains on the question creation page with the entered data intact.
+
+### 9. EnterInvalidSentence
+**Objective**: Verify the system behavior when an invalid sentence is entered.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills all compulsory fields but enters an invalid sentence in the 'sentence' field.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the "sentence" field.
+
+### 10. LeaveWithoutSavingQuestion
+**Objective**: Verify the system behavior when an admin leaves the question creation page without saving.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin navigates away from the question creation page without clicking 'Save'.
+- **Expected Result**: The system does not save the question, and no changes are made to the "Word Information" page.
+
+### 11. CancelQuestionCreationAndConfirm
+**Objective**: Verify that an admin can cancel the question creation process and confirm the cancellation.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin clicks on 'Cancel'.
+  2. Admin chooses the 'Confirm' option when prompted.
+- **Expected Result**: The system redirects Admin to the "Word Information" page, and the question is not saved.
+
+### 12. CreateQuestionWithMaximumSentenceLength
+**Objective**: Verify that an admin can create a question with a sentence at the maximum length limit.
+- **Preconditions**: Admin is logged in.
+- **Steps**:
+  1. Admin navigates to the question creation page.
+  2. Admin fills in the 'sentence' field with a valid sentence of exactly 250 characters.
+  3. Admin fills in the remaining compulsory fields with valid data.
+  4. Admin clicks on 'Save'.
+- **Expected Result**: The system saves the question and redirects the Admin to the "Word Information" page, where the new question is visible.
+
+### 13. CreateQuestionWithSpecialCharactersInSentence
+**Objective**: Verify the system behavior when a sentence with special characters is entered.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills in the 'sentence' field with a sentence that includes special characters.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Sentence contains invalid characters', prompting Admin to re-enter the "sentence" field without special characters.
+
+### 14. CreateQuestionWithIdenticalWrongAnswers
+**Objective**: Verify the system behavior when identical wrong answers are entered.
+- **Preconditions**: Admin is logged in and in the process of creating a new question.
+- **Steps**:
+  1. Admin fills in the 'correct answer' field and enters identical answers in 'other option 1', 'other option 2', and 'other option 3'.
+  2. Admin clicks on 'Save'.
+- **Expected Result**: The system shows a notification that 'Wrong answers must be different', prompting Admin to enter unique wrong answers.

@@ -1,0 +1,83 @@
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
+
+### Test Case 1: ViewVocabularyList
+
+**Objective**: Verify that the learner can view their vocabulary list in the handbook.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the "Handbook" tab on the navigation bar.
+2. Observe the displayed list of vocabulary.
+
+**Expected Result**:
+- The system displays the learner's vocabulary list in vertical rows.
+- Each word is displayed in a horizontal row showing the word name, word type, word meaning, memorization level, and has a checkbox next to it.
+
+**Postconditions**: None.
+
+### Test Case 2: SearchVocabularySuccessfully
+
+**Objective**: Verify that the learner can successfully search for a vocabulary in the handbook.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Press the search bar.
+2. Enter a valid word that exists in the vocabulary list.
+3. Observe the filtered results.
+
+**Expected Result**:
+- The system filters and displays vocabulary containing characters entered by the learner in the search bar.
+
+**Postconditions**: None.
+
+### Test Case 3: SearchMeaninglessVocabulary
+
+**Objective**: Verify that the system notifies the learner when searching for a meaningless word.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Press the search bar.
+2. Enter a meaningless word or a word that does not exist in the vocabulary list.
+3. Observe the system's response.
+
+**Expected Result**:
+- The system notifies that there are no suitable search results.
+
+**Postconditions**: None.
+
+### Test Case 4: ExcludeWordFromReviewTest
+
+**Objective**: Verify that the learner can exclude a word from the review test.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Scroll to find a specific vocabulary.
+2. Untick the checkbox of the vocabulary you wish to exclude from the review test.
+3. Observe the checkbox status and any system confirmation if available.
+
+**Expected Result**:
+- The system marks that vocabulary will not appear in the daily test review.
+
+**Postconditions**: None.
+
+### Test Case 5: IncludeWordInReviewTest
+
+**Objective**: Verify that the learner can include a word in the review test.
+
+**Preconditions**: Learner is logged into the application and is on the "Handbook" tab.
+
+**Steps**:
+1. Scroll to find a specific vocabulary.
+2. Tick the checkbox of the vocabulary you wish to include in the review test.
+3. Observe the checkbox status and any system confirmation if available.
+
+**Expected Result**:
+- The system marks that vocabulary will appear in the daily test review.
+
+**Postconditions**: None.
+
+These test cases cover the basic and alternative flows of the use case, ensuring that the handbook functionality works as expected for the learner.

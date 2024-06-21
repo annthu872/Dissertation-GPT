@@ -1,0 +1,92 @@
+Based on the provided use case specifications and test scenarios, here are the detailed test cases for each scenario:
+
+### Test Case 1: EditTest_SuccessfulEdit
+
+**Objective**: Verify that an administrator can successfully edit a test and save the changes.
+
+**Steps**:
+1. Log in as an administrator.
+2. Navigate to the home page and select “Topic” on the navbar.
+3. Choose the relevant topic and select “Edit”.
+4. Edit the exercises as required.
+5. Click on “Save”.
+
+**Expected Result**:
+- The system saves all edited exercises.
+- A confirmation message appears indicating the exercises have been successfully saved.
+
+### Test Case 2: EditTest_ExitWithSave
+
+**Objective**: Verify that an administrator can exit the editing mode and save changes when prompted.
+
+**Steps**:
+1. Follow steps 1-4 from Test Case 1.
+2. Press the button to exit exercise editing mode.
+3. On the pop-up screen, select “Save”.
+
+**Expected Result**:
+- The system saves all edited exercises.
+- A confirmation message appears indicating the exercises have been successfully saved.
+
+### Test Case 3: EditTest_ExitWithoutSave
+
+**Objective**: Verify that an administrator can exit the editing mode without saving changes.
+
+**Steps**:
+1. Follow steps 1-4 from Test Case 1.
+2. Press the button to exit exercise editing mode.
+3. On the pop-up screen, select “Do not save”.
+
+**Expected Result**:
+- The system does not save the edited exercises.
+- The user is redirected away from the editing interface without any changes being saved.
+
+### Test Case 4: EditTest_InvalidVocabulary
+
+**Objective**: Verify the system's behavior when an administrator tries to add vocabulary that does not exist in the system.
+
+**Steps**:
+1. Follow steps 1-3 from Test Case 1.
+2. Add or edit an exercise with vocabulary that does not exist in the system.
+3. Attempt to save the changes.
+
+**Expected Result**:
+- The system displays an error message indicating the vocabulary does not exist.
+- The system does not save the changes.
+
+### Test Case 5: EditTest_EmptyExerciseField
+
+**Objective**: Verify the system's behavior when an administrator tries to save an exercise with empty fields.
+
+**Steps**:
+1. Follow steps 1-3 from Test Case 1.
+2. Leave an exercise field empty.
+3. Attempt to save the changes.
+
+**Expected Result**:
+- The system displays an error message indicating that fields cannot be left empty.
+- The system does not save the changes.
+
+### Test Case 6: EditTest_NavigationFromHomePage
+
+**Objective**: Verify that an administrator can navigate to the edit test page from the home page.
+
+**Steps**:
+1. Log in as an administrator.
+2. Navigate to the home page and select “Topic” on the navbar.
+3. Choose the relevant topic and select “Edit”.
+
+**Expected Result**:
+- The system redirects the administrator to the interface for adding or editing vocabulary tests.
+
+### Test Case 7: EditTest_SaveWithoutChanges
+
+**Objective**: Verify the system's behavior when an administrator attempts to save without making any changes.
+
+**Steps**:
+1. Follow steps 1-3 from Test Case 1.
+2. Without making any changes, click on “Save”.
+
+**Expected Result**:
+- The system does not display an error message.
+- A message may appear indicating no changes were made, or it may simply redirect the administrator away from the editing interface.

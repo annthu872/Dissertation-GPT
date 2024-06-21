@@ -1,0 +1,123 @@
+Based on the provided use case specifications and test scenarios, here are detailed test cases for each scenario:
+
+### Test Case 1: SuccessfulWordSortingWithDefinition
+
+**Objective**: Verify that the learner can successfully sort the word based on its definition.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. The system displays a definition of a word and the letters of the word arranged randomly.
+3. Arrange the letters in the correct order to form the word that matches the given definition.
+4. Press enter to submit the answer.
+
+**Expected Result**: A green pop-up screen appears indicating the answer is correct.
+
+**Postconditions**: The word is marked as studied.
+
+### Test Case 2: SuccessfulWordSortingWithImage
+
+**Objective**: Verify that the learner can successfully sort the word based on its image.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. The system displays an image and the letters of the word associated with the image arranged randomly.
+3. Arrange the letters in the correct order to form the word that matches the given image.
+4. Press enter to submit the answer.
+
+**Expected Result**: A green pop-up screen appears indicating the answer is correct.
+
+**Postconditions**: The word is marked as studied.
+
+### Test Case 3: IncorrectWordSortingWithDefinition
+
+**Objective**: Verify the system's response when a learner sorts the word incorrectly based on its definition.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. The system displays a definition of a word and the letters of the word arranged randomly.
+3. Intentionally arrange the letters in the incorrect order.
+4. Press enter to submit the answer.
+
+**Expected Result**: A red pop-up screen appears indicating the answer is incorrect.
+
+**Postconditions**: The word may be marked for review or further study.
+
+### Test Case 4: IncorrectWordSortingWithImage
+
+**Objective**: Verify the system's response when a learner sorts the word incorrectly based on its image.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. The system displays an image and the letters of the word associated with the image arranged randomly.
+3. Intentionally arrange the letters in the incorrect order.
+4. Press enter to submit the answer.
+
+**Expected Result**: A red pop-up screen appears indicating the answer is incorrect.
+
+**Postconditions**: The word may be marked for review or further study.
+
+### Test Case 5: WordSortingWithoutLogin
+
+**Objective**: Verify that the system prevents unauthenticated users from accessing the word sorting test.
+
+**Preconditions**: Learner is not logged into the application.
+
+**Steps**:
+1. Attempt to navigate to the word sorting test section without logging in.
+
+**Expected Result**: The system redirects the user to the login page or displays a message indicating that login is required.
+
+**Postconditions**: None.
+
+### Test Case 6: WordSortingWithAllCorrectAnswers
+
+**Objective**: Verify the system's response when all answers in a session are correct.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. Correctly sort all words presented in the session.
+3. Press enter to submit each answer.
+
+**Expected Result**: All submissions result in a green pop-up screen, and a final congratulatory message or score is displayed at the end of the session.
+
+**Postconditions**: All words are marked as studied.
+
+### Test Case 7: WordSortingWithAllIncorrectAnswers
+
+**Objective**: Verify the system's response when all answers in a session are incorrect.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. Intentionally sort all words incorrectly in the session.
+3. Press enter to submit each answer.
+
+**Expected Result**: Each submission results in a red pop-up screen, and a final message may suggest reviewing the words or studying more.
+
+**Postconditions**: Words may be marked for review or further study.
+
+### Test Case 8: WordSortingWithMixedCorrectAndIncorrectAnswers
+
+**Objective**: Verify the system's response to a mix of correct and incorrect answers in a session.
+
+**Preconditions**: Learner is logged into the application.
+
+**Steps**:
+1. Navigate to the word sorting test section.
+2. Sort some words correctly and some incorrectly in the session.
+3. Press enter to submit each answer.
+
+**Expected Result**: Correct submissions result in a green pop-up screen, and incorrect submissions result in a red pop-up screen. A final score or feedback message is displayed at the end of the session.
+
+**Postconditions**: Correctly sorted words are marked as studied, and incorrectly sorted words may be marked for review or further study.

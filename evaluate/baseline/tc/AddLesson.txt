@@ -1,0 +1,145 @@
+Given the use case specifications and test scenarios, here are the detailed test cases:
+
+### Test Case 1: SuccessfulLessonAddition
+
+**Objective**: Verify that an administrator can successfully add a new English learning lesson.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a unique name in the name field.
+4. Administrator adds a description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should redirect the Administrator to the adding topic to the new lesson section, and the new lesson should appear in the lesson list.
+
+### Test Case 2: LessonAdditionWithAlreadyUsedName
+
+**Objective**: Verify that the system prevents adding a new lesson with a name that is already used.
+
+**Preconditions**: Administrator is logged in, and there is at least one lesson already created with a specific name.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a name that is already used in the name field.
+4. Administrator adds a description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should show a notification that the name is already used, prompting the Administrator to add another name.
+
+### Test Case 3: NavigateToAddNewLessonViaNavbar
+
+**Objective**: Verify that an administrator can navigate to the "Add new Lesson" page via the navbar.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+
+**Expected Result**: The system should redirect the Administrator to the "Add new Lesson" page.
+
+### Test Case 4: CancelLessonAddition
+
+**Objective**: Verify that an administrator can cancel the process of adding a new lesson.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator selects "Cancel".
+
+**Expected Result**: The system should cancel the lesson addition process and may redirect the Administrator to the previous page or the dashboard.
+
+### Test Case 5: LessonAdditionWithoutName
+
+**Objective**: Verify that the system prevents adding a new lesson without a name.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator leaves the name field empty.
+4. Administrator adds a description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should show an error or notification indicating that the name field is required.
+
+### Test Case 6: LessonAdditionWithoutDescription
+
+**Objective**: Verify that the system allows adding a new lesson without a description.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a unique name in the name field.
+4. Administrator leaves the description field empty.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should allow the lesson to be added without a description, or show a notification if the description is mandatory.
+
+### Test Case 7: LessonAdditionWithSpecialCharactersInName
+
+**Objective**: Verify how the system handles special characters in the lesson name.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a name with special characters in the name field.
+4. Administrator adds a description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should either accept the special characters, sanitize them, or show an error message depending on the system's handling of special characters.
+
+### Test Case 8: LessonAdditionWithLongDescription
+
+**Objective**: Verify that the system can handle long descriptions for lessons.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a unique name in the name field.
+4. Administrator adds a very long description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should either accept the long description, truncate it, or show an error message if there's a limit to the description length.
+
+### Test Case 9: RedirectAfterSuccessfulLessonAddition
+
+**Objective**: Verify that the system redirects the administrator to the correct page after successfully adding a lesson.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator adds a unique name in the name field.
+4. Administrator adds a description in the description field.
+5. Administrator selects "Save".
+
+**Expected Result**: The system should redirect the Administrator to the adding topic to the new lesson section.
+
+### Test Case 10: LessonAdditionWithEmptyFields
+
+**Objective**: Verify that the system prevents adding a new lesson with all fields empty.
+
+**Preconditions**: Administrator is logged in.
+
+**Steps**:
+1. Admin presses the tab "Lesson Management" on the navbar.
+2. Administrator selects "Add new Lesson".
+3. Administrator leaves both the name and description fields empty.
+4. Administrator selects "Save".
+
+**Expected Result**: The system should show an error or notification indicating that the fields are required.

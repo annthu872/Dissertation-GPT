@@ -1,0 +1,414 @@
+
+baseline 1: 
+1. SuccessfulNewTopicAddition
+2. AddTopicWithDuplicateName
+3. CancelAddingNewTopic
+4. AddTopicWithoutName
+5. AddTopicWithoutDescription
+6. AddTopicWithSpecialCharactersInName
+7. AddTopicWithLongName
+8. AddTopicWithLongDescription
+9. AddTopicWithHTMLTagsInDescription
+10. AddTopicWithScriptInjectionInName
+11. AddTopicWithEmptyFields
+12. AddTopicAndRedirectToAddVocabulary
+13. AddTopicWithInvalidCharactersInName
+baseline 2: 
+1. Test Scenario: Verify navigation to "Add new topic" tab
+2. Test Scenario: Verify redirection to adding topic viewing page
+3. Test Scenario: Verify input functionality in the name field
+4. Test Scenario: Verify input functionality in the description field
+5. Test Scenario: Verify saving a new topic
+6. Test Scenario: Verify adding a topic with an already used name
+7. Test Scenario: Verify system notification for used topic name
+8. Test Scenario: Verify adding a unique name after notification
+9. Test Scenario: Verify cancel functionality during topic addition
+10. Test Scenario: Verify preconditions - Administrator login
+11. Test Scenario: Verify preconditions - Administrator permission to add topic
+12. Test Scenario: Verify postconditions - Redirection to adding vocabulary section
+13. Test Scenario: Verify new topic appears in the topic list
+14. Test Scenario: Verify field validation for the name field (e.g., empty, special characters)
+15. Test Scenario: Verify field validation for the description field (e.g., empty, maximum length)
+16. Test Scenario: Verify system behavior when saving with empty fields
+17. Test Scenario: Verify system behavior under network failure during save operation
+baseline 1: 
+1. SuccessfulLessonAddition
+2. LessonAdditionWithAlreadyUsedName
+3. LessonAdditionCancellation
+4. NavigateToAddNewLessonViaNavbar
+5. LessonAdditionWithoutName
+6. LessonAdditionWithoutDescription
+7. LessonAdditionWithSpecialCharactersInName
+8. LessonAdditionWithLongDescription
+9. LessonAdditionWithEmptyFields
+10. LessonAdditionAndRedirectToAddTopic
+baseline 2: 
+1. VerifyNavigationToLessonManagement
+2. VerifyDropdownOptionsInLessonManagement
+3. VerifyNavigationToListOfLessons
+4. VerifyLessonListDisplay
+5. VerifyNavigationToAddNewLessonPage
+6. VerifyAddNewLessonFields
+7. VerifySaveNewLessonFunctionality
+8. VerifyUniqueLessonNameConstraint
+9. VerifyNotificationForDuplicateLessonName
+10. VerifyAddingUniqueNameAfterDuplicateName
+11. VerifyAlternativeNavigationToAddNewLesson
+12. VerifyCancelFunctionalityWhileAddingNewLesson
+13. VerifyPreconditionsForAddingLesson
+14. VerifyPostconditionsAfterAddingLesson
+15. VerifyInputValidationForLessonNameField
+16. VerifyInputValidationForLessonDescriptionField
+17. VerifyLessonAdditionWithEmptyNameField
+18. VerifyLessonAdditionWithEmptyDescriptionField
+19. VerifyLessonAdditionWithSpecialCharactersInName
+20. VerifyLessonAdditionWithLongTextInDescriptionField
+21. VerifyRedirectAfterSuccessfulLessonAddition
+22. VerifyLessonAppearanceInLessonListAfterAddition
+baseline 1: 
+1. SuccessfulQuestionCreation
+2. AccessLessonManagementFromHomepage
+3. SkipSentenceField
+4. SkipCorrectAnswerField
+5. SkipOtherOption1Field
+6. SkipOtherOption2Field
+7. SkipOtherOption3Field
+8. CancelQuestionCreationAndStay
+9. EnterInvalidSentence
+10. LeaveWithoutSavingQuestion
+11. CancelQuestionCreationAndConfirm
+12. NavigateThroughLessonManagement
+13. NavigateToTopicInformation
+14. NavigateToWordInformation
+15. ChooseQuestionTypeForSelectionTest
+16. FillAllFieldsAndSaveQuestion
+17. ReEnterMissingSentenceField
+18. ReEnterMissingCorrectAnswerField
+19. ReEnterMissingOtherOption1Field
+20. ReEnterMissingOtherOption2Field
+21. ReEnterMissingOtherOption3Field
+22. ReEnterInvalidSentenceCorrectly
+baseline 2: 
+1. NavigateToLessonManagementPage
+2. RedirectFromLessonManagementToLessonInformation
+3. RedirectFromLessonInformationToTopicInformation
+4. RedirectFromTopicInformationToWordInformation
+5. AddNewQuestionButtonFunctionality
+6. QuestionTypeSelectionPopup
+7. NavigateToAddNewQuestionForSelectionTestPage
+8. FillValidSentenceField
+9. FillValidCorrectAnswerField
+10. FillValidOtherOption1Field
+11. FillValidOtherOption2Field
+12. FillValidOtherOption3Field
+13. SaveQuestionSuccess
+14. MandatoryFieldSentenceMissing
+15. MandatoryFieldCorrectAnswerMissing
+16. MandatoryFieldOtherOption1Missing
+17. MandatoryFieldOtherOption2Missing
+18. MandatoryFieldOtherOption3Missing
+19. CancelAndStayOnAddQuestionPage
+20. EnterInvalidSentence
+21. LeavePageWithoutSavingQuestion
+22. CancelAndConfirmQuestionCancellation
+23. NavigateFromHomepageToLessonManagement
+24. SentenceFieldCharacterLimitExceeded
+25. SentenceFieldContainsSpecialCharacter
+26. ValidateUniqueCorrectAnswer
+27. ValidateDifferentOptions
+28. ValidateSentencePlaceholderSymbol
+29. SaveButtonFunctionalityWithAllFieldsFilled
+30. CancelButtonFunctionalityBeforeFillingFields
+31. CancelButtonFunctionalityAfterFillingFields
+32. SystemNotificationForMissingFields
+33. SystemNotificationForInvalidSentence
+34. QuestionVisibilityInWordInformationPage
+35. EditSavedQuestion
+36. DeleteSavedQuestion
+37. ReviewTestQuestionDisplayToLearner
+baseline 1: 
+1. EditTest_SuccessfulEdit
+2. EditTest_ExitWithSave
+3. EditTest_ExitWithoutSave
+4. EditTest_AddNonExistentVocabulary_Error
+5. EditTest_AddExistentVocabulary_Success
+6. EditTest_FillInBlanksWithExistentVocabulary_Success
+7. EditTest_FillInBlanksWithNonExistentVocabulary_Error
+baseline 2: 
+1. EditTest_SuccessfulEditScenario
+2. EditTest_NavigateToEditPage
+3. EditTest_DisplayOfVocabularyList
+4. EditTest_SaveEditedExercises
+5. EditTest_ExitWithoutSaving_PopUpAppears
+6. EditTest_SaveChangesFromPopUp
+7. EditTest_DiscardChangesFromPopUp
+8. EditTest_PreconditionsNotMet_VocabularyNotExists
+9. EditTest_PreconditionsNotMet_FillInBlanksVocabularyNotExists
+10. EditTest_Postconditions_VerifyExercisesUpdated
+11. EditTest_AccessByNonAdministrator
+12. EditTest_EditWithInvalidData
+13. EditTest_EditWithEmptyFields
+14. EditTest_NavigationAfterSaving
+15. EditTest_NavigationAfterDiscardingChanges
+16. EditTest_TimeoutDuringEdit
+17. EditTest_ConcurrentEditConflicts
+18. EditTest_InvalidCharactersInEdit
+19. EditTest_EditWithoutChanges
+20. EditTest_BackButtonFunctionalityDuringEdit
+baseline 1: 
+1. ViewVocabularyList_Success
+2. ScrollVocabularyList_Success
+3. SearchVocabulary_Success
+4. SearchVocabulary_NoResults
+5. ExcludeWordFromReviewTest_Success
+6. IncludeWordInReviewTest_Success
+baseline 2: 
+1. Test Scenario: Verify Navigation to Handbook Tab
+2. Test Scenario: Display Learner's Vocabulary List
+3. Test Scenario: Scroll Functionality in Vocabulary List
+4. Test Scenario: Search Functionality with Valid Vocabulary
+5. Test Scenario: Search Functionality with Invalid Vocabulary
+6. Test Scenario: No Search Results Notification for Meaningless Vocabulary
+7. Test Scenario: Uncheck Vocabulary for Daily Review Test Exclusion
+8. Test Scenario: Check Vocabulary for Daily Review Test Inclusion
+9. Test Scenario: Memorization Level Display for Each Vocabulary
+10. Test Scenario: Vocabulary List Layout and Information Display
+11. Test Scenario: Functionality of Multiple Vocabulary Selection for Review Test
+12. Test Scenario: Persistent Selection Across Sessions
+13. Test Scenario: Search Functionality Performance with Large Vocabulary List
+14. Test Scenario: Accessibility Features for Handbook Tab
+15. Test Scenario: Handbook Functionality Without Internet Connection
+baseline 1: 
+1. **SuccessfulViewOfLearningDaysHistory**
+   - Description: This scenario covers the successful viewing of the learning days history by a learner who has a continuous learning streak.
+
+2. **ViewLearningDaysHistoryAfterBreakInLearning**
+   - Description: This scenario addresses the situation where a learner has previously broken their learning streak and views their learning days history, which should now start from one.
+
+3. **ViewLearningDaysHistoryWithNoPriorLearning**
+   - Description: This scenario is for a learner who has not started learning yet and decides to view their learning days history, which should show zero or no history.
+
+4. **AccessLearningDaysHistoryWithoutLogin**
+   - Description: This scenario tests the precondition where a learner attempts to view their learning days history without being logged into the application.
+
+5. **NavigationToHistoryPageFromHomePage**
+   - Description: This scenario focuses on the successful navigation from the Home page to the History page as per the basic flow.
+
+6. **NavigationToDayHistoryFromHistoryPage**
+   - Description: This scenario tests the navigation from the History page to the Day History page, ensuring the system redirects correctly.
+
+7. **ViewLearningDaysHistoryWithMaximumStreak**
+   - Description: This scenario is for testing the system's ability to display a very high number of continuous learning days without errors.
+
+8. **RefreshLearningDaysHistoryPage**
+   - Description: This scenario tests the system's behavior when the learner refreshes the Learning Days History page, ensuring the displayed information remains consistent.
+
+9. **LogoutAndLoginAgainToViewLearningDaysHistory**
+   - Description: This scenario ensures that the learning days history remains accurate and accessible even after the learner logs out and then logs back into the application.
+
+10. **ViewLearningDaysHistoryAcrossDifferentDevices**
+    - Description: This scenario tests the system's consistency in displaying the learning days history across different devices for the same learner account.
+baseline 2: 
+1. Test Scenario: Verify redirection to History page from Home page.
+2. Test Scenario: Verify selection functionality of "Day History" on History page.
+3. Test Scenario: Verify continuous learning days count display functionality.
+4. Test Scenario: Verify learning days count reset functionality upon breaking the learning chain.
+5. Test Scenario: Verify access to learning days history for logged-in learners.
+6. Test Scenario: Verify access restriction to learning days history for not logged-in users.
+7. Test Scenario: Verify the system's response time when accessing the learning days history.
+8. Test Scenario: Verify the accuracy of the learning days count displayed.
+9. Test Scenario: Verify the UI elements on the learning days history page.
+10. Test Scenario: Verify the system behavior when there is no learning history available for the learner.
+11. Test Scenario: Verify the functionality of returning to the Home page from the History page.
+12. Test Scenario: Verify the data persistence of learning days history upon logging out and logging back in.
+13. Test Scenario: Verify the system's handling of leap years in the learning days count.
+14. Test Scenario: Verify the system's behavior under different network conditions while accessing learning days history.
+15. Test Scenario: Verify the compatibility of the learning days history feature across different devices and browsers.
+baseline 1: 
+1. SuccessfulPronunciationTestCompletion
+2. IncorrectAnswerPronunciationTest
+3. PronunciationTestWithMultipleAttempts
+4. PronunciationTestWithoutAudio
+5. PronunciationTestWithAudioInterruption
+6. PronunciationTestAfterLoggingOutAndLoggingBackIn
+7. PronunciationTestWithSlowInternetConnection
+8. PronunciationTestWithScreenOrientationChange
+9. PronunciationTestWithAccessibilityFeaturesEnabled
+10. PronunciationTestWithHeadphonesConnected
+baseline 2: 
+1. Test Scenario: Verify successful login before accessing the listening pronunciation test.
+2. Test Scenario: Check availability of the speaker button on the test screen.
+3. Test Scenario: Validate audio playback functionality of the speaker button.
+4. Test Scenario: Assess the ability to guess and select an answer.
+5. Test Scenario: Confirm correct answer comparison logic.
+6. Test Scenario: Verify the display of a green pop-up screen upon choosing the correct answer.
+7. Test Scenario: Evaluate the system's response to a wrong answer selection.
+8. Test Scenario: Ensure the display of a red pop-up screen for an incorrect answer.
+9. Test Scenario: Check if vocabulary words are marked as studied post-test.
+10. Test Scenario: Test the functionality without internet connectivity.
+11. Test Scenario: Verify the system's behavior when the learner tries to skip a question.
+12. Test Scenario: Assess the system's handling of multiple rapid answer selections.
+13. Test Scenario: Validate the system's response to an unanswered question as time expires.
+14. Test Scenario: Check for the presence of feedback or hints after a wrong answer.
+15. Test Scenario: Verify the system's performance under high server load.
+16. Test Scenario: Assess the accessibility features for visually impaired users.
+17. Test Scenario: Validate the correctness of Vietnamese meanings against English vocabulary.
+18. Test Scenario: Test the review test function's integration with the listening pronunciation test.
+19. Test Scenario: Verify that the test question is part of the review test's question bank.
+20. Test Scenario: Check the system's response to an attempt to retake a previously completed test question.
+baseline 1: 
+1. ReviewTest_MainFlow_SuccessfulReview
+2. ReviewTest_AlternativeFlow1_WrongAnswer
+3. ReviewTest_AlternativeFlow2_CompleteReview
+4. ReviewTest_AlternativeFlow3_ExitAndStay
+5. ReviewTest_ExceptionFlow1_ExitAndConfirm
+6. ReviewTest_PreCondition_UserLoggedInWithReviewList
+7. ReviewTest_PostCondition_VocabularyStatusUpdated
+baseline 2: 
+1. ReviewButtonNavigationTest
+2. ReviewScreenRedirectionTest
+3. RandomSelectionMethodTest
+4. AnswerSelectionTest
+5. CorrectAnswerFeedbackTest
+6. IncorrectAnswerFeedbackTest
+7. MemoryLevelIncreaseTest
+8. MemoryLevelDecreaseTest
+9. ContinueButtonFunctionalityTest
+10. LastWordReviewCompletionTest
+11. ReviewDataSaveTest
+12. ExitButtonStayOptionTest
+13. ExitButtonConfirmOptionTest
+14. ReviewProgressNotSavedOnExitTest
+15. UserLoginPreconditionTest
+16. ReviewWordsListAvailabilityTest
+17. VocabularyStatusUpdatePostConditionTest
+18. ReviewLookBackFunctionalityTest
+19. ReviewScreenUIElementsTest
+20. ReviewMethodSoundFunctionalityTest
+21. ReviewMethodImageFunctionalityTest
+22. ReviewMethodQuestionsFunctionalityTest
+23. ReviewMethodMeaningsFunctionalityTest
+baseline 1: 
+1. SuccessfulWordSortingWithQuestion
+2. SuccessfulWordSortingWithMeaning
+3. SuccessfulWordSortingWithImage
+4. IncorrectWordSortingWithQuestion
+5. IncorrectWordSortingWithMeaning
+6. IncorrectWordSortingWithImage
+7. WordSortingWithoutLogin
+8. WordSortingWithStudiedVocabularyMarking
+baseline 2: 
+1. Test Scenario: Verify successful login before accessing the word sorting test.
+2. Test Scenario: Verify display of question with randomly arranged letters.
+3. Test Scenario: Verify functionality of letter buttons for arranging words.
+4. Test Scenario: Verify system behavior when correct order is submitted.
+5. Test Scenario: Verify system behavior when incorrect order is submitted.
+6. Test Scenario: Verify pop-up color change to green for correct answers.
+7. Test Scenario: Verify pop-up color change to red for incorrect answers.
+8. Test Scenario: Verify vocabulary words are marked as studied after completion.
+9. Test Scenario: Verify system response to incomplete word arrangement submission.
+10. Test Scenario: Verify navigation from question to question.
+11. Test Scenario: Verify time limit enforcement for answering (if applicable).
+12. Test Scenario: Verify system behavior when the same answer is submitted multiple times.
+13. Test Scenario: Verify system behavior with special characters or numbers in submission.
+14. Test Scenario: Verify accessibility features for arranging letters.
+15. Test Scenario: Verify system behavior when user session expires during the test.
+baseline 1: 
+1. Successful Flashcard Learning Flow
+2. Flashcard Learning with Back Button Stay Decision
+3. Flashcard Learning with Continue Studying Option
+4. Flashcard Learning from Incomplete Topic on Home Page
+5. Flashcard Learning with Previous Button on First Card
+6. Flashcard Learning with Back Button Exit Decision
+baseline 2: 
+1. Test Scenario: Verify Navigation to "Learn New Word" Tab
+2. Test Scenario: Display of Available Lessons
+3. Test Scenario: Lesson Selection Functionality
+4. Test Scenario: Display of Lesson Details and Topics
+5. Test Scenario: Topic Selection and Flashcard Page Navigation
+6. Test Scenario: Display of Flashcard Details (Front View)
+7. Test Scenario: Flashcard Flip Functionality (Back View)
+8. Test Scenario: Navigation to Next Flashcard
+9. Test Scenario: Navigation to Previous Flashcard
+10. Test Scenario: Completion Notification and Options Display
+11. Test Scenario: Redirect to Lesson Page after Completion
+12. Test Scenario: 'Back' Button Functionality During Flashcard Study (Stay Option)
+13. Test Scenario: 'Continue Studying' Functionality from Completion Page
+14. Test Scenario: Incomplete Topic Continuation from Home Page
+15. Test Scenario: 'Previous' Button Disabled on First Flashcard
+16. Test Scenario: 'Back' Button Functionality During Flashcard Study (Exit Option)
+17. Test Scenario: Topic and Vocabulary Marked as Completed
+18. Test Scenario: Review of Completed Topics and Studied Vocabulary
+19. Test Scenario: Error Handling for Unavailable Lessons or Topics
+20. Test Scenario: User Session Persistence Across Flashcard Study Sessions
+baseline 1: 
+1. Successful Login with Username
+2. Successful Login with Email
+3. Login Failure with Wrong Password
+4. Login Failure with Unregistered Username
+5. Login Failure with Blank Username Field
+6. Login Failure with Blank Password Field
+baseline 2: 
+1. Valid Login With Username
+2. Valid Login With Email
+3. Login With Wrong Password
+4. Login With Unregistered Username
+5. Login With Blank Username Field
+6. Login With Blank Password Field
+7. Login Button Functionality
+8. Redirect to Home Page After Successful Login
+9. Error Notification for Wrong Password
+10. Error Notification for Unregistered Username
+11. Error Notification for Blank Username Field
+12. Error Notification for Blank Password Field
+13. Login With Special Characters in Username
+14. Login With Special Characters in Password
+15. Login With Long Username (Boundary Value Analysis)
+16. Login With Long Password (Boundary Value Analysis)
+17. Login With SQL Injection Attack Patterns in Username Field
+18. Login With SQL Injection Attack Patterns in Password Field
+19. Login With JavaScript Code in Username Field (Cross-Site Scripting Attack)
+20. Login With JavaScript Code in Password Field (Cross-Site Scripting Attack)
+21. Session Timeout After Successful Login
+22. Re-login After Session Timeout
+23. Concurrent Login With Same User Credentials
+24. Login With Case Sensitive Username
+25. Login With Case Sensitive Password
+baseline 1: 
+1. Successful Registration with Valid Username and Password
+2. Successful Registration with Email
+3. Registration with Username Below Minimum Length
+4. Registration with Username Above Maximum Length
+5. Registration with Password Below Minimum Length
+6. Registration with Password Above Maximum Length
+7. Registration with Password Missing a Normal Character
+8. Registration with Password Missing a Capitalized Character
+9. Registration with Password Missing a Number
+10. Registration with Password Missing a Special Character
+11. Registration with Password Same as Username
+12. Registration with Invalid Email Format
+13. Registration with Non-Existent Email
+14. Registration with Already Registered Username
+baseline 2: 
+1. ValidUsernameAndPasswordRegistration
+2. UsernameBelowMinimumLength
+3. UsernameAboveMaximumLength
+4. PasswordBelowMinimumLength
+5. PasswordAboveMaximumLength
+6. PasswordWithoutSpecialCharacter
+7. PasswordWithoutNumber
+8. PasswordWithoutCapitalLetter
+9. PasswordWithoutNormalCharacter
+10. PasswordSameAsUsername
+11. SuccessfulRedirectToHomePage
+12. RegisterByEmailValidEmail
+13. RegisterByEmailInvalidEmailFormat
+14. RegisterByEmailInexistentEmail
+15. InvalidUsernameNotification
+16. InvalidPasswordNotification
+17. ExistedUsernameNotification
+18. InvalidEmailNotification
+19. UsernameWithSpecialCharacters
+20. EmailRegistrationAndValidPassword
+21. EmailRegistrationAndInvalidPassword
+22. EmailRegistrationRedirectToHomePage

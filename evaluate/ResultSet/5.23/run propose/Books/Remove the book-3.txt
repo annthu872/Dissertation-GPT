@@ -1,8 +1,7 @@
-Successful Book Deletion
-User Cancels Deletion
-Cancel deletion via "Cancel" button
-Cancel deletion and navigate to "Books"
-Cancel deletion and navigate to "Genres"
-Cancel deletion and navigate to "Authors"
-Cancel deletion and navigate to "Home"
-Cancel deletion and navigate to "API"
+Successful Deletion Scenario
+Deletion Cancellation Scenario
+Cancel Deletion and Return to Book List
+Cancel Deletion and Navigate to Genres
+Cancel Deletion and Navigate to Authors
+Cancel Deletion and Navigate to Home
+Cancel Deletion and Navigate to API

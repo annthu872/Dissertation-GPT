@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Validate Max Length for Description Field in Genre Creation
+objective: Verify that the Description field in the genre creation form does not accept inputs longer than the maximum allowed length
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid genre name in the 'Name' field.
+  - Step 4: Enter a string longer than the maximum allowed length in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Description field input exceeds the maximum allowed length.
+
+Test Case: Test Case 2
+testCaseName: Successfully Add New Genre with Valid Description Length
+objective: Verify that a new genre can be successfully added with a Description of valid length
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid genre name in the 'Name' field.
+  - Step 4: Enter a description within the allowed length in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre should be successfully added to the database, and the user should be redirected to the list of genres with the newly added record displayed.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation and Verify No Data is Saved
+objective: Verify that when a user cancels the genre creation process, no data is saved and the user is redirected back to the genre list
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user should be redirected to the genre list page without the new genre being added, indicating that no data was saved.
+

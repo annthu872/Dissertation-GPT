@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Search for an existing vocabulary in the Handbook
+objective: Verify that the learner can search for an existing vocabulary in the Handbook and view the results
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the name of an existing word in the search bar.
+  - Step 5: Observe the search results.
+expectedResult: The system should display a list of vocabulary that matches the search criteria, including word name, word type, word meaning, memorization level, and a checkbox for each word.
+
+Test Case: Test Case 2
+testCaseName: Search for a meaningless vocabulary in the Handbook
+objective: Verify that the learner receives a notification when searching for a vocabulary that does not exist or is meaningless
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word in the search bar.
+  - Step 5: Observe the notification.
+expectedResult: The system should notify the learner that there are no suitable search results for the entered query.
+
+Test Case: Test Case 3
+testCaseName: Exclude a vocabulary from the review test
+objective: Verify that the learner can exclude a vocabulary from appearing in the review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary.
+  - Step 4: Untick the checkbox of the vocabulary to exclude it from the review test.
+  - Step 5: Observe the change in the system.
+expectedResult: The system should mark the vocabulary as excluded, and it will not appear in the daily review test.
+
+Test Case: Test Case 4
+testCaseName: Include a vocabulary in the review test
+objective: Verify that the learner can include a vocabulary in the review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary.
+  - Step 4: Tick the checkbox of the vocabulary to include it in the review test.
+  - Step 5: Observe the change in the system.
+expectedResult: The system should mark the vocabulary as included, and it will appear in the daily review test.
+

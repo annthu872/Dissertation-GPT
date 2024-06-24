@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Exit Functionality with 'Stay' Option During Flashcard Study
+objective: Ensure that the 'Stay' option in the exit confirmation dialog works correctly and allows the learner to continue studying the current flashcard.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: On the Flashcard page, press the 'back' button on your browser or application interface.
+  - Step 6: In the exit confirmation dialog box, click 'stay'.
+expectedResult: The application should return to the current flashcard, allowing the learner to continue studying without exiting.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of 'Continue Studying' After Completing a Topic
+objective: To confirm that the 'continue studying' option works correctly by marking the current topic as completed and redirecting the learner to the next topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate through the flashcards of a topic until reaching the 'completion notification' page.
+  - Step 3: On the 'completion notification' page, click 'continue studying'.
+expectedResult: The system should mark the current topic as completed, mark the vocabulary words as studied, and redirect the learner to the Flashcard page for the next topic.
+
+Test Case: Test Case 3
+testCaseName: Verify Returning to Lesson Page After Studying
+objective: To ensure that the learner can return to the lesson page after completing the study of flashcards in a topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Complete studying a topic by navigating through all flashcards.
+  - Step 3: On the 'completion notification' page, click 'return to the lesson page'.
+expectedResult: The system should redirect the learner to the lesson page.
+
+Test Case: Test Case 4
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: Ensure that the 'Previous' button is disabled when the learner is on the first flashcard of a topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to a Flashcard page by selecting a topic.
+  - Step 3: Attempt to click the 'Previous' button on the first flashcard.
+expectedResult: The system should display a message 'there is no previous vocabulary to display' and the 'Previous' button should be disabled.
+
+Test Case: Test Case 5
+testCaseName: Verify Exit Functionality with 'Exit' Option During Flashcard Study
+objective: To ensure that the 'Exit' option in the exit confirmation dialog correctly exits the flashcard study and marks the topic as incomplete.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar and select a lesson and a topic.
+  - Step 3: On the Flashcard page, press the 'back' button on your browser or application interface.
+  - Step 4: In the exit confirmation dialog box, click 'exit'.
+expectedResult: The system should return the learner to the topic page, and the topic should be marked as incomplete and displayed on the home page.
+

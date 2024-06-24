@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer selection in Listening Pronunciation Test
+objective: To verify that the system correctly identifies and responds to the learner's correct answer selection in a listening pronunciation test question.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and navigates to the review test section.
+  - Step 2: Start the listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select the correct Vietnamese meaning of the listened English vocabulary.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the correct answer, a pop-up screen should appear in green, indicating the correct selection.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer selection in Listening Pronunciation Test
+objective: To verify that the system correctly identifies and responds to the learner's incorrect answer selection in a listening pronunciation test question.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and navigates to the review test section.
+  - Step 2: Start the listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select the wrong Vietnamese meaning of the listened English vocabulary.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the incorrect answer, a pop-up screen should appear in red, indicating the wrong selection.
+

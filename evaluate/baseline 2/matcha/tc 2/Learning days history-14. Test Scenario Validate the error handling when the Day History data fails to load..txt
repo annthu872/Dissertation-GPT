@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify error message when 'Day History' data fails to load due to network issues
+objective: To ensure that the application displays an appropriate error message when it fails to load the 'Day History' data due to network connectivity issues.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Simulate a network connectivity issue or disconnect the internet connection.
+  - Step 3: From the Home page, the learner selects 'History'.
+  - Step 4: On the History page, the learner selects 'Day History'.
+expectedResult: The application displays an error message indicating that the 'Day History' data could not be loaded due to network connectivity issues.
+
+Test Case: Test Case 2
+testCaseName: Verify error handling when 'Day History' data fails to load due to server error
+objective: To check that the application handles server errors gracefully when attempting to load the 'Day History' data.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Simulate a server error (e.g., by using a testing tool to mock server responses).
+  - Step 3: From the Home page, the learner selects 'History'.
+  - Step 4: On the History page, the learner selects 'Day History'.
+expectedResult: The application displays an error message indicating that the 'Day History' data could not be loaded due to a server error.
+
+Test Case: Test Case 3
+testCaseName: Verify 'Day History' page loads correctly after a temporary glitch
+objective: To verify that the 'Day History' page loads successfully after encountering a temporary loading issue.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home page, the learner selects 'History'.
+  - Step 3: On the History page, the learner selects 'Day History' and encounters a loading error.
+  - Step 4: The learner refreshes the 'Day History' page or retries the action.
+expectedResult: After a temporary glitch, the 'Day History' page loads successfully, displaying the number of days the learner has learned continuously.
+

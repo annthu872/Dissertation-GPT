@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Validate successful genre creation
+objective: Verify that a new genre can be successfully added to the database through the creation page
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A message indicating successful addition is displayed, and the new genre appears in the list of genres.
+
+Test Case: Test Case 2
+testCaseName: Validate error message for incorrect data entry
+objective: Verify that an error message is displayed when incorrect data is entered in the genre creation form
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message indicating the incorrect data entry is displayed, and the record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Validate navigation to Books menu without saving
+objective: Verify that navigating to the 'Books' menu without saving does not add a new genre to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', navigate to the 'Books' menu.
+expectedResult: The new genre is not added to the database, and the Books page is displayed with updated data.
+
+Test Case: Test Case 4
+testCaseName: Validate cancel operation during genre creation
+objective: Verify that pressing the 'Cancel' button during genre creation does not save the new genre to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The new genre is not added to the database, and the list of genre records is displayed.
+

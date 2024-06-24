@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify continuous learning days display for a single learner
+objective: Verify that the system correctly displays the number of continuous learning days for a learner without any breaks in their learning history.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: From the Home page, select 'History'.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The system should redirect the learner to a page showing the number of days they have learned continuously. If the learner has not broken their learning chain, this number should reflect the total count accurately.
+
+Test Case: Test Case 2
+testCaseName: Verify learning days reset after a break in learning
+objective: Ensure that the system resets the count of continuous learning days to one after the learner takes a break.
+testSteps:
+  - Step 1: Log into the application with a learner account that recently took a break from learning.
+  - Step 2: From the Home page, select 'History'.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The system should show that the count of continuous learning days has been reset to one, indicating the learner took a break in their learning history.
+
+Test Case: Test Case 3
+testCaseName: Verify display of learning days for multiple learners
+objective: To check if the system correctly displays the learning days history for multiple learners, each with different learning patterns.
+testSteps:
+  - Step 1: Log into the application with the first learner account and follow steps to view Day History.
+  - Step 2: Log out and log into the application with a second learner account and repeat the steps to view Day History.
+  - Step 3: Repeat the process for any additional learner accounts.
+expectedResult: The system should accurately display the number of continuous learning days for each learner, reflecting their individual learning histories correctly.
+

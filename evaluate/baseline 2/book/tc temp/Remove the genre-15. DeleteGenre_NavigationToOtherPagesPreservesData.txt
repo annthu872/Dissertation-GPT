@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Delete Genre and Confirm Deletion
+objective: Verify that the genre can be successfully deleted and the deletion is persistent across navigation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Navigate to other pages such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 5: Return to the genre list/details page.
+expectedResult: The selected genre should be deleted and not appear in the genre list/details page after navigating to other pages and returning.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Deletion and Verify Data Persistence
+objective: Ensure that cancelling the deletion of a genre does not remove it from the database and the genre list is correctly displayed after navigation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Navigate to other pages such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 5: Return to the genre list/details page.
+expectedResult: The genre should still be present in the genre list/details page after cancellation and navigating to other pages.
+

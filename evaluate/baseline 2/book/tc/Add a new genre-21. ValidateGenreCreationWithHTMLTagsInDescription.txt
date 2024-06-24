@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Validate Genre Creation with HTML Tags in Description
+objective: Verify that the system sanitizes HTML tags in the genre description field to prevent HTML injection when creating a new genre.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter a description containing HTML tags (e.g., '<b>Test</b>') in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre should be added to the database without the HTML tags, displaying the description with plain text only. The list of genres should include the newly added genre with the sanitized description.
+
+Test Case: Test Case 2
+testCaseName: Validate Genre Creation with Plain Text Description
+objective: Verify that the system correctly adds a new genre with a plain text description to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter a plain text description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre should be added to the database with the entered plain text description. The list of genres should include the newly added genre with the exact description as entered.
+
+Test Case: Test Case 3
+testCaseName: Validate Genre Creation Cancellation
+objective: Verify that the genre creation process can be cancelled without saving any data to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The form should close without saving any data to the database, and the list of genres should be displayed without the addition of a new genre.
+

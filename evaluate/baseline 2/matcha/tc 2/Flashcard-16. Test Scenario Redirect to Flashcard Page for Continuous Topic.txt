@@ -1,0 +1,57 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Flashcard Page and Interaction
+objective: Ensure the learner can navigate to the Flashcard page for a selected topic and interact with flashcards as expected.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Click on the flashcard to flip it and view the back.
+  - Step 6: Click the 'Next' button to go to the next vocabulary word's flashcard.
+  - Step 7: Click the 'Previous' button to return to the previous flashcard.
+  - Step 8: Continue until the last flashcard and click 'Next' to be redirected to the 'completion notification' page.
+  - Step 9: Click 'return to the lesson page' on the completion notification page.
+expectedResult: The learner is able to navigate through flashcards, flip them, and navigate between them using 'Next' and 'Previous' buttons. After the last flashcard, the learner is redirected to the completion notification page and can return to the lesson page.
+
+Test Case: Test Case 2
+testCaseName: Verify Alternative Flow with 'Back' Button and 'Stay'
+objective: To verify that the learner can press the 'back' button during flashcard study and choose to stay on the page.
+testSteps:
+  - Step 1: Follow steps 1-6 from Test Case 1 to reach a flashcard.
+  - Step 2: Press the 'back' button on the browser.
+  - Step 3: On the exit confirmation dialog box, click 'stay'.
+expectedResult: The exit confirmation dialog box appears correctly, and upon clicking 'stay', the learner remains on the current flashcard page.
+
+Test Case: Test Case 3
+testCaseName: Verify Alternative Flow with 'Continue Studying'
+objective: Ensure the learner can click 'continue studying' after completing a topic to proceed to the next topic.
+testSteps:
+  - Step 1: Complete all flashcards for a topic as per Test Case 1.
+  - Step 2: On the completion notification page, click 'continue studying'.
+expectedResult: The topic is marked as completed, and the learner is redirected to the Flashcard page for the continuous topic.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation from Home Page with Incomplete Topic
+objective: Ensure the learner can navigate to an incomplete topic directly from the Home Page.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: From the Home Page, click on an incomplete topic.
+expectedResult: The learner is redirected to the Flashcard page for the selected incomplete topic, resuming from where they left off.
+
+Test Case: Test Case 5
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: To ensure the 'Previous' button is disabled when the learner is on the first flashcard.
+testSteps:
+  - Step 1: Navigate to a Flashcard page for a topic as per Test Case 1.
+  - Step 2: Attempt to click the 'Previous' button on the first flashcard.
+expectedResult: The system displays a message 'there is no previous vocabulary to display', and the learner remains on the first flashcard.
+
+Test Case: Test Case 6
+testCaseName: Verify Exception Flow with 'Back' Button and 'Exit'
+objective: To verify that pressing the 'back' button and selecting 'exit' returns the learner to the topic page, marking the topic as incomplete.
+testSteps:
+  - Step 1: Follow steps 1-6 from Test Case 1 to reach a flashcard.
+  - Step 2: Press the 'back' button on the browser.
+  - Step 3: On the exit confirmation dialog box, click 'exit'.
+expectedResult: The learner is returned to the topic page, and the topic is marked as incomplete and displayed on the Home Page.
+

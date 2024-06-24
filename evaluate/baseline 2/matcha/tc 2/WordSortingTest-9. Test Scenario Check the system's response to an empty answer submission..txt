@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify empty answer submission on word sorting test
+objective: Ensure the system handles empty answer submissions appropriately by displaying an error or a specific message indicating that the answer cannot be empty.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question, vocabulary meaning, or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Do not arrange any letters and press enter to submit an empty answer.
+expectedResult: The system should display an error message or a specific indication that the answer cannot be empty and prompt the user to enter a valid answer.
+
+Test Case: Test Case 2
+testCaseName: Verify correct answer submission on word sorting test
+objective: To confirm that the system correctly evaluates and accepts a correct answer submission, displaying a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question, vocabulary meaning, or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Arrange the letters in the correct order and press enter to submit the answer.
+expectedResult: Upon submitting a correct answer, the system should display a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 3
+testCaseName: Verify incorrect answer submission on word sorting test
+objective: To ensure the system accurately identifies and responds to an incorrect answer by displaying a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question, vocabulary meaning, or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Intentionally arrange the letters in the wrong order and press enter to submit the answer.
+expectedResult: Upon submitting an incorrect answer, the system should display a red pop-up screen indicating the answer is wrong.
+

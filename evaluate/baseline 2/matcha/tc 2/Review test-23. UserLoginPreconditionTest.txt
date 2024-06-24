@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Review Test - Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer during a review session
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with four selections of answer.
+  - Step 4: Choose the correct answer by clicking on one of the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the memory level of the word has been increased.
+
+Test Case: Test Case 2
+testCaseName: Review Test - Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with four selections of answer.
+  - Step 4: Choose the wrong answer by clicking on one of the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the memory level of the word has been decreased.
+
+Test Case: Test Case 3
+testCaseName: Review Test - Completion of Review Session
+objective: Verify that the system saves the review session and redirects the learner to the Home page after completing the last word in the review list
+testSteps:
+  - Step 1: Log in as a learner with only one word left in the review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review for the last word by selecting an answer.
+  - Step 4: Press the 'Continue' button after completing the review of the last word.
+expectedResult: The system should save the review session and redirect the learner to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Review Test - Exit and Stay in Review Session
+objective: Verify that the learner can choose to stay in the review session after pressing the 'Exit' button
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page and start a review session.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, choose the 'Stay' button.
+expectedResult: The system should allow the learner to continue with the review session without losing progress.
+
+Test Case: Test Case 5
+testCaseName: Review Test - Exit and Confirm Exit from Review Session
+objective: Verify that the system redirects the learner to the Home page without saving the review when choosing to exit the review session
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Start a review session by selecting the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, choose the 'Confirm' button.
+expectedResult: The system should redirect the learner to the Home page and the review session should not be saved.
+

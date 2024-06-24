@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: EditTest_BackNavigationWithSave
+objective: Verify that when an administrator edits a test and chooses to save before exiting, the changes are preserved.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needing editing, then select 'Edit'.
+  - Step 4: Edit the exercises as required.
+  - Step 5: Attempt to exit exercise editing mode by pressing the designated exit button.
+  - Step 6: On the pop-up screen, select 'Save' to save changes.
+expectedResult: The system should save all edited exercises and confirm that the changes have been preserved.
+
+Test Case: Test Case 2
+testCaseName: EditTest_BackNavigationWithoutSave
+objective: Verify that when an administrator edits a test and chooses not to save before exiting, the changes are not preserved.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needing editing, then select 'Edit'.
+  - Step 4: Edit the exercises as required.
+  - Step 5: Attempt to exit exercise editing mode by pressing the designated exit button.
+  - Step 6: On the pop-up screen, select 'Do not save' to discard changes.
+expectedResult: The system should discard all edited exercises and confirm that the changes have not been preserved.
+

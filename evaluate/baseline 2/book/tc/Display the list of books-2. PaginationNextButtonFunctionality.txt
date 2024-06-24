@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Next Button Functionality Without Date Filter
+objective: Verify that the 'Next' button correctly displays the next page of books when no date filter is applied
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Observe the list of books displayed (up to 10 items) and note the last book's details on the first page.
+  - Step 3: Click the 'Next' button located below the list of books in the pagination block.
+expectedResult: The application should display the next set of up to 10 books different from those on the first page, indicating the pagination functionality works correctly without a date filter.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality With Date Filter
+objective: Ensure the 'Next' button functions correctly when a specific date range filter is applied
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Specify a date range by entering start and end dates in the date input forms above the list of books.
+  - Step 3: Click the 'Refresh' button to apply the date filter.
+  - Step 4: Observe the filtered list of books displayed (up to 10 items) and note the last book's details on the first page.
+  - Step 5: Click the 'Next' button located below the list of books in the pagination block.
+expectedResult: The application should display the next set of up to 10 books within the specified date range, different from those on the first page, confirming that pagination works correctly with a date filter.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality by Selecting Page Number
+objective: Ensure that selecting a specific page number from the pagination block navigates to the correct page
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Observe the pagination block below the list of books and note the available page numbers.
+  - Step 3: Click on a page number other than the current page (e.g., if on page 1, click page 2).
+expectedResult: The application should navigate to the selected page and display a different set of up to 10 books, confirming that direct page selection works correctly.
+
+Test Case: Test Case 4
+testCaseName: Verify Pagination Next Button Functionality on Last Page
+objective: Ensure that the 'Next' button is either disabled or does not appear on the last page of book listings
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Manually click the 'Next' button or a specific page number to navigate to the last page of book listings.
+  - Step 3: Observe the 'Next' button's state or presence.
+expectedResult: On the last page of book listings, the 'Next' button should be disabled or not present, indicating there are no further pages to navigate to.
+

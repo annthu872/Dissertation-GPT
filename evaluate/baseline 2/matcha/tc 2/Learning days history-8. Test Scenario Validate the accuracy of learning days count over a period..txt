@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify continuous learning days count
+objective: Verify that the system accurately counts and displays the number of continuous learning days without a break.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select 'History' on the Home page.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The system should display the correct number of continuous learning days based on the learner's activity.
+
+Test Case: Test Case 2
+testCaseName: Verify learning days count reset after a break
+objective: Ensure that the learning days count resets to one after the learner takes a break.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Ensure the learner has a continuous learning streak and then takes a break for at least one day.
+  - Step 3: After the break, log back into the application.
+  - Step 4: Select 'History' on the Home page.
+  - Step 5: On the History page, select 'Day History'.
+expectedResult: The system should reset the continuous learning days count to one, indicating the break in the learning streak.
+
+Test Case: Test Case 3
+testCaseName: Verify learning days count with no learning activity
+objective: To confirm that the learning days count shows zero when there has been no learning activity.
+testSteps:
+  - Step 1: Log into the application with a new learner account or an account with no learning activity.
+  - Step 2: Select 'History' on the Home page.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The system should display a learning days count of zero, indicating no learning activity.
+

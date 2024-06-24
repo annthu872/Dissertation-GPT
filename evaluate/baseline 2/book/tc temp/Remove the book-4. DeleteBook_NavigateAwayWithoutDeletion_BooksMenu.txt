@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion confirmation
+objective: Ensure that the book deletion process is initiated correctly and the user is asked for confirmation before the book is deleted
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Observe the confirmation dialog for deleting the book.
+expectedResult: A confirmation dialog should appear asking the user to confirm or cancel the deletion of the book.
+
+Test Case: Test Case 2
+testCaseName: Verify book deletion after confirmation
+objective: To confirm that the book is deleted from the database after the user confirms the deletion
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Click the 'Confirm' button on the confirmation dialog.
+  - Step 4: Observe the book list/details page.
+expectedResult: The book should no longer appear in the list/details page, indicating it has been successfully deleted from the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of book deletion
+objective: To ensure that the book is not deleted from the database when the user cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Click the 'Cancel' button on the confirmation dialog.
+  - Step 4: Observe the book list/details page.
+expectedResult: The book should still appear in the list/details page, indicating that it has not been deleted from the database.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from deletion dialog without deletion
+objective: To verify that navigating away from the deletion confirmation dialog without confirming deletion does not delete the book
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Without clicking 'Confirm' or 'Cancel', navigate to another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 4: Return to the book list/details page.
+expectedResult: The book should still be listed, indicating that it has not been deleted from the database despite navigating away from the deletion confirmation dialog.
+

@@ -1,0 +1,56 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Missing 'Sentence' Field
+objective: Verify that the system prompts an error when the 'sentence' field is skipped while creating a question for the selection test
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Press the 'Add new question' button.
+  - Step 6: Choose the option to add 'Create questions for the selection test'.
+  - Step 7: Fill in all compulsory fields except the 'sentence' field.
+  - Step 8: Press the 'Save' button.
+expectedResult: System shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+
+Test Case: Test Case 2
+testCaseName: Create Question With Invalid 'Sentence'
+objective: Verify that the system prompts an error when an invalid 'sentence' is entered while creating a question for the selection test
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Press the 'Add new question' button.
+  - Step 6: Choose the option to add 'Create questions for the selection test'.
+  - Step 7: Fill in the 'sentence' field with an invalid sentence and complete other compulsory fields.
+  - Step 8: Press the 'Save' button.
+expectedResult: System shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field.
+
+Test Case: Test Case 3
+testCaseName: Cancel Creating Question and Choose to Stay
+objective: Verify that the system allows the admin to cancel the creation of a question and choose to stay on the page
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Press the 'Add new question' button.
+  - Step 6: Choose the option to add 'Create questions for the selection test'.
+  - Step 7: Press the 'Cancel' button.
+  - Step 8: In the confirmation dialog, select the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the entered information preserved.
+
+Test Case: Test Case 4
+testCaseName: Create Question With Missing 'Correct Answer' Field
+objective: Verify that the system prompts an error when the 'correct answer' field is skipped while creating a question for the selection test
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Press the 'Add new question' button.
+  - Step 6: Choose the option to add 'Create questions for the selection test'.
+  - Step 7: Fill in all compulsory fields except the 'correct answer' field.
+  - Step 8: Press the 'Save' button.
+expectedResult: System shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+

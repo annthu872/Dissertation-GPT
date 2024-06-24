@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of 'Day History' Option for Logged-in Learner
+objective: Verify that a logged-in learner can see and select the 'Day History' option on the History page, and correctly view the number of continuous learning days.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home page, the learner selects the 'History' option.
+  - Step 3: On the History page, the learner selects the 'Day History' option.
+expectedResult: After selecting 'Day History', the learner is redirected to a page displaying the number of days they have learned continuously. If the learning chain is broken, the displayed number should reset to one.
+
+Test Case: Test Case 2
+testCaseName: Verify 'Day History' Display After Learning Chain Break
+objective: Ensure that the 'Day History' correctly resets to one after the learner breaks their continuous learning chain.
+testSteps:
+  - Step 1: Log in as a learner who recently broke their continuous learning chain.
+  - Step 2: Navigate to the 'History' page from the Home page.
+  - Step 3: Select the 'Day History' option on the History page.
+expectedResult: The system should redirect the learner to a page showing the number of continuous learning days as '1', indicating the learning chain has been reset.
+

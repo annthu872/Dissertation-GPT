@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify 'Stay' Option Functionality in Exit Confirmation Dialog
+objective: Ensure that when the learner selects the 'Stay' option in the exit confirmation dialog, they remain on the current flashcard page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Navigate to the Flashcard page for the selected topic.
+  - Step 6: Press the 'back' button during flashcard study.
+  - Step 7: Click 'Stay' on the exit confirmation dialog box.
+expectedResult: The learner remains on the current flashcard page, allowing them to continue studying without being redirected.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of 'Continue Studying' Option
+objective: To confirm that selecting 'continue studying' after completing a topic allows the learner to proceed with studying without interruption.
+testSteps:
+  - Step 1: Complete all flashcards in a topic.
+  - Step 2: Click 'return to the lesson page' after the completion notification.
+  - Step 3: Click 'continue studying' on the lesson page.
+  - Step 4: Verify that the topic is marked as completed and vocabulary words are marked as studied.
+  - Step 5: Confirm redirection to the Flashcard page for a continuous topic.
+expectedResult: The system marks the topic as completed, marks vocabulary words as studied, and redirects the learner to the Flashcard page for the next topic.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation from Home Page to Incomplete Topic
+objective: Ensure that learners can directly navigate to an incomplete topic from the Home Page and continue studying.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: From the Home Page, click on an incomplete topic.
+  - Step 3: Verify redirection to the corresponding Flashcard page for the selected topic.
+expectedResult: The learner is redirected to the Flashcard page of the selected incomplete topic, allowing them to continue where they left off.
+
+Test Case: Test Case 4
+testCaseName: Verify 'Previous' Button Functionality on First Flashcard
+objective: To ensure that the 'Previous' button is disabled on the first flashcard, preventing navigation to a non-existent previous card.
+testSteps:
+  - Step 1: Navigate to the first flashcard of a topic.
+  - Step 2: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button is disabled, and a message 'there is no previous vocabulary to display' is shown.
+
+Test Case: Test Case 5
+testCaseName: Verify 'Exit' Option Functionality in Exit Confirmation Dialog
+objective: Ensure that selecting 'Exit' during flashcard study marks the topic as incomplete and redirects the learner to the topic page.
+testSteps:
+  - Step 1: Begin studying a topic by navigating through flashcards.
+  - Step 2: Press the 'back' button during the study.
+  - Step 3: Click 'Exit' on the exit confirmation dialog box.
+expectedResult: The learner is redirected to the topic page, and the topic is marked as incomplete and displayed on the home page.
+

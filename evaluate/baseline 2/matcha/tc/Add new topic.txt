@@ -1,0 +1,60 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify navigation to 'Add new topic' tab",
+    "objective": "Ensure the Administrator can navigate to the 'Add new topic' tab from the navigation bar",
+    "testSteps": [
+      "Step 1: Log in as an Administrator.",
+      "Step 2: Locate and select the 'Add new topic' tab on the navigation bar."
+    ],
+    "expectedResult": "The system should redirect the Administrator to the adding topic viewing page.",
+    "explanation": "This test case ensures that the navigation functionality to the 'Add new topic' tab works as intended."
+  },
+  "Test Case 2": {
+    "testCaseName": "Verify input functionality in the name field",
+    "objective": "Ensure the Administrator can input text into the name field for a new topic",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new topic' viewing page.",
+      "Step 2: Click into the name field.",
+      "Step 3: Enter a unique name for the topic."
+    ],
+    "expectedResult": "The name field should accept the input without any errors.",
+    "explanation": "This test case verifies that the name field on the adding topic viewing page is functional."
+  },
+  "Test Case 3": {
+    "testCaseName": "Verify adding a topic with an already used name",
+    "objective": "Ensure the system prevents the Administrator from adding a new topic with a name that is already in use",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new topic' viewing page.",
+      "Step 2: Enter a name in the name field that is already used by an existing topic.",
+      "Step 3: Fill in the description field.",
+      "Step 4: Select 'Save' to attempt creating the new topic."
+    ],
+    "expectedResult": "The system should display a notification that the name is already used, prompting the Administrator to use another name.",
+    "explanation": "This test case ensures that the system correctly handles the scenario where an Administrator attempts to add a new topic with a name that is already in use."
+  },
+  "Test Case 4": {
+    "testCaseName": "Verify cancel functionality during topic addition",
+    "objective": "Ensure the Administrator can cancel the process of adding a new topic at any time",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new topic' viewing page.",
+      "Step 2: Begin entering information for a new topic.",
+      "Step 3: Select 'Cancel' to stop the process of adding a new topic."
+    ],
+    "expectedResult": "The system should cancel the topic addition process and possibly redirect the Administrator to a previous page or dashboard.",
+    "explanation": "This test case verifies that the cancel functionality works correctly, allowing Administrators to stop the process of adding a new topic at any point."
+  },
+  "Test Case 5": {
+    "testCaseName": "Verify field validation for empty name",
+    "objective": "Ensure the system validates the name field to prevent the Administrator from saving a new topic without a name",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new topic' viewing page.",
+      "Step 2: Leave the name field empty.",
+      "Step 3: Fill in the description field.",
+      "Step 4: Select 'Save' to attempt creating the new topic."
+    ],
+    "expectedResult": "The system should display an error message indicating that the name field cannot be left empty.",
+    "explanation": "This test case ensures that the system enforces input validation on the name field to prevent the creation of topics without names."
+  }
+}
+```

@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Edit Test and Save Changes
+objective: Verify that the administrator can edit a test and save changes successfully
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Administrator selects 'Save'.
+  - Step 6: System saves all edited exercises.
+expectedResult: The system should save all the changes made by the administrator and update the exercises accordingly.
+
+Test Case: Test Case 2
+testCaseName: Edit Test and Cancel Edit with Do Not Save Changes
+objective: Verify that the administrator can cancel the editing of a test and choose not to save the changes
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Administrator presses the button to exit exercise editing mode.
+  - Step 6: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 7: Administrator selects 'Do not save'.
+expectedResult: The system should discard all changes made by the administrator and not update the exercises.
+

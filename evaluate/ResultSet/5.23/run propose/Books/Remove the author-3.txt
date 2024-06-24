@@ -1,3 +1,4 @@
 1. Successful Author Deletion
 2. User Cancels Deletion
-3. User Navigates Away Using Menu Before Confirming Deletion
+3. User cancels deletion from confirmation dialog
+4. User navigates away using menu items after initiating delete operation

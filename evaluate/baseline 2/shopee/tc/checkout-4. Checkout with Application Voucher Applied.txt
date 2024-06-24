@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Checkout with valid application voucher applied
+objective: Verify that the user can successfully apply a valid application voucher during checkout and the total cost is updated accordingly
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Confirm the default shipping address or add a new one if necessary.
+  - Step 4: Select the default payment method or choose a new one.
+  - Step 5: Enter a valid application voucher code in the voucher field.
+  - Step 6: Click on the 'apply' button to apply the voucher.
+  - Step 7: Review the updated total cost reflecting the voucher discount.
+  - Step 8: Click on the 'Place Order' button.
+expectedResult: The system successfully applies the voucher, updates the total cost with the discount, and allows the user to place the order with the discounted total cost.
+
+Test Case: Test Case 2
+testCaseName: Checkout with invalid application voucher
+objective: Verify that the system prevents the user from applying an invalid application voucher and displays an appropriate error message
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Confirm the default shipping address or add a new one if necessary.
+  - Step 4: Select the default payment method or choose a new one.
+  - Step 5: Enter an invalid application voucher code in the voucher field.
+  - Step 6: Click on the 'apply' button to attempt to apply the invalid voucher.
+expectedResult: The system displays an error message indicating the voucher is invalid and does not apply any discount to the total cost.
+
+Test Case: Test Case 3
+testCaseName: Checkout without a default shipping address
+objective: Verify that the system prompts the user to add a new shipping address if no default address is set during checkout
+testSteps:
+  - Step 1: Log into the Shopee account with no default shipping address set.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Observe the prompt to add a new shipping address.
+expectedResult: The system forces the user to add a new shipping address before proceeding with the checkout.
+
+Test Case: Test Case 4
+testCaseName: Change shipping option during checkout
+objective: Verify that the user can successfully change the shipping option and the system updates the total cost accordingly
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Click on the shipping option change button.
+  - Step 4: Select a new shipping option from the list of available options.
+  - Step 5: Review the updated total cost reflecting the new shipping option.
+expectedResult: The system successfully updates the shipping option and the total cost to reflect the change.
+

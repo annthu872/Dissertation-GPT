@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify error message for missing title
+objective: To verify that the appropriate error message is displayed when the title field is left blank while adding a new book
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Leave the 'Title' field blank.
+  - Step 4: Fill in the 'Author', 'Genre', 'Description', and 'Publication date' fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the title field is required.
+
+Test Case: Test Case 2
+testCaseName: Verify error message for invalid publication date
+objective: To ensure that an error message is displayed when an invalid publication date is entered
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Title', 'Author', 'Genre', and 'Description' fields with valid data.
+  - Step 4: Enter an invalid date format in the 'Publication date' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the publication date is invalid.
+
+Test Case: Test Case 3
+testCaseName: Verify successful book creation
+objective: To verify that a book record is successfully added to the database when all required fields are filled correctly
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in all fields ('Title', 'Author', 'Genre', 'Description', 'Publication date') with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The new book record should be added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during book creation
+objective: To ensure that no data is saved and the user is redirected back to the book list when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: No data should be saved to the database, and the user should be redirected to the list of book records.
+

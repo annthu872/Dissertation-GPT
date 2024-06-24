@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Genre
+objective: Verify that the system displays an error message when trying to update a book with an invalid genre
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, description, and publication date as required.
+  - Step 4: Enter an invalid value in the 'Genre' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the 'Genre' field has invalid data and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Book
+objective: Verify that the book update operation can be canceled without making any changes to the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the provided form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book record in the database and should display the list of book records.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away from Update Page Without Saving
+objective: Verify that navigating away from the update page without saving does not update the book in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the provided form fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not update the book record in the database and should display the selected page without saving any changes.
+

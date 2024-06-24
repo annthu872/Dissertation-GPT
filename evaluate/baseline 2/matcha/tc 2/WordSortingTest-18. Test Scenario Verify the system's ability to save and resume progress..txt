@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer submission and progress saving
+objective: Verify that the system correctly evaluates a correct answer, displays a green pop-up screen, and saves the progress
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters in correct order and press enter.
+  - Step 5: Observe the pop-up screen.
+expectedResult: After arranging the letters correctly and pressing enter, a green pop-up screen should appear indicating the correct answer. The system should save the progress.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer submission and progress saving
+objective: Verify that the system correctly evaluates an incorrect answer, displays a red pop-up screen, and saves the progress
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in incorrect order and press enter.
+  - Step 5: Observe the pop-up screen.
+expectedResult: After arranging the letters incorrectly and pressing enter, a red pop-up screen should appear indicating the wrong answer. The system should save the progress.
+
+Test Case: Test Case 3
+testCaseName: Verify ability to resume progress after interruption
+objective: Verify that a learner can resume the word sorting test from where they left off after logging out and back in
+testSteps:
+  - Step 1: Log into the application as a learner and navigate to the word sorting test.
+  - Step 2: Complete a few questions of the word sorting test.
+  - Step 3: Log out of the application.
+  - Step 4: Log back into the application.
+  - Step 5: Navigate to the word sorting test and observe the starting point.
+expectedResult: After logging back in and navigating to the word sorting test, the learner should be able to resume the test from where they left off, indicating that the progress was saved.
+

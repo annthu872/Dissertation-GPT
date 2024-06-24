@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Validate Max Length for Genre Name Field
+objective: Verify that the Genre Name field does not accept input longer than the maximum allowed length and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a string longer than the maximum allowed length in the 'Name' field.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the input for the 'Name' field is too long, and the record should not be added to the database.
+
+Test Case: Test Case 2
+testCaseName: Validate Successful Genre Creation
+objective: Verify that a genre can be successfully created with valid data and is added to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid name within the maximum allowed length in the 'Name' field.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre record should be successfully added to the database, and the user should be redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 3
+testCaseName: Validate Cancel Operation in Genre Creation
+objective: Verify that pressing the 'Cancel' button while creating a new genre discards the data and does not add a new record to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The data entered in the form should not be saved in the database, and the user should be redirected to the list of genre records without the new record being added.
+

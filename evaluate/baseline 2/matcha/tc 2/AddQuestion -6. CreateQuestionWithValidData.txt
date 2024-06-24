@@ -1,0 +1,59 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Valid Data
+objective: Verify that the admin can successfully create a question for the selection test with all required fields filled correctly.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Create Question With Missing 'Sentence' Field
+objective: Verify that the system prompts the admin to fill the missing 'sentence' field when trying to save a question without it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page.
+  - Step 3: Leave the 'sentence' field empty.
+  - Step 4: Fill in the remaining fields with valid data.
+  - Step 5: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the admin to fill the missing 'sentence' field.
+
+Test Case: Test Case 3
+testCaseName: Cancel Creating Question and Choose to Stay
+objective: Verify that the admin can cancel the creation of a new question and choose to stay on the page to continue working on it.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page.
+  - Step 3: Fill in all the fields with valid data.
+  - Step 4: Press the button 'Cancel'.
+  - Step 5: In the confirmation dialog, press the button 'Stay'.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the data previously entered intact.
+
+Test Case: Test Case 4
+testCaseName: Enter Invalid Sentence
+objective: Verify that the system prompts the admin to re-enter the 'sentence' field if the entered sentence is invalid.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page.
+  - Step 3: Fill in the 'sentence' field with an invalid sentence.
+  - Step 4: Fill in the remaining fields with valid data.
+  - Step 5: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field.
+
+Test Case: Test Case 5
+testCaseName: Leave Page Without Saving
+objective: Verify that the question is not saved if the admin leaves the page without saving.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page and fill in all fields.
+  - Step 3: Press the browser back button without saving the question.
+expectedResult: The system redirects the admin to the 'Word Information' page of the selected word, and the question is not saved.
+

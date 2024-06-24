@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Creation
+objective: Verify that a user can successfully create a new genre record in the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Display Error Message for Incorrect Genre Data
+objective: Verify that an error message is displayed when incorrect data is entered in the genre creation form
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages indicating the incorrect data, and the genre record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation
+objective: Verify that a user can cancel the genre creation process
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: Data is not saved in the database, and the user is redirected to the list of genre records.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Genre Creation Discards Data
+objective: Verify that navigating away from the genre creation form discards any entered data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The data entered in the genre creation form is not saved to the database, and the user is redirected to the selected page with updated data.
+

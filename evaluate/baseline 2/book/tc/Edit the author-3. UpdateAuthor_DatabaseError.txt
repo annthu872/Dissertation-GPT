@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data
+objective: Verify that the author's details can be updated with valid data and the updated author's details are correctly reflected in the authors list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the list of authors displays the updated records.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid Data
+objective: Verify that the application displays error messages when trying to update an author with invalid data.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays error messages related to the invalid data entered.
+
+Test Case: Test Case 3
+testCaseName: Update Author Operation Cancel
+objective: Verify that the update operation can be cancelled and no changes are made to the author's details.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: No changes are made to the author's details, and the list of authors is displayed without any updates.
+
+Test Case: Test Case 4
+testCaseName: Update Author with Database Error
+objective: Verify that the application displays an appropriate error message when a database error occurs during the update operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Simulate a database error (this step may require a specific setup or condition that triggers a database error).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the update operation could not be completed due to a database error.
+

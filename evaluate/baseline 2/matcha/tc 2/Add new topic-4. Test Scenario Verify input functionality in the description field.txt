@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a new topic with unique name and description
+objective: Ensure the Administrator can successfully add a new topic with a unique name and description
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Click on 'Save' to create the new topic.
+expectedResult: The system should redirect the Administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a new topic with an already used name
+objective: Ensure the system prompts the Administrator to use a different name when attempting to add a new topic with a name that is already in use
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used for an existing topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Click on 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification about the name being already used.
+  - Step 7: Enter a new, unique name in the name field.
+  - Step 8: Click on 'Save' again to create the topic.
+expectedResult: The system should display a notification about the name being already used and, after entering a new name, should redirect the Administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+
+Test Case: Test Case 3
+testCaseName: Verify the ability to cancel adding a new topic
+objective: Ensure the Administrator can cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Start entering details for a new topic.
+  - Step 4: Click on 'Cancel' to stop adding the new topic.
+expectedResult: The system should cancel the adding new topic process and remain or return to the page before the 'Add new topic' action was initiated.
+

@@ -1,0 +1,15 @@
+1. UpdateBooking_SuccessfulUpdate
+2. UpdateBooking_BookingNotFound
+3. UpdateBooking_InvalidFieldInput
+4. UpdateBooking_UpdateFailureMessage
+5. UpdateBooking_LoggedOutUser
+6. UpdateBooking_NonExistentBookingID
+7. UpdateBooking_NoFieldsUpdated
+8. UpdateBooking_OnlyPartialFieldsUpdated
+9. UpdateBooking_AddNewService_ComputePayment
+10. UpdateBooking_ChangeRoomType_ComputePayment
+11. UpdateBooking_InvalidPaymentComputation
+12. UpdateBooking_SuccessMessageDisplayed
+13. UpdateBooking_FailureDueToDatabaseError
+14. UpdateBooking_BookingIDExistsInDatabaseAfterUpdate
+15. UpdateBooking_AllBookingsDisplayedPostUpdate

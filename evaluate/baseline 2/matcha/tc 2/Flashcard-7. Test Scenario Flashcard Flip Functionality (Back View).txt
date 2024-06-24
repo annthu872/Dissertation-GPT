@@ -1,0 +1,53 @@
+Test Case: Test Case 1
+testCaseName: Verify Flashcard Flip Functionality
+objective: Verify that the learner can flip a flashcard to view the back side containing illustrations and examples of real-life usage.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Click on the first flashcard displayed to flip it and view the back side.
+expectedResult: The back side of the flashcard should be displayed, showing illustrations and examples of real-life usage.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Next Flashcard
+objective: Verify that the learner can navigate to the next flashcard after studying the current one.
+testSteps:
+  - Step 1: Log into the application and navigate to a flashcard as per steps in Test Case 1.
+  - Step 2: Click the 'Next' button to go to the next flashcard.
+expectedResult: The next flashcard in the sequence should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Previous Flashcard
+objective: Verify that the learner can navigate to the previous flashcard if not on the first flashcard.
+testSteps:
+  - Step 1: Log into the application and navigate to a flashcard as per steps in Test Case 1.
+  - Step 2: Navigate to at least the second flashcard using the 'Next' button.
+  - Step 3: Click the 'Previous' button to go back to the previous flashcard.
+expectedResult: The previous flashcard should be displayed.
+
+Test Case: Test Case 4
+testCaseName: Verify Completion Notification Page
+objective: Verify that upon studying all flashcards, the learner is redirected to the 'completion notification' page.
+testSteps:
+  - Step 1: Log into the application and navigate through all flashcards in a topic as per previous test cases.
+  - Step 2: Click the 'Next' button on the last flashcard.
+expectedResult: The 'completion notification' page should be displayed with a congratulatory message and options to 'continue studying' or 'return to the lesson page'.
+
+Test Case: Test Case 5
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: Verify that the 'Previous' button is disabled when the learner is on the first flashcard.
+testSteps:
+  - Step 1: Log into the application and navigate to the first flashcard of a topic as per steps in Test Case 1.
+  - Step 2: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button should be disabled and no action should be taken.
+
+Test Case: Test Case 6
+testCaseName: Verify Exit Confirmation Dialog
+objective: Verify that the exit confirmation dialog appears when the learner attempts to leave the flashcard study session.
+testSteps:
+  - Step 1: Log into the application and navigate to a flashcard as per steps in Test Case 1.
+  - Step 2: Press the 'back' button.
+  - Step 3: Choose either 'stay' or 'exit' when the exit confirmation dialog box appears.
+expectedResult: The exit confirmation dialog box should appear, asking 'Are you sure you want to exit?'.
+

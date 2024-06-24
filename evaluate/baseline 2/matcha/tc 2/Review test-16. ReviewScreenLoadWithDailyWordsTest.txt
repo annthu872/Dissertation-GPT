@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Review Screen Load and Display Daily Words
+objective: Verify that the review screen loads correctly and displays daily review words with one of four methods (questions, sound, image, or meanings).
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Observe the method (questions, sound, image, or meanings) used for the first word in the daily review words list.
+  - Step 4: Observe the four selections of answers at the bottom of the screen.
+expectedResult: The review screen loads with one of the four methods for the word and displays four selections of answers.
+
+Test Case: Test Case 2
+testCaseName: Correct Answer Selection and Memory Level Increase
+objective: Verify that selecting the correct answer increases the word's memory level.
+testSteps:
+  - Step 1: Log in as a learner and navigate to the review screen.
+  - Step 2: Select the correct answer for the displayed word.
+  - Step 3: Click the 'Continue' button to proceed to the next word.
+expectedResult: The system shows a green word, indicating the correct answer was selected, and the word's memory level is increased.
+
+Test Case: Test Case 3
+testCaseName: Incorrect Answer Selection and Memory Level Decrease
+objective: Verify that selecting the wrong answer decreases the word's memory level.
+testSteps:
+  - Step 1: Log in as a learner and navigate to the review screen.
+  - Step 2: Select the wrong answer for the displayed word.
+  - Step 3: Click the 'Continue' button to proceed to the next word.
+expectedResult: The system shows a red word, indicating the wrong answer was selected, and the word's memory level is decreased.
+
+Test Case: Test Case 4
+testCaseName: Review Completion and Return to Home Page
+objective: Verify that completing the review redirects the learner to the Home page and saves the review.
+testSteps:
+  - Step 1: Log in as a learner and complete the review by going through all words in the review list.
+  - Step 2: Press the 'Continue' button after the last word.
+expectedResult: The learner is redirected to the Home page, and the review is saved.
+
+Test Case: Test Case 5
+testCaseName: Exit Review and Stay
+objective: Verify that pressing the 'Exit' button and choosing to stay returns the learner to the review.
+testSteps:
+  - Step 1: Log in as a learner and navigate to the review screen.
+  - Step 2: Press the 'Exit' button.
+  - Step 3: Choose 'Stay' on the pop-up.
+expectedResult: The learner is returned to the review screen to continue the review.
+
+Test Case: Test Case 6
+testCaseName: Exit Review and Confirm Exit
+objective: Verify that pressing the 'Exit' button and confirming exit redirects the learner to the Home page without saving the review.
+testSteps:
+  - Step 1: Log in as a learner and navigate to the review screen.
+  - Step 2: Press the 'Exit' button.
+  - Step 3: Choose 'Confirm' on the pop-up.
+expectedResult: The learner is redirected to the Home page, and the review is not saved.
+

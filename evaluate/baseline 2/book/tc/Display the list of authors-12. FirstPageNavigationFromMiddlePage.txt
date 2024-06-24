@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to First Page from Middle Page in Author List
+objective: Ensure that users can navigate back to the first page of the author list after moving to a middle page
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to view the list of authors.
+  - Step 3: Click the 'Next' button or a middle page number to navigate away from the first page.
+  - Step 4: Once on a middle page, click the '1' button or a designated 'First Page' button to return to the first page.
+expectedResult: The application should display the first page of the authors list, showing the first 10 records.
+
+Test Case: Test Case 2
+testCaseName: Verify Author List Pagination Functionality
+objective: To confirm that the application correctly displays up to 10 authors per page and allows navigation through pages using the 'Next' button and page numbers
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Verify that the first page displays up to 10 authors.
+  - Step 4: Click the 'Next' button to move to the second page.
+  - Step 5: Verify that the second page displays up to 10 different authors.
+  - Step 6: Click on a specific page number to navigate directly to that page.
+  - Step 7: Verify that the selected page displays up to 10 authors.
+expectedResult: Each page navigated to should display a different set of up to 10 authors from the database, confirming the pagination functionality works as expected.
+
+Test Case: Test Case 3
+testCaseName: Verify Author List Columns Display
+objective: Ensure that the author list correctly displays all required columns (id, Name, Bio) for each author
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to view the list of authors.
+  - Step 3: Examine the list to ensure each entry includes the 'id', 'Name', and 'Bio' columns.
+expectedResult: The application should correctly display the list of authors with all required columns (id, Name, Bio) for each author.
+

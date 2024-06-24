@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Exit Confirmation on Pressing 'Back' Button During Flashcard Study
+objective: Ensure that when a learner presses the 'back' button during a flashcard study session, an exit confirmation dialog box appears, and the learner can choose to stay or exit.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Begin studying the flashcards by clicking on them to flip and view details.
+  - Step 6: Press the 'back' button on the device/browser during the flashcard study session.
+  - Step 7: Observe the exit confirmation dialog box.
+expectedResult: An exit confirmation dialog box should appear with options to 'stay' or 'exit'.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of 'Stay' Option in Exit Confirmation Dialog
+objective: To verify that selecting the 'stay' option in the exit confirmation dialog during a flashcard study session allows the learner to continue studying without interruption.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to a flashcard study session.
+  - Step 3: Press the 'back' button on the device/browser.
+  - Step 4: In the exit confirmation dialog box, click 'stay'.
+  - Step 5: Continue studying the flashcards.
+expectedResult: The learner should be able to continue studying the flashcards without being redirected away from the current session.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of 'Exit' Option in Exit Confirmation Dialog
+objective: To ensure that selecting the 'exit' option in the exit confirmation dialog during a flashcard study session redirects the learner to the topic page, marking the topic as incomplete.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to a flashcard study session.
+  - Step 3: Press the 'back' button on the device/browser.
+  - Step 4: In the exit confirmation dialog box, click 'exit'.
+  - Step 5: Observe the redirection to the topic page.
+expectedResult: The learner should be redirected to the topic page, and the topic should be marked as incomplete.
+

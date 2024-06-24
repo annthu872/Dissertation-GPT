@@ -1,0 +1,15 @@
+1. Test Scenario: Verify Navigation to Handbook Tab
+2. Test Scenario: Display Learner's Vocabulary List
+3. Test Scenario: Scroll Through Vocabulary List
+4. Test Scenario: Search Vocabulary Functionality
+5. Test Scenario: Search Results for Valid Vocabulary
+6. Test Scenario: Search for Meaningless Vocabulary
+7. Test Scenario: No Results Notification for Meaningless Vocabulary Search
+8. Test Scenario: Uncheck Vocabulary for Daily Review Test
+9. Test Scenario: Check Vocabulary for Daily Review Test
+10. Test Scenario: Reflect Changes in Daily Review Test Based on Vocabulary Selection
+11. Test Scenario: Handbook Usability on Different Devices
+12. Test Scenario: Handbook Performance under High Load
+13. Test Scenario: Data Persistence After Logout and Login
+14. Test Scenario: Accessibility Features in Handbook
+15. Test Scenario: Error Handling for Search Functionality

@@ -1,0 +1,77 @@
+Test Case: Test Case 1
+testCaseName: Verify successful question creation for selection test
+objective: Verify that an admin can successfully create a question for the selection test by filling all required fields and saving the information
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the 'Create questions for the selection test' option.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Verify prompt for completion when 'sentence' field is skipped
+objective: Ensure the system prompts the admin to fill the 'sentence' field if it is skipped before saving a new question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Skip the 'sentence' field and fill in the rest of the fields.
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the admin to fill the missing 'sentence' field.
+
+Test Case: Test Case 3
+testCaseName: Verify prompt for completion when 'correct answer' field is skipped
+objective: Ensure the system prompts the admin to fill the 'correct answer' field if it is skipped before saving a new question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Skip the 'correct answer' field and fill in the rest of the fields.
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the admin to fill the missing 'correct answer' field.
+
+Test Case: Test Case 4
+testCaseName: Verify prompt for completion when any 'other option' field is skipped
+objective: Ensure the system prompts the admin to fill all 'other option' fields if any is skipped before saving a new question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Fill in all fields except one of the 'other option' fields.
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the admin to fill the missing 'other option' field.
+
+Test Case: Test Case 5
+testCaseName: Verify cancellation and staying on the question creation page
+objective: Ensure the system allows the admin to cancel the question creation process and stay on the page upon confirmation
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Press the 'Cancel' button.
+  - Step 6: On the confirmation dialog, select the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the question creation page with the entered information preserved.
+
+Test Case: Test Case 6
+testCaseName: Verify error notification for invalid 'sentence' input
+objective: Ensure the system notifies the admin of invalid 'sentence' input and prompts for correction
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Fill in the 'sentence' field with an invalid sentence and complete the rest of the fields.
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field.
+

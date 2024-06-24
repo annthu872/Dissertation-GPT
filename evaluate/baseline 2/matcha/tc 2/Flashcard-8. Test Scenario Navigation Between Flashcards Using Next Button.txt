@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Next Flashcard
+objective: Verify that the learner can navigate to the next flashcard using the 'Next' button and the content of the next flashcard is displayed correctly.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Click on the flashcard to flip it and view the back.
+  - Step 6: Click the 'Next' button to navigate to the next flashcard.
+expectedResult: The next flashcard is displayed with the correct vocabulary name, pronunciation, Vietnamese meaning, illustrations, and examples of real-life usage.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Previous Flashcard
+objective: Ensure that the learner can navigate back to the previous flashcard using the 'Previous' button when not on the first flashcard.
+testSteps:
+  - Step 1: Log into the application and navigate to a topic's flashcard page as per previous steps.
+  - Step 2: Click the 'Next' button to move to the second flashcard.
+  - Step 3: Click the 'Previous' button to navigate back to the first flashcard.
+expectedResult: The system navigates back to the first flashcard, displaying the correct content as initially shown.
+
+Test Case: Test Case 3
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: To verify that the 'Previous' button is disabled when the learner is on the first flashcard of a topic.
+testSteps:
+  - Step 1: Log into the application and navigate to a topic's flashcard page as per previous steps.
+  - Step 2: Ensure you are on the first flashcard.
+  - Step 3: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button is disabled, and a message 'there is no previous vocabulary to display' is shown.
+
+Test Case: Test Case 4
+testCaseName: Verify Completion Notification and Navigation
+objective: To verify that upon studying all flashcards, the learner receives a completion notification and can navigate to the lesson page or continue studying.
+testSteps:
+  - Step 1: Log into the application and navigate through all flashcards in a topic as per previous steps.
+  - Step 2: Click the 'Next' button on the last flashcard.
+  - Step 3: On the completion notification page, click 'return to the lesson page'.
+expectedResult: The system redirects the learner to the lesson page, and the topic is marked as completed.
+
+Test Case: Test Case 5
+testCaseName: Verify Continuation with Incomplete Topic from Home Page
+objective: Ensure that a learner can continue studying an incomplete topic directly from the Home Page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: From the Home Page, click on an incomplete topic.
+  - Step 3: Continue studying the flashcards from where left off.
+expectedResult: The system navigates the learner to the corresponding Flashcard page for the incomplete topic, allowing continuation from where they left off.
+

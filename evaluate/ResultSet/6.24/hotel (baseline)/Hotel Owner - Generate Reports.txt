@@ -1,0 +1,59 @@
+1. **Happy Path Scenario**
+   - Successful Report Generation
+
+2. **Authentication Failure Scenario**
+   - Access Reports Page without Authentication
+
+3. **Authorization Failure Scenario**
+   - Access Reports Page with Non-Hotel Owner Role
+
+4. **Invalid Parameters Scenario**
+   - Generate Report with Invalid Date Range
+
+5. **Empty Parameters Scenario**
+   - Generate Report without Selecting Parameters
+
+6. **Report Details View Scenario**
+   - View Details of a Generated Report
+
+7. **Navigation Scenario**
+   - Navigate to Reports Page Successfully
+
+8. **Parameter Validation Error Scenario**
+   - Display Error for Invalid Report Parameters
+
+9. **Report Generation Error Scenario**
+   - Error During Report Generation Process
+
+10. **Report Download Scenario**
+    - Download Generated Report
+
+11. **Report Print Scenario**
+    - Print Generated Report
+
+12. **Report Email Scenario**
+    - Email Generated Report
+
+13. **Large Date Range Scenario**
+    - Generate Report for an Extensively Large Date Range
+
+14. **Short Date Range Scenario**
+    - Generate Report for a Very Short Date Range
+
+15. **No Data Available Scenario**
+    - Generate Report with No Available Data for Selected Parameters
+
+16. **Multiple Reports Generation Scenario**
+    - Generate Multiple Reports Sequentially
+
+17. **Concurrent Reports Generation Scenario**
+    - Generate Multiple Reports Concurrently
+
+18. **Session Timeout Scenario**
+    - Session Times Out Before Report Generation Completion
+
+19. **Report Format Selection Scenario**
+    - Select Different Formats for Report Generation (PDF, Excel, etc.)
+
+20. **Report Parameter Reset Scenario**
+    - Reset Report Parameters after Error

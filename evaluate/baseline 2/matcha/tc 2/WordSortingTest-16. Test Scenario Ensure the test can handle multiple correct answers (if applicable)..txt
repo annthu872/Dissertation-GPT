@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer handling in word sorting test
+objective: Ensure the system correctly identifies and accepts a correct answer in the word sorting test.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters in correct order and press enter.
+expectedResult: A green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer handling in word sorting test
+objective: Ensure the system correctly identifies and rejects an incorrect answer in the word sorting test.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in incorrect order and press enter.
+expectedResult: A red pop-up screen should appear indicating the answer is wrong.
+
+Test Case: Test Case 3
+testCaseName: Verify handling of multiple correct answers in word sorting test
+objective: Ensure the system can handle and accept multiple correct answers if applicable in the word sorting test.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to the word sorting test where multiple correct answers are possible.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters in one correct order and press enter.
+  - Step 5: Repeat the test with an alternative correct order of letters if applicable.
+expectedResult: A green pop-up screen should appear for each correct arrangement, indicating the answers are correct.
+

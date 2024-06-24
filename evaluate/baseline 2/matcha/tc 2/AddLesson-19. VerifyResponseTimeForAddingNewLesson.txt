@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify successful addition of a new lesson
+objective: Verify that the administrator can successfully add a new English learning lesson and is redirected to the adding topic to new lesson section.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+
+Test Case: Test Case 2
+testCaseName: Verify response time for adding a new lesson
+objective: Ensure that the response time for adding a new lesson does not exceed the acceptable threshold.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson and start a timer.
+  - Step 7: Stop the timer once the system has finished processing and has redirected to the adding topic to new lesson section.
+expectedResult: The total time taken from selecting 'Save' to being redirected should not exceed the predefined acceptable threshold.
+
+Test Case: Test Case 3
+testCaseName: Verify error handling when adding a lesson with an already used name
+objective: Ensure the system prompts the administrator to use a different lesson name if the entered name is already in use.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name for the lesson that is already used in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should show a notification that the name is already used, prompting the Administrator to add another name in the name field.
+
+Test Case: Test Case 4
+testCaseName: Verify cancellation functionality during lesson addition
+objective: Ensure that the administrator can cancel the process of adding a new lesson at any time before saving.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Cancel' to stop adding the new lesson.
+expectedResult: The system should cancel the lesson addition process and may redirect the administrator to the previous page or the main dashboard.
+

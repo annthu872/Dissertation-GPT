@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Empty Author Field
+objective: Verify that the system prevents updating a book record with an empty 'Author' field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Author' field leaving it empty.
+  - Step 4: Fill in the other fields ('Title', 'Genre', 'Description', 'Publication date') with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the 'Author' field cannot be empty and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on a Book
+objective: Verify that the book update operation can be cancelled without making any changes to the book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying data in the form fields ('Title', 'Author', 'Genre', 'Description', 'Publication date').
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book record in the database and should display the list of book records to the user.
+
+Test Case: Test Case 3
+testCaseName: Successful Book Update with Valid Data
+objective: Verify that a book record can be successfully updated with all required fields filled with valid data.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Fill in all fields ('Title', 'Author', 'Genre', 'Description', 'Publication date') with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should update the book record in the database and display the updated list of books with the changes reflected.
+

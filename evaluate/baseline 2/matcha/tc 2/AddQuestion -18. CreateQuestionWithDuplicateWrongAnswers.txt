@@ -1,0 +1,64 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Valid Data
+objective: Verify that the admin can successfully create a question with valid data including unique wrong answers
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Input the correct answer in the 'correct answer' field.
+  - Step 10: Input three different wrong answers in 'other option 1', 'other option 2', 'other option 3' fields.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Create Question With Duplicate Wrong Answers
+objective: Verify that the system prevents the creation of a question with duplicate wrong answers
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Input the correct answer in the 'correct answer' field.
+  - Step 10: Input the same wrong answer in 'other option 1', 'other option 2', 'other option 3' fields.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system displays an error message indicating that wrong answers must be unique and does not save the question.
+
+Test Case: Test Case 3
+testCaseName: Cancel Creating Question
+objective: Verify that admin can cancel the creation of a question and confirm to stay on the page
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, select the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the entered data preserved.
+
+Test Case: Test Case 4
+testCaseName: Create Question With Invalid Sentence
+objective: Verify that the system prevents the creation of a question with an invalid sentence
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with an invalid sentence (e.g., more than 250 characters or contains special characters).
+  - Step 9: Press the 'Save' button.
+expectedResult: The system displays an error message indicating that the sentence is invalid and does not save the question.
+

@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Successful Login with Username
+objective: Verify that the learner can successfully login using a registered username and corresponding password
+testSteps:
+  - Step 1: Fill in the username field with a valid, registered username.
+  - Step 2: Fill in the password field with the correct password for the username.
+  - Step 3: Press the 'Login' button.
+expectedResult: The learner is redirected to the Home page.
+
+Test Case: Test Case 2
+testCaseName: Successful Login with Email
+objective: Verify that the learner can successfully login using a registered email and corresponding password
+testSteps:
+  - Step 1: Fill in the username field with a valid, registered email.
+  - Step 2: Fill in the password field with the correct password for the email.
+  - Step 3: Press the 'Login' button.
+expectedResult: The learner is redirected to the Home page.
+
+Test Case: Test Case 3
+testCaseName: Login with Wrong Password
+objective: Verify that the system shows a notification for wrong password when the learner enters a wrong password for a username
+testSteps:
+  - Step 1: Fill in the username field with a valid, registered username.
+  - Step 2: Fill in the password field with a wrong password.
+  - Step 3: Press the 'Login' button.
+expectedResult: The system shows a notification that the password is wrong.
+
+Test Case: Test Case 4
+testCaseName: Login with Unregistered Username
+objective: Verify that the system shows a notification for an unregistered username when the learner enters a username that is not registered
+testSteps:
+  - Step 1: Fill in the username field with an unregistered username.
+  - Step 2: Fill in the password field with any password.
+  - Step 3: Press the 'Login' button.
+expectedResult: The system shows a notification that this username is not registered yet.
+
+Test Case: Test Case 5
+testCaseName: Login with Blank Username Field
+objective: Verify that the system shows a notification for a required username field when the learner leaves the username field blank
+testSteps:
+  - Step 1: Leave the username field blank.
+  - Step 2: Fill in the password field with any password.
+  - Step 3: Press the 'Login' button.
+expectedResult: The system shows a notification that the username field needs to be filled.
+
+Test Case: Test Case 6
+testCaseName: Login with Blank Password Field
+objective: Verify that the system shows a notification for a required password field when the learner leaves the password field blank
+testSteps:
+  - Step 1: Fill in the username field with a valid, registered username.
+  - Step 2: Leave the password field blank.
+  - Step 3: Press the 'Login' button.
+expectedResult: The system shows a notification that the password field needs to be filled.
+

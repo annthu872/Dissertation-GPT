@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Handbook Tab
+objective: Verify that the learner can navigate to the Handbook tab and view their vocabulary list
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+expectedResult: The system displays the learner's vocabulary list with word name, word type, word meaning, memorization level, and a checkbox for each word.
+
+Test Case: Test Case 2
+testCaseName: Verify Vocabulary Search Functionality in Handbook
+objective: Verify that the learner can search for specific vocabulary in the Handbook
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Press the search bar.
+  - Step 3: Enter the word to search.
+expectedResult: The system filters and displays vocabulary containing characters entered by the learner in the search bar.
+
+Test Case: Test Case 3
+testCaseName: Verify Search for Meaningless Vocabulary in Handbook
+objective: Verify that the system notifies the learner when there are no search results for a meaningless word
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Press the search bar.
+  - Step 3: Enter a meaningless word to search.
+expectedResult: The system notifies that there are no suitable search results.
+
+Test Case: Test Case 4
+testCaseName: Verify Excluding Vocabulary from Daily Review Test
+objective: Verify that the learner can exclude a word from appearing in the daily review test
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Scroll to find a specific vocabulary.
+  - Step 3: Untick the checkbox of a vocabulary.
+expectedResult: The system marks that vocabulary will not appear in the daily review test.
+
+Test Case: Test Case 5
+testCaseName: Verify Including Vocabulary in Daily Review Test
+objective: Verify that the learner can include a word to appear in the daily review test
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Scroll to find a specific vocabulary.
+  - Step 3: Tick the checkbox of a vocabulary.
+expectedResult: The system marks that vocabulary will appear in the daily review test.
+

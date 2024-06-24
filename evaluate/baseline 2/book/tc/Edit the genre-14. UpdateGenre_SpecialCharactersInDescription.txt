@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Special Characters in Description
+objective: Verify that the system allows updating the genre with special characters in the description field
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the displayed form, enter or modify the name of the genre.
+  - Step 4: Enter special characters (e.g., !@#$%^&*()) in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should accept the special characters in the description field and update the genre record in the database. The user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Genre and Cancel
+objective: Verify that the genre update is not saved when the user cancels the operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering or modifying the genre's name and description.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not save any changes made to the genre record. The user should be redirected to the list of genres without any updates to the records.
+
+Test Case: Test Case 3
+testCaseName: Update Genre with Incorrect Data
+objective: Verify that the system displays error messages for incorrectly entered data in the genre form
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter incorrect data in the genre form (e.g., leave the 'Name' field empty, enter invalid characters in the 'Description').
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display error messages indicating the incorrect data fields. The genre should not be updated in the database until the errors are corrected.
+
+Test Case: Test Case 4
+testCaseName: Update Genre with Valid Data
+objective: Verify that the system updates the genre record when all required fields are filled with valid data
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter valid data in all required fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should successfully update the genre record in the database with the provided valid data. The user should be redirected to the list of genres with the updated record displayed.
+

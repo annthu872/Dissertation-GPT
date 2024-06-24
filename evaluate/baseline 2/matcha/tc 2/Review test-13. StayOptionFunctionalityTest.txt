@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Verify Review Functionality Success Path
+objective: Ensure that learners can successfully review words using the review functionality and the system updates the memory level accordingly.
+testSteps:
+  - Step 1: Log in as a learner with words in the review words list.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review's screen.
+  - Step 4: Engage with the review by selecting the correct answers for each word presented.
+  - Step 5: Press the 'Continue' button to proceed to the next word after selecting the right answer.
+  - Step 6: Complete the review for the last word in the review words list.
+  - Step 7: Press the 'Continue' button to go back to the Home page.
+expectedResult: After completing the review, the system should update the memory level of each word reviewed and redirect the learner to the Home page with the review saved.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Answer Handling in Review
+objective: To verify that the system correctly handles incorrect answers by decreasing the memory level of the word.
+testSteps:
+  - Step 1: Log in as a learner and start a review session.
+  - Step 2: Select an incorrect answer for a word.
+  - Step 3: Observe the feedback from the system.
+  - Step 4: Press 'Continue' to proceed with the review.
+expectedResult: The system should show a red word indicating the wrong selection and decrease the memory level of the word.
+
+Test Case: Test Case 3
+testCaseName: Verify Review Completion and Saving
+objective: To ensure that the system saves the review session upon completion and updates the vocabulary status accordingly.
+testSteps:
+  - Step 1: Complete a review session by reviewing all words in the list and selecting the correct answers.
+  - Step 2: Press the 'Continue' button after the last word to finish the review session.
+  - Step 3: Verify redirection to the Home page.
+expectedResult: The system should save the review session and update the status of the vocabulary based on the review results.
+
+Test Case: Test Case 4
+testCaseName: Verify Functionality of 'Stay' Option When Exiting Review
+objective: To ensure that the 'Stay' option works correctly when a learner attempts to exit the review session.
+testSteps:
+  - Step 1: Begin a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select the 'Stay' button.
+  - Step 4: Continue with the review.
+expectedResult: The system should allow the learner to continue with the review session without losing progress.
+
+Test Case: Test Case 5
+testCaseName: Verify Functionality of 'Exit' Option During Review
+objective: To confirm that selecting 'Confirm' after pressing 'Exit' correctly exits the review session without saving.
+testSteps:
+  - Step 1: Start a review session and press the 'Exit' button.
+  - Step 2: On the pop-up, select the 'Confirm' button.
+  - Step 3: Verify redirection to the Home page.
+expectedResult: The system should redirect the learner to the Home page without saving the review session.
+

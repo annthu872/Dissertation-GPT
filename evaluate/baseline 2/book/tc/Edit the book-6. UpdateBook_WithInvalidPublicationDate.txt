@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Publication Date
+objective: Verify that the system prevents updating a book with an invalid publication date and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter or modify the details for the book, including entering an invalid format for the publication date (e.g., '30-02-2023').
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the publication date is invalid and prevent the book record from being updated.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Book
+objective: Verify that the system does not update book details in the database when the 'Cancel' button is pressed during an update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book details in the provided form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book details in the database and should display the list of book records to the user.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Valid Data
+objective: Verify that the system updates the book record in the database when all entered data is valid
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, correctly enter or modify the details for the book, including a valid publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should successfully update the book record in the database and display the list of books with the updated records.
+

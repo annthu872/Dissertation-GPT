@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Verify Handbook Functionality on Desktop
+objective: Ensure the Handbook tab displays and functions correctly on desktop devices
+testSteps:
+  - Step 1: Log into the application using a desktop device.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the list of vocabulary displayed.
+  - Step 4: Scroll through the vocabulary list.
+expectedResult: The vocabulary list should be displayed in vertical rows with each word in a horizontal row showing the word name, word type, word meaning, memorization level, and a checkbox. The list should be scrollable.
+
+Test Case: Test Case 2
+testCaseName: Verify Handbook Search Functionality on Tablet
+objective: Ensure the search functionality in the Handbook works correctly on tablet devices
+testSteps:
+  - Step 1: Log into the application using a tablet device.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a word to search.
+  - Step 5: Observe the filtered vocabulary list.
+expectedResult: The system should filter and display vocabulary containing characters entered by the learner in the search bar.
+
+Test Case: Test Case 3
+testCaseName: Verify Handling of Meaningless Vocabulary Search on Smartphone
+objective: Ensure the system correctly notifies when a search for a meaningless word is performed on a smartphone
+testSteps:
+  - Step 1: Log into the application using a smartphone.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+  - Step 5: Observe the system's response.
+expectedResult: The system should notify that there are no suitable search results for the meaningless word entered.
+
+Test Case: Test Case 4
+testCaseName: Verify Vocabulary Exclusion from Review Test on Desktop
+objective: Ensure learners can exclude vocabulary from the review test on desktop devices
+testSteps:
+  - Step 1: Log into the application using a desktop device.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Untick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's response.
+expectedResult: The system should mark the unticked vocabulary word as excluded from the daily review test.
+
+Test Case: Test Case 5
+testCaseName: Verify Vocabulary Inclusion in Review Test on Tablet
+objective: Ensure learners can include vocabulary in the review test on tablet devices
+testSteps:
+  - Step 1: Log into the application using a tablet device.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Tick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's response.
+expectedResult: The system should mark the ticked vocabulary word as included in the daily review test.
+

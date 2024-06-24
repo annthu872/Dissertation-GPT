@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Author Creation
+objective: Verify that a new author record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the author's name and biography in the respective fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new author record is visible in the list of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Error Message on Database Error
+objective: Ensure that an appropriate error message is displayed when there is a database error during author creation
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the author's name and biography with valid data.
+  - Step 4: Simulate a database error (This step may require a specific setup to induce a database error condition).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that there was a problem adding the author to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Author Creation
+objective: Verify that no data is saved and the user is redirected back to the list of authors when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering the author's name and biography.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: No data is saved to the database, and the user is redirected back to the list of authors.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away From Creation Page Does Not Save Data
+objective: Ensure that navigating away from the author creation page without submitting does not save any data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering the author's name and biography.
+  - Step 4: Without pressing 'Submit', navigate to another page (e.g., 'Books', 'Genres').
+expectedResult: The user is redirected to the selected page without saving any author data, and no new author record is created.
+

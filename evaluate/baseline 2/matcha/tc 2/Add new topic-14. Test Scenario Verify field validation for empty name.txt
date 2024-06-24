@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify field validation for empty name field when adding new topic
+objective: Ensure the system validates for empty name field and prompts the user with an appropriate message when trying to add a new topic
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Leave the name field empty.
+  - Step 4: Fill in the description field with a valid description.
+  - Step 5: Click on 'Save' to attempt creating a new topic.
+expectedResult: The system should display an error message indicating that the name field cannot be empty and prevent the creation of a new topic.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a new topic with a name that already exists
+objective: To verify that the system prevents the creation of a new topic with a name that already exists and provides an appropriate notification
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic.
+  - Step 4: Fill in the description field with a valid description.
+  - Step 5: Click on 'Save' to attempt creating a new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field.
+  - Step 7: Click on 'Save' again to create the topic.
+expectedResult: After step 5, the system should display a notification that the name is already used. After step 7, the system should successfully create the new topic and redirect the Administrator to the adding vocabulary to new topic section.
+
+Test Case: Test Case 3
+testCaseName: Verify the ability to cancel adding a new topic
+objective: To ensure that the Administrator can cancel the process of adding a new topic at any time and no new topic is created
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Start filling in the name and description fields.
+  - Step 4: Click on 'Cancel' to stop the process of adding a new topic.
+expectedResult: The system should cancel the process of adding a new topic and no new topic should be created. The Administrator should remain on the 'Add new topic' page or be redirected to the previous page.
+

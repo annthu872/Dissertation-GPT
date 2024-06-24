@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Validate Learning Days History with Normal Data Volume
+objective: Verify that the system accurately displays the number of continuous learning days under normal data volume conditions.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, the learner selects 'Day History' on the History page.
+  - Step 4: Observe the displayed number of continuous learning days.
+expectedResult: The system should accurately display the number of continuous learning days without any errors or delays.
+
+Test Case: Test Case 2
+testCaseName: Validate Learning Days History with High Data Volume
+objective: Verify that the system can handle and accurately display the number of continuous learning days under high data volume conditions.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application with a history of high volume learning days data.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, the learner selects 'Day History' on the History page.
+  - Step 4: Observe the displayed number of continuous learning days.
+expectedResult: The system should handle the high data volume efficiently and accurately display the number of continuous learning days without any performance degradation.
+

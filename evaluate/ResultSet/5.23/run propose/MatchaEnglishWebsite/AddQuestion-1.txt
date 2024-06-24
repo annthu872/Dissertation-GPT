@@ -1,12 +1,14 @@
-1. Scenario: Sentence field skipped during question creation
-2. Scenario: Sentence field exceeds 250 characters
-3. Scenario: Sentence field contains special characters
-4. Scenario: Correct answer field skipped
-5. Scenario: Other option 1 field skipped
-6. Scenario: Other option 2 field skipped
-7. Scenario: Other option 3 field skipped
-8. Scenario: Successful Creation of a Selection Test Question
-9. Scenario: Cancel Creation of a Selection Test Question
-10. Scenario: Attempt to Save with Incomplete Required Fields
-11. Scenario: Attempt to Save with Invalid Sentence (Exceeds Character Limit)
-12. Scenario: Attempt to Save with Invalid Sentence (Contains Special Characters)
+Sentence field skipped
+Sentence field over 250 characters
+Sentence field contains special characters
+Correct answer field skipped
+Other option 1 field skipped
+Other option 2 field skipped
+Other option 3 field skipped
+Successful creation of a selection test question
+Admin inputs an invalid sentence and attempts to save the question
+Admin cancels the creation of a selection test question
+Admin Accesses Lesson Management from Homepage
+Cancel and Stay While Creating Question
+Admin Leaves Without Saving by Using Browser Back Button
+Admin Cancels Question Creation and Confirms Cancellation

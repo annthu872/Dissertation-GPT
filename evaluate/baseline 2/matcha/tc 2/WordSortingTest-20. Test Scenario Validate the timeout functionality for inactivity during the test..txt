@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Validate successful word arrangement without timeout
+objective: Verify that the learner can successfully arrange the letters in the correct order and submit before the timeout.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test.
+  - Step 3: Arrange the letters in the correct order for the given word.
+  - Step 4: Press enter to submit the answer before the timeout.
+expectedResult: The pop-up screen should be green, indicating the answer is correct, and the word should be marked as studied.
+
+Test Case: Test Case 2
+testCaseName: Validate unsuccessful word arrangement with a wrong answer
+objective: Verify that the learner receives immediate feedback when submitting a wrong answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test.
+  - Step 3: Deliberately arrange the letters in the wrong order for the given word.
+  - Step 4: Press enter to submit the wrong answer.
+expectedResult: The pop-up screen should be red, indicating the answer is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Validate inactivity timeout during the test
+objective: Verify that the system logs the learner out or marks the test as failed if there is inactivity for a specified duration.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test and wait for the inactivity timeout to be triggered without interacting with the test.
+expectedResult: The system should either log the learner out due to inactivity or mark the test attempt as failed, depending on the system's configured response to inactivity.
+

@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify successful addition of a new topic with valid description length
+objective: Ensure that the administrator can successfully add a new topic with a description that meets the maximum length criteria
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description within the allowed maximum length in the description field.
+  - Step 5: Click 'Save' to create the new topic.
+expectedResult: The system should successfully create the new topic and redirect the administrator to the adding vocabulary to new topic section, with the new topic appearing in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Verify validation message for exceeding maximum length in description field
+objective: To check if the system prompts a validation message when the description exceeds the maximum length allowed
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description that exceeds the maximum length allowed in the description field.
+  - Step 5: Click 'Save' to attempt creating the new topic.
+expectedResult: The system should display a validation message indicating that the description exceeds the maximum length allowed and prevent the creation of the new topic.
+
+Test Case: Test Case 3
+testCaseName: Verify system behavior when adding a topic with an already used name
+objective: Ensure that the system prevents the creation of a new topic with a name that is already in use and prompts the administrator to use a different name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used in the name field.
+  - Step 4: Enter a valid description in the description field.
+  - Step 5: Click 'Save' to attempt creating the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field.
+  - Step 7: Click 'Save' again.
+expectedResult: The system should initially show a notification that the name is already used, and after entering a new name, it should successfully create the new topic and proceed as per the postconditions.
+
+Test Case: Test Case 4
+testCaseName: Verify cancellation of adding a new topic
+objective: To ensure that the administrator can cancel the process of adding a new topic at any time before saving
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Begin to enter details for a new topic.
+  - Step 4: Select 'Cancel' to stop the process of adding a new topic.
+expectedResult: The system should cancel the process of adding a new topic and not save any entered information, returning the administrator to the previous page or state.
+

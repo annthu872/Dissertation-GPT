@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer submission using Enter button
+objective: Ensure that the system correctly evaluates and accepts a correct answer when the Enter button is pressed by the learner
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The system displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters in the correct order by clicking on the letter buttons.
+  - Step 5: Press the Enter button to submit the answer.
+expectedResult: A green pop-up screen should appear indicating that the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer submission using Enter button
+objective: Ensure that the system correctly evaluates and rejects an incorrect answer when the Enter button is pressed by the learner
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The system displays a question with letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order by clicking on the letter buttons.
+  - Step 5: Press the Enter button to submit the answer.
+expectedResult: A red pop-up screen should appear indicating that the answer is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Verify submission without arranging letters
+objective: Ensure that the system prompts the learner to arrange letters before submitting an answer using the Enter button
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The system displays a question with letters arranged randomly.
+  - Step 4: Without arranging the letters, directly press the Enter button.
+expectedResult: The system should prompt the learner to arrange the letters before submitting an answer.
+

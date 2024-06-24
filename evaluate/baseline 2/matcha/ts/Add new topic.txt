@@ -1,0 +1,20 @@
+1. Test Scenario: Verify navigation to "Add new topic" tab
+2. Test Scenario: Verify redirection to adding topic viewing page
+3. Test Scenario: Verify input functionality in the name field
+4. Test Scenario: Verify input functionality in the description field
+5. Test Scenario: Verify saving a new topic
+6. Test Scenario: Verify adding a topic with an already used name
+7. Test Scenario: Verify system notification for used topic name
+8. Test Scenario: Verify adding a unique name after notification
+9. Test Scenario: Verify cancel functionality during topic addition
+10. Test Scenario: Verify preconditions - Administrator login
+11. Test Scenario: Verify preconditions - Administrator permissions
+12. Test Scenario: Verify postconditions - Redirection to adding vocabulary section
+13. Test Scenario: Verify postconditions - New topic appears in the topic list
+14. Test Scenario: Verify field validation for empty name
+15. Test Scenario: Verify field validation for empty description
+16. Test Scenario: Verify maximum length validation for the name field
+17. Test Scenario: Verify maximum length validation for the description field
+18. Test Scenario: Verify adding a topic with special characters in the name
+19. Test Scenario: Verify adding a topic with HTML tags in the description
+20. Test Scenario: Verify system behavior when network connection is lost before saving

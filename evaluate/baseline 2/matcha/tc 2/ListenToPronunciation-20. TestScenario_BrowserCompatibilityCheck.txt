@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Browser Compatibility on Chrome
+objective: Verify that the Listening Pronunciation Test Quest works correctly on Chrome browser
+testSteps:
+  - Step 1: Log into the application using Chrome browser.
+  - Step 2: Navigate to the review test function and select a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and choose the corresponding answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: The pop-up screen should turn green if the answer is correct, and red if the answer is wrong.
+
+Test Case: Test Case 2
+testCaseName: Browser Compatibility on Firefox
+objective: Verify that the Listening Pronunciation Test Quest works correctly on Firefox browser
+testSteps:
+  - Step 1: Log into the application using Firefox browser.
+  - Step 2: Navigate to the review test function and select a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and choose the corresponding answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: The pop-up screen should turn green if the answer is correct, and red if the answer is wrong.
+
+Test Case: Test Case 3
+testCaseName: Browser Compatibility on Safari
+objective: Verify that the Listening Pronunciation Test Quest works correctly on Safari browser
+testSteps:
+  - Step 1: Log into the application using Safari browser.
+  - Step 2: Navigate to the review test function and select a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and choose the corresponding answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: The pop-up screen should turn green if the answer is correct, and red if the answer is wrong.
+
+Test Case: Test Case 4
+testCaseName: Browser Compatibility on Edge
+objective: Verify that the Listening Pronunciation Test Quest works correctly on Edge browser
+testSteps:
+  - Step 1: Log into the application using Edge browser.
+  - Step 2: Navigate to the review test function and select a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and choose the corresponding answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: The pop-up screen should turn green if the answer is correct, and red if the answer is wrong.
+

@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify successful cancellation before data submission in Add New Author
+objective: Ensure that the cancellation operation before submitting new author data prevents data from being saved and redirects the user to the author list page.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Start entering author data into the form fields (Name, Bio).
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should redirect the user to the list of authors, displaying the existing records without the addition of the new author.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation away from Add New Author page prevents data submission
+objective: To confirm that navigating away from the Add New Author page by selecting another menu item (Books, Genres, Authors, Home, API) cancels the add operation and does not save any entered data.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to initiate the process of adding a new author.
+  - Step 3: Begin entering data into the form fields for the new author (Name, Bio).
+  - Step 4: Without submitting the new author form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the partially entered data for the new author and should display the selected page content without adding a new author record to the database.
+

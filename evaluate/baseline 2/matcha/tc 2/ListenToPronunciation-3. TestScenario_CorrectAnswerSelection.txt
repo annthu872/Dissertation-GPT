@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Correct Answer Selection in Listening Pronunciation Test
+objective: To ensure that when a learner selects the correct answer in a listening pronunciation test, the system accurately recognizes the answer and displays a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word based on its pronunciation and select the correct answer.
+  - Step 5: Observe the system's response after the answer selection.
+expectedResult: After selecting the correct answer, a green pop-up screen should appear indicating the correct selection.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Answer Selection in Listening Pronunciation Test
+objective: To ensure that when a learner selects the wrong answer in a listening pronunciation test, the system accurately recognizes the incorrect answer and displays a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word based on its pronunciation and select an incorrect answer.
+  - Step 5: Observe the system's response after the answer selection.
+expectedResult: After selecting the wrong answer, a red pop-up screen should appear indicating the incorrect selection.
+

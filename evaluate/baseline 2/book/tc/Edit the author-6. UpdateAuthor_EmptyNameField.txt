@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the application prevents updating an author record with an empty name field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Optionally, update the 'Bio' field with valid data.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The application should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation for an Author
+objective: Verify that the application does not update author data in the database when the 'Cancel' button is clicked after making changes.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter or modify data in the 'Name' and/or 'Bio' fields.
+  - Step 4: Click the 'Cancel' button.
+expectedResult: The application should not update the author's data in the database and should display the list of author records without applying the changes.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away from Update Author Page Without Saving
+objective: Verify that the application does not update author data in the database when navigating away from the update page without saving.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter or modify data in the 'Name' and/or 'Bio' fields.
+  - Step 4: Without clicking 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not update the author's data in the database and should display the selected page without applying the changes.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of All Books Without Date Filter
+objective: Verify that the application displays the list of books without applying date filters and allows pagination
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date filter.
+  - Step 3: Click the 'Next' button or select a page number to navigate through the book list.
+expectedResult: The application should display up to 10 books per page without any date filter applied. Pagination should work correctly, allowing the user to view additional books.
+
+Test Case: Test Case 2
+testCaseName: Verify Books List Filtering by Single Date
+objective: Verify that the application correctly filters the list of books within a specified single date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter the same date in both 'From' and 'To' date input forms above the data.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+expectedResult: The application should display a list of books that were published on the specified date. No books outside this date should be shown.
+
+Test Case: Test Case 3
+testCaseName: Verify Books List Filtering by Date Range
+objective: Verify that the application correctly filters the list of books within a user-provided date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a start date in the 'From' date input form and an end date in the 'To' date input form.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+expectedResult: The application should display a list of books whose publication dates fall within the specified date range. No books outside this range should be shown.
+
+Test Case: Test Case 4
+testCaseName: Verify Columns in Books List
+objective: Verify that the books list displays all required columns correctly
+testSteps:
+  - Step 1: Navigate to the Books page, with or without applying date filters.
+  - Step 2: Observe the columns in the list.
+expectedResult: The list should display the following columns for each book: id, Title, Author, Genre, and Publication date.
+

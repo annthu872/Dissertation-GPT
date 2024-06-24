@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer selection in Listening Pronunciation Test
+objective: To ensure that the system correctly identifies and responds to the learner's correct answer selection during a Listening Pronunciation Test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start the Listening Pronunciation Test.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select the correct answer from the given options.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the correct answer, a pop-up screen should appear in green, indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer selection in Listening Pronunciation Test
+objective: To ensure that the system correctly identifies and responds to the learner's incorrect answer selection during a Listening Pronunciation Test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start the Listening Pronunciation Test.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select the wrong answer from the given options.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the wrong answer, a pop-up screen should appear in red, indicating the answer is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Verify no answer selection in Listening Pronunciation Test
+objective: To ensure that the system prompts the user when no answer is selected during a Listening Pronunciation Test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start the Listening Pronunciation Test.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Do not select any answer and attempt to submit.
+expectedResult: The system should prevent submission and prompt the user to select an answer before proceeding.
+

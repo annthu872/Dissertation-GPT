@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Next Question After Correct Answer
+objective: Ensure that after selecting the correct answer for a listening pronunciation test question, the learner is able to proceed to the next question.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start the listening pronunciation test.
+  - Step 3: The screen displays the test with a speaker button. Press the speaker button to listen to the word.
+  - Step 4: Guess the entire word and choose the correct answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: After choosing the correct answer, a green pop-up screen should appear, indicating the correct selection. The system should then automatically navigate to the next question.
+
+Test Case: Test Case 2
+testCaseName: Verify Feedback on Wrong Answer Selection
+objective: To confirm that the system provides immediate feedback through a red pop-up screen when a learner selects a wrong answer in the listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start the listening pronunciation test.
+  - Step 3: The screen displays the test with a speaker button. Press the speaker button to listen to the word.
+  - Step 4: Guess the entire word and choose the wrong answer.
+  - Step 5: Observe the color of the pop-up screen.
+expectedResult: Upon choosing a wrong answer, a red pop-up screen should appear, indicating the incorrect selection. The system may prompt the user to try again or proceed based on the application's design.
+

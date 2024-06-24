@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Valid Login and Access Listening Pronunciation Test
+objective: Verify that a learner can log in and access the listening pronunciation test question and correctly guess the word.
+testSteps:
+  - Step 1: Log into the application with valid credentials.
+  - Step 2: Navigate to the review test section.
+  - Step 3: Select a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word and choose the correct answer from the options provided.
+  - Step 6: Submit the answer.
+expectedResult: After submitting the correct answer, a green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Access Listening Pronunciation Test and Choose Wrong Answer
+objective: Verify that a learner receives immediate feedback when selecting the wrong answer in a listening pronunciation test question.
+testSteps:
+  - Step 1: Log into the application with valid credentials.
+  - Step 2: Navigate to the review test section.
+  - Step 3: Select a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word and intentionally choose a wrong answer from the options provided.
+  - Step 6: Submit the answer.
+expectedResult: After submitting the wrong answer, a red pop-up screen should appear indicating the answer is incorrect.
+

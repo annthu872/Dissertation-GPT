@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Valid Genre Details
+objective: Verify that the application correctly displays the details of a user-selected genre, including id, Name, and Description
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: From the list of genres, click on the 'Name' of a specific genre.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns correctly filled: id (unique genre number), Name, and Description.
+

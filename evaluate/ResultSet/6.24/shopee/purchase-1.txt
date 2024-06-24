@@ -1,0 +1,12 @@
+1. Successful Checkout with Single Shop Items
+2. Successful Checkout with Multiple Shops Items
+3. Select All Items from One Store Scenario
+4. Purchase from Product Detail Page Scenario
+5. Adjust Quantity Before Checkout in Product Detail Scenario
+6. Product in cart becomes out of stock
+7. Product in cart is erased by the seller
+8. Attempt to checkout with a product that has not had its options selected
+9. Attempt to checkout with a quantity higher than available stock
+10. Attempt to checkout with a quantity less than one
+11. Attempt to checkout a product with no stock
+12. Attempt to checkout a product with an out of stock option

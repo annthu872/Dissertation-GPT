@@ -1,0 +1,78 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Valid Login and Access Review Test",
+    "objective": "Verify that a learner can successfully log in and access the review test function.",
+    "testSteps": [
+      "Step 1: Navigate to the login page.",
+      "Step 2: Enter valid login credentials.",
+      "Step 3: Click on the login button.",
+      "Step 4: Navigate to the review test section."
+    ],
+    "expectedResult": "The learner is logged in and directed to the review test section successfully.",
+    "explanation": "This test case ensures that learners can log in and access the review test, which is a prerequisite for taking the listening pronunciation test."
+  },
+  "Test Case 2": {
+    "testCaseName": "Display Speaker Button",
+    "objective": "Verify that the speaker button is displayed on the listening pronunciation test question.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the review test section.",
+      "Step 2: Start the listening pronunciation test."
+    ],
+    "expectedResult": "The test question is displayed with a speaker button.",
+    "explanation": "This test case checks if the UI correctly displays the speaker button for the listening pronunciation test, as per the use case requirements."
+  },
+  "Test Case 3": {
+    "testCaseName": "Correct Answer Selection",
+    "objective": "Verify that selecting the correct answer works as intended.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the listening pronunciation test.",
+      "Step 2: Click on the speaker button to listen to the word.",
+      "Step 3: Select the correct Vietnamese meaning of the word."
+    ],
+    "expectedResult": "The system accepts the answer and marks it as correct.",
+    "explanation": "This test case validates the system's ability to correctly evaluate and accept the right answer chosen by the learner."
+  },
+  "Test Case 4": {
+    "testCaseName": "Incorrect Answer Selection",
+    "objective": "Verify the system's response when an incorrect answer is selected.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the listening pronunciation test.",
+      "Step 2: Click on the speaker button to listen to the word.",
+      "Step 3: Select the wrong Vietnamese meaning of the word."
+    ],
+    "expectedResult": "The system marks the answer as incorrect.",
+    "explanation": "This test case ensures the system can correctly identify and mark incorrect answers, providing immediate feedback to the learner."
+  },
+  "Test Case 5": {
+    "testCaseName": "Green Popup on Correct Answer",
+    "objective": "Verify that a green popup appears when a correct answer is selected.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the listening pronunciation test.",
+      "Step 2: Select the correct answer for a question."
+    ],
+    "expectedResult": "A green popup screen appears indicating the correct answer.",
+    "explanation": "This test case checks the visual feedback mechanism for correct answers through a green popup, as described in the use case."
+  },
+  "Test Case 6": {
+    "testCaseName": "Red Popup on Incorrect Answer",
+    "objective": "Verify that a red popup appears when an incorrect answer is selected.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the listening pronunciation test.",
+      "Step 2: Select an incorrect answer for a question."
+    ],
+    "expectedResult": "A red popup screen appears indicating the incorrect answer.",
+    "explanation": "This test case checks the visual feedback mechanism for incorrect answers through a red popup, aligning with the use case specifications."
+  },
+  "Test Case 7": {
+    "testCaseName": "Compare Vietnamese Meaning and English Vocabulary",
+    "objective": "Verify the system's comparison between the Vietnamese meaning and the English vocabulary selected by the user.",
+    "testSteps": [
+      "Step 1: Log in and navigate to the listening pronunciation test.",
+      "Step 2: Listen to the word and select the corresponding Vietnamese meaning."
+    ],
+    "expectedResult": "The system correctly compares the selected Vietnamese meaning with the English vocabulary and provides appropriate feedback.",
+    "explanation": "This test case ensures the core functionality of comparing the learner's selected answer with the correct answer works as intended."
+  }
+}
+```

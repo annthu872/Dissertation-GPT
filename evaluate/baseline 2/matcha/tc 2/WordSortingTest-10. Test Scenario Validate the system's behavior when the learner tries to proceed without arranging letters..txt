@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Proceed without arranging letters in the word sorting test
+objective: Verify the system's behavior when the learner tries to proceed without arranging letters in the word sorting test
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Without arranging the letters, press enter or the proceed button.
+expectedResult: The system should prevent the learner from proceeding without arranging the letters and possibly display a message or indication to arrange the letters before proceeding.
+
+Test Case: Test Case 2
+testCaseName: Correctly arrange letters and proceed in the word sorting test
+objective: Verify that the system allows the learner to proceed and displays a green pop-up screen when the letters are arranged correctly in the word sorting test
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Correctly arrange the letters by clicking on the letter buttons in the correct order.
+  - Step 5: Press enter or the proceed button after arranging the letters correctly.
+expectedResult: The system compares the learner's answer with the correct answer and displays a green pop-up screen, indicating the answer is correct.
+
+Test Case: Test Case 3
+testCaseName: Incorrectly arrange letters and proceed in the word sorting test
+objective: Verify that the system allows the learner to proceed and displays a red pop-up screen when the letters are arranged incorrectly in the word sorting test
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: A question or an image showing the word with its letters arranged randomly is displayed.
+  - Step 4: Incorrectly arrange the letters by clicking on the letter buttons in the wrong order.
+  - Step 5: Press enter or the proceed button after arranging the letters.
+expectedResult: The system compares the learner's answer with the correct answer and displays a red pop-up screen, indicating the answer is incorrect.
+

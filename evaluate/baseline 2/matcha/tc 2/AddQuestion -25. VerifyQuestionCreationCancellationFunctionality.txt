@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Verify successful question creation for a selection test
+objective: Ensure that the Admin can successfully create a question for the selection test by filling all compulsory fields and saving the information
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in all compulsory fields with valid data including a sentence with '...', a correct answer, and three different wrong answers.
+  - Step 9: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Verify question creation cancellation and choosing to stay
+objective: Ensure that the Admin can cancel the question creation process and choose to stay on the page to continue working on it
+testSteps:
+  - Step 1: Log in as Admin and navigate to the 'Add new question for selection test' page by following steps 1 to 7 of the main flow.
+  - Step 2: Press the button 'Cancel'.
+  - Step 3: In the confirmation dialog, press the button 'Stay'.
+expectedResult: The dialog closes, and the Admin remains on the 'Add new question for selection test' page with the entered data preserved.
+
+Test Case: Test Case 3
+testCaseName: Verify question creation cancellation and confirmation
+objective: Ensure that the Admin can cancel the question creation process and confirm cancellation, leading to redirection to the 'Word Information' page without saving the question
+testSteps:
+  - Step 1: Log in as Admin and navigate to the 'Add new question for selection test' page by following steps 1 to 7 of the main flow.
+  - Step 2: Press the button 'Cancel'.
+  - Step 3: In the confirmation dialog, press the button 'Confirm'.
+expectedResult: The system redirects the Admin to the 'Word Information' page of the selected word, and the question is not saved.
+
+Test Case: Test Case 4
+testCaseName: Verify validation for compulsory fields during question creation
+objective: Ensure that the system validates compulsory fields and prompts the Admin to fill any missed fields before saving the question
+testSteps:
+  - Step 1: Log in as Admin and navigate to the 'Add new question for selection test' page by following steps 1 to 7 of the main flow.
+  - Step 2: Fill in all compulsory fields except one (test this case for each compulsory field: 'sentence', 'correct answer', 'other option 1', 'other option 2', 'other option 3').
+  - Step 3: Press the button 'Save'.
+  - Step 4: Refill the missed field with valid data.
+  - Step 5: Press the button 'Save' again.
+expectedResult: After step 3, the system shows a notification that a compulsory field is missing. After step 5, the system saves the question and redirects the Admin to the 'Word Information' page of the selected word.
+
+Test Case: Test Case 5
+testCaseName: Verify input validation for the 'sentence' field during question creation
+objective: Ensure that the system validates the 'sentence' field for a valid sentence and prompts the Admin if the input is invalid
+testSteps:
+  - Step 1: Log in as Admin and navigate to the 'Add new question for selection test' page by following steps 1 to 7 of the main flow.
+  - Step 2: Fill in the 'sentence' field with an invalid sentence (e.g., exceeding 250 characters or containing special characters), and fill other compulsory fields with valid data.
+  - Step 3: Press the button 'Save'.
+  - Step 4: Correct the 'sentence' field with a valid sentence.
+  - Step 5: Press the button 'Save' again.
+expectedResult: After step 3, the system shows a notification that the 'sentence' is invalid. After step 5, the system saves the question and redirects the Admin to the 'Word Information' page of the selected word.
+

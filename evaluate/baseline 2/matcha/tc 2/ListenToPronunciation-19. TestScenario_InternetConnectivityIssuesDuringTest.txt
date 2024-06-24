@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Internet Connectivity Loss During Listening Pronunciation Test
+objective: Verify the system's behavior when the internet connection is lost during the Listening Pronunciation Test
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and is on the Listening Pronunciation Test question.
+  - Step 2: Start the test by clicking on the speaker button to listen to the word's pronunciation.
+  - Step 3: Disconnect the internet connection before choosing an answer.
+  - Step 4: Attempt to choose an answer and submit.
+expectedResult: The system should notify the learner of the lost internet connection and prompt to reconnect before proceeding.
+
+Test Case: Test Case 2
+testCaseName: Correct Answer Submission with Intermittent Internet Connectivity
+objective: Verify that the system correctly processes a correct answer submission despite intermittent internet connectivity issues
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and is on the Listening Pronunciation Test question.
+  - Step 2: Start the test by clicking on the speaker button to listen to the word's pronunciation.
+  - Step 3: Temporarily lose internet connection and then reconnect.
+  - Step 4: Choose the correct answer and submit after the internet connection is restored.
+expectedResult: The system should accept the answer submission and display a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 3
+testCaseName: Wrong Answer Submission with Intermittent Internet Connectivity
+objective: Verify that the system correctly processes a wrong answer submission despite intermittent internet connectivity issues
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and is on the Listening Pronunciation Test question.
+  - Step 2: Start the test by clicking on the speaker button to listen to the word's pronunciation.
+  - Step 3: Temporarily lose internet connection and then reconnect.
+  - Step 4: Choose the wrong answer and submit after the internet connection is restored.
+expectedResult: The system should accept the answer submission and display a red pop-up screen indicating the answer is wrong.
+

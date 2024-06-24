@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Handbook Loading under High Load
+objective: Verify that the Handbook tab loads efficiently and displays the learner's vocabulary list correctly under high load conditions.
+testSteps:
+  - Step 1: Simulate high load conditions by having a large number of learners access the Handbook tab simultaneously.
+  - Step 2: Learner selects the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the system's response and loading time.
+expectedResult: The system should display the learner's vocabulary list without significant delay, ensuring usability under high load conditions.
+
+Test Case: Test Case 2
+testCaseName: Verify Vocabulary Search Functionality under High Load
+objective: Ensure that learners can search for specific vocabulary in the Handbook efficiently under high load conditions.
+testSteps:
+  - Step 1: Simulate high load conditions by having a large number of learners use the search functionality simultaneously.
+  - Step 2: Learner presses the search bar and enters a word to search.
+  - Step 3: Observe how quickly and accurately the system filters vocabulary containing characters entered by learners.
+expectedResult: The system should filter and display the search results quickly and accurately, even under high load conditions.
+
+Test Case: Test Case 3
+testCaseName: Verify Handling of Meaningless Vocabulary Search under High Load
+objective: To test the system's ability to handle searches for meaningless vocabulary efficiently under high load conditions.
+testSteps:
+  - Step 1: Simulate high load conditions by having a large number of learners search for meaningless vocabulary simultaneously.
+  - Step 2: Learner presses the search bar and enters a meaningless word to search.
+  - Step 3: Observe the system's response to the meaningless search query.
+expectedResult: The system should quickly notify that there are no suitable search results, maintaining performance under high load conditions.
+
+Test Case: Test Case 4
+testCaseName: Verify Vocabulary Review Test Setup under High Load
+objective: Ensure that learners can set up vocabulary for review tests efficiently, both including and excluding specific words, under high load conditions.
+testSteps:
+  - Step 1: Simulate high load conditions by having a large number of learners set up their vocabulary review tests simultaneously.
+  - Step 2: Learner unticks a checkbox of a vocabulary to exclude it from the review test.
+  - Step 3: Learner ticks a checkbox of a different vocabulary to include it in the review test.
+  - Step 4: Observe the system's response and the time it takes to update the review test setup.
+expectedResult: The system should update the review test setup quickly and accurately for both including and excluding vocabulary, ensuring functionality under high load conditions.
+

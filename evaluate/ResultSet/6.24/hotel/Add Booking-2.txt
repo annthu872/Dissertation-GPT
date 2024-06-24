@@ -1,0 +1,5 @@
+1. Successful Booking Creation
+2. Booking Creation with Validation Errors
+3. Booking Creation with Missing Mandatory Fields
+4. Scenario: Total Amount Calculation Failure
+5. Scenario: Invalid field entry during booking creation

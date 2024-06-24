@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Valid Data
+objective: Verify that the genre can be updated with valid name and description
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter a valid name and description for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Whitespace in Name
+objective: Verify that the system displays an error message when trying to update a genre with a name that contains only whitespace
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter only whitespace in the name field and a valid description.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an incorrect data message for the name field, and the genre should not be updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Genre Operation
+objective: Verify that the genre update operation can be canceled without making changes to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The data should not be updated in the database, and the user should be redirected to the list of genre records.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away from Update Genre Page
+objective: Verify that navigating away from the update genre page without submitting does not update the genre in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API' without pressing 'Submit'.
+expectedResult: The genre should not be updated in the database, and the user should be redirected to the selected page without any changes made to the genre.
+

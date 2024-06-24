@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Range Filter
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Books List
+objective: Verify that the user can navigate through different pages of the books list using the pagination feature
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number in the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page, updating the list according to the page selected.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Valid Date Range
+objective: Verify that the user can filter the list of books by specifying a valid date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books filtered by the specified date range.
+expectedResult: The application should display only the books published within the specified date range.
+
+Test Case: Test Case 4
+testCaseName: Verify Filtering Books with Special Characters in Date Range
+objective: Verify that the application handles special characters in the date range fields appropriately
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter special characters (e.g., !@#$%) in the start date and end date input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the behavior of the application.
+expectedResult: The application should display a validation error message indicating that the date format is incorrect.
+
+Test Case: Test Case 5
+testCaseName: Verify Books List Columns
+objective: Verify that the books list displays all required columns
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the columns in the list of books displayed.
+expectedResult: The list of books should display columns for id, Title, Author, Genre, and Publication date.
+

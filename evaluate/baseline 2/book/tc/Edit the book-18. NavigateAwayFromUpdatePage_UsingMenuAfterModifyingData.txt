@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Update Functionality with Valid Data
+objective: Ensure that the book's details can be updated with valid data and the updated details are reflected in the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book's details are updated in the database, and the user is redirected to the list of books with the updated records displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Data Handling
+objective: To verify that the application displays error messages for incorrectly entered data during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter invalid data for any of the book details such as Title, Author, Genre, Description, or Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages indicating the incorrect data, and the book's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation Before Submit
+objective: Ensure that changes are not saved when the 'Cancel' button is pressed before submitting the form.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The application does not update the book's details in the database and redirects the user to the list of book records.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away From Update Page Using Menu After Modifying Data
+objective: To ensure that unsaved changes are not saved when navigating away from the update page using the menu after modifying data.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Modify the data in the form fields but do not press 'Submit'.
+  - Step 4: Navigate away from the page by selecting a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application does not save the unsaved changes and displays the selected page without updating the book's details in the database.
+

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Available Lessons
+objective: Verify that the system displays a list of available lessons after the learner clicks the 'Learn New Word' tab and can select a lesson to view its details.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Observe the list of available lessons displayed by the system.
+  - Step 4: Select a lesson from the list.
+  - Step 5: Observe the details of the selected lesson, including associated topics.
+expectedResult: After clicking the 'Learn New Word' tab, the system should display a list of available lessons. Upon selecting a lesson, the system should display the lesson's details including topics associated with it.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation and Study of Flashcards
+objective: Verify that the learner can navigate through flashcards, flip them to view the back, and proceed through all flashcards in a topic.
+testSteps:
+  - Step 1: Follow steps 1 to 5 from Test Case 1 to choose a topic to study.
+  - Step 2: Click on the first flashcard to flip it and view the back.
+  - Step 3: Click the 'Next' button to go to the next vocabulary word's flashcard.
+  - Step 4: If applicable, click the 'Previous' button to view the previous flashcard.
+  - Step 5: Repeat steps 2 to 4 until all flashcards in the topic have been studied.
+  - Step 6: After studying the last flashcard, click the 'Next' button and observe the redirection to the 'completion notification' page.
+  - Step 7: Click 'return to the lesson page' on the 'completion notification' page.
+expectedResult: The learner should be able to flip through flashcards, navigate to the next and previous flashcards, and upon completing all flashcards in a topic, be redirected to a 'completion notification' page.
+
+Test Case: Test Case 3
+testCaseName: Verify Handling of 'Back' Button During Flashcard Study
+objective: Verify that the system correctly handles the 'back' button actions during flashcard study, including staying on the page or exiting to the topic page.
+testSteps:
+  - Step 1: Follow steps 1 to 7 from Test Case 2 to start studying a flashcard.
+  - Step 2: Press the 'back' button on the browser or application interface.
+  - Step 3: In the exit confirmation dialog box, click 'stay'.
+  - Step 4: Observe that you are returned to the current flashcard.
+  - Step 5: Press the 'back' button again and this time click 'exit'.
+expectedResult: On clicking 'stay', the learner should remain on the current flashcard. On clicking 'exit', the learner should be returned to the topic page with the topic marked as incomplete.
+
+Test Case: Test Case 4
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: Ensure that the 'Previous' button is disabled when the learner is on the first flashcard of a topic.
+testSteps:
+  - Step 1: Follow steps 1 to 5 from Test Case 1 to start studying a topic.
+  - Step 2: Observe the 'Previous' button on the first flashcard.
+expectedResult: The 'Previous' button should be disabled or not clickable when on the first flashcard, indicating there is no previous vocabulary to display.
+

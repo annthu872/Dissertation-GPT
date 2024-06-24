@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_WithEmptyGenre
+objective: Verify that the system prevents updating a book with an empty 'Genre' field and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, clear the 'Genre' field leaving it empty.
+  - Step 4: Fill in or leave the other fields (Title, Author, Description, Publication date) as required or unchanged.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the 'Genre' field cannot be empty and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperationWithEmptyGenre
+objective: Verify that cancelling the update operation with an empty 'Genre' field discards changes and does not update the book in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Genre' field leaving it empty.
+  - Step 4: Optionally modify other fields (Title, Author, Description, Publication date).
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The system should discard any changes made, including the emptied 'Genre' field, and not update the book in the database. The user should be redirected to the list of book records.
+

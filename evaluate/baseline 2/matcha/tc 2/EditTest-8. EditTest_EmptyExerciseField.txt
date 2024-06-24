@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Edit Test with Empty Exercise Field
+objective: Verify that the system prevents saving when an exercise field is left empty by the administrator during the test editing process.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test to be edited, then select 'Edit'.
+  - Step 4: The system redirects to the test editing interface, displaying the list of vocabulary in the topic and category of vocabulary exercises.
+  - Step 5: Attempt to edit an exercise by leaving the exercise field empty.
+  - Step 6: Select 'Save' to attempt saving the edited test.
+expectedResult: The system should display an error message indicating that the exercise field cannot be left empty and prevent saving the changes.
+
+Test Case: Test Case 2
+testCaseName: Edit Test and Save Changes
+objective: Verify that the system successfully saves the edited exercises when the administrator selects 'Save' after editing a test.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test to be edited, then select 'Edit'.
+  - Step 4: The system redirects to the test editing interface, displaying the list of vocabulary in the topic and category of vocabulary exercises.
+  - Step 5: Edit the exercises as required.
+  - Step 6: Select 'Save' to save the edited test.
+expectedResult: The system successfully saves all edited exercises, and a confirmation message is displayed.
+
+Test Case: Test Case 3
+testCaseName: Edit Test and Choose Not to Save Changes
+objective: Verify that the system does not save changes when the administrator chooses 'Do not save' after editing a test.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test to be edited, then select 'Edit'.
+  - Step 4: The system redirects to the test editing interface, displaying the list of vocabulary in the topic and category of vocabulary exercises.
+  - Step 5: Edit the exercises as required.
+  - Step 6: Attempt to exit the exercise editing mode.
+  - Step 7: On the pop-up screen that appears with 'Save changes?' select 'Do not save'.
+expectedResult: The system does not save the edited exercises, and no changes are recorded in the system.
+

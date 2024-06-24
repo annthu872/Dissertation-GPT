@@ -1,0 +1,201 @@
+[
+    {
+        "use_case_name": "Add a new author.txt",
+        "scenarios": [
+            "3. VerifySubmitWithValidData",
+            "4. VerifyErrorMessageForInvalidData",
+            "6. VerifyErrorMessageOnDatabaseError",
+            "8. VerifyCancelOperationBeforeDataSubmission",
+            "10. VerifyNavigationAwayDoesNotSaveData",
+            "12. VerifyMaxLengthValidationForNameField",
+            "13. VerifyMaxLengthValidationForBioField",
+            "16. VerifyUniqueNameConstraint"
+        ]
+    },
+    {
+        "use_case_name": "Add a new book.txt",
+        "scenarios": [
+            "3. VerifySubmitWithValidData",
+            "4. VerifyErrorMessageForInvalidData",
+            "6. VerifyErrorMessageOnDatabaseError",
+            "9. VerifyDataNotSavedOnCancel",
+            "10. VerifyNavigationAwayDoesNotSaveData",
+            "16. VerifyFieldValidationsWithEmptyInputs",
+            "17. VerifyFieldValidationsWithBoundaryValues",
+            "18. VerifyFieldValidationsWithSpecialCharacters",
+            "22. VerifyUniqueConstraintForBookTitle"
+        ]
+    },
+    {
+        "use_case_name": "Add a new genre.txt",
+        "scenarios": [
+            "1. SuccessfulGenreCreation",
+            "3. IncorrectDataEntry",
+            "5. DisplaySuccessMessageOnSuccessfulAddition",
+            "6. CancelOperationWithDataEntered",
+            "7. CancelOperationWithoutDataEntered",
+            "11. ValidateInputFieldsForEmptyData",
+            "12. ValidateInputFieldsForInvalidData",
+            "13. ValidateMaxLengthForNameField",
+            "14. ValidateMaxLengthForDescriptionField",
+            "16. CheckDuplicateGenreNameHandling",
+            "19. CheckErrorResponseHandlingOnDatabaseError",
+            "20. ValidateGenreCreationWithSpecialCharactersInName",
+            "21. ValidateGenreCreationWithHTMLTagsInDescription",
+            "22. CheckLoadingIndicatorDuringDataSubmission",
+            "23. ValidateNavigationToBooksMenuWithoutSaving",
+            "24. ValidateNavigationToGenresMenuWithoutSaving",
+            "25. ValidateNavigationToAuthorsMenuWithoutSaving",
+            "26. ValidateNavigationToHomeMenuWithoutSaving",
+            "27. ValidateNavigationToAPIMenuWithoutSaving"
+        ]
+    },
+    {
+        "use_case_name": "Display author details.txt",
+        "scenarios": [
+            "10. Test Scenario: Verify Navigation from Author List to Author Details"
+        ]
+    },
+    {
+        "use_case_name": "Display book details.txt",
+        "scenarios": [
+            "1. Test Display of Book Details on Click"
+        ]
+    },
+    {
+        "use_case_name": "Display genre details.txt",
+        "scenarios": [
+            "1. Test_DisplayValidGenreDetails"
+        ]
+    },
+    {
+        "use_case_name": "Display the list of authors.txt",
+        "scenarios": [
+            "1. DisplayInitialAuthorsList",
+            "2. PaginationNextButtonFunctionality",
+            "3. PaginationNumberedPageNavigation",
+            "11. LastPageAuthorsListDisplay",
+            "12. FirstPageNavigationFromMiddlePage",
+            "13. LastPageNavigationFromMiddlePage"
+        ]
+    },
+    {
+        "use_case_name": "Display the list of books.txt",
+        "scenarios": [
+            "1. DisplayInitialBooksList",
+            "2. PaginationNextButtonFunctionality",
+            "3. PaginationNumberedPageNavigation",
+            "4. FilterBooksByDateRange",
+            "5. DisplayBooksListWithEmptyDateRange",
+            "6. DisplayBooksListWithInvalidDateRange",
+            "7. DisplayBooksListWithSingleDate",
+            "8. DisplayBooksListWithFutureDateRange",
+            "9. DisplayBooksListWithPastDateRange",
+            "10. DisplayBooksListWithNonexistentDates",
+            "11. DisplayBooksListWithBoundaryDateRange",
+            "19. DisplayBooksListWithSpecialCharactersInDateRange"
+        ]
+    },
+    {
+        "use_case_name": "Display the list of genres.txt",
+        "scenarios": [
+            "1. DisplayInitialGenresList",
+            "2. PaginationNextButtonFunctionality",
+            "3. PaginationNumberedPageNavigation"
+        ]
+    },
+    {
+        "use_case_name": "Edit the author.txt",
+        "scenarios": [
+            "1. UpdateAuthor_SuccessfulUpdate",
+            "3. UpdateAuthor_DatabaseError",
+            "4. UpdateAuthor_CancelOperation",
+            "5. UpdateAuthor_NavigationAwayWithoutSaving",
+            "6. UpdateAuthor_EmptyNameField",
+            "7. UpdateAuthor_InvalidBioCharacters",
+            "8. UpdateAuthor_MaximumLengthExceeded_Name",
+            "9. UpdateAuthor_MaximumLengthExceeded_Bio",
+            "10. UpdateAuthor_MinimumLengthNotMet_Name",
+            "11. UpdateAuthor_MinimumLengthNotMet_Bio",
+            "12. UpdateAuthor_SpecialCharactersInName",
+            "13. UpdateAuthor_HTMLTagsInBio",
+            "14. UpdateAuthor_SQLInjection_NameField",
+            "15. UpdateAuthor_SQLInjection_BioField",
+            "16. UpdateAuthor_XSSAttack_NameField",
+            "17. UpdateAuthor_XSSAttack_BioField",
+            "18. UpdateAuthor_UpdateWithExistingAuthorName",
+            "19. UpdateAuthor_UpdateWithWhitespaceOnlyName",
+            "20. UpdateAuthor_UpdateWithWhitespaceOnlyBio"
+        ]
+    },
+    {
+        "use_case_name": "Edit the book.txt",
+        "scenarios": [
+            "1. UpdateBook_WithValidData",
+            "2. UpdateBook_WithInvalidTitle",
+            "3. UpdateBook_WithInvalidAuthor",
+            "4. UpdateBook_WithInvalidGenre",
+            "5. UpdateBook_WithInvalidDescription",
+            "6. UpdateBook_WithInvalidPublicationDate",
+            "7. UpdateBook_WithEmptyTitle",
+            "8. UpdateBook_WithEmptyAuthor",
+            "9. UpdateBook_WithEmptyGenre",
+            "10. UpdateBook_WithEmptyDescription",
+            "11. UpdateBook_WithEmptyPublicationDate",
+            "12. UpdateBook_DisplayErrorMessage_OnDatabaseError",
+            "15. CancelUpdateBook_BeforeSubmitting",
+            "16. CancelUpdateBook_AfterModifyingData",
+            "17. NavigateAwayFromUpdatePage_UsingMenuBeforeSubmitting",
+            "18. NavigateAwayFromUpdatePage_UsingMenuAfterModifyingData",
+            "19. UpdateBook_WithSpecialCharactersInTitle",
+            "20. UpdateBook_WithFuturePublicationDate",
+            "21. UpdateBook_WithPastPublicationDate",
+            "22. UpdateBook_WithNonexistentAuthor",
+            "23. UpdateBook_WithNonexistentGenre"
+        ]
+    },
+    {
+        "use_case_name": "Edit the genre.txt",
+        "scenarios": [
+            "1. UpdateGenre_SuccessfulUpdate",
+            "4. UpdateGenre_CancelOperationBeforeSubmit",
+            "5. UpdateGenre_NavigateAwayBeforeSubmit",
+            "6. UpdateGenre_RequiredFieldsMissing",
+            "7. UpdateGenre_InvalidCharactersInName",
+            "8. UpdateGenre_InvalidFormatInDescription",
+            "9. UpdateGenre_UniqueNameConstraint",
+            "11. UpdateGenre_CheckMaxLengthName",
+            "12. UpdateGenre_CheckMaxLengthDescription",
+            "13. UpdateGenre_SpecialCharactersInName",
+            "14. UpdateGenre_SpecialCharactersInDescription",
+            "15. UpdateGenre_WhitespaceInName",
+            "16. UpdateGenre_WhitespaceInDescription",
+            "17. UpdateGenre_UpdateWithSameData"
+        ]
+    },
+    {
+        "use_case_name": "Remove the author.txt",
+        "scenarios": [
+            "1. DeleteAuthor_SuccessfulDeletion",
+            "2. DeleteAuthor_CancelDeletion",
+            "6. DeleteAuthor_NavigateAwayUsingMenuBeforeDeletion",
+            "7. DeleteAuthor_NavigateAwayUsingBrowserBackBeforeDeletion",
+            "8. DeleteAuthor_MultipleDeletionsSequential"
+        ]
+    },
+    {
+        "use_case_name": "Remove the book.txt",
+        "scenarios": [
+            "1. DeleteBook_SuccessfulDeletion",
+            "2. DeleteBook_CancelDeletion"
+        ]
+    },
+    {
+        "use_case_name": "Remove the genre.txt",
+        "scenarios": [
+            "1. DeleteGenre_SuccessfulDeletion",
+            "2. DeleteGenre_CancelDeletion",
+            "4. DeleteGenre_NavigationAfterCancellation"
+        ]
+    }
+]

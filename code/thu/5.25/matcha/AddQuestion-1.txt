@@ -1,0 +1,13 @@
+1. Navigation from Homepage to Lesson Management
+2. Sentence field skipped
+3. Sentence field over 250 characters
+4. Sentence field contains special characters
+5. Correct answer field skipped
+6. Other option 1 field skipped
+7. Other option 2 field skipped
+8. Other option 3 field skipped
+9. Successful Creation of a Selection Test Question
+10. Creation of a Selection Test Question with Invalid Sentence
+11. Cancellation of Selection Test Question Creation
+12. Admin Leaves Without Saving Question
+13. Admin Cancels Question Creation and Confirms Cancellation

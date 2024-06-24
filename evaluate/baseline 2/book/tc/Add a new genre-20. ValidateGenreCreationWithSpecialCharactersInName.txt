@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Validate Genre Creation with Special Characters in Name
+objective: Verify that the genre creation process handles special characters in the genre name correctly and either adds the record to the database or displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a genre name containing special characters (e.g., '@#$%^&*') in the 'Name' field.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An appropriate message is displayed indicating whether the genre with special characters in its name is accepted or rejected. If accepted, the new genre should be added to the database and displayed in the list of genres.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Creation
+objective: Verify that cancelling the genre creation process discards any entered data and does not add a new record to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The genre creation process is cancelled, no data is saved to the database, and the user is redirected back to the list of genre records without the new genre being added.
+
+Test Case: Test Case 3
+testCaseName: Validate Genre Creation with Valid Data
+objective: Verify that the genre creation process successfully adds a new genre record to the database when all required fields are filled with valid data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid genre name in the 'Name' field.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre record is successfully added to the database and displayed in the list of genres.
+

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Cancel Operation Without Data Entered
+objective: Verify that the cancel operation works correctly without any data entered for a new genre creation
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to add a new genre.
+  - Step 3: Once the form to enter genre data is displayed, directly click on the 'Cancel' button without entering any data.
+expectedResult: The application should not save any data to the database and should redirect the user back to the list of genre records.
+
+Test Case: Test Case 2
+testCaseName: Cancel Operation With Partial Data Entered
+objective: Verify that the cancel operation works correctly with some data entered but not submitted for a new genre creation
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to initiate adding a new genre.
+  - Step 3: Enter partial data into the form fields (e.g., only 'Name').
+  - Step 4: Click on the 'Cancel' button before pressing 'Submit'.
+expectedResult: The application should not save the partially entered data to the database and should redirect the user back to the list of genre records.
+
+Test Case: Test Case 3
+testCaseName: Navigation Away From Creation Form Without Saving
+objective: Verify that navigating away from the genre creation form without saving does not save data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without clicking 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the entered data to the database and should display the selected page without any new genre record being added.
+

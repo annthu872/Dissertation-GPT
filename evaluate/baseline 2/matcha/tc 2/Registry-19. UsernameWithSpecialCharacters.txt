@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Register with valid username and password
+objective: Verify that the system allows the registration with a valid username and password
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username (over 8 characters and below 30 characters).
+  - Step 3: Fill in the password field with a valid password (over 8 characters and below 30 characters, contains at least one normal character, one capitalize character, one number, and one special character, and is not the same as the username).
+  - Step 4: Press the 'Registry' button.
+expectedResult: The system redirects the learner to the Home page, indicating successful registration.
+
+Test Case: Test Case 2
+testCaseName: Register with invalid username
+objective: Verify that the system shows a notification for invalid username during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with an invalid username (either below 8 characters or above 30 characters).
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: The system shows a notification that the username is invalid.
+
+Test Case: Test Case 3
+testCaseName: Register with invalid password
+objective: Verify that the system shows a notification for invalid password during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Fill in the password field with an invalid password (either below 8 characters, above 30 characters, missing a character type, or the same as the username).
+  - Step 4: Press the 'Registry' button.
+expectedResult: The system shows a notification that the password is invalid.
+
+Test Case: Test Case 4
+testCaseName: Register with an existed username
+objective: Verify that the system shows a notification for an already registered username
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+
+Test Case: Test Case 5
+testCaseName: Register with invalid email
+objective: Verify that the system shows a notification for invalid email during registration
+testSteps:
+  - Step 1: Navigate to the registration page and click on the Mail icon.
+  - Step 2: Fill in the email field with an invalid email (inexistent email or wrong format).
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: The system shows a notification that the mail is invalid.
+

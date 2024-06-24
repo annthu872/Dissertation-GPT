@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify successful review process with correct answers
+objective: Ensure that the review process works correctly when the learner selects the right answers, and the system updates the memory level accordingly.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Engage with the review process by selecting the correct answer for each word presented.
+  - Step 5: Click the 'Continue' button to proceed to the next word after selecting the right answer.
+  - Step 6: Complete the review for the last word in the review words list.
+  - Step 7: Press 'Continue' button to go back to the Home page.
+expectedResult: After completing the review with correct answers, the system should show a green word for each correct answer, increase the memory level of the words reviewed, and successfully save the review session.
+
+Test Case: Test Case 2
+testCaseName: Verify review process with incorrect answers
+objective: To check if the system correctly handles incorrect answers by showing a red word, decreasing the memory level, and allowing the learner to continue the review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Incorrectly answer a question during the review process.
+  - Step 5: Observe the system's response and press 'Continue' to move to the next word.
+  - Step 6: Repeat steps 4 and 5 for all words in the review list, including selecting some correct answers.
+  - Step 7: Press 'Continue' button after the last word to go back to the Home page.
+expectedResult: The system should show a red word for each incorrect answer, decrease the memory level for those words, and allow the learner to proceed with the review until completion.
+
+Test Case: Test Case 3
+testCaseName: Verify review interruption and continuation
+objective: Ensure that learners can interrupt the review process and then choose to continue without losing their progress.
+testSteps:
+  - Step 1: Log in as a learner and start the review process.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select 'Stay'.
+  - Step 4: Continue with the review process by selecting answers for the review questions.
+  - Step 5: Complete the review and press 'Continue' to return to the Home page.
+expectedResult: The system should allow the learner to continue from where they left off in the review process after choosing to stay, without any loss of progress.
+
+Test Case: Test Case 4
+testCaseName: Verify review exit without saving
+objective: To confirm that the review progress is not saved when a learner chooses to exit the review session.
+testSteps:
+  - Step 1: Log in as a learner and start the review process.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select 'Confirm'.
+  - Step 4: Verify redirection to the Home page.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress, and the memory level of the words should remain unchanged.
+

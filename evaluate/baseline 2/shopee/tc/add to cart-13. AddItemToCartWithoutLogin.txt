@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Add Item to Cart Without Selecting Options
+objective: Verify that the system prompts the user to select options before adding an item with multiple options to the cart
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with multiple options.
+  - Step 2: Without selecting any options, click the "Add to Cart" button.
+expectedResult: The system should display a message prompting the user to select an option before adding the item to the cart.
+
+Test Case: Test Case 2
+testCaseName: Add Item to Cart With Insufficient Stock
+objective: Verify that the system prevents adding more items to the cart than are available in stock
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with limited stock.
+  - Step 2: Increase the quantity to exceed the available stock.
+  - Step 3: Click the "Add to Cart" button.
+expectedResult: The plus button should be disabled when the quantity matches the available stock, and a message "You have reached the maximum of the stock." should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Add Out of Stock Item to Cart
+objective: Verify that the system prevents adding an out-of-stock item to the cart
+testSteps:
+  - Step 1: Navigate to the product detail page of an out-of-stock item.
+  - Step 2: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button should be disabled or not visible, preventing the user from adding the item to the cart.
+
+Test Case: Test Case 4
+testCaseName: Adjust Quantity to Below One
+objective: Verify that the system prevents adjusting the quantity of an item in the cart to below one
+testSteps:
+  - Step 1: Add an item to the cart and proceed to the cart page.
+  - Step 2: Attempt to reduce the item quantity to below one by clicking the minus button.
+expectedResult: The minus button should be disabled when the quantity is one, preventing the user from reducing the quantity below one.
+
+Test Case: Test Case 5
+testCaseName: Successfully Add Item to Cart
+objective: Verify that a user can successfully add an item to their shopping cart
+testSteps:
+  - Step 1: Navigate to the product detail page of an item.
+  - Step 2: Select options if available, adjust quantity as desired, and click the "Add to Cart" button.
+  - Step 3: View the cart to confirm the item has been added.
+expectedResult: The item should be successfully added to the cart, and the cart icon should update to reflect the new number of items in the cart.
+

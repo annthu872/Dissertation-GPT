@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify adding new topic with network disconnection before saving
+objective: Ensure the system handles the scenario where the network connection is lost before the administrator can save the new topic
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Administrator selects 'Add new topic' tab on the navigation bar.
+  - Step 3: Administrator is redirected to the adding topic viewing page.
+  - Step 4: Administrator adds the name of the topic in the name field.
+  - Step 5: Administrator adds the description of the topic in the description field.
+  - Step 6: Disconnect the network connection.
+  - Step 7: Administrator selects 'Save' to create a new topic.
+expectedResult: The system should display an error message indicating that the topic could not be saved due to a loss of network connection.
+
+Test Case: Test Case 2
+testCaseName: Verify adding new topic with an already used name
+objective: To verify that the system prevents administrators from adding a new topic with a name that is already in use
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Administrator selects 'Add new topic' tab on the navigation bar.
+  - Step 3: Administrator is redirected to the adding topic viewing page.
+  - Step 4: Administrator adds a name that is already used in the existed topics in the name field.
+  - Step 5: Administrator adds the description of the topic in the description field.
+  - Step 6: Administrator selects 'Save' to create a new topic.
+  - Step 7: The system shows notification that the name is already used, prompting Administrator to add another name in the name field.
+  - Step 8: Administrator adds a new name in the name field.
+  - Step 9: Administrator selects 'Save' to create a new topic.
+expectedResult: After adding a new name that is not already in use, the system should successfully save the new topic and redirect the Administrator to the adding vocabulary to new topic section.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of adding new topic
+objective: To ensure the system allows administrators to cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Administrator selects 'Add new topic' tab on the navigation bar.
+  - Step 3: Administrator is redirected to the adding topic viewing page.
+  - Step 4: Administrator adds the name of the topic in the name field.
+  - Step 5: Administrator adds the description of the topic in the description field.
+  - Step 6: Administrator selects 'Cancel' to stop adding a new topic.
+expectedResult: The system should cancel the adding new topic process and possibly redirect the Administrator back to the previous page or home page.
+

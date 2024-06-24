@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify single learner access to learning days history
+objective: Verify that a single learner can successfully access their learning days history and view the continuous learning days count.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: Verify the system redirects the learner to the History page.
+  - Step 4: Learner selects 'Day History' on the History page.
+  - Step 5: Verify the system redirects the learner to a page showing the number of days learned continuously.
+expectedResult: The learner is able to view the number of continuous learning days on the page, with the count resetting to one if the learning chain is broken.
+
+Test Case: Test Case 2
+testCaseName: Verify simultaneous access by multiple learners to learning days history
+objective: Verify that multiple learners can simultaneously access their learning days history without any data mix-up or system failure.
+testSteps:
+  - Step 1: Ensure multiple learners are logged into the application on different devices.
+  - Step 2: Each learner selects 'History' on the Home page at the same time.
+  - Step 3: Verify the system redirects each learner to their History page without delay.
+  - Step 4: Each learner selects 'Day History' on their History page simultaneously.
+  - Step 5: Verify the system redirects each learner to a page showing their own number of days learned continuously without any mix-up or significant delay.
+expectedResult: All learners are able to simultaneously access their learning days history correctly, with each learner viewing their own continuous learning days count without any errors or data mix-up.
+

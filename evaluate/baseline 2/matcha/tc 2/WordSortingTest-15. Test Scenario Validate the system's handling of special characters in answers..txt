@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Validate handling of special characters in correct answers
+objective: Verify that the system correctly handles special characters in answers when the learner arranges letters in the correct order including special characters.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test.
+  - Step 3: Arrange the letters including special characters (e.g., é, ä, ñ) in the correct order for a given word and press enter.
+expectedResult: The system should accept the answer with special characters and display a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Validate handling of special characters in incorrect answers
+objective: Verify that the system correctly identifies incorrect answers that include special characters and displays the appropriate feedback.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test.
+  - Step 3: Deliberately arrange the letters including special characters (e.g., é, ä, ñ) in the wrong order for a given word and press enter.
+expectedResult: The system should recognize the answer as incorrect despite the inclusion of special characters and display a red pop-up screen.
+
+Test Case: Test Case 3
+testCaseName: Validate handling of special characters omitted in answers
+objective: Verify that the system correctly handles answers where special characters are omitted by the learner.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Start the word sorting test.
+  - Step 3: Arrange the letters in the correct order for a given word but omit any special characters (e.g., arrange 'nino' instead of 'niño') and press enter.
+expectedResult: The system should recognize the answer as incorrect due to the omission of special characters and display a red pop-up screen.
+

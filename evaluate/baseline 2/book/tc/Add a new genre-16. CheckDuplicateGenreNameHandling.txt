@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre creation
+objective: Ensure that a new genre can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid 'Name' and 'Description' for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record should be successfully added to the database, and the user should be redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify duplicate genre name handling
+objective: Ensure the system prevents adding a new genre with a name that already exists in the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter a 'Name' that already exists in the database and a 'Description' for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that a genre with the same name already exists, and the record should not be added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during genre creation
+objective: Ensure that the genre creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: Data is not saved to the database, and the user is redirected to the list of genre records.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from genre creation cancels operation
+objective: Ensure that navigating away from the genre creation form cancels the operation without saving data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: Data is not saved to the database, and the user is redirected to the selected page with updated data.
+

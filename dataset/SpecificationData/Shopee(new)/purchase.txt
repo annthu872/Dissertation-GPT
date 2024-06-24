@@ -1,0 +1,32 @@
+Use case name: Purchase
+Description: This feature allows users to purchase of items they have added to their shopping cart or at product detail page.
+Actor: User
+Preconditions: None
+Postconditions: user can checkout order.
+Basic Flow:
+Step 1: User in the shopping cart page and User has added items to the shopping cart.
+Step 2: User select items to checkout by selecting each items by clicking on checkbox before item.
+Step 3: System displays the summary costs.
+Step 4: User click the "Checkout" button.
+Step 5: System process to checkout.
+- User is redirected to page that shows one or many new orders of all the items user have chosen.
+- Products from different shops will be separate into different orders, products from the same shop is in one order. 
+
+Alterative flow: 
+1. In shopping cart page: User can select all the items come from one store, user choose by clicking the checkbox at the head of the store.
+2. User can purchase products in product detail page:
+- User perform feature 'View a product detail'.
+- User click button 'Buy Now'.
+- If product has many options, user choose one available option before adding product to cart. 
+- User can adjust quantity of product before adding product into cart by clicking on minus or plus button next to quantity of the product. 
+- User click the "Checkout" button.
+- System process to checkout.
+- User is redirected to page that shows one order of the item user has chosen.
+
+Exception flow:
+- user cannot click on the checkbox of the product that is out of stock or erased by the seller even though it is in user's shopping cart.
+When user purchase products in product detail page:
+- user cannot purchase product has many options without selecting one available option.
+- user cannot purchase product with quantity that is bigger than the current stock or lower than one.
+- User cannot purchase product with no stock or out of stock option of one product with multiple options.
+- the button "Checkout" is disable if the selected product is invalid 

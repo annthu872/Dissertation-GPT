@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Verify behavior with no learning history
+objective: Verify the system behavior when a learner who has no learning history checks their learning days history
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, learner selects 'Day History' on the History page.
+expectedResult: The system should redirect the learner to a page showing '0 days' indicating that the learner has no learning history.
+

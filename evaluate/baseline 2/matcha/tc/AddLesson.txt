@@ -1,0 +1,81 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify Navigation To Lesson Management",
+    "objective": "Verify that the administrator can navigate to the Lesson Management page via the navbar.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: Press the tab 'Lesson Management' on the navbar."
+    ],
+    "expectedResult": "The system should open a dropdown menu for Lesson with options: 'Add new Lesson', 'View list of Lesson', 'Lesson statistics'.",
+    "explanation": "This test case ensures that the navigation to the Lesson Management section is functioning as expected."
+  },
+  "Test Case 2": {
+    "testCaseName": "Verify Dropdown Options In Lesson Management",
+    "objective": "Verify that the dropdown menu under Lesson Management contains all the necessary options.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: Press the tab 'Lesson Management' on the navbar to open the dropdown menu."
+    ],
+    "expectedResult": "The dropdown menu should display the options: 'Add new Lesson', 'View list of Lesson', 'Lesson statistics'.",
+    "explanation": "This test case verifies that all the required options are present in the Lesson Management dropdown, allowing for comprehensive lesson management."
+  },
+  "Test Case 3": {
+    "testCaseName": "Verify Navigation To List Of Lessons",
+    "objective": "Ensure the administrator can navigate to the list of lessons from the Lesson Management dropdown.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: Press the tab 'Lesson Management' on the navbar.",
+      "Step 3: Select 'View list of Lesson' from the dropdown options."
+    ],
+    "expectedResult": "The system should redirect the administrator to the Lesson Management page, displaying the list of lessons.",
+    "explanation": "This test case ensures that the administrator can view the list of lessons, a crucial step for managing existing content."
+  },
+  "Test Case 4": {
+    "testCaseName": "Verify Navigation To Add New Lesson Page",
+    "objective": "Verify that the administrator can navigate to the 'Add new Lesson' page from the Lesson Management dropdown.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: Press the tab 'Lesson Management' on the navbar.",
+      "Step 3: Select 'Add new Lesson' from the dropdown options."
+    ],
+    "expectedResult": "The system should redirect the administrator to the 'Add new Lesson' page.",
+    "explanation": "This test case ensures that the administrator can access the page to add new lessons, facilitating content creation."
+  },
+  "Test Case 5": {
+    "testCaseName": "Verify Add New Lesson With Valid Details",
+    "objective": "Ensure the administrator can add a new lesson with valid name and description.",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new Lesson' page.",
+      "Step 2: Add a unique name in the name field.",
+      "Step 3: Add a description in the description field.",
+      "Step 4: Select 'Save'."
+    ],
+    "expectedResult": "The system should create a new lesson and redirect the administrator to the adding topic to new lesson section.",
+    "explanation": "This test case verifies the core functionality of adding a new lesson, ensuring the system accepts valid inputs and processes them correctly."
+  },
+  "Test Case 6": {
+    "testCaseName": "Verify Error Message For Duplicate Lesson Name",
+    "objective": "Ensure the system displays an error message when attempting to add a new lesson with a name that already exists.",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new Lesson' page.",
+      "Step 2: Add a name that is already used in the existed lessons in the name field.",
+      "Step 3: Add a description in the description field.",
+      "Step 4: Select 'Save'."
+    ],
+    "expectedResult": "The system should show a notification that the name is already used, prompting the administrator to add another name.",
+    "explanation": "This test case checks the system's ability to prevent duplicate lesson names, ensuring lesson uniqueness."
+  },
+  "Test Case 7": {
+    "testCaseName": "Verify Adding Lesson With New Name After Duplicate Error",
+    "objective": "Verify that the administrator can successfully add a new lesson after receiving a duplicate name error by entering a new name.",
+    "testSteps": [
+      "Step 1: Receive a duplicate name error as per the previous test case.",
+      "Step 2: Add a new, unique name in the name field.",
+      "Step 3: Select 'Save'."
+    ],
+    "expectedResult": "The system should create the new lesson with the new name and proceed to the adding topic to new lesson section.",
+    "explanation": "This test case ensures that after correcting a name duplication error, the administrator can successfully add a new lesson."
+  }
+}
+```

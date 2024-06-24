@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Add New Lesson Page via Lesson Management
+objective: Ensure that the administrator can navigate to the 'Add New Lesson' page through the 'Lesson Management' tab on the navbar.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'View list of Lesson' from the dropdown menu.
+  - Step 4: On the Lesson Management page, select the button 'Add new Lesson'.
+expectedResult: The system should redirect the administrator to the 'Add new Lesson' page.
+
+Test Case: Test Case 2
+testCaseName: Verify Adding a New Lesson with Unique Name
+objective: Verify that the administrator can add a new lesson with a unique name and description.
+testSteps:
+  - Step 1: Navigate to the 'Add New Lesson' page following steps from Test Case 1.
+  - Step 2: Add a unique name in the name field.
+  - Step 3: Add a description in the description field.
+  - Step 4: Select 'Save' to create the new lesson.
+expectedResult: The system should create the new lesson and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.
+
+Test Case: Test Case 3
+testCaseName: Verify Adding a New Lesson with an Already Used Name
+objective: Ensure the system prompts the administrator to change the lesson name if it's already used.
+testSteps:
+  - Step 1: Navigate to the 'Add New Lesson' page following steps from Test Case 1.
+  - Step 2: Add a name that is already used for another lesson in the name field.
+  - Step 3: Add a description in the description field.
+  - Step 4: Select 'Save' to attempt creating the new lesson.
+  - Step 5: After receiving the notification that the name is already used, add a new unique name in the name field.
+  - Step 6: Select 'Save' again to create the lesson.
+expectedResult: The system should prompt the administrator to change the lesson name after step 4. After changing the name and saving again, the system should create the new lesson and redirect the administrator to the adding topic to new lesson section.
+
+Test Case: Test Case 4
+testCaseName: Verify Direct Navigation to Add New Lesson Page via Navbar
+objective: Ensure that the administrator can directly navigate to the 'Add New Lesson' page via the navbar option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+expectedResult: The system should redirect the administrator directly to the 'Add new Lesson' page.
+
+Test Case: Test Case 5
+testCaseName: Verify Cancel Functionality While Adding a New Lesson
+objective: Ensure that the administrator can cancel the process of adding a new lesson at any time.
+testSteps:
+  - Step 1: Navigate to the 'Add New Lesson' page following steps from Test Case 1 or Test Case 4.
+  - Step 2: At any point before saving the new lesson, select 'Cancel'.
+expectedResult: The system should cancel the lesson creation process and possibly redirect the administrator to the previous page or the home page.
+

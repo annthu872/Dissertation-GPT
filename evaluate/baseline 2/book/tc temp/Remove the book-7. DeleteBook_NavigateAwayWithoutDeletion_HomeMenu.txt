@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Book and Confirm Deletion
+objective: Verify that a user can delete a book and confirm the deletion process successfully
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book should be successfully deleted from the list, and the updated list of books should be displayed without the deleted book.
+
+Test Case: Test Case 2
+testCaseName: Delete Book and Cancel Deletion
+objective: Verify that a user can cancel the deletion process of a book
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process should be canceled, and the user should be redirected back to the list of books with all books, including the one intended for deletion, still present.
+
+Test Case: Test Case 3
+testCaseName: Delete Book and Navigate Away Without Deletion
+objective: Verify that navigating away from the deletion confirmation dialog without confirming deletion retains the book in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The book should not be deleted from the database, and the user should be able to see the book in the list when navigating back to the books page.
+

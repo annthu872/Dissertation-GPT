@@ -1,0 +1,15 @@
+1. DisplayInitialGenresList
+2. PaginationNextButtonFunctionality
+3. PaginationNumberedPageNavigation
+4. DisplayGenresListWithEmptyDatabase
+5. DisplayGenresListWithMoreThan10Items
+6. DisplayGenresListWithExactly10Items
+7. DisplayGenresListColumnsVisibility
+8. DisplayGenresListWithSpecialCharacters
+9. DisplayGenresListOrderConsistency
+10. DisplayGenresListWithDuplicateIds
+11. DisplayGenresListWithLongTextDescription
+12. DisplayGenresListWithHTMLTagsInData
+13. DisplayGenresListAccessibilityFeatures
+14. DisplayGenresListResponsiveDesign
+15. DisplayGenresListPerformanceUnderLoad

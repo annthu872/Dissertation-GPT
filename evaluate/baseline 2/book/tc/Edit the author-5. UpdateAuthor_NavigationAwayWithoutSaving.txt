@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away Without Saving Updates on Author
+objective: Ensure that when a user navigates away without saving, the author's data is not updated in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering new data for the author's Name and Bio.
+  - Step 4: Before pressing 'Submit', click on the 'Cancel' button.
+  - Step 5: Confirm the action to navigate away if prompted.
+  - Step 6: Navigate back to the author list/details page and select the same author to update.
+  - Step 7: Observe the pre-filled data in the update form.
+expectedResult: The data in the update form should reflect the original data before the attempted update, indicating that the changes were not saved.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Another Menu Without Saving Updates on Author
+objective: To verify that navigating to another menu without saving does not update the author's data in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering new data for the author's Name and Bio.
+  - Step 4: Without pressing 'Submit', navigate to another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 5: Navigate back to the author list/details page and select the same author to update.
+  - Step 6: Observe the pre-filled data in the update form.
+expectedResult: The data in the update form should reflect the original data before the attempted update, indicating that the changes were not saved and the navigation away did not trigger an update in the database.
+

@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Missing 'Other Option 2' Field
+objective: Verify that the system prompts Admin to fill the missing 'Other Option 2' field when trying to save a question without it
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in the 'other option 1' field with a different wrong answer word.
+  - Step 11: Leave the 'other option 2' field empty.
+  - Step 12: Fill in the 'other option 3' field with another different wrong answer word.
+  - Step 13: Press the 'Save' button.
+expectedResult: System shows notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 2' field.
+

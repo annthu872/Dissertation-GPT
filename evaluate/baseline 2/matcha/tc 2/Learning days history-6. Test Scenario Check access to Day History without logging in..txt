@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Access 'Day History' without logging in
+objective: Verify that the system prevents access to 'Day History' for users who are not logged in
+testSteps:
+  - Step 1: Navigate to the Home page without logging in.
+  - Step 2: Select 'History' on the Home page.
+  - Step 3: Attempt to select 'Day History' on the History page.
+expectedResult: The system should not redirect to the 'Day History' page and should prompt the user to log in or display an error message indicating that login is required to access this feature.
+

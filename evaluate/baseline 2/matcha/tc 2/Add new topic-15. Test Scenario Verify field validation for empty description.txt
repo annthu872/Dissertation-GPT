@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify adding new topic with empty description
+objective: Ensure the system validates and prevents the addition of a new topic with an empty description field
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Leave the description field empty.
+  - Step 5: Click on 'Save' to attempt creating a new topic.
+expectedResult: The system should display an error message indicating that the description field cannot be empty and the new topic should not be created.
+
+Test Case: Test Case 2
+testCaseName: Verify adding new topic with already used name
+objective: Ensure the system validates and prevents the addition of a new topic with a name that is already in use
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic in the name field.
+  - Step 4: Enter a valid description in the description field.
+  - Step 5: Click on 'Save' to attempt creating a new topic.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of adding new topic
+objective: Ensure the system allows the administrator to cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name in the name field.
+  - Step 4: Enter a description in the description field.
+  - Step 5: Click on 'Cancel' to stop the process of adding a new topic.
+expectedResult: The system should cancel the process and not create a new topic, redirecting the administrator back to the previous page or dashboard.
+

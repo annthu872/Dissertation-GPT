@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Verify successful question creation for a selection test
+objective: Ensure that an admin can successfully create a question for the selection test and it is saved and viewable in view mode
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the 'Create questions for the selection test' option.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 9: Fill in the 'correct answer' and three 'other options' fields with appropriate words.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page where the newly created question is visible.
+
+Test Case: Test Case 2
+testCaseName: Verify mandatory field validation for question creation
+objective: To verify that the system prompts an error when mandatory fields are skipped during question creation
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary word list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Fill in all fields except one mandatory field (e.g., skip 'sentence').
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing mandatory field.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation and continuation of question creation
+objective: To ensure that an admin can cancel the question creation process and then continue working on it
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary word list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Press the 'Cancel' button.
+  - Step 6: On the dialog 'Are you sure you want to cancel the question?', press the 'Stay' button.
+expectedResult: The dialog closes, and the admin can continue to work on the question creation without losing any previously entered information.
+
+Test Case: Test Case 4
+testCaseName: Verify error message for invalid sentence input
+objective: To ensure the system validates the 'sentence' field for correct format and shows an appropriate error message for invalid inputs
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar and select a Lesson.
+  - Step 3: Select a Topic and then a word from the vocabulary word list.
+  - Step 4: Press the 'Add new question' button and choose 'Create questions for the selection test'.
+  - Step 5: Fill in the 'sentence' field with an invalid sentence (e.g., more than 250 characters or contains special characters).
+  - Step 6: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field correctly.
+

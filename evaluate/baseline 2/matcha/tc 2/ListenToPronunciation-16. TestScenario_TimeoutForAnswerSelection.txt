@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Timeout for Answer Selection in Listening Pronunciation Test
+objective: Verify that the system times out if the learner does not select an answer within the given time frame during a listening pronunciation test question.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Wait without selecting any answer until the timeout occurs.
+expectedResult: The system should automatically proceed to the next question or show a timeout message, indicating that the time for answering the current question has expired.
+
+Test Case: Test Case 2
+testCaseName: Verify Correct Answer Selection in Listening Pronunciation Test
+objective: Verify that selecting the correct answer in a listening pronunciation test question results in a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Listen to the pronunciation and select the correct Vietnamese meaning or English vocabulary.
+  - Step 4: Submit the answer.
+expectedResult: A green pop-up screen should appear, indicating that the answer selected is correct.
+
+Test Case: Test Case 3
+testCaseName: Verify Wrong Answer Selection in Listening Pronunciation Test
+objective: Verify that selecting the wrong answer in a listening pronunciation test question results in a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Listen to the pronunciation and intentionally select the wrong Vietnamese meaning or English vocabulary.
+  - Step 4: Submit the answer.
+expectedResult: A red pop-up screen should appear, indicating that the answer selected is incorrect.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify successful navigation and addition of a new topic
+objective: Ensure that the administrator can navigate to the 'Add new topic' tab and successfully add a new topic
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: On the adding topic viewing page, enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: After selecting 'Save', the system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a topic with an already used name
+objective: To check the system's response when an administrator attempts to add a new topic with a name that is already in use
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: On the adding topic viewing page, enter a name that is already used for an existing topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: After receiving a notification that the name is already used, enter a new, unique name in the name field.
+  - Step 7: Select 'Save' again to create the topic.
+expectedResult: The system should initially display a notification that the name is already used. After entering a new name and selecting 'Save', the system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of adding a new topic
+objective: To ensure that the administrator can cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: On the adding topic viewing page, enter a name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Cancel' to stop adding the new topic.
+expectedResult: After selecting 'Cancel', the system should not create a new topic and should return the administrator to the previous page or dashboard.
+

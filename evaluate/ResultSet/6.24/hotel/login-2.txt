@@ -1,0 +1,6 @@
+1. Login with empty username
+2. Login with empty password
+3. Login with both username and password empty
+4. Successful Login
+5. Invalid Credentials
+6. Incorrect Credentials

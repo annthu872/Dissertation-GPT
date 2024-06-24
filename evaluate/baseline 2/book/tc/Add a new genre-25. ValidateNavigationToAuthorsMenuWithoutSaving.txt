@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre creation
+objective: Ensure that a user can successfully create a new genre record when valid data is entered
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database, and the user is redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling
+objective: To check if the application displays error messages for incorrectly entered data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages indicating which data was entered incorrectly.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation discards data
+objective: Ensure that pressing the 'Cancel' button discards any entered data and does not add a new record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: No new genre record is added to the database, and the user is redirected to the list of genres without the data they entered.
+
+Test Case: Test Case 4
+testCaseName: Validate navigation to Authors menu without saving
+objective: To verify that navigating away from the genre creation page without saving does not add a new genre record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', navigate to the 'Authors' menu.
+expectedResult: No new genre record is added to the database, and the user is redirected to the Authors page without the data they entered being saved.
+

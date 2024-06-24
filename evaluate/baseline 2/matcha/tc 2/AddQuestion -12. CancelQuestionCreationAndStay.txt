@@ -1,0 +1,58 @@
+Test Case: Test Case 1
+testCaseName: Cancel Question Creation and Choose to Stay
+objective: Verify that the admin can cancel the question creation process and choose to stay on the page to continue working on it
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Click on the 'Add new question' button.
+  - Step 6: Choose the option 'Create questions for the selection test'.
+  - Step 7: Begin to fill in the question creation form but do not complete it.
+  - Step 8: Click on the 'Cancel' button.
+  - Step 9: In the confirmation dialog, click on the 'Stay' button.
+expectedResult: The confirmation dialog should close, and the admin should remain on the question creation page with the previously entered information still present.
+
+Test Case: Test Case 2
+testCaseName: Cancel Question Creation and Confirm Cancellation
+objective: Verify that the admin can cancel the question creation process and confirm the cancellation to return to the 'Word Information' page without saving the question
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Click on the 'Add new question' button.
+  - Step 6: Choose the option 'Create questions for the selection test'.
+  - Step 7: Begin to fill in the question creation form but do not complete it.
+  - Step 8: Click on the 'Cancel' button.
+  - Step 9: In the confirmation dialog, click on the 'Confirm' button.
+expectedResult: The system should redirect the admin to the 'Word Information' page of the selected word, and the question should not be saved.
+
+Test Case: Test Case 3
+testCaseName: Complete Question Creation with All Required Fields
+objective: Verify that the admin can successfully create a question for the selection test by filling all required fields and saving
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Click on the 'Add new question' button.
+  - Step 6: Choose the option 'Create questions for the selection test'.
+  - Step 7: Fill in all required fields in the question creation form: 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3'.
+  - Step 8: Click on the 'Save' button.
+expectedResult: The system should save the question and redirect the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 4
+testCaseName: Attempt to Save Question with Missing Compulsory Field
+objective: Verify that the system prompts the admin to fill all compulsory fields if trying to save a question with missing information
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Click on the 'Add new question' button.
+  - Step 6: Choose the option 'Create questions for the selection test'.
+  - Step 7: Fill in all required fields except one (e.g., skip 'other option 1').
+  - Step 8: Click on the 'Save' button.
+expectedResult: The system should display a notification prompting the admin to fill the missing field.
+

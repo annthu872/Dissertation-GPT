@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify field validations with all empty inputs
+objective: Verify that the application prevents the user from adding a new book with all fields left empty and displays appropriate validation messages
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Leave all the input fields (Title, Author, Genre, Description, Publication date) empty.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display validation messages for each mandatory field indicating that they cannot be left empty.
+
+Test Case: Test Case 2
+testCaseName: Verify cancel operation with empty inputs
+objective: Ensure that no book record is added and user is redirected back to the book list page when 'Cancel' button is clicked without entering any data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Do not enter any data into the input fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The application should not add any new book record and should redirect the user back to the book list page without displaying any error message.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from creation form with empty inputs
+objective: Ensure that navigating away from the book creation form with empty inputs does not save any data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Do not enter any data into the input fields.
+  - Step 4: Click on any of the menu items such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save any data and should display the selected page without any error message.
+

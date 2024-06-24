@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Continuing Incomplete Topic from Home Page
+objective: Verify that the learner can continue studying an incomplete topic directly from the Home Page
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home Page, the learner clicks on an incomplete topic displayed.
+  - Step 3: Verify that the system redirects the learner to the corresponding Flashcard page for the selected topic.
+  - Step 4: The learner continues studying the flashcards starting from where they left off.
+  - Step 5: The learner completes studying all the remaining flashcards in the topic.
+  - Step 6: Once all the flashcards have been studied, verify that the 'Next' button on the last flashcard redirects the learner to the 'completion notification' page.
+  - Step 7: The learner clicks 'return to the lesson page'.
+  - Step 8: Verify that the system redirects to the lesson page.
+expectedResult: The learner is able to continue and complete an incomplete topic from the Home Page, and upon completion, is redirected back to the lesson page.
+
+Test Case: Test Case 2
+testCaseName: Handling 'Previous' Button on First Flashcard
+objective: Verify that the 'Previous' button is disabled on the first flashcard and displays a message if clicked
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has selected a topic to study.
+  - Step 2: The learner navigates to the first flashcard of the selected topic.
+  - Step 3: The learner attempts to click the 'Previous' button on the first flashcard.
+expectedResult: The 'Previous' button is disabled, and if clicked, a message 'there is no previous vocabulary to display' is shown to the learner.
+
+Test Case: Test Case 3
+testCaseName: Exiting Flashcard Study with Confirmation
+objective: Verify that the learner can exit the flashcard study session with a confirmation dialog and the topic is marked as incomplete
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and is studying a topic.
+  - Step 2: During the flashcard study, the learner presses the 'back' button.
+  - Step 3: Confirm that an exit confirmation dialog box appears with the message 'Are you sure you want to exit?'
+  - Step 4: The learner clicks 'exit'.
+  - Step 5: Verify that the system returns the learner to the topic page and the topic is marked as incomplete.
+expectedResult: The learner is able to exit the study session with confirmation, and the topic is marked as incomplete and displayed on the home page.
+
+Test Case: Test Case 4
+testCaseName: Continuing Study After Completion Notification
+objective: Verify that the learner can choose to 'continue studying' after completing a topic and is redirected accordingly
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has completed studying a topic.
+  - Step 2: On the 'completion notification' page, the learner clicks 'continue studying'.
+  - Step 3: Verify that the topic is marked as completed and the vocabulary words are marked as studied.
+  - Step 4: Confirm that the system redirects the learner to the corresponding Flashcard page for the continuous topic.
+expectedResult: After completing a topic, the learner can choose to 'continue studying', and the system redirects them to study the next topic.
+

@@ -1,0 +1,5 @@
+1. Successful Hotel Information Update
+2. Validation Error on Hotel Information Update
+3. Validation fails due to incorrect field format
+4. Validation fails due to missing mandatory fields
+5. Validation fails due to invalid data type entered

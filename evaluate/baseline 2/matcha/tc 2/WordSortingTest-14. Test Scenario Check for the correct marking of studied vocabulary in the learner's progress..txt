@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer marking in word sorting test
+objective: To ensure that the system correctly marks a vocabulary as studied and displays a green pop-up screen when the learner arranges the letters correctly.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with the letters of a vocabulary arranged randomly.
+  - Step 4: Arrange the letters in the correct order and press enter.
+expectedResult: A green pop-up screen should appear, indicating the answer is correct, and the vocabulary word should be marked as studied in the learner's progress.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer handling in word sorting test
+objective: To ensure that the system correctly displays a red pop-up screen when the learner arranges the letters incorrectly and still marks the vocabulary as studied.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with the letters of a vocabulary arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order and press enter.
+expectedResult: A red pop-up screen should appear, indicating the answer is incorrect, but the vocabulary word should still be marked as studied in the learner's progress.
+

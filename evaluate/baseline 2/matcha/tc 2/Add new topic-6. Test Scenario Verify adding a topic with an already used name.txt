@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a new topic with a unique name
+objective: Ensure that the administrator can successfully add a new topic with a unique name and description
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a topic with an already used name
+objective: To check the system's behavior when an administrator attempts to add a new topic with a name that is already in use
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used for another topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification from the system.
+  - Step 7: Enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the topic.
+expectedResult: The system should show a notification that the name is already used, prompting the administrator to add another name. After entering a new name, the system should allow the topic to be created and redirect to the adding vocabulary to new topic section.
+
+Test Case: Test Case 3
+testCaseName: Verify cancelling the add new topic process
+objective: To ensure that the administrator can cancel the process of adding a new topic at any time before saving
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name in the name field.
+  - Step 4: Enter a description in the description field.
+  - Step 5: Select 'Cancel' to stop adding a new topic.
+expectedResult: The system should not create a new topic and should return the administrator to the previous page or dashboard without any changes.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Next Button Functionality on Genres Page
+objective: Ensure that the 'Next' button correctly displays the next page of genres
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu to view the list of genres.
+  - Step 3: Observe the list of genres displayed (up to 10 items).
+  - Step 4: Scroll down to the bottom of the page to locate the 'Next' button in the pagination block.
+  - Step 5: Click on the 'Next' button.
+expectedResult: The application should display the next 10 records of the genres in the database, updating the list to show items 11-20.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality by Selecting Page Number on Genres Page
+objective: Ensure that selecting a specific page number from the pagination block correctly displays the corresponding page of genres
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu to view the list of genres.
+  - Step 3: Observe the first page of genres displayed (up to 10 items).
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on the number '2' or any other page number available in the pagination block.
+expectedResult: The application should display the genres corresponding to the selected page number, showing the next set of up to 10 items (e.g., items 11-20 for page 2).
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Displays Correct Columns for Genres
+objective: Ensure that the genres list displays all required columns correctly on every page
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu to view the list of genres.
+  - Step 3: If not already on the first page, use the pagination block to navigate to the first page of genres.
+  - Step 4: Verify that the list displays the columns: id, Name, and Description.
+  - Step 5: Use the 'Next' button or page numbers in the pagination block to navigate to the next page of genres.
+  - Step 6: Again, verify that the list displays the columns: id, Name, and Description.
+expectedResult: On every page of the genres list, the application should correctly display the columns: id, Name, and Description for each genre.
+

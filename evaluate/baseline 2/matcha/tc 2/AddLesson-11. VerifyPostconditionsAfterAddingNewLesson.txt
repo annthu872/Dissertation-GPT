@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a new lesson successfully
+objective: Verify that the administrator can successfully add a new English learning lesson and is redirected to the adding topic to new lesson section.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Fill in the name of the lesson in the name field.
+  - Step 5: Fill in the description of the lesson in the description field.
+  - Step 6: Select 'Save' to create a new lesson.
+expectedResult: After saving, the system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a lesson with an already used name
+objective: Ensure the system prevents the creation of a lesson with a name that is already used and prompts the administrator to use a different name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar and select 'Add new Lesson'.
+  - Step 3: Enter a name that is already used for another lesson in the name field.
+  - Step 4: Fill in the description of the lesson in the description field.
+  - Step 5: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the administrator to add another name.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation to Add new lesson page via navbar
+objective: Ensure that the administrator can navigate to the 'Add new Lesson' page directly from the navbar options.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+expectedResult: The system should redirect the administrator to the 'Add new Lesson' page.
+
+Test Case: Test Case 4
+testCaseName: Verify cancellation of adding a new lesson
+objective: Ensure that the administrator can cancel the process of adding a new lesson at any time.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar and select 'Add new Lesson'.
+  - Step 3: Fill in the necessary lesson details.
+  - Step 4: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the lesson creation process and may redirect the administrator to the previous page or the lesson management page.
+

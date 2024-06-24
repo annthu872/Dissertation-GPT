@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify cancel operation with data entered for new genre creation
+objective: Ensure that when a user cancels the genre creation process after entering data, the data is not saved and the user is redirected to the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to start the process of adding a new genre.
+  - Step 3: On the genre creation form, enter valid data for the 'Name' and 'Description' fields.
+  - Step 4: Before submitting, click on the 'Cancel' button.
+expectedResult: The application should not save the entered data and should redirect the user to the genre list page, displaying the list of genres without the cancelled entry.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation away from genre creation does not save data
+objective: To confirm that navigating away from the genre creation page by selecting another menu item does not save the partially entered data.
+testSteps:
+  - Step 1: Navigate to the genre list page and click on the 'Create new' button.
+  - Step 2: Enter data into the 'Name' and 'Description' fields on the genre creation form.
+  - Step 3: Without submitting the new genre, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the entered data for the new genre and should display the selected page. Upon returning to the genre list, the new genre should not appear.
+

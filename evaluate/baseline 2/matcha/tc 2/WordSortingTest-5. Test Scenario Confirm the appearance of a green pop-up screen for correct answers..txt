@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify green pop-up for correct answer in word sorting test
+objective: To verify that a green pop-up screen appears when the learner arranges the letters in the correct order and submits the correct answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters by clicking on letter buttons in the correct order.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: A green pop-up screen should appear indicating that the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify red pop-up for incorrect answer in word sorting test
+objective: To verify that a red pop-up screen appears when the learner arranges the letters in the wrong order or submits an incorrect answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order by clicking on letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: A red pop-up screen should appear indicating that the answer is incorrect.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data
+objective: Verify that the author's details can be updated with valid data including HTML tags in the biography section
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter or modify the author's name with valid data.
+  - Step 4: In the 'Bio' field, enter valid data including HTML tags (e.g., <p>, <strong>).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database including the HTML tags in the biography. The list of authors with the updated records is displayed without any error messages.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid Data
+objective: Verify that the system displays error messages when trying to update an author with invalid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter invalid data in the author's name field (e.g., using special characters).
+  - Step 4: In the 'Bio' field, enter invalid HTML tags (e.g., <html>).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system displays error messages indicating the incorrect data. The author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the update operation can be canceled and no data is updated in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled. No data is updated in the database, and the list of author records is displayed to the user.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Update Page
+objective: Verify that navigating away from the update page without submitting does not update the author's details in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the form fields.
+  - Step 4: Without pressing 'Submit', navigate away by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database. The user is taken to the selected page without any changes being made to the author's record.
+

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Cancel Functionality Before Adding Lesson Details
+objective: Ensure the 'Cancel' button functions correctly before any lesson details are added by the administrator.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Before entering any details, select 'Cancel'.
+expectedResult: The system should not save any data and should redirect the administrator back to the Lesson Management page without adding a new lesson.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Functionality After Adding Lesson Details
+objective: To verify that the 'Cancel' button discards the entered lesson details and does not create a new lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Lesson Management' > 'Add new Lesson'.
+  - Step 3: Enter a name in the lesson name field.
+  - Step 4: Enter a description in the lesson description field.
+  - Step 5: Select 'Cancel'.
+expectedResult: The system should discard the entered details and redirect the administrator to the Lesson Management page without creating a new lesson.
+
+Test Case: Test Case 3
+testCaseName: Verify Adding Lesson with Unique Name
+objective: To ensure the system allows the creation of a new lesson with a unique name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Lesson Management' > 'Add new Lesson'.
+  - Step 3: Enter a unique name in the lesson name field.
+  - Step 4: Enter a description in the lesson description field.
+  - Step 5: Select 'Save'.
+expectedResult: The system should create a new lesson with the provided details and redirect the administrator to the adding topic to new lesson section.
+
+Test Case: Test Case 4
+testCaseName: Verify Adding Lesson with Duplicate Name
+objective: To verify the system prevents the creation of a new lesson with a name that already exists.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Lesson Management' > 'Add new Lesson'.
+  - Step 3: Enter a name that is already used for another lesson.
+  - Step 4: Enter a description in the lesson description field.
+  - Step 5: Select 'Save'.
+expectedResult: The system should display a notification that the name is already used and prompt the administrator to enter another name.
+

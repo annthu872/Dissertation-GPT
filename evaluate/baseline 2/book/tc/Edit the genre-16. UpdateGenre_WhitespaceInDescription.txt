@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Valid Data
+objective: Verify that the genre can be updated with valid name and description
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter a valid name and description for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Whitespace in Description
+objective: Verify that the genre description can contain whitespaces and still be updated successfully
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter a valid name and a description with leading, trailing, or in-between whitespaces.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database with the given whitespaces in the description, and the user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 3
+testCaseName: Update Genre Operation Cancel
+objective: Verify that the update operation can be cancelled before submission
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The update operation should be cancelled, no changes should be made to the genre in the database, and the user should be redirected to the list of genres.
+
+Test Case: Test Case 4
+testCaseName: Update Genre with Invalid Data
+objective: Verify that an error message is displayed when trying to update a genre with invalid data
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the genre (e.g., leaving the name or description field empty).
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating the invalid data, and the genre should not be updated in the database.
+

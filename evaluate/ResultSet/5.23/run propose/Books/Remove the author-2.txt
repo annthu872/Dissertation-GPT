@@ -1,7 +1,4 @@
-Successful Author Deletion
-User Cancels Deletion
-User navigates to "Books" after canceling deletion
-User navigates to "Genres" after canceling deletion
-User navigates to "Authors" after canceling deletion
-User navigates to "Home" after canceling deletion
-User navigates to "API" after canceling deletion
+1. Successful Deletion Scenario
+2. Deletion Cancellation Scenario
+3. User Cancels Deletion from Confirmation Dialog
+4. User Navigates Away Using Menu Before Confirming Deletion

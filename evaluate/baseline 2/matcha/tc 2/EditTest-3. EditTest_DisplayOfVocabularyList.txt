@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Edit Vocabulary Test - Basic Flow
+objective: Verify that administrators can edit vocabulary tests and save changes successfully.
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: Verify that the system redirects the administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises as required.
+  - Step 5: Administrator selects 'Save'.
+  - Step 6: Verify that the system saves all edited exercises.
+expectedResult: The system should save and update the edited vocabulary exercises successfully.
+
+Test Case: Test Case 2
+testCaseName: Edit Vocabulary Test - Alternative Flow (Save Changes)
+objective: Verify that administrators can choose to save changes when exiting the exercise editing mode.
+testSteps:
+  - Step 1 to Step 4: Follow steps 1 to 4 from the Basic Flow.
+  - Step 5: Administrator presses the button to exit exercise editing mode.
+  - Step 6: Verify that a pop-up screen appears with 'Save changes?' and options 'Save' and 'Do not save'.
+  - Step 7: Administrator selects 'Save'.
+  - Step 8: Verify that the system saves all edited exercises.
+expectedResult: The system should prompt to save changes and successfully save the edited exercises upon confirmation.
+
+Test Case: Test Case 3
+testCaseName: Edit Vocabulary Test - Exception Flow (Do Not Save Changes)
+objective: Verify that administrators can choose not to save changes when exiting the exercise editing mode.
+testSteps:
+  - Step 1 to Step 4: Follow steps 1 to 4 from the Basic Flow.
+  - Step 5: Administrator presses the button to exit exercise editing mode.
+  - Step 6: Verify that a pop-up screen appears with 'Save changes?' and options 'Save' and 'Do not save'.
+  - Step 7: Administrator selects 'Do not save'.
+  - Step 8: Verify that the system does not save the edited exercises and discards changes.
+expectedResult: The system should discard all changes made during the editing session without saving them.
+

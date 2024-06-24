@@ -1,0 +1,25 @@
+1. VerifyClickCreateNewButton
+2. VerifyFormDisplayAfterClickingCreateNew
+3. VerifySubmitWithValidData
+4. VerifyErrorMessageForInvalidData
+5. VerifyDatabaseEntryOnSuccessfulSubmission
+6. VerifyErrorMessageOnDatabaseError
+7. VerifyAuthorListUpdateAfterNewAuthorAdded
+8. VerifyCancelOperationBeforeDataSubmission
+9. VerifyNoDatabaseEntryOnCancel
+10. VerifyNavigationAwayDoesNotSaveData
+11. VerifyMandatoryFieldsValidation
+12. VerifyMaxLengthValidationForNameField
+13. VerifyMaxLengthValidationForBioField
+14. VerifyInputTypeValidationForNameField
+15. VerifyTextAreaInputForBioField
+16. VerifyUniqueNameConstraint
+17. VerifySuccessfulSubmissionMessage
+18. VerifyFormResetAfterSubmission
+19. VerifyFormResetAfterCancellation
+20. VerifyNavigationToOtherSections
+21. VerifyAuthorRecordDeletionFunctionality (If applicable)
+22. VerifyAuthorRecordEditFunctionality (If applicable)
+23. VerifyPaginationAfterMultipleAuthorsAdded
+24. VerifySearchFunctionalityInAuthorList
+25. VerifySortFunctionalityInAuthorList

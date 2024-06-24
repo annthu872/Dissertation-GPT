@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify accessibility compliance on word sorting test interface
+objective: Ensure that the word sorting test interface is accessible for users with disabilities, following accessibility guidelines
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Use a screen reader to listen to the instructions and question.
+  - Step 4: Attempt to select letters using keyboard navigation.
+  - Step 5: Submit the answer using keyboard controls.
+  - Step 6: Listen to the feedback from the screen reader for the result.
+expectedResult: The screen reader should properly read out all elements on the screen including instructions, questions, letters, and feedback. Keyboard navigation should allow the user to select letters and submit answers without requiring mouse interaction.
+
+Test Case: Test Case 2
+testCaseName: Verify color contrast for correct and incorrect answers
+objective: Ensure that the color contrast for the pop-up screens indicating correct and incorrect answers meets accessibility standards
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test and complete a question correctly.
+  - Step 3: Observe the color contrast of the pop-up screen for a correct answer.
+  - Step 4: Repeat the test with an incorrect answer to observe the color contrast of the pop-up screen for an incorrect answer.
+expectedResult: The color contrast for both the green and red pop-up screens should meet the minimum contrast ratios as defined by accessibility guidelines, ensuring that users with color vision deficiencies can distinguish the feedback.
+
+Test Case: Test Case 3
+testCaseName: Verify alternative text for images used in questions
+objective: Ensure that all images used in the word sorting test questions have appropriate alternative text for screen reader users
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test that includes an image as part of the question.
+  - Step 3: Use a screen reader to navigate to the image.
+  - Step 4: Listen to the alternative text provided for the image.
+expectedResult: The screen reader should read out an accurate and descriptive alternative text for the image, allowing users who cannot see the image to understand its content and context within the question.
+

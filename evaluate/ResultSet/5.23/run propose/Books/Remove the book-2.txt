@@ -1,8 +1,3 @@
-Successful Book Deletion
-User Cancels Deletion
-User cancels deletion from confirmation dialog
-User navigates away by selecting "Books" from the menu after initiating delete
-User navigates away by selecting "Genres" from the menu after initiating delete
-User navigates away by selecting "Authors" from the menu after initiating delete
-User navigates away by selecting "Home" from the menu after initiating delete
-User navigates away by selecting "API" from the menu after initiating delete
+1. Successful Book Deletion
+2. User Cancels Deletion
+3. User Navigates Away Using Menu Before Confirming Deletion

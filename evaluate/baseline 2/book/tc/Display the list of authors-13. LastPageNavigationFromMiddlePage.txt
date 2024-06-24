@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Last Page from Middle Page in Authors List
+objective: Ensure that users can navigate to the last page of the authors list from a middle page using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: If the list contains more than 20 authors, navigate to a middle page by clicking the appropriate page number in the pagination block or using the 'Next' button.
+  - Step 4: From the middle page, click on the last page number displayed in the pagination block.
+expectedResult: The application should display the last page of authors, showing up to 10 items (or fewer if the total number of authors is not a multiple of 10). The displayed columns should include 'id', 'Name', and 'Bio' for each author listed.
+
+Test Case: Test Case 2
+testCaseName: Verify 'Next' Button Functionality from Middle Page in Authors List
+objective: To confirm that the 'Next' button functions correctly from a middle page, leading to the subsequent page of authors.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Navigate to a middle page by clicking the appropriate page number in the pagination block or using the 'Next' button until reaching a middle page.
+  - Step 4: Click the 'Next' button from the middle page.
+expectedResult: The application should navigate to the next page, displaying the next set of up to 10 authors with their 'id', 'Name', and 'Bio'.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Page Number Navigation in Authors List
+objective: Ensure that users can navigate directly to a specific page of the authors list using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Click on a specific page number in the pagination block.
+expectedResult: The application should display the authors list corresponding to the selected page number, showing up to 10 authors per page with their 'id', 'Name', and 'Bio'.
+

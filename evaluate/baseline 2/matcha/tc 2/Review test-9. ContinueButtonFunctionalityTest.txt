@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Continue Button Functionality with Correct Answer
+objective: Ensure that when learners select the correct answer and press 'Continue', the system correctly increases the memory level of the word and navigates to the next word.
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Choose one of the four selections provided for a word.
+  - Step 4: Click the right answer.
+  - Step 5: Observe the feedback (green word) and press 'Continue' button.
+expectedResult: The word's memory level is increased, and the learner is directed to the next word in the review list.
+
+Test Case: Test Case 2
+testCaseName: Verify Continue Button Functionality with Wrong Answer
+objective: Ensure that when learners select the wrong answer and press 'Continue', the system correctly decreases the memory level of the word and navigates to the next word.
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Choose one of the four selections provided for a word.
+  - Step 4: Click the wrong answer.
+  - Step 5: Observe the feedback (red word) and press 'Continue' button.
+expectedResult: The word's memory level is decreased, and the learner is directed to the next word in the review list.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Home Page After Completing Review
+objective: Ensure that after completing the review of the last word in the list, pressing 'Continue' navigates the learner back to the Home page.
+testSteps:
+  - Step 1: Log in as a learner and proceed to the last word in the review list.
+  - Step 2: Select the correct or wrong answer for the last word.
+  - Step 3: Press 'Continue' button.
+expectedResult: The learner is navigated back to the Home page, and the review session is saved.
+
+Test Case: Test Case 4
+testCaseName: Verify Functionality of 'Stay' Option on Exit
+objective: Ensure that when learners press 'Exit' during a review and then choose 'Stay', they are returned to the same point in the review.
+testSteps:
+  - Step 1: Log in as a learner and start a review.
+  - Step 2: Press 'Exit' button during the review.
+  - Step 3: On the pop-up, choose 'Stay'.
+expectedResult: The learner is returned to the same point in the review without losing progress.
+
+Test Case: Test Case 5
+testCaseName: Verify Functionality of 'Confirm' Option on Exit
+objective: Ensure that when learners press 'Exit' during a review and then choose 'Confirm', they are navigated back to the Home page without saving the review.
+testSteps:
+  - Step 1: Log in as a learner and start a review.
+  - Step 2: Press 'Exit' button during the review.
+  - Step 3: On the pop-up, choose 'Confirm'.
+expectedResult: The learner is navigated back to the Home page, and the review progress is not saved.
+

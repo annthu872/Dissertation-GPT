@@ -1,0 +1,18 @@
+1. Test Scenario: Successful Employee Addition
+2. Test Scenario: Manager Not Logged In
+3. Test Scenario: Mandatory Fields Left Blank
+4. Test Scenario: Invalid Field Entry
+5. Test Scenario: Employee Addition with Minimum Required Information
+6. Test Scenario: Employee Addition with All Fields Filled
+7. Test Scenario: Refresh Page During Employee Addition
+8. Test Scenario: Add Employee with Duplicate Information
+9. Test Scenario: Add Employee with Special Characters in Fields
+10. Test Scenario: Add Employee with Extremely Long Values in Fields
+11. Test Scenario: System Response Time for Employee Addition
+12. Test Scenario: Employee Addition Without Clicking Add Button
+13. Test Scenario: Navigation Away from Page Before Submission
+14. Test Scenario: Employee Addition Using Keyboard Shortcuts
+15. Test Scenario: Employee ID and Password Generation Verification
+16. Test Scenario: Employee Addition with Inactive Manager Account
+17. Test Scenario: Employee Addition During System Maintenance
+18. Test Scenario: Employee Addition with Simultaneous Manager Sessions

@@ -1,0 +1,20 @@
+1. Test Display of Book Details on Click
+2. Test Correctness of Displayed Book ID
+3. Test Display of Correct Book Title
+4. Test Display of Correct Author Name
+5. Test Display of Correct Genre
+6. Test Display of Book Description
+7. Test Display of Correct Publication Date
+8. Test Display of Book Details for Multiple Books
+9. Test Display of Book Details with Special Characters in Title
+10. Test Display of Book Details with Long Description
+11. Test Display of Book Details with Future Publication Date
+12. Test Display of Book Details with Old Publication Date
+13. Test Display of Book Details with Non-English Characters
+14. Test Display of Book Details for a Book with Multiple Authors
+15. Test Display of Book Details for a Book without Genre
+16. Test Display of Book Details for a Book without Description
+17. Test Display of Book Details with Large Data Sets
+18. Test Display of Book Details Accessibility Features
+19. Test Display of Book Details Responsiveness on Different Devices
+20. Test Display of Book Details Performance under High Traffic

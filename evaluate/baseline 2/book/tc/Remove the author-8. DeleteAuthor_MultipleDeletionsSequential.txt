@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete a single author and confirm deletion
+objective: Verify that the user can delete an author and the system correctly removes the author's record from the database upon confirmation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
+expectedResult: The author's record should be successfully removed from the database, and the author list/details page should no longer display the deleted author.
+
+Test Case: Test Case 2
+testCaseName: Delete a single author and cancel deletion
+objective: Verify that when a user cancels the deletion operation, the author's record remains in the database and is still visible on the author list/details page
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort the deletion process.
+expectedResult: The deletion process should be aborted, the author's record should remain in the database, and the author should still be visible on the author list/details page.
+
+Test Case: Test Case 3
+testCaseName: Delete a single author and navigate away without confirming
+objective: Verify that navigating away from the delete confirmation dialog without confirming the deletion retains the author's record in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's record should remain in the database, and navigating to the selected page should display the updated data without removing the author.
+

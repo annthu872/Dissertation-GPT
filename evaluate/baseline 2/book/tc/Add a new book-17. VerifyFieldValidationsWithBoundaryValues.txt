@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify field validations for Title with boundary values
+objective: Verify that the Title field correctly handles boundary value inputs during the creation of a new book record
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Title.
+  - Step 3: Enter a Title with just below the minimum character limit and press 'Submit'.
+  - Step 4: Adjust the Title to meet exactly the minimum character limit and press 'Submit'.
+  - Step 5: Enter a Title with just above the minimum character limit and press 'Submit'.
+  - Step 6: Enter a Title with just below the maximum character limit and press 'Submit'.
+  - Step 7: Adjust the Title to meet exactly the maximum character limit and press 'Submit'.
+  - Step 8: Enter a Title with just above the maximum character limit and press 'Submit'.
+expectedResult: The system should only accept the Title inputs from steps 4, 5, 6, and 7. Steps 3 and 8 should result in an error message indicating the Title does not meet the character limit requirements.
+
+Test Case: Test Case 2
+testCaseName: Verify successful book creation with valid data
+objective: Ensure that a new book record can be successfully added to the database with valid data inputs
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data for the Title, Author, Genre, Description, and Publication date fields.
+  - Step 3: Press the 'Submit' button.
+expectedResult: A new book record should be successfully added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during book creation
+objective: Ensure that the book creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Press the 'Cancel' button before pressing 'Submit'.
+  - Step 4: Navigate back to the book list page.
+expectedResult: The user should be redirected back to the book list page without the new book record being added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify field validation for Publication date with incorrect format
+objective: Ensure that an error message is displayed when an incorrect format is entered in the Publication date field
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Publication date.
+  - Step 3: Enter an incorrect format for the Publication date and press 'Submit'.
+expectedResult: An error message should be displayed indicating that the Publication date is in an incorrect format.
+

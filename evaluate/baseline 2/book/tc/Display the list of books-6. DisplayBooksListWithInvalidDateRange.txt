@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Display Books List With Invalid Date Range
+objective: Verify that the application handles an invalid date range input by the user when filtering the list of books by publication date
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed (up to 10 items on each page).
+  - Step 3: In the date range input forms above the data, enter an invalid date range (e.g., end date is before the start date).
+  - Step 4: Click the refresh button to the right from dates inputs.
+expectedResult: The application should display an error message indicating the date range is invalid and not refresh or update the list of books.
+
+Test Case: Test Case 2
+testCaseName: Display Books List Without Applying Date Range Filter
+objective: Verify that the application displays the list of books without applying any date range filter when the user provides an invalid date range
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the initial list of books displayed (up to 10 items on each page).
+  - Step 3: In the date range input forms above the data, enter an invalid date range (e.g., start date is later than the end date).
+  - Step 4: Click the refresh button to the right from dates inputs.
+expectedResult: The application should not apply the date range filter and should continue to display the list of books as if no filter was applied.
+
+Test Case: Test Case 3
+testCaseName: Pagination Functionality With Invalid Date Range
+objective: Verify that the pagination functionality works correctly even when an invalid date range is entered but not applied
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the initial list of books displayed (up to 10 items on each page).
+  - Step 3: Enter an invalid date range in the date range input forms above the data.
+  - Step 4: Click the refresh button to the right from dates inputs.
+  - Step 5: Attempt to navigate to the next page of books by clicking the 'Next' button or selecting the following page number.
+expectedResult: The application should allow the user to navigate through the pages of books as normal, ignoring the invalid date range filter.
+

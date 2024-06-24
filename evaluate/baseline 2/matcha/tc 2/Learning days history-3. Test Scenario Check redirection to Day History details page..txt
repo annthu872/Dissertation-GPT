@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Verify redirection to 'Day History' details page from Home page
+objective: Verify that the learner is redirected to the 'Day History' details page to see the days they have spent learning after selecting 'Day History' from the History page.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: From the Home page, select 'History'.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The learner is redirected to the 'Day History' details page, where they can see the number of days they have learned continuously. If the learner breaks their chain, the number shown resets to one.
+

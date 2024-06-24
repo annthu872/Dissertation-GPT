@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Missing 'Other Option 1' Field
+objective: Verify that the system prompts an error when 'Other Option 1' field is missing while creating a question for the selection test
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Leave the 'other option 1' field empty.
+  - Step 11: Fill in the 'other option 2' and 'other option 3' fields with different wrong answers.
+  - Step 12: Press the 'Save' button.
+expectedResult: System shows notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 1' field.
+
+Test Case: Test Case 2
+testCaseName: Successfully Create Question with All Compulsory Fields Filled
+objective: Verify that the system allows for successful question creation when all compulsory fields are filled
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in the 'other option 1', 'other option 2', and 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: System saves the question and redirects Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 3
+testCaseName: Cancel Question Creation and Stay on Page
+objective: Verify that Admin can cancel the question creation process and choose to stay on the page
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Start filling in any of the fields.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, choose the 'Stay' option.
+expectedResult: The dialog closes, and Admin remains on the 'Add new question for selection test' page with the work on that question kept.
+

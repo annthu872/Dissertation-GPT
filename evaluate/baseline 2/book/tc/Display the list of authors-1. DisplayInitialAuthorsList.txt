@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Initial Authors List
+objective: Verify that the application correctly displays the initial list of authors upon user selection
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item from the main menu.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application displays the initial list of authors, showing up to 10 items. Each item includes the author's id, name, and bio.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Authors List
+objective: Ensure that the user can navigate through different pages of authors using the pagination controls
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the initial list of authors.
+  - Step 2: Locate the pagination block below the list of authors.
+  - Step 3: Click the 'Next' button in the pagination block.
+  - Step 4: Observe the list of authors on the new page.
+expectedResult: Upon clicking the 'Next' button, the application displays the next set of up to 10 authors. The page updates to show the next 10 records from the authors database.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Page Selection in Authors List Pagination
+objective: Ensure that the user can directly select a page number from the pagination controls to view a specific set of authors
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the initial list of authors.
+  - Step 2: Locate the pagination block below the list of authors.
+  - Step 3: Click on a page number (other than the current page) within the pagination block.
+  - Step 4: Observe the list of authors on the selected page.
+expectedResult: Upon selecting a specific page number, the application updates the list to display the set of up to 10 authors corresponding to the selected page. The displayed authors match the page number selected in the pagination block.
+

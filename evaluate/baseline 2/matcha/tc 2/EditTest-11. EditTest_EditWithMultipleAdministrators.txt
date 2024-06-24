@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: EditTest_BasicFlow
+objective: Verify that an administrator can successfully edit a test and save changes.
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Administrator selects 'Save'.
+expectedResult: The system saves all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+
+Test Case: Test Case 2
+testCaseName: EditTest_AlternativeFlow_SaveChanges
+objective: Verify that an administrator can exit the editing mode, choose to save changes, and the system saves all edits.
+testSteps:
+  - Step 1: Follow steps 1 to 4 from the basic flow.
+  - Step 2: Administrator presses the button to exit exercise editing mode.
+  - Step 3: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 4: Administrator selects 'Save'.
+expectedResult: The system saves all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+
+Test Case: Test Case 3
+testCaseName: EditTest_ExceptionFlow_DoNotSaveChanges
+objective: Verify that an administrator can exit the editing mode, choose not to save changes, and the system does not record the edits.
+testSteps:
+  - Step 1: Follow steps 1 to 4 from the basic flow.
+  - Step 2: Administrator presses the button to exit exercise editing mode.
+  - Step 3: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 4: Administrator selects 'Do not save'.
+expectedResult: The system does not save the edits, and the English vocabulary exercises remain unchanged in the system.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Validate correct answer display for vocabulary question with jumbled letters
+objective: Verify that the system displays a green pop-up screen when the learner arranges the jumbled letters into the correct word and submits it.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word with jumbled letters.
+  - Step 4: Arrange the letters in the correct order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: After pressing enter, a green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Validate incorrect answer display for vocabulary question with jumbled letters
+objective: Verify that the system displays a red pop-up screen when the learner arranges the jumbled letters into an incorrect word and submits it.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word with jumbled letters.
+  - Step 4: Intentionally arrange the letters in the wrong order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: After pressing enter, a red pop-up screen should appear indicating the answer is incorrect.
+

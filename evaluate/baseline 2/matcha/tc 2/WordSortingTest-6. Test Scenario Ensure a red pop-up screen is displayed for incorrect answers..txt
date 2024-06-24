@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify red pop-up for incorrect word arrangement
+objective: Ensure that a red pop-up screen is displayed when the learner arranges the letters in an incorrect order and submits the answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Incorrectly arrange the letters by clicking on the letter buttons and press enter.
+expectedResult: A red pop-up screen should be displayed indicating the answer is incorrect.
+
+Test Case: Test Case 2
+testCaseName: Verify green pop-up for correct word arrangement
+objective: To confirm that a green pop-up screen is displayed when the learner arranges the letters in the correct order and submits the answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Correctly arrange the letters by clicking on the letter buttons and press enter.
+expectedResult: A green pop-up screen should be displayed indicating the answer is correct.
+
+Test Case: Test Case 3
+testCaseName: Verify vocabulary words are marked as studied after submission
+objective: To ensure that vocabulary words are marked as studied in the system after the learner submits an answer, regardless of correctness.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test and complete a question by arranging the letters and pressing enter, regardless of correctness.
+expectedResult: The vocabulary word for the completed question should be marked as studied in the system.
+

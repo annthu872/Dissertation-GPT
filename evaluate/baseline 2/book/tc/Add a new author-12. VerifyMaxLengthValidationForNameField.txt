@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Max Length Validation for Name Field in Author Creation
+objective: Ensure that the Name field in the new author creation form enforces a maximum length validation rule
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: In the form displayed, enter a string of characters exceeding the maximum allowed length for the Name field.
+  - Step 3: Fill in the rest of the form with valid data.
+  - Step 3: Attempt to submit the form by clicking the 'Submit' button.
+expectedResult: The form submission is blocked, and a validation message is displayed indicating that the Name field exceeds the maximum allowed length.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Author Creation with Valid Data
+objective: To verify that a new author record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: Enter valid data into all fields, including a Name that does not exceed the maximum length.
+  - Step 3: Click the 'Submit' button to attempt to add the new author record.
+expectedResult: The new author record is successfully added to the database, and the user is redirected to the list of authors with the newly added record visible.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation in Author Creation
+objective: To ensure that the cancel operation works correctly and no data is saved when creating a new author
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Before submitting, click the 'Cancel' button.
+expectedResult: The form is closed, no data is saved to the database, and the user is redirected back to the list of authors without any changes.
+

@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Bio Length Less Than Minimum Requirement
+objective: Verify that the system prevents updating an author's bio when the bio length does not meet the minimum requirement and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter or modify the author's name as required.
+  - Step 4: Enter a bio that is shorter than the minimum required length.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the bio does not meet the minimum length requirement.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Author Bio
+objective: Verify that cancelling the update operation does not save the changes and redirects the user back to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the author's name and bio.
+  - Step 4: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The user is redirected back to the list of authors without any changes being saved to the database.
+

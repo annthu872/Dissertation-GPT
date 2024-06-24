@@ -1,0 +1,63 @@
+Test Case: Test Case 1
+testCaseName: Validate input fields for special character restriction with valid inputs
+objective: Verify that the system accepts valid inputs without special characters for the question creation fields
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence containing '...'.
+  - Step 9: Fill the 'correct answer' field with a valid word.
+  - Step 10: Fill the 'other option 1', 'other option 2', and 'other option 3' fields with valid different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, showing the newly created question.
+
+Test Case: Test Case 2
+testCaseName: Validate input fields for special character restriction with invalid sentence
+objective: Verify that the system rejects sentences with special characters in the 'sentence' field
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with an invalid sentence containing special characters.
+  - Step 9: Fill the remaining fields with valid inputs.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting the Admin to re-enter the 'sentence' field without special characters.
+
+Test Case: Test Case 3
+testCaseName: Validate mandatory fields are filled for question creation
+objective: Verify that the system prompts the Admin to fill all mandatory fields if any are skipped
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill only some of the mandatory fields, intentionally skipping at least one.
+  - Step 9: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting the Admin to fill the missing field(s).
+
+Test Case: Test Case 4
+testCaseName: Cancel question creation and confirm cancellation
+objective: Verify that the system allows the Admin to cancel the question creation and confirms the cancellation
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Press the 'Cancel' button.
+  - Step 9: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system cancels the question creation process and redirects the Admin to the 'Word Information' page of the selected word without saving the question.
+

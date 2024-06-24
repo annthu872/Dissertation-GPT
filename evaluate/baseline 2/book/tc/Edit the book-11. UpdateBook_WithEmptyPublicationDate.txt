@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_WithEmptyPublicationDate
+objective: Verify that the system prevents updating a book record with an empty 'Publication Date' field
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, fill in or modify the 'Title', 'Author', 'Genre', and 'Description' fields with valid data.
+  - Step 4: Leave the 'Publication Date' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the 'Publication Date' field cannot be empty and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_CancelOperation
+objective: Verify that the book update operation can be canceled without saving changes
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Modify any of the book details ('Title', 'Author', 'Genre', 'Description', 'Publication Date') with valid data.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the book record in the database and should display the list of books without applying the changes.
+
+Test Case: Test Case 3
+testCaseName: UpdateBook_WithAllValidData
+objective: Verify that a book record can be successfully updated with all fields filled with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Fill in the 'Title', 'Author', 'Genre', 'Description', and 'Publication Date' fields with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should successfully update the book record in the database and display the updated book details in the list of books.
+

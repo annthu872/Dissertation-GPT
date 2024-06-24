@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Disabled 'Previous' Button on First Flashcard
+objective: Ensure that the 'Previous' button is disabled when the learner is on the first flashcard of a topic, preventing navigation to a non-existent previous flashcard.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Navigate to the corresponding Flashcard page for the selected topic.
+  - Step 6: Verify that the first flashcard is displayed with the vocabulary name, pronunciation, and Vietnamese meaning.
+  - Step 7: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button should be disabled or not clickable, and no action should be performed when attempted to click, ensuring the learner remains on the first flashcard.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Next Flashcard
+objective: To confirm that learners can navigate to the next flashcard by clicking the 'Next' button and that the system behaves as expected by displaying the next vocabulary word.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Navigate to the corresponding Flashcard page for the selected topic.
+  - Step 6: Click on the 'Next' button to go to the flashcard of the next vocabulary word.
+expectedResult: The system should display the next flashcard with the new vocabulary word, including its name, pronunciation, Vietnamese meaning, and the 'Previous' button becomes enabled.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of 'Previous' Button After Navigating Away From First Flashcard
+objective: Ensure that the 'Previous' button functions correctly by navigating the learner back to the first flashcard after they have moved to subsequent flashcards.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Navigate to the corresponding Flashcard page for the selected topic and ensure you are on the first flashcard.
+  - Step 6: Click the 'Next' button to move to the second flashcard.
+  - Step 7: Click the 'Previous' button to navigate back to the first flashcard.
+expectedResult: Upon clicking the 'Previous' button, the system should navigate back to the first flashcard, displaying the vocabulary name, pronunciation, and Vietnamese meaning.
+

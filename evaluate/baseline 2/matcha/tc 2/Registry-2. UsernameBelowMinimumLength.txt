@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Register with Username Below Minimum Length
+objective: Verify that the system shows a notification for invalid username when the username is below the minimum length requirement
+testSteps:
+  - Step 1: Navigate to the Registry page.
+  - Step 2: Fill in the username field with a username shorter than 8 characters.
+  - Step 3: Fill in the password field with a valid password that meets all the requirements.
+  - Step 4: Press the 'Registry' button.
+expectedResult: System shows a notification that the username is invalid.
+
+Test Case: Test Case 2
+testCaseName: Register with Invalid Password
+objective: Verify that the system shows a notification for invalid password when the password does not meet the requirements
+testSteps:
+  - Step 1: Navigate to the Registry page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Fill in the password field with a password that does not meet the requirements.
+  - Step 4: Press the 'Registry' button.
+expectedResult: System shows a notification that the password is invalid.
+
+Test Case: Test Case 3
+testCaseName: Register with an Existed Username
+objective: Verify that the system shows a notification for an already registered username when attempting to register
+testSteps:
+  - Step 1: Navigate to the Registry page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: System shows a notification that this username has been registered and asks the learner to choose another username.
+
+Test Case: Test Case 4
+testCaseName: Register with Invalid Email
+objective: Verify that the system shows a notification for invalid email when the email does not meet the format or does not exist
+testSteps:
+  - Step 1: Navigate to the Registry page.
+  - Step 2: Click on the Mail icon.
+  - Step 3: Fill in the email field with an invalid email.
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Registry' button.
+expectedResult: System shows a notification that the mail is invalid.
+

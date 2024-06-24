@@ -1,0 +1,27 @@
+1. Successful Purchase with Default Settings
+2. Purchase with Changed Shipping Address
+3. Purchase with New Shipping Address
+4. Purchase with Non-default Payment Method
+5. Purchase with Application Voucher
+6. Purchase with Shop Voucher
+7. Purchase with Changed Shipping Option
+8. Purchase with Note for Shop
+9. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+10. Add Shipping Address with Full Name Containing Numbers
+11. Add Shipping Address with Full Name Containing Symbols
+12. Add Shipping Address with Full Name Less Than 2 Letters
+13. Add Shipping Address with Phone Number Not in Specified Format
+14. Add Shipping Address with Phone Number Containing Letters
+15. Add Shipping Address with Location's Address Not Found on Map
+16. Apply Disabled Voucher Code
+17. Apply Incorrect Voucher Code
+18. Applying a Voucher Code Successfully
+19. Change Shipping Option After Reviewing Order Details
+20. User changes the shipping address to a saved address before placing the order
+21. Add a new shipping address with invalid full name
+22. Add a new shipping address with invalid phone number
+23. Add a new shipping address with unselected city
+24. Add a new shipping address with unselected district
+25. Add a new shipping address with unselected ward
+26. Add a new shipping address with invalid location's address
+27. Add a new shipping address without selecting address type when it's optional

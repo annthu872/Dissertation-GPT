@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Register with valid email and valid credentials
+objective: Verify that a learner can register successfully with a valid email and valid credentials
+testSteps:
+  - Step 1: Click on the Mail icon.
+  - Step 2: Fill in the email field with a valid email address.
+  - Step 3: Fill in the username field with a valid username.
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Registry' button.
+  - Step 6: System redirects to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+
+Test Case: Test Case 2
+testCaseName: Register with invalid username
+objective: Verify that the system shows a notification for invalid username during registration
+testSteps:
+  - Step 1: Fill in the username field with an invalid username.
+  - Step 2: Fill in the password field with a valid password.
+  - Step 3: Press the 'Registry' button.
+expectedResult: System shows a notification that the username is invalid.
+
+Test Case: Test Case 3
+testCaseName: Register with invalid password
+objective: Verify that the system shows a notification for invalid password during registration
+testSteps:
+  - Step 1: Fill in the username field with a valid username.
+  - Step 2: Fill in the password field with an invalid password.
+  - Step 3: Press the 'Registry' button.
+expectedResult: System shows a notification that the password is invalid.
+
+Test Case: Test Case 4
+testCaseName: Register with an existed username
+objective: Verify that the system shows a notification for an already registered username
+testSteps:
+  - Step 1: Fill in the username field with a username that has been registered.
+  - Step 2: Fill in the password field with a valid password.
+  - Step 3: Press the 'Registry' button.
+expectedResult: System shows a notification that this username has been registered and asks the learner to choose another username.
+
+Test Case: Test Case 5
+testCaseName: Register with invalid email
+objective: Verify that the system shows a notification for invalid email during registration
+testSteps:
+  - Step 1: Click on the Mail icon.
+  - Step 2: Fill in the email field with an invalid email address.
+  - Step 3: Fill in the username field with a valid username.
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Registry' button.
+expectedResult: System shows a notification that the email is invalid.
+

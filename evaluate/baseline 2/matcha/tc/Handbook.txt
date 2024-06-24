@@ -1,0 +1,98 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify Navigation to Handbook Tab",
+    "objective": "Verify that the learner can successfully navigate to the Handbook tab from the navigation bar.",
+    "testSteps": [
+      "Step 1: Log into the application.",
+      "Step 2: Locate the navigation bar.",
+      "Step 3: Select the 'Handbook' tab."
+    ],
+    "expectedResult": "The system should display the Handbook page with the learner's vocabulary list.",
+    "explanation": "This test case ensures that the navigation to the Handbook tab works as intended, which is crucial for accessing the vocabulary review functionality."
+  },
+  "Test Case 2": {
+    "testCaseName": "Display Learner's Vocabulary List",
+    "objective": "Verify that the system displays the learner's vocabulary list correctly in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Observe the displayed vocabulary list."
+    ],
+    "expectedResult": "The system displays the vocabulary list in vertical rows, each word in a horizontal row showing the word name, word type, word meaning, memorization level, and a checkbox.",
+    "explanation": "This test case verifies that the vocabulary list is displayed correctly, which is essential for learners to review and manage their vocabulary."
+  },
+  "Test Case 3": {
+    "testCaseName": "Scroll Through Vocabulary List",
+    "objective": "Verify that learners can scroll through their vocabulary list in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Use the scroll bar to navigate through the vocabulary list."
+    ],
+    "expectedResult": "The learner is able to scroll through the vocabulary list to see more vocabulary.",
+    "explanation": "This test case ensures that the scrolling functionality works as expected, allowing learners to view all vocabulary items."
+  },
+  "Test Case 4": {
+    "testCaseName": "Search Vocabulary Functionality",
+    "objective": "Verify that learners can use the search functionality to filter vocabulary in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Press the search bar.",
+      "Step 3: Enter the word to search."
+    ],
+    "expectedResult": "The system filters vocabulary containing characters entered by learners in the search bar.",
+    "explanation": "This test case checks the search functionality, which is crucial for learners to find specific vocabulary quickly."
+  },
+  "Test Case 5": {
+    "testCaseName": "Search Results for Valid Vocabulary",
+    "objective": "Verify that the system displays correct search results for a valid vocabulary search.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Press the search bar.",
+      "Step 3: Enter a valid word to search."
+    ],
+    "expectedResult": "The system displays vocabulary that matches the search criteria.",
+    "explanation": "This test case ensures that the search functionality returns accurate results for valid vocabulary searches."
+  },
+  "Test Case 6": {
+    "testCaseName": "Search for Meaningless Vocabulary",
+    "objective": "Verify the system's response when searching for a meaningless vocabulary.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Press the search bar.",
+      "Step 3: Enter a meaningless word to search."
+    ],
+    "expectedResult": "The system notifies that there are no suitable search results.",
+    "explanation": "This test case checks how the system handles searches for vocabulary that does not exist, ensuring user-friendly feedback is provided."
+  },
+  "Test Case 7": {
+    "testCaseName": "Uncheck Vocabulary for Daily Review Test",
+    "objective": "Verify that learners can exclude vocabulary from the daily review test by unchecking it in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Untick a checkbox of a vocabulary."
+    ],
+    "expectedResult": "The system marks that vocabulary will not appear in the daily test review.",
+    "explanation": "This test case ensures that learners can customize their review tests by excluding specific vocabulary items."
+  },
+  "Test Case 8": {
+    "testCaseName": "Check Vocabulary for Daily Review Test",
+    "objective": "Verify that learners can include vocabulary in the daily review test by checking it in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab.",
+      "Step 2: Tick a checkbox of a vocabulary."
+    ],
+    "expectedResult": "The system marks that vocabulary will appear in the daily test review.",
+    "explanation": "This test case ensures that learners can customize their review tests by including specific vocabulary items."
+  },
+  "Test Case 9": {
+    "testCaseName": "Reflect Changes in Daily Review Test Based on Vocabulary Selection",
+    "objective": "Verify that the daily review test reflects changes based on vocabulary selection in the Handbook.",
+    "testSteps": [
+      "Step 1: Navigate to the Handbook tab and select vocabulary for the daily review test.",
+      "Step 2: Access the daily review test."
+    ],
+    "expectedResult": "The daily review test includes or excludes vocabulary based on the learner's selection in the Handbook.",
+    "explanation": "This test case verifies that the system accurately reflects the learner's choices for vocabulary review, ensuring a personalized review experience."
+  }
+}
+```

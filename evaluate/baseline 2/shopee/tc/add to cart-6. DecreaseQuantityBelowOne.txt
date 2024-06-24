@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Decrease Quantity to Zero
+objective: Verify that the system prevents the user from decreasing the item quantity below one in the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Click the "Add to Cart" button to add the item to the shopping cart.
+  - Step 4: Access the shopping cart.
+  - Step 5: Attempt to decrease the item quantity to zero by clicking the minus button next to the item quantity.
+expectedResult: The minus button is disabled when the item quantity reaches one, preventing the quantity from being decreased below one.
+
+Test Case: Test Case 2
+testCaseName: Decrease Quantity with Minimum Limit
+objective: Ensure that the system does not allow the quantity of an item in the shopping cart to be decreased below the minimum limit of one
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add any item to the shopping cart by navigating to its detail page and clicking the "Add to Cart" button.
+  - Step 3: Go to the shopping cart.
+  - Step 4: If the item quantity is more than one, click the minus button next to the item quantity until it reaches one.
+  - Step 5: Try to click the minus button again when the quantity is one.
+expectedResult: The system disables the minus button when the item quantity is one, ensuring the user cannot decrease the quantity below one.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding to Cart
+objective: Verify that users can adjust the quantity of a product before adding it to the cart and that the system prevents the quantity from being set below one
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Before clicking "Add to Cart", attempt to decrease the product quantity to zero using the minus button next to the product quantity.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system prevents the quantity from being decreased below one, ensuring the user can only add the product to the cart with a quantity of at least one.
+

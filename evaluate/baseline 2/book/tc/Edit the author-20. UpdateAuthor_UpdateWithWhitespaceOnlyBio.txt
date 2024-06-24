@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data
+objective: Verify that the author's details can be updated with valid data including a non-whitespace biography
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter or modify the author's name and bio with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the list of authors with the updated record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Whitespace Only Bio
+objective: Verify that the system prevents updating an author's biography with whitespace only
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter or modify the author's bio with whitespace only.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Incorrect data message is displayed indicating that the bio cannot consist of whitespace only.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Author Operation
+objective: Verify that the author's details are not updated in the database when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not updated in the database, and the list of author records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Without Saving
+objective: Verify that updates are not saved when navigating away without saving
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database, and the user is redirected to the selected page without saving the changes.
+

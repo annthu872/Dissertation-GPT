@@ -1,0 +1,7 @@
+1. Successful Booking Update with No Additional Services or Room Changes
+2. Successful Booking Update with Additional Services or Room Changes
+3. Booking Update with Invalid Field Data
+4. Booking Update with Unchanged Data
+5. Booking Does Not Exist
+6. Payment Not Computed Before Update
+7. Invalid Field Entered

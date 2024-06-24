@@ -1,10 +1,11 @@
-1. Scenario: Sentence field skipped during question creation
-2. Scenario: Correct answer field skipped
-3. Scenario: Other option 1 field skipped
-4. Scenario: Other option 2 field skipped
-5. Scenario: Other option 3 field skipped
-6. Scenario: Successful Question Creation
-7. Scenario: Cancel Question Creation
-8. Scenario: Invalid Sentence Input
-9. Scenario: Sentence field exceeds 250 characters
-10. Scenario: Sentence field contains special characters
+Scenario_SentenceField_Skipped
+Scenario_SentenceField_Over250Characters
+Scenario_SentenceField_ContainsSpecialCharacter
+Scenario_CorrectAnswerField_Skipped
+Scenario_OtherOption1Field_Skipped
+Scenario_OtherOption2Field_Skipped
+Scenario_OtherOption3Field_Skipped
+Successful Creation of a Selection Test Question
+Creation of a Selection Test Question with Invalid Sentence
+Cancellation of Selection Test Question Creation
+Admin navigates to "Lesson Management" page from Homepage

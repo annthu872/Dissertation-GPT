@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Verify Home Screen Redirection After Review Completion
+objective: Ensure that learners are redirected to the Home screen after completing the review test and the review is saved.
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review by going through all words in the review list, selecting the right answers, and pressing 'Continue' for each word until the last word.
+  - Step 4: Press 'Continue' on the last word to finish the review.
+  - Step 5: Observe the redirection and check if the review has been saved.
+expectedResult: The learner is redirected to the Home screen after completing the review, and the review is saved successfully.
+
+Test Case: Test Case 2
+testCaseName: Verify Correct Answer Increases Memory Level
+objective: To verify that selecting the correct answer increases the memory level of the word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Select the correct answer for a word during the review.
+  - Step 4: Press 'Continue' to proceed to the next word.
+expectedResult: The system shows a green word indicating the correct selection, and the memory level of the word is increased.
+
+Test Case: Test Case 3
+testCaseName: Verify Wrong Answer Decreases Memory Level
+objective: Ensure that selecting the wrong answer decreases the memory level of the word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Select the wrong answer for a word during the review.
+  - Step 4: Press 'Continue' to proceed to the next word.
+expectedResult: The system shows a red word indicating the wrong selection, and the memory level of the word is decreased.
+
+Test Case: Test Case 4
+testCaseName: Verify Ability to Exit Review and Stay
+objective: To verify that learners can choose to exit the review and then decide to stay and continue the review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, select 'Stay'.
+  - Step 5: Continue with the review.
+expectedResult: The learner is able to continue with the review after selecting 'Stay' on the pop-up.
+
+Test Case: Test Case 5
+testCaseName: Verify Exiting Review Without Saving
+objective: Ensure that learners can exit the review without saving it and are redirected to the Home page.
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, select 'Confirm'.
+expectedResult: The learner is redirected to the Home page without the review being saved.
+

@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Review Method Sound Test - Correct Answer
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer in sound method review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with sound method.
+  - Step 4: Click on the correct answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the memory level of the word has been increased.
+
+Test Case: Test Case 2
+testCaseName: Review Method Sound Test - Incorrect Answer
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer in sound method review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with sound method.
+  - Step 4: Click on the wrong answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the memory level of the word has been decreased.
+
+Test Case: Test Case 3
+testCaseName: Review Method Sound Test - Completion of Review
+objective: Verify that the system redirects the learner to the Home page and saves the review upon completion.
+testSteps:
+  - Step 1: Log in as a learner with only one word left in the review words list.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review for the last word by selecting an answer and clicking 'Continue'.
+expectedResult: After completing the review for the last word, the system should redirect the learner to the Home page and save the review.
+
+Test Case: Test Case 4
+testCaseName: Review Method Sound Test - Exit and Stay
+objective: Verify that learners can opt to stay in the review after pressing the 'Exit' button.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: In the pop-up, select the 'Stay' button.
+expectedResult: After selecting 'Stay', the learner should remain on the review screen to continue with the review.
+
+Test Case: Test Case 5
+testCaseName: Review Method Sound Test - Exit and Confirm
+objective: Verify that the system redirects the learner to the Home page without saving the review when they choose to exit.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: In the pop-up, select the 'Confirm' button.
+expectedResult: After selecting 'Confirm', the system should redirect the learner to the Home page and the review progress should not be saved.
+

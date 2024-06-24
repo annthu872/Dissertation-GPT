@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify correct word arrangement functionality
+objective: To verify that the system correctly identifies and accepts a correctly arranged word by the learner and displays a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word arranging test section.
+  - Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word.
+  - Step 4: Arrange the letters in correct order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing the arrangement.
+expectedResult: After pressing enter, the system should compare the user's answer with the correct answer and display a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect word arrangement functionality
+objective: To verify that the system correctly identifies a wrongly arranged word by the learner and displays a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word arranging test section.
+  - Step 3: Read the question or the meaning of the vocabulary or observe the image showing the word.
+  - Step 4: Intentionally arrange the letters in incorrect order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing the arrangement.
+expectedResult: After pressing enter, the system should compare the user's answer with the correct answer and display a red pop-up screen indicating the answer is incorrect.
+

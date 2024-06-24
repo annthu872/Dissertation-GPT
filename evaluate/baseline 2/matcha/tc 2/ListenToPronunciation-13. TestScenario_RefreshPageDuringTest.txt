@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Refresh Page During Listening Pronunciation Test - Correct Answer
+objective: Verify that the system correctly handles a page refresh during a listening pronunciation test when the learner selects the correct answer.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has started a listening pronunciation test.
+  - Step 2: The screen displays the test with a speaker button. The learner clicks the speaker button to listen to the pronunciation.
+  - Step 3: The learner guesses the entire word and chooses the correct answer.
+  - Step 4: Before the system displays the result, the learner refreshes the page.
+  - Step 5: After the page reloads, the learner re-selects the correct answer.
+expectedResult: After re-selecting the correct answer post-refresh, the system should compare the Vietnamese meanings and English vocabulary chosen by the user and display a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Refresh Page During Listening Pronunciation Test - Wrong Answer
+objective: Verify that the system correctly handles a page refresh during a listening pronunciation test when the learner selects the wrong answer.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has started a listening pronunciation test.
+  - Step 2: The screen displays the test with a speaker button. The learner clicks the speaker button to listen to the pronunciation.
+  - Step 3: The learner guesses the entire word and chooses a wrong answer.
+  - Step 4: Before the system displays the result, the learner refreshes the page.
+  - Step 5: After the page reloads, the learner re-selects a wrong answer.
+expectedResult: After re-selecting a wrong answer post-refresh, the system should compare the Vietnamese meanings and English vocabulary chosen by the user and display a red pop-up screen indicating the answer is wrong.
+

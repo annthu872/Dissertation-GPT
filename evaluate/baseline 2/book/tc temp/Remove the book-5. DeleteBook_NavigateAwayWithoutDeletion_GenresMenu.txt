@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion confirmation
+objective: Ensure that the application prompts for deletion confirmation when a user attempts to delete a book
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Observe the dialog page for deletion confirmation.
+expectedResult: A dialog page asking for confirmation to delete the selected book should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify book deletion
+objective: Ensure that the book is deleted from the database upon confirmation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the dialog page, click the 'Confirm' button to confirm deletion.
+expectedResult: The book should be deleted from the database, and the updated list of books should be displayed without the deleted book.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of book deletion
+objective: Ensure that the book is not deleted from the database when the user cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the dialog page, click the 'Cancel' button.
+expectedResult: The book should not be deleted from the database, and the user should be redirected back to the updated list of books without any changes.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from deletion dialog without deletion
+objective: Ensure that the book is not deleted if the user navigates away from the deletion dialog without confirming deletion
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the dialog page, instead of clicking 'Confirm' or 'Cancel', navigate to another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The book should not be deleted from the database, and the user should be able to view the selected page with updated data without any changes to the book list.
+

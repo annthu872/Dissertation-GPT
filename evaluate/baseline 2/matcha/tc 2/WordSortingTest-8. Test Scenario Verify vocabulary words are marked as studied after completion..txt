@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer marks vocabulary as studied
+objective: To ensure that when a learner correctly arranges the vocabulary, it is marked as studied
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Arrange the letters in the correct order and press enter.
+  - Step 5: Observe the pop-up screen.
+expectedResult: After arranging the letters correctly and pressing enter, a green pop-up screen should appear, and the vocabulary word should be marked as studied in the system.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer feedback
+objective: To ensure that when a learner arranges the vocabulary incorrectly, they receive immediate feedback
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order and press enter.
+  - Step 5: Observe the pop-up screen.
+expectedResult: After arranging the letters incorrectly and pressing enter, a red pop-up screen should appear indicating the answer is wrong.
+
+Test Case: Test Case 3
+testCaseName: Verify vocabulary marked as studied after correct answer
+objective: To confirm that the system marks the vocabulary word as studied after the learner correctly answers the question
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test and complete a question correctly.
+  - Step 3: Confirm the appearance of a green pop-up screen.
+  - Step 4: Navigate to the vocabulary section to check if the word is marked as studied.
+expectedResult: The vocabulary word should be marked as studied in the vocabulary section after the learner correctly arranges it and sees a green pop-up screen.
+

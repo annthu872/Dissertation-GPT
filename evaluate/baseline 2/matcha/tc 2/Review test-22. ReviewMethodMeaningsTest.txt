@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Review Process Correct Answer Flow
+objective: Verify that the system correctly processes and provides feedback for a correct answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with four selections of answer.
+  - Step 4: Choose the correct answer among the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the correct choice, increase the memory level of the word, and proceed to the next word upon clicking 'Continue'.
+
+Test Case: Test Case 2
+testCaseName: Review Process Incorrect Answer Flow
+objective: Verify that the system correctly processes and provides feedback for an incorrect answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a word with four selections of answer.
+  - Step 4: Choose the wrong answer among the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the incorrect choice, decrease the memory level of the word, and proceed to the next word upon clicking 'Continue'.
+
+Test Case: Test Case 3
+testCaseName: Review Completion Flow
+objective: Verify that the system correctly saves the review session upon completion and redirects the learner to the Home page.
+testSteps:
+  - Step 1: Log in as a learner and complete the review session by going through all words in the review list.
+  - Step 2: Press the 'Continue' button after reviewing the last word.
+  - Step 3: Confirm that the system redirects to the Home page.
+expectedResult: Upon pressing 'Continue' after the last word, the system should save the review session and redirect the learner to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Review Exit and Stay Flow
+objective: Verify that the system allows learners to stay in the review session upon pressing the 'Exit' button and then choosing 'Stay'.
+testSteps:
+  - Step 1: Log in as a learner and start a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, choose the 'Stay' button.
+expectedResult: After choosing 'Stay', the learner should remain on the review screen and be able to continue the review session.
+
+Test Case: Test Case 5
+testCaseName: Review Exit and Confirm Flow
+objective: Verify that the system correctly exits the review session and does not save progress when the learner chooses to exit.
+testSteps:
+  - Step 1: Log in as a learner and start a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, choose the 'Confirm' button.
+expectedResult: After choosing 'Confirm', the system should redirect the learner to the Home page and not save the review session.
+

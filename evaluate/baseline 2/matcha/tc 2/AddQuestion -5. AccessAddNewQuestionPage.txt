@@ -1,0 +1,56 @@
+Test Case: Test Case 1
+testCaseName: Access and Add New Question for Selection Test
+objective: Verify that the Admin can successfully navigate through the pages to add a new question for the selection test and save it correctly.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including '...'.
+  - Step 9: Fill in the 'correct answer' and the three 'other option' fields with appropriate words.
+  - Step 10: Press the button 'Save'.
+expectedResult: The system saves the question and redirects the Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Verify Mandatory Field Validation for Adding New Question
+objective: Ensure that the system prompts the Admin to fill all mandatory fields ('sentence', 'correct answer', 'other option 1', 'other option 2', 'other option 3') before saving a new question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following the main flow steps 1 to 9.
+  - Step 3: Leave one of the compulsory fields empty and fill the others.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing field.
+
+Test Case: Test Case 3
+testCaseName: Cancel Adding New Question and Stay on Page
+objective: Verify that Admin can cancel the process of adding a new question and choose to stay on the page to continue working.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following the main flow steps 1 to 9.
+  - Step 3: Press the button 'Cancel'.
+  - Step 4: In the dialog 'Are you sure you want to cancel the question?', press the button 'Stay'.
+expectedResult: The dialog closes, and the Admin remains on the 'Add new question for selection test' page to continue working.
+
+Test Case: Test Case 4
+testCaseName: Input Validation for Sentence Field
+objective: Ensure that the system validates the 'sentence' field for the correct format and prompts Admin if the input is invalid.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following the main flow steps 1 to 9.
+  - Step 3: Fill in the 'sentence' field with an invalid sentence (e.g., exceeding 250 characters or containing special characters).
+  - Step 4: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field correctly.
+
+Test Case: Test Case 5
+testCaseName: Cancel Adding New Question and Confirm Cancellation
+objective: Verify that Admin can cancel the process of adding a new question and confirm the cancellation to return to the 'Word Information' page.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Add new question for selection test' page by following the main flow steps 1 to 9.
+  - Step 3: Press the button 'Cancel'.
+  - Step 4: In the dialog 'Are you sure you want to cancel the question?', press the button 'Confirm'.
+expectedResult: The system redirects the Admin to the 'Word Information' page of the selected word, and the question is not saved.
+

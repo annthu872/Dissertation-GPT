@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data
+objective: Verify that the author's details can be updated with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's name and bio.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The author's details should be updated in the database, and the list of authors with the updated record should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid Data
+objective: Verify that the system displays error messages when invalid data is entered
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the author's name and/or bio.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The system should display error messages indicating the invalid data, and the author's details should not be updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Author Operation
+objective: Verify that the update operation can be canceled and no changes are saved
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Click the 'Cancel' button before submitting the form.
+expectedResult: The update operation should be canceled, no data should be updated in the database, and the list of authors should be displayed.
+
+Test Case: Test Case 4
+testCaseName: Update Author with XSS Attack in Bio Field
+objective: Verify that the system sanitizes input to prevent XSS attacks when updating an author's bio
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the bio field, enter a script tag with JavaScript code intended for an XSS attack (e.g., <script>alert('XSS')</script>).
+  - Step 4: Fill in other required fields with valid data.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system should sanitize the input, preventing the XSS attack. The author's bio should be updated without executing the malicious script, and the updated author's details should be displayed in the list.
+

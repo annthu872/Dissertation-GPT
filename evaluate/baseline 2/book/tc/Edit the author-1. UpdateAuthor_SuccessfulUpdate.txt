@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author - Successful Update
+objective: Verify that the author's details can be successfully updated in the database and the updated details are reflected in the author's list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data including Name and Bio.
+  - Step 4: Press the 'Submit' button after entering the data.
+expectedResult: The author's details are updated in the database, and the list of authors displays the updated records.
+
+Test Case: Test Case 2
+testCaseName: Update Author - Incorrect Data
+objective: Verify that the system displays error messages when incorrect data is entered in the author's update form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter incorrect or invalid data into the Name and/or Bio fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages indicating the incorrect data fields.
+
+Test Case: Test Case 3
+testCaseName: Update Author - Cancel Operation
+objective: Verify that the author's details are not updated in the database when the 'Cancel' button is pressed before submitting the form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or edit the data in the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The author's details are not updated in the database, and the list of authors is displayed without any changes to the selected author's details.
+
+Test Case: Test Case 4
+testCaseName: Update Author - Navigation Away Cancels Update
+objective: Verify that navigating away from the update form without submitting cancels the update operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or edit the data in the form fields.
+  - Step 4: Navigate away from the page by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database, and the user is taken to the selected page without any changes to the author's details.
+

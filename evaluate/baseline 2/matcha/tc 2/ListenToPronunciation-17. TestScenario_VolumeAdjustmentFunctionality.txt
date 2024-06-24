@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Correct Answer Functionality in Listening Pronunciation Test
+objective: Ensure that when a learner selects the correct answer in a listening pronunciation test, the system correctly identifies it and displays a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Listen to the pronunciation by clicking the speaker button.
+  - Step 4: Guess the entire word and select the correct answer.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the correct answer, a green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Answer Functionality in Listening Pronunciation Test
+objective: To verify that when a learner selects an incorrect answer in a listening pronunciation test, the system correctly identifies it and displays a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Listen to the pronunciation by clicking the speaker button.
+  - Step 4: Guess the entire word and select an incorrect answer.
+  - Step 5: Submit the answer.
+expectedResult: After submitting an incorrect answer, a red pop-up screen should appear indicating the answer is wrong.
+
+Test Case: Test Case 3
+testCaseName: Verify Volume Adjustment Functionality in Listening Pronunciation Test
+objective: To ensure that learners can adjust the volume when listening to the pronunciation in a listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click the speaker button to listen to the pronunciation.
+  - Step 4: Adjust the volume using the volume control feature.
+expectedResult: The learner should be able to adjust the volume and hear the pronunciation at the adjusted volume level.
+

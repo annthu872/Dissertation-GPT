@@ -1,0 +1,17 @@
+1. Purchase_Single_Item_From_Product_Detail_Page
+2. Purchase_Multiple_Items_From_Shopping_Cart
+3. Purchase_Items_From_Multiple_Shops
+4. Purchase_With_Select_All_From_One_Store
+5. Purchase_With_Item_Options_Selection
+6. Purchase_With_Adjusted_Quantity
+7. Checkout_Button_Disabled_With_Invalid_Product
+8. Checkout_With_Out_Of_Stock_Item_In_Cart
+9. Checkout_With_Item_Erased_By_Seller
+10. Purchase_Without_Selecting_Available_Options
+11. Purchase_With_Quantity_Higher_Than_Stock
+12. Purchase_With_Quantity_Less_Than_One
+13. Purchase_Out_Of_Stock_Product_From_Product_Detail
+14. Summary_Costs_Display_After_Selection
+15. Redirect_To_New_Order_Page_After_Checkout
+16. Separate_Orders_For_Different_Shops
+17. Combined_Order_For_Items_From_Same_Shop

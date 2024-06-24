@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Display Message for No Previous Vocabulary
+objective: Verify that the system displays a message indicating there is no previous vocabulary when the learner tries to click the 'Previous' button on the first flashcard
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: The system redirects to the Flashcard page for the selected topic.
+  - Step 6: Verify the first flashcard is displayed.
+  - Step 7: Attempt to click the 'Previous' button on the first flashcard.
+expectedResult: The system should display a message 'there is no previous vocabulary to display' and prevent navigation to a previous flashcard.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Next Flashcard
+objective: Verify that the learner can navigate to the next flashcard by clicking the 'Next' button and view the back of the flashcard by clicking on it
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: The system redirects to the Flashcard page for the selected topic.
+  - Step 6: Click on the flashcard to flip it and view the back, which contains illustrations and examples of real-life usage.
+  - Step 7: Click the 'Next' button to go to the flashcard of the next vocabulary word.
+expectedResult: The system should display the next flashcard, allowing the learner to view the front and, upon clicking, the back of the flashcard.
+
+Test Case: Test Case 3
+testCaseName: Verify Completion Notification and Options
+objective: Verify that upon studying all flashcards in a topic, the learner is redirected to a 'completion notification' page with options to 'continue studying' or 'return to the lesson page'
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson and a topic, then study all flashcards in the topic until the last one.
+  - Step 4: Click the 'Next' button on the last flashcard.
+expectedResult: The system should redirect to the 'completion notification' page with a congratulatory message and option buttons to 'continue studying' and 'return to the lesson page'.
+
+Test Case: Test Case 4
+testCaseName: Verify Learner Can Continue Studying After Completion
+objective: Verify that after clicking 'continue studying' on the completion notification page, the topic is marked as completed and the learner can proceed to study a continuous topic
+testSteps:
+  - Step 1: Complete all flashcards in a topic and get redirected to the 'completion notification' page.
+  - Step 2: Click 'continue studying' on the completion notification page.
+expectedResult: The topic should be marked as completed, and the system should redirect the learner to the Flashcard page for the continuous topic.
+

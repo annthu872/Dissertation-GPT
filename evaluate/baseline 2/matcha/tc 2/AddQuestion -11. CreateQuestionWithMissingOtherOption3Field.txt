@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Missing 'Other Option 3' Field
+objective: Verify that the system prompts an error when 'Other Option 3' field is skipped and allows the question to be saved after filling the missing field
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word.
+  - Step 10: Fill in the 'other option 1' and 'other option 2' fields with different wrong answers.
+  - Step 11: Leave the 'other option 3' field empty.
+  - Step 12: Press the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 3' field. After filling the missing field and pressing 'Save' again, the question is saved and Admin is redirected to the 'Word Information' page.
+

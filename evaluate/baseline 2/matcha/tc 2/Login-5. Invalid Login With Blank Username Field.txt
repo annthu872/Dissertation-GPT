@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Invalid Login With Blank Username Field
+objective: Verify that the system shows a notification that the username field needs to be filled when attempting to login with a blank username field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with a correct password.
+  - Step 4: Press the "Login" button.
+expectedResult: System shows a notification that the username field needs to be filled.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login With Wrong Password
+objective: Verify that the system shows a notification that the password is wrong when attempting to login with a wrong password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the "Login" button.
+expectedResult: System shows a notification that the password is wrong.
+
+Test Case: Test Case 3
+testCaseName: Invalid Login With Unregistered Username
+objective: Verify that the system shows a notification that the username is not registered yet when attempting to login with an unregistered username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with an unregistered username.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: System shows a notification that this username is not registered yet.
+
+Test Case: Test Case 4
+testCaseName: Invalid Login With Blank Password Field
+objective: Verify that the system shows a notification that the password field needs to be filled when attempting to login with a blank password field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the "Login" button.
+expectedResult: System shows a notification that the password field needs to be filled.
+

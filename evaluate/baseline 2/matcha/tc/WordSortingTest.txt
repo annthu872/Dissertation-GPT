@@ -1,0 +1,88 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify Successful Login",
+    "objective": "Verify that learners can successfully log in before starting the word sorting test.",
+    "testSteps": [
+      "Step 1: Navigate to the application login page.",
+      "Step 2: Enter valid login credentials.",
+      "Step 3: Click on the login button."
+    ],
+    "expectedResult": "The learner is redirected to the dashboard or home page after successful login.",
+    "explanation": "Ensures that only authenticated users can access the word sorting test."
+  },
+  "Test Case 2": {
+    "testCaseName": "Validate Display of Vocabulary Question",
+    "objective": "Ensure that a vocabulary question with jumbled letters is displayed correctly.",
+    "testSteps": [
+      "Step 1: Successfully log in to the application.",
+      "Step 2: Start the word sorting test.",
+      "Step 3: Observe the display of the first question."
+    ],
+    "expectedResult": "A question or the meaning of a vocabulary or an image showing the word with its letters arranged randomly is displayed.",
+    "explanation": "Checks if the application correctly displays the questions for the word sorting test."
+  },
+  "Test Case 3": {
+    "testCaseName": "Check Functionality of Letter Buttons",
+    "objective": "Verify that the letter buttons for arranging words function correctly.",
+    "testSteps": [
+      "Step 1: Access a question in the word sorting test.",
+      "Step 2: Click on letter buttons to arrange them in correct order.",
+      "Step 3: Press enter after arranging the letters."
+    ],
+    "expectedResult": "The letters can be rearranged by clicking, and the arrangement is submitted upon pressing enter.",
+    "explanation": "Ensures that users can interact with the letter buttons to arrange and submit their answers."
+  },
+  "Test Case 4": {
+    "testCaseName": "Assess Correctness of Answer Submission",
+    "objective": "Verify that the answer submission process accurately assesses the correctness of the answer.",
+    "testSteps": [
+      "Step 1: Arrange the letters to form the correct word.",
+      "Step 2: Press enter to submit the answer.",
+      "Step 3: Observe the response from the system."
+    ],
+    "expectedResult": "The system correctly identifies the answer as correct or incorrect and displays the appropriate pop-up screen.",
+    "explanation": "Confirms that the system accurately compares user answers with the correct vocabulary."
+  },
+  "Test Case 5": {
+    "testCaseName": "Confirm Green Pop-up for Correct Answers",
+    "objective": "Ensure that a green pop-up screen is displayed for correct answers.",
+    "testSteps": [
+      "Step 1: Submit a correct answer in the word sorting test.",
+      "Step 2: Observe the pop-up screen."
+    ],
+    "expectedResult": "A green pop-up screen is displayed indicating the answer is correct.",
+    "explanation": "Validates the visual feedback mechanism for correct answers."
+  },
+  "Test Case 6": {
+    "testCaseName": "Ensure Red Pop-up for Incorrect Answers",
+    "objective": "Verify that a red pop-up screen is displayed for incorrect answers.",
+    "testSteps": [
+      "Step 1: Submit an incorrect answer in the word sorting test.",
+      "Step 2: Observe the pop-up screen."
+    ],
+    "expectedResult": "A red pop-up screen is displayed indicating the answer is incorrect.",
+    "explanation": "Validates the visual feedback mechanism for incorrect answers."
+  },
+  "Test Case 7": {
+    "testCaseName": "Verify Marking of Studied Vocabulary",
+    "objective": "Ensure that vocabulary words are marked as studied after completion of the test.",
+    "testSteps": [
+      "Step 1: Complete the word sorting test.",
+      "Step 2: Navigate to the learner's progress or studied vocabulary section."
+    ],
+    "expectedResult": "The vocabulary words from the test are marked as studied in the learner's progress.",
+    "explanation": "Confirms that the system correctly updates the learner's progress upon test completion."
+  },
+  "Test Case 8": {
+    "testCaseName": "Check Response to Empty Answer Submission",
+    "objective": "Validate the system's response when the learner submits an empty answer.",
+    "testSteps": [
+      "Step 1: Access a question in the word sorting test.",
+      "Step 2: Without arranging the letters, press enter to submit the answer."
+    ],
+    "expectedResult": "The system prevents submission and prompts the learner to arrange the letters before submitting.",
+    "explanation": "Ensures that the system handles empty submissions by prompting for an answer."
+  }
+}
+```

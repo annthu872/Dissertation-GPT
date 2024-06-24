@@ -1,0 +1,42 @@
+Use case name: Product Information Display
+Precondition: User at homepage, search page, or cart page.
+Postcondition: 
+Basic Flow:
+1. User click on a product card.
+2. System show product's information included:
+- Title and Description: 
+        + Display the product title prominently.
+        + Provide a detailed product description, including key features, usage instructions, and benefits.
+- Images and Videos:
+        + Showcase high-quality images of the product from multiple angles.
+        + Include videos demonstrating the product's features and usage.
+- Specifications:
+        + List detailed product specifications (e.g., dimensions, weight, material, color options, etc.).
+- Price Information
+        + Display the current price of the product.
+        + Highlight any discounts, offers, or special pricing available.
+- Stock Availability
+        + Show real-time stock availability for the product.
+- Delivery Options:
+        + Display available shipping methods and estimated delivery times.
+        + Shipping Fees
+- Seller Profile
+        + Display the seller's profile, including their name, ratings, and reviews.
+- Seller Contact
+        + Provide an option to contact the seller directly through the platform's messaging system.
+- Store Link
+        + Link to the seller's store page on Shopee, allowing users to view other products from the same seller.
+- Customer Reviews and Ratings:
+        + Overall Rating: Display the average rating based on customer reviews.
+        + Detailed Reviews: Show 3 latest detailed reviews in a list of detailed customer reviews, including ratings, written feedback, and user-uploaded images.
+
+-Related Products
+        + Display a list of related product cards.
+
+
+Alterative flow: 
+- User can expand the 'Customer Reviews and Ratings' to view more reviews.
+- User can expand the 'Customer Questions' to view more questions and seller answers.
+- User can scroll to view more related product card,
+- User click on seller contact to contact the seller directly through the platform's messaging system.
+- User click on Store Link to view other products from the same seller.

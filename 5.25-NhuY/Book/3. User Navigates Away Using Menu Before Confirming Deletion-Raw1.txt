@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu Before Confirming Deletion
+objective: Verify that navigating away using the menu before confirming deletion cancels the deletion process and the book record remains intact.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application navigates to the selected menu item's page without deleting the book record, and the book list is displayed with the previously selected book still present.
+explanation: This test case ensures that if a user accidentally or intentionally navigates away from the deletion confirmation dialog by using the menu, the deletion process is canceled, and the book record is not deleted. It directly tests the scenario where a user navigates away using the menu before confirming deletion.
+

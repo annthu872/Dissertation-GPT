@@ -1,0 +1,20 @@
+1. Test Scenario: Verify successful login before starting the test.
+2. Test Scenario: Validate display of vocabulary question with jumbled letters.
+3. Test Scenario: Check functionality of letter buttons for arranging words.
+4. Test Scenario: Assess the correctness of the answer submission process.
+5. Test Scenario: Confirm the appearance of a green pop-up screen for correct answers.
+6. Test Scenario: Ensure a red pop-up screen is displayed for incorrect answers.
+7. Test Scenario: Evaluate the system's ability to compare user answers with correct vocabulary.
+8. Test Scenario: Verify vocabulary words are marked as studied after completion.
+9. Test Scenario: Check the system's response to an empty answer submission.
+10. Test Scenario: Validate the system's behavior when the learner tries to proceed without arranging letters.
+11. Test Scenario: Test the functionality of the enter button in submitting answers.
+12. Test Scenario: Assess the application's performance under high server load.
+13. Test Scenario: Verify that learners can only access the test when logged in.
+14. Test Scenario: Check for the correct marking of studied vocabulary in the learner's progress.
+15. Test Scenario: Validate the system's handling of special characters in answers.
+16. Test Scenario: Ensure the test can handle multiple correct answers (if applicable).
+17. Test Scenario: Test the application's response to rapid consecutive submissions.
+18. Test Scenario: Verify the system's ability to save and resume progress.
+19. Test Scenario: Check the user interface for accessibility compliance.
+20. Test Scenario: Validate the timeout functionality for inactivity during the test.

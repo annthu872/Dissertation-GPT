@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Create Selection Test Question Successfully
+objective: Verify that the admin can successfully create a selection test question for a vocabulary word
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Press one word on the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects Admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Create Selection Test Question Without Filling 'Sentence' Field
+objective: Verify that the system prompts an error when the 'sentence' field is left empty during question creation
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' and select a Lesson and a Topic.
+  - Step 3: Select a word from the vocabulary list and press 'Add new question'.
+  - Step 4: Choose to add 'Create questions for the selection test' but leave the 'sentence' field empty.
+  - Step 5: Fill in the rest of the fields ('correct answer', 'other option 1', 'other option 2', 'other option 3').
+  - Step 6: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.
+
+Test Case: Test Case 3
+testCaseName: Cancel Creating Selection Test Question and Stay
+objective: Verify that the admin can cancel the creation of a selection test question and choose to stay on the page
+testSteps:
+  - Step 1: Log in as Admin and navigate to create a new selection test question.
+  - Step 2: Fill in all the fields for the question.
+  - Step 3: Press the button 'Cancel'.
+  - Step 4: On the dialog 'Are you sure you want to cancel the question?', press the button 'Stay'.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with the information previously entered still present.
+
+Test Case: Test Case 4
+testCaseName: Enter Invalid Sentence for Selection Test Question
+objective: Verify that the system prompts an error when an invalid sentence is entered
+testSteps:
+  - Step 1: Log in as Admin and proceed to add a new selection test question.
+  - Step 2: Enter an invalid sentence in the 'sentence' field (e.g., over 250 characters or contains special characters).
+  - Step 3: Fill in the rest of the fields correctly.
+  - Step 4: Press the button 'Save'.
+expectedResult: The system shows a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author and Submit
+objective: Verify that the user can successfully update an author's details and submit the changes
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data including Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the user is redirected to the list of authors with the updated records displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Incorrect Data
+objective: Verify that the system displays error messages when incorrect data is entered in the author update form
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter incorrect data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages indicating the incorrect data, and the author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Author and Cancel Operation
+objective: Verify that the user can cancel the operation of updating an author's details and no changes are saved
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering new data for the author's Name and Bio.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: The author's details are not updated in the database, and the user is redirected to the list of authors without any changes.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away from Update Author Page Without Saving
+objective: Verify that navigating away from the update author page without saving does not update the author's details in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering new data for the author's Name and Bio.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database, and the user is redirected to the selected page without any changes to the author's record.
+

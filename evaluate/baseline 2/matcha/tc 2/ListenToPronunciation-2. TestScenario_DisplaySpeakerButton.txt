@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Speaker Button and Correct Answer Flow
+objective: Verify that the speaker button is displayed and that selecting the correct answer displays a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Ensure the question type is a listening pronunciation test question.
+  - Step 3: Verify that the screen displays the test with a speaker button.
+  - Step 4: Listen to the pronunciation by clicking the speaker button.
+  - Step 5: Guess the entire word and choose the correct answer.
+  - Step 6: Submit the answer.
+expectedResult: After submitting the correct answer, a green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Speaker Button and Incorrect Answer Flow
+objective: Verify that the speaker button is displayed and that selecting the wrong answer displays a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test function.
+  - Step 2: Ensure the question type is a listening pronunciation test question.
+  - Step 3: Verify that the screen displays the test with a speaker button.
+  - Step 4: Listen to the pronunciation by clicking the speaker button.
+  - Step 5: Guess the entire word and choose the wrong answer.
+  - Step 6: Submit the answer.
+expectedResult: After submitting the wrong answer, a red pop-up screen should appear indicating the answer is incorrect.
+

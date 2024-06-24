@@ -1,0 +1,30 @@
+Use case name: Search
+Description:
+This feature allows users to enter search queries and view relevant product listings.
+Actor: User
+Preconditions: None
+Postconditions: 
+Basic Flow:
+Step 1: User click search bar.
+Step 2: User types keyword in the search bar.
+Step 3: User press enter or Click search icon.
+Step 4: System show list of relevant search match. Relevant search matches are products with name or description including or related to the keywords. 
+- Maximum 60 product cards are shown for each page.
+- The pagination bar is at the bottom of the page, user can click on the desired page or left or right button to change to a new page.
+Alterative flow: 
+1. If the keyword related with a shop name; System display:
+- the shop's information at the top of the search result including: shop name, number of items, ratings, and response rate, average response time
+-shop product's card.
+-related products card (product has name match search keyword).
+2. If the keyword related with a brand name (without shop available); System display:
+- the most related/best sold shop's that sell that brand at the top of the search result including: shop name, number of items, ratings, and response rate, average response time
+-related products card (product has name match search keyword).
+3. If the keyword not match any shop or brand; System display:
+-related products card (product has name match search keyword).
+4. User can filter the search result with 4 mode under the form of radio buttons: 
+-result most related with the keyword (Default): Prior the exactly match by name, then partial match by name and then the match by description.
+-newest product result.
+-best seller result.
+-sort the product by price (dropdown): from lowest to highest and from highest to lowest.
+Exception flow:
+If No Search Results Found, system display: random product cards.

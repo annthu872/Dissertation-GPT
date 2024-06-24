@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify UI elements on 'Day History' details page for accessibility
+objective: Ensure all UI elements on the 'Day History' details page are accessible and compliant with accessibility standards
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the 'History' option on the Home page.
+  - Step 3: Select 'Day History' on the History page.
+  - Step 4: Verify the presence of the continuous learning days counter.
+  - Step 5: Check for the presence of any text descriptions, labels, or headings.
+  - Step 6: Ensure that all interactive elements are keyboard accessible.
+  - Step 7: Verify that alternative text is provided for non-text content.
+  - Step 8: Check the page for proper contrast ratios between text and background.
+  - Step 9: Ensure that the page is navigable and readable without style sheets.
+expectedResult: The 'Day History' details page should display the number of continuous learning days clearly with all UI elements being accessible, including proper labels, alternative texts for images, keyboard navigation, and sufficient contrast ratios. The page should be fully functional and navigable without style sheets.
+
+Test Case: Test Case 2
+testCaseName: Verify reset functionality of continuous learning days counter on 'Day History' page
+objective: To confirm that the continuous learning days counter resets to one if the learner breaks their learning chain
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the 'History' option on the Home page.
+  - Step 3: Select 'Day History' on the History page to view the current count of continuous learning days.
+  - Step 4: Break the learning chain by not logging any learning activity for a day.
+  - Step 5: Return to the 'Day History' page after the break day to check the continuous learning days counter.
+expectedResult: After breaking the learning chain, the continuous learning days counter on the 'Day History' page should reset to one, indicating the start of a new learning chain.
+

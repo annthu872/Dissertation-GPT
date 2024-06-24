@@ -1,0 +1,57 @@
+Test Case: Test Case 1
+testCaseName: Validate Sentence Field Character Limit and Special Characters
+objective: Verify that the 'sentence' field accepts up to 250 characters and does not accept special characters
+testSteps:
+  - Step 1: Navigate to the 'Lesson Management' page.
+  - Step 2: Select a lesson from the lesson list.
+  - Step 3: Select a topic from the topic list.
+  - Step 4: Select a word from the vocabulary word list.
+  - Step 5: Press the 'Add new question' button.
+  - Step 6: Choose the option 'Create questions for the selection test'.
+  - Step 7: Fill the 'sentence' field with a sentence that is 251 characters long.
+  - Step 8: Attempt to save the question by pressing the 'Save' button.
+  - Step 9: Modify the 'sentence' field to include special characters and ensure it is under 250 characters.
+  - Step 10: Attempt to save the question again by pressing the 'Save' button.
+expectedResult: The system should display a validation error for exceeding the character limit and for including special characters in the 'sentence' field.
+
+Test Case: Test Case 2
+testCaseName: Verify Mandatory Fields Requirement
+objective: Ensure that all compulsory fields ('sentence', 'correct answer', 'other option 1', 'other option 2', 'other option 3') must be filled before saving
+testSteps:
+  - Step 1: Navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill in all compulsory fields except one (repeat for each field).
+  - Step 3: Attempt to save the question by pressing the 'Save' button.
+  - Step 4: Fill in the missing compulsory field.
+  - Step 5: Attempt to save the question again by pressing the 'Save' button.
+expectedResult: The system should prompt the admin to fill in the missing compulsory field before allowing the question to be saved.
+
+Test Case: Test Case 3
+testCaseName: Cancel Creating Question and Choose to Stay
+objective: Verify that pressing 'Cancel' while adding a new question allows the admin to stay and continue editing
+testSteps:
+  - Step 1: Navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill in all compulsory fields.
+  - Step 3: Press the 'Cancel' button.
+  - Step 4: In the confirmation dialog, select 'Stay'.
+expectedResult: The dialog should close, and the admin should remain on the 'Add new question for selection test' page with the entered information preserved.
+
+Test Case: Test Case 4
+testCaseName: Validate Sentence Field for Invalid Input
+objective: Ensure that the 'sentence' field validates against invalid sentences
+testSteps:
+  - Step 1: Navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill in the 'sentence' field with an invalid sentence.
+  - Step 3: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system should display a notification that 'Sentence is invalid' and prompt the admin to re-enter the 'sentence' field.
+
+Test Case: Test Case 5
+testCaseName: Verify Question Saving and Cancellation
+objective: Confirm that questions can be saved or cancelled correctly
+testSteps:
+  - Step 1: Navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill in all compulsory fields correctly.
+  - Step 3: Press the 'Save' button to save the question.
+  - Step 4: Navigate back to the 'Add new question for selection test' page and fill in all compulsory fields.
+  - Step 5: Press the 'Cancel' button and confirm cancellation.
+expectedResult: After step 3, the question should be saved and visible on the 'Word Information' page. After step 5, the question creation should be cancelled without saving.
+

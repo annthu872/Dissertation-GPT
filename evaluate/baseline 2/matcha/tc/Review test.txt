@@ -1,0 +1,85 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "ReviewButtonNavigationTest",
+    "objective": "Verify that clicking the review button on the Home page navigates the learner to the review screen",
+    "testSteps": [
+      "Step 1: Log in as a learner.",
+      "Step 2: On the Home page, click the review button."
+    ],
+    "expectedResult": "The learner is redirected to the review screen.",
+    "explanation": "This test case ensures that the review button functions correctly and leads the user to the review screen as intended in the use case."
+  },
+  "Test Case 2": {
+    "testCaseName": "ReviewScreenRedirectionTest",
+    "objective": "Verify that the system redirects learners to the review screen successfully",
+    "testSteps": [
+      "Step 1: Log in as a learner.",
+      "Step 2: On the Home page, click the review button."
+    ],
+    "expectedResult": "The learner is successfully redirected to the review screen.",
+    "explanation": "This test case checks if the redirection mechanism to the review screen works as described in the main flow."
+  },
+  "Test Case 3": {
+    "testCaseName": "RandomMethodSelectionTest",
+    "objective": "Verify that the system randomly selects a method (questions, sound, image, meanings) for each word in the learner's daily review words list",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process."
+    ],
+    "expectedResult": "Each word in the review is presented with a randomly selected method (questions, sound, image, meanings).",
+    "explanation": "This test case ensures that the system selects a review method randomly for each word as specified in the use case."
+  },
+  "Test Case 4": {
+    "testCaseName": "AnswerSelectionTest",
+    "objective": "Verify that learners can choose one of the four selections for an answer",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process and wait for a question to appear.",
+      "Step 3: Choose one of the four answer selections."
+    ],
+    "expectedResult": "The learner is able to select an answer from the four given options.",
+    "explanation": "This test case checks if the answer selection mechanism works as intended, allowing learners to choose their answer."
+  },
+  "Test Case 5": {
+    "testCaseName": "CorrectAnswerFeedbackTest",
+    "objective": "Verify that the system shows a green word for learners to read when they click the right answer",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process and select the correct answer for a word."
+    ],
+    "expectedResult": "A green word is shown to the learner to read.",
+    "explanation": "This test case ensures that the system provides the correct feedback (a green word) when the learner selects the right answer."
+  },
+  "Test Case 6": {
+    "testCaseName": "IncorrectAnswerFeedbackTest",
+    "objective": "Verify that the system shows a red word for learners to read when they click the wrong answer",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process and select the wrong answer for a word."
+    ],
+    "expectedResult": "A red word is shown to the learner to read.",
+    "explanation": "This test case checks if the system provides the correct feedback (a red word) when the learner selects the wrong answer."
+  },
+  "Test Case 7": {
+    "testCaseName": "MemoryLevelIncreaseTest",
+    "objective": "Verify that the system increases the memory level of a word when the learner selects the right answer",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process and select the correct answer for a word."
+    ],
+    "expectedResult": "The memory level of the word is increased.",
+    "explanation": "This test case ensures that the system increases the memory level of a word as intended when the learner selects the right answer."
+  },
+  "Test Case 8": {
+    "testCaseName": "MemoryLevelDecreaseTest",
+    "objective": "Verify that the system decreases the memory level of a word when the learner selects the wrong answer",
+    "testSteps": [
+      "Step 1: Log in as a learner and navigate to the review screen.",
+      "Step 2: Start the review process and select the wrong answer for a word."
+    ],
+    "expectedResult": "The memory level of the word is decreased.",
+    "explanation": "This test case checks if the system decreases the memory level of a word as intended when the learner selects the wrong answer."
+  }
+}
+```

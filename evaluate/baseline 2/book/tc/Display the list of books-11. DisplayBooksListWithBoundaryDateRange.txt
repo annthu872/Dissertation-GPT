@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Filter
+objective: Verify that the application displays the list of books without applying date filters
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page without any date filter applied. The list should include columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Display Books With Valid Date Range
+objective: Verify that the application correctly filters and displays books within a specified valid date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button to apply the date range filter.
+expectedResult: The application should display a list of books that were published within the specified date range. The list should be up to 10 books per page and include columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 3
+testCaseName: Pagination Functionality With Date Filter
+objective: Verify that pagination works correctly when a date filter is applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button to apply the date range filter.
+  - Step 4: Click the 'Next' button or select a page number to navigate through the paginated list of books.
+expectedResult: The application should correctly display the next set of up to 10 books that match the date range filter. Pagination should allow the user to navigate through all filtered results.
+
+Test Case: Test Case 4
+testCaseName: Display Books With Boundary Date Range
+objective: Verify that the application correctly handles and displays books when the boundary dates are selected
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify the earliest publication date available in the database as the start date and the latest publication date available as the end date in the date range input forms.
+  - Step 3: Click the refresh button to apply the boundary date range filter.
+expectedResult: The application should display all books in the database, as the specified date range covers all possible publication dates. The list should include columns for id, Title, Author, Genre, and Publication date.
+

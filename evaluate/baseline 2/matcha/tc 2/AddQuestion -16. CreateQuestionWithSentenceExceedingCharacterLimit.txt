@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Create Question With Sentence Exceeding Character Limit
+objective: Verify that the system prevents the admin from creating a question with a sentence exceeding the 250 character limit
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence exceeding 250 characters, including the symbol '...'.
+  - Step 9: Fill the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system should display a notification indicating that the sentence exceeds the character limit and prevent the question from being saved.
+
+Test Case: Test Case 2
+testCaseName: Create Question With Valid Sentence Within Character Limit
+objective: Verify that the system allows the admin to successfully create a question when the sentence is within the 250 character limit
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence within 250 characters, including the symbol '...'.
+  - Step 9: Fill the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system saves the question and redirects the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 3
+testCaseName: Create Question With Sentence Containing Special Characters
+objective: Verify that the system prevents the admin from creating a question with a sentence that contains special characters
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that contains special characters.
+  - Step 9: Fill the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 10: Press the 'Save' button.
+expectedResult: The system should display a notification indicating that the sentence contains invalid characters and prevent the question from being saved.
+

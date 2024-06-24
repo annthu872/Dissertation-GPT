@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality on Genres Page
+objective: Ensure that the user can navigate through different pages of genres using the pagination feature
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Click on the 'Next' button located below the list of genres.
+  - Step 5: Observe the list of genres on the second page.
+expectedResult: The application should display the first 10 genres on the first page. Upon clicking the 'Next' button, the next set of 10 genres should be displayed on the second page.
+
+Test Case: Test Case 2
+testCaseName: Verify Direct Page Number Navigation in Pagination
+objective: To verify that the user can navigate directly to a specific page of genres using the page numbers in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Identify the pagination block below the list and click on a page number (e.g., 3).
+  - Step 5: Observe the list of genres on the selected page.
+expectedResult: Upon clicking a specific page number in the pagination block, the application should display the list of genres corresponding to the selected page number (e.g., items 21-30 on page 3).
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination with Last Page Selection
+objective: Ensure that the user can navigate to the last page of genres using the pagination feature
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Scroll down to the pagination block below the list of genres.
+  - Step 4: Click on the last page number in the pagination block.
+  - Step 5: Observe the list of genres on the last page.
+expectedResult: The application should display the genres on the last page, which might contain less than or equal to 10 items, depending on the total number of genres in the database.
+

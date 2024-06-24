@@ -1,0 +1,83 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "EditTest_SuccessfulEditScenario",
+    "objective": "Verify that an administrator can successfully edit a test and save the changes.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: On the home page, select 'Topic' on the navbar.",
+      "Step 3: Choose the topic that has the test needed editing, then select 'Edit'.",
+      "Step 4: Edit the exercises as required.",
+      "Step 5: Select 'Save' to save the edited exercises."
+    ],
+    "expectedResult": "The system saves all edited exercises, and the changes are reflected in the system.",
+    "explanation": "This test case ensures that administrators can edit tests and save changes successfully, reflecting the basic flow of the use case."
+  },
+  "Test Case 2": {
+    "testCaseName": "EditTest_NavigateToEditPage",
+    "objective": "Verify that the administrator can navigate to the edit page of a test.",
+    "testSteps": [
+      "Step 1: Log in as an administrator.",
+      "Step 2: On the home page, select 'Topic' on the navbar.",
+      "Step 3: Choose the topic that has the test needed editing, then select 'Edit'."
+    ],
+    "expectedResult": "The system redirects the administrator to the interface of adding, editing vocabulary test.",
+    "explanation": "This test case verifies that the navigation to the edit page works as expected, aligning with the basic flow of the use case."
+  },
+  "Test Case 3": {
+    "testCaseName": "EditTest_DisplayOfVocabularyList",
+    "objective": "Verify that the list of vocabulary in the topic and category of vocabulary exercises is displayed for editing.",
+    "testSteps": [
+      "Step 1: Log in as an administrator and navigate to the edit page of a test as per previous test cases."
+    ],
+    "expectedResult": "The interface for adding, editing vocabulary test appears, displaying the lists of vocabulary in the topic and category of vocabulary exercises.",
+    "explanation": "This test case ensures that the vocabulary list is properly displayed for editing, which is crucial for the editing process."
+  },
+  "Test Case 4": {
+    "testCaseName": "EditTest_SaveEditedExercises",
+    "objective": "Verify that changes to exercises are saved successfully.",
+    "testSteps": [
+      "Step 1: Log in as an administrator and navigate to the edit page of a test.",
+      "Step 2: Make necessary edits to the exercises.",
+      "Step 3: Select 'Save' to save the edited exercises."
+    ],
+    "expectedResult": "The system saves all edited exercises, and the changes are successfully recorded in the system.",
+    "explanation": "This test case verifies that the save functionality works as expected, ensuring that edits are not lost."
+  },
+  "Test Case 5": {
+    "testCaseName": "EditTest_CancelEditWithSaveChanges",
+    "objective": "Verify that an administrator can cancel the editing process and still choose to save changes.",
+    "testSteps": [
+      "Step 1: Log in as an administrator and navigate to the edit page of a test.",
+      "Step 2: Make some edits to the exercises.",
+      "Step 3: Attempt to exit the editing mode.",
+      "Step 4: On the pop-up screen, select 'Save'."
+    ],
+    "expectedResult": "The system saves all edited exercises before exiting the editing mode.",
+    "explanation": "This test case ensures that administrators have the option to save their changes even if they decide to cancel the editing process, aligning with the alternative flow of the use case."
+  },
+  "Test Case 6": {
+    "testCaseName": "EditTest_CancelEditWithDoNotSaveChanges",
+    "objective": "Verify that an administrator can cancel the editing process and choose not to save changes.",
+    "testSteps": [
+      "Step 1: Log in as an administrator and navigate to the edit page of a test.",
+      "Step 2: Make some edits to the exercises.",
+      "Step 3: Attempt to exit the editing mode.",
+      "Step 4: On the pop-up screen, select 'Do not save'."
+    ],
+    "expectedResult": "The system does not save the edited exercises and exits the editing mode without recording changes.",
+    "explanation": "This test case ensures that administrators can opt not to save changes if they decide to cancel the editing process, aligning with the exception flow of the use case."
+  },
+  "Test Case 7": {
+    "testCaseName": "EditTest_InvalidVocabularyInput",
+    "objective": "Verify that the system prevents saving when the administrator inputs invalid vocabulary.",
+    "testSteps": [
+      "Step 1: Log in as an administrator and navigate to the edit page of a test.",
+      "Step 2: Attempt to add or edit exercises with invalid vocabulary that does not exist in the system.",
+      "Step 3: Select 'Save'."
+    ],
+    "expectedResult": "The system displays an error message and does not save the changes.",
+    "explanation": "This test case checks the system's ability to validate vocabulary input, ensuring that only existing vocabulary can be added to exercises."
+  }
+}
+```

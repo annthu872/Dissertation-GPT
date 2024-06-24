@@ -1,0 +1,78 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify Redirection to History Page",
+    "objective": "Verify that the learner is redirected to the History page upon selecting the 'History' option on the Home page.",
+    "testSteps": [
+      "Step 1: Log into the application as a learner.",
+      "Step 2: On the Home page, select the 'History' option."
+    ],
+    "expectedResult": "The learner is redirected to the History page.",
+    "explanation": "This test case ensures that the navigation from the Home page to the History page works as expected."
+  },
+  "Test Case 2": {
+    "testCaseName": "Validate Display of 'Day History' Option",
+    "objective": "Ensure that the 'Day History' option is displayed on the History page.",
+    "testSteps": [
+      "Step 1: Log into the application as a learner.",
+      "Step 2: Navigate to the History page.",
+      "Step 3: Observe the options available on the History page."
+    ],
+    "expectedResult": "The 'Day History' option is visible on the History page.",
+    "explanation": "This test case verifies that the 'Day History' option is correctly displayed for learners on the History page."
+  },
+  "Test Case 3": {
+    "testCaseName": "Check Redirection to 'Day History' Details Page",
+    "objective": "Verify that selecting 'Day History' redirects the learner to the details page showing the continuous learning days count.",
+    "testSteps": [
+      "Step 1: Log into the application as a learner.",
+      "Step 2: Navigate to the History page.",
+      "Step 3: Select the 'Day History' option."
+    ],
+    "expectedResult": "The learner is redirected to the 'Day History' details page, showing the count of continuous learning days.",
+    "explanation": "This test case checks the functionality of redirecting the learner to the 'Day History' details page to view their learning streak."
+  },
+  "Test Case 4": {
+    "testCaseName": "Verify Continuous Learning Days Count Functionality",
+    "objective": "Ensure the system accurately counts and displays the number of continuous learning days.",
+    "testSteps": [
+      "Step 1: Log into the application as a learner.",
+      "Step 2: Navigate to the 'Day History' details page.",
+      "Step 3: Review the displayed count of continuous learning days."
+    ],
+    "expectedResult": "The system accurately displays the count of continuous learning days.",
+    "explanation": "This test case verifies that the system correctly calculates and displays the learner's continuous learning days without errors."
+  },
+  "Test Case 5": {
+    "testCaseName": "Validate Learning Days Count Reset Functionality",
+    "objective": "Check if the learning days count resets to one after a break in the learning streak.",
+    "testSteps": [
+      "Step 1: Log into the application as a learner.",
+      "Step 2: Ensure there is a break in the learning streak.",
+      "Step 3: Navigate to the 'Day History' details page."
+    ],
+    "expectedResult": "The learning days count is reset to one after a break in the learning streak.",
+    "explanation": "This test case ensures that the system correctly resets the learning days count to one after a break, adhering to the specified functionality."
+  },
+  "Test Case 6": {
+    "testCaseName": "Check Access to 'Day History' Without Logging In",
+    "objective": "Verify that accessing 'Day History' without logging in redirects to the login page.",
+    "testSteps": [
+      "Step 1: Without logging in, attempt to navigate directly to the 'Day History' page via URL."
+    ],
+    "expectedResult": "The system redirects the user to the login page.",
+    "explanation": "This test case checks the application's security measure that restricts access to the 'Day History' page for unauthenticated users."
+  },
+  "Test Case 7": {
+    "testCaseName": "Verify Display of Learning Days History for Multiple Learners",
+    "objective": "Ensure that the system correctly displays individual learning days history for multiple learners.",
+    "testSteps": [
+      "Step 1: Log into the application as multiple different learners.",
+      "Step 2: Navigate to the 'Day History' details page for each learner.",
+      "Step 3: Verify that the displayed learning days history is accurate for each learner."
+    ],
+    "expectedResult": "The system accurately displays the individual learning days history for each learner.",
+    "explanation": "This test case ensures that the system can handle and accurately display the learning days history for multiple learners."
+  }
+}
+```

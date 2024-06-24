@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify field validations with special characters for the Title field
+objective: To verify that the Title field in the Add New Book form rejects special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: In the Title field, enter a string with special characters, e.g., '@#$%^&*'.
+  - Step 3: Fill in the remaining fields (Author, Genre, Description, Publication date) with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Title field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 2
+testCaseName: Verify field validations with special characters for the Author field
+objective: To ensure that the Author field in the Add New Book form rejects special characters and prompts the user with an error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Author field, where you should enter a string with special characters, e.g., '@#$%^&*'.
+  - Step 3: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Author field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify successful book creation without special characters
+objective: To verify that a new book record can be successfully added to the database when all fields are filled with valid data without special characters
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields (Title, Author, Genre, Description, Publication date) without using any special characters.
+  - Step 3: Press the 'Submit' button.
+expectedResult: The new book record should be successfully added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during book creation
+objective: To verify that no data is saved and the user is redirected back to the book list when the 'Cancel' button is clicked before submitting a new book record
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The user should be redirected back to the book list page without the new book record being added to the database.
+

@@ -1,0 +1,81 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Navigate To Lesson Management Page",
+    "objective": "Verify that the Admin can navigate to the Lesson Management page via the navbar",
+    "testSteps": [
+      "Step 1: Log in as Admin.",
+      "Step 2: Press the tab 'Lesson Management' on the navbar."
+    ],
+    "expectedResult": "The system redirects Admin to the Lesson Management page which shows the lesson list created by admins.",
+    "explanation": "This test case ensures that the Admin can successfully navigate to the Lesson Management page to manage lessons."
+  },
+  "Test Case 2": {
+    "testCaseName": "Select Lesson From Lesson List",
+    "objective": "Verify that the Admin can select a Lesson from the Lesson list",
+    "testSteps": [
+      "Step 1: Navigate to the Lesson Management page.",
+      "Step 2: Press one Lesson on the Lesson list."
+    ],
+    "expectedResult": "The system redirects Admin to the 'Lesson Information' page of the selected lesson.",
+    "explanation": "This test case ensures that the Admin can select a lesson to view its details or to perform further actions."
+  },
+  "Test Case 3": {
+    "testCaseName": "Create Question With Valid Data",
+    "objective": "Verify that Admin can create a question for the selection test with all valid data",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new question for selection test' page.",
+      "Step 2: Fill in the 'sentence' field with a valid sentence that includes '...'.",
+      "Step 3: Fill in the 'correct answer' field with the correct word.",
+      "Step 4: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.",
+      "Step 5: Press the 'Save' button."
+    ],
+    "expectedResult": "The system saves the question and redirects Admin to the 'Word Information' page of the selected word.",
+    "explanation": "This test case verifies that Admin can successfully create a question with all required fields filled correctly."
+  },
+  "Test Case 4": {
+    "testCaseName": "Create Question With Missing Sentence Field",
+    "objective": "Verify that the system prompts Admin to fill the missing 'sentence' field when trying to save a question",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new question for selection test' page.",
+      "Step 2: Skip the 'sentence' field and fill other compulsory fields.",
+      "Step 3: Press the 'Save' button."
+    ],
+    "expectedResult": "The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'sentence' field.",
+    "explanation": "This test case ensures that Admin is prompted to fill in all compulsory fields before saving a question."
+  },
+  "Test Case 5": {
+    "testCaseName": "Cancel Question Creation And Confirm",
+    "objective": "Verify that Admin can cancel the question creation and confirm the cancellation",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new question for selection test' page.",
+      "Step 2: Press the 'Cancel' button.",
+      "Step 3: In the dialog, press the 'Confirm' button."
+    ],
+    "expectedResult": "The system redirects Admin to the 'Word Information' page of the selected word and the question is not saved.",
+    "explanation": "This test case verifies that Admin can cancel the creation of a question and confirm the cancellation."
+  },
+  "Test Case 6": {
+    "testCaseName": "Create Question With Sentence Exceeding Character Limit",
+    "objective": "Verify that the system prevents Admin from saving a question with a sentence exceeding the character limit",
+    "testSteps": [
+      "Step 1: Navigate to the 'Add new question for selection test' page.",
+      "Step 2: Fill in the 'sentence' field with a sentence exceeding 250 characters.",
+      "Step 3: Fill other compulsory fields.",
+      "Step 4: Press the 'Save' button."
+    ],
+    "expectedResult": "The system shows a notification that the sentence exceeds the character limit, preventing the question from being saved.",
+    "explanation": "This test case ensures that sentences exceeding the character limit are not accepted, maintaining data integrity and user experience."
+  },
+  "Test Case 7": {
+    "testCaseName": "Access Lesson Management From Homepage",
+    "objective": "Verify that Admin can access the Lesson Management page directly from the Homepage",
+    "testSteps": [
+      "Step 1: Log in as Admin and land on the Homepage.",
+      "Step 2: Press the 'Lesson Management' tab on the Homepage."
+    ],
+    "expectedResult": "The system redirects Admin to the Lesson Management page.",
+    "explanation": "This test case ensures that Admin has an alternative flow to access the Lesson Management page directly from the Homepage."
+  }
+}
+```

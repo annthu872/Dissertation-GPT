@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Range Filter
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page without any date range filter applied. Pagination options should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality in Books List
+objective: Verify that the pagination functionality works correctly on the Books list page
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number from the pagination block.
+  - Step 3: Observe the list of books displayed on the selected page.
+expectedResult: The application should display the next set of up to 10 books based on the pagination selection. The user should be able to navigate through pages to see more books if available.
+
+Test Case: Test Case 3
+testCaseName: Display Books With Future Date Range Filter
+objective: Verify that the application displays the list of books within a specified future date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a future date range in the date range input forms.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display the list of books that have their publication dates within the specified future date range. The list should update to only show books that match the criteria.
+
+Test Case: Test Case 4
+testCaseName: Display Books With Past Date Range Filter
+objective: Verify that the application displays the list of books within a specified past date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a past date range in the date range input forms.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display the list of books that have their publication dates within the specified past date range. The list should update to only show books that match the criteria.
+

@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away after initiating delete operation and cancelling
+objective: Ensure that when a user initiates a delete operation for an author and then cancels, navigating away using menu items does not delete the author and displays the correct page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books'.
+expectedResult: The author is not deleted from the database, and the Books page is displayed with updated data.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that after cancelling a delete operation, the user can navigate away using menu items without affecting the intended data.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation to 'Genres' after cancelling delete operation
+objective: To verify that after cancelling a delete operation on an author, navigating to 'Genres' through the menu does not delete the author and shows the updated Genres page.
+testSteps:
+  - Step 1: Go to the author list/details page.
+  - Step 2: Initiate a delete operation by clicking the 'Delete' button for an author.
+  - Step 3: In the confirmation dialog, click 'Cancel'.
+  - Step 4: Navigate to 'Genres' using the menu.
+expectedResult: The author remains in the database, and the user is redirected to the Genres page with updated data.
+reflect: yes
+explanation: This test case aligns with the test scenario by ensuring that cancelling a delete operation allows the user to navigate to another section ('Genres') without the deletion taking effect.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation to 'Authors' after cancelling delete operation
+objective: Ensure that after cancelling a delete operation, navigating to 'Authors' via the menu does not delete the author and correctly shows the Authors page.
+testSteps:
+  - Step 1: Access the author list/details page.
+  - Step 2: Press the 'Delete' button for an author to start the delete operation.
+  - Step 3: Cancel the operation by clicking 'Cancel' on the confirmation dialog.
+  - Step 4: Use the menu to go to the 'Authors' page.
+expectedResult: The author is not deleted, and the Authors page is displayed with the current list of authors.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the ability to navigate to a different section ('Authors') after cancelling a delete operation, ensuring no unintended deletion occurs.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation to 'Home' after cancelling delete operation
+objective: To confirm that after cancelling a delete operation for an author, using the menu to navigate to 'Home' does not delete the author and displays the Home page correctly.
+testSteps:
+  - Step 1: Visit the author list/details page.
+  - Step 2: Click on the 'Delete' button for an author to initiate deletion.
+  - Step 3: On the confirmation dialog, select 'Cancel'.
+  - Step 4: Navigate to the 'Home' page via the menu.
+expectedResult: The author remains undeleted, and the Home page is shown with the appropriate content.
+reflect: yes
+explanation: This test case supports the test scenario by demonstrating that after a delete operation is cancelled, the user can navigate to the 'Home' page without the deletion being executed.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation to 'API' after cancelling delete operation
+objective: Ensure that after cancelling a delete operation, navigating to 'API' through the menu does not delete the author and shows the API page correctly.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Start a delete operation by clicking the 'Delete' button for an author.
+  - Step 3: Cancel the delete operation by clicking 'Cancel' on the confirmation dialog.
+  - Step 4: Use the menu to go to the 'API' page.
+expectedResult: The author is not deleted from the database, and the API page is displayed correctly.
+reflect: yes
+explanation: This test case is in line with the given test scenario, as it checks the outcome of cancelling a delete operation and then navigating to a different section ('API'), ensuring the operation's cancellation is respected.
+

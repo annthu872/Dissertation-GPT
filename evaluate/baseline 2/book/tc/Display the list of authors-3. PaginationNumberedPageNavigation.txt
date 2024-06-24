@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality by Clicking Next Button
+objective: Ensure that the user can navigate through the authors list by clicking the 'Next' button to view the next set of authors
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Click the 'Next' button located below the list of authors.
+expectedResult: The application should display the next set of 10 authors in the list, updating the page accordingly.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality by Clicking on a Page Number
+objective: Ensure that the user can navigate through the authors list by clicking on a specific page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Click on the page number '2' in the pagination block located below the list of authors.
+expectedResult: The application should directly display the second set of 10 authors in the list, corresponding to page 2.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Displays Correct Author Information
+objective: Ensure that each page navigated to via pagination displays the correct author information in the specified columns
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Click on the page number '3' in the pagination block located below the list of authors.
+  - Step 4: Verify that the list displays the columns 'id', 'Name', and 'Bio' for each author.
+  - Step 5: Ensure that each author's information is correctly displayed according to the database records.
+expectedResult: The application should display the third set of 10 authors with their correct 'id', 'Name', and 'Bio' in the respective columns.
+

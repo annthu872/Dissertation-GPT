@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Cancel Question Creation and Choose to Stay
+objective: Verify that the admin can cancel the question creation process and choose to stay on the page to continue working on it
+testSteps:
+  - Step 1: Follow steps 1 to 12 from the main flow to navigate to the 'Add new question for selection test' page.
+  - Step 2: Start filling the compulsory fields with valid data.
+  - Step 3: Press the 'Cancel' button.
+  - Step 4: On the confirmation dialog, press the 'Stay' button.
+expectedResult: The dialog should close, and the admin should remain on the 'Add new question for selection test' page with the data previously entered intact.
+
+Test Case: Test Case 2
+testCaseName: Cancel Question Creation and Confirm Cancellation
+objective: Ensure that the admin can cancel the question creation process and confirm cancellation, leading to redirection to the 'Word Information' page without saving the question
+testSteps:
+  - Step 1: Follow steps 1 to 12 from the main flow to navigate to the 'Add new question for selection test' page.
+  - Step 2: Start filling the compulsory fields with valid data.
+  - Step 3: Press the 'Cancel' button.
+  - Step 4: On the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system should redirect the admin to the 'Word Information' page of the selected word, and the question should not be saved.
+
+Test Case: Test Case 3
+testCaseName: Fill Compulsory Fields and Save Question
+objective: Verify that the admin can fill all compulsory fields with valid data and successfully save the question
+testSteps:
+  - Step 1: Follow steps 1 to 12 from the main flow to navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 3: Fill the 'correct answer' field with the correct word form.
+  - Step 4: Fill 'other option 1', 'other option 2', 'other option 3' fields with different wrong answer words.
+  - Step 5: Press the 'Save' button.
+expectedResult: The system should save the question and redirect the admin to the 'Word Information' page of the selected word, where the new question can be viewed.
+
+Test Case: Test Case 4
+testCaseName: Attempt to Save Question with Missing Compulsory Field
+objective: Verify that the system prompts the admin to fill all compulsory fields if trying to save a question with any compulsory field missing
+testSteps:
+  - Step 1: Follow steps 1 to 12 from the main flow to navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill all compulsory fields except one (e.g., skip 'sentence').
+  - Step 3: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting the admin to fill the missing field.
+
+Test Case: Test Case 5
+testCaseName: Enter Invalid Sentence and Attempt to Save Question
+objective: Ensure that the system validates the 'sentence' field and prompts for correction if the sentence is invalid
+testSteps:
+  - Step 1: Follow steps 1 to 12 from the main flow to navigate to the 'Add new question for selection test' page.
+  - Step 2: Fill the 'sentence' field with an invalid sentence.
+  - Step 3: Fill the other compulsory fields with valid data.
+  - Step 4: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Sentence is invalid', prompting the admin to re-enter the 'sentence' field.
+

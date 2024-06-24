@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Edit Test - Session Timeout During Edit
+objective: Verify that the system handles session timeout appropriately during the test editing process by an administrator.
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Before selecting 'Save', simulate a session timeout (this step may require specific actions depending on the system, such as waiting for the session timeout duration or manually triggering a session timeout for testing purposes).
+  - Step 6: Attempt to select 'Save' after the session has timed out.
+expectedResult: The system should prompt the administrator to log in again due to session timeout and should not save the changes made to the exercises until the administrator has successfully logged back in.
+
+Test Case: Test Case 2
+testCaseName: Edit Test - Successful Save After Editing
+objective: Verify that the system successfully saves all edited exercises by an administrator.
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Administrator selects 'Save'.
+expectedResult: The system saves all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+
+Test Case: Test Case 3
+testCaseName: Edit Test - Discard Changes
+objective: Verify that the system does not save changes when the administrator selects to not save the edits.
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises.
+  - Step 5: Administrator presses the button to exit exercise editing mode.
+  - Step 6: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 7: Administrator selects 'Do not save'.
+expectedResult: The system deletes and does not record the edited exercises, maintaining the original state of the exercises before the editing attempt.
+

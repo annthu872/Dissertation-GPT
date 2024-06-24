@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation for a genre
+objective: Ensure that the application asks for deletion confirmation when a user attempts to delete a genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: Observe the dialog page for deletion confirmation.
+expectedResult: A dialog page asking for confirmation to delete the selected genre should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify successful genre deletion
+objective: To confirm that a genre is successfully deleted from the database upon user confirmation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Observe the genre list.
+expectedResult: The genre should be successfully deleted from the list, indicating it has been removed from the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that cancelling the deletion operation does not delete the genre and returns the user to the genre list
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Observe the genre list.
+expectedResult: The genre should still be present in the list, indicating that the deletion was successfully cancelled.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation after cancelling genre deletion
+objective: To ensure that after cancelling a deletion, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' works correctly without deleting the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to another page by selecting either 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 4: Observe the behavior and the data on the navigated page.
+expectedResult: The application should navigate to the selected page without deleting the genre, and the data on the navigated page should be correctly displayed and updated.
+

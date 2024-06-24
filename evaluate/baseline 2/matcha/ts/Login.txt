@@ -1,0 +1,20 @@
+1. Valid Login With Username
+2. Valid Login With Email
+3. Invalid Login With Wrong Password
+4. Invalid Login With Unregistered Username
+5. Invalid Login With Blank Username Field
+6. Invalid Login With Blank Password Field
+7. Login Button Functionality
+8. Redirect To Home Page After Successful Login
+9. Error Notification For Wrong Password
+10. Error Notification For Unregistered Username
+11. Error Notification For Blank Username Field
+12. Error Notification For Blank Password Field
+13. Login With Special Characters In Username
+14. Login With Special Characters In Password
+15. Case Sensitivity Check In Username Field
+16. Case Sensitivity Check In Password Field
+17. Login With Long Username
+18. Login With Long Password
+19. Login With Short Username
+20. Login With Short Password

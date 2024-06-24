@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify displaying all books without date filter
+objective: Verify that the application displays all books correctly without applying date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list without applying any date range filter.
+expectedResult: The application displays up to 10 books per page, including their id, Title, Author, Genre, and Publication date. Pagination is available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality on Books page
+objective: Ensure that the user can navigate through different pages to see more books
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number.
+expectedResult: The application displays the next set of up to 10 books per page.
+
+Test Case: Test Case 3
+testCaseName: Verify filtering books by a valid date range
+objective: Ensure that the application filters and displays books that fall within the specified publication date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application displays a list of books whose publication dates fall within the specified date range. Each book's id, Title, Author, Genre, and Publication date are shown.
+
+Test Case: Test Case 4
+testCaseName: Verify filtering books with no results
+objective: Ensure that the application handles the scenario where no books fall within the specified date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a start date and end date in the date range input forms that do not match any book's publication dates.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application displays a message indicating no books were found within the specified date range.
+
+Test Case: Test Case 5
+testCaseName: Verify the UI elements for date range filtering
+objective: Ensure that the date range input forms and refresh button are correctly displayed and functional
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Locate the date range input forms and refresh button above the list of books.
+expectedResult: The date range input forms and refresh button are displayed correctly and are functional.
+

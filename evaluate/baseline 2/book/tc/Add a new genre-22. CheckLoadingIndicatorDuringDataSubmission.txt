@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Loading Indicator Visibility During Successful Genre Submission
+objective: Ensure that the loading indicator is visible when submitting a new genre and disappears when the process is complete with success.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Fill in the 'Name' and 'Description' fields with valid data.
+  - Step 3: Press the 'Submit' button.
+  - Step 4: Observe the behavior of the application during the submission process.
+expectedResult: A loading indicator should be visible while the data is being submitted. Once the submission is successful and the new genre record is added, the loading indicator should disappear, and the updated list of genres should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify Loading Indicator Visibility During Failed Genre Submission
+objective: Ensure that the loading indicator is visible when submitting a new genre and disappears when the process completes with an error.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Fill in the 'Name' and 'Description' fields with invalid data to trigger a submission error.
+  - Step 3: Press the 'Submit' button.
+  - Step 4: Observe the behavior of the application during the submission process.
+expectedResult: A loading indicator should be visible while the data is being submitted. If an error occurs during submission, the loading indicator should disappear, and an error message should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation Discards Data Submission
+objective: To verify that pressing the 'Cancel' button while adding a new genre discards any entered data and does not save it to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Press the 'Cancel' button before submitting the form.
+  - Step 4: Observe the behavior of the application after pressing 'Cancel'.
+expectedResult: After pressing 'Cancel', the data entered in the form should not be saved to the database, and the user should be redirected back to the list of genre records without the new genre being added.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away From Form Discards Data
+objective: To ensure that navigating away from the genre creation form by selecting another menu item discards any entered data and does not save it to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Without submitting the form, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 4: Observe the behavior of the application after navigating away.
+expectedResult: After navigating away from the genre creation form by selecting another menu item, the data entered should not be saved to the database, and the user should be presented with the page corresponding to the selected menu item without the new genre being added.
+

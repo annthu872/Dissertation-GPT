@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation for a genre
+objective: Ensure that the application asks for deletion confirmation when a user attempts to delete a genre and completes the deletion upon confirmation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the list, and the application should display the updated list of genres without the deleted genre.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that when a user cancels the deletion of a genre, the genre is not deleted from the database, and the user is redirected back to the list of genres
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted from the database, and the application should redirect the user to the updated list of genres with the genre still present.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling genre deletion
+objective: To verify that after cancelling the deletion of a genre, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' works correctly without deleting the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any other section of the application, such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected section correctly, and the genre that was attempted to be deleted should still exist in the database and be visible if the user navigates back to the genres list.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: UpdateBook_WithValidPastPublicationDate
+objective: Verify that the system allows updating a book with a valid past publication date and displays the updated book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and set a valid past publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book is updated with the new details in the database, and the user is redirected to the updated list of books where the changes are reflected.
+
+Test Case: Test Case 2
+testCaseName: UpdateBook_WithInvalidPublicationDate
+objective: Verify that the system displays an error message when trying to update a book with an invalid publication date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and set an invalid publication date (e.g., a future date beyond the current date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays an error message indicating the publication date is invalid and does not update the book in the database.
+
+Test Case: Test Case 3
+testCaseName: CancelUpdateOperation
+objective: Verify that the system does not update book details in the database when the 'Cancel' button is pressed during an update operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system does not update the book in the database and redirects the user to the list of books without applying any changes.
+
+Test Case: Test Case 4
+testCaseName: UpdateBook_WithErrorDuringUpdate
+objective: Verify that the system displays an appropriate error message if an error occurs during the book update process.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's details and press the 'Submit' button.
+  - Step 4: Simulate an error condition (this step may require specific setup to induce an error, such as disconnecting from the database).
+expectedResult: The system displays an error message indicating that the book could not be updated due to an error.
+

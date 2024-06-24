@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer submission in word sorting test
+objective: Ensure that the system correctly validates and accepts a correct answer during the word sorting test.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Arrange the letters in the correct order and press enter.
+expectedResult: A green pop-up screen should appear indicating that the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer submission in word sorting test
+objective: Ensure that the system correctly identifies and indicates a wrong answer during the word sorting test.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order and press enter.
+expectedResult: A red pop-up screen should appear indicating that the answer is wrong.
+
+Test Case: Test Case 3
+testCaseName: Verify vocabulary words are marked as studied after submission
+objective: To confirm that after submitting an answer in the word sorting test, the vocabulary words are marked as studied.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test and complete a question by arranging the letters in either correct or incorrect order and press enter.
+  - Step 3: Proceed to the vocabulary section to check the status of the word.
+expectedResult: The word used in the test should be marked as studied in the vocabulary section.
+

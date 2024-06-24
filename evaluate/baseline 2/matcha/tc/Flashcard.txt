@@ -1,0 +1,80 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "Verify Navigation to 'Learn New Word' Tab",
+    "objective": "Verify that the learner can navigate to the 'Learn New Word' tab from the navigation bar.",
+    "testSteps": [
+      "Step 1: Log into the application.",
+      "Step 2: Locate the 'Learn New Word' tab on the navigation bar.",
+      "Step 3: Click on the 'Learn New Word' tab."
+    ],
+    "expectedResult": "The system should display a list of available lessons.",
+    "explanation": "This test case ensures that the navigation to the 'Learn New Word' tab works as expected, allowing learners to start their vocabulary learning journey."
+  },
+  "Test Case 2": {
+    "testCaseName": "Display of Available Lessons",
+    "objective": "Verify that the system displays a list of available lessons after clicking the 'Learn New Word' tab.",
+    "testSteps": [
+      "Step 1: Log into the application.",
+      "Step 2: Navigate to the 'Learn New Word' tab.",
+      "Step 3: Observe the displayed content."
+    ],
+    "expectedResult": "A list of available lessons should be displayed to the learner.",
+    "explanation": "This test case checks if the system correctly displays the list of lessons, enabling learners to choose which lesson they want to study."
+  },
+  "Test Case 3": {
+    "testCaseName": "Lesson Selection Functionality",
+    "objective": "Verify that learners can select a lesson from the list and see the details of the selected lesson.",
+    "testSteps": [
+      "Step 1: Log into the application and navigate to the 'Learn New Word' tab.",
+      "Step 2: From the list of available lessons, select a lesson.",
+      "Step 3: Observe the displayed content after selection."
+    ],
+    "expectedResult": "The system should display the details of the selected lesson, including the topics associated with it.",
+    "explanation": "This test case ensures that learners can select a lesson and view its details, which is crucial for navigating through the learning material."
+  },
+  "Test Case 4": {
+    "testCaseName": "Topic Selection and Flashcard Page Navigation",
+    "objective": "Verify that after selecting a topic within a lesson, the learner is redirected to the corresponding Flashcard page.",
+    "testSteps": [
+      "Step 1: Log into the application, navigate to the 'Learn New Word' tab, and select a lesson.",
+      "Step 2: Choose a topic to study from the displayed lesson details.",
+      "Step 3: Observe the redirection and displayed content."
+    ],
+    "expectedResult": "The system should redirect the learner to the Flashcard page for the selected topic, displaying the first flashcard.",
+    "explanation": "This test case verifies the functionality of selecting a topic and ensuring the learner is correctly navigated to the study material."
+  },
+  "Test Case 5": {
+    "testCaseName": "Flashcard Flip Functionality (Back View)",
+    "objective": "Verify that learners can flip a flashcard to view the back, which contains illustrations and examples of real-life usage.",
+    "testSteps": [
+      "Step 1: Navigate to a Flashcard page by selecting a topic.",
+      "Step 2: Click on the flashcard to flip it.",
+      "Step 3: Observe the content displayed on the back of the flashcard."
+    ],
+    "expectedResult": "The back of the flashcard should display illustrations and examples of real-life usage.",
+    "explanation": "This test case ensures that the flip functionality of flashcards works as intended, providing learners with a comprehensive learning experience."
+  },
+  "Test Case 6": {
+    "testCaseName": "Completion Notification and Options Display",
+    "objective": "Verify that upon studying all flashcards in a topic, the learner is shown a 'completion notification' page with options to 'continue studying' or 'return to the lesson page'.",
+    "testSteps": [
+      "Step 1: Complete studying all flashcards in a topic.",
+      "Step 2: Observe the displayed page after the last flashcard."
+    ],
+    "expectedResult": "The 'completion notification' page should be displayed with a congratulatory message and options to 'continue studying' and 'return to the lesson page'.",
+    "explanation": "This test case checks if the system correctly acknowledges the completion of a topic and provides relevant options to the learner."
+  },
+  "Test Case 7": {
+    "testCaseName": "Exit Functionality from Flashcard Study",
+    "objective": "Verify that the learner can exit the flashcard study session and the topic is marked as incomplete if not all flashcards were studied.",
+    "testSteps": [
+      "Step 1: During a flashcard study session, press the 'back' button.",
+      "Step 2: In the exit confirmation dialog box, click 'exit'.",
+      "Step 3: Observe the redirection and the status of the topic."
+    ],
+    "expectedResult": "The learner should be redirected to the topic page, and the topic should be marked as incomplete.",
+    "explanation": "This test case ensures that learners can exit a study session prematurely and that the system accurately tracks the completion status of the topic."
+  }
+}
+```

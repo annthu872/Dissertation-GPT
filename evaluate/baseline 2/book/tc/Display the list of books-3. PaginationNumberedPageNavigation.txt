@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality Without Date Filter
+objective: Verify that the pagination works correctly when navigating through pages without applying date filters
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the 'Next' button below the list of books.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The application should display the first 10 records of books on the first page. Upon clicking the 'Next' button, the next set of 10 records should be displayed on the second page without any repetition of the books from the first page.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Using Numbered Page Navigation
+objective: Ensure that the user can navigate to a specific page using the numbered page navigation in the pagination block
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the page number '3' in the pagination block.
+  - Step 4: Observe the list of books on the third page.
+expectedResult: The application should directly navigate to the third page upon clicking the page number '3', displaying a new set of 10 records of books that are different from those on the first and second pages.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination With Date Filter Applied
+objective: To verify that the pagination correctly displays books within a specified date range across multiple pages
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Enter a start date and an end date in the date range input forms.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+  - Step 4: Observe the list of books displayed that fall within the specified date range.
+  - Step 5: Click on the 'Next' button or a specific page number to navigate through the filtered list.
+expectedResult: After applying the date filter and clicking 'Refresh', the application should only display books published within the specified date range. Pagination should allow the user to navigate through the filtered list, displaying up to 10 items per page without showing books outside the specified date range.
+

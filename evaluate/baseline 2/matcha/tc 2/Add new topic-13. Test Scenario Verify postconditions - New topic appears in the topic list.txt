@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a new topic successfully
+objective: Ensure that the administrator can successfully add a new English learning topic and it appears in the topic list
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: After saving, the system redirects the administrator to the adding vocabulary to new topic section, and the new topic appears in the topic list.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a topic with an already used name
+objective: Ensure the system prevents the creation of a new topic with a name that is already used and prompts for a new name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification about the name being already used.
+  - Step 7: Enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the topic.
+expectedResult: The system shows a notification about the name being already used after step 5. After following the rest of the steps, the new topic with a unique name is successfully created and appears in the topic list.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of adding a new topic
+objective: Ensure that the administrator can cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic in the name field.
+  - Step 4: Select 'Cancel' to stop adding a new topic.
+expectedResult: The process of adding a new topic is cancelled, and no new topic is added to the topic list.
+

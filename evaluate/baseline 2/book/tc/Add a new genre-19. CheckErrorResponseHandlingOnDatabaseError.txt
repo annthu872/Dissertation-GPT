@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre creation
+objective: Verify that a new genre can be successfully added to the database and is displayed in the genre list
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database and the user is redirected to the list of genres where the newly added genre is displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify error message on database error during genre creation
+objective: Ensure that the application displays an appropriate error message when a database error occurs during the creation of a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+  - Step 5: Simulate a database error (This step may require specific setup or conditions that cause a database error).
+expectedResult: An error message is displayed to the user indicating that the genre could not be added due to a database error.
+
+Test Case: Test Case 3
+testCaseName: Verify form data validation
+objective: Ensure that the application validates form data correctly and displays messages for incorrect data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Messages indicating the incorrect data are displayed to the user.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during genre creation
+objective: Ensure that the genre creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: Data is not saved to the database and the user is redirected to the list of genre records.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation away from genre creation form
+objective: Ensure that navigating away from the genre creation form does not save data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: Data is not saved to the database and the user is redirected to the selected page with updated data.
+

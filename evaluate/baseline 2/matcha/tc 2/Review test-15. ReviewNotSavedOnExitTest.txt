@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Review Process and Memory Level Increase
+objective: Verify that the review process works correctly and the memory level of a word increases after selecting the right answer
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Choose the right answer for the displayed word.
+  - Step 4: Press 'Continue' button to go to the next word.
+  - Step 5: Repeat steps 3 and 4 until the last word in the review list.
+  - Step 6: Press 'Continue' button to go back to the Home page after reviewing the last word.
+expectedResult: After each right answer, a green word should be displayed, indicating the memory level of the word has increased. After completing the review, the system should save the review and update the memory level of the words.
+
+Test Case: Test Case 2
+testCaseName: Verify Memory Level Decrease on Wrong Answer
+objective: Ensure that the memory level of a word decreases after selecting the wrong answer
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Choose the wrong answer for the displayed word.
+  - Step 4: Press 'Continue' button to proceed to the next word.
+  - Step 5: Repeat steps 3 and 4 for other words as desired.
+  - Step 6: Press 'Continue' button to go back to the Home page after reviewing the last word.
+expectedResult: After each wrong answer, a red word should be displayed, indicating the memory level of the word has decreased. The system should save the review and update the memory level of the words accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify Review Not Saved on Exit Confirmation
+objective: To verify that the review progress is not saved when the learner exits the review before completion
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, choose 'Confirm' to exit the review.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress.
+
+Test Case: Test Case 4
+testCaseName: Verify Continuation of Review on Choosing to Stay
+objective: Ensure that the review process continues from the same point if the learner chooses to stay after pressing the 'Exit' button
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review.
+  - Step 4: On the pop-up, choose 'Stay' to continue the review.
+expectedResult: The review should continue from the same word where the learner pressed the 'Exit' button, allowing them to proceed with the review.
+

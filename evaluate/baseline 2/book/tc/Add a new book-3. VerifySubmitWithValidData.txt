@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Submit with Valid Data
+objective: Ensure that the system correctly adds a new book record to the database when valid data is entered and the submit button is pressed
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the book creation form fields: Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Submit with Invalid Data
+objective: To verify that the system displays appropriate error messages when invalid data is entered in the book creation form
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into one or more of the book creation form fields: Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages related to the invalid data entered, and the book record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation
+objective: To ensure that no data is saved to the database and the user is redirected back to the list of books when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the book creation form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: No data is saved to the database, and the user is redirected to the list of books without the new record.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away from Form
+objective: To verify that navigating away from the book creation form without submitting it results in no data being saved
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the book creation form fields.
+  - Step 4: Without pressing 'Submit', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system does not save any data to the database, and the user is redirected to the selected page without the new book record being added.
+

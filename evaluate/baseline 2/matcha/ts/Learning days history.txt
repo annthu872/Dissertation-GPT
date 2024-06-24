@@ -1,0 +1,15 @@
+1. Test Scenario: Verify redirection to History page from Home page.
+2. Test Scenario: Validate the display of "Day History" option on History page.
+3. Test Scenario: Check redirection to "Day History" details page.
+4. Test Scenario: Verify continuous learning days count functionality.
+5. Test Scenario: Validate learning days count reset functionality after a break.
+6. Test Scenario: Check access to "Day History" without logging in.
+7. Test Scenario: Verify the display of learning days history for multiple learners.
+8. Test Scenario: Validate the accuracy of learning days count over a period.
+9. Test Scenario: Check system behavior when there is no learning history.
+10. Test Scenario: Verify the system's response to back-to-back learning day checks.
+11. Test Scenario: Validate the system's performance with a high volume of learning days data.
+12. Test Scenario: Check the UI elements on the "Day History" details page for accessibility compliance.
+13. Test Scenario: Verify the refresh functionality on the "Day History" details page.
+14. Test Scenario: Validate the error handling when the "Day History" data fails to load.
+15. Test Scenario: Check the system's response to simultaneous access by multiple learners.

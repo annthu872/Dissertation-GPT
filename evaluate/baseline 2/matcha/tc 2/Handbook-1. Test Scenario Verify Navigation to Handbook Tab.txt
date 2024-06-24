@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Handbook Tab and Display of Vocabulary List
+objective: Verify that the learner can navigate to the Handbook tab and see their vocabulary list as expected.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the displayed list of vocabulary.
+expectedResult: The system should display the learner's vocabulary list in vertical rows, with each word in a horizontal row showing the word name, word type, word meaning, memorization level, and a checkbox.
+
+Test Case: Test Case 2
+testCaseName: Verify Vocabulary Search Functionality in Handbook
+objective: Ensure the search functionality in the Handbook tab filters the vocabulary list based on the entered characters.
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Press the search bar.
+  - Step 3: Enter the word to search.
+  - Step 4: Observe the filtered vocabulary list.
+expectedResult: The system should filter and display vocabulary containing characters entered by the learner in the search bar.
+
+Test Case: Test Case 3
+testCaseName: Verify Search for a Meaningless Vocabulary in Handbook
+objective: To check the system's response when searching for a meaningless word in the Handbook.
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Press the search bar.
+  - Step 3: Enter a meaningless word to search.
+  - Step 4: Observe the system's response.
+expectedResult: The system should notify that there are no suitable search results.
+
+Test Case: Test Case 4
+testCaseName: Verify Setting a Word to Not Be Reviewed in Daily Test
+objective: Ensure that learners can exclude words from appearing in the daily review test.
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Scroll to a vocabulary word.
+  - Step 3: Untick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's marking.
+expectedResult: The system should mark that vocabulary will not appear in the daily test review.
+
+Test Case: Test Case 5
+testCaseName: Verify Setting a Word to Be Reviewed in Daily Test
+objective: Ensure that learners can include words in the daily review test.
+testSteps:
+  - Step 1: Navigate to the 'Handbook' tab.
+  - Step 2: Scroll to a vocabulary word.
+  - Step 3: Tick the checkbox of a vocabulary word.
+  - Step 4: Observe the system's marking.
+expectedResult: The system should mark that vocabulary will appear in the daily test review.
+

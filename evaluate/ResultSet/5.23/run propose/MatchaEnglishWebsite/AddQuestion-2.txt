@@ -1,10 +1,16 @@
-- Scenario: Sentence field skipped during question creation
-- Scenario: Correct answer field skipped
-- Scenario: Other option 1 field skipped
-- Scenario: Other option 2 field skipped
-- Scenario: Other option 3 field skipped
-- Scenario: Admin Decides to Cancel but Then Chooses to Stay and Continue Editing
-- Scenario: Admin enters a sentence exceeding 250 characters
-- Scenario: Admin enters a sentence with special characters
-- Scenario: Admin Leaves Without Saving by Using Browser Back Button
-- Scenario: Admin Cancels Question Creation and Confirms Cancellation
+1. Successful creation of a selection test question
+2. Admin inputs an invalid sentence (exceeds 250 characters or contains special characters) and attempts to save the question
+3. Admin inputs duplicate wrong answers in the 'other option' fields and attempts to save the question
+4. Admin leaves one or more compulsory fields empty and attempts to save the question
+5. Admin cancels the creation of a new question for the selection test
+6. Scenario: Sentence field does not contain '...'
+7. Scenario: Sentence field above 250 characters
+8. Scenario: Sentence field contains special characters
+9. Scenario: Sentence field is skipped
+10. Scenario: Correct answer field is skipped
+11. Scenario: Other option 1 field is skipped
+12. Scenario: Other option 2 field is skipped
+13. Scenario: Other option 3 field is skipped
+14. Admin Decides to Cancel but Then Chooses to Stay and Continue Editing
+15. Admin Leaves Without Saving Question
+16. Scenario: Admin decides to cancel question creation after initiating the process

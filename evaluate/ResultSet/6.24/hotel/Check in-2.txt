@@ -1,0 +1,5 @@
+1. Scenario: Check into the room with an empty Booking ID
+2. Scenario: Check into the room with a Booking ID containing special characters
+3. Scenario: Check into the room with a Booking ID that is too long
+4. Successful Booking ID Validation and Update
+5. Incorrect Booking ID Entered

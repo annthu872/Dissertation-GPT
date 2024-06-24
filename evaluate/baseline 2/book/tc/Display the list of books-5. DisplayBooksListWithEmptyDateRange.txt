@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Range Filter
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page without any date range filter applied. The list should include columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality in Books List
+objective: Verify that the pagination functionality works correctly on the Books list page
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number from the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books from the list. Pagination should allow the user to navigate through different pages of book records.
+
+Test Case: Test Case 3
+testCaseName: Display Books With Empty Date Range
+objective: Verify that the application displays the list of books when the date range filter is left empty
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Leave the date range inputs empty.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display the list of books without applying any date range filter, including all columns such as id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 4
+testCaseName: Filter Books With Specific Date Range
+objective: Verify that the application filters and displays books within a specified date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid date range in the date range inputs.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books with publication dates within the specified date range. The list should include columns for id, Title, Author, Genre, and Publication date.
+

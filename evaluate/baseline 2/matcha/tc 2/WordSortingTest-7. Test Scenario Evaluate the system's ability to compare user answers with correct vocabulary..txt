@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify correct answer submission in word sorting test
+objective: To ensure that the system accurately compares the learner's arranged letters to the correct vocabulary and displays a green pop-up screen for a correct answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Read the question or view the image showing the word with its letters arranged randomly.
+  - Step 4: Arrange the letters in the correct order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: After pressing enter, the system compares the arranged letters to the correct vocabulary and displays a green pop-up screen indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect answer submission in word sorting test
+objective: To ensure that the system accurately compares the learner's arranged letters to the correct vocabulary and displays a red pop-up screen for an incorrect answer.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Read the question or view the image showing the word with its letters arranged randomly.
+  - Step 4: Intentionally arrange the letters in the incorrect order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: After pressing enter, the system compares the arranged letters to the correct vocabulary and displays a red pop-up screen indicating the answer is incorrect.
+

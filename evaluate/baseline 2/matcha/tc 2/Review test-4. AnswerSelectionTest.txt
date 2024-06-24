@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Verify Review Process Success
+objective: Ensure that learners can successfully review words, select the right answer, and proceed to the next word
+testSteps:
+  - Step 1: Log in as a learner.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Choose one of the four selections for the word review.
+  - Step 5: Click the right answer.
+  - Step 6: Observe the feedback from the system.
+  - Step 7: Press the 'Continue' button to go to the next word.
+expectedResult: After selecting the right answer, a green word should be displayed, indicating the word's memory level has increased. The system should then proceed to the next word.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Answer Handling
+objective: To test the system's response when a learner selects the wrong answer during a review
+testSteps:
+  - Step 1: Log in as a learner and navigate to the review screen.
+  - Step 2: Select an incorrect answer for the word review.
+  - Step 3: Observe the feedback from the system.
+  - Step 4: Press the 'Continue' button to proceed.
+expectedResult: The system should display a red word, indicating the word's memory level has decreased, and then allow the learner to proceed to the next word.
+
+Test Case: Test Case 3
+testCaseName: Verify Review Completion and Saving
+objective: Ensure that the review process is successfully saved upon completion
+testSteps:
+  - Step 1: Complete all words in the review list.
+  - Step 2: Press the 'Continue' button after the last word.
+  - Step 3: Verify redirection to the Home page.
+  - Step 4: Check if the review has been saved.
+expectedResult: After completing the review and pressing 'Continue' on the last word, the learner should be redirected to the Home page, and the review should be saved.
+
+Test Case: Test Case 4
+testCaseName: Verify Review Exit with Stay Option
+objective: To test the functionality of exiting the review process and choosing to stay
+testSteps:
+  - Step 1: During a review, press the 'Exit' button.
+  - Step 2: On the pop-up, select the 'Stay' option.
+  - Step 3: Verify that the learner remains on the review screen.
+expectedResult: After selecting 'Stay', the learner should remain on the review screen to continue the review process.
+
+Test Case: Test Case 5
+testCaseName: Verify Review Exit with Confirm Option
+objective: Ensure that learners can exit the review process and confirm exit
+testSteps:
+  - Step 1: During a review, press the 'Exit' button.
+  - Step 2: On the pop-up, select the 'Confirm' option.
+  - Step 3: Verify redirection to the Home page.
+expectedResult: After selecting 'Confirm', the learner should be redirected to the Home page, and the review progress should not be saved.
+

@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Review Functionality with Correct Answer Selection
+objective: Ensure that the system correctly increases the memory level of a word when the learner selects the right answer during a review session
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a question with four answer options.
+  - Step 4: Choose the correct answer from the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the memory level of the word has been increased.
+
+Test Case: Test Case 2
+testCaseName: Verify Review Functionality with Incorrect Answer Selection
+objective: Ensure that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and present a question with four answer options.
+  - Step 4: Choose the wrong answer from the four selections.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the memory level of the word has been decreased.
+
+Test Case: Test Case 3
+testCaseName: Verify Review Completion and Return to Home Page
+objective: Ensure that the system saves the review and returns the learner to the Home page after completing the last word in the review list
+testSteps:
+  - Step 1: Log in as a learner and proceed to the last word in the review words list.
+  - Step 2: Select the correct or incorrect answer for the last word.
+  - Step 3: Press the 'Continue' button.
+expectedResult: The system should save the review session and redirect the learner back to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Verify Exit Functionality with Decision to Stay
+objective: Ensure that the system allows learners to stay in the review session upon selecting the 'Stay' option after pressing the 'Exit' button
+testSteps:
+  - Step 1: Log in as a learner and start a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select the 'Stay' button.
+expectedResult: The system should close the pop-up and allow the learner to continue with the review session.
+
+Test Case: Test Case 5
+testCaseName: Verify Exit Functionality with Decision to Exit
+objective: Ensure that the system does not save the review and redirects the learner to the Home page upon selecting the 'Confirm' option after pressing the 'Exit' button
+testSteps:
+  - Step 1: Log in as a learner and start a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select the 'Confirm' button.
+expectedResult: The system should not save the review session and should redirect the learner back to the Home page.
+

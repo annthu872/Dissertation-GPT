@@ -1,0 +1,20 @@
+1. Test Scenario: Verify Navigation to "Learn New Word" Tab
+2. Test Scenario: Display of Available Lessons
+3. Test Scenario: Lesson Selection Functionality
+4. Test Scenario: Display of Lesson Details and Topics
+5. Test Scenario: Topic Selection and Flashcard Page Navigation
+6. Test Scenario: Display of Flashcard Details (Front View)
+7. Test Scenario: Flashcard Flip Functionality (Back View)
+8. Test Scenario: Navigation to Next Flashcard
+9. Test Scenario: Navigation to Previous Flashcard
+10. Test Scenario: Completion Notification and Options Display
+11. Test Scenario: Redirect to Lesson Page from Completion Page
+12. Test Scenario: Back Button Exit Confirmation During Flashcard Study
+13. Test Scenario: Continue Studying from Completion Notification
+14. Test Scenario: Incomplete Topic Continuation from Home Page
+15. Test Scenario: Previous Button Disabled on First Flashcard
+16. Test Scenario: Exit Flashcard Study via Back Button
+17. Test Scenario: Marking Topic and Vocabulary as Completed/Studied
+18. Test Scenario: Reviewing Completed Topics and Studied Vocabulary
+19. Test Scenario: System Behavior on Pressing 'Stay' in Exit Confirmation
+20. Test Scenario: System Behavior on Pressing 'Exit' in Exit Confirmation

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: EditTest_AccessEditPageWithPermission
+objective: Verify that administrators can access the edit page and edit tests successfully
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Edit the exercises as required.
+  - Step 5: Select 'Save' to save the edited exercises.
+expectedResult: The system should save all edited exercises and display a confirmation message that the changes have been saved.
+
+Test Case: Test Case 2
+testCaseName: EditTest_SaveEditedTestWithConfirmation
+objective: Verify that administrators can save edited tests with a confirmation step
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Edit the exercises as required.
+  - Step 5: Attempt to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Save' when asked 'Save changes?'.
+expectedResult: The system should save all edited exercises and display a confirmation message that the changes have been saved.
+
+Test Case: Test Case 3
+testCaseName: EditTest_DiscardChanges
+objective: Verify that administrators can discard changes made to a test
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Edit the exercises but decide to discard changes.
+  - Step 5: Attempt to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Do not save' when asked 'Save changes?'.
+expectedResult: The system should discard all edited exercises and not record the changes.
+
+Test Case: Test Case 4
+testCaseName: EditTest_AccessEditPageWithoutPermission
+objective: Verify that non-administrator users cannot access the edit test page
+testSteps:
+  - Step 1: Log in as a non-administrator user.
+  - Step 2: Attempt to access the 'Edit' option for a test.
+expectedResult: The system should not allow access to the edit page and display an appropriate error message.
+

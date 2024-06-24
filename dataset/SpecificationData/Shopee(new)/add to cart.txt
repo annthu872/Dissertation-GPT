@@ -1,0 +1,21 @@
+Use case name: Add item to cart
+Description: This feature allows users to add items to their shopping cart for future purchase.
+Actor: User
+Preconditions: User is logged into their Shopee account.
+Postconditions: 
+The item is successfully added to the user's shopping cart.
+The user can view and manage items in their shopping cart.
+Basic Flow:
+Step 1: User perform feature 'View a product detail'.
+Step 2: User clicks the ""Add to Cart"" button.
+Step 3: System confirms that the item has been added to the cart.
+Step 5: System adds item to the cart and updates the cart icon to reflect the number of items in the cart.
+Alterative flow: 
+If product has many options, user choose one available option before adding product to cart.
+User can adjust quantity of product before adding product into cart by clicking on minus or plus button next to quantity of the product. 
+
+Exception flow: 
+- user cannot add product has many options without selecting one available option.
+- user cannot add product with quantity that is bigger than the current stock. If user tries to adjust the quantity over the maximum stock, the plus button is disabled and a message is shown bellow the quantity user tries to add ""You has reach maximum of the stock.""
+- If the quantity is at one, the minus button is disabled to prevent user adjust quantity below one. 
+- User cannot add to cart product with no stock, or out of stock option of one product with multiple options.

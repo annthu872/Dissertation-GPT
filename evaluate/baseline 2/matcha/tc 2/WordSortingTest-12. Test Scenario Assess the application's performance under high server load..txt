@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify word sorting test under normal server load
+objective: Ensure the word sorting test functions correctly under normal server load conditions, with the learner able to submit answers and receive immediate feedback.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Start the test and observe a question with jumbled letters.
+  - Step 4: Arrange the letters in the correct order and submit the answer.
+  - Step 5: Observe the feedback pop-up screen.
+expectedResult: After submitting the correct answer, a green pop-up screen should appear indicating the answer is correct. For a wrong answer, a red pop-up screen should appear.
+
+Test Case: Test Case 2
+testCaseName: Assess word sorting test performance under high server load
+objective: To verify that the word sorting test remains functional and responsive under conditions of high server load, ensuring learners can still submit answers and receive feedback without significant delays.
+testSteps:
+  - Step 1: Simulate high server load conditions.
+  - Step 2: Log into the application as a learner.
+  - Step 3: Navigate to the word sorting test section under high load conditions.
+  - Step 4: Start the test and attempt to arrange letters in the correct order for multiple questions.
+  - Step 5: Submit each answer and note the time taken for the feedback pop-up to appear.
+expectedResult: Despite high server load, the application should handle the submission and feedback process efficiently, with minimal delay. Feedback (green for correct, red for incorrect) should still be accurately provided to the learner.
+

@@ -1,0 +1,15 @@
+1. EditTest_SuccessfulEditScenario
+2. EditTest_NavigateToEditPage
+3. EditTest_DisplayOfVocabularyList
+4. EditTest_SaveEditedExercises
+5. EditTest_CancelEditWithSaveChanges
+6. EditTest_CancelEditWithDoNotSaveChanges
+7. EditTest_InvalidVocabularyInput
+8. EditTest_EmptyExerciseField
+9. EditTest_ExerciseWithNonExistentVocabulary
+10. EditTest_SaveWithoutMakingChanges
+11. EditTest_EditWithMultipleAdministrators
+12. EditTest_BackNavigationPreservesData
+13. EditTest_SessionTimeoutDuringEdit
+14. EditTest_ConnectionLossBeforeSave
+15. EditTest_AccessEditPageWithoutPermission

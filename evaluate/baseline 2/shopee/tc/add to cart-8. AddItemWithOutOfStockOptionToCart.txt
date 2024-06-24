@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Add In-Stock Item to Cart
+objective: Verify that a user can successfully add an in-stock item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an in-stock item.
+  - Step 3: Click the 'Add to Cart' button.
+  - Step 4: Confirm the addition if prompted.
+expectedResult: The item is added to the cart, and the cart icon updates to reflect the new number of items.
+
+Test Case: Test Case 2
+testCaseName: Add Item with Multiple Options to Cart
+objective: Verify that a user can add a product with multiple options to their cart only after selecting an available option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with multiple options.
+  - Step 3: Select one available option.
+  - Step 4: Click the 'Add to Cart' button.
+expectedResult: The selected option of the item is added to the cart, and the cart icon updates to reflect the new number of items.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding to Cart
+objective: Verify that a user can adjust the quantity of an in-stock item before adding it to their cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an in-stock item.
+  - Step 3: Adjust the quantity using the plus or minus button.
+  - Step 4: Click the 'Add to Cart' button.
+expectedResult: The item, with the adjusted quantity, is added to the cart, and the cart icon updates to reflect the new number of items.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Out-of-Stock Item to Cart
+objective: Verify that a user cannot add an out-of-stock item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an out-of-stock item.
+  - Step 3: Attempt to click the 'Add to Cart' button.
+expectedResult: The 'Add to Cart' button is disabled or an error message is displayed, preventing the item from being added to the cart.
+
+Test Case: Test Case 5
+testCaseName: Prevent Adding Item with Quantity Exceeding Stock
+objective: Verify that a user cannot add more items to the cart than are available in stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an in-stock item.
+  - Step 3: Attempt to adjust the quantity to more than what is available in stock.
+expectedResult: The plus button is disabled, and/or a message is displayed: 'You have reached the maximum of the stock.'
+

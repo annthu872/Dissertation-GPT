@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Review Button Navigation and Functionality Test
+objective: Verify that selecting the review button navigates the learner to the review screen and correctly executes the review process
+testSteps:
+  - Step 1: Log in as a learner with a review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify the system redirects to the review screen.
+  - Step 4: Engage with the review process by selecting answers for the presented words.
+  - Step 5: Click the right answer for one of the words.
+  - Step 6: Press 'Continue' button to proceed to the next word.
+expectedResult: The learner is redirected to the review screen, can interact with the review process, and upon selecting the right answer, sees a green word and proceeds to the next word.
+
+Test Case: Test Case 2
+testCaseName: Review Process with Incorrect Answer Selection
+objective: Verify the system's behavior when a learner selects an incorrect answer during the review process
+testSteps:
+  - Step 1: Begin the review process as outlined in Test Case 1.
+  - Step 2: Click the wrong answer for one of the words.
+  - Step 3: Observe the system's response.
+expectedResult: The system shows a red word for the learner to read, decreases the memory level of the word, and allows the learner to continue to the next word.
+
+Test Case: Test Case 3
+testCaseName: Completing the Review Process
+objective: Verify the system's behavior when a learner completes the review process
+testSteps:
+  - Step 1: Follow the steps in Test Case 1 until the last word in the review list is reached.
+  - Step 2: Press 'Continue' button after selecting the answer for the last word.
+expectedResult: The system saves the review and redirects the learner back to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Review Process Interruption and Continuation
+objective: Verify the system's behavior when a learner attempts to exit the review process and then chooses to stay
+testSteps:
+  - Step 1: Start the review process as per Test Case 1.
+  - Step 2: At any point, press the 'Exit' button.
+  - Step 3: On the pop-up, select 'Stay'.
+expectedResult: The system allows the learner to continue with the review process from where they left off.
+
+Test Case: Test Case 5
+testCaseName: Exiting the Review Process
+objective: Verify the system's behavior when a learner chooses to exit the review process
+testSteps:
+  - Step 1: Engage in the review process as described in Test Case 1.
+  - Step 2: Press the 'Exit' button.
+  - Step 3: On the pop-up, select 'Confirm'.
+expectedResult: The system redirects the learner to the Home page and the review progress is not saved.
+

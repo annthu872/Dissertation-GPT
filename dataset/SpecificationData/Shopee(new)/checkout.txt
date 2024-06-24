@@ -1,0 +1,52 @@
+Use case name: Checkout
+Use Case ID: UC-002
+Description: This feature allows users to complete the purchase of items in their shopping cart.
+Actor: User
+
+Preconditions: 
+User is logged into their Shopee account.
+Postconditions
+The order is successfully placed.
+The user receives an order confirmation.
+Basic Flow
+Step 1: User perform feature 'Purchase'.
+Step 2: System displays the order summary, including items, quantities, prices, and total cost.
+Step 3: System set shipping address as default address. User can change or add new a shipping address.
+Step 4: System set default payment method as COD. There are other payment method such as: Shopee Pay, Google Pay, credit. User can change a payment method by select new payment method.
+Step 5: User can add application voucher or shop voucher to order by select available voucher or enter voucher code.
+Step 6: System set default shipping option as Standard Express. User can change shipping option.
+Step 7: User can add note for shop.
+Step 8: System update the total cost based on user changes. User reviews the order details.
+Step 9: User clicks on the ""Place Order"" button.
+Step 10: System processes the payment and confirms the order.
+Step 11: System displays the order confirmation and details.
+Alternative Flows:
+1.If user has no default shipping address, system will force user to add a new shipping address.
+2. If user want to change shipping address: 
+-user click button change shipping address. system will display a list of saved address and user can select one.
+3. If user want to add a new shipping address: 
+-user click button change shipping address, add new address
+-user fill the form: 
+        + Full name (text field): contains only letter and cannot be less than 2 letters
+        + phone number (text field): must be in format (+84) xxx xxx xxx with all the x is number
+        + city: dropdown menu list cities provided by the platform
+        + district: dropdown menu list districts provided by the platform
+        + ward: dropdown menu list wards provided by the platform
+        + location's address  (text field): must be an available address that can be identified on the map
+        + Address type (optional, ratio): own house, working place
+- user click button 'Finish' to add shipping address. 
+4. if user enter a voucher code (for application voucher/ shop voucher):  
+- user input a correct voucher code.
+- user click 'apply' button.
+- system add voucher to order and discount the order based on the voucher input.
+5. If user change shipping option: 
+- user click on shipping option change button.
+- system display a list of available shipping options.
+- user select one.
+
+Exception Flows:
+- user cannot add disable voucher.
+- user cannot apply an incorrect voucher code.
+- If the input is not match the require condition or the inputted location's address cannot be found in the map, system send notification and prevent user from adding new shipping address.
+- If there is an issue with the order:
+System displays an error message and suggests corrective actions (e.g., updating the shipping address, checking payment details).

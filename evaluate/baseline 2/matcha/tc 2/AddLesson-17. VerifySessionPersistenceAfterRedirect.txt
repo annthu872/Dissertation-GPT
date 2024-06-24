@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify Session Persistence After Redirect to Add New Lesson
+objective: Verify that the session remains persistent after the administrator is redirected to the 'Add new Lesson' page, ensuring they can add a new lesson without re-authentication.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Admin presses the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, Administrator selects 'View list of Lesson'.
+  - Step 4: Administrator selects button 'Add new Lesson'.
+  - Step 5: Administrator adds the name of the lesson in the name field.
+  - Step 6: Administrator adds the description of the lesson in the description field.
+  - Step 7: Administrator selects 'Save' to create a new lesson.
+expectedResult: After selecting 'Save', the system should successfully create the new lesson and redirect the Administrator to the 'adding topic to new lesson' section without requiring re-authentication.
+
+Test Case: Test Case 2
+testCaseName: Verify Error Handling for Duplicate Lesson Name
+objective: Ensure the system correctly handles attempts to add a new lesson with a name that is already in use.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Admin navigates to the 'Add new Lesson' page.
+  - Step 3: Administrator adds a name that is already used in the existed lessons in the name field.
+  - Step 4: Administrator adds the description of the lesson in the description field.
+  - Step 5: Administrator selects 'Save' to create a new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting Administrator to add another name.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Add New Lesson Page via Navbar
+objective: Ensure that the Administrator can navigate to the 'Add new Lesson' page directly from the navbar options.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Admin presses the tab 'Lesson Management' on the navbar.
+  - Step 3: Administrator selects 'Add new Lesson' from the dropdown menu.
+  - Step 4: Administrator adds the name of the lesson in the name field.
+  - Step 5: Administrator adds the description of the lesson in the description field.
+  - Step 6: Administrator selects 'Save' to create a new lesson.
+expectedResult: The Administrator should be successfully redirected to the 'Add new Lesson' page and be able to add a new lesson without issues.
+
+Test Case: Test Case 4
+testCaseName: Verify Ability to Cancel Adding New Lesson
+objective: Ensure that the Administrator can cancel the process of adding a new lesson at any time.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Admin navigates to the 'Add new Lesson' page.
+  - Step 3: Administrator selects 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the lesson creation process and possibly redirect the Administrator to the previous page or dashboard.
+

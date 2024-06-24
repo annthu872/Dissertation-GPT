@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away Without Saving Question Using Browser Back Button
+objective: Ensure that when an admin navigates away without saving a question using the browser back button, the question is not saved.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the compulsory fields for creating a question.
+  - Step 9: Press the browser back button instead of 'Save'.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+
+Test Case: Test Case 2
+testCaseName: Verify Canceling Question Creation with Confirmation
+objective: To verify that when an admin cancels the question creation process and confirms the cancellation, the question is not saved.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the compulsory fields for creating a question.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+
+Test Case: Test Case 3
+testCaseName: Verify Canceling Question Creation and Choosing to Stay
+objective: To ensure that when an admin cancels the question creation but chooses to stay, the question creation process is not terminated.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option to add 'Create questions for the selection test'.
+  - Step 8: Fill in the compulsory fields for creating a question.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, press the 'Stay' button.
+expectedResult: The dialog should close, and the admin should remain on the question creation page with the entered information intact.
+

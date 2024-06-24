@@ -1,0 +1,4 @@
+1. Attempt to generate report without selecting date period
+2. Attempt to generate report with an invalid date range selection
+3. Successful Report Generation and Viewing
+4. Report Generation with No Data Available for Selected Parameters

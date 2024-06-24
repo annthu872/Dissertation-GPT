@@ -1,0 +1,15 @@
+1. Test Scenario: Valid Checkout Process
+2. Test Scenario: Invalid Booking ID Entry
+3. Test Scenario: Booking ID Without Linked Room
+4. Test Scenario: Submit Button Functionality
+5. Test Scenario: Successful Validation of Booking ID
+6. Test Scenario: Removal of Linked Room ID Upon Validation
+7. Test Scenario: Booking Status Update to Complete
+8. Test Scenario: Success Message and Redirection to Main Page
+9. Test Scenario: Error Message Display for Incorrect Booking ID
+10. Test Scenario: Error Message Display for Booking ID Without Linked Room
+11. Test Scenario: System Response Time for Checkout Process
+12. Test Scenario: Checkout Process Without Internet Connection
+13. Test Scenario: Multiple Submissions of the Same Booking ID
+14. Test Scenario: Checkout with Expired Booking ID
+15. Test Scenario: Checkout Process During System Maintenance

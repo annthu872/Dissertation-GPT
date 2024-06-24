@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Verify redirection to History page from Home page
+objective: Verify that the learner is redirected to the History page upon selecting the 'History' option on the Home page
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: On the Home page, the learner selects the 'History' option.
+expectedResult: The system redirects the learner to the History page.
+
+Test Case: Test Case 2
+testCaseName: Verify viewing Day History from History page
+objective: Ensure that the learner can view the Day History, showing the number of continuous learning days, from the History page
+testSteps:
+  - Step 1: Ensure the learner is redirected to the History page as per the previous test case.
+  - Step 2: On the History page, the learner selects 'Day History'.
+expectedResult: The system redirects the learner to a page showing the number of days they have learned continuously. If the learning chain is broken, the number resets to one.
+

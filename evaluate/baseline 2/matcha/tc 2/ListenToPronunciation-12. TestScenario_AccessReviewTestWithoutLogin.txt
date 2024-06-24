@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: AccessReviewTestWithoutLogin_AttemptToTakeTest
+objective: Verify that a learner is unable to access and take the listening pronunciation test without being logged in
+testSteps:
+  - Step 1: Navigate to the application's review test section without logging in.
+  - Step 2: Attempt to access the listening pronunciation test.
+expectedResult: The system should prevent access to the test and prompt the user to log in.
+
+Test Case: Test Case 2
+testCaseName: AccessReviewTestWithoutLogin_ViewTestRequirement
+objective: Verify that the application informs the learner about the login requirement for taking the listening pronunciation test
+testSteps:
+  - Step 1: Navigate to the application's review test section without logging in.
+  - Step 2: Attempt to view the listening pronunciation test.
+expectedResult: The system should display a message or screen indicating that login is required to access the test.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Logout and Retain Progress for Correct Answer
+objective: Ensure that when a learner logs out after submitting a correct answer in the Listening Pronunciation Test Quest, their progress is saved correctly.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test section and start a Listening Pronunciation Test Quest.
+  - Step 3: Listen to the pronunciation by clicking the speaker button.
+  - Step 4: Guess the entire word and choose the correct answer.
+  - Step 5: Submit the answer.
+  - Step 6: Observe the pop-up screen color.
+  - Step 7: Log out from the application.
+  - Step 8: Log back into the application.
+  - Step 9: Navigate to the review test section to check if the progress is retained.
+expectedResult: After logging back in, the learner should see that their correct answer has been saved and the vocabulary word is marked as studied.
+
+Test Case: Test Case 2
+testCaseName: Verify Logout and Retain Progress for Incorrect Answer
+objective: Ensure that when a learner logs out after submitting an incorrect answer in the Listening Pronunciation Test Quest, their progress is saved correctly.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test section and start a Listening Pronunciation Test Quest.
+  - Step 3: Listen to the pronunciation by clicking the speaker button.
+  - Step 4: Guess the entire word and choose the wrong answer.
+  - Step 5: Submit the answer.
+  - Step 6: Observe the pop-up screen color.
+  - Step 7: Log out from the application.
+  - Step 8: Log back into the application.
+  - Step 9: Navigate to the review test section to check if the progress is retained.
+expectedResult: After logging back in, the learner should see that their incorrect answer has been saved and the vocabulary word is marked as studied.
+

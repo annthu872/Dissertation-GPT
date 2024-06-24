@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Future Publication Date
+objective: Verify that the system allows updating a book with a valid future publication date and displays the updated book list
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and set the publication date to a valid future date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book is updated with the new details, including the future publication date, and the updated book list is displayed without any error messages.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Invalid Future Publication Date
+objective: Verify that the system displays an error message when trying to update a book with an invalid future publication date
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and set the publication date to an invalid future date (e.g., a date format not recognized by the system).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays an error message indicating the publication date is invalid and does not update the book in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation on Book
+objective: Verify that the system does not update book details in the database when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system does not update the book in the database and displays the list of books without applying any changes.
+
+Test Case: Test Case 4
+testCaseName: Update Book and Navigate Away Without Submitting
+objective: Verify that the system does not update book details in the database when navigation occurs before the 'Submit' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the form.
+  - Step 4: Navigate away from the page by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API' without pressing the 'Submit' button.
+expectedResult: The system does not update the book in the database and displays the selected page without applying any changes to the book.
+

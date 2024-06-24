@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: EditTest_SuccessfulEditScenario_BasicFlow
+objective: Verify that the administrator can successfully edit a test and save changes
+testSteps:
+  - Step 1: On the home page, administrator selects 'Topic' on the navbar.
+  - Step 2: Administrator chooses the topic that has the test needed editing, then selects 'Edit'.
+  - Step 3: The system redirects Administrator to the interface of adding, editing vocabulary test, displaying the lists of vocabulary in the topic and category of vocabulary exercises.
+  - Step 4: Administrator edits the exercises as required.
+  - Step 5: Administrator selects 'Save'.
+expectedResult: The system saves all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+
+Test Case: Test Case 2
+testCaseName: EditTest_SuccessfulEditScenario_AlternativeFlow
+objective: Verify that the administrator can exit the editing mode, choose to save changes, and the system saves all edited exercises
+testSteps:
+  - Step 1: Follow steps 1 to 4 from the basic flow.
+  - Step 2: At step 5 of the basic flow, Administrator presses the button to exit exercise editing mode.
+  - Step 3: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 4: Administrator selects 'Save'.
+expectedResult: The system saves all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+
+Test Case: Test Case 3
+testCaseName: EditTest_UnsuccessfulEditScenario_ExceptionFlow
+objective: Verify that the administrator can exit the editing mode, choose not to save changes, and the system does not record the edited exercises
+testSteps:
+  - Step 1: Follow steps 1 to 4 from the basic flow.
+  - Step 2: At step 5 of the basic flow, Administrator presses the button to exit exercise editing mode.
+  - Step 3: The pop-up screen appears 'Save changes?' with 'Save' and 'Do not save' options.
+  - Step 4: Administrator selects 'Do not save'.
+expectedResult: The system deletes and does not record the edited exercises, maintaining the original state of the exercises before editing.
+

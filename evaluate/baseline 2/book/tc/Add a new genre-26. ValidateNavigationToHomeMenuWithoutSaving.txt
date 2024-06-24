@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Validate Successful Genre Creation
+objective: Verify that a new genre can be successfully added to the database and is displayed in the genre list
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database and the user is redirected to the list of genres where the new record is visible.
+
+Test Case: Test Case 2
+testCaseName: Validate Incorrect Data Handling
+objective: Verify that entering incorrect data displays appropriate error messages
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Error messages related to incorrect data are displayed to the user.
+
+Test Case: Test Case 3
+testCaseName: Validate Error Handling During Genre Creation
+objective: Verify that an error message is displayed if an error occurs while adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Simulate an error condition and press the 'Submit' button.
+expectedResult: An error message is displayed to the user.
+
+Test Case: Test Case 4
+testCaseName: Validate Navigation to Home Menu Without Saving
+objective: Verify that navigating away from the genre creation page without saving does not add a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', click on the 'Home' menu item.
+expectedResult: The user is navigated to the Home page and the data entered is not saved to the database.
+
+Test Case: Test Case 5
+testCaseName: Validate Cancel Operation During Genre Creation
+objective: Verify that clicking the 'Cancel' button while adding a new genre discards the data and does not add a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Click the 'Cancel' button.
+expectedResult: The user is redirected to the list of genres and the data entered is not saved to the database.
+

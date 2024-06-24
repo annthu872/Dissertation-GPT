@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify successful login
+objective: Verify that the learner can successfully log in before starting the word sorting test
+testSteps:
+  - Step 1: Navigate to the application login page.
+  - Step 2: Enter valid login credentials.
+  - Step 3: Click on the login button.
+expectedResult: The learner is redirected to the homepage indicating a successful login.
+
+Test Case: Test Case 2
+testCaseName: Verify correct answer submission in word sorting test
+objective: Verify that the system accepts and validates a correct answer in the word sorting test
+testSteps:
+  - Step 1: Ensure the learner is logged in and navigate to the word sorting test.
+  - Step 2: Read the question or the meaning of the vocabulary displayed on the screen.
+  - Step 3: Arrange the letters in correct order by clicking on the letter buttons.
+  - Step 4: Press enter after arranging the letters.
+expectedResult: A green pop-up screen appears indicating the answer is correct.
+
+Test Case: Test Case 3
+testCaseName: Verify incorrect answer submission in word sorting test
+objective: Verify that the system correctly identifies and indicates a wrong answer in the word sorting test
+testSteps:
+  - Step 1: Ensure the learner is logged in and navigate to the word sorting test.
+  - Step 2: Read the question or the meaning of the vocabulary displayed on the screen.
+  - Step 3: Deliberately arrange the letters in incorrect order by clicking on the letter buttons.
+  - Step 4: Press enter after arranging the letters.
+expectedResult: A red pop-up screen appears indicating the answer is wrong.
+

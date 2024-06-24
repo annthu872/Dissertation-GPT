@@ -1,0 +1,12 @@
+1. Successful Checkout with Single Shop Products
+2. Successful Checkout with Multiple Shops Products
+3. User selects all items from one store for checkout
+4. User purchases a product directly from the product detail page without options
+5. User purchases a product with options from the product detail page
+6. User adjusts the quantity of a product before purchasing from the product detail page
+7. Product Out of Stock Scenario
+8. Product Erased by Seller Scenario
+9. Invalid Product Selection Scenario
+10. Exceeding Stock Quantity Scenario
+11. Under Minimum Quantity Scenario
+12. Out of Stock Option Scenario

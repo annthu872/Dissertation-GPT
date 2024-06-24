@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Validate Empty Name Field
+objective: Verify that the application prevents the user from adding a new genre with an empty 'Name' field
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the 'Name' field cannot be empty.
+
+Test Case: Test Case 2
+testCaseName: Validate Empty Description Field
+objective: Verify that the application prevents the user from adding a new genre with an empty 'Description' field
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the 'Description' field cannot be empty.
+
+Test Case: Test Case 3
+testCaseName: Validate All Fields Empty
+objective: Verify that the application prevents the user from adding a new genre with all fields empty
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Leave both the 'Name' and 'Description' fields empty.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that both the 'Name' and 'Description' fields cannot be empty.
+
+Test Case: Test Case 4
+testCaseName: Cancel Operation Before Submitting
+objective: Verify that no data is saved and the user is redirected back to the genre list when the 'Cancel' button is pressed before submitting the form
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Fill in the 'Name' and 'Description' fields with valid data.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The user should be redirected back to the genre list page without the new genre being added.
+
+Test Case: Test Case 5
+testCaseName: Navigation Away From Form Without Saving
+objective: Verify that navigating away from the genre creation form without saving does not add a new genre record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Fill in the 'Name' and 'Description' fields with valid data.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books' or 'Home'.
+expectedResult: The user should be redirected to the selected page without the new genre being added to the database.
+

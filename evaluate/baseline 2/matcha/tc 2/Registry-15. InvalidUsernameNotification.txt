@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Register with invalid username
+objective: Verify that the system shows a notification for invalid username during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with an invalid username (less than 8 characters or more than 30 characters).
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: A notification that the username is invalid should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Register with invalid password
+objective: Verify that the system shows a notification for invalid password during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a valid username.
+  - Step 3: Fill in the password field with an invalid password (does not meet the criteria).
+  - Step 4: Press the 'Registry' button.
+expectedResult: A notification that the password is invalid should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Register with an existed username
+objective: Verify that the system shows a notification for an already registered username
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Registry' button.
+expectedResult: A notification that this username has been registered and asking the learner to choose another username should be displayed.
+
+Test Case: Test Case 4
+testCaseName: Register with invalid email
+objective: Verify that the system shows a notification for invalid email during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon.
+  - Step 3: Fill in the email field with an invalid email (inexistent email or wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Registry' button.
+expectedResult: A notification that the mail is invalid should be displayed.
+

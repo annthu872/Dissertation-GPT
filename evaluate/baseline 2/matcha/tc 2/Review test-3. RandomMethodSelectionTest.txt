@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Review Process with Correct Answer Selection
+objective: Ensure that the system correctly handles the review process when a learner selects the right answer, including updating the memory level and proceeding to the next word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: From the review screen, engage with the system's randomly selected method (question, sound, image, or meaning) for a word.
+  - Step 4: Choose the correct answer from the four selections provided.
+  - Step 5: Click on the right answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the right answer, a green word should be displayed, indicating the word's memory level has been increased. The system should then proceed to the next word in the review list.
+
+Test Case: Test Case 2
+testCaseName: Verify Review Process with Incorrect Answer Selection
+objective: Ensure that the system correctly handles the review process when a learner selects the wrong answer, including updating the memory level and allowing the learner to continue the review.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Engage with the system's randomly selected method for a word.
+  - Step 4: Choose the wrong answer from the four selections provided.
+  - Step 5: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased. The system should then allow the learner to proceed to the next word in the review list.
+
+Test Case: Test Case 3
+testCaseName: Verify Review Completion and Return to Home Page
+objective: To verify that the system saves the review and returns the learner to the Home page after completing the last word in the review list.
+testSteps:
+  - Step 1: Log in as a learner and proceed with the review until the last word in the review list.
+  - Step 2: Select the correct or incorrect answer for the last word.
+  - Step 3: Press the 'Continue' button after the last word.
+expectedResult: The system should save the review and redirect the learner back to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Verify Ability to Stay in Review After Pressing 'Exit'
+objective: Ensure that the system allows learners to remain in the review process if they choose to stay after pressing the 'Exit' button.
+testSteps:
+  - Step 1: Log in as a learner and start the review process.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: From the pop-up, select the 'Stay' button.
+expectedResult: The system should return the learner to the review process at the point they attempted to exit.
+
+Test Case: Test Case 5
+testCaseName: Verify Review Exit Without Saving
+objective: To ensure that the system does not save the review progress if a learner chooses to exit the review process.
+testSteps:
+  - Step 1: Log in as a learner and start the review process.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: From the pop-up, select the 'Confirm' button.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress.
+

@@ -1,0 +1,15 @@
+1. Test Scenario: Verify Click Functionality on Author Title
+2. Test Scenario: Validate Display of Author Details
+3. Test Scenario: Check Author ID Visibility and Uniqueness
+4. Test Scenario: Validate Author Name Display
+5. Test Scenario: Check Author Bio Display
+6. Test Scenario: Verify Error Handling for Invalid Author ID
+7. Test Scenario: Test Page Layout for Author Details
+8. Test Scenario: Validate Refresh Functionality on Author Details Page
+9. Test Scenario: Check Responsiveness of Author Details Page
+10. Test Scenario: Verify Navigation from Author List to Author Details
+11. Test Scenario: Test Back Navigation to Author List Page
+12. Test Scenario: Validate Loading Time for Author Details Page
+13. Test Scenario: Check Accessibility Features for Author Details Page
+14. Test Scenario: Verify Data Consistency for Author Details Across Sessions
+15. Test Scenario: Test for SQL Injection Vulnerability in Author Details Page

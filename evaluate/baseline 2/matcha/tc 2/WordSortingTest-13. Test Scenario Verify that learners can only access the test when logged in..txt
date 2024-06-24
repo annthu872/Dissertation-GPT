@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify access to word sorting test without login
+objective: Ensure that learners cannot access the word sorting test without being logged in
+testSteps:
+  - Step 1: Navigate to the application's homepage without logging in.
+  - Step 2: Attempt to access the word sorting test.
+expectedResult: The user should be redirected to the login page or receive a message indicating that login is required to access the test.
+
+Test Case: Test Case 2
+testCaseName: Verify successful login and access to word sorting test
+objective: Verify that a learner can log in and access the word sorting test successfully
+testSteps:
+  - Step 1: Navigate to the application's login page.
+  - Step 2: Enter valid login credentials and submit.
+  - Step 3: Navigate to the word sorting test section after logging in.
+expectedResult: The learner should be able to log in successfully and access the word sorting test without any issues.
+
+Test Case: Test Case 3
+testCaseName: Verify word sorting test functionality with correct answer
+objective: Ensure that the system correctly evaluates and provides feedback for a correct answer in the word sorting test
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Complete the test by arranging the letters in the correct order and press enter.
+expectedResult: A green pop-up screen should appear indicating that the answer is correct.
+
+Test Case: Test Case 4
+testCaseName: Verify word sorting test functionality with incorrect answer
+objective: Ensure that the system correctly evaluates and provides feedback for an incorrect answer in the word sorting test
+testSteps:
+  - Step 1: Log in to the application.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: Deliberately arrange the letters in the wrong order and press enter.
+expectedResult: A red pop-up screen should appear indicating that the answer is wrong.
+

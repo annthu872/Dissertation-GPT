@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Correct Answer for Listening Pronunciation Test
+objective: Ensure that the system correctly validates and provides positive feedback when the learner chooses the correct answer in a listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word based on the pronunciation and choose the correct answer.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the correct answer, a green pop-up screen should appear indicating the answer is correct.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Answer for Listening Pronunciation Test
+objective: Ensure that the system correctly validates and provides negative feedback when the learner chooses the wrong answer in a listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word based on the pronunciation and choose the wrong answer.
+  - Step 5: Submit the answer.
+expectedResult: After submitting the wrong answer, a red pop-up screen should appear indicating the answer is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Accessibility Features for Hearing Impaired in Listening Pronunciation Test
+objective: Verify that accessibility features for the hearing impaired are available and functional during a listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section with accessibility features enabled for hearing impaired.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Verify that visual aids or text transcription of the pronunciation are available.
+  - Step 4: Use the provided accessibility features to guess the word and choose the correct answer.
+  - Step 5: Submit the answer.
+expectedResult: The system should provide adequate accessibility features (like visual aids or text transcriptions) for the hearing impaired, allowing them to participate in the test effectively. After submitting the answer, a pop-up screen (green for correct, red for incorrect) should appear.
+

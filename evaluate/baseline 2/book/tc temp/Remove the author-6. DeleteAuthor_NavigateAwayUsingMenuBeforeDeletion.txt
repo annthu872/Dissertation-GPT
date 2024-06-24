@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Author and Confirm Deletion
+objective: Verify that the user can delete an author and confirm the deletion process successfully
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The author is successfully deleted from the database, and the user is redirected to the updated list of authors without the deleted record.
+
+Test Case: Test Case 2
+testCaseName: Delete Author and Cancel Deletion
+objective: Verify that the user can cancel the deletion of an author after initiating the delete action
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process is canceled, the author remains in the database, and the user is redirected to the updated list of authors with the record still present.
+
+Test Case: Test Case 3
+testCaseName: Delete Author and Navigate Away Using Menu Before Confirmation
+objective: Verify that navigating away from the delete confirmation dialog using the menu cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate away by selecting a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The deletion process is canceled due to navigation away from the confirmation dialog. The author remains in the database, and the user is redirected to the selected page with updated data.
+

@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Successful Review Flow with Correct Answers
+objective: Verify that the review flow works correctly when the learner selects the right answers and the system updates the memory level accordingly.
+testSteps:
+  - Step 1: Log in as a learner with words due for review.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Engage with the review by selecting the correct answer for each word presented.
+  - Step 5: Click the 'Continue' button to proceed to the next word after selecting the right answer.
+  - Step 6: Complete the review for all words in the daily review list.
+  - Step 7: Press 'Continue' button to go back to the Home page after the last word.
+expectedResult: After each correct answer, a green word should be shown, indicating the word's memory level has increased. Upon completion, the review should be saved, and the learner should be redirected to the Home page.
+
+Test Case: Test Case 2
+testCaseName: Review Flow with Incorrect Answers
+objective: Verify that the system correctly handles incorrect answers by showing a red word and decreasing the memory level.
+testSteps:
+  - Step 1: Log in as a learner with words due for review.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Select the wrong answer for at least one word.
+  - Step 5: Click the 'Continue' button to proceed after selecting the wrong answer.
+  - Step 6: Complete the review for all words in the daily review list.
+  - Step 7: Press 'Continue' button to go back to the Home page after the last word.
+expectedResult: After selecting a wrong answer, a red word should be shown, indicating the word's memory level has decreased. The review process should continue as normal, and upon completion, the review should be saved, and the learner redirected to the Home page.
+
+Test Case: Test Case 3
+testCaseName: Review Flow Interruption and Continuation
+objective: Verify that learners can interrupt the review flow by pressing 'Exit', choose to 'Stay', and then continue the review.
+testSteps:
+  - Step 1: Log in as a learner with words due for review.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Press the 'Exit' button during the review.
+  - Step 5: On the pop-up, select the 'Stay' button.
+  - Step 6: Continue with the review by selecting the correct answers.
+  - Step 7: Complete the review and press 'Continue' to return to the Home page.
+expectedResult: The system should allow the learner to continue with the review after choosing to 'Stay', and upon completion, the review should be saved, and the learner redirected to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Review Flow Interruption and Exit
+objective: Ensure the system correctly handles the scenario where a learner decides to exit the review flow.
+testSteps:
+  - Step 1: Log in as a learner with words due for review.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Press the 'Exit' button during the review.
+  - Step 5: On the pop-up, select the 'Confirm' button to exit.
+  - Step 6: Verify redirection to the Home page.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress.
+

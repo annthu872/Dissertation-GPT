@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify Incorrect Answer Feedback
+objective: Ensure that when learners select an incorrect answer, the system shows a red word and decreases the word's memory level
+testSteps:
+  - Step 1: Login as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Engage with the review by selecting one of the four methods (questions, sound, image, or meanings) presented by the system for a word.
+  - Step 5: Choose an incorrect answer from the four selections provided.
+  - Step 6: Click on the selected incorrect answer.
+expectedResult: The system should display a red word indicating the answer is incorrect and decrease the memory level of the word.
+
+Test Case: Test Case 2
+testCaseName: Verify Review Completion and Return to Home
+objective: To verify that upon completing the review by coming to the last word, pressing 'Continue' redirects the learner back to the Home page and saves the review
+testSteps:
+  - Step 1: Login as a learner and start a review session with at least one word in the review words list.
+  - Step 2: Proceed through the review session by answering questions correctly or incorrectly until reaching the last word.
+  - Step 3: After reviewing the last word, press the 'Continue' button.
+expectedResult: The system should redirect the learner to the Home page and save the review session.
+
+Test Case: Test Case 3
+testCaseName: Verify Ability to Stay in Review After Pressing 'Exit'
+objective: Ensure that learners can choose to stay in the review session after accidentally pressing the 'Exit' button
+testSteps:
+  - Step 1: Login as a learner and start a review session.
+  - Step 2: During the review, press the 'Exit' button.
+  - Step 3: On the pop-up, select the 'Stay' button.
+expectedResult: The system should allow the learner to continue with the review session without redirecting to the Home page.
+
+Test Case: Test Case 4
+testCaseName: Verify Exit and Review Not Saved
+objective: To ensure that if a learner chooses to exit the review session, the session is not saved and the learner is redirected to the Home page
+testSteps:
+  - Step 1: Login as a learner and start a review session.
+  - Step 2: Press the 'Exit' button during the review.
+  - Step 3: On the pop-up, select the 'Confirm' button to exit.
+expectedResult: The system should redirect the learner to the Home page and the review session should not be saved.
+

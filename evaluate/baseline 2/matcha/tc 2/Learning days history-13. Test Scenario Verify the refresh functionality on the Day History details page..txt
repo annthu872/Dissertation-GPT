@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify refresh functionality retains accurate day history
+objective: Ensure that the refresh functionality on the 'Day History' details page accurately retains and displays the continuous learning days count without resetting or altering the data.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home page, the learner selects 'History'.
+  - Step 3: On the History page, the learner selects 'Day History'.
+  - Step 4: Observe and note the number of continuous learning days displayed.
+  - Step 5: Refresh the 'Day History' page.
+  - Step 6: Observe and note the number of continuous learning days displayed after the refresh.
+expectedResult: After refreshing the 'Day History' page, the system should accurately retain and display the same number of continuous learning days as before the refresh, without resetting or altering the data.
+
+Test Case: Test Case 2
+testCaseName: Verify day history reset functionality after a break in learning
+objective: To confirm that the 'Day History' correctly resets the count to one if the learner breaks their continuous learning chain.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has a continuous learning chain established.
+  - Step 2: From the Home page, the learner selects 'History'.
+  - Step 3: On the History page, the learner selects 'Day History' to view their current continuous learning days.
+  - Step 4: Break the continuous learning chain by not logging any learning activity for a day.
+  - Step 5: After the break day, log into the application and navigate to the 'Day History' page again.
+  - Step 6: Observe and note the number of continuous learning days displayed.
+expectedResult: After breaking the continuous learning chain and then returning to the 'Day History' page, the system should reset and display the continuous learning days count to one.
+

@@ -1,0 +1,76 @@
+```json
+{
+  "Test Case 1": {
+    "testCaseName": "ValidUsernameAndPasswordRegistration",
+    "objective": "Verify that a learner can register successfully with a valid username and password",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a valid username that is over 8 characters and below 30 characters.",
+      "Step 3: Fill in the password field with a valid password that is over 8 characters and below 30 characters, contains at least one normal character, one capitalized character, one number, and one special character, and is not the same as the username.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system redirects the learner to the Home page.",
+    "explanation": "This test case ensures that the registration process works correctly when valid credentials are provided."
+  },
+  "Test Case 2": {
+    "testCaseName": "UsernameBelowMinimumLength",
+    "objective": "Verify that the system shows a notification for invalid username when the username is below the minimum length",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a username that is below 8 characters.",
+      "Step 3: Fill in the password field with a valid password.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system shows a notification that the username is invalid.",
+    "explanation": "This test case checks the system's handling of usernames that are too short."
+  },
+  "Test Case 3": {
+    "testCaseName": "UsernameAboveMaximumLength",
+    "objective": "Verify that the system shows a notification for invalid username when the username is above the maximum length",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a username that is above 30 characters.",
+      "Step 3: Fill in the password field with a valid password.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system shows a notification that the username is invalid.",
+    "explanation": "This test case verifies the system's response to usernames that exceed the maximum allowed length."
+  },
+  "Test Case 4": {
+    "testCaseName": "PasswordBelowMinimumLength",
+    "objective": "Verify that the system shows a notification for invalid password when the password is below the minimum length",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a valid username.",
+      "Step 3: Fill in the password field with a password that is below 8 characters.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system shows a notification that the password is invalid.",
+    "explanation": "This test case checks the system's handling of passwords that are too short."
+  },
+  "Test Case 5": {
+    "testCaseName": "PasswordAboveMaximumLength",
+    "objective": "Verify that the system shows a notification for invalid password when the password is above the maximum length",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a valid username.",
+      "Step 3: Fill in the password field with a password that is above 30 characters.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system shows a notification that the password is invalid.",
+    "explanation": "This test case ensures the system's response to passwords that exceed the maximum allowed length."
+  },
+  "Test Case 6": {
+    "testCaseName": "PasswordWithoutNormalCharacter",
+    "objective": "Verify that the system shows a notification for invalid password when the password does not contain at least one normal character",
+    "testSteps": [
+      "Step 1: Navigate to the registration page.",
+      "Step 2: Fill in the username field with a valid username.",
+      "Step 3: Fill in the password field with a password that lacks normal characters but meets all other criteria.",
+      "Step 4: Press the 'Registry' button."
+    ],
+    "expectedResult": "The system shows a notification that the password is invalid.",
+    "explanation": "This test case checks the system's requirement for passwords to include at least one normal (lowercase) character."
+  }
+}
+```

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify red popup on incorrect answer in listening pronunciation test
+objective: To verify that a red popup appears when the learner selects an incorrect answer in the listening pronunciation test quest.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select an incorrect answer.
+  - Step 5: Submit the answer.
+expectedResult: A red popup screen should appear indicating that the selected answer is incorrect.
+
+Test Case: Test Case 2
+testCaseName: Verify green popup on correct answer in listening pronunciation test
+objective: To verify that a green popup appears when the learner selects the correct answer in the listening pronunciation test quest.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Guess the entire word and select the correct answer.
+  - Step 5: Submit the answer.
+expectedResult: A green popup screen should appear indicating that the selected answer is correct.
+

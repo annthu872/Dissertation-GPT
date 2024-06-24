@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Navigating Through Flashcards and Completing a Topic
+objective: Verify that the learner can navigate through flashcards within a topic, flip them to learn new words, and successfully complete the topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Click on the flashcard to flip it and view the back, which contains illustrations and examples of real-life usage.
+  - Step 6: Click the 'Next' button to go to the next vocabulary word's flashcard.
+  - Step 7: Repeat steps 5 and 6 for all flashcards in the topic.
+  - Step 8: Upon reaching the last flashcard, click the 'Next' button to be redirected to the 'completion notification' page.
+  - Step 9: Click 'return to the lesson page' on the completion notification page.
+expectedResult: The learner should be able to navigate through all flashcards, learn new words, and upon completion, see a congratulatory message with options to 'continue studying' or 'return to the lesson page'.
+
+Test Case: Test Case 2
+testCaseName: Handling the 'Back' Button During Flashcard Study
+objective: Verify that the learner can press the 'back' button during flashcard study and choose to stay or exit, with the system responding appropriately.
+testSteps:
+  - Step 1: Log into the application and navigate to a flashcard page as per basic flow steps 1-6.
+  - Step 2: Press the 'back' button on the browser or application interface.
+  - Step 3: On the exit confirmation dialog box, click 'stay'.
+  - Step 4: Press the 'back' button again and then click 'exit'.
+expectedResult: On clicking 'stay', the learner should continue with the flashcard study. On clicking 'exit', the learner should be redirected to the topic page, and the topic should be marked as incomplete.
+
+Test Case: Test Case 3
+testCaseName: Continuing Study from Home Page with Incomplete Topic
+objective: Verify that the learner can continue studying an incomplete topic directly from the Home Page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: From the Home Page, click on an incomplete topic displayed.
+  - Step 3: Continue with the flashcard study from where it was left off.
+expectedResult: The learner should be redirected to the flashcard page for the selected topic and be able to continue the study seamlessly.
+
+Test Case: Test Case 4
+testCaseName: Navigating to Previous Flashcard on the First Flashcard
+objective: Verify that the 'Previous' button is disabled or shows a message when the learner is on the first flashcard.
+testSteps:
+  - Step 1: Log into the application and navigate to the first flashcard of a topic as per basic flow steps 1-7.
+  - Step 2: Attempt to click the 'Previous' button.
+expectedResult: The system should display a message 'there is no previous vocabulary to display' or the 'Previous' button should be disabled, indicating the learner is on the first flashcard.
+

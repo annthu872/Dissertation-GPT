@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful redirection to adding topic viewing page
+objective: Ensure that the Administrator is redirected to the adding topic viewing page upon selecting the 'Add new topic' tab
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Select the 'Add new topic' tab.
+expectedResult: The Administrator should be redirected to the adding topic viewing page.
+
+Test Case: Test Case 2
+testCaseName: Verify successful creation of a new topic
+objective: Ensure that the Administrator can successfully add a new topic by entering its name and description and selecting 'Save'
+testSteps:
+  - Step 1: Follow steps 1 to 2 from Test Case 1 to navigate to the adding topic viewing page.
+  - Step 2: Enter a unique name in the name field.
+  - Step 3: Enter a description of the topic in the description field.
+  - Step 4: Select 'Save' to create the new topic.
+expectedResult: The system should create the new topic and redirect the Administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+
+Test Case: Test Case 3
+testCaseName: Verify system behavior when adding a topic with an already used name
+objective: Ensure that the system prompts the Administrator to use another name if the entered name is already in use
+testSteps:
+  - Step 1: Follow steps 1 to 2 from Test Case 1 to navigate to the adding topic viewing page.
+  - Step 2: Enter a name that is already used for another topic in the name field.
+  - Step 3: Enter a description of the topic in the description field.
+  - Step 4: Select 'Save' to attempt to create the new topic.
+  - Step 5: Observe the notification and enter a new, unique name in the name field.
+  - Step 6: Select 'Save' again to create the topic.
+expectedResult: The system should display a notification that the name is already used and prompt the Administrator to enter a different name. After entering a new name, the system should create the topic and proceed as expected.
+
+Test Case: Test Case 4
+testCaseName: Verify ability to cancel adding a new topic
+objective: Ensure that the Administrator can cancel the process of adding a new topic at any time
+testSteps:
+  - Step 1: Follow steps 1 to 2 from Test Case 1 to navigate to the adding topic viewing page.
+  - Step 2: Begin to add a new topic but decide to cancel the process.
+  - Step 3: Select 'Cancel' to stop adding a new topic.
+expectedResult: The system should cancel the process of adding a new topic and possibly redirect the Administrator to the previous page or a default page.
+

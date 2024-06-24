@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Changed Standard Shipping Option to Express
+objective: Verify that the user can successfully change the shipping option from Standard Express to another available option and complete the purchase.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart and proceeding to checkout.
+  - Step 3: Observe the default shipping option set to Standard Express.
+  - Step 4: Click on the shipping option change button to view available shipping options.
+  - Step 5: Select an available shipping option other than Standard Express.
+  - Step 6: Review the updated total cost that reflects the change in the shipping option.
+  - Step 7: Click on the 'Place Order' button to complete the purchase.
+  - Step 8: Observe the order confirmation and details displayed by the system.
+expectedResult: The system should successfully process the payment with the updated shipping option and display the order confirmation and details, indicating the order was placed with the selected shipping option.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the ability to change the shipping option during the purchase process and ensuring the system updates and confirms the order accordingly. It matches the scenario's requirement of changing the shipping option and completing the purchase.
+

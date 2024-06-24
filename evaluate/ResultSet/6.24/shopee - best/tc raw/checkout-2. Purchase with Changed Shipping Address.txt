@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Changed Shipping Address - Using Saved Address
+objective: Verify that the user can change the shipping address to a saved address during the checkout process and successfully place an order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, click the 'Change Shipping Address' button.
+  - Step 4: From the list of saved addresses, select a different address than the default one.
+  - Step 5: Review the updated order summary with the new shipping address.
+  - Step 6: Complete the payment information and click on the 'Place Order' button.
+expectedResult: The order is successfully placed with the updated shipping address, and the user receives an order confirmation.
+explanation: This test case ensures that users can change their shipping address to one of their saved addresses during the checkout process, which is a part of the basic and alternative flow of the Checkout use case.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Newly Added Shipping Address
+objective: Verify that the user can add a new shipping address during the checkout process and successfully place an order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, click the 'Change Shipping Address' button, then click on 'Add New Address'.
+  - Step 4: Fill in the new address form with valid details, including full name, phone number, city, district, ward, location's address, and address type (if applicable).
+  - Step 5: Click the 'Finish' button to save the new address.
+  - Step 6: Review the updated order summary with the newly added shipping address.
+  - Step 7: Complete the payment information and click on the 'Place Order' button.
+expectedResult: The order is successfully placed with the newly added shipping address, and the user receives an order confirmation.
+explanation: This test case verifies the functionality of adding a new shipping address during the checkout process, which is covered in the alternative flow of the Checkout use case.
+

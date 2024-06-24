@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the homepage.
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on any product card displayed on the homepage.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details correctly including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case ensures that the basic flow of displaying product information is working as expected when accessed from the homepage.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display from Search Page
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the search page.
+testSteps:
+  - Step 1: Navigate to the search page and perform a search for any product.
+  - Step 2: Click on any product card from the search results.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details correctly including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case verifies that users can view complete product information from the search page, ensuring the basic flow is functional for users coming from search results.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Information Display from Cart Page
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the cart page.
+testSteps:
+  - Step 1: Add any product to the cart and navigate to the cart page.
+  - Step 2: Click on the product card in the cart.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details correctly including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case ensures that users can access and view complete product information from the cart page, facilitating a final review before purchase.
+
+Test Case: Test Case 4
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Navigate to a product information page by clicking on a product card from any page (homepage, search page, or cart page).
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should display more customer reviews beyond the initial 3 detailed reviews.
+explanation: This test case checks the functionality of the alternative flow where users can view more detailed reviews, ensuring the expand feature works as intended.
+
+Test Case: Test Case 5
+testCaseName: Verify Direct Seller Contact through Messaging System
+objective: Verify that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Navigate to a product information page by clicking on a product card.
+  - Step 2: Scroll to find the 'Seller Contact' option.
+  - Step 3: Click on the 'Seller Contact' to initiate direct communication with the seller through the platform's messaging system.
+expectedResult: The platform's messaging system should open, allowing the user to send a message directly to the seller.
+explanation: This test case ensures that the direct communication link between buyers and sellers through the platform's messaging system is functional from the product information page.
+

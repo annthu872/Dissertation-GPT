@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Checkout with an incorrect voucher code
+objective: Verify that the system prevents the user from applying an incorrect voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Proceed to the order summary page.
+  - Step 4: Attempt to add a voucher by entering an incorrect voucher code.
+  - Step 5: Click the 'apply' button after entering the incorrect voucher code.
+expectedResult: The system should display a notification indicating that the voucher code is incorrect and prevent the application of the discount to the order.
+
+Test Case: Test Case 2
+testCaseName: Checkout with a disabled voucher code
+objective: Verify that the system prevents the user from applying a disabled voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Proceed to the order summary page.
+  - Step 4: Attempt to add a voucher by entering a disabled voucher code.
+  - Step 5: Click the 'apply' button after entering the disabled voucher code.
+expectedResult: The system should display a notification indicating that the voucher code is disabled and prevent the application of the discount to the order.
+
+Test Case: Test Case 3
+testCaseName: Checkout with an incorrect voucher code format
+objective: Verify that the system prevents the user from applying a voucher code with an incorrect format during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Proceed to the order summary page.
+  - Step 4: Attempt to add a voucher by entering a voucher code with an incorrect format (e.g., missing characters, special characters).
+  - Step 5: Click the 'apply' button after entering the voucher code.
+expectedResult: The system should display a notification indicating that the voucher code format is incorrect and prevent the application of the discount to the order.
+

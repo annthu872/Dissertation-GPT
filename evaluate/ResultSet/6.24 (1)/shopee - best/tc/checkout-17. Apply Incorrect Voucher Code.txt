@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Apply Incorrect Application Voucher Code
+objective: Verify that the system prevents the application of an incorrect application voucher code and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, select the option to add an application voucher.
+  - Step 4: Enter an incorrect application voucher code.
+  - Step 5: Click the 'apply' button.
+expectedResult: The system should display an error message indicating that the voucher code is incorrect and prevent the application of the discount.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the application of an incorrect voucher code during the checkout process. It specifically tests the system's response to an incorrect application voucher code, which is the core of the given test scenario.
+

@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Add a product with no stock to the cart
+objective: Verify that a user cannot add a product that has no stock to their shopping cart and receives an appropriate message indicating the product is out of stock.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product that has no stock.
+  - Step 3: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button is either disabled or, if clicked, results in a message indicating that the product is out of stock and cannot be added to the cart.
+explanation: This test case ensures that users are prevented from adding out-of-stock items to their shopping cart, aligning with the exception flow where a user cannot add a product with no stock. It verifies the system's handling of such scenarios to maintain accurate stock levels and user experience.
+
+Test Case: Test Case 2
+testCaseName: Add a product with options where one option has no stock
+objective: Verify that a user cannot add a specific option of a product to their shopping cart if that option is out of stock, and receives an appropriate message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product that has multiple options, where at least one option is out of stock.
+  - Step 3: Select the out-of-stock option.
+  - Step 4: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button is either disabled for the out-of-stock option or, if clicked, results in a message indicating that the selected option is out of stock and cannot be added to the cart.
+explanation: This test case checks the system's behavior when a user tries to add a specific option of a product that is out of stock, as per the exception flow. It ensures that the system correctly prevents the addition of out-of-stock options to the cart and informs the user accordingly.
+

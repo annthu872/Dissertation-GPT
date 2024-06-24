@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Expand Customer Questions Section
+objective: Verify that the user can expand the 'Customer Questions' section to view more questions and seller answers.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view the product's information.
+  - Step 3: Scroll to the 'Customer Questions' section.
+  - Step 4: Click on the section or the expand icon to view more questions and seller answers.
+expectedResult: The 'Customer Questions' section expands, displaying more questions and seller answers than initially visible.
+explanation: This test case ensures that users can access additional information in the 'Customer Questions' section, enhancing their understanding of the product through community feedback. It directly matches the scenario of expanding the 'Customer Questions' section as described in the use case.
+

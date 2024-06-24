@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Checkout Button Disabled for Out-of-Stock Product in Cart
+objective: Verify that the checkout button is disabled when the user attempts to checkout with an out-of-stock product in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where previously added items are listed.
+  - Step 2: Identify an out-of-stock product in the cart. This can be indicated by a label or message.
+  - Step 3: Attempt to select the checkbox next to the out-of-stock product.
+  - Step 4: Observe the behavior of the checkout button.
+expectedResult: The checkbox next to the out-of-stock product cannot be selected, and the checkout button remains disabled.
+
+Test Case: Test Case 2
+testCaseName: Checkout Button Disabled Without Selection in Cart
+objective: Verify that the checkout button remains disabled when no products are selected in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page with multiple products listed.
+  - Step 2: Do not select any product checkbox.
+  - Step 3: Observe the status of the checkout button.
+expectedResult: The checkout button is disabled since no products are selected.
+
+Test Case: Test Case 3
+testCaseName: Checkout Button Enabled with Valid Product Selection
+objective: Verify that the checkout button is enabled when the user selects only valid products for checkout
+testSteps:
+  - Step 1: Navigate to the shopping cart page with multiple products listed.
+  - Step 2: Select the checkbox for one or more valid products (in stock and not erased by the seller).
+  - Step 3: Observe the status of the checkout button.
+expectedResult: The checkout button is enabled, allowing the user to proceed with the checkout process.
+
+Test Case: Test Case 4
+testCaseName: Checkout Button Disabled for Product with Unselected Options
+objective: Verify that the checkout button is disabled when attempting to purchase a product from the product detail page without selecting required options
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product with multiple options.
+  - Step 2: Do not select any of the available options.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button is disabled until an option is selected.
+
+Test Case: Test Case 5
+testCaseName: Checkout Button Disabled for Product with Invalid Quantity
+objective: Verify that the checkout button is disabled when the user attempts to purchase a product with a quantity higher than the current stock or lower than one
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: Adjust the product quantity to a number higher than the available stock or lower than one using the minus or plus button.
+  - Step 3: Observe the status of the checkout button.
+expectedResult: The checkout button is disabled due to invalid product quantity selection.
+

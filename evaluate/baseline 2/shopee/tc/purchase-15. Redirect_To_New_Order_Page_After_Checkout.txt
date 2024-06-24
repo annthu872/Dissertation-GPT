@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Checkout with multiple items from different stores
+objective: Verify that the user can checkout multiple items from different stores and is redirected to a new order page with separate orders for each store
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has already added items from different stores.
+  - Step 2: Select items to checkout by clicking on the checkbox before each item.
+  - Step 3: Verify the system displays the summary costs.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Wait for the system to process the checkout.
+expectedResult: User is redirected to a new order page that shows separate orders for items from different stores, and items from the same store are in one order.
+
+Test Case: Test Case 2
+testCaseName: Checkout with all items from one store
+objective: Verify that the user can select and checkout all items from one store and is redirected to a new order page with a single order
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Select all items from one store by clicking the checkbox at the head of the store.
+  - Step 3: Verify the system displays the summary costs.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Wait for the system to process the checkout.
+expectedResult: User is redirected to a new order page that shows one order for all the items from the selected store.
+
+Test Case: Test Case 3
+testCaseName: Direct purchase from product detail page
+objective: Verify that the user can directly purchase a product from the product detail page and is redirected to a new order page with a single order
+testSteps:
+  - Step 1: Perform the feature 'View a product detail'.
+  - Step 2: If the product has many options, choose one available option.
+  - Step 3: Adjust the quantity of the product if necessary.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Wait for the system to process the checkout.
+expectedResult: User is redirected to a new order page that shows one order for the item user has chosen.
+
+Test Case: Test Case 4
+testCaseName: Attempt to checkout an out-of-stock item
+objective: Verify that the user cannot checkout an out-of-stock item and the checkout button is disabled
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has an out-of-stock item.
+  - Step 2: Attempt to select the out-of-stock item by clicking on its checkbox.
+  - Step 3: Observe the behavior of the checkbox and the 'Checkout' button.
+expectedResult: The checkbox for the out-of-stock item cannot be clicked, and the 'Checkout' button is disabled.
+
+Test Case: Test Case 5
+testCaseName: Attempt to purchase without selecting an option
+objective: Verify that the user cannot proceed to checkout without selecting an option for a product that has multiple options
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product with multiple options.
+  - Step 2: Without selecting an option, click the 'Buy Now' button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button is disabled until an option is selected.
+

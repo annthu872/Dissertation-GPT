@@ -1,0 +1,56 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Title and Description Display
+objective: Ensure that the product title and description are displayed prominently and provide detailed information including key features, usage instructions, and benefits.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product's title is displayed prominently at the top of the product information page. A detailed product description, including key features, usage instructions, and benefits, is provided below the title.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Images and Videos
+objective: Ensure that high-quality images and videos demonstrating the product's features and usage are showcased.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the images and videos section of the product information.
+expectedResult: High-quality images of the product from multiple angles are displayed. Videos demonstrating the product's features and usage are included if available.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Specifications Display
+objective: Ensure that detailed product specifications are listed clearly.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Scroll to the specifications section.
+expectedResult: Detailed product specifications, including dimensions, weight, material, color options, etc., are listed clearly.
+
+Test Case: Test Case 4
+testCaseName: Verify Price Information and Stock Availability
+objective: Ensure that the current price, discounts, and real-time stock availability are displayed accurately.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the price information and stock availability section.
+expectedResult: The current price of the product is displayed along with any discounts or special pricing. Real-time stock availability is shown.
+
+Test Case: Test Case 5
+testCaseName: Verify Seller Profile and Contact Options
+objective: Ensure that the seller's profile is displayed with an option to contact the seller directly.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Scroll to the seller profile section.
+  - Step 4: Observe the contact option.
+expectedResult: The seller's profile, including their name, ratings, and reviews, is displayed. An option to contact the seller directly through the platform's messaging system is provided.
+
+Test Case: Test Case 6
+testCaseName: Verify Customer Reviews and Ratings Display
+objective: Ensure that the overall rating and 3 latest detailed reviews are displayed with an option to expand for more.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Scroll to the customer reviews and ratings section.
+  - Step 4: Click to expand the 'Customer Reviews and Ratings' section.
+expectedResult: The average rating based on customer reviews is displayed. 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images, are shown with an option to view more reviews.
+

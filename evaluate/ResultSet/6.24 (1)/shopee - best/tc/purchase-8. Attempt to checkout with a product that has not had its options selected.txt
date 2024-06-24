@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a product without selecting options
+objective: Verify that the system prevents checkout if the product options are not selected
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Without selecting any options, click the 'Buy Now' button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is unable to proceed to checkout.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the checkout process cannot be completed without selecting product options, which is the core requirement of the scenario.
+

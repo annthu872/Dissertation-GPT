@@ -1,0 +1,6 @@
+Successful Product Addition to Cart
+Choosing Product Options Before Adding to Cart
+Adjusting Product Quantity Before Adding to Cart
+User tries to add a product with multiple options without selecting an option
+User tries to add a product with a quantity greater than the current stock
+User tries to add a product that is out of stock

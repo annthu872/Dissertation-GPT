@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add Shipping Address with Location's Address Not Found on Map
+objective: Verify that the system prevents the user from adding a new shipping address when the location's address cannot be found on the map.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: In the checkout page, click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new shipping address.
+  - Step 5: Fill in the form with the following details: Full name, phone number, city, district, ward, and an address that is known to not exist or cannot be found on the map.
+  - Step 6: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification that the inputted location's address cannot be found on the map and prevent the user from adding the new shipping address.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a shipping address with a location that is not found on the map. It follows the exact steps a user would take to encounter the scenario, from logging in to attempting to add an address that cannot be found. The expected result of preventing the addition of the address and displaying a notification is exactly what the test scenario aims to verify, making this test case a perfect reflection of the scenario.
+

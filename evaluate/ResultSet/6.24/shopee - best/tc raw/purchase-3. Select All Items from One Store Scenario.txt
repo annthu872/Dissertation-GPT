@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Select All Items from One Store in Shopping Cart
+objective: Verify that the user can select all items from one store in the shopping cart and proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there are items from at least two different stores added to the shopping cart.
+  - Step 3: Click the checkbox at the head of the store to select all items from one store.
+  - Step 4: Observe the summary costs update accordingly.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The user is redirected to a page that shows a new order of all the items selected from one store, with products from different stores separated into different orders.
+explanation: This test case ensures that users can successfully select all items from a single store in their shopping cart and proceed to checkout, which is a part of the basic and alternative flow of the Purchase use case.
+
+Test Case: Test Case 2
+testCaseName: Select Individual Items from Multiple Stores in Shopping Cart
+objective: Verify that the user can select individual items from multiple stores in the shopping cart and proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there are items from at least two different stores in the shopping cart.
+  - Step 3: Select individual items from multiple stores by clicking on the checkbox before each item.
+  - Step 4: Observe the summary costs update accordingly.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The user is redirected to a page that shows one or many new orders of all the items the user has chosen, with products from different shops separated into different orders.
+explanation: This test case verifies the functionality of selecting individual items from multiple stores for checkout, aligning with the basic flow of the Purchase use case.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Select Out of Stock Item in Shopping Cart
+objective: Verify that the user cannot select an out of stock item in the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Attempt to click the checkbox of an out of stock item in the shopping cart.
+expectedResult: The checkbox for the out of stock item cannot be selected, and the user is unable to proceed to checkout with this item.
+explanation: This test case checks the exception flow where the user cannot select out of stock items, ensuring the system correctly restricts selection of unavailable products.
+

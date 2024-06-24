@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Add a new shipping address with an invalid location's address
+objective: Verify that the system prevents the user from adding a new shipping address with an invalid location's address and displays an appropriate notification.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the checkout page by selecting the 'Purchase' feature.
+  - Step 3: On the order summary page, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with a valid full name, phone number, city, district, ward, and an invalid location's address that cannot be identified on the map.
+  - Step 6: Select an address type if desired.
+  - Step 7: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification that the location's address is invalid and prevent the user from adding the new shipping address.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new shipping address with an invalid location's address. It follows the steps a user would take to add a new address and checks for the system's response to an invalid address input, which is the core objective of the test scenario.
+

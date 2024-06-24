@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Special Discount Highlight
+objective: Ensure that the product information page displays all necessary information including a highlighted special discount.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the product information displayed on the page.
+expectedResult: The product information page should display the product's title, description, high-quality images and videos, detailed specifications, current price with any discounts or special pricing highlighted, real-time stock availability, shipping methods with estimated delivery times and fees, seller's profile with name, ratings, and reviews, an option to contact the seller, a link to the seller's store on Shopee, and customer reviews and ratings with the option to view more.
+explanation: This test case is created to ensure that when a user clicks on a product card from either the homepage, search page, or cart page, they are presented with a comprehensive product information page. Highlighting the special discount is crucial for attracting customers' attention and encouraging purchases, which directly relates to the test scenario's focus on the special discount highlight within the product information display.
+
+Test Case: Test Case 2
+testCaseName: Verify Special Discount Highlight in Product Information
+objective: To confirm that the special discount is prominently highlighted in the product's price information section.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is known to have a special discount offer.
+  - Step 3: Check the price information section for the discount highlight.
+expectedResult: The price information section of the product details page should clearly highlight the special discount, showing both the original price and the discounted price in a way that attracts the user's attention.
+explanation: This test case focuses specifically on verifying that any special discounts are clearly highlighted within the product information. It is crucial for ensuring that promotional offers are effectively communicated to the user, which is a key aspect of the test scenario.
+

@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Most Related
+objective: Verify that the user can filter search results by the most related option and the system displays the results prioritized by exact name match, partial name match, and then match by description.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that matches multiple products by name and description.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate the filter options and ensure 'result most related with the keyword' is selected as default.
+  - Step 6: Review the order of the product cards displayed to confirm they are sorted by the most related filter logic.
+expectedResult: The search results are displayed with product cards prioritized by exactly matching the search keyword by name first, followed by partial matches by name, and finally matches by description.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to verify the functionality of filtering search results by 'most related'. It specifically tests the system's ability to prioritize search results based on exact name matches, partial name matches, and description matches, which is the core of the test scenario.
+

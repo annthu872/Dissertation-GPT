@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Checkout with a Disabled Voucher Code
+objective: Verify that the system prevents the user from applying a disabled voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: System displays the order summary. Proceed to the voucher section.
+  - Step 4: Enter a disabled voucher code into the voucher code field.
+  - Step 5: Click on the 'apply' button.
+expectedResult: The system should display a notification that the voucher is disabled and cannot be applied to the order.
+
+Test Case: Test Case 2
+testCaseName: Checkout with an Incorrect Voucher Code
+objective: Verify that the system prevents the user from applying an incorrect voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: System displays the order summary. Proceed to the voucher section.
+  - Step 4: Enter an incorrect voucher code into the voucher code field.
+  - Step 5: Click on the 'apply' button.
+expectedResult: The system should display a notification that the voucher code is incorrect and cannot be applied to the order.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Changing Shipping Address
+objective: Verify that the user can change the shipping address during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select one of the saved addresses or click to add a new address.
+  - Step 5: If adding a new address, fill in all required fields correctly and click 'Finish'.
+  - Step 6: Confirm the new shipping address is selected and proceed with the checkout.
+expectedResult: The system should update the order summary with the new shipping address and allow the user to continue with the checkout process.
+
+Test Case: Test Case 4
+testCaseName: Checkout with Changing Payment Method
+objective: Verify that the user can change the payment method during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: System displays the order summary. Proceed to the payment method section.
+  - Step 4: Select a new payment method from the available options.
+  - Step 5: Confirm the new payment method is selected and proceed with the checkout.
+expectedResult: The system should update the order summary with the new payment method and allow the user to continue with the checkout process.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Applying a Valid Application Voucher Code Successfully
+objective: Verify that a user can successfully apply a valid application voucher code to their order during checkout and receive the appropriate discount.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: When prompted to add a voucher, select the option to enter a voucher code.
+  - Step 5: Enter a valid application voucher code into the input field.
+  - Step 6: Click the 'apply' button to apply the voucher to the order.
+  - Step 7: Review the updated total cost to ensure the voucher discount has been applied.
+  - Step 8: Click on the 'Place Order' button to complete the purchase.
+expectedResult: The system applies the voucher to the order, updates the total cost with the discount, and allows the user to successfully place the order with the discounted price.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'Applying a Voucher Code Successfully,' by detailing the steps to apply a valid application voucher code and verifying the successful application of the discount.
+
+Test Case: Test Case 2
+testCaseName: Applying a Valid Shop Voucher Code Successfully
+objective: Verify that a user can successfully apply a valid shop voucher code to their order during checkout and receive the appropriate discount.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: When prompted to add a voucher, select the option to enter a voucher code.
+  - Step 5: Enter a valid shop voucher code into the input field.
+  - Step 6: Click the 'apply' button to apply the voucher to the order.
+  - Step 7: Review the updated total cost to ensure the voucher discount has been applied.
+  - Step 8: Click on the 'Place Order' button to complete the purchase.
+expectedResult: The system applies the shop voucher to the order, updates the total cost with the discount, and allows the user to successfully place the order with the discounted price.
+reflect: yes
+explanation: Although this test case focuses on a shop voucher rather than an application-wide voucher, it still falls under the broader scenario of 'Applying a Voucher Code Successfully.' It demonstrates the process and validation of applying a different type of voucher code (shop-specific) but achieves the same end goal of applying a discount to an order.
+

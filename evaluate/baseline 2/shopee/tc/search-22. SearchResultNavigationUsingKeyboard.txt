@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Functionality with Keyword Matching Product Name
+objective: Ensure that the search functionality returns relevant product listings when a keyword matching a product name is entered
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that matches a product name into the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of relevant search matches.
+expectedResult: The system should display a list of product cards with names or descriptions including or related to the keyword. A pagination bar should be available at the bottom of the page if there are more than 60 product cards.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Result Pagination
+objective: To check if the pagination functionality works correctly in the search results
+testSteps:
+  - Step 1: Perform a search with a keyword that returns more than 60 results.
+  - Step 2: Scroll down to the pagination bar at the bottom of the search results page.
+  - Step 3: Click on the right arrow button to move to the next page of results.
+  - Step 4: Observe the change in the product listings.
+expectedResult: The system should navigate to the next page and display a different set of product cards relevant to the search query.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Functionality with Keyword Matching Shop Name
+objective: Ensure that the search functionality prioritizes shop information and products when a keyword matching a shop name is entered
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that matches a shop name into the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the shop's information at the top of the search result, followed by the shop's product cards and related product cards.
+
+Test Case: Test Case 4
+testCaseName: Verify No Search Results Found Scenario
+objective: To check the system's response when no search results are found for a given keyword
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any product, shop, or brand name into the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display random product cards as no search results are found.
+
+Test Case: Test Case 5
+testCaseName: Verify Search Result Filtering by Price
+objective: To ensure that users can filter search results by price from lowest to highest and vice versa
+testSteps:
+  - Step 1: Perform a search with a relevant keyword.
+  - Step 2: Locate the 'sort the product by price' dropdown.
+  - Step 3: Select the option to sort from lowest to highest or from highest to lowest.
+  - Step 4: Observe the reordering of the product cards based on the selected price filter.
+expectedResult: The system should reorder the product cards according to the selected price filter, either from lowest to highest or from highest to lowest.
+

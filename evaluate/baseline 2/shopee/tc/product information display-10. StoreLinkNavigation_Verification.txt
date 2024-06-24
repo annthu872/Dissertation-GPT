@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Product Information Display Verification
+objective: Verify that the product information is displayed correctly when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check that high-quality images and videos of the product are showcased.
+  - Step 5: Ensure detailed product specifications are listed.
+  - Step 6: Confirm the display of the current price and any discounts or special pricing.
+  - Step 7: Check for real-time stock availability.
+  - Step 8: Verify the display of available shipping methods, estimated delivery times, and shipping fees.
+  - Step 9: Ensure the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 10: Check for the option to contact the seller directly through the platform's messaging system.
+  - Step 11: Verify the presence of a link to the seller's store page on Shopee.
+  - Step 12: Confirm the display of the average rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+  - Step 13: Verify that a list of related product cards is displayed.
+expectedResult: All the product information including title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products are correctly displayed.
+
+Test Case: Test Case 2
+testCaseName: Store Link Navigation Verification
+objective: Verify that the store link navigates to the seller's store page on Shopee and displays other products from the same seller.
+testSteps:
+  - Step 1: Follow the steps to display a product's information as per Test Case 1.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page on Shopee.
+expectedResult: The user is redirected to the seller's store page on Shopee, where other products from the same seller are displayed.
+
+Test Case: Test Case 3
+testCaseName: Customer Reviews and Ratings Expansion Verification
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow the steps to display a product's information as per Test Case 1.
+  - Step 2: Click on the option to expand the 'Customer Reviews and Ratings' section.
+expectedResult: More customer reviews beyond the initial 3 detailed reviews are displayed to the user.
+
+Test Case: Test Case 4
+testCaseName: Related Products Scroll Verification
+objective: Verify that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Follow the steps to display a product's information as per Test Case 1.
+  - Step 2: Scroll through the list of related product cards.
+expectedResult: The user is able to scroll through and view more related product cards.
+
+Test Case: Test Case 5
+testCaseName: Seller Contact Verification
+objective: Verify that users can click on seller contact to directly message the seller through the platform's messaging system.
+testSteps:
+  - Step 1: Follow the steps to display a product's information as per Test Case 1.
+  - Step 2: Click on 'Seller Contact' to initiate direct messaging with the seller.
+expectedResult: The platform's messaging system opens, allowing the user to send a message directly to the seller.
+

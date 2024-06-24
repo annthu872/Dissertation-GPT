@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add Shipping Address with Phone Number Containing Letters
+objective: Verify that the system prevents adding a new shipping address when the phone number contains letters
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: In the checkout process, click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new shipping address.
+  - Step 5: Fill in the shipping address form with a phone number that contains letters (e.g., (+84) abc xyz def).
+  - Step 6: Complete the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification preventing the user from adding the new shipping address due to the invalid phone number format.
+explanation: This test case ensures that the system enforces the input validation rule for the phone number field in the shipping address form, specifically that it cannot contain letters and must follow the format (+84) xxx xxx xxx where all x's are numbers. It directly matches the scenario name by testing the addition of a shipping address with a phone number containing letters.
+

@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display on Product Card Click
+objective: Ensure that all the specified product information is displayed correctly when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card displayed on the page.
+  - Step 3: Observe the information displayed about the product.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+
+Test Case: Test Case 2
+testCaseName: Verify Detailed Customer Reviews and Ratings Display
+objective: To verify that the system displays the overall rating, 3 latest detailed reviews including ratings, written feedback, and user-uploaded images under the Customer Reviews and Ratings section.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Verify the display of the overall rating.
+  - Step 4: Verify the display of the 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+expectedResult: The system should correctly display the overall rating and the 3 latest detailed reviews with ratings, written feedback, and user-uploaded images under the Customer Reviews and Ratings section.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of Viewing More Customer Reviews
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should expand the 'Customer Reviews and Ratings' section, allowing the user to view more detailed reviews.
+
+Test Case: Test Case 4
+testCaseName: Verify Seller Contact Functionality
+objective: To ensure that users can contact the seller directly through the platform's messaging system by clicking on the seller contact option.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Seller Contact' option.
+expectedResult: The system should navigate the user to the platform's messaging system to contact the seller directly.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation to Seller's Store Page
+objective: Ensure that users can navigate to the seller's store page on Shopee by clicking on the Store Link.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Store Link' to navigate to the seller's store page on Shopee.
+expectedResult: The system should navigate the user to the seller's store page on Shopee, allowing them to view other products from the same seller.
+

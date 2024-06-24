@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Out of Stock Status
+objective: Ensure that the product information display includes an 'Out of Stock' status when applicable.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is known to be out of stock.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information should include the title, description, images, videos, specifications, price information, and prominently display an 'Out of Stock' status. Additionally, delivery options, seller profile, contact options, store link, customer reviews, ratings, and related products should be visible.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on verifying the display of product information, specifically the 'Out of Stock' status. It ensures that all relevant product details are displayed alongside the stock status, which is the core objective of the given test scenario.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity less than one from the shopping cart
+objective: Verify that the system prevents checkout when the quantity of an item is set to less than one in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Adjust the quantity of any item to less than one by clicking the minus button next to the item's quantity.
+  - Step 3: Attempt to select the item by clicking on the checkbox before the item.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The system should prevent the item with quantity less than one from being selected and disable the 'Checkout' button, not allowing the user to proceed with checkout.
+explanation: This test case ensures that users cannot proceed to checkout with items that have quantities less than one, adhering to the exception flow that restricts purchasing products with quantities lower than one.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a quantity less than one from the product detail page
+objective: Verify that the system prevents checkout when the quantity of an item is set to less than one from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of any item.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the quantity of the product to less than one by clicking the minus button next to the quantity.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, preventing the user from proceeding to checkout with a quantity less than one.
+explanation: This test case verifies the system's behavior when attempting to checkout an item with quantity less than one directly from the product detail page, ensuring compliance with the exception flow that disallows purchasing products with quantities lower than one.
+

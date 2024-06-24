@@ -1,0 +1,53 @@
+Test Case: Test Case 1
+testCaseName: Checkout with default settings
+objective: Verify that a user can successfully checkout with default settings including shipping address, payment method, and shipping option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Review the order summary with default settings.
+  - Step 4: Click on the "Place Order" button.
+expectedResult: The order is successfully placed and the user receives an order confirmation with details.
+
+Test Case: Test Case 2
+testCaseName: Change shipping address and checkout
+objective: Verify that a user can change the shipping address from a list of saved addresses and successfully checkout
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the button to change the shipping address.
+  - Step 3: Select a different saved address from the list.
+  - Step 4: Review the updated order summary and click on the "Place Order" button.
+expectedResult: The order is successfully placed with the updated shipping address and the user receives an order confirmation.
+
+Test Case: Test Case 3
+testCaseName: Add a new shipping address and checkout
+objective: Verify that a user can add a new shipping address with valid details and successfully checkout
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the button to change the shipping address, then click on add new address.
+  - Step 3: Fill in the form with valid details including full name, phone number, city, district, ward, location's address, and select an address type.
+  - Step 4: Click on the 'Finish' button to add the new shipping address.
+  - Step 5: Review the updated order summary and click on the "Place Order" button.
+expectedResult: The order is successfully placed with the new shipping address and the user receives an order confirmation.
+
+Test Case: Test Case 4
+testCaseName: Apply a valid voucher code and checkout
+objective: Verify that a user can apply a valid voucher code, receive a discount, and successfully checkout
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Enter a valid voucher code in the voucher code field.
+  - Step 3: Click on the 'apply' button.
+  - Step 4: Review the updated order summary with the discount applied.
+  - Step 5: Click on the "Place Order" button.
+expectedResult: The order is successfully placed with the voucher discount applied and the user receives an order confirmation.
+
+Test Case: Test Case 5
+testCaseName: Change shipping option and checkout
+objective: Verify that a user can change the shipping option, review the updated total cost, and successfully checkout
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the shipping option change button.
+  - Step 3: Select a different shipping option from the list of available options.
+  - Step 4: Review the updated order summary with the new shipping option.
+  - Step 5: Click on the "Place Order" button.
+expectedResult: The order is successfully placed with the new shipping option and the user receives an order confirmation.
+

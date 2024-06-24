@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Product Information Display without Customer Reviews
+objective: Verify that the product information is displayed correctly without displaying customer reviews and ratings when there are no reviews available.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that has no customer reviews.
+  - Step 3: Observe the product information displayed.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, and Related Products without displaying the Customer Reviews and Ratings section.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the display of product information in the absence of customer reviews. It verifies that all relevant product details are shown except for the customer reviews and ratings, which aligns perfectly with the scenario's requirements.
+
+Test Case: Test Case 2
+testCaseName: Product Information Display with Seller Profile but No Customer Reviews
+objective: Verify that the seller's profile is displayed correctly along with other product information when there are no customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that has no customer reviews but has a seller profile.
+  - Step 3: Observe the product information displayed, especially the Seller Profile section.
+expectedResult: The system should display the product's information including the Seller Profile (with the seller's name, ratings, and reviews) correctly, even when there are no customer reviews for the product.
+reflect: yes
+explanation: This test case still reflects the given test scenario as it focuses on a specific aspect of product information (the Seller Profile) in the context of no customer reviews. It ensures that the absence of customer reviews does not impact the visibility and accuracy of the seller's profile information, which is a crucial part of the product information display.
+
+Test Case: Test Case 3
+testCaseName: Product Information Display with Related Products but No Customer Reviews
+objective: Verify that the related products are displayed correctly on the product information page when there are no customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that has no customer reviews.
+  - Step 3: Scroll down to the 'Related Products' section.
+  - Step 4: Observe the related product cards displayed.
+expectedResult: The system should display the 'Related Products' section with a list of related product cards, even when there are no customer reviews for the product being viewed.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it examines another aspect of the product information page— the 'Related Products' section—under the condition of having no customer reviews. It ensures that customers are still provided with recommendations for related items, which is an important feature for enhancing the shopping experience, even in the absence of reviews.
+

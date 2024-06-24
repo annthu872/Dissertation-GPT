@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Add Single Item to Cart and Verify Cart Icon Update
+objective: Verify that when a user adds a single item to their shopping cart, the cart icon updates to reflect the new number of items in the cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Click the 'Add to Cart' button.
+  - Step 4: Observe the cart icon.
+expectedResult: The cart icon should update to reflect the addition of the new item, showing a (1) or the updated number of items in the cart.
+
+Test Case: Test Case 2
+testCaseName: Add Item with Options to Cart
+objective: Verify that a user can select options for a product (if available) before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that has multiple options.
+  - Step 3: Select one of the available options.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the cart icon.
+expectedResult: The cart icon should update to reflect the addition of the new item with the selected option, indicating the correct number of items in the cart.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding Item to Cart
+objective: Verify that users can adjust the quantity of a product before adding it to their shopping cart and the cart icon updates accordingly.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product using the plus or minus button.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the cart icon.
+expectedResult: The cart icon should update to reflect the total number of items added to the cart, including the adjusted quantity of the product.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Item with Unselected Options to Cart
+objective: Verify that the system prevents users from adding a product to their shopping cart without selecting available options.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page with multiple options.
+  - Step 3: Attempt to click the 'Add to Cart' button without selecting an option.
+  - Step 4: Observe the response.
+expectedResult: The system should display a message prompting the user to select an option before adding the product to the cart.
+
+Test Case: Test Case 5
+testCaseName: Prevent Adding Out-of-Stock Item to Cart
+objective: Verify that users cannot add an out-of-stock item or an item with a selected option that is out of stock to their shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to an out-of-stock product detail page or a product page with an out-of-stock option.
+  - Step 3: Attempt to click the 'Add to Cart' button.
+  - Step 4: Observe the response.
+expectedResult: The system should prevent adding the item to the cart and may display a message indicating that the product is out of stock.
+

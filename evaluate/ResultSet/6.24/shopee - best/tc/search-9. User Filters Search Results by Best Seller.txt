@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Best Seller
+objective: Verify that the user can filter search results by selecting the 'best seller' filter option and the system displays products sorted by best-selling order.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to products in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate the filter options under the form of radio buttons.
+  - Step 6: Select the 'best seller' filter option.
+expectedResult: The system should refresh the search results, displaying products sorted by best-selling order, prioritizing products with higher sales.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of filtering search results by best seller. It includes steps to perform a search, apply the 'best seller' filter, and check if the results are sorted accordingly, which is exactly what the scenario aims to test.
+

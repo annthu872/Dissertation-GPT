@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Checkout with valid note for shop
+objective: Verify that the user can add a note for the shop during checkout and successfully place the order
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Confirm the default shipping address or add a new one if necessary.
+  - Step 5: Confirm the default payment method or select a new one.
+  - Step 6: Add a shop voucher if available.
+  - Step 7: Confirm the default shipping option or select a new one.
+  - Step 8: Add a note for the shop in the provided field.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+expectedResult: The system processes the payment, confirms the order, and displays the order confirmation and details, including the note added for the shop.
+
+Test Case: Test Case 2
+testCaseName: Checkout with changing shipping address
+objective: Verify that the user can change the shipping address during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click the button to change the shipping address.
+  - Step 4: Select a saved address from the list or click to add a new address.
+  - Step 5: If adding a new address, fill in the required fields with valid information and click 'Finish'.
+  - Step 6: Confirm the shipping address, payment method, and shipping option.
+  - Step 7: Add a note for the shop if desired.
+  - Step 8: Review the order details and click on the 'Place Order' button.
+expectedResult: The system updates the shipping address, processes the payment, confirms the order, and displays the order confirmation with the updated shipping address.
+
+Test Case: Test Case 3
+testCaseName: Checkout with invalid voucher code
+objective: Verify that the system prevents the user from applying an invalid voucher code
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Attempt to apply an invalid voucher code.
+  - Step 4: Click the 'apply' button.
+expectedResult: The system displays an error message indicating the voucher code is invalid and does not apply the discount to the order.
+
+Test Case: Test Case 4
+testCaseName: Checkout with adding a new shipping address with invalid input
+objective: Verify that the system prevents the user from adding a new shipping address with invalid input
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click the button to change the shipping address, then click to add a new address.
+  - Step 4: Fill in the address form with invalid data (e.g., less than 2 letters for the full name, incorrect phone number format).
+  - Step 5: Click the 'Finish' button to add the shipping address.
+expectedResult: The system displays a notification about the invalid input and prevents the user from adding the new shipping address.
+

@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add Shipping Address with Full Name Less Than 2 Letters
+objective: Verify that the system prevents adding a new shipping address when the full name is less than 2 letters
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, click the button to change or add a new shipping address.
+  - Step 4: In the add new address form, enter a full name with less than 2 letters.
+  - Step 5: Fill in the rest of the form with valid information, including a valid phone number, city, district, ward, and an identifiable location's address.
+  - Step 6: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification preventing the user from adding the new shipping address due to the full name being less than 2 letters.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's behavior when attempting to add a shipping address with a full name of less than 2 letters. It follows the exact steps that a user would take to encounter the scenario, from logging in to attempting to add the address, and it clearly outlines the expected outcome of the system preventing the action. Therefore, it accurately reflects the given test scenario.
+

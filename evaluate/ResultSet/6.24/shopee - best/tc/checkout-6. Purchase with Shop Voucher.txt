@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Shop Voucher Application
+objective: Verify that a user can apply a shop voucher during the checkout process and receive the appropriate discount on their order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Review the order summary, including items, quantities, prices, and total cost displayed by the system.
+  - Step 4: Confirm the shipping address is set as the default address or add/change the shipping address if necessary.
+  - Step 5: Confirm the payment method is set to COD or select a new payment method if desired.
+  - Step 6: Apply a shop voucher by selecting an available voucher or entering a valid shop voucher code.
+  - Step 7: Confirm the shipping option is set to Standard Express or change the shipping option if desired.
+  - Step 8: Add a note for the shop if necessary.
+  - Step 9: Review the updated total cost reflecting the shop voucher discount.
+  - Step 10: Click on the "Place Order" button.
+  - Step 11: Wait for the system to process the payment and confirm the order.
+  - Step 12: Review the order confirmation and details displayed by the system.
+expectedResult: The order is successfully placed with the shop voucher discount applied, and the user receives an order confirmation with the discounted total cost.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the process of applying a shop voucher during a purchase, verifying the discount application, and confirming the successful order placement with the voucher discount.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Apply an Invalid Shop Voucher
+objective: Verify that the system prevents the application of an invalid shop voucher code and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Attempt to apply an invalid shop voucher by entering an incorrect voucher code.
+  - Step 4: Click on the 'apply' button after entering the invalid voucher code.
+expectedResult: The system displays an error message indicating the voucher code is invalid and does not apply any discount to the order.
+reflect: yes
+explanation: Although this test case explores a negative path by attempting to apply an invalid voucher, it is relevant to the test scenario as it verifies the system's behavior in the context of shop voucher application during purchase. It ensures the system correctly handles invalid voucher codes, which is an essential aspect of the purchase process with shop vouchers.
+

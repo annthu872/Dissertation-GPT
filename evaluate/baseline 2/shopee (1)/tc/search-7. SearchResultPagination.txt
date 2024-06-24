@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Result Pagination Functionality
+objective: Ensure that the search results are paginated correctly, and users can navigate through different pages of search results
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of relevant search matches.
+  - Step 5: Scroll down to the pagination bar at the bottom of the page.
+  - Step 6: Click on the right arrow button to move to the next page.
+  - Step 7: Click on a specific page number in the pagination bar.
+expectedResult: The system should display a maximum of 60 product cards per page. When navigating using the pagination bar, the page should refresh to show the relevant search matches for the selected page.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Result for Shop Name Keyword
+objective: Ensure that searching for a shop name displays the shop's information and related product cards at the top of the search results
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Result for Brand Name Keyword
+objective: Ensure that searching for a brand name displays the most related/best sold shop's information and related product cards
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the most related/best sold shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by related products card.
+
+Test Case: Test Case 4
+testCaseName: Verify No Search Results Found Scenario
+objective: Ensure that the system displays random product cards when no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any products, shops, or brands in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards when no search results are found.
+
+Test Case: Test Case 5
+testCaseName: Verify Search Result Filtering
+objective: Ensure that users can filter search results using provided filter modes
+testSteps:
+  - Step 1: Perform a search with any keyword.
+  - Step 2: Observe the filter options under the form of radio buttons.
+  - Step 3: Select each filter mode one by one: most related, newest product, best seller, and sort by price.
+  - Step 4: Observe the changes in the search results after applying each filter.
+expectedResult: The system should correctly filter the search results based on the selected filter mode, showing the most relevant products according to the filter criteria.
+

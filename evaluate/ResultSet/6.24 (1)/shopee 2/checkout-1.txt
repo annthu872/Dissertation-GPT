@@ -1,0 +1,16 @@
+1. Attempt to Add Shipping Address with Full Name Containing Numbers
+2. Attempt to Add Shipping Address with Full Name Less Than 2 Letters
+3. Attempt to Add Shipping Address with Phone Number Not Following Format
+4. Attempt to Add Shipping Address with Phone Number Containing Letters
+5. Attempt to Add Shipping Address with Location's Address Not on Map
+6. Attempt to Apply Disabled Voucher Code
+7. Attempt to Apply Incorrect Voucher Code
+8. Successful Purchase with Default Settings
+9. Purchase with Changed Shipping Address
+10. Purchase with New Shipping Address
+11. Purchase with Non-default Payment Method
+12. Purchase with Application Voucher
+13. Purchase with Shop Voucher
+14. Purchase with Changed Shipping Option
+15. Purchase with Note for Shop
+16. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)

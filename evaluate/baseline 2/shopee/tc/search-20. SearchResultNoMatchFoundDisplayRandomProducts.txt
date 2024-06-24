@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Functionality with Relevant Keywords
+objective: Ensure the search functionality returns relevant product listings based on the entered keywords
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a product name or description in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of product cards displayed.
+expectedResult: The system should display a list of product cards with names or descriptions including or related to the keywords. A maximum of 60 product cards are shown per page with pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Results for Shop Name
+objective: Ensure the search functionality returns the shop's information and products when the keyword is related to a shop name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the shop's information at the top of the search result including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Results for Brand Name
+objective: Ensure the search functionality returns related shop and products when the keyword is related to a brand name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the most related/best sold shop's information that sells the brand at the top of the search result, followed by related products card.
+
+Test Case: Test Case 4
+testCaseName: Verify No Match Found Displays Random Products
+objective: Ensure the search functionality displays random product cards when no matches are found for the entered keyword
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any product, shop, or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display random product cards when no search results are found.
+
+Test Case: Test Case 5
+testCaseName: Verify Search Result Filters
+objective: Ensure the search results can be filtered by most related, newest, best seller, and price
+testSteps:
+  - Step 1: Perform a search with a relevant keyword.
+  - Step 2: Click on the filter option to select 'most related', 'newest', 'best seller', or 'sort by price'.
+  - Step 3: Observe the filtered search results.
+expectedResult: The system should display the filtered search results based on the selected filter option.
+

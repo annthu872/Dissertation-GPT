@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Non-default Payment Method - Using Shopee Pay
+objective: Verify that the user can successfully complete a purchase using Shopee Pay as a non-default payment method.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Change the payment method by selecting 'Shopee Pay' from the available options.
+  - Step 5: Optionally, add an application voucher or shop voucher to the order.
+  - Step 6: Review and confirm the shipping address and shipping option (default or changed).
+  - Step 7: Optionally, add a note for the shop.
+  - Step 8: Review the updated total cost and order details.
+  - Step 9: Click on the 'Place Order' button.
+  - Step 10: Confirm the payment through Shopee Pay if required.
+expectedResult: The order is successfully placed using Shopee Pay, and the user receives an order confirmation with the details.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the ability to complete a purchase using a non-default payment method, specifically Shopee Pay. It includes steps to select Shopee Pay as the payment method and confirms the successful completion of the purchase, which is the core objective of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Non-default Payment Method - Using Credit Card
+objective: Verify that the user can successfully complete a purchase using a credit card as a non-default payment method.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Change the payment method by selecting 'Credit' from the available options.
+  - Step 5: Optionally, add an application voucher or shop voucher to the order.
+  - Step 6: Review and confirm the shipping address and shipping option (default or changed).
+  - Step 7: Optionally, add a note for the shop.
+  - Step 8: Review the updated total cost and order details.
+  - Step 9: Click on the 'Place Order' button.
+  - Step 10: Confirm the payment details for the credit card if required.
+expectedResult: The order is successfully placed using a credit card, and the user receives an order confirmation with the details.
+reflect: yes
+explanation: Similar to Test Case 1, this test case aligns with the test scenario's objective by testing the functionality of completing a purchase with a non-default payment method, in this case, a credit card. It ensures the checkout process accommodates the use of a credit card as an alternative payment option, which is essential for validating the scenario's requirements.
+

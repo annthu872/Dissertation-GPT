@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a product without selecting options
+objective: Verify that the system prevents checkout if the product options are not selected
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Without selecting any options, click the 'Buy Now' button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is unable to proceed to checkout.
+explanation: This test case ensures that users are required to select options for products that have them before proceeding to checkout. It directly addresses the scenario of attempting to checkout without selecting product options.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a product by adjusting quantity beyond stock limits
+objective: Verify that the system prevents checkout if the product quantity selected is beyond the available stock
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has limited stock.
+  - Step 2: Increase the product quantity beyond the available stock using the plus button.
+  - Step 3: Click the 'Buy Now' button.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, preventing the user from proceeding to checkout due to selecting a quantity beyond the stock limit.
+explanation: This test case checks if the system correctly handles cases where users attempt to purchase more items than are available in stock, which is related to the scenario by ensuring that product options and quantities are valid before checkout.
+
+Test Case: Test Case 3
+testCaseName: Attempt to checkout with an out-of-stock product
+objective: Verify that the system prevents checkout with products that are out of stock
+testSteps:
+  - Step 1: Add an out-of-stock product to the shopping cart or navigate to an out-of-stock product's detail page.
+  - Step 2: Attempt to select the out-of-stock product by clicking its checkbox in the shopping cart or clicking the 'Buy Now' button on the product detail page.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is unable to proceed to checkout with the out-of-stock product.
+explanation: This test case ensures that users cannot proceed to checkout with products that are out of stock, aligning with the scenario's focus on preventing checkout under invalid conditions.
+

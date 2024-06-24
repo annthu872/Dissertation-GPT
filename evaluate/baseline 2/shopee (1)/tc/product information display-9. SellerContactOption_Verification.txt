@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Ensure that all elements of the product information are displayed correctly to the user
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check that a detailed product description is provided.
+  - Step 5: Ensure that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm that videos demonstrating the product's features and usage are included.
+  - Step 7: Check that detailed product specifications are listed.
+  - Step 8: Verify that the current price and any discounts or special pricing are displayed.
+  - Step 9: Confirm real-time stock availability is shown.
+  - Step 10: Ensure available shipping methods and estimated delivery times are displayed.
+  - Step 11: Verify the seller's profile is displayed with their name, ratings, and reviews.
+  - Step 12: Check that an option to contact the seller directly is provided.
+  - Step 13: Ensure a link to the seller's store page is available.
+  - Step 14: Verify the display of the average rating based on customer reviews.
+  - Step 15: Confirm that 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+  - Step 16: Check that a list of related product cards is displayed.
+expectedResult: All elements of the product information are correctly displayed to the user, including title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, contact option, store link, customer reviews, ratings, and related products.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of Expanding Customer Reviews
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews
+testSteps:
+  - Step 1: Follow steps 1-2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The 'Customer Reviews and Ratings' section expands, and more customer reviews are displayed to the user.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of Seller Contact Option
+objective: Ensure that users can contact the seller directly through the platform's messaging system
+testSteps:
+  - Step 1: Follow steps 1-2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Seller Contact' option.
+  - Step 3: Click on the 'Seller Contact' option.
+expectedResult: The platform's messaging system opens, allowing the user to send a message directly to the seller.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation to Seller's Store Page
+objective: Ensure that users can navigate to the seller's store page to view other products from the same seller
+testSteps:
+  - Step 1: Follow steps 1-2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to and click on the 'Store Link'.
+expectedResult: The user is redirected to the seller's store page on the platform, where they can view other products from the same seller.
+

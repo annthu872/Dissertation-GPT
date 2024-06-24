@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Search and Sort by Price from Highest to Lowest
+objective: Verify that the user can search for products and sort the results by price from highest to lowest
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to the product in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: View the list of relevant search matches.
+  - Step 5: Locate the sort option and select 'Sort by price from highest to lowest'.
+expectedResult: The products are displayed in descending order of price, starting with the highest priced item.
+
+Test Case: Test Case 2
+testCaseName: Search for a Shop Name and Sort Results by Price Highest to Lowest
+objective: Verify that when searching for a shop name, the system displays the shop's information and products, which can then be sorted by price from highest to lowest
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the shop's information and product cards displayed.
+  - Step 5: Locate the sort option and select 'Sort by price from highest to lowest'.
+expectedResult: The shop's products are displayed in descending order of price, starting with the highest priced item.
+
+Test Case: Test Case 3
+testCaseName: Search for a Brand Name and Sort Results by Price Highest to Lowest
+objective: Verify that when searching for a brand name, the system displays related shops and products, which can then be sorted by price from highest to lowest
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the most related/best sold shop's information and related product cards displayed.
+  - Step 5: Locate the sort option and select 'Sort by price from highest to lowest'.
+expectedResult: The related products are displayed in descending order of price, starting with the highest priced item.
+
+Test Case: Test Case 4
+testCaseName: Search with No Results and Sort Attempt by Price Highest to Lowest
+objective: Verify the system's behavior when a search yields no results and a sort by price from highest to lowest is attempted
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword unlikely to match any product in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the display of random product cards due to no search results found.
+  - Step 5: Attempt to locate the sort option and select 'Sort by price from highest to lowest'.
+expectedResult: Since no relevant search matches were found, random products may not be sortable by price, or if sortable, the action has no meaningful impact on the displayed results.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity less than one from the shopping cart
+objective: Verify that the system prevents checkout when the quantity of an item is set to less than one in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Adjust the quantity of any item to less than one by clicking the minus button next to the item's quantity.
+  - Step 3: Attempt to select the item by clicking on the checkbox before the item.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The system should prevent the item with quantity less than one from being selected and disable the 'Checkout' button, not allowing the user to proceed with checkout.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to checkout with an item quantity less than one from the shopping cart, which is the exact situation the scenario aims to test. It verifies the system's behavior in preventing such an action, thus reflecting the given test scenario accurately.
+

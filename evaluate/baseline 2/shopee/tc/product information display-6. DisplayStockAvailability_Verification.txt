@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display including Stock Availability
+objective: Ensure that the product information display includes all necessary details such as title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, and customer reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check that a detailed product description is provided.
+  - Step 5: Ensure that high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Check that the current price of the product is displayed along with any discounts or special pricing.
+  - Step 9: Ensure that real-time stock availability for the product is shown.
+  - Step 10: Verify that available shipping methods and estimated delivery times are displayed.
+  - Step 11: Confirm that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 12: Check that an option to contact the seller directly through the platform's messaging system is provided.
+  - Step 13: Ensure that a link to the seller's store page on the platform is available.
+  - Step 14: Verify that the average rating based on customer reviews is displayed.
+  - Step 15: Confirm that 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+  - Step 16: Check that a list of related product cards is displayed.
+expectedResult: All the product information including stock availability is accurately displayed according to the specifications.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of Expanding Customer Reviews and Questions
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' and 'Customer Questions' sections to view more content.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 3: Verify that more customer reviews are displayed upon expansion.
+  - Step 4: Click on the option to expand the 'Customer Questions' section.
+  - Step 5: Verify that more customer questions and seller answers are displayed upon expansion.
+expectedResult: Users are able to view more customer reviews and questions with seller answers upon expanding the respective sections.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Seller's Store and Contact Functionality
+objective: Ensure that users can navigate to the seller's store and contact the seller directly through the platform's messaging system.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page on the platform.
+  - Step 3: Verify that the seller's store page is displayed with other products from the same seller.
+  - Step 4: Return to the product's information page and click on 'Seller Contact'.
+  - Step 5: Verify that the platform's messaging system is opened, allowing the user to contact the seller directly.
+expectedResult: Users can successfully navigate to the seller's store and contact the seller directly through the platform's messaging system.
+

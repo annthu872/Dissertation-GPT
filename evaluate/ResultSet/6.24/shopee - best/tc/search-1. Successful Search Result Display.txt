@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Successful Search Result Display for Keyword Matching Product Name or Description
+objective: Verify that the system displays a list of relevant product matches when a user searches using a keyword that matches product names or descriptions.
+testSteps:
+  - Step 1: Navigate to the search bar on the page.
+  - Step 2: Type a keyword known to match product names or descriptions in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: A list of relevant product cards is displayed, with a maximum of 60 product cards per page. A pagination bar is available at the bottom of the page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's ability to display relevant search results based on keywords matching product names or descriptions.
+

@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Purchase with New Shipping Address
+objective: Verify that the user can add a new shipping address during the checkout process and successfully place an order with it.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: At the order summary page, click on the 'change shipping address' button.
+  - Step 4: Click on the option to add a new address.
+  - Step 5: Fill in the new shipping address form with valid details: Full name, phone number in the format (+84) xxx xxx xxx, select city, district, ward from the dropdown menus, enter a valid location's address, and select an address type if applicable.
+  - Step 6: Click the 'Finish' button to add the new shipping address.
+  - Step 7: Select the newly added shipping address as the shipping address for the order.
+  - Step 8: Review the order details and click on the 'Place Order' button.
+expectedResult: The system should process the payment, confirm the order with the new shipping address, and display the order confirmation and details.
+explanation: This test case ensures that users can add a new shipping address during the checkout process, which is a part of the basic flow of the Checkout use case. It directly matches the scenario name 'Purchase with New Shipping Address' by testing the functionality of adding a new shipping address and using it for an order.
+

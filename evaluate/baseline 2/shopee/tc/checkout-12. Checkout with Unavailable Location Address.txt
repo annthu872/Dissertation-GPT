@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Checkout with a new unavailable location address
+objective: Verify that the system prevents the user from adding a new shipping address that is not identifiable on the map and provides appropriate feedback.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the shipping address step, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with a new address where the location's address is not identifiable on the map.
+  - Step 6: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification indicating that the location's address cannot be found on the map and prevent the user from adding the new shipping address.
+
+Test Case: Test Case 2
+testCaseName: Checkout with incorrect voucher code
+objective: Verify that the system prevents the user from applying an incorrect voucher code and provides appropriate feedback.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the voucher step, enter an incorrect voucher code into the voucher code field.
+  - Step 4: Click the 'Apply' button to attempt applying the voucher.
+expectedResult: The system should display a notification indicating that the voucher code is incorrect and prevent the user from applying the voucher.
+
+Test Case: Test Case 3
+testCaseName: Checkout with changing to an unavailable shipping option
+objective: Verify that the system handles the scenario where a user attempts to select a shipping option that is not available.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the shipping option change button.
+  - Step 4: Attempt to select a shipping option that is not listed or unavailable.
+expectedResult: The system should either not display unavailable shipping options or should display a notification that the selected shipping option is not available, preventing the user from selecting it.
+
+Test Case: Test Case 4
+testCaseName: Checkout with all valid inputs but unavailable location address
+objective: Verify that the system only blocks the checkout process due to an unavailable location address while all other inputs are valid.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the shipping address step, click the button to change the shipping address and add a new one with all valid inputs except for the location's address being unavailable.
+  - Step 4: Select a valid payment method.
+  - Step 5: Apply a valid voucher code.
+  - Step 6: Select a valid shipping option.
+  - Step 7: Click on the 'Place Order' button.
+expectedResult: The system should prevent the user from placing the order and display a notification about the unavailable location address, despite all other inputs being valid.
+

@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Checkout with a single valid voucher applied
+objective: Verify that the system applies a discount when a valid voucher is applied during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary.
+  - Step 4: Select a shipping address or add a new one if required.
+  - Step 5: Choose a payment method from the available options.
+  - Step 6: Apply a valid voucher code by entering it into the voucher code field and clicking the 'apply' button.
+  - Step 7: Review the updated total cost reflecting the voucher discount.
+  - Step 8: Click on the 'Place Order' button.
+expectedResult: The system should apply the discount associated with the voucher to the total cost, and the user should successfully complete the checkout process with the discounted total.
+
+Test Case: Test Case 2
+testCaseName: Checkout with multiple valid vouchers applied
+objective: Verify that the system allows multiple vouchers to be applied and calculates the total discount correctly during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary.
+  - Step 4: Select a shipping address or add a new one if required.
+  - Step 5: Choose a payment method from the available options.
+  - Step 6: Apply the first valid voucher code by entering it into the voucher code field and clicking the 'apply' button.
+  - Step 7: Apply the second valid voucher code by entering it into the voucher code field and clicking the 'apply' button.
+  - Step 8: Review the updated total cost reflecting the cumulative discount from both vouchers.
+  - Step 9: Click on the 'Place Order' button.
+expectedResult: The system should apply the discounts associated with both vouchers to the total cost, and the user should successfully complete the checkout process with the cumulative discounted total.
+
+Test Case: Test Case 3
+testCaseName: Attempt to checkout with an invalid voucher code
+objective: Verify that the system prevents the application of an invalid voucher code and provides feedback to the user
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary.
+  - Step 4: Select a shipping address or add a new one if required.
+  - Step 5: Choose a payment method from the available options.
+  - Step 6: Attempt to apply an invalid voucher code by entering it into the voucher code field and clicking the 'apply' button.
+expectedResult: The system should display an error message indicating that the voucher code is invalid and prevent the application of the discount to the total cost.
+
+Test Case: Test Case 4
+testCaseName: Checkout without applying any voucher
+objective: Verify that the user can complete the checkout process without applying any voucher
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary.
+  - Step 4: Select a shipping address or add a new one if required.
+  - Step 5: Choose a payment method from the available options.
+  - Step 6: Review the total cost without applying any voucher.
+  - Step 7: Click on the 'Place Order' button.
+expectedResult: The system should allow the user to successfully complete the checkout process without applying any voucher, with the total cost remaining unchanged.
+

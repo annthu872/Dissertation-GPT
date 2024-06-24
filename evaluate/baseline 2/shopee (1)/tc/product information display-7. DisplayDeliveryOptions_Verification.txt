@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Delivery Options on Product Information Page
+objective: Ensure that the delivery options, including shipping methods and estimated delivery times, are correctly displayed on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Delivery Options' section on the product information page.
+expectedResult: The 'Delivery Options' section should display all available shipping methods and estimated delivery times clearly.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Product Specifications and Price Information
+objective: To check if the product's specifications and price information are accurately displayed.
+testSteps:
+  - Step 1: From the homepage, search page, or cart page, select a product to view.
+  - Step 2: On the product information page, locate the 'Specifications' section to view product details such as dimensions, weight, material, and color options.
+  - Step 3: Scroll to the 'Price Information' section to view the current price, discounts, offers, or special pricing available.
+expectedResult: The 'Specifications' section should list all relevant product details, and the 'Price Information' section should accurately display the current price along with any discounts or special offers.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of Seller Contact and Store Link
+objective: To ensure users can contact the seller directly and access the seller's store page from the product information page.
+testSteps:
+  - Step 1: Access a product's information page by clicking on a product card from the homepage, search page, or cart page.
+  - Step 2: Scroll to the 'Seller Profile' section and click on the 'Seller Contact' option to initiate direct contact through the platform's messaging system.
+  - Step 3: Click on the 'Store Link' to navigate to the seller's store page on the platform.
+expectedResult: Clicking on 'Seller Contact' should open the messaging system to contact the seller directly. Clicking on 'Store Link' should redirect the user to the seller's store page on the platform.
+
+Test Case: Test Case 4
+testCaseName: Verify Customer Reviews and Ratings Display
+objective: To confirm that the product information page displays customer reviews and ratings accurately, including the option to view more detailed reviews.
+testSteps:
+  - Step 1: Select a product by clicking on its card from either the homepage, search page, or cart page.
+  - Step 2: On the product information page, scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more detailed reviews.
+expectedResult: The 'Customer Reviews and Ratings' section should display the average rating, show 3 latest detailed reviews, and allow users to expand the section to view more reviews.
+

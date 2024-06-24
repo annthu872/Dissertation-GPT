@@ -1,0 +1,52 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Default Settings
+objective: Verify that a user can successfully checkout with default shipping address, payment method, and shipping option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary with default settings (default shipping address, COD as payment method, and Standard Express as shipping option).
+  - Step 4: Click on the 'Place Order' button.
+expectedResult: The order is successfully placed, and the user receives an order confirmation with the details.
+
+Test Case: Test Case 2
+testCaseName: Add New Shipping Address during Checkout
+objective: Verify that a user can add a new shipping address during the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account and initiate the checkout process.
+  - Step 2: Click on the button to change the shipping address.
+  - Step 3: Select the option to add a new address.
+  - Step 4: Fill in the form with valid details for a new shipping address and click 'Finish'.
+  - Step 5: Proceed to review the order summary and click on the 'Place Order' button.
+expectedResult: The new shipping address is successfully added, and the order is placed with this new address.
+
+Test Case: Test Case 3
+testCaseName: Apply Voucher Code during Checkout
+objective: Verify that a user can apply a valid voucher code and receive a discount on the order
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Enter a valid voucher code into the voucher code field.
+  - Step 3: Click the 'apply' button.
+  - Step 4: Review the updated total cost reflecting the voucher discount.
+  - Step 5: Click on the 'Place Order' button.
+expectedResult: The voucher is successfully applied, and the total cost is updated to reflect the discount. The order is placed with the discounted total cost.
+
+Test Case: Test Case 4
+testCaseName: Change Shipping Option during Checkout
+objective: Verify that a user can change the shipping option during the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account and start the checkout process.
+  - Step 2: Click on the shipping option change button.
+  - Step 3: Select a new shipping option from the list of available options.
+  - Step 4: Review the updated total cost based on the new shipping option.
+  - Step 5: Click on the 'Place Order' button.
+expectedResult: The shipping option is successfully changed, and the order is placed with the new shipping option.
+
+Test Case: Test Case 5
+testCaseName: Attempt to Add Disabled Voucher
+objective: Verify that the system prevents the user from adding a disabled voucher to the order
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Attempt to enter a disabled voucher code into the voucher code field.
+  - Step 3: Click the 'apply' button.
+expectedResult: The system displays an error message indicating that the voucher cannot be added because it is disabled.
+

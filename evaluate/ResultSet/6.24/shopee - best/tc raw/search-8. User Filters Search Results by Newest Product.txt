@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Newest Product
+objective: Verify that the user can filter search results to display products by their newest date
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to products in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate the filter options and select the radio button for 'newest product result'.
+expectedResult: The search results are refreshed to display products sorted by their newest date, with the most recent products appearing first.
+explanation: This test case ensures that users can successfully filter search results to prioritize the display of the newest products, enhancing the search functionality based on user preference.
+

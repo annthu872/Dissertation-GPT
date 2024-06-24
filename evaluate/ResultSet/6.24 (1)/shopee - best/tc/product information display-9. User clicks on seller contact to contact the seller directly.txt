@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Contact Seller via Product Information Page
+objective: Verify that users can contact the seller directly from the product information page through the platform's messaging system.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section on the product information page.
+  - Step 4: Locate and click on the 'Seller Contact' option.
+expectedResult: The platform's messaging system should open, allowing the user to compose and send a message to the seller directly.
+reflect: yes
+explanation: This test case directly addresses the test scenario, which is to verify the user's ability to click on the seller contact to contact the seller directly. The steps guide the tester through the process of reaching the product information page and using the 'Seller Contact' option, which is the exact action the scenario aims to test. Therefore, it reflects the given test scenario accurately.
+

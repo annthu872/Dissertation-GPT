@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display on Product Card Click
+objective: Verify that clicking on a product card displays all the required product information as specified.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card displayed on the page.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+
+Test Case: Test Case 2
+testCaseName: Verify Discount Highlight in Price Information
+objective: Ensure that any discounts or special pricing are highlighted in the product's price information.
+testSteps:
+  - Step 1: Navigate to a product with a known discount or special offer.
+  - Step 2: Click on the product card to view its details.
+expectedResult: The product's price information should clearly highlight the discount or special offer available.
+
+Test Case: Test Case 3
+testCaseName: Verify Real-time Stock Availability Display
+objective: Check if the product's stock availability is displayed in real-time on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+expectedResult: The system should show the real-time stock availability for the product.
+
+Test Case: Test Case 4
+testCaseName: Verify Functionality of Viewing More Customer Reviews
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Click on a product card to view its details.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should display more customer reviews beyond the initial 3 detailed reviews.
+
+Test Case: Test Case 5
+testCaseName: Verify Seller Contact Functionality
+objective: Ensure that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Click on a product card to view its details.
+  - Step 2: Locate and click on the 'Seller Contact' option.
+expectedResult: The system should navigate the user to the platform's messaging system to contact the seller directly.
+
+Test Case: Test Case 6
+testCaseName: Verify Navigation to Seller's Store Page
+objective: Check if the 'Store Link' successfully navigates the user to the seller's store page on the platform.
+testSteps:
+  - Step 1: Click on a product card to view its details.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The system should navigate the user to the seller's store page on the platform, displaying other products from the same seller.
+

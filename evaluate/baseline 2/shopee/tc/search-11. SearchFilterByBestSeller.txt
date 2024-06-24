@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Search for a Product by Keyword
+objective: Verify that the user can search for products using keywords and view relevant product listings
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type the desired keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: View the list of relevant search matches.
+expectedResult: The system should display a list of product cards that match or are related to the keyword, with a maximum of 60 product cards per page and pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Search for a Shop by Keyword
+objective: Verify that searching for a keyword related to a shop name displays the shop's information and products
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: View the search results.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop's product cards and related product cards.
+
+Test Case: Test Case 3
+testCaseName: Search and Filter by Best Seller
+objective: Verify that users can filter search results by best seller products
+testSteps:
+  - Step 1: Perform a search with any keyword.
+  - Step 2: Click on the 'best seller' radio button to filter the search results.
+  - Step 3: View the filtered search results.
+expectedResult: The system should display product cards sorted by best selling products related to the search keyword.
+
+Test Case: Test Case 4
+testCaseName: No Search Results Found
+objective: Verify the system's behavior when no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any products, shops, or brands.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards as there are no relevant search matches.
+

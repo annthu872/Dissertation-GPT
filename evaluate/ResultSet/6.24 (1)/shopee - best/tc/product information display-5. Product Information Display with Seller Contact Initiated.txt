@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Verify that all product information is displayed correctly when a user clicks on a product card.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'Product Information Display with Seller Contact Initiated,' by verifying that all necessary product information, including the seller contact, is displayed to the user.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Contact Functionality
+objective: Verify that users can initiate contact with the seller through the provided contact option on the product information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Contact Seller' option.
+  - Step 3: Observe the system's response.
+expectedResult: The system should navigate the user to the platform's messaging system to allow direct contact with the seller.
+reflect: yes
+explanation: This test case is a direct application of the 'Seller Contact Initiated' part of the test scenario, ensuring that the functionality for initiating contact with the seller is working as intended.
+

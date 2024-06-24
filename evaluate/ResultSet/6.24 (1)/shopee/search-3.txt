@@ -1,0 +1,11 @@
+1. Successful Search with Relevant Results Displayed
+2. Search with No Relevant Results
+3. Search Results Pagination Navigation
+4. Search with a keyword related to a shop name
+5. Search with a keyword related to a brand name without an available shop
+6. Search with a keyword not matching any shop or brand
+7. Filter search results by the most related with the keyword
+8. Filter search results by the newest product
+9. Filter search results by the best seller
+10. Filter search results by price from lowest to highest
+11. Filter search results by price from highest to lowest

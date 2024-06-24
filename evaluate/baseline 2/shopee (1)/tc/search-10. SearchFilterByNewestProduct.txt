@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Search and Filter by Newest Products
+objective: Verify that the user can search for products and filter the results by the newest products
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to the product in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: View the list of relevant search matches.
+  - Step 5: Locate and select the 'newest product result' radio button to filter the search results.
+expectedResult: The system should display the search results filtered by the newest products at the top of the list.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Related to Shop Name
+objective: Verify that searching with a keyword related to a shop name displays the shop's information and products
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that is related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Search with Keyword Not Matching Any Shop or Brand
+objective: Verify that searching with a keyword not matching any shop or brand displays related product cards
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any shop or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display related products card (products that have names matching the search keyword).
+
+Test Case: Test Case 4
+testCaseName: Search Result Pagination
+objective: Verify that the user can navigate through search result pages using the pagination bar
+testSteps:
+  - Step 1: Perform a search with a keyword that returns more than 60 products.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination bar.
+  - Step 3: Click on the right button or a specific page number in the pagination bar.
+expectedResult: The system should navigate to the selected page and display a new set of product cards.
+
+Test Case: Test Case 5
+testCaseName: No Search Results Found
+objective: Verify that the system displays random product cards if no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that is unlikely to match any products, shops, or brands in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards.
+

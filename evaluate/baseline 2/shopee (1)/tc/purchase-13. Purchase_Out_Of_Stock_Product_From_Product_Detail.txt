@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Purchase an in-stock product from the shopping cart
+objective: Verify that a user can successfully purchase an in-stock product from their shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Add an in-stock item to the shopping cart.
+  - Step 3: Select the item by clicking on the checkbox before the item.
+  - Step 4: Click on the 'Checkout' button.
+  - Step 5: Complete the checkout process.
+expectedResult: User is redirected to a page that shows a new order of the item they have chosen.
+
+Test Case: Test Case 2
+testCaseName: Attempt to purchase an out-of-stock product from the shopping cart
+objective: Verify that a user cannot purchase an out-of-stock product from their shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Attempt to select an out-of-stock item by clicking on the checkbox before the item.
+expectedResult: The checkbox for the out-of-stock item is disabled, and the user cannot proceed to checkout with this item.
+
+Test Case: Test Case 3
+testCaseName: Purchase a product with options from the product detail page
+objective: Verify that a user can purchase a product with options from the product detail page after selecting an available option
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product with multiple options.
+  - Step 2: Select one available option.
+  - Step 3: Adjust the quantity if desired.
+  - Step 4: Click on the 'Checkout' button.
+  - Step 5: Complete the checkout process.
+expectedResult: User is redirected to a page that shows one order of the item they have chosen.
+
+Test Case: Test Case 4
+testCaseName: Attempt to purchase a product with no selected option from the product detail page
+objective: Verify that a user cannot purchase a product with options without selecting one
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product with multiple options.
+  - Step 2: Without selecting an option, attempt to click on the 'Checkout' button.
+expectedResult: The 'Checkout' button is disabled until an option is selected.
+
+Test Case: Test Case 5
+testCaseName: Attempt to purchase an out-of-stock product from the product detail page
+objective: Verify that a user cannot purchase an out-of-stock product from the product detail page
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for an out-of-stock product.
+  - Step 2: Attempt to adjust the quantity and click on the 'Checkout' button.
+expectedResult: The quantity adjustment is restricted, and the 'Checkout' button is disabled.
+

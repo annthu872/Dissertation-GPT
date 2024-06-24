@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Single Item from Shopping Cart
+objective: Verify that a user can successfully checkout a single item selected from the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there is at least one item added to the shopping cart.
+  - Step 3: Select a single item by clicking on the checkbox before the item.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the system processes the checkout.
+expectedResult: User is redirected to a page that shows a new order of the item the user has chosen, confirming the successful checkout.
+explanation: This test case ensures that users can successfully complete the checkout process for a single item selected from their shopping cart, which directly matches the scenario name.
+
+Test Case: Test Case 2
+testCaseName: Successful Checkout with Multiple Items from the Same Shop
+objective: Verify that a user can successfully checkout multiple items from the same shop in a single order.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there are multiple items from the same shop added to the shopping cart.
+  - Step 3: Select all items from the same shop by clicking on the checkboxes before each item.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the system processes the checkout.
+expectedResult: User is redirected to a page that shows a new order containing all the items from the same shop, confirming the successful checkout.
+explanation: This test case verifies the functionality of checking out multiple items from the same shop, which is a part of the basic flow of the purchase use case and matches the scenario name.
+
+Test Case: Test Case 3
+testCaseName: Successful Checkout from Product Detail Page
+objective: Verify that a user can successfully checkout an item directly from the product detail page.
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' to navigate to a product detail page.
+  - Step 2: If the product has many options, select one available option.
+  - Step 3: Adjust the quantity of the product if necessary by clicking on the minus or plus button next to the quantity of the product.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the system processes the checkout.
+expectedResult: User is redirected to a page that shows a new order of the item the user has chosen from the product detail page, confirming the successful checkout.
+explanation: This test case ensures that users can successfully complete the checkout process directly from the product detail page, which is an alternative flow in the purchase use case and relevant to the scenario name.
+

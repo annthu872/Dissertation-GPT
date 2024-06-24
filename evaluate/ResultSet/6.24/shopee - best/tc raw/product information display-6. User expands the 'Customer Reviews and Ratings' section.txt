@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Expand Customer Reviews and Ratings Section
+objective: Verify that the user can expand the 'Customer Reviews and Ratings' section to view more reviews on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view the product's information.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 4: Click on the option to expand the 'Customer Reviews and Ratings' section.
+expectedResult: The 'Customer Reviews and Ratings' section should expand, showing more detailed reviews beyond the initial 3 latest detailed reviews.
+explanation: This test case ensures that users can access more detailed customer feedback by expanding the 'Customer Reviews and Ratings' section, which is part of providing comprehensive product information.
+

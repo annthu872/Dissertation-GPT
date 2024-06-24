@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Search and Sort by Price from Lowest to Highest
+objective: Verify that the user can search for products and sort the results by price from lowest to highest
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: View the list of relevant search matches.
+  - Step 5: Locate the sort option and select 'Sort by price from lowest to highest'.
+expectedResult: The products are displayed in ascending order of price, starting with the lowest.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Related to Shop Name
+objective: Verify that searching with a keyword related to a shop name displays the shop's information and products correctly
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The shop's information is displayed at the top of the search result, followed by the shop's product cards and related product cards.
+
+Test Case: Test Case 3
+testCaseName: Search with Keyword Not Matching Any Shop or Brand
+objective: Verify that searching with a keyword not matching any shop or brand displays related product cards
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword not related to any shop or brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: Related product cards (products with names matching the search keyword) are displayed.
+
+Test Case: Test Case 4
+testCaseName: No Search Results Found
+objective: Verify that the system displays random product cards when no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword unlikely to match any product, shop, or brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: Random product cards are displayed.
+

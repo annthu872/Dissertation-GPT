@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Add a new shipping address with an invalid full name containing numbers
+objective: Verify that the system prevents adding a new shipping address with a full name that contains numbers
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new address.
+  - Step 5: Fill in the full name field with a name that includes numbers (e.g., 'John123').
+  - Step 6: Fill in the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification indicating that the full name is invalid because it contains numbers and prevent the user from adding the new shipping address.
+explanation: This test case ensures that the system enforces the rule that full names can only contain letters and must be at least 2 letters long, as specified in the use case for adding a new shipping address during checkout.
+
+Test Case: Test Case 2
+testCaseName: Add a new shipping address with an invalid full name with less than 2 letters
+objective: Verify that the system prevents adding a new shipping address with a full name that is less than 2 letters long
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new address.
+  - Step 5: Fill in the full name field with a single letter (e.g., 'J').
+  - Step 6: Fill in the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification indicating that the full name is invalid because it does not meet the minimum length requirement of 2 letters and prevent the user from adding the new shipping address.
+explanation: This test case verifies the system's adherence to the full name validation rules for adding a new shipping address during the checkout process, specifically the rule that the full name cannot be less than 2 letters long.
+

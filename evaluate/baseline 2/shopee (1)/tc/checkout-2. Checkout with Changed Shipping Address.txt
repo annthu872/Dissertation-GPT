@@ -1,0 +1,56 @@
+Test Case: Test Case 1
+testCaseName: Checkout with default shipping address and payment method
+objective: Verify that the user can checkout using the default shipping address and payment method
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to add items to the shopping cart.
+  - Step 3: Proceed to checkout to view the order summary.
+  - Step 4: Confirm that the default shipping address and COD payment method are selected.
+  - Step 5: Review the order details including items, quantities, prices, and total cost.
+  - Step 6: Click on the 'Place Order' button.
+expectedResult: The order is successfully placed using the default shipping address and COD payment method, and the user receives an order confirmation.
+
+Test Case: Test Case 2
+testCaseName: Change shipping address during checkout
+objective: Verify that the user can change the shipping address during the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the button to change the shipping address.
+  - Step 3: Select a saved address from the list of saved addresses.
+  - Step 4: Review the updated order summary with the new shipping address.
+  - Step 5: Click on the 'Place Order' button.
+expectedResult: The order is successfully placed with the newly selected shipping address, and the user receives an order confirmation with the updated address.
+
+Test Case: Test Case 3
+testCaseName: Add a new shipping address during checkout
+objective: Verify that the user can add a new shipping address during the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the button to change the shipping address, then select to add a new address.
+  - Step 3: Fill in the new address form with valid details including full name, phone number, city, district, ward, location's address, and address type.
+  - Step 4: Click the 'Finish' button to save the new shipping address.
+  - Step 5: Review the updated order summary with the new shipping address.
+  - Step 6: Click on the 'Place Order' button.
+expectedResult: The order is successfully placed with the newly added shipping address, and the user receives an order confirmation with the updated address.
+
+Test Case: Test Case 4
+testCaseName: Apply a valid voucher code during checkout
+objective: Verify that the user can apply a valid voucher code and receive a discount during the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Enter a valid voucher code into the voucher code field.
+  - Step 3: Click the 'apply' button.
+  - Step 4: Review the updated order summary reflecting the discount from the voucher.
+  - Step 5: Click on the 'Place Order' button.
+expectedResult: The order is successfully placed with the voucher discount applied, and the user receives an order confirmation showing the discounted total cost.
+
+Test Case: Test Case 5
+testCaseName: Attempt to add a new shipping address with invalid details
+objective: Verify that the system prevents the user from adding a new shipping address with invalid details
+testSteps:
+  - Step 1: Log into the Shopee account and proceed to checkout.
+  - Step 2: Click on the button to change the shipping address, then select to add a new address.
+  - Step 3: Fill in the new address form with invalid details (e.g., incorrect phone number format).
+  - Step 4: Attempt to click the 'Finish' button.
+expectedResult: The system displays a notification about the invalid input and prevents the user from adding the new shipping address.
+

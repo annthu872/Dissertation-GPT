@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Checkout with default settings and successful order placement
+objective: Verify that a user can successfully place an order with default settings for shipping address, payment method, and shipping option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Confirm the shipping address is set to the default address.
+  - Step 5: Confirm the payment method is set to COD (Cash on Delivery).
+  - Step 6: Confirm the shipping option is set to Standard Express.
+  - Step 7: Review the total cost and order details.
+  - Step 8: Click on the 'Place Order' button.
+expectedResult: The system processes the payment, confirms the order, and displays the order confirmation and details.
+
+Test Case: Test Case 2
+testCaseName: Change shipping address and place order
+objective: Verify that a user can change the shipping address and successfully place an order
+testSteps:
+  - Step 1: Log into the Shopee account and initiate checkout.
+  - Step 2: Click the button to change the shipping address.
+  - Step 3: Select a saved address from the list of saved addresses.
+  - Step 4: Confirm the new shipping address is displayed in the order summary.
+  - Step 5: Proceed to place the order by clicking on the 'Place Order' button.
+expectedResult: The order is successfully placed with the new shipping address, and the user receives an order confirmation.
+
+Test Case: Test Case 3
+testCaseName: Apply a valid voucher code and place order
+objective: Verify that a user can apply a valid voucher code, receive a discount, and successfully place an order
+testSteps:
+  - Step 1: Log into the Shopee account and initiate checkout.
+  - Step 2: Enter a valid voucher code into the voucher code field.
+  - Step 3: Click the 'apply' button to apply the voucher.
+  - Step 4: Confirm that the discount is applied to the order summary.
+  - Step 5: Place the order by clicking on the 'Place Order' button.
+expectedResult: The system applies the voucher discount to the order, updates the total cost, and successfully places the order with the discount applied.
+
+Test Case: Test Case 4
+testCaseName: Attempt to add a new shipping address with invalid input
+objective: Verify that the system prevents the user from adding a new shipping address with invalid input and displays an appropriate notification
+testSteps:
+  - Step 1: Log into the Shopee account and initiate checkout.
+  - Step 2: Click the button to change the shipping address and then click to add a new address.
+  - Step 3: Fill the form with invalid data (e.g., name with numbers, incorrect phone format).
+  - Step 4: Attempt to save the new address by clicking the 'Finish' button.
+expectedResult: The system displays a notification about the invalid input and prevents the user from adding the new shipping address.
+

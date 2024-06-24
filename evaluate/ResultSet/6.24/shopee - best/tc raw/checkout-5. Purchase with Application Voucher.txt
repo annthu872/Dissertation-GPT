@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Application Voucher - Applying Voucher Successfully
+objective: Verify that the user can successfully apply an application voucher to their order during checkout and receive the appropriate discount.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart and proceeding to checkout.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Proceed without changing the default shipping address or payment method.
+  - Step 5: Select an available application voucher or enter a valid voucher code in the voucher section.
+  - Step 6: Click the 'apply' button to apply the voucher to the order.
+  - Step 7: Observe the updated total cost reflecting the voucher discount.
+  - Step 8: Click on the 'Place Order' button to finalize the purchase.
+expectedResult: The system successfully applies the voucher, updates the total cost with the discount, and allows the user to place the order with the discounted price.
+explanation: This test case ensures that users can apply an application voucher to their purchase, which directly relates to the test scenario of purchasing with an application voucher.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Application Voucher - Applying Invalid Voucher Code
+objective: Verify that the system prevents the user from applying an invalid voucher code and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart and proceeding to checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Proceed without changing the default shipping address or payment method.
+  - Step 5: Enter an invalid voucher code in the voucher section.
+  - Step 6: Click the 'apply' button to attempt to apply the invalid voucher to the order.
+  - Step 7: Observe the system's response to the invalid voucher code.
+expectedResult: The system displays an error message indicating that the voucher code is invalid and does not apply any discount to the total cost.
+explanation: This test case checks the system's handling of invalid voucher codes, ensuring that users are informed and prevented from applying discounts that are not valid, which is crucial for maintaining the integrity of the checkout process.
+

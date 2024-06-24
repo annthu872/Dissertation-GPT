@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Purchase with unselected options in product detail page
+objective: Verify that the system prevents the user from purchasing a product with multiple options without selecting an available option
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product with multiple options.
+  - Step 2: Without selecting any available options, attempt to add the product to the cart.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The system should prevent the user from adding the product to the cart and the 'Checkout' button should be disabled due to unselected product options.
+
+Test Case: Test Case 2
+testCaseName: Purchase with quantity more than current stock in product detail page
+objective: Verify that the system prevents the user from purchasing a product with a quantity that exceeds the current stock
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product.
+  - Step 2: Increase the quantity of the product to a number greater than the current stock using the plus button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The system should prevent the user from proceeding to checkout, and the 'Checkout' button should be disabled due to the quantity exceeding the current stock.
+
+Test Case: Test Case 3
+testCaseName: Purchase with quantity less than one in product detail page
+objective: Verify that the system prevents the user from purchasing a product with a quantity less than one
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product.
+  - Step 2: Decrease the quantity of the product to a number less than one using the minus button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The system should prevent the user from proceeding to checkout, and the 'Checkout' button should be disabled due to the quantity being less than one.
+
+Test Case: Test Case 4
+testCaseName: Purchase an out-of-stock product in product detail page
+objective: Verify that the system prevents the user from purchasing an out-of-stock product
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for an out-of-stock product.
+  - Step 2: Attempt to add the product to the cart.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The system should prevent the user from adding the product to the cart and the 'Checkout' button should be disabled due to the product being out of stock.
+
+Test Case: Test Case 5
+testCaseName: Purchase with unselected options from shopping cart
+objective: Verify that the system prevents the user from checking out items without selecting available options from the shopping cart
+testSteps:
+  - Step 1: Add a product with multiple options to the shopping cart without selecting an option.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Attempt to select the item by clicking on the checkbox before the item.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The system should prevent the user from selecting the item and the 'Checkout' button should be disabled due to unselected product options.
+

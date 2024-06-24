@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Missing Default Shipping Address
+objective: Verify that the system prompts the user to add a new shipping address if the default shipping address is missing during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Observe if the system prompts for a shipping address since the default is missing.
+expectedResult: The system should prompt the user to add a new shipping address before proceeding with the checkout.
+
+Test Case: Test Case 2
+testCaseName: Add New Shipping Address with Valid Details
+objective: Verify that the user can successfully add a new shipping address with all valid details
+testSteps:
+  - Step 1: Trigger the prompt to add a new shipping address by attempting to checkout without a default shipping address.
+  - Step 2: Click on the button to add a new shipping address.
+  - Step 3: Fill in the form with valid details including full name, phone number, city, district, ward, location's address, and address type.
+  - Step 4: Click the 'Finish' button to add the new shipping address.
+expectedResult: The new shipping address should be successfully added and selected as the shipping address for the order.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add New Shipping Address with Invalid Details
+objective: Verify that the system prevents the user from adding a new shipping address with invalid details
+testSteps:
+  - Step 1: Begin to add a new shipping address during checkout.
+  - Step 2: Enter invalid details into the shipping address form (e.g., incorrect phone number format, name with less than 2 letters).
+  - Step 3: Attempt to click the 'Finish' button to add the new shipping address.
+expectedResult: The system should display a notification about the incorrect input and prevent the user from adding the new shipping address.
+
+Test Case: Test Case 4
+testCaseName: Checkout with Newly Added Shipping Address
+objective: Verify that the user can complete the checkout process with a newly added shipping address
+testSteps:
+  - Step 1: Add a new shipping address with valid details.
+  - Step 2: Select a payment method and shipping option.
+  - Step 3: Apply a valid voucher code if available.
+  - Step 4: Add a note for the shop if necessary.
+  - Step 5: Review the order details and click on the 'Place Order' button.
+expectedResult: The order should be successfully placed with the newly added shipping address, and the user should receive an order confirmation.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Add an out-of-stock option of a product with multiple options to cart
+objective: Verify that the system prevents adding an out-of-stock option of a product with multiple options to the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of a product that has multiple options, where at least one option is out of stock.
+  - Step 3: Try to select the out-of-stock option.
+  - Step 4: Attempt to click the "Add to Cart" button after selecting the out-of-stock option.
+expectedResult: The system should prevent the out-of-stock option from being added to the cart, possibly displaying a message indicating that the option is out of stock and the "Add to Cart" button should be disabled or not responsive.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the system prevents users from adding an out-of-stock option of a product to the shopping cart. It covers the necessary steps to simulate the user's journey in encountering an out-of-stock option and the system's expected behavior to prevent the addition of such items to the cart. The objective, test steps, and expected result align perfectly with the scenario's requirement, making it an accurate reflection.
+

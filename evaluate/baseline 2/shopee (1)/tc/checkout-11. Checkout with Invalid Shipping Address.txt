@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Checkout with an invalid shipping address format
+objective: Verify that the system prevents the user from adding a shipping address with an invalid format
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Fill in the shipping address form with an invalid format (e.g., Full name with numbers, phone number without the correct format).
+  - Step 6: Click the 'Finish' button to add the shipping address.
+expectedResult: The system should display a notification indicating the input does not match the required condition and prevent the user from adding the new shipping address.
+
+Test Case: Test Case 2
+testCaseName: Checkout with a non-existent location in the shipping address
+objective: Verify that the system prevents the user from adding a shipping address with a non-existent location
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Fill in the shipping address form with a location's address that cannot be identified on the map.
+  - Step 6: Click the 'Finish' button to add the shipping address.
+expectedResult: The system should display a notification indicating the location's address cannot be found on the map and prevent the user from adding the new shipping address.
+
+Test Case: Test Case 3
+testCaseName: Checkout with an incorrect voucher code
+objective: Verify that the system prevents the user from applying an incorrect voucher code
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Enter an incorrect voucher code into the voucher code field.
+  - Step 4: Click the 'apply' button.
+expectedResult: The system should display a notification indicating the voucher code is incorrect and prevent the voucher from being applied to the order.
+

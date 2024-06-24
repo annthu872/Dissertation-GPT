@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Checkout with all in-stock items from the shopping cart
+objective: Verify that the user can successfully checkout with items that are in stock from the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page after adding in-stock items.
+  - Step 2: Select items to checkout by clicking on the checkbox before each item.
+  - Step 3: Review the summary costs displayed by the system.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: User is redirected to a page that shows new orders of all the items chosen, with products from different shops separated into different orders.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with an out-of-stock item in the cart
+objective: Verify that the user cannot proceed to checkout with an out-of-stock item in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page with an out-of-stock item included.
+  - Step 2: Attempt to select the out-of-stock item by clicking on the checkbox before the item.
+expectedResult: The checkbox for the out-of-stock item is disabled, and the user cannot select it for checkout.
+
+Test Case: Test Case 3
+testCaseName: Checkout directly from the product detail page with valid options and quantity
+objective: Verify that the user can successfully checkout from the product detail page by selecting valid options and quantity
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for an in-stock product.
+  - Step 2: If the product has many options, select one available option.
+  - Step 3: Adjust the quantity of the product within the available stock by clicking the plus or minus button.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: User is redirected to a page that shows one order of the item chosen.
+
+Test Case: Test Case 4
+testCaseName: Attempt to checkout a product with quantity more than available stock from product detail page
+objective: Verify that the user cannot checkout a product with a quantity exceeding the available stock
+testSteps:
+  - Step 1: Navigate to the product detail page of an in-stock product.
+  - Step 2: Attempt to increase the product quantity beyond the available stock.
+expectedResult: The quantity adjustment is restricted to the maximum available stock, and the user is informed or prevented from increasing the quantity further.
+
+Test Case: Test Case 5
+testCaseName: Attempt to checkout an out-of-stock product from the product detail page
+objective: Verify that the user cannot checkout an out-of-stock product from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of an out-of-stock product.
+  - Step 2: Observe the 'Buy Now' or 'Checkout' button status.
+expectedResult: The 'Checkout' button is disabled, preventing the user from proceeding with the purchase.
+

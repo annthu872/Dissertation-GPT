@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Search Keyword Matches Shop Name
+objective: Verify that the system displays the shop's information and products correctly when the search keyword matches a shop name.
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a keyword that matches a known shop name into the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+expectedResult: The system displays the shop's information at the top of the search result, including the shop name, number of items, ratings, and response rate, average response time, followed by the shop product's cards and related products cards.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a search keyword matches a shop name. It checks if the shop's information and products are displayed correctly, which is the exact purpose of the test scenario.
+

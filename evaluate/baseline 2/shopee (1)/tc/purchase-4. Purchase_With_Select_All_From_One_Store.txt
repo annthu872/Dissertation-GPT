@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Select All from One Store in Shopping Cart
+objective: Verify that the user can successfully select all items from one store in the shopping cart and proceed to checkout, resulting in separate orders for items from different stores.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where multiple items from different stores have been added.
+  - Step 2: Click the checkbox at the head of the store to select all items from one store.
+  - Step 3: Verify that all items from the selected store are checked.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The user is redirected to a page that shows new orders, with products from the selected store in one order and products from different stores in separate orders.
+
+Test Case: Test Case 2
+testCaseName: Purchase Product from Product Detail Page
+objective: Verify that the user can purchase a product directly from the product detail page, including selecting options and adjusting quantity.
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product with multiple options.
+  - Step 2: Select one available option for the product.
+  - Step 3: Adjust the quantity of the product if necessary using the minus or plus button.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The user is redirected to a page that shows one order of the item the user has chosen, with the correct option and quantity.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Purchase Out-of-Stock Product
+objective: Verify that the user cannot proceed to checkout with an out-of-stock product selected in the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where an out-of-stock item has been added.
+  - Step 2: Attempt to click the checkbox before the out-of-stock item.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The checkbox for the out-of-stock item cannot be selected, and the 'Checkout' button is disabled or an error message is displayed, preventing the user from proceeding.
+
+Test Case: Test Case 4
+testCaseName: Purchase Product with Invalid Quantity
+objective: Verify that the user cannot purchase a product with a quantity higher than the current stock or lower than one.
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product.
+  - Step 2: Attempt to adjust the product quantity to a number higher than the current stock or lower than one.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The quantity adjustment is restricted to the product's available stock range, and the 'Checkout' button is disabled or an error message is displayed if the quantity is invalid.
+

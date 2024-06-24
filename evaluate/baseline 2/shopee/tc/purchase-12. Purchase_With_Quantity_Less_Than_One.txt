@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Purchase with valid quantity from product detail page
+objective: Verify that the user can successfully purchase a product with a valid quantity from the product detail page
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product with sufficient stock.
+  - Step 2: Adjust the quantity of the product to a valid number (greater than 0 and less than or equal to the current stock) by clicking the plus button.
+  - Step 3: Click the 'Buy Now' button.
+  - Step 4: Click the 'Checkout' button on the redirected page.
+expectedResult: User is redirected to a page that shows one order of the item they have chosen, indicating a successful purchase.
+
+Test Case: Test Case 2
+testCaseName: Attempt to purchase with quantity less than one from product detail page
+objective: Verify that the user cannot purchase a product with a quantity less than one from the product detail page
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product with sufficient stock.
+  - Step 2: Attempt to adjust the quantity of the product to a number less than one by clicking the minus button.
+  - Step 3: Observe the behavior of the quantity field and the 'Buy Now' button.
+expectedResult: The quantity should not go below one, and the 'Buy Now' button should remain enabled for valid quantities.
+
+Test Case: Test Case 3
+testCaseName: Attempt to purchase an out-of-stock product from product detail page
+objective: Verify that the user cannot purchase a product that is out of stock from the product detail page
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product that is out of stock.
+  - Step 2: Observe the behavior of the quantity field and the 'Buy Now' button.
+expectedResult: The quantity field should be disabled or not allow any adjustments, and the 'Buy Now' button should be disabled or not visible.
+
+Test Case: Test Case 4
+testCaseName: Attempt to checkout with an invalid product in the shopping cart
+objective: Verify that the user cannot proceed to checkout with an invalid product (e.g., out of stock) in the shopping cart
+testSteps:
+  - Step 1: Add an out-of-stock product to the shopping cart.
+  - Step 2: Attempt to select the out-of-stock product by clicking on the checkbox before the item.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The out-of-stock product cannot be selected, and the 'Checkout' button is disabled or an error message is displayed indicating that the checkout cannot proceed due to invalid product selection.
+

@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Search with Special Characters - Common Symbols
+objective: Verify that the search functionality handles common special characters correctly and displays relevant product listings or appropriate feedback.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a common special character (e.g., @, #, $) followed by a known keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system shows a list of relevant search matches that include or are related to the keyword, handling the special character appropriately. If no matches, display random product cards.
+
+Test Case: Test Case 2
+testCaseName: Search with Special Characters - Unicode Characters
+objective: Verify that the search functionality can handle Unicode characters (e.g., emojis, non-Latin characters) and returns relevant results or appropriate feedback.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a Unicode character (e.g., an emoji, a character from a non-Latin script) followed by a known keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system shows a list of relevant search matches that include or are related to the keyword, handling the Unicode character appropriately. If no matches, display random product cards.
+
+Test Case: Test Case 3
+testCaseName: Search with Special Characters - Escaped Characters
+objective: Verify that the search functionality properly handles escaped characters (e.g., \n, \t, \\) and returns relevant results or appropriate feedback.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type an escaped character (e.g., \n, \t, \\) followed by a known keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system shows a list of relevant search matches that include or are related to the keyword, handling the escaped character appropriately. If no matches, display random product cards.
+
+Test Case: Test Case 4
+testCaseName: Search with Special Characters - No Matches
+objective: Verify that the search functionality provides appropriate feedback when a search with special characters does not match any products, shops, or brands.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a string of special characters (e.g., !@#$%^&*) that is unlikely to match any product, shop, or brand.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards, indicating no search results were found matching the query.
+
+Test Case: Test Case 5
+testCaseName: Search with Special Characters - Filtering Results
+objective: Verify that users can filter search results after performing a search with special characters.
+testSteps:
+  - Step 1: Perform a search with special characters that returns multiple products.
+  - Step 2: Use the filter options to sort by 'newest product result'.
+  - Step 3: Repeat the filter process for 'best seller result' and 'sort the product by price'.
+expectedResult: After each filtering action, the system updates the search results according to the selected filter criteria.
+

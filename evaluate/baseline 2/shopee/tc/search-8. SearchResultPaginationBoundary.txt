@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality with Maximum Product Cards
+objective: Ensure that the pagination functionality works correctly when the maximum number of product cards (60) are displayed
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that will yield more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the page to view the pagination bar.
+  - Step 5: Click on the right arrow button in the pagination bar to move to the next page.
+expectedResult: The system should display the next set of product cards (up to 60), and the page number in the pagination bar should increment by 1.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination on Last Page
+objective: To check the behavior of the pagination functionality on the last page of search results
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Enter a keyword that yields enough results to have multiple pages.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Use the pagination bar to navigate to the last page of results.
+  - Step 5: Observe the pagination bar.
+expectedResult: The right arrow button in the pagination bar should be disabled or not clickable, indicating the user is on the last page of results.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Result for Shop Name Keyword
+objective: Ensure that searching for a shop name displays the shop's information and products correctly at the top of the search results
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the shop's information at the top of the search result, followed by the shop's product cards and related product cards.
+
+Test Case: Test Case 4
+testCaseName: Verify No Search Results Found Behavior
+objective: To verify the system's behavior when no search results are found for a given keyword
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Enter a keyword that does not match any products, shops, or brands.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards, indicating no search results were found.
+

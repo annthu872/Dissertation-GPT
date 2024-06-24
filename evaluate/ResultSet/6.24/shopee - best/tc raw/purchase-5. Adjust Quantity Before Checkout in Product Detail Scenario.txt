@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity Before Checkout in Product Detail Page
+objective: Verify that the user can adjust the quantity of a product before checkout on the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the quantity of the product by clicking on the minus or plus button next to the quantity.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The user is redirected to a page that shows one order of the item with the adjusted quantity.
+explanation: This test case ensures that users can successfully adjust the quantity of a product before proceeding to checkout from the product detail page, aligning with the scenario of adjusting quantity before checkout.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity to More Than Available Stock Before Checkout
+objective: Verify that the user cannot adjust the quantity of a product to more than the available stock before checkout
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with limited stock.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Attempt to adjust the quantity of the product to a number greater than the available stock by clicking the plus button.
+  - Step 4: Click the 'Buy Now' button.
+expectedResult: The quantity should not increase beyond the available stock, and the 'Checkout' button remains disabled.
+explanation: This test case checks the system's handling of attempts to purchase more items than are available in stock, which is crucial for maintaining inventory integrity and aligns with the scenario's focus on adjusting quantity.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity to Less Than One Before Checkout
+objective: Verify that the user cannot adjust the quantity of a product to less than one before checkout
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Attempt to adjust the quantity of the product to less than one by clicking the minus button.
+  - Step 4: Click the 'Buy Now' button.
+expectedResult: The quantity should not decrease below one, and the 'Checkout' button remains enabled if all other conditions are met.
+explanation: This test case ensures that users cannot adjust the quantity of a product to an invalid number (less than one) before checkout, which is important for order validity and directly relates to the scenario of adjusting quantity before checkout.
+

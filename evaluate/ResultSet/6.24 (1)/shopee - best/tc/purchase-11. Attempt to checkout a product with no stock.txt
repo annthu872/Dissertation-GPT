@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout a product with no stock from shopping cart
+objective: Verify that a user cannot checkout a product with no stock from the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Attempt to select an item that is out of stock by clicking on the checkbox before the item.
+  - Step 3: Observe if the checkbox can be selected or not.
+  - Step 4: Observe the state of the 'Checkout' button.
+expectedResult: The user should not be able to select the out of stock item, and the 'Checkout' button should be disabled.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that items with no stock cannot be selected for checkout, which is the core action being tested in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout a product with no stock from product detail page
+objective: Verify that a user cannot checkout a product with no stock from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of an item that is out of stock.
+  - Step 2: Observe the options available for the product.
+  - Step 3: Attempt to adjust the quantity of the product, if applicable.
+  - Step 4: Observe the state of the 'Buy Now' button.
+expectedResult: The user should not be able to adjust the quantity to more than the stock available (which is zero for this test case), and the 'Buy Now' button should be disabled.
+reflect: yes
+explanation: Although this test case approaches the scenario from the product detail page rather than the shopping cart, it still reflects the given test scenario by ensuring that products with no stock cannot be processed for checkout, which aligns with the scenario's focus on stock availability impacting checkout capability.
+

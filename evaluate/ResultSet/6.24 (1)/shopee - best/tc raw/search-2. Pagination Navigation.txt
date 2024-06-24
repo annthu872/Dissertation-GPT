@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Pagination Navigation on Search Results
+objective: Verify that the user can navigate through search results pages using the pagination bar after performing a search.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that you know will return more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 5: Click on the right arrow button in the pagination bar to move to the next page of results.
+  - Step 6: Observe the change in the page number in the pagination bar.
+  - Step 7: Click on a specific page number in the pagination bar to jump to that page.
+  - Step 8: Observe the change in the page number in the pagination bar and the products listed.
+expectedResult: After steps 5 and 7, the user should see a new set of product cards corresponding to the selected page, and the page number in the pagination bar should update to reflect the current page.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate through multiple pages of search results. It directly tests the pagination navigation mentioned in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Navigation with No Search Results
+objective: Verify that the pagination bar is not present when the search results do not yield any relevant matches.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that you know will return no results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to look for the pagination bar.
+expectedResult: The pagination bar should not be present at the bottom of the search results page, and random product cards are displayed instead.
+explanation: This test case verifies the system's behavior when no search results are found, ensuring that the pagination bar is correctly hidden in such scenarios, aligning with the exception flow of the use case.
+

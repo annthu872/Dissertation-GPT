@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Search with Partial Product Name Showing Relevant Results
+objective: Verify that the system shows relevant product listings when a user searches using a partial product name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a partial name of a known product in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays a list of relevant search matches including products with names or descriptions that include or are related to the keywords. A maximum of 60 product cards are shown per page with pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Related to Shop Name
+objective: Verify that the system displays shop information and related products when the search keyword is related to a shop name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays the shop's information at the top of the search result including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's cards and related products cards.
+
+Test Case: Test Case 3
+testCaseName: Search with Keyword Related to Brand Name
+objective: Verify that the system displays related shops and products when the search keyword is related to a brand name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays the most related/best sold shop's information that sells the brand at the top of the search result, followed by related products cards.
+
+Test Case: Test Case 4
+testCaseName: Search with Keyword Not Matching Any Shop or Brand
+objective: Verify that the system displays related products when the search keyword does not match any shop or brand
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any shop or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays related products cards (products that have names matching the search keyword).
+
+Test Case: Test Case 5
+testCaseName: Search with No Results Found
+objective: Verify that the system displays random product cards when no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that is unlikely to match any product, shop, or brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards due to no search results found.
+

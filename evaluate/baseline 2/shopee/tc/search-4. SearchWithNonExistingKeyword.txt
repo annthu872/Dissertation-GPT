@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Search with Non-Existing Keyword Resulting in Random Products
+objective: Verify that searching with a keyword that does not match any product, shop, or brand name results in the display of random product cards
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a non-existing keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards as no search results are found matching the keyword.
+
+Test Case: Test Case 2
+testCaseName: Search with Non-Existing Keyword and Check Pagination
+objective: Verify that the pagination bar works correctly when searching with a non-existing keyword
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a non-existing keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the displayed random product cards.
+  - Step 5: Navigate to the pagination bar at the bottom of the page.
+  - Step 6: Click on the right button to move to the next page of random product cards.
+expectedResult: The system should display a new set of random product cards on the next page, indicating that the pagination feature works even when the search results are random.
+
+Test Case: Test Case 3
+testCaseName: Search with Non-Existing Keyword and Apply Filters
+objective: Verify that filters can still be applied to the search results when the search keyword does not match any products, shops, or brands
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a non-existing keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the displayed random product cards.
+  - Step 5: Apply a filter by selecting one of the radio buttons for sorting (e.g., newest product result).
+expectedResult: The system should re-sort the random product cards according to the selected filter, demonstrating that filters are applicable even to random search results.
+

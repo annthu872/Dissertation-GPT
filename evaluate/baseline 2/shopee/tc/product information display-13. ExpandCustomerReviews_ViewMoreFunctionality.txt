@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Customer Reviews Expand Functionality
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Customer Reviews and Ratings' section.
+  - Step 4: Click on the option to expand the customer reviews.
+expectedResult: The system should display more than the initial 3 detailed reviews, allowing the user to view additional customer feedback.
+
+Test Case: Test Case 2
+testCaseName: Verify Customer Questions Expand Functionality
+objective: Ensure that users can expand the 'Customer Questions' section to view more questions and seller answers.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Customer Questions' section.
+  - Step 4: Click on the option to expand the customer questions.
+expectedResult: The system should display more questions and answers, beyond any initially visible, providing the user with more information about the product.
+
+Test Case: Test Case 3
+testCaseName: Verify Related Products Scroll Functionality
+objective: Ensure that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Related Products' section.
+  - Step 4: Scroll horizontally to view more related product cards.
+expectedResult: The system should allow horizontal scrolling, displaying additional related product cards beyond those initially visible.
+
+Test Case: Test Case 4
+testCaseName: Verify Direct Seller Contact Functionality
+objective: Ensure that users can click on seller contact to directly message the seller through the platform's messaging system.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Seller Profile' section.
+  - Step 4: Click on the 'Contact' option to message the seller.
+expectedResult: The system should redirect the user to the platform's messaging system, with the seller's contact automatically selected for messaging.
+
+Test Case: Test Case 5
+testCaseName: Verify Store Link Functionality
+objective: Ensure that users can click on the Store Link to view other products from the same seller.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Seller Profile' section.
+  - Step 4: Click on the 'Store Link' to visit the seller's store page.
+expectedResult: The system should redirect the user to the seller's store page on the platform, displaying other products offered by the seller.
+

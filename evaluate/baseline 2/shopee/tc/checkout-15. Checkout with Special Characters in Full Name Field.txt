@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Checkout with valid special characters in Full Name field
+objective: Verify that the system allows special characters in the Full Name field during checkout when adding a new shipping address
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the shipping address section, click on 'change shipping address', then select 'add new address'.
+  - Step 4: Fill in the Full Name field with valid special characters (e.g., Ana-Maria O'Neil).
+  - Step 5: Complete the rest of the form with valid information.
+  - Step 6: Click on the 'Finish' button to add the new shipping address.
+expectedResult: The system should accept the Full Name with special characters and successfully add the new shipping address.
+
+Test Case: Test Case 2
+testCaseName: Checkout with invalid special characters in Full Name field
+objective: Verify that the system prevents adding a new shipping address with invalid special characters in the Full Name field during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the shipping address section, click on 'change shipping address', then select 'add new address'.
+  - Step 4: Fill in the Full Name field with invalid special characters (e.g., John*&^%$#@!).
+  - Step 5: Attempt to complete the rest of the form with valid information.
+  - Step 6: Click on the 'Finish' button to try adding the new shipping address.
+expectedResult: The system should display a notification about the invalid input in the Full Name field and prevent the user from adding the new shipping address.
+
+Test Case: Test Case 3
+testCaseName: Checkout with special characters and minimum length in Full Name field
+objective: Verify that the system allows a Full Name with special characters as long as it meets the minimum length requirement during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: At the shipping address section, click on 'change shipping address', then select 'add new address'.
+  - Step 4: Fill in the Full Name field with a name that includes special characters but is at least 2 letters long (e.g., A'J).
+  - Step 5: Complete the rest of the form with valid information.
+  - Step 6: Click on the 'Finish' button to add the new shipping address.
+expectedResult: The system should accept the Full Name with special characters and the minimum length, successfully adding the new shipping address.
+

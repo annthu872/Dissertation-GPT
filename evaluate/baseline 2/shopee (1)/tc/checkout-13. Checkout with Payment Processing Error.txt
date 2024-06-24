@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Checkout with successful payment
+objective: Verify that the user can successfully checkout and place an order with a valid payment method
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Confirm the shipping address or add a new one if necessary.
+  - Step 5: Select a payment method other than COD, such as Shopee Pay.
+  - Step 6: Apply a valid shop voucher by entering the voucher code and clicking 'apply'.
+  - Step 7: Choose a shipping option if different from the default Standard Express.
+  - Step 8: Add a note for the shop if necessary.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+  - Step 11: Wait for the system to process the payment.
+expectedResult: The system successfully processes the payment, confirms the order, and displays the order confirmation and details.
+
+Test Case: Test Case 2
+testCaseName: Checkout with payment processing error
+objective: Verify the system's behavior when there is a payment processing error during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Confirm the shipping address or add a new one if necessary.
+  - Step 5: Select a payment method known to have issues or simulate a payment error.
+  - Step 6: Apply a valid shop voucher by entering the voucher code and clicking 'apply'.
+  - Step 7: Choose a shipping option if different from the default Standard Express.
+  - Step 8: Add a note for the shop if necessary.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+  - Step 11: Wait for the system to process the payment.
+expectedResult: The system displays an error message regarding the payment processing issue and suggests corrective actions such as updating the shipping address or checking payment details.
+
+Test Case: Test Case 3
+testCaseName: Checkout with invalid voucher code
+objective: Verify that the system prevents the user from applying an invalid voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Confirm the shipping address or add a new one if necessary.
+  - Step 5: Select a payment method such as Shopee Pay.
+  - Step 6: Attempt to apply an invalid shop voucher by entering the voucher code and clicking 'apply'.
+  - Step 7: Choose a shipping option if different from the default Standard Express.
+  - Step 8: Add a note for the shop if necessary.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+expectedResult: The system displays an error message indicating the voucher code is invalid and prevents the user from applying the discount.
+

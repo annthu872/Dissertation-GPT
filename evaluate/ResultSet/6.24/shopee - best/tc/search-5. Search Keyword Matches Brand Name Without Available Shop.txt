@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Search Keyword Matches Brand Name Without Available Shop
+objective: Verify that the system displays the most related/best sold shops that sell the brand and related product cards when a keyword matching a brand name without available shop is entered.
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a keyword that matches a brand name without an available shop in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+expectedResult: The system displays the most related/best sold shops that sell the brand at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by related product cards (products that have names matching the search keyword).
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a search is made for a brand name without an available shop. It checks if the system compensates by showing the most relevant shops that sell the brand and related products, which is the exact outcome expected from the scenario.
+

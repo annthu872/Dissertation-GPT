@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Search with Brand Name and Verify Results
+objective: Verify that the system displays the most related/best sold shop's information and related product cards when a brand name is entered in the search bar.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type the brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the most related/best sold shop's information at the top of the search result including shop name, number of items, ratings, and response rate, average response time, followed by related product cards (products that have names matching the search keyword).
+
+Test Case: Test Case 2
+testCaseName: Search with Non-Existent Brand Name
+objective: Verify that the system displays random product cards when a non-existent brand name is entered in the search bar.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a non-existent brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards as no search results are found related to the entered keyword.
+
+Test Case: Test Case 3
+testCaseName: Search with Brand Name and Navigate Through Pagination
+objective: Verify that users can navigate through pages of search results when searching with a brand name.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type the brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the pagination bar at the bottom of the page.
+  - Step 5: Click on the desired page number or left/right button to change to a new page.
+expectedResult: The system should navigate to the selected page and display up to 60 product cards related to the search keyword.
+
+Test Case: Test Case 4
+testCaseName: Search with Brand Name and Apply Filters
+objective: Verify that users can filter search results by newest product, best seller, and price after searching with a brand name.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type the brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Apply the 'newest product' filter under the form of radio buttons.
+  - Step 5: Apply the 'best seller' filter under the form of radio buttons.
+  - Step 6: Apply the 'sort the product by price' filter from the dropdown.
+expectedResult: The system should filter and display the search results based on the selected filter criteria (newest product, best seller, or price).
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Single Item from Shopping Cart
+objective: Verify that a user can successfully checkout a single item selected from the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there is at least one item added to the shopping cart.
+  - Step 3: Select a single item by clicking on the checkbox before the item.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the system processes the checkout.
+expectedResult: User is redirected to a page that shows a new order of the item the user has chosen, confirming the successful checkout.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the successful checkout with a single shop item. It follows the exact steps a user would take to checkout a single item from the shopping cart.
+

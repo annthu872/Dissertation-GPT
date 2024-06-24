@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Add In-Stock Item to Cart
+objective: Verify that a user can successfully add an in-stock item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an in-stock item.
+  - Step 3: Click the "Add to Cart" button.
+  - Step 4: If the product has options, select an available option.
+  - Step 5: Adjust the quantity if desired, ensuring it does not exceed the available stock.
+  - Step 6: Confirm the addition by clicking the "Add to Cart" button again if necessary.
+expectedResult: The item is added to the shopping cart, and the cart icon updates to reflect the new number of items.
+
+Test Case: Test Case 2
+testCaseName: Prevent Adding Out-of-Stock Item to Cart
+objective: Verify that a user cannot add an out-of-stock item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an out-of-stock item.
+  - Step 3: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button is either disabled or an error message is displayed, preventing the item from being added to the cart.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity to Maximum Stock
+objective: Verify that the user can only add up to the maximum available stock of an item to their cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with limited stock.
+  - Step 3: Click the plus button to increase the quantity until it reaches the maximum stock available.
+  - Step 4: Attempt to increase the quantity beyond the available stock.
+expectedResult: The plus button is disabled, and a message is displayed: "You have reached the maximum of the stock."
+
+Test Case: Test Case 4
+testCaseName: Prevent Adjusting Quantity Below One
+objective: Verify that the user cannot adjust the quantity of an item in their cart below one
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add any item to the shopping cart and navigate to the cart.
+  - Step 3: Attempt to decrease the item quantity to below one by clicking the minus button.
+expectedResult: The minus button is disabled when the quantity is one, preventing the user from decreasing the quantity below one.
+
+Test Case: Test Case 5
+testCaseName: Prevent Adding Item Without Selecting Options
+objective: Verify that a user cannot add a product to their cart without selecting all required options
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with multiple options.
+  - Step 3: Attempt to add the item to the cart without selecting an option.
+expectedResult: An error message is displayed, or the "Add to Cart" button is disabled until all required options are selected.
+

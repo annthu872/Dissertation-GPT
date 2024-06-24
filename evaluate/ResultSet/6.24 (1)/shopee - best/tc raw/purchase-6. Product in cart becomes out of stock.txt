@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify out of stock product cannot be selected in shopping cart
+objective: Ensure that users cannot select out-of-stock products for checkout in the shopping cart page.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Identify an out-of-stock product in the shopping cart.
+  - Step 3: Attempt to select the checkbox next to the out-of-stock product.
+expectedResult: The checkbox next to the out-of-stock product should not be selectable, and the user should not be able to proceed to checkout with this product.
+explanation: This test case ensures that the system correctly implements the exception flow where out-of-stock products cannot be selected for purchase, directly addressing the scenario of a product in the cart becoming out of stock.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout button is disabled with only out-of-stock products selected
+objective: To confirm that the checkout process is inhibited when all selected products in the shopping cart are out of stock.
+testSteps:
+  - Step 1: Navigate to the shopping cart page with multiple products added, ensuring at least one product is out of stock.
+  - Step 2: Attempt to select only the out-of-stock product(s).
+  - Step 3: Observe the state of the 'Checkout' button.
+expectedResult: The 'Checkout' button remains disabled when only out-of-stock products are selected, preventing the user from proceeding to checkout.
+explanation: This test case verifies the system's handling of scenarios where all user-selected products are out of stock, ensuring the checkout process is correctly blocked as per the exception flow.
+
+Test Case: Test Case 3
+testCaseName: Verify out of stock product cannot be purchased from product detail page
+objective: Ensure that users cannot proceed to checkout with out-of-stock products from the product detail page.
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature for a product known to be out of stock.
+  - Step 2: Attempt to click the 'Buy Now' button for the out-of-stock product.
+  - Step 3: Observe the behavior of the 'Buy Now' button and any system messages.
+expectedResult: The 'Buy Now' button should be disabled or an appropriate message displayed, preventing the user from adding the out-of-stock product to the cart or proceeding to checkout.
+explanation: This test case checks the system's compliance with the exception flow for purchasing out-of-stock products directly from the product detail page, ensuring users cannot initiate a purchase for unavailable items.
+

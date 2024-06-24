@@ -1,0 +1,4 @@
+1. Scenario: Attempt to Check Out with Incorrect Booking ID
+2. Scenario: Attempt to Check Out with Booking ID That Has No Room Linked
+3. Successful Booking ID Submission and Completion
+4. Booking ID Validation Failure

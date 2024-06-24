@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Checkout with valid items in shopping cart
+objective: Verify that the user can successfully checkout with selected items in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Select items to checkout by clicking on the checkbox before each item.
+  - Step 3: Verify the summary costs are displayed correctly.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: User is redirected to a page that shows one or many new orders of all the items the user has chosen, with products from different shops separated into different orders.
+
+Test Case: Test Case 2
+testCaseName: Checkout with an item erased by the seller
+objective: Verify that the user cannot select an item that has been erased by the seller for checkout
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items, including one that has been erased by the seller.
+  - Step 2: Attempt to select the erased item by clicking on the checkbox before the item.
+expectedResult: The checkbox for the erased item cannot be clicked, and the user is unable to select it for checkout.
+
+Test Case: Test Case 3
+testCaseName: Purchase product with multiple options without selecting an option
+objective: Verify that the user cannot proceed to checkout without selecting an option for a product with multiple options
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product with multiple options.
+  - Step 2: Click the 'Buy Now' button without selecting any of the available options.
+expectedResult: The 'Checkout' button is disabled, and the user cannot proceed to checkout without selecting an option.
+
+Test Case: Test Case 4
+testCaseName: Purchase product with quantity more than the stock
+objective: Verify that the user cannot purchase a product by selecting a quantity more than the current stock
+testSteps:
+  - Step 1: Perform the feature 'View a product detail' for a product.
+  - Step 2: Adjust the quantity of the product to a number greater than the current stock by clicking on the plus button next to the quantity of the product.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button is disabled, and the user cannot proceed to checkout with a quantity more than the current stock.
+

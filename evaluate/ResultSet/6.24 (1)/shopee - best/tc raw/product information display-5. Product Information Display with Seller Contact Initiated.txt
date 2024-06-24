@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Verify that all product information is displayed correctly when a user clicks on a product card.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case ensures that when a user selects a product, all the relevant information about the product is displayed as per the basic flow of the Product Information Display use case.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Contact Functionality
+objective: Verify that users can initiate contact with the seller through the provided contact option on the product information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Contact Seller' option.
+  - Step 3: Observe the system's response.
+expectedResult: The system should navigate the user to the platform's messaging system to allow direct contact with the seller.
+explanation: This test case checks the functionality of the Seller Contact option, ensuring users can initiate communication with the seller directly from the product information page.
+
+Test Case: Test Case 3
+testCaseName: Verify Viewing More Customer Reviews
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+  - Step 4: Observe the expanded section.
+expectedResult: The system should display more detailed reviews beyond the initial 3 latest detailed reviews.
+explanation: This test case ensures that users can view additional customer reviews by expanding the 'Customer Reviews and Ratings' section, as described in the alternative flow.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation to Seller's Store Page
+objective: Verify that users can navigate to the seller's store page by clicking on the Store Link in the product information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page.
+  - Step 3: Observe the page that the system navigates to.
+expectedResult: The system should navigate the user to the seller's store page on the platform, displaying other products from the same seller.
+explanation: This test case verifies that the Store Link in the product information page correctly navigates users to the seller's store page, allowing them to view other products from the seller.
+

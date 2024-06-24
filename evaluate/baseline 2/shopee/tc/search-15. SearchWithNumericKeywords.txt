@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Search with Numeric Keywords Showing Relevant Products
+objective: Verify that the system shows relevant product listings when a user searches using numeric keywords
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a numeric keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display a list of relevant product matches that include or are related to the numeric keywords. A maximum of 60 product cards are shown per page with pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Search with Numeric Keywords Related to Shop Name
+objective: Verify that the system displays shop information and products when a numeric keyword related to a shop name is searched
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a numeric keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Search with Numeric Keywords with No Direct Match
+objective: Verify that the system displays related product cards when the numeric keyword does not match any shop or brand
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a numeric keyword that does not match any shop or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display related products card that has name match search keyword.
+
+Test Case: Test Case 4
+testCaseName: Search with Numeric Keywords and Use Filters
+objective: Verify that users can filter search results with numeric keywords using different modes
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a numeric keyword in the search bar and initiate the search.
+  - Step 3: Use the filter options to select a different mode (e.g., newest product result).
+expectedResult: The system should display the search results according to the selected filter mode.
+
+Test Case: Test Case 5
+testCaseName: Search with Numeric Keywords Resulting in No Matches
+objective: Verify that the system displays random product cards when a search with numeric keywords results in no matches
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a numeric keyword that matches no products, shops, or brands in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards.
+

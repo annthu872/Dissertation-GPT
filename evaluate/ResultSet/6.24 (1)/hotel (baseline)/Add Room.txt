@@ -1,0 +1,15 @@
+1. AddRoom_SuccessfulAddition
+2. AddRoom_InvalidFieldInput
+3. AddRoom_RoomAlreadyExists
+4. AddRoom_MissingMandatoryFields
+5. AddRoom_FieldValidation_NumberFields
+6. AddRoom_FieldValidation_TextFields
+7. AddRoom_FieldValidation_DateFields
+8. AddRoom_NavigationAfterSuccessfulAddition
+9. AddRoom_NavigationAfterFailedAddition
+10. AddRoom_PerformanceUnderLoad
+11. AddRoom_AccessControl_ManagerOnly
+12. AddRoom_SessionTimeoutDuringProcess
+13. AddRoom_DatabaseDownScenario
+14. AddRoom_UIFieldsAlignmentAndVisibility
+15. AddRoom_MultipleRoomsAdditionConsecutively

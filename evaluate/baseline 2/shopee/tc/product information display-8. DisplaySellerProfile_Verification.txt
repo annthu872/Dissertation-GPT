@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display Including Seller Profile
+objective: Ensure that all product information, including the seller's profile, is accurately displayed to the user upon clicking a product card.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Verify that the product's title and description are prominently displayed.
+  - Step 4: Check for high-quality images and videos showcasing the product.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Ensure the current price, discounts, and special pricing are visible.
+  - Step 7: Check for real-time stock availability.
+  - Step 8: Verify the display of shipping methods, estimated delivery times, and shipping fees.
+  - Step 9: Confirm that the seller's profile, including name, ratings, and reviews, is displayed.
+  - Step 10: Ensure there is an option to contact the seller directly.
+  - Step 11: Verify the presence of a link to the seller's store page.
+  - Step 12: Check for the display of the overall rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+  - Step 13: Confirm that a list of related product cards is displayed.
+expectedResult: All product information, including the seller's profile, should be accurately displayed as per the specifications.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of Expanding Customer Reviews and Questions
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' and 'Customer Questions' sections to view more content.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 3: Verify that more reviews are displayed upon expansion.
+  - Step 4: Click on the option to expand the 'Customer Questions' section.
+  - Step 5: Confirm that more questions and seller answers are visible upon expansion.
+expectedResult: Users should be able to view more reviews and questions upon expanding the respective sections.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Seller's Store and Direct Contact Functionality
+objective: Ensure that users can navigate to the seller's store and contact the seller directly through the platform.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page.
+  - Step 3: Verify that the user is redirected to the seller's store page with other products listed.
+  - Step 4: Navigate back to the product's information page.
+  - Step 5: Click on 'Seller Contact' to initiate direct contact through the platform's messaging system.
+  - Step 6: Confirm that the messaging interface opens, allowing the user to send a message to the seller.
+expectedResult: Users should be redirected to the seller's store page and be able to contact the seller directly through the messaging system.
+
+Test Case: Test Case 4
+testCaseName: Verify Scrolling Functionality for Related Product Cards
+objective: Ensure that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll to the 'Related Products' section at the bottom of the page.
+  - Step 3: Verify that the user can scroll horizontally to view more related product cards.
+expectedResult: Users should be able to scroll horizontally to view additional related product cards.
+

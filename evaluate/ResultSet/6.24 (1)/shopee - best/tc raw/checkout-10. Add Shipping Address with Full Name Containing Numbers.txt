@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add Shipping Address with Full Name Containing Numbers
+objective: Verify that the system prevents adding a new shipping address if the full name contains numbers
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: In the order summary page, click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new shipping address.
+  - Step 5: Fill in the full name field with a name that contains numbers (e.g., 'John Doe 123').
+  - Step 6: Fill in the rest of the form with valid information, including phone number, city, district, ward, location's address, and address type.
+  - Step 7: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system displays a notification preventing the user from adding the new shipping address due to the full name containing numbers.
+explanation: This test case ensures that the system adheres to the input validation rules for adding a new shipping address, specifically the rule that the full name must contain only letters and cannot include numbers. It directly tests the system's ability to enforce input validation during the checkout process.
+

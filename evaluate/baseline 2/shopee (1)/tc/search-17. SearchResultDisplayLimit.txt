@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Result Pagination
+objective: Ensure that the search results are correctly paginated, displaying a maximum of 60 product cards per page with functional pagination controls.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a common keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page.
+  - Step 5: Observe the pagination bar.
+  - Step 6: Click on the right arrow button in the pagination bar to move to the next page.
+  - Step 7: Observe the number of product cards on the new page.
+expectedResult: The first page should display up to 60 product cards. Upon clicking the right arrow in the pagination bar, the user is taken to the next page with a new set of up to 60 product cards.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Result for Shop Name
+objective: Ensure that searching for a shop name displays the shop's information and products at the top of the search results.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type the exact name of a known shop in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the top of the search results.
+expectedResult: The search results display the shop's information at the top, including shop name, number of items, ratings, and response rate, followed by the shop's product cards and related product cards.
+
+Test Case: Test Case 3
+testCaseName: Verify No Search Results Found Behavior
+objective: Ensure that searching for a keyword that matches no products or shops displays random product cards.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that is unlikely to match any products or shops.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards as no search results are found.
+
+Test Case: Test Case 4
+testCaseName: Verify Search Filter Functionality
+objective: Ensure that users can filter search results using the provided filter modes.
+testSteps:
+  - Step 1: Perform a search with a common keyword.
+  - Step 2: Locate the filter options under the form of radio buttons.
+  - Step 3: Select the 'newest product result' filter.
+  - Step 4: Observe the order of the search results.
+  - Step 5: Repeat steps 3 and 4 for each filter option.
+expectedResult: The search results should update according to the selected filter, displaying products in the order specified by the filter (e.g., newest first, best sellers, or sorted by price).
+

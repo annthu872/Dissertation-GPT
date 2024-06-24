@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Functionality with Exact Keyword Match
+objective: Verify that the search functionality returns products with names or descriptions exactly matching the keyword
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type an exact product name or keyword in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display a list of relevant search matches with products whose names or descriptions exactly match the keyword. A maximum of 60 product cards are shown per page with pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Functionality with Keyword Related to Shop Name
+objective: Ensure the search functionality prioritizes shop information and products when the keyword is related to a shop name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the shop's information at the top of the search result including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Functionality with Keyword Related to Brand Name
+objective: Ensure the search functionality displays related shop and products when the keyword is related to a brand name
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The system should display the most related/best sold shop's information that sells the brand at the top of the search result, followed by related products card.
+
+Test Case: Test Case 4
+testCaseName: Verify Search Result Filtering by Most Related
+objective: Ensure the search results can be filtered to show the most related products as per the default setting
+testSteps:
+  - Step 1: Perform any search by entering a keyword in the search bar.
+  - Step 2: Without changing any filter, observe the order of the search results.
+expectedResult: The system should display the search results prioritized by the most related products first, starting with exact name matches, then partial name matches, and finally matches by description.
+
+Test Case: Test Case 5
+testCaseName: Verify No Search Results Found Scenario
+objective: Ensure the system displays random product cards when no search results are found
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any product, shop, or brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards when no search results are found.
+

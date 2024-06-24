@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the homepage.
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on any product card displayed on the homepage.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details correctly including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the successful display of product information when accessed from the homepage, covering all specified details.
+
+Test Case: Test Case 4
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Navigate to a product information page by clicking on a product card from any page (homepage, search page, or cart page).
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should display more customer reviews beyond the initial 3 detailed reviews.
+reflect: yes
+explanation: This test case, while focusing on a specific feature within the product information page, still aligns with the overall scenario of ensuring successful product information display, including the functionality of expanding customer reviews.
+
+Test Case: Test Case 5
+testCaseName: Verify Direct Seller Contact through Messaging System
+objective: Verify that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Navigate to a product information page by clicking on a product card.
+  - Step 2: Scroll to find the 'Seller Contact' option.
+  - Step 3: Click on the 'Seller Contact' to initiate direct communication with the seller through the platform's messaging system.
+expectedResult: The platform's messaging system should open, allowing the user to send a message directly to the seller.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it verifies an important aspect of product information (Seller Contact) and its functionality, which is a critical part of the overall product information display.
+

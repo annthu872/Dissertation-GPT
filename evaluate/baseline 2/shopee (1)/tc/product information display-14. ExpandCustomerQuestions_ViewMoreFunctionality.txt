@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Expand Customer Questions Functionality
+objective: Ensure that users can expand the 'Customer Questions' section to view more questions and seller answers.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Customer Questions' section.
+  - Step 4: Click on the 'View More' or similar button/link to expand the section.
+expectedResult: The 'Customer Questions' section should expand, showing more questions and answers from the seller.
+
+Test Case: Test Case 2
+testCaseName: Verify Viewing More Customer Reviews
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more detailed reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Customer Reviews and Ratings' section.
+  - Step 4: Click on the 'View More' or similar button/link to expand the section.
+expectedResult: The 'Customer Reviews and Ratings' section should expand, showing more detailed reviews, including ratings, written feedback, and user-uploaded images.
+
+Test Case: Test Case 3
+testCaseName: Verify Scrolling Through Related Products
+objective: Ensure that users can scroll through the list of related product cards.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Related Products' section.
+  - Step 4: Scroll horizontally through the list of related product cards.
+expectedResult: Users should be able to scroll horizontally through the list, viewing more related product cards.
+
+Test Case: Test Case 4
+testCaseName: Verify Direct Seller Contact Functionality
+objective: Ensure that users can click on the seller contact option to message the seller directly through the platform's messaging system.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Seller Profile' section.
+  - Step 4: Click on the 'Contact' button or link to initiate a message to the seller.
+expectedResult: The platform's messaging system should open, allowing the user to send a message directly to the seller.
+
+Test Case: Test Case 5
+testCaseName: Verify Accessing Seller's Store Link
+objective: Ensure that users can use the Store Link to view other products from the same seller.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Seller Profile' section.
+  - Step 4: Click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The user should be redirected to the seller's store page on Shopee, where they can view other products from the same seller.
+

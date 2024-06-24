@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display Including Shipping Fees
+objective: Ensure that the product information display includes all necessary details such as title, description, images, videos, specifications, price, stock availability, delivery options with shipping fees, seller profile, and contact information.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check for a detailed product description, including key features, usage instructions, and benefits.
+  - Step 5: Ensure high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm the inclusion of videos demonstrating the product's features and usage.
+  - Step 7: Look for a list of detailed product specifications.
+  - Step 8: Check the display of the current price and any available discounts or special pricing.
+  - Step 9: Verify real-time stock availability.
+  - Step 10: Confirm the display of available shipping methods, estimated delivery times, and shipping fees.
+  - Step 11: Check for the display of the seller's profile, including their name, ratings, and reviews.
+  - Step 12: Verify the option to contact the seller directly through the platform's messaging system.
+  - Step 13: Ensure there is a link to the seller's store page on the platform.
+expectedResult: The product information page should accurately display all the specified details, including shipping fees, ensuring the user has all necessary information for making an informed purchase decision.
+
+Test Case: Test Case 2
+testCaseName: Verify Customer Reviews and Ratings Display
+objective: Ensure that the product information display includes the overall rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Verify the display of the average rating based on customer reviews.
+  - Step 4: Check for the display of 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images.
+  - Step 5: Confirm the option to expand the 'Customer Reviews and Ratings' to view more reviews.
+expectedResult: The 'Customer Reviews and Ratings' section should accurately display the overall rating, the 3 latest detailed reviews with all specified details, and provide an option to view more reviews.
+
+Test Case: Test Case 3
+testCaseName: Verify Related Products Display
+objective: Ensure that the product information display includes a list of related product cards and allows users to scroll to view more.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Related Products' section.
+  - Step 3: Verify the display of related product cards.
+  - Step 4: Confirm the ability to scroll to view more related product cards.
+expectedResult: The 'Related Products' section should accurately display a list of related product cards, and users should be able to scroll to view more related products.
+
+Test Case: Test Case 4
+testCaseName: Verify Seller Interaction Options
+objective: Ensure that users can interact with the seller by contacting them directly through the platform's messaging system or by visiting the seller's store page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Click on the 'Seller Contact' option to verify direct messaging capability.
+  - Step 3: Click on the 'Store Link' to verify redirection to the seller's store page on the platform.
+expectedResult: Users should be able to successfully contact the seller directly through the platform's messaging system and be redirected to the seller's store page when clicking on the 'Store Link'.
+

@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity higher than available stock from product detail page
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with limited stock.
+  - Step 2: Increase the product quantity to a number higher than the available stock using the plus button next to the quantity field.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is unable to proceed to checkout due to selecting a quantity higher than the available stock.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to checkout with a quantity higher than the available stock from the product detail page. It verifies the system's behavior in preventing such an action, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a quantity higher than available stock from shopping cart
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the shopping cart.
+testSteps:
+  - Step 1: Add an item to the shopping cart from the product detail page, ensuring the quantity is within the available stock.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Increase the product quantity to a number higher than the available stock using the plus button next to the quantity field in the shopping cart.
+  - Step 4: Select the item by clicking on the checkbox before the item.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The system should prevent the user from increasing the quantity beyond the available stock, or if the quantity is increased, the 'Checkout' button should be disabled, preventing the user from proceeding.
+reflect: yes
+explanation: This test case also directly reflects the test scenario by testing the system's behavior when attempting to checkout with a quantity higher than the available stock, but from the shopping cart perspective. It ensures that the system prevents users from proceeding with checkout under these conditions, which is consistent with the scenario's requirement.
+

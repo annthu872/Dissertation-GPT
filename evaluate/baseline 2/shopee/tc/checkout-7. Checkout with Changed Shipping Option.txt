@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Standard Express Shipping Option
+objective: Verify that the user can checkout with the default Standard Express shipping option and complete the purchase successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary, including items, quantities, prices, and total cost.
+  - Step 4: Confirm that the shipping address is set to the default address.
+  - Step 5: Confirm that the payment method is set to COD (Cash on Delivery) as default.
+  - Step 6: Optionally, add an application voucher or shop voucher if available.
+  - Step 7: Leave the shipping option as the default Standard Express.
+  - Step 8: Optionally, add a note for the shop.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+  - Step 11: Confirm the payment (if applicable).
+expectedResult: The system processes the payment, confirms the order, and displays the order confirmation and details. The order is successfully placed with Standard Express as the shipping option.
+
+Test Case: Test Case 2
+testCaseName: Change Shipping Option during Checkout
+objective: Verify that the user can change the shipping option during checkout and the total cost is updated accordingly.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and review the order summary.
+  - Step 4: Click on the shipping option change button.
+  - Step 5: From the list of available shipping options, select a new shipping option other than Standard Express.
+  - Step 6: Review the updated total cost reflecting the change in the shipping option.
+  - Step 7: Complete the checkout process by clicking on the 'Place Order' button.
+expectedResult: The system updates the total cost based on the new shipping option selected, processes the payment, confirms the order, and displays the order confirmation and details with the updated shipping option.
+
+Test Case: Test Case 3
+testCaseName: Checkout with New Shipping Address
+objective: Verify that the user can add a new shipping address during checkout and successfully place the order with this new address.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart.
+  - Step 3: Proceed to checkout and click on the button to change the shipping address.
+  - Step 4: Click on 'Add new address' and fill in the form with valid details including full name, phone number, city, district, ward, location's address, and address type (optional).
+  - Step 5: Click on the 'Finish' button to add the new shipping address.
+  - Step 6: Confirm the new shipping address is selected for the order.
+  - Step 7: Complete the checkout process by clicking on the 'Place Order' button.
+expectedResult: The system successfully adds the new shipping address, updates the order details to reflect this new address, processes the payment, confirms the order, and displays the order confirmation and details with the new shipping address.
+

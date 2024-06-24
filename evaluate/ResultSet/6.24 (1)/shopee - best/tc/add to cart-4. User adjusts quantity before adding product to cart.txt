@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that the user can adjust the quantity of a product before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product by clicking the plus or minus button next to the quantity field.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system should add the specified quantity of the product to the shopping cart and update the cart icon to reflect the new number of items in the cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of adjusting product quantity before adding it to the cart, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity to Maximum Stock Before Adding to Cart
+objective: Verify that the user cannot adjust the quantity beyond the maximum stock available and receives an appropriate message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with limited stock.
+  - Step 3: Attempt to increase the quantity beyond the available stock by clicking the plus button.
+  - Step 4: Observe the behavior of the quantity field and any message displayed.
+expectedResult: The plus button should be disabled when the maximum stock limit is reached, and a message "You have reached the maximum of the stock." should be displayed below the quantity field.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests a specific aspect of adjusting quantity before adding a product to the cart, specifically ensuring that users cannot exceed the available stock, which is a critical part of the quantity adjustment process.
+
+Test Case: Test Case 3
+testCaseName: Prevent Adjusting Quantity Below One
+objective: Verify that the system prevents the user from adjusting the quantity below one.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Attempt to decrease the quantity below one by clicking the minus button.
+expectedResult: The minus button should be disabled when the quantity is one, preventing the user from decreasing the quantity below one.
+reflect: yes
+explanation: This test case aligns with the given test scenario by ensuring the system enforces a minimum quantity limit, which is a necessary part of adjusting quantities before adding items to the cart. It tests the lower boundary of quantity adjustment, which is crucial for the scenario's completeness.
+

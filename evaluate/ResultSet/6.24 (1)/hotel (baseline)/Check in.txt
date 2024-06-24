@@ -1,0 +1,10 @@
+1. Test Scenario: Verify successful check-in with valid booking ID
+2. Test Scenario: Verify system behavior with invalid booking ID
+3. Test Scenario: Verify system response when no booking ID is entered
+4. Test Scenario: Verify redirection to the main page after successful check-in
+5. Test Scenario: Verify error message display for incorrect booking ID
+6. Test Scenario: Verify system behavior when submit button is pressed without entering booking ID
+7. Test Scenario: Verify that booking details are updated with room ID upon successful validation
+8. Test Scenario: Verify system behavior with expired booking ID
+9. Test Scenario: Verify system behavior with already checked-in booking ID
+10. Test Scenario: Verify system's handling of multiple check-in attempts with the same booking ID

@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Customer Reviews and Ratings on Product Page
+objective: Ensure that the product page displays the customer reviews and ratings section correctly, including the overall rating and the 3 latest detailed reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section on the product page.
+expectedResult: The 'Customer Reviews and Ratings' section displays the average rating based on customer reviews and shows the 3 latest detailed reviews, including ratings, written feedback, and user-uploaded images.
+
+Test Case: Test Case 2
+testCaseName: Verify Functionality of Expanding Customer Reviews
+objective: To check if users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Navigate to a product's detail page by clicking on a product card from the homepage, search page, or cart page.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should expand the 'Customer Reviews and Ratings' section, allowing the user to view more detailed reviews beyond the initial 3 displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Seller Contact Functionality from Product Page
+objective: Ensure that users can contact the seller directly through the platform's messaging system from the product page.
+testSteps:
+  - Step 1: Navigate to a product's detail page by selecting a product card.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Seller Contact' option to initiate direct contact through the platform's messaging system.
+expectedResult: The system should navigate the user to the messaging system, preloaded with the seller's contact information, allowing the user to send a message directly.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: To ensure that users can navigate to the seller's store page on Shopee by clicking on the Store Link from the product page.
+testSteps:
+  - Step 1: Navigate to a product's detail page by selecting a product card.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Store Link' to navigate to the seller's store page on Shopee.
+expectedResult: The system should redirect the user to the seller's store page on Shopee, displaying other products from the same seller.
+

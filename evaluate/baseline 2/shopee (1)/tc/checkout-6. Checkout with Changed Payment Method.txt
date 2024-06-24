@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Changed Payment Method
+objective: Verify that the user can change the payment method during checkout and successfully place an order
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Review the order summary displayed by the system.
+  - Step 4: Change the default shipping address if necessary.
+  - Step 5: Select a new payment method other than the default COD (e.g., Shopee Pay, Google Pay, credit).
+  - Step 6: Apply any available application or shop voucher by selecting or entering a voucher code.
+  - Step 7: Change the shipping option if desired.
+  - Step 8: Add a note for the shop if necessary.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+  - Step 11: Wait for the system to process the payment and confirm the order.
+expectedResult: The system should display the order confirmation and details, indicating that the order has been successfully placed with the changed payment method.
+
+Test Case: Test Case 2
+testCaseName: Checkout with New Shipping Address
+objective: Verify that the user can add a new shipping address during checkout and successfully place an order
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click the button to change the shipping address.
+  - Step 4: Click to add a new address and fill in the form with valid details including full name, phone number, city, district, ward, location's address, and address type.
+  - Step 5: Click the 'Finish' button to add the new shipping address.
+  - Step 6: Continue with the checkout process by selecting a payment method, applying vouchers, changing shipping options, and adding a note for the shop if necessary.
+  - Step 7: Review the updated total cost and order details.
+  - Step 8: Click on the 'Place Order' button.
+  - Step 9: Wait for the system to process the payment and confirm the order.
+expectedResult: The system should display the order confirmation and details, indicating that the order has been successfully placed with the new shipping address.
+
+Test Case: Test Case 3
+testCaseName: Apply Voucher Code During Checkout
+objective: Verify that the user can apply a valid voucher code during checkout and receive the appropriate discount
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Enter a correct voucher code into the voucher code field.
+  - Step 4: Click the 'apply' button.
+  - Step 5: Continue with the checkout process by selecting a shipping address, payment method, changing shipping options, and adding a note for the shop if necessary.
+  - Step 6: Review the updated total cost reflecting the voucher discount and order details.
+  - Step 7: Click on the 'Place Order' button.
+  - Step 8: Wait for the system to process the payment and confirm the order.
+expectedResult: The system should apply the voucher to the order, discount the order based on the voucher, and display the order confirmation indicating the discount has been applied.
+

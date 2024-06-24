@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Detailed Reviews Display on Product Information Page
+objective: Ensure that the product information page displays the 3 latest detailed reviews including ratings, written feedback, and user-uploaded images.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll down to the 'Customer Reviews and Ratings' section.
+expectedResult: The system should display the 3 latest detailed reviews with ratings, written feedback, and user-uploaded images under the 'Customer Reviews and Ratings' section.
+
+Test Case: Test Case 2
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: To verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+expectedResult: The system should expand the 'Customer Reviews and Ratings' section, allowing the user to view more detailed reviews beyond the initial 3 displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Contact Seller Functionality
+objective: Ensure that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Navigate to the product information page by following steps 1 and 2 of Test Case 1.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Seller Contact' option.
+expectedResult: The system should navigate the user to the platform's messaging system to contact the seller directly.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation to Seller's Store Page
+objective: To ensure that users can navigate to the seller's store page on Shopee by clicking the Store Link on the product information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to access a product's information page.
+  - Step 2: Scroll to the 'Seller Profile' section.
+  - Step 3: Click on the 'Store Link' to navigate to the seller's store page on Shopee.
+expectedResult: The system should redirect the user to the seller's store page on Shopee, displaying other products from the same seller.
+
+Test Case: Test Case 5
+testCaseName: Verify Display of Related Product Cards
+objective: Ensure that the product information page displays a list of related product cards.
+testSteps:
+  - Step 1: Navigate to a product information page by following steps 1 and 2 of Test Case 1.
+  - Step 2: Scroll to the bottom of the page to the 'Related Products' section.
+expectedResult: The system should display a list of related product cards at the bottom of the product information page.
+

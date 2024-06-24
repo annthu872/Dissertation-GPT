@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that the user can adjust the quantity of a product before adding it to the shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product by clicking the plus or minus button next to the quantity field.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system should add the specified quantity of the product to the shopping cart and update the cart icon to reflect the new number of items in the cart.
+explanation: This test case ensures that users can adjust the quantity of a product before adding it to their cart, which is a critical functionality for a shopping platform.
+
+Test Case: Test Case 2
+testCaseName: Adjust Quantity to Maximum Stock Before Adding to Cart
+objective: Verify that the user cannot adjust the quantity beyond the maximum stock available and receives an appropriate message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with limited stock.
+  - Step 3: Attempt to increase the quantity beyond the available stock by clicking the plus button.
+  - Step 4: Observe the behavior of the quantity field and any message displayed.
+expectedResult: The plus button should be disabled when the maximum stock limit is reached, and a message "You have reached the maximum of the stock." should be displayed below the quantity field.
+explanation: This test case checks the system's handling of stock limits when users attempt to add more items to their cart than are available, ensuring a good user experience by preventing over-ordering.
+
+Test Case: Test Case 3
+testCaseName: Prevent Adjusting Quantity Below One
+objective: Verify that the system prevents the user from adjusting the quantity below one.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Attempt to decrease the quantity below one by clicking the minus button.
+expectedResult: The minus button should be disabled when the quantity is one, preventing the user from decreasing the quantity below one.
+explanation: This test case ensures that the system enforces a minimum quantity limit of one, which is important for the logical consistency of an e-commerce shopping cart.
+

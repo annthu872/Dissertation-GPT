@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display Functionality
+objective: Ensure that all elements of the product information are displayed correctly to the user
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information should include title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+
+Test Case: Test Case 2
+testCaseName: Verify Customer Reviews and Ratings Expansion
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand this section.
+expectedResult: More customer reviews and ratings should be displayed upon expanding the section.
+
+Test Case: Test Case 3
+testCaseName: Verify Customer Questions Expansion
+objective: Ensure that users can expand the 'Customer Questions' section to view more questions and seller answers
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Locate the 'Customer Questions' section.
+  - Step 3: Click on the option to expand this section.
+expectedResult: More customer questions and seller answers should be displayed upon expanding the section.
+
+Test Case: Test Case 4
+testCaseName: Verify Scrolling Functionality for More Related Products
+objective: Ensure that users can scroll to view more related product cards
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Scroll down to the 'Related Products' section.
+  - Step 3: Scroll horizontally to view more related product cards.
+expectedResult: Users should be able to scroll horizontally to view additional related product cards.
+
+Test Case: Test Case 5
+testCaseName: Verify Direct Seller Contact Functionality
+objective: Ensure that users can contact the seller directly through the platform's messaging system
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Seller Contact' option.
+  - Step 3: Verify that the platform's messaging system opens to allow direct contact with the seller.
+expectedResult: The platform's messaging system should open, allowing the user to contact the seller directly.
+
+Test Case: Test Case 6
+testCaseName: Verify Store Link Functionality
+objective: Ensure that users can use the Store Link to view other products from the same seller
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to view a product's information.
+  - Step 2: Click on the 'Store Link'.
+  - Step 3: Verify that the seller's store page on Shopee opens, displaying other products from the same seller.
+expectedResult: The seller's store page on Shopee should open, displaying other products from the same seller.
+

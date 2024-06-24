@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Add Out of Stock Product to Cart
+objective: Verify that users cannot add out of stock products to their shopping cart and receive an appropriate message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that is out of stock.
+  - Step 3: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button should be disabled or not visible, and/or a message should be displayed indicating that the product is out of stock.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that out of stock products cannot be added to the cart, which is the core objective of the Product Out of Stock Scenario.
+
+Test Case: Test Case 2
+testCaseName: Add Product with Out of Stock Option to Cart
+objective: Verify that users cannot add a product to their shopping cart if the selected option is out of stock.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that has multiple options, with at least one option being out of stock.
+  - Step 3: Select the out of stock option.
+  - Step 4: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button should be disabled or not visible for the out of stock option, and/or a message should be displayed indicating that the selected option is out of stock.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests a specific instance where a product has options and one of those options is out of stock. It ensures that users are informed and prevented from adding such products to their cart, which is a key aspect of handling out of stock situations.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Beyond Stock Limit
+objective: Verify that users cannot adjust the product quantity beyond the available stock limit.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page with limited stock available.
+  - Step 3: Click on the plus button next to the quantity input to increase the quantity beyond the stock limit.
+expectedResult: The plus button should be disabled when the quantity matches the stock limit, and a message "You have reached the maximum of the stock." should be displayed.
+reflect: yes
+explanation: This test case aligns with the test scenario by ensuring that the system limits the quantity of a product added to the cart to the available stock. It tests the functionality that prevents users from ordering more items than what is in stock, which is a critical part of managing out of stock conditions.
+

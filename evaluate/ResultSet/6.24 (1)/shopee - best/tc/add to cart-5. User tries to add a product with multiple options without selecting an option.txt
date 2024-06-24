@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Add a product with multiple options without selecting an option
+objective: Verify that the system prevents adding a product with multiple options to the cart without selecting an option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options.
+  - Step 3: Without selecting any of the available options, click the "Add to Cart" button.
+expectedResult: The system should display an error message indicating that an option must be selected before the product can be added to the cart. The product should not be added to the cart.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a user attempts to add a product with multiple options to the cart without selecting any of those options. It checks for the expected error message and ensures the product is not added to the cart, which is the core of the test scenario.
+

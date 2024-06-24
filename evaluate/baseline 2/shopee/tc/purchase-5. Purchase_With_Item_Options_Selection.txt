@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Purchase items from shopping cart with item selection
+objective: Verify that the user can successfully purchase selected items from the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Select specific items to checkout by clicking on the checkbox before each item.
+  - Step 3: Click the 'Checkout' button.
+  - Step 4: Verify that the system displays a summary of costs.
+  - Step 5: Confirm the checkout process.
+expectedResult: The user is redirected to a page that shows new orders of all the selected items, with products from different shops separated into different orders.
+
+Test Case: Test Case 2
+testCaseName: Purchase all items from one store in shopping cart
+objective: Verify that the user can select and purchase all items from a single store in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Select all items from one store by clicking the checkbox at the head of the store.
+  - Step 3: Click the 'Checkout' button.
+  - Step 4: Confirm the checkout process.
+expectedResult: The user is redirected to a page that shows a new order of all the items from the selected store.
+
+Test Case: Test Case 3
+testCaseName: Direct purchase from product detail page with options and quantity adjustment
+objective: Verify that the user can directly purchase a product from the product detail page, with necessary option selections and quantity adjustments
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature to navigate to a product detail page.
+  - Step 2: If the product has many options, choose one available option.
+  - Step 3: Adjust the quantity of the product by clicking on the minus or plus button next to the quantity.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Confirm the checkout process.
+expectedResult: The user is redirected to a page that shows one order of the item the user has chosen, with the selected options and quantity.
+
+Test Case: Test Case 4
+testCaseName: Attempt to purchase an out-of-stock product from shopping cart
+objective: Verify that the user cannot purchase products that are out of stock or have been removed by the seller
+testSteps:
+  - Step 1: Navigate to the shopping cart page where an out-of-stock item is present.
+  - Step 2: Attempt to select the out-of-stock item by clicking on its checkbox.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The user is unable to select the out-of-stock item, and the 'Checkout' button is disabled or an appropriate error message is displayed.
+
+Test Case: Test Case 5
+testCaseName: Attempt to purchase without selecting product options
+objective: Verify that the user cannot proceed to checkout without selecting available options for a product with multiple options
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with multiple options.
+  - Step 2: Without selecting any options, click the 'Buy Now' button.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The 'Checkout' button is disabled or an error message is displayed, preventing the user from proceeding without selecting an option.
+

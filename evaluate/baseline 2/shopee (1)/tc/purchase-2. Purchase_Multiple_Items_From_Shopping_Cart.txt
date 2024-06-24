@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Purchase multiple items from different stores in shopping cart
+objective: Verify that the user can successfully purchase multiple items from different stores in the shopping cart and that the system correctly separates these into different orders based on the store.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items from multiple stores.
+  - Step 2: Select items to checkout by clicking on the checkbox before each item from different stores.
+  - Step 3: Review the summary costs displayed by the system.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the checkout process is completed.
+expectedResult: The user is redirected to a page that shows multiple new orders, each corresponding to items from a single store, indicating that products from different stores have been separated into different orders.
+
+Test Case: Test Case 2
+testCaseName: Purchase an item from the product detail page
+objective: Verify that the user can purchase a product directly from the product detail page, including selecting options and adjusting quantity.
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature to navigate to a product's detail page.
+  - Step 2: If the product has multiple options, select one available option.
+  - Step 3: Adjust the quantity of the product if necessary by clicking the minus or plus button next to the quantity.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Verify that the checkout process is completed.
+expectedResult: The user is redirected to a page that shows a single new order of the item the user has chosen, indicating a successful purchase from the product detail page.
+
+Test Case: Test Case 3
+testCaseName: Attempt to purchase an out-of-stock item from the shopping cart
+objective: Verify that the user cannot select or purchase items that are out of stock or have been removed by the seller from the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items, including an out-of-stock item.
+  - Step 2: Attempt to select the out-of-stock item by clicking on the checkbox before the item.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The system prevents the user from selecting the out-of-stock item, and the 'Checkout' button is disabled or an appropriate error message is displayed, indicating the item cannot be purchased.
+
+Test Case: Test Case 4
+testCaseName: Purchase a product with specific options and quantity from the product detail page
+objective: Verify that the user cannot proceed with the purchase without selecting an available option for a product with multiple options or selecting a quantity outside the available stock.
+testSteps:
+  - Step 1: Navigate to a product detail page for a product with multiple options.
+  - Step 2: Attempt to click the 'Buy Now' button without selecting an option.
+  - Step 3: Select an available option and then set the quantity higher than the current stock.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The system prevents the user from adding the product to the cart without selecting an option and from checking out with a quantity higher than the stock, displaying appropriate error messages or disabling the 'Checkout' button.
+

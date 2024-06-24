@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: View Products from the Same Seller via Store Link
+objective: Verify that users can view other products from the same seller by clicking on the Store Link in the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: In the product information, locate and click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The system should navigate the user to the seller's store page, displaying other products from the same seller.
+explanation: This test case ensures that the Store Link feature within the product information page works correctly, allowing users to explore more products from the same seller, enhancing the shopping experience.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Profile and Store Link Visibility
+objective: Ensure that the seller's profile and the Store Link are prominently displayed in the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+  - Step 3: In the product information, verify the visibility of the seller's profile, including their name, ratings, and reviews.
+  - Step 4: Verify that the Store Link is visible and clearly labeled.
+expectedResult: The seller's profile and the Store Link should be prominently displayed within the product information page, making it easy for users to identify and access.
+explanation: This test case checks for the visibility and accessibility of the seller's profile and Store Link in the product information page, which is crucial for user engagement and navigation to the seller's store page.
+

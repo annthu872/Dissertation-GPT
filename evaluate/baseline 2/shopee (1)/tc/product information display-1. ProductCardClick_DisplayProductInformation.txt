@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display on Product Card Click
+objective: Ensure that clicking on a product card from the homepage, search page, or cart page displays all the relevant product information as specified.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card displayed on the page.
+  - Step 3: Observe the information displayed for the product.
+expectedResult: The system should display the product's information including title, description, images and videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+
+Test Case: Test Case 2
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: To check if users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display product information.
+  - Step 2: Locate and click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 3: Observe the behavior.
+expectedResult: The system should expand the 'Customer Reviews and Ratings' section, allowing the user to view more reviews.
+
+Test Case: Test Case 3
+testCaseName: Verify Expansion of Customer Questions
+objective: Ensure that users can expand the 'Customer Questions' section to view more questions and seller answers.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display product information.
+  - Step 2: Locate and click on the option to expand the 'Customer Questions' section.
+  - Step 3: Observe the behavior.
+expectedResult: The system should expand the 'Customer Questions' section, displaying more questions and seller answers.
+
+Test Case: Test Case 4
+testCaseName: Verify Scrolling for More Related Product Cards
+objective: To ensure that users can scroll to view more related product cards.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display product information.
+  - Step 2: Scroll down to the 'Related Products' section.
+  - Step 3: Attempt to scroll within the 'Related Products' section to view more product cards.
+expectedResult: The system should allow scrolling within the 'Related Products' section to display more related product cards.
+
+Test Case: Test Case 5
+testCaseName: Verify Direct Seller Contact Through Messaging System
+objective: Ensure that users can click on the seller contact option to directly message the seller through the platform's messaging system.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display product information.
+  - Step 2: Locate and click on the 'Seller Contact' option.
+  - Step 3: Observe the behavior.
+expectedResult: The system should navigate the user to the platform's messaging system to contact the seller directly.
+
+Test Case: Test Case 6
+testCaseName: Verify Navigation to Seller's Store Page
+objective: To check if users can navigate to the seller's store page by clicking on the Store Link.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display product information.
+  - Step 2: Locate and click on the 'Store Link'.
+  - Step 3: Observe the behavior.
+expectedResult: The system should navigate the user to the seller's store page on the platform, displaying other products from the same seller.
+

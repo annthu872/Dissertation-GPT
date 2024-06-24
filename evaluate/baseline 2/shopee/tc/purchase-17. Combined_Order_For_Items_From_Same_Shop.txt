@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Verify Combined Order Creation for Items from the Same Shop
+objective: Ensure that items from the same shop are combined into a single order upon checkout
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has already added items from multiple shops.
+  - Step 2: Select items from the same shop by clicking on the checkbox next to each item.
+  - Step 3: Click the 'Checkout' button.
+  - Step 4: Observe the checkout process and the resulting order page.
+expectedResult: The system should display a single order containing all the items from the same shop that were selected.
+
+Test Case: Test Case 2
+testCaseName: Verify Separate Orders for Items from Different Shops
+objective: Ensure that items from different shops are processed into separate orders upon checkout
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has already added items from multiple shops.
+  - Step 2: Select items from different shops by clicking on the checkbox next to each item.
+  - Step 3: Click the 'Checkout' button.
+  - Step 4: Observe the checkout process and the resulting orders page.
+expectedResult: The system should display separate orders for items from different shops.
+
+Test Case: Test Case 3
+testCaseName: Verify Purchase from Product Detail Page
+objective: Ensure that users can directly purchase an item from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of an item.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the quantity if necessary using the minus or plus button.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Observe the checkout process and the resulting order page.
+expectedResult: The system should create an order for the item and redirect the user to the order page.
+
+Test Case: Test Case 4
+testCaseName: Verify Inability to Select Out-of-Stock Products
+objective: Ensure that users cannot select out-of-stock or erased items for checkout
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has already added items, including out-of-stock or erased items.
+  - Step 2: Attempt to select an out-of-stock or erased item by clicking on the checkbox next to the item.
+  - Step 3: Observe the behavior of the checkbox and the 'Checkout' button.
+expectedResult: The system should prevent the selection of out-of-stock or erased items, and the 'Checkout' button should remain disabled if all selected items are invalid.
+
+Test Case: Test Case 5
+testCaseName: Verify Purchase Restriction for Invalid Product Options and Quantities
+objective: Ensure that users cannot proceed to checkout with invalid product options or quantities
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with multiple options or limited stock.
+  - Step 2: Select an invalid option or adjust the quantity to more than available stock or less than one.
+  - Step 3: Observe the 'Buy Now' or 'Checkout' button state.
+expectedResult: The 'Buy Now' or 'Checkout' button should be disabled, preventing the user from proceeding with an invalid purchase.
+

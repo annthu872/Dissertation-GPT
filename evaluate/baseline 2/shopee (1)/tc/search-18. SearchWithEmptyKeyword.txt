@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Search with Empty Keyword
+objective: Verify the system behavior when a search is performed with an empty keyword
+testSteps:
+  - Step 1: Navigate to the search bar.
+  - Step 2: Leave the search bar empty.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards as per the exception flow, indicating no specific search results were found.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Matching Shop Name
+objective: Verify that the system displays shop information and related products when the keyword matches a shop name
+testSteps:
+  - Step 1: Navigate to the search bar.
+  - Step 2: Type a keyword that matches a shop name.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Search with Keyword Matching Brand Name
+objective: Verify that the system displays related shop and products when the keyword matches a brand name
+testSteps:
+  - Step 1: Navigate to the search bar.
+  - Step 2: Type a keyword that matches a brand name.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the most related/best sold shop's information that sells the brand at the top of the search result, followed by related products card.
+
+Test Case: Test Case 4
+testCaseName: Search with Keyword Not Matching Any Shop or Brand
+objective: Verify that the system displays related products when the keyword does not match any shop or brand
+testSteps:
+  - Step 1: Navigate to the search bar.
+  - Step 2: Type a keyword that does not match any shop or brand name.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display related products card (product has name match search keyword).
+
+Test Case: Test Case 5
+testCaseName: Search and Use Filters
+objective: Verify that users can filter search results using the provided filter modes
+testSteps:
+  - Step 1: Perform any search with a valid keyword.
+  - Step 2: Use the filter options to select a different mode (e.g., newest product result, best seller result, sort by price).
+  - Step 3: Apply the filter.
+expectedResult: The system should display the search results according to the selected filter mode.
+

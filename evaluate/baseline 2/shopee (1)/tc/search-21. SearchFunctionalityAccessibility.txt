@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Search Functionality with Keyword Matching Product Name
+objective: Ensure the search functionality returns relevant product listings when a keyword matching a product name is entered
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that matches a known product name into the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display a list of relevant search matches including products with names or descriptions related to the keyword. A maximum of 60 product cards are shown per page with pagination at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Verify Search Functionality with Keyword Matching Shop Name
+objective: Ensure the search functionality returns shop information and related products when a keyword matching a shop name is entered
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that matches a known shop name into the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display the shop's information at the top of the search result including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Verify Search Functionality with No Matching Keyword
+objective: Ensure the search functionality returns random product cards when a keyword does not match any shop, brand, or product
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any product, shop, or brand into the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards as no search results are found.
+
+Test Case: Test Case 4
+testCaseName: Verify Search Result Filtering by Newest Product
+objective: Ensure the search functionality allows users to filter results by the newest products
+testSteps:
+  - Step 1: Perform a search with any keyword.
+  - Step 2: Click on the filter radio button for 'newest product result'.
+expectedResult: The system should refresh the search results, prioritizing the display of the newest products related to the search keyword.
+
+Test Case: Test Case 5
+testCaseName: Verify Search Result Sorting by Price
+objective: Ensure the search functionality allows users to sort results by price from lowest to highest and vice versa
+testSteps:
+  - Step 1: Perform a search with any keyword.
+  - Step 2: Select the 'sort the product by price' dropdown.
+  - Step 3: Choose either 'from lowest to highest' or 'from highest to lowest'.
+expectedResult: The system should refresh the search results, sorting the product cards by price according to the selected option.
+

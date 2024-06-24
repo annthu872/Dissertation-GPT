@@ -1,0 +1,15 @@
+1. AddSingleItemToCart
+2. AddItemWithMultipleOptionsToCart
+3. AdjustQuantityAndAddToCart
+4. AddItemWithoutSelectingOption
+5. AddItemWithQuantityMoreThanStock
+6. DecreaseQuantityBelowOne
+7. AddOutOfStockItemToCart
+8. AddItemWithOutOfStockOptionToCart
+9. ViewCartAfterAddingItem
+10. UpdateCartIconAfterAddingItem
+11. AddMultipleDifferentItemsToCart
+12. AddSameItemMultipleTimesToCart
+13. AddItemToCartWithoutLogin
+14. AddItemToCartAndContinueShopping
+15. AddItemToCartAndViewCartDetails

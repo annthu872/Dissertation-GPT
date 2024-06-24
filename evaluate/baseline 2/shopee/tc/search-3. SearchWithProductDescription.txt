@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Search with Product Description - Basic Flow
+objective: Verify that the system displays relevant product listings when a user searches using keywords related to product descriptions.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a product description in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of product cards displayed by the system.
+expectedResult: The system should display a list of relevant search matches, showing up to 60 product cards per page with pagination options at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Search with Shop Name - Alternative Flow
+objective: Verify that the system displays the shop's information and related product cards when a user searches using a keyword related to a shop name.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed by the system.
+expectedResult: The system should display the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's card and related products card.
+
+Test Case: Test Case 3
+testCaseName: Search with Brand Name - Alternative Flow
+objective: Verify that the system displays related shop and product cards when a user searches using a keyword related to a brand name.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword related to a brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed by the system.
+expectedResult: The system should display the most related/best sold shop's information that sells the brand at the top of the search result, followed by related products card.
+
+Test Case: Test Case 4
+testCaseName: Search with Non-Matching Keyword - Alternative Flow
+objective: Verify that the system displays related product cards when a user searches using a keyword that does not match any shop or brand.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any shop or brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed by the system.
+expectedResult: The system should display related products card (products that have names matching the search keyword).
+
+Test Case: Test Case 5
+testCaseName: Search with No Results Found - Exception Flow
+objective: Verify that the system displays random product cards when a user searches using a keyword that matches no products.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that matches no products in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed by the system.
+expectedResult: The system should display random product cards.
+

@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Change Shipping Option After Reviewing Order Details
+objective: Verify that the user can successfully change the shipping option after reviewing the order details and before placing the order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Observe the default shipping option set by the system as Standard Express.
+  - Step 5: Click on the shipping option change button to view available shipping options.
+  - Step 6: Select a new shipping option from the list of available options.
+  - Step 7: Review the updated total cost reflecting the change in the shipping option.
+  - Step 8: Click on the 'Place Order' button to finalize the order.
+expectedResult: The system should successfully update the order with the new shipping option, reflect the updated total cost, and allow the user to place the order with the updated shipping option.
+explanation: This test case ensures that users have the flexibility to change the shipping option after reviewing their order details, which is a critical part of the checkout process. It directly tests the functionality described in the scenario name and follows the basic flow of the checkout use case.
+

@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify product erased by seller is unselectable in shopping cart
+objective: Ensure that products erased by the seller cannot be selected for checkout in the shopping cart.
+testSteps:
+  - Step 1: Log in to the system and navigate to the shopping cart page.
+  - Step 2: Add multiple items to the shopping cart, ensuring at least one item is from a seller who will erase the product during the test.
+  - Step 3: Have the seller erase one of the products added to the shopping cart.
+  - Step 4: Attempt to select the erased product by clicking on the checkbox before the item.
+expectedResult: The checkbox for the erased product should not be clickable, and the product should be marked as unavailable or removed from the shopping cart.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that a product erased by the seller is effectively made unselectable or removed from the shopping cart, preventing the user from proceeding to checkout with that item.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout process with erased product in cart
+objective: To confirm that the checkout process cannot proceed if it includes products that have been erased by the seller.
+testSteps:
+  - Step 1: Log in to the system and navigate to the shopping cart page.
+  - Step 2: Add multiple items to the shopping cart, including at least one item that will be erased by the seller.
+  - Step 3: Have the seller erase the product from the shopping cart.
+  - Step 4: Select all remaining selectable items in the shopping cart.
+  - Step 5: Click the 'Checkout' button to initiate the checkout process.
+expectedResult: The system should either prevent the checkout process from proceeding due to the erased product or automatically remove the erased product from the cart and proceed with checkout for the remaining items.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it examines the system's behavior during the checkout process when a product has been erased by the seller, ensuring that such a situation is handled appropriately, either by halting the checkout process or by removing the erased product and allowing the process to continue with the remaining items.
+

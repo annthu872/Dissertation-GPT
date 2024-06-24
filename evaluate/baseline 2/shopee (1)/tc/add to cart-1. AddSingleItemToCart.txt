@@ -1,0 +1,54 @@
+Test Case: Test Case 1
+testCaseName: Add a single item to cart without options
+objective: Verify that a user can add a single item without options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page without options.
+  - Step 3: Click the "Add to Cart" button.
+  - Step 4: Observe the confirmation message.
+  - Step 5: Check the cart icon for the updated number of items.
+expectedResult: The item is added to the cart successfully, a confirmation message is displayed, and the cart icon reflects the new number of items.
+
+Test Case: Test Case 2
+testCaseName: Add a single item with options to cart
+objective: Verify that a user can add a single item with options to their shopping cart after selecting an available option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that has multiple options.
+  - Step 3: Select one available option.
+  - Step 4: Click the "Add to Cart" button.
+  - Step 5: Observe the confirmation message.
+  - Step 6: Check the cart icon for the updated number of items.
+expectedResult: The item with the selected option is added to the cart successfully, a confirmation message is displayed, and the cart icon reflects the new number of items.
+
+Test Case: Test Case 3
+testCaseName: Adjust quantity before adding item to cart
+objective: Verify that a user can adjust the quantity of a product before adding it to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product using the plus or minus button.
+  - Step 4: Click the "Add to Cart" button.
+  - Step 5: Observe the confirmation message.
+  - Step 6: Check the cart icon for the updated number of items, reflecting the adjusted quantity.
+expectedResult: The item is added to the cart with the adjusted quantity successfully, a confirmation message is displayed, and the cart icon reflects the updated number of items.
+
+Test Case: Test Case 4
+testCaseName: Prevent adding item with quantity over stock
+objective: Verify that the system prevents adding an item to the cart if the selected quantity exceeds the available stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Attempt to increase the quantity beyond the available stock.
+  - Step 4: Observe the behavior of the plus button and the message displayed.
+expectedResult: The plus button is disabled when the maximum stock is reached, and a message "You have reached the maximum of the stock." is displayed.
+
+Test Case: Test Case 5
+testCaseName: Prevent adding out-of-stock item to cart
+objective: Verify that the system prevents adding an out-of-stock item or an out-of-stock option of an item to the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to an out-of-stock product detail page or select an out-of-stock option.
+  - Step 3: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button is either disabled or not present, preventing the user from adding the out-of-stock item to the cart.
+

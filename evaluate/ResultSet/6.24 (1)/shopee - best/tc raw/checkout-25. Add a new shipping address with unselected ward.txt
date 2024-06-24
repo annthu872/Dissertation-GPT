@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add a new shipping address with unselected ward during checkout
+objective: Verify that the system prevents the user from adding a new shipping address without selecting a ward and displays an appropriate notification.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: In the checkout page, click on the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with a valid full name, phone number, select a city, and a district, but leave the ward selection blank.
+  - Step 6: Enter a valid location's address and select an address type if desired.
+  - Step 7: Click on the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification indicating that selecting a ward is required and prevent the user from adding the new shipping address.
+explanation: This test case ensures that the system enforces the requirement of selecting a ward when adding a new shipping address during the checkout process, as per the alternative flow 3 in the use case specification. It directly matches the scenario name by testing the addition of a new shipping address with an unselected ward.
+

@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify Summary Costs Display for Selected Items in Shopping Cart
+objective: Ensure that the system correctly displays the summary costs for items selected by the user in the shopping cart before checkout.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where items have already been added.
+  - Step 2: Select specific items for checkout by clicking on the checkbox before each item.
+  - Step 3: Observe the area where summary costs are displayed.
+expectedResult: The system should display the correct summary costs for only the items selected by the user.
+
+Test Case: Test Case 2
+testCaseName: Verify Checkout Process from Shopping Cart
+objective: To verify that the user can successfully checkout the selected items from the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page and select items for checkout.
+  - Step 2: Click the 'Checkout' button.
+  - Step 3: Observe the redirection to the new page showing the orders.
+expectedResult: The user is redirected to a page displaying new orders for the selected items, with products from different shops separated into different orders.
+
+Test Case: Test Case 3
+testCaseName: Verify Select All Items from One Store in Shopping Cart
+objective: Ensure that the user can select all items from one store in the shopping cart with a single action.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Click the checkbox at the head of the store to select all items from that store.
+  - Step 3: Observe the selection status of the items from that store.
+expectedResult: All items from the selected store should be marked as selected.
+
+Test Case: Test Case 4
+testCaseName: Verify Direct Purchase from Product Detail Page
+objective: To verify that the user can directly purchase a product from its detail page, including selecting options and adjusting quantity.
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature to navigate to a product detail page.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the quantity of the product if necessary.
+  - Step 4: Click the 'Buy Now' button and then click the 'Checkout' button.
+  - Step 5: Observe the redirection to the checkout page.
+expectedResult: The user is redirected to a checkout page showing an order for the item they have chosen, with the correct options and quantity.
+
+Test Case: Test Case 5
+testCaseName: Verify Purchase Restrictions on Product Detail Page
+objective: Ensure that the system enforces restrictions on purchasing products with options, out of stock items, or invalid quantities.
+testSteps:
+  - Step 1: Navigate to a product detail page with multiple options or limited stock.
+  - Step 2: Attempt to purchase without selecting an option, with a quantity higher than stock, or an out of stock item.
+  - Step 3: Observe the behavior of the 'Checkout' button and any error messages.
+expectedResult: The 'Checkout' button should be disabled, and/or an appropriate error message should be displayed for invalid actions such as not selecting an option, exceeding available stock, or trying to purchase out of stock items.
+

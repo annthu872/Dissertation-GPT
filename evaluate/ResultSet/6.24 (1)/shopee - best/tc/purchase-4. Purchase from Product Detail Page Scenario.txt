@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Purchase Single Product with Options from Product Detail Page
+objective: Verify that a user can successfully purchase a single product with multiple options from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Select one available option for the product.
+  - Step 3: Adjust the quantity of the product if necessary by clicking on the plus or minus button next to the quantity.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button on the page that appears showing the selected item.
+  - Step 6: Complete the checkout process.
+expectedResult: User is redirected to a confirmation page that shows one order of the item the user has chosen, indicating a successful purchase.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to purchase a product with options from the product detail page, including the steps of selecting options, adjusting quantity, and completing the purchase.
+
+Test Case: Test Case 2
+testCaseName: Purchase Product with Insufficient Stock from Product Detail Page
+objective: Verify that a user cannot purchase a product with a quantity higher than the current stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with limited stock.
+  - Step 2: Select an available option if the product has multiple options.
+  - Step 3: Increase the quantity of the product to exceed the available stock by clicking the plus button next to the quantity.
+  - Step 4: Attempt to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button is disabled or an error message is displayed, preventing the user from adding the product to the cart due to insufficient stock.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests a specific condition related to purchasing from the product detail page, specifically the system's response to an attempt to purchase more items than are available in stock, which is a critical part of the purchase process.
+
+Test Case: Test Case 3
+testCaseName: Purchase Product Without Selecting Options from Product Detail Page
+objective: Verify that a user cannot purchase a product that has multiple options without selecting one of the available options.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Without selecting any of the available options, attempt to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button is disabled or an error message is displayed, preventing the user from proceeding to checkout without selecting an option.
+reflect: yes
+explanation: This test case aligns with the test scenario by focusing on the requirement to select options before making a purchase from the product detail page. It tests the system's behavior when a user tries to bypass this requirement, which is a crucial part of the purchasing process for products with multiple options.
+

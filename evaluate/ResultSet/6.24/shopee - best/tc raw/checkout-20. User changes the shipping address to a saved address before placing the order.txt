@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Change shipping address to a saved address before placing an order
+objective: Verify that the user can successfully change the shipping address to one of the saved addresses before finalizing the order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, click the 'Change Shipping Address' button.
+  - Step 4: From the list of saved addresses, select a saved address to be used for the shipping.
+  - Step 5: Review the updated order summary to ensure the selected address is now set as the shipping address.
+  - Step 6: Complete the order by clicking on the 'Place Order' button.
+expectedResult: The order is successfully placed with the selected saved address as the shipping address, and the user receives an order confirmation with the updated shipping details.
+explanation: This test case ensures that users can change their shipping address to a previously saved address during the checkout process, which is a direct match to the test scenario provided.
+

@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Note for Shop using Default Settings
+objective: Verify that the user can successfully complete a purchase with a note for the shop using default settings for shipping address, payment method, and shipping option.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Verify the order summary is displayed with items, quantities, prices, and total cost.
+  - Step 4: Confirm the shipping address is set to the default address.
+  - Step 5: Confirm the payment method is set to COD (Cash on Delivery) as default.
+  - Step 6: Confirm the shipping option is set to Standard Express as default.
+  - Step 7: Add a note for the shop in the provided field.
+  - Step 8: Review the updated total cost and order details.
+  - Step 9: Click on the 'Place Order' button.
+  - Step 10: Confirm the payment is processed and the order is confirmed.
+  - Step 11: Verify the order confirmation and details are displayed.
+expectedResult: The user successfully completes the purchase with a note for the shop using default settings, and receives an order confirmation with the details.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to complete a purchase with a note for the shop using default settings for shipping, payment, and shipping option.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Note for Shop and Custom Shipping Address
+objective: Verify that the user can successfully complete a purchase with a note for the shop after changing the shipping address.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Click the button to change the shipping address and select a saved address from the list.
+  - Step 4: Add a note for the shop in the provided field.
+  - Step 5: Review the updated total cost and order details.
+  - Step 6: Click on the 'Place Order' button.
+  - Step 7: Confirm the payment is processed and the order is confirmed.
+  - Step 8: Verify the order confirmation and details are displayed with the updated shipping address.
+expectedResult: The user successfully completes the purchase with a note for the shop and a custom shipping address, and receives an order confirmation with the updated details.
+reflect: yes
+explanation: This test case still reflects the given test scenario as it tests the ability to add a note for the shop during the purchase process, albeit with a variation in the shipping address, which is a part of the checkout process.
+
+Test Case: Test Case 3
+testCaseName: Purchase with Note for Shop and Voucher Code Application
+objective: Verify that the user can successfully apply a voucher code and complete a purchase with a note for the shop.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Enter a valid voucher code and click 'apply'.
+  - Step 4: Add a note for the shop in the provided field.
+  - Step 5: Review the updated total cost reflecting the voucher discount and order details.
+  - Step 6: Click on the 'Place Order' button.
+  - Step 7: Confirm the payment is processed and the order is confirmed.
+  - Step 8: Verify the order confirmation and details are displayed with the applied voucher discount.
+expectedResult: The user successfully completes the purchase with a note for the shop and an applied voucher code, receiving an order confirmation with the discount details.
+reflect: yes
+explanation: This test case aligns with the given test scenario by testing the functionality of adding a note for the shop during the checkout process, with the additional step of applying a voucher code. It still focuses on the core functionality of adding a note for the shop.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify No Results Found displays random products
+objective: Ensure that when no search results are found, the system displays random product cards.
+testSteps:
+  - Step 1: Navigate to the search bar on the application.
+  - Step 2: Type a keyword that does not match any products, shops, or brands in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards since no search results match the keyword.
+explanation: This test case verifies the exception flow of the Search use case, ensuring that when no results are found for a search query, the system defaults to displaying random product cards as specified.
+

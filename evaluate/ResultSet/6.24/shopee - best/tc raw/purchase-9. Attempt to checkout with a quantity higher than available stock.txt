@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity higher than available stock from product detail page
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with limited stock.
+  - Step 2: Increase the product quantity to a number higher than the available stock using the plus button next to the quantity field.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is unable to proceed to checkout due to selecting a quantity higher than the available stock.
+explanation: This test case ensures that users cannot proceed to checkout with a quantity higher than what is available in stock, aligning with the exception flow that restricts purchasing products with quantities exceeding current stock levels.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a quantity higher than available stock from shopping cart
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the shopping cart.
+testSteps:
+  - Step 1: Add an item to the shopping cart from the product detail page, ensuring the quantity is within the available stock.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Increase the product quantity to a number higher than the available stock using the plus button next to the quantity field in the shopping cart.
+  - Step 4: Select the item by clicking on the checkbox before the item.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The system should prevent the user from increasing the quantity beyond the available stock, or if the quantity is increased, the 'Checkout' button should be disabled, preventing the user from proceeding.
+explanation: This test case checks the system's behavior when a user tries to checkout with a quantity higher than the available stock from their shopping cart, ensuring compliance with the exception flow that restricts purchasing products in quantities exceeding the stock.
+

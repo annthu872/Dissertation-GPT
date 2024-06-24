@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Scroll to View More Related Product Cards
+objective: Verify that users can scroll to view more related product cards on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its product information page.
+  - Step 3: Scroll down to the 'Related Products' section at the bottom of the product information page.
+  - Step 4: Scroll through the list of related product cards to view more products.
+expectedResult: The user should be able to scroll through the related product cards, and more related product cards should become visible as the user scrolls.
+explanation: This test case ensures that the functionality for users to scroll and view more related product cards works as intended, enhancing the browsing experience by providing additional product options.
+

@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Apply Disabled Voucher Code
+objective: Verify that the system prevents a user from applying a disabled voucher code during checkout
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Proceed to the order summary page.
+  - Step 4: Select the option to add a voucher to the order.
+  - Step 5: Enter a disabled voucher code into the voucher code field.
+  - Step 6: Click the 'apply' button to attempt to apply the disabled voucher.
+expectedResult: The system should display a notification that the voucher cannot be added because it is disabled.
+reflect: yes
+explanation: This test case directly addresses the test scenario of applying a disabled voucher code. It follows a logical sequence of steps that a user would take to apply a voucher during the checkout process and verifies that the system correctly prevents the application of a disabled voucher, providing appropriate feedback. Therefore, it accurately reflects the given test scenario.
+

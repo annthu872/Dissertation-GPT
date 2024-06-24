@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify separate orders for items from different shops in shopping cart
+objective: Ensure that items from different shops are processed as separate orders upon checkout from the shopping cart
+testSteps:
+  - Step 1: Log in and navigate to the shopping cart page.
+  - Step 2: Add items from at least two different shops to the shopping cart.
+  - Step 3: Select items from different shops by clicking on the checkbox before each item.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Review the order summary page for separate orders.
+expectedResult: The system should display separate orders for items from different shops, with each shop's items grouped into its own order.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout functionality from product detail page
+objective: Ensure that users can directly purchase a product from the product detail page, leading to a single order for that item
+testSteps:
+  - Step 1: Navigate to the product detail page of a chosen item.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Adjust the quantity if necessary using the minus or plus button.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button on the redirected page.
+expectedResult: The system should process the checkout and redirect the user to a page that shows a single order for the item chosen.
+
+Test Case: Test Case 3
+testCaseName: Verify inability to select out-of-stock items in shopping cart
+objective: Ensure that users cannot select out-of-stock or erased items for checkout in the shopping cart
+testSteps:
+  - Step 1: Add an item to the shopping cart and then have it go out of stock or be erased by the seller.
+  - Step 2: Attempt to select the out-of-stock or erased item in the shopping cart.
+expectedResult: The system should prevent the selection of out-of-stock or erased items, possibly greying out the checkbox or displaying an error message.
+
+Test Case: Test Case 4
+testCaseName: Verify checkout button is disabled for invalid product selections
+objective: Ensure that the checkout button is disabled when the product selected is invalid due to stock issues or unselected options
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with multiple options and limited stock.
+  - Step 2: Do not select any available options or select a quantity higher than the current stock.
+  - Step 3: Observe the state of the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, preventing the user from proceeding to checkout with an invalid product selection.
+

@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Valid Partial Fields
+objective: Verify that an employee can successfully update partial fields of a room's details and availability.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: In the room's details, fill only the fields that need to be updated.
+  - Step 5: Press the update button.
+expectedResult: A success message is displayed, and the database is updated with the new room details.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Non-Existent Room ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search for a room with an ID that does not exist in the database.
+  - Step 4: Try to fill in any fields (if applicable).
+  - Step 5: Press the update button (if applicable).
+expectedResult: A NOT FOUND message is displayed, and no update operation is performed.
+
+Test Case: Test Case 3
+testCaseName: Update Room with Invalid Field Entry
+objective: Verify that the system shows an invalid field entered message for every individual error when incorrect data is entered in the update fields.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: An invalid field entered message is displayed for each field with incorrect data, and no update operation is performed.
+
+Test Case: Test Case 4
+testCaseName: Update Room with Database Error
+objective: Verify that the system shows a failure message in case of any error during the update operation.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated with valid data.
+  - Step 5: Press the update button.
+expectedResult: A failure message is displayed in case of any error during the update operation, indicating that the update was not successful.
+

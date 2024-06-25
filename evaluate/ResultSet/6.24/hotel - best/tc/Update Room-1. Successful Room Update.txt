@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Update
+objective: Verify that an employee can successfully update room details and availability.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room by its ID that needs to be updated.
+  - Step 4: Fill in the fields that need to be updated for the room.
+  - Step 5: Press the update button.
+expectedResult: A success message is displayed, and the room details are updated in the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful room update by outlining the steps an employee would take to update room details and the expected positive outcome.
+

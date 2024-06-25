@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information Successfully
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with valid data.
+  - Step 5: Press the submit button to update the information.
+  - Step 6: Observe the success message.
+  - Step 7: Verify redirection to the Dashboard.
+expectedResult: Hotel information is updated successfully, a success message is displayed, and the user is redirected to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Validation Error
+objective: Verify that the system shows an error message when trying to update hotel information with invalid data.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with invalid data.
+  - Step 5: Press the submit button to update the information.
+  - Step 6: Observe the error message.
+expectedResult: The system displays an error message, and the hotel information is not updated.
+
+Test Case: Test Case 3
+testCaseName: Session Timeout During Hotel Information Update
+objective: Verify that the Hotel Owner is prompted to log in again if the session times out during the hotel information update process.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button and wait for the session to timeout.
+  - Step 4: Attempt to update the fields and submit the information after the session has timed out.
+  - Step 5: Observe the behavior.
+expectedResult: The system should prompt the user to log in again due to session timeout, and the changes should not be saved.
+

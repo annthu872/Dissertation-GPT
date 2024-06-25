@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Booking ID Entered
+objective: Verify that entering an incorrect Booking ID redirects the user to the main page with an error message
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an incorrect Booking ID in the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should redirect the user to the main page and display an error message indicating the Booking ID is incorrect.
+reflect: yes
+explanation: This test case directly addresses the test scenario of entering an incorrect Booking ID. It follows the steps that a user would take when faced with this situation and checks for the correct system response, which is to redirect to the main page with an appropriate error message. Therefore, it accurately reflects the given test scenario.
+

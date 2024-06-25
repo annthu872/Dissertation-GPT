@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Successful Hotel Information Update
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, update the desired fields (e.g., hotel name, address).
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that a success message is displayed.
+  - Step 7: Confirm that the system redirects to the Dashboard.
+expectedResult: The hotel information is updated successfully in the database, a success message is displayed, and the Hotel Owner is redirected to the Dashboard.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'Successful Hotel Information Update,' by outlining a clear path from logging in as a Hotel Owner to successfully updating hotel information and being redirected to the dashboard with a success message. It covers the main objective of verifying the update functionality and the system's response to a successful operation.
+

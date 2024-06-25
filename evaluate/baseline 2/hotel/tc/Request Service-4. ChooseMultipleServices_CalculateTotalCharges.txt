@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Room Service Request with Valid Room ID
+objective: To verify that the guest can successfully request room services with a valid room ID and view the total charges
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose desired services.
+  - Step 5: Confirm the selection of services.
+expectedResult: The system should calculate the total charges, update the database, display the total charges along with a success message, and then redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Verify Room Service Request with Invalid Room ID
+objective: To verify that the system displays an error message when an invalid room ID is entered for room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' error message and not proceed to the list of room services.
+
+Test Case: Test Case 3
+testCaseName: Verify Room Service Request without Selecting Any Services
+objective: To verify that the system prompts the user to select at least one service when no service is selected
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button.
+  - Step 4: Do not select any services and attempt to confirm the selection.
+expectedResult: The system should prompt the user to select at least one service before proceeding.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation to Main Page After Successful Room Service Request
+objective: To verify that the user is redirected to the main page after a successful room service request
+testSteps:
+  - Step 1: Successfully complete a room service request with a valid room ID and by selecting services.
+  - Step 2: Observe the system behavior after the success message is displayed.
+expectedResult: The system should automatically navigate the user to the main page after displaying the success message.
+

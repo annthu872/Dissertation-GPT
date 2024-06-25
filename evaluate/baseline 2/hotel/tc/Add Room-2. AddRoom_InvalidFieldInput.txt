@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Valid Inputs
+objective: Verify that a manager can successfully add a room with valid inputs
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields with valid inputs.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Check if the 'Room Added' message is displayed.
+expectedResult: The system should add the room to the database and display a 'Room Added' message.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Invalid Field Input
+objective: Verify that the system shows an error message when an invalid field input is entered
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields, intentionally entering invalid input in one or more fields.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+expectedResult: The system should not add the room to the database and should display an 'Invalid field entered' message.
+

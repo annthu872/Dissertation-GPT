@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Submit Room Service Request with Valid Room ID
+objective: Verify that the system allows the submission of a room service request with a valid room ID and displays the total charges and a success message before redirecting to the main page.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services, choose the desired services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges displayed by the system.
+expectedResult: The system calculates the total charges, updates the database, displays the total charges along with a 'room service request successful' message, and then redirects the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Submit Room Service Request with Expired Room ID
+objective: Verify that the system displays a 'Session Expired' message when attempting to submit a room service request with an expired room ID.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an expired room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+expectedResult: The system fails to validate the room ID and displays a 'Session Expired' message to the user.
+
+Test Case: Test Case 3
+testCaseName: Submit Room Service Request with Invalid Room ID
+objective: Verify that the system displays an 'Invalid ID' message when attempting to submit a room service request with an invalid room ID.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+expectedResult: The system fails to validate the room ID and displays an 'Invalid ID' message to the user.
+

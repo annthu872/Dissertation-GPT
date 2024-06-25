@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Valid Login for Manager
+objective: Verify that a Manager can successfully log in and is redirected to the Manager's dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Manager credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: The Manager is redirected to the Manager's dashboard after successful login.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login for Manager
+objective: Verify that a Manager with incorrect credentials receives an error message and remains on the login page
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Manager credentials (username and/or password).
+  - Step 3: Click the submit button.
+expectedResult: The system displays an error message about incorrect credentials, and the Manager remains on the login page.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Successful Report Generation Before Session Timeout
+objective: Verify that the Hotel Owner can successfully generate and view a report before the session times out
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for report generation, such as the date period.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on the generated report to view its details.
+expectedResult: The system should generate the report based on the provided parameters, and the user should be able to view the report details without experiencing a session timeout.
+
+Test Case: Test Case 2
+testCaseName: Session Times Out Before Report Generation
+objective: Verify that the system properly handles the scenario where the session times out before the report generation is completed
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for report generation, such as the date period.
+  - Step 5: Wait until the session times out before submitting the parameters for report generation.
+expectedResult: The system should redirect the user to the login page due to session timeout before the report generation could be initiated.
+
+Test Case: Test Case 3
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system displays an appropriate error message when invalid parameters are entered for report generation
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter invalid parameters for report generation, such as an incorrect date period.
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should validate the parameters and display an error message indicating that the entered parameters are invalid.
+

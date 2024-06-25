@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify successful booking addition with valid data
+objective: To verify that the employee can successfully add a booking with all required fields filled correctly and a booking ID is generated.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the total amount is displayed.
+  - Step 6: Verify the booking is added by checking the initial status as checked in.
+expectedResult: The system should generate a booking ID, add the booking to the database, and show the booking as added with an initial status of checked in.
+
+Test Case: Test Case 2
+testCaseName: Verify booking addition failure with invalid data
+objective: To verify that the system prevents booking addition when invalid data is entered in the booking fields.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields with invalid data.
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+expectedResult: The system should display 'invalid field entered' for every individual error and prevent the booking from being added.
+
+Test Case: Test Case 3
+testCaseName: Verify booking addition failure when total amount is not calculated
+objective: To verify that the system prevents booking addition if the total amount is not calculated before adding the booking.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data but do not click the calculate amount button.
+  - Step 4: Press the add booking button without calculating the total amount.
+expectedResult: The system should prevent the booking from being added and display a message indicating that the total amount needs to be calculated first.
+
+Test Case: Test Case 4
+testCaseName: Verify booking addition error handling
+objective: To verify that the system displays a failure message in case of any error during the booking addition process.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Simulate an error condition (e.g., server error or network issue) during booking addition.
+  - Step 4: Press the add booking button.
+expectedResult: The system should display a failure message indicating that the booking could not be added due to an error.
+

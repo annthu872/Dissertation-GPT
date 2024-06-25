@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Valid Data
+objective: Verify that the manager can successfully add a room with valid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should validate the fields and add the room to the database, then display a message indicating the room was successfully added.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Invalid Data
+objective: Verify that the system shows an error message when trying to add a room with invalid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill one or more fields with invalid data.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating the invalid field(s).
+
+Test Case: Test Case 3
+testCaseName: Add Room with Missing Data
+objective: Verify that the system shows an error message when trying to add a room with missing data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in the fields but leave one or more fields blank.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating the missing field(s).
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Invalid Characters in Name Field
+objective: Verify that the system shows an 'invalid field entered' message when invalid characters are entered in the name field while adding an employee.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on 'Employee'.
+  - Step 3: Fill all the fields with valid information except for the name field.
+  - Step 4: Enter invalid characters (e.g., numbers, special characters) in the name field.
+  - Step 5: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating 'invalid field entered' specifically for the name field.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the validation of the name field. It outlines a clear path to verify if the system correctly identifies and flags invalid characters in the name field, which is the core objective of the given test scenario.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Check-in with Valid Booking ID
+objective: Verify that the system allows check-in with a valid booking ID and navigates to the main page with a success message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system validates the booking ID, updates the booking details with the room ID, shows a 'check in successful' message, and navigates to the main page.
+
+Test Case: Test Case 2
+testCaseName: Verify Check-in with Expired Booking ID
+objective: Verify that the system denies check-in with an expired booking ID and shows an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an expired booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system identifies the booking ID as expired, does not update booking details, and shows an error message before redirecting to the main page.
+
+Test Case: Test Case 3
+testCaseName: Verify Check-in with Incorrect Booking ID
+objective: Verify that the system denies check-in with an incorrect booking ID and redirects to the main page with an error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an incorrect booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system fails to validate the incorrect booking ID, shows an error message, and redirects to the main page.
+

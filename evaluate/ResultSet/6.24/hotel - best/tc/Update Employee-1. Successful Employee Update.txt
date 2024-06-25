@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Successful Employee Update via ID Search
+objective: Verify that a manager can successfully update an employee's information using the employee's ID.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an employee using their ID.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the update button.
+  - Step 7: Confirm the update action if required.
+expectedResult: The system updates the employee information in the database and displays a confirmation message or page indicating the employee has been updated.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful employee update. It follows the intended flow of actions leading to the successful update of an employee's information, which is the core objective of the test scenario.
+

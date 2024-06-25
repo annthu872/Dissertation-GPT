@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify Room Not Found Message for Non-existent Room
+objective: To ensure the system correctly displays a 'NOT FOUND' message when an employee attempts to update a non-existent room.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search or select a room that does not exist in the database by entering a non-existent room ID.
+expectedResult: The system should display a 'NOT FOUND' message indicating the room does not exist.
+explanation: This test case is created to verify the system's behavior when an employee tries to update a room that is not found in the database, which directly relates to the 'Room Not Found' scenario.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Add Booking with Missing Fields
+objective: Verify that the system prevents booking addition when mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Leave one or more mandatory fields empty.
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate fields and display an error message for each missing mandatory field without adding the booking to the database.
+
+Test Case: Test Case 2
+testCaseName: Add Booking with Invalid Field Formats
+objective: Verify that the system prevents booking addition when fields are filled with data in incorrect formats and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields with data, ensuring at least one field is filled with data in an incorrect format (e.g., text in a date field).
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate fields and display an error message for each field with data in an incorrect format without adding the booking to the database.
+
+Test Case: Test Case 3
+testCaseName: Add Booking without Calculating Total Amount
+objective: Verify that the system prevents booking addition if the total amount is not calculated before adding the booking.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields correctly.
+  - Step 4: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: The system should prevent the booking from being added to the database and display an error message indicating that the total amount needs to be calculated first.
+

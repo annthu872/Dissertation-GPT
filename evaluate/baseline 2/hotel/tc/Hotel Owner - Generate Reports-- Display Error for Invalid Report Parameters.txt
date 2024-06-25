@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify error display for invalid date range in report parameters
+objective: Ensure the system displays an appropriate error message when the hotel owner enters an invalid date range for generating a report
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter an invalid date range as the report parameter. For example, the end date is before the start date.
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the date range is invalid and prompt the user to enter a valid date range.
+
+Test Case: Test Case 2
+testCaseName: Verify error display for missing report parameters
+objective: To check if the system correctly identifies and notifies the user when required report parameters are missing
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Leave the report parameters, such as the date range, empty.
+  - Step 5: Attempt to submit the report generation request without entering any parameters.
+expectedResult: The system should display an error message indicating that report parameters are missing and that the user needs to enter the required parameters to generate the report.
+
+Test Case: Test Case 3
+testCaseName: Verify error display for invalid parameter format
+objective: Ensure the system displays an error message when the hotel owner enters report parameters in an incorrect format
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter the report parameters in an incorrect format (e.g., using alphabetical characters in a date field).
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the parameter format is incorrect and prompt the user to enter the parameters in the correct format.
+

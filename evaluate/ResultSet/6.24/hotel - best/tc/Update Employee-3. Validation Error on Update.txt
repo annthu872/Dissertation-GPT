@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Validation Error on Update with Invalid Field Entry
+objective: Verify that the system displays an error message when an invalid value is entered in any field during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for an existing employee by entering a valid employee ID.
+  - Step 4: In the employee update form, enter an invalid value in one of the fields that are allowed to be changed.
+  - Step 5: Press the update button to attempt to update the employee information.
+expectedResult: The system should display an error message indicating 'invalid field entered'.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario, 'Validation Error on Update', by detailing a process where an employee's information is being updated, and a validation error is triggered due to an invalid field entry. It directly tests the scenario's requirement for handling invalid data during the update process.
+

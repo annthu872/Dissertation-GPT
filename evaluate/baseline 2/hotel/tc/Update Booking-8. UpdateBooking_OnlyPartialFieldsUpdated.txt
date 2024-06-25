@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Valid Partial Fields
+objective: Verify that an employee can successfully update partial fields of a booking and the system updates the database accordingly.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a specific booking by id that needs to be updated.
+  - Step 4: Fill only the fields that need to be updated in the booking details.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the updated fields, update the booking details in the database for the same booking id, and display a success message.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Field
+objective: Verify that the system shows an error message when an employee tries to update a booking with invalid field values.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a specific booking by id that needs to be updated.
+  - Step 4: Fill the fields that need to be updated with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and show an 'invalid field entered' message for every individual error.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when an employee tries to update a booking with a non-existent booking ID.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by id that does not exist in the database.
+  - Step 4: Attempt to fill in any update fields (if applicable).
+  - Step 5: Press the update button.
+expectedResult: The system should not load any booking fields data and should display a NOT FOUND message.
+
+Test Case: Test Case 4
+testCaseName: Update Booking without Computing Payment for New Services
+objective: Verify that the system prevents updating the booking if new services or room types are added without recomputing the payment.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a specific booking by id that needs to be updated.
+  - Step 4: Add new services or change the room type without recomputing the payment.
+  - Step 5: Press the update button.
+expectedResult: The system should not update the booking and should prompt the employee to compute the payment first.
+

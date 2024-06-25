@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Access Reports Page with Valid Hotel Owner Role
+objective: Verify that a user with the Hotel Owner role can access the Reports Page, generate a report, and view report details successfully
+testSteps:
+  - Step 1: Log in as a user with the Hotel Owner role.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters for generating a report, such as a specific date period.
+  - Step 4: Submit the parameters to generate the report.
+  - Step 5: Click on a specific report to open and view its details.
+expectedResult: The user should be able to navigate to the Reports Page, enter parameters to generate a report successfully, and view the details of a specific report.
+
+Test Case: Test Case 2
+testCaseName: Access Reports Page with Invalid Parameters
+objective: Verify that the system shows an error message when a user with the Hotel Owner role enters invalid parameters for generating a report
+testSteps:
+  - Step 1: Log in as a user with the Hotel Owner role.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter invalid parameters for generating a report, such as an incorrect date period.
+  - Step 4: Submit the parameters to generate the report.
+expectedResult: The system should validate the parameters and show an error message indicating that the parameters are invalid.
+

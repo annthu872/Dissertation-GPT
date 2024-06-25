@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Valid Booking ID
+objective: Verify that a guest can successfully check out using a valid booking ID and the linked room ID is removed upon validation
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that has a linked room ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system validates the booking ID, removes the linked room ID, updates the booking status as complete, and displays a 'check out successful' message before redirecting to the main page.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Booking ID
+objective: Verify that the system shows an error message and redirects to the main page when an invalid booking ID is entered
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an invalid booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system fails to validate the booking ID, shows an error message, and redirects to the main page.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Valid Booking ID but No Linked Room ID
+objective: Verify that the system shows an error message and redirects to the main page when a valid booking ID without a linked room ID is used for checkout
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that does not have a linked room ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system is unable to find a linked room ID for the booking ID, shows an error message, and redirects to the main page.
+

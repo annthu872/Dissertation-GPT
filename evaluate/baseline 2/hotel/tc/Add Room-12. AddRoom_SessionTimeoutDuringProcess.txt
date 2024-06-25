@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Room - Happy Path
+objective: Verify that a manager can successfully add a room to the system
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the required fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Confirm that the system adds the room to the database.
+expectedResult: The system should display a message indicating that the room has been successfully added.
+
+Test Case: Test Case 2
+testCaseName: Add Room - Invalid Field Entry
+objective: Verify that the system shows an error message when an invalid field is entered while adding a room
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the required fields, intentionally entering invalid data in one of them.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+expectedResult: The system should display an error message indicating that an invalid field was entered.
+
+Test Case: Test Case 3
+testCaseName: Add Room - Session Timeout During Process
+objective: Verify that the system handles session timeouts gracefully during the room addition process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section and fill all the required fields with valid data.
+  - Step 3: Wait for the session to timeout before pressing the 'Add Room' button.
+  - Step 4: Attempt to press the 'Add Room' button after the session has timed out.
+expectedResult: The system should redirect the user to the login page and prompt them to log in again due to the session timeout.
+

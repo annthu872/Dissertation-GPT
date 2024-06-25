@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Update Non-existent Employee
+objective: Verify the system behavior when attempting to update an employee who does not exist in the database
+testSteps:
+  - Step 1: Ensure the manager is logged in to the system.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Attempt to search for an employee using an ID that does not exist in the database.
+  - Step 4: Try to update fields (if applicable) and press the update button.
+expectedResult: The system should display a message indicating 'incorrect value for id' or that the employee does not exist.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Field
+objective: Verify the system's response when a manager attempts to update an employee with invalid field values
+testSteps:
+  - Step 1: Log in as a manager.
+  - Step 2: Go to the Employee menu.
+  - Step 3: Search for an existing employee by ID.
+  - Step 4: The system auto-fills the fields with the employee's current information.
+  - Step 5: Change a field to an invalid value and press the update button.
+expectedResult: The system should display a message indicating 'invalid field entered' and prevent the update from proceeding.
+

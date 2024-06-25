@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify System Response Time for Successful Employee Addition
+objective: To verify that the system successfully adds an employee within an acceptable response time and displays the appropriate success message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on the Employee menu.
+  - Step 3: Fill all the required fields with valid data and click on the Add button.
+  - Step 4: Observe the time taken for the system to respond after the Add button is clicked.
+expectedResult: The system should add the employee to the database within an acceptable response time, generate an id and password for the employee, and display a message indicating the employee was successfully added.
+
+Test Case: Test Case 2
+testCaseName: Verify System Response Time with Unfilled Required Fields
+objective: To verify that the system displays an error message promptly when trying to add an employee without filling all the required fields.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on the Employee menu.
+  - Step 3: Attempt to add an employee without filling any of the required fields and click on the Add button.
+  - Step 4: Observe the time taken for the system to respond after the Add button is clicked.
+expectedResult: The system should immediately display a message indicating that all fields are required without any noticeable delay.
+
+Test Case: Test Case 3
+testCaseName: Verify System Response Time with Invalid Field Entries
+objective: To verify that the system displays an error message promptly when trying to add an employee with invalid data in any of the fields.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on the Employee menu.
+  - Step 3: Fill all the required fields with one or more invalid data entries and click on the Add button.
+  - Step 4: Observe the time taken for the system to respond after the Add button is clicked.
+expectedResult: The system should immediately display a message indicating that an invalid field entry was made without any noticeable delay.
+

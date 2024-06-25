@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify adding an employee with all valid fields
+objective: To ensure that the system allows the addition of an employee when all fields are filled correctly by the manager
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields with valid information.
+  - Step 4: Click on the Add button to submit the information.
+  - Step 5: Observe the system's response.
+expectedResult: The system should validate the fields, add the employee to the database, display a message that the employee has been added, and generate an id and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Verify system behavior when fields are left unfilled
+objective: To ensure that the system prompts the manager when trying to add an employee with one or more fields left unfilled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Leave one or more fields unfilled.
+  - Step 4: Click on the Add button to submit the information.
+  - Step 5: Observe the system's response.
+expectedResult: The system should display a message indicating that all fields are required.
+
+Test Case: Test Case 3
+testCaseName: Verify system behavior when an invalid field entry is made
+objective: To ensure that the system prompts the manager when an invalid entry is made in any of the fields while adding an employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields, intentionally entering invalid information in one of them.
+  - Step 4: Click on the Add button to submit the information.
+  - Step 5: Observe the system's response.
+expectedResult: The system should display a message indicating that an invalid field entry has been made.
+

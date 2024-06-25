@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Booking Update with No Changes
+objective: Verify that the system allows updating a booking without making any changes to the booking details.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Without making any changes to the booking fields, directly press the update button.
+expectedResult: The system should validate the unchanged fields, update the database for the same booking ID, and show a success message indicating that the booking has been updated.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Booking Update with No Changes' by verifying the system's behavior when an update is triggered without any modifications to the booking details. It tests the specific functionality of handling updates with no changes, which is the core objective of the scenario.
+

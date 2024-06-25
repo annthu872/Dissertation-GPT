@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Validate Room Update with Correct Data
+objective: Verify that the system updates the room details successfully when valid data is entered
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: Fill in the fields that need to be updated with valid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the database, and show a success message.
+explanation: This test case ensures that the basic course of events or happy path works as intended when updating room details with valid data.
+
+Test Case: Test Case 2
+testCaseName: Validate Room Update with Invalid Data
+objective: Verify that the system shows validation errors when invalid data is entered in the update fields
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: Fill in at least one field with invalid data that needs to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system should show invalid field entered message for every individual error without updating the database.
+explanation: This test case checks the system's ability to validate input fields and provide feedback when invalid data is entered during the room update process.
+
+Test Case: Test Case 3
+testCaseName: Validate Room Update for Non-Existent Room
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room using an ID that does not exist in the database.
+  - Step 4: Attempt to fill in the fields for update (if applicable).
+  - Step 5: Press the update button (if applicable).
+expectedResult: The system should show a NOT FOUND message without allowing the user to update.
+explanation: This test case ensures that the system correctly handles attempts to update non-existent rooms by displaying an appropriate error message.
+

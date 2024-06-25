@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Generate a Single Report Successfully
+objective: Verify that the Hotel Owner can successfully generate a report by entering valid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters for generating a report, such as a specific date period.
+  - Step 4: Click on the 'Generate Report' button.
+  - Step 5: Open the generated report by clicking on it.
+expectedResult: The system should validate the parameters, generate the report based on the selected date and other parameters, and display the report details to the user.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Generate Report with Invalid Parameters
+objective: Verify that the system shows an error message when the Hotel Owner tries to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter invalid parameters for generating a report, such as an incorrect date period.
+  - Step 4: Click on the 'Generate Report' button.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+
+Test Case: Test Case 3
+testCaseName: Generate Multiple Reports Concurrently
+objective: Verify that the Hotel Owner can generate multiple reports concurrently without any system errors or performance degradation
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Open multiple tabs or windows of the Reports Page.
+  - Step 4: Enter valid, but different, parameters for generating reports in each tab/window.
+  - Step 5: Click on the 'Generate Report' button simultaneously in all tabs/windows.
+  - Step 6: Open each generated report by clicking on it in each tab/window.
+expectedResult: The system should successfully generate all reports concurrently based on the selected parameters in each tab/window and allow the user to view each report's details without any errors or performance issues.
+

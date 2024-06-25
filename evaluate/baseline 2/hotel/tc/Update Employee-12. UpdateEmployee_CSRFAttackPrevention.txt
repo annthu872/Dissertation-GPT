@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Employee Information Successfully
+objective: Verify that a manager can successfully update an employee's information in the system
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: System auto-fills the form with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the update button to submit the changes.
+  - Step 7: Verify that the system validates the updated fields correctly.
+  - Step 8: Confirm that the system displays a success message indicating the employee was updated.
+expectedResult: The system should successfully update the employee's information in the database and display a confirmation message.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Update Employee with Invalid ID
+objective: Ensure the system handles attempts to update an employee with a non-existent ID gracefully
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Attempt to search for an employee using an ID that does not exist in the database.
+  - Step 4: Try to update information for the non-existent employee.
+expectedResult: The system should display an error message indicating an incorrect value for ID and prevent any updates.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Update Employee with Invalid Field
+objective: Verify that the system prevents updates when invalid data is entered into any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: System auto-fills the form with the employee's current information.
+  - Step 5: Enter invalid data into one of the fields that are allowed to be updated.
+  - Step 6: Press the update button to submit the changes.
+expectedResult: The system should display an error message indicating an invalid field entered and prevent the update from being processed.
+

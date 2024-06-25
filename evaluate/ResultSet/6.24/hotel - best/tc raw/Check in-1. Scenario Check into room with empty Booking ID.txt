@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Check into room with empty Booking ID
+objective: Verify that the system prevents check-in with an empty Booking ID and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Leave the Booking ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should not proceed with the check-in process and should display an error message indicating that the Booking ID is required.
+explanation: This test case is created to ensure the system validates the presence of a Booking ID before proceeding with the check-in process, as per the precondition that the user must have a valid booking ID. It directly matches the scenario name by testing the behavior of the system when attempting to check into a room with an empty Booking ID.
+

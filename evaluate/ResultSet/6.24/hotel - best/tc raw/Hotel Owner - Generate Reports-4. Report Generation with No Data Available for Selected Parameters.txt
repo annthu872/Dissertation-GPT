@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Report Generation with Valid Parameters but No Data Available
+objective: Verify that the system correctly handles the scenario where a report is generated with valid parameters but no data is available for those parameters.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter valid parameters for report generation that are known to have no data (e.g., a future date range where no bookings or activities have occurred).
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should display a message or page indicating that no data is available for the selected report parameters, rather than showing an empty report or an error.
+explanation: This test case is designed to ensure that the system can gracefully handle situations where a report is requested for a set of parameters that do not match any existing data. It is directly related to the test scenario 'Report Generation with No Data Available for Selected Parameters' by testing the system's response to a valid report generation request that results in no data.
+
+Test Case: Test Case 2
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system correctly displays an error message when the report generation parameters are invalid.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter invalid parameters for report generation (e.g., an end date that is before the start date).
+  - Step 5: Attempt to submit the parameters to generate the report.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+explanation: This test case ensures that the system properly validates report parameters before attempting to generate a report. It addresses the alternative path in the use case where parameter validation fails. This is crucial for maintaining data integrity and user experience.
+

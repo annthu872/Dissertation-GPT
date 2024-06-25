@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Login with valid credentials without XSS attack
+objective: Verify that the user can successfully login with valid credentials without any XSS attack vectors being used
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid username and password for the user.
+  - Step 3: Click the submit button.
+expectedResult: User is redirected to the dashboard specific to their user role without any error messages.
+
+Test Case: Test Case 2
+testCaseName: Login with invalid credentials without XSS attack
+objective: Verify that the user cannot login with invalid credentials and no XSS attack vectors are being used
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid username and/or password for the user.
+  - Step 3: Click the submit button.
+expectedResult: User remains on the login page and an error message is displayed indicating incorrect credentials.
+
+Test Case: Test Case 3
+testCaseName: Login with valid credentials and XSS attack in username
+objective: Verify that the system sanitizes input fields to prevent XSS attacks when a user attempts to login with valid credentials but includes an XSS attack vector in the username field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid password and an XSS attack vector script in the username field.
+  - Step 3: Click the submit button.
+expectedResult: The system should not execute the script and should either display an error message about invalid input or sanitize the input and proceed with login validation.
+
+Test Case: Test Case 4
+testCaseName: Login with valid credentials and XSS attack in password
+objective: Verify that the system sanitizes input fields to prevent XSS attacks when a user attempts to login with valid credentials but includes an XSS attack vector in the password field
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid username and an XSS attack vector script in the password field.
+  - Step 3: Click the submit button.
+expectedResult: The system should not execute the script and should either display an error message about invalid input or sanitize the input and proceed with login validation.
+
+Test Case: Test Case 5
+testCaseName: Login with XSS attack in both fields
+objective: Verify that the system prevents XSS attacks by sanitizing input fields when a user attempts to login with XSS attack vectors in both the username and password fields
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter XSS attack vector scripts in both the username and password fields.
+  - Step 3: Click the submit button.
+expectedResult: The system should not execute any scripts and should display an error message about invalid input or sanitize the inputs.
+

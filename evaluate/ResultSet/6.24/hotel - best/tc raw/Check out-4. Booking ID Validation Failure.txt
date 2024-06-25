@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Booking ID Validation Failure with Incorrect Booking ID
+objective: Verify that the system shows an error message and redirects to the main page when an incorrect Booking ID is entered during checkout.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect Booking ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating the Booking ID is incorrect and redirect the user to the main page.
+explanation: This test case is created to validate the system's behavior when an incorrect Booking ID is entered, which is an alternative path in the use case specification. It ensures that users are informed about the mistake and can navigate back to the main page.
+
+Test Case: Test Case 2
+testCaseName: Booking ID Validation Failure with No Room Linked
+objective: Verify that the system shows an error message and redirects to the main page when a Booking ID without a linked room is entered during checkout.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a Booking ID that does not have a linked room ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating there is no room linked to the Booking ID and redirect the user to the main page.
+explanation: This test case checks the system's response to a Booking ID that has no linked room ID, following the alternative path in the use case. It ensures the system correctly handles such cases by informing the user and redirecting them appropriately.
+

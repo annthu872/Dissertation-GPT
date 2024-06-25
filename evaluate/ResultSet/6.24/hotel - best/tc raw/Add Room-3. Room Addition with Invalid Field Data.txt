@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Invalid Room Name
+objective: Verify that the system shows an error when adding a room with an invalid room name
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in all the fields, entering an invalid format for the room name.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating the room name is invalid.
+explanation: This test case ensures that the system correctly validates the room name field and prevents the addition of rooms with names that do not meet the specified criteria.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Empty Required Field
+objective: Verify that the system shows an error when attempting to add a room with a required field left empty
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in all the fields except for one required field, leave it empty.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that a required field has been left empty and the room cannot be added.
+explanation: This test case checks that the system requires all necessary information to be filled out before a room can be added, ensuring data integrity and completeness.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Invalid Field Format
+objective: Verify that the system shows an error when a field is filled with data in an invalid format
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in all the fields, entering data in an invalid format for one of the fields (e.g., alphanumeric characters in a numeric-only field).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that the field has been filled with data in an invalid format.
+explanation: This test case ensures that the system enforces data format requirements for each field, preventing the entry of invalid data.
+

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Submit Room Service Request Without Choosing Service
+objective: Verify that the system prompts the user to choose a service when attempting to submit a room service request without selecting any service
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button without choosing any service.
+expectedResult: The system should display a message prompting the user to choose at least one service before submitting.
+
+Test Case: Test Case 2
+testCaseName: Submit Room Service Request With Invalid Room ID
+objective: Verify that the system shows an 'Invalid ID' message when a room service request is submitted with an invalid room ID
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID.
+  - Step 3: Attempt to choose a service (if applicable).
+  - Step 4: Press the submit button.
+expectedResult: The system should validate the room ID and display an 'Invalid ID' message.
+
+Test Case: Test Case 3
+testCaseName: Successful Room Service Request Submission
+objective: Verify that the system successfully processes a room service request when a valid room ID is used and at least one service is selected
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Choose at least one service from the list of available services.
+  - Step 4: Press the submit button.
+expectedResult: The system should show the total charges and display a 'room service request successful' message before redirecting to the main page.
+

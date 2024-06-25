@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify system response with no Booking ID entered
+objective: To verify that the system prompts an error or a specific message when the Booking ID field is left empty during the check-in process
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Leave the Booking ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating that the Booking ID is required and prevent the user from proceeding to the next step.
+
+Test Case: Test Case 2
+testCaseName: Verify system response with incorrect Booking ID entered
+objective: To verify that the system displays an error message and redirects the user to the main page when an incorrect Booking ID is entered
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an incorrect Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the Booking ID, display an error message about the incorrect Booking ID, and redirect the user to the main page.
+
+Test Case: Test Case 3
+testCaseName: Verify successful check-in process
+objective: To verify that the system updates the booking details with room ID and shows a success message before redirecting to the main page when a correct Booking ID is entered
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the Booking ID, update the booking details with the room ID, display a 'check-in successful' message, and then redirect the user to the main page.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Invalid Room ID - Show Error Message
+objective: Verify that the system shows an error message when an invalid room ID is entered for room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the room ID and display an 'Invalid Id' error message.
+
+Test Case: Test Case 2
+testCaseName: Valid Room ID - Show Room Services
+objective: Verify that the system proceeds to show the list of room services when a valid room ID is entered
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Choose any available service from the list.
+expectedResult: The system should validate the room ID, show the list of room services, allow the user to choose a service, calculate the charges, update the database, show the total charges with a success message, and then redirect to the main page.
+
+Test Case: Test Case 3
+testCaseName: Request Service with Valid Room ID
+objective: Verify that the system calculates charges, updates the database, and shows a success message after service request with a valid room ID
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Choose any available service from the list.
+  - Step 5: Confirm the service request.
+expectedResult: The system should calculate the charges, update the database with the service request, show the total charges along with a 'room service request successful' message, and then redirect to the main page.
+

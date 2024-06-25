@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout During System Maintenance
+objective: Verify that a guest can successfully check out from the room during system maintenance
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that has a valid room ID linked to it.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's behavior during maintenance.
+expectedResult: Despite system maintenance, the guest should see a 'check out successful' message and be redirected to the main page.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Incorrect Booking ID During System Maintenance
+objective: Verify the system's response when a guest enters an incorrect booking ID during system maintenance
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's behavior during maintenance.
+expectedResult: The system should redirect the guest to the main page and show an error message, even during system maintenance.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Unlinked Room ID During System Maintenance
+objective: Verify the system's response when a guest's booking ID does not have a valid room ID linked to it during system maintenance
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a booking ID that does not have a valid room ID linked to it.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's behavior during maintenance.
+expectedResult: The system should redirect the guest to the main page and show an error message about the unlinked room ID, even during system maintenance.
+

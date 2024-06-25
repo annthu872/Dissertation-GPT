@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Special Characters in Name Field
+objective: Verify that the system prevents the update of an employee's name with special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Log in to the system as a Manager.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee by entering their ID or selecting them from the table.
+  - Step 4: In the employee's details, attempt to update the Name field with special characters (e.g., !@#$%^&*).
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating 'Invalid field entered' for the Name field.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Special Characters in Email Field
+objective: Verify that the system prevents the update of an employee's email with special characters not allowed in emails and displays an appropriate error message
+testSteps:
+  - Step 1: Log in to the system as a Manager.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee by entering their ID or selecting them from the table.
+  - Step 4: In the employee's details, attempt to update the Email field with special characters not typically allowed in email addresses (e.g., "!#$%&'*+/=?^_`{|}~").
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating 'Invalid field entered' for the Email field.
+
+Test Case: Test Case 3
+testCaseName: Successfully Update Employee with Allowed Special Characters in Address Field
+objective: Verify that the system allows the update of an employee's address with special characters that are typically found in addresses
+testSteps:
+  - Step 1: Log in to the system as a Manager.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee by entering their ID or selecting them from the table.
+  - Step 4: In the employee's details, update the Address field with special characters typically allowed in addresses (e.g., commas, hyphens, periods).
+  - Step 5: Press the update button.
+expectedResult: The system should update the employee in the database and display a message indicating 'Employee updated'.
+
+Test Case: Test Case 4
+testCaseName: Update Employee with Special Characters in Phone Number Field
+objective: Verify that the system prevents the update of an employee's phone number with special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Log in to the system as a Manager.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee by entering their ID or selecting them from the table.
+  - Step 4: In the employee's details, attempt to update the Phone Number field with special characters (e.g., !@#$%^&*).
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating 'Invalid field entered' for the Phone Number field.
+

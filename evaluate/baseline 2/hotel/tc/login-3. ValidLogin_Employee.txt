@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Valid Login for Employee
+objective: Verify that an Employee can successfully log in and is redirected to the Employee dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials in the username and password fields.
+  - Step 3: Click the submit button.
+expectedResult: The Employee is redirected to the Employee dashboard after successful login.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login for Employee
+objective: Verify that an Employee with incorrect credentials receives an error message and remains on the login page
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Employee credentials in the username and password fields.
+  - Step 3: Click the submit button.
+expectedResult: The system displays an error message about incorrect credentials, and the Employee remains on the login page.
+
+Test Case: Test Case 3
+testCaseName: Valid Login Redirect for Employee
+objective: Verify that after a successful login, an Employee is redirected to the correct dashboard specific to their role
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials in the username and password fields.
+  - Step 3: Click the submit button.
+  - Step 4: Observe the page to which the system redirects.
+expectedResult: After successful login, the Employee is redirected to the Employee-specific dashboard.
+

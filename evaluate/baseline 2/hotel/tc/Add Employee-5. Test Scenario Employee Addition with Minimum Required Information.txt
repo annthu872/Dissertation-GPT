@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with All Required Information
+objective: Verify that a manager can successfully add an employee with all required information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Fill in all the required fields with valid information.
+  - Step 5: Click the 'Submit' button to add the employee.
+expectedResult: The system should validate the fields, add the employee to the database, display a message that the employee was successfully added, and generate an ID and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Missing Required Information
+objective: Verify that the system prompts an error when trying to add an employee with missing required information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Leave one or more required fields empty.
+  - Step 5: Click the 'Submit' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the employee from being added to the database.
+
+Test Case: Test Case 3
+testCaseName: Add Employee with Invalid Information in Fields
+objective: Verify that the system prompts an error when trying to add an employee with invalid information in any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Fill in all required fields, intentionally entering invalid information in at least one field.
+  - Step 5: Click the 'Submit' button to attempt adding the employee.
+expectedResult: The system should validate the fields and display a message indicating which field has invalid information, preventing the employee from being added to the database.
+

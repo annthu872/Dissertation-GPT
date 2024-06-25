@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Special Characters in Name Field
+objective: Verify that the system prevents adding an employee with special characters in the Name field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields, including special characters (e.g., @, #, $) in the Name field, and click Add.
+  - Step 4: Observe the system's response.
+expectedResult: The system should display a message indicating that the Name field is invalid due to the use of special characters.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Special Characters in Email Field
+objective: Verify that the system allows adding an employee with special characters in the Email field that are common in email addresses
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields, ensuring the Email field contains special characters (e.g., @, .) that are typical in email addresses, and click Add.
+  - Step 4: Observe the system's response.
+expectedResult: The system should successfully add the employee to the database and display a message indicating the employee has been added.
+
+Test Case: Test Case 3
+testCaseName: Add Employee Leaving Required Fields Unfilled
+objective: Verify that the system prevents adding an employee when required fields are left unfilled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill some but not all required fields, leaving at least one required field empty, and click Add.
+  - Step 4: Observe the system's response.
+expectedResult: The system should display a message indicating that all fields are required.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify NOT FOUND message for non-existent booking ID
+objective: Verify that the system displays a NOT FOUND message when an employee attempts to update a booking that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by entering a booking ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message.
+explanation: This test case ensures that when an employee tries to update a booking that doesn't exist, the system correctly identifies the absence and notifies the user accordingly, preventing any confusion or unnecessary steps in trying to update a non-existent booking.
+
+Test Case: Test Case 2
+testCaseName: Verify invalid field error message during booking update
+objective: Verify that the system displays an error message for each invalid field when an employee attempts to update a booking with incorrect data
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that exists in the database.
+  - Step 4: Fill the booking fields with invalid data (e.g., incorrect date format, text in a number field).
+  - Step 5: Press the update button.
+expectedResult: The system should display an error message for each invalid field entered.
+explanation: This test case checks the system's ability to validate field inputs during the booking update process. It ensures that the system provides feedback on specific invalid fields, allowing the employee to correct them accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify successful booking update with valid data
+objective: Verify that the system updates the booking details in the database and displays a success message when an employee updates a booking with all valid data
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that exists in the database.
+  - Step 4: Correctly fill all the fields that need to be updated.
+  - Step 5: Compute payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+expectedResult: The system should update the booking details in the database and display a success message.
+explanation: This test case verifies the happy path of the booking update process, ensuring that the system correctly updates the booking details in the database and informs the employee of the successful update.
+

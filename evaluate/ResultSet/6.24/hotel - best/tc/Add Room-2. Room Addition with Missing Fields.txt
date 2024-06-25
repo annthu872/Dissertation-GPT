@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Missing Room Name
+objective: Verify that the system prevents adding a room when the room name field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Leave the room name field empty.
+  - Step 4: Fill in all other fields with valid data.
+  - Step 5: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message and prevent the room from being added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario of adding a room with missing fields, specifically focusing on the missing room name field. It accurately reflects the scenario by testing the system's response to a submission with a critical field left blank.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Missing Room Capacity
+objective: Verify that the system prevents adding a room when the room capacity field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in the room name field with a valid name.
+  - Step 4: Leave the room capacity field empty.
+  - Step 5: Fill in all other fields with valid data.
+  - Step 6: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message and prevent the room from being added to the database.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests another essential field, the room capacity, being missing. It aligns with the scenario's focus on ensuring all necessary fields are filled before a room can be added, thus reflecting the scenario accurately.
+
+Test Case: Test Case 3
+testCaseName: Add Room with All Fields Missing
+objective: Verify that the system prevents adding a room when all fields are missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Leave all fields empty.
+  - Step 4: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message for the first missing required field and prevent the room from being added to the database.
+reflect: yes
+explanation: This test case effectively captures the essence of the test scenario by testing the extreme case where no information is provided at all. It ensures that the system checks for the presence of required fields before proceeding with adding a room, which is a direct reflection of the scenario's intent.
+

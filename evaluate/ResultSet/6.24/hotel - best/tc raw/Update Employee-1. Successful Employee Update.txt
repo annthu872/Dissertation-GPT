@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Successful Employee Update via ID Search
+objective: Verify that a manager can successfully update an employee's information using the employee's ID.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an employee using their ID.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the update button.
+  - Step 7: Confirm the update action if required.
+expectedResult: The system updates the employee information in the database and displays a confirmation message or page indicating the employee has been updated.
+explanation: This test case ensures that the manager can successfully update an employee's information following the basic course of events described in the use case. It tests the happy path where all preconditions are met, and the update process completes without errors.
+
+Test Case: Test Case 2
+testCaseName: Employee Update with Non-existent ID
+objective: Verify that the system shows an error message when trying to update an employee with a non-existent ID.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Attempt to search for an employee using a non-existent ID.
+  - Step 4: Try to update any field (if applicable).
+expectedResult: The system displays an error message indicating an incorrect value for ID, preventing any update attempts.
+explanation: This test case checks the system's behavior when an attempt is made to update an employee who does not exist in the database, following the alternative path in the use case. It ensures that the system correctly handles invalid IDs.
+
+Test Case: Test Case 3
+testCaseName: Employee Update with Invalid Field Entry
+objective: Verify that the system shows an error message when an invalid field is entered during the employee update process.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section and search for an existing employee.
+  - Step 3: Auto-fill the form with the employee's current information.
+  - Step 4: Enter an invalid value in one of the fields that are allowed to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system validates the fields and displays an error message indicating that an invalid field was entered, preventing the update from proceeding.
+explanation: This test case is designed to verify the system's validation mechanism during the employee update process, specifically when invalid data is entered into a field. It follows the alternative path described in the use case.
+

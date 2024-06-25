@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Service Order Submission
+objective: Verify that a guest can successfully request room services and receive a success message along with the total charges.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, choose one or more services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges displayed and the success message.
+  - Step 7: Verify that the system navigates to the main page after displaying the success message.
+expectedResult: The guest should see the total charges for the selected services along with a 'room service request successful' message, followed by redirection to the main page.
+explanation: This test case ensures that the basic course of events for requesting room services is functioning as expected. It covers the happy path from entering a valid room ID to receiving a success message and being redirected to the main page.
+
+Test Case: Test Case 2
+testCaseName: Room Service Order with Invalid Room ID
+objective: Verify that the system displays an 'Invalid Id' message when an invalid room ID is entered for a room service request.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: Observe the message displayed by the system.
+expectedResult: The system should display an 'Invalid Id' message and prevent the user from proceeding to request room services.
+explanation: This test case checks the system's behavior when an invalid room ID is entered, ensuring that the validation step in the basic course of events correctly identifies invalid IDs and informs the user accordingly.
+
+Test Case: Test Case 3
+testCaseName: Room Service Order with Unavailable Service Selection
+objective: Verify that the system prevents the selection of unavailable services and prompts the user accordingly.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field and submit.
+  - Step 3: Attempt to request a service that is marked as unavailable.
+  - Step 4: Observe the response from the system regarding the selection of unavailable services.
+expectedResult: The system should prevent the user from selecting unavailable services and may display a message or remove unavailable options from the list.
+explanation: This test case ensures that the system correctly handles attempts to request services that are not available, aligning with the alternative path described in the use case specification.
+

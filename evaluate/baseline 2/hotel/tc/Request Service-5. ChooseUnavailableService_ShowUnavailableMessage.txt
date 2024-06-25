@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Choose an Unavailable Service and Verify Unavailable Message
+objective: Verify that when a guest chooses an unavailable service, the system shows an 'Unavailable Service' message
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services, choose a service that is known to be unavailable.
+  - Step 5: Attempt to submit the request for the unavailable service.
+expectedResult: The system should display a message indicating that the chosen service is unavailable.
+
+Test Case: Test Case 2
+testCaseName: Choose an Available Service and Verify Success Message
+objective: Verify that when a guest chooses an available service, the system calculates charges, updates the database, and shows a success message along with the total charges
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services, choose a service that is available.
+  - Step 5: Submit the request for the chosen service.
+expectedResult: The system should calculate the charges, update the database, display the total charges, show a 'room service request successful' message, and then redirect to the main page.
+
+Test Case: Test Case 3
+testCaseName: Enter Invalid Room ID and Verify Error Message
+objective: Verify that entering an invalid room ID shows an 'Invalid ID' error message
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+expectedResult: The system should display an 'Invalid ID' error message.
+

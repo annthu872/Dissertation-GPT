@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Invalid Date Range Selection for Report Generation
+objective: Verify that the system shows an error message when the hotel owner selects an invalid date range for report generation
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter an invalid date range (e.g., end date is before the start date).
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the date range is invalid and prevent the report from being generated.
+
+Test Case: Test Case 2
+testCaseName: Empty Parameters for Report Generation
+objective: Verify that the system shows an error message when the hotel owner attempts to generate a report without entering any parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Leave all the parameter fields empty.
+  - Step 5: Attempt to submit the report generation request.
+expectedResult: The system should display an error message indicating that parameters cannot be empty and prevent the report from being generated.
+
+Test Case: Test Case 3
+testCaseName: Invalid Parameter Types for Report Generation
+objective: Verify that the system shows an error message when the hotel owner enters parameters of incorrect types for report generation
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter a non-date value (e.g., text) in the date period selection fields.
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the parameters are of an incorrect type and prevent the report from being generated.
+

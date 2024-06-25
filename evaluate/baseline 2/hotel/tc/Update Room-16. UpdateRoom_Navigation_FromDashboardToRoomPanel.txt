@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Update Room Details Successfully
+objective: Verify that an employee can successfully update room details from the dashboard to the room panel
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: From the dashboard, select the Room panel.
+  - Step 3: Search or select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated for the room.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the room details in the database, and display a success message.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Update Non-existent Room
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that doesn't exist
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: From the dashboard, select the Room panel.
+  - Step 3: Search for a room by an ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Update Room with Invalid Fields
+objective: Verify that the system shows an invalid field entered message for every individual error when trying to update a room with invalid data
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: From the dashboard, select the Room panel.
+  - Step 3: Search or select a room to update by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and show an invalid field entered message for every individual error.
+
+Test Case: Test Case 4
+testCaseName: Update Room Details with System Error
+objective: Verify that the system shows a failure message in case of any error during the update process
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: From the dashboard, select the Room panel.
+  - Step 3: Search or select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated for the room.
+  - Step 5: Press the update button.
+expectedResult: In case of any error during the update process, the system should show a failure message.
+

@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Exceeding Character Limit in Employee Name Field
+objective: Verify that the system displays an error message when the character limit is exceeded in the employee name field.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on 'Employee'.
+  - Step 3: Fill all the fields, ensuring to exceed the character limit for the employee name field.
+  - Step 4: Click on 'Add' to attempt adding the employee.
+expectedResult: The system should display an error message indicating that the character limit for the employee name field has been exceeded.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on exceeding the character limit in a specific field (employee name) and verifying the system's response, which is to display an error message.
+
+Test Case: Test Case 2
+testCaseName: Exceeding Character Limit in Employee Email Field
+objective: Verify that the system displays an error message when the character limit is exceeded in the employee email field.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on 'Employee'.
+  - Step 3: Fill all the fields, ensuring to exceed the character limit for the employee email field.
+  - Step 4: Click on 'Add' to attempt adding the employee.
+expectedResult: The system should display an error message indicating that the character limit for the employee email field has been exceeded.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests another field (employee email) for character limit validation, ensuring the system prevents the addition of an employee with an excessively long email.
+
+Test Case: Test Case 3
+testCaseName: Exceeding Character Limit in Employee Address Field
+objective: Verify that the system displays an error message when the character limit is exceeded in the employee address field.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on 'Employee'.
+  - Step 3: Fill all the fields, ensuring to exceed the character limit for the employee address field.
+  - Step 4: Click on 'Add' to attempt adding the employee.
+expectedResult: The system should display an error message indicating that the character limit for the employee address field has been exceeded.
+reflect: yes
+explanation: This test case aligns with the test scenario by examining a different field (employee address) for character limit enforcement, ensuring the system's capability to prevent the addition of an employee with an excessively long address.
+

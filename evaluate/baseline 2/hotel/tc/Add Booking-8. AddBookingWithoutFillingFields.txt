@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Add Booking Without Filling Any Fields
+objective: Verify that the system prevents adding a booking without filling any fields and displays appropriate error messages
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Observe the booking panel menu displayed.
+  - Step 4: Attempt to add a booking without filling any of the booking fields.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields, not add the booking to the database, and display an error message for every required field that was not filled out.
+
+Test Case: Test Case 2
+testCaseName: Add Booking Without Calculating Total Amount
+objective: Verify that the system prevents adding a booking if the total amount is not calculated
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields but do not click the calculate amount button.
+  - Step 4: Press the add booking button.
+expectedResult: The system should not add the booking to the database and should display an error message indicating that the total amount needs to be calculated before adding the booking.
+
+Test Case: Test Case 3
+testCaseName: Add Booking With Invalid Field Entries
+objective: Verify that the system prevents adding a booking with invalid field entries and displays appropriate error messages
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with at least one invalid entry (e.g., incorrect date format).
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields, not add the booking to the database, and display an error message for the invalid field entry.
+

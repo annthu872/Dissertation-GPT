@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Data
+objective: Verify that a manager can successfully update an employee's details with all fields filled correctly
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for the employee to be updated using their ID or name in the search option.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields with valid data and press the update button.
+  - Step 6: Confirm the update action if prompted.
+expectedResult: The system should validate the updated fields, update the employee in the database, and display a confirmation message or page indicating the employee has been updated successfully.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid ID
+objective: Verify that the system shows an error message when trying to update an employee with an incorrect ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for the employee using an invalid ID.
+  - Step 4: Attempt to update any field and press the update button.
+expectedResult: The system should display an error message indicating 'incorrect value for id' and prevent any updates from being made.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Invalid Field Data
+objective: Verify that the system shows an error message when trying to update an employee with invalid data in any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for the employee using a valid ID.
+  - Step 4: The system auto-fills all fields with the employee's current information.
+  - Step 5: Change one or more fields with invalid data and press the update button.
+expectedResult: The system should validate the fields and display an error message indicating 'invalid field entered', preventing the update from being processed.
+

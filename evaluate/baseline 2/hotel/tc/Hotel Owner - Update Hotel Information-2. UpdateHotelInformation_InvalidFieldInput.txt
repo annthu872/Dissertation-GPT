@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Invalid Name
+objective: Verify that the system shows an error message when the hotel owner tries to update the hotel information with an invalid name
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: In the name field, enter an invalid name (e.g., using special characters or numbers).
+  - Step 5: Press the submit button.
+expectedResult: The system should validate the field and show an error message indicating that the name is invalid. The hotel information should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Empty Address Field
+objective: Verify that the system prevents the hotel owner from updating the hotel information with an empty address field
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Clear the address field leaving it empty.
+  - Step 5: Press the submit button.
+expectedResult: The system should validate the fields and display an error message indicating that the address field cannot be empty. The hotel information should not be updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information with Invalid Email Format
+objective: Verify that the system shows an error message when the hotel owner tries to update the hotel information with an email in an invalid format
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: In the email field, enter an email in an invalid format (e.g., 'example.com').
+  - Step 5: Press the submit button.
+expectedResult: The system should validate the email field and show an error message indicating that the email format is invalid. The hotel information should not be updated in the database.
+

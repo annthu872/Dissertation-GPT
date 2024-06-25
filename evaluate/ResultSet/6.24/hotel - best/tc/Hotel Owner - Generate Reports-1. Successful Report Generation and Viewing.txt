@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Successful Report Generation
+objective: Verify that the Hotel Owner can successfully generate a report by entering valid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for report generation, such as a specific date period.
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system generates the report according to the selected parameters and displays it to the user.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Report Generation and Viewing' by verifying the ability of the system to generate a report based on valid parameters entered by the Hotel Owner.
+
+Test Case: Test Case 3
+testCaseName: Successful Report Viewing
+objective: Verify that the Hotel Owner can view the details of a generated report
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page and generate a report by following the steps for successful report generation.
+  - Step 3: Click on the generated report to open it.
+  - Step 4: View the details of the report.
+expectedResult: The system displays the details of the selected report to the user.
+reflect: yes
+explanation: This test case aligns with the second part of the given test scenario, which involves viewing a successfully generated report. It tests the functionality of viewing report details after a report has been generated, thus directly reflecting the scenario.
+

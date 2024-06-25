@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Invalid Booking ID Entry with Incorrect ID
+objective: Verify that the system correctly handles an incorrect Booking ID entry during checkout
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating the Booking ID is incorrect and redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Booking ID Entry with No Room Linked
+objective: Verify that the system correctly identifies a Booking ID with no room linked to it and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a Booking ID that does not have a room linked to it.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating there is no room linked to the Booking ID and redirect the user to the main page.
+

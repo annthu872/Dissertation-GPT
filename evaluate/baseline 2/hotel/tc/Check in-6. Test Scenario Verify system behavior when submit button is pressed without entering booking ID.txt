@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Verify system behavior when submit button is pressed without entering booking ID
+objective: To ensure the system handles the scenario of attempting to check in without entering a booking ID appropriately, by not proceeding with the check-in process and providing an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Leave the booking ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should not proceed with the check-in process. Instead, it should display an error message indicating that the booking ID is required and remain on the check-in page.
+

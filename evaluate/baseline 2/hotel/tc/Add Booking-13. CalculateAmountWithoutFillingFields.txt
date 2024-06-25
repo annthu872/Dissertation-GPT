@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Calculate Amount Without Filling Any Fields
+objective: Verify that the system prevents calculating the total amount without filling any booking fields and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Attempt to click the calculate amount button without filling any booking fields.
+expectedResult: The system should validate the fields, not calculate the total amount, and display error messages for each required field indicating that they must be filled.
+
+Test Case: Test Case 2
+testCaseName: Calculate Amount With Partially Filled Fields
+objective: Verify that the system prevents calculating the total amount with only some booking fields filled and displays appropriate error messages for the unfilled fields.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill only some of the booking fields.
+  - Step 4: Attempt to click the calculate amount button without filling all required booking fields.
+expectedResult: The system should validate the fields, not calculate the total amount, and display error messages for the unfilled required fields.
+
+Test Case: Test Case 3
+testCaseName: Add Booking Without Calculating Amount
+objective: Verify that the system prevents adding a booking without first calculating the total amount, even if all fields are filled.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields.
+  - Step 4: Attempt to press the add booking button without clicking the calculate amount button.
+expectedResult: The system should prevent the booking from being added to the database and display a message indicating that the total amount must be calculated before adding the booking.
+

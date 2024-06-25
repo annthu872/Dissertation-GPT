@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Email
+objective: Verify that the system allows updating an employee with a valid email address
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the employee's email to a new, valid email address and press the update button.
+  - Step 6: Observe the system's response.
+expectedResult: The system should validate the new email address as valid, update the employee's information in the database, and display a confirmation message that the employee was updated successfully.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Email
+objective: Verify that the system prevents updating an employee with an invalid email address
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the employee's email to a new, invalid email address (e.g., 'test@.com') and press the update button.
+  - Step 6: Observe the system's response.
+expectedResult: The system should detect the invalid email address, prevent the update from proceeding, and display an error message indicating that an invalid email address was entered.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Empty Email Field
+objective: Verify that the system prevents updating an employee when the email field is left empty
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Clear the email field, leaving it empty, and press the update button.
+  - Step 6: Observe the system's response.
+expectedResult: The system should detect the empty email field, prevent the update from proceeding, and display an error message indicating that the email field cannot be left empty.
+

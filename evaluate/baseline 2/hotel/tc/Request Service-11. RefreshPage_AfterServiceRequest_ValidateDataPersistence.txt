@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Validate Room Service Request with Valid Room ID
+objective: Verify that the system accepts a valid room ID, processes a room service request, and updates the total charges successfully.
+testSteps:
+  - Step 1: Navigate to the Room Service Request page.
+  - Step 2: Enter a valid room ID in the Room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose desired services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Verify the total charges are displayed and a success message is shown.
+  - Step 7: Confirm redirection to the main page.
+expectedResult: The system should validate the room ID, update the total charges for the selected services in the database, display the total charges along with a 'room service request successful' message, and redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Validate Room Service Request with Invalid Room ID
+objective: Verify that the system shows an error message when an invalid room ID is entered for a room service request.
+testSteps:
+  - Step 1: Navigate to the Room Service Request page.
+  - Step 2: Enter an invalid room ID in the Room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' error message and not proceed to the list of room services.
+
+Test Case: Test Case 3
+testCaseName: Refresh Page After Service Request and Validate Data Persistence
+objective: Verify that after making a room service request and refreshing the page, the data regarding the total charges and service request remains persistent.
+testSteps:
+  - Step 1: Complete a room service request following the steps in Test Case 1.
+  - Step 2: After being redirected to the main page, refresh the page.
+  - Step 3: Navigate back to the Room Service Request page, if applicable.
+  - Step 4: Verify if the previously selected services and total charges are still displayed or acknowledged.
+expectedResult: After refreshing the page, the system should either maintain the data persistence of the room service request, showing the previously selected services and total charges, or confirm the successful submission of the request in a manner that assures the user of the request's persistence.
+

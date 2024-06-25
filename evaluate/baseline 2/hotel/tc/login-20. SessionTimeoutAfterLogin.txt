@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Session Timeout for Hotel Owner after Successful Login
+objective: To ensure that the session for a Hotel Owner expires after a predefined time of inactivity post successful login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid credentials for a Hotel Owner.
+  - Step 3: Click the submit button.
+  - Step 4: Wait for the predefined session timeout period of inactivity.
+  - Step 5: Attempt to navigate to another page within the application.
+expectedResult: The system should automatically log the Hotel Owner out and redirect to the login page with a session timeout message.
+
+Test Case: Test Case 2
+testCaseName: Verify Session Timeout for Manager after Successful Login
+objective: To ensure that the session for a Manager expires after a predefined time of inactivity post successful login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid credentials for a Manager.
+  - Step 3: Click the submit button.
+  - Step 4: Wait for the predefined session timeout period of inactivity.
+  - Step 5: Attempt to navigate to another page within the application.
+expectedResult: The system should automatically log the Manager out and redirect to the login page with a session timeout message.
+
+Test Case: Test Case 3
+testCaseName: Verify Session Timeout for Employee after Successful Login
+objective: To ensure that the session for an Employee expires after a predefined time of inactivity post successful login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid credentials for an Employee.
+  - Step 3: Click the submit button.
+  - Step 4: Wait for the predefined session timeout period of inactivity.
+  - Step 5: Attempt to navigate to another page within the application.
+expectedResult: The system should automatically log the Employee out and redirect to the login page with a session timeout message.
+

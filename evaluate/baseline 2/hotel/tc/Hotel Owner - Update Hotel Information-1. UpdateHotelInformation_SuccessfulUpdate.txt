@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information - Successful Update
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, update the desired fields (e.g., hotel name, address).
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that the success message is displayed.
+  - Step 7: Confirm redirection to the Dashboard.
+expectedResult: The hotel information is updated successfully in the database, a success message is displayed, and the user is redirected to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information - Validation Error
+objective: Verify that the system shows an error message when the validation of the updated hotel information fails.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, update the fields with invalid data (e.g., leave the hotel name blank).
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that the error message is displayed.
+expectedResult: The system displays an error message indicating the validation failure, and the hotel information is not updated in the database.
+

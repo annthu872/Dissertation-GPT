@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Generate Report Without Selecting Date Period
+objective: Verify that the system prevents the report generation without selecting a date period and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Leave the date period selection blank and fill in any other necessary parameters for the report.
+  - Step 5: Submit the request to generate the report.
+expectedResult: The system should display an error message indicating that the date period selection is required.
+explanation: This test case is designed to ensure that the system enforces the requirement of selecting a date period before generating a report, as per the use case specification. It directly addresses the scenario of attempting to generate a report without selecting a date period by following the basic course of events up to the point where the date period should be validated and then diverging to the alternative path when validation fails.
+

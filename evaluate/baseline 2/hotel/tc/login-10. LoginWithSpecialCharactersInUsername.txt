@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Login with Special Characters in Username for Hotel Owner
+objective: Verify that the Hotel Owner can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a username with special characters and a valid password for the Hotel Owner.
+  - Step 3: Click the submit button.
+expectedResult: The Hotel Owner is redirected to the main dashboard for their specific user role.
+
+Test Case: Test Case 2
+testCaseName: Login with Special Characters in Username for Manager
+objective: Verify that the Manager can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a username with special characters and a valid password for the Manager.
+  - Step 3: Click the submit button.
+expectedResult: The Manager is redirected to the main dashboard for their specific user role.
+
+Test Case: Test Case 3
+testCaseName: Login with Special Characters in Username for Employee
+objective: Verify that the Employee can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a username with special characters and a valid password for the Employee.
+  - Step 3: Click the submit button.
+expectedResult: The Employee is redirected to the main dashboard for their specific user role.
+
+Test Case: Test Case 4
+testCaseName: Login with Incorrect Credentials containing Special Characters
+objective: Verify that the system shows an error message when logging in with incorrect credentials that contain special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a username with special characters and an incorrect password.
+  - Step 3: Click the submit button.
+expectedResult: The system displays an error message and remains on the login page.
+

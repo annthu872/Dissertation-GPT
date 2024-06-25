@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Successful Report Generation
+objective: Verify that the Hotel Owner can successfully generate a report by entering valid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for report generation, such as a specific date period.
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system generates the report according to the selected parameters and displays it to the user.
+explanation: This test case ensures that when a Hotel Owner enters valid parameters, the system can successfully generate and display the report. It follows the basic course of events outlined in the use case.
+
+Test Case: Test Case 2
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system shows an error when the Hotel Owner enters invalid parameters for report generation
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter invalid parameters for report generation, such as an incorrect date period.
+  - Step 5: Attempt to submit the parameters to generate the report.
+expectedResult: The system validates the parameters and shows an error message indicating the invalid input.
+explanation: This test case checks the system's ability to handle invalid input parameters by displaying an appropriate error message, as described in the alternative path of the use case.
+
+Test Case: Test Case 3
+testCaseName: Successful Report Viewing
+objective: Verify that the Hotel Owner can view the details of a generated report
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page and generate a report by following the steps for successful report generation.
+  - Step 3: Click on the generated report to open it.
+  - Step 4: View the details of the report.
+expectedResult: The system displays the details of the selected report to the user.
+explanation: This test case ensures that a Hotel Owner can view the details of a generated report, following the basic course of events where the user opens a specific report and the system shows the report details.
+

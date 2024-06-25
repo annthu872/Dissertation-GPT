@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Checkout Process Without Internet Connection - Valid Booking ID
+objective: Verify that the checkout process fails and provides an appropriate error message when attempted without an internet connection, using a valid booking ID.
+testSteps:
+  - Step 1: Ensure the device is not connected to the internet.
+  - Step 2: Launch the application and navigate to the checkout page.
+  - Step 3: Enter a valid booking ID.
+  - Step 4: Press the submit button.
+expectedResult: The system should display an error message indicating that the checkout process cannot be completed without an internet connection.
+
+Test Case: Test Case 2
+testCaseName: Checkout Process Without Internet Connection - Invalid Booking ID
+objective: Verify that the system handles attempts to checkout with an invalid booking ID without an internet connection, by displaying an appropriate error message.
+testSteps:
+  - Step 1: Ensure the device is not connected to the internet.
+  - Step 2: Launch the application and navigate to the checkout page.
+  - Step 3: Enter an invalid booking ID.
+  - Step 4: Press the submit button.
+expectedResult: The system should display an error message indicating that the checkout process cannot proceed without an internet connection, without specifically addressing the invalid booking ID.
+
+Test Case: Test Case 3
+testCaseName: Checkout Process Without Internet Connection - No Room Linked
+objective: Verify that the system provides an appropriate error message when trying to checkout a booking ID with no room linked to it without an internet connection.
+testSteps:
+  - Step 1: Ensure the device is not connected to the internet.
+  - Step 2: Launch the application and navigate to the checkout page.
+  - Step 3: Enter a booking ID that has no room linked to it.
+  - Step 4: Press the submit button.
+expectedResult: The system should display an error message indicating that the checkout process cannot be completed without an internet connection, without specifically addressing the lack of a linked room.
+

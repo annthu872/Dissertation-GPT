@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Check into room with valid but excessively long Booking ID
+objective: Verify that the system can handle and successfully check in a room with a valid but excessively long Booking ID
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an excessively long but valid Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the excessively long Booking ID, update the booking details with room ID, show a 'check in successful' message, and redirect the user to the main page.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the ability of the system to process and accept a valid, excessively long Booking ID during the check-in process. It tests the system's capability to handle long inputs without errors, which is the core of the given scenario.
+

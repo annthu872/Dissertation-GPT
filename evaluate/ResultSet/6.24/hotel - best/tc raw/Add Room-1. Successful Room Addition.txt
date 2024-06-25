@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Addition
+objective: Verify that a manager can successfully add a room to the system and the room is displayed in the system.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the required fields with valid room details.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system validates the fields, adds the room to the database, and displays a confirmation message that the room has been added.
+explanation: This test case ensures that when a manager fills in all required fields correctly and submits the form, the system successfully adds the room to the database and confirms the addition to the user. It directly tests the basic course of events described in the use case for adding a room.
+
+Test Case: Test Case 2
+testCaseName: Room Addition with Invalid Field
+objective: Verify that the system displays an error message when an invalid field is entered during room addition.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the required fields, intentionally entering invalid data in one of the fields.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system validates the fields and displays an error message indicating that an invalid field was entered, preventing the room from being added to the database.
+explanation: This test case checks the system's ability to handle invalid inputs during the room addition process. It is based on the alternative path of the use case, ensuring that the system correctly identifies and notifies the user of invalid field entries.
+

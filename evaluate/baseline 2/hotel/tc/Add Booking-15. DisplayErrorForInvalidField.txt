@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Booking Addition with Valid Fields
+objective: Ensure that the booking is successfully added with all valid fields and the initial status is checked in.
+testSteps:
+  - Step 1: Log in as an Employee.
+  - Step 2: Select Booking panel on dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+  - Step 6: Verify the booking is added by checking the booking table.
+expectedResult: Booking is successfully added to the database with an initial status of checked in, and the booking details are visible in the booking table.
+
+Test Case: Test Case 2
+testCaseName: Display Error for Invalid Booking Field
+objective: Verify that the system displays an error message for each invalid field when trying to add a booking.
+testSteps:
+  - Step 1: Log in as an Employee.
+  - Step 2: Select Booking panel on dashboard.
+  - Step 3: Fill the booking fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+expectedResult: System displays an error message for each invalid field entered.
+
+Test Case: Test Case 3
+testCaseName: Verify Booking Addition Failure without Calculating Total Amount
+objective: Ensure that the booking cannot be added if the total amount is not calculated.
+testSteps:
+  - Step 1: Log in as an Employee.
+  - Step 2: Select Booking panel on dashboard.
+  - Step 3: Fill all the booking fields with valid data but do not click the calculate amount button.
+  - Step 4: Press the add booking button.
+expectedResult: System prevents booking addition and displays a message indicating that the total amount needs to be calculated before adding a booking.
+
+Test Case: Test Case 4
+testCaseName: Verify Booking Addition Error Handling
+objective: Ensure that the system shows a failure message in case of any error during the booking addition process.
+testSteps:
+  - Step 1: Log in as an Employee.
+  - Step 2: Select Booking panel on dashboard.
+  - Step 3: Fill the booking fields with valid data.
+  - Step 4: Introduce an error in the system or simulate a failure in adding the booking to the database.
+  - Step 5: Press the add booking button.
+expectedResult: System shows a failure message indicating that the booking could not be added.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Invalid Email Format
+objective: Verify that the system shows an 'invalid field entered' message when updating a booking with an invalid email format
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: In the booking details, enter an invalid email format in the email field.
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for the email field.
+reflect: yes
+explanation: This test case directly addresses the test scenario of updating booking with invalid data by specifically targeting the email field with an invalid format. It is a clear reflection of the scenario as it tests the system's ability to validate email formats upon booking updates.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Past Date
+objective: Verify that the system shows an 'invalid field entered' message when updating a booking with a check-in or check-out date in the past
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Enter a past date in either the check-in or check-out date fields.
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for the date field.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it involves updating booking with invalid data, specifically with dates that are in the past. It tests the system's validation rules for date fields, ensuring that only future or current dates are accepted for bookings.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Invalid Payment Amount
+objective: Verify that the system shows an 'invalid field entered' message when updating a booking with an invalid payment amount
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Compute payment for new services or room types added.
+  - Step 5: Enter an invalid payment amount (e.g., negative value, non-numeric value).
+  - Step 6: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for the payment amount field.
+reflect: yes
+explanation: This test case aligns with the test scenario by focusing on the validation of payment amount during a booking update. Entering invalid payment amounts such as negative or non-numeric values directly tests the system's ability to handle invalid data inputs, making it a suitable test case for the scenario.
+

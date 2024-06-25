@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Remember Me Functionality - Successful Login with Remember Me checked
+objective: Verify that the Remember Me functionality works correctly for a successful login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid credentials (username and password) for any actor (Hotel Owner, Manager, Employee).
+  - Step 3: Check the 'Remember Me' option.
+  - Step 4: Press the submit button.
+expectedResult: The system should validate the credentials, log the user in, redirect to the main dashboard page for the relevant user, and remember the user's session for future visits without requiring login.
+
+Test Case: Test Case 2
+testCaseName: Remember Me Functionality - Unsuccessful Login with Remember Me checked
+objective: Verify that the Remember Me functionality does not interfere with the error handling of incorrect login attempts
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid credentials (username and password) for any actor (Hotel Owner, Manager, Employee).
+  - Step 3: Check the 'Remember Me' option.
+  - Step 4: Press the submit button.
+expectedResult: The system should not validate the credentials and should redirect the user back to the login page with an error message displayed, without remembering the incorrect login attempt.
+
+Test Case: Test Case 3
+testCaseName: Remember Me Functionality - Successful Login without Remember Me checked
+objective: Verify that users can successfully log in without selecting the Remember Me option and are not remembered for future visits
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid credentials (username and password) for any actor (Hotel Owner, Manager, Employee).
+  - Step 3: Leave the 'Remember Me' option unchecked.
+  - Step 4: Press the submit button.
+expectedResult: The system should validate the credentials, log the user in, and redirect to the main dashboard page for the relevant user. Upon closing the browser and revisiting the login page, the user should be required to log in again.
+

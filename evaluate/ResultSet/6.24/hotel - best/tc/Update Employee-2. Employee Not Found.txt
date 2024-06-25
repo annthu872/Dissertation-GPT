@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Employee Not Found by ID
+objective: Verify the system behavior when an employee ID that does not exist is searched for updating.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: In the Employee menu, search for an employee using an ID that does not exist in the database.
+expectedResult: The system should display a message indicating 'incorrect value for id' or similar to inform that the employee ID does not exist.
+reflect: yes
+explanation: This test case directly addresses the 'Employee Not Found' scenario by simulating the action of searching for an employee using a non-existent ID, which is the core of the test scenario.
+

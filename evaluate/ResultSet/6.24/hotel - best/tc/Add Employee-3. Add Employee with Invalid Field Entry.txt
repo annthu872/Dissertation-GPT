@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Unfilled Fields
+objective: Verify that the system shows an error message when trying to add an employee with unfilled fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Attempt to add an employee by filling some but not all required fields.
+  - Step 4: Click on the 'Add' button to add the employee.
+expectedResult: The system should display an error message indicating that all fields are required.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when an attempt is made to add an employee with incomplete information. It specifically tests the scenario where required fields are left unfilled, which is a form of invalid field entry.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Invalid Field Entry
+objective: Verify that the system shows an error message when trying to add an employee with invalid field entries
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Fill all the fields with one or more fields containing invalid data.
+  - Step 4: Click on the 'Add' button to attempt to add the employee.
+expectedResult: The system should display an error message indicating that an invalid field entry was made.
+reflect: yes
+explanation: This test case is a direct match for the test scenario, as it aims to verify the system's response to invalid data entries in the fields required for adding an employee. It tests the system's validation mechanisms for ensuring data integrity, which is the core of the given test scenario.
+

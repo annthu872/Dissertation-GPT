@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Booking Addition Happy Path
+objective: Verify that an employee can successfully add a booking and see it added in the system with the initial status checked in.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the amount is calculated.
+  - Step 6: Verify the booking is added by checking the initial status as checked in.
+expectedResult: The system should add the booking to the database, show the initial status as checked in, and display the booking in the booking table on the same page.
+
+Test Case: Test Case 2
+testCaseName: Verify Failure Message on Invalid Field Entry
+objective: Ensure the system displays an error message for each invalid field when trying to add a booking.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Click the calculate amount button to attempt to get the total payable payment.
+  - Step 5: Press the add booking button.
+  - Step 6: Observe the error messages displayed for each invalid field.
+expectedResult: The system should display an error message for each invalid field entered, preventing the booking from being added.
+
+Test Case: Test Case 3
+testCaseName: Verify Failure Message When Booking Cannot Be Added
+objective: To verify that the system displays a failure message when a booking cannot be added due to uncalculated total amount or any other error.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data but do not click the calculate amount button.
+  - Step 4: Attempt to press the add booking button without calculating the total amount.
+  - Step 5: Observe the failure message displayed by the system.
+expectedResult: The system should display a failure message indicating that the booking cannot be added due to the total amount not being calculated or other errors.
+

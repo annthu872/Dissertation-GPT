@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Employee Addition
+objective: Verify that a manager can successfully add an employee to the system and the system generates an ID and password for the new employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to access the employee menu.
+  - Step 3: Fill all the fields with valid data and click on the 'Add' button.
+  - Step 4: Observe the system's response.
+expectedResult: The system validates the fields, adds the employee to the database, shows a message that the employee was added successfully, and generates an ID and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add Employee with Unfilled Fields
+objective: Verify that the system prompts the manager to fill all fields if they attempt to add an employee without filling out all the required fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to access the employee menu.
+  - Step 3: Leave one or more fields empty and click on the 'Add' button.
+  - Step 4: Observe the system's response.
+expectedResult: The system shows a message indicating that all fields are required.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Employee with Invalid Field Data
+objective: Verify that the system prompts the manager with an 'invalid field entered' message if they attempt to add an employee with invalid data in any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to access the employee menu.
+  - Step 3: Fill all the fields, intentionally entering invalid data in at least one field, and click on the 'Add' button.
+  - Step 4: Observe the system's response.
+expectedResult: The system shows a message indicating that an invalid field was entered.
+

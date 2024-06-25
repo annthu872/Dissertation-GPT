@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Invalid Room ID Submission
+objective: Verify that the system correctly handles the submission of an invalid room ID by displaying an 'Invalid ID' message
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system displays an 'Invalid ID' message.
+explanation: This test case is designed to ensure that the system properly validates room IDs and provides appropriate feedback to the user when an invalid ID is submitted. It directly addresses the scenario of submitting an invalid room ID by following the alternative path specified in the use case.
+

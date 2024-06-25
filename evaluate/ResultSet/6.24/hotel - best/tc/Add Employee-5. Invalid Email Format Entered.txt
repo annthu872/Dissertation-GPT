@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Invalid Email Format
+objective: Verify that the system shows an 'invalid field entered' message when a manager tries to add an employee with an invalid email format
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the fields with valid information except for the email field, where an invalid email format is entered (e.g., 'testemailwithoutatdotcom').
+  - Step 4: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that an invalid field has been entered, specifically pointing out the invalid email format.
+reflect: yes
+explanation: This test case directly addresses the test scenario of entering an invalid email format by outlining steps that lead to the specific action of entering an invalid email and expecting the system to show an error message. It is a direct reflection of the test scenario as it tests the system's response to the specific invalid input described in the scenario.
+

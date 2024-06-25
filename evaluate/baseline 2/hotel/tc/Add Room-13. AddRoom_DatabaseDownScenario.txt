@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Add Room - Happy Path
+objective: Verify that a manager can successfully add a room to the system when all fields are correctly filled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Confirm that the system adds the room to the database.
+expectedResult: The system should display a message confirming that the room has been successfully added.
+
+Test Case: Test Case 2
+testCaseName: Add Room - Invalid Field Entry
+objective: Verify that the system correctly handles the scenario where an invalid field is entered while adding a room
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+expectedResult: The system should display a message indicating that an invalid field was entered and prevent the room from being added.
+
+Test Case: Test Case 3
+testCaseName: Add Room - Database Down Scenario
+objective: Verify that the system correctly handles the scenario where the database is down or unreachable when trying to add a room
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Simulate the database being down or unreachable at this moment.
+expectedResult: The system should display an error message indicating that the room could not be added due to database issues.
+

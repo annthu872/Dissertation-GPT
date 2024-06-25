@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Generate Report in PDF Format
+objective: Verify that the Hotel Owner can generate and view a report in PDF format based on specific parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter the parameters for the report, including the date period.
+  - Step 5: Select PDF as the report format.
+  - Step 6: Click on the 'Generate Report' button.
+  - Step 7: Open the generated report.
+expectedResult: The system should generate the report based on the selected parameters in PDF format, and the Hotel Owner should be able to view the report details.
+
+Test Case: Test Case 2
+testCaseName: Generate Report in Excel Format
+objective: Verify that the Hotel Owner can generate and view a report in Excel format based on specific parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter the parameters for the report, including the date period.
+  - Step 5: Select Excel as the report format.
+  - Step 6: Click on the 'Generate Report' button.
+  - Step 7: Open the generated report.
+expectedResult: The system should generate the report based on the selected parameters in Excel format, and the Hotel Owner should be able to view the report details.
+
+Test Case: Test Case 3
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system shows an error message when the Hotel Owner tries to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report, such as an incorrect date range.
+  - Step 5: Click on the 'Generate Report' button.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+

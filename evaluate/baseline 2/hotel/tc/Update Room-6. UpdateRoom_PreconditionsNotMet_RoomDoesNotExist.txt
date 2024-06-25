@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Room When Room Does Not Exist
+objective: Verify that the system correctly handles the scenario when an employee attempts to update a room that does not exist in the database
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search or select a room to update using an ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message indicating that the room does not exist.
+
+Test Case: Test Case 2
+testCaseName: Update Room With Invalid Field Entry
+objective: Verify that the system correctly identifies and notifies the employee when an invalid field is entered while updating a room's details
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room that exists in the database.
+  - Step 4: Load the room's fields data from the database.
+  - Step 5: Fill the fields with new data, intentionally entering invalid data in one or more fields.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and show 'invalid field entered' message for every individual error.
+
+Test Case: Test Case 3
+testCaseName: Update Room Failure Due to System Error
+objective: Verify that the system correctly handles and notifies the employee of a failure to update room details due to a system error
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room that exists in the database.
+  - Step 4: Load the room's fields data from the database.
+  - Step 5: Correctly fill the fields that need to be updated.
+  - Step 6: Press the update button.
+  - Step 7: Simulate a system error during the update process.
+expectedResult: The system should attempt to update the database and then show a failure message due to the simulated system error.
+

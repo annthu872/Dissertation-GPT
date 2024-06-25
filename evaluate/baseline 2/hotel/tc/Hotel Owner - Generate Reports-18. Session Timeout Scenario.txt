@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Session Timeout During Report Generation
+objective: Verify that the session times out appropriately if the hotel owner is inactive for a prolonged period during the report generation process, and ensure they are redirected to the login page.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter the parameters for the report generation but do not submit.
+  - Step 5: Wait for the session timeout period to elapse without any activity.
+  - Step 6: Attempt to submit the report parameters after the session has timed out.
+expectedResult: The system should redirect the user to the login page with a session timeout message, indicating that the session has expired due to inactivity.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Report Generation and Viewing
+objective: Ensure that the hotel owner can successfully generate and view a report by following the basic course of events without session timeout interruptions.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter valid parameters for the report generation.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on a specific report to view its details.
+expectedResult: The system should generate the report based on the selected parameters and allow the user to view the report details without any session timeout interruptions.
+
+Test Case: Test Case 3
+testCaseName: Verify Report Generation with Invalid Parameters
+objective: To ensure that the system correctly handles invalid parameters during the report generation process by displaying an appropriate error message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report generation. For example, a future date range.
+  - Step 5: Submit the parameters.
+expectedResult: The system should validate the parameters and display an error message indicating that the parameters are invalid and the report cannot be generated.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with All Fields Correctly Filled
+objective: Verify that a manager can successfully add an employee when all fields are correctly filled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Fill all the fields with valid data.
+  - Step 5: Click the 'Add' button to submit the employee details.
+expectedResult: The system should validate the fields, add the employee to the database, display a message that the employee was added successfully, and generate an ID and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Missing Fields
+objective: Verify that the system prompts an error when trying to add an employee with one or more fields left unfilled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Fill only some of the fields, leaving at least one field empty.
+  - Step 5: Click the 'Add' button to submit the employee details.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee to the database.
+
+Test Case: Test Case 3
+testCaseName: Add Employee with Invalid Field Entry
+objective: Verify that the system prompts an error when trying to add an employee with invalid data in any of the fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Click on the 'Add' button to add a new employee.
+  - Step 4: Fill all the fields, intentionally entering invalid data in at least one field.
+  - Step 5: Click the 'Add' button to submit the employee details.
+expectedResult: The system should display a message indicating that an invalid field was entered and prevent the addition of the employee to the database.
+

@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Login with Incorrect Username
+objective: Verify that the system correctly handles the scenario when a user attempts to log in with an incorrect username but correct password.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an incorrect username in the username field.
+  - Step 3: Enter the correct password associated with a valid user account in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The user remains on the login page and receives an error message indicating that the username or password is incorrect.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Incorrect Username' by specifically testing the system's behavior when a user tries to log in with an incorrect username and a correct password. It aims to verify that the system prevents login in such cases and provides appropriate feedback to the user, which is the core objective of the test scenario.
+

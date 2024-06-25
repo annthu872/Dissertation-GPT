@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Booking - Successful Update
+objective: Verify that an employee can successfully update booking details and a success message is displayed
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated on the booking form.
+  - Step 5: Compute the payment again if new services or new room types have been added.
+  - Step 6: Press the update button.
+  - Step 7: Verify that a success message is displayed.
+expectedResult: The booking details are updated in the database, and a success message is displayed to the employee.
+
+Test Case: Test Case 2
+testCaseName: Update Booking - Booking Not Found
+objective: Verify that the system shows a NOT FOUND message if the booking to be updated does not exist
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by an ID that does not exist in the database.
+expectedResult: The system displays a NOT FOUND message.
+
+Test Case: Test Case 3
+testCaseName: Update Booking - Invalid Field Entry
+objective: Verify that the system shows an error message for each invalid field when trying to update a booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system displays an error message for each invalid field entered.
+
+Test Case: Test Case 4
+testCaseName: Update Booking - Failure in Update
+objective: Verify that in case of any error during the update process, a failure message is displayed
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields with data that would cause an error in the update process (simulate an error condition).
+  - Step 5: Press the update button.
+expectedResult: The system displays a failure message indicating that the booking update was not successful.
+

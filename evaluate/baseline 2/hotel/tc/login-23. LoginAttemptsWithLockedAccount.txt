@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Login Attempt with Correct Credentials
+objective: Verify that a user can log in with correct credentials and is redirected to the dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid username and password for the user.
+  - Step 3: Click the submit button.
+expectedResult: User is redirected to the dashboard specific to their user role.
+
+Test Case: Test Case 2
+testCaseName: Login Attempt with Incorrect Credentials
+objective: Verify that the system shows an error message when logging in with incorrect credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid username and/or password for the user.
+  - Step 3: Click the submit button.
+expectedResult: User remains on the login page and an error message is displayed.
+
+Test Case: Test Case 3
+testCaseName: Login Attempts with Locked Account
+objective: Verify that a user with a locked account cannot log in and receives a specific error message
+testSteps:
+  - Step 1: Ensure the user account is locked.
+  - Step 2: Navigate to the login page.
+  - Step 3: Enter the correct username and password for the locked account.
+  - Step 4: Click the submit button.
+expectedResult: User remains on the login page and receives an error message indicating the account is locked.
+

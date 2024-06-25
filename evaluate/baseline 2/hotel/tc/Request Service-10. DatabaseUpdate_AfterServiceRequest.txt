@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Service Request
+objective: Verify that the system successfully processes a room service request when a valid room ID is provided and updates the database accordingly.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose desired services.
+  - Step 5: Confirm the selection of services.
+expectedResult: The system should calculate the total charges, update the database, display the total charges along with a success message, and then redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Room ID on Room Service Request
+objective: Verify that the system displays an error message when an invalid room ID is entered for a room service request.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' error message and not proceed to the list of room services.
+
+Test Case: Test Case 3
+testCaseName: Request Available Services Only
+objective: Verify that the user can only request services that are available and the system updates the database accordingly.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID and press the submit button.
+  - Step 3: Attempt to select a service that is not listed as available.
+  - Step 4: Select one or more available services and confirm the selection.
+expectedResult: The system should prevent the selection of unavailable services, allow the selection of available services, update the database with the requested services, and display the total charges along with a success message.
+

@@ -1,0 +1,59 @@
+Test Case: Test Case 1
+testCaseName: Verify Booking Panel Accessibility
+objective: Verify that the employee can access the Booking panel on the dashboard
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the dashboard.
+  - Step 3: Select the Booking panel.
+expectedResult: The Booking panel menu should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify Booking Fields Display
+objective: Ensure that all booking fields are displayed for the employee to fill
+testSteps:
+  - Step 1: Access the Booking panel as described in Test Case 1.
+  - Step 2: Observe the fields available for booking.
+expectedResult: All necessary fields for booking should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Booking Amount Calculation
+objective: Ensure the system calculates the total payable amount correctly when the calculate amount button is clicked
+testSteps:
+  - Step 1: Fill all the booking fields with valid data.
+  - Step 2: Click the calculate amount button.
+expectedResult: The system should display the total payable amount correctly.
+
+Test Case: Test Case 4
+testCaseName: Verify Booking Addition with Valid Fields
+objective: Ensure the system adds a booking successfully with all valid fields
+testSteps:
+  - Step 1: Fill all the booking fields with valid data.
+  - Step 2: Click the calculate amount button.
+  - Step 3: Press the add booking button.
+expectedResult: Booking should be added to the database, and the initial status should be shown as checked in.
+
+Test Case: Test Case 5
+testCaseName: Verify Booking Addition with Invalid Fields
+objective: Ensure the system handles invalid fields correctly when adding a booking
+testSteps:
+  - Step 1: Fill the booking fields with at least one invalid data.
+  - Step 2: Click the calculate amount button.
+  - Step 3: Press the add booking button.
+expectedResult: The system should show 'invalid field entered' for every individual error and prevent booking from being added.
+
+Test Case: Test Case 6
+testCaseName: Verify Booking Addition without Calculating Total Amount
+objective: Ensure the system prevents booking addition if the total amount is not calculated
+testSteps:
+  - Step 1: Fill all the booking fields with valid data.
+  - Step 2: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: Booking should not be added, and the system should prompt the user to calculate the total amount first.
+
+Test Case: Test Case 7
+testCaseName: Verify Booking Update on Booking Page
+objective: Ensure that the booking page is updated with the new booking immediately after addition
+testSteps:
+  - Step 1: Successfully add a booking following the steps in Test Case 4.
+  - Step 2: Observe the booking page for the new booking entry.
+expectedResult: The new booking should be displayed on the booking page immediately after it is added.
+

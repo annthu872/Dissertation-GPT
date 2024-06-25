@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the Hotel Owner can generate a report with valid parameters and view the report details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter valid parameters for the report generation, such as a specific date period.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on the generated report to view its details.
+expectedResult: The system should generate the report based on the selected parameters and display the report details to the Hotel Owner.
+
+Test Case: Test Case 2
+testCaseName: Generate Report with No Available Data
+objective: Verify that the Hotel Owner is informed when there is no available data for the selected report parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter parameters for the report generation that are known to have no available data, such as a future date range.
+  - Step 5: Submit the parameters to attempt to generate the report.
+expectedResult: The system should inform the Hotel Owner that there is no available data for the selected parameters and no report can be generated.
+
+Test Case: Test Case 3
+testCaseName: Generate Report with Invalid Parameters
+objective: Verify that the Hotel Owner receives an error message when trying to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report generation, such as an invalid date format.
+  - Step 5: Submit the parameters to attempt to generate the report.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+

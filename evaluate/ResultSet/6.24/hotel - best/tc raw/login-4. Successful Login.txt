@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Successful Login for Hotel Owner
+objective: Verify that the Hotel Owner can successfully log in and is redirected to the Hotel Owner's dashboard.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Hotel Owner credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Hotel Owner is redirected to the Hotel Owner's dashboard.
+explanation: This test case ensures that a Hotel Owner can log in successfully using valid credentials and is redirected to the correct dashboard, as per the basic course of events.
+
+Test Case: Test Case 2
+testCaseName: Successful Login for Manager
+objective: Verify that the Manager can successfully log in and is redirected to the Manager's dashboard.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Manager credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Manager is redirected to the Manager's dashboard.
+explanation: This test case ensures that a Manager can log in successfully using valid credentials and is redirected to the correct dashboard, following the basic course of events.
+
+Test Case: Test Case 3
+testCaseName: Successful Login for Employee
+objective: Verify that the Employee can successfully log in and is redirected to the Employee's dashboard.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Employee is redirected to the Employee's dashboard.
+explanation: This test case verifies that an Employee can log in successfully using valid credentials and is redirected to the correct dashboard, aligning with the basic course of events.
+
+Test Case: Test Case 4
+testCaseName: Unsuccessful Login Attempt
+objective: Verify that entering incorrect credentials shows an error message and remains on the login page.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: An error message is displayed, and the user remains on the login page.
+explanation: This test case checks the alternative path where the user enters incorrect credentials, ensuring the system behaves as expected by showing an error and not redirecting to any dashboard.
+

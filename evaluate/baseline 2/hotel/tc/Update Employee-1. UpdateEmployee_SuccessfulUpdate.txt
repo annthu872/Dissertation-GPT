@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Update Employee - Successful Update
+objective: Verify that a manager can successfully update an employee's information in the system and the system reflects the updated information accurately.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Verify that all fields are auto-filled with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the update button to submit the changes.
+  - Step 7: Verify that the system validates the updated fields correctly.
+  - Step 8: Confirm that the system updates the employee information in the database.
+  - Step 9: Verify that the system displays a confirmation message or page indicating the employee was updated successfully.
+expectedResult: The system should successfully update the employee's information in the database and display a confirmation message or page indicating the successful update.
+
+Test Case: Test Case 2
+testCaseName: Update Employee - Incorrect ID
+objective: Verify that the system displays an error message when a manager attempts to update an employee's information using an incorrect or non-existent ID.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an employee using an incorrect or non-existent ID.
+  - Step 4: Verify that the system displays an error message indicating an incorrect value for the ID.
+expectedResult: The system should display an error message indicating that the ID entered is incorrect or does not exist.
+
+Test Case: Test Case 3
+testCaseName: Update Employee - Invalid Field Entry
+objective: Verify that the system displays an error message when a manager enters invalid data in any update field during the employee update process.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Change one or more fields to contain invalid data.
+  - Step 5: Press the update button to submit the changes.
+  - Step 6: Verify that the system validates the fields and displays an error message for the invalid field entry.
+expectedResult: The system should prevent the update from proceeding and display an error message indicating that an invalid field entry was made.
+

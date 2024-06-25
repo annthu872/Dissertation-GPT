@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Successful Login and Redirect for Hotel Owner
+objective: Verify that a Hotel Owner can successfully log in and is redirected to the Main page/dashboard specific to their role
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Hotel Owner credentials (username and password).
+  - Step 3: Press the submit button.
+expectedResult: The Hotel Owner is redirected to the Main page/dashboard specific to their role after successful login.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Login Attempt for Hotel Owner
+objective: Verify that a Hotel Owner is redirected back to the login page with an error message upon entering incorrect credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Hotel Owner credentials (username and/or password).
+  - Step 3: Press the submit button.
+expectedResult: The Hotel Owner is redirected back to the login page with an error message indicating incorrect credentials.
+
+Test Case: Test Case 3
+testCaseName: Successful Login and Redirect for Manager
+objective: Verify that a Manager can successfully log in and is redirected to the Main page/dashboard specific to their role
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Manager credentials (username and password).
+  - Step 3: Press the submit button.
+expectedResult: The Manager is redirected to the Main page/dashboard specific to their role after successful login.
+
+Test Case: Test Case 4
+testCaseName: Successful Login and Redirect for Employee
+objective: Verify that an Employee can successfully log in and is redirected to the Main page/dashboard specific to their role
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials (username and password).
+  - Step 3: Press the submit button.
+expectedResult: The Employee is redirected to the Main page/dashboard specific to their role after successful login.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Update Room without being logged in
+objective: Verify that the system prevents room updates when the employee is not logged in
+testSteps:
+  - Step 1: Navigate to the Room panel on the dashboard without logging in.
+  - Step 2: Attempt to search or select a room to update.
+  - Step 3: Try to fill the fields for the room update.
+  - Step 4: Press the update button.
+expectedResult: The system should not allow access to the Room panel and should display a message indicating that the user must be logged in to perform this action.
+
+Test Case: Test Case 2
+testCaseName: Update Room when room does not exist in the database
+objective: Verify that the system displays a NOT FOUND message when trying to update a room that does not exist in the database
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that does not exist in the database.
+  - Step 4: Attempt to fill the fields for the room update.
+  - Step 5: Press the update button.
+expectedResult: The system should display a NOT FOUND message, indicating that the room cannot be updated because it does not exist in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Room with invalid field entries
+objective: Verify that the system displays an error message for each invalid field when trying to update a room
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Fill the fields with invalid data for the room update.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message for each invalid field entered, preventing the update from proceeding.
+

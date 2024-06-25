@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Missing Mandatory Fields
+objective: Verify that the system prevents updating a booking when mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Clear one or more mandatory fields that need to be updated.
+  - Step 5: Attempt to compute payment if applicable.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and display an error message for each missing mandatory field without updating the booking in the database.
+explanation: This test case ensures that the system enforces the completion of all mandatory fields before allowing a booking update to proceed, which is crucial for maintaining data integrity and ensuring that all necessary booking details are captured.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with All Mandatory Fields but Missing Payment Recomputation
+objective: Verify that the system prevents updating a booking when payment is not recomputed after adding new services or room types, even if all mandatory fields are filled.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Fill all the mandatory fields that need to be updated including adding new services or new room types.
+  - Step 5: Skip recomputing the payment.
+  - Step 6: Press the update button.
+expectedResult: The system should prevent the booking update and display a message indicating that payment must be recomputed first.
+explanation: This test case checks the system's requirement for payment recomputation when new services or room types are added to a booking, ensuring that the booking details are accurate and up-to-date before the update is finalized.
+

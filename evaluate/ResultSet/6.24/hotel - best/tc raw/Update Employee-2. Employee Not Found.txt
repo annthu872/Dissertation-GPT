@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Employee Not Found by ID
+objective: Verify the system behavior when an employee ID that does not exist is searched for updating.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: In the Employee menu, search for an employee using an ID that does not exist in the database.
+expectedResult: The system should display a message indicating 'incorrect value for id' or similar to inform that the employee ID does not exist.
+explanation: This test case is created to verify the system's response when an attempt is made to update an employee who cannot be found in the database, directly relating to the 'Employee Not Found' scenario.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Field
+objective: Verify the system behavior when an invalid value is entered in a field during the employee update process.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for an existing employee using a valid employee ID.
+  - Step 4: In the employee update form, enter an invalid value in one of the fields (e.g., entering letters in a numeric-only field).
+  - Step 5: Press the update button to attempt to update the employee information.
+expectedResult: The system should display a message indicating 'invalid field entered' or similar to inform that one of the fields contains an invalid value.
+explanation: This test case ensures that the system properly validates field inputs during the employee update process and provides appropriate feedback when invalid data is entered, which is crucial for maintaining data integrity.
+

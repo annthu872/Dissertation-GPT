@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Valid Room ID - Service List Display and Selection
+objective: Verify that entering a valid room ID displays the service list and allows the user to select services, calculate charges, and show a success message before redirecting to the main page.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: From the displayed list, choose the desired room services.
+  - Step 5: Confirm the selection of services.
+expectedResult: After confirming the service selection, the system calculates the total charges, updates the database, displays the total charges along with a 'room service request successful' message, and then redirects the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Room ID - Error Message Display
+objective: Verify that entering an invalid room ID displays an 'Invalid ID' error message.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID in the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the room ID and display an 'Invalid ID' error message without showing the list of room services.
+
+Test Case: Test Case 3
+testCaseName: Request Available Services with Valid Room ID
+objective: Verify that the user can request available services after entering a valid room ID and that the system calculates and displays the total charges correctly.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: From the displayed list, choose available room services.
+  - Step 5: Confirm the selection of services.
+expectedResult: The system should calculate the total charges for the selected services, update the database, display the total charges, and show a 'room service request successful' message before redirecting to the main page.
+

@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the Hotel Owner can generate a report with valid parameters and view the report details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter valid parameters for the report generation (e.g., a valid date period).
+  - Step 5: Submit the report generation request.
+  - Step 6: Open a specific report from the list of generated reports.
+expectedResult: The system should generate the report based on the provided parameters and display the report details to the user.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Generate Report with Invalid Parameters
+objective: Verify that the system shows an error when the Hotel Owner tries to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report generation (e.g., an invalid date period).
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+
+Test Case: Test Case 3
+testCaseName: Reset Report Parameters after Error
+objective: Verify that the Hotel Owner can reset the report parameters after encountering an error due to invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report generation and submit the request.
+  - Step 5: Acknowledge the error message.
+  - Step 6: Reset the parameters by clearing the input fields or using a reset functionality.
+  - Step 7: Enter valid parameters for the report generation.
+  - Step 8: Submit the report generation request again.
+expectedResult: After resetting the parameters and entering valid information, the system should generate the report and display the report details to the user.
+

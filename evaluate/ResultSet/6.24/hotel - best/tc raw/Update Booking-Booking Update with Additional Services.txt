@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Update Booking Details with Additional Services
+objective: Verify that an employee can successfully update booking details with additional services and the system updates the database accordingly.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, including adding new services or changing room types.
+  - Step 5: Compute the new payment amount due to the addition of new services or change in room types.
+  - Step 6: Press the update button after ensuring all fields are correctly filled.
+  - Step 7: Confirm the success message indicating the booking has been updated.
+expectedResult: The booking details are updated in the database, including the additional services, and a success message is displayed.
+explanation: This test case ensures that the system correctly handles the addition of services or changes in booking details, recalculates payment, and updates the database, following the basic course of events described in the use case.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Fields
+objective: Verify that the system prevents the update of a booking when invalid fields are entered and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in at least one invalid field intentionally in the booking details.
+  - Step 5: Attempt to compute the payment with the invalid field(s).
+  - Step 6: Press the update button.
+  - Step 7: Observe the error messages displayed for each invalid field.
+expectedResult: The system does not update the booking and displays an error message for every invalid field entered.
+explanation: This test case checks the system's validation mechanism to ensure that it correctly identifies and notifies the user of invalid inputs, as per the alternative path in the use case.
+
+Test Case: Test Case 3
+testCaseName: Update Non-existing Booking
+objective: Verify that the system displays a NOT FOUND message when attempting to update a booking that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search for a booking using an ID that does not exist in the database.
+  - Step 4: Observe the message displayed by the system.
+expectedResult: The system displays a NOT FOUND message, indicating that the booking cannot be updated because it does not exist.
+explanation: This test case verifies the system's behavior when an employee attempts to update a non-existing booking, ensuring that the system correctly handles such cases as described in the alternative path of the use case.
+

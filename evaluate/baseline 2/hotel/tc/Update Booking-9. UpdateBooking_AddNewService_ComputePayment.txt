@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Valid New Service and Compute Payment
+objective: Verify that an employee can successfully update a booking by adding a new service and computing the new payment
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, including adding a new service.
+  - Step 5: Compute the new payment for the updated booking.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields, update the booking in the database with the new service and computed payment, and show a success message.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a non-existent booking ID
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking with a non-existent ID.
+expectedResult: The system should display a NOT FOUND message.
+
+Test Case: Test Case 3
+testCaseName: Update Booking without Computing Payment First
+objective: Verify that the system requires payment to be computed first before allowing the booking update to proceed
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, including adding a new service.
+  - Step 5: Attempt to press the update button without computing the new payment.
+expectedResult: The system should prevent the update and remind the employee to compute the payment first.
+
+Test Case: Test Case 4
+testCaseName: Update Booking with Invalid Field Entry
+objective: Verify that the system shows an invalid field entered message for every individual error when updating a booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, intentionally entering invalid data in one or more fields.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and show an invalid field entered message for every individual error.
+
+Test Case: Test Case 5
+testCaseName: Update Booking with System Error
+objective: Verify that the system shows a failure message in case of any error during the booking update process
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, including adding a new service.
+  - Step 5: Compute the new payment for the updated booking.
+  - Step 6: Press the update button.
+expectedResult: In case of any system error during the update process, the system should show a failure message.
+

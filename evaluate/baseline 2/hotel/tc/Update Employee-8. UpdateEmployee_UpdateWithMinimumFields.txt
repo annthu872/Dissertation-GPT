@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Minimum Required Fields
+objective: Verify that a manager can successfully update an employee with only the minimum required fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: Once the employee is found, click on the employee to view details.
+  - Step 5: The system auto-fills all fields with the employee's current information.
+  - Step 6: Change only the minimum required fields that are allowed to be updated.
+  - Step 7: Press the 'Update' button to submit the changes.
+  - Step 8: Observe the system's validation process.
+  - Step 9: Confirm the update on the system's response.
+expectedResult: The system should validate the updated fields, update the employee information in the database, and display a confirmation message that the employee has been updated.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid ID
+objective: Verify the system's response when a manager attempts to update an employee with an incorrect or non-existent ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an employee using an incorrect or non-existent ID.
+  - Step 4: Attempt to update any fields (if applicable).
+  - Step 5: Press the 'Update' button to submit the changes.
+expectedResult: The system should display an error message indicating an incorrect value for the ID, preventing the update from proceeding.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Invalid Field Entry
+objective: Verify the system's response when a manager enters an invalid value in a field during the update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: Once the employee is found, click on the employee to view details.
+  - Step 5: The system auto-fills all fields with the employee's current information.
+  - Step 6: Enter an invalid value in one of the fields that are allowed to be updated.
+  - Step 7: Press the 'Update' button to submit the changes.
+  - Step 8: Observe the system's validation process.
+expectedResult: The system should display an error message indicating 'invalid field entered', preventing the update from being saved.
+

@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Update Room Details - Happy Path
+objective: Verify that an employee can successfully update room details and the system reflects these updates accurately.
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated for the selected room.
+  - Step 5: Press the update button.
+  - Step 6: Verify that a success message is displayed.
+expectedResult: The room details should be updated in the database, and a success message should be shown to the employee.
+
+Test Case: Test Case 2
+testCaseName: Update Room Details - Room Not Found
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that does not exist in the database.
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search for a room with an ID that does not exist.
+  - Step 4: Observe the message displayed by the system.
+expectedResult: The system should display a NOT FOUND message.
+
+Test Case: Test Case 3
+testCaseName: Update Room Details - Invalid Field Entry
+objective: Verify that the system shows an invalid field entered message for every individual error when incorrect data is entered in the update fields.
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+  - Step 6: Observe the messages displayed by the system.
+expectedResult: The system should display an invalid field entered message for every individual error.
+
+Test Case: Test Case 4
+testCaseName: Update Room Details - Database Integrity After Update
+objective: Verify that after updating room details, the database integrity is maintained and the updated details are accurately reflected in the system.
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated for the selected room.
+  - Step 5: Press the update button and wait for the success message.
+  - Step 6: Navigate to the tables where all rooms are listed to verify the updated details.
+expectedResult: The updated room details should be accurately reflected in the system, ensuring database integrity.
+

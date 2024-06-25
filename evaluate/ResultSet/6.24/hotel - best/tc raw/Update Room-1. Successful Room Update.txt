@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Update
+objective: Verify that an employee can successfully update room details and availability.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room by its ID that needs to be updated.
+  - Step 4: Fill in the fields that need to be updated for the room.
+  - Step 5: Press the update button.
+expectedResult: A success message is displayed, and the room details are updated in the database.
+explanation: This test case ensures that the basic course of events for updating a room's details and availability is functioning as expected. It follows the happy path where all inputs are valid and the room exists in the database.
+
+Test Case: Test Case 2
+testCaseName: Room Update with Non-Existent Room
+objective: Verify that the system shows a NOT FOUND message when trying to update a non-existent room.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room by an ID that does not exist in the database.
+  - Step 4: Attempt to fill in any fields for updating.
+expectedResult: A NOT FOUND message is displayed, indicating the room does not exist in the database.
+explanation: This test case checks the system's behavior when an employee attempts to update a room that doesn't exist, following the alternative path in the use case specification.
+
+Test Case: Test Case 3
+testCaseName: Room Update with Invalid Field Entry
+objective: Verify that the system shows an invalid field entered message for every individual error when incorrect data is inputted.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room by its ID that needs to be updated.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: An invalid field entered message is displayed for every individual error.
+explanation: This test case verifies the system's ability to validate field inputs and provide feedback on individual errors, as per the alternative path in the use case.
+

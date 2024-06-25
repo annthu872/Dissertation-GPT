@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Field
+objective: Verify that the system shows an 'invalid field entered' message for every individual error when an invalid field is entered.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system should show an 'invalid field entered' message for the field(s) with invalid data.
+reflect: yes
+explanation: This test case directly addresses the 'Invalid Field Entered Scenario' by testing the system's response to invalid data entry, which is the core of the given test scenario.
+

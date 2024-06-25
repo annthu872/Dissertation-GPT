@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information - Happy Path
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with valid data.
+  - Step 5: Submit the updated information.
+  - Step 6: Verify the success message is displayed.
+  - Step 7: Verify redirection to the Dashboard.
+expectedResult: The hotel information is updated successfully, a success message is displayed, and the user is redirected to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information - Validation Error
+objective: Verify that the system displays appropriate validation error messages when invalid data is entered in the hotel information fields.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Enter invalid data into one or more fields (e.g., leave a mandatory field empty, enter text in a numeric field).
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that the appropriate validation error message(s) are displayed next to the fields with invalid data.
+expectedResult: The system prevents the submission due to invalid data and displays appropriate validation error messages next to the affected fields.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information - Unauthorized User
+objective: Verify that users who are not Hotel Owners cannot access the Edit Hotel Information page.
+testSteps:
+  - Step 1: Log in as a user with any role other than Hotel Owner.
+  - Step 2: Attempt to navigate directly to the Edit Hotel Information page via URL.
+  - Step 3: Verify access is denied.
+expectedResult: The system should deny access to the Edit Hotel Information page, ensuring only authorized Hotel Owners can update hotel information.
+

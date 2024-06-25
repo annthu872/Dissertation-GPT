@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Booking - Failure due to Database Error
+objective: Verify that the system shows a failure message when there is a database error during the booking update process
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated on the booking.
+  - Step 5: Compute payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+  - Step 7: Simulate a database error during the update process.
+expectedResult: The system should display a failure message indicating that the booking update could not be completed due to a database error.
+
+Test Case: Test Case 2
+testCaseName: Update Booking - Failure due to Invalid Field Entry
+objective: Verify that the system shows an invalid field entered message for every individual error when incorrect data is submitted during booking update
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated with invalid data (e.g., incorrect date format, text in a number field).
+  - Step 5: Press the update button.
+expectedResult: The system should display an invalid field entered message for every individual error, indicating which fields have been filled incorrectly.
+
+Test Case: Test Case 3
+testCaseName: Update Booking - Failure due to Non-existent Booking
+objective: Verify that the system shows a NOT FOUND message when attempting to update a booking that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by an ID that does not exist in the database.
+  - Step 4: Try to perform any update action.
+expectedResult: The system should display a NOT FOUND message, indicating that the booking does not exist and cannot be updated.
+

@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking Update
+objective: Verify that an employee can successfully update booking details and receive a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated on the booking.
+  - Step 5: Compute the payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+  - Step 7: Verify that a success message is displayed.
+expectedResult: The booking details are updated in the database, and a success message is shown to the employee.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Successful Booking Update' by outlining steps to update a booking and verifying a success message, which is the expected outcome of a successful booking update.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify UI fields alignment and visibility on Add Room page
+objective: Ensure all UI fields for adding a room are aligned properly and visible to the Manager
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Observe all the fields required for adding a room.
+expectedResult: All fields for adding a room should be properly aligned and visible to the Manager.
+
+Test Case: Test Case 2
+testCaseName: Verify successful room addition
+objective: To verify that a room can be successfully added to the system following the happy path
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should validate the fields, add the room to the database, and show a 'Room added' confirmation message.
+
+Test Case: Test Case 3
+testCaseName: Verify room addition with invalid field entry
+objective: To ensure the system correctly handles the addition of a room when an invalid field is entered
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields, intentionally entering invalid data in one of them.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should display an 'Invalid field entered' message and prevent the room from being added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify room addition with missing mandatory fields
+objective: To verify that the system prevents room addition if mandatory fields are left blank
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill some but not all mandatory fields, leaving at least one mandatory field blank.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should highlight the missing mandatory fields and prevent the room from being added to the database.
+

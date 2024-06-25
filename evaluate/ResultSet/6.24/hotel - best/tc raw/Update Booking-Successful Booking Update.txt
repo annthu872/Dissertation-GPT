@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking Update
+objective: Verify that an employee can successfully update booking details and receive a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated on the booking.
+  - Step 5: Compute the payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+  - Step 7: Verify that a success message is displayed.
+expectedResult: The booking details are updated in the database, and a success message is shown to the employee.
+explanation: This test case ensures that the basic course of events for updating a booking is functioning as expected. It covers the happy path scenario where all steps are correctly followed and completed without errors.
+
+Test Case: Test Case 2
+testCaseName: Booking Update with Invalid Field
+objective: Verify that the system shows an error message when an invalid field is entered during booking update.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+  - Step 6: Verify that an error message is displayed for the invalid field.
+expectedResult: The system prevents the booking update and displays an error message indicating the invalid field.
+explanation: This test case checks the system's ability to validate input fields during the booking update process and ensure that error handling for invalid data entry works as expected.
+
+Test Case: Test Case 3
+testCaseName: Booking Update with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when attempting to update a booking that does not exist.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by an ID that does not exist in the database.
+  - Step 4: Attempt to select the non-existent booking.
+expectedResult: The system displays a NOT FOUND message.
+explanation: This test case ensures that the system correctly handles attempts to update bookings that do not exist, by displaying an appropriate error message.
+

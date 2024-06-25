@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Report Generation with Valid Parameters
+objective: Ensure that the Hotel Owner can generate reports successfully with valid parameters
+testSteps:
+  - Step 1: Authenticate and log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for report generation, such as a valid date period.
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should validate the parameters and generate the report according to the selected date and other parameters. The user should then be able to open and view the specific report details.
+
+Test Case: Test Case 2
+testCaseName: Verify Error Handling for Invalid Report Parameters
+objective: To verify that the system correctly handles invalid parameters by displaying an appropriate error message
+testSteps:
+  - Step 1: Authenticate and log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter invalid parameters for report generation, such as an invalid or unrealistic date period.
+  - Step 5: Attempt to submit the parameters to generate the report.
+expectedResult: The system should detect the invalid parameters and display an appropriate error message, preventing the report from being generated and prompting the user to correct the parameters.
+

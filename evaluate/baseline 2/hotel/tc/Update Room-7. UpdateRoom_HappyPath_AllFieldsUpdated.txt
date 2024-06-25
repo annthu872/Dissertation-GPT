@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Room Details Successfully
+objective: Verify that an employee can successfully update the details of an existing room
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in the fields that need to be updated with valid data.
+  - Step 5: Press the update button.
+expectedResult: A success message is displayed, and the room's details are updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Update Non-existent Room
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that does not exist
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search for a room with an ID that does not exist in the database.
+  - Step 4: Try to fill in any fields (if applicable).
+  - Step 5: Press the update button (if applicable).
+expectedResult: A NOT FOUND message is displayed, and no update operation is performed.
+
+Test Case: Test Case 3
+testCaseName: Update Room with Invalid Field Data
+objective: Verify that the system shows an invalid field entered message for each invalid data entry when updating a room
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: An invalid field entered message is displayed for every field with invalid data, and the room's details are not updated.
+

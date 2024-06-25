@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Login with empty username and valid password
+objective: Verify that the system prevents login with an empty username field and a valid password, and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field empty.
+  - Step 3: Enter a valid password in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should display an error message indicating that the username field cannot be empty and prevent the user from logging in.
+
+Test Case: Test Case 2
+testCaseName: Login with empty username and empty password
+objective: Verify that the system prevents login with both username and password fields empty, and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field empty.
+  - Step 3: Leave the password field empty.
+  - Step 4: Click the submit button.
+expectedResult: The system should display an error message indicating that both the username and password fields cannot be empty and prevent the user from logging in.
+

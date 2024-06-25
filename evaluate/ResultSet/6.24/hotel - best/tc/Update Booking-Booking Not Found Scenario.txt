@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify NOT FOUND message for non-existent booking ID
+objective: Verify that the system displays a NOT FOUND message when an employee attempts to update a booking that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by entering a booking ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to interact with a booking ID that does not exist, which is the core action the scenario aims to test. The expected NOT FOUND message is the specific outcome we're looking to verify, making this test case a direct reflection of the given test scenario.
+

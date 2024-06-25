@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Add Room - Room Already Exists
+objective: Verify that the system prevents adding a room that already exists in the database
+testSteps:
+  - Step 1: Ensure the Manager is logged in with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields with the details of a room that already exists in the database.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should validate the fields and display an error message indicating that the room already exists.
+
+Test Case: Test Case 2
+testCaseName: Add Room - Happy Path
+objective: Verify that the Manager can successfully add a room that does not exist in the database
+testSteps:
+  - Step 1: Ensure the Manager is logged in with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields with the details of a new room that does not exist in the database.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should validate the fields, add the room to the database, and display a confirmation message indicating that the room has been added.
+
+Test Case: Test Case 3
+testCaseName: Add Room - Invalid Field Entry
+objective: Verify that the system shows an error message when an invalid field is entered while adding a room
+testSteps:
+  - Step 1: Ensure the Manager is logged in with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should validate the fields and display an error message indicating that an invalid field has been entered.
+

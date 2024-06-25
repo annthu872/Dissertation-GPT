@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking ID Submission for Checkout
+objective: Verify that a guest can successfully submit a valid booking ID and complete the checkout process.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that has a valid room ID linked to it.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should validate the booking ID, remove the linked room ID from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message.
+explanation: This test case is created to ensure that the checkout process works as intended when a guest submits a valid booking ID. It directly matches the basic course of events described in the use case.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Booking ID Submission with Incorrect ID
+objective: Verify that the system correctly handles the scenario where an incorrect booking ID is submitted for checkout.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should not validate the incorrect booking ID and should redirect the user to the main page with an error message indicating the booking ID is incorrect.
+explanation: This test case verifies the system's behavior when an incorrect booking ID is entered, which is an alternative path in the use case specification.
+
+Test Case: Test Case 3
+testCaseName: Unsuccessful Booking ID Submission with No Linked Room
+objective: Verify that the system correctly handles the scenario where a booking ID without a linked room ID is submitted for checkout.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that does not have a valid room ID linked to it.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should not validate the booking ID due to the absence of a linked room ID and should redirect the user to the main page with an error message indicating the issue.
+explanation: This test case checks the system's response to a booking ID submission that lacks a linked room ID, aligning with another alternative path described in the use case.
+

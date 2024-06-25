@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the Hotel Owner can generate a report with valid parameters and view its details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters for report generation, such as a specific date period.
+  - Step 4: Submit the report generation request.
+  - Step 5: Click on the generated report to view its details.
+expectedResult: The system should generate the report based on the provided parameters and allow the user to view the report's details.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Generate Report with Invalid Parameters
+objective: Verify that the system shows an error when the Hotel Owner tries to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter invalid parameters for report generation, such as an incorrect date period.
+  - Step 4: Submit the report generation request.
+expectedResult: The system should display an error message indicating that the parameters are invalid and prevent the report from being generated.
+
+Test Case: Test Case 3
+testCaseName: Generate Multiple Reports Sequentially
+objective: Verify that the Hotel Owner can generate multiple reports sequentially and access each report's details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters for the first report generation, such as a specific date period, and submit.
+  - Step 4: After the first report is generated, repeat steps 2 and 3 with different parameters for the second report.
+  - Step 5: Access the details of both generated reports by clicking on them one after the other.
+expectedResult: The system should allow the generation of multiple reports with different parameters sequentially and enable the user to view each report's details.
+

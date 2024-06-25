@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Submit Button is Disabled Without Room ID
+objective: To verify that the submit button for requesting room services is disabled when no room ID is entered by the guest.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Do not enter any value in the Room ID field.
+  - Step 3: Observe the state of the submit button.
+expectedResult: The submit button should be disabled when no room ID is entered.
+
+Test Case: Test Case 2
+testCaseName: Verify Error Message for Invalid Room ID
+objective: To verify that an appropriate error message is displayed when an invalid room ID is entered.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID in the Room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the message displayed.
+expectedResult: An 'Invalid Id' error message should be displayed when an invalid room ID is entered.
+
+Test Case: Test Case 3
+testCaseName: Verify Successful Room Service Request
+objective: To verify that a guest can successfully request room services with a valid room ID and that the total charges are shown with a success message.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the Room ID field.
+  - Step 3: Press the submit button and wait for the room ID validation.
+  - Step 4: Choose the desired room services from the list provided.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Observe the total charges and the success message displayed.
+  - Step 7: Verify redirection to the main page.
+expectedResult: The system should display the total charges with a 'room service request successful' message and redirect the user to the main page.
+

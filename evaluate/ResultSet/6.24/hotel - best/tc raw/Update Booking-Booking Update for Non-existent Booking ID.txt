@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a non-existent booking ID
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by entering a non-existent booking ID.
+expectedResult: The system should display a NOT FOUND message.
+explanation: This test case ensures that when an employee attempts to update a booking with an ID that does not exist in the database, the system correctly identifies the absence and notifies the user accordingly. It directly addresses the scenario of updating booking details for a non-existent booking ID by following the alternative path mentioned in the use case.
+
+Test Case: Test Case 2
+testCaseName: Attempt Update on Non-existent Booking ID with Invalid Field
+objective: Verify that the system shows individual error messages for invalid fields when attempting to update a non-existent booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by entering a non-existent booking ID.
+  - Step 4: Fill in the fields that need to be updated with at least one invalid field.
+  - Step 5: Press the update button.
+expectedResult: The system should first display a NOT FOUND message for the booking ID, and then for the invalid field, an 'invalid field entered' message should be shown.
+explanation: This test case is designed to verify the system's behavior when an employee tries to update a booking with a non-existent ID and also enters invalid data in the update fields. It combines the alternative paths of showing a NOT FOUND message for the booking and displaying error messages for invalid fields, ensuring the system's error handling is robust and user-friendly.
+

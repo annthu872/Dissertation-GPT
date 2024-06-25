@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Room - Room Not Found Scenario
+objective: Verify that the system correctly handles the scenario where an employee attempts to update a room that does not exist in the database.
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search or select a room to update using an ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message, indicating that the room cannot be updated because it does not exist.
+
+Test Case: Test Case 2
+testCaseName: Update Room - Invalid Field Entry
+objective: Verify that the system correctly identifies and notifies the employee when an invalid field is entered while updating room details.
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room that exists in the database.
+  - Step 4: Load the room fields data from the database.
+  - Step 5: Fill the fields with new details, intentionally entering invalid data in one or more fields.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and show an 'invalid field entered' message for every individual error detected.
+
+Test Case: Test Case 3
+testCaseName: Update Room - Update Failure
+objective: Verify that the system correctly handles and notifies the employee of a failure to update room details due to an unspecified error.
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room that exists in the database.
+  - Step 4: Load the room fields data from the database.
+  - Step 5: Correctly fill the fields that need to be updated.
+  - Step 6: Press the update button.
+  - Step 7: Simulate an error in updating the database (This step is hypothetical and depends on the testing environment setup).
+expectedResult: The system should attempt to update the database and then show a failure message due to the simulated error.
+

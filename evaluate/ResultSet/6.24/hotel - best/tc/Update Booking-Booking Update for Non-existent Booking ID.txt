@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a non-existent booking ID
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking by entering a non-existent booking ID.
+expectedResult: The system should display a NOT FOUND message.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to update a booking using a non-existent booking ID and expecting a NOT FOUND message as a result. It follows the exact flow described in the scenario, ensuring that the system's response to non-existent booking IDs is tested.
+

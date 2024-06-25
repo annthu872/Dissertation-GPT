@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information - Authorized Access
+objective: Verify that a Hotel Owner can successfully update hotel information
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with new information.
+  - Step 5: Press the submit button to update the information.
+  - Step 6: Verify that a success message is displayed.
+  - Step 7: Verify redirection to the Dashboard.
+expectedResult: The hotel information should be updated successfully, a success message should be displayed, and the user should be redirected to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information - Validation Error
+objective: Verify that the system shows an error message if the validation of the updated information fails
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with invalid information.
+  - Step 5: Press the submit button to update the information.
+  - Step 6: Verify that an error message is displayed.
+expectedResult: The system should display an error message indicating the validation failure.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information - Unauthorized Access Attempt
+objective: Verify that a user without the Hotel Owner role cannot access the Edit Hotel Information page
+testSteps:
+  - Step 1: Log in as a user without the Hotel Owner role.
+  - Step 2: Attempt to navigate directly to the Edit Hotel Information page via URL.
+  - Step 3: Verify the response.
+expectedResult: The user should be denied access to the Edit Hotel Information page and possibly redirected to a 'Not Authorized' or 'Login' page.
+

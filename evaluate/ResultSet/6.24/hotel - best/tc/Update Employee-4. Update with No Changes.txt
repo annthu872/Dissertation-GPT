@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with No Changes
+objective: Verify that the system correctly handles an update operation where no changes are made to the employee's information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Observe that the system auto-fills all fields with the employee's current information.
+  - Step 5: Without making any changes to the fields, press the 'Update' button.
+expectedResult: The system should validate the fields, recognize that no changes were made, and either display a message indicating no changes were detected or simply show the employee updated confirmation without making any changes to the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Update with No Changes' by outlining steps to perform an update operation without making any changes to the employee's information and verifying the system's response to such an operation.
+

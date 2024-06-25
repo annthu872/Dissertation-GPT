@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Extremely Long Values in All Input Fields
+objective: Verify that the system handles extremely long values in all input fields when adding an employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the input fields with extremely long values (e.g., 500 characters for each field).
+  - Step 4: Click on the Add button to attempt adding the employee.
+expectedResult: The system should validate the input fields and display an appropriate error message for fields that cannot accept extremely long values, or successfully add the employee if the system supports long values.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Extremely Long Values in Specific Fields
+objective: Verify that the system correctly handles extremely long values in specific critical fields (e.g., Name, Email) when adding an employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill in the Name and Email fields with extremely long values, while keeping other fields with valid data.
+  - Step 4: Click on the Add button to attempt adding the employee.
+expectedResult: The system should validate the Name and Email fields for length and display an error message if the values are too long, or add the employee if the input is considered valid.
+
+Test Case: Test Case 3
+testCaseName: Add Employee with Valid Data After Attempting Long Values
+objective: Verify that the system allows adding an employee with valid data after a failed attempt with extremely long values
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Attempt to add an employee with extremely long values in all fields and observe the error.
+  - Step 4: Fill all the fields with valid data.
+  - Step 5: Click on the Add button to attempt adding the employee again.
+expectedResult: The system should successfully add the employee with valid data and display a confirmation message along with the generated id and password.
+

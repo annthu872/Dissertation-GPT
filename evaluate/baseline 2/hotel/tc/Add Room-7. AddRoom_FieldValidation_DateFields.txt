@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a room with valid date fields
+objective: To verify that the system allows adding a room when valid date fields are entered by the manager
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields with valid data, including valid date formats for any date fields.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should validate the fields and add the room to the database. A confirmation message 'Room added' should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify adding a room with invalid date fields
+objective: To verify that the system prevents adding a room when invalid date fields are entered by the manager
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields but enter an invalid date format for the date fields.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should detect the invalid date format and prevent the room from being added to the database. An error message 'Invalid field entered' should be displayed next to the date fields.
+
+Test Case: Test Case 3
+testCaseName: Verify adding a room without filling date fields
+objective: To verify that the system prevents adding a room when the date fields are left empty by the manager
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields except for the date fields, leave them empty.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should detect the empty date fields and prevent the room from being added to the database. An error message 'Invalid field entered' should be displayed next to the date fields indicating they cannot be left empty.
+

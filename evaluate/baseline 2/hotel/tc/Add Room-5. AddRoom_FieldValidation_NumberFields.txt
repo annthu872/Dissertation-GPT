@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Valid Field Values
+objective: Verify that a manager can successfully add a room with valid field values and see the room added confirmation
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields with valid values.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system validates the fields, adds the room to the database, and displays a confirmation message indicating the room has been added.
+
+Test Case: Test Case 2
+testCaseName: Add Room with an Invalid Field Value
+objective: Verify that the system prevents adding a room when at least one field contains an invalid value and displays an appropriate error message
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields, intentionally entering an invalid value in one of the fields.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system detects the invalid field, does not add the room to the database, and displays an error message indicating which field is invalid.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Missing Mandatory Fields
+objective: Verify that the system prevents adding a room when mandatory fields are left blank and displays an appropriate error message
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill some of the fields but leave at least one mandatory field blank.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system detects the missing mandatory field(s), does not add the room to the database, and displays an error message indicating which mandatory field(s) are missing.
+

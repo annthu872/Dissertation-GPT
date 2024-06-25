@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Invalid Data Type for Room Capacity
+objective: Verify that the system shows an invalid field error when an invalid data type is entered for room capacity
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: In the room details, enter a string value (e.g., 'twenty') in the room capacity field which expects a numeric value.
+  - Step 5: Press the update button.
+expectedResult: The system should display an invalid field error message for the room capacity field.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Invalid Data Type for Room Number
+objective: Verify that the system shows an invalid field error when an invalid data type is entered for room number
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: In the room details, enter a non-numeric value (e.g., 'RoomA') in the room number field which expects a numeric value.
+  - Step 5: Press the update button.
+expectedResult: The system should display an invalid field error message for the room number field.
+
+Test Case: Test Case 3
+testCaseName: Update Room with Invalid Data Type for Price
+objective: Verify that the system shows an invalid field error when an invalid data type is entered for the price
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: In the room details, enter a string value (e.g., 'One Hundred') in the price field which expects a numeric value.
+  - Step 5: Press the update button.
+expectedResult: The system should display an invalid field error message for the price field.
+

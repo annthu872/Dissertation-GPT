@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Date Range
+objective: Verify that the Hotel Owner can generate a report with a valid date range and view its details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter a valid date range and any other required parameters for the report generation.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on the generated report to view its details.
+expectedResult: The system should generate the report based on the provided valid date range and other parameters, and the user should be able to view the report details.
+
+Test Case: Test Case 2
+testCaseName: Generate Report with Invalid Date Range
+objective: Verify that the system shows an error when the Hotel Owner tries to generate a report with an invalid date range
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter an invalid date range (e.g., end date is before the start date) and any other required parameters for the report generation.
+  - Step 5: Attempt to submit the parameters to generate the report.
+expectedResult: The system should validate the date range and show an error message indicating that the date range is invalid.
+
+Test Case: Test Case 3
+testCaseName: Access Report Details After Generation
+objective: Verify that the Hotel Owner can access and view the details of a report after it has been generated
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page and generate a report by following the steps to provide valid parameters.
+  - Step 3: Once the report is generated, click on the report to open and view its details.
+expectedResult: After generating a report with valid parameters, the Hotel Owner should be able to click on and view the details of the report successfully.
+

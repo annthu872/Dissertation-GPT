@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Employee Performance Happy Path
+objective: Verify that a manager can successfully update an employee's performance details in the system
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Search for the employee using their ID or name in the search bar.
+  - Step 4: Click on the employee's name to select them for updating.
+  - Step 5: System auto-fills all fields with the employee's current information.
+  - Step 6: Change the desired fields that are allowed to be updated.
+  - Step 7: Press the 'Update' button to submit the changes.
+  - Step 8: Wait for the system to validate the fields.
+expectedResult: The system updates the employee's information in the database and displays a confirmation message stating 'Employee updated'.
+
+Test Case: Test Case 2
+testCaseName: Update Employee Performance with Non-existent ID
+objective: Verify that the system shows an error message when trying to update an employee with a non-existent ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Search for an employee using a non-existent ID.
+  - Step 4: Attempt to select the non-existent employee for updating.
+expectedResult: The system displays an error message 'Incorrect value for ID', preventing the update process.
+
+Test Case: Test Case 3
+testCaseName: Update Employee Performance with Invalid Field Entry
+objective: Verify that the system shows an error message when an invalid field is entered during employee update
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Search for and select an employee to update.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Enter an invalid value in one of the fields that are allowed to be updated.
+  - Step 6: Press the 'Update' button to submit the changes.
+expectedResult: The system validates the fields and displays an error message 'Invalid field entered', preventing the update from being saved.
+

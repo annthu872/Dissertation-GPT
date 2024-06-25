@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Generate Report without Selecting Any Parameters
+objective: Verify that the system prompts an error when attempting to generate a report without selecting any parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button without selecting any parameters.
+expectedResult: The system should display an error message indicating that parameters need to be selected before generating a report.
+
+Test Case: Test Case 2
+testCaseName: Access Report Details without Generating Report
+objective: Verify that the Hotel Owner cannot access report details without first generating a report
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Attempt to open a specific report without generating it first.
+expectedResult: The system should prevent access to report details and possibly display a message indicating that a report needs to be generated first.
+
+Test Case: Test Case 3
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the Hotel Owner can successfully generate a report with valid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter valid parameters for the report generation.
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should successfully generate the report based on the provided parameters and display it to the user.
+

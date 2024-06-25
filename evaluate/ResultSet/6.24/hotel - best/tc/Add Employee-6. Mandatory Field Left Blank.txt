@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify mandatory field validation when adding an employee with a field left left blank
+objective: Ensure the system validates and prevents the addition of an employee when mandatory fields are left blank
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on 'Employee'.
+  - Step 3: Attempt to fill out the form to add an employee but leave one mandatory field blank.
+  - Step 4: Click on the 'Add' button to attempt to add the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the system's behavior when a mandatory field is left blank during the process of adding an employee. It specifically tests the system's validation mechanism for mandatory fields.
+

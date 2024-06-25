@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Update Employee Information Successfully
+objective: Verify that the manager can successfully update an employee's information in the system
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the 'Update' button to submit the changes.
+expectedResult: The system validates the fields, updates the employee information in the database, and displays a confirmation message that the employee was updated.
+
+Test Case: Test Case 2
+testCaseName: Update Employee Information with Session Timeout
+objective: Verify that the system handles session timeouts appropriately during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated but do not press 'Update' immediately.
+  - Step 6: Wait for the session to timeout before pressing the 'Update' button.
+expectedResult: The system should prompt the manager to log in again due to the session timeout and ensure that no partial or incomplete information is saved.
+
+Test Case: Test Case 3
+testCaseName: Update Employee Information with Invalid Field Entry
+objective: Verify that the system prevents the update of an employee's information when invalid data is entered into any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Intentionally enter invalid data into one of the fields that are allowed to be updated.
+  - Step 6: Press the 'Update' button to submit the changes.
+expectedResult: The system validates the fields and displays an error message indicating that an invalid field was entered, preventing the update from being completed.
+
+Test Case: Test Case 4
+testCaseName: Update Non-existing Employee
+objective: Verify that the system displays an appropriate error message when attempting to update a non-existing employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Search for an employee using an ID that does not exist in the database.
+  - Step 4: Attempt to update information for the non-existing employee.
+expectedResult: The system displays an error message indicating that the employee ID does not exist.
+

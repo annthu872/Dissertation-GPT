@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with All Fields Unchanged
+objective: Verify that the system correctly handles the scenario where the hotel owner updates the hotel information without making any changes to the fields.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, do not make any changes to the fields. All fields should remain as they were.
+  - Step 5: Submit the form to update the hotel information.
+expectedResult: The system should validate the unchanged fields, update the hotel information in the database (even though no changes were made), show a success message, and redirect the user to the Dashboard.
+reflect: yes
+explanation: This test case directly addresses the test scenario's requirement to verify the system's behavior when updating hotel information without any changes to the fields. It checks the system's ability to handle and process a submission where no actual data modifications occur, which is the core of the given test scenario.
+

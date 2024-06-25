@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify booking update without recomputing payment when new services are added
+objective: Ensure that the system prevents updating booking details without recomputing payment when new services are added.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Load the booking details and add new services without recomputing the payment.
+  - Step 5: Attempt to press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and display a message indicating that payment must be recomputed first.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to ensure the system prevents booking updates without recomputing payment when new services are added. It specifically tests the system's behavior in a situation where new services are added to a booking and an update is attempted without recomputing the payment, aligning perfectly with the scenario's requirements.
+
+Test Case: Test Case 2
+testCaseName: Verify booking update without recomputing payment when new room types are added
+objective: Ensure that the system prevents updating booking details without recomputing payment when new room types are added.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Load the booking details and add new room types without recomputing the payment.
+  - Step 5: Attempt to press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and display a message indicating that payment must be recomputed first.
+reflect: yes
+explanation: This test case also accurately reflects the given test scenario by testing a specific instance where new room types are added to a booking without recomputing payment. It examines the system's compliance with the requirement to recompute payment before an update can be made when changes affecting the payment amount are introduced, thus directly addressing the Payment Not Computed Before Update Scenario.
+

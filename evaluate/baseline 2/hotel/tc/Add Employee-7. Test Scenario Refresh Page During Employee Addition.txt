@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Refresh Page During Employee Addition Does Not Lose Data
+objective: To verify that when a manager refreshes the page during the process of adding an employee, the data entered remains intact and does not get lost.
+testSteps:
+  - Step 1: Manager logs in with manager account.
+  - Step 2: Manager clicks on the Employee menu.
+  - Step 3: Manager fills all the fields required to add an employee but does not click Add.
+  - Step 4: Manager refreshes the page.
+  - Step 5: Manager observes the fields.
+expectedResult: All the data entered by the manager before refreshing the page should remain intact.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Employee Addition After Page Refresh
+objective: To ensure that after refreshing the page during the employee addition process, the manager can successfully add an employee without any data loss or errors.
+testSteps:
+  - Step 1: Manager logs in with manager account.
+  - Step 2: Manager clicks on the Employee menu.
+  - Step 3: Manager fills all the fields required to add an employee but does not click Add.
+  - Step 4: Manager refreshes the page and re-checks the fields to ensure data is intact.
+  - Step 5: Manager clicks Add to add the employee.
+expectedResult: The system validates the fields, adds the employee to the database, shows 'employee added' message, and generates an id and password for the new employee.
+
+Test Case: Test Case 3
+testCaseName: Verify Error Handling for Unfilled Fields After Page Refresh
+objective: To verify that the system correctly handles errors for unfilled fields if the manager refreshes the page during the employee addition process and then attempts to add the employee without filling all required fields.
+testSteps:
+  - Step 1: Manager logs in with manager account.
+  - Step 2: Manager clicks on the Employee menu.
+  - Step 3: Manager fills some but not all fields required to add an employee.
+  - Step 4: Manager refreshes the page.
+  - Step 5: Manager attempts to click Add without filling the missing fields.
+expectedResult: The system shows a message indicating that all fields are required.
+
+Test Case: Test Case 4
+testCaseName: Verify Error Handling for Invalid Fields After Page Refresh
+objective: To ensure that the system correctly identifies and notifies the manager of invalid fields after a page refresh during the employee addition process.
+testSteps:
+  - Step 1: Manager logs in with manager account.
+  - Step 2: Manager clicks on the Employee menu.
+  - Step 3: Manager fills all required fields with one or more fields containing invalid data.
+  - Step 4: Manager refreshes the page.
+  - Step 5: Manager corrects any fields if data was lost during refresh, then clicks Add.
+expectedResult: The system validates the fields and shows a message indicating which field is invalid if any.
+

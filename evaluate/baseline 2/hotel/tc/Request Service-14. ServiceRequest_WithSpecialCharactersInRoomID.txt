@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Service Request with Valid Room ID containing Special Characters
+objective: Verify that the system accepts valid room IDs with special characters and successfully processes a room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID that contains special characters into the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose a service.
+  - Step 5: Confirm the service request.
+expectedResult: The system should validate the room ID with special characters, calculate the charges, update the database, and display the total charges along with a 'room service request successful' message. Finally, it should redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Service Request with Invalid Room ID containing Special Characters
+objective: Verify that the system correctly identifies and rejects invalid room IDs with special characters during a room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID that contains special characters into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' error message without proceeding to the list of room services.
+
+Test Case: Test Case 3
+testCaseName: Service Request with Valid Room ID without Special Characters
+objective: Verify that the system processes a room service request with a valid room ID that does not contain special characters
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID that does not contain special characters into the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose a service.
+  - Step 5: Confirm the service request.
+expectedResult: The system should validate the room ID, calculate the charges, update the database, and display the total charges along with a 'room service request successful' message. Finally, it should redirect the user to the main page.
+
+Test Case: Test Case 4
+testCaseName: Service Request with Empty Room ID Field
+objective: Verify that the system prevents a room service request when the room ID field is left empty
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Leave the room ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating that the room ID field is required and prevent the user from proceeding to the list of room services.
+

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Data
+objective: Verify that the manager can successfully update an employee's information using valid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using a valid employee ID.
+  - Step 4: System auto-fills the fields with the employee's current information.
+  - Step 5: Change the desired fields with valid data and press the update button.
+  - Step 6: Confirm the update action if prompted.
+expectedResult: The system should validate the fields, update the employee information in the database, and display a confirmation message that the employee was updated successfully.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid ID
+objective: Verify that the system handles attempts to update an employee using an invalid ID correctly
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Attempt to search for an employee using an invalid ID.
+expectedResult: The system should display an error message indicating that the ID is incorrect or the employee does not exist.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Invalid Field Data
+objective: Verify that the system prevents the update of an employee's information when invalid data is entered into the fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using a valid employee ID.
+  - Step 4: System auto-fills the fields with the employee's current information.
+  - Step 5: Attempt to change a field with invalid data and press the update button.
+expectedResult: The system should display an error message indicating that an invalid field was entered and prevent the update from occurring.
+
+Test Case: Test Case 4
+testCaseName: SQL Injection Attack Prevention during Employee Update
+objective: Ensure that the system is secure against SQL Injection attacks during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an existing employee using a valid employee ID.
+  - Step 4: System auto-fills the fields with the employee's current information.
+  - Step 5: Attempt to inject an SQL command into one of the fields and press the update button.
+expectedResult: The system should validate the input, reject the SQL injection attempt, and display an error message indicating that the input is invalid.
+

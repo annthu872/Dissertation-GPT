@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking ID Validation and Update
+objective: Verify that the system successfully validates a correct Booking ID and updates the booking details with room ID, then navigates to the main page with a success message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response and redirection.
+expectedResult: The system validates the Booking ID, updates the booking details with the room ID, displays a success message, and redirects the user to the main page.
+explanation: This test case ensures that the system correctly processes a valid Booking ID by validating it, updating the booking details, and navigating to the main page with a success message. It directly tests the basic course of events described in the use case.
+
+Test Case: Test Case 2
+testCaseName: Incorrect Booking ID Validation and Error Handling
+objective: Verify that the system correctly identifies an incorrect Booking ID, does not update booking details, and redirects to the main page with an error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an incorrect Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response and redirection.
+expectedResult: The system identifies the Booking ID as incorrect, does not update the booking details, and redirects the user to the main page with an error message.
+explanation: This test case checks the system's ability to handle incorrect Booking IDs by not updating booking details and providing appropriate feedback to the user. It follows the alternative path described in the use case.
+

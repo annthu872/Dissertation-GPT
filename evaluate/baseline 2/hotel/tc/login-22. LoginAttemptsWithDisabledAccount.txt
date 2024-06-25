@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Login Attempt with Correct Credentials by Enabled Account
+objective: Verify that a user with an enabled account and correct credentials can successfully log in and is redirected to the dashboard.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid username and password for an enabled account.
+  - Step 3: Click the submit button.
+expectedResult: User is authenticated and redirected to the main dashboard relevant to their user role.
+
+Test Case: Test Case 2
+testCaseName: Login Attempt with Incorrect Credentials
+objective: Verify that the system shows an error message when a user attempts to log in with incorrect credentials.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an incorrect username and/or password.
+  - Step 3: Click the submit button.
+expectedResult: User remains on the login page and an error message is displayed indicating incorrect credentials.
+
+Test Case: Test Case 3
+testCaseName: Login Attempts with Disabled Account
+objective: Verify that a user with a disabled account cannot log in, even with correct credentials, and receives an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid username and password for a disabled account.
+  - Step 3: Click the submit button.
+expectedResult: User remains on the login page and an error message is displayed indicating the account is disabled.
+

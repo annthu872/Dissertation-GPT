@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Valid Booking ID
+objective: Verify that the system allows checkout with a valid booking ID and updates the booking status accordingly
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that is linked to a room.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should validate the booking ID, remove the linked room ID from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Booking ID
+objective: Verify that the system handles attempts to checkout with an invalid booking ID by displaying an error message
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an invalid booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should not find the booking ID valid, thus it should redirect the user to the main page and display an error message indicating the booking ID is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Booking ID Not Linked to Room
+objective: Verify that the system prevents checkout if the booking ID is not linked to any room and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a booking ID that is not linked to any room.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should recognize that the booking ID is not linked to any room, redirect the user to the main page, and show an error message indicating there is no room linked to the provided booking ID.
+
+Test Case: Test Case 4
+testCaseName: Multiple Submissions of the Same Booking ID
+objective: Verify that the system handles multiple submissions of the same booking ID correctly without allowing duplicate checkouts
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that is already checked out.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should recognize the booking ID has already been checked out, thus it should redirect the user to the main page and display a message indicating the booking has already been completed.
+

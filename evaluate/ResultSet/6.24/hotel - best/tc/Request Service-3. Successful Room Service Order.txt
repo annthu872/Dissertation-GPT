@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Service Order Submission
+objective: Verify that a guest can successfully request room services and receive a success message along with the total charges.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, choose one or more services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges displayed and the success message.
+  - Step 7: Verify that the system navigates to the main page after displaying the success message.
+expectedResult: The guest should see the total charges for the selected services along with a 'room service request successful' message, followed by redirection to the main page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful room service order by covering the entire process from service selection to receiving a success message and the total charges, which is the intended outcome of the scenario.
+

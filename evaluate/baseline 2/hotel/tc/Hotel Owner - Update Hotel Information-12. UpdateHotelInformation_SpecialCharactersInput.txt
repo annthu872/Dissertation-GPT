@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Special Characters
+objective: Verify that the hotel owner can update hotel information using special characters in fields such as the name and address, and the system correctly validates and updates the information.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name and address fields with special characters (e.g., !@#$%^&*()).
+  - Step 5: Submit the updated information.
+expectedResult: The system should validate the input fields, update the hotel information in the database, display a success message, and redirect the user to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Special Characters - Validation Error
+objective: Verify that the system shows an error message when the hotel owner inputs invalid special characters in fields that do not accept them, preventing the update.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name with invalid special characters (e.g., < > / \).
+  - Step 5: Attempt to submit the updated information.
+expectedResult: The system should validate the input fields, show an error message indicating the invalid characters, and prevent the update without redirecting to the Dashboard.
+

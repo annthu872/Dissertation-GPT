@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Valid Data
+objective: Verify that the Hotel Owner can successfully update hotel information with valid data and get redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name and address with valid data.
+  - Step 5: Submit the updated information.
+expectedResult: The system should validate the fields, update the hotel information in the database, display a success message, and redirect the user to the dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Existing Hotel Name
+objective: Verify that the Hotel Owner receives an error message when trying to update hotel information with a hotel name that already exists in the system.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name with a name that already exists in the system.
+  - Step 5: Attempt to submit the updated information.
+expectedResult: The system should validate the fields, detect the duplicate hotel name, display an error message, and not update the hotel information in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information with Invalid Data
+objective: Verify that the Hotel Owner is prevented from updating hotel information with invalid data and receives appropriate error messages.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name with symbols or leave the address field empty.
+  - Step 5: Attempt to submit the updated information.
+expectedResult: The system should validate the fields, detect the invalid data, display error messages for the invalid fields, and not update the hotel information in the database.
+

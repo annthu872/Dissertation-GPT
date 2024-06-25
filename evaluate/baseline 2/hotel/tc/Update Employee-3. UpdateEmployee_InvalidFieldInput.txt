@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Invalid Email Format
+objective: Verify that the system prevents updating an employee with an invalid email format and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: In the employee details, attempt to change the email field to an invalid format (e.g., 'testemail.com').
+  - Step 5: Press the update button to attempt to save the changes.
+expectedResult: The system should display an error message indicating that the email format is invalid and prevent the update from being saved.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Empty Required Field
+objective: Ensure the system does not allow updating an employee when a required field is left empty and shows an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: Clear the content of a required field (e.g., 'Last Name').
+  - Step 5: Press the update button to attempt to save the changes.
+expectedResult: The system should display an error message indicating that a required field is empty and prevent the update from being saved.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Invalid ID
+objective: To verify that the system displays an error message when attempting to update an employee with an ID that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Enter an ID that does not exist in the system.
+  - Step 4: Attempt to update any field and press the update button.
+expectedResult: The system should display an error message indicating 'incorrect value for id' and prevent any updates.
+

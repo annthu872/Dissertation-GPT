@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify system behavior when updating an employee with a non-existent ID
+objective: To ensure the system correctly handles attempts to update an employee using an ID that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Attempt to search for an employee using an ID that does not exist in the database.
+expectedResult: The system should display a message indicating an incorrect value for ID, indicating the employee ID does not exist.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Employee ID Does Not Exist' by attempting to perform an action (update) on an employee using an ID that is not present in the database. The expected result of receiving a message about the non-existent ID confirms that this test case is designed to reflect the given test scenario.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Phone Number
+objective: Verify that the system allows updating an employee's phone number with a valid phone number format
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: In the employee details, change the phone number to a valid format.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the new phone number and display a message indicating the employee was updated successfully.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Phone Number
+objective: Verify that the system prevents updating an employee's phone number with an invalid phone number format
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: In the employee details, change the phone number to an invalid format.
+  - Step 5: Press the update button.
+expectedResult: The system should display an error message indicating 'invalid field entered' for the phone number.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Empty Phone Number Field
+objective: Verify that the system prevents updating an employee's record with an empty phone number field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or name.
+  - Step 4: Clear the phone number field leaving it empty.
+  - Step 5: Press the update button.
+expectedResult: The system should display an error message indicating 'invalid field entered' for the phone number.
+

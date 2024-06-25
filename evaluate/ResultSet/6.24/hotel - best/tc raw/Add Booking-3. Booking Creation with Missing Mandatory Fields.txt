@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Booking Creation with All Mandatory Fields Missing
+objective: Verify that the system prevents booking creation when all mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Observe the booking panel menu displayed.
+  - Step 4: Attempt to add a booking without filling any fields.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate fields and display an error message for every mandatory field that is missing.
+explanation: This test case ensures that the system correctly handles attempts to create a booking without any data entered, which directly relates to the scenario of booking creation with missing mandatory fields.
+
+Test Case: Test Case 2
+testCaseName: Booking Creation with Some Mandatory Fields Missing
+objective: Verify that the system prevents booking creation when some mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Observe the booking panel menu displayed.
+  - Step 4: Fill only some of the mandatory fields, leaving others blank.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate fields and display an error message for each mandatory field that is missing.
+explanation: This test case checks the system's response to partial data entry, ensuring it identifies and notifies about missing mandatory fields, which is a crucial aspect of the scenario for booking creation with missing mandatory fields.
+
+Test Case: Test Case 3
+testCaseName: Booking Creation without Calculating Total Amount
+objective: Verify that the system prevents booking creation if the total amount is not calculated, even if all fields are filled.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields but do not click the calculate amount button.
+  - Step 4: Press the add booking button.
+expectedResult: The system should prevent the booking from being added and display a message indicating that the total amount needs to be calculated.
+explanation: This test case is designed to verify the system's adherence to the alternative path where the booking cannot be added without calculating the total amount, which is a specific condition related to the scenario of booking creation with missing mandatory fields.
+

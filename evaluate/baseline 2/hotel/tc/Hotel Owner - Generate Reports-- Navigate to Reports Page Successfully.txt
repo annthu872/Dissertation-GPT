@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Reports Page and Generate Report Successfully
+objective: Verify that the Hotel Owner can navigate to the Reports Page, enter parameters to generate a report, and view the generated report successfully.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Click on the Reports Button on the dashboard or navigation menu.
+  - Step 3: Observe the parameters available for generating reports.
+  - Step 4: Enter valid parameters for report generation, such as a specific date period.
+  - Step 5: Click on the 'Generate Report' button.
+  - Step 6: Select a specific report from the list of generated reports.
+  - Step 7: View the details of the selected report.
+expectedResult: After successfully logging in and navigating to the Reports Page, the Hotel Owner should be able to enter report parameters, generate a report, select a specific report, and view its details without encountering any errors.
+
+Test Case: Test Case 2
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system shows an error message when the Hotel Owner enters invalid parameters for report generation.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter invalid parameters for report generation, such as an incorrect date range.
+  - Step 4: Click on the 'Generate Report' button.
+expectedResult: The system should validate the entered parameters and display an error message indicating that the parameters are invalid and the report cannot be generated.
+

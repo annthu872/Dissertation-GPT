@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away alert before submission with filled data
+objective: To ensure the system prompts a warning when the manager navigates away from the 'Add Employee' page after filling out the form but before submission
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Employee' section.
+  - Step 3: Fill out the 'Add Employee' form with valid data but do not click 'Add'.
+  - Step 4: Attempt to navigate away from the page by clicking on another menu item or closing the browser tab.
+expectedResult: The system should display a warning message asking if the user wants to leave the page, indicating that changes will not be saved.
+
+Test Case: Test Case 2
+testCaseName: Verify no navigation away alert after submission
+objective: To verify that the system does not prompt a warning when the manager navigates away from the 'Add Employee' page after successfully submitting the form
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Employee' section.
+  - Step 3: Correctly fill out all fields in the 'Add Employee' form.
+  - Step 4: Click the 'Add' button to submit the form.
+  - Step 5: After the 'Employee added' confirmation, attempt to navigate away from the page by clicking on another menu item.
+expectedResult: The system should allow navigation without displaying a warning message, as the data has been successfully saved.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away alert with partially filled form
+objective: To ensure the system prompts a warning when the manager navigates away from the 'Add Employee' page after partially filling out the form but before submission
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Employee' section.
+  - Step 3: Fill out only some fields in the 'Add Employee' form but do not click 'Add'.
+  - Step 4: Attempt to navigate away from the page by clicking on another menu item or closing the browser tab.
+expectedResult: The system should display a warning message asking if the user wants to leave the page, indicating that changes will not be saved.
+
+Test Case: Test Case 4
+testCaseName: Verify no navigation away alert on empty form
+objective: To verify that the system does not prompt a warning when the manager navigates away from the 'Add Employee' page without entering any data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Employee' section.
+  - Step 3: Do not enter any data in the 'Add Employee' form.
+  - Step 4: Attempt to navigate away from the page by clicking on another menu item or closing the browser tab.
+expectedResult: The system should allow navigation without displaying a warning message, as no data has been entered.
+

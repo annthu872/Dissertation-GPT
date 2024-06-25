@@ -1,0 +1,11 @@
+Test Case: Test Case 3
+testCaseName: Attempt to Check Out with Booking ID That Has No Room Linked
+objective: Verify that the system correctly handles attempts to check out using a booking ID that has no room linked to it.
+testSteps:
+  - Step 1: Navigate to the check-out page.
+  - Step 2: Enter a valid booking ID that does not have a room linked to it in the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should recognize that there is no room linked to the booking ID, and it should redirect the user to the main page with an error message indicating there is no room linked to the booking ID.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by specifically testing the system's behavior when attempting to check out with a booking ID that has no room linked, which is the exact situation described in the scenario.
+

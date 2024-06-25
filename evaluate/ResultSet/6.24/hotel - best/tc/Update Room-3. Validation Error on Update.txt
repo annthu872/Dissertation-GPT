@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Validate Room Update with Invalid Data
+objective: Verify that the system shows validation errors when invalid data is entered in the update fields
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: Fill in at least one field with invalid data that needs to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system should show invalid field entered message for every individual error without updating the database.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Validation Error on Update' by verifying the system's behavior when invalid data is entered during the room update process.
+

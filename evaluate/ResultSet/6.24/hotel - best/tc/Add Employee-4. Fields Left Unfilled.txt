@@ -1,0 +1,11 @@
+Test Case: Test Case 2
+testCaseName: Verify system behavior when fields are left unfilled
+objective: To confirm that the system displays an appropriate error message when trying to add an employee with one or more fields left unfilled.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Leave one or more fields unfilled and click the Add button.
+expectedResult: The system shows a message indicating that all fields are required.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Fields Left Unfilled' by verifying the system's response when an attempt is made to add an employee without filling all the required fields. It checks for the appropriate error message, making it relevant to the scenario.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Submit Room Service Request with Incorrect Room ID Format
+objective: Verify that the system displays an 'Invalid Id' message when a room service request is submitted with an incorrect room ID format
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an incorrect format of room ID into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' message and should not proceed to show the list of room services.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the system's response to an incorrect room ID format during a room service request submission. It accurately assesses the system's validation mechanism for the room ID field, which is the core focus of the scenario.
+

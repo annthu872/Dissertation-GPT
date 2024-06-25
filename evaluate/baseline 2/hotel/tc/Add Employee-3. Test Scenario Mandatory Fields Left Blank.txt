@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify mandatory fields validation when adding an employee with all fields left blank
+objective: To ensure the system validates and prevents the addition of an employee when mandatory fields are left blank
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Leave all the fields blank and click on the Add button.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee.
+
+Test Case: Test Case 2
+testCaseName: Verify mandatory fields validation when adding an employee with some fields left blank
+objective: To ensure the system validates and prevents the addition of an employee when some mandatory fields are left blank
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill in only some of the mandatory fields, leaving others blank.
+  - Step 4: Click on the Add button.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee.
+
+Test Case: Test Case 3
+testCaseName: Verify the system behavior when invalid data is entered in any field while adding an employee
+objective: To ensure the system validates and shows an appropriate message when invalid data is entered in any of the fields during the addition of an employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill in all the fields, intentionally entering invalid data in one of them.
+  - Step 4: Click on the Add button.
+expectedResult: The system should display a message indicating the specific field where invalid data is entered.
+

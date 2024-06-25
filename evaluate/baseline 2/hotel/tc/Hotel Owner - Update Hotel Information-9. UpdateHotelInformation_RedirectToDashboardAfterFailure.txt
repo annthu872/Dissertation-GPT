@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information Successfully
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the Dashboard with a success message
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the desired fields with valid data.
+  - Step 5: Submit the updated information.
+  - Step 6: Observe the system behavior.
+expectedResult: The system should validate the fields, update the hotel information in the database, show a success message, and redirect the user to the Dashboard.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Validation Error
+objective: Verify that the Hotel Owner is shown an error message when trying to update hotel information with invalid data and remains on the Edit Hotel Information page
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update any field with invalid data.
+  - Step 5: Submit the updated information.
+  - Step 6: Observe the system behavior.
+expectedResult: The system should validate the fields, show an error message due to invalid data, and keep the user on the Edit Hotel Information page without redirecting to the Dashboard.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information and Redirect to Dashboard After Failure
+objective: Verify that after a failed update attempt due to validation errors, the Hotel Owner can correct the errors, successfully update the hotel information, and then be redirected to the Dashboard with a success message
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update any field with invalid data and submit.
+  - Step 5: Observe the error message and remain on the Edit Hotel Information page.
+  - Step 6: Correct the errors by updating the fields with valid data.
+  - Step 7: Submit the updated information again.
+  - Step 8: Observe the system behavior.
+expectedResult: After correcting the errors, the system should validate the fields, update the hotel information in the database, show a success message, and redirect the user to the Dashboard.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Check Out with Valid Booking ID and Linked Room
+objective: Verify that a guest can successfully check out using a valid booking ID that has a room linked to it.
+testSteps:
+  - Step 1: Navigate to the check-out page.
+  - Step 2: Enter a valid booking ID that has a room linked to it in the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the booking ID, unlink the room from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message.
+explanation: This test case ensures that the basic course of events or happy path works as intended for a guest checking out with a valid booking ID.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Check Out with Invalid Booking ID
+objective: Verify that the system correctly handles attempts to check out using an invalid booking ID.
+testSteps:
+  - Step 1: Navigate to the check-out page.
+  - Step 2: Enter an invalid booking ID in the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should not find the booking ID, and it should redirect the user to the main page with an error message indicating the booking ID is incorrect.
+explanation: This test case checks the system's response to an invalid booking ID, which is part of the alternative path in the use case.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Check Out with Booking ID That Has No Room Linked
+objective: Verify that the system correctly handles attempts to check out using a booking ID that has no room linked to it.
+testSteps:
+  - Step 1: Navigate to the check-out page.
+  - Step 2: Enter a valid booking ID that does not have a room linked to it in the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should recognize that there is no room linked to the booking ID, and it should redirect the user to the main page with an error message indicating there is no room linked to the booking ID.
+explanation: This test case directly addresses the scenario of attempting to check out with a booking ID that has no room linked, testing the system's handling of such cases as described in the alternative path of the use case.
+

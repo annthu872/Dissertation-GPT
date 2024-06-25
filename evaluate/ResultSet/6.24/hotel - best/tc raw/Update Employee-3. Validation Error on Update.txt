@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Validation Error on Update with Non-existent Employee ID
+objective: Verify that the system displays an error message when attempting to update an employee with a non-existent ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: In the Employee menu, attempt to search for an employee using a non-existent ID.
+expectedResult: The system should display an error message indicating 'incorrect value for id'.
+explanation: This test case ensures that the system correctly handles attempts to update an employee using an ID that does not exist in the database, by displaying an appropriate error message.
+
+Test Case: Test Case 2
+testCaseName: Validation Error on Update with Invalid Field Entry
+objective: Verify that the system displays an error message when an invalid value is entered in any field during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for an existing employee by entering a valid employee ID.
+  - Step 4: In the employee update form, enter an invalid value in one of the fields that are allowed to be changed.
+  - Step 5: Press the update button to attempt to update the employee information.
+expectedResult: The system should display an error message indicating 'invalid field entered'.
+explanation: This test case checks that the system properly validates each field during the employee update process and displays an error message if any field contains an invalid value.
+

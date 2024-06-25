@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Check into room with special characters in Booking ID - Valid ID
+objective: Verify that the system allows check-in with a valid Booking ID containing special characters
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid Booking ID that contains special characters into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the Booking ID with special characters, update the booking details with room ID, show a 'check in successful' message, and redirect the user to the main page.
+explanation: This test case verifies that the system correctly handles Booking IDs with special characters during the check-in process, ensuring that users can check in even if their Booking ID contains special characters.
+
+Test Case: Test Case 2
+testCaseName: Check into room with special characters in Booking ID - Invalid ID
+objective: Verify that the system correctly handles an invalid Booking ID containing special characters
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an invalid Booking ID that contains special characters into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should recognize the Booking ID as invalid, not update the booking details, and redirect the user to the main page with an error message.
+explanation: This test case ensures that the system properly validates Booking IDs with special characters and provides appropriate feedback when the ID is invalid, preventing incorrect check-ins.
+

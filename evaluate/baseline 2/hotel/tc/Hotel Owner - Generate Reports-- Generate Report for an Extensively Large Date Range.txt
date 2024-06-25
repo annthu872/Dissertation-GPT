@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Date Range
+objective: Verify that the Hotel Owner can successfully generate a report for a valid date range and view its details
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters for generating a report, including a valid date range.
+  - Step 4: Click the 'Generate Report' button.
+  - Step 5: Select the generated report to view its details.
+expectedResult: The system should generate the report based on the provided parameters and allow the user to view the report details successfully.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Generate Report with Invalid Date Range
+objective: Verify that the system prevents the Hotel Owner from generating a report with an invalid date range and displays an appropriate error message
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter parameters for generating a report, including an invalid date range (e.g., end date is before the start date).
+  - Step 4: Click the 'Generate Report' button.
+expectedResult: The system should display an error message indicating the date range is invalid and prevent the report from being generated.
+
+Test Case: Test Case 3
+testCaseName: Generate Report for an Extensively Large Date Range
+objective: Verify that the Hotel Owner can generate a report for an extensively large date range without system performance issues or errors
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter parameters for generating a report, including an extensively large date range (e.g., several years).
+  - Step 4: Click the 'Generate Report' button.
+  - Step 5: Wait for the report generation process to complete.
+  - Step 6: Select the generated report to view its details.
+expectedResult: The system should successfully generate the report for the large date range and allow the user to view the report details without any performance issues.
+

@@ -1,0 +1,4 @@
+Test Case: Test Case 1
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Booking Update with Additional Services' by outlining steps to update booking details to include additional services. It covers the primary objective of the scenario, which is to ensure that the system can handle updates to bookings, including the addition of services, and reflects the changes in the database accurately.
+

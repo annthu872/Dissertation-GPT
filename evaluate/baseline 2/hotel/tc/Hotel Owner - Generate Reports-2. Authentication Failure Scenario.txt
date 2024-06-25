@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Authentication Failure on Accessing Reports
+objective: Verify that the system prevents access to the reports page if the user is not authenticated or does not have the Hotel Owner role
+testSteps:
+  - Step 1: Navigate to the application login page.
+  - Step 2: Attempt to navigate directly to the Reports Page without logging in.
+  - Step 3: Log in with a user account that does not have the Hotel Owner role.
+  - Step 4: Attempt to navigate to the Reports Page.
+expectedResult: For steps 2 and 4, the system should redirect the user to the login page or display an authorization error message, preventing access to the Reports Page.
+
+Test Case: Test Case 2
+testCaseName: Successful Report Generation
+objective: Verify that an authenticated user with the Hotel Owner role can successfully generate a report with valid parameters
+testSteps:
+  - Step 1: Log in to the application with a user account that has the Hotel Owner role.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Enter valid parameters for report generation, such as a specific date period.
+  - Step 4: Submit the request for report generation.
+expectedResult: The system generates the report according to the selected parameters and displays it to the user.
+
+Test Case: Test Case 3
+testCaseName: Report Generation with Invalid Parameters
+objective: Verify that the system shows an error message when trying to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in to the application with a user account that has the Hotel Owner role.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Enter invalid parameters for report generation, such as an incorrect date period.
+  - Step 4: Submit the request for report generation.
+expectedResult: The system displays an error message indicating that the parameters are invalid and does not generate the report.
+

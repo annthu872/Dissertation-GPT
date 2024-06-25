@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Valid Details
+objective: Verify that an employee can successfully update room details with valid data
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Fill in the fields with valid data that need to be updated.
+  - Step 5: Press the update button.
+expectedResult: A success message is displayed, and the room details are updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Invalid Data
+objective: Verify that the system shows individual error messages for each invalid field when updating room details
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system displays an individual error message for each invalid field entered.
+
+Test Case: Test Case 3
+testCaseName: Update Non-existent Room
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that doesn't exist
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that does not exist in the database.
+  - Step 4: Attempt to update any field (if applicable).
+  - Step 5: Press the update button.
+expectedResult: A NOT FOUND message is displayed, indicating the room cannot be updated because it doesn't exist.
+
+Test Case: Test Case 4
+testCaseName: Update Room with Empty Mandatory Fields
+objective: Verify that the system prevents updating a room when mandatory fields are left empty
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Clear any mandatory fields and leave them empty.
+  - Step 5: Press the update button.
+expectedResult: The system displays an error message indicating that mandatory fields cannot be left empty and prevents the update operation.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify successful room addition
+objective: Verify that a manager can successfully add a room to the system and is navigated to the Employee page
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Confirm that the room has been added to the database.
+expectedResult: After adding the room, the system should display a message 'Room added' and navigate the user to the Employee page.
+
+Test Case: Test Case 2
+testCaseName: Verify room addition with invalid field
+objective: Ensure the system shows an error message when an invalid field is entered during room addition
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields, intentionally entering invalid data in one of them.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response to the invalid field.
+expectedResult: The system should display an error message 'Invalid field entered' and remain on the Add Room page to allow the manager to correct the data.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after failed room addition
+objective: To check if the manager is navigated correctly after a failed attempt to add a room due to invalid fields
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields with one or more invalid data entries.
+  - Step 4: Press the 'Add Room' button and observe the error.
+  - Step 5: Correct the invalid fields with valid data.
+  - Step 6: Press the 'Add Room' button again.
+expectedResult: After the initial failure and subsequent correction of fields, the system should add the room to the database and navigate the manager to the Employee page.
+

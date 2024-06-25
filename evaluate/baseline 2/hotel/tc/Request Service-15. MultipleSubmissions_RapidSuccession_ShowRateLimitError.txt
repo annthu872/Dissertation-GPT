@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Submit Multiple Room Service Requests in Rapid Succession
+objective: Verify that the system shows a rate limit error when multiple room service requests are submitted in rapid succession by the same user
+testSteps:
+  - Step 1: Log in as a guest with a valid room ID.
+  - Step 2: Navigate to the room service request page.
+  - Step 3: Enter valid room ID and press the submit button to request a room service.
+  - Step 4: Immediately after the first submission, attempt to submit another room service request using the same or different service choice.
+  - Step 5: Repeat step 4 for a total of 5 rapid submissions.
+expectedResult: After the second or subsequent rapid submissions, the system should display a rate limit error message, preventing further requests for a specified cooldown period.
+
+Test Case: Test Case 2
+testCaseName: Successful Room Service Request Followed by Rapid Succession Attempts
+objective: Verify that after a successful room service request, subsequent rapid submissions by the same user are blocked by a rate limit error
+testSteps:
+  - Step 1: Log in as a guest with a valid room ID.
+  - Step 2: Navigate to the room service request page.
+  - Step 3: Enter valid room ID and press the submit button to request a room service.
+  - Step 4: Wait for the success message indicating the room service request was successful.
+  - Step 5: Immediately attempt to submit another room service request.
+  - Step 6: Repeat step 5 for a total of 4 rapid submissions after the initial successful request.
+expectedResult: The first request should be successful, showing the total charges and a success message. For the subsequent rapid attempts, the system should display a rate limit error message, indicating the user must wait before making another request.
+

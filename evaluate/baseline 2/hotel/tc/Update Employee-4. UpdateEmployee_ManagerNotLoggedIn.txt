@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Update Employee without Manager being Logged In
+objective: Verify that the system prevents updating an employee when the manager is not logged in
+testSteps:
+  - Step 1: Navigate to the Employee section without logging in as a manager.
+  - Step 2: Attempt to search for an employee using their ID or from the table.
+  - Step 3: Try to change any of the fields and press the update button.
+expectedResult: The system should not allow access to the Employee section or any update actions and should prompt the user to log in as a manager.
+
+Test Case: Test Case 2
+testCaseName: Attempt Update with Manager Logged Out During Process
+objective: Verify that the system handles scenarios where the manager logs out during the update process
+testSteps:
+  - Step 1: Log in as a manager and navigate to the Employee section.
+  - Step 2: Search for an employee and begin the update process by autofilling the fields with old values.
+  - Step 3: Log out as a manager before pressing the update button.
+  - Step 4: Attempt to press the update button after logging out.
+expectedResult: The system should invalidate the session and prevent the update from being processed, redirecting the user to the login page.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Incorrect ID while Manager Logged In
+objective: Verify that the system shows an error when trying to update an employee with an incorrect ID
+testSteps:
+  - Step 1: Log in as a manager.
+  - Step 2: Navigate to the Employee section and attempt to search for an employee using an incorrect ID.
+  - Step 3: Try to update any fields and press the update button.
+expectedResult: The system should display an error message indicating an incorrect value for the ID.
+
+Test Case: Test Case 4
+testCaseName: Update Employee with Invalid Field Entry
+objective: Verify that the system validates fields and shows an error for invalid entries during an update
+testSteps:
+  - Step 1: Log in as a manager and navigate to the Employee section.
+  - Step 2: Search for an employee and autofill the fields with old values.
+  - Step 3: Enter an invalid value in one of the fields and press the update button.
+expectedResult: The system should validate the fields and display an error message indicating an invalid field entry.
+

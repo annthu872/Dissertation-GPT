@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Login with valid credentials
+objective: Verify that the user can log in with valid credentials and is redirected to the dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid username and password for the user.
+  - Step 3: Click the submit button.
+expectedResult: User is redirected to the dashboard relevant to their user role.
+
+Test Case: Test Case 2
+testCaseName: Login with invalid username
+objective: Verify that an error message is displayed when logging in with an invalid username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an invalid username and a valid password.
+  - Step 3: Click the submit button.
+expectedResult: An error message is displayed indicating the username or password is incorrect.
+
+Test Case: Test Case 3
+testCaseName: Login with invalid password
+objective: Verify that an error message is displayed when logging in with an invalid password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid username and an invalid password.
+  - Step 3: Click the submit button.
+expectedResult: An error message is displayed indicating the username or password is incorrect.
+
+Test Case: Test Case 4
+testCaseName: Login with empty username and password
+objective: Verify that an error message is displayed when attempting to log in with both fields empty
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username and password fields empty.
+  - Step 3: Click the submit button.
+expectedResult: An error message is displayed indicating that username and password fields cannot be empty.
+

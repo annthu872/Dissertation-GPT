@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Invalid Login Attempt by Manager with Incorrect Password
+objective: Verify that the system denies access and displays an error message when a Manager attempts to login with an incorrect password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid Manager username in the username field.
+  - Step 3: Enter an incorrect password in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should display an error message indicating incorrect username or password and remain on the login page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login Attempt by Manager with Incorrect Username
+objective: Verify that the system denies access and displays an error message when a Manager attempts to login with an incorrect username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an incorrect username in the username field.
+  - Step 3: Enter a valid Manager password in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should display an error message indicating incorrect username or password and remain on the login page.
+
+Test Case: Test Case 3
+testCaseName: Invalid Login Attempt by Manager with Blank Credentials
+objective: Verify that the system denies access and prompts for credentials if the Manager attempts to login without entering any credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Leave the password field blank.
+  - Step 4: Click the submit button.
+expectedResult: The system should display an error message indicating that username and password fields cannot be blank and remain on the login page.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: AddRoom_PerformanceUnderLoad_HappyPath
+objective: Verify that the system can successfully add a room under load conditions
+testSteps:
+  - Step 1: Ensure the system is under load conditions.
+  - Step 2: Log in with a manager account.
+  - Step 3: Navigate to the 'Add Room' section.
+  - Step 4: Fill all the room fields with valid data.
+  - Step 5: Press the 'Add Room' button.
+expectedResult: The system should validate the fields, add the room to the database, and display a 'Room Added' message.
+
+Test Case: Test Case 2
+testCaseName: AddRoom_PerformanceUnderLoad_InvalidField
+objective: Verify that the system correctly handles invalid field entries under load conditions
+testSteps:
+  - Step 1: Ensure the system is under load conditions.
+  - Step 2: Log in with a manager account.
+  - Step 3: Navigate to the 'Add Room' section.
+  - Step 4: Fill all the room fields, intentionally entering invalid data in one or more fields.
+  - Step 5: Press the 'Add Room' button.
+expectedResult: The system should display an 'Invalid Field Entered' message and prevent the room from being added to the database.
+

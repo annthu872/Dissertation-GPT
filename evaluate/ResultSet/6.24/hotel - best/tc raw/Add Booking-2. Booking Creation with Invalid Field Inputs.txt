@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Booking Creation with Missing Field Inputs
+objective: Verify that the system prevents booking creation when mandatory fields are not filled and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard to navigate to the booking panel menu.
+  - Step 3: Attempt to fill the booking form but leave one or more mandatory fields empty.
+  - Step 4: Click the calculate amount button to attempt to get the total payable payment.
+  - Step 5: Press the add booking button without filling all mandatory fields.
+expectedResult: The system should validate the fields and display an error message for each mandatory field that is left empty, preventing the booking from being added to the database.
+explanation: This test case ensures that the system enforces the completion of all mandatory fields before allowing a booking to be created, as per the basic course of events and alternative path in the use case.
+
+Test Case: Test Case 2
+testCaseName: Booking Creation with Invalid Field Inputs
+objective: Verify that the system prevents booking creation when invalid data is entered in the fields and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard to navigate to the booking panel menu.
+  - Step 3: Fill all the fields in the booking form with invalid data (e.g., alphabets in a numeric field, incorrect date format).
+  - Step 4: Click the calculate amount button to attempt to get the total payable payment with invalid data.
+  - Step 5: Press the add booking button after entering invalid data.
+expectedResult: The system should validate the fields and display an error message for each field with invalid input, preventing the booking from being added to the database.
+explanation: This test case checks the system's ability to handle invalid inputs by displaying error messages and not allowing the booking to proceed, aligning with the alternative path specified in the use case.
+
+Test Case: Test Case 3
+testCaseName: Booking Creation without Calculating Total Amount
+objective: Verify that the system prevents booking creation if the total amount is not calculated before attempting to add the booking.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard to navigate to the booking panel menu.
+  - Step 3: Fill all the fields in the booking form correctly.
+  - Step 4: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: The system should prevent the booking from being added to the database and display an error message indicating that the total amount needs to be calculated first.
+explanation: This test case verifies the system's adherence to the specified flow where calculating the total amount is a prerequisite for booking creation, as mentioned in the alternative path of the use case.
+

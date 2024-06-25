@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the Hotel Owner can generate and view a report with valid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter valid parameters for the report generation, such as a specific date period.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on a specific report to open and view its details.
+expectedResult: The system should generate the report according to the selected parameters and display the report details to the Hotel Owner.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Generate Report with Invalid Parameters
+objective: Verify that the system shows an error when the Hotel Owner tries to generate a report with invalid parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter invalid parameters for the report generation, such as an incorrect date period.
+  - Step 5: Attempt to submit the parameters to generate the report.
+expectedResult: The system should validate the parameters and show an error message indicating the invalid parameters.
+
+Test Case: Test Case 3
+testCaseName: View Report Details
+objective: Verify that the Hotel Owner can view the details of a generated report
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page and ensure at least one report has been generated.
+  - Step 3: Click on a specific report to open and view its details.
+expectedResult: The system should display the details of the selected report to the Hotel Owner.
+
+Test Case: Test Case 4
+testCaseName: No Data Available for Report Generation
+objective: Verify that the system handles scenarios where no data is available for report generation according to the selected parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button.
+  - Step 4: Enter parameters for the report generation that would result in no data (e.g., a future date range).
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should inform the Hotel Owner that no data is available for the selected parameters and suggest adjusting the parameters.
+

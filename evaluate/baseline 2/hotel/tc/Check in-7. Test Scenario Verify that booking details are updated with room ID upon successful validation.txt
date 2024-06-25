@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify successful check-in with valid booking ID
+objective: To verify that the system updates booking details with room ID upon successful validation of the booking ID and directs the user to the main page with a success message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid booking ID in the provided field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should validate the booking ID, update the booking details with the room ID, display a 'check in successful' message, and redirect the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Verify check-in failure with invalid booking ID
+objective: To verify that the system redirects the user to the main page and shows an error message upon entering an incorrect booking ID.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an invalid booking ID in the provided field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should fail to validate the booking ID, redirect the user to the main page, and display an error message indicating the check-in was unsuccessful.
+

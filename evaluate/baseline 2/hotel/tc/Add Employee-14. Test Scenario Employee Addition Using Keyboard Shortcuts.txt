@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Employee Using Keyboard Shortcuts - Happy Path
+objective: Verify that a manager can successfully add an employee using keyboard shortcuts and the system generates an ID and password for the new employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Press the keyboard shortcut to navigate to the Employee menu.
+  - Step 3: Fill all the required fields with valid data using the keyboard.
+  - Step 4: Press the keyboard shortcut for the 'Add' action.
+  - Step 5: Observe the system's response.
+expectedResult: The system validates the fields, adds the employee to the database, displays a message that the employee has been added, and generates an ID and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Add Employee Using Keyboard Shortcuts - Unfilled Fields
+objective: Verify that the system prompts the manager to fill all required fields if they attempt to add an employee with one or more fields left unfilled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Press the keyboard shortcut to navigate to the Employee menu.
+  - Step 3: Fill some but not all required fields with valid data using the keyboard.
+  - Step 4: Press the keyboard shortcut for the 'Add' action.
+  - Step 5: Observe the system's response.
+expectedResult: The system displays a message indicating that all fields are required.
+
+Test Case: Test Case 3
+testCaseName: Add Employee Using Keyboard Shortcuts - Invalid Field Entry
+objective: Verify that the system prompts the manager with an 'invalid field entered' message if they attempt to add an employee with invalid data in any field
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Press the keyboard shortcut to navigate to the Employee menu.
+  - Step 3: Fill all required fields, intentionally entering invalid data in at least one field, using the keyboard.
+  - Step 4: Press the keyboard shortcut for the 'Add' action.
+  - Step 5: Observe the system's response.
+expectedResult: The system displays a message indicating that an invalid field has been entered.
+

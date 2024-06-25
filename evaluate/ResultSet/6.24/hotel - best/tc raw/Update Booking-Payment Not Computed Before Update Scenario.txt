@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify booking update without recomputing payment when new services are added
+objective: Ensure that the system prevents updating booking details without recomputing payment when new services are added.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Load the booking details and add new services without recomputing the payment.
+  - Step 5: Attempt to press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and display a message indicating that payment must be recomputed first.
+explanation: This test case ensures that the system adheres to the use case requirement that payment must be recomputed when new services or room types are added before an update can be processed. It directly addresses the Payment Not Computed Before Update Scenario by testing the system's behavior when trying to update a booking without recomputing payment after adding new services.
+
+Test Case: Test Case 2
+testCaseName: Verify booking update without recomputing payment when new room types are added
+objective: Ensure that the system prevents updating booking details without recomputing payment when new room types are added.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Load the booking details and add new room types without recomputing the payment.
+  - Step 5: Attempt to press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and display a message indicating that payment must be recomputed first.
+explanation: This test case verifies the system's compliance with the use case specification that requires payment to be recomputed when new room types are added before an update can proceed. It targets the Payment Not Computed Before Update Scenario by examining the system's response to an attempt to update a booking without recomputing payment after adding new room types.
+

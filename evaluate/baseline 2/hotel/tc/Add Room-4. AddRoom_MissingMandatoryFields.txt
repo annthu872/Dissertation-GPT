@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Add Room with All Mandatory Fields Filled
+objective: Verify that a manager can successfully add a room when all mandatory fields are filled correctly
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all mandatory fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Confirm that the system adds the room to the database.
+expectedResult: The system should display a message indicating that the room has been successfully added.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Missing Mandatory Fields
+objective: Verify that the system prevents the addition of a room when mandatory fields are missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Leave one or more mandatory fields empty.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response to the missing information.
+expectedResult: The system should display an error message indicating that mandatory fields are missing and prevent the room from being added.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Invalid Data in Mandatory Fields
+objective: Verify that the system prevents the addition of a room when mandatory fields contain invalid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all mandatory fields, intentionally entering invalid data in at least one field.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response to the invalid data.
+expectedResult: The system should display an error message indicating that invalid data has been entered in one or more fields and prevent the room from being added.
+

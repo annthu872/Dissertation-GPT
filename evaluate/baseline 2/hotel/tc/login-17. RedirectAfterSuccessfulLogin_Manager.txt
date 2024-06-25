@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: RedirectAfterSuccessfulLogin_Manager
+objective: Verify that a Manager is redirected to the Main page after a successful login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Manager credentials (username and password).
+  - Step 3: Press the submit button.
+expectedResult: The Manager should be redirected to the Main page/dashboard specific to the Manager role.
+
+Test Case: Test Case 2
+testCaseName: LoginWithInvalidCredentials_Manager
+objective: Verify that a Manager is shown an error message and remains on the login page when entering incorrect credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Manager credentials (username and password).
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message and remain on the login page.
+
+Test Case: Test Case 3
+testCaseName: LoginWithEmptyCredentials_Manager
+objective: Verify that a Manager cannot login and is shown an error message when submitting empty credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username and password fields empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating that the username and password fields cannot be empty and remain on the login page.
+

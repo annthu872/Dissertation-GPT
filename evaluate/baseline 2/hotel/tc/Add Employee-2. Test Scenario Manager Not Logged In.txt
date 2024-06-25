@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Attempt to add an employee without logging in
+objective: Verify that the system prevents a manager from adding an employee without being logged in
+testSteps:
+  - Step 1: Navigate to the Employee section without logging in.
+  - Step 2: Attempt to fill in the employee details.
+  - Step 3: Click on the Add button.
+expectedResult: The system should not allow access to the Employee section and should redirect to the login page or display a message indicating that the user must log in first.
+
+Test Case: Test Case 2
+testCaseName: Attempt to add an employee with required fields missing
+objective: Verify that the system prompts an error message when trying to add an employee with one or more required fields missing
+testSteps:
+  - Step 1: Log in with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Fill in the employee details but leave one or more required fields empty.
+  - Step 4: Click on the Add button.
+expectedResult: The system should display a message indicating that all fields are required.
+
+Test Case: Test Case 3
+testCaseName: Attempt to add an employee with invalid field entries
+objective: Verify that the system prompts an error message when trying to add an employee with invalid data in any of the fields
+testSteps:
+  - Step 1: Log in with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Fill in the employee details with invalid data in one or more fields (e.g., non-numeric value in a numeric field).
+  - Step 4: Click on the Add button.
+expectedResult: The system should display a message indicating that an invalid field entry has been detected.
+
+Test Case: Test Case 4
+testCaseName: Successfully add an employee
+objective: Verify that a manager can successfully add an employee when all fields are correctly filled
+testSteps:
+  - Step 1: Log in with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Correctly fill all the fields with valid data.
+  - Step 4: Click on the Add button.
+expectedResult: The system should add the employee to the database, generate an id and password for the employee, and display a message indicating that the employee has been successfully added.
+

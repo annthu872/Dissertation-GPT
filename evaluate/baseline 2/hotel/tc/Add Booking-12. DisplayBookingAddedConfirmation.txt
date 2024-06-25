@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Verify successful booking addition with confirmation
+objective: Verify that an employee can successfully add a booking and receive a confirmation message along with the initial status checked in.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the total amount is displayed.
+  - Step 6: Observe the system's response.
+expectedResult: The system should validate the fields, generate a booking ID, add the booking to the database, show the initial status as checked in, and display a 'booking added' confirmation message.
+
+Test Case: Test Case 2
+testCaseName: Verify booking addition failure when total amount is not calculated
+objective: Ensure the system prevents booking addition if the total amount is not calculated.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data but do not click the calculate amount button.
+  - Step 4: Attempt to press the add booking button without calculating the total amount.
+  - Step 5: Observe the system's response.
+expectedResult: The system should prevent the booking from being added and inform the employee that the total amount needs to be calculated before adding the booking.
+
+Test Case: Test Case 3
+testCaseName: Verify error handling for invalid field entry during booking addition
+objective: To ensure the system correctly identifies and notifies the employee of invalid field entries during booking addition.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+  - Step 6: Observe the system's response.
+expectedResult: The system should validate the fields, identify the invalid field(s), and display a message indicating 'invalid field entered' for each error encountered.
+
+Test Case: Test Case 4
+testCaseName: Verify system behavior on booking addition failure due to system error
+objective: To verify that the system displays an appropriate failure message if a booking cannot be added due to a system error.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the total amount is displayed.
+  - Step 6: Simulate a system error or wait for the system to respond in case of an actual error.
+  - Step 7: Observe the system's response.
+expectedResult: In case of any error, the system should display a failure message indicating that the booking could not be added.
+

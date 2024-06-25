@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Valid Room Type Change and Compute Payment
+objective: Verify that an employee can successfully update a booking's room type and compute payment accordingly
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update by its ID.
+  - Step 4: In the booking details, change the room type to a new one.
+  - Step 5: Compute the new payment based on the updated room type.
+  - Step 6: Press the update button to submit the changes.
+  - Step 7: Confirm the update action if prompted.
+expectedResult: The system should validate the changes, update the booking in the database with the new room type and computed payment, and display a success message.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a non-existent ID
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking with an ID that does not exist in the database.
+  - Step 4: Attempt to select the non-existent booking.
+expectedResult: The system should display a NOT FOUND message, indicating that the booking cannot be updated because it does not exist.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Invalid Field Entry
+objective: Verify that the system shows an error message for each invalid field when updating a booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update by its ID.
+  - Step 4: Enter invalid data into one or more fields that need to be updated.
+  - Step 5: Press the update button to submit the changes.
+expectedResult: The system should validate the fields and show an 'invalid field entered' message for every individual error, without updating the booking in the database.
+
+Test Case: Test Case 4
+testCaseName: Update Booking without Computing Payment First
+objective: Verify that the system requires payment to be computed first before allowing the booking update to proceed
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update by its ID.
+  - Step 4: Change the room type to a new one but do not compute the new payment.
+  - Step 5: Press the update button to submit the changes.
+expectedResult: The system should not allow the update to proceed and should prompt the employee to compute the payment first.
+

@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Successful Employee Addition
+objective: Verify that a manager can successfully add an employee to the system and the system generates an ID and password for the new employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the fields with valid data required for adding an employee.
+  - Step 4: Click on the 'Add' button to submit the employee data.
+  - Step 5: Verify that the system validates the fields correctly.
+  - Step 6: Confirm that the system adds the employee to the database.
+  - Step 7: Check for a confirmation message indicating the employee was successfully added.
+  - Step 8: Verify that the system generates an ID and password for the new employee.
+expectedResult: The system should validate the input fields, add the employee to the database, display a confirmation message that the employee was added, and generate an ID and password for the new employee.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Employee Addition' by outlining steps to add an employee, ensuring the system's response aligns with the scenario's requirements.
+

@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Employee Addition Without Clicking Add Button
+objective: Verify that the system does not add an employee without clicking the Add button and displays the appropriate message or state.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields required for adding an employee but do not click the Add button.
+  - Step 4: Wait for a few seconds.
+expectedResult: The system should not add the employee to the database, and no success message (employee added) should be displayed. The system should remain on the Employee addition page without generating an id and password for the non-added employee.
+
+Test Case: Test Case 2
+testCaseName: Verify System Behavior When Mandatory Fields Are Not Filled
+objective: Ensure that the system prompts the user when mandatory fields are not filled and the Add button is not clicked.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill some but not all mandatory fields required for adding an employee.
+  - Step 4: Do not click the Add button.
+  - Step 5: Move the cursor away from the last filled field or try to navigate away from the Employee addition page.
+expectedResult: The system should display a message indicating that all fields are required, preventing the process from proceeding without the necessary information.
+
+Test Case: Test Case 3
+testCaseName: Verify System Response to Invalid Field Entries Without Clicking Add
+objective: To confirm that the system validates field inputs even when the Add button is not clicked, and provides feedback on invalid entries.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields with at least one field containing invalid data.
+  - Step 4: Do not click the Add button but attempt to navigate away or wait for a system response.
+expectedResult: The system should alert the user about the invalid field entry with a message indicating which field is invalid, ensuring data integrity before submission.
+

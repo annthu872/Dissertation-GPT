@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Cancel Service Request After Choosing Service - Happy Path
+objective: Verify that the user can successfully cancel a service request after choosing a service and before final confirmation.
+testSteps:
+  - Step 1: Navigate to the service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button.
+  - Step 4: From the list of room services, choose a service.
+  - Step 5: Observe the total charges updated.
+  - Step 6: Before final confirmation, select the option to cancel the service request.
+  - Step 7: Confirm the cancellation.
+expectedResult: The system should cancel the service request, not charge the user, and redirect to the main page with a cancellation confirmation message.
+
+Test Case: Test Case 2
+testCaseName: Cancel Service Request After Choosing Service - Invalid Room ID
+objective: Verify that the system shows an 'Invalid ID' message when an invalid room ID is entered while trying to cancel a service request.
+testSteps:
+  - Step 1: Navigate to the service request page.
+  - Step 2: Enter an invalid room ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' message and not allow the user to proceed to cancel a service request.
+
+Test Case: Test Case 3
+testCaseName: Cancel Service Request After Choosing Service - Without Choosing Service
+objective: Verify that the user can cancel a service request after entering a valid room ID but without choosing any service.
+testSteps:
+  - Step 1: Navigate to the service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button.
+  - Step 4: Without choosing any service, select the option to cancel the service request.
+  - Step 5: Confirm the cancellation.
+expectedResult: The system should cancel the service request process, not charge the user, and redirect to the main page with a cancellation confirmation message.
+

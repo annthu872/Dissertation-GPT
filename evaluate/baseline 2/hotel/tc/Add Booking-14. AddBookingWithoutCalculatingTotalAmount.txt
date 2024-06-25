@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Booking with Calculating Total Amount
+objective: Verify that an employee can successfully add a booking after calculating the total amount
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the total amount is displayed.
+  - Step 6: Verify the booking is added by checking the initial status as checked in.
+expectedResult: The system should add the booking to the database, generate a booking ID, and show the booking added message with the initial status as checked in.
+
+Test Case: Test Case 2
+testCaseName: Add Booking Without Calculating Total Amount
+objective: Verify that the system prevents adding a booking without calculating the total amount first
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Attempt to press the add booking button without clicking the calculate amount button.
+expectedResult: The system should not add the booking to the database and should display a message indicating that the total amount needs to be calculated before adding the booking.
+
+Test Case: Test Case 3
+testCaseName: Add Booking with Invalid Field Entry
+objective: Verify that the system shows an error message for each invalid field when trying to add a booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Click the calculate amount button to attempt to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields and show an error message for each invalid field entered, preventing the booking from being added to the database.
+

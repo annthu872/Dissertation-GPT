@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Valid Login for Hotel Owner
+objective: Verify that the Hotel Owner can successfully log in and is redirected to the Hotel Owner's dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Hotel Owner credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Hotel Owner is redirected to the Hotel Owner's dashboard after successful login.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login for Hotel Owner
+objective: Verify that the Hotel Owner is shown an error message when attempting to log in with incorrect credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Hotel Owner credentials (username and/or password).
+  - Step 3: Click the submit button.
+expectedResult: Hotel Owner remains on the login page and is shown an error message about incorrect credentials.
+

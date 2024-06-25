@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Salary
+objective: Verify that the manager can successfully update an employee's salary with a valid value
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the salary field to a new, valid value and press the update button.
+  - Step 6: System validates the updated fields.
+expectedResult: The system updates the employee's information in the database and displays a confirmation message that the employee has been updated.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Salary
+objective: Verify that the system prevents updating an employee's salary with an invalid value
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: System auto-fills all fields with the employee's current information.
+  - Step 5: Change the salary field to an invalid value (e.g., a negative number or a non-numeric value) and press the update button.
+  - Step 6: System validates the updated fields.
+expectedResult: The system displays an error message indicating that an invalid field value has been entered and does not update the employee's information in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Non-Existent ID
+objective: Verify that the system shows an error message when trying to update an employee with a non-existent ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu.
+  - Step 3: Search for an employee using a non-existent ID.
+  - Step 4: Attempt to update any field and press the update button.
+expectedResult: The system displays an error message indicating 'incorrect value for id' and does not proceed with the update.
+

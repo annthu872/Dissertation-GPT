@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Login with excessively long username
+objective: Verify that the system handles long usernames during login without crashing or malfunctioning
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an excessively long username (more than 255 characters) in the username field.
+  - Step 3: Enter a valid password in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should validate the input and display an appropriate error message about username length without crashing or redirecting to the dashboard.
+
+Test Case: Test Case 2
+testCaseName: Successful login with long but valid username
+objective: Verify that the system allows login with long usernames, given they do not exceed the maximum allowed length
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a long but valid username (close to the maximum allowed characters but not exceeding) in the username field.
+  - Step 3: Enter the correct password for the username in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should successfully validate the credentials and redirect the user to the main dashboard page relevant to their user role.
+

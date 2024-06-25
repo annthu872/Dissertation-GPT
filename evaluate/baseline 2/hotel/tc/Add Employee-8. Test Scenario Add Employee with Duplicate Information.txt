@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Valid Information
+objective: Verify that the manager can successfully add an employee with all required fields filled correctly
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Fill all the fields with valid information.
+  - Step 4: Click the 'Add' button.
+expectedResult: The system should validate the fields, add the employee to the database, display a message 'Employee added', and show the Employee page with the newly added employee's details including the generated id and password.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Duplicate Information
+objective: Verify that the system prevents adding an employee with information that duplicates an existing employee's information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Fill all the fields with information that matches an existing employee in the database.
+  - Step 4: Click the 'Add' button.
+expectedResult: The system should validate the fields and display an error message indicating that an employee with the same information already exists and prevent the addition of the duplicate employee.
+
+Test Case: Test Case 3
+testCaseName: Add Employee with Missing Information
+objective: Verify that the system prompts the user when trying to add an employee with one or more required fields left unfilled
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Fill in the fields but intentionally leave one or more required fields blank.
+  - Step 4: Click the 'Add' button.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee until all required fields are filled.
+
+Test Case: Test Case 4
+testCaseName: Add Employee with Invalid Field Entries
+objective: Verify that the system prevents adding an employee when one or more fields contain invalid information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' menu option.
+  - Step 3: Fill in the fields with invalid information in one or more fields (e.g., non-numeric characters in a phone number field).
+  - Step 4: Click the 'Add' button.
+expectedResult: The system should validate the fields and display a message indicating which field is invalid and prevent the addition of the employee until the information is corrected.
+

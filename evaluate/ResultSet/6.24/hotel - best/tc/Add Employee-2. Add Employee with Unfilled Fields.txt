@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with All Fields Unfilled
+objective: Verify that the system prevents adding an employee when all fields are unfilled and displays an appropriate message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Attempt to add an employee by clicking the 'Add' button without filling any fields.
+expectedResult: The system should display a message indicating that all fields are required.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add an employee without filling in any fields, which is the exact situation the scenario aims to test.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Some Fields Unfilled
+objective: Verify that the system prevents adding an employee when some fields are unfilled and displays an appropriate message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Fill in only some of the fields required for adding an employee.
+  - Step 4: Attempt to add the employee by clicking the 'Add' button.
+expectedResult: The system should display a message indicating that all fields are required.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing the system's behavior when an attempt is made to add an employee with only some of the required fields filled, which is a variant of the scenario of adding an employee with unfilled fields.
+

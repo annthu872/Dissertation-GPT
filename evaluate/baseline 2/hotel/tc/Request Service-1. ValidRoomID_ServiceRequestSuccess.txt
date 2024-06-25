@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Valid Room ID - Service Request Success
+objective: Verify that a guest can successfully request room services using a valid room ID and receive a success message along with the total charges.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, choose the desired services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges for the selected services.
+expectedResult: The system calculates the charges, updates the database, displays the total charges, shows a 'room service request successful' message, and redirects the user to the main page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Room ID - Service Request Failure
+objective: Verify that the system displays an 'Invalid ID' message when a guest enters an invalid room ID while attempting to request room services.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+expectedResult: The system fails to validate the room ID and displays an 'Invalid ID' message, preventing the user from proceeding to request room services.
+
+Test Case: Test Case 3
+testCaseName: Request Available Services Only
+objective: Verify that a guest can only request services that are available and receive a success message upon completion.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, attempt to choose a service that is not available.
+  - Step 5: System should prevent selection of unavailable services.
+  - Step 6: Choose an available service and confirm the selection.
+  - Step 7: Review the total charges for the selected services.
+expectedResult: The system only allows the selection of available services, calculates the charges, updates the database, displays the total charges, shows a 'room service request successful' message, and redirects the user to the main page.
+

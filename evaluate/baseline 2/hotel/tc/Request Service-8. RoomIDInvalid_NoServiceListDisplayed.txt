@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Room Service Request with Invalid Room ID
+objective: Verify that no service list is displayed and an error message is shown when an invalid room ID is entered
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the room ID and display an 'Invalid Id' error message. No list of room services should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Request Service with Invalid Room ID
+objective: Verify that the system prevents users from requesting services with an invalid room ID
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Attempt to select any service from the non-displayed service list.
+  - Step 5: Attempt to submit the service request.
+expectedResult: The system should not allow the user to select or request any services due to the invalid room ID, displaying an 'Invalid Id' error message and preventing any further action.
+

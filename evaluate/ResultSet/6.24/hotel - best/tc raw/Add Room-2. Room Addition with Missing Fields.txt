@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Missing Room Name
+objective: Verify that the system prevents adding a room when the room name field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Leave the room name field empty.
+  - Step 4: Fill in all other fields with valid data.
+  - Step 5: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message and prevent the room from being added to the database.
+explanation: This test case ensures that the system enforces the requirement for all fields to be filled out, specifically testing the scenario where the room name is missing, which is a critical field for room identification.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Missing Room Capacity
+objective: Verify that the system prevents adding a room when the room capacity field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill in the room name field with a valid name.
+  - Step 4: Leave the room capacity field empty.
+  - Step 5: Fill in all other fields with valid data.
+  - Step 6: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message and prevent the room from being added to the database.
+explanation: This test case checks the system's handling of incomplete data submissions, focusing on the scenario where the room capacity, an essential piece of information for room functionality, is missing.
+
+Test Case: Test Case 3
+testCaseName: Add Room with All Fields Missing
+objective: Verify that the system prevents adding a room when all fields are missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Leave all fields empty.
+  - Step 4: Press the add room button.
+expectedResult: The system should display an 'invalid field entered' message for the first missing required field and prevent the room from being added to the database.
+explanation: This test case is designed to verify the system's response to an attempt to add a room without providing any data, ensuring that the system requires at least the minimum necessary information to proceed.
+

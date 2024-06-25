@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Invalid Data Entered in Room Name Field
+objective: Verify that the system shows an 'invalid field entered' message when an invalid room name is submitted
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: In the room details, enter an invalid value in the room name field (e.g., using special characters).
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for the room name field.
+explanation: This test case ensures that the system correctly validates the room name field and provides feedback when invalid data is entered, as per the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Invalid Data Entered in Room Capacity Field
+objective: Verify that the system shows an 'invalid field entered' message when a non-numeric value is submitted in the room capacity field
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: In the room details, enter a non-numeric value in the room capacity field (e.g., 'ten').
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for the room capacity field.
+explanation: This test case checks if the system properly validates the room capacity field for numeric input only, aligning with the use case requirements.
+
+Test Case: Test Case 3
+testCaseName: Invalid Data Entered in Multiple Fields
+objective: Verify that the system shows multiple 'invalid field entered' messages when invalid data is submitted in more than one field
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room to update.
+  - Step 4: Enter invalid data in multiple fields (e.g., special characters in the room name and a non-numeric value in the room capacity).
+  - Step 5: Press the update button.
+expectedResult: The system should display 'invalid field entered' messages for each field with invalid input.
+explanation: This test case ensures that the system can handle and display validation errors for multiple fields simultaneously, as specified in the use case.
+

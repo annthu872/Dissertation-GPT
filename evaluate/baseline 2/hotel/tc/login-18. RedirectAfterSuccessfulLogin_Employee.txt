@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Successful Login and Redirect for Employee
+objective: Verify that an Employee can successfully login and is redirected to the Employee dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: After clicking submit, the Employee should be redirected to the Employee dashboard.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Login Attempt for Employee
+objective: Verify that an Employee with incorrect credentials remains on the login page and receives an error message
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter invalid Employee credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: After clicking submit, the Employee should remain on the login page and see an error message indicating incorrect credentials.
+
+Test Case: Test Case 3
+testCaseName: Successful Login Redirect for Different User Roles
+objective: Verify that logging in as an Employee does not redirect to the Hotel Owner or Manager dashboard
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: After clicking submit, ensure the Employee is not redirected to the Hotel Owner or Manager dashboard, but to the Employee dashboard.
+

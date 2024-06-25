@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Valid Inputs
+objective: Verify that an employee can successfully update booking details with valid inputs
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update.
+  - Step 4: Fill in the fields that need to be updated with valid data.
+  - Step 5: Compute payment if new services or room types are added.
+  - Step 6: Press the update button.
+expectedResult: A success message is displayed, and the booking details are updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Field Input
+objective: Verify that the system shows an error message when an employee tries to update booking details with invalid inputs
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: An error message is displayed indicating the invalid field input.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Non-existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when an employee tries to update a booking that does not exist
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking with a non-existent ID.
+  - Step 4: Attempt to select the non-existent booking.
+expectedResult: A NOT FOUND message is displayed.
+
+Test Case: Test Case 4
+testCaseName: Update Booking without Computing Payment First
+objective: Verify that the system requires payment to be computed first when new services or room types are added before updating
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking to update.
+  - Step 4: Add new services or room types but do not compute the new payment.
+  - Step 5: Press the update button.
+expectedResult: An error message is displayed indicating that payment must be computed first.
+

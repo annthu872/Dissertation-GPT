@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Non-Existent Booking ID
+objective: Verify that the system correctly handles an attempt to update a booking with a non-existent booking ID
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search or select a booking using a non-existent booking ID.
+expectedResult: The system should display a NOT FOUND message, indicating that the booking cannot be updated because it does not exist in the database.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Field Entry
+objective: Verify that the system prevents updating a booking when an invalid field is entered
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that exists in the database.
+  - Step 4: Load the booking fields and enter an invalid value in one of the fields.
+  - Step 5: Press the update button.
+expectedResult: The system should display an error message indicating 'invalid field entered' for the specific field that was incorrectly filled out.
+
+Test Case: Test Case 3
+testCaseName: Update Booking without Computing Payment First
+objective: Verify that the system requires payment to be computed first when new services or room types are added before updating
+testSteps:
+  - Step 1: Ensure the employee is logged into the system.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that exists in the database.
+  - Step 4: Add new services or change the room type to trigger a change in payment.
+  - Step 5: Attempt to press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and prompt the user to compute the payment first before proceeding with the update.
+

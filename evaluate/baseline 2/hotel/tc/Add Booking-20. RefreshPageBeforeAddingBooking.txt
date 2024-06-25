@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Refresh Page Before Adding Booking Does Not Lose Data
+objective: Ensure that refreshing the page after filling out the booking form but before adding the booking does not lose the entered data
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Refresh the page before pressing the add booking button.
+  - Step 6: Observe if the data entered remains filled in the booking form fields.
+expectedResult: After refreshing the page, all the data previously entered in the booking form should remain as is, allowing the employee to proceed with adding the booking without re-entering the data.
+
+Test Case: Test Case 2
+testCaseName: Verify Booking Addition After Page Refresh
+objective: To verify that the booking can be successfully added after the page has been refreshed, following the correct data entry and calculation steps
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Refresh the page.
+  - Step 6: Verify the data entered remains filled in the booking form fields.
+  - Step 7: Press the add booking button.
+expectedResult: The system should validate the fields, generate a booking ID, add the booking to the database, show the initial status as checked in, and confirm that the booking has been added.
+
+Test Case: Test Case 3
+testCaseName: Verify Error Handling on Booking Addition After Page Refresh
+objective: To ensure that the system correctly handles errors if the booking form is incorrectly filled out after a page refresh
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form but intentionally leave one field with invalid data.
+  - Step 4: Click the calculate amount button to attempt to get the total payable payment.
+  - Step 5: Refresh the page.
+  - Step 6: Verify the data entered remains filled in the booking form fields.
+  - Step 7: Press the add booking button without correcting the invalid field.
+expectedResult: The system should validate the fields and show an 'invalid field entered' message for the incorrect data, preventing the booking from being added until the error is corrected.
+

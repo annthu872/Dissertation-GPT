@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Invalid Login Attempt with Incorrect Password for Hotel Owner
+objective: Verify that the hotel owner is shown an error message and remains on the login page when attempting to log in with an incorrect password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid hotel owner username.
+  - Step 3: Enter an incorrect password.
+  - Step 4: Click the submit button.
+expectedResult: An error message is displayed, and the user remains on the login page.
+
+Test Case: Test Case 2
+testCaseName: Invalid Login Attempt with Incorrect Username for Hotel Owner
+objective: Verify that the hotel owner is shown an error message and remains on the login page when attempting to log in with an incorrect username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter an incorrect username.
+  - Step 3: Enter a valid password for the hotel owner.
+  - Step 4: Click the submit button.
+expectedResult: An error message is displayed, and the user remains on the login page.
+
+Test Case: Test Case 3
+testCaseName: Invalid Login Attempt with Blank Credentials for Hotel Owner
+objective: Verify that the hotel owner is shown an error message and remains on the login page when attempting to log in without entering any credentials
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username and password fields blank.
+  - Step 3: Click the submit button.
+expectedResult: An error message is displayed indicating that username and password fields cannot be blank, and the user remains on the login page.
+

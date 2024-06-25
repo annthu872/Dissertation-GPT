@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Generate Report With Invalid Date Range
+objective: Verify that the system prevents the generation of a report when the hotel owner inputs an invalid date range and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter an invalid date range in the parameters section. (For example, the end date is before the start date.)
+  - Step 5: Submit the request to generate the report.
+expectedResult: The system should display an error message indicating that the date range is invalid and prevent the report from being generated.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the action of attempting to generate a report with an invalid date range. It includes steps that mimic the user's actions leading up to the error condition and checks for the appropriate system response, which is to display an error message and prevent report generation. Therefore, it accurately reflects the given test scenario.
+

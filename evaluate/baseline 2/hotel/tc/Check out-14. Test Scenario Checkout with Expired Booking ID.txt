@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Valid Booking ID
+objective: Verify that a guest can successfully check out using a valid booking ID
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that is linked to a room.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should validate the booking ID, unlink the room ID from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Expired Booking ID
+objective: Verify that the system shows an error when trying to check out with an expired booking ID
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an expired booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should fail to validate the expired booking ID and redirect the user to the main page with an error message indicating the booking ID is invalid or expired.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Incorrect Booking ID
+objective: Verify that the system shows an error when trying to check out with an incorrect booking ID
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect booking ID.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should fail to validate the incorrect booking ID and redirect the user to the main page with an error message indicating the booking ID is incorrect.
+
+Test Case: Test Case 4
+testCaseName: Checkout with Booking ID Not Linked to Room
+objective: Verify that the system shows an error when trying to check out with a booking ID not linked to any room
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a booking ID that is not linked to any room.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system should fail to find a room linked to the booking ID and redirect the user to the main page with an error message indicating there is no room linked to the booking ID.
+

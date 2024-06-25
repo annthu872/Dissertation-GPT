@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify Booking Addition with Valid Data
+objective: To verify that the booking table is updated after adding a new booking with all valid data by an employee
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+  - Step 6: Observe the booking table on the same booking page.
+expectedResult: The booking table should be updated with the new booking, showing the initial status as checked in.
+
+Test Case: Test Case 2
+testCaseName: Verify Booking Addition with Invalid Data
+objective: To verify that the system shows an error message when trying to add a booking with invalid data
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields with invalid data.
+  - Step 4: Click the calculate amount button.
+  - Step 5: Press the add booking button.
+expectedResult: The system should show 'invalid field entered' for every individual error without adding the booking to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Booking Addition without Calculating Total Amount
+objective: To verify that the booking cannot be added if the total amount is not calculated
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: The system should prevent the booking from being added and may show a message indicating that the total amount needs to be calculated first.
+
+Test Case: Test Case 4
+testCaseName: Verify Booking Addition Error Handling
+objective: To verify that the system shows a failure message in case of any error during the booking addition process
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Induce an error in the booking addition process (e.g., server error, network issue).
+  - Step 4: Press the add booking button.
+expectedResult: The system should show a failure message indicating that the booking could not be added due to an error.
+

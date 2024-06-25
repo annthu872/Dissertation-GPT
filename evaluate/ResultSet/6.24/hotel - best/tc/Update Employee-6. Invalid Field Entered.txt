@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Invalid Field Entry
+objective: Verify that the system shows an 'invalid field entered' message when an invalid value is entered in any field during employee update
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system will auto-fill all fields with the employee's current information.
+  - Step 5: Change one of the fields to an invalid value (e.g., enter alphabets in a numeric field).
+  - Step 6: Press the update button to attempt to update the employee information.
+expectedResult: The system should display a message indicating that an invalid field has been entered and prevent the update from being processed.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Invalid Field Entered' by verifying the system's response to invalid data input during an employee update process. It clearly outlines steps to reproduce the scenario and checks for the expected system behavior, making it a valid test case for the given scenario.
+

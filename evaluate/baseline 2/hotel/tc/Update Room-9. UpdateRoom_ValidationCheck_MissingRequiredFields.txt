@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Missing Required Fields
+objective: Verify that the system prevents updating a room when required fields are missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Clear one or more required fields that need to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating that required fields are missing and prevent the database from being updated.
+
+Test Case: Test Case 2
+testCaseName: Update Room with All Required Fields but One Missing
+objective: Verify that the system prevents updating a room when at least one required field is missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Fill all required fields except one with valid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating that a required field is missing and prevent the database from being updated.
+
+Test Case: Test Case 3
+testCaseName: Update Room Successfully Without Missing Any Required Fields
+objective: Verify that the system allows updating a room when all required fields are filled correctly and displays a success message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room to update.
+  - Step 4: Fill all required fields with valid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the database with the new room details, and display a success message indicating the room has been updated.
+

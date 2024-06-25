@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Change in Room Type - Happy Path
+objective: Verify that an employee can successfully update a booking with a change in room type and the system updates the database accordingly.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: In the booking details, change the room type to a new one.
+  - Step 5: Compute the new payment due to the change in room type.
+  - Step 6: Press the update button after ensuring all fields are correctly filled.
+  - Step 7: Confirm the update action if prompted.
+expectedResult: The system should validate the updated fields, update the booking in the database, and display a success message indicating the booking has been updated.
+explanation: This test case ensures that the basic course of events for updating a booking, specifically with a change in room type, is functioning as expected. It follows the happy path scenario where all steps are performed correctly without errors.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Room Type
+objective: Verify that the system prevents the update of a booking when an invalid room type is entered and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: In the booking details, change the room type to an invalid one (e.g., a non-existent room type).
+  - Step 5: Attempt to compute the new payment, if applicable.
+  - Step 6: Press the update button after filling all necessary fields.
+  - Step 7: Observe the system's response to the invalid room type entry.
+expectedResult: The system should detect the invalid room type, prevent the booking update, and display an error message indicating the invalid field entered.
+explanation: This test case checks the system's ability to handle errors during the booking update process, specifically when an invalid room type is entered. It is important to ensure that error handling works correctly to prevent incorrect booking updates.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Change in Room Type - Booking Not Found
+objective: Verify that the system displays a NOT FOUND message if the booking to be updated does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Attempt to search for a booking using an ID that does not exist in the database.
+  - Step 4: Observe the system's response to the search action.
+expectedResult: The system should display a NOT FOUND message, indicating that the booking cannot be updated because it does not exist.
+explanation: This test case verifies the system's behavior when an attempt is made to update a non-existent booking, ensuring that the system correctly handles such scenarios by informing the user appropriately.
+

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Valid Details
+objective: Verify that an employee can successfully update booking details when a booking ID exists in the database
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by its ID that needs to be updated.
+  - Step 4: Fill in the fields that need to be updated.
+  - Step 5: Compute payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+expectedResult: A success message is shown, and the booking details are updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Non-Existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a booking ID that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by a non-existent booking ID.
+expectedResult: A NOT FOUND message is displayed.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Invalid Field Entries
+objective: Verify that the system shows individual error messages for each invalid field when trying to update a booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by its ID that needs to be updated.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system shows invalid field entered for every individual error.
+
+Test Case: Test Case 4
+testCaseName: Update Booking Without Recomputing Payment
+objective: Verify that the booking cannot be updated without recomputing payment when new services or room types are added
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking by its ID that needs to be updated.
+  - Step 4: Add new services or change the room type but do not compute the payment again.
+  - Step 5: Press the update button.
+expectedResult: The system prevents the update and prompts to compute the payment first.
+

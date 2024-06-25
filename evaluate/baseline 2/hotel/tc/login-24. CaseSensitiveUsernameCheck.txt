@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Login with Case Sensitive Username - Correct Credentials
+objective: Verify that the system correctly authenticates a user when the username is entered with the correct case sensitivity along with the correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter the username with the correct case sensitivity (e.g., 'UserExample' instead of 'userexample' or 'USEREXAMPLE').
+  - Step 3: Enter the correct password for the username.
+  - Step 4: Click on the submit button.
+expectedResult: The system should validate the credentials and redirect the user to the main dashboard page relevant to their user role (Hotel Owner, Manager, Employee).
+
+Test Case: Test Case 2
+testCaseName: Login with Case Sensitive Username - Incorrect Username Case
+objective: Verify that the system does not authenticate a user when the username is entered with incorrect case sensitivity
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter the username with incorrect case sensitivity (e.g., 'userexample' or 'USEREXAMPLE' if the correct one is 'UserExample').
+  - Step 3: Enter the correct password for the username.
+  - Step 4: Click on the submit button.
+expectedResult: The system should not validate the credentials and should redirect the user back to the login page with an error message indicating incorrect username or password.
+
+Test Case: Test Case 3
+testCaseName: Login with Case Sensitive Username - Correct Username Case and Incorrect Password
+objective: Verify that the system does not authenticate a user when the username is entered with the correct case sensitivity but the password is incorrect
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter the username with the correct case sensitivity (e.g., 'UserExample').
+  - Step 3: Enter an incorrect password for the username.
+  - Step 4: Click on the submit button.
+expectedResult: The system should not validate the credentials and should redirect the user back to the login page with an error message indicating incorrect username or password.
+

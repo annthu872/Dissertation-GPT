@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Invalid Employee ID
+objective: Verify that the system handles invalid employee IDs appropriately when attempting to update an employee
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Attempt to search for an employee using an invalid employee ID.
+  - Step 4: Try to update any field (e.g., name, position) and press the update button.
+expectedResult: The system should display a message indicating an incorrect value for ID, preventing the update from proceeding.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Field Entry
+objective: Verify that the system validates field entries correctly and prevents updates with invalid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section.
+  - Step 3: Search for an employee using a valid employee ID.
+  - Step 4: The system auto-fills all fields with the employee's current information.
+  - Step 5: Change a field to an invalid value (e.g., entering letters in a numeric field) and press the update button.
+expectedResult: The system should display a message indicating an invalid field entry, preventing the update from proceeding.
+

@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify system behavior when updating an employee with a non-existent ID
+objective: To ensure the system correctly handles attempts to update an employee using an ID that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Attempt to search for an employee using an ID that does not exist in the database.
+expectedResult: The system should display a message indicating an incorrect value for ID, indicating the employee ID does not exist.
+explanation: This test case is designed to validate the system's response when a manager attempts to update an employee's information using an ID that is not found in the database, directly relating to the test scenario 'Employee ID Does Not Exist'. It tests the alternative path mentioned in the use case where the system needs to handle non-existent IDs appropriately.
+
+Test Case: Test Case 2
+testCaseName: Verify system behavior when entering an invalid field while updating an employee
+objective: To ensure the system correctly identifies and notifies the manager when an invalid field is entered during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Search for an employee using a valid ID that exists in the database.
+  - Step 4: In the employee update form, change a field to an invalid value and press update.
+expectedResult: The system should display a message indicating 'invalid field entered', preventing the update from being processed.
+explanation: This test case targets the validation mechanism of the system during the employee update process, specifically when invalid data is entered into a field. It is based on the alternative path of the use case specification, ensuring that the system can handle and notify of invalid inputs correctly.
+

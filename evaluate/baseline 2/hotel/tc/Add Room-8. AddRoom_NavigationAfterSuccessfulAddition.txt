@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify successful room addition and navigation
+objective: To verify that a manager can successfully add a room and is navigated to the 'Employee page' after the addition
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the required fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response and the page it navigates to.
+expectedResult: After pressing the 'Add Room' button, the system should validate the fields, add the room to the database, show a 'Room Added' message, and navigate to the 'Employee page'.
+
+Test Case: Test Case 2
+testCaseName: Verify room addition with invalid field entry
+objective: To verify that the system shows an 'Invalid field entered' message when trying to add a room with invalid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the required fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should validate the fields and show an 'Invalid field entered' message without adding the room to the database.
+

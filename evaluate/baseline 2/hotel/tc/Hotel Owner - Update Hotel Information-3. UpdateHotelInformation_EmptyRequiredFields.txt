@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Empty Name Field
+objective: Verify that the system prevents updating hotel information when the hotel name field is left empty
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Clear the hotel name field, leaving it empty.
+  - Step 5: Fill other fields with valid information.
+  - Step 6: Submit the form.
+expectedResult: The system should display an error message indicating that the hotel name field is required and prevent the form from being submitted.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Empty Address Field
+objective: Verify that the system prevents updating hotel information when the address field is left empty
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Clear the address field, leaving it empty.
+  - Step 5: Fill other fields with valid information.
+  - Step 6: Submit the form.
+expectedResult: The system should display an error message indicating that the address field is required and prevent the form from being submitted.
+

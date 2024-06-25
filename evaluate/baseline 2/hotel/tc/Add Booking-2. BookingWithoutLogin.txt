@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking Creation Without Login
+objective: Verify that the system prevents booking creation without login and prompts for login
+testSteps:
+  - Step 1: Navigate to the application dashboard without logging in.
+  - Step 2: Attempt to select the Booking panel on the dashboard.
+expectedResult: The system should prompt the user to log in before accessing the Booking panel.
+
+Test Case: Test Case 2
+testCaseName: Successful Booking Creation With Login
+objective: Verify that an employee can successfully create a booking after logging in
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should add the booking to the database, show the initial status as checked in, and display a message indicating the booking was successfully added.
+
+Test Case: Test Case 3
+testCaseName: Booking Creation With Missing Total Amount Calculation
+objective: Verify that the system prevents booking creation if the total amount is not calculated
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data but do not click the calculate amount button.
+  - Step 4: Attempt to press the add booking button without calculating the total amount.
+expectedResult: The system should prevent the booking from being added and display a message indicating that the total amount needs to be calculated before adding the booking.
+
+Test Case: Test Case 4
+testCaseName: Booking Creation With Invalid Field Entry
+objective: Verify that the system shows an error message for each invalid field entry during booking creation
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill the booking fields with at least one invalid data entry.
+  - Step 4: Click the calculate amount button to attempt total payment calculation.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields and show an error message for each invalid field entry, preventing the booking from being added.
+
+Test Case: Test Case 5
+testCaseName: Booking Creation Failure Message Display
+objective: Verify that the system displays a failure message in case of any error during booking creation
+testSteps:
+  - Step 1: Log in as an employee.
+  - Step 2: Select the Booking panel on the dashboard and fill out the booking form with data that will trigger an error (e.g., invalid fields, not calculating total amount).
+  - Step 3: Press the add booking button.
+expectedResult: The system should display a failure message indicating the booking could not be added due to the errors.
+

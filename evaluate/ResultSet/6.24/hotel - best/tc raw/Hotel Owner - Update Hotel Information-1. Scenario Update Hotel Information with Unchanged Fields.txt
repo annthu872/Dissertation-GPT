@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with All Fields Unchanged
+objective: Verify that the system correctly handles the scenario where the hotel owner updates the hotel information without making any changes to the fields.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, do not make any changes to the fields. All fields should remain as they were.
+  - Step 5: Submit the form to update the hotel information.
+expectedResult: The system should validate the unchanged fields, update the hotel information in the database (even though no changes were made), show a success message, and redirect the user to the Dashboard.
+explanation: This test case is created to ensure that the system can handle updates to hotel information even when no actual changes are made to the data. It verifies that the system's validation, update, and redirection mechanisms work correctly in this specific scenario, which directly matches the test scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Some Fields Unchanged
+objective: Verify that the system updates the hotel information correctly when some fields are changed and others are left unchanged.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, change the value of at least one field but leave at least one other field unchanged.
+  - Step 5: Submit the form to update the hotel information.
+expectedResult: The system should validate the fields, correctly update the hotel information in the database for both the changed and unchanged fields, show a success message, and redirect the user to the Dashboard.
+explanation: This test case ensures that the system can process updates to hotel information when only a subset of the fields are modified. It tests the system's ability to distinguish between changed and unchanged fields and to handle them appropriately, aligning with the scenario's focus on updating hotel information with unchanged fields.
+

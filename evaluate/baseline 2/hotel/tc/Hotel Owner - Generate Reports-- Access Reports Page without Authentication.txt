@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Access Reports Page without Authentication
+objective: Verify that the system prevents access to the Reports Page without authentication and redirects to the login page or shows an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the application URL without logging in.
+  - Step 2: Directly attempt to access the Reports Page by entering its URL or navigating through the UI, if accessible.
+  - Step 3: Observe the behavior of the application.
+expectedResult: The system should either redirect the user to the login page or display an appropriate error message indicating that authentication is required to access the Reports Page.
+
+Test Case: Test Case 2
+testCaseName: Access Reports Page with Authentication but not as Hotel Owner
+objective: Verify that a user authenticated but not having the role of Hotel Owner is prevented from accessing the Reports Page and is shown an appropriate error message.
+testSteps:
+  - Step 1: Log in to the application with valid credentials of a user who does not have the Hotel Owner role.
+  - Step 2: Attempt to access the Reports Page by navigating through the UI or entering its URL directly.
+  - Step 3: Observe the behavior of the application.
+expectedResult: The system should display an error message indicating that the user does not have the necessary permissions to access the Reports Page.
+

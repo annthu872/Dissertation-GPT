@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Account Lock After Three Failed Login Attempts
+objective: Verify that the user account gets locked after three consecutive failed login attempts
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter incorrect credentials (username and password) and press the submit button.
+  - Step 3: After the error message is displayed, repeat Step 2 for the second time.
+  - Step 4: After the error, message is displayed again, repeat Step 2 for the third time.
+expectedResult: After the third failed login attempt, the user should see a message indicating that their account has been locked due to multiple failed login attempts.
+reflect: yes
+explanation: This test case directly addresses the test scenario of an account being locked after multiple failed login attempts. It outlines a clear process for simulating the failed login attempts and specifies the expected outcome that aligns with the scenario's requirements. The objective, test steps, and expected result are all focused on verifying the specific functionality of account locking after failed attempts, making it a relevant and effective test case for the given scenario.
+

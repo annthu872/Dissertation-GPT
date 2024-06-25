@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Add Employee Successfully During System Maintenance
+objective: Verify that a manager can successfully add an employee to the system during system maintenance
+testSteps:
+  - Step 1: Log in with manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Fill all the fields with valid data in the 'Add Employee' form.
+  - Step 4: Click on the 'Add' button to submit the form.
+expectedResult: The system should validate the fields, add the employee to the database, display a message 'Employee added', and generate an id and password for the new employee.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Add Employee with Unfilled Fields During System Maintenance
+objective: Verify that the system prompts an error message when trying to add an employee with unfilled fields during system maintenance
+testSteps:
+  - Step 1: Log in with manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Leave some fields empty in the 'Add Employee' form.
+  - Step 4: Click on the 'Add' button to submit the form.
+expectedResult: The system should display an error message 'All fields are required' without adding the employee to the database.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Employee with Invalid Field Entries During System Maintenance
+objective: Verify that the system prompts an error message when trying to add an employee with invalid field entries during system maintenance
+testSteps:
+  - Step 1: Log in with manager account.
+  - Step 2: Click on the 'Employee' option from the main menu.
+  - Step 3: Fill all the fields in the 'Add Employee' form with at least one invalid entry (e.g., invalid email format).
+  - Step 4: Click on the 'Add' button to submit the form.
+expectedResult: The system should display an error message 'Invalid field entered' without adding the employee to the database.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify error message on entering invalid genre data
+objective: To verify that the appropriate error message is displayed when the user enters invalid data for a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating which fields contain incorrect data.
+
+Test Case: Test Case 2
+testCaseName: Verify successful genre addition
+objective: To verify that a new genre record is successfully added to the database when valid data is entered
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The new genre record is added to the database, and the user is redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation on genre creation
+objective: To verify that no data is saved and the user is redirected back to the genre list when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: No data is saved to the database, and the user is redirected to the list of genre records.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from genre creation does not save data
+objective: To verify that navigating away from the genre creation page by selecting another menu item does not save any entered data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The user is redirected to the selected page without saving any data to the database, and the corresponding form with updated data is opened.
+

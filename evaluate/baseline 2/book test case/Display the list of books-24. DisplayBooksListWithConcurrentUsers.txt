@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books List Without Filters
+objective: Verify that the application correctly displays the initial list of books without any filters applied.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Books' item from the main menu or page content.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application should display up to 10 books per page with their id, Title, Author, Genre, and Publication date listed. Pagination options should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Books List
+objective: Ensure that the user can navigate through different pages of the books list using the pagination feature.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the list of books.
+  - Step 2: Click on the 'Next' button below the list of books.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: Upon clicking the 'Next' button, the next set of up to 10 books should be displayed. The page number should update accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify Books List Filtering by Publication Date
+objective: To verify that the user can filter the list of books by specifying a publication date range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section as per Test Case 1.
+  - Step 2: Enter a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books that were published within the specified date range. Each book's information should include id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 4
+testCaseName: Verify Display of Books List With Concurrent Users
+objective: Ensure that the application can handle multiple users accessing the books list simultaneously without performance degradation or errors.
+testSteps:
+  - Step 1: Have multiple users (more than 5) access the 'Books' section at the same time from different devices.
+  - Step 2: Each user navigates through the pages of the book list and applies different date range filters.
+  - Step 3: Observe the responsiveness of the application and the accuracy of the displayed books list.
+expectedResult: The application should handle multiple concurrent users efficiently, displaying the correct list of books according to the navigation and filters applied by each user without any noticeable delay or errors.
+

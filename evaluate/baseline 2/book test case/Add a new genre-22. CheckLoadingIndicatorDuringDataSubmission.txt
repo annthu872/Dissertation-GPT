@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify Loading Indicator Visibility During Successful Genre Submission
+objective: Ensure that the loading indicator is visible when submitting a new genre and disappears when the process is complete, with the genre successfully added.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Fill in the 'Name' and 'Description' fields with valid data.
+  - Step 3: Press the 'Submit' button.
+expectedResult: A loading indicator should appear immediately after pressing the 'Submit' button and should disappear when the new genre record is successfully added to the database. The user should then see the updated list of genres including the newly added record.
+
+Test Case: Test Case 2
+testCaseName: Verify Loading Indicator Visibility During Failed Genre Submission
+objective: To check that the loading indicator is visible when an error occurs during the submission of a new genre and that an appropriate error message is displayed.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Fill in the 'Name' and 'Description' fields with valid data.
+  - Step 3: Simulate a submission error (e.g., disconnect from the network) and press the 'Submit' button.
+expectedResult: A loading indicator should appear immediately after pressing the 'Submit' button and should remain visible until the application recognizes the submission error. An error message should then be displayed to the user.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Genre Creation
+objective: To ensure that the 'Cancel' button functionality discards any entered data and returns the user to the updated list of genres without adding a new record.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should discard any data entered in the form and navigate the user back to the list of genres without adding a new record. The list should not include the genre that was being created.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away From Genre Creation Discards Data
+objective: To confirm that navigating away from the genre creation form by selecting another menu item discards any entered data and does not add a new genre record.
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Without submitting the new genre, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should discard any data entered in the genre creation form and navigate the user to the selected page without adding a new genre record. The list of genres should not include the genre that was being created.
+

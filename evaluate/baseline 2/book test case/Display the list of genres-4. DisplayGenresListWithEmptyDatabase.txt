@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Display Genres List With Non-Empty Database
+objective: Verify that the application correctly displays the list of genres when the database is not empty
+testSteps:
+  - Step 1: Ensure the database is not empty and contains less than or equal to 10 genres.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application should display a list of genres, each with a unique id, name, and description. No more than 10 genres should be displayed on the first page.
+
+Test Case: Test Case 2
+testCaseName: Display Genres List With Pagination
+objective: Verify that the pagination controls work correctly when more than 10 genres are present in the database
+testSteps:
+  - Step 1: Ensure the database contains more than 10 genres.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the first 10 genres displayed on the page.
+  - Step 4: Click the 'Next' button or select the second page from the pagination block.
+  - Step 5: Observe the next set of genres displayed on the page.
+expectedResult: The first page should display the first 10 genres. Upon clicking 'Next' or selecting the second page, the next set of genres (up to 10) should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Display Genres List With Empty Database
+objective: Verify that the application correctly handles the scenario when the database is empty
+testSteps:
+  - Step 1: Ensure the database is empty.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the message or indication that no genres are available.
+expectedResult: The application should display a message or indication that there are no genres to display.
+

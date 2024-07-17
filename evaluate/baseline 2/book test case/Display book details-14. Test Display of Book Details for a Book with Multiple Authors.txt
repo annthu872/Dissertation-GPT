@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details for a Book with Single Author
+objective: Ensure that the application correctly displays the details of a book with a single author, including all specified columns.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book that is known to have a single author.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should correctly display all the specified columns (id, Title, Author, Genre, Description, Publication date) for the book with a single author.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details for a Book with Multiple Authors
+objective: Ensure that the application correctly displays the details of a book with multiple authors, including all specified columns.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book that is known to have multiple authors.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should correctly display all the specified columns (id, Title, Author, Genre, Description, Publication date), with the 'Author' column listing all authors of the book.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Book Details Across Different Genres
+objective: Ensure that the application correctly displays the details of books across different genres, including all specified columns.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book, choosing books across different genres one at a time.
+  - Step 3: Observe the book details page that is displayed for each genre.
+expectedResult: For each genre, the book details page should correctly display all the specified columns (id, Title, Author, Genre, Description, Publication date), accurately reflecting the genre of the book.
+

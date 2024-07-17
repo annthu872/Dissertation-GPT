@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Deletion of Genre and Response Time
+objective: To ensure that the genre is deleted successfully and the response time for the deletion process is within acceptable limits
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Measure the time taken for the deletion process to complete.
+expectedResult: The genre should be successfully deleted from the list, and the deletion process should complete within an acceptable response time.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancellation of Genre Deletion
+objective: To ensure that the genre deletion process can be successfully cancelled and no data is deleted from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process should be cancelled, no data should be deleted from the database, and the user should be redirected back to the list of genre records.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation After Cancelling Genre Deletion
+objective: To ensure that after cancelling the deletion of a genre, navigating to other pages does not delete any data
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any other menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: No data should be deleted from the database, and the user should be able to view the updated data on the navigated page without any issues.
+

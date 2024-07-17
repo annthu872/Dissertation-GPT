@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Filter
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date filters.
+expectedResult: The application should display up to 10 books per page, including their id, title, author, genre, and publication date, without any date range filter applied.
+
+Test Case: Test Case 2
+testCaseName: Filter Books With Future Date Range
+objective: Verify that the application correctly filters and displays books that fall within a specified future date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a future start date in the 'From' date input form.
+  - Step 3: Enter a future end date in the 'To' date input form.
+  - Step 4: Click the refresh button next to the date inputs.
+expectedResult: The application should display a list of books whose publication dates fall within the specified future date range. If no books match the criteria, an appropriate message should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Pagination Functionality Without Date Filter
+objective: Verify that the pagination functionality works correctly without any date range filter applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed.
+  - Step 3: Click the 'Next' button or select a page number to view more books.
+expectedResult: The application should display the next set of up to 10 books per page, including their id, title, author, genre, and publication date.
+
+Test Case: Test Case 4
+testCaseName: Pagination Functionality With Future Date Range Filter
+objective: Verify that the pagination functionality works correctly when a future date range filter is applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a future start date and end date in the date input forms and click the refresh button.
+  - Step 3: Observe the filtered list of books displayed.
+  - Step 4: Click the 'Next' button or select a page number to view more books within the filtered date range.
+expectedResult: The application should display the next set of books that fall within the specified future date range per page, including their id, title, author, genre, and publication date. If there are no more books within the date range, an appropriate message should be displayed.
+

@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Valid Data
+objective: Verify that the genre can be updated with valid name and description
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter a new valid name and description for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Duplicate Name
+objective: Verify that the system prevents updating a genre with a name that already exists in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter a name that already exists in the database and a valid description.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the genre name already exists and prevent the update.
+
+Test Case: Test Case 3
+testCaseName: Update Genre with Invalid Data
+objective: Verify that the system displays error messages for invalid data entered
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the genre (e.g., empty name or description).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display error messages for the invalid data and prevent the update.
+
+Test Case: Test Case 4
+testCaseName: Cancel Update Genre Operation
+objective: Verify that the update operation can be canceled without making changes
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: The system should not update the genre in the database and should redirect the user to the list of genre records.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away from Update Genre Page
+objective: Verify that navigating away from the update genre page cancels the update operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Select a different menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API') without submitting the form.
+expectedResult: The system should not update the genre in the database and should display the selected page.
+

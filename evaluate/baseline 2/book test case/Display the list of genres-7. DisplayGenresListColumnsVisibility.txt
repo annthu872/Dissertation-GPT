@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify visibility of genres list and columns
+objective: Ensure the genres list is displayed with all specified columns (id, Name, Description) visible to the user
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application displays the list of genres with the columns 'id', 'Name', and 'Description' visible.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality in genres list
+objective: Ensure that the user can navigate through different pages of the genres list using pagination controls
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Scroll down to the bottom of the genres list to the pagination block.
+  - Step 4: Click the 'Next' button.
+  - Step 5: Observe the list of genres displayed on the next page.
+  - Step 6: Click on a specific page number in the pagination block.
+  - Step 7: Observe the list of genres displayed on the selected page.
+expectedResult: The application successfully navigates to the next set of genres when the 'Next' button is clicked and displays the correct page when a specific page number is selected.
+
+Test Case: Test Case 3
+testCaseName: Verify the limit of genres displayed per page
+objective: Ensure that no more than 10 items are displayed on each page of the genres list
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Count the number of genres listed on the first page.
+  - Step 4: Click the 'Next' button to go to the next page.
+  - Step 5: Count the number of genres listed on the second page.
+expectedResult: Each page displays up to 10 items from the genres list.
+

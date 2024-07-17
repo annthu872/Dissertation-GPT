@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify successful book creation with valid publication date
+objective: Ensure that the book record is successfully added to the database when a valid publication date is entered
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in all the book data fields with valid data, including a valid publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new book record is visible in the list of books.
+
+Test Case: Test Case 2
+testCaseName: Verify publication date field validation with future date
+objective: To check that an error message is displayed when entering a future date in the publication date field
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data in all fields except for the publication date field, where a future date is entered.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the publication date cannot be in the future.
+
+Test Case: Test Case 3
+testCaseName: Verify publication date field with invalid date format
+objective: Ensure that an error message is displayed when an invalid date format is entered in the publication date field
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data in all fields except for the publication date field, where an invalid date format is entered.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the date format is incorrect.
+
+Test Case: Test Case 4
+testCaseName: Verify cancellation of book creation
+objective: To verify that no data is saved and the user is redirected back to the book list when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: No data is saved in the database, and the user is redirected back to the list of book records.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation away from creation page does not save data
+objective: Ensure that navigating away from the book creation page without submitting does not save any data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Select the menu item 'Authors' without pressing the 'Submit' button.
+expectedResult: No data is saved in the database, and the 'Authors' page is displayed.
+

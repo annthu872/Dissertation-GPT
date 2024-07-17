@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author ID Column in Author List
+objective: Ensure that the Author ID column is displayed correctly in the list of authors
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The list of authors should be displayed with a column titled 'id' showing the unique author number for each author.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Author List
+objective: Ensure that users can navigate through different pages of authors using the pagination feature
+testSteps:
+  - Step 1: Navigate to the 'Authors' section as per the steps in Test Case 1.
+  - Step 2: Scroll down to the bottom of the list to locate the pagination block.
+  - Step 3: Click on the 'Next' button to move to the next page of authors.
+  - Step 4: Alternatively, click on a specific page number to jump directly to that page.
+expectedResult: The application should display the next 10 records of authors when the 'Next' button is clicked, or the corresponding authors of the selected page number, updating the list accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify All Required Columns in Author List
+objective: Ensure that all required columns (ID, Name, Bio) are displayed in the author list
+testSteps:
+  - Step 1: Access the 'Authors' list following the steps outlined in Test Case 1.
+  - Step 2: Examine the list to identify the presence of the following columns: 'id', 'Name', and 'Bio'.
+expectedResult: The list of authors should include all three specified columns: 'id' for the unique author number, 'Name' for the author's name, and 'Bio' for the author's biography.
+

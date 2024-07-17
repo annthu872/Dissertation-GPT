@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Valid Data
+objective: Verify that the genre can be updated with valid data and displays the updated genre list
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the user should be redirected to the list of genres with the updated record visible.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Invalid Data
+objective: Verify that the application displays error messages when trying to update a genre with invalid data
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application should display error messages related to the invalid data entered and not update the genre in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Genre Operation Cancel
+objective: Verify that the update operation can be canceled without making changes to the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Click the 'Cancel' button before submitting.
+expectedResult: The application should not update the genre in the database and should display the list of genre records.
+
+Test Case: Test Case 4
+testCaseName: Update Genre and Navigate Away
+objective: Verify that navigating away from the update page without submitting does not update the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Navigate away from the page by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not update the genre in the database and should display the corresponding page for the selected menu item without updating any data.
+
+Test Case: Test Case 5
+testCaseName: Update Genre Display Error on Failure
+objective: Verify that an error message is displayed if there is a failure in updating the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter data into the 'Name' and 'Description' fields.
+  - Step 4: Simulate an error condition (e.g., disconnect from the database) and click the 'Submit' button.
+expectedResult: The application should display an error message indicating that the update operation failed.
+

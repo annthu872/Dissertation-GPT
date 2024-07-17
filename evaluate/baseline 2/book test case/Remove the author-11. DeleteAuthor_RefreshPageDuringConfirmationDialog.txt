@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Delete Author and Confirm Deletion
+objective: Verify that the author is successfully deleted from the list after the user confirms the deletion in the confirmation dialog
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The author should be successfully deleted from the list, and the list should be updated to reflect this change.
+
+Test Case: Test Case 2
+testCaseName: Delete Author and Cancel Deletion
+objective: Verify that the author is not deleted from the list when the user cancels the deletion in the confirmation dialog
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The author should not be deleted from the list, and the list should remain unchanged.
+
+Test Case: Test Case 3
+testCaseName: Delete Author and Navigate Away During Confirmation
+objective: Verify that the author is not deleted if the user navigates away from the page during the confirmation dialog
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author should not be deleted from the list, and the user should be redirected to the selected page with updated data.
+
+Test Case: Test Case 4
+testCaseName: Delete Author and Refresh Page During Confirmation
+objective: Verify that the author is not deleted if the user refreshes the page during the confirmation dialog
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, refresh the page.
+expectedResult: The author should not be deleted from the list, and the list should remain unchanged after the page is refreshed.
+

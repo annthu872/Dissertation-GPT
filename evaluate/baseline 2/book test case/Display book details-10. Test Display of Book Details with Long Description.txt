@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with Short Description
+objective: Ensure that the application correctly displays book details including a short description
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book that is known to have a short description.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details including id, Title, Author, Genre, Description (short), and Publication date without any layout issues.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details with Long Description
+objective: Ensure that the application correctly displays book details including a long description without layout issues
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book that is known to have a long description.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details including id, Title, Author, Genre, Description (long), and Publication date, ensuring that the long description is fully visible and readable without affecting the layout of the page.
+
+Test Case: Test Case 3
+testCaseName: Verify Consistency of Book Details Display
+objective: To verify that the book details page consistently displays all required information for various books
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Sequentially click on the 'Title' of multiple books with varying lengths of descriptions.
+  - Step 3: For each book, observe the details displayed on the book details page.
+expectedResult: For every book, regardless of the length of the description, the application should consistently display the id, Title, Author, Genre, Description, and Publication date without layout issues or missing information.
+

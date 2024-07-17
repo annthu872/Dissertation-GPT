@@ -1,0 +1,10 @@
+1. Scenario: Sentence field does not contain '...'
+2. Scenario: Sentence field above 250 characters
+3. Scenario: Sentence field contains special characters
+4. Scenario: Sentence field is skipped
+5. Scenario: Correct answer field is skipped
+6. Scenario: Other option 1 field is skipped
+7. Scenario: Other option 2 field is skipped
+8. Scenario: Other option 3 field is skipped
+9. Admin Decides to Cancel Question Creation but then Chooses to Stay and Continue
+10. Admin Cancels Question Creation and Confirms Cancellation

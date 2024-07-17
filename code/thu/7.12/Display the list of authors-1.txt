@@ -1,0 +1,4 @@
+1. Successful navigation to the next page of authors
+2. Navigation to a specific page number of authors
+3. Last page of authors reached with fewer than 10 items displayed
+4. First page navigation with no previous page available

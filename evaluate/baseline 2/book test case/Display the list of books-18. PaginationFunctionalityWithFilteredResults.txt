@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality Without Filter
+objective: Ensure that the pagination functionality works correctly without applying any date filters
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Observe the list of books displayed on the first page without applying any filters.
+  - Step 3: Click the 'Next' button located below the records in the pagination block.
+  - Step 4: Observe the list of books on the second page.
+expectedResult: The application should display up to 10 items on the first page. Upon clicking the 'Next' button, the next set of up to 10 books should be displayed on the second page without any filters applied.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality With Date Filter
+objective: To verify that the pagination functionality works correctly when a date range filter is applied
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Specify a date range in the date input forms above the data.
+  - Step 3: Click the refresh button to apply the date range filter.
+  - Step 4: Observe the filtered list of books displayed on the first page.
+  - Step 5: Click the 'Next' button located below the records in the pagination block.
+  - Step 6: Observe the list of books on the second page within the same date range filter.
+expectedResult: After applying the date range filter and clicking the refresh button, the application should display the filtered list of books that fall within the specified date range on the first page. Upon clicking the 'Next' button, the next set of filtered books within the same date range should be displayed on the second page.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality With Date Filter and No Results
+objective: To verify that the pagination functionality correctly handles scenarios where no results are found within the specified date range
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Specify a date range in the date input forms above the data that is known to have no books published within it.
+  - Step 3: Click the refresh button to apply the date range filter.
+  - Step 4: Observe the list of books displayed.
+expectedResult: After applying a date range filter that matches no books, the application should display a message indicating that no books were found within the specified date range.
+

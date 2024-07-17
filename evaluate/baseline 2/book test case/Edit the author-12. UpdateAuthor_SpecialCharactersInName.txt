@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Special Characters in Name
+objective: Verify that the system prevents the update of an author's name with special characters and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the name field, enter a name that includes special characters (e.g., @, #, $, etc.).
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that special characters are not allowed in the name field.
+
+Test Case: Test Case 2
+testCaseName: Successfully Update Author without Special Characters in Name
+objective: Verify that the system allows the update of an author's record when a valid name without special characters is entered and displays the updated author list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the name field, enter a valid name without any special characters.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The author's record is successfully updated in the database, and the updated list of authors is displayed without any error messages.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Author
+objective: Verify that the system does not update author data in the database and returns to the list of authors when the 'Cancel' button is pressed.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The system should not update any data in the database and should display the list of authors records.
+

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Cancel Operation Without Data Entered
+objective: Verify that cancelling the operation without entering any data redirects to the genre list page without creating a new record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to navigate to the creation page.
+  - Step 3: Without entering any data, click on the 'Cancel' button.
+expectedResult: The application should redirect to the genre list page without adding any new genre record.
+
+Test Case: Test Case 2
+testCaseName: Cancel Operation With Partial Data Entered
+objective: Verify that cancelling the operation after entering partial data does not save the data or create a new record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to navigate to the creation page.
+  - Step 3: Enter partial data into the form fields.
+  - Step 4: Click on the 'Cancel' button.
+expectedResult: The application should redirect to the genre list page without saving the entered data or adding a new genre record.
+
+Test Case: Test Case 3
+testCaseName: Navigation Away From Creation Page Without Saving
+objective: Verify that navigating away from the creation page without saving does not create a new genre record
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button to navigate to the creation page.
+  - Step 3: Enter data into the form fields.
+  - Step 4: Without clicking on 'Submit', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected page without saving the entered data or adding a new genre record.
+

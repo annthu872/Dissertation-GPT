@@ -1,0 +1,14 @@
+1. Successful Registration
+2. Username Below 8 Characters
+3. Username Over 30 Characters
+4. Username Already Registered
+5. Password Below 8 Characters
+6. Password Over 30 Characters
+7. Password Missing Normal Character
+8. Password Missing Capitalize Character
+9. Password Missing Number
+10. Password Missing Special Character
+11. Password Same as Username
+12. Email Inexist
+13. Email Wrong Format
+14. Learner registers with an email instead of a username

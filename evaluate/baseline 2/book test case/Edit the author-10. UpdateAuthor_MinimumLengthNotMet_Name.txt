@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify updating author with name length less than minimum requirement
+objective: To ensure the system validates the minimum length requirement for the author's name during the update process and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the edit form, enter a name for the author that is less than the minimum required length.
+  - Step 4: Fill in the rest of the fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the name does not meet the minimum length requirement.
+
+Test Case: Test Case 2
+testCaseName: Verify successful cancellation of author update
+objective: To verify that pressing the 'Cancel' button while updating an author's information discards any changes and returns the user to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should discard any changes made and return the user to the list of authors without updating the author's information in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from update form without saving
+objective: To ensure that navigating away from the update form without saving does not update the author's information in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not update the author's information in the database and should display the selected page.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a new author record
+objective: To verify that a user can successfully create a new author record by entering valid data and clicking the 'Submit' button
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: A new author record is successfully added to the database, and the user is redirected to the list of authors with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling in new author creation
+objective: To verify that the application displays error messages when incorrect data is entered in the author creation form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application displays error messages indicating the incorrect data, and the new author record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during new author creation
+objective: To verify that no new author record is created and data is not saved when the 'Cancel' button is clicked before submitting the form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Click the 'Cancel' button before clicking 'Submit'.
+expectedResult: The application does not save the entered data and redirects the user to the list of authors without adding a new record.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form discards data
+objective: To verify that navigating away from the author creation form by selecting another menu item discards any entered data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without clicking 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application does not save the entered data and displays the selected page without adding a new author record.
+

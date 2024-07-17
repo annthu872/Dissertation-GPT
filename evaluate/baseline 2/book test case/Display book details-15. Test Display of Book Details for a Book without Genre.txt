@@ -1,0 +1,9 @@
+Test Case: Test Case 1
+testCaseName: Verify display of book details for a book without Genre
+objective: To ensure that the application correctly displays the details of a book that does not have a Genre specified
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book that is known to not have a Genre specified.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details with the following columns: id, Title, Author, Genre, Description, Publication date. The Genre field should be empty or indicate 'N/A' or 'Not specified'.
+

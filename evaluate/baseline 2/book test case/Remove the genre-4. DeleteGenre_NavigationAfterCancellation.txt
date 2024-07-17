@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation for a genre
+objective: Ensure that the application asks for deletion confirmation when a user attempts to delete a genre and successfully deletes the genre upon confirmation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the database, and the user should be redirected to the updated list of genres without the deleted record.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that when a user cancels the deletion of a genre, the genre is not deleted from the database, and the user is redirected back to the list of genres
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted from the database, and the user should be redirected to the list of genres with all records still intact.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling genre deletion
+objective: Ensure that after cancelling the deletion of a genre, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' works correctly without deleting the genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any of the following menus: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected menu item and display the corresponding form with updated data without deleting the genre from the database.
+

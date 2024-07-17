@@ -1,0 +1,53 @@
+Test Case: Test Case 1
+testCaseName: Verify Form Display After Clicking 'Create New'
+objective: Ensure that the form to enter book data is displayed after the user clicks the 'Create new' button
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+expectedResult: The application displays a form to enter book data including fields for Title, Author, Genre, Description, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Book Creation
+objective: Verify that a new book record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Click on the 'Create new' button from the book list page.
+  - Step 2: Enter valid data for all required fields (Title, Author, Genre, Description, Publication date).
+  - Step 3: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Incorrect Data Handling
+objective: Ensure that the application displays messages for incorrectly entered data
+testSteps:
+  - Step 1: Click on the 'Create new' button from the book list page.
+  - Step 2: Enter invalid data for any of the required fields.
+  - Step 3: Press the 'Submit' button.
+expectedResult: Messages indicating the incorrect data are displayed to the user.
+
+Test Case: Test Case 4
+testCaseName: Verify Error Handling During Book Creation
+objective: Ensure that the application displays an error message if an error occurs while adding a new book record
+testSteps:
+  - Step 1: Click on the 'Create new' button from the book list page.
+  - Step 2: Enter valid data for all required fields but simulate a backend error (This step may require a mock or forced error state).
+  - Step 3: Press the 'Submit' button.
+expectedResult: An error message is displayed to the user.
+
+Test Case: Test Case 5
+testCaseName: Verify Cancel Operation
+objective: Ensure that data is not saved and the user is redirected back to the book list when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Click on the 'Create new' button from the book list page.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Press the 'Cancel' button.
+expectedResult: Data is not saved in the database, and the user is redirected to the list of book records.
+
+Test Case: Test Case 6
+testCaseName: Verify Navigation Away From Form Without Saving
+objective: Ensure that navigating away from the form without saving does not save data to the database
+testSteps:
+  - Step 1: Click on the 'Create new' button from the book list page.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: Data is not saved to the database, and the corresponding selected form or page is displayed with updated data.
+

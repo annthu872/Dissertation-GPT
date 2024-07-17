@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Author Bio Display Upon Title Click
+objective: Ensure that clicking on an author's title from the author list page correctly displays the author's details including ID, Name, and Bio
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify and click on the 'Title' of a specific author from the list.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: Upon clicking the author's title, the application should navigate to the author details page displaying the author's ID, Name, and Bio as separate columns.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Bio Content Accuracy
+objective: To verify that the author's biography (Bio) content is accurately displayed for the selected author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Title' of a specific author to view their details.
+  - Step 3: Carefully read the Bio section of the author's details page.
+expectedResult: The Bio section should accurately reflect the biography of the selected author without any discrepancies or placeholder text.
+
+Test Case: Test Case 3
+testCaseName: Verify Author Details Page Layout
+objective: Ensure that the author details page is correctly formatted with the ID, Name, and Bio columns
+testSteps:
+  - Step 1: From the author list page, click on the 'Title' of any author.
+  - Step 2: Examine the layout of the author details page.
+expectedResult: The author details page should be well-organized, displaying the author's ID, Name, and Bio in distinct, clearly labeled columns.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Back to Author List
+objective: To ensure that users can navigate back to the author list page after viewing an author's details
+testSteps:
+  - Step 1: Navigate to the author list page and click on an author's 'Title' to view their details.
+  - Step 2: After viewing the details, use the application's navigation option to go back to the author list page.
+expectedResult: The application should successfully navigate back to the author list page without errors or loss of state.
+

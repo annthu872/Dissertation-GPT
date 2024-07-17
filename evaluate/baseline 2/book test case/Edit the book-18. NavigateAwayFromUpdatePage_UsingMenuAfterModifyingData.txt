@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away from Update Page Using Menu After Modifying Data Without Saving
+objective: Ensure that navigating away from the update page using the menu after modifying data does not save the changes.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button next to the book you wish to update.
+  - Step 2: On the book update form, modify the details of the book such as Title, Author, Genre, Description, and Publication date.
+  - Step 3: Without clicking the 'Submit' button, select a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected page without saving the modified data, and the book record should remain unchanged in the database.
+
+Test Case: Test Case 2
+testCaseName: Verify Error Handling When Incorrect Data is Entered in Update Form
+objective: To ensure that the application correctly handles and displays error messages when incorrect data is entered in the update form.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button next to the book you wish to update.
+  - Step 2: Enter incorrect data into one or more fields (e.g., entering text into the 'Publication date' field).
+  - Step 3: Click the 'Submit' button.
+expectedResult: The application should display appropriate error messages indicating the fields with incorrect data without updating the book record in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Successful Update of Book Record
+objective: To verify that a book record is successfully updated in the database when valid data is entered and the 'Submit' button is clicked.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button next to the book you wish to update.
+  - Step 2: Enter valid data into all required fields (Title, Author, Genre, Description, and Publication date).
+  - Step 3: Click the 'Submit' button.
+expectedResult: The application should update the book record in the database with the new data and display the updated list of books.
+
+Test Case: Test Case 4
+testCaseName: Verify Cancel Operation on Update Page
+objective: To ensure that clicking the 'Cancel' button on the update page discards any changes and does not update the book record in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button next to the book you wish to update.
+  - Step 2: Modify any book detail on the update form.
+  - Step 3: Click the 'Cancel' button.
+expectedResult: The application should discard the changes and navigate back to the list of book records without updating the selected book in the database.
+

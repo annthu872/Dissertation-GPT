@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details
+objective: Verify that clicking on the title of a book from the book list page correctly displays the book's details
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a specific book from the list.
+expectedResult: The application should display the details of the selected book, including the following columns: id, Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of All Required Columns in Book Details
+objective: Ensure that all required columns are displayed in the book details page
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of any book from the list.
+  - Step 3: Verify that the book details page is displayed.
+  - Step 4: Check for the presence of the following columns: id, Title, Author, Genre, Description, Publication date.
+expectedResult: The book details page should correctly display all the required columns: id, Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 3
+testCaseName: Verify Content Accuracy in Book Details
+objective: Ensure that the content displayed in each column of the book details page is accurate
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book known to the tester.
+  - Step 3: Verify that the book details page is displayed.
+  - Step 4: Check each column (id, Title, Author, Genre, Description, Publication date) against known details of the book to ensure accuracy.
+expectedResult: Each column on the book details page (id, Title, Author, Genre, Description, Publication date) should accurately reflect the details of the book.
+

@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Verify Author Field Accepts Valid Input
+objective: Verify that the Author field accepts a valid name during the book creation process and the book record is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter a valid title in the 'Title' field.
+  - Step 4: Enter a valid name in the 'Author' field.
+  - Step 5: Select a genre from the 'Genre' dropdown.
+  - Step 6: Enter a description in the 'Description' field.
+  - Step 7: Set a publication date.
+  - Step 8: Click on the 'Submit' button.
+expectedResult: A new book record with the entered details is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Field Validation for Empty Input
+objective: Ensure that the Author field validation correctly prevents form submission when the field is left empty.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter a valid title in the 'Title' field.
+  - Step 4: Leave the 'Author' field empty.
+  - Step 5: Select a genre from the 'Genre' dropdown.
+  - Step 6: Enter a description in the 'Description' field.
+  - Step 7: Set a publication date.
+  - Step 8: Attempt to click on the 'Submit' button.
+expectedResult: The form submission is prevented, and an error message is displayed indicating that the Author field cannot be empty.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Book Creation
+objective: Verify that pressing the 'Cancel' button while adding a new book discards the entered data and does not add a new record to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the book creation form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of book records without the new book being added, indicating that the data was not saved to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away Prevents Data Save
+objective: Ensure that navigating away from the book creation form by selecting another menu item discards the entered data and does not save a new book record.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the book creation form.
+  - Step 4: Without submitting, select another menu item such as 'Genres' or 'Home'.
+expectedResult: The user is redirected to the selected page without the new book being added to the database, confirming that the data was not saved.
+

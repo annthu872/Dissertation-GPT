@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify mandatory fields validation when adding a new author
+objective: Ensure that the application validates mandatory fields when creating a new author record
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Fill in the 'Bio' field with the author's biography.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the 'Name' field is mandatory.
+
+Test Case: Test Case 2
+testCaseName: Verify successful creation of a new author record
+objective: To verify that a new author record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter a valid biography in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new author record should be successfully added to the database, and the list of authors with the newly added record should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation while adding a new author
+objective: To ensure that the data is not saved in the database when the 'Cancel' button is pressed during the creation of a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The data should not be saved in the database, and the list of author records should be displayed without the new record.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form does not save data
+objective: To verify that navigating away from the author creation form without submitting does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The data should not be saved to the database, and the corresponding form or page for the selected menu item should be displayed with updated data.
+

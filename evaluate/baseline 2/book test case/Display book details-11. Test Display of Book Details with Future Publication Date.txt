@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with Future Publication Date
+objective: Ensure that the application correctly displays the details of a book with a future publication date when a user selects a book title from the book list.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the 'Title' of a book that is known to have a future publication date.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should correctly display all the specified columns (id, Title, Author, Genre, Description, Publication date) with accurate information. The 'Publication date' should be a future date, and all details should be visible and correctly formatted.
+
+Test Case: Test Case 2
+testCaseName: Verify UI Elements for Book Details with Future Publication Date
+objective: To verify that all UI elements for displaying book details, especially for books with future publication dates, are present and correctly formatted.
+testSteps:
+  - Step 1: Follow the steps to navigate to a book's detail page with a future publication date as described in Test Case 1.
+  - Step 2: Verify the presence of the 'id' field and its uniqueness.
+  - Step 3: Check that the 'Title' is correctly displayed.
+  - Step 4: Confirm that the 'Author' name is visible and correct.
+  - Step 5: Ensure the 'Genre' is listed and accurate.
+  - Step 6: Read the 'Description' to verify it matches the book selected.
+  - Step 7: Check the 'Publication date' to ensure it is a future date and correctly formatted.
+expectedResult: All UI elements for the book details (id, Title, Author, Genre, Description, Publication date) are present, correctly formatted, and display accurate information. The publication date specifically should be in the future and correctly formatted.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation from Book List to Details Page
+objective: To ensure that the navigation from the book list page to the book details page works seamlessly for books with future publication dates.
+testSteps:
+  - Step 1: Access the book list page within the application.
+  - Step 2: Identify a book with a future publication date from the list.
+  - Step 3: Click on the 'Title' of the selected book.
+  - Step 4: Verify that the application navigates to the book details page for the selected book.
+expectedResult: Upon clicking the 'Title' of a book with a future publication date, the application should successfully navigate to the book details page, displaying all relevant information correctly.
+

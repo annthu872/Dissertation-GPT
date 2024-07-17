@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify error message for missing mandatory fields
+objective: To verify that the application displays an error message when the user tries to submit a new book form with missing mandatory fields
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Leave the 'Title', 'Author', and 'Genre' fields empty.
+  - Step 4: Fill in the 'Description' and 'Publication date' fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the 'Title', 'Author', and 'Genre' fields are mandatory and cannot be left blank.
+
+Test Case: Test Case 2
+testCaseName: Verify error message for invalid publication date
+objective: To verify that the application displays an error message when the user enters an invalid publication date
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Title', 'Author', and 'Genre' fields with valid data.
+  - Step 4: Enter an invalid date format in the 'Publication date' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the 'Publication date' is in an invalid format and prompting the user to enter a valid date.
+
+Test Case: Test Case 3
+testCaseName: Verify successful cancellation of book creation
+objective: To verify that no data is saved and the user is redirected back to the book list page upon clicking the 'Cancel' button
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Title', 'Author', 'Genre', 'Description', and 'Publication date' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user should be redirected back to the book list page without the new book data being saved in the database.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form does not save data
+objective: To verify that navigating away from the book creation form by selecting another menu item does not save any entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Title', 'Author', 'Genre', 'Description', and 'Publication date' fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Genres' or 'Home'.
+expectedResult: The application should navigate to the selected page without saving the entered book data, and no new book record should be added to the database.
+

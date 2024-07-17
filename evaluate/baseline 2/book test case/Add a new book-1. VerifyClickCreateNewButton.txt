@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a new book record
+objective: To verify that a user can successfully create a new book record by entering valid data and clicking the 'Submit' button
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the form with valid book data (Title, Author, Genre, Description, Publication date).
+  - Step 4: Click on the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify error handling for incorrect data entry
+objective: To verify that the application displays error messages when the user enters incorrect data while creating a new book record
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the form with invalid book data (e.g., leaving the Title field empty, entering incorrect format for Publication date).
+  - Step 4: Click on the 'Submit' button.
+expectedResult: The application displays error messages for incorrectly entered data, and the book record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during new book creation
+objective: To verify that a user can cancel the creation of a new book record and no data is saved in the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Click on the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user is redirected to the list of book records without the new data being saved in the database.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form discards data
+objective: To verify that navigating away from the book creation form by selecting another menu item discards any entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Without clicking 'Submit', select another menu item such as 'Genres' or 'Authors'.
+expectedResult: The application navigates to the selected menu item's page without saving the entered book data, and no new book record is added to the database.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away From Form Without Saving via Cancel Button
+objective: Ensure that when a user navigates away from the 'Add new genre' form by clicking the 'Cancel' button, the data entered is not saved and the user is redirected to the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the form for adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields of the form.
+  - Step 4: Click the 'Cancel' button.
+expectedResult: The application should not save the entered data and should redirect the user to the genre list page, displaying the list of genres without the addition of the new genre.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation Away From Form Without Saving via Navigation Menu
+objective: To verify that when a user navigates away from the 'Add new genre' form using the navigation menu (Books, Genres, Authors, Home, API) without saving, the entered data is not saved.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the form for adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields of the form.
+  - Step 4: Without clicking 'Submit', select any menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application should not save the entered data and should display the selected page. If the user navigates back to the genre list, the new genre should not appear in the list.
+
+Test Case: Test Case 3
+testCaseName: Verify Data Validation and Error Handling on Genre Creation
+objective: Ensure that the application validates the entered data correctly and displays appropriate error messages if the data is invalid or if an error occurs during the submission.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the form for adding a new genre.
+  - Step 3: Enter incorrect or incomplete data into the form fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application should display error messages indicating what data was entered incorrectly. The genre should not be added to the database until the errors are corrected and the form is resubmitted with valid data.
+
+Test Case: Test Case 4
+testCaseName: Verify Successful Genre Addition
+objective: To ensure that when valid data is entered into the 'Add new genre' form and submitted, the new genre is successfully added to the database and displayed in the genre list.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the form for adding a new genre.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application should add the new genre to the database and redirect the user to the genre list page, where the newly added genre is displayed in the list.
+

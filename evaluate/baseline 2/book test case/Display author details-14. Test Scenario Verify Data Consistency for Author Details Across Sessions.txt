@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Author Details Consistency Across Different Sessions
+objective: Ensure that the author details displayed are consistent across different sessions for the same user
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the author list page.
+  - Step 3: Click on the 'Title' of a specific author from the list.
+  - Step 4: Note down the author details displayed (id, Name, Bio).
+  - Step 5: Log out from the application.
+  - Step 6: Log in again with the same credentials.
+  - Step 7: Navigate to the author list page.
+  - Step 8: Click on the same 'Title' of the author chosen in Step 3.
+  - Step 9: Compare the author details displayed with the details noted down in Step 4.
+expectedResult: The author details (id, Name, Bio) displayed in Step 9 should exactly match the details noted down in Step 4, ensuring data consistency across sessions.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Details Display for Multiple Authors
+objective: Verify that the application correctly displays the details for multiple authors when accessed in sequence
+testSteps:
+  - Step 1: Log in to the application with valid credentials.
+  - Step 2: Navigate to the author list page.
+  - Step 3: Sequentially click on the 'Title' of the first author from the list and note the details (id, Name, Bio).
+  - Step 4: Navigate back to the author list page.
+  - Step 5: Click on the 'Title' of the second author from the list and note the details (id, Name, Bio).
+  - Step 6: Repeat steps 4 and 5 for at least two more authors.
+  - Step 7: Verify that each author's details page correctly displays their unique id, Name, and Bio without any data from the previous author's details.
+expectedResult: Each author's details page should correctly display their unique id, Name, and Bio, with no mix-up or retention of data from any other author's details page.
+

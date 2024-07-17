@@ -1,0 +1,14 @@
+Scenario_TitleEmpty
+Scenario_AuthorEmpty
+Scenario_GenreEmpty
+Scenario_DescriptionEmpty
+Scenario_PublicationDateEmpty
+Successful Book Creation
+Incorrect Data Submission
+Database Error During Book Creation
+User presses “Cancel” button before submitting the form
+User selects "Books" from the menu before submitting the form
+User selects "Genres" from the menu before submitting the form
+User selects "Authors" from the menu before submitting the form
+User selects "Home" from the menu before submitting the form
+User selects "API" from the menu before submitting the form

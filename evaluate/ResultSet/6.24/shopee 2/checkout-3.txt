@@ -1,19 +1,16 @@
-1. Successful Purchase with Default Settings
-2. Purchase with Changed Shipping Address
-3. Purchase with New Shipping Address
-4. Purchase with Non-default Payment Method
-5. Purchase with Application Voucher
-6. Purchase with Shop Voucher
-7. Purchase with Changed Shipping Option
-8. Purchase with Note for Shop
-9. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
-10. Purchase with Invalid Voucher Code
-11. Add Shipping Address with Full Name Containing Numbers
-12. Add Shipping Address with Full Name Containing Symbols
-13. Add Shipping Address with Full Name Less Than 2 Letters
-14. Add Shipping Address with Phone Number Not in Specified Format
-15. Add Shipping Address with Phone Number Containing Letters
-16. Add Shipping Address with Phone Number Containing Symbols
-17. Add Shipping Address with Location's Address Not Found on Map
-18. Apply Disabled Voucher Code
-19. Apply Incorrect Voucher Code
+Successful Purchase with Default Settings
+Purchase with Changed Shipping Address
+Purchase with New Shipping Address
+Purchase with Non-default Payment Method
+Purchase with Application Voucher Applied
+Purchase with Shop Voucher Applied
+Purchase with Changed Shipping Option
+Purchase with Note for Shop Added
+Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+Add Shipping Address with Full Name Containing Numbers
+Add Shipping Address with Full Name Containing Symbols
+Add Shipping Address with Full Name Less Than 2 Letters
+Add Shipping Address with Phone Number in Incorrect Format
+Add Shipping Address with Location's Address Not Found on Map
+Apply Disabled Voucher Code
+Apply Incorrect Voucher Code

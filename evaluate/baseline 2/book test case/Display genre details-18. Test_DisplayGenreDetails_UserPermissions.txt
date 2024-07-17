@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genre Details for Authorized User
+objective: Verify that an authorized user can click on a genre name from the genre list and see the details of that genre including id, Name, and Description
+testSteps:
+  - Step 1: Log in as an authorized user.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed for the selected genre.
+expectedResult: After clicking on the genre name, the application should display the details of the selected genre, including columns for id, Name, and Description.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Genre Details for Unauthorized User
+objective: Verify that an unauthorized user cannot access the genre details and is either prompted to log in or shown an error message
+testSteps:
+  - Step 1: Navigate to the genre list page without logging in.
+  - Step 2: Attempt to click on the 'Name' of a specific genre from the list.
+  - Step 3: Observe the response from the application.
+expectedResult: The application should not display the genre details to an unauthorized user. Instead, it should prompt the user to log in or display an error message indicating that the user does not have permission to view the details.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Details Page Layout
+objective: Verify that the genre details page correctly displays the id, Name, and Description columns as expected for any selected genre
+testSteps:
+  - Step 1: Log in as an authorized user.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of any genre from the list.
+  - Step 4: Verify that the genre details page is displayed.
+  - Step 5: Check for the presence of 'id', 'Name', and 'Description' columns on the page.
+expectedResult: The genre details page should correctly display the columns for id, Name, and Description, filled with the appropriate information for the selected genre.
+

@@ -1,0 +1,6 @@
+1. Scenario: Add new topic with empty name field
+2. Scenario: Add new topic with name already used
+3. Scenario: Add new topic with empty description field
+4. Successful Topic Creation
+5. Topic Creation with Duplicate Name
+6. Administrator selects "Cancel" while adding a new topic

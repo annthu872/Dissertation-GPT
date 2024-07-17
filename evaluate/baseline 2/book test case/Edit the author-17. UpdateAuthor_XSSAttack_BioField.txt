@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify XSS Protection on Bio Field during Author Update
+objective: Ensure that the Bio field in the author update form is protected against XSS attacks
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the Bio field, enter a script tag with JavaScript code intended for XSS (e.g., <script>alert('XSS')</script>).
+  - Step 4: Fill in other required fields with valid data.
+  - Step 5: Click the 'Submit' button to attempt updating the author's information.
+expectedResult: The application should sanitize the input, not execute the script, and successfully update the author's information without triggering the JavaScript code. A success message should be displayed, indicating the author's record has been updated.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Author Update with Valid Data
+objective: Ensure that the author's information can be updated successfully with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter valid data into all required fields, including a new Bio without any script tags.
+  - Step 4: Click the 'Submit' button to update the author's information.
+expectedResult: The application should successfully update the author's information in the database. The user should be redirected to the list of authors, where the updated information is displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Author Update
+objective: Ensure that the author update operation can be canceled without making any changes to the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the form fields.
+  - Step 4: Before submitting, click the 'Cancel' button.
+expectedResult: The application should not update any author information in the database. The user should be redirected to the list of authors, where no changes are reflected in the author's information.
+

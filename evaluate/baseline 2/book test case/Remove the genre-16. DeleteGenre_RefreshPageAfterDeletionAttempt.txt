@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify genre deletion and refresh page after deletion
+objective: Ensure that the genre is deleted from the list after the user confirms the deletion and the page refreshes to reflect the changes
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with deletion.
+expectedResult: The genre should be deleted from the list, and the page should refresh to reflect that the genre has been removed.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that the genre is not deleted from the list when the user cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort deletion.
+expectedResult: The genre should not be deleted from the list, and the user should be redirected back to the list of genres without any changes.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling genre deletion
+objective: Ensure that navigation works correctly after cancelling the deletion of a genre and that no data is deleted
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: After cancellation, select any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected menu item's page without deleting any data, and the data displayed should be up to date.
+

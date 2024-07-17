@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Field Accepts Valid Input
+objective: Verify that the Genre field accepts valid genre inputs and allows the form to be submitted successfully
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Fill in all required fields with valid data, ensuring to input a recognized genre in the Genre field.
+  - Step 3: Press the 'Submit' button.
+expectedResult: The new book record should be added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Field Validation Message for Invalid Input
+objective: Verify that entering an invalid genre displays an appropriate validation message and prevents form submission
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Fill in all required fields, entering an invalid genre (e.g., a number or special characters) in the Genre field.
+  - Step 3: Press the 'Submit' button.
+expectedResult: A validation message should be displayed indicating that the genre is invalid, and the form should not be submitted.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Field is Required
+objective: Verify that the Genre field is required and the form cannot be submitted without a genre
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Fill in all required fields except the Genre field.
+  - Step 3: Press the 'Submit' button.
+expectedResult: A validation message should be displayed indicating that the Genre field is required, and the form should not be submitted.
+
+Test Case: Test Case 4
+testCaseName: Verify Cancel Operation Discards Data Entry
+objective: Verify that pressing the 'Cancel' button discards any data entered into the form fields and returns the user to the book list page
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Press the 'Cancel' button.
+expectedResult: The form should be closed, any entered data should not be saved, and the user should be redirected to the list of books.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation Away Discards Data Entry
+objective: Verify that navigating away from the form by selecting another menu item discards any data entered and does not save it to the database
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Without pressing 'Submit', select another menu item such as 'Authors'.
+expectedResult: The form should be closed, any entered data should not be saved, and the user should be redirected to the selected page.
+

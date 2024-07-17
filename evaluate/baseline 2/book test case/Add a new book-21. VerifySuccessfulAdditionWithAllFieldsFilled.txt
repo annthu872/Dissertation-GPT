@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Addition of a New Book with All Fields Filled
+objective: To verify that a new book record is successfully added to the database when all required fields are filled correctly.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in all the fields in the form with valid data. Ensure to include Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record should be successfully added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Data Handling When Adding a New Book
+objective: To verify that the application displays appropriate error messages when incorrect data is entered in the book creation form.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the form with invalid data for at least one of the fields (e.g., incorrect format for the publication date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display error messages related to the incorrectly filled fields and prevent the record from being added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During New Book Addition
+objective: To verify that no new book record is added to the database if the user cancels the operation before submitting the form.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user should be redirected to the list of book records without the new book being added, indicating that the data was not saved to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away Prevents Data Save
+objective: To verify that navigating away from the book creation form without submitting it prevents the data from being saved.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Genres' or 'Home'.
+expectedResult: The application should navigate to the selected page without saving the entered data, and no new book record should be added to the database.
+

@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Verify field validations with special characters for Title
+objective: Verify that the Title field rejects special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: In the Title field, enter a string with special characters, e.g., '@#$%^&*'.
+  - Step 3: Fill in the rest of the fields with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Title field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 2
+testCaseName: Verify field validations with special characters for Author
+objective: Ensure that the Author field rejects special characters and prompts an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Author field, where you should enter special characters, e.g., '!@#$%'.
+  - Step 3: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Author field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify field validations with special characters for Genre
+objective: To check that the Genre field rejects special characters and shows an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Genre field, where you should enter special characters, e.g., '%^&*()'.
+  - Step 3: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Genre field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify field validations with special characters for Description
+objective: Ensure that the Description field rejects special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Description field, where you should enter special characters, e.g., '<>?/:;'.
+  - Step 3: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Description field cannot contain special characters and the record should not be added to the database.
+
+Test Case: Test Case 5
+testCaseName: Verify successful book creation without special characters
+objective: To verify that a new book record can be successfully added when all fields are filled with valid data without special characters
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields without using any special characters.
+  - Step 3: Press the 'Submit' button.
+expectedResult: The new book record should be successfully added to the database, and the user should be redirected to the list of books with the newly added record visible.
+

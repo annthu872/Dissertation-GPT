@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author - Successful Update
+objective: Verify that the user can successfully update an author's details and the updated details are correctly reflected in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button after entering the data.
+expectedResult: The author's details are updated in the database, and the user is redirected to the list of authors where the updated records are displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author - Incorrect Data
+objective: Verify that the system displays error messages when incorrect data is entered in the author's details form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter incorrect data in the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button after entering the data.
+expectedResult: The system displays error messages indicating the incorrect data fields.
+
+Test Case: Test Case 3
+testCaseName: Update Author - Cancel Operation
+objective: Verify that the update operation can be canceled and no changes are made to the author's details in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: No changes are made to the author's details in the database, and the user is redirected to the list of authors.
+
+Test Case: Test Case 4
+testCaseName: Update Author - Navigation Away Cancels Update
+objective: Verify that navigating away from the update form without submitting cancels the update operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Bio' fields.
+  - Step 4: Without submitting, select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The update operation is canceled, no changes are made to the author's details in the database, and the user is redirected to the selected page.
+

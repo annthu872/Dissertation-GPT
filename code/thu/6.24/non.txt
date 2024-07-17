@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu Before Confirming Deletion
+objective: Verify that navigating away using the menu before confirming deletion cancels the deletion process and the genre record remains unchanged.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete. A confirmation dialog appears.
+  - Step 3: Without confirming deletion, select the menu item 'Books'.
+expectedResult: The application navigates to the 'Books' page, and the genre record previously selected for deletion remains unchanged in the database.
+reflect: yes
+explanation: This test case directly tests the scenario by simulating a user action of navigating away before confirming deletion, ensuring the genre record remains unchanged, which is the core of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away Using Menu to 'Genres' Before Confirming Deletion
+objective: Ensure that navigating to the 'Genres' page from the deletion confirmation dialog cancels the deletion and keeps the genre data.
+testSteps:
+  - Step 1: Go to the genre list/details page.
+  - Step 2: Press the 'Delete' button for the intended genre to delete. A confirmation dialog should appear.
+  - Step 3: Without confirming the deletion, click on the 'Genres' menu item.
+expectedResult: The application navigates to the 'Genres' page, showing an updated list of genres, including the genre that was selected for deletion, indicating the deletion process was canceled.
+reflect: yes
+explanation: This test case aligns with the scenario by demonstrating that navigating away to a specific page ('Genres') before confirming deletion cancels the deletion process, which is the intended outcome of the scenario.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away Using Menu to 'Authors' Before Confirming Deletion
+objective: Confirm that when a user navigates to the 'Authors' page from the deletion confirmation dialog, the deletion is canceled, and the genre remains in the database.
+testSteps:
+  - Step 1: Access the genre list/details page.
+  - Step 2: Click on the 'Delete' button next to the desired genre. A dialog for confirmation appears.
+  - Step 3: Before confirming deletion, select the 'Authors' menu item.
+expectedResult: The system redirects to the 'Authors' page, and the genre intended for deletion is not removed, indicating the deletion was canceled.
+reflect: yes
+explanation: This test case is relevant to the scenario as it tests the effect of navigating away to another specific page ('Authors') during the deletion confirmation phase, which should cancel the deletion process. It matches the scenario's intent.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Using Menu to 'Home' Before Confirming Deletion
+objective: Test that navigating to the 'Home' page from the deletion confirmation dialog cancels the deletion, leaving the genre data unchanged.
+testSteps:
+  - Step 1: Visit the genre list/details page.
+  - Step 2: Initiate deletion by clicking the 'Delete' button for a genre. A confirmation dialog is displayed.
+  - Step 3: Without confirming deletion, navigate to the 'Home' by selecting the 'Home' menu item.
+expectedResult: The application moves to the 'Home' page, and the genre that was up for deletion is not deleted, showing that the deletion process was successfully canceled.
+reflect: yes
+explanation: This test case fits the scenario by checking if navigating to the 'Home' page before deletion confirmation interrupts and cancels the deletion process, ensuring the genre data remains. It directly tests the scenario's requirements.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away Using Menu to 'API' Before Confirming Deletion
+objective: Verify that selecting the 'API' menu item from the deletion confirmation dialog cancels the deletion and does not remove the genre from the database.
+testSteps:
+  - Step 1: Open the genre list/details page.
+  - Step 2: Attempt to delete a genre by clicking the 'Delete' button. A confirmation dialog should pop up.
+  - Step 3: Before confirming the deletion, click on the 'API' menu item.
+expectedResult: The system redirects to the 'API' page, and the deletion of the genre is not executed, indicating the process was canceled.
+reflect: yes
+explanation: This test case is pertinent to the scenario as it explores the outcome of navigating to a less common destination ('API' page) during the deletion confirmation stage, which should also cancel the deletion. It adheres to the scenario's exploration of user navigation actions interrupting the deletion process.
+

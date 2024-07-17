@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Validate Genre Creation with Special Characters in Name
+objective: Verify that the system prevents the creation of a new genre with special characters in the genre name and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: In the 'Name' field, enter a genre name with special characters (e.g., 'Sci-Fi@#').
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that special characters are not allowed in the genre name.
+
+Test Case: Test Case 2
+testCaseName: Validate Successful Genre Creation
+objective: Verify that the system allows the creation of a new genre with valid data and displays the updated list of genres including the newly added record.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: In the 'Name' field, enter a valid genre name without special characters (e.g., 'Science Fiction').
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre record is successfully added to the database, and the user is redirected to the updated list of genres including the newly added genre.
+
+Test Case: Test Case 3
+testCaseName: Validate Genre Creation Cancellation
+objective: Verify that the system does not save the genre data when the user cancels the creation process and returns to the list of genres without making any changes.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of genres without the new genre being added to the database.
+
+Test Case: Test Case 4
+testCaseName: Validate Navigation Away from Genre Creation
+objective: Verify that navigating away from the genre creation form without submitting it does not save the entered data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', navigate to another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system does not save the partially entered genre data and displays the selected page without adding the new genre to the database.
+

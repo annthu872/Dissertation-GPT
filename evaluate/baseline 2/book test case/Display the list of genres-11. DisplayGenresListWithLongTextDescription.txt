@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List with Pagination
+objective: Ensure that the genres list is displayed correctly with pagination functionality, allowing users to navigate through different pages of genres.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Observe the first page of the genres list.
+  - Step 4: Click on the 'Next' button below the list.
+  - Step 5: Observe the second page of the genres list.
+expectedResult: The first page of the genres list should display up to 10 items, each with an id, name, and description. Upon clicking the 'Next' button, the next 10 records should be displayed on the second page.
+
+Test Case: Test Case 2
+testCaseName: Verify Genres List Pagination Using Page Numbers
+objective: To confirm that users can navigate through the genres list using page numbers in the pagination block.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Observe the first page of the genres list.
+  - Step 4: Click on the page number '2' in the pagination block.
+  - Step 5: Observe the genres list on the second page.
+expectedResult: The application should display the first page of the genres list with up to 10 items initially. After clicking on page number '2', the application should display the next 10 records of genres on the second page.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Long Text Description in Genres List
+objective: Ensure that long text descriptions in the genres list are displayed properly without breaking the layout.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Scroll through the list to find a genre with a long text description.
+  - Step 4: Observe how the long text description is displayed.
+expectedResult: Genres with long text descriptions should be displayed properly, ensuring that the text is either truncated with an ellipsis or wrapped correctly to maintain the layout of the list.
+

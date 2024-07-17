@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Data
+objective: Verify that the book record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the list of books with the updated record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Nonexistent Author
+objective: Verify that an error message is displayed when trying to update a book with a nonexistent author
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter a valid Title, Genre, Description, and Publication Date but an Author that does not exist in the database.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the author does not exist.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the update operation can be canceled and no data is updated in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not updated in the database, and the list of book records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Update Book with Invalid Data
+objective: Verify that the system displays incorrect data messages when trying to update a book with invalid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter invalid data for one or more fields (e.g., empty Title, invalid Publication Date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: Incorrect data messages are displayed for the fields with invalid data.
+

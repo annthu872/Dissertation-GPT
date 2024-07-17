@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of genre deletion via Cancel button
+objective: Ensure that when a user initiates the deletion of a genre but decides to cancel, the genre is not deleted and remains in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The genre list/details page is displayed without the selected genre being deleted, confirming the cancellation operation was successful.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the cancellation of a deletion action results in the genre not being deleted, which is the core objective of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancelling genre deletion
+objective: To confirm that after cancelling a genre deletion, navigating to other pages like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting the genre.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application navigates to the selected page, displaying updated data with the genre still present, indicating no deletion occurred.
+reflect: yes
+explanation: Although this test case extends the scenario by verifying the application's behavior after cancellation and navigation, it still reflects the core scenario. It ensures that the cancellation of the deletion is effective across different sections of the application, which is a critical aspect of verifying the cancellation functionality.
+

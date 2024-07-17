@@ -1,0 +1,160 @@
+{
+    "1. Scenario Date Range Not Specified1.txt0": {},
+    "1. Scenario Date Range Not Specified1.txt1": {
+        "testCaseName": "Display Books Without Date Range Specified",
+        "objective": "Verify that the application displays the list of books without any date range specified by the user.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: Observe the list of books displayed without entering any date range."
+        ],
+        "expectedResult": "The application displays the list of books without filtering by date range. The list should show up to 10 items per page with columns for id, Title, Author, Genre, and Publication date.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the scenario by verifying the application's behavior when no date range is specified. It checks if the list of books is displayed without any date filtering, which is the core of the given test scenario."
+    },
+    "1. Scenario Date Range Not Specified1.txt2": {
+        "testCaseName": "Pagination Functionality Without Date Range",
+        "objective": "Verify that the pagination functionality works correctly without any date range specified.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: Observe the initial list of books displayed without entering any date range.",
+            "- Step 3: Click the 'Next' button below the records in the pagination block.",
+            "- Step 4: Observe the next set of books displayed."
+        ],
+        "expectedResult": "Upon clicking the 'Next' button, the application should display the next 10 records of books without applying any date range filter. The list should continue to show columns for id, Title, Author, Genre, and Publication date.",
+        "reflect": "yes",
+        "explanation": "Although this test case focuses on the pagination functionality, it still reflects the given scenario by ensuring that the application does not apply a date range filter when navigating through pages. It tests a specific aspect (pagination) of the scenario's broader requirement (displaying books without a date range)."
+    },
+    "2. Scenario Date Range Format Incorrect1.txt0": {},
+    "2. Scenario Date Range Format Incorrect1.txt1": {
+        "testCaseName": "Verify date range format incorrect message for book list filtering",
+        "objective": "Verify that the application displays an error or warning message when the user inputs an incorrect date range format for filtering the book list.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: In the date range input forms above the list of books, enter an incorrect date format. For example, use 'dd/mm/yyyy' instead of 'mm/dd/yyyy', or input text that is not a date.",
+            "- Step 3: Click the refresh button to the right from the date inputs."
+        ],
+        "expectedResult": "The application should display an error or warning message indicating that the date range format is incorrect.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the scenario by verifying the application's response to an incorrect date range format. It tests the system's ability to recognize and alert the user about the incorrect format, which is the core of the given scenario."
+    },
+    "2. Scenario Date Range Format Incorrect1.txt2": {
+        "testCaseName": "Verify no books displayed with incorrect date range format",
+        "objective": "Verify that the application does not display any books when the user inputs an incorrect date range format for filtering.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: In the date range input forms above the list of books, enter an incorrect date format (e.g., 'abcd' or '32/13/2020').",
+            "- Step 3: Click the refresh button to the right from the date inputs."
+        ],
+        "expectedResult": "The application should not display any books and may show a message indicating no books found due to incorrect date range format.",
+        "reflect": "yes",
+        "explanation": "Although this test case focuses on the outcome of entering an incorrect date range format (i.e., no books displayed), it still reflects the given scenario. It tests a different aspect of the system's handling of incorrect date formats by checking the filtering functionality's robustness against invalid inputs. It complements the first test case by ensuring that the system not only alerts the user about the error but also prevents incorrect data from affecting the displayed results."
+    },
+    "3. Successful display of the first page of books1.txt0": {},
+    "3. Successful display of the first page of books1.txt1": {
+        "testCaseName": "Verify successful display of the first page of books without filters",
+        "objective": "Verify that the application successfully displays the first page of books without applying any date filters",
+        "testSteps": [
+            "- Step 1: Navigate to the application's main page.",
+            "- Step 2: Select the item 'Books' from the main menu or the designated area.",
+            "- Step 3: Observe the list of books displayed on the page."
+        ],
+        "expectedResult": "The application displays the first page of the list of books, showing up to 10 items. Each item should display the book's id, title, author, genre, and publication date.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality of displaying the first page of books without any filters, which is the core objective of the scenario."
+    },
+    "4. Navigation to the next page of books1.txt0": {},
+    "4. Navigation to the next page of books1.txt1": {
+        "testCaseName": "Navigate to the Next Page of Books Using 'Next' Button",
+        "objective": "Verify that the user can navigate to the next page of books by clicking the 'Next' button",
+        "testSteps": [
+            "- Step 1: Navigate to the main page of the application.",
+            "- Step 2: Select the item 'Books' from the available options.",
+            "- Step 3: Ensure the list of books is displayed with up to 10 items on the current page.",
+            "- Step 4: Click the 'Next' button located below the records in the pagination block."
+        ],
+        "expectedResult": "The application displays the next 10 records of the books in the database on a new page.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality of the 'Next' button in navigating to the next page of books, which is the core action described in the scenario."
+    },
+    "5. Navigation to a specific page of books1.txt0": {},
+    "5. Navigation to a specific page of books1.txt1": {
+        "testCaseName": "Navigation to a specific page of books via pagination",
+        "objective": "Verify that the user can navigate to a specific page of books using the pagination feature",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section from the main menu.",
+            "- Step 2: Observe the list of books displayed on the first page.",
+            "- Step 3: Click the 'Next' button located below the list of books.",
+            "- Step 4: Observe the list of books on the second page."
+        ],
+        "expectedResult": "The user should be able to see the next 10 records of books on the second page after clicking the 'Next' button.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality of the pagination feature, allowing navigation to a specific page (in this case, the second page) of books."
+    },
+    "5. Navigation to a specific page of books1.txt2": {
+        "testCaseName": "Navigation to a specific page of books by page number",
+        "objective": "Verify that the user can navigate to a specific page of books by clicking on the page number in the pagination block",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section from the main menu.",
+            "- Step 2: Observe the list of books displayed on the first page.",
+            "- Step 3: Click on the page number '2' in the pagination block below the list of books.",
+            "- Step 4: Observe the list of books on the second page."
+        ],
+        "expectedResult": "The user should be able to see the next 10 records of books on the second page after clicking on the page number '2'.",
+        "reflect": "yes",
+        "explanation": "This test case also directly reflects the given test scenario by testing another aspect of the pagination feature, which is navigating to a specific page by selecting its number. It ensures that users can jump to a desired page without sequentially navigating through pages."
+    },
+    "6. Last page of books display1.txt0": {},
+    "6. Last page of books display1.txt1": {
+        "testCaseName": "Verify Last Page Navigation with Default Book List",
+        "objective": "Ensure that the user can navigate to the last page of the book list using the pagination feature.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: Observe the list of books displayed on the first page.",
+            "- Step 3: Click the 'Next' button repeatedly until the 'Next' button is disabled or click the highest page number visible in the pagination block.",
+            "- Step 4: Observe the list of books on the last page."
+        ],
+        "expectedResult": "The last page of books is displayed, showing up to 10 items, and the 'Next' button is disabled if there are no more records to display.",
+        "reflect": "yes",
+        "explanation": "This test case directly reflects the given test scenario by verifying the functionality of navigating to the last page of books display using the pagination feature."
+    },
+    "6. Last page of books display1.txt2": {
+        "testCaseName": "Verify Last Page Navigation with Date Filter Applied",
+        "objective": "Ensure that the user can navigate to the last page of the filtered book list by publication date.",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: Enter a specific date range in the date range input forms above the list of books.",
+            "- Step 3: Click the 'Refresh' button to apply the date filter.",
+            "- Step 4: Observe the filtered list of books displayed.",
+            "- Step 5: Click the 'Next' button repeatedly until the 'Next' button is disabled or click the highest page number visible in the pagination block after filtering.",
+            "- Step 6: Observe the list of books on the last page after applying the date filter."
+        ],
+        "expectedResult": "The last page of the filtered list of books by publication date is displayed, showing up to 10 items, and the 'Next' button is disabled if there are no more records to display within the specified date range.",
+        "reflect": "yes",
+        "explanation": "Although this test case introduces an additional step of applying a date filter, it still tests the core scenario of navigating to the last page of books display. It adds a layer of complexity by ensuring the pagination works correctly even with filters applied, which is a relevant variation of the given test scenario."
+    },
+    "7. Attempt to navigate beyond the last page of books1.txt0": {},
+    "7. Attempt to navigate beyond the last page of books1.txt1": {
+        "testCaseName": "Attempt to navigate beyond the last page of books via Next button",
+        "objective": "Verify that the user cannot navigate beyond the last page of books when using the Next button",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: If not already on the last page, click the 'Next' button repeatedly until reaching the last page of books.",
+            "- Step 3: Once on the last page, attempt to click the 'Next' button again."
+        ],
+        "expectedResult": "The application should not navigate to a new page or display an error message indicating there are no more pages/books to display.",
+        "reflect": "yes",
+        "explanation": "This test case directly addresses the test scenario by attempting to navigate beyond the last page of books using the Next button, which is the specific action the scenario aims to test."
+    },
+    "7. Attempt to navigate beyond the last page of books1.txt2": {
+        "testCaseName": "Attempt to navigate beyond the last page of books by selecting a page number",
+        "objective": "Verify that the user cannot navigate beyond the last available page by selecting a page number that doesn't exist",
+        "testSteps": [
+            "- Step 1: Navigate to the 'Books' section of the application.",
+            "- Step 2: Identify the last available page number by observing the pagination block.",
+            "- Step 3: Attempt to select a page number greater than the last available page by modifying the URL or using developer tools (if the UI does not allow direct input)."
+        ],
+        "expectedResult": "The application should either redirect the user to the last available page or display an error message indicating the requested page does not exist.",
+        "reflect": "yes",
+        "explanation": "Although this test case explores a different method (selecting a page number directly) to navigate beyond the last page, it still aligns with the test scenario's objective of testing the system's behavior when attempting to go beyond the last page of books. It provides a comprehensive approach by covering another possible user action that wasn't explicitly mentioned but is within the scope of the scenario."
+    }
+}

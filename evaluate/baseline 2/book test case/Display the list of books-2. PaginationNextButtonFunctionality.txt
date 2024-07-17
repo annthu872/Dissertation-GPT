@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Next Button Functionality Without Date Filter
+objective: Ensure that the 'Next' button correctly displays the next 10 records of books
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the 'Next' button located below the records in the pagination block.
+expectedResult: The application should display the next 10 records of books, moving the user to the second page of the book list.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality With Date Filter
+objective: To verify that the pagination works correctly after applying a date range filter
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Specify a date range in the date input forms above the data.
+  - Step 3: Click the refresh button to apply the date filter.
+  - Step 4: Observe the filtered list of books displayed.
+  - Step 5: Click on the 'Next' button located below the records in the pagination block.
+expectedResult: The application should display the next 10 records of books within the specified date range, moving the user to the next page of the filtered book list.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Next Button Functionality on Last Page
+objective: Ensure that the 'Next' button is either disabled or not present on the last page of the book list
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Continuously click the 'Next' button until reaching the last page of the book list.
+expectedResult: On the last page of the book list, the 'Next' button should be disabled or not present, indicating that the user is on the last page.
+
+Test Case: Test Case 4
+testCaseName: Verify Pagination Functionality by Selecting Page Number
+objective: To verify that users can navigate to a specific page by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's book listing page.
+  - Step 2: Observe the pagination block below the list of books.
+  - Step 3: Click on a specific page number in the pagination block.
+expectedResult: The application should display the list of books corresponding to the selected page number.
+

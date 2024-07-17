@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application displays the list of books without applying date filters
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page, including their id, title, author, genre, and publication date, without any date filter applied.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Ensure that the pagination functionality works correctly for navigating through the list of books
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number from the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books with Valid Date Range
+objective: To verify that the application filters and displays books that fall within a specified publication date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books with publication dates within the specified date range.
+
+Test Case: Test Case 4
+testCaseName: Verify Filtering with Boundary Date Range
+objective: Ensure that the application correctly filters books when the boundary dates of publication are used as the date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify the earliest publication date available in the database as the start date and the most recent publication date as the end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display all books, as all publication dates fall within the specified boundary date range.
+
+Test Case: Test Case 5
+testCaseName: Verify No Results Found for Out of Range Date Filter
+objective: To verify that the application displays an appropriate message or indication when no books match the specified date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a date range that does not include any book's publication date.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed or any message indicating no results found.
+expectedResult: The application should display a message or indication that no books match the specified date range filter.
+

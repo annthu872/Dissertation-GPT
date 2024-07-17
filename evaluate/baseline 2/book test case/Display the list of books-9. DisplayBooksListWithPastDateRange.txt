@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify displaying all books without date filter
+objective: Verify that the application displays up to 10 books per page without any date range filter applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list without applying any date range filter.
+expectedResult: The application should display up to 10 books on the first page without any date range filter applied. The list should include columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality
+objective: Verify that the user can navigate through pages to see more books beyond the initial 10 displayed
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number.
+expectedResult: Upon clicking 'Next' or a specific page number, the application should display the next set of up to 10 books. Pagination should work correctly, allowing the user to view additional books beyond the first 10.
+
+Test Case: Test Case 3
+testCaseName: Verify filtering books with a valid date range
+objective: Verify that the application displays books that fall within a specified publication date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a valid start date and end date in the date range filters.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application should display only the books with publication dates within the specified date range. The list should update to reflect this filter.
+
+Test Case: Test Case 4
+testCaseName: Verify filtering books with a past date range
+objective: Verify that the application correctly filters and displays books published within a past date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a start date and end date in the past in the date range filters.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application should display books that were published within the specified past date range. No books published after the end date should be displayed.
+
+Test Case: Test Case 5
+testCaseName: Verify no results found message for an invalid date range
+objective: Verify that the application displays a message when no books are found within a specified date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a start date and end date in the date range filters where no books were published.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application should display a message indicating that no books were found within the specified date range.
+

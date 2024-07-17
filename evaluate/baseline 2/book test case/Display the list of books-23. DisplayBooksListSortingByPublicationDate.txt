@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application correctly displays the initial list of books without any date filtering
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page, including the columns for id, Title, Author, Genre, and Publication date. Pagination options should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Ensure that the pagination functionality works correctly, allowing users to view additional books beyond the initial 10 displayed
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number from the pagination block.
+  - Step 3: Observe the list of books displayed on the next page.
+expectedResult: The application should display the next set of up to 10 books, based on the pagination selection, including all specified columns (id, Title, Author, Genre, and Publication date).
+
+Test Case: Test Case 3
+testCaseName: Verify Books List Filtering by Publication Date
+objective: To verify that the application correctly filters and displays books within a specified publication date range
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Specify a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books published within the specified date range, including all relevant columns (id, Title, Author, Genre, and Publication date). If no books match the criteria, an appropriate message should be displayed.
+

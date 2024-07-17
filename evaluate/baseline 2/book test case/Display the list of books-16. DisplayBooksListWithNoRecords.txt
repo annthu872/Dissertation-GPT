@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books List with No Records
+objective: Verify that the application correctly displays an empty or no records message when there are no books to display in the list.
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Observe the list of books displayed.
+expectedResult: The application should display a message indicating that there are no books to display, such as 'No records found' or 'No books available'.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination with No Records
+objective: Verify that the pagination controls are either hidden or disabled when there are no books to display.
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Observe the pagination controls below the list.
+expectedResult: The pagination controls should be either hidden or disabled, indicating that there are no additional pages of books to display.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering by Date with No Records
+objective: Verify that the application correctly displays an empty or no records message when filtering by a date range that matches no books.
+testSteps:
+  - Step 1: Navigate to the Books section of the application.
+  - Step 2: Specify a date range in the date input forms that matches no existing records.
+  - Step 3: Hit the refresh button to apply the date filter.
+expectedResult: The application should display a message indicating that there are no books to display within the specified date range, such as 'No records found' or 'No books available for the selected dates'.
+
+Test Case: Test Case 4
+testCaseName: Verify Display of Books List Columns with No Records
+objective: Verify that the application correctly displays the column headers even when there are no books to display.
+testSteps:
+  - Step 1: Navigate to the Books section of the application where no books are available to be displayed.
+  - Step 2: Observe the list where books would normally be listed.
+expectedResult: The application should still display the column headers (id, Title, Author, Genre, Publication date) even though there are no books to display.
+

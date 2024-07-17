@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List on Selection
+objective: Ensure that the genres list is displayed correctly when the 'Genres' item is selected
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Genres' item from the menu.
+  - Step 3: Observe the list that is displayed.
+expectedResult: A list of genres should be displayed with up to 10 items. Each item should show the 'id', 'Name', and 'Description' columns.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: To check if the pagination functionality works correctly for navigating through the genres list
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Genres' to view the list of genres.
+  - Step 2: If more than 10 genres are available, click the 'Next' button below the list.
+  - Step 3: Observe the list for changes.
+  - Step 4: Click on a page number to navigate to a different page of the list.
+expectedResult: Upon clicking 'Next', the next set of up to 10 genres should be displayed. When a specific page number is selected, the list should jump to that page, displaying the corresponding set of genres.
+
+Test Case: Test Case 3
+testCaseName: Verify Accessibility Features for Displaying Genres List
+objective: Ensure that the genres list is accessible, including navigation through pagination using keyboard shortcuts
+testSteps:
+  - Step 1: Navigate to the application's main page using a keyboard or screen reader.
+  - Step 2: Use keyboard navigation to select the 'Genres' item and activate it.
+  - Step 3: Verify that the list of genres is accessible and readable via screen reader.
+  - Step 4: Use keyboard navigation to interact with the pagination controls ('Next' button and page numbers).
+expectedResult: Users should be able to navigate through the genres list and pagination controls using keyboard shortcuts or screen readers, ensuring the application is accessible.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify form reset after cancellation during new author creation
+objective: Ensure that the form for adding a new author resets after the user cancels the operation
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The form should reset, clearing all entered data, and the list of authors should be displayed without the new author being added.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation away from form resets data
+objective: To confirm that navigating away from the new author form without submitting it discards any entered data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter data into the 'Name' and 'Bio' fields.
+  - Step 4: Without submitting, navigate to another page by selecting any menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected page without saving the entered data, and the form should reset to its default state when revisited.
+
+Test Case: Test Case 3
+testCaseName: Verify error handling on incorrect data submission
+objective: To ensure that the form correctly handles and displays errors when incorrect data is submitted
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter incorrect or invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The form should display messages indicating what data was entered incorrectly, without adding the new author to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify successful author addition
+objective: To confirm that a new author can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The new author should be added to the database, and the user should be redirected to the list of authors, where the new record is visible.
+

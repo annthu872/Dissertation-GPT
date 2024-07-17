@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify form persistence with incorrect data entry
+objective: To ensure that when incorrect data is entered, the form retains the entered data and displays messages for incorrect fields.
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: In the form, enter incorrect data for one or more fields (e.g., enter numbers in the 'Title' field).
+  - Step 3: Press the 'Submit' button.
+expectedResult: The form is redisplayed with the previously entered data still present in their respective fields and messages indicating the incorrect data.
+
+Test Case: Test Case 2
+testCaseName: Verify successful book creation
+objective: To verify that a new book record is successfully added to the database when all required data is entered correctly.
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Correctly fill in all the fields (Title, Author, Genre, Description, Publication date) with valid data.
+  - Step 3: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the user is redirected to the list of books where the newly added book is visible.
+
+Test Case: Test Case 3
+testCaseName: Verify form reset on cancel
+objective: To verify that the form data is not saved and is reset when the 'Cancel' button is clicked.
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of books without the data being saved, and no new record is added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from form does not save data
+objective: To ensure that navigating away from the form without submitting does not save the data entered.
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Without submitting, select another menu item like 'Genres' or 'Home'.
+expectedResult: The user is redirected to the selected page without the form data being saved, and no new book record is added to the database.
+

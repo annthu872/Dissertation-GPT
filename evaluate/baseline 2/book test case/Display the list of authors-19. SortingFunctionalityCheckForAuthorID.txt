@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Sorting Functionality by Author ID in Ascending Order
+objective: Ensure that the sorting functionality works correctly and authors are displayed in ascending order based on their ID
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu to display the list of authors.
+  - Step 3: Click on the 'ID' column header to sort the authors by their ID in ascending order.
+expectedResult: The list of authors should be sorted by their ID in ascending order, starting with the lowest ID at the top.
+
+Test Case: Test Case 2
+testCaseName: Verify Sorting Functionality by Author ID in Descending Order
+objective: Ensure that the sorting functionality works correctly and authors are displayed in descending order based on their ID
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu to display the list of authors.
+  - Step 3: If not already sorted, click on the 'ID' column header once to sort in ascending order.
+  - Step 4: Click on the 'ID' column header again to sort the authors by their ID in descending order.
+expectedResult: The list of authors should be sorted by their ID in descending order, starting with the highest ID at the top.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality in Authors List
+objective: Ensure that the pagination functionality works correctly and users can navigate through different pages to see more authors
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu to display the list of authors.
+  - Step 3: Scroll down to the bottom of the list to find the pagination block.
+  - Step 4: Click on the 'Next' button or select a specific page number to view more authors.
+expectedResult: The application should display the next set of authors (up to 10 items) based on the page selection in the pagination block.
+

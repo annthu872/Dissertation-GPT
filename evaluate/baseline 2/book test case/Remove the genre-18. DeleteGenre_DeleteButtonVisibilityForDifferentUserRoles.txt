@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Verify Delete Button Visibility for Admin User
+objective: Ensure that the 'Delete' button is visible to users with Admin role on the genre list/details page
+testSteps:
+  - Step 1: Log in as a user with Admin role.
+  - Step 2: Navigate to the genre list/details page.
+  - Step 3: Identify a genre you wish to delete.
+expectedResult: The 'Delete' button should be visible next to the genre details.
+
+Test Case: Test Case 2
+testCaseName: Verify Delete Button Visibility for Non-Admin User
+objective: Ensure that the 'Delete' button is not visible to users without Admin role on the genre list/details page
+testSteps:
+  - Step 1: Log in as a user without Admin role.
+  - Step 2: Navigate to the genre list/details page.
+  - Step 3: Identify a genre.
+expectedResult: The 'Delete' button should not be visible next to the genre details.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Deletion Confirmation for Admin User
+objective: Ensure that an Admin user can delete a genre after confirming the deletion
+testSteps:
+  - Step 1: Log in as a user with Admin role.
+  - Step 2: Navigate to the genre list/details page and click the 'Delete' button next to a genre.
+  - Step 3: On the dialog page, confirm deletion by pressing the 'Confirm' button.
+expectedResult: The genre should be deleted from the list, and the application should not display it anymore.
+
+Test Case: Test Case 4
+testCaseName: Verify Genre Deletion Cancellation for Admin User
+objective: Ensure that an Admin user can cancel the deletion of a genre
+testSteps:
+  - Step 1: Log in as a user with Admin role.
+  - Step 2: Navigate to the genre list/details page and click the 'Delete' button next to a genre.
+  - Step 3: On the dialog page, press the 'Cancel' button.
+expectedResult: The genre should not be deleted from the list, and the application should still display it.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation After Cancelling Genre Deletion
+objective: Ensure that after cancelling the deletion of a genre, the user can navigate to other pages without deleting the genre
+testSteps:
+  - Step 1: Log in as a user with Admin role.
+  - Step 2: Navigate to the genre list/details page and click the 'Delete' button next to a genre.
+  - Step 3: On the dialog page, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application navigates to the selected page without deleting the genre, and the data is updated accordingly.
+

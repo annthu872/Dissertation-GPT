@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation dialog is displayed for genre deletion
+objective: Ensure that the application prompts the user with a confirmation dialog when attempting to delete a genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete.
+  - Step 3: Click the 'Delete' button adjacent to the targeted genre.
+expectedResult: A confirmation dialog should be displayed asking the user to confirm the deletion of the selected genre.
+
+Test Case: Test Case 2
+testCaseName: Verify genre is deleted after confirmation
+objective: To confirm that the genre is successfully deleted from the database upon user confirmation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete.
+  - Step 3: Click the 'Delete' button adjacent to the targeted genre.
+  - Step 4: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be deleted from the database, and the list/details page should no longer display the deleted genre.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of genre deletion
+objective: To ensure that the genre is not deleted from the database when the user cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete.
+  - Step 3: Click the 'Delete' button adjacent to the targeted genre.
+  - Step 4: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted from the database, and the user should be redirected back to the list of genres without any changes.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from deletion cancels operation
+objective: To verify that navigating away from the deletion confirmation dialog cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete.
+  - Step 3: Click the 'Delete' button adjacent to the targeted genre.
+  - Step 4: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre should not be deleted from the database, and the user should be redirected to the selected page with the data unchanged.
+

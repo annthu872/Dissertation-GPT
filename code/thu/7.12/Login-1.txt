@@ -1,0 +1,5 @@
+1. LoginWithEmptyUsername
+2. LoginWithEmptyPassword
+3. LoginWithBothUsernameAndPasswordEmpty
+4. Successful Login
+5. Incorrect Credentials

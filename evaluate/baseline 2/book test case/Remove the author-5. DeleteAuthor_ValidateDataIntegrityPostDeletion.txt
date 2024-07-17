@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Author and Validate Data Integrity
+objective: Verify that deleting an author removes the author from the list and maintains data integrity post-deletion
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with deletion.
+expectedResult: The author should be removed from the list, and the application should maintain data integrity by updating related records accordingly.
+
+Test Case: Test Case 2
+testCaseName: Cancel Delete Operation from Confirmation Dialog
+objective: Verify that cancelling the delete operation does not remove the author and the data remains unchanged
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort deletion.
+expectedResult: The author remains in the list, and no data is deleted from the database.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away from Delete Confirmation Without Deleting
+objective: Verify that navigating away from the delete confirmation dialog without confirming deletion retains the author's data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's data is not deleted from the database, and the user is able to view the updated data on the navigated page.
+

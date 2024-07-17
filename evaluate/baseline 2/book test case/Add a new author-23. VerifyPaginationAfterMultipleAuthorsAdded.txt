@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify successful author creation and pagination
+objective: To verify that a new author can be successfully added to the database and is correctly displayed in the authors list with pagination after multiple authors have been added.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to add a new author.
+  - Step 3: Enter valid data for the author's name and bio in the form.
+  - Step 4: Press the 'Submit' button to add the author.
+  - Step 5: Repeat steps 2 to 4 for multiple authors to ensure pagination is needed.
+  - Step 6: Navigate through the pagination controls to view the newly added authors.
+expectedResult: After adding multiple authors, the user should be able to navigate through the pages using pagination controls and see all the authors listed, including the newly added ones.
+
+Test Case: Test Case 2
+testCaseName: Verify author creation with invalid data
+objective: To ensure the system validates the data entered for a new author and displays appropriate error messages for invalid data.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to add a new author.
+  - Step 3: Enter invalid data for the author's name and/or bio in the form.
+  - Step 4: Press the 'Submit' button to attempt adding the author.
+expectedResult: The system should display error messages indicating the data entered is incorrect, and the author should not be added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of author creation
+objective: To verify that the author creation process can be cancelled at any point before submission without saving any data to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to add a new author.
+  - Step 3: Start entering data into the form fields for the author's name and bio.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+  - Step 5: Optionally, navigate to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' after pressing 'Cancel'.
+expectedResult: The author creation process should be cancelled, no data should be saved to the database, and the user should be redirected back to the list of authors or to the selected section without any changes.
+

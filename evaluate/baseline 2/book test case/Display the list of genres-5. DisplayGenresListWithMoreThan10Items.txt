@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of First Page of Genres List
+objective: Verify that the application correctly displays the first page of the genres list with up to 10 items
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application should display the first page of the genres list, showing up to 10 items. Each item should display an id, name, and description.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality to the Next Page
+objective: Verify that the user can navigate to the next page of the genres list using the 'Next' button
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: If there are more than 10 genres, click the 'Next' button below the list.
+  - Step 4: Observe the list of genres displayed on the next page.
+expectedResult: The application should display the second page of the genres list with up to 10 items. Each item should display an id, name, and description. The 'Next' button should navigate the user to the next set of records.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality Using Page Numbers
+objective: Verify that the user can navigate to a specific page of the genres list by clicking on the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu.
+  - Step 3: Click on a page number in the pagination block at the bottom of the list.
+  - Step 4: Observe the list of genres displayed on the selected page.
+expectedResult: The application should display the selected page of the genres list with up to 10 items. Each item should display an id, name, and description. The page numbers should allow the user to navigate directly to the selected page.
+

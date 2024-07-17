@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify database connection error during author deletion
+objective: Ensure the application handles database connection errors gracefully when a user attempts to delete an author
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Simulate a database connection error.
+expectedResult: The application should display an error message indicating that the author could not be deleted due to a database connection error. The author's record should remain in the database.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of author deletion
+objective: Ensure that cancelling the deletion of an author does not remove the author from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The application should not delete the author's record from the database and should return the user to the list of authors.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling author deletion
+objective: Ensure that after cancelling the deletion of an author, the user can navigate to other sections without affecting the author's record
+testSteps:
+  - Step 1: Navigate to the author list/details page and click the 'Delete' button next to the author you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to other sections of the application such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's record should remain unchanged in the database, and the user should be able to view updated data in the section they navigate to.
+

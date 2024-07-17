@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Invalid Page Number Handling When Navigating Author Pages
+objective: Verify that the application handles invalid page numbers gracefully when a user attempts to navigate to a page number that does not exist in the Authors list.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the number of available pages based on the total number of authors divided by 10 (items per page).
+  - Step 3: Attempt to navigate to a page number that is greater than the total number of available pages by entering the number manually in the page navigation input or manipulating the URL directly.
+  - Step 4: Press Enter or navigate to the page after changing the page number.
+expectedResult: The application should display a message indicating that the requested page does not exist or redirect the user to the nearest valid page number. No list of authors should be displayed for the invalid page number.
+
+Test Case: Test Case 2
+testCaseName: Invalid Page Number Handling With Negative Value
+objective: Verify that the application prevents navigation to a page with a negative number in the Authors list.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Attempt to navigate to a page by entering a negative number in the page navigation input or manipulating the URL to a negative number.
+  - Step 3: Press Enter or navigate to the page after changing the page number.
+expectedResult: The application should either display an error message indicating that the page number is invalid or redirect the user to the first page of the Authors list. No list of authors should be displayed for a negative page number.
+
+Test Case: Test Case 3
+testCaseName: Invalid Page Number Handling With Non-numeric Value
+objective: Verify that the application handles non-numeric values in the page navigation input when navigating the Authors list.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Attempt to navigate to a page by entering a non-numeric value (e.g., 'abc') in the page navigation input or manipulating the URL to include a non-numeric value.
+  - Step 3: Press Enter or navigate to the page after changing the page number.
+expectedResult: The application should display an error message indicating that the page number is invalid and prevent navigation to a non-existent page. The current page displaying the list of authors should remain unchanged.
+

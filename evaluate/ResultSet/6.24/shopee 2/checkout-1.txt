@@ -1,16 +1,19 @@
-1. Attempt to Add Shipping Address with Full Name Containing Numbers
-2. Attempt to Add Shipping Address with Full Name Less Than 2 Letters
-3. Attempt to Add Shipping Address with Phone Number Not Following Format
-4. Attempt to Add Shipping Address with Phone Number Containing Letters
-5. Attempt to Add Shipping Address with Location's Address Not on Map
-6. Attempt to Apply Disabled Voucher Code
-7. Attempt to Apply Incorrect Voucher Code
-8. Successful Purchase with Default Settings
-9. Purchase with Changed Shipping Address
-10. Purchase with New Shipping Address
-11. Purchase with Non-default Payment Method
-12. Purchase with Application Voucher
-13. Purchase with Shop Voucher
-14. Purchase with Changed Shipping Option
-15. Purchase with Note for Shop
-16. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+1. Successful Purchase with Default Settings
+2. Purchase with Changed Shipping Address
+3. Purchase with New Shipping Address
+4. Purchase with Non-default Payment Method
+5. Purchase with Application Voucher Applied
+6. Purchase with Shop Voucher Applied
+7. Purchase with Changed Shipping Option
+8. Purchase with Note for Shop Added
+9. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+10. User has no default shipping address
+11. Change Shipping Address Scenario
+12. User applies a valid application voucher code successfully
+13. User applies a valid shop voucher code successfully
+14. User changes shipping option to expedited shipping
+15. User changes shipping option to same-day delivery
+16. User changes shipping option to pick-up point delivery
+17. Attempt to add a new shipping address with a location that cannot be found on the map
+18. Attempt to apply a disabled voucher code to the order
+19. Attempt to apply an incorrect voucher code to the order

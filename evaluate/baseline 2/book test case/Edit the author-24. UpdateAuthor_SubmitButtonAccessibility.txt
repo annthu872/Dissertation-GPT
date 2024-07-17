@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Author Update
+objective: To verify that the author's details can be successfully updated and correctly reflected in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database. The list of authors displays the updated records.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Data Handling
+objective: To ensure the system correctly handles and displays messages for incorrectly entered data during author update.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter invalid data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Messages indicating the incorrect data are displayed. The author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Update Operation Error Handling
+objective: To verify that any errors during the update operation are handled and displayed to the user.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter valid data for the author's Name and Bio.
+  - Step 4: Simulate an error condition (e.g., database connection issue) and press the 'Submit' button.
+expectedResult: An error message is displayed. The author's details are not updated in the database.
+
+Test Case: Test Case 4
+testCaseName: Verify Cancel Operation During Author Update
+objective: To verify that pressing the 'Cancel' button during an author update discards changes and does not update the author in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The author's details are not updated in the database. The list of authors is displayed without the changes.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation Away From Update Page Does Not Save Data
+objective: To ensure that navigating away from the update page without submitting does not save any entered data.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Navigate away from the page by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database. The user is taken to the selected page without any changes being saved.
+

@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data
+objective: Verify that the author's details can be updated with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the list of authors with the updated record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid Data
+objective: Verify that the system displays error messages for invalid data entry
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: Incorrect data messages are displayed, and the author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Author Operation
+objective: Verify that the update operation can be canceled without making changes
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Click the 'Cancel' button before submitting.
+expectedResult: Data is not updated in the database, and the list of author records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Update Author with SQL Injection in Name Field
+objective: Verify that the application is secure against SQL Injection attacks through the Name field
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter an SQL injection code snippet into the 'Name' field (e.g., 'Robert'); DROP TABLE Authors;--').
+  - Step 4: Enter valid data into the 'Bio' field.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The application should display an error message or sanitize the input, preventing the SQL Injection attack. The database remains unchanged, and no harmful actions are executed.
+

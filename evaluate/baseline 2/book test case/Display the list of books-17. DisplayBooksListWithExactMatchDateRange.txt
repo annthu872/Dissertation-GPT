@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application displays the list of books without applying date range filter
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date. Pagination options should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Verify that the pagination functionality works correctly on the Books page
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number from the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page based on the pagination selection.
+
+Test Case: Test Case 3
+testCaseName: Verify Books List With Exact Match Date Range
+objective: Verify that the application displays the list of books that exactly match the user-provided date range
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Specify the start and end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books with publication dates within the specified date range. Each book should have columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 4
+testCaseName: Verify No Books Found for Out of Range Dates
+objective: Verify that the application displays an appropriate message when no books match the specified date range
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Specify a date range that does not match any book's publication dates.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the message displayed.
+expectedResult: The application should display a message indicating that no books were found matching the specified date range.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Sorting Functionality for Author Name in Ascending Order
+objective: Ensure that the user can sort the list of authors by name in ascending order
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Once the list of authors is displayed, click on the 'Name' column header to sort the authors by name in ascending order.
+expectedResult: The list of authors should be sorted by name in ascending order, from A to Z.
+
+Test Case: Test Case 2
+testCaseName: Verify Sorting Functionality for Author Name in Descending Order
+objective: Ensure that the user can sort the list of authors by name in descending order
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Once the list of authors is displayed, click on the 'Name' column header once to sort in ascending order.
+  - Step 4: Click on the 'Name' column header again to sort the authors by name in descending order.
+expectedResult: The list of authors should be sorted by name in descending order, from Z to A.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality in Authors List
+objective: Ensure that the user can navigate through different pages of authors using pagination
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Scroll down to the bottom of the list of authors to find the pagination block.
+  - Step 4: Click on the 'Next' button to move to the next page of authors.
+  - Step 5: Alternatively, click on a specific page number to jump directly to that page.
+expectedResult: The user should be able to navigate to the next page of authors or a specific page by using the pagination block, displaying up to 10 authors per page.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with ASCII Special Characters in Title
+objective: Verify that the application correctly displays book details when the title contains ASCII special characters
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that contains ASCII special characters (e.g., !, @, #, $, etc.) in its title.
+  - Step 3: Observe the book details page.
+expectedResult: The application should display the book details page with all the specified columns (id, Title, Author, Genre, Description, Publication date) correctly, including the special characters in the book title.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details with Unicode Special Characters in Title
+objective: Verify that the application correctly displays book details when the title contains Unicode special characters (e.g., emojis, symbols from non-Latin scripts)
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that contains Unicode special characters in its title.
+  - Step 3: Observe the book details page.
+expectedResult: The application should display the book details page with all the specified columns (id, Title, Author, Genre, Description, Publication date) correctly, accurately rendering the Unicode special characters in the book title.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Book Details with HTML Special Characters in Title
+objective: Verify that the application correctly displays book details when the title contains HTML special characters (e.g., &, <, >, ", ')
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that contains HTML special characters in its title.
+  - Step 3: Observe the book details page.
+expectedResult: The application should display the book details page with all the specified columns (id, Title, Author, Genre, Description, Publication date) correctly, ensuring that HTML special characters in the book title are properly escaped and displayed.
+

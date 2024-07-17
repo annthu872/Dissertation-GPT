@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality on Authors Page
+objective: Ensure that the pagination functionality works correctly by displaying up to 10 authors per page and allows navigation through pages using the 'Next' button.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list to ensure it displays up to 10 authors.
+  - Step 4: Click the 'Next' button below the list of authors.
+  - Step 5: Observe the list to ensure it displays a new set of up to 10 authors.
+expectedResult: After clicking the 'Next' button, a new set of up to 10 authors should be displayed on the next page, indicating the pagination functionality works as expected.
+
+Test Case: Test Case 2
+testCaseName: Verify Page Number Navigation in Pagination
+objective: To verify that users can navigate to a specific page of authors using the pagination number links.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the pagination block below the list of authors.
+  - Step 4: Click on a page number (other than the current page) in the pagination block.
+  - Step 5: Observe the list to ensure it displays the authors corresponding to the selected page number.
+expectedResult: The list of authors should update to show the set of authors corresponding to the selected page number, confirming that page number navigation works correctly.
+
+Test Case: Test Case 3
+testCaseName: Verify Authors List Columns
+objective: Ensure that the authors list correctly displays all required columns: id, Name, and Bio.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list to ensure each author entry displays an 'id', 'Name', and 'Bio'.
+expectedResult: Each author listed should have an 'id', 'Name', and 'Bio' displayed, confirming the list structure is as expected.
+

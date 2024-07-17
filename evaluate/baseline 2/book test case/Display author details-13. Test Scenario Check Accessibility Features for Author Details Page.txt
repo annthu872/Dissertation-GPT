@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Author Details Accessibility from Author List
+objective: Ensure that users can access the details of an author by clicking on the author's title in the author list page and verify the correct details are displayed
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list and click on the 'Title' of that specific author.
+  - Step 3: Observe the page redirection to the author details page.
+expectedResult: The application should redirect the user to the author details page, displaying the correct author's id, Name, and Bio as per the selection.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Details Content
+objective: To verify that the author details page correctly displays all the required columns (id, Name, Bio) for the author
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to an author's details page.
+  - Step 2: Verify that the author's 'id' is displayed and is unique.
+  - Step 3: Verify that the author's 'Name' is displayed.
+  - Step 4: Verify that the author's 'Bio' (biography) is displayed.
+expectedResult: The author details page should correctly display the author's id, Name, and Bio without any missing information.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation Back to Author List
+objective: To ensure that users can navigate back to the author list page from an author's details page without issues
+testSteps:
+  - Step 1: Navigate to an author's details page by following steps 1 and 2 from Test Case 1.
+  - Step 2: Locate and click on a 'Back' button or link to return to the author list page.
+  - Step 3: Observe the page redirection.
+expectedResult: After clicking the 'Back' button or link, the user should be redirected back to the author list page without any errors.
+

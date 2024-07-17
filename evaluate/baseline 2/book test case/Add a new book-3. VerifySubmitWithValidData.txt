@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Submit with Valid Data
+objective: Verify that a user can successfully add a new book record with valid data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Submit with Invalid Data
+objective: Ensure that the application displays error messages for incorrect data entry when adding a new book
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data for one or more fields (Title, Author, Genre, Description, Publication date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays error messages for the incorrectly entered data, and the book record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During Add New Book
+objective: Verify that a user can cancel the operation of adding a new book and no data is saved in the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: Data is not saved in the database, and the user is redirected to the list of book records.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away Cancels Add New Book Operation
+objective: Ensure that navigating away from the create new book page cancels the add operation and does not save data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Navigate away from the page by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The data entered is not saved to the database, and the user is redirected to the corresponding page based on their selection.
+

@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Validate Max Length for Genre Name Field
+objective: Verify that the Genre Name field does not accept input longer than the maximum allowed length and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: In the form displayed, enter a string longer than the maximum allowed length in the 'Name' field.
+  - Step 3: Fill in the 'Description' field with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the input for the 'Name' field exceeds the maximum allowed length.
+
+Test Case: Test Case 2
+testCaseName: Successfully Add a New Genre with Valid Data
+objective: Verify that a new genre can be successfully added with valid data for both 'Name' and 'Description' fields
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Enter valid data within the allowed length in the 'Name' field.
+  - Step 3: Fill in the 'Description' field with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The new genre record should be successfully added to the database, and the user should be redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 3
+testCaseName: Cancel Adding a New Genre
+objective: Verify that the operation of adding a new genre can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user should be redirected to the list of genres without the new data being saved in the database.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Without Saving
+objective: Verify that navigating away from the genre creation page without saving does not save the data
+testSteps:
+  - Step 1: Navigate to the genre list page and click the 'Create new' button.
+  - Step 2: Start entering data into the 'Name' and 'Description' fields.
+  - Step 3: Without pressing 'Submit', navigate away by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The user should be redirected to the selected page without the new genre data being saved in the database.
+

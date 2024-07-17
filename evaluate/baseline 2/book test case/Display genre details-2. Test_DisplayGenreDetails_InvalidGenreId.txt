@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with Valid Genre ID
+objective: Verify that the application correctly displays the details of a genre when a valid genre ID is clicked
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: From the list of genres, click on the 'Name' of a specific genre with a known valid ID.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns correctly populated: id (with the unique genre number), Name, and Description. The information should match the genre selected.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Display Genre Details with Invalid Genre ID
+objective: Verify that the application handles the scenario where an invalid genre ID is used to access genre details
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Manipulate the URL or application state to attempt to access the details of a genre using an invalid ID (e.g., an ID that does not exist).
+  - Step 3: Observe the behavior of the application.
+expectedResult: The application should display an appropriate error message or notification indicating that the genre details could not be displayed because the genre ID is invalid or does not exist.
+

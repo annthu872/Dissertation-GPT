@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify Cancel Button Functionality Without Entering Data
+objective: Ensure that the Cancel button redirects to the book list without saving when no data is entered
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to add a new book.
+  - Step 3: Without entering any data, click on the 'Cancel' button.
+expectedResult: The application should redirect to the book list page without attempting to save any data.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Button Functionality After Entering Data
+objective: Ensure that the Cancel button redirects to the book list without saving after data is entered
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to add a new book.
+  - Step 3: Enter valid data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Click on the 'Cancel' button.
+expectedResult: The application should redirect to the book list page without saving the entered data.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Other Pages Cancels Add Operation
+objective: Ensure that navigating to other pages without submitting cancels the add operation
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to add a new book.
+  - Step 3: Enter valid data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Without clicking 'Submit', navigate to another page (e.g., 'Genres').
+expectedResult: The application should navigate to the selected page without saving the entered data and the add operation should be cancelled.
+
+Test Case: Test Case 4
+testCaseName: Verify Cancel Button Functionality With Incorrect Data
+objective: Ensure that the Cancel button redirects to the book list without saving when incorrect data is entered
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to add a new book.
+  - Step 3: Enter incorrect data for any of the book details.
+  - Step 4: Click on the 'Cancel' button.
+expectedResult: The application should redirect to the book list page without saving the incorrect data.
+

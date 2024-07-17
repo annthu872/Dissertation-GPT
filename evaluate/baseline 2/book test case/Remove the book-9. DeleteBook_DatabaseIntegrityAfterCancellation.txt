@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion and database integrity
+objective: Ensure that when a user confirms the deletion of a book, the book is removed from the database without affecting other data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book is deleted from the database, and the book list/details page no longer displays the deleted book. Database integrity is maintained with no unintended data loss.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of book deletion maintains database integrity
+objective: Ensure that when a user cancels the deletion of a book, the book remains in the database and no data is lost
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Verify the book still appears in the book list/details page.
+  - Step 5: Navigate to other sections such as 'Books', 'Genres', 'Authors', 'Home', or 'API' and verify data integrity.
+expectedResult: The book is not deleted from the database, it still appears in the book list/details page, and navigating to other sections shows no loss of data, indicating maintained database integrity.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Deletion
+objective: Verify that a user can successfully delete a genre and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the database, and the user should no longer see the deleted genre in the list.
+explanation: This test case ensures that the main scenario for deleting a genre works as expected. It verifies that the application can handle genre deletion and update the database accordingly.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Deletion Operation
+objective: Verify that a user can cancel the deletion operation and the genre remains in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion operation is canceled, the genre remains in the database, and the user is redirected back to the list of genres without any changes.
+explanation: This test case verifies that users can cancel the deletion operation if they change their mind or clicked 'Delete' by mistake, ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away During Genre Deletion Operation
+objective: Verify that navigating away from the deletion confirmation dialog cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre deletion operation is canceled due to navigation away from the confirmation dialog, and the genre remains in the database.
+explanation: This test case ensures that if a user accidentally or intentionally navigates away from the deletion confirmation dialog, the deletion operation is not carried out, preserving the data integrity.
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select Home Menu
+objective: Verify that selecting 'Home' menu after cancelling a deletion operation does not delete the book and navigates the user to the Home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of books is still displayed.
+  - Step 5: Select the 'Home' menu item.
+expectedResult: The book should not be deleted from the database, and the user should be navigated to the Home page with no changes to the book data.
+reflect: yes
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the Home page by selecting the 'Home' menu item, the book remains undeleted, and the user is correctly navigated. It directly tests the user's ability to cancel a deletion operation and verifies the system's response to navigation after cancellation, as specified in the scenario.
+

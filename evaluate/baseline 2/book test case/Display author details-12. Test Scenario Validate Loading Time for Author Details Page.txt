@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Validate Display of Author Details
+objective: Verify that the application correctly displays the author details including id, Name, and Bio when a user selects an author from the author list page.
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific author.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The application should display the author details page with the following columns correctly filled: id (unique author number), Name, and Bio (author's biography).
+
+Test Case: Test Case 2
+testCaseName: Validate Loading Time for Author Details Page
+objective: Verify that the author details page loads within an acceptable time frame after a user selects an author from the author list page.
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific author.
+  - Step 3: Measure the time taken from the click action to the complete loading of the author details page.
+expectedResult: The author details page should load completely within an acceptable time frame (e.g., less than 5 seconds, depending on the benchmark).
+

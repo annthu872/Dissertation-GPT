@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify persistence of displayed authors list upon page refresh
+objective: Ensure that the same list of authors is displayed after the page is refreshed
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Note the first author's id and name displayed on the list.
+  - Step 4: Refresh the page.
+  - Step 5: Observe the first author's id and name on the refreshed list.
+expectedResult: The first author's id and name observed in Step 3 should match exactly with the first author's id and name observed in Step 5, confirming that the list of authors persists upon page refresh.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination persistence on page refresh
+objective: To check if the user stays on the same page of the authors list after refreshing the page
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Click the 'Next' button or select a page number to navigate to a different page of the authors list.
+  - Step 4: Note the page number you are currently on and the first author's id and name on that page.
+  - Step 5: Refresh the page.
+  - Step 6: Observe the page number and the first author's id and name on the list after the refresh.
+expectedResult: After the page refresh, the user should be on the same page number of the authors list as noted in Step 4, and the first author's id and name should match, indicating pagination persistence.
+
+Test Case: Test Case 3
+testCaseName: Verify authors list consistency across pagination
+objective: Ensure that navigating through pagination and back displays the same authors list
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Click the 'Next' button to navigate to the second page of the authors list.
+  - Step 4: Note the first author's id and name on the second page.
+  - Step 5: Navigate back to the first page by clicking the 'Previous' button or selecting page number 1.
+  - Step 6: Again, click the 'Next' button to return to the second page.
+  - Step 7: Observe the first author's id and name on the second page after navigating back.
+expectedResult: The first author's id and name noted on the second page in Step 4 should match exactly with the first author's id and name observed in Step 7, ensuring the authors list consistency across pagination.
+

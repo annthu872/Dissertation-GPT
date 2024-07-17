@@ -1,0 +1,7 @@
+1. Successful Booking Update
+2. Booking Update with Validation Errors
+3. Booking Doesn't Exist
+4. Booking Update with Additional Services Added
+5. Booking Update with Room Type Change
+6. Payment Not Computed Before Update
+7. Update booking with invalid field values leading to failure message

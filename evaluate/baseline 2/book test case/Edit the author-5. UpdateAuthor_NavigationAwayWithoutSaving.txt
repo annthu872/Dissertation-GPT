@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author and Save Changes
+objective: Verify that the user can successfully update an author's details and save the changes to the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should validate the entered data and update the author's details in the database. The user should be redirected to the list of authors, displaying the updated records.
+
+Test Case: Test Case 2
+testCaseName: Update Author and Cancel
+objective: Verify that changes are not saved when the user cancels the update operation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the changes and should display the list of authors without updating the selected author's details.
+
+Test Case: Test Case 3
+testCaseName: Navigation Away Without Saving
+objective: Verify that changes are not saved when the user navigates away without saving
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', navigate away by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save the changes and should display the selected page without updating the author's details in the database.
+
+Test Case: Test Case 4
+testCaseName: Update Author with Incorrect Data
+objective: Verify that the application displays error messages for incorrectly entered data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter incorrect data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display error messages indicating the incorrect data and prevent the user from submitting the form until the errors are corrected.
+

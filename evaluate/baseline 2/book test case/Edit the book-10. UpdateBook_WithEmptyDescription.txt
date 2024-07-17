@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Empty Description
+objective: Verify that the system prevents updating a book with an empty description field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the book edit form, clear the 'Description' field leaving it empty.
+  - Step 4: Fill in the other required fields such as Title, Author, Genre, and Publication date with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the description field cannot be empty and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on a Book
+objective: Verify that the book update operation can be canceled without making any changes to the book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The system should not update the book record in the database and should redirect the user to the list of book records.
+
+Test Case: Test Case 3
+testCaseName: Successful Book Update with Valid Data
+objective: Verify that updating a book with all valid data including a non-empty description updates the book record successfully.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Fill in all required fields including a non-empty 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should successfully update the book record in the database and display the updated book list with the changes reflected.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Update Author Functionality with Valid Data
+objective: Ensure that the author's details can be updated with valid data and the updated details are correctly reflected in the authors list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the user is redirected to the list of authors where the updated details are correctly reflected.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Data Handling in Update Author Form
+objective: To check that the application displays appropriate error messages for incorrectly entered data in the update author form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter invalid data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays error messages for the incorrectly entered data, and the author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation in Update Author Form
+objective: To ensure that pressing the 'Cancel' button while updating an author's details does not save the changes and redirects the user back to the authors list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The changes are not saved, and the user is redirected to the list of authors without updating the selected author's details in the database.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away from Update Author Form Without Saving
+objective: To verify that navigating away from the update author form without saving does not update the author's details in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's details are not updated in the database, and the user is redirected to the selected page without saving the changes.
+

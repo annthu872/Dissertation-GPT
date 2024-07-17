@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid Data and HTML Tags in Bio
+objective: Verify that the system allows updating an author's details including HTML tags in the biography field and displays the updated list of authors
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the displayed form, enter or modify the author's name.
+  - Step 4: In the Bio field, enter valid HTML tags along with the biography text.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should save the updated author details including the HTML tags in the biography. The list of authors with the updated record should be displayed without any error messages.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid HTML Tags in Bio
+objective: Verify that the system displays an error message when invalid HTML tags are entered in the biography field
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the displayed form, enter or modify the author's name.
+  - Step 4: In the Bio field, enter invalid HTML tags along with the biography text.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the invalid HTML tags in the biography field and prevent the author's details from being updated.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Author
+objective: Verify that the author's details are not updated in the database when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's details in the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the author's details in the database and should display the list of author records.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away from Update Page Without Saving
+objective: Verify that the author's details are not updated if the user navigates away from the update page without saving
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's details in the form.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not update the author's details in the database and should display the selected page without saving any changes.
+

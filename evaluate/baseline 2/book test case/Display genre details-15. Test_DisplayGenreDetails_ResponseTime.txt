@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Display Genre Details Functionality and Response Time
+objective: To ensure that the application correctly displays the details of a user-selected genre and does so within an acceptable response time
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: From the list of genres, click on the 'Name' of a specific genre.
+  - Step 3: Observe the time taken for the genre details page to load.
+  - Step 4: Verify that the genre details page displays the following columns: id, Name, Description.
+expectedResult: The application should display the details of the selected genre within an acceptable response time, and the details page should correctly show the columns: id, Name, Description.
+
+Test Case: Test Case 2
+testCaseName: Verify Display Genre Details Accuracy
+objective: To verify that the application displays accurate information in the genre details page for any selected genre
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Note down the 'Name' and 'id' of a genre from the list.
+  - Step 3: Click on the 'Name' of the genre noted in Step 2.
+  - Step 4: On the genre details page, verify that the 'id', 'Name', and 'Description' match the expected details of the selected genre.
+expectedResult: The application should accurately display the 'id', 'Name', and 'Description' of the selected genre, matching the information noted from the genre list page.
+
+Test Case: Test Case 3
+testCaseName: Verify Response Time for Multiple Genres
+objective: To ensure that the application maintains an acceptable response time when displaying details for multiple genres in a row
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Sequentially click on the 'Name' of a genre, wait for its details page to load, then return to the genre list page.
+  - Step 3: Repeat Step 2 for at least 5 different genres, noting the response time for each.
+  - Step 4: Assess if the response time for each genre details page was consistent and acceptable.
+expectedResult: The application should consistently display the details of each selected genre within an acceptable response time, regardless of the number of genres viewed in succession.
+

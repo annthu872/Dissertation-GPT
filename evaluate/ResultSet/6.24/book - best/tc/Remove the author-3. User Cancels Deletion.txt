@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of author deletion via Cancel button
+objective: Ensure that when a user initiates the deletion of an author but decides to cancel, the author's record remains unchanged in the database and the user is redirected back to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The author's record should not be deleted from the database, and the application should redirect the user to the list of authors, showing the author's record still present.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'User Cancels Deletion' by verifying that the cancellation action prevents the deletion and maintains the integrity of the author's record in the database.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancelling author deletion
+objective: To confirm that after cancelling the deletion of an author, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting the author.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the menu item 'Books'.
+  - Step 5: Repeat steps 4 for 'Genres', 'Authors', 'Home', and 'API' respectively.
+expectedResult: After cancelling the deletion, navigating to 'Books', 'Genres', 'Authors', 'Home', or 'API' should display updated data with the author still present in the database.
+reflect: yes
+explanation: Although this test case explores the application's behavior after the cancellation action, it still aligns with the given test scenario by ensuring that the cancellation of an author's deletion does not affect the visibility and integrity of the author's data across different sections of the application.
+

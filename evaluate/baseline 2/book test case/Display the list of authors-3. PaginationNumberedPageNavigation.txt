@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality on Authors Page
+objective: Ensure that the pagination functionality works correctly, allowing users to navigate through different pages to view all authors
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Click on the 'Next' button below the list.
+expectedResult: The application should display the next 10 authors in the list, indicating that the pagination functionality is working as expected.
+
+Test Case: Test Case 2
+testCaseName: Verify Direct Page Number Navigation in Pagination
+objective: To verify that users can navigate directly to a specific page using the page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Identify and click on a page number (e.g., 3) in the pagination block.
+expectedResult: The application should directly display the list of authors corresponding to the selected page number (e.g., page 3), showing that direct page number navigation works correctly.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Display Limits
+objective: Ensure that the pagination correctly limits the display to up to 10 items per page
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Count the number of authors listed on the first page.
+expectedResult: The application should display no more than 10 authors on the page, adhering to the pagination display limit.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a new author with valid Bio input
+objective: Ensure that the system allows the creation of a new author record with valid Bio input and displays the updated list of authors
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Name' field with a valid name.
+  - Step 4: Fill in the 'Bio' field with a valid biography text.
+  - Step 5: Click on the 'Submit' button.
+expectedResult: A new author record is successfully added to the database, and the user is redirected to the updated list of authors displaying the newly added record.
+
+Test Case: Test Case 2
+testCaseName: Verify Bio field input validation
+objective: To verify that the system displays an error message when the Bio field is left empty or filled incorrectly
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Name' field with a valid name.
+  - Step 4: Leave the 'Bio' field empty.
+  - Step 5: Click on the 'Submit' button.
+expectedResult: The system displays an error message indicating that the Bio field is required.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of author creation
+objective: To ensure that the author creation process can be cancelled without saving any data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Click on the 'Cancel' button before submitting the form.
+expectedResult: The creation process is cancelled, no data is saved to the database, and the user is redirected back to the list of author records.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation page does not save data
+objective: To ensure that navigating away from the author creation page without submitting does not save any data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without clicking 'Submit', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: No data is saved to the database, and the user is redirected to the selected page without creating a new author record.
+

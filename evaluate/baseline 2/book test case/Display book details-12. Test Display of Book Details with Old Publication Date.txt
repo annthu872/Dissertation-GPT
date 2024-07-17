@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with Old Publication Date
+objective: Ensure that the application correctly displays the details of a book with an old publication date when a user selects a book title from the book list.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the 'Title' of a book known to have an old publication date.
+  - Step 3: Observe the information displayed on the book details page.
+expectedResult: The application should display the book details page with the following columns correctly filled: id (unique book number), Title, Author, Genre, Description, and Publication date. The Publication date should reflect the old date accurately.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Book Details Page
+objective: To verify that the user can navigate to the book details page by clicking on the title of a book from the book list page.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Identify a book from the list and click on its 'Title'.
+expectedResult: The application should navigate the user to the book details page of the clicked book, displaying all the relevant details of the book.
+
+Test Case: Test Case 3
+testCaseName: Verify All Required Columns Are Displayed for Old Publication Date Book
+objective: Ensure that all the required columns (id, Title, Author, Genre, Description, Publication date) are displayed for a book with an old publication date.
+testSteps:
+  - Step 1: Navigate to the book list page and click on the title of a book with an old publication date.
+  - Step 2: On the book details page, verify the presence of the following columns: id, Title, Author, Genre, Description, Publication date.
+expectedResult: The book details page should correctly display all the required columns: id, Title, Author, Genre, Description, and Publication date, with accurate information in each column.
+

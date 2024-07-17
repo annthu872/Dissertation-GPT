@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify error handling for invalid date format in date range filter
+objective: To verify that the application properly handles and displays an error message when the user enters an invalid date format for filtering books by publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range filter, enter an invalid date format in the 'From' date input field (e.g., '25/12/2023').
+  - Step 3: Enter a valid date format in the 'To' date input field (e.g., '12/31/2023').
+  - Step 4: Click the 'Refresh' button next to the date inputs.
+expectedResult: The application should display an error message indicating that the date format entered is invalid. No books list should be displayed or refreshed until valid date formats are provided in both date input fields.
+
+Test Case: Test Case 2
+testCaseName: Verify error handling for invalid date format in both date range filters
+objective: To ensure the application displays an appropriate error message when invalid date formats are entered in both 'From' and 'To' date range filters.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Enter invalid date formats in both the 'From' and 'To' date input fields (e.g., '25-12-2023' and '31-12-2023').
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+expectedResult: The application should display an error message indicating that the date formats entered in both fields are invalid. The list of books should not be refreshed or displayed until valid date formats are entered.
+
+Test Case: Test Case 3
+testCaseName: Verify application behavior with one valid and one invalid date format
+objective: To verify that the application displays an error message when one date input is in a valid format and the other is in an invalid format.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Enter a valid date format in the 'From' date input field (e.g., '01/01/2023').
+  - Step 3: Enter an invalid date format in the 'To' date input field (e.g., '31-12-2023').
+  - Step 4: Click the 'Refresh' button next to the date inputs.
+expectedResult: The application should display an error message indicating that one of the date formats is invalid. The list of books should not be refreshed or displayed until valid date formats are provided in both date input fields.
+

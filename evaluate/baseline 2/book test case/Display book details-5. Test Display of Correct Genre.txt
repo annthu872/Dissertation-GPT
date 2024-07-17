@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Correct Genre in Book Details
+objective: Ensure that the genre of a book is correctly displayed in the book details page when a user selects a book from the book list.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific book you wish to view details for.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should correctly display the book's genre along with other details such as id, Title, Author, Description, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify All Required Columns Are Displayed in Book Details
+objective: To verify that all the required columns (id, Title, Author, Genre, Description, Publication date) are displayed on the book details page.
+testSteps:
+  - Step 1: Go to the book list page within the application.
+  - Step 2: Click on the 'Title' of any book listed to view more details.
+  - Step 3: On the book details page, check for the presence of all the required columns.
+expectedResult: The book details page should display all the required columns: id, Title, Author, Genre, Description, and Publication date.
+
+Test Case: Test Case 3
+testCaseName: Verify Correctness of Genre Information for Multiple Books
+objective: To ensure that the genre information displayed in the book details page is correct for multiple books.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Sequentially click on the 'Title' of different books to view their details.
+  - Step 3: For each book, note the genre displayed on the book details page.
+  - Step 4: Verify the noted genres against a pre-verified list of books and their genres to ensure accuracy.
+expectedResult: For each book selected, the genre displayed in the book details page should match the pre-verified list, ensuring the accuracy of genre information.
+

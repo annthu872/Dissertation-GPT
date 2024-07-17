@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List on Initial Load
+objective: Ensure that the genres list is correctly displayed upon initial page load, including correct pagination.
+testSteps:
+  - Step 1: Navigate to the genres listing page.
+  - Step 2: Observe the list without interacting with any controls.
+expectedResult: The first 10 genres are displayed in a list format, showing the 'id', 'Name', and 'Description' columns for each genre. A pagination control with a 'Next' button is visible at the bottom of the list.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: To check if the pagination functionality works correctly, allowing users to view the next set of genres.
+testSteps:
+  - Step 1: Navigate to the genres listing page.
+  - Step 2: Click on the 'Next' button below the displayed list of genres.
+expectedResult: The page displays the next 10 genres in the database, updating the list to show the 'id', 'Name', and 'Description' columns for each of the next set of genres. The pagination control updates to reflect the current page.
+
+Test Case: Test Case 3
+testCaseName: Verify HTML Tags Handling in Genre Data
+objective: Ensure that any HTML tags present in the genre data are properly escaped and not rendered as HTML in the browser.
+testSteps:
+  - Step 1: Navigate to the genres listing page.
+  - Step 2: Carefully observe the 'Name' and 'Description' columns of each genre for any visible HTML tags.
+expectedResult: HTML tags present in the 'Name' and 'Description' fields should be displayed as plain text and not rendered as HTML elements.
+

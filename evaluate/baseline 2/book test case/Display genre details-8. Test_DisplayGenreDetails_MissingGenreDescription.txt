@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with Missing Description
+objective: Verify that the application correctly handles and displays a genre's details when the description is missing
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Click on the 'Name' of a genre known to have no description in the database.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application displays the genre details with the 'id' and 'Name' columns correctly filled, and either shows 'Description' as blank or displays a default message indicating that no description is available.
+
+Test Case: Test Case 2
+testCaseName: Display Genre Details with Complete Information
+objective: Verify that the application displays all details of a genre, including a non-missing description
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Click on the 'Name' of a genre that is known to have a description in the database.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application displays the genre details correctly with all columns ('id', 'Name', and 'Description') properly filled with the respective information.
+

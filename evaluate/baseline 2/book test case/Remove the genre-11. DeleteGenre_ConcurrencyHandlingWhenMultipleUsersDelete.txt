@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre deletion by a single user
+objective: Ensure that a user can successfully delete a genre and the deletion is properly reflected in the system
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the system, and the user should be redirected to the updated genre list without the deleted genre.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that when a user cancels the deletion operation, the genre is not deleted from the system
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion operation should be cancelled, and the user should be redirected back to the genre list with the genre still present.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from deletion cancels operation
+objective: Ensure that navigating away from the deletion confirmation dialog cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The deletion operation should be cancelled due to navigation away from the confirmation dialog, and the genre should still exist in the system.
+
+Test Case: Test Case 4
+testCaseName: Verify concurrency handling during simultaneous deletion attempts
+objective: To test the system's behavior when multiple users attempt to delete the same genre at the same time
+testSteps:
+  - Step 1: User A and User B simultaneously navigate to the same genre's details page.
+  - Step 2: Both users click the 'Delete' button at the same time.
+  - Step 3: Both users are presented with a confirmation dialog and both click the 'Confirm' button at the same time.
+expectedResult: The system should handle the concurrency gracefully, allowing the first confirm operation to succeed and informing the second user that the genre has already been deleted.
+

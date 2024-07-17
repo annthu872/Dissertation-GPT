@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Genre - Valid Data Submission
+objective: Verify that the genre can be updated with valid data and reflects correctly in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter valid data for the genre's 'Name' and 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database with the new data, and the user should be redirected to the list of genres showing the updated record.
+
+Test Case: Test Case 2
+testCaseName: Update Genre - Invalid Data Submission
+objective: Verify that the system displays error messages when invalid data is submitted.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the genre's 'Name' and/or 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display error messages indicating the invalid data, and the genre should not be updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Genre - Cancel Update Operation
+objective: Verify that the update operation can be canceled and no changes are made to the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation should be canceled, no changes should be made to the database, and the user should be redirected to the list of genres.
+
+Test Case: Test Case 4
+testCaseName: Update Genre - Navigation Away Cancels Update
+objective: Verify that navigating away from the update page cancels the update operation.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without submitting, select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The update operation should be canceled, no changes should be made to the database, and the user should be redirected to the selected page.
+

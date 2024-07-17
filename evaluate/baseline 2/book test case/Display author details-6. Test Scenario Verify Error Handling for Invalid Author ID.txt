@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author Details with Valid Author ID
+objective: Ensure that the application correctly displays the details of an author when a valid author ID is provided
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific author to view their details.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The application should display the author details page with the following columns populated with correct data: id (unique author number), Name, and Bio (author's biography).
+
+Test Case: Test Case 2
+testCaseName: Verify Error Handling for Non-Existent Author ID
+objective: To check if the application handles errors gracefully when a non-existent author ID is accessed
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: Manually modify the URL in the browser's address bar to an author ID that does not exist in the database.
+  - Step 3: Press Enter to navigate to the modified URL.
+expectedResult: The application should display an error message indicating that the author details could not be found or the author ID is invalid.
+
+Test Case: Test Case 3
+testCaseName: Verify Error Handling for Invalid Author ID Format
+objective: To ensure the application properly handles cases where the author ID format is invalid
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: Click on the 'Title' of a specific author to view their details.
+  - Step 3: Manually modify the URL in the browser's address bar to an invalid author ID format (e.g., adding special characters).
+  - Step 4: Press Enter to navigate to the modified URL.
+expectedResult: The application should display an error message indicating that the author ID format is invalid.
+

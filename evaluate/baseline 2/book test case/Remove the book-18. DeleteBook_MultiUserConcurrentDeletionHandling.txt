@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify successful book deletion by a single user
+objective: Ensure that a user can successfully delete a book and the book is removed from the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book is successfully deleted from the database, and the user is redirected to the updated book list without the deleted book.
+
+Test Case: Test Case 2
+testCaseName: Verify book deletion cancellation by a user
+objective: Ensure that a user can cancel the deletion of a book and the book remains in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process is cancelled, the book remains in the database, and the user is redirected to the book list with the book still present.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from deletion cancels deletion process
+objective: Ensure that navigating away from the deletion confirmation dialog cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The deletion process is cancelled, the book remains in the database, and the user is redirected to the selected page with updated data.
+
+Test Case: Test Case 4
+testCaseName: Verify concurrent deletion handling
+objective: Ensure the system handles concurrent deletion requests for the same book correctly
+testSteps:
+  - Step 1: User A and User B navigate to the same book list/details page.
+  - Step 2: Both User A and User B click the 'Delete' button next to the same book at the same time.
+  - Step 3: User A confirms deletion by clicking the 'Confirm' button slightly before User B.
+  - Step 4: User B attempts to confirm deletion after User A.
+expectedResult: The book is deleted from the database after User A's confirmation. User B receives a notification that the book has already been deleted or is no longer available for deletion.
+

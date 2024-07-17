@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Filter
+objective: Verify that the application displays the list of books without applying any date filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date filters.
+expectedResult: The application should display up to 10 books per page without any date filters applied.
+
+Test Case: Test Case 2
+testCaseName: Navigate Through Pages of Book List
+objective: Verify that the user can navigate through different pages of the book list
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or select a page number.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page.
+
+Test Case: Test Case 3
+testCaseName: Display Books List With Valid Date Range
+objective: Verify that the application filters and displays books within a specified valid date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a valid date range in the date input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display books with publication dates within the specified date range.
+
+Test Case: Test Case 4
+testCaseName: Display Books List With Nonexistent Dates
+objective: Verify that the application handles the scenario where no books match the specified date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Specify a date range where no books were published.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display a message indicating no books were found within the specified date range.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful book creation
+objective: Verify that a user can successfully create a new book record with unique title and valid data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the book data form with a unique title, valid author, genre, description, and publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify unique title constraint
+objective: Ensure the system prevents the creation of a new book with a title that already exists in the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the book data form with a title that already exists, and valid author, genre, description, and publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays an error message indicating the title already exists and prevents the creation of the new book record.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during book creation
+objective: Verify that a user can cancel the book creation process and no data is saved in the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The book creation process is canceled, no data is saved to the database, and the user is redirected to the list of book records.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form
+objective: Ensure that navigating away from the book creation form without submitting it does not save any data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Navigate away from the page by selecting another menu item such as 'Genres' or 'Home'.
+expectedResult: No data is saved to the database, and the user is redirected to the selected page without the new book being added.
+

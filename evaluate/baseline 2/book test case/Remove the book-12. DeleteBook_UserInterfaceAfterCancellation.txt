@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion confirmation
+objective: Ensure that the book is deleted from the list after the user confirms the deletion
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book should be removed from the list, and the database should no longer contain the deleted book record.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of book deletion
+objective: Ensure that the book is not deleted from the list after the user cancels the deletion
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book should remain in the list, and the database should still contain the book record.
+
+Test Case: Test Case 3
+testCaseName: Verify UI behavior after cancellation of book deletion
+objective: Ensure that the user interface behaves correctly after the deletion of a book is canceled
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Select any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should display the corresponding form with updated data, and the book record should still exist in the database.
+

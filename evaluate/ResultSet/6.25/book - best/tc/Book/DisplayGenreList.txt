@@ -1,0 +1,103 @@
+Scenario: 1. Viewing the First Page of Genres1.txt
+Test Case: Test Case 1
+testCaseName: Viewing the First Page of Genres
+objective: Verify that the user can view the first page of genres with up to 10 items displayed
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Select the item 'Genres' from the main menu or navigation bar.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application displays the first page of the genres list, showing up to 10 items. Each item should display an id, name, and description.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that the user can view the first page of genres and that up to 10 items are displayed, which is the core objective of the scenario.
+
+
+Scenario: 2. Navigating to the Next Page of Genres1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area.
+  - Step 3: Observe the list of genres displayed on the first page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click the 'Next' button located in the pagination block.
+expectedResult: The application should navigate to the next page, displaying the next 10 records of genres. The list should include the columns: id, Name, and Description for each genre.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of navigating to the next page of genres. It specifically tests the functionality of the 'Next' button in the pagination block, ensuring that users can successfully move to the next page and view the subsequent set of genre records.
+
+
+Scenario: 3. Navigating to a Specific Page of Genres1.txt
+Test Case: Test Case 1
+testCaseName: Navigate to Genres Page via Menu Selection
+objective: Verify that the user can navigate to the Genres page by selecting the 'Genres' item from the menu and that the first page of genres is displayed correctly.
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Locate the menu item labeled 'Genres' and click on it.
+expectedResult: The application displays the Genres page with a list of genres. The list should show up to 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to navigate to the Genres page and ensuring the first page of genres is displayed as expected.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Genres
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Click on the 'Next' button located in the pagination block.
+expectedResult: The application displays the second page of genres with the next 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the functionality of navigating to the next page of genres, which is a part of navigating to a specific page within the genres section.
+
+Test Case: Test Case 3
+testCaseName: Navigate to a Specific Page of Genres Using Page Number
+objective: Verify that the user can navigate to a specific page of genres by clicking on the corresponding page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the Genres page by selecting the 'Genres' item from the menu.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Identify the page number the user wants to navigate to and click on that number in the pagination block.
+expectedResult: The application displays the selected page of genres with up to 10 items, each with an id, name, and description.
+reflect: yes
+explanation: This test case accurately reflects the given test scenario by verifying the ability to navigate to a specific page of genres using the pagination feature, which is the core functionality being tested.
+
+
+Scenario: 4. Viewing the Last Page of Genres1.txt
+Test Case: Test Case 1
+testCaseName: Viewing the Last Page of Genres Using 'Next' Button
+objective: Verify that the user can navigate to the last page of genres by repeatedly clicking the 'Next' button and ensure the last page displays the correct genres information.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the list of genres displayed on the first page.
+  - Step 3: Click the 'Next' button below the list of genres.
+  - Step 4: Repeat Step 3 until the 'Next' button is disabled (indicating you have reached the last page).
+  - Step 5: Observe the list of genres on the last page.
+expectedResult: The last page of genres should be displayed with up to 10 items, including their 'id', 'Name', and 'Description'. The 'Next' button should be disabled, indicating that the user is on the last page.
+reflect: yes
+explanation: This test case directly addresses the test scenario of viewing the last page of genres. It specifically tests the functionality and user experience of navigating through the genres using the 'Next' button until reaching the last page, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Viewing the Last Page of Genres Using Page Number
+objective: Verify that the user can navigate to the last page of genres by clicking the last page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the pagination block below the list of genres.
+  - Step 3: Click the last page number shown in the pagination block.
+  - Step 4: Observe the list of genres on the last page.
+expectedResult: The user should be taken directly to the last page of genres, displaying up to 10 items with their 'id', 'Name', and 'Description'.
+reflect: yes
+explanation: Although this test case explores a different navigation method (direct page selection) than the first test case, it still accurately reflects the given test scenario of viewing the last page of genres. It tests the functionality of the pagination block, which is an essential part of the user interface for navigating between pages of genres, including reaching the last page directly.
+
+
+Scenario: 5. Attempting to Navigate Beyond the Last Page of Genres1.txt
+Test Case: Test Case 1
+testCaseName: Attempting to Navigate Beyond the Last Page of Genres
+objective: Verify that the application prevents navigation beyond the last page of genres and handles the attempt gracefully
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Identify the last page number by observing the pagination block.
+  - Step 3: Click the 'Next' button on the last page of genres.
+  - Step 4: Alternatively, if there is a way to input a page number, enter a page number greater than the last page and submit.
+expectedResult: The application should either disable the 'Next' button on the last page, not respond to the click, or display a message indicating the user is on the last page. If a page number greater than the last is entered, the application should display an error message or redirect the user to the last page.
+reflect: yes
+explanation: This test case directly addresses the test scenario of attempting to navigate beyond the last page of genres. It covers both the case where a user tries to click 'Next' on the last page and the case where a user might try to manually navigate to a page beyond the last by entering a number. The objective, test steps, and expected result are all aligned with ensuring the application handles such attempts gracefully, which is the essence of the given test scenario.
+
+

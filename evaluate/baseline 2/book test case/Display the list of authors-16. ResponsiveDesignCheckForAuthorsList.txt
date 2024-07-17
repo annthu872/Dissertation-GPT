@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify the responsiveness of the Authors List page on desktop view
+objective: Ensure that the Authors List page displays correctly and is fully functional on desktop view
+testSteps:
+  - Step 1: Open the application on a desktop browser.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The list of authors should be displayed correctly with columns for id, Name, and Bio. The page should show up to 10 items, and pagination options ('Next' button and page numbers) should be visible and functional.
+
+Test Case: Test Case 2
+testCaseName: Verify the responsiveness of the Authors List page on mobile view
+objective: Ensure that the Authors List page displays correctly and is fully functional on mobile view
+testSteps:
+  - Step 1: Open the application on a mobile browser.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The list of authors should be displayed correctly with columns for id, Name, and Bio, adjusted to fit the mobile screen. The page should show up to 10 items, and pagination options ('Next' button and page numbers) should be visible and functional.
+
+Test Case: Test Case 3
+testCaseName: Verify pagination functionality on the Authors List page
+objective: Ensure that users can navigate through different pages of authors using pagination
+testSteps:
+  - Step 1: Navigate to the Authors List page by selecting 'Authors' from the main menu.
+  - Step 2: Scroll down to the bottom of the list to the pagination block.
+  - Step 3: Click on the 'Next' button to view the next page of authors.
+  - Step 4: Alternatively, click on a specific page number to jump to that page.
+expectedResult: Upon clicking the 'Next' button or a specific page number, the list should update to show the next 10 records of authors. The pagination block should update accordingly to reflect the current page.
+

@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation from author list to author details
+objective: Ensure that clicking on an author's title in the author list navigates to the detailed author details page
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list and click on the author's title.
+  - Step 3: Observe the page that the application navigates to.
+expectedResult: The application should navigate to the detailed author details page, displaying the id, Name, and Bio of the selected author.
+
+Test Case: Test Case 2
+testCaseName: Verify the content of author details page
+objective: To confirm that the author details page correctly displays the id, Name, and Bio of the author
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to an author's details page.
+  - Step 2: Verify that the author's id is displayed and is unique.
+  - Step 3: Verify that the author's Name is displayed.
+  - Step 4: Verify that the author's Bio is displayed and contains relevant biography information.
+expectedResult: The author details page should correctly display the author's id, Name, and Bio without any missing or incorrect information.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify SQL Injection Mitigation on Bio Field
+objective: Ensure that the Bio field in the author edit form is properly sanitized to prevent SQL Injection attacks
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the Bio field, enter an SQL injection payload (e.g., 'Robert'); DROP TABLE Authors;--).
+  - Step 4: Fill out the rest of the form with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The application should sanitize the input and either display an error message regarding invalid input or update the author's bio without executing the SQL command. The database should remain unaffected by the SQL injection attempt.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Author Bio Update
+objective: To verify that the author's bio can be updated successfully with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter a new bio in the Bio field using valid text.
+  - Step 4: Fill out the rest of the form with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The author's bio should be updated in the database. The user should be redirected to the list of authors, where the updated bio is displayed correctly.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation on Author Update
+objective: To ensure that the cancel operation works correctly and no data is updated in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the author form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not update any data in the database. The user should be redirected to the list of authors without any changes being made to the author's record.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away Prevents Update
+objective: To verify that navigating away from the update form without submitting prevents any updates to the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the author form.
+  - Step 4: Without submitting, select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not update any data in the database for the author. The user should be redirected to the selected page without any changes being made to the author's record.
+

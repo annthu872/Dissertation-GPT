@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion of genre and audit log entry
+objective: To ensure that when a user deletes a genre, the genre is removed from the list and an audit log entry is created
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be removed from the list, and an audit log entry confirming the deletion should be created.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: To ensure that when a user cancels the deletion of a genre, the genre remains in the list and no changes are made to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should remain in the list, and no changes should be made to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after cancelling genre deletion
+objective: To ensure that after cancelling the deletion of a genre, the user can navigate to other pages without any changes being made to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page and click the 'Delete' button next to the genre you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any other page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The user should be able to navigate to the selected page, and the genre list should remain unchanged with no deletions.
+

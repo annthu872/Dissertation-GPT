@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genre Details with Valid Genre ID
+objective: Ensure that the application correctly displays the details of a genre when a user clicks on a genre name from the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Identify a genre from the list and note its name.
+  - Step 3: Click on the name of the identified genre.
+expectedResult: The application should navigate to the genre details page displaying the following columns with correct information: id (unique genre number), Name, and Description.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Genre Details Page Layout
+objective: To verify that the genre details page displays all required columns as per the specification when a genre is selected.
+testSteps:
+  - Step 1: Navigate to the genre list page within the application.
+  - Step 2: Click on any genre name available in the genre list.
+  - Step 3: Observe the details displayed on the genre details page.
+expectedResult: The genre details page should be displayed with all the following columns: id (unique genre number), Name, and Description. Each column should correctly display the data related to the selected genre.
+
+Test Case: Test Case 3
+testCaseName: Verify Consistency of Genre ID Data Type
+objective: To ensure that the genre ID displayed on the genre details page is of the correct data type and format as specified.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Select a genre by clicking on its name to view its details.
+  - Step 3: On the genre details page, observe the data type and format of the 'id' displayed.
+expectedResult: The 'id' column on the genre details page should display a unique genre number in the correct data type and format as specified in the application documentation.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Deletion Confirmation Response Time
+objective: To verify that the application displays the deletion confirmation dialog within acceptable response time after the user clicks the 'Delete' button.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Locate the 'Delete' button next to the book intended for deletion.
+  - Step 3: Click the 'Delete' button.
+  - Step 4: Measure the time taken for the deletion confirmation dialog to appear.
+expectedResult: The deletion confirmation dialog should appear within an acceptable response time (e.g., less than 2 seconds).
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Deletion of Book
+objective: To verify that the book is successfully deleted from the database upon confirmation and the user is informed of the deletion.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Click the 'Confirm' button on the deletion confirmation dialog.
+  - Step 4: Verify that a success message or indication of deletion is displayed.
+expectedResult: The book should be successfully deleted from the database, and the user should see a success message or indication that the book has been deleted.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancellation of Deletion
+objective: To verify that the book is not deleted from the database when the user cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: Click the 'Cancel' button on the deletion confirmation dialog.
+  - Step 4: Verify that the book list/details page is displayed without deleting the book.
+expectedResult: The book should not be deleted from the database, and the user should be redirected back to the book list/details page with the book still listed.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation After Cancelling Deletion
+objective: To verify that the user can navigate to other pages (Books, Genres, Authors, Home, API) after cancelling the deletion and the data remains unchanged.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Delete' button next to a book.
+  - Step 2: Click the 'Cancel' button on the deletion confirmation dialog.
+  - Step 3: Navigate to one of the menu items: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 4: Verify that the corresponding page is displayed with updated data.
+expectedResult: After cancelling the deletion, the user should be able to navigate to other pages without any issues, and the data should remain unchanged.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Display in Chrome
+objective: Ensure that the genre details are correctly displayed in the Chrome browser when a user selects a genre from the genre list.
+testSteps:
+  - Step 1: Open the application in the Chrome browser.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the columns: id, Name, and Description, correctly filled with the data of the selected genre.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Details Display in Firefox
+objective: Ensure that the genre details are correctly displayed in the Firefox browser when a user selects a genre from the genre list.
+testSteps:
+  - Step 1: Open the application in the Firefox browser.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the columns: id, Name, and Description, correctly filled with the data of the selected genre.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Details Display in Safari
+objective: Ensure that the genre details are correctly displayed in the Safari browser when a user selects a genre from the genre list.
+testSteps:
+  - Step 1: Open the application in the Safari browser.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the columns: id, Name, and Description, correctly filled with the data of the selected genre.
+
+Test Case: Test Case 4
+testCaseName: Verify Genre Details Display in Edge
+objective: Ensure that the genre details are correctly displayed in the Edge browser when a user selects a genre from the genre list.
+testSteps:
+  - Step 1: Open the application in the Edge browser.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the columns: id, Name, and Description, correctly filled with the data of the selected genre.
+

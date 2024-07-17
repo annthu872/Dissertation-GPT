@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify book details display on a desktop browser
+objective: Ensure that the book details are correctly displayed on desktop browsers
+testSteps:
+  - Step 1: Open the book list page on a desktop browser.
+  - Step 2: Click on the 'Title' of a specific book from the list.
+  - Step 3: Observe the book details page.
+expectedResult: The book details page should correctly display the columns: id, Title, Author, Genre, Description, and Publication date, with all information being legible and properly formatted.
+
+Test Case: Test Case 2
+testCaseName: Verify book details display on a tablet device
+objective: Ensure that the book details are correctly displayed and are responsive on tablet devices
+testSteps:
+  - Step 1: Open the book list page on a tablet device.
+  - Step 2: Click on the 'Title' of a specific book from the list.
+  - Step 3: Observe the book details page.
+expectedResult: The book details page should adapt to the tablet screen size, displaying all columns (id, Title, Author, Genre, Description, and Publication date) clearly and without any layout issues.
+
+Test Case: Test Case 3
+testCaseName: Verify book details display on a smartphone
+objective: Ensure that the book details are correctly displayed and are responsive on smartphones
+testSteps:
+  - Step 1: Open the book list page on a smartphone browser.
+  - Step 2: Click on the 'Title' of a specific book from the list.
+  - Step 3: Observe the book details page.
+expectedResult: The book details page should be fully responsive on the smartphone, with all columns (id, Title, Author, Genre, Description, and Publication date) being accessible and readable, possibly with a different layout to accommodate the smaller screen size.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Deletion of Genre with Confirmation
+objective: To ensure that the genre is successfully deleted from the list after the user confirms the deletion.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the list, and the list should be updated to reflect this change.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancellation of Genre Deletion
+objective: To verify that the genre is not deleted from the list when the user cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted from the list, and the user should be redirected back to the updated list of genres.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation Away Cancels Deletion
+objective: To ensure that navigating away from the deletion confirmation dialog cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre should not be deleted from the list, and the user should be redirected to the selected page with no changes made to the genre list.
+

@@ -1,0 +1,9 @@
+1. Successful Product Addition to Cart
+2. Product has multiple options and user selects an option before adding to cart.
+3. User adjusts the quantity of the product before adding it to the cart by increasing the quantity.
+4. User adjusts the quantity of the product before adding it to the cart by decreasing the quantity.
+5. User attempts to add a product with multiple options without selecting an option.
+6. User tries to increase the product quantity beyond the available stock.
+7. User attempts to decrease the product quantity below one.
+8. User tries to add a product that has no stock.
+9. User attempts to add an out-of-stock option of a product with multiple options.

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation from Genre List to Genre Details
+objective: Verify that clicking on a genre name from the genre list navigates to the detailed view of that genre, displaying the correct information.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Identify and click on the 'Name' of a specific genre from the list.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application navigates to the genre details page, displaying the 'id', 'Name', and 'Description' of the chosen genre.
+
+Test Case: Test Case 2
+testCaseName: Verify Back Navigation from Genre Details to Genre List
+objective: Ensure that users can navigate back to the genre list from the genre details page.
+testSteps:
+  - Step 1: Follow all steps in Test Case 1 to navigate to a genre details page.
+  - Step 2: Locate and click on the 'Back' button or the equivalent UI element to navigate back.
+  - Step 3: Observe the page that the application navigates to.
+expectedResult: After clicking the 'Back' button, the application navigates back to the genre list page, displaying the list of genres.
+
+Test Case: Test Case 3
+testCaseName: Verify Correct Information Displayed for Genre Details
+objective: Ensure that the genre details page displays the correct 'id', 'Name', and 'Description' for the selected genre.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a specific genre to view its details.
+  - Step 3: Verify that the 'id' matches the expected unique genre number.
+  - Step 4: Verify that the 'Name' matches the name of the genre selected.
+  - Step 5: Verify that the 'Description' accurately describes the selected genre.
+expectedResult: The genre details page correctly displays the 'id', 'Name', and 'Description' for the selected genre, with all information accurately reflecting the chosen genre.
+

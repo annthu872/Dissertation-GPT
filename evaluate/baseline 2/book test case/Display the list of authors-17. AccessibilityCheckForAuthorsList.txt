@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality on Authors List Page
+objective: Ensure that the pagination controls work correctly, allowing the user to navigate through different pages of authors.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Click the 'Next' button below the list of authors.
+  - Step 5: Observe the list of authors on the second page.
+expectedResult: The application should display the first 10 authors on the first page. Upon clicking the 'Next' button, the next set of 10 authors should be displayed on the second page.
+
+Test Case: Test Case 2
+testCaseName: Verify Accessibility of Authors List for Screen Readers
+objective: Ensure that the list of authors is accessible and properly structured for screen readers.
+testSteps:
+  - Step 1: Navigate to the main page of the application using a screen reader.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Use the screen reader to read the information presented in the list, including the 'id', 'Name', and 'Bio' of each author.
+  - Step 4: Navigate to the pagination controls using the screen reader.
+  - Step 5: Use the screen reader to select the 'Next' button and listen to the changes in the page.
+expectedResult: The screen reader should correctly read out the 'id', 'Name', and 'Bio' for each author in the list. The pagination controls should be accessible and functional with the screen reader, allowing the user to navigate to different pages of authors.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Author Information
+objective: Ensure that the author information is correctly displayed in the list, including the unique author number (id), Name, and Bio.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list to ensure each author entry contains an 'id', 'Name', and 'Bio'.
+  - Step 4: Verify that the 'id' is unique for each author.
+  - Step 5: Ensure that the 'Bio' section contains the author's biography.
+expectedResult: Each author in the list should have a unique 'id', a 'Name', and a 'Bio' section containing the author's biography. The information should be correctly formatted and displayed.
+

@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify field validations with all empty inputs
+objective: Verify that the application prevents the user from adding a new book with all fields left empty and displays appropriate validation messages.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Without entering any data, directly press the 'Submit' button.
+expectedResult: The application should display validation messages for each mandatory field (Title, Author, Genre, Description, Publication date) indicating that these fields cannot be left empty.
+
+Test Case: Test Case 2
+testCaseName: Verify field validations with some fields empty
+objective: Verify that the application prevents the user from adding a new book with some mandatory fields left empty and displays appropriate validation messages for those fields.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Enter data only in the 'Title' and 'Author' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display validation messages for the empty fields (Genre, Description, Publication date) indicating that these fields cannot be left empty.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation with all fields filled
+objective: Verify that the application does not save the new book record when the user fills all the fields but decides to cancel the operation.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data in all fields (Title, Author, Genre, Description, Publication date).
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The application should not save the entered data and should display the list of book records without the new entry.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form does not save data
+objective: Ensure that navigating away from the book creation form by selecting another menu item does not save the partially entered data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Enter data in some fields but do not press 'Submit'.
+  - Step 4: Select another menu item such as 'Genres' or 'Authors'.
+expectedResult: The application should not save the entered data in the book creation form and should display the selected page (e.g., Genres or Authors) without adding a new book record.
+

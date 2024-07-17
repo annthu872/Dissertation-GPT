@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify successful addition of a new author
+objective: To verify that a new author can be successfully added and the author list is updated accordingly
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new author appears in the author list.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling when adding a new author
+objective: To verify that the application displays error messages for incorrect data when adding a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Error messages related to incorrect data are displayed, and the author is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify error handling when adding a new author
+objective: To verify that the application displays an error message if an error occurs while adding a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields but simulate a database error.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed, and the new author is not added to the author list.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during new author addition
+objective: To verify that no data is saved and the user is redirected back to the author list when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: Data is not saved, and the user is redirected back to the author list page.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation away from the create new author page
+objective: To verify that navigating away from the create new author page without submitting does not save data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Navigate away from the page by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: Data is not saved, and the user is redirected to the selected page without adding the new author.
+

@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre addition and list update
+objective: To ensure that a new genre can be successfully added and the genre list is updated accordingly
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new genre appears in the genre list.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling when adding a new genre
+objective: To ensure that the application correctly handles incorrect data entry when adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Incorrect data messages are displayed, and the record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify error handling when adding a new genre
+objective: To ensure that the application displays an error message if an error occurs while adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button.
+expectedResult: An error message is displayed, and the new genre is not added to the list.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during new genre addition
+objective: To ensure that the cancel operation works correctly and no data is saved when adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: Data is not saved in the database, and the user is redirected to the list of genre records.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation away from genre creation discards data
+objective: To ensure that navigating away from the genre creation form discards any entered data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Select a different menu item (e.g., 'Books') without submitting the form.
+expectedResult: The application navigates to the selected page, and the entered genre data is not saved.
+

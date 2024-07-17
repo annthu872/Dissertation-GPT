@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details for a Single Selection
+objective: Ensure that the application correctly displays the details of a book when a user selects its title from the book list page
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific book.
+  - Step 3: Observe the information displayed on the book details page.
+expectedResult: The application should display the book details page with the following columns correctly filled: id (unique book number), Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details with Large Data Sets
+objective: To verify that the application can handle and correctly display book details for books with extensive information in the Description field
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Select a book title known to have a large amount of data in the 'Description' field.
+  - Step 3: Observe the information displayed on the book details page, focusing on the Description field.
+expectedResult: The application should successfully display the book details without truncation or errors, including a lengthy Description, alongside the other fields: id, Title, Author, Genre, Publication date.
+
+Test Case: Test Case 3
+testCaseName: Verify Consistency of Book Details Across Multiple Selections
+objective: Ensure that the application consistently displays accurate book details across multiple selections from the book list page
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the 'Title' of a book to view its details and note the information displayed.
+  - Step 3: Return to the book list page and select a different book title.
+  - Step 4: Note the information displayed on the book details page for the second book.
+  - Step 5: Repeat steps 2-4 for at least 5 different books.
+expectedResult: For each selected book, the application should correctly display its details with the columns: id, Title, Author, Genre, Description, Publication date, ensuring data consistency and accuracy across multiple selections.
+

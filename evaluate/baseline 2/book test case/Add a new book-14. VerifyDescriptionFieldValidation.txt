@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Verify Description Field Accepts Valid Input
+objective: Verify that the Description field accepts a valid input and allows the user to add a new book record
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Fill in the Title, Author, Genre, and Publication date fields with valid data.
+  - Step 3: Enter a valid description in the Description field.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify Description Field Validation for Empty Input
+objective: Ensure that the Description field validation correctly prevents form submission when the field is left empty
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Fill in the Title, Author, Genre, and Publication date fields with valid data.
+  - Step 3: Leave the Description field empty.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The form is not submitted. An error message is displayed indicating that the Description field is required.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation Discards Data
+objective: Verify that pressing the 'Cancel' button discards any data entered in the form and redirects the user back to the book list page
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the Title, Author, Genre, Description, and Publication date fields.
+  - Step 3: Press the 'Cancel' button before submitting the form.
+expectedResult: The form data is not saved to the database, and the user is redirected to the list of book records without the new record being added.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away from Form Discards Data
+objective: Ensure that navigating away from the form by selecting another menu item discards any entered data and does not save it to the database
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering data into the Title, Author, Genre, Description, and Publication date fields.
+  - Step 3: Without submitting the form, select another menu item such as 'Genres' or 'Home'.
+expectedResult: The form data is not saved to the database, and the user is redirected to the selected page without the new book record being added.
+

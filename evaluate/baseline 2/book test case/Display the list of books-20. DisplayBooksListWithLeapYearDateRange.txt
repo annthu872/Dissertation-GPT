@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application displays the list of books without any date filter applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Verify that the user can navigate through pages of books using the pagination feature
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number in the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Leap Year Date Range
+objective: Verify that the user can filter books by specifying a date range that includes a leap year
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a date range that includes a leap year in the specific input forms for dates.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display a list of books with publication dates within the specified date range, including those published in the leap year.
+
+Test Case: Test Case 4
+testCaseName: Verify Filtering Books with Invalid Date Range
+objective: Verify that the application handles invalid date ranges gracefully when filtering books
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter an invalid date range (where the start date is after the end date) in the specific input forms for dates.
+  - Step 3: Click the refresh button next to the date inputs.
+expectedResult: The application should not display any books and may show a message indicating the invalid date range.
+
+Test Case: Test Case 5
+testCaseName: Verify Display of Books with Exact Date Range
+objective: Verify that the user can filter books by specifying an exact date range
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter an exact start and end date in the specific input forms for dates.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display a list of books with publication dates exactly matching the specified start and end dates.
+

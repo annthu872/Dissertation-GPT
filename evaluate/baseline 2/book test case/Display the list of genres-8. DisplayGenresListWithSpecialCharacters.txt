@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List with Special Characters
+objective: Ensure that the application correctly displays the list of genres, including those with special characters in their names or descriptions, and allows pagination.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Observe the list to identify any genres with special characters in their names or descriptions.
+  - Step 4: Click on the 'Next' button or a specific page number to view the next set of genres.
+expectedResult: The application should display up to 10 genres per page, including those with special characters in their names or descriptions, without any errors. Pagination should work correctly, allowing the user to view additional genres.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: To confirm that the pagination functionality works as expected, allowing users to navigate through different pages of the genres list.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Scroll down to the pagination block at the bottom of the list.
+  - Step 4: Click on the 'Next' button to move to the next page of genres.
+  - Step 5: Click on a specific page number to jump to that page of the genres list.
+  - Step 6: Click on the 'Previous' button (if available) to go back to the previous page.
+expectedResult: Each action on the pagination block should lead to the correct page, displaying a new set of up to 10 genres. The 'Next' and 'Previous' buttons should navigate to the subsequent and preceding pages, respectively, and specific page numbers should take the user directly to that page.
+
+Test Case: Test Case 3
+testCaseName: Verify Genres List Columns Display
+objective: Ensure that the genres list correctly displays all required columns (id, Name, Description) for each genre.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Examine the list to ensure that each genre entry displays an 'id', 'Name', and 'Description'.
+expectedResult: Each genre in the list should be displayed with all the following columns correctly: 'id' showing a unique genre number, 'Name', and 'Description'. The information should be clear and readable.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Author - Author Does Not Exist - Confirm Deletion
+objective: Verify that the system handles the attempt to delete a non-existent author correctly when the user confirms the deletion
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Attempt to click the "Delete" button next to an author that does not exist or has already been deleted.
+  - Step 3: On the dialog page, confirm the deletion by pressing the "Confirm" button.
+expectedResult: The system should display an appropriate error message indicating that the author does not exist or has already been deleted, and no deletion should occur.
+
+Test Case: Test Case 2
+testCaseName: Delete Author - Author Does Not Exist - Cancel Deletion
+objective: Verify that the system does not delete any data and returns to the author list when attempting to delete a non-existent author and the user cancels the deletion
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Attempt to click the "Delete" button next to an author that does not exist or has already been deleted.
+  - Step 3: On the dialog page, press the "Cancel" button.
+expectedResult: The system should not delete any data and should return the user to the updated list of authors, indicating that no changes have been made.
+
+Test Case: Test Case 3
+testCaseName: Delete Author - Author Does Not Exist - Navigate Away
+objective: Verify that the system does not delete any data when attempting to delete a non-existent author and the user navigates away using the menu
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Attempt to click the "Delete" button next to an author that does not exist or has already been deleted.
+  - Step 3: On the dialog page, instead of confirming or canceling, navigate away by selecting a menu item such as "Books", "Genres", "Authors", "Home", or "API".
+expectedResult: The system should not delete any data and should display the selected form with updated data, indicating that no changes have been made to the author list.
+

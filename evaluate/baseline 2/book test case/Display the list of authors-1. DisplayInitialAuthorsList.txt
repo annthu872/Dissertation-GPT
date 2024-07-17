@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Initial Authors List
+objective: Verify that the application correctly displays the initial list of authors upon user selection
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application should display the initial list of up to 10 authors, including their id, Name, and Bio in the specified columns.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Authors List
+objective: Ensure that the user can navigate through the authors list using the pagination controls
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Authors' to view the initial list of authors.
+  - Step 2: Scroll down to the bottom of the authors list to locate the pagination block.
+  - Step 3: Click the 'Next' button or select a specific page number from the pagination block.
+  - Step 4: Observe the list of authors displayed after the action.
+expectedResult: Upon clicking 'Next' or a specific page number, the application should display the next set of up to 10 authors from the database, updating the list accordingly.
+

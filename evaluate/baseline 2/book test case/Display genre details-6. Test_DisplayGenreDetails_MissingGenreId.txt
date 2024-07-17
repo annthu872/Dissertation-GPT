@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with Valid Genre ID
+objective: Verify that the application correctly displays the details of a genre when a valid genre ID is provided
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: From the list, click on the 'Name' of a specific genre.
+  - Step 3: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns populated with correct data: id (unique genre number), Name, and Description.
+
+Test Case: Test Case 2
+testCaseName: Display Genre Details with Missing Genre ID
+objective: Verify that the application handles the scenario where a genre ID is missing or not provided when attempting to view genre details
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Attempt to access the details of a genre without selecting a specific genre (simulating a missing genre ID).
+expectedResult: The application should display an appropriate error message or redirect the user back to the genre list page, indicating that the genre details cannot be displayed due to a missing genre ID.
+

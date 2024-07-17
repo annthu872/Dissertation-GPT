@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Genre
+objective: Verify that the system displays an error message when updating a book with an invalid genre
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's details, inputting an invalid value for the 'Genre' field.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the 'Genre' field is invalid.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Valid Data
+objective: Verify that the book record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, correctly fill in all fields including a valid 'Genre'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database and the updated book list is displayed.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the update operation can be canceled without making changes to the book record
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book's details in the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no changes are made to the book record, and the list of book records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Navigation After Canceling Update
+objective: Verify that navigating away after canceling an update does not save any changes
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button next to a book.
+  - Step 2: Begin entering data into the form fields.
+  - Step 3: Press the 'Cancel' button.
+  - Step 4: Navigate to another page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: No data is updated in the database, and the user is successfully navigated to the selected page without any changes being saved.
+

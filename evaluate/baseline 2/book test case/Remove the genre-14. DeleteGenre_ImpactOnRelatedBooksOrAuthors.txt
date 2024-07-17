@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify deleting a genre successfully removes it from the list
+objective: Ensure that when a user deletes a genre, it is successfully removed from the genre list and impacts related books or authors accordingly.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with deletion.
+expectedResult: The genre should be successfully deleted from the list. The application should update the list to reflect this change, and any related books or authors should no longer reference the deleted genre.
+
+Test Case: Test Case 2
+testCaseName: Verify canceling the delete operation retains the genre
+objective: Ensure that when a user cancels the deletion of a genre, the genre remains in the list and no data is deleted from the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort deletion.
+expectedResult: The genre should remain in the list, and no changes should be made to the database. The application should return to the genre list without deleting any data.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from delete confirmation cancels deletion
+objective: To confirm that navigating away from the delete confirmation dialog without confirming deletion retains the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: While on the confirmation dialog, navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The action of navigating away should cancel the deletion process, and the genre should remain in the database. The application should display the page of the selected menu item with updated data, showing that no deletion occurred.
+

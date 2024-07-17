@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Whitespace Only in Bio
+objective: Verify that the system prevents updating an author's bio with whitespace only and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field and enter only whitespace characters.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the bio cannot consist of whitespace only and the author's bio should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation for Author
+objective: Verify that cancelling the update operation does not save changes and redirects the user back to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Modify the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The system should not save any changes and should redirect the user back to the list of authors, displaying the original, unmodified information.
+
+Test Case: Test Case 3
+testCaseName: Update Author with Valid Data
+objective: Verify that the system allows updating an author's details with valid data and displays the updated information correctly on the authors list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter valid data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should update the author's details in the database and redirect the user to the list of authors, where the updated information is displayed correctly.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Update Page Without Saving
+objective: Verify that navigating away from the update page without saving does not update the author's details in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Modify the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not save any changes and should display the selected page without updating the author's details in the database.
+

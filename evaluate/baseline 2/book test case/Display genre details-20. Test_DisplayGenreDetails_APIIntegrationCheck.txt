@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genre Details on Click
+objective: Ensure that clicking on a genre name from the genre list page leads to the display of that genre's details
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a specific genre from the list.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application should display the details of the selected genre, including 'id', 'Name', and 'Description'.
+
+Test Case: Test Case 2
+testCaseName: Verify Correctness of Displayed Genre Details
+objective: To verify that the details displayed for a genre are correct and match the expected 'id', 'Name', and 'Description'
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Note the 'Name' and 'id' of a genre from the list.
+  - Step 3: Click on the noted 'Name' of the genre.
+  - Step 4: Verify that the 'id', 'Name', and 'Description' displayed match the expected details.
+expectedResult: The details displayed for the genre should correctly match the 'id', 'Name', and 'Description' as expected.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Genre Details for Multiple Genres
+objective: To ensure that the application can display details for multiple genres correctly when selected one after another
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a genre from the list and note the details displayed.
+  - Step 3: Navigate back to the genre list page.
+  - Step 4: Click on the 'Name' of a different genre and note the details displayed.
+  - Step 5: Repeat steps 2 to 4 for at least 3 different genres.
+expectedResult: The application should correctly display the 'id', 'Name', and 'Description' for each selected genre without mixing up details between genres.
+

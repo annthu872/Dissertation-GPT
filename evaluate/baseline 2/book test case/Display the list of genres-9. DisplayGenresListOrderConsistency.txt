@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List on First Page
+objective: Verify that the application correctly displays the first page of the genres list, including id, Name, and Description columns.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the menu.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The first page of the genres list is displayed with up to 10 items. Each item should include the columns: id, Name, and Description.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: Ensure that the user can navigate through different pages of the genres list using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Genres' to view the first page of the genres list.
+  - Step 2: Click the 'Next' button below the list.
+  - Step 3: Observe the list of genres on the second page.
+expectedResult: The second page of the genres list is displayed with up to 10 different items, maintaining the order consistency with the columns: id, Name, and Description.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Page Selection in Genres List Pagination
+objective: Check if the user can directly select a page number in the pagination block to view the corresponding list of genres.
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Genres' to view the genres list.
+  - Step 2: In the pagination block, click on a page number other than the first page.
+  - Step 3: Observe the list of genres displayed for the selected page.
+expectedResult: The selected page of the genres list is displayed with up to 10 items, each including the columns: id, Name, and Description. The order of the list should be consistent with the database records.
+
+Test Case: Test Case 4
+testCaseName: Verify Genres List Order Consistency Across Pages
+objective: Ensure that the order of genres remains consistent when navigating through pages.
+testSteps:
+  - Step 1: Navigate to the application's main page and select 'Genres'.
+  - Step 2: Note the last genre's id on the first page.
+  - Step 3: Click the 'Next' button to go to the second page.
+  - Step 4: Verify that the first genre's id on the second page follows consecutively after the last genre's id on the first page.
+expectedResult: The order of genres is consistent across pages, with the id of the first genre on any subsequent page following consecutively after the last genre's id on the previous page.
+

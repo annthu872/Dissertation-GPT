@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application displays the list of books without applying date filters and allows pagination
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date filter.
+  - Step 3: Click the 'Next' button or select a page number to navigate through the book list.
+expectedResult: The application should display up to 10 books per page without any date filter applied. Pagination should work correctly, allowing the user to view additional books.
+
+Test Case: Test Case 2
+testCaseName: Verify Books List Filtering by Single Date
+objective: Verify that the application correctly filters the list of books within a single date range and displays the filtered results
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter the same start and end date in the date range input forms.
+  - Step 3: Click the 'Refresh' button to apply the date filter.
+  - Step 4: Observe the list of books displayed after applying the date filter.
+expectedResult: The application should display only the books with publication dates that match the specified single date. No books outside this date should be shown.
+
+Test Case: Test Case 3
+testCaseName: Verify Books List Filtering by Date Range
+objective: Verify that the application correctly filters the list of books within a specified date range and displays the filtered results
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Enter a start date and an end date in the date range input forms, ensuring the start date is earlier than the end date.
+  - Step 3: Click the 'Refresh' button to apply the date filter.
+  - Step 4: Observe the list of books displayed after applying the date filter.
+expectedResult: The application should display only the books with publication dates within the specified date range. No books outside this range should be shown.
+
+Test Case: Test Case 4
+testCaseName: Verify Columns in Books List
+objective: Verify that the books list displays all required columns
+testSteps:
+  - Step 1: Navigate to the Books page, either with or without applying date filters.
+  - Step 2: Observe the columns in the list of books displayed.
+expectedResult: The list of books should display the following columns: id, Title, Author, Genre, and Publication date.
+

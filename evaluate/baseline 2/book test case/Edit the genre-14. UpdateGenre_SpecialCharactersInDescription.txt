@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Special Characters in Description
+objective: Verify that the genre description accepts special characters and updates the genre record successfully
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the displayed form, enter or modify the Name of the genre as needed.
+  - Step 4: Enter special characters (e.g., !@#$%^&*()) in the Description field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The genre should be updated successfully with the special characters in the description, and the user should be redirected to the list of genres showing the updated record.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Special Characters in Description and Invalid Name
+objective: Verify that the system displays an error message when the genre name is invalid but the description contains special characters
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter an invalid Name (e.g., using special characters or numbers).
+  - Step 4: Enter special characters (e.g., !@#$%^&*()) in the Description field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the name is invalid and not update the genre in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Genre Operation with Special Characters in Description
+objective: Verify that the genre update operation can be canceled after entering special characters in the description, without updating the genre in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter or modify the Name of the genre as needed.
+  - Step 4: Enter special characters (e.g., !@#$%^&*()) in the Description field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The genre update operation should be canceled, no changes should be saved in the database, and the user should be redirected to the list of genres without the changes.
+

@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Special Characters in Title
+objective: Verify that the system allows updating a book's title with special characters and saves the updated information correctly.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter a title with special characters (e.g., @, #, $, %) in the 'Title' field.
+  - Step 4: Fill in the remaining fields (Author, Genre, Description, Publication date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The book record is successfully updated with the new title containing special characters, and the updated book list is displayed with the changes reflected.
+
+Test Case: Test Case 2
+testCaseName: Update Book Operation Cancel
+objective: Verify that the book update operation can be canceled without saving any changes.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the book data in the provided form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no changes are saved to the database, and the user is redirected back to the list of book records without any updates.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Invalid Data
+objective: Verify that the system displays error messages when trying to update a book with invalid data.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter invalid data in one or more fields (e.g., leaving 'Title' field empty, incorrect format for 'Publication date').
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages for each field with invalid data, and the book record is not updated in the database.
+
+Test Case: Test Case 4
+testCaseName: Update Book with Valid Data
+objective: Verify that the system updates a book record with valid data and displays the updated list of books.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in all fields (Title, Author, Genre, Description, Publication date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated with the new data, and the updated book list is displayed with the changes reflected.
+

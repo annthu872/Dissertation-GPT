@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality with 'Next' Button
+objective: Ensure that the user can navigate through the genres list using the 'Next' button and that the next page displays the correct records.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the list of genres displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of genres.
+  - Step 4: Observe the list of genres on the second page.
+expectedResult: After clicking the 'Next' button, the application should display the next 10 records of genres on the second page, different from those on the first page.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination by Selecting a Specific Page Number
+objective: To verify that the user can navigate to a specific page by clicking on the page number in the pagination block and that the selected page displays the correct records.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Observe the list of genres displayed on the first page.
+  - Step 3: Click on the page number '2' in the pagination block.
+  - Step 4: Observe the list of genres on page 2.
+expectedResult: After clicking on page number '2', the application should display the next 10 records of genres on the second page, accurately reflecting the records that belong to page 2.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality with Previous Button from Second Page
+objective: Ensure that the user can navigate back to the first page from the second page using the 'Previous' button and that the first page displays the correct initial records.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application and go to the second page either by clicking the 'Next' button or the page number '2'.
+  - Step 2: Once on the second page, click the 'Previous' button located below the list of genres.
+  - Step 3: Observe the list of genres on the first page.
+expectedResult: After clicking the 'Previous' button from the second page, the application should navigate back to the first page and display the initial 10 records of genres.
+

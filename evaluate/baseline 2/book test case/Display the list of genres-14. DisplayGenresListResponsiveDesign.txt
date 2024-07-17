@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres List on Desktop
+objective: Ensure that the genres list is correctly displayed on desktop devices, including all columns and pagination functionality.
+testSteps:
+  - Step 1: Open the application on a desktop browser.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application should display a list of genres with columns for id, Name, and Description. Up to 10 items should be displayed per page with a pagination option at the bottom.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: To verify that users can navigate through different pages of the genres list using the pagination controls.
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to the 'Genres' section.
+  - Step 2: If more than 10 genres are available, click on the 'Next' button below the list.
+  - Step 3: Observe the list of genres on the next page.
+expectedResult: Upon clicking the 'Next' button, the next set of up to 10 genres should be displayed. The pagination control should update to reflect the current page number.
+
+Test Case: Test Case 3
+testCaseName: Verify Responsive Design of Genres List on Mobile Devices
+objective: Ensure that the genres list is correctly displayed and usable on mobile devices.
+testSteps:
+  - Step 1: Open the application on a mobile browser.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the list of genres and the pagination controls.
+expectedResult: The genres list should be displayed in a responsive manner suitable for mobile devices, with readable text and accessible pagination controls. All columns (id, Name, and Description) should be visible or accessible.
+
+Test Case: Test Case 4
+testCaseName: Verify Genres List Navigation Using Page Numbers
+objective: To ensure that users can navigate to a specific page in the genres list using the page number links in the pagination block.
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to the 'Genres' section on a desktop or mobile browser.
+  - Step 2: Identify the pagination block at the bottom of the list.
+  - Step 3: Click on a page number other than the current one.
+  - Step 4: Observe the list of genres displayed.
+expectedResult: The application should navigate to the selected page number and display the corresponding set of genres. The pagination control should update to reflect the current page number.
+

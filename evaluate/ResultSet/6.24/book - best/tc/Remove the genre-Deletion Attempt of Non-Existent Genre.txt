@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Deletion Attempt of Non-Existent Genre - Confirm Deletion
+objective: Verify that the application prevents the deletion of a non-existent genre and displays an appropriate error message when the user confirms the deletion.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Attempt to delete a genre that does not exist or has already been deleted by clicking the 'Delete' button next to it.
+  - Step 3: On the dialog page, confirm the deletion by pressing the 'Confirm' button.
+expectedResult: The application displays an error message indicating that the genre does not exist or has already been deleted, and no deletion occurs.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to delete a non-existent genre and expecting an error message, which is the core action and outcome defined in the scenario.
+

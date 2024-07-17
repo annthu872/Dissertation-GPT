@@ -1,0 +1,6 @@
+1. Scenario: Edit Genre with Empty Name
+2. Scenario: Edit Genre with Empty Description
+3. Successful Genre Update
+4. Genre Update with Incorrect Data
+5. User decides to cancel the update operation
+6. User navigates away to another page before submitting the update

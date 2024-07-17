@@ -1,0 +1,14 @@
+1. Successful Purchase with Default Settings
+2. Purchase with Changed Shipping Address
+3. Purchase with New Shipping Address
+4. Purchase with Non-default Payment Method
+5. Purchase with Application Voucher
+6. Purchase with Shop Voucher
+7. Purchase with Changed Shipping Option
+8. Purchase with Note for Shop
+9. Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+10. User has no default shipping address
+11. Change Shipping Address Scenario
+12. User Applies Valid Application Voucher
+13. User Applies Valid Shop Voucher
+14. Invalid Shipping Address Input Scenario

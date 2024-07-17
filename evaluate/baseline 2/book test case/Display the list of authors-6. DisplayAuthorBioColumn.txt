@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author List with Bio Column
+objective: Ensure the application correctly displays a list of authors including their ID, Name, and Bio in the specified columns
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Observe the list displayed on the page.
+expectedResult: The application should display a list of authors with the columns for ID, Name, and Bio. Each author's information should be correctly placed under the respective column.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Author List
+objective: To verify that users can navigate through different pages of the author list using the pagination feature
+testSteps:
+  - Step 1: Navigate to the 'Authors' section where the list of authors is displayed.
+  - Step 2: Scroll down to the bottom of the list to locate the pagination block.
+  - Step 3: Click on the 'Next' button to view the next set of authors.
+  - Step 4: Alternatively, click on a specific page number to jump to that page of the author list.
+expectedResult: Upon clicking the 'Next' button or a specific page number, the application should display the next 10 records of authors. The pagination should update to reflect the current page being viewed.
+
+Test Case: Test Case 3
+testCaseName: Verify Author List Limits to 10 Items Per Page
+objective: Ensure that the application limits the display of authors to 10 items per page as per the design
+testSteps:
+  - Step 1: Navigate to the 'Authors' section to view the list of authors.
+  - Step 2: Count the number of authors listed on the first page.
+  - Step 3: Navigate to the next page using the pagination feature and count the number of authors listed.
+expectedResult: Each page visited should list exactly 10 authors, demonstrating the application's adherence to the specified limit per page.
+

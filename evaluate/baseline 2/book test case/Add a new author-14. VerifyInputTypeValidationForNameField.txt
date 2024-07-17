@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify input validation for alphanumeric name in the Name field
+objective: Ensure that the Name field accepts alphanumeric characters without displaying an error message
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: In the Name field, enter a valid alphanumeric name (e.g., 'John123').
+  - Step 3: Fill in the other required fields with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The new author record should be added to the database without any error messages, and the list of authors with the newly added record should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify input validation for special characters in the Name field
+objective: Ensure that the Name field does not accept special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: In the Name field, enter a name with special characters (e.g., '@John#').
+  - Step 3: Attempt to fill in the other required fields with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that special characters are not allowed in the Name field, and the record should not be added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify input validation for empty Name field
+objective: Ensure that the Name field does not accept an empty value and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: Leave the Name field empty.
+  - Step 3: Attempt to fill in the other required fields with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Name field is required and cannot be left empty, and the record should not be added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during author creation
+objective: Ensure that pressing the 'Cancel' button discards the entered data and does not add a new record to the database
+testSteps:
+  - Step 1: Navigate to the author list page and click the 'Create new' button.
+  - Step 2: Start entering data into the form fields.
+  - Step 3: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The data entered in the form should not be saved in the database, and the list of author records should be displayed without the new record.
+

@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Empty Title
+objective: Verify that the system prevents updating a book with an empty title and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Title' field, leaving it empty.
+  - Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the title cannot be empty and the book record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on a Book
+objective: Verify that the update operation can be canceled and no changes are saved to the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Modify the data in one or more fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The system should not save any changes and should display the list of book records without applying the attempted updates.
+
+Test Case: Test Case 3
+testCaseName: Successful Book Update
+objective: Verify that a book record can be successfully updated with valid data and the updated record is correctly displayed in the list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in all fields including the 'Title'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should update the book record in the database and display the list of books with the updated record.
+
+Test Case: Test Case 4
+testCaseName: Update Book and Navigate Away Without Saving
+objective: Verify that if a user navigates away from the update page without saving, no changes are made to the book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Modify the data in one or more fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not save any changes and should display the selected page without updating the book record in the database.
+

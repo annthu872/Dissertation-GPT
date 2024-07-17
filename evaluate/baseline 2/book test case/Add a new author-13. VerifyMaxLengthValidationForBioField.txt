@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Max Length Validation for Bio Field in Author Creation
+objective: To verify that the Bio field in the author creation form enforces a maximum length validation rule
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to open the author creation form.
+  - Step 3: Enter valid data in the 'Name' field.
+  - Step 4: Enter a string longer than the maximum allowed length in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Bio field exceeds the maximum allowed length.
+
+Test Case: Test Case 2
+testCaseName: Verify Successful Author Creation with Valid Data
+objective: To verify that an author record is successfully added to the database when all required fields are filled with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to open the author creation form.
+  - Step 3: Enter valid data in the 'Name' field.
+  - Step 4: Enter valid data within the maximum allowed length in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new author record should be successfully added to the database, and the list of authors with the newly added record should be displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation in Author Creation
+objective: To verify that no data is saved and the user is redirected back to the list of authors when the 'Cancel' button is pressed during author creation
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to open the author creation form.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: No data should be saved in the database, and the user should be redirected back to the list of author records.
+

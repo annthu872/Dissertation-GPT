@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Display Upon Selection
+objective: Ensure that when a user selects a genre from the genre list, the application correctly displays the details of the selected genre.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a specific genre from the list.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns correctly filled: id (unique genre number), Name, and Description.
+
+Test Case: Test Case 2
+testCaseName: Verify Page Refresh Stability on Genre Details Page
+objective: To confirm that the genre details page retains the displayed information correctly after the page is refreshed.
+testSteps:
+  - Step 1: Successfully complete all steps in Test Case 1.
+  - Step 2: Refresh the genre details page.
+  - Step 3: Observe the information displayed on the page after the refresh.
+expectedResult: After refreshing, the genre details page should still correctly display the same details as before the refresh, with no loss of data or incorrect information. The columns id, Name, and Description should remain accurately filled.
+

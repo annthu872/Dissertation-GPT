@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Filter
+objective: Verify that the application displays up to 10 books per page without any date filter applied
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Books' item from the menu to view the books list.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application should display a list of up to 10 books per page, with pagination options available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Ensure that the user can navigate through pages of books using the pagination controls
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the list of books.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number in the pagination block.
+  - Step 3: Observe the list of books on the new page.
+expectedResult: The application should display the next set of up to 10 books, or the books corresponding to the selected page number.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Publication Date
+objective: Ensure that the user can filter the list of books by specifying a publication date range
+testSteps:
+  - Step 1: Navigate to the 'Books' section as per Test Case 1.
+  - Step 2: Specify a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books published within the specified date range.
+
+Test Case: Test Case 4
+testCaseName: Verify Columns in Books List
+objective: Ensure that the books list displays all required columns
+testSteps:
+  - Step 1: Display the list of books by following steps 1 and 2 from Test Case 1.
+  - Step 2: Observe the columns in the list of books displayed.
+expectedResult: The list of books should display columns for id, Title, Author, Genre, and Publication date.
+

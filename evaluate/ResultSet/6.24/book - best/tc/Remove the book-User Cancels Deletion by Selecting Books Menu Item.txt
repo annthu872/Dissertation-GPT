@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Navigate to Books Menu
+objective: Verify that the user can cancel the deletion process by selecting 'Books' menu item and ensure the book record remains undeleted.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: After cancellation, select the 'Books' menu item.
+expectedResult: The book list is displayed with the previously selected book still present, indicating the deletion was successfully canceled.
+reflect: yes
+explanation: This test case directly addresses the test scenario of canceling a deletion by selecting the 'Books' menu item. It follows the steps a user would take to cancel a deletion and verifies that the book remains undeleted, which is the intended outcome of the test scenario.
+

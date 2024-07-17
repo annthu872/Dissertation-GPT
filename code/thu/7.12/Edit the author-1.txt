@@ -1,0 +1,8 @@
+1. Scenario_Name_Incorrect_Name_Format
+2. Scenario_Name_Missing_Name
+3. Scenario_Name_Incorrect_Bio_Format
+4. Scenario_Name_Missing_Bio
+5. Successful Author Update
+6. Author Update with Incorrect Data
+7. Cancel Operation Before Data Submission
+8. Navigation Away Before Data Submission

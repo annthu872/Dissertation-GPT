@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Special Characters in Name
+objective: Verify that the system prevents the update of a genre name with special characters and displays an appropriate error message
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the 'Name' field, enter a name that includes special characters (e.g., '@#$%^&*').
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system should display an error message indicating that special characters are not allowed in the genre name.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Genre Operation
+objective: Verify that the genre update operation can be canceled without making changes to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Click the 'Cancel' button before pressing 'Submit'.
+expectedResult: The system should not update the genre in the database and should display the list of genre records without any changes to the canceled item.
+
+Test Case: Test Case 3
+testCaseName: Successful Genre Update
+objective: Verify that a genre can be successfully updated with valid data and the updated record is reflected in the genre list
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter a valid name in the 'Name' field without special characters.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Click the 'Submit' button.
+expectedResult: The system should update the genre in the database and display the updated genre in the list of genres.
+

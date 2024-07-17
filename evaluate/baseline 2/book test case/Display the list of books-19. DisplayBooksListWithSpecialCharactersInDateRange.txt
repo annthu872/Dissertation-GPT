@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Range Filter
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Observe the list of books displayed without applying any date range filter.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date. Pagination options should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Books List
+objective: Verify that the user can navigate through different pages of the books list using the pagination feature
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number in the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books per page based on the pagination selection.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Valid Date Range
+objective: Verify that the application filters and displays books within a specified valid date range
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Specify a valid start date and end date in the date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display only the books with publication dates within the specified date range. Each book's information should include id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 4
+testCaseName: Verify Filtering Books with Special Characters in Date Range
+objective: Verify that the application handles special characters in the date range fields and prompts an error or filters correctly
+testSteps:
+  - Step 1: Navigate to the Books page on the application.
+  - Step 2: Enter special characters (e.g., !@#$%) in one or both date range input forms.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the behavior of the application.
+expectedResult: The application should either display an error message indicating invalid date format or ignore the special characters and display the books list without applying the date filter.
+

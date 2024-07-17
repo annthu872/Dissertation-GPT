@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful genre creation
+objective: Ensure that a new genre can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database, and the user is redirected to the list of genres with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling
+objective: Ensure that entering incorrect data displays appropriate error messages
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays error messages related to the incorrect data, and the new genre record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation with data entered
+objective: Ensure that data is not saved to the database when the 'Cancel' button is pressed after entering data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: Data is not saved to the database, and the user is redirected to the list of genres without the new record.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from creation form does not save data
+objective: Ensure that navigating away from the genre creation form without submitting does not save the entered data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application does not save the entered data and displays the selected page without adding a new genre record.
+

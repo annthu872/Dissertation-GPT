@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify successful creation of a new author record
+objective: To ensure that the application successfully creates a new author record when valid data is entered and the submit button is pressed
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new author record is successfully added to the database, and the list of authors with the newly added record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect data handling in new author creation
+objective: To verify that the application displays appropriate error messages when incorrect data is entered in the new author creation form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays error messages indicating which fields contain incorrect data.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during new author creation
+objective: To ensure that no data is saved and the user is redirected back to the list of author records when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: No data is saved to the database, and the user is redirected back to the list of author records.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation to other sections without saving data
+objective: To verify that navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' from the new author creation page does not save data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', navigate to another section by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application does not save the entered data and displays the selected section with updated data.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author Name on Book Details Page
+objective: Ensure that the author's name is correctly displayed on the book details page when a user selects a book from the book list page
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list of books, click on the 'Title' of a specific book you wish to view details for.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should correctly display the book's author name along with other details such as id, Title, Genre, Description, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Name Consistency Across Application
+objective: Verify that the author's name displayed on the book details page matches the author's name listed on the book list page for the same book
+testSteps:
+  - Step 1: Note the author's name listed next to a book on the book list page.
+  - Step 2: Click on the 'Title' of that specific book to view its details.
+  - Step 3: On the book details page, compare the author's name displayed with the name noted in Step 1.
+expectedResult: The author's name displayed on the book details page should match exactly with the author's name listed on the book list page for the same book.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of All Required Columns on Book Details Page
+objective: Ensure that all required columns (id, Title, Author, Genre, Description, Publication date) are displayed on the book details page
+testSteps:
+  - Step 1: Click on the 'Title' of any book from the book list page to view its details.
+  - Step 2: On the book details page, verify the presence of the following columns: id, Title, Author, Genre, Description, Publication date.
+expectedResult: The book details page should display all the required columns: id, Title, Author, Genre, Description, and Publication date.
+

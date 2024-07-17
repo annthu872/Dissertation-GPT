@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify genre deletion and data consistency after deletion
+objective: Ensure that the genre is deleted after confirmation and the data consistency is maintained across the application
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the list, and the application should not display the deleted genre in any related sections or lists.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of genre deletion
+objective: Ensure that the genre is not deleted when the deletion is canceled and the data remains consistent
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted, and the user should be redirected back to the list of genres without any changes.
+
+Test Case: Test Case 3
+testCaseName: Verify data consistency after canceling genre deletion and navigating to other pages
+objective: Ensure that after canceling the deletion of a genre and navigating to other pages, the data remains consistent and the genre is not deleted
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Navigate to other pages such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre should not be deleted, and the user should see the genre still listed without any changes across all navigated pages.
+

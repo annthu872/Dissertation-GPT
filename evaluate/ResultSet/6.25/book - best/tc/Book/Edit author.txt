@@ -1,0 +1,143 @@
+Scenario: Author Update with Incorrect Data1.txt
+Test Case: Test Case 1
+testCaseName: Edit Author with Incorrect Name Data
+objective: Verify that the application displays an incorrect data message when attempting to update an author with an invalid name
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter an invalid name (e.g., using numbers or special characters) in the 'Name' field.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the 'Name' field is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's response to incorrect name data during an author update operation.
+
+
+Scenario: Cancel Operation by Pressing 'Cancel' Button1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Editing Author by Pressing 'Cancel' Button
+objective: Verify that pressing the 'Cancel' button while editing an author's details cancels the operation and does not update the author's information in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the author's Name and Bio.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The operation is canceled, no data is updated in the database, and the list of author records is displayed to the user.
+reflect: yes
+explanation: This test case directly tests the given test scenario, which is to verify the functionality of the 'Cancel' button in an edit operation. It follows the exact steps that a user would take to cancel an edit operation, ensuring that the 'Cancel' button works as intended and does not save any changes made.
+
+
+Scenario: Cancel Operation by Selecting 'API' Menu Item1.txt
+Test Case: Test Case 2
+testCaseName: Cancel Editing Author by Selecting 'API' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the 'API' form when the 'API' menu item is selected during the edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields for the author.
+  - Step 4: Select the 'API' menu item before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'API' form.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the specific action of selecting the 'API' menu item during an edit operation, which is intended to cancel the update process and redirect the user without making changes.
+
+
+Scenario: Cancel Operation by Selecting 'Authors' Menu Item1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting 'Authors' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the list of authors when the 'Authors' menu item is selected during an edit operation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields provided for the author's Name and Bio.
+  - Step 4: Before submitting the form, select the 'Authors' menu item.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the list of authors records.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the specific action of selecting the 'Authors' menu item to cancel an edit operation. It verifies that this action does not update the author's data and redirects the user to the list of authors, which is the intended outcome of the test scenario.
+
+
+Scenario: Cancel Operation by Selecting 'Books' Menu Item1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting 'Books' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is navigated to the 'Books' page when the 'Books' menu item is selected during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the author edit form fields.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Books' menu item.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'Books' page displaying the list of books or book details.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the specific action of selecting the 'Books' menu item to cancel an edit operation. It checks both the non-update of the author's data and the redirection to the 'Books' page, which are the main points of the test scenario.
+
+
+Scenario: Cancel Operation by Selecting 'Genres' Menu Item1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting 'Genres' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is navigated to the 'Genres' page when selecting 'Genres' from the menu during an author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the author's edit form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Genres' menu item.
+expectedResult: The author's data remains unchanged in the database, and the user is redirected to the 'Genres' page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to initiate an edit operation on an author's data and then canceling this operation by navigating away to the 'Genres' page. It checks both the non-updation of data and the redirection, which are the core aspects of the scenario.
+
+
+Scenario: Cancel Operation by Selecting 'Home' Menu Item1.txt
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting 'Home' Menu Item
+objective: Verify that the author's data update operation is cancelled and the user is navigated to the Home page without updating the data in the database when selecting 'Home' from the menu.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields for the author.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Home' menu item.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the Home page. The list of authors should reflect no changes to the updated author's record.
+reflect: yes
+explanation: This test case ensures that when a user decides to cancel the update operation by navigating away from the edit page through the 'Home' menu item, the operation is indeed cancelled, and no data is updated in the database. It directly relates to the cancel operation scenario by testing the specific action of selecting 'Home' to cancel the operation.
+
+
+Scenario: Successful Author Update1.txt
+Test Case: Test Case 1
+testCaseName: Successful Author Record Update
+objective: Verify that the author record is successfully updated in the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author record is successfully updated in the database, and the list of authors with the updated record is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Successful Author Update' by verifying that the author's record can be updated with valid data and that the update is reflected in the database.
+
+
+Scenario: UpdateAuthor_WithEmptyBio1.txt
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Bio Field
+objective: Verify that the system allows updating an author's record with an empty 'Bio' field and displays the updated list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field, leaving it empty.
+  - Step 4: Fill in other required fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The author's record is updated with an empty 'Bio' field, and the updated list of authors is displayed without any error messages.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateAuthor_WithEmptyBio' by verifying that an author's bio can be updated to be empty. It follows the exact steps that would be taken to achieve this outcome, making it a perfect reflection of the given test scenario.
+
+
+Scenario: UpdateAuthor_WithEmptyName1.txt
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the application prevents updating an author with an empty name field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Enter or modify data in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The application should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateAuthor_WithEmptyName' by attempting to update an author with an empty name field and expecting an error message, which is the core functionality being tested.
+
+

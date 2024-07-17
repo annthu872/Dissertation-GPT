@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify deletion confirmation dialog is displayed when deleting a genre
+objective: Ensure that the application prompts the user with a confirmation dialog when attempting to delete a genre
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+expectedResult: A dialog page asking for confirmation to delete the selected genre should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify successful deletion of a genre
+objective: To confirm that a genre can be successfully deleted from the database upon user confirmation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the database, and the list of genres should be updated to reflect this change.
+
+Test Case: Test Case 3
+testCaseName: Verify cancellation of genre deletion
+objective: To ensure that the deletion process can be cancelled and that no data is deleted from the database when the user cancels the operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process should be cancelled, no data should be deleted from the database, and the user should be redirected back to the list of genres.
+
+Test Case: Test Case 4
+testCaseName: Verify navigation away from deletion cancels the deletion process
+objective: To verify that navigating away from the deletion confirmation dialog by selecting another menu item cancels the deletion process and no data is deleted
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The deletion process should be cancelled, no data should be deleted from the database, and the user should be redirected to the selected page with updated data.
+

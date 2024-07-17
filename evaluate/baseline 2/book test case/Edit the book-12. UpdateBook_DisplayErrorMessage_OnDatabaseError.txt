@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Data
+objective: Verify that the book record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the user is redirected to the list of books with the updated record displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Invalid Data
+objective: Verify that the appropriate error messages are displayed when invalid data is entered
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter invalid data for any of the fields (e.g., leaving the Title field empty).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages for the invalid data entered, and the book record is not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Update Book Operation Cancelled
+objective: Verify that the book record is not updated when the update operation is cancelled
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The book record is not updated in the database, and the user is redirected to the list of book records.
+
+Test Case: Test Case 4
+testCaseName: Update Book Display Error Message on Database Error
+objective: Verify that an error message is displayed when there is a database error during the update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Simulate a database error (this step may require a specific setup to induce a database error condition) and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the book record could not be updated due to a database error.
+

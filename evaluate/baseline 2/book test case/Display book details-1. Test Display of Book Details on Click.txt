@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details on Click
+objective: Verify that clicking on the title of a book from the book list page displays the details of the selected book correctly
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a specific book from the list.
+  - Step 3: Observe the information displayed on the book details page.
+expectedResult: The book details page should display the following columns correctly: id (unique book number), Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Details of Multiple Books
+objective: Verify that the application can display details for multiple books correctly when their titles are clicked one after the other
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of the first book from the list and observe the details.
+  - Step 3: Navigate back to the book list page.
+  - Step 4: Click on the 'Title' of a second book from the list and observe the details.
+  - Step 5: Repeat steps 3 and 4 for a third book.
+expectedResult: Each book's details page should correctly display its respective information: id, Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Book Details for a Non-Existent Book
+objective: Verify the application's behavior when a user attempts to view details for a book that does not exist or has been removed
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Attempt to click on the 'Title' of a book that does not exist or has been removed from the list.
+expectedResult: The application should display an appropriate message indicating that the book details cannot be displayed or the book does not exist.
+

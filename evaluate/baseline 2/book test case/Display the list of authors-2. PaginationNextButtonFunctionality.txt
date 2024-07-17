@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Next Button Functionality on Authors Page
+objective: Ensure that the 'Next' button on the Authors page correctly displays the next set of authors
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu to view the list of authors.
+  - Step 3: Observe the list of authors displayed, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on the 'Next' button in the pagination block.
+expectedResult: The application should display the next 10 records of authors, updating the list with the next set of items. The page number indicated in the pagination block should increase by one.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination by Selecting Page Number on Authors Page
+objective: Ensure that selecting a specific page number in the pagination block on the Authors page correctly displays the corresponding set of authors
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu to view the list of authors.
+  - Step 3: Observe the initial list of authors displayed, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on a page number (other than the current one) in the pagination block.
+expectedResult: The application should display the set of authors corresponding to the selected page number, with up to 10 items shown. The list should update to reflect the authors of the selected page, and the pagination block should highlight the current page number.
+
+Test Case: Test Case 3
+testCaseName: Verify Pagination Functionality with Last Page Authors List
+objective: Ensure that the pagination functionality correctly handles displaying the last page of authors, which may contain less than 10 items
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu to view the list of authors.
+  - Step 3: Use the pagination block to navigate to the last page of authors.
+  - Step 4: Observe the number of authors displayed on the last page.
+expectedResult: The application should correctly display the last set of authors, which may be less than 10 items, indicating the end of the authors list. The 'Next' button should be disabled or hidden if there are no more authors to display.
+

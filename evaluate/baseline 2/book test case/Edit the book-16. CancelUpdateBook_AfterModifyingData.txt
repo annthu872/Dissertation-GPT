@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Verify Cancel Operation After Modifying Book Data
+objective: Ensure that after modifying book data, pressing the 'Cancel' button will not update the data in the database and will return the user to the book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter new values for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The book data should not be updated in the database, and the user should be redirected to the list of book records without the changes being applied.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation Away Cancels Update Operation
+objective: To confirm that navigating away from the edit page after modifying book data without submitting will not update the book in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Update' button for a book.
+  - Step 2: Modify the book's Title, Author, Genre, Description, and Publication date on the form.
+  - Step 3: Without submitting, select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The modifications to the book data should not be saved, and the database should remain unchanged. The user should be directed to the selected page without the edits being applied.
+
+Test Case: Test Case 3
+testCaseName: Verify Incorrect Data Entry Handling During Update
+objective: To ensure that entering incorrect data during the book update process displays appropriate error messages and prevents the update from being submitted.
+testSteps:
+  - Step 1: From the book list/details page, click the 'Update' button for a book.
+  - Step 2: Enter incorrect or invalid data for one or more fields (e.g., an invalid date format for the Publication date).
+  - Step 3: Attempt to submit the form by pressing the 'Submit' button.
+expectedResult: The system should display error messages relevant to the incorrect data entered (e.g., 'Invalid date format'). The book should not be updated in the database until the errors are corrected.
+
+Test Case: Test Case 4
+testCaseName: Verify Successful Book Update
+objective: To verify that correctly entering all book details and submitting updates the book in the database and displays the updated book list.
+testSteps:
+  - Step 1: Click the 'Update' button next to the desired book on the book list/details page.
+  - Step 2: Correctly fill in all fields (Title, Author, Genre, Description, Publication date) with new data.
+  - Step 3: Press the 'Submit' button to update the book.
+expectedResult: The book's data should be successfully updated in the database, and the user should be redirected to the updated list of books reflecting the changes made.
+

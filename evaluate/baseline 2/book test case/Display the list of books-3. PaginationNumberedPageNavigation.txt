@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality with Next Button
+objective: Ensure that the user can navigate through the book list pages by clicking the 'Next' button and that the next page displays the correct records.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click the 'Next' button located below the list of books.
+expectedResult: The application should display the next 10 records of books on the second page, and the page number indicator should update accordingly.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality with Numbered Page Navigation
+objective: To verify that the user can navigate to a specific page by clicking on the page number in the pagination block and that the correct records are displayed.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click on the page number '2' in the pagination block below the list of books.
+expectedResult: The application should display the records of books for page 2, and the page number indicator should show that page 2 is the current page.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Publication Date
+objective: Ensure that the user can filter the list of books by specifying a publication date range and that the filtered list displays correctly.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Enter a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the 'Refresh' button next to the date range inputs.
+expectedResult: The application should display only the books that were published within the specified date range.
+

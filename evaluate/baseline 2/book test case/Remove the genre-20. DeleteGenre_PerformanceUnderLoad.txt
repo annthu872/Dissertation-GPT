@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Genre - Confirm Deletion Under Load
+objective: Verify that the genre can be successfully deleted under load when the user confirms the deletion.
+testSteps:
+  - Step 1: Simulate load on the system by initiating multiple delete requests for different genres.
+  - Step 2: For one of the genres, click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
+expectedResult: The system should handle the load efficiently and delete the selected genre from the database. The user should be redirected to the updated genre list, not showing the deleted genre.
+
+Test Case: Test Case 2
+testCaseName: Delete Genre - Cancel Deletion Under Load
+objective: Verify that the genre is not deleted and remains in the database under load when the user cancels the deletion.
+testSteps:
+  - Step 1: Simulate load on the system by initiating multiple delete requests for different genres.
+  - Step 2: For one of the genres, click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort the deletion process.
+expectedResult: Despite the system being under load, the cancellation process should be successful, and the genre should remain in the database. The user should be redirected to the genre list, still showing the genre that was attempted to be deleted.
+
+Test Case: Test Case 3
+testCaseName: Delete Genre - Navigate Away Under Load
+objective: Verify that the genre is not deleted from the database under load when the user navigates away from the deletion confirmation dialog without confirming deletion.
+testSteps:
+  - Step 1: Simulate load on the system by initiating multiple delete requests for different genres.
+  - Step 2: For one of the genres, click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should handle the load and user navigation efficiently, not deleting the genre from the database. The user should be redirected to the selected page with the data intact and the genre still present in the genre list.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion and audit trail logging
+objective: Ensure that when a user deletes a book, the book is removed from the list, and the deletion activity is logged in the audit trail
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book should be removed from the list, and the deletion activity should be logged in the audit trail.
+
+Test Case: Test Case 2
+testCaseName: Verify cancellation of book deletion
+objective: Ensure that when a user cancels the deletion of a book, the book remains in the list, and no deletion activity is logged
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book should remain in the list, and no deletion activity should be logged in the audit trail.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after canceling book deletion
+objective: Ensure that after canceling the deletion of a book, the user can navigate to other sections without deleting the book
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Delete' button next to the book intended for deletion.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any other menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The book should remain in the database, and the user should be able to view updated data in the section they navigated to without any issues.
+

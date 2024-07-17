@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of book deletion via Cancel button
+objective: Ensure that pressing the 'Cancel' button during the deletion process of a book cancels the deletion and returns the user to the book list without deleting the book.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The book list is displayed without the selected book being deleted, confirming that the cancellation was successful.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of the 'Cancel' button in the context of cancelling a book deletion process. It follows the exact steps a user would take to cancel a deletion, and checks for the expected outcome that aligns with the scenario's requirements.
+

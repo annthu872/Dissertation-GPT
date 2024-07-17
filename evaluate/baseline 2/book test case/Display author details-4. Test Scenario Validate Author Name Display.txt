@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Validate Display of Author Details from Author List
+objective: Verify that clicking on an author's title from the author list page correctly displays the author's details including ID, Name, and Bio
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: From the list, click on the title of a specific author.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The author details page should display the selected author's details including their unique author number (ID), Name, and Bio.
+
+Test Case: Test Case 2
+testCaseName: Validate Author Details Content
+objective: Ensure that the author details page displays all required information (ID, Name, Bio) accurately and completely for the selected author
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to an author's details page.
+  - Step 2: Verify that an ID is displayed and is unique.
+  - Step 3: Verify that the Name of the author is displayed and matches the name clicked on the author list page.
+  - Step 4: Verify that the Bio of the author is displayed and contains relevant information about the author.
+expectedResult: The author details page should accurately display the selected author's ID, Name, and Bio without any missing or incorrect information.
+
+Test Case: Test Case 3
+testCaseName: Validate Navigation Back to Author List
+objective: Verify that users can navigate back to the author list page after viewing an author's details
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to navigate to an author's details page.
+  - Step 2: Locate and click on a 'Back' button or link to return to the author list page.
+  - Step 3: Observe the page to which the application navigates.
+expectedResult: After clicking the 'Back' button or link, the application should navigate back to the author list page, displaying the list of authors.
+

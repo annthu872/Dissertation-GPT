@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genre Details with Short Description Text
+objective: Ensure that the application correctly displays genre details including a short description text
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a genre with a known short description.
+  - Step 3: Observe the details displayed for the selected genre.
+expectedResult: The application should display the genre details page with the following columns correctly populated: id, Name, and Description. The Description should be fully visible without truncation.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Genre Details with Long Description Text
+objective: To verify that the application can handle and correctly display genre details with long description texts without any layout issues
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a genre with a known long description.
+  - Step 3: Observe the details displayed for the selected genre.
+expectedResult: The application should display the genre details page with the following columns correctly populated: id, Name, and Description. The long Description should be fully visible, ensuring that the text is wrapped properly and does not overflow the designated area.
+
+Test Case: Test Case 3
+testCaseName: Verify Consistency of Genre ID and Name in Details Page
+objective: Ensure that the genre ID and Name displayed in the genre details page match those selected from the genre list page
+testSteps:
+  - Step 1: Note the id and Name of a genre from the genre list page.
+  - Step 2: Click on the 'Name' of the selected genre to view its details.
+  - Step 3: Compare the id and Name displayed on the genre details page with those noted in Step 1.
+expectedResult: The id and Name displayed on the genre details page should exactly match the id and Name noted from the genre list page, ensuring data consistency.
+

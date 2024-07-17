@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Delete Book - Database Unavailable Error Handling
+objective: Verify the application's behavior when the database is unavailable during a book deletion process
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Simulate database unavailability (This step requires environment setup or mocking).
+expectedResult: The application should display an error message indicating that the book could not be deleted due to database unavailability.
+
+Test Case: Test Case 2
+testCaseName: Delete Book - Cancel Deletion Operation
+objective: Verify that the book deletion process is successfully canceled and no data is deleted when the user opts to cancel
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The application should not delete the book and should redirect the user back to the list of books without any changes.
+
+Test Case: Test Case 3
+testCaseName: Navigation After Canceling Book Deletion
+objective: Verify that after canceling a book deletion, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting anything
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Delete' button next to the book intended for deletion.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any of the following sections: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should display the corresponding section with updated data, confirming that no data was deleted after canceling the deletion process.
+

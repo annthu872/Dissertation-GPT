@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Display Books List With Backward Date Range
+objective: Verify that the application handles the scenario where the end date is before the start date in the date range filter for displaying books
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: In the date range filter, enter an end date that is before the start date.
+  - Step 3: Click the refresh button to apply the date range filter.
+expectedResult: The application should display a validation error message indicating that the end date cannot be before the start date and no books list is displayed.
+
+Test Case: Test Case 2
+testCaseName: Display Books List With Invalid Date Format
+objective: Verify that the application validates the date format in the date range filter for displaying books
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: In the date range filter, enter a date in an incorrect format (e.g., 'dd/mm/yyyy' instead of 'mm/dd/yyyy').
+  - Step 3: Click the refresh button to apply the date range filter.
+expectedResult: The application should display a validation error message indicating that the date format is incorrect and no books list is displayed.
+
+Test Case: Test Case 3
+testCaseName: Display Books List With Future Date Range
+objective: Verify that the application handles the scenario where the date range for filtering books includes dates in the future
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: In the date range filter, enter a start date and an end date that are both in the future.
+  - Step 3: Click the refresh button to apply the date range filter.
+expectedResult: The application should display a message indicating that there are no books published in the future date range and hence no books list is displayed.
+
+Test Case: Test Case 4
+testCaseName: Display Books List Without Specifying Date Range
+objective: Verify that the application can display the books list without any date range filter applied
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Do not enter any date in the date range filter.
+  - Step 3: Click the refresh button without specifying a date range.
+expectedResult: The application should display the list of books without applying any date range filter, showing books regardless of their publication date.
+

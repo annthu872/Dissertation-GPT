@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Update Author and Submit Successfully
+objective: Verify that the user can successfully update an author's details and see the updated information in the authors list.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data in the required fields (Name, Bio).
+  - Step 4: Press the 'Submit' button after entering the new data.
+expectedResult: The author's details are updated in the database, and the user is redirected to the list of authors where the updated records are displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Incorrect Data
+objective: Verify that the system displays error messages when incorrect data is entered in the author's details form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter incorrect data for the author (e.g., leave the Name field empty, enter numbers in the Bio field).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages indicating the incorrect data fields. The author's details are not updated in the database.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the user can cancel the update operation and no changes are made to the author's details.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no changes are made to the author's details, and the user is redirected to the list of authors.
+
+Test Case: Test Case 4
+testCaseName: Update Author and Encounter an Error
+objective: Verify that the system displays an appropriate error message if an error occurs during the update process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter the new author data in the required fields.
+  - Step 4: Simulate an error condition (e.g., disconnect from the network) and press the 'Submit' button.
+expectedResult: An error message is displayed to the user, indicating that the update operation could not be completed.
+
+Test Case: Test Case 5
+testCaseName: Refresh Page During Author Update
+objective: Verify that refreshing the page during the update process does not submit partial data and resets the form.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Refresh the page before pressing the 'Submit' button.
+expectedResult: The page is refreshed, the update form is reset, and no changes are made to the author's details.
+

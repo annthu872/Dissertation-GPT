@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Verify Delete Button Visibility and Accessibility for Author Deletion
+objective: Ensure the 'Delete' button is visible and accessible next to the author details on the author list/details page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the 'Delete' button next to the author you wish to delete.
+expectedResult: The 'Delete' button should be clearly visible and accessible next to the author's details.
+
+Test Case: Test Case 2
+testCaseName: Verify Deletion Confirmation Dialog Display
+objective: Ensure that a confirmation dialog is displayed when the 'Delete' button is clicked.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: Observe the screen for a confirmation dialog.
+expectedResult: A confirmation dialog should appear, asking to confirm the deletion of the selected author.
+
+Test Case: Test Case 3
+testCaseName: Verify Author Deletion on Confirmation
+objective: Ensure that the author's record is deleted from the database upon confirmation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: In the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Observe the author list/details page.
+expectedResult: The author's record should no longer be present in the database, and the list/details page should reflect this change.
+
+Test Case: Test Case 4
+testCaseName: Verify Cancellation of Author Deletion
+objective: Ensure that the author's record is not deleted from the database when the deletion is canceled.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: In the confirmation dialog, click the 'Cancel' button.
+  - Step 4: Observe the author list/details page.
+expectedResult: The author's record should still be present in the database, and the list/details page should reflect no change.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation Preservation After Cancellation of Deletion
+objective: Ensure that navigating to other pages after canceling a deletion does not delete the author's record.
+testSteps:
+  - Step 1: Navigate to the author list/details page and click the 'Delete' button next to the author you wish to delete.
+  - Step 2: In the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to other pages such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 4: Return to the author list/details page.
+expectedResult: The author's record should still be present in the database and visible on the author list/details page, indicating that navigation after cancellation does not affect the data.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify Title Field with Boundary Values
+objective: Verify that the Title field accepts values within the valid range and rejects values outside the valid range
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Title.
+  - Step 3: Enter a Title with less than the minimum allowed characters and press 'Submit'.
+  - Step 4: Increase the Title length to the minimum allowed characters and press 'Submit'.
+  - Step 5: Enter a Title with more than the maximum allowed characters and press 'Submit'.
+  - Step 6: Decrease the Title length to the maximum allowed characters and press 'Submit'.
+expectedResult: Step 3 and Step 5 should display an error message about incorrect Title length. Step 4 and Step 6 should successfully add the record to the database.
+
+Test Case: Test Case 2
+testCaseName: Verify Publication Date with Boundary Values
+objective: Ensure the Publication Date field accepts only valid dates and adheres to boundary values
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Enter valid data in all fields except for the Publication Date.
+  - Step 3: Enter a date in the future and press 'Submit'.
+  - Step 4: Enter today's date and press 'Submit'.
+  - Step 5: Enter a date that is excessively in the past and press 'Submit'.
+  - Step 6: Enter a valid past date within the acceptable range and press 'Submit'.
+expectedResult: Step 3 should display an error message about future dates not being allowed. Step 5 should display an error message about the date being too far in the past. Step 4 and Step 6 should successfully add the record to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation
+objective: Verify that pressing the 'Cancel' button discards the data entered and does not add a new book record
+testSteps:
+  - Step 1: Navigate to the book list page and click the 'Create new' button.
+  - Step 2: Start entering valid data into the form fields.
+  - Step 3: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user should be redirected back to the list of books without the new data being saved in the database.
+

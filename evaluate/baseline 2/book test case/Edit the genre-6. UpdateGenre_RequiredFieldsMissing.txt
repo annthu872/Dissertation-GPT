@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Missing Required Fields
+objective: Verify that the application prevents updating a genre when required fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the genre edit form, clear the 'Name' field to leave it empty.
+  - Step 4: Enter or modify the data in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The application should display an error message indicating that the 'Name' field is required and the genre should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Genre
+objective: Verify that the application does not update genre data in the database and returns to the genre list when the 'Cancel' button is pressed during an update operation.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Modify the data in the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not update the genre in the database and should display the list of genres without applying the changes.
+
+Test Case: Test Case 3
+testCaseName: Update Genre with Valid Data
+objective: Verify that the application updates the genre in the database and displays the updated list of genres when all required fields are correctly filled.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter valid data into the 'Name' field.
+  - Step 4: Optionally, modify the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The application should update the genre in the database and display the list of genres with the updated record.
+

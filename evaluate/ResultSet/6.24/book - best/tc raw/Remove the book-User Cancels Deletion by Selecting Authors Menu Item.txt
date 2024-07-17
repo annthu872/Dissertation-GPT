@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select 'Authors' Menu Item
+objective: Verify that selecting 'Authors' menu item after initiating a book deletion cancels the deletion and navigates to the Authors page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Authors' menu item from the navigation bar.
+expectedResult: The book deletion is canceled, and the user is navigated to the Authors page with the data not deleted from the database.
+explanation: This test case ensures that when a user cancels the deletion process by selecting the 'Authors' menu item, the deletion is effectively canceled, and the user is redirected appropriately. It directly matches the scenario of canceling a deletion through navigation, focusing on the 'Authors' menu item as specified.
+

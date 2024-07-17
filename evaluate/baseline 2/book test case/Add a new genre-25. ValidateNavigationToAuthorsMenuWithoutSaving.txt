@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Authors Menu Without Saving New Genre
+objective: Ensure that navigating to the Authors menu without saving does not save the new genre data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to add a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields for the new genre.
+  - Step 4: Without clicking the 'Submit' button, navigate to the 'Authors' menu.
+expectedResult: The application should not save the new genre data and should display the Authors page without any error messages.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Operation on New Genre Creation
+objective: To confirm that the 'Cancel' operation discards any entered data and returns to the genre list
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields for the new genre.
+  - Step 4: Click the 'Cancel' button before submitting the form.
+expectedResult: The application should not save the entered data and should return to the genre list page, displaying the existing genres without the new entry.
+
+Test Case: Test Case 3
+testCaseName: Verify Successful Genre Creation
+objective: To verify that a new genre can be successfully added to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to add a new genre.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields for the new genre.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application should save the new genre to the database and display the updated list of genres including the newly added record.
+
+Test Case: Test Case 4
+testCaseName: Verify Incorrect Data Handling in New Genre Creation
+objective: To ensure that entering incorrect data when creating a new genre displays appropriate error messages
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to add a new genre.
+  - Step 3: Enter incorrect or invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Click the 'Submit' button.
+expectedResult: The application should display error messages indicating what data was entered incorrectly and prevent the new genre from being added to the database.
+

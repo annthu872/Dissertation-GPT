@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Display Authors List with Multiple Authors
+objective: Verify that the application correctly displays multiple authors in the list when the 'Authors' item is selected
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' from the menu.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application displays a list of authors, showing up to 10 items per page. Each item in the list includes the author's id, name, and bio. Pagination controls ('Next' button and page numbers) are visible if there are more than 10 authors.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality in Authors List
+objective: Verify that the pagination controls work correctly in the authors list
+testSteps:
+  - Step 1: Navigate to the main page of the application and select 'Authors' to view the list with more than 10 authors.
+  - Step 2: Scroll down to the bottom of the list to view the pagination controls.
+  - Step 3: Click the 'Next' button to go to the next page of authors.
+  - Step 4: Alternatively, click on a page number to jump directly to that page.
+expectedResult: Upon clicking the 'Next' button or a specific page number, the application displays the next set of authors (up to 10 items) without any issues. The pagination controls update accordingly to reflect the current page.
+
+Test Case: Test Case 3
+testCaseName: Empty Authors List Handling
+objective: Verify how the application handles the scenario when there are no authors to display
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' from the menu, ensuring the database has no authors.
+  - Step 3: Observe the behavior of the application when the authors list is empty.
+expectedResult: The application displays a message indicating that there are no authors to display, such as 'No authors found'. No empty tables or pagination controls are shown.
+

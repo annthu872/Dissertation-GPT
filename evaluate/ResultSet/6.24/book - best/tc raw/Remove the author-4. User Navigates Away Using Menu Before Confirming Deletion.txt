@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu Before Confirming Deletion - Books
+objective: Verify that navigating away to the 'Books' page using the menu before confirming deletion cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select 'Books' from the menu.
+expectedResult: The application cancels the deletion process, does not delete the author from the database, and navigates to the 'Books' page displaying updated data.
+explanation: This test case ensures that if a user accidentally initiates a deletion but decides to navigate away using the menu, the deletion process is halted, and no data is lost. It specifically tests the navigation to the 'Books' section.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away Using Menu Before Confirming Deletion - Genres
+objective: Verify that navigating away to the 'Genres' page using the menu before confirming deletion cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select 'Genres' from the menu.
+expectedResult: The application cancels the deletion process, does not delete the author from the database, and navigates to the 'Genres' page displaying updated data.
+explanation: This test case verifies the application's behavior when a user navigates away to the 'Genres' page during the deletion process. It ensures the process is canceled and the data remains intact.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away Using Menu Before Confirming Deletion - Authors
+objective: Verify that navigating away to the 'Authors' page using the menu before confirming deletion cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select 'Authors' from the menu.
+expectedResult: The application cancels the deletion process, does not delete the author from the database, and navigates to the 'Authors' page displaying updated data.
+explanation: This test case checks if the application properly cancels a deletion if the user decides to navigate to the 'Authors' page instead of confirming the deletion. It ensures the integrity of the data.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Using Menu Before Confirming Deletion - Home
+objective: Verify that navigating away to the 'Home' page using the menu before confirming deletion cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select 'Home' from the menu.
+expectedResult: The application cancels the deletion process, does not delete the author from the database, and navigates to the 'Home' page displaying updated data.
+explanation: This test case ensures that the deletion process is canceled if the user navigates away to the 'Home' page, preserving the data and confirming the application behaves as expected in such scenarios.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away Using Menu Before Confirming Deletion - API
+objective: Verify that navigating away to the 'API' page using the menu before confirming deletion cancels the deletion process.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select 'API' from the menu.
+expectedResult: The application cancels the deletion process, does not delete the author from the database, and navigates to the 'API' page displaying updated data.
+explanation: This test case is designed to verify that the application cancels the deletion process if the user navigates to the 'API' section instead of confirming the deletion, ensuring no unintended data loss occurs.
+

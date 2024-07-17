@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Initial Books List
+objective: Verify that the application correctly displays the initial list of books upon selecting the 'Books' item, including pagination functionality.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Books' item from the main menu.
+  - Step 3: Observe the list of books displayed on the page.
+  - Step 4: Click the 'Next' button below the displayed list of books.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date. Upon clicking 'Next', the next set of up to 10 books should be displayed.
+
+Test Case: Test Case 2
+testCaseName: Verify Books List Pagination
+objective: Ensure that the pagination functionality works correctly for navigating through the list of books.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the initial list of books.
+  - Step 2: Click on the page number '2' in the pagination block below the list of books.
+  - Step 3: If available, click on the 'Next' button to go to the next page of books.
+  - Step 4: Click on the 'Previous' button or a previous page number to go back to the earlier page.
+expectedResult: The application should correctly navigate to the selected page number, displaying a new set of up to 10 books. The 'Next' and 'Previous' buttons should navigate to the subsequent and preceding pages, respectively.
+
+Test Case: Test Case 3
+testCaseName: Verify Filtering Books by Publication Date
+objective: Ensure that the application correctly filters and displays books based on the user-provided publication date range.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the initial list of books.
+  - Step 2: Enter a start date and an end date in the date range input forms above the list of books.
+  - Step 3: Click the 'Refresh' button next to the date range inputs.
+  - Step 4: Observe the list of books displayed after applying the date filter.
+expectedResult: The application should display only the books that have a publication date within the specified date range. The list should update to reflect the filter criteria.
+

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Validate Display of Author Details from Author List
+objective: Verify that clicking on an author's title from the author list page correctly displays the author's details including id, name, and bio
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: From the list, click on the title of a specific author.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The author details page should be displayed with the following columns correctly populated: id (unique author number), Name, and Bio (author's biography).
+
+Test Case: Test Case 2
+testCaseName: Validate Author Details Page Layout
+objective: Ensure that the author details page correctly displays all required information in the specified format
+testSteps:
+  - Step 1: Navigate to the author details page by selecting an author from the author list page.
+  - Step 2: Verify that the author's id is displayed and is unique.
+  - Step 3: Verify that the author's name is displayed.
+  - Step 4: Verify that the author's biography (Bio) is displayed.
+expectedResult: The author details page should correctly display the author's id, name, and biography in separate, clearly defined sections or columns.
+
+Test Case: Test Case 3
+testCaseName: Validate Navigation to Author Details
+objective: Verify that the navigation from the author list to the author details page works correctly and displays the correct author's details
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list and note down the author's name.
+  - Step 3: Click on the title of the chosen author.
+  - Step 4: On the author details page, verify that the details correspond to the author selected in Step 2.
+expectedResult: After clicking on an author's title, the application should navigate to the author details page and display the correct details for the selected author, including id, name, and bio.
+

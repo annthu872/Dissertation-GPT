@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details Without Description
+objective: Verify that the book details are correctly displayed for a book without a description
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Locate a book without a description in the list.
+  - Step 3: Click on the 'Title' of the book without a description.
+expectedResult: The application displays the book details page with the following columns: id, Title, Author, Genre, and Publication date. The Description column should be present but empty or indicate that no description is available.
+
+Test Case: Test Case 2
+testCaseName: Display Book Details With Description
+objective: Verify that the book details are correctly displayed for a book with a description
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Locate a book with a description in the list.
+  - Step 3: Click on the 'Title' of the book with a description.
+expectedResult: The application displays the book details page with all the following columns filled appropriately: id, Title, Author, Genre, Description, and Publication date.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify author deletion and undo delete action availability
+objective: Ensure that the user can delete an author and has the option to undo the delete action before final confirmation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, verify that there is a 'Confirm' button and a 'Cancel' button.
+  - Step 4: Click the 'Confirm' button to delete the author.
+expectedResult: The author should be deleted from the list, and the application should not provide an option to undo the delete action after confirmation.
+
+Test Case: Test Case 2
+testCaseName: Verify cancel operation during author deletion
+objective: Ensure that the user can cancel the deletion of an author and that the author's data remains unchanged in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion process should be canceled, the author should remain in the list, and the database should remain unchanged.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation after canceling author deletion
+objective: Ensure that after canceling the deletion of an author, navigating to other pages does not delete the author from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page and click the 'Delete' button next to the author you wish to delete.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to other pages such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's data should remain unchanged in the database, and the corresponding pages should display updated data without deleting the author.
+

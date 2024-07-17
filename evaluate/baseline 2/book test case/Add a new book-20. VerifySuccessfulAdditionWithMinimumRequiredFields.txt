@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Book Addition with Minimum Required Fields
+objective: Verify that a user can successfully add a new book with only the minimum required fields filled and the record is correctly added to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Fill in the minimum required fields for a new book (e.g., Title, Author).
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record should be successfully added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Incorrect Data Handling When Adding a New Book
+objective: Ensure that the application displays appropriate error messages for incorrectly entered data when adding a new book.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter incorrect data into one or more fields (e.g., an empty Title field).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application should display error messages indicating which fields were filled out incorrectly and prevent the record from being added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation During New Book Addition
+objective: To verify that the data is not saved in the database and the user is redirected back to the list of book records when the 'Cancel' button is pressed during the new book addition process.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user should be redirected to the list of books without the new data being saved in the database.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away From Creation Page Does Not Save Data
+objective: Ensure that navigating away from the book creation page by selecting another menu item does not save any entered data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Select another menu item (e.g., 'Genres', 'Authors').
+expectedResult: The application should navigate to the selected page without saving the entered data and without adding a new book record to the database.
+

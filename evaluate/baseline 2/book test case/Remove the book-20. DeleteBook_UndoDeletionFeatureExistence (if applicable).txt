@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify book deletion confirmation
+objective: Ensure that the application prompts for confirmation before deleting a book and successfully deletes the book upon confirmation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book should be successfully deleted from the list, and the application should display an updated list without the deleted book.
+
+Test Case: Test Case 2
+testCaseName: Verify book deletion cancellation
+objective: Ensure that the application cancels the deletion process when the 'Cancel' button is clicked and retains the book in the list
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book should not be deleted from the list, and the application should display the same list including the book that was intended for deletion.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation away from deletion cancels deletion
+objective: Ensure that navigating away from the deletion confirmation dialog by selecting any menu item ('Books', 'Genres', 'Authors', 'Home', or 'API') cancels the deletion process
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate away by selecting any menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The book should not be deleted from the list, and the application should display the corresponding form with updated data without removing the book.
+

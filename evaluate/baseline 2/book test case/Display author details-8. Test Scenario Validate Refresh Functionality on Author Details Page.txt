@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Validate Refresh Functionality Retains Author Details
+objective: Verify that the refresh functionality on the author details page retains the displayed author's details without any changes
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Title' of a specific author from the list.
+  - Step 3: Observe the author details displayed on the author details page.
+  - Step 4: Refresh the author details page.
+expectedResult: After refreshing, the author details page should still display the same author's details including the id, Name, and Bio without any changes.
+
+Test Case: Test Case 2
+testCaseName: Validate Author Details Display Correctly
+objective: Ensure that the author details page correctly displays the id, Name, and Bio of the selected author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Title' of a specific author from the list to view their details.
+  - Step 3: Verify that the author details page is displayed.
+  - Step 4: Check if the following columns are displayed: id, Name, Bio.
+expectedResult: The author details page should correctly display the selected author's id, Name, and Bio without any missing or incorrect information.
+
+Test Case: Test Case 3
+testCaseName: Validate Navigation to Author Details Page
+objective: Verify that users can navigate to the author details page by clicking on the author's title from the author list page
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list and click on their 'Title'.
+expectedResult: The application should navigate the user to the author details page, displaying the details of the author clicked.
+

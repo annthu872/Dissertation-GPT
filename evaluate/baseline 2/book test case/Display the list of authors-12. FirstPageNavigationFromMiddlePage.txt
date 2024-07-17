@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to First Page from Middle Page in Authors List
+objective: Ensure that users can navigate back to the first page of the authors list from a middle page using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Click the 'Next' button or a middle page number in the pagination block to navigate to a middle page (e.g., page 3).
+  - Step 4: Once on a middle page, click the '1' or 'First' button in the pagination block to navigate back to the first page.
+expectedResult: The application displays the first page of the authors list, showing up to 10 items.
+
+Test Case: Test Case 2
+testCaseName: Verify Authors List Pagination Functionality
+objective: To verify that the pagination functionality works correctly, allowing users to navigate through different pages of the authors list.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Verify the initial list of authors is displayed with up to 10 items.
+  - Step 4: Click the 'Next' button to navigate to the second page of the authors list.
+  - Step 5: Click on a specific page number in the pagination block to navigate to that page (e.g., page 4).
+  - Step 6: Click the 'Previous' button to navigate back to the previous page.
+expectedResult: The application correctly navigates through the pages as per the pagination controls, displaying up to 10 authors per page.
+
+Test Case: Test Case 3
+testCaseName: Verify Authors List Columns Display
+objective: Ensure that the authors list correctly displays all required columns: id, Name, and Bio.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: Examine the displayed list of authors to ensure that each entry contains the columns for id, Name, and Bio.
+expectedResult: Each author in the list is displayed with their unique author number (id), Name, and Bio in separate columns.
+

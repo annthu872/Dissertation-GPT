@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify back navigation from Author Details to Author List Page
+objective: Ensure that the user can navigate back to the Author List Page from the Author Details Page
+testSteps:
+  - Step 1: Navigate to the Author List Page.
+  - Step 2: Click on the 'Title' of a specific author from the list.
+  - Step 3: Once the Author Details Page is displayed, click on the 'Back' button or link to navigate back to the Author List Page.
+expectedResult: The user should be navigated back to the Author List Page after clicking the 'Back' button or link from the Author Details Page.
+
+Test Case: Test Case 2
+testCaseName: Verify the display of author details
+objective: Ensure that the Author Details Page correctly displays the author's id, name, and biography
+testSteps:
+  - Step 1: Navigate to the Author List Page.
+  - Step 2: Click on the 'Title' of a specific author from the list to view their details.
+expectedResult: The Author Details Page should display the author's 'id', 'Name', and 'Bio' as per the application's data.
+
+Test Case: Test Case 3
+testCaseName: Verify the uniqueness of author id in Author Details Page
+objective: Ensure that each author's id displayed on the Author Details Page is unique
+testSteps:
+  - Step 1: Navigate to the Author List Page.
+  - Step 2: Click on the 'Title' of a specific author to view their details.
+  - Step 3: Note the 'id' displayed on the Author Details Page.
+  - Step 4: Navigate back to the Author List Page and select a different author.
+  - Step 5: Verify that the 'id' displayed on this Author Details Page is different from the previous one.
+expectedResult: Each author's 'id' should be unique and different from others when viewed on their respective Author Details Pages.
+

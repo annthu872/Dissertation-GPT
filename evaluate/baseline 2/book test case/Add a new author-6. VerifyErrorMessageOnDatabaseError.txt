@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Verify successful author creation
+objective: To verify that a new author record is successfully added to the database when valid data is entered
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A success message is displayed, and the new author record is visible in the list of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify error message on entering invalid data
+objective: To verify that an error message is displayed when invalid data is entered for a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Bio' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message related to the invalid data is displayed, and the record is not added to the database.
+
+Test Case: Test Case 3
+testCaseName: Verify error message on database error
+objective: To verify that an error message is displayed when there is a database error during the author creation process
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Bio' fields.
+  - Step 4: Simulate a database error or disconnect the database connection.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message indicating a database error is displayed, and the record is not added to the database.
+
+Test Case: Test Case 4
+testCaseName: Verify cancellation of author creation
+objective: To verify that the author creation process can be cancelled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The author creation form is closed, no data is saved to the database, and the list of author records is displayed.
+
+Test Case: Test Case 5
+testCaseName: Verify navigation away from author creation does not save data
+objective: To verify that navigating away from the author creation form without submitting does not save data to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Bio' fields.
+  - Step 4: Without pressing 'Submit', navigate to another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The navigation is successful, no data is saved to the database, and the selected page is displayed with updated data.
+

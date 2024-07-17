@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Bio Length Less Than Minimum Requirement
+objective: Verify that the system prevents updating an author's bio when the bio length does not meet the minimum requirement and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter or modify the author's name as required.
+  - Step 4: Enter a bio that is shorter than the minimum required length.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the bio does not meet the minimum length requirement and the author's record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Author Record
+objective: Verify that cancelling the update operation does not save changes to the database and redirects the user back to the list of author records.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio in the displayed form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not save any changes to the database and should redirect the user back to the list of author records, displaying the original, unmodified data.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away from Update Author Page Without Saving
+objective: Verify that navigating away from the update author page without saving does not update the author's record in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio in the displayed form.
+  - Step 4: Without pressing the 'Submit' button, select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not update the author's record in the database and should display the selected page without saving any changes made to the author's information.
+

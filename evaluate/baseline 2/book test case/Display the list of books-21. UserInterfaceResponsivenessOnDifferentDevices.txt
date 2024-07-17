@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify book list display on desktop
+objective: Ensure that the application correctly displays the list of books on a desktop device
+testSteps:
+  - Step 1: Open the application on a desktop browser.
+  - Step 2: Select the 'Books' item from the main menu.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application should display up to 10 books per page with columns for id, Title, Author, Genre, and Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality on mobile
+objective: To check if the user can navigate through different pages of book records on a mobile device
+testSteps:
+  - Step 1: Access the application on a mobile browser.
+  - Step 2: Navigate to the 'Books' section.
+  - Step 3: Scroll down to the bottom of the list and click the 'Next' button.
+  - Step 4: Observe the next set of books displayed.
+expectedResult: The application should display the next 10 books in the list, updating the page accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify filtering books by publication date on tablet
+objective: Ensure that users can filter books based on publication date on a tablet device
+testSteps:
+  - Step 1: Open the application on a tablet browser.
+  - Step 2: Go to the 'Books' section.
+  - Step 3: Enter a start and end date in the date range inputs above the list of books.
+  - Step 4: Click the 'Refresh' button next to the date inputs.
+  - Step 5: Observe the list of books filtered by the specified date range.
+expectedResult: Only books with publication dates within the specified range should be displayed.
+
+Test Case: Test Case 4
+testCaseName: Verify responsive layout of book list on different devices
+objective: To ensure that the book list is displayed correctly across different devices and screen sizes
+testSteps:
+  - Step 1: Open the application on a desktop browser and navigate to the 'Books' section.
+  - Step 2: Observe the layout and note the display of book list columns.
+  - Step 3: Repeat Step 1 and Step 2 on a tablet and mobile device.
+  - Step 4: Compare the layout and display of book list columns across devices.
+expectedResult: The application should responsively adjust the display of the book list to fit the screen size of desktop, tablet, and mobile devices, ensuring all columns are visible and legible.
+

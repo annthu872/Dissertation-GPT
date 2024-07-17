@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Deletion Attempt Without Required Permissions - Confirm Deletion
+objective: Verify that a user without the required permissions cannot delete a genre when confirming the deletion process.
+testSteps:
+  - Step 1: Log in as a user without delete permissions.
+  - Step 2: Navigate to the genre list/details page.
+  - Step 3: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 4: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The system should display an error message or notification indicating that the user does not have the required permissions to delete the genre. The genre should not be deleted from the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to delete a genre without the required permissions and expecting the system to prevent the deletion, which is the core of the test scenario.
+

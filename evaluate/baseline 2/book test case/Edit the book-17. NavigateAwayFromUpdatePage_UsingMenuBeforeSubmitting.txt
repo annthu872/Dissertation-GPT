@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away from update page using 'Cancel' button before submitting
+objective: Ensure that navigating away from the update page using the 'Cancel' button does not submit or save any entered data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the edit page, start entering or modifying the book details (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before submitting, click the 'Cancel' button.
+expectedResult: The application should not save the entered data and should redirect the user to the list of book records.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation away from update page using menu items before submitting
+objective: Ensure that navigating away from the update page using menu items (Books, Genres, Authors, Home, API) does not submit or save any entered data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the edit page, start entering or modifying the book details (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without submitting, select a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application should not save the entered data and should display the selected page without updating the book record in the database.
+
+Test Case: Test Case 3
+testCaseName: Verify data validation on update page before navigating away
+objective: Ensure that incorrect data entries are highlighted or notified before the user attempts to navigate away using the 'Cancel' button or menu items
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the edit page, enter incorrect or invalid data for one or more fields (e.g., incorrect date format for 'Publication Date').
+  - Step 4: Attempt to navigate away by clicking the 'Cancel' button or selecting a menu item.
+expectedResult: The application should notify the user of the incorrect data before allowing them to navigate away, ensuring the user is aware that the incorrect data will not be saved.
+

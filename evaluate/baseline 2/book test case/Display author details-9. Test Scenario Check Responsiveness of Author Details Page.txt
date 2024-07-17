@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author Details from Author List
+objective: Verify that clicking on an author's title from the author list page correctly displays the author's details page with all relevant information
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify and click on the 'Title' of a specific author from the list.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The author details page should be displayed with the following columns correctly populated: id (unique author number), Name, and Bio (author's biography).
+
+Test Case: Test Case 2
+testCaseName: Check Responsiveness of Author Details Page on Different Devices
+objective: Ensure that the author details page is responsive and displays correctly across different devices (desktop, tablet, and mobile)
+testSteps:
+  - Step 1: Navigate to the author list page on a desktop device and click on an author's title.
+  - Step 2: Observe and note the layout and information displayed on the author details page.
+  - Step 3: Repeat Step 1 and Step 2 on a tablet device.
+  - Step 4: Repeat Step 1 and Step 2 on a mobile device.
+expectedResult: The author details page should be responsive and display all the relevant information (id, Name, Bio) correctly across all devices (desktop, tablet, and mobile) without any layout or information display issues.
+

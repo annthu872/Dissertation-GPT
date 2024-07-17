@@ -1,0 +1,14 @@
+1. Scenario_TitleNotEntered
+2. Scenario_TitleEnteredIncorrectly
+3. Scenario_AuthorNotEntered
+4. Scenario_AuthorEnteredIncorrectly
+5. Scenario_GenreNotEntered
+6. Scenario_GenreEnteredIncorrectly
+7. Scenario_DescriptionNotEntered
+8. Scenario_DescriptionEnteredIncorrectly
+9. Scenario_PublicationDateNotEntered
+10. Scenario_PublicationDateEnteredIncorrectly
+11. Successful Book Update
+12. Book Update with Incorrect Data
+13. Cancel Update Scenario
+14. Navigation Away Scenario

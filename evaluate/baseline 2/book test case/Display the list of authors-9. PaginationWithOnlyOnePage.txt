@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination with Only One Page of Authors
+objective: Ensure that when there is only one page of authors (10 or fewer authors), the pagination controls are either hidden or disabled and the user can see all available authors without needing to paginate.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the list of authors and the pagination controls.
+expectedResult: The application displays all available authors (up to 10) on a single page without showing the 'Next' button or pagination controls, as there is only one page of authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Author Details in List
+objective: Ensure that the list of authors displays all required details for each author, including their unique ID, Name, and Bio, when there is only one page of authors.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Review the list for the presence of the following columns for each author: id, Name, Bio.
+expectedResult: Each author listed on the page displays all the required information: a unique author number (id), the author's Name, and their Bio.
+

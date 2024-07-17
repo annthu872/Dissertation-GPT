@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Validate Input Fields with Invalid Name Data
+objective: Verify that the system displays an error message when invalid data is entered into the Name field while adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data (e.g., numbers or special characters) into the Name field.
+  - Step 4: Enter valid data into the Description field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Name field contains invalid data.
+
+Test Case: Test Case 2
+testCaseName: Validate Input Fields with Invalid Description Data
+objective: Verify that the system displays an error message when invalid data is entered into the Description field while adding a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the Name field.
+  - Step 4: Enter invalid data (e.g., using unsupported characters or exceeding character limit) into the Description field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Description field contains invalid data.
+
+Test Case: Test Case 3
+testCaseName: Validate Successful Genre Creation with Valid Data
+objective: Verify that a new genre record is successfully added to the database when all required fields are filled with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the Name field.
+  - Step 4: Enter valid data into the Description field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record should be successfully added to the database, and the list of genres with the added record should be displayed.
+
+Test Case: Test Case 4
+testCaseName: Validate Cancel Operation During Genre Creation
+objective: Verify that no data is saved and the user is redirected back to the list of genres when the 'Cancel' button is pressed before submitting a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the Name and Description fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: No data should be saved in the database, and the user should be redirected back to the list of genre records.
+

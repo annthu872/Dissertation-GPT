@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Data
+objective: Verify that the book record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the list of books with the updated record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Invalid Data
+objective: Verify that the system displays error messages for invalid data entry
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter invalid data for any of the fields (e.g., leaving the Title field empty).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays error messages indicating the incorrect data entry, and the book record is not updated.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the update operation can be canceled without making changes to the book record
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no changes are made to the book record, and the list of book records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Update Operation Error Handling
+objective: Verify that the system displays an error message if an error occurs during the update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication Date.
+  - Step 4: Simulate an error condition (e.g., disconnect from the database) and press the 'Submit' button.
+expectedResult: An error message is displayed, and the book record is not updated.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away Without Saving
+objective: Verify that navigating away without saving does not update the book record
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', navigate to another page (e.g., 'Genres').
+expectedResult: The book record is not updated, and the user is taken to the selected page without any changes being saved.
+

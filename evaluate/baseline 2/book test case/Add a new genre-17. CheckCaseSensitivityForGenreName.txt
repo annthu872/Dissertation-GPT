@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Case Sensitivity for Genre Name Creation
+objective: Verify that the genre creation process is case-sensitive and allows the creation of genres with names that differ only in letter case
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter 'Horror' in the Name field and a valid description in the Description field.
+  - Step 4: Press the 'Submit' button to create the genre.
+  - Step 5: After the genre is successfully added, click the 'Create new' button again.
+  - Step 6: Enter 'horror' in the Name field (note the lowercase 'h') and a valid description in the Description field.
+  - Step 7: Press the 'Submit' button to attempt to create the second genre.
+expectedResult: The system should allow the creation of both genres, indicating that genre name creation is case-sensitive. The list of genres should display both 'Horror' and 'horror' as separate entries.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Operation During Genre Creation
+objective: Ensure that the genre creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the Name and Description fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+  - Step 5: Observe the behavior and navigate back to the genre list page.
+expectedResult: After pressing 'Cancel', the data entered in the form should not be saved to the database. The user should be redirected back to the genre list page, and the newly entered genre should not appear in the list.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation Away Prevents Genre Creation
+objective: Ensure that navigating away from the genre creation form without submitting it prevents the genre from being added to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the Name and Description fields.
+  - Step 4: Without pressing 'Submit', navigate away by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+  - Step 5: Return to the genre list page.
+expectedResult: The genre that was being created should not be saved to the database, and it should not appear in the genre list. This confirms that navigating away without submitting the form cancels the creation process.
+

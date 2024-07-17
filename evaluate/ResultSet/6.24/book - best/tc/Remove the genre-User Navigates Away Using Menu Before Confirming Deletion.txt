@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu Before Confirming Deletion
+objective: Verify that navigating away using the menu before confirming deletion cancels the deletion process and the genre record remains unchanged.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete. A confirmation dialog appears.
+  - Step 3: Without clicking 'Confirm', select a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application navigates to the selected page without deleting the genre. The genre record should still exist in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario by outlining steps to navigate away from a deletion confirmation dialog and verifying that the action does not result in the deletion of the genre. It confirms that the user's navigation action interrupts the deletion process, which is the core of the given test scenario.
+

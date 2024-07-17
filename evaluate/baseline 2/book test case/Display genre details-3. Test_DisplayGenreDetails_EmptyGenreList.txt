@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify display of genre details with empty genre list
+objective: To ensure that the application handles the scenario of an empty genre list appropriately when attempting to display genre details
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Verify that the genre list is empty.
+  - Step 3: Attempt to click on the 'Name' of a genre from the list.
+expectedResult: Since the genre list is empty, there should be no genre names to click on. The application should either not allow clicking or should display a message indicating that there are no genres to display.
+
+Test Case: Test Case 2
+testCaseName: Verify UI elements on genre details page with empty list
+objective: To verify that the correct UI elements are displayed on the genre details page when accessed with an empty genre list
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Verify that the genre list is empty.
+  - Step 3: Directly navigate to the genre details page if possible, or observe the behavior when attempting to do so.
+expectedResult: The application should either prevent navigation to the genre details page due to the absence of genres or should display the genre details page with a message indicating that no genre details are available. No columns for id, Name, or Description should be populated.
+

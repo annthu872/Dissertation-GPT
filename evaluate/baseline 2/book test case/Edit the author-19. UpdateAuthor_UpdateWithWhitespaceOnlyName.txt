@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Whitespace Only Name
+objective: Verify that the system prevents updating an author with a name consisting of whitespace only and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field and enter only whitespace characters.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the name field cannot consist of whitespace only and the author record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation for an Author
+objective: Verify that the update operation can be cancelled without making changes to the author's record in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The system should not update the author's record in the database and should display the list of authors, showing the original, unmodified records.
+
+Test Case: Test Case 3
+testCaseName: Update Author with Valid Data
+objective: Verify that the system updates an author's record successfully when valid data is entered and displays the updated list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter a valid 'Name' that is different from the current name.
+  - Step 4: Modify the 'Bio' with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should update the author's record in the database with the new data and display the updated list of authors including the changes made.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away During Author Update Operation
+objective: Verify that navigating away from the update page cancels the update operation and does not save changes to the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying data in the 'Name' and 'Bio' fields.
+  - Step 4: Without submitting, select a different menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not save any changes made to the author's record in the database and should display the selected page without updating the author's information.
+

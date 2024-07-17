@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify maximum length validation for genre description
+objective: To ensure the genre description does not exceed the maximum allowed length and displays an error message if it does
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the edit form, enter or modify the name of the genre.
+  - Step 4: Enter a description for the genre that exceeds the maximum allowed length.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the description exceeds the maximum length allowed.
+
+Test Case: Test Case 2
+testCaseName: Verify successful genre update with valid data
+objective: To verify that the genre can be successfully updated with valid name and description within the allowed length
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the edit form, enter a valid name for the genre.
+  - Step 4: Enter a valid description for the genre within the allowed length.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database and the user should be redirected to the list of genres with the updated record displayed.
+
+Test Case: Test Case 3
+testCaseName: Verify cancel operation during genre update
+objective: To verify that pressing the 'Cancel' button while updating a genre cancels the operation and no changes are saved
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering or modifying the genre's name and description.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user should be redirected back to the list of genres without any changes being saved to the database.
+

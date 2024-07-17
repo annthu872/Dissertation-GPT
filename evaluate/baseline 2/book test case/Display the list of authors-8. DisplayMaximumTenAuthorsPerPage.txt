@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of First Page of Authors
+objective: Verify that the application correctly displays the first page of authors with up to 10 authors listed
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Observe the list of authors displayed on the first page.
+expectedResult: The application should display the first page with up to 10 authors listed, including their id, Name, and Bio. No 'Previous' button should be visible, but a 'Next' button should be present if there are more than 10 authors.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality to the Next Page
+objective: Ensure that the user can navigate to the next page of authors and view the next set of up to 10 authors
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Click on the 'Next' button below the list of authors.
+  - Step 4: Observe the list of authors displayed on the second page.
+expectedResult: The application should display the second page with the next set of up to 10 authors, including their id, Name, and Bio. Both 'Previous' and 'Next' buttons should be visible if there are more pages of authors.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Page Selection Functionality
+objective: Ensure that the user can directly select a page number to view the corresponding set of authors
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Click on a page number (e.g., '3') from the pagination block.
+  - Step 4: Observe the list of authors displayed on the selected page.
+expectedResult: The application should display the selected page with up to 10 authors, including their id, Name, and Bio. 'Previous' and 'Next' buttons should be visible, along with other page numbers for navigation.
+
+Test Case: Test Case 4
+testCaseName: Verify Display of Last Page of Authors
+objective: Ensure that the last page of authors correctly displays the remaining authors if less than 10
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Navigate to the last page of authors by clicking the 'Next' button repeatedly or selecting the last page number.
+  - Step 4: Observe the list of authors displayed on the last page.
+expectedResult: The application should display the last page with the remaining authors if less than 10, including their id, Name, and Bio. A 'Previous' button should be visible, but the 'Next' button should be disabled or not visible.
+

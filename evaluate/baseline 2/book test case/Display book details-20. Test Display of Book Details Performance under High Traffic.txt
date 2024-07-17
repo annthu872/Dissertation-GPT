@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details under Normal Conditions
+objective: Ensure that the application correctly displays the book details when a user clicks on a book title under normal traffic conditions.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Identify and click on the 'Title' of a specific book from the list.
+  - Step 3: Observe the information displayed on the book details page.
+expectedResult: The application should display the book details page with the following columns correctly filled: id, Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details Performance under High Traffic
+objective: To verify that the application maintains its performance and correctly displays the book details when multiple users access the book details page simultaneously under high traffic conditions.
+testSteps:
+  - Step 1: Simulate high traffic conditions using a load testing tool to mimic multiple users accessing the book details page at the same time.
+  - Step 2: While under simulated high traffic, navigate to the book list page and click on the 'Title' of a specific book.
+  - Step 3: Observe the response time and the information displayed on the book details page.
+expectedResult: Even under high traffic conditions, the application should display the book details page without significant delay. The page should correctly show the following columns: id, Title, Author, Genre, Description, Publication date.
+

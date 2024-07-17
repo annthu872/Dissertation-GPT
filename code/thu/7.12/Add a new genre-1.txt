@@ -1,0 +1,12 @@
+Attempt to add a new genre with empty Name field
+Attempt to add a new genre with empty Description field
+Successful Genre Creation
+Genre Creation with Incorrect Data
+Cancel Operation Before Data Entry
+Cancel Operation After Partial Data Entry
+Cancel Operation After Complete Data Entry
+Navigation to Books Before Submit
+Navigation to Genres Before Submit
+Navigation to Authors Before Submit
+Navigation to Home Before Submit
+Navigation to API Before Submit

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Genre - Permission Denied for Unauthorized User
+objective: Verify that an unauthorized user cannot delete a genre and receives a permission denied message
+testSteps:
+  - Step 1: Navigate to the genre list/details page without logging in.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the dialog page, confirm deletion by pressing the 'Confirm' button.
+expectedResult: The system should display a permission denied message, and the genre should not be deleted from the list.
+
+Test Case: Test Case 2
+testCaseName: Cancel Delete Genre Operation by Unauthorized User
+objective: Verify that when an unauthorized user attempts to delete a genre and then cancels, the genre remains and no data is deleted
+testSteps:
+  - Step 1: Without logging in, navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the dialog page, press the 'Cancel' button.
+expectedResult: The genre should remain in the list, indicating no data was deleted.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away During Delete Operation by Unauthorized User
+objective: Verify that navigating away during a delete operation by an unauthorized user cancels the delete operation
+testSteps:
+  - Step 1: Go to the genre list/details page without logging in.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the dialog page, instead of confirming or canceling, navigate to another page such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should cancel the delete operation, and the genre should still be present in the list.
+

@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Publication Date for a Selected Book
+objective: Ensure that the application correctly displays the publication date of a book when its title is clicked from the book list page.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the title of a specific book you want to view details for.
+  - Step 3: Observe the details displayed for the selected book on the book details page.
+expectedResult: The book details page should correctly display all the specified columns including the 'Publication date' for the selected book.
+
+Test Case: Test Case 2
+testCaseName: Verify Consistency of Publication Date Format
+objective: To verify that the publication date of books is displayed in a consistent format across the application.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the title of any book to view its details.
+  - Step 3: Note the format of the 'Publication date' displayed.
+  - Step 4: Go back to the book list and select another book to view its details.
+  - Step 5: Note the format of the 'Publication date' for this second book.
+expectedResult: The 'Publication date' for all books should be displayed in a consistent format across the application.
+
+Test Case: Test Case 3
+testCaseName: Verify Publication Date Against Known Data
+objective: To ensure that the publication date displayed for a book matches the known publication date for that book.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the title of a book whose publication date you already know.
+  - Step 3: Compare the 'Publication date' displayed on the book details page with the known publication date.
+expectedResult: The 'Publication date' displayed on the book details page should match the known publication date for the book.
+

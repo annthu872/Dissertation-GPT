@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Accessibility for Visually Impaired Users
+objective: Ensure that visually impaired users can access and understand genre details using screen readers
+testSteps:
+  - Step 1: Navigate to the genre list page using a screen reader.
+  - Step 2: Use the screen reader's navigation commands to find and select a genre by its 'Name'.
+  - Step 3: Listen to the screen reader as it reads out the genre details page content.
+expectedResult: The screen reader should correctly announce the page title as 'Genre Details', followed by reading out the 'id', 'Name', and 'Description' of the selected genre without any issues.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Details Page Keyboard Accessibility
+objective: Ensure that users can navigate through the genre details page and access all information using only a keyboard
+testSteps:
+  - Step 1: Navigate to the genre list page using a keyboard.
+  - Step 2: Use the tab key to navigate to the 'Name' of a specific genre and press Enter to select it.
+  - Step 3: Use the tab key to navigate through the elements on the genre details page, including the 'id', 'Name', and 'Description'.
+expectedResult: The user should be able to navigate to and select a genre using only the keyboard, and all details (id, Name, Description) should be accessible and navigable in a logical order.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Details Page Contrast Ratio
+objective: Ensure that the genre details page meets minimum contrast ratio guidelines to aid users with visual impairments
+testSteps:
+  - Step 1: Navigate to the genre details page for any genre.
+  - Step 2: Use a contrast ratio tool to measure the contrast ratio of the text (id, Name, Description) against its background.
+expectedResult: The contrast ratio for the text displaying the 'id', 'Name', and 'Description' should meet or exceed the minimum contrast ratio recommended by WCAG 2.1 guidelines.
+

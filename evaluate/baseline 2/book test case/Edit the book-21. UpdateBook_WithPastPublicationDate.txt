@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Data
+objective: Verify that the book record is successfully updated with valid data including a future publication date
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book including a future publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the list of books with the updated record is displayed.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Past Publication Date
+objective: Verify that an error message is displayed when trying to update a book with a past publication date
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book but with a past publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the publication date cannot be in the past.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation
+objective: Verify that the update operation can be canceled and no data is updated in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not updated in the database, and the list of book records is displayed.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Without Saving
+objective: Verify that navigating away without saving does not update the book in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Navigate away by selecting another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API' without pressing 'Submit'.
+expectedResult: The book record is not updated in the database, and the user is taken to the selected page.
+

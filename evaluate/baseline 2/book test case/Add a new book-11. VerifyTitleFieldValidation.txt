@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify Title Field Accepts Valid Input
+objective: Verify that the Title field accepts a valid title when adding a new book
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Enter a valid title in the 'Title' field.
+  - Step 4: Fill in the remaining fields (Author, Genre, Description, Publication date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new book record should be added to the database, and the user should be redirected to the list of books with the newly added record visible.
+
+Test Case: Test Case 2
+testCaseName: Verify Title Field Validation for Empty Input
+objective: Ensure the Title field displays an error message when left empty
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Leave the 'Title' field empty.
+  - Step 4: Fill in the remaining fields (Author, Genre, Description, Publication date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the Title field is required.
+
+Test Case: Test Case 3
+testCaseName: Verify Cancel Operation Discards Data
+objective: Ensure that pressing the 'Cancel' button discards any data entered in the form
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user should be redirected to the list of book records without the new data being saved.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Discards Data
+objective: Ensure that navigating away from the creation page discards any entered data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Genres' or 'Authors'.
+expectedResult: The application should navigate to the selected page without saving the entered data, and no new book record should be added.
+

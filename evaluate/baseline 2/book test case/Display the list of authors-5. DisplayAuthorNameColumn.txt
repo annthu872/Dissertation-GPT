@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Author Names
+objective: Ensure that the application correctly displays the list of authors including their ID, Name, and Bio
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application should display a list of authors, showing up to 10 items per page. Each item should include the author's ID, Name, and Bio.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: To check if the user can navigate through different pages of authors using the pagination feature
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to display the list of authors.
+  - Step 2: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 3: Click on the 'Next' button.
+  - Step 4: Observe the list of authors on the next page.
+expectedResult: Upon clicking the 'Next' button, the application should display the next set of 10 authors. The page number should increment accordingly.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Page Selection in Pagination
+objective: Ensure that the user can directly select a page number from the pagination block to view the corresponding list of authors
+testSteps:
+  - Step 1: Follow steps 1 and 2 of Test Case 1 to display the list of authors.
+  - Step 2: Scroll down to the pagination block at the bottom of the page.
+  - Step 3: Click on a page number other than the current one.
+  - Step 4: Observe the list of authors displayed for the selected page.
+expectedResult: The application should display the list of authors corresponding to the selected page number, showing up to 10 authors per page.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Last Page from Middle Page in Authors List
+objective: Ensure that the user can navigate to the last page of the authors list from a middle page using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the 'Authors' item to display the list of authors.
+  - Step 3: If the total number of authors exceeds 20, navigate to a middle page by clicking the appropriate page number in the pagination block or using the 'Next' button.
+  - Step 4: Locate the pagination block and click on the last page number or the 'Last' button if available.
+expectedResult: The application should display the last page of authors, showing up to 10 items (or fewer if the total number of authors is not a multiple of 10). The columns for 'id', 'Name', and 'Bio' should be visible for each author listed.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality on Authors List
+objective: To confirm that the pagination functionality works correctly, allowing users to view different sets of authors by navigating through pages.
+testSteps:
+  - Step 1: Access the application and go to the main page.
+  - Step 2: Click on the 'Authors' item to bring up the list of authors.
+  - Step 3: Observe the initial set of authors displayed (up to 10 items).
+  - Step 4: Use the 'Next' button to navigate to the second page of authors.
+  - Step 5: Optionally, click on a specific page number to jump to that page of authors.
+  - Step 6: Continue to navigate through the pages by using the 'Next', specific page numbers, or 'Last' button if checking navigation to the final page.
+expectedResult: Each page navigated to should display a new set of up to 10 authors, with their 'id', 'Name', and 'Bio' visible. The navigation should be seamless, and the user should be able to move forward and backward through the pages without any issues.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Authors' Details
+objective: Ensure that the list of authors displays all required details (id, Name, Bio) correctly for each author.
+testSteps:
+  - Step 1: Go to the application's homepage.
+  - Step 2: Select 'Authors' to view the list of authors.
+  - Step 3: Verify that the list is displayed with the columns: 'id', 'Name', and 'Bio'.
+  - Step 4: Navigate through different pages (first, middle, and last) to check the consistency of the displayed information.
+expectedResult: For every author listed on any page, the 'id', 'Name', and 'Bio' should be clearly visible and correctly displayed, ensuring data consistency across pages.
+

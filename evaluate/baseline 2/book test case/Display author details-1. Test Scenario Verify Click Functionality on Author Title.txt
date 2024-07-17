@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify Click Functionality on Author Title Leads to Author Details Page
+objective: Verify that clicking on the author's title from the author list page navigates to the author details page displaying the correct author information
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list and note the author's name.
+  - Step 3: Click on the title of the chosen author.
+expectedResult: The application navigates to the author details page displaying the author's id, name, and biography matching the clicked author's information.
+
+Test Case: Test Case 2
+testCaseName: Verify Author Details Page Layout
+objective: Ensure that the author details page correctly displays all required columns (id, Name, Bio) for the author
+testSteps:
+  - Step 1: Follow steps 1-3 from Test Case 1 to navigate to an author details page.
+  - Step 2: Verify that the author's details page is displayed.
+  - Step 3: Check for the presence of the 'id' column and note its visibility.
+  - Step 4: Check for the presence of the 'Name' column and note its visibility.
+  - Step 5: Check for the presence of the 'Bio' column and note its visibility.
+expectedResult: The author details page should clearly display the columns for 'id', 'Name', and 'Bio', each filled with the correct information for the selected author.
+

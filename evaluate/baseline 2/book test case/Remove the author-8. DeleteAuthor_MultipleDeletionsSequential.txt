@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Delete a single author and confirm deletion
+objective: Verify that the user can delete an author and confirm the deletion successfully
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The author is successfully deleted from the database, and the author list is updated to reflect this change.
+
+Test Case: Test Case 2
+testCaseName: Delete a single author and cancel deletion
+objective: Verify that the user can cancel the deletion of an author after initiating the delete action
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The deletion is canceled, the author remains in the database, and the user is returned to the updated list of authors without any changes.
+
+Test Case: Test Case 3
+testCaseName: Delete multiple authors sequentially and confirm each deletion
+objective: Verify that the user can delete multiple authors one after the other and confirm each deletion successfully
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: For the first author, click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+  - Step 4: Repeat steps 2 and 3 for the next author.
+expectedResult: Each author selected is successfully deleted from the database one after the other, and the author list is updated to reflect these changes after each deletion.
+
+Test Case: Test Case 4
+testCaseName: Delete an author and navigate away without confirming
+objective: Verify that navigating away from the delete confirmation dialog without confirming does not delete the author
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: Instead of confirming deletion, navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author is not deleted from the database, and the user is able to view the selected page with updated data.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genres Without Duplicates
+objective: Ensure that the application correctly displays the list of genres without any duplicate IDs.
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Click on the 'Next' button or select the following page number to view the next set of genres.
+expectedResult: Each page displays up to 10 unique genres without any duplicate IDs, with correct name and description for each genre.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: To check if the pagination functionality works correctly, allowing users to navigate through different pages of genres.
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Click on the 'Next' button to move to the next page.
+  - Step 5: Click on a specific page number to jump to that page.
+  - Step 6: Click on the 'Previous' button (if available) to go back to the previous page.
+expectedResult: The application should correctly navigate through the pages as the user uses the 'Next', 'Previous', and specific page number options, displaying up to 10 genres per page without any issues.
+
+Test Case: Test Case 3
+testCaseName: Verify Unique IDs for Each Genre
+objective: To ensure that each genre displayed in the list has a unique ID.
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Click on the 'Genres' item to view the list of genres.
+  - Step 3: Carefully observe the IDs of all genres listed on the first page.
+  - Step 4: Navigate through subsequent pages and observe the IDs of genres on each page.
+expectedResult: Every genre listed in the application should have a unique ID, with no duplicates across all pages.
+

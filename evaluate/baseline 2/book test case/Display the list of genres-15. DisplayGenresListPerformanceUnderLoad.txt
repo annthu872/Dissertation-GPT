@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: DisplayGenresList_UnderNormalLoad
+objective: Verify that the application correctly displays the list of genres under normal load conditions
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the menu.
+  - Step 3: Observe the list of genres displayed on the first page.
+expectedResult: The application should display the first 10 genres, including columns for id, Name, and Description, without any performance issues.
+
+Test Case: Test Case 2
+testCaseName: DisplayGenresList_NavigationFunctionality
+objective: Verify that users can navigate through different pages of genres using the 'Next' button and page numbers
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to display the first page of genres.
+  - Step 2: Click the 'Next' button below the list of genres.
+  - Step 3: Observe the list of genres on the second page.
+  - Step 4: Return to the first page by clicking the number '1' in the pagination block.
+  - Step 5: Directly navigate to the third page by clicking the number '3' in the pagination block.
+expectedResult: The application should correctly navigate to the next, previous, and directly selected pages of genres, displaying up to 10 items per page without any issues.
+
+Test Case: Test Case 3
+testCaseName: DisplayGenresList_PerformanceUnderHeavyLoad
+objective: Verify that the application maintains performance and correctly displays the list of genres under heavy load conditions
+testSteps:
+  - Step 1: Simulate heavy load conditions by using a load testing tool or script to mimic multiple users accessing the 'Genres' list simultaneously.
+  - Step 2: While under heavy load, navigate to the 'Genres' list following steps 1 and 2 from Test Case 1.
+  - Step 3: Observe the responsiveness of the application and the time taken to display the list of genres.
+  - Step 4: Navigate between different pages of the genres list under heavy load conditions.
+expectedResult: Even under heavy load, the application should display the list of genres including all specified columns, with acceptable performance and without significant delays or errors.
+

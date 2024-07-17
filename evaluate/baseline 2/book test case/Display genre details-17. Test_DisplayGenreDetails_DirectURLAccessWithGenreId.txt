@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Display via Direct URL Access
+objective: Verify that accessing a genre's details page through a direct URL with the genre ID displays the correct genre details
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Note the 'id' of a genre you wish to view details for.
+  - Step 3: Enter the direct URL into the browser's address bar using the noted 'id' (e.g., http://application/genres/{id}).
+  - Step 4: Press Enter to navigate to the genre details page.
+expectedResult: The application displays the genre details page for the chosen genre, including the correct 'id', 'Name', and 'Description' columns.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Details Display via Clicking on Genre Name
+objective: Ensure that clicking on the name of a genre from the genre list page correctly displays the genre's details
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a genre you wish to view details for.
+  - Step 3: Observe the navigation to the genre details page.
+expectedResult: The application navigates to the genre details page and displays the correct 'id', 'Name', and 'Description' for the selected genre.
+

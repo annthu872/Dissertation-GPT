@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Delete Genre - Confirm Deletion for Nonexistent Genre
+objective: Verify that the application prevents deletion and displays an appropriate message when attempting to delete a genre that does not exist.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Attempt to delete a genre that does not exist by clicking the 'Delete' button.
+  - Step 3: On the confirmation dialog, press the 'Confirm' button.
+expectedResult: The application displays an error message indicating that the genre does not exist and prevents the deletion.
+
+Test Case: Test Case 2
+testCaseName: Delete Genre - Cancel Deletion Operation
+objective: Verify that the deletion operation is canceled without deleting any data when the 'Cancel' button is pressed.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to a genre.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The application cancels the deletion operation, closes the confirmation dialog, and returns to the genre list without deleting any data.
+
+Test Case: Test Case 3
+testCaseName: Delete Genre - Navigate Away Without Deletion
+objective: Verify that navigating away from the delete confirmation dialog without confirming deletion does not delete the genre.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to a genre to open the confirmation dialog.
+  - Step 3: Without pressing 'Confirm', navigate to another page (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application does not delete the genre and displays the selected page with updated data.
+

@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book ID on Book Details Page
+objective: Ensure that the book ID is correctly displayed on the book details page when a user selects a book by its title from the book list page.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Identify a book from the list and note its title.
+  - Step 3: Click on the title of the book you noted.
+  - Step 4: On the book details page, locate the 'id' field.
+expectedResult: The 'id' field on the book details page displays a unique book number that matches the book selected.
+
+Test Case: Test Case 2
+testCaseName: Verify All Required Columns on Book Details Page
+objective: To confirm that all required columns (id, Title, Author, Genre, Description, Publication date) are displayed on the book details page.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Click on the title of any book in the list to go to its details page.
+  - Step 3: On the book details page, verify the presence of the following columns: 'id', 'Title', 'Author', 'Genre', 'Description', 'Publication date'.
+expectedResult: The book details page correctly displays all the required columns: 'id', 'Title', 'Author', 'Genre', 'Description', 'Publication date'.
+

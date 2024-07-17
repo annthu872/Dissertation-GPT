@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify data not saved on pressing 'Cancel' during new book creation
+objective: Ensure that when a user presses 'Cancel' while adding a new book, the data is not saved in the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter valid data into the book creation form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of books without the new book being added, indicating the data was not saved.
+
+Test Case: Test Case 2
+testCaseName: Verify data not saved when navigating away using menu items during new book creation
+objective: Ensure that when a user navigates away using menu items ('Books', 'Genres', 'Authors', 'Home', 'API') during the new book creation process, the entered data is not saved
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Start entering data into the book creation form fields.
+  - Step 4: Without submitting, select a menu item ('Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The user is redirected to the selected page without the new book being added to the database, confirming the data was not saved.
+

@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Title
+objective: Verify that the system displays an error message when trying to update a book with an invalid title
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter an invalid title (e.g., using special characters or leaving it blank).
+  - Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating the title is invalid and the book record should not be updated.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation
+objective: Verify that no changes are made to the book record when the 'Cancel' button is pressed during an update operation
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The system should not update the book record in the database and should display the list of book records.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away During Update Operation
+objective: Verify that no changes are made to the book record if the user navigates away from the update page before submitting
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering or modifying the data in the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not update the book record in the database and should display the selected page without applying any changes to the book.
+

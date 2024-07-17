@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality for Displaying Books List
+objective: Ensure that the application correctly paginates the list of books, displaying up to 10 items per page and allows navigation through pages using the 'Next' button and page numbers.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Count the number of book records on the page.
+  - Step 4: Click the 'Next' button below the list of books.
+  - Step 5: Observe the list of books on the second page.
+  - Step 6: Repeat steps 3-5 for a few pages.
+expectedResult: The application should display up to 10 book records on each page. Upon clicking the 'Next' button, the next set of up to 10 book records should be displayed. The user should be able to navigate back and forth between pages without any issues.
+
+Test Case: Test Case 2
+testCaseName: Verify Books List Filtering by Publication Date
+objective: Ensure that the application correctly filters the list of books based on the user-provided publication date range and displays only those books that fall within the specified range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Locate the date range input forms above the list of books.
+  - Step 3: Enter a specific start date and end date for the publication date range.
+  - Step 4: Click the 'Refresh' button next to the date range inputs.
+  - Step 5: Observe the list of books displayed after applying the date filter.
+expectedResult: The application should display only the books that have a publication date within the specified date range. The list should be correctly paginated if there are more than 10 books that meet the filter criteria.
+
+Test Case: Test Case 3
+testCaseName: Verify Display Columns in Books List
+objective: Ensure that the application displays the correct columns (id, Title, Author, Genre, Publication date) for each book in the list.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed.
+  - Step 3: Verify that each book record in the list contains the following columns: id, Title, Author, Genre, Publication date.
+expectedResult: Each book record displayed in the list should contain all the specified columns (id, Title, Author, Genre, Publication date), providing the relevant information for each book.
+

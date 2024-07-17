@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Bio exceeding maximum length
+objective: Verify that the system prevents updating an author's bio when the input exceeds the maximum length allowed and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the edit form, enter or modify the author's name as required.
+  - Step 4: Enter a bio that exceeds the maximum length allowed by the system.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the bio exceeds the maximum length allowed and the author's record should not be updated in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Author
+objective: Verify that the update operation can be canceled after making changes and that no changes are saved to the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio in the provided form fields.
+  - Step 4: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The system should not save any changes to the database and should display the list of author records without applying the attempted updates.
+
+Test Case: Test Case 3
+testCaseName: Navigate away from Update Author page without saving
+objective: Ensure that navigating away from the update author page without saving does not update the author's information in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering or modifying the author's name and bio in the provided form fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The system should not save any changes to the database and should display the selected page without applying the attempted updates to the author's record.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Validate Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created with valid name and description
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record should be added to the database, and the user should be redirected to the list of genres with the newly added record displayed.
+
+Test Case: Test Case 2
+testCaseName: Validate Genre Creation with HTML Tags in Description
+objective: Verify that the application sanitizes HTML tags in the description field when creating a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter a description containing HTML tags in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new genre record should be added to the database with the HTML tags sanitized or escaped in the description. The user should be redirected to the list of genres with the newly added record displayed, and the description should not render any HTML elements.
+
+Test Case: Test Case 3
+testCaseName: Validate Genre Creation Cancellation
+objective: Verify that the genre creation process can be cancelled without saving data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: The user should be redirected back to the list of genres without the new genre being added to the database.
+
+Test Case: Test Case 4
+testCaseName: Validate Navigation Away from Genre Creation
+objective: Verify that navigating away from the genre creation page does not save the data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Navigate away from the page by selecting another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The user should be redirected to the selected page without the new genre being added to the database, and no data should be saved.
+

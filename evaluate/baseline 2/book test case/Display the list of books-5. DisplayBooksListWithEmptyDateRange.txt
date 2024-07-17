@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Books Without Date Range
+objective: Verify that the application displays the list of books without applying any date range filter
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the list of books displayed without applying any date range.
+expectedResult: The application should display up to 10 books per page without any date range filter applied. Pagination should be available if there are more than 10 books.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality
+objective: Verify that the user can navigate through pages of books using the pagination feature
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: If more than 10 books are available, click the 'Next' button or a specific page number in the pagination block.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application should display the next set of up to 10 books. The user should be able to navigate back and forth between pages using the pagination feature.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Books With Empty Date Range
+objective: Verify that the application displays the list of books without filtering when the date range is left empty
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Leave the date range inputs empty.
+  - Step 3: Click the refresh button next to the date inputs.
+  - Step 4: Observe the list of books displayed.
+expectedResult: The application should display the list of books without applying any date range filter, similar to the initial list of books.
+
+Test Case: Test Case 4
+testCaseName: Verify Columns in Books List
+objective: Verify that the list of books displays all required columns
+testSteps:
+  - Step 1: Navigate to the Books page.
+  - Step 2: Observe the columns in the list of books displayed.
+expectedResult: The list of books should display the following columns: id (unique book number), Title, Author, Genre, and Publication date.
+

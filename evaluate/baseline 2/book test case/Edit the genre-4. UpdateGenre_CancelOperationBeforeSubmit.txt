@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Update Genre and Cancel Before Submission
+objective: Verify that the genre update operation can be canceled before submission and ensure no changes are made to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new values for 'Name' and 'Description'.
+  - Step 4: Before clicking the 'Submit' button, click the 'Cancel' button.
+expectedResult: The application should not update the genre in the database and should redirect the user to the list of genre records, showing the original data without the attempted changes.
+
+Test Case: Test Case 2
+testCaseName: Update Genre and Navigate Away Before Submission
+objective: Ensure that navigating away from the genre update form before submission does not save changes to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin to enter or modify the 'Name' and 'Description' fields in the form.
+  - Step 4: Without submitting, select a different menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not save any changes to the database and should display the selected page without updating the genre's information.
+

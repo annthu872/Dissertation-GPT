@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with Accessibility Features
+objective: Ensure that when a user selects a book title from the book list, the application displays the book details with all specified columns accessible.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: From the list, click on the 'Title' of a specific book.
+  - Step 3: Observe the book details page that is displayed.
+expectedResult: The book details page should be displayed with all the following columns accessible and correctly populated: id (unique book number), Title, Author, Genre, Description, Publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify Accessibility Features for Visually Impaired Users
+objective: To verify that the book details page is accessible to visually impaired users, ensuring compliance with accessibility standards.
+testSteps:
+  - Step 1: Enable a screen reader tool on your device.
+  - Step 2: Navigate to the book list page and select a book by clicking on its 'Title'.
+  - Step 3: Listen to the screen reader's output as it reads the book details page.
+expectedResult: The screen reader should correctly announce all the details of the book including id, Title, Author, Genre, Description, and Publication date without any issues, indicating the page is accessible.
+
+Test Case: Test Case 3
+testCaseName: Verify Keyboard Navigation on Book Details Page
+objective: Ensure that users can navigate through the book details page using keyboard controls, enhancing accessibility for users with mobility impairments.
+testSteps:
+  - Step 1: Navigate to the book list page and select a book by using the tab key to highlight the 'Title' and pressing Enter.
+  - Step 2: Once on the book details page, use the tab key to navigate through the displayed columns: id, Title, Author, Genre, Description, and Publication date.
+  - Step 3: Use shift + tab to navigate backwards through the columns.
+expectedResult: Users should be able to navigate forwards and backwards through all the book details columns using only the keyboard, with each column being accessible and highlighted as it is selected.
+

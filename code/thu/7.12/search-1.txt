@@ -1,0 +1,14 @@
+1. Successful Search Result Display
+2. No Results Found
+3. Pagination Navigation
+4. Search with Special Characters
+5. Search with Numeric Keywords
+6. Search with Long String Keywords
+7. Search Keyword Matches a Shop Name
+8. Search Keyword Matches a Brand Name Without an Available Shop
+9. Search Keyword Does Not Match Any Shop or Brand
+10. User Filters Search Results by Most Related
+11. User Filters Search Results by Newest Products
+12. User Filters Search Results by Best Sellers
+13. User Filters Search Results by Price from Lowest to Highest
+14. User Filters Search Results by Price from Highest to Lowest

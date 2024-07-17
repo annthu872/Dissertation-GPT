@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Book Details with English Characters
+objective: Verify that the application correctly displays book details with English characters
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that is known to contain only English characters.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details including id, Title, Author, Genre, Description, and Publication date with English characters correctly without any encoding or display issues.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Book Details with Non-English Characters
+objective: Verify that the application correctly displays book details with Non-English characters
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that is known to contain Non-English characters.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details including id, Title, Author, Genre, Description, and Publication date with Non-English characters correctly without any encoding or display issues.
+
+Test Case: Test Case 3
+testCaseName: Verify Display of Book Details with Mixed Characters
+objective: Verify that the application correctly displays book details with a mix of English and Non-English characters
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Title' of a book that is known to contain a mix of English and Non-English characters.
+  - Step 3: Observe the book details displayed on the book details page.
+expectedResult: The application should display the book details including id, Title, Author, Genre, Description, and Publication date with a mix of English and Non-English characters correctly without any encoding or display issues.
+

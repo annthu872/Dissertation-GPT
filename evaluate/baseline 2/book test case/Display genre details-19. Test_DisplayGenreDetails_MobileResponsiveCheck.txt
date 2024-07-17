@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Display on Mobile Devices
+objective: Ensure that when a user selects a genre from the genre list on a mobile device, the application correctly displays the details of the selected genre, including id, Name, and Description.
+testSteps:
+  - Step 1: Access the genre list page on a mobile device.
+  - Step 2: Scroll through the list of genres.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the details displayed for the selected genre.
+expectedResult: The application should display the details of the selected genre, including 'id', 'Name', and 'Description', in a mobile-responsive layout without any layout breakage or unreadable text.
+
+Test Case: Test Case 2
+testCaseName: Verify Responsive Layout Adjustment for Genre Details
+objective: To check if the genre details page adjusts its layout responsively when accessed from devices with different screen sizes, focusing on mobile devices.
+testSteps:
+  - Step 1: Access the genre list page on a mobile device with a small screen.
+  - Step 2: Select a genre by clicking on its 'Name'.
+  - Step 3: Observe the layout and readability of the genre details page.
+  - Step 4: Repeat steps 1 to 3 on a mobile device with a larger screen.
+expectedResult: The genre details page should adjust its layout responsively for different mobile screen sizes, ensuring that the 'id', 'Name', and 'Description' are clearly readable and well-arranged on the screen.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Details Accuracy on Mobile Devices
+objective: To verify that the details displayed for a selected genre (id, Name, and Description) on mobile devices are accurate and match the information provided in the database or source.
+testSteps:
+  - Step 1: Identify a genre and its details (id, Name, Description) from the database or source document.
+  - Step 2: Access the genre list page on a mobile device.
+  - Step 3: Select the identified genre by clicking on its 'Name'.
+  - Step 4: Compare the displayed details (id, Name, Description) with the information obtained from the database or source document.
+expectedResult: The details displayed for the selected genre on the mobile device (id, Name, Description) should exactly match the information provided in the database or source document.
+

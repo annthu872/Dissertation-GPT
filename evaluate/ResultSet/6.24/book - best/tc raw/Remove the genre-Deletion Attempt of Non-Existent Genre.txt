@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Deletion Attempt of Non-Existent Genre - Confirm Deletion
+objective: Verify that the application prevents the deletion of a non-existent genre and displays an appropriate error message when the user confirms the deletion.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Attempt to delete a genre that does not exist or has already been deleted by clicking the 'Delete' button next to it.
+  - Step 3: On the dialog page, confirm the deletion by pressing the 'Confirm' button.
+expectedResult: The application displays an error message indicating that the genre does not exist or has already been deleted, and no deletion occurs.
+explanation: This test case ensures that the system handles attempts to delete non-existent genres gracefully, preventing database errors and informing the user appropriately.
+
+Test Case: Test Case 2
+testCaseName: Deletion Attempt of Non-Existent Genre - Cancel Deletion
+objective: Verify that the application does not delete any data and returns to the genre list without errors when the user cancels the deletion of a non-existent genre.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Attempt to delete a genre that does not exist or has already been deleted by clicking the 'Delete' button next to it.
+  - Step 3: On the dialog page, cancel the deletion by pressing the 'Cancel' button.
+expectedResult: The application returns to the genre list/details page without deleting any data and without displaying any error messages.
+explanation: This test case verifies that cancelling the deletion process of a non-existent genre does not lead to any unintended deletions or errors, ensuring the integrity of the database.
+

@@ -1,0 +1,43 @@
+Test Case: Test Case 1
+testCaseName: Verify error message for invalid author name
+objective: To verify that the application displays an error message when the user enters an invalid author name while adding a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Leave the 'Name' field empty or enter invalid characters.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the name field is required or contains invalid characters.
+
+Test Case: Test Case 2
+testCaseName: Verify error message for invalid author bio
+objective: To verify that the application displays an error message when the user enters an invalid author bio while adding a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Leave the 'Bio' field empty or enter invalid characters.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message should be displayed indicating that the bio field is required or contains invalid characters.
+
+Test Case: Test Case 3
+testCaseName: Verify successful author creation
+objective: To verify that the application successfully adds a new author record to the database when valid data is entered
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new author record should be successfully added to the database, and the user should be redirected to the list of authors with the newly added record visible.
+
+Test Case: Test Case 4
+testCaseName: Verify cancel operation during author creation
+objective: To verify that no data is saved and the user is redirected back to the list of authors when the 'Cancel' button is pressed during the author creation process
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The user should be redirected back to the list of authors without the new author being added to the database.
+

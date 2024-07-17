@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Details Display for Authenticated User
+objective: Ensure that an authenticated user can successfully view the details of a specific genre, including the id, Name, and Description columns
+testSteps:
+  - Step 1: Log in as an authenticated user.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Observe the information displayed on the genre details page.
+expectedResult: The genre details page displays the id, Name, and Description of the chosen genre.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Details Accessibility for Unauthenticated User
+objective: Verify that an unauthenticated user is either redirected to the login page or shown an error message when attempting to view genre details
+testSteps:
+  - Step 1: Without logging in, navigate directly to a genre details page URL, or click on a genre name from the genre list page if accessible.
+  - Step 2: Observe the response by the application.
+expectedResult: The user is redirected to the login page or receives an error message indicating that authentication is required to view genre details.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Details Display Columns
+objective: Confirm that the genre details page correctly displays all required columns (id, Name, and Description) for a genre
+testSteps:
+  - Step 1: Log in as an authenticated user.
+  - Step 2: Navigate to the genre list page.
+  - Step 3: Click on the 'Name' of a specific genre from the list.
+  - Step 4: Verify that the details page displays columns for id, Name, and Description.
+expectedResult: The genre details page accurately displays columns for id, Name, and Description without any missing information.
+

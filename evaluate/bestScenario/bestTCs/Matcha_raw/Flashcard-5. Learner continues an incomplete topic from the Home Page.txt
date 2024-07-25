@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Continue Incomplete Topic from Home Page
+objective: Verify that a learner can continue studying an incomplete topic directly from the Home Page.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Navigate to the Home Page.
+  - Step 3: Identify an incomplete topic displayed on the Home Page.
+  - Step 4: Click on the incomplete topic.
+  - Step 5: Verify that the system redirects to the Flashcard page for the selected topic, continuing from where the learner left off.
+expectedResult: The learner is redirected to the Flashcard page of the incomplete topic, allowing them to continue studying from where they left off.
+explanation: This test case ensures that learners can efficiently resume their learning process for incomplete topics directly from the Home Page, enhancing the learning experience by providing a seamless transition back to their study material.
+
+Test Case: Test Case 2
+testCaseName: Verify 'Previous' Button Disabled on First Flashcard
+objective: Ensure that the 'Previous' button is disabled when the learner is on the first flashcard of a topic.
+testSteps:
+  - Step 1: Follow steps 1 to 6 from the basic flow to navigate to the Flashcard page for a selected topic.
+  - Step 2: Ensure you are viewing the first flashcard of the topic.
+  - Step 3: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button is disabled, and a message 'there is no previous vocabulary to display' is shown.
+explanation: This test case verifies the functionality of the 'Previous' button when on the first flashcard, ensuring that learners receive appropriate feedback and understand that they cannot navigate back further.
+
+Test Case: Test Case 3
+testCaseName: Resume Study with 'Continue Studying' Option
+objective: Verify that a learner can use the 'continue studying' option after completing a topic to proceed with the next topic.
+testSteps:
+  - Step 1: Complete all flashcards in a topic following the basic flow steps 1 to 12.
+  - Step 2: On the 'completion notification' page, click the 'continue studying' option.
+  - Step 3: Verify that the system redirects the learner to the Flashcard page for the continuous topic.
+expectedResult: The learner is redirected to the next topic's Flashcard page, allowing them to continue studying seamlessly.
+explanation: This test case ensures that learners can smoothly transition to studying the next topic after completing one, enhancing continuous learning without manual navigation.
+

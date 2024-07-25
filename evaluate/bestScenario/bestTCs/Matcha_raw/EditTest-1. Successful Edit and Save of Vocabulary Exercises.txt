@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Direct Save
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the direct save option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test you wish to edit and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Click the 'Save' button to save the edited exercises.
+expectedResult: The system should save all edited exercises, and the changes should be reflected in the system.
+explanation: This test case ensures that administrators can directly save changes made to vocabulary exercises, which is a critical functionality for maintaining the accuracy and relevance of vocabulary tests.
+
+Test Case: Test Case 2
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Confirmation Modal
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the confirmation modal by selecting 'Save'.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test you wish to edit and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with the message 'Save changes?', select 'Save'.
+expectedResult: The system should save all edited exercises, and the changes should be updated and recorded in the system.
+explanation: This test case verifies the functionality of the confirmation modal that prompts the user to save changes. It ensures that the system captures and saves the edits made by the administrator when they choose to save changes through the modal.
+
+Test Case: Test Case 3
+testCaseName: Unsuccessful Edit of Vocabulary Exercises via Confirmation Modal
+objective: Verify that the administrator can exit the editing mode without saving the changes by selecting 'Do not save' in the confirmation modal.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test you wish to edit and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with the message 'Save changes?', select 'Do not save'.
+expectedResult: The system should discard the changes made to the exercises, and the original content should remain unchanged.
+explanation: This test case ensures that administrators have the option to discard changes if they decide not to save the edits made to the vocabulary exercises. It tests the functionality of the 'Do not save' option in the confirmation modal.
+

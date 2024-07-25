@@ -1,0 +1,51 @@
+Test Case: Test Case 1
+testCaseName: Successful Display of Vocabulary List
+objective: Verify that the vocabulary list is successfully displayed with all required details when the learner selects the Handbook tab.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+expectedResult: The system displays the learner's vocabulary list in vertical rows, each word in a horizontal row displaying the word name, word type, word meaning, memorization level, and a checkbox to mark the appearance of the vocabulary in the review test.
+explanation: This test case verifies that the basic flow of displaying the vocabulary list is functioning as expected according to the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Successful Search of Vocabulary in Handbook
+objective: Verify that the learner can successfully search for a vocabulary in the Handbook and the system filters the vocabulary list accordingly.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+expectedResult: The system filters vocabulary containing characters entered by the learner in the search bar and displays the filtered list.
+explanation: This test case ensures that learners can search for specific vocabulary in the Handbook, which is part of the alternative flow 1.
+
+Test Case: Test Case 3
+testCaseName: Search for a Meaningless Vocabulary in Handbook
+objective: Verify that the system notifies the learner when there are no suitable search results for a meaningless word search.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+expectedResult: The system notifies that there are no suitable search results for the entered meaningless word.
+explanation: This test case checks the system's response to a search for a meaningless word, aligning with alternative flow 2.
+
+Test Case: Test Case 4
+testCaseName: Exclude a Vocabulary from Review Test
+objective: Verify that a learner can exclude a vocabulary from appearing in the review test by unchecking its checkbox.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Untick a checkbox of a vocabulary.
+expectedResult: The system marks that vocabulary will not appear in the daily test review.
+explanation: This test case ensures that learners can exclude specific vocabulary from the review test, as described in alternative flow 3.
+
+Test Case: Test Case 5
+testCaseName: Include a Vocabulary in Review Test
+objective: Verify that a learner can include a vocabulary in the review test by checking its checkbox.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Tick a checkbox of a vocabulary.
+expectedResult: The system marks that vocabulary will appear in the daily test review.
+explanation: This test case verifies that learners can include specific vocabulary in the review test, following the process outlined in alternative flow 4.
+

@@ -4,7 +4,7 @@ This use case is used to add bookings.
 Employee
 4.8.3 Preconditions :
 Employees must be logged in the system.
-4.8.4 Basic course of events/happy path :
+4.8.4  :
 1. Actor Select Booking panel on dashboard.
 2. System Show booking panel menu.
 3. System Shows Booking fields
@@ -18,7 +18,7 @@ Employees must be logged in the system.
 11. System Show initial status as checked in.
 12. System Shows booking added.
 4.8.5 Alternative path :
-5. If the total amount is not calculated, booking cannot be added.
+5. If the total amount is not calculated, bookingBasic course of events/happy path cannot be added.
 6. If invalid field is entered, show invalid field entered for every individual error.
 12. In case of any error show a failure message.
 4.8.6 Post condition :

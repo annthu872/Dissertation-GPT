@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Enter Invalid Room ID for Room Service Request
+objective: Verify that the system displays an 'Invalid Id' message when an invalid room ID is entered for room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' message and should not proceed to the list of room services.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's response to an invalid room ID during a room service request. It follows the exact steps a user would take to encounter the scenario and checks for the specific outcome (an 'Invalid Id' message), which is the focus of the test scenario.
+

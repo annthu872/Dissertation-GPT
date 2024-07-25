@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to API before submitting updated genre data
+objective: Verify that navigating to API before data submission cancels the update operation and does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new values for the genre's Name and Description fields.
+  - Step 4: Before clicking the 'Submit' button, select the 'API' menu item to navigate away from the update form.
+expectedResult: The application navigates to the API page without updating the genre in the database, and the genre's details remain unchanged when checked from the list/details page.
+explanation: This test case ensures that if a user navigates away to the API page before submitting the updated genre data, the update operation is effectively canceled, and no changes are made to the genre in the database. It directly matches the scenario of navigating to the API before data submission.
+
+Test Case: Test Case 2
+testCaseName: Successful navigation to API after starting but canceling genre update
+objective: Ensure that the user can navigate to the API page after starting the update process but then deciding to cancel the update by clicking the 'Cancel' button.
+testSteps:
+  - Step 1: Go to the genre list/details page and click the 'Update' button for a genre.
+  - Step 2: Begin to enter or modify the Name and Description fields in the update form.
+  - Step 3: Click the 'Cancel' button to abort the update process.
+  - Step 4: Immediately after canceling, select the 'API' menu item to navigate to the API page.
+expectedResult: The application should successfully redirect the user to the API page without updating the genre in the database, confirming the cancellation of the update operation.
+explanation: This test case verifies that the user's action to cancel the update operation is respected, and they can navigate to the API page afterwards without any unintended updates to the genre data.
+

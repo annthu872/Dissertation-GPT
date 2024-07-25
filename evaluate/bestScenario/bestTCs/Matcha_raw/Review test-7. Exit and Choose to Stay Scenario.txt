@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify Exit and Choose to Stay During Review
+objective: Ensure that when learners press 'Exit' during a review and choose to stay, they can continue with the review without losing progress.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page to start the review.
+  - Step 3: Proceed to answer questions until reaching any question (not the last one in the review list).
+  - Step 4: Press the 'Exit' button during the review.
+  - Step 5: On the pop-up, select the 'Stay' button.
+expectedResult: The system should return the learner to the same question they were attempting to exit from, allowing them to continue the review without any loss of progress.
+explanation: This test case is created to ensure that the system correctly handles the scenario where a learner decides to stay after initially choosing to exit the review. It verifies that the learner can continue the review seamlessly.
+
+Test Case: Test Case 2
+testCaseName: Verify Exit and Choose to Confirm During Review
+objective: To verify that when learners press 'Exit' during a review and choose to confirm, they are redirected to the Home page and the review progress is not saved.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page to start the review.
+  - Step 3: Proceed to answer questions until reaching any question (not the last one in the review list).
+  - Step 4: Press the 'Exit' button during the review.
+  - Step 5: On the pop-up, select the 'Confirm' button.
+expectedResult: The learner is redirected to the Home page and the review progress made during that session is not saved.
+explanation: This test case ensures that the system behaves as expected when a learner chooses to exit the review. It verifies that the learner's decision to exit is respected and the review progress is not inadvertently saved.
+

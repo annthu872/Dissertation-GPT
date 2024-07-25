@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Successful Display of Vocabulary List
+objective: Verify that the vocabulary list is successfully displayed with all required details when the learner selects the Handbook tab.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+expectedResult: The system displays the learner's vocabulary list in vertical rows, each word in a horizontal row displaying the word name, word type, word meaning, memorization level, and a checkbox to mark the appearance of the vocabulary in the review test.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the successful display of the vocabulary list with all required details, which is the main objective of the test scenario.
+

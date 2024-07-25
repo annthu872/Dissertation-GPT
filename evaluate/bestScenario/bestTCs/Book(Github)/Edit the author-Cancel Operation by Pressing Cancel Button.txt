@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Editing Author by Pressing Cancel Button
+objective: Verify that pressing the 'Cancel' button while editing an author's details cancels the operation and does not update the author's information in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the author's details (Name, Bio).
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The operation is canceled, no data is updated in the database, and the list of author records is displayed to the user.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is to verify the functionality of the 'Cancel' button in canceling an operation. It specifically tests the scenario where the operation being canceled is the editing of an author's details, ensuring that no changes are saved upon pressing 'Cancel'.
+

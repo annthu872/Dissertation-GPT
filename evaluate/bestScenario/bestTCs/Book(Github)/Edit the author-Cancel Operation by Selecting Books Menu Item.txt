@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting Books Menu Item
+objective: Verify that selecting the 'Books' menu item while editing an author's information cancels the operation and navigates to the Books page without updating the author's information in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the author's details in the form fields provided.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Books' menu item.
+expectedResult: The operation is canceled, no data is updated in the database, and the user is navigated to the Books page displaying the list of books.
+reflect: yes
+explanation: This test case directly addresses the test scenario by demonstrating the process of canceling an edit operation through navigation. It confirms that the action of selecting the 'Books' menu item while in the midst of editing an author's information effectively cancels the operation and prevents any changes from being saved, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Data Integrity After Canceling Edit Author Operation by Navigation
+objective: Ensure that after canceling the edit operation by navigating away using the 'Books' menu item, the author's information remains unchanged in the database.
+testSteps:
+  - Step 1: Note down the current details of an author from the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you noted.
+  - Step 3: Modify the author's details in the form fields but do not submit the changes.
+  - Step 4: Select the 'Books' menu item to navigate away from the edit page.
+  - Step 5: Return to the author list/details page and locate the same author.
+  - Step 6: Verify the author's details against the notes taken in Step 1.
+expectedResult: The author's details on the list/details page match the notes taken before the edit operation was initiated, confirming that no changes were made to the author's information in the database.
+reflect: yes
+explanation: This test case complements the first by focusing on the outcome of the cancel operation from a data integrity perspective. It verifies that the author's information remains unchanged after the operation is canceled by navigating away using the 'Books' menu item. This directly supports the test scenario's objective of ensuring that canceling an operation by selecting the 'Books' menu item does not result in unintended changes to the database, thereby reflecting the given test scenario accurately.
+

@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Additional Services
+objective: Verify that an employee can successfully update a booking with additional services and the system updates the database accordingly.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for an existing booking by id.
+  - Step 4: Select the booking which needs to be updated from the search results.
+  - Step 5: In the booking details, add additional services to the booking.
+  - Step 6: Compute the new payment amount considering the added services.
+  - Step 7: Press the update button after filling in all the necessary fields and updating the payment.
+  - Step 8: Confirm any prompts or messages that appear to validate the update.
+expectedResult: The system should validate the updated fields, update the booking in the database, and display a success message indicating the booking has been updated.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the process of updating a booking with additional services, including the steps for an employee to log in, navigate, update, and confirm the booking changes, which is the core objective of the test scenario.
+

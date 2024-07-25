@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify Last Page Navigation in Authors List
+objective: Verify that the user can navigate to the last page of authors and the correct list of authors is displayed.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the pagination block below the list of authors.
+  - Step 4: Click the 'Next' button repeatedly until the 'Next' button is disabled, indicating you have reached the last page.
+  - Step 5: Observe the list of authors on the last page.
+expectedResult: The last page of authors is displayed with up to 10 items. The 'Next' button is disabled, and the list shows the columns: id, Name, and Bio for each author.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of navigating to the last page of authors using the pagination controls. It ensures that the user can reach the last page and that the correct information is displayed, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Last Page Display by Page Number Selection in Authors List
+objective: Verify that the user can navigate to the last page of authors by selecting the last page number in the pagination block.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Select the item 'Authors' to display the list of authors.
+  - Step 3: Observe the pagination block and note the last number indicating the last page.
+  - Step 4: Click on the last number in the pagination block.
+  - Step 5: Observe the list of authors on the page selected.
+expectedResult: The last page of authors is displayed with up to 10 items. The selected page number matches the last page, and the list shows the columns: id, Name, and Bio for each author.
+reflect: yes
+explanation: This test case also directly reflects the test scenario by testing another method of reaching the last page of authors, which is through direct page number selection in the pagination block. It ensures that this navigation method correctly displays the last page of authors, aligning with the scenario's objective to verify the display of the last page of authors.
+

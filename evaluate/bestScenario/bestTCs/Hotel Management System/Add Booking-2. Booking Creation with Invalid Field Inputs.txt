@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Booking Creation with Invalid Email Format
+objective: Verify that the system shows an invalid field error for the email field when an incorrect email format is entered during booking creation.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data except for the email field where an incorrect format is entered (e.g., 'testemail.com').
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should display an error message indicating the email field is invalid.
+reflect: yes
+explanation: This test case directly addresses the test scenario of booking creation with invalid field inputs by specifically targeting an invalid email format, which is a common form of input validation.
+
+Test Case: Test Case 2
+testCaseName: Booking Creation with Empty Mandatory Field
+objective: Verify that the system prevents booking creation and shows an error message when a mandatory field is left empty.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data but leave one mandatory field (e.g., Customer Name) empty.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should display an error message indicating that a mandatory field is empty and prevent the booking from being added.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the system's response to incomplete booking submissions, which falls under the category of invalid field inputs by leaving a mandatory field empty.
+
+Test Case: Test Case 3
+testCaseName: Booking Creation with Invalid Date Format
+objective: Verify that the system shows an error message for the date field when an incorrect date format is entered during booking creation.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data except for the date field where an incorrect format is entered (e.g., '32/13/2020').
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should display an error message indicating the date field is invalid.
+reflect: yes
+explanation: This test case aligns with the test scenario by focusing on the validation of the date field, which is a specific instance of testing for invalid field inputs during booking creation.
+

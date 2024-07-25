@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display Author Details Successfully
+objective: Verify that the application successfully displays the details of a user-selected author from the author list page
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: Identify and click on the 'Title' of a specific author from the list.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The application should display the author details page with the following columns correctly filled: id (unique author number), Name, and Bio (author's biography).
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Display Author Details Successfully' by outlining steps to select an author from the list and verifying that their details are displayed correctly. The objective, test steps, and expected result align perfectly with the scenario's goal of ensuring the author's details are successfully displayed.
+

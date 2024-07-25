@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Authors Page Before Submitting New Author Data
+objective: Verify that the user can navigate to the Authors page before submitting new author data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to start adding a new author.
+  - Step 3: Begin entering the author's details (Name, Bio) into the form.
+  - Step 4: Before pressing the 'Submit' button, navigate to the 'Authors' page by selecting the 'Authors' menu item.
+expectedResult: The user is redirected to the Authors page, and the data entered is not saved in the database.
+explanation: This test case ensures that navigation to the Authors page before submitting the form does not save the partially entered data. It is directly related to the test scenario of navigating to Authors before submitting data, focusing on the user's ability to change their mind and navigate away without affecting the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Operation While Adding New Author
+objective: Verify that the user can cancel the operation of adding a new author and navigate to the Authors page without saving data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to start adding a new author.
+  - Step 3: Begin entering the author's details (Name, Bio) into the form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the Authors page without the new author's data being saved in the database.
+explanation: This test case verifies the cancel functionality during the author creation process. It ensures that users can opt to cancel the operation, leading them back to the Authors page without making changes to the database. It aligns with the scenario of navigating to Authors before data submission, emphasizing the importance of the cancel operation.
+

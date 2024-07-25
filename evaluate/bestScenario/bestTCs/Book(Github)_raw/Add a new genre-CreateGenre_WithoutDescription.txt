@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Create Genre Without Entering Description
+objective: Verify that a new genre can be created without entering a description and the record is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record with the entered name and without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+explanation: This test case ensures that the 'Description' field is not mandatory for creating a new genre record, aligning with the scenario requirement to create a genre without a description.
+
+Test Case: Test Case 2
+testCaseName: Create Genre With Description Then Cancel
+objective: Verify that when a user cancels the creation of a new genre after entering data, the record is not added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a name in the 'Name' field.
+  - Step 4: Enter some text in the 'Description' field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The user is redirected to the list of genre records without the new genre being added to the database, indicating the cancellation was successful.
+explanation: This test case checks the functionality of the 'Cancel' button in the genre creation process, ensuring that data is not saved to the database if the user decides not to proceed with the creation.
+

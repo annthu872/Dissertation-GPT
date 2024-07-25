@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Direct Save
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the direct save option.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test you wish to edit and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Click the 'Save' button to save the edited exercises.
+expectedResult: The system should save all edited exercises, and the changes should be reflected in the system.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the ability to edit and save vocabulary exercises successfully through a direct save option, which is the core action described in the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Successful Edit and Save of Vocabulary Exercises via Confirmation Modal
+objective: Verify that the administrator can successfully edit and save vocabulary exercises using the confirmation modal by selecting 'Save'.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Topic' on the navbar.
+  - Step 3: Select a topic that contains the test you wish to edit and click 'Edit'.
+  - Step 4: On the editing interface, make changes to the vocabulary exercises as required.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with the message 'Save changes?', select 'Save'.
+expectedResult: The system should save all edited exercises, and the changes should be updated and recorded in the system.
+reflect: yes
+explanation: This test case also aligns with the test scenario by testing another method of saving edits to vocabulary exercises, specifically through a confirmation modal. It ensures that the system captures and saves the edits, which is a crucial part of the scenario.
+

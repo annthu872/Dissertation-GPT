@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Topic Creation with Missing Name
+objective: Verify that the system prevents the creation of a new topic without a name and prompts for a name to be entered
+testSteps:
+  - Step 1: Ensure the Administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: The system redirects to the adding topic viewing page.
+  - Step 4: Leave the name field empty.
+  - Step 5: Add a description of the topic in the description field.
+  - Step 6: Select 'Save' to attempt to create a new topic.
+expectedResult: The system should display an error message or notification indicating that the name field is required and the topic has not been created.
+explanation: This test case is designed to ensure that the system enforces the requirement for a topic name when creating a new topic, preventing the creation of unnamed topics. It directly addresses the scenario of attempting to create a topic with a missing name.
+
+Test Case: Test Case 2
+testCaseName: Topic Creation with Duplicate Name
+objective: Verify that the system prevents the creation of a new topic with a name that is already used and prompts for a unique name
+testSteps:
+  - Step 1: Ensure the Administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: The system redirects to the adding topic viewing page.
+  - Step 4: Enter a name that is already used by an existing topic in the name field.
+  - Step 5: Add a description of the topic in the description field.
+  - Step 6: Select 'Save' to attempt to create a new topic.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name in the name field.
+explanation: This test case checks the system's ability to enforce unique names for topics, preventing the creation of multiple topics with the same name. It is based on the alternative flow of the use case specification.
+

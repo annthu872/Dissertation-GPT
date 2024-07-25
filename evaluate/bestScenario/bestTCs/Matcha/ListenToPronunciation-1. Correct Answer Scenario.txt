@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Verify Correct Answer for Listening Pronunciation Test
+objective: Verify that the system displays a green pop-up screen when the learner selects the correct answer in a listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test function.
+  - Step 3: Start a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Guess the entire word and select the correct answer based on the pronunciation.
+  - Step 6: Submit the answer.
+expectedResult: A green pop-up screen should appear, indicating that the answer is correct.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's response to a correct answer in a listening pronunciation test, which is the display of a green pop-up screen as positive feedback.
+

@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Successful Login with Username
+objective: Verify that a learner can successfully log in using a registered username and corresponding password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered username.
+  - Step 3: Fill in the password field with the correct password for the corresponding username.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful login by verifying the main flow of logging in with a username and password.
+
+Test Case: Test Case 2
+testCaseName: Successful Login with Email
+objective: Verify that a learner can successfully log in using a registered email and corresponding password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid, registered email.
+  - Step 3: Fill in the password field with the correct password for the corresponding email.
+  - Step 4: Press the "Login" button.
+expectedResult: The learner is redirected to the Home page after successful login.
+reflect: yes
+explanation: This test case also reflects the given test scenario of a successful login, but it tests the alternative flow of logging in with an email instead of a username.
+

@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Addition
+objective: Verify that a manager can successfully add a room to the system and see the confirmation of the room added.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the required fields with valid data.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Verify that the system validates the fields.
+  - Step 6: Confirm that the system adds the room to the database.
+expectedResult: The system should display a confirmation message or page indicating that the room has been successfully added.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a successful room addition. It outlines the steps a manager would take to add a room, including logging in, navigating to the correct section, entering valid data, and the expected confirmation that the room has been added, which is the core objective of the test scenario.
+

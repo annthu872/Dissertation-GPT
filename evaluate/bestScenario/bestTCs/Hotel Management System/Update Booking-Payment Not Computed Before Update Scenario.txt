@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Verify booking update without recomputing payment
+objective: Verify that the system prevents updating booking details without recomputing payment when new services or room types are added
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Fill in the fields that need to be updated, including adding new services or new room types.
+  - Step 5: Directly press the update button without recomputing the payment.
+expectedResult: The system should prevent the update and display a message indicating that payment must be recomputed first.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by attempting to update booking details without recomputing payment after adding new services or room types, which is the core action the scenario aims to prevent.
+
+Test Case: Test Case 2
+testCaseName: Verify booking update with payment recomputation
+objective: Verify that the system allows updating booking details after recomputing payment when new services or room types are added
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Fill in the fields that need to be updated, including adding new services or new room types.
+  - Step 5: Compute payment again for the added services or room types.
+  - Step 6: Press the update button.
+expectedResult: The system should successfully update the booking details in the database and display a success message.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the correct flow where payment is recomputed after adding new services or room types before an update, ensuring the system behaves as expected under these conditions.
+

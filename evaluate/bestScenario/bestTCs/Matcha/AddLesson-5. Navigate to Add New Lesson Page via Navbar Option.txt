@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar and Add Lesson
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page via the navbar and successfully add a new lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, select 'Add new Lesson'.
+  - Step 4: On the 'Add new Lesson' page, add a unique name for the lesson in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: After selecting 'Save', the system should redirect the administrator to the 'adding topic to new lesson' section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the steps to navigate to the 'Add New Lesson' page via the navbar and the process of adding a new lesson, which is the primary objective of the test scenario.
+
+Test Case: Test Case 3
+testCaseName: Direct Navigation to Add New Lesson Page via Navbar
+objective: Verify that the administrator can directly navigate to the 'Add New Lesson' page via the navbar without going through the lesson list.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, directly select 'Add new Lesson'.
+expectedResult: The system should redirect the administrator directly to the 'Add new Lesson' page, bypassing the lesson list.
+reflect: yes
+explanation: This test case precisely reflects the given test scenario by focusing on the ability to navigate directly to the 'Add New Lesson' page via the navbar, which is the core action described in the test scenario.
+

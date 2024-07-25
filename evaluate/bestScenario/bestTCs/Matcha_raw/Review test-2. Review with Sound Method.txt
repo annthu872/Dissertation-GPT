@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Review with Sound Method - Correct Answer
+objective: Verify that the system correctly processes and provides feedback when a learner selects the correct answer using the sound method during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the sound method for a word.
+  - Step 4: Listen to the sound and choose the correct answer among the four selections provided at the bottom of the screen.
+  - Step 5: Click on the right answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should show a green word indicating the correct choice, increase the memory level of the word, and allow the learner to proceed to the next word.
+explanation: This test case ensures that the review process using the sound method functions correctly when the learner selects the correct answer, including the feedback and memory level adjustment mechanisms.
+
+Test Case: Test Case 2
+testCaseName: Review with Sound Method - Incorrect Answer
+objective: Verify that the system correctly processes and provides feedback when a learner selects the wrong answer using the sound method during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the sound method for a word.
+  - Step 4: Listen to the sound and choose the wrong answer among the four selections provided at the bottom of the screen.
+  - Step 5: Click on the wrong answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should show a red word indicating the incorrect choice, decrease the memory level of the word, and allow the learner to proceed to the next word.
+explanation: This test case verifies that the review process using the sound method functions correctly when the learner selects the wrong answer, including the feedback and memory level adjustment mechanisms.
+
+Test Case: Test Case 3
+testCaseName: Review with Sound Method - Completion of Review Session
+objective: Verify that the system correctly saves the review session and updates the vocabulary status upon completion using the sound method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review session by going through all words in the list using the sound method, selecting answers for each.
+  - Step 4: After reviewing the last word, press the 'Continue' button to finish the review session.
+expectedResult: After completing the review session, the system should save the review, update the status of vocabulary (memory level, review time) accordingly, and redirect the learner back to the Home page.
+explanation: This test case ensures that the system correctly finalizes the review session using the sound method, including saving the session and updating vocabulary statuses.
+

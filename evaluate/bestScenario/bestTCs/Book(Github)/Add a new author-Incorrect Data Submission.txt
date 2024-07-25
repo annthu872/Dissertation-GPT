@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Name Data Submission for New Author
+objective: Verify that the system displays an incorrect data message when submitting a form with an incorrect name for a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter an incorrect name format in the 'Name' field (e.g., using numbers or special characters).
+  - Step 4: Fill in the 'Bio' field with valid author's biography.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed next to the 'Name' field indicating the error in the name format.
+reflect: yes
+explanation: This test case directly addresses the test scenario of incorrect data submission by focusing on the 'Name' field. It clearly outlines steps to reproduce the scenario where incorrect name data is submitted, and it verifies that the system provides the appropriate feedback, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Incorrect Bio Data Submission for New Author
+objective: Verify that the system displays an incorrect data message when submitting a form with an incorrect bio for a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter incorrect data in the 'Bio' field (e.g., leaving it blank or using inappropriate language).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed next to the 'Bio' field indicating the error in the biography format.
+reflect: yes
+explanation: Similar to Test Case 1, this test case aligns with the test scenario by focusing on a different field, the 'Bio' field. It tests the system's ability to validate another type of incorrect data submission, ensuring comprehensive coverage of the scenario. The steps lead to a situation where incorrect bio data triggers an error message, which is a specific instance of the broader scenario being tested.
+

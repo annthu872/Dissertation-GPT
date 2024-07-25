@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Edit Vocabulary Exercises with Invalid Vocabulary Inputs
+objective: Verify that the system prevents saving when an administrator attempts to edit vocabulary exercises with vocabulary that does not exist in the system.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose a topic that contains the test to be edited and select 'Edit'.
+  - Step 4: In the editing interface, attempt to add or edit vocabulary exercises with vocabulary that does not exist in the system.
+  - Step 5: Select 'Save' to attempt saving the edited exercises.
+expectedResult: The system should display an error message indicating that the vocabulary does not exist in the system and prevent saving the changes.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the action of editing vocabulary exercises with invalid inputs. It clearly outlines the steps to reproduce the scenario where an administrator attempts to save exercises with non-existent vocabulary, which is the core of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Edit Vocabulary Exercises with Invalid Fill in the Blanks Inputs
+objective: Verify that the system prevents saving when an administrator attempts to edit 'fill in the blanks in sentences' exercises with vocabulary that does not exist in the system.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose a topic that contains the test to be edited and select 'Edit'.
+  - Step 4: In the editing interface, attempt to edit 'fill in the blanks in sentences' exercises by inserting vocabulary that does not exist in the system.
+  - Step 5: Select 'Save' to attempt saving the edited exercises.
+expectedResult: The system should display an error message indicating that the vocabulary for 'fill in the blanks in sentences' exercises does not exist in the system and prevent saving the changes.
+reflect: yes
+explanation: This test case is also a direct reflection of the test scenario but focuses on a specific type of vocabulary exercise, namely 'fill in the blanks in sentences'. It tests the same principle as the first test case but in a more specific context, ensuring that the system checks for the existence of vocabulary in this particular type of exercise before allowing it to be saved.
+

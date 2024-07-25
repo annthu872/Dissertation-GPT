@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Register with an invalid email
+objective: Verify that the system shows a notification of invalid email when a learner tries to register with an email that does not exist or has the wrong format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose email registration.
+  - Step 3: Enter a username that is valid (over 8 characters and below 30 characters).
+  - Step 4: Enter an invalid email in the email field (an email that does not exist or has the wrong format).
+  - Step 5: Enter a valid password in the password field (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character, and is not the same as the username).
+  - Step 6: Press the 'Register' button.
+expectedResult: System shows a notification that the email is invalid.
+reflect: yes
+explanation: This test case directly addresses the 'EmailInexistent' scenario by attempting to register with an email that is either non-existent or incorrectly formatted. The steps are designed to trigger the system's validation process for email addresses during registration, and the expected result is a notification of invalid email, which is the exact outcome the test scenario aims to verify.
+

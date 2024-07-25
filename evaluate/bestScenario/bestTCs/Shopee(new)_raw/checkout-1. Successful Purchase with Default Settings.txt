@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Default Settings
+objective: Verify that a user can successfully complete a purchase using the default settings for shipping address, payment method, and shipping option.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the shopping cart with items ready for purchase.
+  - Step 3: Initiate the purchase process by selecting the 'Purchase' feature.
+  - Step 4: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 5: Confirm that the shipping address is set to the default address.
+  - Step 6: Confirm that the default payment method is set to COD (Cash on Delivery).
+  - Step 7: Optionally, skip adding any vouchers to the order.
+  - Step 8: Confirm that the default shipping option is set to Standard Express.
+  - Step 9: Optionally, skip adding a note for the shop.
+  - Step 10: Review the total cost and order details as updated by the system.
+  - Step 11: Complete the purchase by clicking on the 'Place Order' button.
+  - Step 12: Wait for the system to process the payment and confirm the order.
+  - Step 13: Verify the order confirmation and details are displayed by the system.
+expectedResult: The order is successfully placed using default settings, and the user receives an order confirmation with all details correctly displayed.
+explanation: This test case ensures that the checkout process can be completed successfully with the system's default settings for shipping address, payment method, and shipping option, without the need for any modifications by the user. It directly matches the scenario name by testing the basic flow of the checkout use case.
+

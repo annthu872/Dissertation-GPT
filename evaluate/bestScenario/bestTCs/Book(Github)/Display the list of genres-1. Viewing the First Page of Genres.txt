@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Viewing the First Page of Genres
+objective: Verify that the user can view the first page of genres with up to 10 items displayed
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu or the designated area on the page.
+  - Step 3: Observe the list of genres displayed on the page.
+expectedResult: The application displays the first page of genres with up to 10 items. Each item in the list shows the 'id', 'Name', and 'Description' columns.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying that the user can indeed view the first page of genres, with the specific requirement of displaying up to 10 items along with their 'id', 'Name', and 'Description'. It tests the core functionality of viewing genres as described in the scenario.
+

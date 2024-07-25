@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Navigate to the Next Page of Genres Using Next Button
+objective: Verify that the user can navigate to the next page of genres by clicking the 'Next' button and ensure the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu or page content.
+  - Step 3: Observe the list of genres displayed on the first page, noting the last genre's id and name.
+  - Step 4: Click the 'Next' button located below the list of genres in the pagination block.
+  - Step 5: Observe the list of genres on the new page.
+expectedResult: After clicking the 'Next' button, the application should display the next page with a new list of 10 genres. The first genre's id on the new page should follow sequentially after the last id observed on the previous page.
+explanation: This test case ensures that the pagination feature works as expected, allowing users to navigate through the list of genres by using the 'Next' button. It directly matches the scenario of navigating to the next page of genres and verifies the functionality and display of subsequent records.
+
+Test Case: Test Case 2
+testCaseName: Navigate to the Next Page of Genres Using Page Number
+objective: Verify that the user can navigate to the next page of genres by clicking the page number in the pagination block and that the next 10 records are displayed correctly.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu or page content.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Identify the page number block below the list of genres and click on the number '2'.
+  - Step 5: Observe the list of genres on page 2.
+expectedResult: After clicking on the page number '2', the application should display the second page with a new list of 10 genres. The genres displayed should be different from those on the first page, following the correct sequence in the database.
+explanation: This test case verifies that users can navigate through the list of genres using the pagination block by selecting a specific page number. It ensures that the application correctly displays a different set of genres on each page, according to the pagination logic.
+

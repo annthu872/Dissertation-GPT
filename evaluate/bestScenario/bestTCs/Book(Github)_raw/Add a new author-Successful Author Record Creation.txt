@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful New Author Record Creation
+objective: Verify that a new author record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author data entry form.
+  - Step 3: Enter valid data into the form fields including the author's name and biography.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new author record is successfully added to the database, and the list of authors with the newly added record is displayed.
+explanation: This test case ensures that the system correctly adds a new author record to the database when all required data is entered correctly and validates the main scenario of the use case.
+
+Test Case: Test Case 2
+testCaseName: Display Error Message for Incorrect Author Data Submission
+objective: Verify that an error message is displayed when incorrect data is submitted for a new author record
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author data entry form.
+  - Step 3: Enter invalid data into one or more of the form fields (e.g., leave the author's name blank).
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect data, and the new author record is not added to the database.
+explanation: This test case checks the system's ability to validate input data and ensure that users are informed of data entry errors, as described in the main scenario of the use case.
+
+Test Case: Test Case 3
+testCaseName: Cancel New Author Record Creation
+objective: Verify that the new author record creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author data entry form.
+  - Step 3: Start entering data into the form fields but do not complete the form.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: Data is not saved to the database, and the list of author records is displayed without the new record.
+explanation: This test case verifies the cancel operation scenario, ensuring that users can cancel the process of adding a new author record at any time before submission, and no data is saved.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away from New Author Creation Form Without Saving
+objective: Verify that navigating away from the new author creation form without saving does not add a new record to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author data entry form.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: Data is not saved to the database, and the user is redirected to the selected page without adding a new author record.
+explanation: This test case ensures that if a user navigates away from the author creation form without submitting it, no data is saved, aligning with the cancel operation scenario of the use case.
+

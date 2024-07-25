@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Display Books Without Date Range Specified
+objective: Verify that the application displays the list of books without applying date range filter when no date range is specified
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed without entering any date range in the date range filter inputs.
+  - Step 3: Click the 'Refresh' button next to the date range inputs without specifying any date range.
+expectedResult: The application displays the list of books without filtering by publication date, showing up to 10 items on the first page. The list includes columns for id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the application's behavior when no date range is specified. It checks that the application defaults to displaying all books without date filtering, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality Without Date Range Specified
+objective: Verify that the pagination functionality works correctly without a date range filter applied
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application without specifying a date range.
+  - Step 2: Observe the initial list of books displayed (first 10 items).
+  - Step 3: Click the 'Next' button or select the second page number below the list of books.
+expectedResult: The application displays the next 10 records of books in the database, without applying any date range filter, including columns for id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: Although this test case focuses on verifying the pagination functionality, it still reflects the given test scenario by ensuring that the application does not apply a date range filter when none is specified. It confirms that users can navigate through the list of books without date restrictions, which is a part of the scenario's broader context.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Login with Unregistered Username
+objective: Verify that the system shows a notification that the username is not registered yet when attempting to login with an unregistered username
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid username that has not been registered.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the "Login" button.
+expectedResult: The system shows a notification that this username is not registered yet.
+explanation: This test case is created to directly test the scenario of logging in with an unregistered username, following the exception flow 2 from the use case specification. It ensures that the system correctly identifies and notifies the user when they attempt to log in with a username that does not exist in the system's database.
+

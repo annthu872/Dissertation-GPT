@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation to Authors Before Submission
+objective: Verify that the user can navigate to the Authors page before submitting a new book record
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Start entering the book data into the form fields but do not press the 'Submit' button.
+  - Step 4: Before submitting the new book data, select the 'Authors' menu item.
+expectedResult: The Authors page is displayed, and the data entered for the new book is not saved in the database.
+explanation: This test case ensures that users can navigate away from the book creation page to the Authors page without losing any unsaved data, as the action of navigating away should not submit the data to the database.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Operation Navigates to Authors
+objective: Verify that pressing the 'Cancel' button while adding a new book allows the user to navigate to the Authors page without saving the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new book data.
+  - Step 3: Enter some data into the form fields.
+  - Step 4: Press the 'Cancel' button.
+  - Step 5: After the list of books is displayed, select the 'Authors' menu item.
+expectedResult: The Authors page is displayed without the new book data being saved in the database.
+explanation: This test case checks the functionality of the 'Cancel' button in the book creation form and ensures that the user can navigate to the Authors page without unintentionally saving any book data.
+

@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Verify Total Amount Calculation Before Adding Booking
+objective: Verify that the system calculates the total amount before allowing the addition of a new booking
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should successfully calculate the total amount, generate a booking ID, add the booking to the database, and show the booking as added with an initial status of checked in.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the total amount is calculated before a booking is added, ensuring the system follows the correct process flow.
+
+Test Case: Test Case 2
+testCaseName: Verify Booking Addition Without Calculating Total Amount
+objective: Ensure that the booking cannot be added if the total amount is not calculated first
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Without clicking the calculate amount button, directly press the add booking button.
+expectedResult: The system should prevent the booking from being added and display a message indicating that the total amount must be calculated before adding the booking.
+reflect: yes
+explanation: This test case is essential for the test scenario as it checks the system's behavior when trying to add a booking without calculating the total amount first, ensuring that the system enforces this rule.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify incorrect date format handling in date range filter
+objective: Verify that the application properly handles and provides feedback when an incorrect date range format is entered for filtering books by publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format for the start date (e.g., '32/13/2020').
+  - Step 3: Enter a correct date format for the end date (e.g., '12/31/2020').
+  - Step 4: Click the refresh button to the right from dates inputs.
+expectedResult: The application displays a validation error message indicating that the start date format is incorrect and does not refresh the list of books.
+explanation: This test case is created to ensure that the application correctly validates the date format entered by the user in the date range filter. It is directly related to the scenario of handling incorrect date range formats when filtering the list of books by publication date.
+
+Test Case: Test Case 2
+testCaseName: Verify incorrect date range logic
+objective: Verify that the application properly handles and provides feedback when the start date is after the end date in the date range filter.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter a later date for the start date (e.g., '12/31/2021') than the end date.
+  - Step 3: Enter an earlier date for the end date (e.g., '01/01/2021').
+  - Step 4: Click the refresh button to the right from dates inputs.
+expectedResult: The application displays a validation error message indicating that the start date cannot be after the end date and does not refresh the list of books.
+explanation: This test case ensures that the application checks the logic of the date range, specifically that the start date must not be after the end date. It addresses the scenario's focus on handling incorrect date ranges when filtering books by publication date.
+

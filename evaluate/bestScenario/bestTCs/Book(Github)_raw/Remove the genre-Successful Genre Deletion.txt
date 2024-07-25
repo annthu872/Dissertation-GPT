@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Deletion
+objective: Verify that a user can successfully delete a genre and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the database, and the list of genres should no longer include the deleted genre.
+explanation: This test case ensures that the main scenario for deleting a genre is functioning as expected. It tests the flow from initiating a delete action to confirming deletion, resulting in the removal of the genre record.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Deletion Operation
+objective: Verify that a user can cancel the deletion of a genre and ensure the record remains in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The genre should not be deleted from the database, and the list of genres should still include the genre.
+explanation: This test case verifies the cancel operation scenario where a user decides not to proceed with deleting a genre. It ensures that the record remains unchanged in the database after cancellation.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away During Genre Deletion Operation
+objective: Verify that navigating away from the deletion confirmation dialog cancels the deletion operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre should not be deleted from the database, and the list of genres should still include the genre. The user is taken to the selected page with updated data.
+explanation: This test case checks the behavior when a user navigates away from the deletion confirmation dialog without explicitly confirming or canceling the operation. It ensures that the deletion process is effectively canceled and the record remains in the database.
+

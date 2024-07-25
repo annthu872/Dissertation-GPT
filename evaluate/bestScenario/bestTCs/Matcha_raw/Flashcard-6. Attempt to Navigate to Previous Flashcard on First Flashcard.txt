@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Verify 'Previous' button is disabled on the first flashcard
+objective: Ensure that the 'Previous' button is disabled when the learner is on the first flashcard of a topic, preventing navigation to a non-existent previous flashcard.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Verify that the system redirects to the corresponding Flashcard page for the selected topic.
+  - Step 6: Verify that the first flashcard of the vocabulary words for the selected topic is displayed.
+  - Step 7: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button should be disabled or not clickable, and no action should be performed when attempted to click.
+explanation: This test case is created to ensure that the application correctly handles the scenario where a learner attempts to navigate to a previous flashcard when already on the first flashcard. It directly matches the scenario name by testing the functionality of the 'Previous' button on the first flashcard.
+

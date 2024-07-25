@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Admin Cancels Question Creation and Confirms Cancellation
+objective: Verify that the admin can cancel the question creation process and confirm the cancellation, leading to no question being saved.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: Press the 'Cancel' button on the 'Add new question for selection test' page.
+  - Step 9: In the confirmation dialog, press the 'Confirm' button to cancel the question creation.
+expectedResult: The system should redirect the admin to the 'Word Information' page of the selected word, and no question should be saved.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by detailing the steps an admin would take to cancel the question creation process and confirm the cancellation. It aligns with the scenario's objective of ensuring no question is saved after cancellation.
+

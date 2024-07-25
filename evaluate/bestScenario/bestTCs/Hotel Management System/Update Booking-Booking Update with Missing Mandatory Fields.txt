@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Missing Mandatory Fields
+objective: Verify that the system prevents updating a booking when mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Clear one or more mandatory fields that need to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message for each missing mandatory field without updating the booking in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Booking Update with Missing Mandatory Fields' by verifying the system's behavior when attempting to update a booking without all mandatory fields filled. It tests the system's validation process for missing information, which is the core aspect of the given test scenario.
+

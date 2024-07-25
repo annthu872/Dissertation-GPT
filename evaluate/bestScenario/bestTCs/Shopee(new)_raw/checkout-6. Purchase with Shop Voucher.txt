@@ -1,0 +1,47 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Shop Voucher - Applying Shop Voucher Successfully
+objective: Verify that the user can successfully apply a shop voucher to their order during checkout and the total cost is updated accordingly.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Confirm the shipping address is set as the default address or add/change the shipping address if necessary.
+  - Step 5: Confirm the payment method is set to COD or select a new payment method if desired.
+  - Step 6: Select the option to add a shop voucher to the order.
+  - Step 7: Enter a valid shop voucher code and click the 'apply' button.
+  - Step 8: Review the updated total cost to ensure the shop voucher discount has been applied.
+  - Step 9: Click on the 'Place Order' button to finalize the purchase.
+  - Step 10: Confirm the order by reviewing the order confirmation and details displayed by the system.
+expectedResult: The shop voucher is successfully applied to the order, the total cost is updated to reflect the discount, and the user receives an order confirmation.
+explanation: This test case ensures that users can apply shop vouchers to their orders during checkout, which directly relates to the test scenario of purchasing with a shop voucher. It covers the basic flow of applying a voucher and verifying the updated total cost.
+
+Test Case: Test Case 2
+testCaseName: Purchase with Shop Voucher - Applying Disabled Shop Voucher
+objective: Verify that the system prevents the user from applying a disabled shop voucher to their order and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Confirm the shipping address is set as the default address or add/change the shipping address if necessary.
+  - Step 5: Confirm the payment method is set to COD or select a new payment method if desired.
+  - Step 6: Select the option to add a shop voucher to the order.
+  - Step 7: Enter a disabled shop voucher code and click the 'apply' button.
+  - Step 8: Observe the system's response to the disabled voucher code.
+expectedResult: The system prevents the voucher from being applied to the order, displays an error message indicating the voucher is disabled, and does not update the total cost with any discount.
+explanation: This test case checks the system's handling of disabled shop vouchers, ensuring that users are informed and prevented from applying such vouchers, which is an essential part of the purchase process with shop vouchers.
+
+Test Case: Test Case 3
+testCaseName: Purchase with Shop Voucher - Applying Incorrect Shop Voucher Code
+objective: Verify that the system prevents the user from applying an incorrect shop voucher code to their order and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: Review the order summary displayed by the system, including items, quantities, prices, and total cost.
+  - Step 4: Confirm the shipping address is set as the default address or add/change the shipping address if necessary.
+  - Step 5: Confirm the payment method is set to COD or select a new payment method if desired.
+  - Step 6: Select the option to add a shop voucher to the order.
+  - Step 7: Enter an incorrect shop voucher code and click the 'apply' button.
+  - Step 8: Observe the system's response to the incorrect voucher code.
+expectedResult: The system prevents the voucher from being applied to the order, displays an error message indicating the voucher code is incorrect, and does not update the total cost with any discount.
+explanation: This test case ensures that the system correctly handles incorrect shop voucher codes by preventing their application and informing the user, which is crucial for maintaining the integrity of the checkout process.
+

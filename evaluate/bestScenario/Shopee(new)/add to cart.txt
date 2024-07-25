@@ -1,0 +1,6 @@
+1. Successful Product Addition to Cart
+2. Product Out of Stock Scenario
+3. User chooses a product option before adding to cart
+4. User adjusts quantity before adding product to cart
+5. User tries to add a product with multiple options without selecting an option
+9. User tries to add an out-of-stock option of a product with multiple options

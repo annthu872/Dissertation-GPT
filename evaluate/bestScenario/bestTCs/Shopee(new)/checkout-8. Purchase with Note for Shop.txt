@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify adding a note for the shop during checkout
+objective: Ensure that the user can add a note for the shop in the checkout process and the note is included in the order details.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: At the checkout page, proceed through the steps to set the shipping address, payment method, and shipping option as per the default or change as desired.
+  - Step 4: In the 'Add note for shop' field, enter a note for the shop.
+  - Step 5: Review the order details to ensure all changes including the note are correctly included.
+  - Step 6: Click on the 'Place Order' button.
+  - Step 7: Confirm the payment (if required) and wait for the order confirmation page.
+expectedResult: The order confirmation page is displayed with the order details, including the note added for the shop.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the ability to add a note for the shop during the checkout process and ensuring that this note is included in the order details, which is the core functionality described in the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout process with new shipping address and note for shop
+objective: To verify that the user can add a new shipping address and a note for the shop during the checkout process, and both are correctly reflected in the order details.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: At the checkout page, click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address and fill in the required fields with valid data.
+  - Step 5: Click on the 'Finish' button to add the new shipping address.
+  - Step 6: Proceed to select a payment method and shipping option as desired.
+  - Step 7: In the 'Add note for shop' field, enter a note for the shop.
+  - Step 8: Review the order details to ensure all changes including the new shipping address and the note are correctly included.
+  - Step 9: Click on the 'Place Order' button.
+  - Step 10: Confirm the payment (if required) and wait for the order confirmation page.
+expectedResult: The order confirmation page is displayed with the order details, including the newly added shipping address and the note for the shop.
+reflect: yes
+explanation: Although this test case introduces an additional step of adding a new shipping address, it still directly tests the ability to add a note for the shop during the checkout process. The inclusion of a new shipping address does not detract from the primary objective of verifying the note addition functionality, making it relevant to the test scenario.
+

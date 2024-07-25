@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Correct Answer Submission for Word Sorting Test
+objective: Verify that the system correctly identifies and accepts a correct answer submission by displaying a green pop-up screen.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Arrange the letters by clicking on letter buttons in the correct order.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: A green pop-up screen should appear, indicating the answer is correct.
+explanation: This test case ensures that when a learner submits a correct answer in the word sorting test, the system accurately validates the answer and provides positive feedback through a green pop-up screen. It directly matches the 'Correct Answer Submission Scenario' by testing the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Incorrect Answer Submission for Word Sorting Test
+objective: Verify that the system correctly identifies and rejects an incorrect answer submission by displaying a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order by clicking on letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+expectedResult: A red pop-up screen should appear, indicating the answer is incorrect.
+explanation: This test case ensures that when a learner submits an incorrect answer in the word sorting test, the system accurately validates the answer and provides feedback through a red pop-up screen. It is designed to test the alternative flow 1 of the use case, directly related to the 'Correct Answer Submission Scenario' by focusing on the outcome of submitting an incorrect answer.
+

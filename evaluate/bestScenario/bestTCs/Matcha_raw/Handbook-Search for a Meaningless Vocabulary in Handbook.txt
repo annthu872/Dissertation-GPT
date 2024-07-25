@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Search for a Meaningless Vocabulary in Handbook
+objective: Verify that the system notifies there are no suitable search results when a learner searches for a meaningless vocabulary in the Handbook.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar displayed at the top of the vocabulary list.
+  - Step 4: Enter a meaningless word (e.g., 'xyzabc') into the search bar.
+  - Step 5: Press the 'Search' button or wait for the system to automatically filter based on the input.
+expectedResult: The system notifies that there are no suitable search results for the meaningless word entered.
+explanation: This test case is created to ensure that the system correctly handles searches for vocabularies that do not exist in the learner's handbook by providing appropriate feedback. It directly matches the scenario name by focusing on the action of searching for a meaningless vocabulary.
+
+Test Case: Test Case 2
+testCaseName: Verify Vocabulary List Display and Search Functionality
+objective: Ensure that the learner can view their vocabulary list and use the search functionality to filter vocabularies.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar to view the vocabulary list.
+  - Step 3: Scroll through the vocabulary list to verify all vocabularies are displayed correctly with word name, word type, word meaning, memorization level, and a checkbox.
+  - Step 4: Press the search bar and enter a specific word from the displayed list.
+  - Step 5: Observe the filtering process and the displayed results.
+expectedResult: The system displays the vocabulary list correctly and filters the list based on the search input, showing only the vocabularies that match the search criteria.
+explanation: This test case verifies the basic functionality of the Handbook use case, including the display of the vocabulary list and the ability to search within it. It ensures that the system behaves as expected when a learner interacts with the Handbook's basic and alternative flows.
+

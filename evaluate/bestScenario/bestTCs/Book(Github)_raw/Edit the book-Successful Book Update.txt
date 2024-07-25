@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Book Record Update
+objective: Verify that the book record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter valid data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book record is successfully updated in the database, and the list of books with the updated records is displayed.
+explanation: This test case ensures that when a user updates a book record with all valid data and submits the form, the book is successfully updated in the database, and the updated list is displayed. It directly matches the main scenario of the 'Successful Book Update' test scenario.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Book Update with Invalid Data
+objective: Verify that the book record update fails with invalid data and displays appropriate messages
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter invalid data for any of the fields (Title, Author, Genre, Description, Publication date).
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages for incorrect data, and the book record is not updated in the database.
+explanation: This test case checks the application's behavior when a user tries to update a book record with invalid data. It ensures that the system validates the input data and prevents the update if the data is invalid, which is a part of the main scenario for the 'Successful Book Update' test scenario.
+
+Test Case: Test Case 3
+testCaseName: Cancel Book Update Operation
+objective: Verify that the book update operation can be canceled and no data is updated in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The book update operation is canceled, no data is updated in the database, and the list of book records is displayed.
+explanation: This test case verifies the functionality of the 'Cancel' button in the book update form. It ensures that users can cancel the update operation if they decide not to proceed, which is covered under the cancel operation scenario of the 'Successful Book Update' test scenario.
+

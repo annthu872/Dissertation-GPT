@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Successful Lesson Creation via Lesson Management
+objective: Verify that the administrator can successfully add a new English learning lesson through the Lesson Management page.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'View list of Lesson' from the dropdown menu.
+  - Step 4: On the Lesson Management page, select the button 'Add new Lesson'.
+  - Step 5: Enter a unique name for the lesson in the name field.
+  - Step 6: Add a description for the lesson in the description field.
+  - Step 7: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Lesson Creation' by outlining the steps an administrator would take to add a new lesson through the Lesson Management page, ensuring the process is successful.
+
+Test Case: Test Case 3
+testCaseName: Direct Navigation to Add New Lesson Page
+objective: Verify that the administrator can navigate directly to the 'Add new Lesson' page via the navbar.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+reflect: yes
+explanation: This test case reflects the given test scenario by demonstrating an alternative navigation path to achieve 'Successful Lesson Creation'. It shows that the administrator can directly navigate to the 'Add new Lesson' page without viewing the lesson list first, still resulting in a successful lesson creation.
+

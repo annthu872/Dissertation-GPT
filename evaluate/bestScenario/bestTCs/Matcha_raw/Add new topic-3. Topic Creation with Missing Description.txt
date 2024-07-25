@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Topic Creation with Missing Description
+objective: Verify that the system prevents the creation of a new topic when the description field is left empty
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Leave the description field empty.
+  - Step 5: Select 'Save' to attempt creating a new topic.
+expectedResult: The system should display an error message indicating that the description field cannot be left empty and the topic should not be created.
+explanation: This test case is designed to ensure that the system enforces the requirement for both a name and a description when creating a new topic, directly addressing the scenario of attempting topic creation with a missing description.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display on Click
+objective: Ensure that all product information is correctly displayed when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card displayed on the page.
+  - Step 3: Observe the information displayed for the product.
+expectedResult: The system should display the product's information including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case verifies that the basic flow of the Product Information Display use case is implemented correctly and all specified product information is displayed upon clicking a product card.
+
+Test Case: Test Case 2
+testCaseName: Verify Detailed Customer Reviews and Ratings Display
+objective: Ensure that the system displays the average rating, 3 latest detailed reviews including ratings, written feedback, and user-uploaded images for a product.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 4: Verify the display of the overall rating.
+  - Step 5: Verify the display of the 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+expectedResult: The system should display the overall rating and 3 latest detailed reviews with ratings, written feedback, and user-uploaded images in the 'Customer Reviews and Ratings' section.
+explanation: This test case ensures that the Customer Reviews and Ratings section of the product information page is populated with the correct data as specified in the use case.
+
+Test Case: Test Case 3
+testCaseName: Verify Seller Profile and Contact Information Display
+objective: Ensure that the seller's profile, including their name, ratings, reviews, and contact option, is displayed correctly.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section.
+  - Step 4: Verify the display of the seller's name, ratings, and reviews.
+  - Step 5: Verify the presence of an option to contact the seller directly through the platform's messaging system.
+expectedResult: The system should display the seller's profile including their name, ratings, reviews, and provide an option to contact the seller directly.
+explanation: This test case verifies that the Seller Profile and Seller Contact information is correctly displayed as part of the product information, ensuring users can view seller details and contact them if needed.
+

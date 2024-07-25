@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Create New Author Without Entering Name
+objective: Verify that the system prevents the creation of a new author record without a name and displays the appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a valid biography in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the record should not be added to the database.
+explanation: This test case ensures that the application enforces the requirement for entering an author's name when creating a new author record, which is crucial for maintaining data integrity and usefulness.
+
+Test Case: Test Case 2
+testCaseName: Cancel Creating New Author Without Entering Name
+objective: Verify that the system does not save the new author record when the 'Cancel' button is pressed, even if the name has not been entered.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter any data in the 'Bio' field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The system does not save the new author record and redirects the user to the list of authors, showing that no new record has been added.
+explanation: This test case checks the functionality of the 'Cancel' button in the scenario where a user attempts to create a new author without entering a name, ensuring that incomplete records are not inadvertently saved.
+

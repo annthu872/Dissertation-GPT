@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: No Services Selected by User
+objective: Verify that the system handles the scenario where no services are selected by the user after entering a valid room ID
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: When presented with the list of room services, do not select any service.
+  - Step 5: Attempt to proceed to the next step without selecting any services.
+expectedResult: The system should either prevent the user from proceeding without selecting a service, displaying a message to select at least one service, or allow proceeding but show a total charge of $0 with a message indicating no services were selected.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'No Services Selected by User' by outlining steps to replicate a situation where a user attempts to proceed without selecting any services. The expected result clearly states how the system should respond to this action, which is the core of the test scenario. Therefore, it accurately reflects the given test scenario.
+

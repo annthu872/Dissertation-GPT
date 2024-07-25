@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Lesson Creation with Unique Name
+objective: Verify that the administrator can successfully add a new lesson with a unique name and description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name in the name field on the 'Add new Lesson' page.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should create the new lesson and redirect the administrator to the 'adding topic to new lesson' section. The new lesson should appear in the lesson list.
+explanation: This test case ensures that the basic flow of adding a new lesson with a unique name works as expected, without encountering the duplicate name issue.
+
+Test Case: Test Case 2
+testCaseName: Lesson Creation with Duplicate Name
+objective: Verify that the system prevents the administrator from adding a new lesson with a name that is already used and prompts for a new name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a name that is already used by an existing lesson in the name field on the 'Add new Lesson' page.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+  - Step 7: Observe the notification about the name already being used and enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the lesson.
+expectedResult: The system should display a notification that the name is already used and prompt the administrator to add another name. After entering a new, unique name, the system should create the lesson and redirect to the 'adding topic to new lesson' section. The new lesson should appear in the lesson list.
+explanation: This test case validates the system's handling of duplicate lesson names as described in the alternative flow 1, ensuring that lessons cannot have duplicate names and that appropriate user feedback is provided.
+

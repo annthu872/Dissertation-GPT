@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Bio Field
+objective: Verify that the system prevents updating an author record with an empty 'Bio' field and displays the appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field to make it empty.
+  - Step 4: Fill in other necessary fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the 'Bio' field cannot be empty and the author record should not be updated in the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateAuthor_WithEmptyBio' by attempting to update an author's record with an empty 'Bio' field and expecting the system to prevent the update and display an error message. It reflects the given test scenario accurately by testing the specific condition where the 'Bio' field is empty.
+

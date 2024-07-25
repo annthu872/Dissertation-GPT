@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Register by Email with Valid Data
+objective: Verify that a learner can register using a valid email address and other valid credentials
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with a valid email address.
+  - Step 4: Fill in the password field with a valid password that is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Ensure the password is not the same as the email.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system should redirect the learner to the Home page, indicating successful registration.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the process of registration using an email address instead of a username, ensuring the system supports and correctly handles email-based registration.
+
+Test Case: Test Case 2
+testCaseName: Register by Email with Invalid Email Format
+objective: Verify that the system shows an error notification when a learner tries to register with an invalid email format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an invalid email address (wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system should show a notification that the email is invalid.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the validation process for email registration, specifically focusing on the system's ability to recognize and reject invalid email formats. It is an essential part of ensuring the robustness of email-based registration.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Search Keyword Does Not Match Any Shop or Brand but Matches Product Names
+objective: Verify that when a search keyword does not match any shop or brand but matches product names, the system displays related product cards.
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a keyword that is known not to match any shop or brand names but matches some product names in the search bar.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display related product cards that have names matching the search keyword.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a search keyword does not match any shop or brand but does match product names. It checks if the system is capable of displaying products related to the keyword, thus accurately testing the scenario.
+

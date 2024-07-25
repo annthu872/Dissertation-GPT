@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Complete Purchase with Multiple Changes (Address, Payment, Voucher, Shipping Option, Note)
+objective: Verify that the user can successfully complete a purchase with multiple changes including changing the shipping address, payment method, applying a voucher, changing the shipping option, and adding a note to the order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, click the button to change the shipping address and select a new address or add a new one.
+  - Step 4: Change the default payment method from COD to another available payment method like Shopee Pay or credit.
+  - Step 5: Apply an available voucher or enter a valid voucher code and click 'apply'.
+  - Step 6: Change the shipping option from Standard Express to another available option.
+  - Step 7: Add a note for the shop regarding the order.
+  - Step 8: Review the updated total cost and order details reflecting all the changes made.
+  - Step 9: Click on the 'Place Order' button to complete the purchase.
+  - Step 10: Confirm that the payment is processed and the order is successfully placed.
+expectedResult: The system should display the order confirmation and details page, indicating that the order has been successfully placed with all the specified changes (address, payment, voucher, shipping option, note).
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's ability to handle multiple changes during the checkout process, including address, payment method, voucher application, shipping option, and adding a note. It covers all aspects of the scenario, ensuring that the system can process these changes and complete the purchase as expected.
+

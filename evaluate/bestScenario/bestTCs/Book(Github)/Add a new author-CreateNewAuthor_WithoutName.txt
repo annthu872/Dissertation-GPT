@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Create New Author Without Entering Name
+objective: Verify that the system prevents the creation of a new author record without a name and displays the appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a valid biography in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the record should not be added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'CreateNewAuthor_WithoutName' by attempting to create an author record without a name and expecting an error message, which is the exact purpose of the test scenario.
+

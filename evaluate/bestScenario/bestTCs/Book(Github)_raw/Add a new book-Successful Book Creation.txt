@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful Book Record Creation
+objective: Verify that a new book record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the book data form fields: Title, Author, Genre, Description, and Publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new book record is successfully added to the database, and the user is redirected to the list of books with the newly added record visible.
+explanation: This test case ensures that the system can handle the creation of new book records when all required fields are filled with valid data, directly matching the scenario of successful book creation.
+
+Test Case: Test Case 2
+testCaseName: Display Error on Incorrect Book Data Submission
+objective: Verify that the application displays error messages for incorrectly entered book data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter invalid data into one or more of the book data form fields: Title, Author, Genre, Description, and Publication date. For example, leave the 'Title' field empty.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages indicating which data was entered incorrectly.
+explanation: This test case checks the system's ability to validate user input and provide feedback, which is crucial for guiding users to correct data entry errors.
+
+Test Case: Test Case 3
+testCaseName: Cancel Book Creation Operation
+objective: Verify that the book creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book data form fields but do not complete the form.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The book creation form is closed, no data is saved to the database, and the user is redirected to the list of book records without the addition of a new record.
+explanation: This test case ensures that users have the option to cancel the book creation process at any point before submission, preventing unwanted data from being added to the database.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Book Creation Cancels Operation
+objective: Verify that navigating away from the book creation form cancels the operation without saving data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data into the book data form fields.
+  - Step 4: Without pressing 'Submit', select another menu item such as 'Genres' or 'Home'.
+expectedResult: The book creation form is closed, no data is saved to the database, and the user is redirected to the selected page without the addition of a new book record.
+explanation: This test case verifies that if a user navigates away from the book creation form before submitting it, the operation is canceled, ensuring that incomplete data is not inadvertently saved.
+

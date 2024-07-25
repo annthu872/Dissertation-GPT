@@ -1,0 +1,49 @@
+Test Case: Test Case 1
+testCaseName: Successful Product Addition to Cart Without Options
+objective: Verify that a user can successfully add a product without options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product without options.
+  - Step 3: Click the "Add to Cart" button.
+  - Step 4: Observe the confirmation message that the item has been added to the cart.
+  - Step 5: Check the cart icon to ensure it reflects the updated number of items.
+expectedResult: The product is added to the shopping cart successfully, a confirmation message is displayed, and the cart icon updates to reflect the new item count.
+explanation: This test case ensures that the basic flow of adding a product without options to the shopping cart works as expected.
+
+Test Case: Test Case 2
+testCaseName: Successful Product Addition to Cart With Options
+objective: Verify that a user can successfully add a product with options to their shopping cart after selecting an available option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options.
+  - Step 3: Select one available option for the product.
+  - Step 4: Click the "Add to Cart" button.
+  - Step 5: Observe the confirmation message that the item has been added to the cart.
+  - Step 6: Check the cart icon to ensure it reflects the updated number of items.
+expectedResult: The product with the selected option is added to the shopping cart successfully, a confirmation message is displayed, and the cart icon updates to reflect the new item count.
+explanation: This test case verifies that users can add products with options to their cart, provided they select an available option first, following the alternative flow.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that a user can adjust the quantity of a product before adding it to their shopping cart and the system updates accordingly
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product by clicking the plus or minus button.
+  - Step 4: Click the "Add to Cart" button after adjusting the quantity.
+  - Step 5: Observe the confirmation message that the item has been added to the cart with the adjusted quantity.
+  - Step 6: Check the cart icon to ensure it reflects the updated number of items, including the adjusted quantity.
+expectedResult: The product is added to the shopping cart with the adjusted quantity successfully, a confirmation message is displayed, and the cart icon updates to reflect the new item count including the adjusted quantity.
+explanation: This test case ensures that users can adjust the quantity of a product before adding it to their cart and that the system correctly updates the cart to reflect this change.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Product with Quantity Over Maximum Stock
+objective: Verify that the system prevents a user from adding a product to their cart with a quantity that exceeds the product's maximum stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page with limited stock.
+  - Step 3: Attempt to increase the product quantity beyond the available stock by clicking the plus button.
+  - Step 4: Observe the behavior of the plus button and the message displayed.
+expectedResult: The plus button is disabled when the maximum stock limit is reached, and a message "You have reached the maximum of the stock." is displayed, preventing the addition of the product to the cart in excess quantity.
+explanation: This test case checks the system's handling of attempts to add a product to the cart in a quantity exceeding the available stock, following the exception flow.
+

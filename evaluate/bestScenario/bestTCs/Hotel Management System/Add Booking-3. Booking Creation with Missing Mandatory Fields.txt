@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Booking Creation with Missing Mandatory Fields
+objective: Verify that the system prevents booking creation and shows appropriate error messages when mandatory fields are missing.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill only some of the mandatory fields, intentionally leave out at least one.
+  - Step 4: Attempt to press the add booking button without clicking the calculate amount button.
+  - Step 5: Press the add booking button after attempting the previous step.
+expectedResult: The system should not add the booking to the database. It should show error messages for the missing mandatory fields and prevent the booking from being created.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when mandatory fields are missing during the booking creation process. It tests the system's ability to prevent booking creation and provide appropriate feedback, which is the core of the test scenario.
+

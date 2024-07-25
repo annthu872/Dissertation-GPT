@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Check Out with Incorrect Booking ID
+objective: Verify that the system correctly handles an attempt to check out with an incorrect Booking ID by displaying an error message and redirecting to the main page.
+testSteps:
+  - Step 1: Navigate to the check-out page.
+  - Step 2: Enter an incorrect Booking ID into the Booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an error message indicating the Booking ID is incorrect and redirect the user to the main page.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to check out with an incorrect Booking ID. It follows the exact steps that would trigger the scenario being tested, including the entry of an incorrect Booking ID and the expected system response, which aligns with the scenario's requirements.
+

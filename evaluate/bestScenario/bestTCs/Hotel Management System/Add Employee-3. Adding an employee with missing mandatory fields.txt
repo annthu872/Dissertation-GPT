@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Adding an employee with one mandatory field missing
+objective: Verify that the system prevents adding an employee when a mandatory field is missing and displays an appropriate message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Fill in all the mandatory fields except one (leave one field blank).
+  - Step 4: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the employee from being added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add an employee with a missing mandatory field, which is the exact condition the scenario aims to test.
+
+Test Case: Test Case 2
+testCaseName: Adding an employee with all mandatory fields missing
+objective: Verify that the system prevents adding an employee when all mandatory fields are missing and displays an appropriate message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Leave all the mandatory fields blank.
+  - Step 4: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the employee from being added to the database.
+reflect: yes
+explanation: Although this test case explores a more extreme condition where all mandatory fields are missing, it still falls under the umbrella of the test scenario which is about adding an employee with missing mandatory fields. Therefore, it reflects the given test scenario.
+

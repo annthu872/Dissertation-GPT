@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Successful Lesson and Topic Selection with Flashcard Review
+objective: Verify that the learner can successfully select a lesson and topic, review flashcards, and complete the review session.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Review the flashcards by clicking on them to flip and view the back, then navigate through all flashcards using the 'Next' and 'Previous' buttons.
+  - Step 6: After reviewing all flashcards, click the 'Next' button on the last flashcard to be redirected to the 'completion notification' page.
+  - Step 7: Click 'return to the lesson page' on the 'completion notification' page.
+expectedResult: The learner is redirected back to the lesson page after completing the flashcard review, indicating the successful completion of the lesson and topic selection with flashcard review.
+explanation: This test case ensures that learners can navigate through lessons and topics, review flashcards, and complete their study session as intended in the use case.
+
+Test Case: Test Case 2
+testCaseName: Flashcard Review with 'Continue Studying' Option
+objective: Verify that the learner can continue studying after completing a topic by selecting the 'continue studying' option.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to a lesson and select a topic following the basic flow steps 1 to 5.
+  - Step 3: Complete the flashcard review for the selected topic.
+  - Step 4: On the 'completion notification' page, click 'continue studying'.
+expectedResult: The topic is marked as completed, vocabulary words are marked as studied, and the learner is redirected to the Flashcard page for the continuous topic, allowing for further study.
+explanation: This test case verifies the functionality of the 'continue studying' option, ensuring learners can proceed with their studies seamlessly after completing a topic.
+
+Test Case: Test Case 3
+testCaseName: Flashcard Review Completion with Disabled 'Previous' Button on First Flashcard
+objective: Verify that the 'Previous' button is disabled on the first flashcard, preventing navigation to a non-existent previous flashcard.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Navigate to a lesson and select a topic by following the basic flow steps 1 to 5.
+  - Step 3: On the first flashcard, attempt to click the 'Previous' button.
+expectedResult: The system displays a message 'there is no previous vocabulary to display', and the 'Previous' button is disabled, indicating the user is on the first flashcard.
+explanation: This test case ensures that the application correctly handles navigation attempts to a previous flashcard when the user is viewing the first flashcard in the series.
+

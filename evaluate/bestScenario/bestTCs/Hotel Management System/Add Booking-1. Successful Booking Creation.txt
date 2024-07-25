@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking Creation
+objective: Verify that an employee can successfully create a booking and see it added in the system with the initial status checked in.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button after the total amount is displayed.
+  - Step 6: Verify the booking is added by checking the tables where all new bookings are shown on the same booking page.
+expectedResult: The booking is successfully added to the database, and the initial status of the booking is shown as checked in. The new booking is visible in the tables on the booking page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Booking Creation' by outlining steps that lead to the successful creation of a booking and verifying its addition in the system with the correct initial status.
+

@@ -1,0 +1,10 @@
+EditAuthor_WithoutName
+EditAuthor_WithoutBio
+Successful Author Update
+Update with Incorrect Data
+User presses “Cancel” button before submitting the form
+User navigates to "Books" before submitting the form
+User navigates to "Genres" before submitting the form
+User navigates to "Authors" before submitting the form
+User navigates to "Home" before submitting the form
+User navigates to "API" before submitting the form

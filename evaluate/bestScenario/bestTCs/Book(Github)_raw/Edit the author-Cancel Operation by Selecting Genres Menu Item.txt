@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Cancel Editing Author by Selecting Genres Menu Item
+objective: Verify that the author's data is not updated in the database and the user is navigated to the Genres page when the 'Genres' menu item is selected during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the author's edit form.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Genres' menu item.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the Genres page with the form not displaying the unsaved changes.
+explanation: This test case ensures that when a user decides to cancel the edit operation by navigating away from the edit page through the 'Genres' menu item, the operation is effectively canceled, and no changes are made to the author's data in the database. It directly matches the scenario name by testing the cancel operation through a specific navigation method.
+
+Test Case: Test Case 2
+testCaseName: Verify Cancel Button Functionality During Author Edit
+objective: Ensure that pressing the 'Cancel' button while editing an author's information discards changes and redirects the user to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Modify or enter new data in the author's edit form fields.
+  - Step 4: Click the 'Cancel' button before submitting the form.
+expectedResult: The author's data remains unchanged in the database, and the user is redirected to the list of authors without the modifications being saved.
+explanation: This test case is created to verify the functionality of the 'Cancel' button in the author edit form, ensuring that any changes made are not saved and the user is returned to the list of authors, aligning with the cancel operation scenario.
+

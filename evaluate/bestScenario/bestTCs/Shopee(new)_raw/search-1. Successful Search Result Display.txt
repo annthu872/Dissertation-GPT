@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful Search Result Display for Keyword Matching Product Name or Description
+objective: Verify that the system displays a list of relevant product matches when a user searches using a keyword that matches product names or descriptions.
+testSteps:
+  - Step 1: Navigate to the search bar on the page.
+  - Step 2: Type a keyword that matches the name or description of available products in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of product cards displayed as search results.
+expectedResult: A list of product cards, each representing a product whose name or description includes or is related to the keyword, is displayed. A maximum of 60 product cards are shown per page with a pagination bar at the bottom.
+explanation: This test case ensures that the basic flow of the search functionality works as expected when users search for keywords related to product names or descriptions.
+
+Test Case: Test Case 2
+testCaseName: Successful Search Result Display for Keyword Matching Shop Name
+objective: Verify that the system displays shop information and related product cards when a user searches using a keyword that matches a shop name.
+testSteps:
+  - Step 1: Navigate to the search bar on the page.
+  - Step 2: Type a keyword that matches the name of a shop in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed.
+expectedResult: The system displays the shop's information at the top of the search result, including shop name, number of items, ratings, and response rate, average response time, followed by the shop product's cards and related product cards.
+explanation: This test case verifies the alternative flow where the search keyword matches a shop name, ensuring that shop information and related products are correctly displayed.
+
+Test Case: Test Case 3
+testCaseName: Successful Search Result Display for Keyword Matching Brand Name
+objective: Verify that the system displays the most related shop and related product cards when a user searches using a keyword that matches a brand name.
+testSteps:
+  - Step 1: Navigate to the search bar on the page.
+  - Step 2: Type a keyword that matches the name of a brand in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed.
+expectedResult: The system displays the most related/best sold shop's information that sells the brand at the top of the search result, followed by related product cards.
+explanation: This test case verifies the alternative flow where the search keyword matches a brand name, ensuring that the most related shop and related products are correctly displayed.
+
+Test Case: Test Case 4
+testCaseName: No Search Results Found Display
+objective: Verify that the system displays random product cards when a user searches using a keyword that matches no products, shops, or brands.
+testSteps:
+  - Step 1: Navigate to the search bar on the page.
+  - Step 2: Type a keyword that does not match any product, shop, or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results displayed.
+expectedResult: The system displays random product cards as the search result.
+explanation: This test case verifies the exception flow where no search results are found, ensuring that random product cards are displayed as a fallback.
+

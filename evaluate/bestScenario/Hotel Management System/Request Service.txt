@@ -1,0 +1,6 @@
+1. Scenario Submit Room Service Request with Empty Room ID
+2. Scenario Submit Room Service Request with Incorrect Room ID Format
+3. Successful Room Service Order
+5. No Services Selected by User
+6. Scenario Enter Invalid Room ID
+7. Scenario Request Unavailable Services

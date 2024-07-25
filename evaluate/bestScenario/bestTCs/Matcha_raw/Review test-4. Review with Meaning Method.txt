@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Review with Meaning Method - Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the meaning method for a word.
+  - Step 4: Choose the correct meaning by clicking on one of the four selections provided.
+  - Step 5: Click the right answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, a green word should be displayed, indicating the word's memory level has been increased.
+explanation: This test case ensures that the review process using the meaning method functions correctly when the learner selects the correct answer, leading to an increase in the memory level of the word.
+
+Test Case: Test Case 2
+testCaseName: Review with Meaning Method - Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the meaning method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the meaning method for a word.
+  - Step 4: Choose the wrong meaning by clicking on one of the four selections provided.
+  - Step 5: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased.
+explanation: This test case checks if the system behaves as expected when a learner selects an incorrect answer using the meaning method, specifically that it decreases the memory level of the word.
+
+Test Case: Test Case 3
+testCaseName: Review with Meaning Method - Exiting and Saving Progress
+objective: Verify that the system saves the review progress when a learner decides to exit the review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review session.
+  - Step 4: On the pop-up, choose the 'Confirm' button to exit the review.
+  - Step 5: Verify redirection to the Home page.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress, as per the exception flow.
+explanation: This test case verifies the functionality of exiting a review session and ensures that the system behaves as expected by not saving the review progress.
+

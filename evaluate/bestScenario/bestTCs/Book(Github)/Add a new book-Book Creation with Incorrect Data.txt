@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Book Creation with Missing Mandatory Fields
+objective: Verify that the system displays correct error messages for missing mandatory fields during book creation
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Leave the 'Title', 'Author', and 'Genre' fields empty.
+  - Step 4: Fill in the 'Description' and 'Publication date' fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: Error messages for missing 'Title', 'Author', and 'Genre' fields are displayed.
+reflect: yes
+explanation: This test case directly addresses the test scenario of 'Book Creation with Incorrect Data' by validating the system's response to missing mandatory fields, which constitutes incorrect data submission.
+
+Test Case: Test Case 2
+testCaseName: Book Creation with Incorrect Data Format
+objective: Verify that the system displays an error message for incorrect data format in the 'Publication date' field
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Fill in the 'Title', 'Author', and 'Genre' fields with valid data.
+  - Step 4: Enter an incorrect format data into the 'Publication date' field (e.g., 'abcd').
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message indicating the incorrect format for the 'Publication date' field is displayed.
+reflect: yes
+explanation: This test case is relevant to the scenario as it tests the system's ability to detect and respond to incorrect data formats during book creation, ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Book Creation with Exceedingly Long Data
+objective: Verify that the system displays an error message for data that exceeds maximum length limits
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter a very long string (exceeding the field's maximum length) into the 'Title' field.
+  - Step 4: Fill in the remaining fields ('Author', 'Genre', 'Description', 'Publication date') with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message indicating that the 'Title' field exceeds the maximum length is displayed.
+reflect: yes
+explanation: This test case aligns with the test scenario by checking the system's handling of data that does not meet the required specifications, in this case, data length, which is a form of incorrect data.
+

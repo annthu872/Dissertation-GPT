@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Next Page of Authors Using Next Button
+objective: Verify that the user can navigate to the next page of authors by clicking the 'Next' button
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Select the item 'Authors' from the main menu or homepage.
+  - Step 3: Observe the list of authors displayed on the page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click the 'Next' button located in the pagination block.
+expectedResult: The application should display the next 10 records of authors in the database, updating the list to show the second page of authors.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of navigating to the next page of authors using the 'Next' button, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Next Page of Authors Using Page Number
+objective: Verify that the user can navigate to the next page of authors by clicking the corresponding page number in the pagination block
+testSteps:
+  - Step 1: Navigate to the application's homepage.
+  - Step 2: Select the item 'Authors' from the main menu or homepage.
+  - Step 3: Observe the list of authors displayed on the page, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the page to locate the pagination block.
+  - Step 5: Click on the number '2' (or the next sequential number if on a different page) in the pagination block.
+expectedResult: The application should display the next 10 records of authors in the database, updating the list to show the page corresponding to the number clicked in the pagination block.
+reflect: yes
+explanation: Although this test case explores a different method (clicking on a page number instead of the 'Next' button) to achieve the same outcome, it still aligns with the test scenario's objective of navigating to the next page of authors. It provides an alternative path to validate the pagination functionality, thus reflecting the scenario.
+

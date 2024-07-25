@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Marking a Vocabulary for Review in Daily Test
+objective: Verify that a learner can successfully mark a vocabulary to be reviewed in the daily test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the vocabulary list to find a specific vocabulary.
+  - Step 4: Tick the checkbox next to the vocabulary to mark it for review in the daily test.
+expectedResult: The system marks the selected vocabulary to appear in the daily test review, indicating the action was successful.
+reflect: yes
+explanation: This test case directly reflects the test scenario by verifying the functionality of marking a vocabulary for review in the daily test, which is the primary objective of the given test scenario.
+
+Test Case: Test Case 3
+testCaseName: Searching and Marking a Vocabulary for Review
+objective: Verify that a learner can search for a specific vocabulary and mark it for review in the daily test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+  - Step 5: From the filtered vocabulary list, tick the checkbox next to the vocabulary to mark it for review in the daily test.
+expectedResult: The system filters the vocabulary list based on the search criteria and allows the learner to mark the selected vocabulary for review in the daily test.
+reflect: yes
+explanation: This test case reflects the test scenario by incorporating the search functionality before marking a vocabulary for review, which is a realistic and practical approach to finding and marking vocabularies for review in the daily test.
+

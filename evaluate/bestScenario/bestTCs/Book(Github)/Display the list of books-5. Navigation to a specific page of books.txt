@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Books Page via Navbar
+objective: Verify that the user can navigate to the books page using the navbar and view the initial list of books
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Click on the 'Books' item in the navbar.
+  - Step 3: Observe the list of books displayed on the page.
+expectedResult: The application displays the books page with the list of the first 10 books. Each book entry shows the id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the navigation to the books page through the navbar, which is the primary action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Navigation on Books Page
+objective: Verify that the user can navigate through the book list pages using the pagination controls
+testSteps:
+  - Step 1: Navigate to the books page by clicking on the 'Books' item in the navbar.
+  - Step 2: Click on the 'Next' button below the list of books.
+  - Step 3: Observe the list of books on the next page.
+expectedResult: The application displays the next 10 books in the list. Each book entry shows the id, Title, Author, Genre, and Publication date.
+reflect: yes
+explanation: This test case is a continuation of the navigation scenario, focusing on the pagination aspect. It tests a specific functionality (pagination) that is part of navigating within the books page, thus reflecting the given test scenario.
+

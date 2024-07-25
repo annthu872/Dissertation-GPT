@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Update
+objective: Verify that the genre can be successfully updated with valid data and the updated genre list is displayed
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter valid data for the genre 'Name' and 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the list of genres with the updated record should be displayed.
+reflect: yes
+explanation: This test case directly addresses the test scenario of successfully updating a genre. It follows the exact steps that would be taken to update a genre and checks for the correct outcome, making it a perfect reflection of the given test scenario.
+

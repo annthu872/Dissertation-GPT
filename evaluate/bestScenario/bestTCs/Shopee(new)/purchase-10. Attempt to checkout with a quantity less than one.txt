@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity less than one from the product detail page
+objective: Verify that the system prevents checkout when the quantity of the product is set to less than one from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product.
+  - Step 2: Attempt to adjust the product quantity to less than one by clicking the minus button next to the quantity field.
+  - Step 3: Observe if the quantity field adjusts to less than one.
+  - Step 4: Attempt to click the 'Checkout' button.
+expectedResult: The quantity should not decrease to less than one, and the 'Checkout' button should be disabled or not clickable.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to checkout with a quantity less than one from the product detail page. It verifies that the system prevents such an action, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a quantity less than one from the shopping cart
+objective: Verify that the system prevents checkout when the quantity of any product in the shopping cart is set to less than one
+testSteps:
+  - Step 1: Add any product to the shopping cart and navigate to the shopping cart page.
+  - Step 2: Adjust the quantity of the product to less than one by clicking the minus button next to the quantity field.
+  - Step 3: Observe if the quantity field adjusts to less than one.
+  - Step 4: Attempt to select the product by clicking on the checkbox before the item.
+  - Step 5: Attempt to click the 'Checkout' button.
+expectedResult: The quantity should not decrease to less than one, the product should not be selectable, and the 'Checkout' button should be disabled or not clickable for that product.
+reflect: yes
+explanation: Although this test case approaches the scenario from the shopping cart perspective, it still aligns with the main objective of preventing checkout with a quantity less than one. It tests the same validation but in a different context (shopping cart instead of product detail page), ensuring comprehensive coverage of the scenario across the application.
+

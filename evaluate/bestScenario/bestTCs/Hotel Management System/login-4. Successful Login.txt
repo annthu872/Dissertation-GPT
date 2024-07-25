@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Login for Hotel Owner
+objective: Verify that the Hotel Owner can successfully log in and is redirected to the Main page/dashboard specific to the Hotel Owner role.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Hotel Owner credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Hotel Owner is redirected to the Main page/dashboard specific to the Hotel Owner role.
+reflect: yes
+explanation: This test case directly reflects the test scenario of a successful login by verifying the login functionality for a specific user role (Hotel Owner) and ensuring they are redirected appropriately, which is the core objective of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Successful Login for Manager
+objective: Verify that the Manager can successfully log in and is redirected to the Main page/dashboard specific to the Manager role.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Manager credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Manager is redirected to the Main page/dashboard specific to the Manager role.
+reflect: yes
+explanation: This test case aligns with the test scenario by testing the successful login process for another user role (Manager). It ensures that the system behaves as expected when valid credentials are provided, which is the essence of the successful login scenario.
+
+Test Case: Test Case 3
+testCaseName: Successful Login for Employee
+objective: Verify that the Employee can successfully log in and is redirected to the Main page/dashboard specific to the Employee role.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter valid Employee credentials (username and password).
+  - Step 3: Click the submit button.
+expectedResult: Employee is redirected to the Main page/dashboard specific to the Employee role.
+reflect: yes
+explanation: Similar to the previous test cases, this one also tests the successful login scenario but for a different user role (Employee). It checks if the system allows access and proper redirection upon entering valid credentials, which is what the test scenario aims to verify.
+

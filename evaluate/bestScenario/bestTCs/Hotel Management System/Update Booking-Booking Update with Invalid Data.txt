@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Invalid Email Format
+objective: Verify that the system shows an invalid field error when updating a booking with an invalid email format
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: In the booking details, enter an invalid email format in the email field.
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' error message for the email field.
+reflect: yes
+explanation: This test case directly addresses the test scenario of updating booking with invalid data by specifically targeting an invalid email format, which is a common form of invalid data entry.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Empty Required Field
+objective: Verify that the system shows an invalid field error when a required field is left empty during booking update
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: Clear any required field (e.g., customer name) that is mandatory for booking.
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' error message for the empty required field.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it involves updating booking with invalid data, in this case, the absence of data in a required field, which is a critical form of invalid data.
+
+Test Case: Test Case 3
+testCaseName: Update Booking with Invalid Date Format
+objective: Verify that the system shows an invalid field error when updating a booking with an invalid date format
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: Enter an invalid date format in the date field (e.g., using letters instead of numbers).
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' error message for the date field.
+reflect: yes
+explanation: This test case aligns with the test scenario by focusing on the validation of date formats during booking updates, which is a specific instance of invalid data entry that the scenario aims to address.
+

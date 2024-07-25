@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Books before submitting new author data
+objective: Verify that navigating to 'Books' before submitting new author data does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to start adding a new author.
+  - Step 3: Application displays form to enter author data. Start entering the author's Name and Bio.
+  - Step 4: Before pressing 'Submit', navigate to the 'Books' page by selecting the menu item 'Books'.
+expectedResult: The application does not save the entered author data and displays the Books page with updated data.
+explanation: This test case ensures that if a user navigates away from the author creation form to the Books page before submitting the form, the data entered is not saved. It directly tests the navigation aspect mentioned in the scenario, focusing on the user's ability to change pages without affecting the database.
+

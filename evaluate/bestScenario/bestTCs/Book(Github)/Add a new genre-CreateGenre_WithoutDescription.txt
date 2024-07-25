@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Create Genre Without Entering Description
+objective: Verify that a new genre can be created without entering a description and the record is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a unique name for the genre in the 'Name' field.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record with the entered name and without a description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'CreateGenre_WithoutDescription' by verifying that a genre can indeed be created without providing a description, which is the core requirement of the scenario.
+

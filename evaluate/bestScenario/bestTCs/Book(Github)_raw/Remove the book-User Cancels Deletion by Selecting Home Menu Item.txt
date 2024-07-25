@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select Home Menu
+objective: Verify that the deletion process is canceled and the user is navigated to the Home page without deleting the data when selecting the Home menu item after pressing the 'Cancel' button in the deletion confirmation dialog.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Home' menu item from the navigation bar.
+expectedResult: The user is navigated to the Home page without any data being deleted, and the book list should still include the book that was selected for deletion.
+explanation: This test case ensures that when a user decides to cancel the deletion of a book and then navigates to the Home page by selecting the Home menu item, the cancellation is processed correctly, and no data is deleted.
+
+Test Case: Test Case 2
+testCaseName: Cancel Deletion and Select Books Menu
+objective: Verify that the deletion process is canceled and the user is navigated to the Books page without deleting the data when selecting the Books menu item after pressing the 'Cancel' button in the deletion confirmation dialog.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Books' menu item from the navigation bar.
+expectedResult: The user is navigated to the Books page without any data being deleted, and the book list should still include the book that was selected for deletion.
+explanation: This test case verifies that the cancellation of a deletion is properly handled and that navigating to the Books page after cancellation does not result in data deletion.
+
+Test Case: Test Case 3
+testCaseName: Cancel Deletion and Select Genres Menu
+objective: Verify that the deletion process is canceled and the user is navigated to the Genres page without deleting the data when selecting the Genres menu item after pressing the 'Cancel' button in the deletion confirmation dialog.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Genres' menu item from the navigation bar.
+expectedResult: The user is navigated to the Genres page without any data being deleted, ensuring the cancellation process is respected across different navigation paths.
+explanation: This test case ensures that the system properly handles cancellation of deletion and respects the user's navigation choice to the Genres page without affecting the data.
+

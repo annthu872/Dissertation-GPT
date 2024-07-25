@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Marking a Vocabulary for Review in Daily Test
+objective: Verify that a learner can successfully mark a vocabulary to be reviewed in the daily test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the vocabulary list to find a specific vocabulary.
+  - Step 4: Tick the checkbox next to the vocabulary to mark it for review in the daily test.
+expectedResult: The system marks the selected vocabulary to appear in the daily test review, indicating the action was successful.
+explanation: This test case ensures that learners can mark vocabularies for review in the daily test directly from the handbook, as described in the basic and alternative flow 4.
+
+Test Case: Test Case 2
+testCaseName: Unmarking a Vocabulary for Review in Daily Test
+objective: Verify that a learner can successfully unmark a vocabulary to not be reviewed in the daily test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the vocabulary list to find a specific vocabulary already marked for review.
+  - Step 4: Untick the checkbox next to the vocabulary to unmark it for review in the daily test.
+expectedResult: The system marks the selected vocabulary to not appear in the daily test review, indicating the action was successful.
+explanation: This test case ensures that learners can unmark vocabularies for review in the daily test directly from the handbook, as described in the basic and alternative flow 3.
+
+Test Case: Test Case 3
+testCaseName: Searching and Marking a Vocabulary for Review
+objective: Verify that a learner can search for a specific vocabulary and mark it for review in the daily test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+  - Step 5: From the filtered vocabulary list, tick the checkbox next to the vocabulary to mark it for review in the daily test.
+expectedResult: The system filters the vocabulary list based on the search criteria and allows the learner to mark the selected vocabulary for review in the daily test.
+explanation: This test case combines the basic flow with alternative flow 1 and 4, enabling testing of the search functionality along with marking a vocabulary for review.
+
+Test Case: Test Case 4
+testCaseName: Searching for a Meaningless Vocabulary
+objective: Verify that the system notifies the learner when searching for a meaningless vocabulary
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+expectedResult: The system notifies that there are no suitable search results for the entered meaningless word.
+explanation: This test case is based on alternative flow 2, ensuring the system's ability to handle searches for vocabularies that do not exist in the learner's handbook.
+

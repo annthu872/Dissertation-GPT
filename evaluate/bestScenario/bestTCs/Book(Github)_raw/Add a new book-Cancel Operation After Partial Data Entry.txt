@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Book Creation After Partial Data Entry by Cancel Button
+objective: Verify that the book creation process can be canceled after partial data entry by using the 'Cancel' button and ensure that no data is saved in the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Title and Author).
+  - Step 4: Press the 'Cancel' button before completing all fields and submitting.
+  - Step 5: Confirm any prompt (if any) to ensure cancellation of the book creation process.
+expectedResult: The application should navigate back to the list of books without adding the partially entered book data to the database.
+explanation: This test case ensures that the cancel operation works correctly after a user has started entering data but decides not to complete the book creation process. It verifies that the application properly discards the partially entered data and does not add a new record to the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel New Book Creation After Partial Data Entry by Navigation
+objective: Verify that navigating away from the book creation page after partial data entry by selecting a different menu item cancels the book creation and does not save data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Genre and Description).
+  - Step 4: Without submitting the form, select a different menu item (e.g., 'Authors').
+expectedResult: The application should navigate to the selected menu item's page without saving the partially entered book data, ensuring no new book record is added to the database.
+explanation: This test case checks the application's behavior when a user navigates away from the book creation page after entering some data but before submitting the form. It verifies that the application does not save the partially entered data, maintaining data integrity.
+

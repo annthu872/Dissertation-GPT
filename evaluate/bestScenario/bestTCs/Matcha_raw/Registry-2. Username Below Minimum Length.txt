@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Register with Username Below Minimum Length
+objective: Verify that the system shows a notification that the username is invalid when a username below the minimum length is entered
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is less than 8 characters.
+  - Step 3: Fill in the password field with a valid password that is over 8 characters, contains at least one normal character, one capitalized character, one number, and one special character, and is not the same as the username.
+  - Step 4: Press the "Register" button.
+expectedResult: A notification is displayed indicating that the username is invalid.
+explanation: This test case directly addresses the scenario of entering a username below the minimum length requirement during the registration process. It follows the exception flow 1 where the system needs to validate the username's length and provide feedback accordingly.
+
+Test Case: Test Case 2
+testCaseName: Register with Username Exactly at Minimum Length
+objective: Verify that the system allows registration with a username that is exactly 8 characters long
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that is exactly 8 characters.
+  - Step 3: Fill in the password field with a valid password that meets all the specified criteria.
+  - Step 4: Press the "Register" button.
+expectedResult: The system redirects the learner to the Home page, indicating successful registration.
+explanation: This test case is created to verify the system's handling of the edge case where the username is exactly at the minimum length boundary. It ensures that the system correctly processes valid usernames at the boundary condition.
+

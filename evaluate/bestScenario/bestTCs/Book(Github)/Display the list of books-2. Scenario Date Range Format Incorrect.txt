@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify incorrect date format handling in date range filter
+objective: Verify that the application properly handles and provides feedback when an incorrect date range format is entered for filtering books by publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an incorrect date format for the start date (e.g., '32/13/2020').
+  - Step 3: Enter a correct date format for the end date (e.g., '12/31/2020').
+  - Step 4: Click the refresh button to the right from dates inputs.
+expectedResult: The application displays a validation error message indicating that the start date format is incorrect and does not refresh the list of books.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the application's response to an incorrect date format in the date range filter. It is designed to test the scenario's specific requirement of handling incorrect date formats, making it a perfect reflection of the given test scenario.
+

@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Edit Author with Incorrect Name Data
+objective: Verify that the system displays an incorrect data message when attempting to update an author with an invalid name.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter an invalid name (e.g., using numbers or special characters) in the 'Name' field.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating the name data is incorrect.
+explanation: This test case ensures that the system validates the 'Name' field for correct data format and provides feedback to the user when incorrect data is entered, which is crucial for maintaining data integrity.
+
+Test Case: Test Case 2
+testCaseName: Edit Author with Incorrect Bio Data
+objective: Verify that the system displays an incorrect data message when attempting to update an author with an invalid biography.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Enter invalid data in the 'Bio' field (e.g., inserting a script tag).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating the biography data is incorrect.
+explanation: This test case checks if the system properly validates the 'Bio' field for correct data format and prevents potentially harmful data from being saved, ensuring the application's security and data integrity.
+
+Test Case: Test Case 3
+testCaseName: Edit Author with All Incorrect Data
+objective: Verify that the system displays incorrect data messages for all fields when attempting to update an author with entirely invalid data.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Enter invalid data in the 'Name' field (e.g., using numbers or special characters).
+  - Step 4: Enter invalid data in the 'Bio' field (e.g., inserting a script tag).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display messages indicating that both the name and biography data are incorrect.
+explanation: This test case is designed to ensure that the system can handle multiple validation errors simultaneously and provide the user with appropriate feedback for each incorrect field, which is essential for user correction and data integrity.
+

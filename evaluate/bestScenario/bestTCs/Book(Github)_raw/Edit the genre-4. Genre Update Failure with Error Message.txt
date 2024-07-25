@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Genre Update Failure Due to Incorrect Data
+objective: Verify that the application displays incorrect data messages when user enters invalid genre data during an update operation
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter invalid data into the 'Name' and/or 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application displays messages indicating the data entered is incorrect.
+explanation: This test case ensures that the system properly validates user input and provides feedback when the data does not meet the expected format or criteria during the genre update process.
+
+Test Case: Test Case 2
+testCaseName: Genre Update Failure with System Error Message
+objective: Verify that the application displays an error message when a system error occurs during the genre update process
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Simulate a system error (this step may involve actions like disconnecting the database connection temporarily or using a mock to simulate the error condition).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The application displays an error message indicating that the update operation could not be completed due to a system error.
+explanation: This test case is designed to verify that the application handles system errors gracefully during the genre update process and informs the user accordingly.
+

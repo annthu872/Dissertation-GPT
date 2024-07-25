@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select Genres Menu
+objective: Verify that the deletion process is canceled and the user is able to navigate to the Genres menu without deleting the book
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: After cancellation, select the 'Genres' menu item.
+expectedResult: The book is not deleted from the database, and the user is redirected to the Genres page with the data updated.
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the Genres menu, the book remains in the database, and the Genres page displays correctly with updated data. It directly matches the scenario of canceling a deletion by selecting the Genres menu item, combining the cancel operation scenario with the specific navigation to Genres.
+

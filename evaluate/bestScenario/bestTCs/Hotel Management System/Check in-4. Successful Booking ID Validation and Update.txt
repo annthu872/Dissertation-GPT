@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking ID Validation and Check-in
+objective: Verify that a guest can successfully check into a room using a valid booking ID and the system updates the booking details accordingly.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid booking ID into the booking ID field.
+  - Step 3: Press the submit button.
+  - Step 4: Observe the system's response.
+expectedResult: The system validates the booking ID, updates the booking details with the room ID, shows a success message, and redirects the user to the main page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'Successful Booking ID Validation and Update'. It tests the successful path where a valid booking ID is used, leading to the expected system behavior of validating the ID, updating booking details, and confirming the process to the user, which is the core objective of the scenario.
+

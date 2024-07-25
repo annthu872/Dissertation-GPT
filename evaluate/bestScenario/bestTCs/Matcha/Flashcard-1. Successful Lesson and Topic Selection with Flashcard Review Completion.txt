@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Successful Lesson and Topic Selection with Flashcard Review
+objective: Verify that the learner can successfully select a lesson and topic, review flashcards, and complete the review session.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Review the flashcards by clicking on them to flip and view the back, then navigate through all flashcards using the 'Next' and 'Previous' buttons.
+  - Step 6: After reviewing all flashcards, click the 'Next' button on the last flashcard to be redirected to the 'completion notification' page.
+  - Step 7: Click 'return to the lesson page' on the 'completion notification' page.
+expectedResult: The learner is redirected back to the lesson page after completing the flashcard review, indicating the successful completion of the lesson and topic selection with flashcard review.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by covering the entire process of selecting a lesson and topic, reviewing flashcards, and completing the review session, which is the core of the test scenario.
+

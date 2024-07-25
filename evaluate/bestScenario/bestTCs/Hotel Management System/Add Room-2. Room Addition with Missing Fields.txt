@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Missing Room Name
+objective: Verify that the system prevents adding a room when the room name field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields except for the room name.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display a message indicating that the room name field is required and prevent the room from being added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a room with a specific missing field, which is the room name. It checks if the system correctly handles the missing field by preventing the addition and displaying an appropriate message, thus reflecting the given test scenario of Room Addition with Missing Fields.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Missing Room Capacity
+objective: Verify that the system prevents adding a room when the room capacity field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields except for the room capacity.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display a message indicating that the room capacity field is required and prevent the room from being added to the database.
+reflect: yes
+explanation: Similar to Test Case 1, this test case is aligned with the test scenario by focusing on a different missing field, which is the room capacity. It evaluates the system's response to the absence of this specific information during the room addition process, thereby accurately reflecting the scenario of adding a room with missing fields.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Missing Room Type
+objective: Verify that the system prevents adding a room when the room type field is missing
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Add Room page.
+  - Step 3: Fill all the fields except for the room type.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display a message indicating that the room type field is required and prevent the room from being added to the database.
+reflect: yes
+explanation: This test case continues the theme of the test scenario by omitting another critical field, the room type, during the room addition process. It tests the system's ability to enforce the completion of all required fields before allowing a room to be added, which is the essence of the test scenario of Room Addition with Missing Fields.
+

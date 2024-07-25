@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Pagination Navigation on Search Results
+objective: Verify that the user can navigate through search results pages using the pagination bar.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that you know will return more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 5: Click on the right arrow button in the pagination bar to move to the next page of results.
+  - Step 6: Once on the new page, click on a specific page number in the pagination bar to navigate to that page.
+  - Step 7: Click on the left arrow button in the pagination bar to move back to the previous page of results.
+expectedResult: After each navigation action in the pagination bar, the search results page updates to display the relevant product cards for the selected page. The pagination bar reflects the current page correctly.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of the pagination bar in navigating through search results. It covers the basic flow of using the pagination feature to move between pages of search results, thus reflecting the given test scenario accurately.
+

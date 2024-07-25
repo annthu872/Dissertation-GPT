@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Submit Room Service Request with Empty Room ID
+objective: Verify that the system prevents submission of a room service request without entering a room ID and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Leave the Room ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should display an 'Invalid Id' error message and prevent the user from proceeding to the list of room services.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to submit a room service request with an empty Room ID field and expecting an error message, which is the exact situation described in the scenario.
+

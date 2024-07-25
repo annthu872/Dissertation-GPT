@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Exclude Vocabulary from Review Test
+objective: Verify that a learner can exclude a vocabulary from the review test by unchecking the checkbox
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the vocabulary list to find a specific vocabulary.
+  - Step 4: Uncheck the checkbox next to the vocabulary that the learner wishes to exclude from the review test.
+expectedResult: The system should mark the vocabulary as excluded from the review test, indicating it will not appear in the daily test review.
+explanation: This test case ensures that learners can effectively manage their review tests by excluding specific vocabularies. It directly tests the functionality described in Alternative flow 3 of the use case.
+
+Test Case: Test Case 2
+testCaseName: Include Vocabulary in Review Test
+objective: Verify that a learner can include a vocabulary in the review test by checking the checkbox
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the vocabulary list to find a specific vocabulary.
+  - Step 4: Check the checkbox next to the vocabulary that the learner wishes to include in the review test.
+expectedResult: The system should mark the vocabulary as included in the review test, indicating it will appear in the daily test review.
+explanation: This test case verifies the learner's ability to manage their review tests by including specific vocabularies. It is based on the functionality described in Alternative flow 4 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Search and Exclude Vocabulary from Review Test
+objective: Verify that a learner can search for a vocabulary and exclude it from the review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+  - Step 5: From the search results, uncheck the checkbox next to the vocabulary to exclude it from the review test.
+expectedResult: The system should filter the vocabulary list based on the search and allow the learner to exclude a vocabulary from the review test.
+explanation: This test case combines the search functionality with the ability to exclude vocabularies from the review test, addressing the use case's basic and alternative flows.
+
+Test Case: Test Case 4
+testCaseName: Search for a Meaningless Vocabulary
+objective: Verify that searching for a meaningless vocabulary displays no suitable search results
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+expectedResult: The system should notify that there are no suitable search results for the meaningless word.
+explanation: This test case tests the system's ability to handle searches for vocabularies that do not exist in the learner's vocabulary list, as described in Alternative flow 2.
+

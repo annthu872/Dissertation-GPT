@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify Learning Streak Resets After 1 Day Break
+objective: Verify that the learning streak resets to 1 after the learner fails to learn for 1 day.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, learner selects 'Day History' on the History page.
+  - Step 4: Verify the current continuous learning days count.
+  - Step 5: Do not engage in learning activities for 1 day.
+  - Step 6: Repeat steps 1 to 3 to check the continuous learning days count after the break.
+expectedResult: After taking a 1-day break from learning activities, the continuous learning days count should reset to 1.
+explanation: This test case ensures that the system accurately tracks and resets the learning streak as specified in the use case when a learner takes a break from learning activities. It directly tests the functionality described in the basic flow of the use case, specifically focusing on the scenario where the learner's streak should reset after a break.
+
+Test Case: Test Case 2
+testCaseName: Verify Learning Streak Continues Without Break
+objective: Verify that the learning streak does not reset if the learner continues to learn every day.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, learner selects 'Day History' on the History page.
+  - Step 4: Verify the current continuous learning days count.
+  - Step 5: Engage in learning activities for the next day.
+  - Step 6: Repeat steps 1 to 3 to check the continuous learning days count after continuing learning.
+expectedResult: The continuous learning days count should increase by 1 for each day the learner continues to learn without taking a break.
+explanation: This test case verifies that the learning streak functionality works correctly when there is no break in learning activities, ensuring the system accurately counts continuous learning days as described in the use case.
+

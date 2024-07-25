@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of First Page of Authors
+objective: Verify that the first page of authors is displayed correctly when the user selects the 'Authors' item.
+testSteps:
+  - Step 1: Launch the application.
+  - Step 2: Navigate to the 'Authors' section by selecting the item 'Authors'.
+expectedResult: The application displays the first page of the list of authors, showing up to 10 items. Each item should display the author's id, name, and bio.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the display functionality of the first page of authors, which is the main focus of the scenario. It checks if the application correctly shows the first page with the specified details for each author.
+

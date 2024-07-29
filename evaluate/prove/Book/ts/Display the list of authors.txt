@@ -1,0 +1,8 @@
+1. DisplayAuthors_SuccessfulDisplayFirstPage
+2. DisplayAuthors_SuccessfulDisplaySecondPage
+3. DisplayAuthors_NavigateToNextPage
+4. DisplayAuthors_NavigateToPreviousPage
+5. DisplayAuthors_DisplayWithEmptyList
+6. DisplayAuthors_DisplayMaximumItemsPerPage
+7. DisplayAuthors_AttemptToNavigateBeyondAvailablePages
+8. DisplayAuthors_RefreshPageMaintainsCurrentPaginationState

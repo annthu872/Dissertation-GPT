@@ -1,20 +1,16 @@
-1. Test scenario: Verify that clicking on the search bar allows the user to input text.
-2. Test scenario: Ensure that pressing enter after typing a keyword initiates a search.
-3. Test scenario: Confirm that clicking the search icon after entering a keyword initiates a search.
-4. Test scenario: Check if the system displays up to 60 product cards on the first page when relevant matches are found.
-5. Test scenario: Validate that the pagination bar allows navigation to the next page of search results.
-6. Test scenario: Verify that searching for a shop name displays the shop's information and products at the top of the search results.
-7. Test scenario: Ensure that searching for a brand name displays related shops and products when no specific shop is available.
-8. Test scenario: Confirm that a keyword not matching any shop or brand displays related product cards based on the keyword.
-9. Test scenario: Check the functionality of the filter to show results most related to the keyword.
-10. Test scenario: Validate the functionality of the filter to show the newest product results.
-11. Test scenario: Verify the functionality of the filter to show the best seller product results.
-12. Test scenario: Ensure the sort by price filter works correctly from lowest to highest.
-13. Test scenario: Confirm the sort by price filter works correctly from highest to lowest.
-14. Test scenario: Check the system's response when no search results are found, ensuring random product cards are displayed.
-15. Test scenario: Validate that the pagination bar correctly navigates to the last page when the right button is clicked continuously.
-16. Test scenario: Ensure that the pagination bar correctly navigates to the first page when the left button is clicked after moving to a later page.
-17. Test scenario: Verify that the search results update correctly when a different keyword is entered and searched.
-18. Test scenario: Confirm that the system limits the display to 60 product cards per page, even when more than 60 relevant matches exist.
-19. Test scenario: Check that the search functionality is case-insensitive, ensuring that capitalization does not affect the search results.
-20. Test scenario: Validate that the search results accurately reflect the keyword's presence in either the product name or description.
+1. Successful search with keyword matching product name or description
+2. Successful search with keyword matching shop name
+3. Successful search with keyword matching brand name
+4. Search with keyword not matching any shop, brand, or product
+5. Pagination functionality in search results
+6. Search results filtered by most related with the keyword
+7. Search results filtered by newest product
+8. Search results filtered by best seller
+9. Search results sorted by price from lowest to highest
+10. Search results sorted by price from highest to lowest
+11. Display of shop information in search results when keyword matches shop name
+12. Display of best sold shop information when keyword matches brand name
+13. No search results found and display of random product cards
+14. Search with empty keyword
+15. Search with maximum character limit exceeded in keyword
+16. Search with special characters in keyword

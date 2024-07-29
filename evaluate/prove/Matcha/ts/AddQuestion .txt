@@ -1,0 +1,13 @@
+1. Create question with valid inputs and save successfully
+2. Navigate to Lesson Management from Homepage
+3. Skip compulsory field "sentence" and attempt to save question
+4. Skip compulsory field "correct answer" and attempt to save question
+5. Skip compulsory field "other option 1" and attempt to save question
+6. Skip compulsory field "other option 2" and attempt to save question
+7. Skip compulsory field "other option 3" and attempt to save question
+8. Cancel question creation and choose to stay
+9. Enter invalid sentence with special characters and attempt to save question
+10. Leave page without saving by using browser back button
+11. Cancel question creation and confirm to cancel
+12. Create question with sentence exceeding 250 characters and attempt to save
+13. Create question with sentence missing '...' symbol and attempt to save

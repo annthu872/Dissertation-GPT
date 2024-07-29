@@ -1,0 +1,11 @@
+1. Successful Genre Creation
+2. Submit With Empty Name Field
+3. Submit With Empty Description Field
+4. Submit With Excessively Long Name
+5. Submit With Excessively Long Description
+6. Cancel Operation Before Submitting
+7. Navigation Away Before Submitting Using Menu Items
+8. Display Error Message on Database Failure
+9. Display Incorrect Data Message for Invalid Name
+10. Display Incorrect Data Message for Invalid Description
+11. Verify New Genre Added in Genre List

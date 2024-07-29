@@ -1,0 +1,8 @@
+1. DisplayGenreDetails_Successful
+2. DisplayGenreDetails_InvalidGenreName
+3. DisplayGenreDetails_GenreNameDoesNotExist
+4. DisplayGenreDetails_EmptyGenreList
+5. DisplayGenreDetails_GenreDetailsMissingColumns
+6. DisplayGenreDetails_GenreDetailsIncompleteData
+7. DisplayGenreDetails_GenreDetailsDataAccuracy
+8. DisplayGenreDetails_GenreDetailsResponseTime

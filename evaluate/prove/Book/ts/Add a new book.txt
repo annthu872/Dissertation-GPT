@@ -1,0 +1,16 @@
+1. Successful Book Creation
+2. Cancel Book Creation Before Submitting
+3. Navigate Away Before Submitting Data
+4. Submit With Missing Title
+5. Submit With Missing Author
+6. Submit With Missing Genre
+7. Submit With Missing Description
+8. Submit With Missing Publication Date
+9. Submit With Invalid Publication Date Format
+10. Submit With All Fields Empty
+11. Database Error During Book Creation
+12. Submit With Excessively Long Title
+13. Submit With Excessively Long Author Name
+14. Submit With Excessively Long Genre
+15. Submit With Excessively Long Description
+16. Submit With Future Publication Date

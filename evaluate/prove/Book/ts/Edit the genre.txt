@@ -1,0 +1,15 @@
+1. Successful Genre Update
+2. Update Genre With Invalid Name
+3. Update Genre With Invalid Description
+4. Update Genre With Empty Name
+5. Update Genre With Empty Description
+6. Cancel Genre Update Operation
+7. Navigate Away Using Menu Before Submitting Genre Update
+8. Display Error Message On Database Update Failure
+9. Display Updated Genre List After Successful Update
+10. Update Genre With Maximum Length Name
+11. Update Genre With Maximum Length Description
+12. Update Genre With Name Just Above Valid Range
+13. Update Genre With Description Just Above Valid Range
+14. Update Genre With Name Just Below Valid Range
+15. Update Genre With Description Just Below Valid Range

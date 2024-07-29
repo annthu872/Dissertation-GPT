@@ -1,0 +1,15 @@
+1. Successful Author Record Update
+2. Update Author Record with Invalid Name
+3. Update Author Record with Invalid Bio
+4. Update Author Record with Empty Name
+5. Update Author Record with Empty Bio
+6. Cancel Update Operation Before Submitting
+7. Navigate Away Using Menu Before Submitting Update
+8. Display Error Message on Database Update Failure
+9. Display Updated Author List After Successful Update
+10. Update Author Record with Maximum Length Name
+11. Update Author Record with Maximum Length Bio
+12. Update Author Record with Name Just Above Valid Range
+13. Update Author Record with Bio Just Above Valid Range
+14. Update Author Record with Name Just Below Valid Range
+15. Update Author Record with Bio Just Below Valid Range

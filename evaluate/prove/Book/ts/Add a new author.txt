@@ -1,0 +1,10 @@
+1. SuccessfulAuthorCreation
+2. SubmitWithEmptyNameField
+3. SubmitWithEmptyBioField
+4. SubmitWithInvalidNameFormat
+5. SubmitWithInvalidBioFormat
+6. CancelOperationWithDataEntered
+7. NavigationAwayWithDataEntered
+8. DatabaseErrorDuringAuthorCreation
+9. DisplayErrorMessageForInvalidData
+10. DisplaySuccessMessageAfterAuthorCreation

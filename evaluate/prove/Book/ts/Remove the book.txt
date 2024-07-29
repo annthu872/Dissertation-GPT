@@ -1,0 +1,10 @@
+1. Successful Book Deletion
+2. Cancel Book Deletion via Cancel Button
+3. Cancel Book Deletion via Navigation Menu - Books
+4. Cancel Book Deletion via Navigation Menu - Genres
+5. Cancel Book Deletion via Navigation Menu - Authors
+6. Cancel Book Deletion via Navigation Menu - Home
+7. Cancel Book Deletion via Navigation Menu - API
+8. Attempt to Delete Non-existent Book
+9. Delete Button Functionality Without Selection
+10. Confirm Deletion With Multiple Books Selected

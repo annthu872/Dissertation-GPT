@@ -1,0 +1,8 @@
+1. DisplayGenres_MainFlow_Success
+2. DisplayGenres_NextButtonFunctionality
+3. DisplayGenres_PageNumberNavigation
+4. DisplayGenres_EmptyList
+5. DisplayGenres_Exact10ItemsPerPage
+6. DisplayGenres_LessThan10ItemsOnLastPage
+7. DisplayGenres_MoreThan10Items_ErrorHandling
+8. DisplayGenres_InvalidPageNumber_ErrorHandling

@@ -1,22 +1,9 @@
-1. Verify that clicking on a product card from the homepage, search page, or cart page displays the product's information.
-2. Check that the product title is displayed prominently at the top of the product information page.
-3. Ensure that a detailed product description, including key features, usage instructions, and benefits, is provided.
-4. Verify that high-quality images of the product from multiple angles are showcased.
-5. Check that videos demonstrating the product's features and usage are included and playable.
-6. Ensure that detailed product specifications (e.g., dimensions, weight, material, color options, etc.) are listed.
-7. Verify that the current price of the product is displayed clearly.
-8. Check that any discounts, offers, or special pricing available are highlighted next to the price information.
-9. Ensure that real-time stock availability for the product is shown.
-10. Verify that available shipping methods and estimated delivery times are displayed.
-11. Check that shipping fees are mentioned alongside delivery options.
-12. Ensure that the seller's profile, including their name, ratings, and reviews, is displayed.
-13. Verify that there is an option to contact the seller directly through the platform's messaging system.
-14. Check that a link to the seller's store page on the platform is provided and functional.
-15. Ensure that the overall rating is displayed based on customer reviews.
-16. Verify that 3 latest detailed reviews are shown, including ratings, written feedback, and user-uploaded images.
-17. Check that a list of related product cards is displayed at the bottom of the product information page.
-18. Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
-19. Ensure that users can expand the 'Customer Questions' section to view more questions and seller answers.
-20. Verify that users can scroll to view more related product cards.
-21. Check that clicking on the seller contact option opens the platform's messaging system to contact the seller directly.
-22. Ensure that clicking on the Store Link navigates to the seller's store page on the platform.
+1. Display Product Information from Homepage
+2. Display Product Information from Search Page
+3. Display Product Information from Cart Page
+4. Display Product Information with All Details
+5. Expand Customer Reviews and Ratings
+6. Expand Customer Questions
+7. Scroll to View More Related Products
+8. Contact Seller Directly Through Messaging System
+9. View Other Products from Seller via Store Link

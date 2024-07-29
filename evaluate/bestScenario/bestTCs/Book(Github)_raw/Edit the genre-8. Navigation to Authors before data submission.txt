@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigation to Authors before data submission from Genre Edit
+objective: Verify that navigating to Authors from the Genre Edit page before submitting data does not update the genre in the database and opens the Authors page.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the genre edit form, start entering or modifying the data for the genre (Name and Description).
+  - Step 4: Before clicking the 'Submit' button, select the 'Authors' menu item to navigate away from the genre edit page.
+expectedResult: The genre data is not updated in the database, and the Authors page is displayed.
+explanation: This test case ensures that if a user navigates away from the genre edit page by selecting 'Authors' from the menu before submitting the updated data, the changes are not saved, and the user is redirected to the Authors page. It directly matches the scenario of navigating to Authors before data submission, focusing on the system's handling of unsaved changes.
+

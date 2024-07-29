@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created and added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A message indicating the genre has been successfully added is displayed, and the user is redirected to the list of genres with the newly added genre visible.
+explanation: This test case ensures that the system correctly adds a new genre to the database when all required fields are filled with valid data, directly matching the scenario of successful genre creation.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Genre Creation with Invalid Data
+objective: Verify that the system prevents the creation of a new genre and displays error messages when invalid data is entered
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the 'Name' and/or 'Description' fields of the genre form.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Error messages related to the invalid data are displayed, and the genre is not added to the database.
+explanation: This test case checks the system's ability to validate input data and prevent the addition of a genre with invalid data, which is crucial for maintaining data integrity.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation
+objective: Verify that the genre creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of genres without the new genre being added, indicating that the creation process was successfully canceled.
+explanation: This test case ensures that users have the option to cancel the genre creation process at any point before final submission, preventing unwanted data from being added to the database.
+

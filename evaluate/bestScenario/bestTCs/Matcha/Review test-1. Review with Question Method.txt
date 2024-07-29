@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Review with Question Method - Correct Answer
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the question method for a word.
+  - Step 4: Choose the correct answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the memory level of the word has been increased.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior when a correct answer is selected during a review session with the question method, focusing on the memory level increase.
+
+Test Case: Test Case 2
+testCaseName: Review with Question Method - Incorrect Answer
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the question method for a word.
+  - Step 4: Choose the wrong answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the memory level of the word has been decreased.
+reflect: yes
+explanation: This test case aligns with the given test scenario by checking the system's response to an incorrect answer during a review session with the question method, specifically focusing on the memory level decrease.
+
+Test Case: Test Case 3
+testCaseName: Review with Question Method - Exiting and Saving Review
+objective: Verify that the system saves the review progress and updates the vocabulary status when a learner decides to exit the review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Press the 'Exit' button during the review session.
+  - Step 4: In the pop-up, choose the 'Confirm' button to exit the review.
+  - Step 5: Verify redirection to the Home page.
+expectedResult: The system should save the review progress up to the point of exit, update the vocabulary status accordingly, and redirect the learner to the Home page.
+reflect: yes
+explanation: Although this test case does not directly test the increase or decrease of memory level through the question method, it is relevant to the overall test scenario by ensuring the review progress and vocabulary status are correctly saved upon exiting, which is a critical part of the review process.
+

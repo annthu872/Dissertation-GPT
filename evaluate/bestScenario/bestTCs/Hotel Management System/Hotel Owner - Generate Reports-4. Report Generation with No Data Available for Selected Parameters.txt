@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Report Generation with Valid Parameters but No Data
+objective: Verify that the system correctly handles the scenario where no data is available for the selected report parameters by the Hotel Owner
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter a set of parameters (e.g., a date range) that is known to have no data.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Attempt to open the specific report generated.
+expectedResult: The system should display a message or indication that no data is available for the selected report parameters, and the user remains on the report details page with no data shown.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is 'Report Generation with No Data Available for Selected Parameters.' It specifically tests the system's behavior when a report is generated with valid parameters but no data exists for those parameters, aligning perfectly with the scenario's requirements.
+

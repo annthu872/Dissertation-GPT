@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Genres from Book Creation Page Before Submission
+objective: Verify that the user can navigate to the Genres page from the book creation page before submitting the new book data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Start entering data for the new book but do not press the 'Submit' button.
+  - Step 4: Select the 'Genres' menu item.
+expectedResult: The Genres page is displayed, and the data entered in the book creation form is not saved to the database.
+explanation: This test case ensures that navigation to the Genres page is possible without submitting the new book data, aligning with the scenario of navigating to Genres before submission. It tests the functionality of the application to handle navigation without data loss or unintended data submission.
+
+Test Case: Test Case 2
+testCaseName: Cancel Book Creation and Navigate to Genres
+objective: Verify that the user can cancel the book creation process and navigate to the Genres page without saving any data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click on the 'Create new' button to open the book creation form.
+  - Step 3: Partially fill out the form with book details.
+  - Step 4: Press the 'Cancel' button.
+  - Step 5: After cancellation, select the 'Genres' menu item.
+expectedResult: The user is redirected to the Genres page without the book data being saved in the database.
+explanation: This test case checks the application's ability to handle the cancellation of a book creation process properly, ensuring that unsaved data does not persist and allowing the user to navigate to the Genres page as intended.
+

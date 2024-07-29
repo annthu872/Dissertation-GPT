@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Attempt to navigate beyond the last available page of books
+objective: Verify that the user cannot navigate beyond the last page of books when using the 'Next' button or selecting a page number beyond the available range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: If not already on the last page, click the 'Next' button repeatedly until reaching the last page of books.
+  - Step 3: Once on the last page, note the current page number and attempt to click the 'Next' button again.
+  - Step 4: If the application allows for manual page number input, attempt to enter a page number greater than the current last page number and press enter or the equivalent action to navigate.
+expectedResult: The application should not navigate beyond the last page. If the 'Next' button is clicked on the last page, there should be no change in the page content or an appropriate message indicating the last page has been reached. If a page number beyond the last is entered, the application should either not allow the action, revert to the last valid page, or display a message indicating the page number is out of range.
+reflect: yes
+explanation: This test case directly tests the given scenario by attempting to navigate beyond the last page of books in two ways: using the 'Next' button and manually entering a page number. It checks for proper handling of such attempts, which is the core of the test scenario.
+

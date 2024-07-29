@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select Authors Menu
+objective: Verify that the deletion process is canceled and the user is navigated to the Authors page without deleting the data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of books is still displayed.
+  - Step 5: Select the 'Authors' menu item.
+expectedResult: The application should not delete the book from the database and should navigate the user to the Authors page with updated data displayed.
+explanation: This test case ensures that when a user cancels the deletion process by pressing the 'Cancel' button and then selects the 'Authors' menu item, the application behaves as expected by not deleting the book and correctly navigating to the Authors page.
+
+Test Case: Test Case 2
+testCaseName: Cancel Deletion and Verify Data Integrity
+objective: Verify that after cancelling the deletion, the data remains unchanged in the database
+testSteps:
+  - Step 1: Note down or take a snapshot of the current list of books for reference.
+  - Step 2: Navigate to the book list/details page.
+  - Step 3: Click the 'Delete' button next to the book intended for deletion.
+  - Step 4: On the confirmation dialog, press the 'Cancel' button.
+  - Step 5: Verify that the list of books displayed is identical to the list noted in Step 1.
+expectedResult: The list of books after cancelling the deletion should be identical to the list before attempting to delete, indicating no data was deleted from the database.
+explanation: This test case is created to ensure that when a user cancels the deletion of a book, the data in the database remains unchanged, thus verifying the cancel operation's effectiveness.
+

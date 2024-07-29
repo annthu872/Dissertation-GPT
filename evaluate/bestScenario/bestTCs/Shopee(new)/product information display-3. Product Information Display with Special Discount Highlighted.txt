@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Special Discount Highlight
+objective: Ensure that the product information page correctly displays all relevant information including a highlighted special discount
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that has a special discount offer.
+  - Step 3: Observe the product information displayed on the product's information page.
+expectedResult: The product information page should display the product title, detailed description, high-quality images and videos, detailed specifications, current price with the special discount highlighted, real-time stock availability, shipping methods with estimated delivery times and fees, seller's profile with ratings and reviews, an option to contact the seller, a link to the seller's store on Shopee, and the average rating with the 3 latest detailed customer reviews. The special discount should be prominently highlighted.
+reflect: yes
+explanation: This test case directly addresses the test scenario by ensuring that the product information page not only displays all the necessary information but also specifically checks for the special discount to be highlighted, which is the core focus of the test scenario.
+

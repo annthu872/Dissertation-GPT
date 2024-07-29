@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation to Home before data submission during genre edit
+objective: Ensure that navigating to Home before submitting updated genre data does not save the changes
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new values for the genre's Name and Description fields.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the page.
+expectedResult: The application navigates to the Home page without updating the genre in the database, and no changes are saved.
+explanation: This test case ensures that if a user navigates away to the Home page before submitting the updated data for a genre, the changes are not saved. It directly tests the scenario of navigating to Home before data submission, as per the scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Verify cancel operation retains original genre data when navigating to Home
+objective: To confirm that pressing the 'Cancel' button then navigating to Home retains the original genre data without applying any changes
+testSteps:
+  - Step 1: Go to the genre list/details page and click the 'Update' button for a genre.
+  - Step 2: Begin to enter or modify the Name and Description for the genre.
+  - Step 3: Click the 'Cancel' button.
+  - Step 4: Immediately navigate to the 'Home' page by selecting the 'Home' menu item.
+expectedResult: Navigation to the Home page is successful without updating the genre in the database, ensuring the original genre data remains unchanged.
+explanation: This test case checks the functionality of the 'Cancel' operation followed by navigation to the Home page, ensuring that the original data remains intact and no changes are made to the genre in the database.
+

@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify out of stock product cannot be selected in shopping cart
+objective: Ensure that products which are out of stock cannot be selected for checkout in the shopping cart page.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has previously added items.
+  - Step 2: Identify an out of stock product in the shopping cart.
+  - Step 3: Attempt to select the checkbox next to the out of stock product.
+expectedResult: The checkbox next to the out of stock product should not be selectable or is disabled.
+explanation: This test case ensures that users are prevented from selecting out of stock items for purchase, aligning with the exception flow where out of stock products cannot be selected.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout button is disabled with only out of stock products selected
+objective: To confirm that the checkout process cannot be initiated if the only selected products in the cart are out of stock.
+testSteps:
+  - Step 1: Navigate to the shopping cart page with at least one out of stock product added.
+  - Step 2: Attempt to select all available out of stock products, ensuring no in-stock products are selected.
+  - Step 3: Observe the state of the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, preventing the user from proceeding to checkout.
+explanation: This test case verifies the system's behavior in disabling the checkout process when the selection consists solely of out of stock items, as per the exception flow.
+
+Test Case: Test Case 3
+testCaseName: Verify out of stock product cannot be purchased from product detail page
+objective: Ensure that an out of stock product cannot be purchased directly from the product detail page.
+testSteps:
+  - Step 1: Perform the 'View a product detail' feature to navigate to a product detail page of an out of stock product.
+  - Step 2: Observe the 'Buy Now' button state.
+expectedResult: The 'Buy Now' button should be disabled or not clickable for out of stock products.
+explanation: This test case ensures that users cannot initiate a purchase of an out of stock product directly from its detail page, adhering to the exception flow.
+
+Test Case: Test Case 4
+testCaseName: Verify out of stock options cannot be selected for a product with multiple options
+objective: To ensure that out of stock options for a product with multiple options cannot be selected before adding to cart or proceeding to checkout.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with multiple options, where at least one option is out of stock.
+  - Step 2: Attempt to select an out of stock option.
+  - Step 3: Observe the behavior of the selection and the state of the 'Checkout' button.
+expectedResult: Out of stock options should not be selectable, and the 'Checkout' button should remain disabled if an out of stock option is attempted to be selected.
+explanation: This test case checks that the system correctly prevents selection of out of stock options for products with multiple options, in line with the exception flow.
+

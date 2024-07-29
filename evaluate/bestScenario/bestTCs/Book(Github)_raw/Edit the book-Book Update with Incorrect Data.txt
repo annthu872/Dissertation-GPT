@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Edit Book with Incorrect Title Data
+objective: Verify that the system displays an incorrect data message when an invalid title is submitted during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter an invalid title (e.g., using special characters or leaving it blank).
+  - Step 4: Fill in the other fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the title field is displayed.
+explanation: This test case ensures that the system validates the title field correctly and informs the user about the incorrect data when attempting to update a book with invalid title information.
+
+Test Case: Test Case 2
+testCaseName: Edit Book with Incorrect Author Data
+objective: Verify that the system displays an incorrect data message when an invalid author name is submitted during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter a valid title.
+  - Step 4: Enter an invalid author name (e.g., using numbers or special characters) in the author field.
+  - Step 5: Fill in the remaining fields (Genre, Description, Publication Date) with valid data.
+  - Step 6: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the author field is displayed.
+explanation: This test case checks if the system properly validates the author field and provides feedback to the user when incorrect author data is entered during a book update.
+
+Test Case: Test Case 3
+testCaseName: Edit Book with Incorrect Publication Date
+objective: Verify that the system displays an incorrect data message when an invalid publication date is submitted during book update.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data for the title, author, genre, and description fields.
+  - Step 4: Enter an invalid publication date (e.g., a future date or incorrect format) in the publication date field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the publication date field is displayed.
+explanation: This test case is designed to ensure that the system correctly validates the publication date field and notifies the user of incorrect data when they attempt to update a book with an invalid publication date.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Out of Stock Status
+objective: Ensure that the product information page correctly displays all product details including the out of stock status when a product is not available.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is known to be out of stock.
+  - Step 3: Observe the product information displayed on the product's information page.
+expectedResult: The product information page should display the product's title, detailed description, high-quality images and videos, detailed specifications, current price and any discounts, out of stock status, available shipping methods and estimated delivery times, shipping fees, seller's profile including name, ratings, and reviews, an option to contact the seller, a link to the seller's store on Shopee, the average rating based on customer reviews, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images, and a list of related product cards.
+reflect: yes
+explanation: This test case directly addresses the test scenario by ensuring that the product information page not only displays the out of stock status but also includes all other relevant product details. It covers the comprehensive display of information that a user would expect to see, including the critical out of stock status, thus reflecting the given test scenario accurately.
+
+Test Case: Test Case 2
+testCaseName: Verify Out of Stock Status on Product Information Page
+objective: To confirm that the out of stock status is clearly indicated on the product information page for products that are not available.
+testSteps:
+  - Step 1: From the homepage, search for a product known to be out of stock.
+  - Step 2: Click on the product card of the searched product to view its information page.
+  - Step 3: Review the stock availability section on the product information page.
+expectedResult: The stock availability section of the product information page should clearly indicate that the product is out of stock.
+reflect: yes
+explanation: While this test case focuses more narrowly on the stock status aspect of the product information page, it still directly supports the test scenario by verifying that the out of stock status is clearly communicated to the user. It is a critical component of the product information display, especially in the context of out of stock products, and therefore reflects the given test scenario.
+

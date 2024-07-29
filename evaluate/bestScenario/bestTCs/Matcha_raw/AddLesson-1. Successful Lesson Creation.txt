@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Successful Lesson Creation via Lesson Management
+objective: Verify that the administrator can successfully add a new English learning lesson through the Lesson Management page.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'View list of Lesson' from the dropdown menu.
+  - Step 4: On the Lesson Management page, select the button 'Add new Lesson'.
+  - Step 5: Enter a unique name for the lesson in the name field.
+  - Step 6: Add a description for the lesson in the description field.
+  - Step 7: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case ensures that the administrator can add a new lesson through the Lesson Management page by following the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Lesson Creation with Already Used Name
+objective: Verify that the system prevents the creation of a new lesson with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar and select 'View list of Lesson'.
+  - Step 3: On the Lesson Management page, select the button 'Add new Lesson'.
+  - Step 4: Enter a name for the lesson that is already used in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should show a notification that the name is already used, prompting the Administrator to add another name.
+explanation: This test case checks the system's ability to handle duplicate lesson names by following the alternative flow 1 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Direct Navigation to Add New Lesson Page
+objective: Verify that the administrator can navigate directly to the 'Add new Lesson' page via the navbar.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case verifies the alternative navigation path (Alternative flow 2) to add a new lesson directly from the navbar, bypassing the lesson list view.
+

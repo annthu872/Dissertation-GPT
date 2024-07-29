@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Verify last page navigation through 'Next' button
+objective: Verify that the user can navigate to the last page of books using the 'Next' button and ensure the correct books are displayed
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Click the 'Next' button repeatedly until it is no longer possible to navigate further.
+  - Step 4: Count the number of books displayed on the last page.
+expectedResult: The user should be able to navigate to the last page by clicking the 'Next' button. The last page may contain up to 10 books, depending on the total number of books in the database.
+reflect: yes
+explanation: This test case directly reflects the test scenario by verifying the functionality of navigating to the last page using the 'Next' button, which is a critical part of ensuring the last page of books is displayed correctly.
+
+Test Case: Test Case 2
+testCaseName: Verify last page navigation through pagination number
+objective: Ensure that the user can navigate directly to the last page of books by clicking the last pagination number
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the pagination block below the list of books.
+  - Step 3: Identify the last number in the pagination block and click on it.
+expectedResult: The user should be directly navigated to the last page of the books list, displaying up to 10 books depending on the total number of books in the database.
+reflect: yes
+explanation: This test case also accurately reflects the test scenario by testing another method of reaching the last page of books, which is through the pagination numbers. It ensures that the pagination functionality allows direct navigation to the last page.
+
+Test Case: Test Case 3
+testCaseName: Verify last page display with date filter applied
+objective: Verify that applying a date range filter correctly displays the last page of books within the specified publication date range
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Specify a date range in the date input forms above the list of books.
+  - Step 3: Click the 'Refresh' button next to the date inputs.
+  - Step 4: Click the 'Next' button repeatedly or the last pagination number to navigate to the last page of filtered results.
+expectedResult: The last page should display books that fall within the specified publication date range, with up to 10 books displayed depending on the total number of filtered results.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it adds an additional layer of complexity by applying a filter. It verifies that the last page display functionality works correctly even when filters are applied, ensuring that users can still navigate to the last page of books within specific criteria.
+

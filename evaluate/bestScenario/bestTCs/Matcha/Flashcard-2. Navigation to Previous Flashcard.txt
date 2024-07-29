@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Navigation to Previous Flashcard
+objective: Verify that the learner can navigate to the previous flashcard after moving to the next one.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: On the Flashcard page, view the first flashcard and click on it to flip and view the back.
+  - Step 6: Click the 'Next' button to go to the flashcard of the next vocabulary word.
+  - Step 7: Click the 'Previous' button to go back to the previous flashcard.
+expectedResult: The system should navigate back to the previous flashcard, displaying the front side of the flashcard with the vocabulary name, pronunciation, and Vietnamese meaning.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to navigate back to a previously viewed flashcard after moving forward, which is the core functionality being tested in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigation to Previous Flashcard on the First Flashcard
+objective: Verify that the 'Previous' button is disabled when the learner is on the first flashcard.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the displayed list.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: On the Flashcard page, view the first flashcard.
+  - Step 6: Attempt to click the 'Previous' button.
+expectedResult: The 'Previous' button should be disabled, and no action should be taken by the system.
+reflect: yes
+explanation: Although this test case explores a specific edge case (being on the first flashcard), it still directly relates to the test scenario by verifying the behavior of the navigation functionality (specifically the 'Previous' button) under a certain condition. It ensures that the application handles the scenario where navigation to a previous flashcard is not applicable, thus reflecting the given test scenario.
+

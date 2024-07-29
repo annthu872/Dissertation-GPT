@@ -1,0 +1,12 @@
+Scenario_Name_Not_Entered
+Scenario_Name_Incorrect_Format
+Scenario_Bio_Not_Entered
+Scenario_Bio_Incorrect_Format
+Successful Author Update
+Update with Incorrect Data
+User presses “Cancel” button before submitting the form
+User navigates to "Books" before submitting the form
+User navigates to "Genres" before submitting the form
+User navigates to "Authors" before submitting the form
+User navigates to "Home" before submitting the form
+User navigates to "API" before submitting the form

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Search for a specific vocabulary word in the Handbook
+objective: Verify that the learner can use the search function to find a specific vocabulary word in the Handbook
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar displayed at the top of the vocabulary list.
+  - Step 4: Enter the specific word to search in the search bar.
+  - Step 5: Observe the filtered vocabulary list.
+expectedResult: The system should display a list of vocabulary that contains the characters entered by the learner in the search bar, including the specific word if it exists in the learner's vocabulary list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the functionality of the search feature within the Handbook. It tests the ability of the learner to find a specific vocabulary word using the search function, which is the core objective of the given test scenario.
+

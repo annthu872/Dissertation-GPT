@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Bio Field
+objective: Verify that the system prevents updating an author record with an empty 'Bio' field and displays the appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field to make it empty.
+  - Step 4: Fill in other necessary fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the 'Bio' field cannot be empty and the author record should not be updated in the database.
+explanation: This test case ensures that the application enforces the requirement for the 'Bio' field to be filled out when updating an author's information, preventing incomplete records.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation on Author with Empty Bio Field
+objective: Verify that cancelling the update operation with an empty 'Bio' field does not update the author record in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Bio' field to make it empty.
+  - Step 4: Fill in other necessary fields with valid data.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The system should not update the author record in the database and should return the user to the list of author records.
+explanation: This test case verifies that the cancel operation works correctly even when mandatory fields such as 'Bio' are left empty during an update attempt.
+

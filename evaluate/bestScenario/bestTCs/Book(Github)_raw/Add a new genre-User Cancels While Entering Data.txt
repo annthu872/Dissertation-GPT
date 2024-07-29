@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify cancel operation while entering data for a new genre
+objective: Ensure that when a user cancels the operation of adding a new genre after entering data, the data is not saved and the user is redirected to the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: On the form that appears, start entering data for the new genre. Fill in the 'Name' and 'Description' fields.
+  - Step 4: Before pressing the 'Submit' button, click the 'Cancel' button.
+expectedResult: The application does not save the entered data and redirects the user to the genre list page, displaying the list of genres without the addition of the new genre.
+explanation: This test case ensures that the cancel operation works as intended, preventing any partially entered data from being saved and confirming that the user is taken back to the genre list page.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after canceling genre addition
+objective: To verify that after canceling the addition of a new genre, navigating to another page like 'Books', 'Genres', 'Authors', 'Home', or 'API' does not save any data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to initiate the process of adding a new genre.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields of the form.
+  - Step 4: Instead of submitting the form, click the 'Cancel' button.
+  - Step 5: After being redirected to the genre list page, select another menu item such as 'Books'.
+expectedResult: The application should not save the previously entered genre data and should display the selected page (e.g., 'Books') without any issues or errors.
+explanation: This test case checks the functionality of the cancel button to ensure that it not only stops data from being saved but also allows the user to navigate to other sections of the application without unintended consequences.
+

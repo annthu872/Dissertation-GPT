@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select Books Menu
+objective: Verify that selecting 'Books' from the menu after cancelling a deletion does not delete the book and displays the updated books list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Books' menu item.
+expectedResult: The book list is displayed with the previously selected book still present, indicating no deletion occurred.
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the 'Books' menu, the book is not deleted and the books list is correctly updated and displayed.
+
+Test Case: Test Case 2
+testCaseName: Cancel Deletion and Select Genres Menu
+objective: Verify that selecting 'Genres' from the menu after cancelling a deletion does not delete the book and displays the updated genres list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Genres' menu item.
+expectedResult: The genres list is displayed, indicating no deletion occurred and the application has navigated away from the books context.
+explanation: This test case checks that after cancelling a deletion, navigating to the 'Genres' menu does not result in deletion and the application behaves as expected by showing the genres list.
+
+Test Case: Test Case 3
+testCaseName: Cancel Deletion and Select Authors Menu
+objective: Verify that selecting 'Authors' from the menu after cancelling a deletion does not delete the book and displays the updated authors list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Authors' menu item.
+expectedResult: The authors list is displayed, indicating no deletion occurred and the application has navigated away from the books context.
+explanation: This test case verifies that after cancelling a deletion, navigating to the 'Authors' menu does not result in deletion and the application behaves as expected by showing the authors list.
+
+Test Case: Test Case 4
+testCaseName: Cancel Deletion and Select Home Menu
+objective: Verify that selecting 'Home' from the menu after cancelling a deletion does not delete the book and displays the home page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Home' menu item.
+expectedResult: The home page is displayed, indicating no deletion occurred and the application has navigated away from the books context.
+explanation: This test case ensures that after cancelling a deletion, navigating to the 'Home' menu does not result in deletion and the application behaves as expected by showing the home page.
+
+Test Case: Test Case 5
+testCaseName: Cancel Deletion and Select API Menu
+objective: Verify that selecting 'API' from the menu after cancelling a deletion does not delete the book and displays the API page.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'API' menu item.
+expectedResult: The API page is displayed, indicating no deletion occurred and the application has navigated away from the books context.
+explanation: This test case checks that after cancelling a deletion, navigating to the 'API' menu does not result in deletion and the application behaves as expected by showing the API page.
+

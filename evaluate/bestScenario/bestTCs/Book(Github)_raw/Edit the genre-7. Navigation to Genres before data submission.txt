@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation to Genre Edit page before data submission
+objective: Ensure that the user can navigate to the Genre Edit page without submitting any data
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you want to update and click the 'Update' button to the right of the genre.
+  - Step 3: Observe if the application navigates to the form to enter genre data without submitting any data.
+expectedResult: The application should display the form to enter genre data without any data submission.
+explanation: This test case verifies that users can navigate to the Genre Edit page to update genre information before any data submission. It ensures the application's navigation flow works as intended for editing genres.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation to Genre Edit page and cancel operation
+objective: Ensure that the user can navigate to the Genre Edit page and cancel the operation without data submission
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you want to update and click the 'Update' button to the right of the genre.
+  - Step 3: Observe the application navigates to the form to enter genre data.
+  - Step 4: Start entering data into the form fields but do not press 'Submit'.
+  - Step 5: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should navigate back to the list of genre records without updating any data in the database.
+explanation: This test case ensures that users can navigate to the Genre Edit page, attempt to edit a genre, but then decide to cancel the operation without submitting any data, verifying the application's ability to handle user navigation and cancellation correctly.
+
+Test Case: Test Case 3
+testCaseName: Verify navigation to another page from Genre Edit page without data submission
+objective: Ensure that the user can navigate to another page from the Genre Edit page without submitting any data
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you want to update and click the 'Update' button to the right of the genre.
+  - Step 3: Observe the application navigates to the form to enter genre data.
+  - Step 4: Without entering any data or pressing 'Submit', select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected page without updating any data in the database.
+explanation: This test case verifies that users can navigate away from the Genre Edit page to another section of the application without submitting any data, ensuring the application properly handles navigation without data loss or unintended submissions.
+

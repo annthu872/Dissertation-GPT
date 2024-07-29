@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Register with an already registered username
+objective: Verify that the system shows a notification that the username has been registered and asks the learner to choose another username when attempting to register with a username that has already been registered.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.
+  - Step 4: Press the "Register" button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UsernameAlreadyRegistered' by simulating an attempt to register with a username that is already in use. The steps lead to the specific situation where the system needs to validate the username's uniqueness and provide feedback accordingly, which is the core of the given test scenario.
+

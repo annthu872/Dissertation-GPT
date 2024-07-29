@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify cancellation of book deletion via Cancel button
+objective: Ensure that pressing the 'Cancel' button during the deletion confirmation dialog cancels the deletion process and retains the book record in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The book record should not be deleted from the database, and the user should be redirected back to the list of book records, with the previously selected book still present.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the 'Cancel' button effectively stops the deletion process, ensuring the book record remains in the database. It matches the scenario's requirement of cancelling a deletion via the Cancel button.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation after cancelling book deletion
+objective: To confirm that after cancelling a book deletion, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting the book
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Navigate to one of the menu items: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should display the corresponding form with updated data, and the book that was subject to deletion should still be present in the database and visible to the user.
+reflect: yes
+explanation: Although this test case extends the scenario by verifying the application's behavior after cancelling the deletion, it still reflects the original test scenario. It ensures that the cancellation of the deletion process through the 'Cancel' button has the expected outcome not only immediately but also in subsequent interactions within the application.
+

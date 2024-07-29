@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Change in Room Type - Happy Path
+objective: Verify that an employee can successfully update a booking with a change in room type and the system updates the database accordingly.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a specific booking by id that needs to be updated.
+  - Step 4: In the booking details, change the room type to a new one.
+  - Step 5: Compute the new payment due to the change in room type.
+  - Step 6: Press the update button after ensuring all fields are correctly filled.
+  - Step 7: Confirm the update action if prompted.
+expectedResult: The system should validate the updated fields, update the booking in the database for the same booking id, and display a success message indicating the booking has been updated.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining steps to update a booking with a change in room type, which is the core action described in the scenario. It follows the intended flow of updating a booking and verifying the system's response.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Invalid Room Type
+objective: Verify that the system prevents the update of a booking when an invalid room type is entered and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a specific booking by id that needs to be updated.
+  - Step 4: In the booking details, change the room type to an invalid one (e.g., a non-existent room type).
+  - Step 5: Attempt to compute the new payment, if applicable.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and display an error message indicating 'invalid field entered' for the room type.
+reflect: yes
+explanation: This test case is relevant to the given test scenario as it tests the system's behavior when an invalid room type is entered during the booking update process. It ensures that the system has proper validation and error handling mechanisms in place for room type changes.
+

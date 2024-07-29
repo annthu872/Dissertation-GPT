@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Continue Incomplete Topic from Home Page
+objective: Verify that a learner can continue studying an incomplete topic directly from the Home Page.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Navigate to the Home Page.
+  - Step 3: Identify an incomplete topic displayed on the Home Page.
+  - Step 4: Click on the incomplete topic.
+  - Step 5: Verify that the system redirects to the Flashcard page for the selected topic, continuing from where the learner left off.
+expectedResult: The learner is redirected to the Flashcard page of the incomplete topic, allowing them to continue studying from where they left off.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that a learner can resume an incomplete topic from the Home Page, which is the core functionality being tested.
+

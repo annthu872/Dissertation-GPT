@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Cancel Editing Author by Pressing Cancel Button
+objective: Verify that the author's data is not updated in the database and the user is redirected to the list of authors when the 'Cancel' button is pressed during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the data for the author.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the list of authors.
+explanation: This test case ensures that the cancel operation works as intended by stopping the update process and redirecting the user without making changes to the author's data.
+
+Test Case: Test Case 2
+testCaseName: Cancel Editing Author by Selecting 'API' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the 'API' page when the 'API' menu item is selected during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the data for the author.
+  - Step 4: Select the 'API' menu item before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'API' page.
+explanation: This test case verifies that selecting the 'API' menu item during an author edit operation cancels the edit and redirects the user appropriately without updating the author's data.
+
+Test Case: Test Case 3
+testCaseName: Cancel Editing Author by Selecting 'Books' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the 'Books' page when the 'Books' menu item is selected during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the data for the author.
+  - Step 4: Select the 'Books' menu item before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'Books' page.
+explanation: This test case checks if the operation of editing an author can be successfully canceled by navigating away from the edit page to the 'Books' page, ensuring no data is updated.
+

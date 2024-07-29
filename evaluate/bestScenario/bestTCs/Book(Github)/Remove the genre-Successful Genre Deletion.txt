@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Deletion
+objective: Verify that a user can successfully delete a genre and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The genre should be successfully deleted from the database, and the list of genres should no longer include the deleted genre.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Genre Deletion' by outlining steps to delete a genre and verifying its removal from the database.
+

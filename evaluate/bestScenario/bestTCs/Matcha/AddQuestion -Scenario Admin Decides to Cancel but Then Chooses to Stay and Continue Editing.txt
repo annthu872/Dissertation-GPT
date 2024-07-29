@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Admin Decides to Cancel but Then Chooses to Stay and Continue Editing
+objective: Verify that when an admin decides to cancel the creation of a question but then chooses to stay, they can continue editing the question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill in the 'correct answer' and the three 'other option' fields with appropriate words.
+  - Step 10: Press the button 'Cancel'.
+  - Step 11: In the dialog that appears, press the button 'Stay'.
+  - Step 12: Make any additional edits to the question fields if necessary.
+  - Step 13: Press the button 'Save'.
+expectedResult: After choosing to stay, the admin should be able to continue editing the question and successfully save it.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by outlining a sequence of actions where an admin decides to cancel the creation of a question but then chooses to stay and continue editing. The steps are designed to test the system's ability to allow the admin to revert the cancellation decision and proceed with editing and saving the question, which is the core objective of the scenario.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify learner can exit flashcard study via back button and choose to stay
+objective: Ensure that when a learner presses the back button during flashcard study and chooses to stay, they are kept on the current flashcard page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Start studying the flashcards by clicking on them to flip and view the back.
+  - Step 6: Press the 'back' button on the browser or device.
+  - Step 7: In the exit confirmation dialog box, click 'stay'.
+expectedResult: The learner remains on the current flashcard page, able to continue studying without being redirected.
+explanation: This test case verifies the functionality of the 'back' button during flashcard study, ensuring that learners can opt to stay on the page if they accidentally press 'back'. It directly relates to the alternative flow 1 of the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify learner can exit flashcard study via back button and choose to exit
+objective: Ensure that when a learner presses the back button during flashcard study and chooses to exit, they are redirected to the topic page with the topic marked as incomplete.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the lesson details.
+  - Step 5: Start studying the flashcards by clicking on them to flip and view the back.
+  - Step 6: Press the 'back' button on the browser or device.
+  - Step 7: In the exit confirmation dialog box, click 'exit'.
+expectedResult: The learner is redirected to the topic page, and the topic is marked as incomplete, visible on the home page for later completion.
+explanation: This test case ensures the functionality of the 'back' button during flashcard study, allowing learners to exit the study session. It directly relates to the exception flow 1 of the use case, testing the exit functionality.
+

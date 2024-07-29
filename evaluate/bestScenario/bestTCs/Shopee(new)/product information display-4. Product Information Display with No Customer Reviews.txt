@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Product Information Display Without Customer Reviews
+objective: Verify that the product information is displayed correctly without displaying customer reviews and ratings when there are no reviews available.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that has no customer reviews.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information is displayed including Title and Description, Images and Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, and Related Products. The Customer Reviews and Ratings section should indicate that there are no reviews available.
+reflect: yes
+explanation: This test case directly addresses the test scenario by focusing on the display of product information in the absence of customer reviews. It outlines steps to verify that all other product details are shown as expected, and specifically checks that the customer reviews section communicates the lack of reviews, which is the core aspect of the given test scenario.
+

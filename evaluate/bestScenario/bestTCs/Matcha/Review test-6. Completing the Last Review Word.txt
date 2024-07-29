@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Completing the Last Review Word Successfully
+objective: Verify that the system redirects the learner to the Home page and saves the review after completing the last review word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review for all but the last word in the daily review words list by selecting the right answers. For each word, follow the steps from selecting a review method to pressing 'Continue' for the next word.
+  - Step 4: For the last word in the review list, select the correct answer and press the 'Continue' button.
+expectedResult: The system should redirect the learner to the Home page and save the review.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the system's behavior upon the learner completing the last review word, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Completing the Last Review Word with a Wrong Answer
+objective: Verify that the system allows the learner to continue reviewing after selecting a wrong answer for the last word and saves the review upon completion.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review for all but the last word in the daily review words list by selecting the right answers. For each word, follow the steps from selecting a review method to pressing 'Continue' for the next word.
+  - Step 4: For the last word in the review list, select the wrong answer and then select the correct answer after being prompted to retry.
+  - Step 5: Press the 'Continue' button after selecting the correct answer for the last word.
+expectedResult: The system should redirect the learner to the Home page and save the review, even after a wrong answer was initially selected for the last word.
+reflect: yes
+explanation: This test case also reflects the given test scenario by testing a specific path where the learner initially selects a wrong answer for the last review word but eventually completes it correctly, which is within the scope of completing the last review word.
+

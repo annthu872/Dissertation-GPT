@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation Away by Selecting 'Books' Cancels Genre Creation
+objective: Verify that selecting 'Books' from the menu while adding a new genre cancels the creation process and navigates the user to the Books page without saving the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Before pressing the 'Submit' button, select the 'Books' menu item.
+expectedResult: The user is navigated to the Books page, and the data entered in the genre creation form is not saved in the database.
+explanation: This test case ensures that when a user navigates away from the genre creation page by selecting 'Books', the creation process is canceled, and no data is saved, reflecting the intended behavior of the cancel operation scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation Away by Selecting 'Genres' Cancels Genre Creation
+objective: Ensure that selecting 'Genres' from the menu while adding a new genre cancels the creation process and navigates the user to the Genres page without saving the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to initiate the process of adding a new genre.
+  - Step 3: Begin entering data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Before pressing the 'Submit' button, select the 'Genres' menu item.
+expectedResult: The user is navigated to the Genres page, and the data entered in the genre creation form is not saved in the database.
+explanation: This test case verifies that navigation away from the genre creation form to the Genres page using the menu cancels the creation process, aligning with the cancel operation scenario's intended functionality.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation Away by Selecting 'Authors' Cancels Genre Creation
+objective: Confirm that selecting 'Authors' from the menu while adding a new genre cancels the creation process and navigates the user to the Authors page without saving the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to begin adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Before pressing the 'Submit' button, select the 'Authors' menu item.
+expectedResult: The user is navigated to the Authors page, and the data entered in the genre creation form is not saved in the database.
+explanation: This test case checks that when a user navigates away from the genre creation page by selecting 'Authors', the creation process is canceled, and no data is saved, which is the expected behavior according to the cancel operation scenario.
+
+Test Case: Test Case 4
+testCaseName: Verify Navigation Away by Selecting 'Home' Cancels Genre Creation
+objective: Ensure that selecting 'Home' from the menu while adding a new genre cancels the creation process and navigates the user to the Home page without saving the data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new genre.
+  - Step 3: Input data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item.
+expectedResult: The user is navigated to the Home page, and the data entered in the genre creation form is not saved in the database.
+explanation: This test case ensures that navigation away from the genre creation form to the Home page using the menu cancels the creation process, in line with the cancel operation scenario's intended behavior.
+

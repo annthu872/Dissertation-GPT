@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify product erased by seller is unselectable in shopping cart
+objective: Ensure that products erased by the seller cannot be selected for checkout in the shopping cart.
+testSteps:
+  - Step 1: Log in to the user account.
+  - Step 2: Navigate to the shopping cart page where previously added items are present.
+  - Step 3: Attempt to select a product that has been erased by the seller by clicking on the checkbox before the item.
+expectedResult: The checkbox for the erased product should not be clickable, and the product cannot be selected for checkout.
+explanation: This test case ensures that users are prevented from purchasing products that have been erased by the seller, maintaining the integrity of the checkout process.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout button is disabled with only erased products selected
+objective: To confirm that the checkout process is halted if all selected products in the cart have been erased by the seller.
+testSteps:
+  - Step 1: Log in to the user account.
+  - Step 2: Navigate to the shopping cart page with items added previously.
+  - Step 3: Ensure all available products in the cart have been erased by the seller but are still displayed.
+  - Step 4: Attempt to select all erased products by clicking on their respective checkboxes.
+  - Step 5: Observe the state of the 'Checkout' button.
+expectedResult: The 'Checkout' button remains disabled since all selected items are invalid for purchase.
+explanation: This test case verifies that the checkout process is correctly prevented when the only products selected have been erased, ensuring users cannot proceed with an invalid purchase.
+
+Test Case: Test Case 3
+testCaseName: Verify mixed selection of valid and erased products in shopping cart
+objective: Ensure that the checkout process can proceed with valid products even if erased products are present in the cart.
+testSteps:
+  - Step 1: Log in to the user account.
+  - Step 2: Navigate to the shopping cart page where both valid and erased items are present.
+  - Step 3: Select all valid products by clicking on the checkboxes before each.
+  - Step 4: Attempt to select erased products.
+  - Step 5: Click on the 'Checkout' button.
+expectedResult: The system allows the checkout process to proceed with only the valid selected products, ignoring the erased items.
+explanation: This test case ensures that users can still complete purchases with valid items in their cart, even when erased items are also present, thus maintaining a seamless shopping experience.
+

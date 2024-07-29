@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add Shipping Address with Incorrect Phone Number Format
+objective: Verify that the system prevents adding a new shipping address when the phone number is not in the specified format.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: In the order summary page, click on the button to change or add a new shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with a full name, an incorrect phone number format (e.g., 1234567890 without country code or parentheses), city, district, ward, and a valid location's address.
+  - Step 6: Click on the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification indicating the phone number is not in the correct format and prevent the user from adding the new shipping address.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a shipping address with a phone number that does not meet the specified format. The steps guide the tester through the process of adding a new address with an incorrectly formatted phone number, and the expected result is that the system should prevent this action, which is the exact purpose of the test scenario.
+

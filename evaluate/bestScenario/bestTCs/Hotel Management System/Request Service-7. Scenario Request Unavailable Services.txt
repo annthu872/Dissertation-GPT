@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Request Unavailable Room Service
+objective: Verify that the system handles requests for unavailable services appropriately by not allowing the request to proceed and providing relevant feedback to the user.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the provided input field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, attempt to select a service that is known to be unavailable or not listed.
+  - Step 5: Attempt to submit the request for the unavailable service.
+expectedResult: The system should not allow the request for an unavailable service to proceed. An appropriate error message or notification should be displayed to the user indicating that the selected service is not available.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'Request Unavailable Services' by simulating a user's attempt to request a service that is not available. The steps are designed to trigger the system's mechanism for handling such requests, and the expected result is aligned with the scenario's requirement for the system to provide feedback on the unavailability of the requested service. Therefore, it accurately reflects the given test scenario.
+

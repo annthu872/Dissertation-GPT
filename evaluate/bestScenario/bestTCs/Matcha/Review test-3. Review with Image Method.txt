@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Review with Image Method - Correct Answer
+objective: Verify that the system correctly processes and provides feedback when a learner selects the correct answer using the image method during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Wait for the system to present a word to review using the image method with four selections of answer at the bottom of the screen.
+  - Step 5: Choose the correct answer by clicking on one of the four selections.
+  - Step 6: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should show a green word for the learner to read, indicating the word's memory level has been increased. Then, the system should allow the learner to continue to the next word.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Review with Image Method' by testing the core functionality of the review process with the image method, specifically when the correct answer is selected.
+
+Test Case: Test Case 2
+testCaseName: Review with Image Method - Incorrect Answer
+objective: Verify that the system correctly processes and provides feedback when a learner selects the wrong answer using the image method during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Wait for the system to present a word to review using the image method with four selections of answer at the bottom of the screen.
+  - Step 5: Choose the wrong answer by clicking on one of the four selections.
+  - Step 6: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should show a red word for the learner to read, indicating the word's memory level has been decreased. Then, the system should allow the learner to continue to the next word.
+reflect: yes
+explanation: This test case aligns with the given test scenario 'Review with Image Method' by examining the system's response to an incorrect answer selection during the review process with the image method, which is a critical part of the scenario.
+
+Test Case: Test Case 3
+testCaseName: Review with Image Method - Completion of Review Session
+objective: Verify that the system correctly saves the review session and updates the vocabulary status upon completion.
+testSteps:
+  - Step 1: Log in as a learner with just one word left in the review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Wait for the system to present the last word to review using any method (ensure it's the image method for consistency with the test scenario) with four selections of answer at the bottom of the screen.
+  - Step 5: Choose any answer by clicking on one of the four selections.
+  - Step 6: Click the 'Continue' button after selecting an answer.
+expectedResult: After reviewing the last word and clicking 'Continue', the system should save the review session and redirect the learner back to the Home page. The vocabulary status should be updated according to the results of the review session.
+reflect: yes
+explanation: This test case is relevant to the test scenario 'Review with Image Method' as it tests the completion and outcome of a review session using the image method, ensuring the system behaves as expected at the end of a session.
+

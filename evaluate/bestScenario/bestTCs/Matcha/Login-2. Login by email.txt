@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Login with valid email and correct password
+objective: Verify that a learner can login using a valid email and the correct password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid email that has been registered.
+  - Step 3: Fill in the password field with the correct password for the corresponding email.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system redirects the learner to the Home page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Login by email' by verifying the functionality of logging in with a registered email and correct password.
+
+Test Case: Test Case 2
+testCaseName: Login with valid email and incorrect password
+objective: Verify that the system shows a notification for wrong password when a learner tries to login with a valid email and an incorrect password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid email that has been registered.
+  - Step 3: Fill in the password field with a wrong password.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system shows a notification that the password is wrong.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the login functionality with an email and incorrect password, which is a part of the login process.
+
+Test Case: Test Case 3
+testCaseName: Login with unregistered email
+objective: Verify that the system shows a notification for an unregistered email when a learner tries to login with an email that has not been registered
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with an email that has not been registered.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system shows a notification that this username is not registered yet.
+reflect: yes
+explanation: This test case aligns with the test scenario by verifying the system's behavior when attempting to log in with an unregistered email, which is a critical part of the email login process.
+
+Test Case: Test Case 4
+testCaseName: Login with blank email field
+objective: Verify that the system shows a notification that the username field needs to be filled when the email field is left blank
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with any password.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system shows a notification that the username field needs to be filled.
+reflect: yes
+explanation: This test case is pertinent to the test scenario as it tests a condition where the email (username) field is left blank during the login process, ensuring the system prompts for email input.
+
+Test Case: Test Case 5
+testCaseName: Login with blank password field and valid email
+objective: Verify that the system shows a notification that the password field needs to be filled when attempting to login with a valid email and no password
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Fill in the username field with a valid email that has been registered.
+  - Step 3: Leave the password field blank.
+  - Step 4: Press the 'Login' button.
+expectedResult: The system shows a notification that the password field needs to be filled.
+reflect: yes
+explanation: This test case supports the test scenario by examining the system's response to a login attempt with a valid email but without a password, which is a crucial aspect of the email login functionality.
+

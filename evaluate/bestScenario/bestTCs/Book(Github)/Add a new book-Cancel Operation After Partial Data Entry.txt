@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Book Creation After Partial Data Entry by Cancel Button
+objective: Verify that the book creation process can be canceled after partial data entry by using the 'Cancel' button and ensure that no data is saved in the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Title and Author).
+  - Step 4: Press the 'Cancel' button before completing all fields and submitting.
+  - Step 5: Confirm any prompt (if any) to ensure cancellation of the book creation process.
+expectedResult: The application should navigate back to the list of books without adding the partially entered book data to the database.
+reflect: yes
+explanation: This test case directly reflects the test scenario of canceling an operation after partial data entry. It specifically tests the functionality of the 'Cancel' button in the context of partially entered data during a book creation process, ensuring that the operation can be canceled and that the partial data is not saved.
+
+Test Case: Test Case 2
+testCaseName: Cancel New Book Creation After Partial Data Entry by Navigation
+objective: Verify that navigating away from the book creation page after partial data entry by selecting a different menu item cancels the book creation and does not save data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new book.
+  - Step 3: On the book creation form, enter partial data for the new book (e.g., Genre and Description).
+  - Step 4: Without submitting the form, select a different menu item (e.g., 'Authors').
+expectedResult: The application should navigate to the selected menu item's page without saving the partially entered book data, ensuring no new book record is added to the database.
+reflect: yes
+explanation: This test case also accurately reflects the test scenario by verifying the behavior of the application when a user navigates away from the book creation page after entering partial data. It tests a different user action (navigation away) that results in the cancellation of the book creation process, ensuring that partial data is not saved, which is in line with the scenario's requirement.
+

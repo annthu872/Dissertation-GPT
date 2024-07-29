@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Attempting to Navigate Beyond the Last Page of Genres Using Next Button
+objective: Verify that the application prevents navigation beyond the last page of genres when using the 'Next' button
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: If not already on the last page, click the 'Next' button repeatedly until reaching the last page of genres.
+  - Step 3: Once on the last page, attempt to click the 'Next' button again.
+expectedResult: The application should either disable the 'Next' button on the last page or show a notification that the user is on the last page and there are no more genres to display.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to navigate beyond the last page of genres using the 'Next' button, which is a specific action mentioned in the scenario. It verifies the application's behavior in this situation, ensuring it aligns with expected user-friendly functionality.
+
+Test Case: Test Case 2
+testCaseName: Attempting to Navigate Beyond the Last Page of Genres Using Page Number
+objective: Verify that the application prevents navigation beyond the last page of genres when selecting a page number beyond the available range
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: Identify the last available page number of genres.
+  - Step 3: Attempt to select a page number greater than the last available page number.
+expectedResult: The application should not allow the selection of a page number beyond the last available page, either by disabling such input or by showing a notification that the requested page does not exist.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests another method of attempting to navigate beyond the last page of genres, which is by directly selecting a page number. It ensures that the application handles such attempts gracefully, preventing user confusion or errors, thus reflecting the given test scenario.
+

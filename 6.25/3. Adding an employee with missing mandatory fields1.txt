@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Adding an employee with one mandatory field missing
+objective: Verify that the system prevents adding an employee when one mandatory field is left unfilled and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Fill in all the mandatory fields except one (leave one field blank).
+  - Step 4: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by specifically testing the system's response to an attempt to add an employee with a missing mandatory field. It checks for the appropriate error handling and user feedback, which is the core of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Adding an employee with all mandatory fields missing
+objective: Verify that the system prevents adding an employee when all mandatory fields are left unfilled and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Leave all mandatory fields blank.
+  - Step 4: Click on the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required and prevent the addition of the employee.
+reflect: yes
+explanation: Although this test case explores a slightly different path by leaving all mandatory fields blank, it still aligns with the given test scenario's objective of verifying the system's behavior when mandatory information is missing. It tests the system's validation process in a broader context, ensuring that the system requires the completion of mandatory fields for the operation to proceed.
+

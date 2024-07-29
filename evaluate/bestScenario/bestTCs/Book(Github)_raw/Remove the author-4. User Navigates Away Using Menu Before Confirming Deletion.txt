@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Navigate away using menu before confirming deletion to 'Books'
+objective: Verify that navigating away to 'Books' from the deletion confirmation dialog cancels the deletion process and displays the 'Books' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Books' menu item.
+expectedResult: The deletion process is cancelled, and the 'Books' page is displayed with updated data.
+explanation: This test case ensures that if a user decides to navigate away to another page ('Books') before confirming the deletion of an author, the deletion process is halted, and the user is redirected to the 'Books' page without any changes made to the database.
+
+Test Case: Test Case 2
+testCaseName: Navigate away using menu before confirming deletion to 'Genres'
+objective: Verify that navigating away to 'Genres' from the deletion confirmation dialog cancels the deletion process and displays the 'Genres' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Genres' menu item.
+expectedResult: The deletion process is cancelled, and the 'Genres' page is displayed with updated data.
+explanation: This test case checks that navigating away to 'Genres' during the deletion confirmation phase prevents the deletion and instead shows the 'Genres' page, ensuring the database remains unchanged.
+
+Test Case: Test Case 3
+testCaseName: Navigate away using menu before confirming deletion to 'Authors'
+objective: Verify that navigating away to 'Authors' from the deletion confirmation dialog cancels the deletion process and displays the 'Authors' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Authors' menu item.
+expectedResult: The deletion process is cancelled, and the 'Authors' page is displayed with updated data.
+explanation: This test case ensures that if a user navigates away to 'Authors' before confirming deletion, the process is stopped, and the user is taken to the 'Authors' page, with no deletion occurring.
+
+Test Case: Test Case 4
+testCaseName: Navigate away using menu before confirming deletion to 'Home'
+objective: Verify that navigating away to 'Home' from the deletion confirmation dialog cancels the deletion process and displays the 'Home' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Home' menu item.
+expectedResult: The deletion process is cancelled, and the 'Home' page is displayed.
+explanation: This test case verifies that selecting 'Home' from the menu during the deletion confirmation phase cancels the deletion and redirects the user to the 'Home' page, leaving the database unchanged.
+
+Test Case: Test Case 5
+testCaseName: Navigate away using menu before confirming deletion to 'API'
+objective: Verify that navigating away to 'API' from the deletion confirmation dialog cancels the deletion process and displays the 'API' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'API' menu item.
+expectedResult: The deletion process is cancelled, and the 'API' page is displayed with updated data.
+explanation: This test case ensures that navigating away to the 'API' page before confirming deletion cancels the deletion process and redirects the user to the 'API' page, with no changes to the database.
+

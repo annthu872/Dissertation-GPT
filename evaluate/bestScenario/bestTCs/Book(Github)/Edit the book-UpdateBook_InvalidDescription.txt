@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Description
+objective: Verify that the system displays an incorrect data message when attempting to update a book with an invalid description.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Enter an invalid value in the 'Description' field (e.g., a string that exceeds the maximum length limit or includes disallowed characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description data is incorrect.
+reflect: yes
+explanation: This test case directly addresses the test scenario 'UpdateBook_InvalidDescription' by focusing on the validation of the 'Description' field with an invalid input. It is designed to ensure that the system checks for incorrect data in the 'Description' field and provides the appropriate feedback, which is the core objective of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Empty Description
+objective: Verify that the system prevents updating a book when the description field is left empty.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description field cannot be left empty.
+reflect: yes
+explanation: Although this test case focuses on an empty 'Description' field rather than an invalid one, it still falls under the umbrella of the test scenario 'UpdateBook_InvalidDescription' by testing the system's response to invalid (in this case, missing) input. It verifies that the system enforces the requirement for a valid description during the book update process, making it relevant to the given test scenario.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Purchase with Application Voucher
+objective: Verify that a user can successfully apply an application voucher during the checkout process and complete the purchase with the discounted amount.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart and proceeding to checkout.
+  - Step 3: At the order summary page, verify the items, quantities, prices, and total cost are correctly displayed.
+  - Step 4: Confirm the shipping address is set to the default address. Do not make changes to the shipping address.
+  - Step 5: Confirm the payment method is set to COD (Cash on Delivery) as default. Do not change the payment method.
+  - Step 6: Apply an application voucher by selecting an available voucher or entering a valid voucher code and clicking the 'apply' button.
+  - Step 7: Verify the total cost is updated based on the application voucher discount.
+  - Step 8: Leave the shipping option as Standard Express. Do not add a note for the shop.
+  - Step 9: Review the order details and click on the 'Place Order' button.
+  - Step 10: Verify the order is processed, and the payment is confirmed.
+  - Step 11: Verify the order confirmation and details are displayed.
+expectedResult: The user successfully applies an application voucher, the total cost is updated with the discount, and the order is placed and confirmed with the discounted amount.
+explanation: This test case ensures that the application voucher feature works as expected during the checkout process, allowing users to apply discounts to their purchases. It directly matches the scenario of purchasing with an application voucher by following the basic flow and incorporating the application of a voucher as specified.
+
+Test Case: Test Case 2
+testCaseName: Verify Purchase with Incorrect Application Voucher Code
+objective: Verify that the system prevents the user from applying an incorrect application voucher code during the checkout process.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by adding items to the shopping cart and proceeding to checkout.
+  - Step 3: At the order summary page, proceed without making changes to the shipping address or payment method.
+  - Step 4: Attempt to apply an application voucher by entering an incorrect voucher code and clicking the 'apply' button.
+  - Step 5: Observe the system's response to the incorrect voucher code.
+expectedResult: The system displays a notification that the voucher code is incorrect and prevents the user from applying the discount to the order.
+explanation: This test case is created to ensure the system's validation works correctly for voucher codes, preventing users from applying discounts with incorrect voucher codes. It addresses the exception flow where an incorrect voucher code is entered.
+

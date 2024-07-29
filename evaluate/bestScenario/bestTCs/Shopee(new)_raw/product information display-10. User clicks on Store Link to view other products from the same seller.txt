@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Viewing Seller's Store Through Store Link
+objective: Verify that users can view other products from the same seller by clicking on the Store Link in the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: In the product information, locate and click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The system should navigate the user to the seller's store page, displaying other products from the same seller.
+explanation: This test case ensures that the Store Link in the product information page functions correctly, allowing users to explore more products from the same seller. It directly matches the scenario of users clicking on the Store Link to view other products, following the basic flow of the Product Information Display use case.
+
+Test Case: Test Case 2
+testCaseName: Viewing Seller's Profile and Ratings from Product Page
+objective: Verify that users can view the seller's profile, including their name, ratings, and reviews, from the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: In the product information, locate the 'Seller Profile' section to view the seller's name, ratings, and reviews.
+expectedResult: The system should display the seller's profile information, including their name, ratings, and reviews, within the product information page.
+explanation: This test case verifies that the seller's profile information is correctly displayed in the product information page, which is a prerequisite for users before they decide to view more products from the seller by clicking on the Store Link. It is related to the scenario by providing context on the seller whose store link will be clicked.
+
+Test Case: Test Case 3
+testCaseName: Contacting Seller from Product Page
+objective: Verify that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: In the product information, locate and click on the 'Seller Contact' option to initiate a message to the seller.
+expectedResult: The system should open the platform's messaging system, allowing the user to send a message to the seller directly.
+explanation: This test case ensures that the Seller Contact function in the product information page works correctly, facilitating direct communication between the user and the seller. It complements the scenario by testing another aspect of interaction with the seller, aside from viewing their store.
+

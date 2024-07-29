@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify successful display of the first page of books without filters
+objective: Verify that the application successfully displays the first page of books without applying any date filters
+testSteps:
+  - Step 1: Navigate to the application's main interface.
+  - Step 2: Select the item 'Books' from the available options.
+  - Step 3: Observe the list of books displayed on the screen.
+expectedResult: The application should display the first page containing up to 10 items from the list of books. Each item should display the book's id, title, author, genre, and publication date.
+explanation: This test case ensures that the basic functionality of displaying the first page of books works as intended without any filters applied.
+
+Test Case: Test Case 2
+testCaseName: Verify successful display of the first page of books with date filters
+objective: Verify that the application successfully displays the first page of books filtered by a user-provided date range
+testSteps:
+  - Step 1: Navigate to the application's main interface.
+  - Step 2: Select the item 'Books' from the available options.
+  - Step 3: Specify a start date and an end date in the date range input forms above the list of books.
+  - Step 4: Hit the refresh button located to the right from the date inputs.
+  - Step 5: Observe the list of books displayed on the screen.
+expectedResult: The application should display the first page containing up to 10 items from the list of books that fall within the specified publication date range. Each item should display the book's id, title, author, genre, and publication date.
+explanation: This test case verifies that the application can filter the list of books based on the user-provided publication date range and display the filtered results correctly on the first page.
+

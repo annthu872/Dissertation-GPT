@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation to Books before data submission during genre edit
+objective: Ensure that navigating to 'Books' before submitting updated genre data does not save the changes
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new data for the genre but do not press the 'Submit' button.
+  - Step 4: Select the menu item 'Books' to navigate away from the genre edit page.
+expectedResult: The application navigates to the 'Books' page without updating the genre in the database, and the changes made to the genre data are not saved.
+explanation: This test case verifies that if a user navigates away to the 'Books' page before submitting the updated genre data, the changes are not saved. It ensures the application's data integrity by preventing unsaved or partial data submission due to navigation actions.
+
+Test Case: Test Case 2
+testCaseName: Verify cancel operation retains original genre data
+objective: Ensure that pressing the 'Cancel' button while editing a genre's data retains the original data without saving the changes
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, start entering new data for the genre.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application returns to the genre list/details page without updating the genre in the database, and the original genre data is retained.
+explanation: This test case ensures that the 'Cancel' operation works as intended by not saving any changes made to the genre data and retaining the original data. It tests the functionality of the 'Cancel' button in the genre edit form.
+

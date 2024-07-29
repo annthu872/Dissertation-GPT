@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify Continuous Learning Streak Display
+objective: Verify that the system correctly displays the number of continuous learning days without a break in the streak
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home page, the learner selects 'History'.
+  - Step 3: On the History page, the learner selects 'Day History'.
+expectedResult: The system should redirect the learner to a page that shows the number of days the learner has learned continuously. If the learner has not broken their learning streak, this number should accurately reflect the length of the streak.
+explanation: This test case is designed to verify that the system accurately tracks and displays the number of continuous learning days as specified in the use case. It ensures that the functionality for displaying a learner's learning streak works as intended and resets correctly if the streak is broken.
+

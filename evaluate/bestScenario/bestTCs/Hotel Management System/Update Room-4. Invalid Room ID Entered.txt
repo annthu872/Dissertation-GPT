@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Invalid Room ID Error Handling
+objective: Verify that the system correctly handles the scenario where an employee attempts to update a room with an invalid ID
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: In the room panel menu, attempt to search or select a room to update using an invalid ID that does not exist in the database.
+expectedResult: The system should display a NOT FOUND message indicating that the room ID entered does not exist.
+reflect: yes
+explanation: This test case directly addresses the test scenario of an invalid room ID being entered by attempting to update a room with a non-existent ID. It checks the system's response to ensure it correctly identifies and notifies the user that the room ID is invalid, which is the exact purpose of the test scenario.
+

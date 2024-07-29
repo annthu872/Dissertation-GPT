@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify Exit and Choose to Stay During Review
+objective: Ensure that when learners press 'Exit' during a review and choose to stay, they can continue with the review without losing progress.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page to start the review.
+  - Step 3: Proceed to answer questions until reaching any question (not the last one in the review list).
+  - Step 4: Press the 'Exit' button during the review.
+  - Step 5: On the pop-up, select the 'Stay' button.
+expectedResult: The system should return the learner to the same question they were attempting to exit from, allowing them to continue the review without any loss of progress.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by testing the functionality of the 'Exit' button during a review session and ensuring that the learner can continue their review without losing progress if they choose to stay.
+

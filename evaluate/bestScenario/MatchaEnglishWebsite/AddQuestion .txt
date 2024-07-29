@@ -1,0 +1,12 @@
+Scenario Sentence field skipped during question creation
+Scenario Correct answer field skipped
+Scenario Other option 1 field skipped
+Scenario Other option 2 field skipped
+Scenario Other option 3 field skipped
+Scenario Admin Decides to Cancel but Then Chooses to Stay and Continue Editing
+Scenario Admin enters a sentence exceeding 250 characters
+Scenario Admin enters a sentence with special characters
+Scenario Admin Leaves Without Saving by Using Browser Back Button
+Scenario Admin Cancels Question Creation and Confirms Cancellation
+Scenario Sentence Successfully Created
+Scenario Admin navigates to Lesson Management page from Homepage

@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Register by Email with Valid Data
+objective: Verify that a learner can register using a valid email address and other valid credentials
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with a valid email address.
+  - Step 4: Fill in the password field with a valid password that is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Ensure the password is not the same as the email.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system should redirect the learner to the Home page, indicating successful registration.
+explanation: This test case ensures that learners can successfully register using their email address instead of a username, following the alternative flow 1 for registration by email.
+
+Test Case: Test Case 2
+testCaseName: Register by Email with Invalid Email Format
+objective: Verify that the system shows an error notification when a learner tries to register with an invalid email format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an invalid email address (wrong format).
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system should show a notification that the email is invalid.
+explanation: This test case checks the system's ability to validate the email format during registration, as described in exception flow 4.
+
+Test Case: Test Case 3
+testCaseName: Register by Email with Inexistent Email Address
+objective: Verify that the system shows an error notification when a learner tries to register with an email address that does not exist
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an inexist email address.
+  - Step 4: Fill in the password field with a valid password.
+  - Step 5: Press the 'Register' button.
+expectedResult: The system should show a notification that the email is invalid.
+explanation: This test case is designed to verify the system's response to an inexist email address during registration, aligning with the conditions outlined in exception flow 4.
+

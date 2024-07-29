@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting Home Menu
+objective: Verify that the edit operation is cancelled and no data is updated in the database when the Home menu item is selected
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the form fields for the author.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Home' menu item.
+expectedResult: The edit operation is cancelled, no data is updated in the database, and the user is redirected to the Home page.
+reflect: yes
+explanation: This test case directly addresses the test scenario of cancelling an operation by selecting the Home menu item. It specifically tests the cancellation of an edit operation for an author, ensuring that the operation is cancelled and no changes are made to the database, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Verify Data Integrity After Cancelling Edit Operation via Home Menu
+objective: Ensure that the author's data remains unchanged in the database after the edit operation is cancelled by selecting the Home menu
+testSteps:
+  - Step 1: Note down the current data of an author from the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you noted.
+  - Step 3: Modify the data in the form fields but do not submit.
+  - Step 4: Select the 'Home' menu item to cancel the edit operation.
+  - Step 5: Navigate back to the author list/details page and locate the same author.
+  - Step 6: Verify the author's data against the data noted in Step 1.
+expectedResult: The author's data in the database matches the data noted in Step 1, confirming that no changes were made.
+reflect: yes
+explanation: This test case complements the test scenario by focusing on the data integrity aspect after the cancellation of an edit operation via the Home menu. It ensures that the data remains unchanged, which is a critical part of verifying that the cancellation was successful and no unintended updates were made to the database. Thus, it reflects the given test scenario by testing the outcome of the cancellation process.
+

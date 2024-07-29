@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add a new shipping address with unselected city during checkout
+objective: Verify that the system prevents the user from adding a new shipping address if the city is not selected during the checkout process.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with the following details: Full name, phone number, leave the city dropdown menu unselected, select a district, select a ward, enter a location's address, and select an address type if desired.
+  - Step 6: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system should display a notification preventing the user from adding the new shipping address due to the unselected city and prompt the user to select a city.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to add a new shipping address without selecting a city, which is the core action the scenario aims to test. The expected result of the system preventing the action and prompting for a city selection confirms that this test case accurately reflects the given test scenario.
+

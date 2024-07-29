@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Update
+objective: Verify that the genre can be successfully updated with valid data and the updated genre list is displayed
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter valid data for the genre 'Name' and 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The genre should be updated in the database, and the list of genres with the updated record should be displayed.
+explanation: This test case ensures that when a user updates a genre with valid data, the update is reflected in the database and the user is shown the updated list of genres. It directly tests the main scenario of the 'Edit the genre' use case.
+
+Test Case: Test Case 2
+testCaseName: Genre Update with Incorrect Data
+objective: Verify that when incorrect data is entered during genre update, the user is shown error messages
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the genre 'Name' and/or 'Description'.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Error messages related to the incorrect data are displayed, and the genre is not updated in the database.
+explanation: This test case checks the system's ability to validate input data during the genre update process. It is important to ensure that incorrect data does not lead to erroneous updates.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Update Operation
+objective: Verify that the genre update operation can be canceled and no changes are made to the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no data is updated in the database, and the list of genre records is displayed.
+explanation: This test case verifies that users have the option to cancel an update operation, ensuring that accidental or unwanted updates can be prevented.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away from Genre Update Without Saving
+objective: Verify that navigating away from the genre update form without saving does not update the genre in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Without pressing 'Submit', select another menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The genre is not updated in the database, and the user is taken to the selected page without any changes being made.
+explanation: This test case ensures that if a user navigates away from the update form without submitting it, no changes are made to the genre. It tests the system's ability to handle unsaved changes properly.
+

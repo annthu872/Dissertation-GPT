@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Edit Author Operation by Selecting Authors Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the authors list when the 'Authors' menu item is selected during the edit operation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin entering or modifying the data in the author's form fields.
+  - Step 4: Instead of clicking the 'Submit' button, select the 'Authors' menu item.
+expectedResult: The author's data is not updated in the database, and the list of authors is displayed to the user.
+reflect: yes
+explanation: This test case directly addresses the test scenario by simulating a user's action to cancel the edit operation through the navigation menu, specifically by selecting the 'Authors' menu item. It checks both the cancellation of the operation and the redirection to the authors list, which are the core aspects of the given test scenario.
+

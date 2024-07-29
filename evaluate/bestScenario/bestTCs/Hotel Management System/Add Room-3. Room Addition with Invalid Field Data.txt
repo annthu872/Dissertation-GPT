@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Invalid Room Name
+objective: Verify that the system prevents adding a room when the room name field contains invalid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields, entering invalid data in the room name field (e.g., using special characters or numbers).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system displays a message indicating that the room name field contains invalid data and prevents the room from being added to the database.
+reflect: yes
+explanation: This test case directly addresses the test scenario of adding a room with invalid field data, specifically targeting the room name field. It checks for the system's response to invalid input, which is the core objective of the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Empty Required Field
+objective: Verify that the system prevents adding a room when a required field is left empty
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all but one of the required fields, leaving one field empty.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system displays a message indicating that a required field is empty and prevents the room from being added to the database.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it deals with the validation of required fields, which includes checking for empty fields. It is a specific instance of invalid field data, thus reflecting the scenario's focus on preventing room addition due to invalid input.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Invalid Capacity Data
+objective: Verify that the system prevents adding a room when the capacity field contains non-numeric or invalid numeric data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields, entering non-numeric or invalid numeric data in the capacity field (e.g., letters or negative numbers).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system displays a message indicating that the capacity field contains invalid data and prevents the room from being added to the database.
+reflect: yes
+explanation: This test case aligns with the test scenario's aim of identifying and preventing the addition of a room with invalid field data. By focusing on the capacity field, it explores another dimension of invalid data (numeric validation), which is within the scope of the scenario.
+

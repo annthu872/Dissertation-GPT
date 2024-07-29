@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Navigate away using menu before confirming deletion to 'Books'
+objective: Verify that navigating away to 'Books' from the deletion confirmation dialog cancels the deletion process and displays the 'Books' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Books' menu item.
+expectedResult: The deletion process is cancelled, and the 'Books' page is displayed with updated data.
+reflect: yes
+explanation: This test case directly reflects the test scenario by verifying that navigating away from the deletion confirmation dialog to a specific page ('Books') cancels the deletion process and shows the intended page, which is the core action described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate away using menu before confirming deletion to 'Genres'
+objective: Verify that navigating away to 'Genres' from the deletion confirmation dialog cancels the deletion process and displays the 'Genres' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Genres' menu item.
+expectedResult: The deletion process is cancelled, and the 'Genres' page is displayed with updated data.
+reflect: yes
+explanation: This test case aligns with the test scenario by demonstrating that the action of navigating away from the deletion confirmation dialog to another page ('Genres') effectively cancels the deletion process, which is the intended outcome described in the scenario.
+
+Test Case: Test Case 3
+testCaseName: Navigate away using menu before confirming deletion to 'Authors'
+objective: Verify that navigating away to 'Authors' from the deletion confirmation dialog cancels the deletion process and displays the 'Authors' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Authors' menu item.
+expectedResult: The deletion process is cancelled, and the 'Authors' page is displayed with updated data.
+reflect: yes
+explanation: This test case is a direct application of the test scenario, as it tests the specific action of navigating away from the deletion confirmation dialog to the 'Authors' page, ensuring the deletion is not processed, which is the exact behavior the scenario aims to verify.
+
+Test Case: Test Case 4
+testCaseName: Navigate away using menu before confirming deletion to 'Home'
+objective: Verify that navigating away to 'Home' from the deletion confirmation dialog cancels the deletion process and displays the 'Home' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'Home' menu item.
+expectedResult: The deletion process is cancelled, and the 'Home' page is displayed.
+reflect: yes
+explanation: This test case accurately reflects the test scenario by checking that the user's decision to navigate to the 'Home' page from the deletion confirmation dialog stops the deletion process, which is the precise behavior the scenario intends to confirm.
+
+Test Case: Test Case 5
+testCaseName: Navigate away using menu before confirming deletion to 'API'
+objective: Verify that navigating away to 'API' from the deletion confirmation dialog cancels the deletion process and displays the 'API' page.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: When the confirmation dialog appears, instead of clicking 'Confirm', select the 'API' menu item.
+expectedResult: The deletion process is cancelled, and the 'API' page is displayed with updated data.
+reflect: yes
+explanation: This test case is consistent with the test scenario's objective by ensuring that navigating away to the 'API' page during the deletion confirmation phase cancels the deletion, which is the specific outcome the scenario seeks to verify.
+

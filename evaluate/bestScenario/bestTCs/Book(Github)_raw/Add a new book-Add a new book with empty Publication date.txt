@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Add a new book with empty Publication date
+objective: Verify that the system allows adding a new book with the Publication date field left empty
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the Title, Author, Genre, and Description fields.
+  - Step 4: Leave the Publication date field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new book record is successfully added to the database without a Publication date, and the list of books with the newly added record is displayed.
+explanation: This test case is created to ensure that the system can handle the creation of a new book record with an optional Publication date field. It directly matches the scenario name by testing the specific case of adding a new book with the Publication date left empty.
+
+Test Case: Test Case 2
+testCaseName: Add a new book with all fields filled except Publication date
+objective: Verify that the system can add a new book record with all fields filled except for the Publication date
+testSteps:
+  - Step 1: Go to the book list page.
+  - Step 2: Click on 'Create new' to access the book creation form.
+  - Step 3: Fill in the Title, Author, Genre, and Description fields with valid information.
+  - Step 4: Ensure the Publication date field remains empty.
+  - Step 5: Click the 'Submit' button to attempt to add the new book.
+expectedResult: The system successfully adds the new book record without a Publication date, and displays the updated list of books including the new addition.
+explanation: This test case verifies the system's behavior when a user attempts to add a new book with every required field filled except for the Publication date. It is designed to test the system's flexibility in handling optional fields during the book creation process.
+

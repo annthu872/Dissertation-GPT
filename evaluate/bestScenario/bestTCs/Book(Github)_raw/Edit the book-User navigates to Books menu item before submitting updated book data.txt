@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Books Menu Before Submitting Updated Book Data
+objective: Verify that navigating to the Books menu before submitting updated book data cancels the update operation and displays the list of books.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing the 'Submit' button, navigate to the 'Books' menu item.
+expectedResult: The book update operation is canceled, and the list of book records is displayed without applying the changes.
+explanation: This test case ensures that if a user navigates away from the book update form by selecting the 'Books' menu item before submitting the changes, the update operation is canceled, and the user is shown the list of books without the changes being applied. It directly tests the navigation aspect mentioned in the scenario.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Home Before Submitting New Author Data
+objective: Verify that navigating to Home before submitting new author data does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Start entering the author's name and biography in the respective fields.
+  - Step 4: Before pressing the 'Submit' button, select the 'Home' menu item to navigate away from the page.
+expectedResult: The application does not save the entered author data and displays the Home page.
+explanation: This test case ensures that if a user navigates away to the Home page before submitting the new author data, the data is not saved. It directly matches the scenario name by testing the navigation to Home before data submission.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Add a new book with empty Publication date
+objective: Verify that the system allows adding a new book with the Publication date field left empty
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the Title, Author, Genre, and Description fields.
+  - Step 4: Leave the Publication date field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new book record is successfully added to the database without a Publication date, and the list of books with the newly added record is displayed.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's behavior when a book is added with an empty Publication date field. It follows the exact steps that would be taken to test the scenario, making it a perfect reflection.
+
+Test Case: Test Case 2
+testCaseName: Add a new book with all fields filled except Publication date
+objective: Verify that the system can add a new book record with all fields filled except for the Publication date
+testSteps:
+  - Step 1: Go to the book list page.
+  - Step 2: Click on 'Create new' to access the book creation form.
+  - Step 3: Fill in the Title, Author, Genre, and Description fields with valid information.
+  - Step 4: Ensure the Publication date field remains empty.
+  - Step 5: Click the 'Submit' button to attempt to add the new book.
+expectedResult: The system successfully adds the new book record without a Publication date, and displays the updated list of books including the new addition.
+reflect: yes
+explanation: Although the wording and some steps slightly differ from Test Case 1, this test case still accurately reflects the test scenario. It tests the system's ability to add a book without a Publication date, which is the core objective of the scenario. The minor differences in wording and step description do not change the fundamental aim of the test case, making it relevant and reflective of the scenario.
+

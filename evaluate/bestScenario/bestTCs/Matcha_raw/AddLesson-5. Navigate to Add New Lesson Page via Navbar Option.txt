@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Add New Lesson Page via Navbar and Add Lesson
+objective: Verify that the administrator can navigate to the 'Add New Lesson' page via the navbar and successfully add a new lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, select 'Add new Lesson'.
+  - Step 4: On the 'Add new Lesson' page, add a unique name for the lesson in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: After selecting 'Save', the system should redirect the administrator to the 'adding topic to new lesson' section, and the new lesson should appear in the lesson list.
+explanation: This test case ensures that the administrator can navigate to the 'Add New Lesson' page using the navbar option and add a new lesson successfully, which matches the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Add New Lesson Page via Navbar with Already Used Name
+objective: Verify that the system prompts the administrator to use a different name if the entered lesson name is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, select 'Add new Lesson'.
+  - Step 4: On the 'Add new Lesson' page, add a name that is already used for another lesson in the name field.
+  - Step 5: Add a description for the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating the new lesson.
+expectedResult: The system should show a notification that the name is already used, prompting the administrator to add another name in the name field.
+explanation: This test case checks the system's ability to handle duplicate lesson names by prompting for a unique name, aligning with the alternative flow 1 of the use case.
+
+Test Case: Test Case 3
+testCaseName: Direct Navigation to Add New Lesson Page via Navbar
+objective: Verify that the administrator can directly navigate to the 'Add New Lesson' page via the navbar without going through the lesson list.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: From the dropdown menu, directly select 'Add new Lesson'.
+expectedResult: The system should redirect the administrator directly to the 'Add new Lesson' page, bypassing the lesson list.
+explanation: This test case validates the alternative flow 2, where the administrator can directly navigate to the 'Add New Lesson' page via the navbar, ensuring the navigation meets the test scenario's requirements.
+

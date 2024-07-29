@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Filter Search Results by Most Related
+objective: Verify that the user can filter search results by the most related option and the system displays the results prioritized by exact name match, partial name match, and then match by description.
+testSteps:
+  - Step 1: Navigate to the search bar on the application.
+  - Step 2: Type a keyword in the search bar that matches with multiple products by name and description.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate and select the radio button for filtering results by 'most related'.
+expectedResult: The system should display the search results prioritized by exactly matching product names first, followed by partial name matches, and finally products that match by description.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the functionality of filtering search results based on relevance, which includes exact name matches, partial name matches, and description matches. It is a direct reflection of the test scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Filter Search Results by Most Related with Shop Name Keyword
+objective: Verify that when a keyword related to a shop name is entered, the system displays the shop's information at the top, followed by the shop's products and related products, when filtered by most related.
+testSteps:
+  - Step 1: Navigate to the search bar on the application.
+  - Step 2: Type a keyword in the search bar that is known to be related to a specific shop's name.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate and select the radio button for filtering results by 'most related'.
+expectedResult: The system should display the shop's information at the top of the search results, including shop name, number of items, ratings, and response rate, average response time, followed by the shop's product cards and related product cards.
+reflect: yes
+explanation: This test case expands on the test scenario by including the search for shop names, which is a relevant aspect of searching and filtering by 'most related'. It verifies that the system prioritizes shop information and products related to the shop when a shop name keyword is used, which is within the scope of the test scenario.
+
+Test Case: Test Case 3
+testCaseName: Filter Search Results by Most Related with Non-Matching Keyword
+objective: Verify that when a keyword does not match any shop or brand, the system still displays related product cards based on name and description matches when filtered by most related.
+testSteps:
+  - Step 1: Navigate to the search bar on the application.
+  - Step 2: Type a keyword in the search bar that does not match any shop or brand name.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the list of relevant search matches displayed.
+  - Step 5: Locate and select the radio button for filtering results by 'most related'.
+expectedResult: The system should display related product cards based on the keyword, prioritizing exactly matching product names first, followed by partial name matches, and then matches by description.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the system's ability to filter and prioritize search results even when the keyword does not match any shop or brand name. It ensures that the functionality of filtering by 'most related' works correctly across different types of search inputs, which is a core aspect of the test scenario.
+

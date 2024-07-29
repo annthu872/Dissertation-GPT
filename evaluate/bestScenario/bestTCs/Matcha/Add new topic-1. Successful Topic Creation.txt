@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Successful Topic Creation with Unique Name
+objective: Verify that the administrator can successfully add a new English learning topic with a unique name.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of 'Successful Topic Creation' by outlining steps to create a topic with a unique name and verifying the successful addition of the topic.
+

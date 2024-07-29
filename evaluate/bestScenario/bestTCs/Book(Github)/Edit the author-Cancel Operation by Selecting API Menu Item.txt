@@ -1,0 +1,12 @@
+Test Case: Test Case 2
+testCaseName: Cancel Editing Author by Selecting 'API' Menu Item
+objective: Verify that the author's data is not updated in the database and the user is redirected to the 'API' page when the 'API' menu item is selected during the author edit operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering or modifying the data for the author.
+  - Step 4: Select the 'API' menu item before submitting the form.
+expectedResult: The author's data is not updated in the database, and the user is redirected to the 'API' page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the cancel operation through the selection of an API menu item, which matches the scenario's requirement.
+

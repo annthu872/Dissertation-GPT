@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Successful Topic Creation with Unique Name
+objective: Verify that the administrator can successfully add a new English learning topic with a unique name.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+explanation: This test case verifies the basic flow of adding a new topic by the administrator with a unique name, ensuring the system behaves as expected when all inputs are valid.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Create Topic with Duplicate Name
+objective: Verify that the system prevents the creation of a new topic with a name that is already used.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field after the notification prompts.
+  - Step 7: Select 'Save' again to create the topic with the new name.
+expectedResult: The system should show a notification that the name is already used and prompt the administrator to add another name. After entering a new name, the topic should be successfully created.
+explanation: This test case follows the alternative flow where an attempt to create a topic with a duplicate name is made, ensuring the system correctly handles duplicate names by prompting for a unique name.
+
+Test Case: Test Case 3
+testCaseName: Cancel Topic Creation Process
+objective: Verify that the administrator can cancel the topic creation process at any time before saving.
+testSteps:
+  - Step 1: Ensure the administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Begin to enter details for the new topic but do not complete the process.
+  - Step 4: Select 'Cancel' to stop adding the new topic.
+expectedResult: The topic creation process should be cancelled, and no new topic should be added to the topic list.
+explanation: This test case verifies the exception flow where the administrator decides to cancel the topic creation process, ensuring the system allows cancellation at any stage before the final save.
+

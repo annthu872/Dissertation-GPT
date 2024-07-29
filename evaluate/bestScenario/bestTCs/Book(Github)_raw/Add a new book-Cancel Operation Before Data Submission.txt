@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Cancel New Book Creation Before Data Submission
+objective: Verify that the book creation process can be canceled before data submission and ensure no data is saved to the database.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book details in the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The application should not save the entered book data and should redirect the user to the list of book records.
+explanation: This test case ensures that when a user decides to cancel the operation of adding a new book before submitting the form, no data is saved, and the user is redirected back to the list of books. It directly matches the scenario of canceling the operation before data submission.
+
+Test Case: Test Case 2
+testCaseName: Cancel New Book Creation by Navigation Before Data Submission
+objective: Verify that navigating away from the book creation page before submitting the form cancels the creation process without saving any data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new book.
+  - Step 3: Start entering book details in the form (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Before pressing 'Submit', select a different menu item (e.g., 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application should not save the partially entered book data and should display the selected page without adding a new book record.
+explanation: This test case verifies that if a user navigates away from the book creation form before submitting it, the operation is canceled, and no data is saved. It tests the functionality of canceling the operation through navigation, as described in the cancel operation scenario.
+

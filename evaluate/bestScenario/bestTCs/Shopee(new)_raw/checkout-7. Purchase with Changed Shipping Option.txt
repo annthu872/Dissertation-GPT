@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Verify changing shipping option during checkout
+objective: Ensure the user can change the shipping option during the checkout process and the total cost is updated accordingly
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, locate the default shipping option (Standard Express).
+  - Step 4: Click on the shipping option change button.
+  - Step 5: From the list of available shipping options, select a new shipping option.
+  - Step 6: Review the updated total cost to reflect the change in shipping option.
+  - Step 7: Click on the "Place Order" button.
+expectedResult: The order is successfully placed with the new shipping option, and the user receives an order confirmation with the updated total cost.
+explanation: This test case verifies that users can change the shipping option during the checkout process, which is a part of the basic flow of the checkout use case. It ensures the system updates the total cost based on the new shipping option selected.
+
+Test Case: Test Case 2
+testCaseName: Verify checkout with a newly added shipping address and changed shipping option
+objective: Ensure the user can add a new shipping address, change the shipping option, and successfully complete the checkout process
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Click on the option to add a new address and fill in the required fields with valid information.
+  - Step 5: Click the 'Finish' button to add the new shipping address.
+  - Step 6: Change the shipping option by selecting a new one from the list of available shipping options.
+  - Step 7: Review the updated total cost to reflect the changes.
+  - Step 8: Click on the "Place Order" button.
+expectedResult: The order is successfully placed with the new shipping address and shipping option, and the user receives an order confirmation with the updated details.
+explanation: This test case combines the basic flow of changing the shipping option with the alternative flow of adding a new shipping address during checkout. It ensures the system can handle both actions and update the order details accordingly.
+

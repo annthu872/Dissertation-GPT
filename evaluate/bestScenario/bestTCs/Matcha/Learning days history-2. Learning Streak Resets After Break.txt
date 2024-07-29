@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Verify Learning Streak Resets After 1 Day Break
+objective: Verify that the learning streak resets to 1 after the learner fails to learn for 1 day.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Learner selects 'History' on the Home page.
+  - Step 3: After being redirected, learner selects 'Day History' on the History page.
+  - Step 4: Verify the current continuous learning days count.
+  - Step 5: Do not engage in learning activities for 1 day.
+  - Step 6: Repeat steps 1 to 3 to check the continuous learning days count after the break.
+expectedResult: After taking a 1-day break from learning activities, the continuous learning days count should reset to 1.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying that the learning streak resets after a learner takes a 1-day break from learning activities. It follows the exact flow required to test the scenario, from checking the initial streak count, taking a break, and then verifying the reset, which is the core functionality being tested.
+

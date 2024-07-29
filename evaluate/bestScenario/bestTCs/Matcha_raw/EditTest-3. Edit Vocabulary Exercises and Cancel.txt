@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Edit Vocabulary Exercises and Save Changes
+objective: Verify that the administrator can edit vocabulary exercises and save changes successfully.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: On the editing interface, make changes to the exercises as required.
+  - Step 5: Select 'Save' to apply the changes.
+expectedResult: The system saves all edited exercises, and the changes are reflected in the topic's vocabulary exercises.
+explanation: This test case ensures that administrators can edit and save changes to vocabulary exercises, which is a critical function for maintaining the relevance and accuracy of the exercises.
+
+Test Case: Test Case 2
+testCaseName: Edit Vocabulary Exercises and Cancel Changes
+objective: Verify that the administrator can cancel changes made to vocabulary exercises after editing.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: On the editing interface, make changes to the exercises as required.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with the message 'Save changes?', select 'Do not save'.
+expectedResult: The system discards the changes made to the exercises, and the vocabulary exercises remain unchanged.
+explanation: This test case verifies the functionality for administrators to cancel any unsaved changes made to vocabulary exercises, ensuring that accidental changes can be easily reverted.
+

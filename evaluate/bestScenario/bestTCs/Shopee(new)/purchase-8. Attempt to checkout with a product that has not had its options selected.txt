@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a product with unselected options from product detail page
+objective: Verify that the system prevents checkout if product options are not selected in the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Adjust the quantity of the product without selecting any of the available options.
+  - Step 3: Click the 'Buy Now' button.
+expectedResult: The 'Checkout' button should be disabled, and the user is not redirected to the checkout page. An error message or indication should be displayed prompting the user to select options.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to proceed to checkout from the product detail page without selecting the required product options. It verifies that the system correctly prevents the user from checking out, which is the core objective of the scenario.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a product with unselected options from shopping cart
+objective: Verify that the system prevents checkout if product options are not selected for items added to the shopping cart
+testSteps:
+  - Step 1: Add a product with multiple options to the shopping cart without selecting its options.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Select the added product by clicking on the checkbox before the item.
+  - Step 4: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled or an error message should be displayed to the user indicating that all product options must be selected before proceeding.
+reflect: yes
+explanation: This test case aligns with the test scenario by focusing on the checkout process from the shopping cart with a product that has unselected options. It verifies the system's behavior in preventing checkout under these conditions, which is exactly what the scenario aims to test.
+

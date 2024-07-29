@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Successful New Author Record Creation
+objective: Verify that a new author record can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author data entry form.
+  - Step 3: Enter valid data into the form fields including the author's name and biography.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new author record is successfully added to the database, and the list of authors with the newly added record is displayed.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, 'Successful Author Record Creation,' by outlining steps to successfully create and verify the addition of a new author record with valid data.
+

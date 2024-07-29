@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Items from Multiple Shops
+objective: Verify that the user can successfully checkout items from multiple shops, and the system correctly separates products from different shops into different orders.
+testSteps:
+  - Step 1: Navigate to the shopping cart page.
+  - Step 2: Ensure there are items from at least two different shops added to the shopping cart.
+  - Step 3: Select items from multiple shops by clicking on the checkbox before each item.
+  - Step 4: Verify the system displays the summary costs.
+  - Step 5: Click the 'Checkout' button.
+  - Step 6: Observe the redirection to the page that shows new orders.
+expectedResult: The user is redirected to a page that displays multiple new orders, with products from different shops separated into different orders. Products from the same shop should be in one order.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's ability to handle checkout processes involving items from multiple shops and ensuring they are separated into different orders accordingly.
+

@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Create New Book Page via Navbar
+objective: Verify that the user can navigate to the 'Create new' book page using the navbar from the book list page.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Locate the 'Create new' button on the navbar.
+  - Step 3: Click the 'Create new' button.
+expectedResult: The application displays the form to enter book data.
+explanation: This test case ensures that the navigation to the 'Create new' book page works as expected when using the navbar. It is directly related to the test scenario 'Navigation to Books Before Submission' by testing the navigation aspect.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Create New Book Page and Cancel
+objective: Verify that the user can navigate to the 'Create new' book page and return to the book list page by pressing the 'Cancel' button.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button on the navbar to navigate to the create new book page.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: Data is not saved in the database, and the application navigates back to the list of book records.
+explanation: This test case verifies the functionality of the 'Cancel' button on the 'Create new' book page, ensuring that it navigates back to the book list page without saving any data. It relates to the scenario by testing a specific navigation path that could occur before submission.
+
+Test Case: Test Case 3
+testCaseName: Navigate to Create New Book Page and Use Menu Navigation
+objective: Verify that navigating away from the 'Create new' book page using the menu items does not save data.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button on the navbar to navigate to the create new book page.
+  - Step 3: Start entering book data into the form fields.
+  - Step 4: Select a menu item (e.g., 'Genres') without submitting the book data.
+expectedResult: Data is not saved in the database, and the application navigates to the selected menu item's page.
+explanation: This test case checks the application's behavior when a user navigates away from the 'Create new' book page using the menu, ensuring that unsaved data is not stored. It is relevant to the scenario by examining a navigation path that interrupts the submission process.
+

@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display
+objective: Verify that all elements of product information are correctly displayed including title, description, images, videos, specifications, price, stock, delivery options, seller profile, and contact option.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Verify that a detailed product description is provided.
+  - Step 5: Verify that high-quality images of the product are showcased from multiple angles.
+  - Step 6: Verify that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Verify that the current price of the product is displayed along with any discounts or special pricing.
+  - Step 9: Verify that real-time stock availability is shown.
+  - Step 10: Verify that available shipping methods and estimated delivery times are displayed.
+  - Step 11: Verify that the seller's profile including their name, ratings, and reviews is displayed.
+  - Step 12: Verify that an option to contact the seller directly through the platform's messaging system is provided.
+  - Step 13: Verify that a link to the seller's store page is available.
+  - Step 14: Verify that the average rating based on customer reviews is displayed.
+  - Step 15: Verify that 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+  - Step 16: Verify that a list of related product cards is displayed.
+expectedResult: All elements of product information are correctly displayed as specified.
+explanation: This test case ensures that the basic flow of displaying product information is functioning as intended, covering all aspects of the product details that should be visible to the user.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Contact Functionality
+objective: Verify that users can initiate contact with the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view the product's information.
+  - Step 3: Locate and click on the 'Contact Seller' option.
+  - Step 4: Verify that the platform's messaging system opens a new message window to the seller.
+expectedResult: The platform's messaging system should allow the user to initiate contact with the seller directly from the product information page.
+explanation: This test case verifies the functionality of the seller contact option, ensuring that users can easily reach out to sellers for inquiries directly from the product information display.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: Verify that users can navigate to the seller's store page on the platform by clicking the Store Link in the product information.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view the product's information.
+  - Step 3: Locate and click on the 'Store Link' to navigate to the seller's store page.
+  - Step 4: Verify that the seller's store page is displayed with other products from the same seller.
+expectedResult: The user is successfully navigated to the seller's store page on the platform, displaying other products from the same seller.
+explanation: This test case ensures that the Store Link in the product information page functions correctly, allowing users to explore more products from the same seller.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Purchase with Adding New Shipping Address
+objective: Verify that the user can add a new shipping address during the checkout process and successfully place an order with it.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by selecting items to buy and proceeding to checkout.
+  - Step 3: On the order summary page, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with valid details: Full name, phone number in the format (+84) xxx xxx xxx, select city, district, ward from the dropdown menus, enter a valid location's address, and optionally select an address type.
+  - Step 6: Click the 'Finish' button to add the new shipping address.
+  - Step 7: Continue with the checkout process by selecting a payment method.
+  - Step 8: Optionally apply a valid voucher code.
+  - Step 9: Review the updated total cost and order details.
+  - Step 10: Click on the 'Place Order' button.
+  - Step 11: Verify the order confirmation and details are displayed.
+expectedResult: The system successfully adds the new shipping address, updates the order details accordingly, and the user receives an order confirmation with the new shipping address included.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Purchase with New Shipping Address' by detailing the steps involved in adding a new shipping address during the checkout process and verifying the successful placement of an order with that address.
+
+Test Case: Test Case 2
+testCaseName: Purchase with New Shipping Address Validation Error
+objective: Verify that the system prevents the user from adding a new shipping address with invalid details and displays appropriate error messages.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature by selecting items to buy and proceeding to checkout.
+  - Step 3: On the order summary page, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with invalid details (e.g., incorrect phone number format, incomplete address, etc.).
+  - Step 6: Click the 'Finish' button to attempt adding the new shipping address.
+  - Step 7: Observe the error messages displayed by the system.
+expectedResult: The system displays error messages indicating the specific validation errors (e.g., incorrect phone number format, incomplete address) and prevents the user from adding the new shipping address until the errors are corrected.
+reflect: yes
+explanation: Although this test case focuses on validation errors when adding a new shipping address, it still reflects the given test scenario 'Purchase with New Shipping Address' by testing a critical part of the process. It ensures that the system correctly handles invalid input, which is an essential aspect of adding a new shipping address during the purchase process.
+

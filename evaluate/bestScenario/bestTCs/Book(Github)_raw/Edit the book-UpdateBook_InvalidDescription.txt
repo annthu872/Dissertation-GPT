@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Description
+objective: Verify that the system displays an incorrect data message when attempting to update a book with an invalid description.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Enter an invalid value in the 'Description' field (e.g., a string that exceeds the maximum length limit or includes disallowed characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description data is incorrect.
+explanation: This test case ensures that the system properly validates the 'Description' field of a book and provides feedback when the input does not meet the expected criteria. It directly relates to the test scenario 'UpdateBook_InvalidDescription' by focusing on the validation of the 'Description' field during the book update process.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Empty Description
+objective: Verify that the system prevents updating a book when the description field is left empty.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Leave the 'Description' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description field cannot be left empty.
+explanation: This test case checks the system's handling of empty inputs in critical fields during the book update process. It is relevant to the test scenario 'UpdateBook_InvalidDescription' by testing the system's response to an empty 'Description' field, ensuring that books cannot be updated with incomplete information.
+

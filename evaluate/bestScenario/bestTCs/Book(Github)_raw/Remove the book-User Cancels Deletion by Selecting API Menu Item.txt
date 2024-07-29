@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Cancel Deletion and Select API Menu Item
+objective: Verify that selecting the 'API' menu item after cancelling a deletion operation does not delete the book and opens the API form with updated data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'API' menu item from the navigation menu.
+expectedResult: The book is not deleted from the database, and the API form is displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a book and then selects the 'API' menu item, the book remains in the database, and the user is directed to the API form with updated data. It directly tests the cancel operation scenario and the specific action of selecting the 'API' menu item as described in the test scenario.
+
+Test Case: Test Case 2
+testCaseName: Cancel Deletion and Select Books Menu Item
+objective: Verify that selecting the 'Books' menu item after cancelling a deletion operation does not delete the book and opens the books list with updated data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Books' menu item from the navigation menu.
+expectedResult: The book is not deleted from the database, and the books list is displayed with updated data.
+explanation: This test case verifies that after cancelling a deletion operation, selecting the 'Books' menu item does not result in the book being deleted. Instead, the user is taken to the books list where the data is updated to reflect the cancellation of the deletion. It aligns with the cancel operation scenario and the action of selecting the 'Books' menu item.
+
+Test Case: Test Case 3
+testCaseName: Cancel Deletion and Select Genres Menu Item
+objective: Verify that selecting the 'Genres' menu item after cancelling a deletion operation does not delete the book and opens the genres list with updated data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Genres' menu item from the navigation menu.
+expectedResult: The book is not deleted from the database, and the genres list is displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a book and then selects the 'Genres' menu item, the book remains in the database, and the user is directed to the genres list with updated data. It tests the cancel operation scenario and the specific action of selecting the 'Genres' menu item.
+
+Test Case: Test Case 4
+testCaseName: Cancel Deletion and Select Authors Menu Item
+objective: Verify that selecting the 'Authors' menu item after cancelling a deletion operation does not delete the book and opens the authors list with updated data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Authors' menu item from the navigation menu.
+expectedResult: The book is not deleted from the database, and the authors list is displayed with updated data.
+explanation: This test case verifies that after cancelling a deletion operation, selecting the 'Authors' menu item does not result in the book being deleted. Instead, the user is taken to the authors list where the data is updated to reflect the cancellation of the deletion. It aligns with the cancel operation scenario and the action of selecting the 'Authors' menu item.
+
+Test Case: Test Case 5
+testCaseName: Cancel Deletion and Select Home Menu Item
+objective: Verify that selecting the 'Home' menu item after cancelling a deletion operation does not delete the book and opens the home page with updated data
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Select the 'Home' menu item from the navigation menu.
+expectedResult: The book is not deleted from the database, and the home page is displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a book and then selects the 'Home' menu item, the book remains in the database, and the user is directed to the home page with updated data. It tests the cancel operation scenario and the specific action of selecting the 'Home' menu item.
+

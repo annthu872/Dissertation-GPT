@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking ID Submission for Checkout
+objective: Verify that a guest can successfully check out using a valid booking ID and the system updates the booking status as complete.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that has a valid room ID linked to it.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the booking ID, remove the linked room ID from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message displayed.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the successful submission and completion of a booking ID during checkout, which is the core action described in the test scenario.
+

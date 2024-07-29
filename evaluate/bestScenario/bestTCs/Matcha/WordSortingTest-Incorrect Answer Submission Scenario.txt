@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Submitting an incorrect answer in the word sorting test
+objective: Verify that the system correctly identifies and responds to an incorrect answer submission by displaying a red pop-up screen.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word sorting test.
+  - Step 3: The screen displays a question with letters of a vocabulary arranged randomly.
+  - Step 4: Arrange the letters in an incorrect order and press enter.
+expectedResult: A red pop-up screen should appear indicating that the answer is wrong.
+reflect: yes
+explanation: This test case directly tests the 'Incorrect Answer Submission Scenario' by simulating a user action that leads to an incorrect answer submission and verifying the system's response, which aligns with the scenario's requirement for the system to identify and indicate incorrect answers.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add product with multiple options without selecting an option
+objective: Verify that the system prevents adding a product with multiple options to the cart without selecting an option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options.
+  - Step 3: Without selecting any of the available options, click the "Add to Cart" button.
+expectedResult: The system should display an error message indicating that an option must be selected before the product can be added to the cart. The product should not be added to the cart.
+explanation: This test case ensures that the system enforces the rule that a user cannot add a product with multiple options to their shopping cart without first selecting one of the available options. It directly addresses the exception flow where the user attempts to add a product without selecting an option.
+
+Test Case: Test Case 2
+testCaseName: Attempt to add a product with multiple options by selecting an option
+objective: Verify that the system allows adding a product with multiple options to the cart after selecting an option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options.
+  - Step 3: Select one of the available options.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system adds the product with the selected option to the cart and updates the cart icon to reflect the new number of items in the cart.
+explanation: This test case verifies that the system behaves as expected when a user selects an option for a product with multiple options before adding it to their cart. It follows the alternative flow where the user selects an option and then adds the product to the cart.
+
+Test Case: Test Case 3
+testCaseName: Add product with multiple options and adjust quantity beyond stock
+objective: Verify that the system prevents adding a product to the cart if the selected quantity exceeds the available stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options and limited stock.
+  - Step 3: Select one of the available options.
+  - Step 4: Attempt to increase the quantity beyond the available stock by clicking the plus button.
+  - Step 5: Click the "Add to Cart" button.
+expectedResult: The plus button should be disabled when the maximum stock level is reached, and a message 'You have reached the maximum of the stock.' should be displayed. The product should not be added to the cart if the quantity exceeds the available stock.
+explanation: This test case checks the system's handling of attempts to add a product to the cart with a quantity exceeding the available stock, specifically for products with multiple options. It addresses the exception flow related to stock limitations.
+

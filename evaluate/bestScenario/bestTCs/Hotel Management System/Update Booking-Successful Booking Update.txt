@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Successful Booking Update with New Services Added
+objective: Verify that an employee can successfully update booking details including adding new services and computing new payment.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated, including adding new services.
+  - Step 5: Compute the payment again due to the addition of new services.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the updated fields, update the booking in the database with the new details, and display a success message.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of a 'Successful Booking Update' by outlining steps that lead to a successful update of booking details, including the addition of new services and payment recalculation.
+

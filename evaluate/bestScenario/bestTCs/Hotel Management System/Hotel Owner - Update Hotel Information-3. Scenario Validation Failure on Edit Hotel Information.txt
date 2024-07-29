@@ -1,0 +1,13 @@
+Test Case: Test Case 2
+testCaseName: Edit Hotel Information with Invalid Data
+objective: Verify that the system shows an error message when the hotel owner tries to update hotel information with invalid data.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the 'Edit Hotel Information' button.
+  - Step 4: On the Edit Hotel Information page, update the fields with invalid data.
+  - Step 5: Attempt to submit the updated information.
+expectedResult: The system should validate the fields and show an error message without updating the hotel information in the database or redirecting to the dashboard.
+reflect: yes
+explanation: This test case directly reflects the given test scenario 'Scenario Validation Failure on Edit Hotel Information' by testing the system's behavior when invalid data is submitted, which is the core of the scenario.
+

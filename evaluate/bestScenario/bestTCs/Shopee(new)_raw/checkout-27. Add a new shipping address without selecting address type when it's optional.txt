@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Add a new shipping address without selecting address type when it's optional during checkout
+objective: Verify that the user can add a new shipping address without selecting an address type when it is marked as optional during the checkout process.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, click the button to change the shipping address.
+  - Step 4: Click on 'Add new address'.
+  - Step 5: Fill in the form with valid information for Full name, Phone number, City, District, Ward, and Location's address.
+  - Step 6: Leave the Address type option unselected, as it is optional.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system should successfully add the new shipping address without requiring the address type to be selected, and proceed with the checkout process.
+explanation: This test case ensures that users can add a new shipping address without the need to specify the address type when it is not mandatory, aligning with the scenario of adding a new shipping address without selecting address type when it's optional.
+

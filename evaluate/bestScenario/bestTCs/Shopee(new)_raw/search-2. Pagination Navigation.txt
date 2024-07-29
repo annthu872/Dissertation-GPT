@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Pagination Navigation on Search Results
+objective: Verify that the user can navigate through search results pages using the pagination bar.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that you know will return more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 5: Click on the right arrow button in the pagination bar to move to the next page of results.
+  - Step 6: Once on the new page, click on a specific page number in the pagination bar to navigate to that page.
+  - Step 7: Click on the left arrow button in the pagination bar to move back to the previous page of results.
+expectedResult: After each navigation action in the pagination bar, the search results page updates to display the relevant product cards for the selected page. The pagination bar reflects the current page correctly.
+explanation: This test case ensures that users can successfully navigate through multiple pages of search results using the pagination feature. It directly tests the functionality described in the basic flow of the use case, focusing on the pagination navigation aspect.
+
+Test Case: Test Case 2
+testCaseName: Pagination Navigation with No Search Results
+objective: Verify the pagination bar's behavior when no search results are found.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that you know will return no results.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system displays random product cards as per the exception flow, and the pagination bar should either not be displayed or be disabled since there are no additional pages of results.
+explanation: This test case checks the system's handling of the pagination feature when no search results match the user's query, ensuring that the system behaves as expected even in edge cases.
+

@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Create New Author Without Entering Bio
+objective: Verify that a new author can be added without entering the biography and the record is successfully added to the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter the author's name in the 'Name' field.
+  - Step 4: Leave the 'Bio' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new author record without the biography is successfully added to the database, and the list of authors with the newly added record is displayed.
+explanation: This test case ensures that the biography field is not mandatory for creating a new author record, aligning with the scenario's requirement to create a new author without a bio.
+
+Test Case: Test Case 2
+testCaseName: Create New Author With Bio and Then Without Bio
+objective: Verify that the system allows creating new author records first with entering the biography and then without entering the biography.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter the author's name in the 'Name' field for the first author.
+  - Step 4: Enter a biography in the 'Bio' field for the first author.
+  - Step 5: Press the 'Submit' button for the first author.
+  - Step 6: Repeat steps 2 to 5 for the second author, but leave the 'Bio' field empty for the second author.
+expectedResult: Two new author records are successfully added to the database, one with a biography and one without. The list of authors with these newly added records is displayed.
+explanation: This test case verifies that the system can handle both scenarios: adding an author with a biography and adding an author without a biography, ensuring flexibility in data entry.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Create New Author Without Name
+objective: Verify that the system prevents adding a new author without entering the name, displaying an error message.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter a biography in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the name field is required and the new author record is not added to the database.
+explanation: This test case ensures that the name field is mandatory for creating a new author record, contrasting with the bio field which is not mandatory as per the scenario's requirement.
+

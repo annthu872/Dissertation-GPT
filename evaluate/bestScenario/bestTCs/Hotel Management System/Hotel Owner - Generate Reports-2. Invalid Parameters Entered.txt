@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Invalid Date Parameters for Report Generation
+objective: Verify that the system shows an error message when the hotel owner enters invalid date parameters for generating a report.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view parameters for reports.
+  - Step 4: Enter invalid date parameters into the date period selection fields. For example, set the start date later than the end date.
+  - Step 5: Submit the request to generate a report.
+expectedResult: The system should display an error message indicating that the date parameters are invalid.
+reflect: yes
+explanation: This test case directly addresses the test scenario of 'Invalid Parameters Entered' by specifying a situation where invalid date parameters are entered for report generation. It clearly outlines the steps to reproduce the issue and verifies that the system responds appropriately to invalid input, which is the core of the given test scenario.
+
+Test Case: Test Case 2
+testCaseName: Invalid Parameters for Report Generation - Non-Date Fields
+objective: Verify that the system shows an error message when the hotel owner enters invalid parameters (other than dates) for generating a report.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view parameters for reports.
+  - Step 4: Enter valid date parameters but enter invalid data into other parameter fields (if applicable, such as selecting a non-existent hotel or room type).
+  - Step 5: Submit the request to generate a report.
+expectedResult: The system should display an error message indicating that the non-date parameters are invalid.
+reflect: yes
+explanation: Although this test case focuses on non-date parameters, it still falls under the umbrella of the test scenario 'Invalid Parameters Entered' by demonstrating the system's response to invalid inputs in fields other than dates. It complements the first test case by ensuring that the validation process is not solely focused on date parameters, thereby fully testing the scenario's requirement that any invalid parameter entry should trigger an error message.
+

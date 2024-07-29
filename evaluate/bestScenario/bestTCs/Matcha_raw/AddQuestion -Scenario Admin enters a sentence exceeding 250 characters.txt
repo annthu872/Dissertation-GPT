@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Admin enters a sentence exceeding 250 characters for a question
+objective: Verify that the system prevents saving a question when the sentence exceeds 250 characters
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a sentence that exceeds 250 characters and includes the symbol '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: System shows a notification that the sentence exceeds the maximum character limit and prevents saving the question.
+explanation: This test case ensures that the system enforces the rule that sentences in questions must not exceed 250 characters, as per the use case specification.
+

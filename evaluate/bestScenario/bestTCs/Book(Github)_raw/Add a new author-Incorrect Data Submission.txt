@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Name Data Submission for New Author
+objective: Verify that the system displays an incorrect data message when submitting a form with an incorrect name for a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter an incorrect name format in the 'Name' field (e.g., using numbers or special characters).
+  - Step 4: Fill in the 'Bio' field with valid author's biography.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed next to the 'Name' field indicating the error in the name format.
+explanation: This test case ensures that the system validates the 'Name' field correctly and informs the user about the incorrect data submission specifically for the name field.
+
+Test Case: Test Case 2
+testCaseName: Incorrect Bio Data Submission for New Author
+objective: Verify that the system displays an incorrect data message when submitting a form with an incorrect bio for a new author
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter incorrect data in the 'Bio' field (e.g., leaving it blank or using inappropriate language).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed next to the 'Bio' field indicating the error in the biography format.
+explanation: This test case checks if the system properly validates the 'Bio' field for incorrect data submission and provides feedback to the user.
+
+Test Case: Test Case 3
+testCaseName: Cancel Operation During Incorrect Data Submission for New Author
+objective: Verify that the data is not saved and the user is redirected to the list of authors upon pressing the 'Cancel' button during an incorrect data submission
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering new author data.
+  - Step 3: Enter incorrect data in both the 'Name' and 'Bio' fields.
+  - Step 4: Press the 'Cancel' button before pressing the 'Submit' button.
+expectedResult: The user is redirected to the list of authors without the new author being added, indicating that the data was not saved.
+explanation: This test case ensures that the cancel operation works correctly even when the data entered is incorrect, preventing any incorrect data from being accidentally saved.
+

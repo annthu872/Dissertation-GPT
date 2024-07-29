@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Attempt to checkout with a quantity higher than available stock from product detail page
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item with known stock quantity.
+  - Step 2: Adjust the product quantity to a number higher than the available stock using the plus button next to the quantity field.
+  - Step 3: Click the 'Checkout' button.
+expectedResult: The 'Checkout' button should be disabled, and the user cannot proceed to checkout due to selecting a quantity higher than the available stock.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to checkout with a quantity higher than the available stock from the product detail page, and it verifies that the system prevents such action as expected.
+
+Test Case: Test Case 2
+testCaseName: Attempt to checkout with a quantity higher than available stock from shopping cart
+objective: Verify that the system prevents checkout when the user attempts to purchase a quantity higher than the available stock from the shopping cart.
+testSteps:
+  - Step 1: Add an item to the shopping cart from the product detail page, ensuring the quantity is within the available stock.
+  - Step 2: Navigate to the shopping cart page.
+  - Step 3: Adjust the product quantity to a number higher than the available stock using the plus button next to the quantity field.
+  - Step 4: Select the item by clicking on the checkbox before the item.
+  - Step 5: Click the 'Checkout' button.
+expectedResult: The system should prevent the user from increasing the quantity beyond the available stock, or if the quantity is adjusted, the 'Checkout' button should be disabled, preventing the user from proceeding.
+reflect: yes
+explanation: This test case also directly reflects the test scenario by attempting to checkout with a quantity higher than available stock, but from the shopping cart perspective. It ensures that the system's stock control mechanisms work correctly in the shopping cart, aligning with the scenario's requirement to prevent checkout under these conditions.
+

@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful Author Update
+objective: Verify that the author's record is successfully updated with valid data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's record is updated in the database, and the list of authors with the updated record is displayed.
+explanation: This test case ensures that when valid data is entered and submitted, the author's record is successfully updated in the database, and the updated list of authors is displayed to the user.
+
+Test Case: Test Case 2
+testCaseName: Display Error on Incorrect Author Data Submission
+objective: Verify that an error message is displayed when incorrect data is entered for an author
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect data.
+explanation: This test case checks the system's ability to validate the data entered by the user and ensure that an error message is displayed if the data does not meet the required criteria.
+
+Test Case: Test Case 3
+testCaseName: Cancel Author Update Operation
+objective: Verify that the author update operation can be canceled without making changes to the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin to enter data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no data is updated in the database, and the list of author records is displayed.
+explanation: This test case ensures that users have the option to cancel the update operation, preventing any unintended changes to the author's record.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Without Saving Author Update
+objective: Verify that navigating away without saving does not update the author's record in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Begin to enter data into the form fields.
+  - Step 4: Without pressing 'Submit', select a menu item like 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The author's record is not updated in the database, and the user is taken to the selected page.
+explanation: This test case verifies that if a user navigates away from the update form without submitting it, no changes are made to the author's record in the database.
+

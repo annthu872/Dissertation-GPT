@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the system prevents updating an author with an empty name field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Enter or modify data in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the name field cannot be empty and the author record should not be updated in the database.
+reflect: yes
+explanation: This test case directly tests the scenario 'UpdateAuthor_WithEmptyName' by attempting to update an author with an empty name field and expecting an error message. It accurately reflects the scenario by focusing on the validation of the name field during an update operation.
+

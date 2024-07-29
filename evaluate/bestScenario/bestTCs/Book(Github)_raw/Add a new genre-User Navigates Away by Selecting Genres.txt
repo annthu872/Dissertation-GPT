@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu Selection During Genre Creation
+objective: Verify that navigating away using menu selection during the genre creation process discards the data and does not save it to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Without pressing the 'Submit' button, select the menu item 'Books'.
+expectedResult: The application does not save the entered genre data to the database and displays the Books page with updated data.
+explanation: This test case ensures that when a user navigates away from the genre creation page by selecting a different menu item, the entered data is not saved, adhering to the cancel operation scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away by Cancel Button During Genre Creation
+objective: Verify that pressing the 'Cancel' button during the genre creation process discards the data and does not save it to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to initiate the process of adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields of the genre creation form.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application does not save the entered genre data to the database and displays the list of genre records.
+explanation: This test case verifies that the cancel operation works as intended by discarding the entered data when the 'Cancel' button is pressed, preventing the data from being saved to the database.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away Using 'Genres' Menu Selection During Genre Creation
+objective: Verify that navigating away to the 'Genres' page using menu selection during the genre creation process discards the data and does not save it to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to begin adding a new genre.
+  - Step 3: Input data into the 'Name' and 'Description' fields on the genre creation form.
+  - Step 4: Without submitting the form, select the 'Genres' menu item.
+expectedResult: The application does not save the entered genre data to the database and displays the Genres page with the list of genres, including any previously added records but excluding the currently entered data.
+explanation: This test case ensures that if a user decides to navigate away to the 'Genres' page during the genre creation process, the action does not result in the data being saved, aligning with the cancel operation scenario.
+

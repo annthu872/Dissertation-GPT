@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Genres Page via Navbar
+objective: Verify that the user can navigate to the Genres page using the navbar and see the list of genres
+testSteps:
+  - Step 1: Open the application.
+  - Step 2: Click on the 'Genres' item in the navbar.
+  - Step 3: Observe the page content.
+expectedResult: The user is redirected to the Genres page, where a list of genres is displayed with columns for id, Name, and Description. Up to 10 items are shown on the page.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the ability to navigate to the Genres page through the navbar and confirming the presence of the genres list, which is the core functionality described in the scenario.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality on Genres Page
+objective: Verify that the pagination controls work for navigating through different pages of genres
+testSteps:
+  - Step 1: Navigate to the Genres page by clicking on the 'Genres' item in the navbar.
+  - Step 2: If more than 10 genres are available, click on the 'Next' button below the list of genres.
+  - Step 3: Alternatively, click on a page number to navigate to that specific page of genres.
+  - Step 4: Observe the list of genres on the page.
+expectedResult: The user is able to navigate through different pages of genres using the 'Next' button or by selecting a specific page number. Each page shows up to 10 items from the list of genres.
+reflect: yes
+explanation: Although this test case focuses on the pagination functionality within the Genres page, it still reflects the given test scenario as it tests a specific aspect of navigating within the Genres page. It ensures that users can not only reach but also effectively explore the Genres page, which is a critical part of the scenario's broader objective.
+

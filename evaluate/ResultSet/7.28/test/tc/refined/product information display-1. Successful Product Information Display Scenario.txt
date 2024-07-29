@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the homepage.
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on any product card displayed on the homepage.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+reflect: yes
+explanation: This test case directly reflects the given test scenario by verifying the successful display of product information when accessed from the homepage, covering all specified details.
+

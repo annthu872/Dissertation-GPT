@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Confirm Deletion of an Author
+objective: Verify that the user can delete an author and the record is removed from the database upon confirmation
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Confirm' button.
+expectedResult: The author's record is successfully deleted from the database, and the user is redirected to the updated list of authors without the deleted record.
+explanation: This test case ensures that the deletion process works as intended when the user confirms the deletion. It directly tests the main scenario of the 'Remove the author' use case.
+
+Test Case: Test Case 2
+testCaseName: Cancel Deletion of an Author
+objective: Verify that the user can cancel the deletion of an author and the record remains in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+expectedResult: The deletion is canceled, the author's record remains in the database, and the user is redirected to the updated list of authors with the record still present.
+explanation: This test case verifies the cancel operation scenario, ensuring that the user can cancel a deletion and the record remains unchanged.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away During Deletion Cancellation
+objective: Verify that navigating away from the deletion confirmation dialog cancels the deletion and the author's record remains in the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm' or 'Cancel', select a menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The deletion process is canceled, the author's record remains in the database, and the user is redirected to the selected page with updated data.
+explanation: This test case checks the behavior when a user navigates away during the deletion process, ensuring the record is not deleted and the user can access other parts of the application without affecting the data.
+

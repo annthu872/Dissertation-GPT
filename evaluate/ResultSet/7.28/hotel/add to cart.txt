@@ -1,0 +1,7 @@
+1. Successful Product Addition to Cart Scenario
+2. Product with Multiple Options
+3. Adjust Quantity Before Adding to Cart
+4. Selecting a Product with Multiple Options Without Choosing an Option
+5. Adding a Product to Cart with Quantity Exceeding Stock
+6. Attempting to Decrease Quantity Below One
+7. Adding a Product with No Stock to Cart

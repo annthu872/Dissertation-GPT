@@ -1,0 +1,4 @@
+1. Scenario: Test with Incorrect Booking ID
+2. Scenario: Test with Booking ID Having No Room Linked
+3. Scenario: Successful Booking ID Submission and Completion
+4. Scenario: Booking ID Validation Failure

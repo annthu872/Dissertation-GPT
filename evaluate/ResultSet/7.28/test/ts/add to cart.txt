@@ -1,0 +1,7 @@
+1. Successful Product Addition to Cart Scenario
+2. User chooses a product option before adding to cart
+3. User adjusts quantity before adding product to cart
+4. Attempt to add a product with multiple options without selecting an option
+5. Attempt to add a product with a quantity greater than the current stock
+6. Attempt to add a product that is out of stock
+7. Attempt to decrease the quantity of a product to below one

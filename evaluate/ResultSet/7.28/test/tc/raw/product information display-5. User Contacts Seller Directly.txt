@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify User Can Contact Seller Directly From Product Information Page
+objective: Ensure that users can contact the seller directly from the product information page via the platform's messaging system.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section on the product information page.
+  - Step 4: Locate and click on the 'Seller Contact' option to initiate direct contact with the seller.
+expectedResult: The system should navigate the user to the platform's messaging system where they can compose and send a message to the seller directly.
+explanation: This test case ensures that the functionality for users to contact sellers directly, as specified in the use case 'Product Information Display', works as intended. It directly relates to the test scenario 'User Contacts Seller Directly' by testing the specific feature that allows this interaction.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Profile Information Display on Product Page
+objective: Ensure that the seller's profile, including their name, ratings, and reviews, is displayed correctly on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section on the product information page.
+expectedResult: The system should display the seller's profile information, including their name, ratings, and reviews, accurately on the product information page.
+explanation: This test case verifies that the seller's profile information is displayed as part of the product information, which is crucial for users who may want to contact the seller directly. It supports the test scenario 'User Contacts Seller Directly' by ensuring that users have access to the seller's information needed to initiate contact.
+

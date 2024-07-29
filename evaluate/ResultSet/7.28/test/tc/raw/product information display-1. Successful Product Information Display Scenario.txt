@@ -1,0 +1,50 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display from Homepage
+objective: Verify that all product information is correctly displayed when a user clicks on a product card from the homepage.
+testSteps:
+  - Step 1: Navigate to the homepage.
+  - Step 2: Click on any product card displayed on the homepage.
+  - Step 3: Observe the product information displayed.
+expectedResult: The product information page should display all the details including Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case ensures that the basic flow of viewing product information from the homepage works as expected.
+
+Test Case: Test Case 2
+testCaseName: Verify Product Information Display from Search Page
+objective: Ensure that the product information is accurately displayed when accessed from the search page.
+testSteps:
+  - Step 1: Navigate to the search page and perform a search for any product.
+  - Step 2: From the search results, click on any product card.
+  - Step 3: Review the displayed product information.
+expectedResult: The product's information page should accurately display Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case verifies that users can view complete product information from the search page, ensuring the basic flow is functional.
+
+Test Case: Test Case 3
+testCaseName: Verify Product Information Display from Cart Page
+objective: To confirm that product information is correctly displayed when accessed from the cart page.
+testSteps:
+  - Step 1: Add any product to the cart and navigate to the cart page.
+  - Step 2: Click on the product card in the cart.
+  - Step 3: Examine the displayed product information.
+expectedResult: The product information page should correctly display all details such as Title, Description, Images, Videos, Specifications, Price Information, Stock Availability, Delivery Options, Seller Profile, Seller Contact, Store Link, Customer Reviews and Ratings, and Related Products.
+explanation: This test case ensures that users can view detailed product information from the cart page, adhering to the basic flow.
+
+Test Case: Test Case 4
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps from any of the above test cases to navigate to a product's information page.
+  - Step 2: Locate and click on the option to expand the 'Customer Reviews and Ratings' section.
+  - Step 3: Observe the expanded section for more reviews.
+expectedResult: Upon clicking the expand option, more customer reviews and ratings should be displayed, beyond the initial 3 detailed reviews.
+explanation: This test case checks the functionality of the alternative flow where users can view more reviews, ensuring an interactive and informative product page.
+
+Test Case: Test Case 5
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: To verify that users can navigate to the seller's store page by clicking on the Store Link on the product information page.
+testSteps:
+  - Step 1: Navigate to a product information page by following steps from any of the above test cases.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page.
+  - Step 3: Observe the page to which the user is redirected.
+expectedResult: The user should be redirected to the seller's store page on Shopee, where other products from the same seller are displayed.
+explanation: This test case ensures that the Store Link on the product information page correctly redirects users to the seller's store page, enhancing the shopping experience.
+

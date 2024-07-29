@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Book Deletion
+objective: Ensure that a user can successfully delete a book and the book record is removed from the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Locate the book you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book record should be successfully deleted from the database, and the book list should no longer display the deleted book.
+explanation: This test case verifies that the main scenario for book deletion works as expected, allowing users to remove unwanted book records.
+
+Test Case: Test Case 2
+testCaseName: Verify Book Deletion Cancellation
+objective: Ensure that a user can cancel the deletion of a book and the book record remains in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Locate the book you wish to delete but decide to keep and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The book record should remain in the database, and the user should be redirected back to the book list with the book still listed.
+explanation: This test case ensures that users have the option to cancel a deletion if they change their mind, keeping the book record intact.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation After Cancelling Book Deletion
+objective: To confirm that after cancelling a book deletion, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting the book.
+testSteps:
+  - Step 1: Navigate to the book list/details page and click the 'Delete' button next to a book.
+  - Step 2: On the confirmation dialog, click the 'Cancel' button.
+  - Step 3: Navigate to any of the following sections: 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should display the corresponding section with updated data, and the book previously selected for deletion should still be present in the database and visible if applicable.
+explanation: This test case checks that the application behaves correctly after a user cancels a book deletion, ensuring that no data is lost and the user can seamlessly navigate to other sections.
+

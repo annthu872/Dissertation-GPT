@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify decreasing product quantity to below one is prevented
+objective: Ensure that the system prevents the quantity of a product in the cart from being decreased below one
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Click the 'Add to Cart' button to add the item to the shopping cart.
+  - Step 4: Access the shopping cart.
+  - Step 5: Attempt to decrease the product quantity by clicking the minus button next to the quantity of the product in the cart.
+expectedResult: The minus button is disabled, and the quantity remains at one, ensuring the product quantity cannot be decreased below one.
+reflect: yes
+explanation: This test case directly addresses the test scenario by attempting to decrease the quantity of a product in the shopping cart to below one. The steps are designed to replicate a user's journey from logging in, adding a product to the cart, and then attempting to decrease its quantity. The expected result clearly states that the system should prevent the action, which is the core objective of the test scenario. Therefore, it accurately reflects the given test scenario.
+

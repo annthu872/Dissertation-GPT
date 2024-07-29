@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Successful Book Deletion
+objective: Ensure that a user can successfully delete a book and the book record is removed from the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Locate the book you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The book record should be successfully deleted from the database, and the book list should no longer display the deleted book.
+reflect: yes
+explanation: This test case directly reflects the given test scenario, which is the successful deletion of a book. It outlines the steps to delete a book and verifies that the book is removed from the database, aligning perfectly with the scenario's objective.
+

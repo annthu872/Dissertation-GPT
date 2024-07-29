@@ -1,0 +1,59 @@
+Test Case: Test Case 1
+testCaseName: Successful Product Addition to Cart Without Options
+objective: Verify that a user can successfully add a product without options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that does not have multiple options.
+  - Step 3: Click the 'Add to Cart' button.
+  - Step 4: Observe the confirmation message that the item has been added.
+  - Step 5: Check the cart icon to see if it reflects the updated number of items.
+expectedResult: The product is added to the cart successfully, a confirmation message is displayed, and the cart icon shows the correct number of items.
+explanation: This test case verifies the basic flow of adding a product without options to the shopping cart, ensuring the system behaves as expected under normal conditions.
+
+Test Case: Test Case 2
+testCaseName: Successful Product Addition to Cart With Options
+objective: Verify that a user can successfully add a product with options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that has multiple options.
+  - Step 3: Select one available option for the product.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the confirmation message that the item has been added.
+  - Step 6: Check the cart icon to see if it reflects the updated number of items.
+expectedResult: The product with the selected option is added to the cart successfully, a confirmation message is displayed, and the cart icon shows the correct number of items.
+explanation: This test case verifies the alternative flow of adding a product with options to the shopping cart, ensuring the system behaves as expected when options are involved.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that a user can adjust the quantity of a product before adding it to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product using the minus or plus button.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the confirmation message that the item has been added.
+  - Step 6: Check the cart icon to see if it reflects the updated number of items and the correct quantity.
+expectedResult: The product is added to the cart with the adjusted quantity successfully, a confirmation message is displayed, and the cart icon shows the correct number of items and quantity.
+explanation: This test case verifies the alternative flow of adjusting the quantity of a product before adding it to the shopping cart, ensuring the system allows for quantity adjustments.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Product with Quantity Over Maximum Stock
+objective: Verify that the system prevents adding a product to the cart if the selected quantity exceeds the available stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page with limited stock.
+  - Step 3: Try to increase the quantity beyond the available stock.
+  - Step 4: Observe the behavior of the plus button and any displayed message.
+expectedResult: The plus button is disabled when the maximum stock is reached, and a message 'You have reached the maximum of the stock' is displayed.
+explanation: This test case verifies the exception flow where a user cannot add more items to the cart than what is available in stock, ensuring the system enforces stock limits.
+
+Test Case: Test Case 5
+testCaseName: Prevent Adding Out of Stock Product to Cart
+objective: Verify that the system prevents adding an out-of-stock product to the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to an out-of-stock product detail page.
+  - Step 3: Attempt to click the 'Add to Cart' button.
+expectedResult: The 'Add to Cart' button is either disabled or not present, preventing the addition of the out-of-stock product to the cart.
+explanation: This test case verifies the exception flow for attempting to add an out-of-stock product to the shopping cart, ensuring the system prevents such actions to maintain accurate stock levels.
+

@@ -1,0 +1,15 @@
+1. Verify that a user can add items to the shopping cart from the product detail page.
+2. Verify that a user can select individual items for checkout by clicking on checkboxes next to each item in the shopping cart.
+3. Verify that the system correctly displays the summary costs after items are selected for checkout.
+4. Verify that clicking the "Checkout" button redirects the user to a new page showing new orders separated by the shop origin of the products.
+5. Verify that selecting all items from one store using the checkbox at the head of the store functions correctly.
+6. Verify that a user can directly purchase a product from the product detail page by clicking the 'Buy Now' button.
+7. Verify that a user is required to select an option for products with multiple options before adding them to the cart or proceeding to checkout.
+8. Verify that adjusting the quantity of a product before adding it to the cart reflects correctly in the shopping cart.
+9. Verify that the system prevents the user from selecting products that are out of stock or have been removed by the seller.
+10. Verify that the system prevents the user from purchasing a product without selecting one of its available options if it has many.
+11. Verify that the system prevents the user from purchasing a product with a quantity higher than the current stock or less than one.
+12. Verify that the "Checkout" button is disabled for products that are invalid for purchase due to stock issues or not selecting required options.
+13. Verify that the system correctly processes checkout for a single product purchased from the product detail page, showing one order for the item chosen.
+14. Verify that products from the same shop are combined into one order during the checkout process.
+15. Verify that the system prevents the purchase of products with no stock or out-of-stock options when the product has multiple options.

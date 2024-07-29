@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Verify decreasing product quantity to below one is prevented
+objective: Ensure that the system prevents the quantity of a product in the cart from being decreased below one
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Click the 'Add to Cart' button to add the item to the shopping cart.
+  - Step 4: Access the shopping cart.
+  - Step 5: Attempt to decrease the product quantity by clicking the minus button next to the quantity of the product in the cart.
+expectedResult: The minus button is disabled, and the quantity remains at one, ensuring the product quantity cannot be decreased below one.
+explanation: This test case is created to directly test the scenario of attempting to decrease the quantity of a product to below one, which is covered under the exception flow of the 'Add item to cart' use case. It ensures that the system behaves as expected by not allowing the quantity to go below one, thus preventing any potential issues with order processing or inventory management.
+

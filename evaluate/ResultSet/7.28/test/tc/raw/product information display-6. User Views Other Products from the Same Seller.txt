@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: View Other Products from the Same Seller via Store Link
+objective: Verify that users can view other products from the same seller by clicking on the Store Link in the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Locate the 'Store Link' in the seller profile section.
+  - Step 4: Click on the 'Store Link' to navigate to the seller's store page.
+expectedResult: The system should navigate the user to the seller's store page, displaying other products from the same seller.
+explanation: This test case ensures that users can easily navigate to a seller's store page to view more products from the same seller, enhancing the shopping experience by providing easy access to a wider range of products from a trusted seller.
+
+Test Case: Test Case 2
+testCaseName: Expand Customer Reviews and View More Reviews
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 4: Click on the option to expand and view more reviews.
+expectedResult: The system should expand the 'Customer Reviews and Ratings' section, displaying more detailed reviews beyond the initial 3 latest reviews.
+explanation: This test case verifies the functionality of expanding the customer reviews section, allowing users to access more detailed feedback from other customers, which can help in making informed purchasing decisions.
+
+Test Case: Test Case 3
+testCaseName: Scroll to View More Related Products
+objective: Verify that users can scroll to view more related product cards in the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Related Products' section at the bottom of the page.
+  - Step 4: Scroll within the 'Related Products' section to view more product cards.
+expectedResult: The system should allow users to scroll through the 'Related Products' section, displaying additional related product cards.
+explanation: This test case ensures that users have the ability to explore more products related to the one they are currently viewing, potentially increasing engagement and sales opportunities for sellers.
+

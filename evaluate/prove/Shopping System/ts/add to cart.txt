@@ -1,0 +1,15 @@
+1. Verify that a logged-in user can view a product detail.
+2. Verify that clicking the "Add to Cart" button adds the item to the user's shopping cart.
+3. Verify that the system confirms the addition of an item to the cart immediately after the "Add to Cart" button is clicked.
+4. Verify that the cart icon updates to reflect the new number of items in the cart after an item is added.
+5. Verify that for products with multiple options, the user is prompted to select an option before they can add the item to their cart.
+6. Verify that the user can adjust the quantity of a product before adding it to the cart using the minus and plus buttons.
+7. Verify that the system prevents adding a product to the cart if the product has options and no option is selected.
+8. Verify that the system prevents adding more items to the cart than are available in stock by disabling the plus button.
+9. Verify that a message is displayed when the user attempts to add more items to the cart than are available in stock.
+10. Verify that the minus button is disabled when the quantity is at one to prevent the user from reducing the quantity below one.
+11. Verify that products with no stock cannot be added to the cart.
+12. Verify that for products with multiple options, options that are out of stock cannot be selected and added to the cart.
+13. Verify that the user can successfully add multiple different items to their cart in a single session.
+14. Verify that the user can add the same item to the cart multiple times as long as the total quantity does not exceed the available stock.
+15. Verify that the cart correctly reflects multiple items and quantities as per the user's selection and addition.

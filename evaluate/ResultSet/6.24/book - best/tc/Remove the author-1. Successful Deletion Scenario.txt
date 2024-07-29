@@ -1,11 +1,11 @@
 Test Case: Test Case 1
-testCaseName: Verify successful deletion of an author
-objective: Ensure that the user can successfully delete an author and the record is removed from the database
+testCaseName: Verify Successful Deletion of an Author
+objective: Ensure that the user can successfully delete an author and the record is permanently removed from the database.
 testSteps:
   - Step 1: Navigate to the author list/details page.
   - Step 2: Locate the author you wish to delete and click the 'Delete' button next to their name.
   - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
-expectedResult: The author should be successfully deleted from the database, and the user should no longer see the author in the author list/details page.
+expectedResult: The author's record should be successfully deleted from the database, and the list of authors should no longer include the deleted author.
 reflect: yes
-explanation: This test case directly reflects the given test scenario, which is the successful deletion of an author. It outlines the steps to delete an author and verifies that the author is removed from the database, aligning perfectly with the scenario's objective.
+explanation: This test case directly reflects the given test scenario, which is the successful deletion of an author. It outlines the steps to delete an author and verifies that the author's record is removed from the database.
 

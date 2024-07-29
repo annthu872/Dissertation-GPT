@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Attempt to add a product with multiple options without selecting an option
+objective: Verify that the system prevents the user from adding a product with multiple options to the cart without selecting an option
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product that has multiple options.
+  - Step 3: Without selecting any of the available options, click the "Add to Cart" button.
+expectedResult: The system should display a message indicating that the user must select an option before adding the product to the cart.
+explanation: This test case ensures that the system enforces the rule that a selection must be made when a product has multiple options, as per the exception flow in the use case specification. It directly matches the scenario name by testing the attempt to add a product without selecting an option.
+
+Test Case: Test Case 2
+testCaseName: Attempt to add a product with multiple options by selecting an unavailable option
+objective: Verify that the system prevents the user from adding a product to the cart by selecting an option that is out of stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product that has multiple options, one of which is out of stock.
+  - Step 3: Select the out of stock option.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system should display a message indicating that the selected option is out of stock and cannot be added to the cart.
+explanation: This test case checks the system's handling of attempts to add a product to the cart when the selected option is out of stock, aligning with the exception flow that prevents adding products or options with no stock.
+
+Test Case: Test Case 3
+testCaseName: Attempt to add a product with quantity exceeding stock
+objective: Verify that the system prevents the user from adding a product to the cart with a quantity that exceeds the available stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with available stock.
+  - Step 3: Increase the product quantity to exceed the available stock by clicking the plus button.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The plus button should be disabled when the maximum stock is reached, and a message 'You has reach maximum of the stock.' is displayed. The system should prevent adding the product to the cart.
+explanation: This test case verifies the system's behavior when a user attempts to add a product to the cart with a quantity exceeding the current stock, as described in the exception flow of the use case.
+

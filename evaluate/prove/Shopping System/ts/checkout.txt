@@ -1,0 +1,19 @@
+1. Verify that a logged-in user can initiate the purchase feature.
+2. Confirm that the order summary accurately displays items, quantities, prices, and total cost.
+3. Check that the system sets the shipping address to the default address initially.
+4. Validate that the default payment method is set to COD and can be changed to other options like Shopee Pay, Google Pay, or credit.
+5. Test the functionality of adding both application and shop vouchers to the order through selection or code entry.
+6. Ensure the default shipping option is set to Standard Express and can be changed by the user.
+7. Verify that users can add a note for the shop within the provided section.
+8. Confirm that the system updates the total cost based on changes made by the user, such as shipping option, vouchers, etc.
+9. Check that clicking the "Place Order" button processes the payment and confirms the order.
+10. Validate that the system displays the order confirmation and details post-purchase.
+11. Test the scenario where the user has no default shipping address, ensuring the system prompts for a new address.
+12. Verify that users can change the shipping address by selecting from a list of saved addresses.
+13. Confirm the functionality for adding a new shipping address, including validation for full name, phone number format, and location identification on the map.
+14. Test the application of a correct voucher code and its effect on the order's total cost.
+15. Ensure that changing the shipping option updates the available shipping methods and reflects in the order summary.
+16. Verify that users cannot add a disabled voucher to the order.
+17. Check that the system prevents the application of incorrect voucher codes with appropriate notifications.
+18. Confirm that the system sends notifications and prevents the addition of a new shipping address if the input does not meet required conditions or the address cannot be found on the map.
+19. Test the system's response and corrective action suggestions when there is an issue with the order, such as payment details or shipping address problems.

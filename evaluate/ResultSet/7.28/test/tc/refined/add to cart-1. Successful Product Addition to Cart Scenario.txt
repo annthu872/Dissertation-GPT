@@ -1,0 +1,41 @@
+Test Case: Test Case 1
+testCaseName: Successful Product Addition to Cart Without Options
+objective: Verify that a user can successfully add a product without options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that does not have multiple options.
+  - Step 3: Click the 'Add to Cart' button.
+  - Step 4: Observe the confirmation message that the item has been added.
+  - Step 5: Check the cart icon to see if it reflects the updated number of items.
+expectedResult: The product is added to the cart successfully, a confirmation message is displayed, and the cart icon shows the correct number of items.
+reflect: yes
+explanation: This test case directly reflects the given test scenario of successfully adding a product to the cart, specifically focusing on products without options.
+
+Test Case: Test Case 2
+testCaseName: Successful Product Addition to Cart With Options
+objective: Verify that a user can successfully add a product with options to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page that has multiple options.
+  - Step 3: Select one available option for the product.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the confirmation message that the item has been added.
+  - Step 6: Check the cart icon to see if it reflects the updated number of items.
+expectedResult: The product with the selected option is added to the cart successfully, a confirmation message is displayed, and the cart icon shows the correct number of items.
+reflect: yes
+explanation: This test case also directly reflects the given test scenario by covering the process of adding a product with options to the cart, which is a common e-commerce functionality.
+
+Test Case: Test Case 3
+testCaseName: Adjust Quantity Before Adding Product to Cart
+objective: Verify that a user can adjust the quantity of a product before adding it to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page.
+  - Step 3: Adjust the quantity of the product using the minus or plus button.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Observe the confirmation message that the item has been added.
+  - Step 6: Check the cart icon to see if it reflects the updated number of items and the correct quantity.
+expectedResult: The product is added to the cart with the adjusted quantity successfully, a confirmation message is displayed, and the cart icon shows the correct number of items and quantity.
+reflect: yes
+explanation: This test case reflects the given test scenario by testing the functionality of adjusting product quantity before adding to the cart, which is part of the product addition process.
+

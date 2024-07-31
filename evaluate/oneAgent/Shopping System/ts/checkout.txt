@@ -1,0 +1,13 @@
+1. Successful Checkout with Default Options
+2. Checkout with Changed Shipping Address
+3. Checkout with New Shipping Address
+4. Checkout with Application Voucher Applied
+5. Checkout with Shop Voucher Applied
+6. Checkout with Changed Payment Method
+7. Checkout with Changed Shipping Option
+8. Checkout with Note for Shop Added
+9. Checkout with No Default Shipping Address
+10. Checkout with Incorrect Voucher Code
+11. Checkout with Disabled Voucher
+12. Checkout with Invalid Shipping Address Input
+13. Checkout with Order Issue and Error Message Displayed

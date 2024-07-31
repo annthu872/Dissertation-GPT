@@ -1,0 +1,15 @@
+1. Successful Genre Creation
+2. Genre Creation with Missing Name
+3. Genre Creation with Missing Description
+4. Genre Creation with Duplicate Name
+5. Genre Creation with Invalid Characters in Name
+6. Genre Creation with Excessively Long Name
+7. Genre Creation with Excessively Long Description
+8. Cancel Genre Creation Before Submitting
+9. Cancel Genre Creation After Partial Data Entry
+10. Navigation Away During Genre Creation Without Saving
+11. Database Error During Genre Creation
+12. Genre Creation with Script Injection in Name
+13. Genre Creation with Script Injection in Description
+14. Genre Creation with HTML Tags in Name
+15. Genre Creation with HTML Tags in Description

@@ -1,0 +1,8 @@
+1. Successful Booking Addition
+2. Booking Addition with Missing Field Values
+3. Booking Addition with Invalid Field Values
+4. Booking Addition without Calculating Total Amount
+5. Booking Addition with System Error during Add Operation
+6. Booking Addition with Duplicate Booking ID
+7. Booking Addition with Invalid Login Session
+8. Booking Addition with Maximum Capacity Reached

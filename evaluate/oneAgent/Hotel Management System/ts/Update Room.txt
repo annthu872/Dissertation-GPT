@@ -1,0 +1,10 @@
+1. Update Room Details Successfully Scenario
+2. Room Does Not Exist Scenario
+3. Update Room With Invalid Field Values Scenario
+4. Update Room With Missing Mandatory Fields Scenario
+5. Update Room With Database Update Failure Scenario
+6. Update Room Without Changes Scenario
+7. Update Multiple Rooms Sequentially Scenario
+8. Update Room With Special Characters in Fields Scenario
+9. Update Room With Maximum Field Length Scenario
+10. Update Room With Minimum Field Length Scenario

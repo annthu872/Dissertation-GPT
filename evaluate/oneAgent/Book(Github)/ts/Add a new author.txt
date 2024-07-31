@@ -1,0 +1,15 @@
+1. Successful Author Creation
+2. Author Creation with Missing Name
+3. Author Creation with Missing Bio
+4. Author Creation with Invalid Data
+5. Author Creation with Duplicate Name
+6. Cancel Author Creation Before Submitting
+7. Cancel Author Creation After Partial Data Entry
+8. Navigation Away During Author Creation (To Books)
+9. Navigation Away During Author Creation (To Genres)
+10. Navigation Away During Author Creation (To Authors)
+11. Navigation Away During Author Creation (To Home)
+12. Navigation Away During Author Creation (To API)
+13. Database Error During Author Creation
+14. Author Creation with Extremely Long Name
+15. Author Creation with Extremely Long Bio

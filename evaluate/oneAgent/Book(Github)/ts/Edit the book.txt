@@ -1,0 +1,20 @@
+1. Update Book with Valid Data
+2. Update Book with Invalid Title
+3. Update Book with Invalid Author
+4. Update Book with Invalid Genre
+5. Update Book with Invalid Description
+6. Update Book with Invalid Publication Date
+7. Update Book with Empty Mandatory Fields
+8. Update Book and Press Cancel
+9. Update Book and Navigate Away Using Menu Before Submitting
+10. Update Book with Special Characters in Fields
+11. Update Book with SQL Injection Attack Vectors
+12. Update Book with XSS Attack Vectors in Fields
+13. Update Book with Extremely Long Data in Each Field
+14. Update Book with Past Publication Date
+15. Update Book with Future Publication Date Beyond Reasonable Future
+16. Update Book with Non-Existent Author
+17. Update Book with Non-Existent Genre
+18. Update Book with Duplicate Title and Author
+19. Update Book Successfully and Verify in List
+20. Update Book and Encounter Database Error

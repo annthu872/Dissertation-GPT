@@ -1,16 +1,25 @@
-1. Successful search with keyword matching product name or description
-2. Successful search with keyword matching shop name
-3. Successful search with keyword matching brand name
-4. Search with keyword not matching any shop, brand, or product
-5. Pagination functionality in search results
-6. Search results filtered by most related with the keyword
-7. Search results filtered by newest product
-8. Search results filtered by best seller
-9. Search results sorted by price from lowest to highest
-10. Search results sorted by price from highest to lowest
-11. Display of shop information in search results when keyword matches shop name
-12. Display of best sold shop information when keyword matches brand name
-13. No search results found and display of random product cards
-14. Search with empty keyword
-15. Search with maximum character limit exceeded in keyword
-16. Search with special characters in keyword
+1. Search_With_Valid_Keyword_Show_Relevant_Products
+2. Search_With_Shop_Name_Show_Shop_And_Related_Products
+3. Search_With_Brand_Name_Show_Brand_Related_Shops_And_Products
+4. Search_With_Unmatched_Keyword_Show_Related_Products_Only
+5. Search_With_No_Results_Show_Random_Products
+6. Search_Result_Pagination_Functionality
+7. Search_Result_Maximum_60_Products_Per_Page
+8. Filter_Search_Result_By_Most_Related
+9. Filter_Search_Result_By_Newest_Products
+10. Filter_Search_Result_By_Best_Seller
+11. Filter_Search_Result_By_Price_Lowest_To_Highest
+12. Filter_Search_Result_By_Price_Highest_To_Lowest
+13. Search_With_Empty_Keyword
+14. Search_Functionality_With_Special_Characters
+15. Search_Functionality_With_Numeric_Keyword
+16. Search_Result_Shop_Information_Display
+17. Search_Result_Brand_Related_Shop_Information_Display
+18. Search_Result_Product_Cards_Information_Accuracy
+19. Search_Result_Shop_Cards_Information_Accuracy
+20. Search_Result_Pagination_Navigation
+21. Search_Result_Pagination_With_Last_Page_Selection
+22. Search_Result_Pagination_With_First_Page_Selection
+23. Search_Result_Sort_Functionality_Accuracy
+24. Search_With_Keyword_Matching_Multiple_Shops
+25. Search_With_Keyword_Matching_Multiple_Brands

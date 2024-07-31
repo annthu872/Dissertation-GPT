@@ -1,0 +1,11 @@
+1. Successful Book Creation
+2. Book Creation with Missing Title
+3. Book Creation with Missing Author
+4. Book Creation with Missing Genre
+5. Book Creation with Missing Description
+6. Book Creation with Missing Publication Date
+7. Book Creation with Invalid Publication Date Format
+8. Book Creation with Duplicate Title and Author
+9. Database Error During Book Creation
+10. Cancel Book Creation Before Submitting
+11. Navigate Away Using Menu Before Submitting

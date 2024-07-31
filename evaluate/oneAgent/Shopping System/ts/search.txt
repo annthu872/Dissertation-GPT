@@ -1,0 +1,13 @@
+1. Successful Search with Product Name Keyword
+2. Successful Search with Partial Product Name Keyword
+3. Successful Search with Product Description Keyword
+4. Successful Search with Shop Name Keyword
+5. Successful Search with Brand Name Keyword
+6. Search with Non-Matching Keyword
+7. Search Result Pagination Navigation
+8. Search and Filter by Most Related
+9. Search and Filter by Newest Products
+10. Search and Filter by Best Sellers
+11. Search and Sort by Price Ascending
+12. Search and Sort by Price Descending
+13. No Search Results Found Scenario

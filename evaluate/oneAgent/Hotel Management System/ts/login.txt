@@ -1,0 +1,15 @@
+1. Successful Login for Hotel Owner
+2. Successful Login for Manager
+3. Successful Login for Employee
+4. Login with Incorrect Credentials for Hotel Owner
+5. Login with Incorrect Credentials for Manager
+6. Login with Incorrect Credentials for Employee
+7. Login with Empty Username Field
+8. Login with Empty Password Field
+9. Login with Both Username and Password Fields Empty
+10. Login with Special Characters in Username
+11. Login with Special Characters in Password
+12. Login with SQL Injection Attack in Username Field
+13. Login with SQL Injection Attack in Password Field
+14. Login with Long String (Exceeding Character Limit) in Username
+15. Login with Long String (Exceeding Character Limit) in Password

@@ -1,0 +1,10 @@
+1. Successful Check-In with Valid Booking ID
+2. Check-In with Invalid Booking ID
+3. Check-In with Expired Booking ID
+4. Check-In with Already Used Booking ID
+5. Check-In with Booking ID of Another Guest
+6. Check-In without Entering Booking ID
+7. Check-In with Special Characters in Booking ID
+8. Check-In with SQL Injection in Booking ID Field
+9. Check-In with JavaScript Code in Booking ID Field
+10. Check-In with Extremely Long Booking ID

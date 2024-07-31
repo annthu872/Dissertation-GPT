@@ -1,0 +1,8 @@
+1. Update Hotel Information Successfully
+2. Update Hotel Information with Invalid Data
+3. Update Hotel Information with Missing Mandatory Fields
+4. Update Hotel Information with Special Characters in Name
+5. Update Hotel Information with Extremely Long Values
+6. Update Hotel Information with SQL Injection Attempt
+7. Update Hotel Information with XSS Attack Attempt
+8. Update Hotel Information with No Changes Made

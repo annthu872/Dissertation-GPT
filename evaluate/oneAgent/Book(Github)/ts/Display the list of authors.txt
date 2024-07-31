@@ -1,0 +1,10 @@
+1. DisplayFirstPageOfAuthors
+2. DisplaySecondPageOfAuthorsUsingNextButton
+3. DisplaySpecificPageOfAuthorsUsingPageNumber
+4. DisplayLastPageOfAuthors
+5. DisplayEmptyAuthorsList
+6. DisplayAuthorsListWithMaximumRecordsPerPage
+7. DisplayAuthorsListWithSingleAuthor
+8. DisplayAuthorsListWithAuthorsHavingLongBios
+9. DisplayAuthorsListWithSpecialCharactersInNameOrBio
+10. NavigateBackToPreviousPageOfAuthorsFromSubsequentPage

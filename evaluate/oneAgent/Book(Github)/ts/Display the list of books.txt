@@ -1,0 +1,13 @@
+1. DisplayInitialBooksList - Verify that the initial list of books is displayed correctly upon selecting the "Books" item.
+2. PaginationNextButtonFunctionality - Verify that clicking the "Next" button displays the next 10 records of books.
+3. PaginationPageNumberFunctionality - Verify that clicking a specific page number displays the corresponding 10 records of books.
+4. DisplayBooksListWithEmptyDateRange - Verify the behavior when the date range is left empty and the refresh button is clicked.
+5. DisplayBooksListWithinDateRange - Verify that the list of books is correctly filtered and displayed when a valid date range is provided and the refresh button is clicked.
+6. DisplayBooksListOutsideDateRange - Verify the behavior when the provided date range does not match any book's publication date.
+7. DisplayBooksListWithInvalidDateRange - Verify the behavior when an invalid date range is provided (e.g., end date is before start date) and the refresh button is clicked.
+8. DisplayBooksListWithBoundaryDateRange - Verify the behavior when the date range is at the boundary conditions of the available data (e.g., the earliest or latest publication date).
+9. DisplayBooksListWithSingleDate - Verify the behavior when the start and end dates are the same in the date range filter.
+10. DisplayBooksListWithFutureDateRange - Verify the behavior when the date range is in the future, beyond any book's publication date.
+11. DisplayBooksListWithPastDateRange - Verify the behavior when the date range is entirely in the past, before any book's publication date.
+12. PaginationFunctionalityAfterFiltering - Verify that pagination works correctly after filtering the books list by a date range.
+13. DisplayBooksListWithSpecialCharactersInDateRange - Verify the behavior when the date range includes special characters or formats not supported by the system.

@@ -1,0 +1,29 @@
+1. **Generate Report with Valid Parameters**: This scenario covers the happy path where the hotel owner successfully generates a report using valid parameters.
+
+2. **Generate Report with Invalid Parameters**: This scenario tests the system's response when the hotel owner tries to generate a report with invalid parameters, triggering the validation error.
+
+3. **Generate Report with Boundary Date Parameters**: This scenario checks the system's ability to handle reports generated with date parameters at the boundary of valid input (e.g., the earliest or latest possible dates).
+
+4. **Generate Report with Maximum Data Range**: This scenario tests the system's performance and capability to generate a report with the maximum allowable date range or data volume.
+
+5. **Generate Report with Minimum Data Range**: This scenario assesses the system's handling of reports generated with the minimum data range, such as a single day.
+
+6. **Access Report with No Data Available**: This scenario evaluates how the system handles attempts to generate a report for a period where no data is available.
+
+7. **Generate Multiple Reports Consecutively**: This scenario tests the system's ability to handle consecutive report generation requests without errors or performance degradation.
+
+8. **Generate Report and Navigate Away Before Completion**: This scenario checks how the system handles situations where the user navigates away from the report generation page before the report is fully generated.
+
+9. **Generate Report with Special Characters in Parameters**: This scenario tests the system's handling of special characters in the report parameters, such as using symbols in date fields.
+
+10. **Generate Report with Simultaneous Users**: This scenario assesses the system's performance and accuracy when multiple hotel owners generate reports at the same time.
+
+11. **Access Previously Generated Report**: This scenario tests the ability of the hotel owner to access and view details of reports that were generated in the past.
+
+12. **Generate Report with Future Date Parameters**: This scenario checks the system's response to attempts to generate a report for a future date range, which should not have any data.
+
+13. **Generate Report Without Selecting Parameters**: This scenario evaluates the system's behavior when the user attempts to generate a report without specifying any parameters.
+
+14. **Refresh Report Details Page**: This scenario tests the system's ability to refresh the report details page without errors or loss of data.
+
+15. **Generate Report with International Date Formats**: This scenario assesses the system's capability to correctly interpret and generate reports based on international date formats.

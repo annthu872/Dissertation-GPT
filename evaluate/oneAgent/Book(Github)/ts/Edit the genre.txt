@@ -1,0 +1,15 @@
+1. Successful Genre Update
+2. Update Genre with Invalid Data
+3. Update Genre with Empty Fields
+4. Update Genre with Duplicate Name
+5. Cancel Genre Update Before Submission
+6. Cancel Genre Update After Data Entry
+7. Navigate Away Using Menu Before Submitting
+8. Navigate Away Using Menu After Data Entry
+9. Update Genre with Special Characters in Name
+10. Update Genre with Excessively Long Name
+11. Update Genre with HTML Tags in Description
+12. Update Genre with Script Injection in Description
+13. Database Error During Genre Update
+14. Update Genre with SQL Injection in Name
+15. Update Genre with JavaScript Code in Name

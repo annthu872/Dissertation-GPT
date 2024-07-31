@@ -1,0 +1,10 @@
+1. Successful Purchase from Shopping Cart with Multiple Items from Different Stores
+2. Successful Purchase from Shopping Cart with Items from a Single Store
+3. Successful Direct Purchase from Product Detail Page with Default Options
+4. Successful Direct Purchase from Product Detail Page with Selected Options and Adjusted Quantity
+5. Attempt to Purchase Out-of-Stock Item from Shopping Cart
+6. Attempt to Purchase without Selecting Options in Product Detail Page
+7. Attempt to Purchase with Quantity Exceeding Stock in Product Detail Page
+8. Attempt to Purchase with Quantity Less Than One in Product Detail Page
+9. Attempt to Purchase Out-of-Stock Product Directly from Product Detail Page
+10. Attempt to Checkout with Invalid Selected Product in Shopping Cart

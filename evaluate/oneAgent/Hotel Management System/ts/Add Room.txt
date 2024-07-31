@@ -1,0 +1,6 @@
+1. Add Room Successfully - Happy Path
+2. Add Room with Missing Field
+3. Add Room with Invalid Field Format
+4. Add Room with Duplicate Room Details
+5. Add Room with System Error During Save
+6. Add Room and Then Cancel Before Submission

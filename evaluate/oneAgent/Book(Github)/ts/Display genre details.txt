@@ -1,0 +1,10 @@
+1. DisplayGenreDetails_Successful
+2. DisplayGenreDetails_InvalidGenreID
+3. DisplayGenreDetails_EmptyGenreList
+4. DisplayGenreDetails_GenreIDNotInList
+5. DisplayGenreDetails_GenreWithoutDescription
+6. DisplayGenreDetails_SpecialCharactersInGenreName
+7. DisplayGenreDetails_LongTextInDescription
+8. DisplayGenreDetails_EmptyGenreName
+9. DisplayGenreDetails_NumericValuesInGenreName
+10. DisplayGenreDetails_GenreWithHTMLTagsInDescription

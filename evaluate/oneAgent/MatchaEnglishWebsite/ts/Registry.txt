@@ -1,0 +1,13 @@
+1. Successful Registration with Valid Username and Password
+2. Successful Registration with Email
+3. Registration with Invalid Username
+4. Registration with Invalid Password
+5. Registration with Existed Username
+6. Registration with Invalid Email
+7. Registration with Password Same as Username
+8. Registration with Username Below Minimum Length
+9. Registration with Username Above Maximum Length
+10. Registration with Password Below Minimum Length
+11. Registration with Password Above Maximum Length
+12. Registration with Email in Incorrect Format
+13. Registration with Non-Existent Email Address

@@ -1,4 +1,4 @@
-1. Successful Checkout with Default Settings
+1. Successful Checkout with Default Options
 2. Successful Checkout with Changed Shipping Address
 3. Successful Checkout with New Shipping Address
 4. Successful Checkout with Changed Payment Method
@@ -7,10 +7,16 @@
 7. Successful Checkout with Changed Shipping Option
 8. Successful Checkout with Note for Shop Added
 9. Checkout with No Default Shipping Address
-10. Checkout with Invalid Shipping Address Input
-11. Checkout with Unavailable Location's Address
-12. Checkout with Invalid Full Name for Shipping Address
-13. Checkout with Invalid Phone Number Format for Shipping Address
+10. Checkout with Changed Shipping Address from Saved List
+11. Checkout with Invalid Full Name for New Shipping Address
+12. Checkout with Invalid Phone Number Format for New Shipping Address
+13. Checkout with Invalid Location's Address for New Shipping Address
 14. Checkout with Disabled Voucher Code
 15. Checkout with Incorrect Voucher Code
-16. Checkout with Payment Processing Error
+16. Checkout with Unavailable Location's Address
+17. Checkout Error Due to Payment Issue
+18. Checkout Error Due to Shipping Address Issue
+19. Checkout with Full Name Less Than 2 Letters for New Shipping Address
+20. Checkout with Phone Number Not Following Required Format
+21. Checkout with Address Type Selected as Own House
+22. Checkout with Address Type Selected as Working Place

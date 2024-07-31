@@ -1,0 +1,10 @@
+1. Successful Lesson Addition
+2. Adding Lesson with Already Used Name
+3. Cancel Adding New Lesson
+4. Navigate to Add New Lesson Page via Navbar Option
+5. Adding Lesson Without Name
+6. Adding Lesson Without Description
+7. Adding Lesson with Special Characters in Name
+8. Adding Lesson with Long Name and Description
+9. Adding Lesson with HTML Tags in Name or Description
+10. Adding Lesson with Script Injection in Name or Description

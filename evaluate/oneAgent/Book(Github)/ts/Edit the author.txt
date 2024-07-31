@@ -1,0 +1,17 @@
+1. Successful Author Update
+2. Update Author with Incorrect Data
+3. Update Author with Empty Mandatory Fields
+4. Update Author with Exceedingly Long Data
+5. Update Author with SQL Injection or XSS Attack Vectors
+6. Update Author and Cancel Operation
+7. Update Author and Navigate Away Using Menu Before Submitting
+8. Update Author with Special Characters in Name
+9. Update Author with HTML Tags in Bio
+10. Update Author with Duplicate Name
+11. Update Author with Invalid Characters in Name
+12. Update Author with Image Upload in Bio (If applicable)
+13. Update Author with External Links in Bio
+14. Update Author with Script Tags in Bio (Testing for Script Injection)
+15. Update Author and Lose Database Connection
+16. Update Author and Encounter Server Timeout
+17. Update Author with Valid Data After Previous Failed Attempt

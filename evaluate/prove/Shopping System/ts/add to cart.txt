@@ -1,12 +1,15 @@
-1. Successful Item Addition to Cart
-2. Successful Item Addition with Option Selection
-3. Successful Item Quantity Adjustment Before Adding to Cart
-4. Attempt to Add Item Without Selecting Option
-5. Attempt to Increase Quantity Beyond Stock Limit
-6. Attempt to Decrease Quantity Below Minimum
-7. Attempt to Add Out of Stock Item to Cart
-8. Attempt to Add Item with Out of Stock Option
-9. View Cart After Adding Item
-10. Add Multiple Different Items to Cart
-11. Add Multiple Quantities of the Same Item to Cart
-12. Add Item to Cart with Maximum Stock Quantity
+1. Add Single Item Without Options to Cart
+2. Add Single Item With One Option Selected to Cart
+3. Add Single Item With Quantity Adjustment to Cart
+4. Add Multiple Items to Cart
+5. Add Item With Maximum Quantity to Cart
+6. Attempt to Add Item Without Selecting Option
+7. Attempt to Add Item With Quantity Exceeding Stock
+8. Attempt to Add Item With Quantity Below Minimum
+9. Attempt to Add Out of Stock Item to Cart
+10. Add Item to Cart and Verify Cart Icon Update
+11. Add Item to Cart and View Cart Contents
+12. Add Item With Multiple Options and Select One Option
+13. Add Item With Multiple Options and Adjust Quantity
+14. Attempt to Add Item With Unavailable Option
+15. Attempt to Add Multiple Items With Mixed Availability to Cart

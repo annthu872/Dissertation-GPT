@@ -1,0 +1,10 @@
+1. Update Booking Details Successfully
+2. Update Booking with Non-Existent Booking ID
+3. Update Booking with Invalid Field Entries
+4. Update Booking Without Recomputing Payment for New Services
+5. Update Booking and Recompute Payment Successfully
+6. Update Booking with All Fields Unchanged
+7. Update Booking with Some Fields Left Blank
+8. Update Booking with Invalid Payment Details
+9. Update Booking with Maximum Field Length Values
+10. Update Booking with Minimum Field Length Values

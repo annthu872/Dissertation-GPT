@@ -1,0 +1,12 @@
+1. DisplayInitialGenresList - Verify that the initial list of genres is displayed correctly upon selecting the "Genres" item.
+2. DisplayGenresListWithMultiplePages - Verify that genres are paginated correctly when more than 10 items are available.
+3. NavigateToNextPage - Verify that clicking the "Next" button displays the next 10 genres.
+4. NavigateToPreviousPage - Verify that after moving forward, clicking a "Previous" button (if applicable) displays the previous 10 genres.
+5. NavigateToSpecificPage - Verify that clicking a specific page number navigates to that page and displays the correct genres.
+6. DisplayGenresListWithLessThan10Items - Verify the display when there are less than 10 genres in the database.
+7. DisplayEmptyGenresList - Verify the behavior when there are no genres in the database.
+8. DisplayGenresListColumns - Verify that all columns (id, Name, Description) are displayed correctly for each genre.
+9. RefreshGenresList - Verify that the list updates correctly after a new genre is added or an existing one is modified or deleted.
+10. DisplayGenresListOrder - Verify that the genres are listed in a specific order if applicable (e.g., alphabetical by name).
+11. DisplayGenresListWithMaximumItemsPerPage - Verify that no more than 10 items are displayed per page.
+12. ErrorHandlingOnGenresListNavigation - Verify the application's behavior when an error occurs during navigation (e.g., server error or network issue).

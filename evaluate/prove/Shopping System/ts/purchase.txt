@@ -1,12 +1,18 @@
-1. Successful Purchase with Single Item from Product Detail Page
-2. Successful Purchase with Multiple Items from Shopping Cart
-3. Successful Purchase with Items from Multiple Stores
-4. Select All Items from One Store for Checkout
-5. Adjust Quantity Before Adding to Cart from Product Detail Page
-6. Purchase Product with Multiple Options by Selecting an Option
-7. Prevent Purchase of Out of Stock Item from Shopping Cart
-8. Prevent Purchase Without Selecting an Option for Products with Multiple Options
-9. Prevent Purchase with Quantity Higher Than Stock from Product Detail Page
-10. Prevent Purchase with Quantity Lower Than One from Product Detail Page
-11. Prevent Purchase of Product with No Stock from Product Detail Page
-12. Checkout Button Disabled for Invalid Product Selection
+1. Purchase with single item selected from shopping cart
+2. Purchase with multiple items selected from shopping cart
+3. Purchase with all items from one store selected in shopping cart
+4. Purchase single product from product detail page without options
+5. Purchase single product from product detail page with options selected
+6. Adjust quantity before adding product to cart from product detail page
+7. Purchase product with quantity adjusted to more than stock from product detail page
+8. Purchase product with quantity adjusted to less than one from product detail page
+9. Attempt to select out of stock product in shopping cart
+10. Attempt to purchase without selecting any product option when required
+11. Attempt to purchase product with no stock from product detail page
+12. Attempt to purchase out of stock option of a product with multiple options
+13. Checkout button disabled when selected product is invalid
+14. System separates products into different orders based on store
+15. System combines products from the same store into one order
+16. Summary costs display correctly for selected items
+17. Redirect to new order(s) page after checkout from shopping cart
+18. Redirect to new order page after checkout from product detail page

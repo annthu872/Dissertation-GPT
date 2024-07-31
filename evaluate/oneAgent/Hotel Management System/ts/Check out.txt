@@ -1,0 +1,4 @@
+1. Successful Checkout with Valid Booking ID
+2. Checkout Attempt with Invalid Booking ID
+3. Checkout Attempt with Valid Booking ID but No Room Linked
+4. Checkout Attempt with Previously Checked Out Booking ID

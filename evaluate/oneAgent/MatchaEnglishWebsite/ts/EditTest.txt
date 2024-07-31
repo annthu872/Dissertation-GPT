@@ -1,0 +1,10 @@
+1. Successful Test Edit
+2. Cancel Edit and Exit Without Saving
+3. Edit Test With Non-Existent Vocabulary
+4. Edit Test With Existing Vocabulary
+5. Save Edited Test With Mandatory Fields Missing
+6. Edit Test and Save With All Fields Correctly Filled
+7. Edit Test With Special Characters in Vocabulary
+8. Edit Test With Maximum Length of Vocabulary
+9. Edit Test With Minimum Length of Vocabulary
+10. Navigate Away From Edit Page Without Saving

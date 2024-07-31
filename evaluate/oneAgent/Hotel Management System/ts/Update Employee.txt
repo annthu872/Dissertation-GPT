@@ -1,0 +1,10 @@
+1. UpdateEmployee_SuccessfulUpdate
+2. UpdateEmployee_InvalidID
+3. UpdateEmployee_InvalidFieldEntry
+4. UpdateEmployee_NoChangesMade
+5. UpdateEmployee_UpdateOnlyAllowedFields
+6. UpdateEmployee_UpdateWithSpecialCharacters
+7. UpdateEmployee_UpdateWithBoundaryValues
+8. UpdateEmployee_UpdateWithSQLInjectionAttempt
+9. UpdateEmployee_UpdateWithXSSAttackAttempt
+10. UpdateEmployee_UpdateWithEmptyFields

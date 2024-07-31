@@ -1,0 +1,11 @@
+1. Successful question creation for selection test
+2. Access Lesson Management from Homepage
+3. Skip compulsory field "sentence" and handle error
+4. Skip compulsory field "correct answer" and handle error
+5. Skip compulsory field "other option 1" and handle error
+6. Skip compulsory field "other option 2" and handle error
+7. Skip compulsory field "other option 3" and handle error
+8. Cancel question creation and choose to stay
+9. Enter invalid sentence and handle error
+10. Leave page without saving question
+11. Cancel question creation and confirm cancellation

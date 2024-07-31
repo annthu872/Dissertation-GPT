@@ -1,0 +1,17 @@
+1. **View Continuous Learning Days Scenario** - This scenario covers the basic flow where a learner checks their continuous learning days without any interruptions in their learning streak.
+
+2. **View Learning Days After Break Scenario** - This scenario tests the functionality when a learner has recently broken their learning streak and checks their learning days, which should reset to one.
+
+3. **First Time Checking Learning Days Scenario** - This scenario is for a learner who has just started using the application and checks their learning days for the first time.
+
+4. **Check Learning Days with Long Streak Scenario** - This scenario tests the system's ability to handle and display a long streak of learning days accurately.
+
+5. **Check Learning Days After Year-End Scenario** - This scenario verifies how the system handles the transition of learning days count over the year-end, ensuring the streak continues if the learner has been learning continuously.
+
+6. **Check Learning Days with Intermittent Use Scenario** - This scenario tests how the system calculates and displays learning days for a learner who uses the application intermittently, with gaps in their learning history.
+
+7. **Learning Days Display Error Handling Scenario** - This scenario checks how the system handles and displays errors if there's an issue fetching the learning days history.
+
+8. **Check Learning Days Without Internet Connection Scenario** - This scenario tests the application's behavior when a learner tries to check their learning days without an internet connection.
+
+9. **Check Learning Days After Re-login Scenario** - This scenario ensures that the learning days history is accurately maintained and displayed even after the learner logs out and then logs back into the application.

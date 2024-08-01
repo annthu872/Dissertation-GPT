@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Cancel Book Deletion and Navigate to 'Books' via Menu
+objective: Verify that cancelling the book deletion and then navigating to 'Books' via the menu does not delete the book and displays the updated books list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: After cancellation, select the 'Books' item from the menu.
+expectedResult: The book list is displayed with the previously selected book still present, indicating that the deletion was successfully cancelled and the data was not deleted from the database.
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the 'Books' page via the menu, the book remains in the database and is visible in the updated list. It directly matches the scenario of cancelling a book deletion and navigating to 'Books', focusing on the user's ability to cancel the deletion operation and verify the outcome by viewing the updated books list.
+

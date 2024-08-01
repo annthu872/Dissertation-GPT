@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Verify Room Not Found Message for Non-Existent Room
+objective: Verify that the system displays a 'NOT FOUND' message when attempting to update a non-existent room
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search or select a room that does not exist in the database by entering a non-existent room id.
+expectedResult: The system should display a 'NOT FOUND' message.
+explanation: This test case ensures that when an employee tries to update a room that does not exist in the database, the system correctly identifies the absence and notifies the user accordingly. It directly relates to the Room Does Not Exist Scenario by testing the alternative path mentioned in the use case.
+
+Test Case: Test Case 2
+testCaseName: Verify Invalid Field Error Message During Room Update
+objective: Verify that the system displays an error message for each invalid field when attempting to update a room
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select an existing room to update.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system should display an 'invalid field entered' message for every individual error.
+explanation: This test case checks the system's ability to validate field inputs during the room update process. It is relevant to the scenario as it tests the alternative path for field validation mentioned in the use case, ensuring that the system provides feedback on invalid inputs.
+
+Test Case: Test Case 3
+testCaseName: Verify Failure Message on Update Error
+objective: Verify that the system displays a failure message in case of any error during the room update process
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select an existing room to update.
+  - Step 4: Fill in the fields with data that would cause an update error (simulate a scenario that would lead to an error, such as database connection issue).
+  - Step 5: Press the update button.
+expectedResult: The system should display a failure message.
+explanation: While this test case might require a specific setup to simulate an error condition (like a database connection issue), it's crucial for ensuring that the system can gracefully handle errors during the update process and inform the user accordingly. It tests the alternative path where an error occurs during the update process.
+

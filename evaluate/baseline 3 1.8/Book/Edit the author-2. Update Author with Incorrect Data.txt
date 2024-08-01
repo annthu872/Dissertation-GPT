@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Incorrect Name Data
+objective: Verify that the system displays an error message when attempting to update an author with incorrect name data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter an incorrect value in the 'Name' field (e.g., using special characters or numbers).
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to incorrect name data is displayed, and the author's record is not updated in the database.
+explanation: This test case ensures that the system validates the 'Name' field correctly and prevents the update of an author with invalid name data.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Incorrect Bio Data
+objective: Verify that the system displays an error message when attempting to update an author with incorrect bio data
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: In the form displayed, enter incorrect data in the 'Bio' field (e.g., using unsupported characters or exceeding character limit).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to incorrect bio data is displayed, and the author's record is not updated in the database.
+explanation: This test case ensures that the system validates the 'Bio' field correctly and prevents the update of an author with invalid bio data.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Author
+objective: Verify that the update operation can be canceled without making changes to the author's record
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The update operation is canceled, no data is updated in the database, and the list of author records is displayed.
+explanation: This test case verifies that users can cancel the update operation if they decide not to proceed, ensuring data integrity.
+

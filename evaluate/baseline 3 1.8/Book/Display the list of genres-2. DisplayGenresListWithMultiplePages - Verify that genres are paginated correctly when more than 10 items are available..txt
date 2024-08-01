@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality With More Than 10 Genres
+objective: Ensure that the genres list is correctly paginated into pages, each displaying up to 10 items, and that navigation between pages using the 'Next' button functions as expected.
+testSteps:
+  - Step 1: Ensure that the database has more than 10 genres listed.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the list of genres displayed on the first page.
+  - Step 4: Click the 'Next' button located below the list of genres.
+  - Step 5: Observe the list of genres displayed on the second page.
+expectedResult: The first page should display the first 10 genres from the database. Upon clicking the 'Next' button, the user should be taken to the second page, displaying the next set of genres (up to 10 items).
+explanation: This test case verifies that the application correctly implements pagination for the genres list when more than 10 items are available. It checks both the functionality of displaying only up to 10 items per page and the ability to navigate to the next page of items using the 'Next' button.
+
+Test Case: Test Case 2
+testCaseName: Verify Direct Page Selection in Genres Pagination
+objective: To confirm that users can directly select a page number in the pagination block to view a specific set of genres when more than 10 items are available.
+testSteps:
+  - Step 1: Ensure that the database has more than 20 genres listed to allow for multiple pages.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Directly click on the page number '2' in the pagination block below the list of genres.
+  - Step 4: Observe the list of genres displayed after selecting the page number.
+expectedResult: Upon clicking on the page number '2', the application should display the second set of up to 10 genres in the list, corresponding to the items that would appear on the second page.
+explanation: This test case ensures that the pagination functionality includes the ability for users to directly select a page number to navigate to, rather than solely relying on the 'Next' or 'Previous' buttons. It is crucial for user convenience, especially when dealing with a large number of pages.
+

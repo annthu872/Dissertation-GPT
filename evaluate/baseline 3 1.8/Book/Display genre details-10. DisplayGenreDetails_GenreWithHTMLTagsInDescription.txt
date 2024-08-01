@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with HTML Tags in Description
+objective: Verify that the genre details page correctly displays the genre information, including a description that contains HTML tags, and ensures these tags do not affect the page layout.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click on the 'Name' of a genre that is known to have HTML tags in its description.
+  - Step 3: Observe the details displayed on the genre details page.
+expectedResult: The genre details page should display the id, Name, and Description of the selected genre. The Description should include the HTML tags as plain text, not rendering any HTML formatting or affecting the page layout.
+explanation: This test case ensures that when a genre description contains HTML tags, these tags are displayed as plain text in the description field on the genre details page. It verifies the application's ability to handle potentially disruptive HTML content in text fields without affecting the page's layout or security.
+

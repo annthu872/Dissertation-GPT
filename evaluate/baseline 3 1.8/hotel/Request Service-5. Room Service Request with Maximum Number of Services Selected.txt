@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Room Service Request with Maximum Number of Services Selected
+objective: Verify that the system allows the guest to request room service with the maximum number of services selected and calculates the total charges correctly.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services, select the maximum number of services allowed by the system.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges calculated by the system for the selected services.
+expectedResult: The system should successfully calculate the total charges for the maximum number of services selected, display a success message indicating that the room service request was successful, and then redirect the user to the main page.
+explanation: This test case ensures that the system can handle the scenario where a guest selects the maximum number of services available. It tests the system's ability to calculate charges correctly and update the database accordingly, as well as its ability to provide appropriate user feedback.
+

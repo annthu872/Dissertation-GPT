@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Out of Stock Status
+objective: Ensure that the product information page correctly displays all product details including the out of stock status.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card for a product that is known to be out of stock.
+  - Step 3: Observe the product information displayed on the product's page.
+expectedResult: The product information page should display the product title, detailed description, high-quality images and videos, detailed specifications, current price and any discounts, out of stock status, available shipping methods and estimated delivery times, shipping fees, seller's profile including name, ratings, and reviews, an option to contact the seller, a link to the seller's store on Shopee, and the customer reviews and ratings including the average rating and 3 latest detailed reviews. The out of stock status should be prominently displayed.
+explanation: This test case is created to ensure that when a product is out of stock, the product information page still displays all necessary information correctly, including the out of stock status. It directly matches the scenario name by focusing on the display of product information with an emphasis on the stock availability status.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Seller's Store via Store Link on Out of Stock Product Page
+objective: To confirm that users can navigate to the seller's store page from an out of stock product's information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to reach an out of stock product's information page.
+  - Step 2: Click on the 'Store Link' to navigate to the seller's store page on Shopee.
+expectedResult: The system should redirect the user to the seller's store page on Shopee, where other products from the same seller are displayed.
+explanation: This test case verifies the functionality of the 'Store Link' on an out of stock product's information page, ensuring users can explore more products from the same seller. It is related to the test scenario by focusing on a specific feature within the product information display.
+
+Test Case: Test Case 3
+testCaseName: Verify Contact Seller Option on Out of Stock Product Page
+objective: Ensure that users can initiate contact with the seller directly from an out of stock product's information page.
+testSteps:
+  - Step 1: Navigate to an out of stock product's information page by following steps 1 and 2 from Test Case 1.
+  - Step 2: Click on the 'Seller Contact' option to initiate contact through the platform's messaging system.
+expectedResult: The system should open the platform's messaging system, allowing the user to send a message to the seller directly.
+explanation: This test case ensures that the 'Seller Contact' feature works correctly on out of stock product pages, allowing users to inquire further about the product or stock availability. It complements the scenario by testing a specific interaction within the product information display.
+

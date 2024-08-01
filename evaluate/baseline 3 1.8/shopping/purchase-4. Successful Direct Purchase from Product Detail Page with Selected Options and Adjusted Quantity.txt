@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Direct Purchase from Product Detail Page with Selected Option and Adjusted Quantity
+objective: Verify that a user can successfully make a direct purchase from the product detail page by selecting an available option and adjusting the quantity before checkout.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options available.
+  - Step 2: Select one available option for the product.
+  - Step 3: Adjust the quantity of the product by clicking on the plus button to increase or the minus button to decrease the quantity, ensuring the final quantity is within the available stock.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Verify that the 'Checkout' button is enabled, then click the 'Checkout' button.
+expectedResult: The user is redirected to a checkout page that shows one order of the item the user has chosen, with the selected option and adjusted quantity reflected in the order.
+explanation: This test case ensures that users can directly purchase a product from its detail page by selecting an option and adjusting the quantity, which directly relates to the test scenario of making a successful direct purchase with selected options and adjusted quantity.
+
+Test Case: Test Case 2
+testCaseName: Attempt Direct Purchase with Unselected Option
+objective: Verify that a user cannot proceed to checkout a product from the product detail page without selecting an available option when the product has multiple options.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options available.
+  - Step 2: Adjust the quantity of the product without selecting an option.
+  - Step 3: Click the 'Buy Now' button.
+expectedResult: The 'Checkout' button remains disabled, and the user is prompted to select an option before they can proceed to checkout.
+explanation: This test case checks the system's handling of attempts to purchase a product with multiple options without selecting one, ensuring the system enforces option selection before checkout.
+
+Test Case: Test Case 3
+testCaseName: Attempt Direct Purchase with Quantity Exceeding Stock
+objective: Verify that a user cannot proceed to checkout from the product detail page if the selected quantity exceeds the available stock.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with available stock.
+  - Step 2: Select an available option for the product.
+  - Step 3: Adjust the quantity of the product to exceed the available stock by clicking the plus button.
+  - Step 4: Click the 'Buy Now' button.
+expectedResult: The user is unable to increase the quantity beyond the available stock, and if attempted, the 'Checkout' button remains disabled, preventing the user from proceeding to checkout.
+explanation: This test case ensures that the system prevents users from purchasing more items than what is available in stock, aligning with the scenario's focus on adjusting quantity during a direct purchase.
+

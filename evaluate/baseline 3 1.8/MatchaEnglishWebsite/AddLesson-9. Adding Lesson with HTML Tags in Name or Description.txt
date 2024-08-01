@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Adding Lesson with HTML Tags in Name
+objective: Verify that the system correctly handles HTML tags in the lesson name when an administrator attempts to add a new lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a name for the lesson that includes HTML tags (e.g., '<b>Lesson Name</b>').
+  - Step 5: Enter a valid description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should either sanitize the HTML tags and save the lesson name without them or display an error message indicating that HTML tags are not allowed.
+explanation: This test case ensures that the system can handle HTML tags in the lesson name, preventing potential security issues or display problems.
+
+Test Case: Test Case 2
+testCaseName: Adding Lesson with HTML Tags in Description
+objective: Verify that the system correctly handles HTML tags in the lesson description when an administrator attempts to add a new lesson.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a valid name for the lesson in the name field.
+  - Step 5: In the description field, enter a description that includes HTML tags (e.g., '<i>Description</i>').
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should either sanitize the HTML tags and save the lesson description without them or display an error message indicating that HTML tags are not allowed.
+explanation: This test case verifies that the system can handle HTML tags in the lesson description, ensuring content integrity and preventing potential security issues.
+

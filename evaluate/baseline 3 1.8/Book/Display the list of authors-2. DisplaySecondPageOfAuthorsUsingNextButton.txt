@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Display Second Page of Authors Using Next Button
+objective: Verify that the user can navigate to the second page of authors by clicking the 'Next' button and ensure the second page displays the authors' list correctly.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Click on the 'Authors' item to view the list of authors.
+  - Step 3: Verify that the first page of authors is displayed with up to 10 items.
+  - Step 4: Locate the pagination block below the list of authors.
+  - Step 5: Click on the 'Next' button in the pagination block.
+expectedResult: The application should navigate to the second page of authors, displaying the next set of up to 10 authors including their id, name, and bio in the list.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate through the list of authors using the 'Next' button. It directly matches the scenario name by testing the ability to display the second page of authors using the specified navigation method.
+

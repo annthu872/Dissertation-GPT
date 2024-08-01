@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu to 'Books' Before Submitting Genre Edit
+objective: Verify that navigating away to 'Books' using the menu before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Books' menu item.
+expectedResult: The application does not update the genre in the database and displays the 'Books' page.
+explanation: This test case ensures that if a user navigates away from the genre editing page by selecting 'Books' from the menu before submitting the form, the changes are not saved, adhering to the specified use case scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away Using Menu to 'Genres' Before Submitting Genre Edit
+objective: Verify that navigating away to 'Genres' using the menu before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Genres' menu item.
+expectedResult: The application does not update the genre in the database and displays the 'Genres' page with the list of genre records.
+explanation: This test case verifies that if a user navigates away from the genre editing page by selecting 'Genres' from the menu before submitting the form, the changes are not saved. This is to ensure the application behaves as expected according to the cancel operation scenario.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away Using Menu to 'Authors' Before Submitting Genre Edit
+objective: Verify that navigating away to 'Authors' using the menu before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Authors' menu item.
+expectedResult: The application does not update the genre in the database and displays the 'Authors' page.
+explanation: This test case ensures that if a user navigates away from the genre editing page by selecting 'Authors' from the menu before submitting the form, the changes are not saved. It tests the application's adherence to the cancel operation scenario when navigating away using the menu.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Using Menu to 'Home' Before Submitting Genre Edit
+objective: Verify that navigating away to 'Home' using the menu before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'Home' menu item.
+expectedResult: The application does not update the genre in the database and displays the 'Home' page.
+explanation: This test case checks that navigating away from the genre editing page to the 'Home' page before submitting any changes ensures that the genre is not updated in the database, following the cancel operation scenario.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away Using Menu to 'API' Before Submitting Genre Edit
+objective: Verify that navigating away to 'API' using the menu before submitting the form does not update the genre in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Begin entering new data into the genre form fields.
+  - Step 4: Without pressing the 'Submit' button, select the 'API' menu item.
+expectedResult: The application does not update the genre in the database and displays the 'API' page.
+explanation: This test case ensures that if a user navigates away from the genre editing page by selecting 'API' from the menu before submitting the form, the changes are not saved. It is crucial for verifying the application's behavior according to the cancel operation scenario when using the menu for navigation.
+

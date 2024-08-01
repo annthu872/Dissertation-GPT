@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Adding Lesson with Script Injection in Name Field
+objective: Verify that the system prevents script injection by sanitizing input in the lesson name field during lesson creation.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: On the 'Add new Lesson' page, enter a script injection code (e.g., '<script>alert("XSS")</script>') in the name field.
+  - Step 5: Fill in a valid lesson description in the description field.
+  - Step 6: Select 'Save' to attempt creating the new lesson.
+expectedResult: The system should display an error message or sanitize the input, preventing the script from being saved as part of the lesson name. The lesson should not be created with the script injection code as its name.
+explanation: This test case ensures that the application is secure against script injection attacks by validating or sanitizing user inputs in the lesson name field.
+
+Test Case: Test Case 2
+testCaseName: Adding Lesson with Script Injection in Description Field
+objective: Verify that the system prevents script injection by sanitizing input in the lesson description field during lesson creation.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Fill in a valid lesson name in the name field.
+  - Step 5: Enter a script injection code (e.g., '<script>alert("XSS")</script>') in the description field.
+  - Step 6: Select 'Save' to attempt creating the new lesson.
+expectedResult: The system should display an error message or sanitize the input, preventing the script from being saved as part of the lesson description. The lesson should not be created with the script injection code in its description.
+explanation: This test case checks for the application's ability to handle potentially malicious script injections in the lesson description field, ensuring data validation and sanitization processes are in place.
+

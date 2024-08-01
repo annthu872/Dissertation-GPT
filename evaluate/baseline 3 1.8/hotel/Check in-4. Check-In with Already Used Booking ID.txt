@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Check-In with Valid and Unused Booking ID
+objective: Verify that a guest can check in with a valid and unused booking ID and is directed to the main page with a success message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid and unused booking ID into the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system validates the booking ID, updates the booking details with a room ID, shows a 'check in successful' message, and redirects the guest to the main page.
+explanation: This test case ensures that the basic course of events or happy path described in the use case is functioning correctly. It tests the system's ability to handle a standard check-in process with a valid and unused booking ID.
+
+Test Case: Test Case 2
+testCaseName: Check-In with Already Used Booking ID
+objective: Verify that the system prevents check-in with a booking ID that has already been used and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a booking ID that has already been used for check-in.
+  - Step 3: Press the submit button.
+expectedResult: The system identifies the booking ID as already used, does not update booking details, redirects the guest to the main page, and shows an error message indicating the booking ID has already been used.
+explanation: This test case is designed to verify the system's behavior when attempting to check in with a booking ID that has already been used, ensuring that the system correctly handles such cases as per the alternative path described in the use case.
+
+Test Case: Test Case 3
+testCaseName: Check-In with Invalid Booking ID
+objective: Verify that the system prevents check-in with an invalid booking ID and redirects to the main page with an error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an invalid booking ID into the booking ID field.
+  - Step 3: Press the submit button.
+expectedResult: The system fails to validate the booking ID, does not update booking details with a room ID, redirects the guest to the main page, and shows an error message indicating the booking ID is incorrect.
+explanation: This test case checks the system's response to an invalid booking ID, as described in the alternative path of the use case. It ensures that the system correctly identifies and handles invalid booking IDs.
+

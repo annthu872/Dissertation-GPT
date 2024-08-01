@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Room Without Making Any Changes
+objective: Verify that the system handles the scenario where an employee attempts to update a room without making any changes to the room's details.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for or select a room to update using its ID.
+  - Step 4: Load the room's details but do not make any changes to the fields.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the database (even though no changes were made), and show a success message indicating that the room details have been updated.
+explanation: This test case is created to ensure that the system can handle updates to room details even when no actual changes are made by the user. It verifies the system's ability to process and acknowledge an update operation without modifications, which is a realistic scenario that could occur in actual use.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Update Non-existent Room
+objective: Verify that the system correctly handles attempts to update a room that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search for or select a room using an ID that does not exist in the database.
+  - Step 4: Try to load the room's details.
+expectedResult: The system should display a NOT FOUND message, indicating that the room cannot be updated because it does not exist in the database.
+explanation: This test case ensures that the system provides appropriate feedback when an employee attempts to update a room that is not present in the database, preventing confusion and ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Update Room With Invalid Field
+objective: Verify that the system correctly handles the scenario where an employee attempts to update a room with invalid field entries.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for or select a room to update using its ID.
+  - Step 4: Load the room's details and enter invalid data in one or more fields.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, identify the invalid field entries, and show an 'invalid field entered' message for every individual error.
+explanation: This test case is designed to ensure that the system can identify and notify the user of invalid field entries during the room update process, thereby preventing incorrect data from being saved in the database.
+

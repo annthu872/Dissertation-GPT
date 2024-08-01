@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Data and Check for SQL Injection Protection
+objective: Verify that the system protects against SQL Injection attacks during the book update process by accepting valid data without executing malicious SQL code.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter valid data for each field (Title, Author, Genre, Description, Publication Date).
+  - Step 4: In one of the fields, attempt to inject an SQL command (e.g., 'Title' field value: '; DROP TABLE Books;--').
+  - Step 5: Press the 'Submit' button to attempt updating the book with the SQL injection code.
+expectedResult: The system should display a message indicating the book has been updated successfully without executing the malicious SQL code, proving protection against SQL Injection attacks.
+explanation: This test case is designed to ensure the edit book functionality properly sanitizes user input to protect against SQL Injection attacks, directly addressing the test scenario's concern.
+
+Test Case: Test Case 2
+testCaseName: Update Book with SQL Injection in Description Field
+objective: Verify that the system sanitizes input in the 'Description' field to prevent SQL Injection attacks while updating a book.
+testSteps:
+  - Step 1: Go to the book list/details page.
+  - Step 2: Press the 'Update' button for the book you want to edit.
+  - Step 3: Fill in all fields with valid data.
+  - Step 4: In the 'Description' field, input an SQL injection payload (e.g., 'Nice book' OR 1=1;--').
+  - Step 5: Click the 'Submit' button to update the book.
+expectedResult: The system should not execute the SQL code in the 'Description' field and should update the book information successfully, indicating input sanitization and SQL Injection prevention.
+explanation: This test case targets the 'Description' field specifically to ensure that SQL Injection attacks can be prevented in text areas that might accept larger inputs, relevant to the scenario of updating a book with SQL Injection vectors.
+

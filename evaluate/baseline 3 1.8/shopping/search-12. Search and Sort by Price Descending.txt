@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Search and Sort Products by Price Descending
+objective: Verify that the user can search for products and sort the results by price in descending order.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword related to the products you want to search for in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: After the search results are displayed, locate the sort option dropdown.
+  - Step 5: Select the option to sort products by price from highest to lowest.
+expectedResult: The search results should be displayed with products sorted by price in descending order, starting with the highest priced item.
+explanation: This test case ensures that users can not only search for products using keywords but also sort the search results by price in descending order, enhancing the user's ability to find products within their desired price range efficiently.
+

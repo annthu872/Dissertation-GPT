@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Purchase with Quantity Less Than One in Product Detail Page
+objective: Verify that the system prevents a user from purchasing a product with a quantity less than one from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of a specific product.
+  - Step 2: If the product has options, select one available option.
+  - Step 3: Attempt to adjust the product quantity to less than one by clicking the minus button next to the quantity field.
+  - Step 4: Observe the quantity field and the 'Buy Now' button.
+expectedResult: The quantity should not decrease below one, and the 'Buy Now' button should remain enabled.
+explanation: This test case is created to ensure that users cannot proceed with a purchase with a quantity less than one, adhering to the exception flow that states a user cannot purchase a product with quantity lower than one. It directly tests the system's handling of invalid product quantities in the product detail page.
+

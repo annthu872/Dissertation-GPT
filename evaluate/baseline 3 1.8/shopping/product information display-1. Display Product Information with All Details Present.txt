@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with All Details
+objective: Ensure that all product information details are displayed correctly when a user clicks on a product card from the homepage, search page, or cart page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on any product card.
+  - Step 3: Verify that the product title is displayed prominently.
+  - Step 4: Check that a detailed product description is provided.
+  - Step 5: Ensure high-quality images of the product from multiple angles are showcased.
+  - Step 6: Confirm that videos demonstrating the product's features and usage are included.
+  - Step 7: Verify that detailed product specifications are listed.
+  - Step 8: Check the display of the current price and any discounts or special pricing.
+  - Step 9: Confirm real-time stock availability is shown.
+  - Step 10: Verify available shipping methods and estimated delivery times are displayed.
+  - Step 11: Check that the seller's profile, including their name, ratings, and reviews, is displayed.
+  - Step 12: Ensure there is an option to contact the seller directly through the platform's messaging system.
+  - Step 13: Verify a link to the seller's store page on Shopee is provided.
+  - Step 14: Confirm the display of the average rating based on customer reviews.
+  - Step 15: Check that 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+  - Step 16: Verify that a list of related product cards is displayed.
+expectedResult: All specified product information details are correctly displayed, including title, description, images, videos, specifications, price, stock availability, delivery options, seller profile, seller contact, store link, customer reviews and ratings, and related products.
+explanation: This test case ensures that when a user clicks on a product card from any entry point (homepage, search page, or cart page), they are presented with a comprehensive display of all product details as specified in the use case. It verifies the functionality and completeness of the product information display.
+
+Test Case: Test Case 2
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand the section to view more reviews.
+expectedResult: The 'Customer Reviews and Ratings' section expands, and more customer reviews beyond the initial 3 latest detailed reviews are displayed.
+explanation: This test case verifies the functionality of the alternative flow where users can expand the 'Customer Reviews and Ratings' section to view an extended list of reviews, ensuring an interactive and informative user experience.
+
+Test Case: Test Case 3
+testCaseName: Verify Navigation to Seller's Store via Store Link
+objective: Ensure that users can navigate to the seller's store page on Shopee by clicking on the Store Link.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Locate and click on the Store Link to the seller's store page on Shopee.
+expectedResult: The user is redirected to the seller's store page on Shopee, where they can view other products from the same seller.
+explanation: This test case verifies the functionality of the Store Link, ensuring that users can easily navigate to the seller's store page on Shopee to explore more products from the same seller, enhancing the shopping experience.
+

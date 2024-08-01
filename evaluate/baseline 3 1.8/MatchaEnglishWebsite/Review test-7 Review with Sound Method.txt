@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Review with Sound Method - Correct Answer
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the correct answer using the sound method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system selects the sound method for the word review.
+  - Step 5: Listen to the sound and choose the correct answer among the four selections provided.
+  - Step 6: Click the right answer.
+  - Step 7: Observe the feedback from the system (a green word should appear).
+  - Step 8: Press the 'Continue' button to proceed to the next word.
+expectedResult: The system should show a green word indicating the correct answer was selected, and the memory level of the word should be increased.
+explanation: This test case ensures that when a learner reviews a word using the sound method and selects the correct answer, the system behaves as expected by increasing the word's memory level.
+
+Test Case: Test Case 2
+testCaseName: Review with Sound Method - Incorrect Answer
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the sound method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Ensure the system selects the sound method for the word review.
+  - Step 5: Listen to the sound and choose the wrong answer among the four selections provided.
+  - Step 6: Click the wrong answer.
+  - Step 7: Observe the feedback from the system (a red word should appear).
+  - Step 8: Press the 'Continue' button to proceed to the next word.
+expectedResult: The system should show a red word indicating the wrong answer was selected, and the memory level of the word should be decreased.
+explanation: This test case verifies that the system behaves as expected when a learner reviews a word using the sound method and selects the wrong answer by decreasing the word's memory level.
+

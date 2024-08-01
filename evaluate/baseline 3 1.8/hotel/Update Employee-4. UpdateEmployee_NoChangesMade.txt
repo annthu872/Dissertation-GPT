@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Employee Without Making Any Changes
+objective: Verify that the system behaves correctly when an update is attempted without making any changes to the employee details.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Without making any changes to the auto-filled fields, press the 'Update' button.
+expectedResult: The system should validate the fields and update the employee in the database, showing a message that the employee was updated, even though no changes were made.
+explanation: This test case ensures that the system can handle update requests where no actual changes to the employee data are made. It is important to verify that the system's behavior remains stable and consistent in such scenarios, reflecting the use case's basic course of events.
+
+Test Case: Test Case 2
+testCaseName: Update Employee With Invalid Field Entry
+objective: Verify that the system correctly handles the scenario where an invalid field is entered during the employee update process.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Modify one of the fields with an invalid value and press the 'Update' button.
+expectedResult: The system should show an 'invalid field entered' message and not update the employee in the database.
+explanation: This test case checks the system's ability to validate input fields during the employee update process. It is crucial to ensure that invalid data does not corrupt the database or lead to unintended behavior, aligning with the alternative path described in the use case.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Update Non-existent Employee
+objective: Verify the system's response when an attempt is made to update a non-existent employee.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an employee using an ID that does not exist in the database.
+  - Step 4: Attempt to make changes and press the 'Update' button.
+expectedResult: The system should display a message indicating an 'incorrect value for id', preventing any update attempt for a non-existent employee.
+explanation: This test case is designed to verify the system's robustness in handling cases where updates are attempted on employees that do not exist in the database. It is based on the alternative path of the use case, ensuring that the system provides appropriate feedback in such scenarios.
+

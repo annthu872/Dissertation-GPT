@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Add Room and Cancel Before Submission
+objective: Verify that the manager can cancel the process of adding a room before submission and no room is added to the database
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the fields required for adding a room.
+  - Step 4: Before pressing 'Add Room', select the option to cancel the process.
+expectedResult: The system should not add the room to the database and should return the manager to the previous page or a main page without showing the 'Room added' confirmation.
+explanation: This test case ensures that when a manager decides to cancel the process of adding a room before the final submission, the action is processed correctly without adding any data to the database. It directly relates to the test scenario of adding a room and then cancelling before submission, focusing on the functionality and integrity of the cancellation process.
+

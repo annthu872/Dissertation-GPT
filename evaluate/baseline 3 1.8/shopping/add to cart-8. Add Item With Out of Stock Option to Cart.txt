@@ -1,0 +1,32 @@
+Test Case: Test Case 1
+testCaseName: Add Item With Out of Stock Option to Cart
+objective: Verify that the system prevents adding an item with an out of stock option to the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with multiple options, where at least one option is out of stock.
+  - Step 3: Attempt to select the out of stock option for the item.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system should prevent the item from being added to the cart, possibly displaying a message indicating that the option is out of stock.
+explanation: This test case ensures that users cannot add items to their cart if the selected option is out of stock. It directly tests the system's handling of out of stock options as specified in the exception flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Add Item With In-Stock Option to Cart When Another Option is Out of Stock
+objective: Verify that the system allows adding an item to the shopping cart when selecting an in-stock option, even if another option for the same item is out of stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with multiple options, where at least one option is in stock and another is out of stock.
+  - Step 3: Select an in-stock option for the item.
+  - Step 4: Click the "Add to Cart" button.
+expectedResult: The system adds the item with the selected in-stock option to the shopping cart and updates the cart icon to reflect the new number of items.
+explanation: This test case verifies that the presence of out of stock options does not prevent the addition of an item to the cart when an in-stock option is selected. It addresses the system's behavior in handling mixed stock availability as outlined in the basic and alternative flows.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Item to Cart Without Selecting Any Option When Multiple Options Exist
+objective: Verify that the system prevents adding an item to the shopping cart without selecting any available option when the item has multiple options
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item that has multiple options.
+  - Step 3: Without selecting any option, click the "Add to Cart" button.
+expectedResult: The system should prevent the item from being added to the cart and prompt the user to select an option.
+explanation: This test case checks the system's enforcement of option selection before adding an item to the cart, as specified in the exception flow of the use case.
+

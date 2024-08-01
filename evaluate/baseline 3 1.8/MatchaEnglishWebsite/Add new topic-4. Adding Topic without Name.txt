@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic without Name
+objective: Verify that the system prevents the addition of a new topic without a name and prompts for a name input
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Leave the name field empty.
+  - Step 4: Fill in the description field with a valid description.
+  - Step 5: Select 'Save' to attempt creating a new topic.
+expectedResult: The system should display an error message or notification indicating that the name field is required and prevent the creation of the new topic without a name.
+explanation: This test case is designed to ensure that the system enforces the requirement for a topic name when adding a new topic, which is a deviation from the basic flow by omitting the name. It directly addresses the scenario of adding a topic without a name.
+
+Test Case: Test Case 2
+testCaseName: Adding Topic with Duplicate Name
+objective: Verify that the system prevents the addition of a new topic with a name that is already used and prompts for a unique name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic.
+  - Step 4: Fill in the description field with a valid description.
+  - Step 5: Select 'Save' to attempt creating a new topic.
+expectedResult: The system should display a notification that the name is already used, prompting the Administrator to add another name in the name field.
+explanation: This test case follows the alternative flow where an administrator attempts to add a new topic with a duplicate name. It ensures the system's ability to enforce unique names for topics.
+

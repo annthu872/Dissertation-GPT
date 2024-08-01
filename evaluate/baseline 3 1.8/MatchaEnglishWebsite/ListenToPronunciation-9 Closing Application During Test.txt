@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Closing Application During Listening Pronunciation Test
+objective: Verify that the application saves the current state of the listening pronunciation test when the application is closed unexpectedly during the test.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and is on the review test function.
+  - Step 2: Start a listening pronunciation test question.
+  - Step 3: Interact with the test by clicking the speaker button to listen to the pronunciation.
+  - Step 4: Make a guess by choosing an answer but do not submit the answer.
+  - Step 5: Close the application abruptly before submitting the answer.
+  - Step 6: Reopen the application and navigate back to the listening pronunciation test question.
+expectedResult: The application should restore the test to the state it was in before the application was closed, including the selected but not submitted answer.
+explanation: This test case ensures that the application can handle unexpected closures by saving the current state of the test. It is crucial for providing a seamless user experience, especially in scenarios where the application might crash or be closed by the user accidentally during a test.
+
+Test Case: Test Case 2
+testCaseName: Closing Application After Submitting Wrong Answer in Listening Pronunciation Test
+objective: Verify that the application correctly processes and saves the result of a submitted answer when the application is closed immediately after submitting a wrong answer.
+testSteps:
+  - Step 1: Log into the application and access the review test function to start a listening pronunciation test question.
+  - Step 2: Listen to the pronunciation by clicking the speaker button.
+  - Step 3: Choose a wrong answer intentionally and submit it.
+  - Step 4: Immediately close the application after seeing the red pop-up screen indicating a wrong answer.
+  - Step 5: Reopen the application and navigate to the review test function to check the status of the previously answered question.
+expectedResult: The application should show that the previously answered question was answered incorrectly, indicated by a red pop-up screen or a similar marker, confirming that the answer and its result were saved before the application was closed.
+explanation: This test case checks the application's ability to save and process the results of a test question immediately after an answer is submitted and before the application is closed. It is important for ensuring that user progress is not lost due to sudden application closures.
+

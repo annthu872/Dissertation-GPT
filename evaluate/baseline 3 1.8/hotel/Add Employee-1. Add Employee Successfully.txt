@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Employee Successfully - Happy Path
+objective: Verify that a manager can successfully add an employee to the system and the system generates an ID and password for the new employee.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the required fields with valid data.
+  - Step 4: Click the 'Add' button to add the employee.
+expectedResult: The system should validate the fields, add the employee to the database, display a message that the employee has been added, and generate an ID and password for the new employee.
+explanation: This test case follows the basic course of events or happy path described in the use case specification for adding an employee successfully. It ensures that when all conditions are met, the system behaves as expected.
+
+Test Case: Test Case 2
+testCaseName: Add Employee Failure - Unfilled Fields
+objective: Verify that the system shows an error message when trying to add an employee with unfilled required fields.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Leave one or more required fields empty.
+  - Step 4: Click the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that all fields are required.
+explanation: This test case covers the alternative path where the manager does not fill all the required fields. It is important to ensure the system properly handles incomplete data submissions.
+
+Test Case: Test Case 3
+testCaseName: Add Employee Failure - Invalid Field Entry
+objective: Verify that the system shows an error message when trying to add an employee with invalid data in any field.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the required fields, intentionally entering invalid data in at least one field.
+  - Step 4: Click the 'Add' button to attempt adding the employee.
+expectedResult: The system should display a message indicating that an invalid field was entered.
+explanation: This test case addresses the alternative path for when the manager enters invalid data into any of the fields. It tests the system's ability to validate input data correctly.
+

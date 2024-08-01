@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Author with HTML Tags in Bio
+objective: Verify that the system correctly updates an author's bio with HTML tags and displays the updated information.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the bio field, enter a biography that includes HTML tags (e.g., '<p>Author's Biography</p>').
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's bio is updated in the database with the HTML tags, and the list of authors with the updated records is displayed. The bio should retain the HTML formatting.
+explanation: This test case ensures that the application can handle HTML content in the bio field of an author's record. It is crucial for preserving formatting and structure in the biography section.
+
+Test Case: Test Case 2
+testCaseName: Update Author with HTML Tags in Bio and Cancel
+objective: Verify that the system does not update the author's bio with HTML tags if the user cancels the operation.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the bio field, enter a biography that includes HTML tags (e.g., '<p>Author's Biography</p>').
+  - Step 4: Press the 'Cancel' button before submitting.
+expectedResult: The author's bio is not updated in the database, and the list of authors is displayed without the changes.
+explanation: This test case checks the functionality of the 'Cancel' button to ensure that it prevents updates, including HTML content in the bio, from being saved to the database.
+
+Test Case: Test Case 3
+testCaseName: Update Author with Incorrect HTML Tags in Bio
+objective: Verify that the system displays an error message when incorrect HTML tags are entered in the author's bio.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the bio field, enter a biography with incorrect HTML tags (e.g., '<p>Author's Biography</h1>').
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect HTML tags. The author's bio is not updated in the database.
+explanation: This test case is designed to verify the system's ability to validate HTML content in the bio field and ensure that incorrect HTML does not corrupt the database or display.
+

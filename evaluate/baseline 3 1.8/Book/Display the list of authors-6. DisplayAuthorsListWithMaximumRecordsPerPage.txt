@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Authors List with Pagination
+objective: Verify that the application displays the list of authors correctly with a maximum of 10 records per page and pagination functionality works as expected.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu to view the authors list.
+  - Step 3: Observe the list of authors displayed on the first page.
+  - Step 4: Count the number of records displayed on the page.
+  - Step 5: Click the 'Next' button below the records in the pagination block.
+  - Step 6: Observe the list of authors on the second page.
+  - Step 7: Repeat steps 4 and 5 for a few pages.
+expectedResult: The application should display the list of authors with up to 10 items on each page. Upon clicking the 'Next' button, the next set of up to 10 authors should be displayed on the subsequent page. This should continue consistently across pages.
+explanation: This test case ensures that the application correctly implements pagination for the authors list, displaying up to 10 records per page as specified in the scenario. It verifies both the display of author records and the functionality of navigating between pages using the pagination controls.
+
+Test Case: Test Case 2
+testCaseName: Verify Authors List Columns
+objective: Ensure that the authors list displays all required columns: id, Name, and Bio.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the menu to view the authors list.
+  - Step 3: Observe the columns in the list of authors displayed.
+expectedResult: The list of authors should correctly display the columns for id (unique author number), Name, and Bio (author's biography).
+explanation: This test case verifies that the authors list correctly displays all the required columns as specified in the scenario. It ensures that the application meets the data presentation requirements for the list of authors.
+

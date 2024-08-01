@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Maximum Field Length
+objective: Verify that the system allows updating a room with maximum allowed characters in each field and displays a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated by its ID.
+  - Step 4: Fill in all the fields that need to be updated with the maximum allowed characters.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the database, and display a success message indicating the room has been updated.
+explanation: This test case ensures that the system can handle updates to room details with the maximum length of data allowed in each field, as per the basic course of events. It verifies the system's ability to process and validate maximum data lengths without errors.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Invalid Field Length
+objective: Verify that the system displays an error message when attempting to update a room with fields exceeding the maximum allowed characters.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated by its ID.
+  - Step 4: Fill in any field with characters exceeding the maximum allowed limit.
+  - Step 5: Press the update button.
+expectedResult: The system should display an error message indicating 'invalid field entered' for the field that exceeds the maximum character limit.
+explanation: This test case checks the system's validation mechanism for field lengths during the room update process. It ensures that the system correctly identifies and prevents updates with fields exceeding the maximum allowed characters, aligning with the alternative path for invalid field entries.
+

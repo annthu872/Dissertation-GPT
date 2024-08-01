@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Deletion and Navigate to Authors
+objective: Verify that cancelling the genre deletion and then navigating to Authors does not delete the genre and displays the Authors page correctly.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you want to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: After cancellation, select the 'Authors' menu item to navigate to the Authors page.
+expectedResult: The genre should not be deleted from the database, and the Authors page should be displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a genre and then navigates to the Authors page, the genre remains in the database, and the navigation to Authors works as expected. It directly matches the scenario of cancelling genre deletion via navigation to Authors.
+

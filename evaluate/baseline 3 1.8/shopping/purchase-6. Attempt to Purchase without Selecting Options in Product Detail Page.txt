@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Purchase without Selecting Options in Product Detail Page
+objective: Verify that the system prevents a user from purchasing a product without selecting available options in the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that has multiple options.
+  - Step 2: Adjust the quantity of the product, if applicable, without selecting any of the available options.
+  - Step 3: Click the 'Buy Now' button.
+expectedResult: The system should not proceed to checkout and should display a message or indication that selecting an option is required before purchasing.
+explanation: This test case ensures that the system enforces the rule that a user cannot purchase a product with multiple options without selecting one, as specified in the exception flow of the use case. It directly matches the scenario name by testing the attempt to purchase without selecting options in the product detail page.
+

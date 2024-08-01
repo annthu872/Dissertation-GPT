@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Valid Data
+objective: Verify that the hotel owner can successfully update hotel information with valid data and navigate back to the dashboard.
+testSteps:
+  - Step 1: Log in as a hotel owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Update the hotel name and address with valid data.
+  - Step 5: Submit the updated information.
+  - Step 6: Observe the success message.
+  - Step 7: Verify redirection to the dashboard.
+expectedResult: The hotel information should be updated successfully in the database, a success message should be displayed, and the user should be redirected to the dashboard.
+explanation: This test case ensures that the basic flow of updating hotel information works as expected without any security threat like XSS.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with XSS Attack Attempt in Hotel Name
+objective: Verify that the system properly sanitizes input to prevent XSS attacks when updating hotel name.
+testSteps:
+  - Step 1: Log in as a hotel owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Insert an XSS attack script into the hotel name field (e.g., <script>alert('XSS')</script>).
+  - Step 5: Fill other fields with valid data.
+  - Step 6: Submit the updated information.
+  - Step 7: Observe the system behavior.
+expectedResult: The system should validate the input, prevent the XSS attack by sanitizing the input or showing an error message, and not execute the malicious script.
+explanation: This test case is designed to check the system's ability to handle potential XSS attacks during the hotel information update process, ensuring the security of the application.
+
+Test Case: Test Case 3
+testCaseName: Update Hotel Information with XSS Attack Attempt in Address Field
+objective: Verify that the system properly sanitizes input to prevent XSS attacks when updating hotel address.
+testSteps:
+  - Step 1: Log in as a hotel owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: Insert an XSS attack script into the address field (e.g., <script>alert('XSS')</script>).
+  - Step 5: Fill other fields with valid data.
+  - Step 6: Submit the updated information.
+  - Step 7: Observe the system behavior.
+expectedResult: The system should validate the input, prevent the XSS attack by sanitizing the input or showing an error message, and not execute the malicious script.
+explanation: This test case targets the address field specifically for XSS attack attempts, ensuring that the application's security measures are effective across different input fields.
+

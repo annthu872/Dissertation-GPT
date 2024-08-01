@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Invalid Room ID
+objective: Verify that the system shows a NOT FOUND message when attempting to update a room with an ID that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search or select a room by entering an ID that does not exist in the database.
+  - Step 4: Observe the response from the system.
+expectedResult: The system should display a NOT FOUND message.
+explanation: This test case ensures that the system correctly handles attempts to update non-existent rooms, aligning with the alternative path described in the use case.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Invalid Field Values
+objective: Verify that the system shows individual error messages for each invalid field entered when updating room details.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search or select a room that exists in the database.
+  - Step 4: Fill in the fields that need to be updated with invalid values (e.g., text in a numeric field, incorrect format for a date).
+  - Step 5: Press the update button.
+expectedResult: The system should display an individual error message for each invalid field entered.
+explanation: This test case checks the system's ability to validate field inputs against expected formats or values and provide feedback, as outlined in the alternative path of the use case.
+

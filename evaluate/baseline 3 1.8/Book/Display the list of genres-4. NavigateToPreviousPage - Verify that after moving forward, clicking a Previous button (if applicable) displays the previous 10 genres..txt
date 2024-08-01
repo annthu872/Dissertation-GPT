@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Previous Page in Genre List
+objective: Verify that after moving forward to the next page, clicking the 'Previous' button displays the previous 10 genres.
+testSteps:
+  - Step 1: Navigate to the 'Genres' section of the application.
+  - Step 2: If not already on the first page, navigate to the first page of the genres list.
+  - Step 3: Click the 'Next' button to navigate to the second page of the genres list.
+  - Step 4: Once on the second page, click the 'Previous' button to navigate back to the first page.
+expectedResult: The application displays the first 10 genres from the list, matching the genres that were initially displayed upon first navigating to the 'Genres' section.
+explanation: This test case ensures that the pagination feature works correctly for navigating between pages of genres, specifically testing the functionality of the 'Previous' button to return to the previous page of genres.
+

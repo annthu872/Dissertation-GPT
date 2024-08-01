@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Changed Payment Method from Default
+objective: Verify that the user can change the payment method from the default (COD) to another option (e.g., Shopee Pay, Google Pay, credit) during the checkout process and successfully place an order.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, observe the default payment method set to COD.
+  - Step 4: Change the payment method by selecting an alternative option (e.g., Shopee Pay).
+  - Step 5: Review the updated order details with the new payment method.
+  - Step 6: Click on the 'Place Order' button.
+  - Step 7: Observe the system processing the payment with the selected payment method.
+  - Step 8: Verify the order confirmation and details are displayed.
+expectedResult: The system should successfully process the payment with the new selected payment method, and the user should receive an order confirmation with the details reflecting the chosen payment method.
+explanation: This test case ensures that users can change their payment method from the default COD to another available option during the checkout process, which is a critical functionality for providing flexibility in payment options.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Changed Payment Method and Apply Voucher
+objective: Verify that the user can change the payment method and apply a voucher code successfully during the checkout process.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, change the payment method from the default COD to another option (e.g., credit).
+  - Step 4: Apply a valid shop or application voucher by entering the voucher code and clicking 'apply'.
+  - Step 5: Review the updated order details with the new payment method and applied voucher discount.
+  - Step 6: Click on the 'Place Order' button.
+  - Step 7: Observe the system processing the payment with the selected payment method and applied discount.
+  - Step 8: Verify the order confirmation and details are displayed, including the discount from the voucher.
+expectedResult: The system should successfully process the payment with the new selected payment method and apply the voucher discount. The user should receive an order confirmation with the details reflecting the chosen payment method and the discount applied.
+explanation: This test case verifies the system's ability to handle multiple changes during the checkout process, specifically changing the payment method and applying a voucher, which enhances the user's checkout experience by providing payment flexibility and discount options.
+

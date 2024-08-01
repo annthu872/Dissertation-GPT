@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Display Authors List with a Single Author
+objective: Verify that the application correctly displays a list with a single author including id, Name, and Bio columns
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application displays a list containing a single author. The list includes columns for id, Name, and Bio, with appropriate data for the single author.
+explanation: This test case ensures that the application can handle and correctly display a list of authors even when there's only a single author in the database. It tests the functionality of the 'Authors' page to display author information in the specified format.
+
+Test Case: Test Case 2
+testCaseName: Pagination Functionality with Single Author
+objective: Verify that the pagination controls behave correctly when only a single author is listed
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Attempt to click the 'Next' button or any pagination number below the single author record.
+expectedResult: The 'Next' button is either disabled or not present, and there are no additional pagination numbers since there's only one page due to having a single author.
+explanation: This test case checks the pagination functionality to ensure it adapts to the number of records displayed. With only a single author, pagination controls should reflect that there's no need to navigate through pages.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Cancel Adding New Lesson Before Saving
+objective: Verify that the administrator can cancel the process of adding a new lesson before saving it.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, start filling in the name of the lesson in the name field.
+  - Step 5: Start filling in the description of the lesson in the description field.
+  - Step 6: Select 'Cancel' to stop adding a new lesson.
+expectedResult: The system should cancel the process of adding a new lesson and redirect the administrator to the previous page or a default page without creating a new lesson.
+explanation: This test case ensures that administrators have the ability to cancel the process of adding a new lesson at any point before the final submission. It directly relates to the exception flow of the use case, which allows cancelling the process.
+
+Test Case: Test Case 2
+testCaseName: Cancel Adding New Lesson After Using Already Used Name
+objective: Verify that the administrator can cancel the process of adding a new lesson after receiving a notification that the lesson name is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Redirected to the 'Add new Lesson' page, enter a lesson name that is already used in the name field.
+  - Step 5: Fill in the description of the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+  - Step 7: Upon receiving the notification that the name is already used, select 'Cancel' to stop adding a new lesson.
+expectedResult: After selecting 'Cancel', the system should stop the process of adding a new lesson and redirect the administrator to the previous page or a default page without creating a new lesson, even after the error notification.
+explanation: This test case is designed to verify the system's behavior in a specific scenario where the administrator decides to cancel the lesson creation process after an attempt with a duplicate name. It combines the exception flow with a part of the alternative flow 1.
+

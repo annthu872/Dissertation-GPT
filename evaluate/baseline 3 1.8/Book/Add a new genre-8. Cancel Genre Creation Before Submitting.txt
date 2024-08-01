@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Creation Using Cancel Button Before Submitting
+objective: Verify that the genre creation process can be canceled using the 'Cancel' button before submitting the form, and ensure that no data is saved to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start the genre creation process.
+  - Step 3: Application displays form to enter genre data.
+  - Step 4: Start entering the genre data into the form fields (Name and Description).
+  - Step 5: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The application does not save the entered data in the database and redirects the user to the list of genre records, displaying the list without the canceled genre addition.
+explanation: This test case ensures that users can cancel the genre creation process at any point before submitting the form, preventing unwanted data from being added to the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Creation by Navigation Before Submitting
+objective: Verify that navigating away from the genre creation page before submitting the form cancels the genre creation process without saving any data.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to initiate the genre creation process.
+  - Step 3: Application displays form to enter genre data.
+  - Step 4: Partially fill out the form with genre data (Name and Description).
+  - Step 5: Without pressing 'Submit', navigate away by selecting another menu item (e.g., 'Books').
+expectedResult: The application does not save the entered data in the database and displays the selected page (e.g., list of books). The genre creation process is effectively canceled without adding any new data to the database.
+explanation: This test case verifies that users can safely navigate away from the genre creation page before submitting their data, ensuring that incomplete or unwanted genre creations are not inadvertently saved.
+

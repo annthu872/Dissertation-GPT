@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Cancel question creation and confirm cancellation
+objective: Verify that the admin can cancel the question creation process and confirm the cancellation, leading to no question being saved.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Start filling in the fields for the question but do not complete.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Confirm'.
+expectedResult: The system redirects Admin to the 'Word Information' page of the selected word and the question is not saved.
+explanation: This test case ensures that when an admin decides to cancel the creation of a new question for a selection test and confirms the cancellation, the system should not save any part of the question and should redirect the admin back to the 'Word Information' page without saving any changes.
+
+Test Case: Test Case 2
+testCaseName: Cancel question creation and choose to stay
+objective: Verify that the admin can initiate the cancellation of question creation but choose to stay and continue working on the question.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list of the selected Lesson.
+  - Step 5: Select a word from the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option add 'Create questions for the selection test'.
+  - Step 8: Start filling in the fields for the question but do not complete.
+  - Step 9: Press the button 'Cancel'.
+  - Step 10: In the dialog 'Are you sure you want to cancel the question?' press the button 'Stay'.
+expectedResult: The dialog closes and the admin remains on the 'Add new question for selection test' page with the work on that question kept.
+explanation: This test case verifies that if an admin decides to cancel the creation of a question but then chooses to stay, the system should allow the admin to continue working on the question without losing any entered information.
+

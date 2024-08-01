@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details for Book with Large ID
+objective: Verify that the application correctly displays the details of a book with a large ID value
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Identify a book with a large ID value from the list.
+  - Step 3: Click on the 'Title' of the book with the large ID.
+expectedResult: The application should display the book details page with the following columns correctly populated: id (showing the large ID), Title, Author, Genre, Description, Publication date.
+explanation: This test case ensures that the application can handle and correctly display the details of books with large ID values, without any errors or data truncation. It directly relates to the test scenario 'DisplayBookDetails_BookWithLargeID' by focusing on the ability of the application to manage and display large numerical values in the ID field.
+

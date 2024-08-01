@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Extremely Long Name Value
+objective: Verify that the system handles extremely long values for the hotel name field when updating hotel information.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button to access the Edit Hotel Information page.
+  - Step 4: In the hotel name field, enter an extremely long value (e.g., a string with 500 characters).
+  - Step 5: Fill other fields with valid data.
+  - Step 6: Submit the form to update the hotel information.
+  - Step 7: Observe the system's response.
+expectedResult: The system should validate the hotel name field and display an error message if the value exceeds the maximum length limit.
+explanation: This test case ensures that the system properly validates the length of the hotel name field and prevents the submission of excessively long values, which could potentially cause database or display issues.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Extremely Long Address Value
+objective: Verify that the system handles extremely long values for the hotel address field when updating hotel information.
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button to access the Edit Hotel Information page.
+  - Step 4: In the address field, enter an extremely long value (e.g., a string with 1000 characters).
+  - Step 5: Fill other fields with valid data.
+  - Step 6: Submit the form to update the hotel information.
+  - Step 7: Observe the system's response.
+expectedResult: The system should validate the address field and display an error message if the value exceeds the maximum length limit.
+explanation: This test case checks if the system can handle and validate extremely long values for the address field without causing any issues, ensuring data integrity and usability.
+

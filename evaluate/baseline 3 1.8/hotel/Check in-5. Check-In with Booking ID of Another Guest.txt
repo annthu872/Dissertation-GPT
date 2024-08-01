@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Check-In with Valid Booking ID of Another Guest
+objective: Verify that a guest can check in using a valid booking ID that belongs to another guest and receive an error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter a valid booking ID that belongs to another guest.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the booking ID, recognize it belongs to another guest, and redirect the user to the main page with an error message indicating the booking ID is incorrect or not valid for this user.
+explanation: This test case is created to ensure the system correctly handles the scenario where a guest attempts to check in with a booking ID that does not belong to them. It tests the system's ability to validate booking IDs and enforce that guests can only check in with their own booking IDs.
+
+Test Case: Test Case 2
+testCaseName: Check-In with Incorrect Booking ID of Another Guest
+objective: Verify that a guest cannot check in using an incorrect booking ID and receives the appropriate error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Enter an incorrect booking ID that does not exist in the system.
+  - Step 3: Press the submit button.
+expectedResult: The system should attempt to validate the incorrect booking ID, fail to find a match, and redirect the user to the main page with an error message indicating the booking ID is incorrect.
+explanation: This test case ensures the system's ability to handle invalid booking IDs gracefully by providing the user with an appropriate error message and not allowing check-in to proceed with non-existent booking IDs.
+

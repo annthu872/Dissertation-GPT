@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Display First Page of Authors
+objective: Verify that the first page of authors is displayed correctly with up to 10 items
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the list of authors displayed on the page.
+expectedResult: The application displays the first page of the list of authors, showing up to 10 items. Each item includes the author's id, name, and bio.
+explanation: This test case ensures that the main scenario of displaying the first page of authors works as expected. It verifies that upon selecting 'Authors', the application correctly displays the list with the specified columns.
+
+Test Case: Test Case 2
+testCaseName: Display Columns on First Page of Authors
+objective: Verify that the columns id, Name, and Bio are correctly displayed for each author on the first page
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Authors' from the main menu or navigation bar.
+  - Step 3: Observe the columns displayed for each author on the list.
+expectedResult: Each author listed on the first page displays three columns: id, Name, and Bio. Each column contains the correct information corresponding to each author.
+explanation: This test case focuses on verifying that the specific columns (id, Name, Bio) are present and correctly populated for each author on the first page, ensuring the application meets the display requirements.
+

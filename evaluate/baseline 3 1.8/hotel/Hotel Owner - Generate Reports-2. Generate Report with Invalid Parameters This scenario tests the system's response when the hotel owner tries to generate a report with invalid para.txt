@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Invalid Date Parameters
+objective: Verify that the system shows a validation error when the hotel owner tries to generate a report with invalid date parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to generate a new report.
+  - Step 4: Enter invalid date parameters into the report generation form. For example, set the end date earlier than the start date.
+  - Step 5: Submit the report generation request.
+expectedResult: The system should display a validation error message indicating that the date parameters are invalid.
+explanation: This test case is created to ensure that the system properly validates the date parameters when a hotel owner attempts to generate a report. It directly matches the scenario of generating a report with invalid parameters by focusing on the validation process for date selection.
+
+Test Case: Test Case 2
+testCaseName: Generate Report with Empty Parameters
+objective: Verify that the system shows a validation error when the hotel owner tries to generate a report without entering any parameters
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to access the report generation form.
+  - Step 4: Leave all the parameter fields empty.
+  - Step 5: Attempt to submit the report generation request.
+expectedResult: The system should display a validation error message indicating that the parameters cannot be empty.
+explanation: This test case checks the system's response to attempts at generating a report without any parameters. It's relevant to the scenario as it tests the validation error triggered by missing parameters, ensuring the system requires input before generating reports.
+

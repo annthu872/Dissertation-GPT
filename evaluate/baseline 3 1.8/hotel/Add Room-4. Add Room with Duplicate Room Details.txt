@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Valid Details
+objective: Verify that a manager can add a room with valid details and see the room added confirmation.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields with valid details.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should validate the fields, add the room to the database, and display a 'Room Added' confirmation message.
+explanation: This test case ensures that the system correctly adds a room when all the required fields are filled with valid data, following the basic course of events.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Duplicate Room Details
+objective: Verify that the system prevents adding a room with details that already exist in the database.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields with details that already exist in the database.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should not add the room to the database and should display an error message indicating that the room details already exist.
+explanation: This test case checks the system's ability to prevent duplicate room entries, ensuring data integrity and uniqueness in the room database.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Invalid Field Entry
+objective: Verify that the system shows an error message when an invalid field is entered while adding a room.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill all the room fields, intentionally entering invalid data in one or more fields.
+  - Step 4: Press the 'Add Room' button.
+  - Step 5: Observe the system's response.
+expectedResult: The system should validate the fields and display an 'Invalid Field Entered' error message, preventing the room from being added to the database.
+explanation: This test case ensures that the system correctly handles invalid data entries by preventing the addition of a room with invalid details, as per the alternative path.
+

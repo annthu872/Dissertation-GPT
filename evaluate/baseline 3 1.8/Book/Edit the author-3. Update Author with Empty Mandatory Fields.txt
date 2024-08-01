@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Empty Name Field
+objective: Verify that the system prevents updating an author when the Name field is left empty.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the Name field is mandatory and cannot be left empty.
+explanation: This test case ensures that the system enforces the requirement for mandatory fields (in this case, the Name field) to be filled out, preventing the update of an author record with incomplete data.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Empty Bio Field
+objective: Verify that the system allows updating an author when the Bio field is left empty.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Clear the 'Bio' field to make it empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should update the author's record in the database and display the list of authors with the updated record, even if the Bio field is left empty.
+explanation: This test case checks if the Bio field is not mandatory for updating an author's record, allowing the update process to proceed with an empty Bio field.
+
+Test Case: Test Case 3
+testCaseName: Update Author with All Mandatory Fields Empty
+objective: Verify that the system prevents updating an author when all mandatory fields are left empty.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Clear the 'Bio' field to make it empty, assuming it is mandatory.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the mandatory fields (Name and Bio, if applicable) cannot be left empty.
+explanation: This test case is designed to ensure that the system enforces the completion of all mandatory fields before allowing an update to an author's record.
+

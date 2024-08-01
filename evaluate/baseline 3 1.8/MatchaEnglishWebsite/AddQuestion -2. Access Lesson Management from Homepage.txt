@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Access Lesson Management from Homepage
+objective: Verify that the admin can access the Lesson Management page from the Homepage via the navbar
+testSteps:
+  - Step 1: Log in to the system as an Admin.
+  - Step 2: Locate the 'Lesson Management' tab on the navbar.
+  - Step 3: Press the 'Lesson Management' tab.
+expectedResult: The system should redirect the Admin to the Lesson Management page, displaying a list of lessons created by admins.
+explanation: This test case ensures that the navigation to the Lesson Management page from the Homepage works as expected for administrators. It directly matches the scenario name by testing the primary method of accessing Lesson Management as outlined in the main flow.
+

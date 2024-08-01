@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Edit Test With Special Characters in Vocabulary - Basic Flow
+objective: Verify that an administrator can edit a test with special characters in the vocabulary using the basic flow and save the changes successfully.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: In the editing interface, add or edit vocabulary exercises to include special characters in the vocabulary.
+  - Step 5: Select 'Save' to save the edited exercises.
+expectedResult: The system saves all edited exercises with special characters, and the changes are reflected in the system.
+explanation: This test case ensures that the system supports editing tests to include special characters in vocabulary exercises and saves these changes, aligning with the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Edit Test With Special Characters in Vocabulary - Alternative Flow
+objective: Verify that an administrator can edit a test with special characters in the vocabulary and choose to save the changes through the alternative flow.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: In the editing interface, add or edit vocabulary exercises to include special characters in the vocabulary.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with 'Save changes?' select 'Save'.
+expectedResult: The system saves all edited exercises with special characters, and the changes are successfully recorded in the system.
+explanation: This test case verifies that the system allows saving changes through the alternative flow when special characters are included in vocabulary exercises.
+
+Test Case: Test Case 3
+testCaseName: Edit Test With Special Characters in Vocabulary - Exception Flow
+objective: Verify that an administrator can edit a test with special characters in the vocabulary but choose not to save the changes through the exception flow.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test you wish to edit, then select 'Edit'.
+  - Step 4: In the editing interface, add or edit vocabulary exercises to include special characters in the vocabulary.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with 'Save changes?' select 'Do not save'.
+expectedResult: The system does not save the edited exercises with special characters, and no changes are recorded in the system.
+explanation: This test case ensures that the system properly handles cases where changes, including special characters in vocabulary exercises, are not saved, following the exception flow.
+

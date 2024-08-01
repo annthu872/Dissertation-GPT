@@ -1,0 +1,55 @@
+Test Case: Test Case 1
+testCaseName: Navigate Away Using Menu to 'Books' Before Submitting New Book Data
+objective: Verify that navigating away to the 'Books' page using the menu before submitting new book data does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without pressing the 'Submit' button, select the 'Books' menu item to navigate away.
+expectedResult: The application does not save the entered book data and displays the list of books records.
+explanation: This test case ensures that if a user navigates away from the book creation page by selecting 'Books' from the menu before submitting the form, the entered data is not saved. It directly matches the scenario of navigating away using the menu before submitting.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away Using Menu to 'Genres' Before Submitting New Book Data
+objective: Verify that navigating away to the 'Genres' page using the menu before submitting new book data does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without pressing the 'Submit' button, select the 'Genres' menu item to navigate away.
+expectedResult: The application does not save the entered book data and displays the 'Genres' form with updated data.
+explanation: This test case verifies that when a user navigates away to the 'Genres' page using the menu before submitting the new book data, the data is not saved. It is relevant to the scenario as it tests navigation away using the menu before submission.
+
+Test Case: Test Case 3
+testCaseName: Navigate Away Using Menu to 'Authors' Before Submitting New Book Data
+objective: Verify that navigating away to the 'Authors' page using the menu before submitting new book data does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without pressing the 'Submit' button, select the 'Authors' menu item to navigate away.
+expectedResult: The application does not save the entered book data and displays the 'Authors' form with updated data.
+explanation: This test case ensures that if a user navigates away from the book creation page by selecting 'Authors' from the menu before submitting the form, the entered data is not saved. It aligns with the scenario of navigating away using the menu before submitting.
+
+Test Case: Test Case 4
+testCaseName: Navigate Away Using Menu to 'Home' Before Submitting New Book Data
+objective: Verify that navigating away to the 'Home' page using the menu before submitting new book data does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without pressing the 'Submit' button, select the 'Home' menu item to navigate away.
+expectedResult: The application does not save the entered book data and displays the 'Home' page.
+explanation: This test case verifies that when a user navigates away to the 'Home' page using the menu before submitting the new book data, the data is not saved. It directly addresses the scenario of navigating away using the menu before submission.
+
+Test Case: Test Case 5
+testCaseName: Navigate Away Using Menu to 'API' Before Submitting New Book Data
+objective: Verify that navigating away to the 'API' page using the menu before submitting new book data does not save the data
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to start adding a new book.
+  - Step 3: Enter book data into the form fields (Title, Author, Genre, Description, Publication Date).
+  - Step 4: Without pressing the 'Submit' button, select the 'API' menu item to navigate away.
+expectedResult: The application does not save the entered book data and displays the 'API' page with updated data.
+explanation: This test case ensures that if a user navigates away from the book creation page by selecting 'API' from the menu before submitting the form, the entered data is not saved. It is relevant to the scenario as it tests navigation away using the menu before submission.
+

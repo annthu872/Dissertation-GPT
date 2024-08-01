@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Invalid Full Name in Shipping Address
+objective: Verify that the system prevents the user from adding a new shipping address with an invalid full name during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Enter a full name with less than 2 letters in the full name field.
+  - Step 6: Fill the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the full name is invalid and prevents the user from adding the new shipping address.
+reflect: yes
+explanation: This test case directly addresses the test scenario by verifying the system's response to an invalid full name input in the shipping address during checkout, which is a specific instance of invalid shipping address input.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Phone Number in Shipping Address
+objective: Verify that the system prevents the user from adding a new shipping address with an invalid phone number during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Enter a phone number not in the format (+84) xxx xxx xxx in the phone number field.
+  - Step 6: Fill the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the phone number is invalid and prevents the user from adding the new shipping address.
+reflect: yes
+explanation: This test case is relevant to the test scenario as it tests the system's handling of invalid input (in this case, an invalid phone number) in the shipping address during checkout, which falls under the broader category of invalid shipping address input.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Unidentifiable Location's Address in Shipping Address
+objective: Verify that the system prevents the user from adding a new shipping address with a location's address that cannot be identified on the map during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Enter valid information for all fields except for the location's address.
+  - Step 6: Enter a location's address that cannot be identified on the map in the respective field.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the location's address cannot be identified and prevents the user from adding the new shipping address.
+reflect: yes
+explanation: This test case aligns with the test scenario by examining the system's ability to validate the identifiability of a location's address during checkout, which is a critical aspect of verifying the validity of shipping address inputs.
+

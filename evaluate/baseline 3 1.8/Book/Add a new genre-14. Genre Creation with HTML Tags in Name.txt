@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created with valid data and no HTML tags in the name.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: In the form displayed, enter a valid genre name without HTML tags in the 'Name' field.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database, and the list of genres with the newly added record is displayed.
+explanation: This test case verifies that the system correctly handles the creation of a new genre with valid data, ensuring that HTML tags are not required in the genre name for successful creation.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation with HTML Tags in Name
+objective: Verify that the system prevents the creation of a new genre when HTML tags are included in the genre name.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: In the form displayed, enter a genre name with HTML tags (e.g., '<b>Genre</b>') in the 'Name' field.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system displays an incorrect data message for the 'Name' field, indicating that HTML tags are not allowed.
+explanation: This test case ensures that the system validates the genre name field for HTML tags and prevents the creation of a genre if such tags are present, maintaining data integrity and preventing potential security issues.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation
+objective: Verify that the genre creation process can be canceled without saving data to the database.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not saved in the database, and the list of genre records is displayed without the new entry.
+explanation: This test case verifies that users can cancel the genre creation process at any time before submission, ensuring that no unwanted data is saved to the database.
+

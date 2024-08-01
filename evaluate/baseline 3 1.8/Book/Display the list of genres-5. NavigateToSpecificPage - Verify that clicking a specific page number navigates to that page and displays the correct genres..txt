@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Navigate to a specific page using page number
+objective: Verify that clicking on a specific page number navigates to that page and displays the correct genres.
+testSteps:
+  - Step 1: Navigate to the main page where genres are listed.
+  - Step 2: Identify the pagination block below the list of genres.
+  - Step 3: Click on a specific page number (e.g., page 2) in the pagination block.
+expectedResult: The application navigates to the selected page number and displays up to 10 genres for that specific page, along with their id, name, and description.
+explanation: This test case ensures that the pagination feature works correctly by navigating to a specific page and verifying that the correct data is displayed. It directly matches the scenario of navigating to a specific page and checking for the correct display of genres.
+
+Test Case: Test Case 2
+testCaseName: Navigate to a specific page using Next button
+objective: Verify that clicking the 'Next' button navigates to the next page and displays the correct genres.
+testSteps:
+  - Step 1: Navigate to the main page where genres are listed.
+  - Step 2: Identify the pagination block below the list of genres.
+  - Step 3: Click the 'Next' button in the pagination block.
+expectedResult: The application navigates to the next page and displays up to 10 genres for that page, along with their id, name, and description.
+explanation: This test case checks the functionality of the 'Next' button in the pagination block, ensuring it navigates to the next page and displays the correct genres. It's related to the scenario by testing a specific navigation method within the pagination feature.
+

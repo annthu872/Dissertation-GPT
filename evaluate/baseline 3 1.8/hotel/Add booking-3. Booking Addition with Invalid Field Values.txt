@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Booking Addition with Invalid Email Format
+objective: Verify that the system shows an invalid field error when an invalid email format is entered in the booking form.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form, intentionally entering an invalid email format in the email field.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields and show an 'invalid field entered' error for the email field.
+explanation: This test case ensures that the system correctly validates email formats during booking addition and provides feedback for correction.
+
+Test Case: Test Case 2
+testCaseName: Booking Addition with Empty Mandatory Field
+objective: Verify that the system prevents booking addition when a mandatory field is left empty.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form, leaving one mandatory field empty.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields and prevent booking addition, showing an 'invalid field entered' error for the empty mandatory field.
+explanation: This test case checks the system's ability to enforce the completion of all mandatory fields before allowing a booking to be added.
+
+Test Case: Test Case 3
+testCaseName: Booking Addition with Invalid Date Format
+objective: Verify that the system shows an invalid field error when an invalid date format is entered in the booking form.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the fields in the booking form, intentionally entering an invalid date format in the date field.
+  - Step 4: Click the calculate amount button to get the total payable payment.
+  - Step 5: Press the add booking button.
+expectedResult: The system should validate the fields and show an 'invalid field entered' error for the date field.
+explanation: This test case ensures that the system correctly validates date formats during booking addition and provides feedback for correction.
+

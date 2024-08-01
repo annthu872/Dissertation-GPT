@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Successful Registration with Email
+objective: Verify that a learner can successfully register using a valid email, username, and password
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with a valid email address.
+  - Step 4: Fill in the username field with a valid username that is over 8 characters and below 30 characters.
+  - Step 5: Fill in the password field with a valid password that is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Ensure the password is not the same as the username.
+  - Step 6: Press the 'Register' button.
+  - Step 7: Verify redirection to the Home page.
+expectedResult: The learner is redirected to the Home page after successful registration.
+explanation: This test case ensures that the registration process works correctly when a learner registers with a valid email, username, and password according to the specified rules in the use case.
+
+Test Case: Test Case 2
+testCaseName: Registration with Invalid Email
+objective: Verify that the system shows a notification for invalid email during registration
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Fill in the email field with an invalid email address (wrong format or non-existent email).
+  - Step 4: Fill in the username field with a valid username.
+  - Step 5: Fill in the password field with a valid password.
+  - Step 6: Press the 'Register' button.
+expectedResult: The system shows a notification that the email is invalid.
+explanation: This test case checks the system's ability to validate email addresses during the registration process and provide feedback when the email is invalid.
+
+Test Case: Test Case 3
+testCaseName: Registration with Existed Username
+objective: Verify that the system shows a notification for an already registered username
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+explanation: This test case verifies the system's ability to detect and notify the user when the entered username is already in use.
+

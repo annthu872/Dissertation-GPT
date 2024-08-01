@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Non-Existent Author
+objective: Verify that the system displays an error message when trying to update a book with a non-existent author
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter a valid title, genre, description, and publication date for the book.
+  - Step 4: Enter a non-existent author name in the 'Author' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the author does not exist.
+explanation: This test case ensures that the system validates the existence of an author before updating a book record. It directly matches the scenario name by attempting to update a book with a non-existent author and expecting an error.
+
+Test Case: Test Case 2
+testCaseName: Cancel Update Operation for Book with Non-Existent Author
+objective: Verify that the book update operation can be canceled without changes when a non-existent author is entered
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter a valid title, genre, description, and publication date for the book.
+  - Step 4: Enter a non-existent author name in the 'Author' field.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The update operation is canceled, no changes are made to the book record, and the user is redirected to the list of book records.
+explanation: This test case checks the functionality of the 'Cancel' button during an update operation with invalid data (non-existent author). It ensures that the system does not update the book record with invalid data when the operation is canceled.
+

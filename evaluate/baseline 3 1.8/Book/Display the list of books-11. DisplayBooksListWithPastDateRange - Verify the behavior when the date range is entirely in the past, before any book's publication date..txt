@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: DisplayBooksListWithPastDateRange - Entirely Past Date Range
+objective: Verify that the application displays no books when the specified date range is entirely in the past, before any book's publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Locate the date range input forms above the list of books.
+  - Step 3: Enter a date range that is entirely in the past, before any book's publication date, into the date range input forms.
+  - Step 4: Click the refresh button to the right of the date inputs.
+expectedResult: The application displays a message indicating no books are available within the specified date range or an empty list of books.
+explanation: This test case is designed to verify the application's behavior when the user filters the book list using a date range that is entirely in the past, before the publication date of any book. It directly matches the scenario name by testing the filtering functionality with a past date range.
+

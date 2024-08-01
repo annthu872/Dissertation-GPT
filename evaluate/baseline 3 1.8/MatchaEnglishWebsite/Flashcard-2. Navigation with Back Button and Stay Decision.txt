@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Navigation with Back Button and Stay Decision During Flashcard Study
+objective: Ensure that when a learner presses the 'back' button during flashcard study and then selects 'stay', they are kept on the current flashcard page.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Navigate to the Flashcard page for the selected topic.
+  - Step 6: Click on the flashcard to flip it and view the back.
+  - Step 7: Press the 'back' button on the browser or application interface.
+  - Step 8: In the exit confirmation dialog box that appears, click 'stay'.
+expectedResult: The learner should remain on the current flashcard page, able to continue studying without being navigated away.
+explanation: This test case verifies the functionality of the 'back' button during flashcard study, specifically testing the scenario where the learner chooses to stay on the page. It directly relates to the alternative flow 1 of the use case, ensuring the application handles navigation decisions as expected.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation with Back Button and Exit Decision During Flashcard Study
+objective: Ensure that when a learner presses the 'back' button during flashcard study and then selects 'exit', they are navigated back to the topic page with the topic marked as incomplete.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Navigate to the Flashcard page for the selected topic.
+  - Step 6: Click on the flashcard to flip it and view the back.
+  - Step 7: Press the 'back' button on the browser or application interface.
+  - Step 8: In the exit confirmation dialog box that appears, click 'exit'.
+expectedResult: The learner is navigated back to the topic page, and the topic is marked as incomplete, indicating that the learner can return to study it later.
+explanation: This test case verifies the functionality of the 'back' button during flashcard study, specifically testing the scenario where the learner chooses to exit. It is based on the exception flow 1 of the use case, ensuring that the application correctly marks the topic as incomplete and navigates the user appropriately.
+

@@ -1,0 +1,34 @@
+Test Case: Test Case 1
+testCaseName: Search and Filter by Most Related
+objective: Verify that the system prioritizes search results based on the most related to the keyword entered by the user, focusing on exact name matches, partial name matches, and then matches by description.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a specific keyword related to a product name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the list of search results.
+  - Step 5: Ensure the 'result most related with the keyword' radio button is selected by default.
+expectedResult: The search results should be displayed prioritizing products that exactly match the keyword by name, followed by products that partially match the keyword by name, and finally products that match by description.
+explanation: This test case ensures that the search functionality works as intended, specifically focusing on the default filter mode which is to display results most related to the search keyword. It verifies the system's ability to sort and present search results based on relevance to the user's query.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Related to Shop Name
+objective: Verify that the system displays shop information at the top of the search results when the keyword is related to a shop name, followed by the shop's product cards and related product cards.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that is known to be related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The search results should display the shop's information at the top, including shop name, number of items, ratings, and response rate, average response time, followed by the shop's product cards and related product cards.
+explanation: This test case verifies the alternative flow where the search keyword is related to a shop name, ensuring that the system correctly identifies and prioritizes shop information and products in the search results.
+
+Test Case: Test Case 3
+testCaseName: Search with Keyword Not Matching Any Shop or Brand
+objective: Verify that the system displays related product cards when the search keyword does not match any shop or brand name.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword that does not match any shop or brand name in the search bar.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Observe the search results.
+expectedResult: The search results should only display related product cards based on the keyword's match with product names or descriptions.
+explanation: This test case checks the system's behavior when the search keyword does not match any shop or brand name, ensuring that it still provides relevant product cards based on the keyword's relation to product names or descriptions.
+

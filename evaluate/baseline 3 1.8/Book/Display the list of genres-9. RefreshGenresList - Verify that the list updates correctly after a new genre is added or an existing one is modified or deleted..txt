@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Genre Addition Updates List
+objective: Verify that after adding a new genre, the list of genres updates correctly to include the new genre.
+testSteps:
+  - Step 1: Navigate to the 'Genres' page to display the list of genres.
+  - Step 2: Add a new genre by selecting the 'Add Genre' option (process of adding not described, assuming a separate functionality).
+  - Step 3: After adding, navigate back to the 'Genres' page if not redirected automatically.
+expectedResult: The list of genres displays the newly added genre, including its id, name, and description.
+explanation: This test case ensures that the addition of a new genre is reflected in the genres list, verifying the system's ability to update the display dynamically.
+
+Test Case: Test Case 2
+testCaseName: Verify Genre Modification Updates List
+objective: Verify that after modifying an existing genre, the list of genres updates correctly to reflect the changes.
+testSteps:
+  - Step 1: Navigate to the 'Genres' page to display the list of genres.
+  - Step 2: Select an existing genre and modify its details (process of modifying not described, assuming a separate functionality).
+  - Step 3: After modification, navigate back to the 'Genres' page if not redirected automatically.
+expectedResult: The list of genres displays the modified genre with updated id, name, and description.
+explanation: This test case checks if the system correctly updates the list of genres when an existing genre's details are modified, ensuring data consistency.
+
+Test Case: Test Case 3
+testCaseName: Verify Genre Deletion Updates List
+objective: Verify that after deleting an existing genre, the list of genres updates correctly to exclude the deleted genre.
+testSteps:
+  - Step 1: Navigate to the 'Genres' page to display the list of genres.
+  - Step 2: Delete an existing genre from the list (process of deleting not described, assuming a separate functionality).
+  - Step 3: After deletion, navigate back to the 'Genres' page if not redirected automatically.
+expectedResult: The list of genres no longer displays the deleted genre; it is updated to exclude the deleted genre's id, name, and description.
+explanation: This test case ensures that the genres list accurately reflects the removal of a genre, testing the system's ability to dynamically update the display upon deletion.
+

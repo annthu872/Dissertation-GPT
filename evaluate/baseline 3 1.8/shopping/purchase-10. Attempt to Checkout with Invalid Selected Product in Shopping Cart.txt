@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Checkout with an Out-of-Stock Product in Shopping Cart
+objective: Verify that the system prevents checkout when an out-of-stock product is selected in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where previously added items are listed.
+  - Step 2: Attempt to select an out-of-stock item by clicking on the checkbox before the item.
+  - Step 3: Observe if the checkbox can be selected.
+  - Step 4: Click on the 'Checkout' button.
+expectedResult: The checkbox for the out-of-stock item cannot be selected, and the 'Checkout' button is disabled or does not proceed to checkout.
+explanation: This test case ensures that users cannot proceed with checkout if they attempt to select an out-of-stock item, adhering to the exception flow where the system should prevent selection and checkout of such items.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Checkout with a Product Erased by the Seller in Shopping Cart
+objective: Verify that the system prevents checkout when a product erased by the seller is selected in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where previously added items are listed.
+  - Step 2: Attempt to select a product that has been erased by the seller by clicking on the checkbox before the item.
+  - Step 3: Observe if the checkbox can be selected.
+  - Step 4: Click on the 'Checkout' button.
+expectedResult: The checkbox for the product erased by the seller cannot be selected, and the 'Checkout' button is disabled or does not proceed to checkout.
+explanation: This test case ensures that users cannot proceed with checkout if they attempt to select a product that has been erased by the seller, adhering to the exception flow where the system should prevent selection and checkout of such items.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Checkout with a Product Having Quantity More Than Stock in Shopping Cart
+objective: Verify that the system prevents checkout when a product with quantity selected more than the available stock is in the shopping cart
+testSteps:
+  - Step 1: Navigate to the shopping cart page where previously added items are listed.
+  - Step 2: For a product with adjustable quantity, increase the quantity more than the available stock using the plus button.
+  - Step 3: Attempt to select this product by clicking on the checkbox before the item.
+  - Step 4: Click on the 'Checkout' button.
+expectedResult: The system prevents the selection of the product or disables the 'Checkout' button, ensuring the user cannot proceed to checkout with a quantity more than the available stock.
+explanation: This test case checks the system's handling of attempts to checkout with a product quantity exceeding the available stock, following the exception flow rules.
+

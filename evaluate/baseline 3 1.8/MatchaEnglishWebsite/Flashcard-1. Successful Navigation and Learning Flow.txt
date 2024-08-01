@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Successful Navigation through Flashcard Learning Flow
+objective: Verify that a learner can successfully navigate through the flashcard learning flow from selecting a lesson to completing a topic.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Click on the flashcard to flip it and view the back, which contains illustrations and examples of real-life usage.
+  - Step 6: Click the 'Next' button to go to the flashcard of the next vocabulary word.
+  - Step 7: Repeat steps 5 and 6 for all flashcards in the topic.
+  - Step 8: Once all the flashcards have been studied, click the 'Next' button on the last flashcard to be redirected to the 'completion notification' page.
+  - Step 9: Click 'return to the lesson page' on the 'completion notification' page.
+expectedResult: The learner is able to navigate through the flashcard learning flow, study all the flashcards in a topic, and is redirected to the lesson page after completing the topic.
+explanation: This test case ensures that the basic flow of the flashcard learning process is functional and that learners can successfully navigate through the learning material as intended in the use case.
+
+Test Case: Test Case 2
+testCaseName: Navigation using 'Continue Studying' option
+objective: Verify that a learner can use the 'continue studying' option after completing a topic to proceed to the next topic.
+testSteps:
+  - Step 1: Complete the basic flow of studying a topic as outlined in Test Case 1.
+  - Step 2: On the 'completion notification' page, click 'continue studying'.
+  - Step 3: Verify that the topic is marked as completed and the vocabulary words are marked as studied.
+  - Step 4: Confirm that the system redirects the learner to the Flashcard page for the continuous topic.
+expectedResult: After completing a topic and choosing to 'continue studying', the learner is redirected to the next topic, and the completed topic is marked accordingly.
+explanation: This test case verifies the functionality of the 'continue studying' option, ensuring learners can seamlessly continue their learning journey after completing a topic.
+
+Test Case: Test Case 3
+testCaseName: Handling 'Back' Button Press with 'Stay' Option During Flashcard Study
+objective: Verify that the system correctly handles the 'back' button press by displaying an exit confirmation dialog and continues the flashcard study when 'stay' is selected.
+testSteps:
+  - Step 1: Navigate to a Flashcard page for a selected topic following steps 1-6 of the basic flow.
+  - Step 2: Press the 'back' button on the browser or application interface.
+  - Step 3: On the exit confirmation dialog box, click 'stay'.
+expectedResult: The exit confirmation dialog box appears upon pressing the 'back' button, and selecting 'stay' returns the learner to the flashcard study without exiting.
+explanation: This test case ensures that learners are given a chance to stay in their current study session if the 'back' button is pressed accidentally during the flashcard study.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Author Details With No Biography
+objective: Verify that the application correctly displays an author's details when the author has no biography
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Identify an author from the list who has no biography.
+  - Step 3: Click on the 'Title' of the author with no biography.
+expectedResult: The application displays the author's details page with the following columns: id, Name, Bio. The Bio column should be empty or indicate 'No biography available'.
+explanation: This test case ensures that the application can handle and correctly display author details when the author does not have a biography. It is directly related to the test scenario 'Display Author Details - Author With No Biography' by testing the main scenario's ability to handle authors without biographies.
+

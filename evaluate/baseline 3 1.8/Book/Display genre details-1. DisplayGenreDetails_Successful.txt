@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details Successfully
+objective: Verify that the application successfully displays the details of a user-selected genre from the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Locate and click on the 'Name' of a specific genre from the list.
+  - Step 3: Observe the information displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns: id (unique genre number), Name, and Description.
+explanation: This test case ensures that when a user selects a genre from the genre list, the application correctly displays the detailed information of that genre, including its unique ID, name, and description. It directly matches the scenario of successfully displaying genre details.
+

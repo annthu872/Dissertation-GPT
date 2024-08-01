@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Changed Shipping Address - Using Saved Address
+objective: Verify that the user can change the shipping address to a saved address during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, click the 'Change Shipping Address' button.
+  - Step 4: From the list of saved addresses, select a different address than the default one.
+  - Step 5: Review the updated order summary to ensure the shipping address has been updated.
+  - Step 6: Complete the checkout process by clicking on the 'Place Order' button.
+expectedResult: The order is successfully placed with the newly selected shipping address, and the user receives an order confirmation with the updated address details.
+explanation: This test case ensures that users can successfully change their shipping address to one of their saved addresses during the checkout process, which is a direct match to the scenario name.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Changed Shipping Address - Adding a New Address
+objective: Verify that the user can add and select a new shipping address during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, click the 'Change Shipping Address' button.
+  - Step 4: Click on the option to add a new address.
+  - Step 5: Fill in the new address form with valid details, including full name, phone number, city, district, ward, location's address, and address type (optional).
+  - Step 6: Click the 'Finish' button to save the new address.
+  - Step 7: Ensure the new address is selected as the shipping address.
+  - Step 8: Review the updated order summary to ensure the shipping address has been updated to the new address.
+  - Step 9: Complete the checkout process by clicking on the 'Place Order' button.
+expectedResult: The order is successfully placed with the new shipping address, and the user receives an order confirmation with the new address details.
+explanation: This test case verifies the functionality for users to add a new shipping address during the checkout process and use it for their current order, aligning with the scenario's requirement.
+

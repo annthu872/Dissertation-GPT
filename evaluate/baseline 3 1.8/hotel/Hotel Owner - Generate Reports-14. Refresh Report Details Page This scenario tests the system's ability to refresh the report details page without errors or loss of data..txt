@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Refresh Report Details Page Without Errors
+objective: Verify that the Hotel Owner can refresh the report details page without encountering any errors or loss of data.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter valid parameters to generate a report, such as a specific date period.
+  - Step 4: Confirm the parameters and initiate the report generation.
+  - Step 5: Once the report is generated, open a specific report to view its details.
+  - Step 6: Refresh the report details page.
+expectedResult: After refreshing, the report details page should reload without any errors, and all previously displayed report data should remain intact and visible.
+explanation: This test case ensures that the functionality for refreshing the report details page works as intended, maintaining data integrity and system stability, directly addressing the test scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Refresh Report Details Page After Validation Error
+objective: Verify that after encountering a validation error during report generation, the user can successfully refresh the report details page without errors or data loss.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page by clicking on the Reports Button.
+  - Step 3: Enter parameters for report generation that are known to fail validation (e.g., an invalid date range).
+  - Step 4: Attempt to generate the report and receive a validation error message.
+  - Step 5: Correct the parameters to a valid state and generate the report.
+  - Step 6: Open a specific report to view its details.
+  - Step 7: Refresh the report details page.
+expectedResult: The report details page should reload successfully without any errors after the refresh, displaying all report data as expected.
+explanation: This test case checks the system's resilience and data handling capabilities after a validation error, ensuring that subsequent operations like refreshing the page do not affect the user experience negatively.
+

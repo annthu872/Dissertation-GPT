@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Successful Room Service Request with Valid Room ID
+objective: Verify that a guest can successfully request room service using a valid room ID and receive a success message along with the total charges.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, choose one or more services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges displayed and the success message.
+  - Step 7: Verify that the system navigates to the main page after displaying the success message.
+expectedResult: The guest should see a success message indicating that the room service request was successful, along with the total charges for the requested services, followed by redirection to the main page.
+explanation: This test case ensures that the basic course of events for requesting room service as described in the use case is functioning correctly for guests with a valid room ID.
+
+Test Case: Test Case 2
+testCaseName: Room Service Request with Invalid Room ID
+objective: Verify that the system displays an 'Invalid Id' message when a guest attempts to request room service with an invalid room ID.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: Observe the message displayed by the system.
+expectedResult: The system should display an 'Invalid Id' message and not proceed to the list of room services.
+explanation: This test case checks the alternative path of the use case where the room ID validation fails, ensuring that the system correctly handles invalid room IDs.
+
+Test Case: Test Case 3
+testCaseName: Room Service Request with Valid Room ID and Selection of Available Services
+objective: Verify that a guest can request only available services and receive a success message with total charges.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID in the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services displayed, choose only the services that are marked as available.
+  - Step 5: Confirm the selection of services.
+  - Step 6: Review the total charges displayed and the success message.
+  - Step 7: Verify that the system navigates to the main page after displaying the success message.
+expectedResult: The guest should be able to request available services, see the total charges for those services, receive a success message, and then be redirected to the main page.
+explanation: This test case ensures that guests can only request services that are available, as per the alternative path mentioned in the use case, and that the system behaves as expected when doing so.
+

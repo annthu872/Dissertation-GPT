@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Special Discount Pricing
+objective: Ensure that the product information page displays all required information including special discount pricing accurately.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card that is known to have a special discount pricing.
+  - Step 3: Observe the product information displayed on the product's information page.
+expectedResult: The product information page should display the product title, detailed description, high-quality images and videos, detailed specifications, current price with special discount highlighted, real-time stock availability, shipping methods with estimated delivery times and fees, seller's profile with name, ratings, and reviews, an option to contact the seller, a link to the seller's store on Shopee, and a list of related product cards. The 'Customer Reviews and Ratings' section should show the average rating, 3 latest detailed reviews with ratings, written feedback, and user-uploaded images.
+explanation: This test case is designed to verify that all aspects of the product information, especially the special discount pricing, are displayed correctly to the user. It directly matches the scenario name by focusing on the display of product information with special discount pricing.
+
+Test Case: Test Case 2
+testCaseName: Verify Expansion of Customer Reviews and Ratings
+objective: Ensure that users can expand the 'Customer Reviews and Ratings' section to view more reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Locate the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand this section to view more reviews.
+expectedResult: Upon clicking the option to expand, the 'Customer Reviews and Ratings' section should display more than the initial 3 detailed reviews, allowing the user to view additional customer feedback.
+explanation: This test case ensures that the functionality to expand the 'Customer Reviews and Ratings' section works as intended, allowing users to access more detailed reviews beyond the initially displayed three.
+
+Test Case: Test Case 3
+testCaseName: Verify Direct Seller Contact via Product Information Page
+objective: Ensure that users can contact the seller directly through the platform's messaging system from the product information page.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Seller Contact' section.
+  - Step 3: Click on the option to contact the seller directly through the platform's messaging system.
+expectedResult: The user should be redirected to the platform's messaging system with the seller's contact automatically selected, ready for the user to send a message.
+explanation: This test case verifies the functionality that allows users to contact the seller directly from the product information page, enhancing the user's shopping experience by facilitating easy communication with the seller.
+

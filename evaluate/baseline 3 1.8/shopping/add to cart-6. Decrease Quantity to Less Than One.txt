@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Decrease Quantity to Less Than One for a Single Option Product
+objective: Verify that the system prevents decreasing the product quantity to less than one for a product without options.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product without options.
+  - Step 3: Click the 'Add to Cart' button to add the product to the cart.
+  - Step 4: Access the shopping cart.
+  - Step 5: Attempt to decrease the product quantity to less than one by clicking the minus button next to the product quantity.
+expectedResult: The minus button is disabled, and the product quantity remains at one, ensuring the quantity cannot be decreased to less than one.
+explanation: This test case ensures that the system adheres to the exception flow where the quantity cannot be decreased below one, thus preventing negative or zero quantities in the cart for products without options.
+
+Test Case: Test Case 2
+testCaseName: Decrease Quantity to Less Than One for a Product with Multiple Options
+objective: Verify that the system prevents decreasing the product quantity to less than one for a product with multiple options.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for a product with multiple options.
+  - Step 3: Select one available option.
+  - Step 4: Click the 'Add to Cart' button to add the product to the cart.
+  - Step 5: Access the shopping cart.
+  - Step 6: Attempt to decrease the product quantity to less than one by clicking the minus button next to the product quantity.
+expectedResult: The minus button is disabled, and the product quantity remains at one, ensuring the quantity cannot be decreased to less than one for products with multiple options.
+explanation: This test case verifies the system's behavior for products with options, ensuring it prevents users from decreasing the quantity to less than one, in line with the exception flow.
+

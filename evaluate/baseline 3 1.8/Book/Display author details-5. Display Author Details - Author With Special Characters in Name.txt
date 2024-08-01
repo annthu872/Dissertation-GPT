@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Author Details with Special Characters in Name
+objective: Verify that the application correctly displays the details of an author whose name contains special characters
+testSteps:
+  - Step 1: Navigate to the author list page on the application.
+  - Step 2: Locate an author with special characters in their name from the list.
+  - Step 3: Click on the 'Title' of the author with special characters in their name.
+expectedResult: The application should display the details page for the selected author, including the columns id, Name (with special characters accurately displayed), and Bio.
+explanation: This test case ensures that authors with special characters in their names are properly handled and displayed by the application. It directly relates to the test scenario by focusing on the display of author details, specifically for authors with special characters in their names.
+

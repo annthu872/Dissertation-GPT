@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: View Continuous Learning Days Without Break
+objective: Verify that the learner can view the number of continuous learning days without any break.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select 'History' on the Home page.
+  - Step 3: On the History page, select 'Day History'.
+expectedResult: The system should redirect the learner to a page showing the number of days they have learned continuously without any break.
+explanation: This test case ensures that learners can view their continuous learning days as intended by the basic flow of the use case. It directly matches the scenario of viewing learning days after a break by showing the functionality works as expected without a break.
+
+Test Case: Test Case 2
+testCaseName: View Learning Days After Break
+objective: Verify that the system resets the count of continuous learning days to one after a break in learning.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Ensure there is a break in the learning days (this can be simulated or pre-arranged).
+  - Step 3: Select 'History' on the Home page.
+  - Step 4: On the History page, select 'Day History'.
+expectedResult: The system should redirect the learner to a page showing the number of continuous learning days reset to one after a break.
+explanation: This test case verifies the functionality of resetting the continuous learning days count to one after a break, as specified in the basic flow of the use case. It is crucial for ensuring the system accurately tracks and displays learning days after a break.
+

@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Checkout with No Default Shipping Address - Adding New Address
+objective: Verify that the system forces the user to add a new shipping address when there is no default shipping address during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Observe if the system prompts for adding a new shipping address due to the absence of a default shipping address.
+  - Step 4: Click on the button to add a new shipping address.
+  - Step 5: Fill in the form with valid details: Full name, phone number, city, district, ward, location's address, and address type (optional).
+  - Step 6: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system successfully adds the new shipping address and allows the user to proceed with the checkout process.
+explanation: This test case ensures that users without a default shipping address are prompted to add one, following the alternative flow 1 and part of alternative flow 3 from the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Checkout with No Default Shipping Address - Invalid Address Input
+objective: Verify that the system prevents the user from adding a new shipping address with invalid inputs.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: Attempt to add a new shipping address by clicking the appropriate button.
+  - Step 4: Fill in the shipping address form with invalid details (e.g., less than 2 letters for the full name, incorrect phone number format).
+  - Step 5: Click the 'Finish' button to attempt adding the new shipping address.
+expectedResult: The system displays a notification about the incorrect input and prevents the user from adding the new shipping address.
+explanation: This test case checks the system's validation mechanism for adding new shipping addresses, ensuring it adheres to the exception flow where inputs do not meet the required conditions.
+

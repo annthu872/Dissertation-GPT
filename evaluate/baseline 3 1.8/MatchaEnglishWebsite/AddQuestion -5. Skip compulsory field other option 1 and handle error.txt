@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify error handling when 'other option 1' is skipped
+objective: Ensure the system prompts an error when 'other option 1' is not filled and prevents question submission
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: On the 'Add new question for selection test' page, fill in the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 9: Fill in the 'correct answer' field with the correct word form.
+  - Step 10: Skip the 'other option 1' field and fill in the 'other option 2' and 'other option 3' fields with different wrong answer words.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'other option 1' field.
+explanation: This test case is designed to verify that the system correctly handles the scenario where the compulsory field 'other option 1' is skipped during the creation of questions for the selection test. It ensures that the system enforces the completion of all compulsory fields before submission.
+

@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Review Test and Return to Home Page After Last Word
+objective: Verify that the learner can review words and is redirected to the Home page after reviewing the last word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Engage with the review screen by answering all the review questions correctly or incorrectly until reaching the last word in the review list.
+  - Step 4: After reviewing the last word, press the 'Continue' button.
+expectedResult: After pressing the 'Continue' button for the last word, the learner should be redirected to the Home page, and the review session should be saved.
+explanation: This test case ensures that the system correctly handles the end of a review session by saving the session and returning the learner to the Home page, as described in Alternative flow 2.
+
+Test Case: Test Case 2
+testCaseName: Review Test with Wrong Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when a learner selects a wrong answer.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Proceed to answer a review question by selecting a wrong answer.
+  - Step 4: Observe the feedback and proceed by pressing the 'Continue' button.
+expectedResult: After selecting a wrong answer, the system should show a red word as feedback, decrease the memory level of the word, and allow the learner to continue to the next word.
+explanation: This test case checks the system's handling of incorrect answers during a review session, as outlined in Alternative flow 1, ensuring that memory levels are adjusted accordingly.
+
+Test Case: Test Case 3
+testCaseName: Review Test Exit and Stay
+objective: Verify that learners can choose to stay in the review session after pressing the 'Exit' button.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Start the review and then press the 'Exit' button.
+  - Step 4: On the pop-up, select the 'Stay' button.
+expectedResult: After selecting 'Stay', the learner should remain on the review screen, allowing them to continue the review session.
+explanation: This test case verifies the functionality of the 'Exit' button during a review session, specifically testing the option to stay in the session as described in Alternative flow 3.
+
+Test Case: Test Case 4
+testCaseName: Review Test Exit and Confirm
+objective: Verify that learners can exit the review session and return to the Home page without saving the review by pressing the 'Exit' button and confirming.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Start the review and then press the 'Exit' button.
+  - Step 4: On the pop-up, select the 'Confirm' button.
+expectedResult: After selecting 'Confirm', the learner should be redirected to the Home page, and the review session should not be saved.
+explanation: This test case ensures that the system correctly processes a learner's decision to exit and not save a review session, as outlined in Exception flow 1.
+

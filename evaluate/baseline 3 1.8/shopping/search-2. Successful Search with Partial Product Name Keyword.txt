@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Successful Search with Partial Product Name Keyword
+objective: Verify that the system displays relevant product listings when a user searches using a partial product name keyword.
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a partial product name keyword into the search bar. (For example, if the full product name is 'Smartphone', type 'Smart').
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display a list of relevant search matches. These matches should include products with names or descriptions that include or are related to the 'Smart' keyword. A maximum of 60 product cards are shown per page with a pagination bar at the bottom.
+explanation: This test case is created to ensure that the search functionality works correctly when users search for products using partial keywords. It directly matches the scenario name by testing the basic flow of the search use case.
+
+Test Case: Test Case 2
+testCaseName: Successful Search with Partial Product Name Keyword and Pagination Interaction
+objective: Verify that users can navigate through pages of search results using the pagination bar after searching with a partial product name keyword.
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a partial product name keyword into the search bar and press enter or click the search icon.
+  - Step 3: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 4: Click on the right button in the pagination bar to move to the next page of search results.
+expectedResult: The system should navigate to the next page of search results, displaying a new set of up to 60 product cards relevant to the partial product name keyword.
+explanation: This test case ensures that the pagination functionality works as expected within the search results, allowing users to view additional products related to their search query. It is relevant to the scenario as it tests the basic flow of navigating through search results after a successful search.
+

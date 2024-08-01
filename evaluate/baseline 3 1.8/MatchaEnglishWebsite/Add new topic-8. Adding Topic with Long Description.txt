@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic with Long Description Successfully
+objective: Verify that the administrator can successfully add a new topic with a long description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a long description for the topic in the description field. Ensure the description is significantly longer than typical use cases, for example, several paragraphs.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should successfully create the new topic with the long description and redirect the administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+explanation: This test case ensures that the system can handle long descriptions for topics without errors, which is crucial for detailed topic explanations.
+
+Test Case: Test Case 2
+testCaseName: Adding Topic with Long Description and Duplicate Name
+objective: Verify that the system prompts the administrator to change the topic name if it's already used, even with a long description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name for the topic that is already used in the existing topics in the name field.
+  - Step 4: Enter a long description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification that the name is already used.
+  - Step 7: Enter a new, unique name in the name field.
+  - Step 8: Select 'Save' again to create the topic.
+expectedResult: The system should prompt the administrator to change the topic name due to duplication. After changing to a unique name, the system should successfully create the new topic with the long description and proceed as expected.
+explanation: This test case checks the system's ability to handle name duplication errors gracefully, even when a long description is provided, ensuring data integrity and user guidance.
+
+Test Case: Test Case 3
+testCaseName: Cancelling Adding Topic with Long Description
+objective: Verify that the administrator can cancel the process of adding a new topic after entering a long description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Enter a long description for the topic in the description field.
+  - Step 5: Select 'Cancel' instead of 'Save'.
+expectedResult: The system should not create a new topic and should return the administrator to the previous page or state without saving any entered information.
+explanation: This test case ensures that administrators have the option to cancel the creation of a new topic after entering information, including a long description, without affecting the system state.
+

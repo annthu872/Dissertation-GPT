@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Search and Verify Sort by Price Ascending
+objective: Verify that the user can search for products and sort the results by price in ascending order.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword related to the products you wish to find in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: After the search results are displayed, locate the sort option dropdown.
+  - Step 5: Select the option to sort products by price from lowest to highest.
+expectedResult: The products in the search results should be sorted by price in ascending order, starting with the lowest priced item.
+explanation: This test case ensures that the search functionality works as intended and that users can sort the search results by price in ascending order. It directly matches the scenario name by combining the search use case with the specific sorting action.
+
+Test Case: Test Case 2
+testCaseName: Search with Keyword Related to Shop Name and Sort by Price Ascending
+objective: Verify that searching with a keyword related to a shop name displays the shop's information and products, and allows sorting by price in ascending order.
+testSteps:
+  - Step 1: Navigate to the search bar on the homepage.
+  - Step 2: Type a keyword that is known to be related to a shop name in the search bar.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Observe the shop's information displayed at the top of the search results.
+  - Step 5: Locate the sort option dropdown below the search bar or near the top of the search results.
+  - Step 6: Select the option to sort products by price from lowest to highest.
+expectedResult: The shop's information is displayed at the top, followed by the shop's product cards and related product cards, all sorted by price in ascending order.
+explanation: This test case verifies that when a keyword related to a shop name is searched, the system correctly displays the shop's information and allows the user to sort the shop's and related products by price in ascending order. It tests the alternative flow for shop-related keywords combined with the sorting functionality.
+

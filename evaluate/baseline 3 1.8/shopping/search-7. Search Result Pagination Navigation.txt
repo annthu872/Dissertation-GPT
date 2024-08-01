@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Search Result Pagination Navigation - Basic Navigation
+objective: Verify that users can navigate through search result pages using the pagination bar.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that will yield more than 60 results.
+  - Step 3: Press enter or click the search icon.
+  - Step 4: Scroll down to the bottom of the search results page to locate the pagination bar.
+  - Step 5: Click on the right arrow button in the pagination bar to move to the next page.
+  - Step 6: Once on the new page, click on a specific page number in the pagination bar.
+  - Step 7: Finally, click on the left arrow button in the pagination bar to return to the previous page.
+expectedResult: The user should be able to navigate to the next page, a specific page, and back to the previous page using the pagination bar, with each page displaying up to 60 product cards.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate through multiple pages of search results.
+
+Test Case: Test Case 2
+testCaseName: Search Result Pagination Navigation - Navigation with No Results
+objective: Verify the pagination behavior when the search results are empty.
+testSteps:
+  - Step 1: Click on the search bar.
+  - Step 2: Type a keyword in the search bar that is unlikely to yield any results.
+  - Step 3: Press enter or click the search icon.
+expectedResult: The system should display random product cards due to the absence of search results, and the pagination bar should either be hidden or disabled since there are no additional pages to navigate.
+explanation: This test case checks how the pagination feature behaves in scenarios where there are no direct search results, ensuring that the system gracefully handles empty search outcomes.
+

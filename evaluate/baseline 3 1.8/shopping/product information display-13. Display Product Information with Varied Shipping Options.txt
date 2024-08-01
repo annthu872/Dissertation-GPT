@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Shipping Options
+objective: Ensure that the product information page displays all necessary information including varied shipping options.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check for high-quality images of the product from multiple angles and videos demonstrating the product's features and usage.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Ensure the current price, any discounts, offers, or special pricing are clearly displayed.
+  - Step 7: Check for real-time stock availability.
+  - Step 8: Verify that available shipping methods and estimated delivery times are displayed along with shipping fees.
+expectedResult: The product information page should display title, description, images, videos, specifications, price information, stock availability, and varied shipping options including methods, estimated delivery times, and fees.
+explanation: This test case ensures that users can view comprehensive product details including varied shipping options, which is crucial for making informed purchasing decisions.
+
+Test Case: Test Case 2
+testCaseName: Verify Seller Information and Contact Options on Product Page
+objective: Ensure that the seller's profile, ratings, reviews, and contact options are correctly displayed on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Seller Profile' section and verify the seller's name, ratings, and reviews are displayed.
+  - Step 4: Check for the option to contact the seller directly through the platform's messaging system.
+  - Step 5: Verify the presence of a link to the seller's store page on Shopee.
+expectedResult: The product information page should display the seller's profile including name, ratings, reviews, a contact option through the platform's messaging system, and a link to the seller's store page.
+explanation: This test case verifies that users have access to detailed seller information and contact options, enhancing trust and communication between buyers and sellers.
+
+Test Case: Test Case 3
+testCaseName: Verify Customer Reviews and Related Products Display
+objective: Ensure that customer reviews, ratings, and related products are displayed on the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section and verify the display of the average rating and 3 latest detailed reviews.
+  - Step 4: Check the functionality to expand the 'Customer Reviews and Ratings' to view more reviews.
+  - Step 5: Scroll to view the 'Related Products' section and verify the display of related product cards.
+expectedResult: The product information page should display the average customer rating, 3 latest detailed reviews with an option to view more, and a list of related product cards.
+explanation: This test case ensures that users can view customer feedback and discover related products, which can influence purchasing decisions and enhance shopping experience.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details for a Book with No Description
+objective: Verify that the book details page correctly displays a book's details when the book has no description.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Identify a book that is known to have no description.
+  - Step 3: Click on the 'Title' of the book identified in Step 2.
+expectedResult: The book details page is displayed with the following columns: id, Title, Author, Genre, and Publication date. The Description column should be present but empty or indicate that no description is available.
+explanation: This test case ensures that the application can handle and correctly display book details for books that do not have a description. It is important to test this scenario to ensure that the absence of a description does not negatively impact the user's ability to view other details about the book.
+

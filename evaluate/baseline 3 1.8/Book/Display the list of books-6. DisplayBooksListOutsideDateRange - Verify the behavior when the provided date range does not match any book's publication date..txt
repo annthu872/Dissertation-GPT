@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display No Books for Outside Date Range Filter
+objective: Verify that no books are displayed when the provided date range does not match any book's publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Locate the date range input forms above the list of books.
+  - Step 3: Enter a date range that does not match any book's publication date in the database into the date range input forms.
+  - Step 4: Click the refresh button to the right of the date inputs.
+expectedResult: The application displays a message indicating no books found or an empty list, as there are no books with publication dates within the provided date range.
+explanation: This test case is designed to verify the application's behavior when the user filters the book list with a date range that does not match any book's publication date. It directly matches the scenario name by testing the display functionality for books outside the specified date range.
+

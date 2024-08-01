@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Save Edited Test With Mandatory Fields Missing
+objective: Verify that the system prevents saving an edited test when mandatory fields are missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose a topic that contains the test needing editing, then select 'Edit'.
+  - Step 4: In the editing interface, delete or clear the content from a mandatory field (e.g., remove the vocabulary from a fill in the blanks exercise).
+  - Step 5: Attempt to save the changes by selecting 'Save'.
+expectedResult: The system should display an error message indicating that mandatory fields cannot be empty and prevent the test from being saved.
+explanation: This test case is designed to ensure that the system enforces the requirement for mandatory fields to be filled during the test editing process. It directly addresses the scenario of attempting to save an edited test with mandatory fields missing by following the basic flow up to the point where the error condition is introduced.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Save Edited Test With Mandatory Fields Missing Using Exit Confirmation
+objective: Verify that the system prevents saving an edited test with mandatory fields missing through the exit confirmation dialogue and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose a topic that contains the test needing editing, then select 'Edit'.
+  - Step 4: In the editing interface, delete or clear the content from a mandatory field (e.g., remove the vocabulary from a fill in the blanks exercise).
+  - Step 5: Attempt to exit the editing mode by pressing the button to exit.
+  - Step 6: On the pop-up screen that appears with 'Save changes?' select 'Save'.
+expectedResult: The system should display an error message indicating that mandatory fields cannot be empty and prevent the test from being saved, even when attempting to save through the exit confirmation dialogue.
+explanation: This test case extends the scenario to include the alternative flow where the administrator attempts to save the edited test with mandatory fields missing through the exit confirmation dialogue. It ensures that the system's validation checks are applied consistently across different user actions.
+

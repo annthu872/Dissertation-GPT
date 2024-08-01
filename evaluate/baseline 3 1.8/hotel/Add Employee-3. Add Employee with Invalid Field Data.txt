@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with All Fields Unfilled
+objective: Verify that the system shows a message indicating all fields are required when trying to add an employee without filling any fields.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Attempt to add an employee by clicking the Add button without filling any fields.
+expectedResult: The system should display a message indicating that all fields are required.
+explanation: This test case ensures that the system correctly validates the requirement for all fields to be filled out when adding a new employee, as per the alternative path in the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Invalid Field Data
+objective: Verify that the system shows a message indicating invalid field entered when trying to add an employee with incorrect data in one or more fields.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the Employee option.
+  - Step 3: Fill all the fields with data, intentionally entering invalid data in at least one field.
+  - Step 4: Attempt to add the employee by clicking the Add button.
+expectedResult: The system should display a message indicating that an invalid field was entered.
+explanation: This test case checks the system's ability to validate the data entered into the fields against the expected format or value range, preventing the addition of an employee with invalid data, as described in the alternative path of the use case.
+

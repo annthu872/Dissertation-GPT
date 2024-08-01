@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Author Creation with Missing Name Field
+objective: Verify that the system prevents the creation of a new author record when the 'Name' field is left blank and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to add a new author.
+  - Step 3: Leave the 'Name' field blank, fill out the 'Bio' field with a valid biography.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the 'Name' field is required and the author record is not added to the database.
+explanation: This test case ensures that the application enforces the requirement for a mandatory 'Name' field when creating a new author record, preventing incomplete records from being added to the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Author Creation with Missing Name Field
+objective: Verify that when a user cancels the creation of a new author with the 'Name' field left blank, no record is added to the database and the user is redirected to the list of authors.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Create new' button to initiate the creation of a new author.
+  - Step 3: Leave the 'Name' field blank and optionally fill out the 'Bio' field.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The user is redirected to the list of authors without any new record being added to the database, ensuring that incomplete or cancelled author creation attempts do not result in database entries.
+explanation: This test case checks the functionality of the 'Cancel' button in the author creation process, especially in scenarios where mandatory fields like 'Name' are left blank, to ensure data integrity and user control over the record creation process.
+

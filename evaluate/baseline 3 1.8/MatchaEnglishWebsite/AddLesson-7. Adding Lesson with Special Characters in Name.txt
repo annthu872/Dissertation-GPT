@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Adding Lesson with Special Characters in Name
+objective: Verify that the system allows the administrator to add a new lesson with special characters in the lesson name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a lesson name with special characters (e.g., 'Lesson #1!@') in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should successfully create the new lesson with the special characters in its name and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.
+explanation: This test case is created to ensure that the system supports the addition of new lessons with names containing special characters, as the scenario specifically tests the functionality of adding a lesson with special characters in its name.
+
+Test Case: Test Case 2
+testCaseName: Adding Lesson with Special Characters in Name Using Navbar
+objective: Verify that the administrator can navigate to the 'Add new Lesson' page via the navbar and successfully add a lesson with special characters in its name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' directly from the dropdown menu.
+  - Step 4: Enter a lesson name with special characters (e.g., 'Lesson *(&^%$#@!') in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should successfully navigate the administrator to the 'Add new Lesson' page, allow the creation of the new lesson with special characters in its name, and then redirect the administrator to the adding topic to new lesson section. The new lesson should be visible in the lesson list.
+explanation: This test case verifies the alternative navigation flow (Alternative flow 2) to the 'Add new Lesson' page via the navbar and tests the system's ability to handle lesson names with special characters.
+

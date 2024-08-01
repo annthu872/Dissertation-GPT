@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add New Author with Unique Name
+objective: Verify that a new author with a unique name can be successfully added to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Enter a unique name and a biography for the new author in the form fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A message confirms the new author record has been successfully added, and the list of authors displays with the newly added author.
+explanation: This test case ensures that the system can add a new author with a unique name to the database, following the main scenario of the use case.
+
+Test Case: Test Case 2
+testCaseName: Add New Author with Duplicate Name
+objective: Verify that the system prevents adding a new author with a name that already exists in the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Enter the name of an author that already exists in the database and a biography in the form fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that an author with this name already exists and the new author record is not added to the database.
+explanation: This test case checks the system's ability to handle duplicate author names by preventing the addition of a new author with a name that already exists, which is a direct match to the test scenario.
+
+Test Case: Test Case 3
+testCaseName: Cancel Author Creation
+objective: Verify that the author creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The author creation form is closed, no data is saved to the database, and the list of author records is displayed.
+explanation: This test case ensures that users can cancel the author creation process at any point before submission, which is part of the cancel operation scenario.
+

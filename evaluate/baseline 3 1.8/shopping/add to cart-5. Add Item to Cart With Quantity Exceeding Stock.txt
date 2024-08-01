@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Add Item to Cart With Quantity Exceeding Stock
+objective: Verify that the system prevents adding an item to the cart with a quantity exceeding the available stock and displays an appropriate message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with limited stock.
+  - Step 3: Attempt to increase the product quantity beyond the available stock by clicking the plus button next to the quantity.
+  - Step 4: Observe the behavior of the plus button and the message displayed.
+expectedResult: The plus button is disabled when the quantity reaches the maximum stock available, and a message 'You has reach maximum of the stock.' is displayed below the quantity field.
+explanation: This test case ensures that users are informed when they attempt to add more items to their cart than are available in stock, preventing over-ordering and potential inventory issues.
+

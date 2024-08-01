@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Adding Lesson Without Description
+objective: Verify that the administrator can add a new lesson without entering a description.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Leave the description field empty.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should allow the lesson to be saved without a description and redirect the administrator to the adding topic to new lesson section. The new lesson should appear in the lesson list.
+explanation: This test case is created to verify the system's behavior when an administrator attempts to add a new lesson without providing a description. It directly matches the scenario name by focusing on the action of adding a lesson without a description, following the basic flow of the use case.
+

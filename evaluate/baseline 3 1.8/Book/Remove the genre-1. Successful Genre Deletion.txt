@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Genre Deletion
+objective: Verify that a user can successfully delete a genre and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button to proceed with the deletion.
+expectedResult: The genre should be successfully deleted from the database, and the user should no longer see the deleted genre in the list.
+explanation: This test case ensures that the main scenario for deleting a genre is functioning as expected. It verifies that upon confirmation, the genre is removed from the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Deletion
+objective: Verify that a user can cancel the deletion of a genre and the record remains in the database
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Locate the genre you wish to delete and click the 'Delete' button next to it.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button to abort the deletion process.
+expectedResult: The deletion process should be aborted, and the genre should remain in the database. The user should still see the genre in the list.
+explanation: This test case verifies the cancel operation scenario where the user decides not to delete a genre. It ensures that the genre remains in the database and is still visible to the user.
+
+Test Case: Test Case 3
+testCaseName: Navigation After Cancelling Genre Deletion
+objective: Verify that after cancelling the deletion of a genre, navigating to other pages shows updated data without the deletion
+testSteps:
+  - Step 1: Navigate to the genre list/details page and initiate the deletion of a genre but cancel the operation.
+  - Step 2: Select the menu item 'Books'.
+  - Step 3: Repeat step 2 for 'Genres', 'Authors', 'Home', and 'API'.
+expectedResult: For each navigation step, the application should display the corresponding form with updated data, including the genre that was not deleted.
+explanation: This test case checks the system behavior after a user cancels a genre deletion. It ensures that the data remains unchanged across different sections of the application.
+

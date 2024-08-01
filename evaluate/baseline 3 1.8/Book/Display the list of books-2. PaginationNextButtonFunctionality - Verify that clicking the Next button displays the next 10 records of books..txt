@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Next Button Functionality Without Date Filter
+objective: Verify that clicking the 'Next' button displays the next 10 records of books without applying any date filter.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed (up to 10 items on the first page).
+  - Step 3: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The next 10 records of books should be displayed on the page.
+explanation: This test case verifies the basic functionality of the 'Next' button in the pagination block without any filters applied, ensuring that users can navigate through the list of books in increments of 10.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Next Button Functionality With Date Filter
+objective: Verify that clicking the 'Next' button displays the next 10 records of books that fall within a specified date range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Specify a date range in the date input forms above the list of books.
+  - Step 3: Click the refresh button to apply the date filter.
+  - Step 4: Observe the list of books displayed (up to 10 items on the first page) that fall within the specified date range.
+  - Step 5: Click the 'Next' button located below the records in the pagination block.
+expectedResult: The next 10 records of books that fall within the specified date range should be displayed on the page.
+explanation: This test case ensures that the 'Next' button functions correctly when a date filter is applied, allowing users to navigate through filtered records of books in increments of 10.
+

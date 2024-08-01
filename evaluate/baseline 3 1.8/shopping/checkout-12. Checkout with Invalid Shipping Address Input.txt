@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Invalid Shipping Address - Invalid Full Name
+objective: Verify that the system prevents the user from adding a new shipping address with an invalid full name during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Fill in the full name field with a single letter (invalid input).
+  - Step 6: Fill in the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the full name is invalid and prevents the user from adding the new shipping address.
+explanation: This test case ensures that the system enforces the validation rule for the full name field, which requires more than one letter, during the checkout process.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Shipping Address - Invalid Phone Number
+objective: Verify that the system prevents the user from adding a new shipping address with an invalid phone number during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Fill in the phone number field with an incorrect format (e.g., missing country code or incorrect number of digits).
+  - Step 6: Fill in the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the phone number is invalid and prevents the user from adding the new shipping address.
+explanation: This test case verifies that the system correctly validates the phone number format, which must match the (+84) xxx xxx xxx format, during the checkout process.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Invalid Shipping Address - Unidentifiable Location
+objective: Verify that the system prevents the user from adding a new shipping address with a location's address that cannot be identified on the map during checkout.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate checkout.
+  - Step 3: Click on the button to change the shipping address.
+  - Step 4: Select the option to add a new shipping address.
+  - Step 5: Fill in the location's address field with an address that cannot be identified on the map.
+  - Step 6: Fill in the rest of the form with valid information.
+  - Step 7: Click the 'Finish' button to add the new shipping address.
+expectedResult: The system displays a notification indicating the location's address cannot be identified and prevents the user from adding the new shipping address.
+explanation: This test case ensures that the system checks the validity of the location's address against a map to confirm its identifiability during the checkout process.
+

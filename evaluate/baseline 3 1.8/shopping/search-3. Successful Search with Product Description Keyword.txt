@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Successful Search with Product Description Keyword
+objective: Verify that the system displays relevant product cards when a user searches using a keyword related to product descriptions
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a keyword that is known to be part of a product's description but not necessarily in the product's name.
+  - Step 3: Press enter or click the search icon to initiate the search.
+expectedResult: The system displays a list of product cards where each product's name or description includes or is related to the keyword. The results should prioritize exact matches by name, followed by partial matches by name, and then matches by description. A maximum of 60 product cards are shown per page with a pagination bar at the bottom.
+explanation: This test case ensures that the search functionality works as expected when users search for products using keywords related to the product descriptions. It directly matches the scenario name by focusing on the use case's basic flow and verifying the system's ability to return relevant search results based on product descriptions.
+
+Test Case: Test Case 2
+testCaseName: Successful Search with Product Description Keyword and Pagination Interaction
+objective: Verify that users can navigate through pages of search results using the pagination bar when they search using a keyword related to product descriptions
+testSteps:
+  - Step 1: Navigate to the search bar on the platform.
+  - Step 2: Type a keyword that is known to be part of a product's description but not necessarily in the product's name.
+  - Step 3: Press enter or click the search icon to initiate the search.
+  - Step 4: Once the search results are displayed, scroll down to the pagination bar at the bottom of the page.
+  - Step 5: Click on the right arrow button to move to the next page of search results.
+expectedResult: The system displays the next page of product cards relevant to the search keyword. Each product's name or description includes or is related to the keyword, ensuring continuity in the relevance of search results across pages.
+explanation: This test case builds upon the basic search functionality by testing the pagination feature, which is crucial for navigating through a large number of search results. It ensures that the search feature works as intended, even when users need to view more products than what is displayed on the first page.
+

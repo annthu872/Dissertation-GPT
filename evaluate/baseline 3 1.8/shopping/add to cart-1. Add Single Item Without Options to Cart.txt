@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Add Single Item Without Options to Cart
+objective: Verify that a user can add a single item without options to their shopping cart successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item without options.
+  - Step 3: Click the 'Add to Cart' button.
+expectedResult: The item is added to the shopping cart successfully, and the cart icon updates to reflect the new number of items in the cart.
+explanation: This test case ensures that users can add items without options directly to their cart, following the basic flow of the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Add Single Item Without Options to Cart with Quantity Adjustment
+objective: Verify that a user can adjust the quantity of a single item without options before adding it to their shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item without options.
+  - Step 3: Adjust the quantity of the item using the plus button.
+  - Step 4: Click the 'Add to Cart' button.
+expectedResult: The item, with the adjusted quantity, is added to the shopping cart successfully, and the cart icon updates to reflect the new number of items in the cart.
+explanation: This test case verifies the functionality of adjusting the quantity of an item without options before adding it to the cart, as mentioned in the alternative flow of the use case.
+
+Test Case: Test Case 3
+testCaseName: Prevent Adding Item Without Options Over Maximum Stock
+objective: Verify that the system prevents adding an item without options to the cart if the selected quantity exceeds the available stock.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item without options but with limited stock.
+  - Step 3: Attempt to increase the quantity beyond the available stock using the plus button.
+expectedResult: The plus button is disabled, and a message 'You have reached the maximum of the stock.' is displayed, preventing the addition of the item to the cart.
+explanation: This test case checks the system's handling of attempts to add more items to the cart than are available in stock, aligning with the exception flow of the use case.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Out of Stock Item Without Options to Cart
+objective: Verify that the system prevents adding an out-of-stock item without options to the shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item without options that is out of stock.
+expectedResult: The 'Add to Cart' button is disabled or not visible, preventing the item from being added to the cart.
+explanation: This test case ensures that users cannot add out-of-stock items to their shopping cart, as per the exception flow in the use case specification.
+

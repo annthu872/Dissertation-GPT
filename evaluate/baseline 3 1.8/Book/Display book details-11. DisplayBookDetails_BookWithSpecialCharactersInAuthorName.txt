@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details with Special Characters in Author Name
+objective: Verify that the book details page correctly displays a book with special characters in the author's name
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Locate a book in the list that has special characters (such as accents, umlauts, or other non-standard characters) in the author's name.
+  - Step 3: Click on the 'Title' of the book identified in Step 2.
+expectedResult: The book details page is displayed with the following columns correctly populated: id, Title, Author (with special characters correctly displayed), Genre, Description, Publication date.
+explanation: This test case ensures that books with special characters in the author's name are correctly displayed on the book details page, verifying the application's ability to handle special characters in text fields.
+

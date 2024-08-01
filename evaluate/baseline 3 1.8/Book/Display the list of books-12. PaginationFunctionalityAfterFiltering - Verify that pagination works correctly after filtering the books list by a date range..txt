@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination Functionality After Filtering Books by Date Range
+objective: To verify that the pagination functionality works correctly after the user filters the book list by a specific date range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed (up to 10 items on each page).
+  - Step 3: Specify a date range in the date range input forms located above the list of books.
+  - Step 4: Click the refresh button next to the date range inputs to apply the filter.
+  - Step 5: Observe the filtered list of books displayed (up to 10 items on each page).
+  - Step 6: Click the 'Next' button or the page number at the bottom of the list to navigate to the next page of filtered results.
+expectedResult: After applying the date range filter, the application should display the filtered list of books correctly across multiple pages, with up to 10 items on each page. Navigating through the pages using the 'Next' button or page numbers should display the next set of filtered books correctly.
+explanation: This test case ensures that the pagination functionality remains effective and accurate after the user applies a filter based on the publication date range. It verifies that the application can handle filtering and pagination simultaneously, displaying the correct subset of books across multiple pages.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Purchase with Quantity Exceeding Stock from Product Detail Page
+objective: Verify that the system prevents a user from purchasing a product with a quantity exceeding the available stock from the product detail page.
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with known stock quantity.
+  - Step 2: Perform the 'View a product detail' feature to ensure the product details are visible.
+  - Step 3: Adjust the product quantity to a number greater than the available stock using the plus button next to the quantity field.
+  - Step 4: Attempt to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button should be disabled or an error message should be displayed indicating that the selected quantity exceeds the available stock, preventing the user from proceeding to checkout.
+explanation: This test case is created to ensure that users cannot proceed to purchase products with quantities exceeding the available stock, which aligns with the exception flow of the use case specification. It directly tests the scenario's requirement by simulating a user's attempt to purchase more items than are available, ensuring the system's integrity in handling stock limitations.
+

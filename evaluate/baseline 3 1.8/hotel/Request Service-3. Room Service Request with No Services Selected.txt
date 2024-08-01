@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Room Service Request with No Services Selected
+objective: Verify the system behavior when no services are selected during a room service request
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: Once the list of room services is shown, do not select any service.
+  - Step 5: Attempt to proceed to the next step or submit the request without selecting any services.
+expectedResult: The system should prevent the user from proceeding without selecting any services and display an appropriate message indicating that at least one service must be selected.
+explanation: This test case is created to ensure that the system handles scenarios where the user attempts to request room services without selecting any services. It is directly related to the test scenario 'Room Service Request with No Services Selected' by testing the system's response to such a situation.
+

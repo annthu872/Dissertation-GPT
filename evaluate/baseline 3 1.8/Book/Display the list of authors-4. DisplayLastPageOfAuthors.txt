@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display Last Page of Authors
+objective: Verify that the application correctly displays the last page of authors when navigating through pagination.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the pagination block below the list of authors.
+  - Step 3: Click the 'Next' button repeatedly until it is no longer possible to navigate further, indicating the last page has been reached.
+  - Step 4: Alternatively, if page numbers are displayed in the pagination block, click the highest page number.
+expectedResult: The application displays the last page of authors, showing up to 10 items. The list includes columns for id, Name, and Bio. The 'Next' button should be disabled or hidden on the last page, and the current page number should be the highest number available.
+explanation: This test case ensures that users can navigate to the last page of authors using the pagination feature. It verifies the functionality of the 'Next' button and direct page number selection within the pagination block, ensuring the application properly handles the display of the final set of author records.
+

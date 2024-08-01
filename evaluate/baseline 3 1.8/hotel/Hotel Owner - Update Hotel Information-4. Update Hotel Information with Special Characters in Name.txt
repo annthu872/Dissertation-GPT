@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Special Characters in Hotel Name
+objective: Verify that the Hotel Owner can update the hotel name with special characters and the system saves the changes correctly.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: In the Edit Hotel Information page, update the hotel name field with a name that includes special characters (e.g., 'Hotel @ Sunrise').
+  - Step 5: Update other fields as required.
+  - Step 6: Submit the changes.
+  - Step 7: Observe the system behavior and the message displayed.
+expectedResult: The system should validate the input, save the updated hotel information with the special characters in the database, display a success message, and redirect the user to the dashboard.
+explanation: This test case ensures that the system handles special characters in the hotel name field correctly during the update process, as per the use case specification. It tests the basic course of events including validation and successful update flow.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Special Characters in Hotel Name - Validation Error
+objective: Verify that the system shows an appropriate error message when the hotel name with special characters does not meet validation criteria.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: In the Edit Hotel Information page, update the hotel name field with a name that includes invalid special characters or patterns (e.g., 'Hotel <> Sunrise').
+  - Step 5: Attempt to submit the changes.
+  - Step 6: Observe the system behavior and the message displayed.
+expectedResult: The system should detect the invalid characters or patterns in the hotel name, prevent the update, show an error message regarding the validation failure, and not redirect the user to the dashboard.
+explanation: This test case checks the system's ability to validate the hotel name field for special characters that do not meet the specified criteria, following the alternative path in the use case specification.
+

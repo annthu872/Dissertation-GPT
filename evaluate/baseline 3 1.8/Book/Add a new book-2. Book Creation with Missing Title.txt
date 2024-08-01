@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Book Creation with Missing Title
+objective: Verify that the system prevents the creation of a new book record when the title is missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Leave the 'Title' field empty.
+  - Step 4: Fill in the 'Author', 'Genre', 'Description', and 'Publication date' fields with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the title is required and the book record is not added to the database.
+explanation: This test case directly addresses the scenario of attempting to create a book record without a title, ensuring the application's data validation mechanisms are functioning correctly by preventing incomplete records from being created.
+

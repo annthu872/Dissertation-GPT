@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details for a Book with Past Publication Date
+objective: Verify that the application correctly displays the details of a book with a past publication date when the user clicks on its title from the book list page.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Identify a book with a known past publication date from the list.
+  - Step 3: Click on the 'Title' of the identified book.
+expectedResult: The application should display the book details page with the following columns correctly filled: id (unique book number), Title, Author, Genre, Description, and the past Publication date.
+explanation: This test case ensures that the application can handle and correctly display the details of books with past publication dates. It is directly related to the test scenario 'DisplayBookDetails_BookWithPastPublicationDate' by focusing on the functionality of displaying book details, specifically for books with publication dates in the past.
+

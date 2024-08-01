@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Book Deletion and Navigate to Home
+objective: Verify that cancelling the book deletion and then navigating to 'Home' retains the book data and displays the Home page correctly.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of book records is still displayed.
+  - Step 5: Select the 'Home' menu item to navigate to the Home page.
+expectedResult: The book data is not deleted from the database, and the user is redirected to the Home page with all relevant data displayed correctly.
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the Home page, the book data remains intact, and the Home page displays as expected. It directly matches the scenario of cancelling a book deletion via navigation to 'Home'.
+

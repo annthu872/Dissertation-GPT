@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Successful Lesson Addition via Lesson Management
+objective: Verify that the administrator can successfully add a new English learning lesson through the Lesson Management page.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Enter a unique name for the lesson in the name field.
+  - Step 5: Enter a description for the lesson in the description field.
+  - Step 6: Select 'Save' to create the new lesson.
+expectedResult: The system should redirect the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case ensures that the basic flow of adding a new lesson through the Lesson Management page works as expected.
+
+Test Case: Test Case 2
+testCaseName: Lesson Addition with Duplicate Name
+objective: Verify that the system prevents the addition of a new lesson with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new Lesson' page via the Lesson Management section.
+  - Step 3: Enter a name for the lesson that is already used in the existing lessons.
+  - Step 4: Enter a description for the lesson in the description field.
+  - Step 5: Select 'Save' to attempt to create the new lesson.
+expectedResult: The system should display a notification that the name is already used, prompting the administrator to add another name.
+explanation: This test case checks the system's ability to handle duplicate lesson names and ensure data integrity.
+
+Test Case: Test Case 3
+testCaseName: Cancel Lesson Addition
+objective: Verify that the administrator can cancel the process of adding a new lesson at any time.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to the 'Add new Lesson' page via the Lesson Management section.
+  - Step 3: Enter a name for the lesson in the name field.
+  - Step 4: Enter a description for the lesson in the description field.
+  - Step 5: Select 'Cancel' to stop adding the new lesson.
+expectedResult: The system should cancel the lesson addition process and may redirect the administrator to the previous page or the Lesson Management page.
+explanation: This test case ensures that administrators have the flexibility to cancel the lesson addition process at any stage.
+
+Test Case: Test Case 4
+testCaseName: Direct Navigation to Add New Lesson Page
+objective: Verify that the administrator can directly navigate to the 'Add new Lesson' page via the navbar.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Verify that the system redirects to the 'Add new Lesson' page.
+expectedResult: The administrator should be redirected to the 'Add new Lesson' page, ready to enter lesson details.
+explanation: This test case verifies the alternative navigation flow to the 'Add new Lesson' page, ensuring that the navigation works as intended.
+

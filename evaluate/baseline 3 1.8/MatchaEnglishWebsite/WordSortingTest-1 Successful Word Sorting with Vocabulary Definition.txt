@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Successful Word Sorting with Correct Vocabulary Definition
+objective: Verify that the learner can successfully sort the letters to form the correct word based on the given definition or image and receive a green pop-up screen indicating a correct answer.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: A question, definition, or image is displayed with the letters of the vocabulary arranged randomly.
+  - Step 4: Arrange the letters by clicking on the letter buttons in the correct order.
+  - Step 5: Press enter after finishing arranging the letters.
+  - Step 6: Observe the color of the pop-up screen.
+expectedResult: A green pop-up screen appears, indicating the answer is correct.
+explanation: This test case ensures that the basic flow of the word sorting test use case is functioning as intended, allowing learners to test their vocabulary memorization levels by arranging letters to form the correct word and receiving immediate feedback.
+
+Test Case: Test Case 2
+testCaseName: Word Sorting with Incorrect Vocabulary Definition
+objective: Verify that the learner receives a red pop-up screen indicating a wrong answer when they incorrectly sort the letters based on the given definition or image.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: A question, definition, or image is displayed with the letters of the vocabulary arranged randomly.
+  - Step 4: Intentionally arrange the letters in the wrong order by clicking on the letter buttons.
+  - Step 5: Press enter after finishing arranging the letters.
+  - Step 6: Observe the color of the pop-up screen.
+expectedResult: A red pop-up screen appears, indicating the answer is wrong.
+explanation: This test case verifies the alternative flow where the learner chooses the wrong answer during the word sorting test, ensuring the system provides immediate and clear feedback on incorrect answers.
+

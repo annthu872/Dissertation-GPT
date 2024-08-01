@@ -1,0 +1,58 @@
+Test Case: Test Case 1
+testCaseName: View Vocabulary List
+objective: Verify that the learner can view their vocabulary list as per the basic flow
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Observe the displayed list of vocabulary.
+expectedResult: The system should display a list of the learner's vocabulary in vertical rows, each word in a horizontal row displaying the word name, word type, word meaning, memorization level, and a checkbox to mark the appearance of the vocabulary in the review test.
+explanation: This test case ensures that learners can successfully view their vocabulary list, which is a fundamental feature of the handbook use case.
+
+Test Case: Test Case 2
+testCaseName: Search Vocabulary in Handbook
+objective: Verify that learners can search for a specific vocabulary in the handbook
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter the word to search.
+  - Step 5: Observe the filtered vocabulary list.
+expectedResult: The system should filter and display vocabulary containing characters entered by the learner in the search bar.
+explanation: This test case verifies the functionality of searching for specific vocabulary within the handbook, allowing learners to easily find words.
+
+Test Case: Test Case 3
+testCaseName: Search for Meaningless Vocabulary in Handbook
+objective: Verify the system's response when a learner searches for a meaningless word
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Press the search bar.
+  - Step 4: Enter a meaningless word to search.
+  - Step 5: Observe the system's response.
+expectedResult: The system should notify that there are no suitable search results.
+explanation: This test case checks the system's handling of searches for words that do not exist in the vocabulary list, ensuring user-friendly feedback is provided.
+
+Test Case: Test Case 4
+testCaseName: Exclude Word from Review Test
+objective: Verify that learners can exclude a word from appearing in the daily review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary.
+  - Step 4: Untick the checkbox of a vocabulary.
+  - Step 5: Observe the system's marking of the vocabulary.
+expectedResult: The system should mark that the unticked vocabulary will not appear in the daily test review.
+explanation: This test case ensures that learners have the ability to customize their review tests by excluding specific vocabulary words.
+
+Test Case: Test Case 5
+testCaseName: Include Word in Review Test
+objective: Verify that learners can include a word in the daily review test
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll to find a specific vocabulary.
+  - Step 4: Tick the checkbox of a vocabulary.
+  - Step 5: Observe the system's marking of the vocabulary.
+expectedResult: The system should mark that the ticked vocabulary will appear in the daily test review.
+explanation: This test case checks the functionality that allows learners to include specific vocabulary words in their daily review tests, enhancing their learning experience.
+

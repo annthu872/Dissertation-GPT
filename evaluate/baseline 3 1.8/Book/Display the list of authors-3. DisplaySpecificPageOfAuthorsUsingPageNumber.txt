@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Display First Page of Authors
+objective: Verify that the application displays the first page of authors correctly when the 'Authors' item is selected.
+testSteps:
+  - Step 1: Launch the application.
+  - Step 2: Navigate to the 'Authors' section by selecting the item 'Authors'.
+expectedResult: The application displays the first page of the list of authors, showing up to 10 items. Each item includes the author's id, name, and bio.
+explanation: This test case ensures that the basic functionality of displaying the first page of authors works as expected according to the main scenario.
+
+Test Case: Test Case 2
+testCaseName: Navigate to Second Page of Authors Using Page Number
+objective: Verify that the user can navigate to the second page of authors by clicking the page number.
+testSteps:
+  - Step 1: Launch the application and navigate to the 'Authors' section.
+  - Step 2: If the total number of authors exceeds 10, click on the page number '2' in the pagination block below the list.
+expectedResult: The application displays the second page of the list of authors, showing up to 10 items on the page. Each item includes the author's id, name, and bio.
+explanation: This test case verifies that users can navigate through the pages of authors using the pagination block, specifically by selecting the page number.
+
+Test Case: Test Case 3
+testCaseName: Navigate to Next Page of Authors Using 'Next' Button
+objective: Verify that the user can navigate to the next page of authors by clicking the 'Next' button in the pagination block.
+testSteps:
+  - Step 1: Launch the application and navigate to the 'Authors' section.
+  - Step 2: If the total number of authors exceeds 10, click on the 'Next' button located below the records in the pagination block.
+expectedResult: The application displays the next page of the list of authors, showing up to 10 items on the page. Each item includes the author's id, name, and bio.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate to the next page of authors using the 'Next' button.
+

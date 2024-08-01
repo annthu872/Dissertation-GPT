@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify Continuous Learning Days Display
+objective: Verify that the system correctly displays the number of continuous learning days for a learner without breaking the learning chain.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: From the Home page, the learner selects 'History'.
+  - Step 3: On the History page, the learner selects 'Day History'.
+expectedResult: The system should redirect the learner to a page that shows the number of days the learner has learned continuously. This number should not reset unless the learner breaks their learning chain.
+explanation: This test case is designed to verify the basic flow of viewing continuous learning days as described in the use case specification. It ensures that learners can track their learning progress accurately without any discrepancies.
+
+Test Case: Test Case 2
+testCaseName: Verify Learning Chain Reset on Break
+objective: Ensure that the continuous learning days counter resets to one if the learner breaks their learning chain.
+testSteps:
+  - Step 1: Ensure the learner is logged into the application and has a continuous learning chain established.
+  - Step 2: Simulate a break in the learning chain by not logging any learning activity for a day.
+  - Step 3: After the break day, the learner logs learning activity and then selects 'History' on the Home page.
+  - Step 4: On the History page, the learner selects 'Day History'.
+expectedResult: The system should redirect the learner to a page that shows the number of continuous learning days reset to one, indicating the learning chain was broken and has now restarted.
+explanation: This test case ensures that the system accurately resets the continuous learning days counter back to one if there is a break in the learner's learning chain, aligning with the use case specification.
+

@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify Product Information Display with Free Shipping Option
+objective: Ensure that the product information page displays all necessary information including a free shipping option if available.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Verify that the product title and description are displayed prominently.
+  - Step 4: Check for high-quality images of the product from multiple angles and videos demonstrating the product's features and usage.
+  - Step 5: Confirm that detailed product specifications are listed.
+  - Step 6: Ensure the current price, any discounts, offers, or special pricing are highlighted.
+  - Step 7: Check for real-time stock availability.
+  - Step 8: Look for available shipping methods and estimated delivery times, specifically checking for a free shipping option.
+  - Step 9: Verify the seller's profile is displayed with their name, ratings, and reviews.
+  - Step 10: Confirm there is an option to contact the seller directly through the platform's messaging system.
+  - Step 11: Check for a link to the seller's store page on the platform.
+  - Step 12: Ensure the overall rating is displayed and at least 3 latest detailed reviews are shown with ratings, written feedback, and user-uploaded images.
+  - Step 13: Verify that a list of related product cards is displayed.
+expectedResult: The product information page displays all the required information correctly, including the free shipping option if it is available.
+explanation: This test case ensures that all elements of the product information page are displayed as specified in the use case, focusing on the completeness and accuracy of the information, including the availability of a free shipping option.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Invalid Email Format
+objective: Verify that the system prevents updating an employee with an invalid email format and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or name from the table.
+  - Step 4: In the employee details form, change the email field to an invalid format (e.g., 'testemailwithoutatdot').
+  - Step 5: Press the 'Update' button to attempt updating the employee information.
+expectedResult: The system should display an error message indicating 'Invalid field entered' for the email and prevent the employee information from being updated.
+explanation: This test case is created to ensure that the system validates the format of email addresses correctly and prevents updates with invalid data, which is a direct match to the 'UpdateEmployee_InvalidFieldEntry' scenario focusing on field validation.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Empty Required Field
+objective: Verify that the system prevents updating an employee when a required field is left empty and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or name from the table.
+  - Step 4: Clear the content of a required field (e.g., 'Name').
+  - Step 5: Press the 'Update' button to attempt updating the employee information.
+expectedResult: The system should display an error message indicating 'Invalid field entered' for the cleared required field and prevent the employee information from being updated.
+explanation: This test case ensures that the system enforces the requirement for all necessary fields to be filled out before allowing an update, which aligns with the 'UpdateEmployee_InvalidFieldEntry' scenario by testing the system's response to invalid input.
+
+Test Case: Test Case 3
+testCaseName: Update Employee with Invalid ID
+objective: Verify that the system displays an error message when attempting to update an employee with a non-existent ID.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Enter a non-existent ID in the search field and attempt to search for an employee.
+  - Step 4: Attempt to update any field (assuming the system somehow allows proceeding to this step).
+expectedResult: The system should display an error message indicating 'Incorrect value for ID' and prevent any attempt to update non-existent employee information.
+explanation: Although the main focus is on invalid field entry, this test case addresses the alternative path where an invalid ID is entered, ensuring the system's robustness in handling incorrect employee identifiers.
+

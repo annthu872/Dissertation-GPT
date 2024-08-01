@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Answer Selection in Listening Pronunciation Test
+objective: Verify that the system displays a red pop-up screen when the learner selects an incorrect answer in the listening pronunciation test.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test function within the application.
+  - Step 3: Start a listening pronunciation test question.
+  - Step 4: Click on the speaker button to listen to the word's pronunciation.
+  - Step 5: Select an incorrect answer from the given options.
+expectedResult: A red pop-up screen should be displayed indicating that the selected answer is incorrect.
+explanation: This test case is designed to validate the alternative flow where the learner chooses the wrong answer. It ensures that the application correctly identifies incorrect answers and provides visual feedback to the learner through a red pop-up screen, as specified in the use case U09.
+

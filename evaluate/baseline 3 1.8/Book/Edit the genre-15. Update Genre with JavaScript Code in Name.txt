@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Valid JavaScript Code in Name
+objective: Verify that the system allows updating a genre with JavaScript code in the genre name and displays the updated list of genres.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a valid JavaScript code snippet into the 'Name' field. For example, 'Genre<script>alert('Test')</script>'.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should sanitize/escape the JavaScript code, update the genre in the database without executing the JavaScript, and display the updated list of genres with the new name.
+explanation: This test case ensures that the application properly handles JavaScript code in input fields, preventing Cross-Site Scripting (XSS) vulnerabilities while allowing the update operation to complete successfully.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with JavaScript Code in Name and Display Error
+objective: Verify that the system displays an error message when JavaScript code is entered in the genre name and prevents the update.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a JavaScript code snippet into the 'Name' field that is expected to be rejected by the system. For example, '<script>alert('Error')</script>'.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should detect the JavaScript code as invalid input, prevent the update, and display an error message indicating that the entered genre name is not allowed.
+explanation: This test case checks the system's ability to validate input and prevent potentially malicious code from being saved in the database, ensuring data integrity and security.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation with JavaScript Code in Name
+objective: Verify that the system cancels the update operation without updating the genre when JavaScript code is entered and the 'Cancel' button is pressed.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a JavaScript code snippet into the 'Name' field. For example, 'Genre<script>alert('Cancel')</script>'.
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The system should not update the genre in the database and should return to the list of genre records without applying any changes.
+explanation: This test case ensures that the cancel operation works as expected, even when the input fields contain JavaScript code, by not updating the database and returning to the previous state.
+

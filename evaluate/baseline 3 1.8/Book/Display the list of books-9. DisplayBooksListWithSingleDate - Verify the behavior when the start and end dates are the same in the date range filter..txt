@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display Books List with Identical Start and End Date
+objective: Verify that the application correctly filters and displays the list of books when the start and end dates in the date range filter are the same.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Locate the date range filter input forms above the list of books.
+  - Step 3: Enter the same date into both the start date and end date fields.
+  - Step 4: Click the refresh button located to the right of the date inputs.
+expectedResult: The application displays a list of books that were published on the specified date. The list should include columns for id, Title, Author, Genre, and Publication date. If no books were published on that date, an appropriate message or an empty list should be shown.
+explanation: This test case is designed to verify the functionality of filtering books by a specific date, ensuring that the system can handle cases where the start and end dates are identical. It directly addresses the test scenario 'DisplayBooksListWithSingleDate' by testing the behavior of the date range filter when the start and end dates are the same.
+

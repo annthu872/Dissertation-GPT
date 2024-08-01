@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Exiting Review and Confirming Exit
+objective: Verify that the system redirects learners to the Home page without saving the review when they press 'Exit' and confirm the exit during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page to start the review session.
+  - Step 3: Press the 'Exit' button during the review session before completing all words review.
+  - Step 4: On the pop-up, choose the 'Confirm' button to confirm exiting the review session.
+expectedResult: The system should redirect the learner to the Home page without saving the review session.
+explanation: This test case ensures that when learners choose to exit the review session and confirm their choice, the system behaves as expected by not saving the session and redirecting them to the Home page.
+
+Test Case: Test Case 2
+testCaseName: Exiting Review and Choosing to Stay
+objective: Verify that the system allows learners to continue with the review session when they press 'Exit' but then choose to stay.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page to start the review session.
+  - Step 3: Press the 'Exit' button during the review session.
+  - Step 4: On the pop-up, choose the 'Stay' button to continue with the review session.
+expectedResult: The system should allow the learner to continue with the review session without redirecting to the Home page.
+explanation: This test case verifies that learners have the option to remain in the review session if they accidentally press 'Exit' or change their mind about exiting, ensuring the system provides a way to cancel the exit action.
+

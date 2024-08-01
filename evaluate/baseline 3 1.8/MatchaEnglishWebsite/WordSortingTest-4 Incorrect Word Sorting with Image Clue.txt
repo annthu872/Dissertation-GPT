@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Word Sorting with Image Clue
+objective: Verify that the system displays a red pop-up screen when a learner arranges letters in an incorrect order based on an image clue.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Start the test where the screen displays an image showing a word with its letters arranged randomly.
+  - Step 4: Incorrectly arrange the letters by clicking on the letter buttons in an incorrect order.
+  - Step 5: Press enter after finishing the arrangement.
+expectedResult: A red pop-up screen should be displayed indicating that the answer is wrong.
+explanation: This test case ensures that the system correctly identifies and responds to incorrect answers in the word sorting test when the question is presented with an image clue. It directly matches the scenario name by focusing on the incorrect sorting of words with an image clue.
+

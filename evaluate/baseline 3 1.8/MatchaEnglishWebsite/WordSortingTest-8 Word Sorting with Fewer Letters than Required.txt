@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Word Sorting with Insufficient Letters
+objective: Verify that the system handles scenarios where the learner attempts to submit an answer with fewer letters than required by not allowing submission and/or displaying an error or guidance message.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word arranging test.
+  - Step 3: The screen displays a question with the letters of the vocabulary arranged randomly.
+  - Step 4: Attempt to arrange the letters by clicking on fewer letter buttons than required to form the correct word and press enter.
+expectedResult: The system should either prevent the submission from being completed due to insufficient letters or display a pop-up screen with an error or guidance message indicating that more letters are needed to form a valid answer.
+explanation: This test case is designed to ensure that the application correctly handles cases where learners try to submit answers with fewer letters than the correct answer requires. It directly addresses the scenario of word sorting with fewer letters than required by testing the system's response to such situations.
+

@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Successful Test Edit via Save Button
+objective: Verify that an administrator can successfully edit a test and save changes directly.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test needing editing, then select 'Edit'.
+  - Step 4: On the test editing interface, make necessary edits to the exercises.
+  - Step 5: Select 'Save' to apply the changes.
+expectedResult: The system should save all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+explanation: This test case ensures that the basic flow of editing a test and saving changes directly works as intended.
+
+Test Case: Test Case 2
+testCaseName: Successful Test Edit with Confirmation
+objective: Verify that an administrator can successfully edit a test and save changes with a confirmation step.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test needing editing, then select 'Edit'.
+  - Step 4: On the test editing interface, make necessary edits to the exercises.
+  - Step 5: Press the button to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Save' when asked 'Save changes?'.
+expectedResult: The system should save all edited exercises, and the edited English vocabulary exercises are updated and recorded in the system.
+explanation: This test case verifies the alternative flow where the administrator saves changes through a confirmation step, ensuring the system correctly handles this scenario.
+
+Test Case: Test Case 3
+testCaseName: Unsuccessful Test Edit
+objective: Verify that an administrator can exit the editing mode without saving the changes.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test needing editing, then select 'Edit'.
+  - Step 4: On the test editing interface, make necessary edits to the exercises.
+  - Step 5: Press the button to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Do not save' when asked 'Save changes?'.
+expectedResult: The system should discard the edited exercises, and no changes are recorded in the system.
+explanation: This test case covers the exception flow where changes made by the administrator are not saved, ensuring the system correctly discards unsaved changes.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Add Room with Invalid Room Number Format
+objective: Verify that the system shows an error when an invalid room number format is entered
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields, entering an invalid format for the room number (e.g., using special characters or letters).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that an invalid room number format has been entered.
+explanation: This test case ensures that the system correctly validates the format of the room number field when adding a new room, preventing the addition of rooms with incorrectly formatted room numbers.
+
+Test Case: Test Case 2
+testCaseName: Add Room with Invalid Capacity Format
+objective: Verify that the system shows an error when an invalid room capacity format is entered
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields, entering an invalid format for the room capacity (e.g., using letters or special characters instead of numbers).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that an invalid room capacity format has been entered.
+explanation: This test case checks if the system properly validates the format of the room capacity field, ensuring that only valid numerical values are accepted for room capacity when adding a new room.
+
+Test Case: Test Case 3
+testCaseName: Add Room with Invalid Price Format
+objective: Verify that the system shows an error when an invalid room price format is entered
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields, entering an invalid format for the room price (e.g., using letters or special characters instead of a valid currency format).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that an invalid room price format has been entered.
+explanation: This test case is designed to verify that the system correctly validates the room price field format, ensuring that rooms cannot be added with incorrectly formatted prices.
+

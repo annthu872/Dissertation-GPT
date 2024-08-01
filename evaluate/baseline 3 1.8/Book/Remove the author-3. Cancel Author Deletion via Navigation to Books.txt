@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Author Deletion and Navigate to Books
+objective: Verify that cancelling the author deletion and then navigating to 'Books' does not delete the author and displays the Books page correctly.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you intend to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is displayed again.
+  - Step 5: Select the menu item 'Books'.
+expectedResult: The author remains undeleted in the database, and the Books page is displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of an author and then navigates to the 'Books' page, the author's record remains intact, and the navigation to 'Books' works as expected. It directly matches the scenario of cancelling author deletion via navigation to 'Books'.
+

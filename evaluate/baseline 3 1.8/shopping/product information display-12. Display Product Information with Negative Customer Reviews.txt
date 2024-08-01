@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Display Product Information with Negative Customer Reviews
+objective: Verify that the product information page displays negative customer reviews correctly along with other product details.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its details.
+  - Step 3: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 4: Observe the overall rating and the 3 latest detailed reviews.
+expectedResult: The product information page should display the product's title, description, images, videos, specifications, price information, stock availability, delivery options, seller profile, seller contact, store link, and related products. Specifically, in the 'Customer Reviews and Ratings' section, it should show the average rating and include at least one negative detailed review (if available) among the 3 latest reviews, with ratings, written feedback, and user-uploaded images.
+explanation: This test case ensures that users can see negative reviews along with positive ones, providing a balanced view of the product. It directly matches the scenario name by focusing on the display of negative customer reviews within the product information page.
+
+Test Case: Test Case 2
+testCaseName: Expand Customer Reviews to Display More Negative Reviews
+objective: Verify that users can expand the 'Customer Reviews and Ratings' section to view more negative reviews.
+testSteps:
+  - Step 1: Follow steps 1 and 2 from Test Case 1 to navigate to a product's information page.
+  - Step 2: Scroll to the 'Customer Reviews and Ratings' section.
+  - Step 3: Click on the option to expand and view more reviews.
+  - Step 4: Scroll through the expanded list of customer reviews.
+expectedResult: Upon expanding the 'Customer Reviews and Ratings' section, the system should display more detailed reviews. Among these, there should be additional negative reviews visible, if available, with ratings, written feedback, and user-uploaded images.
+explanation: This test case is created to ensure that the functionality for expanding the customer reviews section works as intended, specifically for displaying more negative reviews. It is important for providing users with comprehensive feedback on the product.
+

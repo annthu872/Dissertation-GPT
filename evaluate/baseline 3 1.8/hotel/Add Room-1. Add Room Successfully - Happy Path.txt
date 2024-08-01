@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Add Room Successfully - Happy Path
+objective: Verify that a manager can successfully add a room to the system following the happy path
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: The system displays room fields. Verify that all required fields for adding a room are displayed.
+  - Step 4: Fill in all the fields with valid data.
+  - Step 5: Press the 'Add Room' button.
+  - Step 6: Verify that the system validates the fields without showing any error.
+  - Step 7: Verify that the system adds the room to the database.
+  - Step 8: Verify that the system shows a confirmation message or page indicating that the room has been added.
+expectedResult: The manager should see a confirmation message or page indicating that the room has been successfully added to the system.
+explanation: This test case is created to ensure that the system behaves as expected when a manager follows the happy path to add a room. It covers the basic course of events described in the use case specification, ensuring that the system can handle the addition of rooms correctly without errors.
+

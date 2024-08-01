@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details for a Book with No Author
+objective: Verify that the book details page correctly displays information for a book that has no author listed.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Identify a book in the list that is known to have no author.
+  - Step 3: Click on the 'Title' of the book identified in Step 2.
+expectedResult: The book details page is displayed with the following columns: id, Title, Author, Genre, Description, Publication date. The 'Author' field should be empty or display a placeholder text such as 'N/A' or 'No Author'.
+explanation: This test case ensures that the application can handle and correctly display book details for books that do not have an author. It is directly related to the test scenario 'DisplayBookDetails_BookWithNoAuthor' by focusing on how the application displays a book with no author in the book details page.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Add Booking Without Calculating Total Amount
+objective: Verify that the system prevents adding a booking without calculating the total amount first, and displays the appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields with valid data.
+  - Step 4: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: The system should validate the fields and display an error message indicating that the total amount needs to be calculated before adding the booking.
+explanation: This test case is created to ensure that the system enforces the calculation of the total amount before a booking can be added, as per the alternative path mentioned in the use case. It directly relates to the test scenario of adding a booking without calculating the total amount.
+
+Test Case: Test Case 2
+testCaseName: Add Booking With Calculation Skipped and Invalid Field
+objective: Verify that the system prevents adding a booking when the total amount is not calculated and an invalid field is entered, showing specific error messages for each issue.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Select the Booking panel on the dashboard.
+  - Step 3: Fill all the booking fields, intentionally entering invalid data in one of the fields.
+  - Step 4: Directly press the add booking button without clicking the calculate amount button.
+expectedResult: The system should validate the fields, display an error message for the invalid field entered, and also indicate that the total amount needs to be calculated before adding the booking.
+explanation: This test case combines the requirements of validating field inputs and the necessity of calculating the total amount before booking. It addresses both the main flow and the alternative paths described in the use case, specifically focusing on the scenario where the total amount calculation is skipped and there's an invalid field.
+

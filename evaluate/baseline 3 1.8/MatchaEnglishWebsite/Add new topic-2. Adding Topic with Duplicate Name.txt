@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic with Unique Name
+objective: Verify that the administrator can successfully add a new topic with a unique name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should redirect the administrator to the adding vocabulary to new topic section, and the new topic should appear in the topic list.
+explanation: This test case ensures that administrators can add new topics with unique names, following the basic flow of the use case. It verifies the system's ability to handle new topic creation as intended.
+
+Test Case: Test Case 2
+testCaseName: Adding Topic with Duplicate Name
+objective: Verify that the system prevents the administrator from adding a new topic with a name that is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a name that is already used by an existing topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification and enter a new, unique name in the name field.
+  - Step 7: Select 'Save' again to create the topic with the new name.
+expectedResult: The system should display a notification that the name is already used, prompting the administrator to add another name. After entering a new name, the topic should be successfully created, and the system should redirect to the adding vocabulary to new topic section.
+explanation: This test case validates the alternative flow where an administrator attempts to add a new topic with a duplicate name. It ensures the system correctly handles duplicate names by prompting for a unique name.
+

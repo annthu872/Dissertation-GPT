@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details with Special Characters in Title
+objective: Verify that the application correctly displays the details of a book that has special characters in its title
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Locate a book in the list that has special characters (such as @, #, $, %, &, *) in its title.
+  - Step 3: Click on the 'Title' of the book with special characters in its title.
+expectedResult: The application should display the book details page for the selected book, including columns for id, Title, Author, Genre, Description, and Publication date, without any errors or misinterpretation of the special characters in the title.
+explanation: This test case is created to ensure that the application can handle book titles with special characters without any issues. It directly matches the scenario name by focusing on the display of book details for books with special characters in their titles.
+

@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Valid Data and HTML Tags in Description
+objective: Verify that a new genre can be created with HTML tags in the description and the record is successfully added to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid genre name in the 'Name' field.
+  - Step 4: Enter a description containing HTML tags (e.g., '<p>Description with HTML tags</p>') in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: A new genre record with the HTML tags in the description is successfully added to the database, and the user is redirected to the list of genres with the newly added record visible.
+explanation: This test case ensures that the system can handle HTML tags in the description field when creating a new genre. It is directly related to the test scenario 'Genre Creation with HTML Tags in Description' by testing the main scenario with a specific focus on the description field containing HTML tags.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation Cancellation Before Submitting
+objective: Verify that the genre creation process can be cancelled before submitting the form and no record is added to the database
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Start entering data into the form fields, including a description with HTML tags.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The genre creation process is cancelled, no new genre record is added to the database, and the user is redirected to the list of genres without the new record.
+explanation: This test case verifies the cancel operation scenario of the genre creation process, ensuring that no data is saved to the database if the user decides to cancel before submitting the form. It is relevant to the test scenario as it tests the system's behavior when the creation process is intentionally aborted.
+

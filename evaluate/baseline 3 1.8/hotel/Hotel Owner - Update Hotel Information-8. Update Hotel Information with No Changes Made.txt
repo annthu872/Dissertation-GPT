@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with No Changes Made
+objective: Verify that the system handles the scenario where the hotel owner updates hotel information without making any changes
+testSteps:
+  - Step 1: Log in as a user with the role of Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button to access the Edit Hotel Information page.
+  - Step 4: Without making any changes to the fields, press the submit button to update the information.
+expectedResult: The system should validate the fields, not perform any update operation since no changes were made, and redirect the user to the dashboard with a success message indicating that the information is up-to-date.
+explanation: This test case is created to ensure that the system correctly handles cases where the hotel owner attempts to update hotel information without actually making any changes. It verifies that the system can handle no-op (no operation) updates gracefully and informs the user accordingly.
+

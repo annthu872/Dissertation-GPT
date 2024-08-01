@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: UpdateEmployee_WithEmptyMandatoryFields
+objective: Verify that the system prevents updating an employee when mandatory fields are left empty and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information. Clear one or more mandatory fields.
+  - Step 5: Press the 'Update' button to attempt updating the employee information.
+expectedResult: The system should validate the fields and display an error message indicating that mandatory fields cannot be left empty and the employee information is not updated.
+explanation: This test case ensures that the system enforces the completion of all mandatory fields before allowing an employee's information to be updated. It directly relates to the test scenario 'UpdateEmployee_UpdateWithEmptyFields' by testing the system's response to empty mandatory fields during an update operation.
+
+Test Case: Test Case 2
+testCaseName: UpdateEmployee_WithEmptyOptionalFields
+objective: Verify that the system allows updating an employee when optional fields are left empty and successfully updates the employee information.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information. Clear one or more optional fields.
+  - Step 5: Press the 'Update' button to update the employee information.
+expectedResult: The system should allow the update to proceed with optional fields left empty, update the employee information in the database, and display a confirmation message that the employee was updated.
+explanation: This test case checks if the system can handle updates to an employee's information when optional fields are not filled in. It is relevant to the scenario 'UpdateEmployee_UpdateWithEmptyFields' by verifying that empty optional fields do not prevent an employee's information from being updated.
+

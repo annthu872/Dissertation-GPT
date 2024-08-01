@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Leave Page Without Saving Question Using Browser Back Button
+objective: Verify that the question is not saved when an admin leaves the 'Add new question for selection test' page by pressing the browser back button without saving.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: On the 'Add new question for selection test' page, fill in the 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 9: Press the browser back button without pressing the 'Save' button.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+explanation: This test case ensures that if an admin accidentally or intentionally leaves the question creation page without saving, the question is not saved. It directly tests the scenario where an admin leaves the page without saving, as described in the exception flow 1.
+
+Test Case: Test Case 2
+testCaseName: Cancel Question Creation and Confirm Cancellation
+objective: Verify that the question is not saved and the admin is redirected back to the 'Word Information' page when cancelling the question creation and confirming the cancellation.
+testSteps:
+  - Step 1: Log in as an Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: On the 'Add new question for selection test' page, fill in the 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, press the 'Confirm' button.
+expectedResult: The system should redirect the Admin to the 'Word Information' page of the selected word, and the question should not be saved.
+explanation: This test case verifies the functionality of cancelling the question creation process and confirming the cancellation, ensuring that no data is saved and the admin is redirected appropriately, as described in exception flow 2.
+

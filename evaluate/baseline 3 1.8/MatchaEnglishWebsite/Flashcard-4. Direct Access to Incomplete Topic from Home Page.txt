@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Direct Access to Incomplete Topic from Home Page
+objective: Verify that the learner can directly access an incomplete topic from the Home Page and continue studying
+testSteps:
+  - Step 1: Ensure the learner is logged into the application.
+  - Step 2: Navigate to the Home Page.
+  - Step 3: Identify an incomplete topic displayed on the Home Page.
+  - Step 4: Click on the incomplete topic.
+  - Step 5: Verify that the system redirects to the Flashcard page for the selected topic.
+  - Step 6: Continue with the flashcards from where the learner left off.
+expectedResult: The learner is redirected to the Flashcard page of the incomplete topic and can continue studying from where they left off.
+explanation: This test case ensures that learners can seamlessly continue their learning process by directly accessing incomplete topics from the Home Page, as described in the alternative flow 3 of the use case.
+

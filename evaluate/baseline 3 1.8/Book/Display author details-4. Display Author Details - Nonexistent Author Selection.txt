@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Details of Nonexistent Author
+objective: Verify that the application handles the scenario where a user attempts to view details of an author that does not exist in the database.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Attempt to click on the 'Title' of an author that does not exist in the list (simulate this action since the author does not exist).
+  - Step 3: Observe the behavior of the application when trying to access details of a nonexistent author.
+expectedResult: The application should display an appropriate message indicating that the author details cannot be displayed because the author does not exist.
+explanation: This test case is created to ensure that the application gracefully handles attempts to access details of authors that do not exist in the database, which is a part of the 'Display Author Details - Nonexistent Author Selection' scenario. It tests the application's robustness and user feedback mechanisms in error scenarios.
+

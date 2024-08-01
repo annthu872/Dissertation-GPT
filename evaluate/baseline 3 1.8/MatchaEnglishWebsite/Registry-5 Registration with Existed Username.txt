@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Registration with Existed Username
+objective: Verify that the system shows a notification that the username has been registered and asks the learner to choose another username when attempting to register with an existing username.
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Fill in the username field with a username that has already been registered.
+  - Step 3: Fill in the password field with a valid password. Ensure the password is over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalized character, a number, and a special character. Also, ensure the password is not the same as the username.
+  - Step 4: Press the 'Register' button.
+expectedResult: The system shows a notification that this username has been registered and asks the learner to choose another username.
+explanation: This test case is created to verify the system's behavior when a user attempts to register with a username that is already in use. It directly matches the scenario name 'Registration with Existed Username' by testing the specific condition where the username exists in the system.
+

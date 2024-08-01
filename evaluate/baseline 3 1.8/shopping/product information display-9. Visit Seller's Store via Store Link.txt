@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Visit Seller's Store via Store Link from Product Information Page
+objective: Verify that users can navigate to the seller's store page by clicking on the Store Link from the product information page.
+testSteps:
+  - Step 1: Navigate to the homepage, search page, or cart page.
+  - Step 2: Click on a product card to view its product information.
+  - Step 3: Locate the 'Store Link' in the Seller Profile section.
+  - Step 4: Click on the 'Store Link'.
+expectedResult: The system should navigate the user to the seller's store page, displaying other products from the same seller.
+explanation: This test case ensures that the Store Link feature within the product information page works correctly, allowing users to visit the seller's store to explore more products. It directly matches the scenario of visiting the seller's store via the store link.
+

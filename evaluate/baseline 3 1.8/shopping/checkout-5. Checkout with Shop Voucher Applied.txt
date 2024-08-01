@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Shop Voucher Applied Successfully
+objective: Verify that a user can successfully apply a shop voucher during checkout and the total cost is updated accordingly.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, select an available shop voucher or enter a valid shop voucher code.
+  - Step 4: Click the 'apply' button to apply the shop voucher.
+  - Step 5: Review the updated total cost to ensure the shop voucher discount has been applied.
+  - Step 6: Click on the 'Place Order' button to complete the purchase.
+expectedResult: The shop voucher is successfully applied, the total cost is updated to reflect the discount, and the order is placed successfully with an order confirmation displayed.
+explanation: This test case ensures that users can apply shop vouchers to their orders during checkout, which directly matches the scenario of checking out with a shop voucher applied. It tests the functionality of voucher application and the system's ability to update the order total accordingly.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Shop Voucher Code
+objective: Verify that the system prevents the user from applying an invalid shop voucher code and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, enter an invalid shop voucher code.
+  - Step 4: Click the 'apply' button to attempt to apply the invalid shop voucher.
+expectedResult: The system displays an error message indicating the shop voucher code is invalid and does not apply any discount to the total cost.
+explanation: This test case is created to verify the system's behavior when a user attempts to apply an invalid shop voucher code, ensuring robust error handling and user feedback mechanisms are in place.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Disabled Shop Voucher
+objective: Verify that the system prevents the user from applying a disabled shop voucher and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Add items to the shopping cart and proceed to checkout.
+  - Step 3: On the order summary page, select or enter a code for a disabled shop voucher.
+  - Step 4: Click the 'apply' button to attempt to apply the disabled shop voucher.
+expectedResult: The system displays an error message indicating the shop voucher is disabled and does not apply any discount to the total cost.
+explanation: This test case checks the system's ability to prevent users from applying disabled shop vouchers, ensuring that only valid and active vouchers can be used during checkout.
+

@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Checkout Attempt with Valid Previously Checked Out Booking ID
+objective: Verify that the system prevents checkout with a booking ID that has already been checked out.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a booking ID that has already been used for checkout and has its booking status updated as complete.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the booking ID and show an error message indicating that the booking ID has already been checked out. The user is then redirected to the main page.
+explanation: This test case ensures that the system correctly handles attempts to check out with a booking ID that has already been checked out, maintaining data integrity and preventing duplicate actions on the same booking ID.
+
+Test Case: Test Case 2
+testCaseName: Checkout Attempt with Incorrect Booking ID
+objective: Verify that the system handles attempts to check out with an incorrect booking ID gracefully.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an incorrect booking ID that does not exist in the system.
+  - Step 3: Press the submit button.
+expectedResult: The system should fail to validate the incorrect booking ID and show an error message. The user is then redirected to the main page.
+explanation: This test case checks the system's ability to handle incorrect booking IDs during checkout attempts, ensuring that error handling and user redirection are properly implemented.
+
+Test Case: Test Case 3
+testCaseName: Checkout Attempt with Booking ID Having No Room Linked
+objective: Verify that the system prevents checkout if the booking ID does not have a room linked to it.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a booking ID that exists but has no room linked to it in the database.
+  - Step 3: Press the submit button.
+expectedResult: The system should detect that there is no room linked to the booking ID and show an error message. The user is then redirected to the main page.
+explanation: This test case ensures that the system checks for a linked room ID during the checkout process and handles cases where a booking ID does not have an associated room, preventing incorrect checkouts.
+

@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Data
+objective: Verify that a manager can successfully update an employee's information with valid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields with valid data and press the 'Update' button.
+  - Step 6: Verify that the system validates the fields correctly.
+  - Step 7: Confirm the update action if prompted.
+expectedResult: The system updates the employee information in the database and displays a confirmation message that the employee has been updated.
+explanation: This test case ensures that the basic course of events for updating an employee's information functions as intended when provided with valid data.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with XSS Attack Attempt
+objective: Verify that the system sanitizes input fields to prevent XSS attacks when updating an employee's information
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Insert a script tag with JavaScript code (<script>alert('XSS')</script>) into one of the input fields.
+  - Step 6: Press the 'Update' button to attempt updating the employee's information with the XSS payload.
+  - Step 7: Verify that the system validates the fields and sanitizes the input to prevent the XSS attack.
+expectedResult: The system should not execute the malicious script and should either display an error message regarding invalid input or sanitize the input and update the employee information without executing the script.
+explanation: This test case is designed to ensure that the system is secure against XSS attacks by validating and sanitizing user inputs during the employee update process.
+

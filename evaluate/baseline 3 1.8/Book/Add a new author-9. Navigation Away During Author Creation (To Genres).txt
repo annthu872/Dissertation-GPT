@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigation Away to Genres During Author Creation
+objective: Verify that navigating away to the Genres page during the author creation process does not save the new author data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new author.
+  - Step 3: Begin entering data into the form fields for the new author (Name and Bio).
+  - Step 4: Before pressing the 'Submit' button, select the 'Genres' menu item to navigate away from the author creation page.
+expectedResult: The application does not save the entered author data and displays the Genres page with updated data.
+explanation: This test case ensures that if a user accidentally or intentionally navigates away to the Genres page during the process of creating a new author, the data entered is not saved. It verifies the application's behavior in handling navigation away from the author creation form without completing the process.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Author Details on Valid Selection
+objective: Verify that the application correctly displays the details of an author when a valid author title is selected from the author list page.
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: From the list, click on the 'Title' of a specific author.
+  - Step 3: Observe the information displayed on the author details page.
+expectedResult: The application should display the author details page with the following columns correctly filled: id (unique author number), Name, and Bio (author's biography).
+explanation: This test case ensures that when a user selects a valid author by clicking on their title from the author list, the application successfully navigates to the author details page and displays the correct information. It directly matches the scenario of displaying author details upon valid author selection.
+

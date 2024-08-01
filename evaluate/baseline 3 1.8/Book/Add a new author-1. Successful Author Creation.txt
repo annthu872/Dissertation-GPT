@@ -1,0 +1,44 @@
+Test Case: Test Case 1
+testCaseName: Successful Author Creation
+objective: Verify that a new author can be successfully added to the database with valid data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the form fields for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new author record is added to the database, and the list of authors with the newly added record is displayed.
+explanation: This test case ensures that the system correctly adds a new author to the database when valid data is provided and displays the updated list of authors, aligning with the main scenario of the 'Add a new author' use case.
+
+Test Case: Test Case 2
+testCaseName: Author Creation with Incorrect Data
+objective: Verify that the system displays error messages when incorrect data is entered in the author creation form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter invalid data into the form fields for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system displays messages indicating the data entered is incorrect.
+explanation: This test case checks the system's ability to validate input data and provide feedback to the user, which is a crucial part of the main scenario in the 'Add a new author' use case.
+
+Test Case: Test Case 3
+testCaseName: Cancel Author Creation
+objective: Verify that the author creation process can be canceled without saving data to the database
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields for the author's Name and Bio.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: Data is not saved in the database, and the list of author records is displayed without the new entry.
+explanation: This test case ensures that users can cancel the author creation process at any point before submission, which is an important aspect of the cancel operation scenario in the 'Add a new author' use case.
+
+Test Case: Test Case 4
+testCaseName: Navigation Away from Author Creation Cancels Operation
+objective: Verify that navigating away from the author creation form cancels the operation without saving data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the form fields for the author's Name and Bio.
+  - Step 4: Select the menu item 'Books', 'Genres', 'Authors', 'Home', or 'API' before submitting the form.
+expectedResult: Data is not saved to the database, and the corresponding form or page for the selected menu item is displayed with updated data.
+explanation: This test case verifies the system's behavior when a user navigates away from the author creation form, ensuring that the operation is canceled as described in the cancel operation scenario of the 'Add a new author' use case.
+

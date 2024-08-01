@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Review Completion with Incorrect Answer Selection
+objective: Verify that the system correctly handles the scenario when a learner selects an incorrect answer during a review session, including displaying a red word, decreasing the memory level of the word, and allowing the learner to continue to the next word.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Engage with the review by selecting an incorrect answer from the four given options for a word.
+  - Step 5: Observe the feedback provided by the system.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting an incorrect answer, the system should display a red word indicating the mistake, decrease the memory level of the word, and allow the learner to continue to the next word in the review list.
+explanation: This test case ensures that the system behaves as expected when a learner selects an incorrect answer during a review session, which is crucial for the learning process as it involves adjusting the memory level of words based on the learner's performance.
+
+Test Case: Test Case 2
+testCaseName: Review Completion and Exiting with Unsaved Progress
+objective: Verify that the system correctly redirects the learner to the Home page without saving the review progress when the 'Exit' button is pressed and 'Confirm' is selected.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Start the review and then press the 'Exit' button.
+  - Step 5: In the pop-up, select the 'Confirm' button to exit the review.
+  - Step 6: Observe the page to which the system redirects.
+expectedResult: After pressing 'Exit' and confirming the action, the system should redirect the learner to the Home page without saving the review progress.
+explanation: This test case verifies the system's behavior when a learner decides to exit a review session prematurely, ensuring that the review progress is not saved, which is important for maintaining the integrity of the review process.
+

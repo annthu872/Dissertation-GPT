@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Author and Verify Update
+objective: Verify that updating an author's details with valid data successfully updates the author in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author's details are updated in the database, and the list of authors with the updated records is displayed.
+explanation: This test case ensures that when valid data is entered and submitted, the author's details are successfully updated in the database, aligning with the main scenario of the use case.
+
+Test Case: Test Case 2
+testCaseName: Update Author and Navigate Away Using Menu Before Submitting
+objective: Verify that navigating away using the menu before submitting the form does not update the author in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering data for the author's Name and Bio.
+  - Step 4: Before pressing 'Submit', select a menu item (e.g., 'Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The author's details are not updated in the database, and the user is redirected to the selected page without updating the author's information.
+explanation: This test case verifies that if a user navigates away from the update form using the menu before submitting the changes, the author's details are not updated in the database. It directly addresses the scenario of navigating away using the menu before submitting.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Author
+objective: Verify that cancelling the update operation does not update the author in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, start entering data for the author's Name and Bio.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The author's details are not updated in the database, and the list of authors records is displayed to the user.
+explanation: This test case ensures that if the user decides to cancel the update operation by pressing the 'Cancel' button, the author's details are not updated in the database, which is part of the cancel operation scenario.
+

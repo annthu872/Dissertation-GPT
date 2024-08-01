@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Update Author with Valid External Links in Bio
+objective: Verify that the author's bio can be updated with valid external links and the update is reflected in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter or modify the author's name as needed.
+  - Step 4: In the bio field, enter a valid biography including one or more external links.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The author's record is updated in the database with the new bio containing external links, and the list of authors with the updated record is displayed.
+explanation: This test case ensures that authors' bios can include external links and that these updates are correctly saved and displayed. It directly tests the functionality described in the 'Update Author with External Links in Bio' scenario.
+
+Test Case: Test Case 2
+testCaseName: Update Author with Invalid External Links in Bio
+objective: Verify that the system displays an error message when trying to update an author's bio with invalid external links.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter or modify the author's name as needed.
+  - Step 4: In the bio field, enter a biography including one or more invalid external links.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the external links in the bio are invalid. The author's record is not updated in the database.
+explanation: This test case checks the system's ability to validate external links in the author's bio, ensuring data integrity and user feedback on errors. It is relevant to the scenario as it tests a critical part of updating an author's bio.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Author with External Links in Bio
+objective: Verify that the update operation can be canceled after entering external links in the author's bio and that no changes are saved.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: In the form displayed, enter or modify the author's name and bio, including external links.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The update operation is canceled, no changes are made to the author's record in the database, and the list of author records is displayed.
+explanation: This test case ensures that users can cancel the update operation if they change their mind, especially after entering or modifying external links in the author's bio. It is crucial for user experience and data integrity.
+

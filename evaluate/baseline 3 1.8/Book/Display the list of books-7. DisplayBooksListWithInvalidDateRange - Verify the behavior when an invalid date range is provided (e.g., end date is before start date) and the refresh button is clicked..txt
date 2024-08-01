@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: DisplayBooksListWithInvalidDateRange
+objective: Verify that the application behaves correctly when an invalid date range is provided for filtering books and the refresh button is clicked.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter an end date that is before the start date. For example, set the start date to 01/01/2023 and the end date to 01/01/2022.
+  - Step 3: Click the 'Refresh' button next to the date range inputs.
+expectedResult: The application should display a message indicating that the date range is invalid, such as 'Invalid date range: End date cannot be before start date.' No books list should be refreshed or displayed based on the invalid date range.
+explanation: This test case is created to ensure that the application correctly handles the scenario where a user provides an invalid date range for filtering the list of books. It directly matches the test scenario's requirement to verify the behavior when an invalid date range is provided and the refresh button is clicked.
+

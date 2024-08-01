@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Incorrect Word Sorting with Vocabulary Definition
+objective: Verify that the system displays a red pop-up screen when the learner arranges the letters in an incorrect order.
+testSteps:
+  - Step 1: Log into the application as a learner.
+  - Step 2: Navigate to the word arranging test.
+  - Step 3: The screen displays a question or the meaning of a vocabulary or an image showing the word and those letters of that vocabulary arranged randomly.
+  - Step 4: Arrange the letters by clicking on letter buttons in an incorrect order and press enter.
+expectedResult: A red pop-up screen should be displayed indicating the answer is wrong.
+explanation: This test case ensures that when learners arrange the letters in an incorrect order, the system accurately identifies the mistake and provides immediate visual feedback through a red pop-up screen. It directly tests the 'Incorrect Word Sorting with Vocabulary Definition' scenario by focusing on the alternative flow where the learner chooses the wrong answer.
+

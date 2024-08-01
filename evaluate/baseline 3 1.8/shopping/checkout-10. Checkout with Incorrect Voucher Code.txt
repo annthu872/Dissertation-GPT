@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Checkout with Incorrect Voucher Code
+objective: Verify that the system prevents the user from applying an incorrect voucher code during the checkout process and displays an appropriate error message.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform the 'Purchase' feature to initiate the checkout process.
+  - Step 3: On the order summary page, select or confirm the shipping address.
+  - Step 4: Choose the default payment method or select a new payment method.
+  - Step 5: Attempt to add a voucher by entering an incorrect voucher code into the voucher code field.
+  - Step 6: Click the 'apply' button after entering the incorrect voucher code.
+expectedResult: The system should display an error message indicating that the voucher code is incorrect and prevent the application of the discount to the order.
+explanation: This test case is designed to ensure that the system correctly handles the scenario where a user attempts to apply an incorrect voucher code during the checkout process. It directly matches the test scenario of checking out with an incorrect voucher code by focusing on the interaction with the voucher code field and the system's response to an incorrect code.
+

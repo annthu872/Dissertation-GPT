@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away to API during author creation cancels the operation
+objective: Ensure that navigating away to the API page during the author creation process cancels the operation and does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new author.
+  - Step 3: On the author creation form, start entering the author's details (Name and Bio).
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'API'.
+expectedResult: The author creation process is cancelled, and the API page is displayed without saving the entered author data.
+explanation: This test case ensures that when a user navigates away to the API page during the process of creating a new author, the operation is cancelled, and no data is saved to the database. It directly tests the scenario of navigation away during author creation to the API page.
+
+Test Case: Test Case 2
+testCaseName: Verify data is not saved when navigating away during author creation
+objective: To confirm that no data is saved to the database when the user navigates away from the author creation page before submitting the form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to initiate the creation of a new author.
+  - Step 3: Enter the author's Name and Bio in the creation form.
+  - Step 4: Navigate away to the API page by selecting the 'API' menu item before hitting the 'Submit' button.
+  - Step 5: Return to the author list page by navigating through the application menu.
+  - Step 6: Search for the previously entered author's name in the author list.
+expectedResult: The author list does not display the author's name that was entered before navigating away, confirming that the data was not saved.
+explanation: This test case is designed to verify that if a user navigates away from the author creation form to the API page before submitting the form, the entered data is not saved. It checks the persistence of data upon navigation interruption.
+

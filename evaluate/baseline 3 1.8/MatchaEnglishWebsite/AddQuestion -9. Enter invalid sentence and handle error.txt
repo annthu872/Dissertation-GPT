@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Enter invalid sentence with special characters
+objective: Verify that the system handles errors when an admin enters a sentence with special characters for a selection test question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list on the 'Lesson Information' page.
+  - Step 5: Select a word from the vocabulary word list on the 'Topic Information' page.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with an invalid sentence that contains special characters, fill in the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 9: Press the 'Save' button.
+expectedResult: System displays a notification that 'Sentence is invalid', prompting Admin to re-enter the 'sentence' field without special characters.
+explanation: This test case ensures that the system correctly validates the 'sentence' field for special characters and provides appropriate feedback to the admin, preventing the creation of questions with invalid sentences.
+
+Test Case: Test Case 2
+testCaseName: Enter invalid sentence exceeding character limit
+objective: Verify that the system handles errors when an admin enters a sentence exceeding the character limit for a selection test question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list on the 'Lesson Information' page.
+  - Step 5: Select a word from the vocabulary word list on the 'Topic Information' page.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a sentence exceeding 250 characters, fill in the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 9: Press the 'Save' button.
+expectedResult: System displays a notification that 'Sentence exceeds character limit', prompting Admin to shorten the 'sentence' field to meet the character limit.
+explanation: This test case verifies that the system enforces the character limit for sentences in selection test questions and provides clear feedback to the admin for correction.
+
+Test Case: Test Case 3
+testCaseName: Enter invalid sentence without the symbol '...'
+objective: Verify that the system handles errors when an admin enters a sentence without the required symbol '...' for a selection test question
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the Lesson list.
+  - Step 4: Select a Topic from the Topic list on the 'Lesson Information' page.
+  - Step 5: Select a word from the vocabulary word list on the 'Topic Information' page.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence but without the symbol '...', fill in the 'correct answer' and the three 'other option' fields with valid data.
+  - Step 9: Press the 'Save' button.
+expectedResult: System displays a notification that 'Sentence must include the symbol ...', prompting Admin to modify the 'sentence' field to include the required symbol.
+explanation: This test case ensures that the system checks for the presence of the '...' symbol in the sentence, which is crucial for indicating the blank space in selection test questions.
+

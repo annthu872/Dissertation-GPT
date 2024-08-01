@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Verify filtering books by valid date range
+objective: Verify that the application correctly filters and displays the list of books within a specified valid date range when the refresh button is clicked.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter a valid start date and end date for the range you want to filter the books by.
+  - Step 3: Click the 'Refresh' button located to the right of the date range inputs.
+expectedResult: The application displays a list of books that have their publication dates within the specified date range. The list should include columns for id, Title, Author, Genre, and Publication date.
+explanation: This test case ensures that the application's functionality for filtering books by a specific publication date range works as intended. It directly relates to the test scenario by verifying the core functionality of filtering and displaying books within a given date range.
+
+Test Case: Test Case 2
+testCaseName: Verify pagination functionality with filtered books list
+objective: Verify that the pagination functionality works correctly with a list of books filtered by a valid date range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: In the date range input forms above the list of books, enter a valid start date and end date to filter the books by.
+  - Step 3: Click the 'Refresh' button located to the right of the date range inputs.
+  - Step 4: If more than 10 books are displayed in the filtered results, click the 'Next' button or a specific page number in the pagination block below the records.
+expectedResult: The application correctly paginates the filtered list of books, displaying up to 10 items per page. The user can navigate through the pages to see more books within the specified date range.
+explanation: This test case checks the pagination functionality in the context of a filtered books list. It ensures that users can navigate through multiple pages of filtered results, which is a critical aspect of the user experience when dealing with large datasets.
+

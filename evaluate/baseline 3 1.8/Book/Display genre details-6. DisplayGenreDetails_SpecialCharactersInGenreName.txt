@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with Special Characters in Genre Name
+objective: Verify that the application correctly displays details for genres with special characters in their names
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Locate and click on a genre name that contains special characters (e.g., @, #, $, %, &, *).
+  - Step 3: Observe the genre details page that is displayed after clicking.
+expectedResult: The application displays the genre details page with the following columns correctly filled: id (unique genre number), Name (with special characters displayed correctly), and Description.
+explanation: This test case ensures that genres with special characters in their names are handled correctly by the application, displaying all relevant details without errors or character misinterpretation.
+

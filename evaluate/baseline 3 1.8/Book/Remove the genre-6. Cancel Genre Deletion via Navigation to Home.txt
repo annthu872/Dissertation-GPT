@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Deletion by Navigating to Home
+objective: Verify that the genre deletion process can be canceled by navigating to the Home page, ensuring the genre data remains unchanged in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, instead of clicking 'Confirm', navigate to the 'Home' page by selecting the 'Home' menu item.
+expectedResult: The genre data should not be deleted from the database, and the user should be redirected to the Home page with the data unchanged.
+explanation: This test case ensures that when a user initiates a genre deletion but decides to cancel this action by navigating away to the Home page, the cancellation is processed correctly, and the genre data remains intact. It directly matches the scenario of canceling a genre deletion via navigation, focusing on the 'Home' navigation as specified.
+

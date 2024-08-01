@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Edit Test With Minimum Length of Vocabulary - Basic Flow
+objective: Verify that the administrator can edit a test with the minimum length of vocabulary successfully.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: In the editing interface, remove all but the minimum required number of vocabularies from the test.
+  - Step 5: Make any necessary edits to the exercises to ensure they are valid with the reduced vocabulary list.
+  - Step 6: Select 'Save' to save the changes.
+expectedResult: The system should save all edited exercises, and the test should now reflect the changes with the minimum length of vocabulary.
+explanation: This test case ensures that the system allows editing tests to meet the minimum vocabulary requirements, directly relating to the scenario of editing tests with a focus on vocabulary length.
+
+Test Case: Test Case 2
+testCaseName: Edit Test With Minimum Length of Vocabulary - Alternative Flow
+objective: Verify that the administrator can edit a test with the minimum length of vocabulary and choose to save changes through the alternative flow.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Topic' on the navbar from the home page.
+  - Step 3: Select the topic with the test to be edited and click 'Edit'.
+  - Step 4: In the editing interface, adjust the test to only include the minimum required number of vocabularies.
+  - Step 5: Attempt to exit the exercise editing mode by pressing the button designed for this action.
+  - Step 6: On the pop-up screen that appears with 'Save changes?' select 'Save'.
+expectedResult: The system should save all the edits made to the exercises, including the reduction to the minimum vocabulary length.
+explanation: This test case verifies the system's ability to handle edits to tests through the alternative flow, ensuring that changes, especially those concerning the minimum vocabulary length, are saved correctly.
+
+Test Case: Test Case 3
+testCaseName: Edit Test With Minimum Length of Vocabulary - Exception Flow
+objective: Ensure that the administrator can edit a test with the minimum length of vocabulary but decide not to save the changes.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: From the home page, select 'Topic' on the navbar.
+  - Step 3: Identify and select the topic containing the test to be edited, then click 'Edit'.
+  - Step 4: Modify the test to include only the minimum required number of vocabularies.
+  - Step 5: Press the button to exit the exercise editing mode.
+  - Step 6: When prompted with 'Save changes?' choose 'Do not save'.
+expectedResult: The system should discard the edits made to the exercises, including the changes to achieve the minimum vocabulary length.
+explanation: This test case checks the system's functionality in discarding changes made to a test, particularly when those changes involve adjusting the test to the minimum vocabulary length, through the exception flow.
+

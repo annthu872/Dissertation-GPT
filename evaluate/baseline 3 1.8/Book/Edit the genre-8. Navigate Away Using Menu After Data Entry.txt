@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Edit Genre and Navigate Away Using Menu Before Submission
+objective: Verify that the user can navigate away using the menu after starting the data entry for genre edit but before submitting, and ensure data is not updated in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Description' fields of the genre.
+  - Step 4: Before pressing the 'Submit' button, click on any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should navigate to the selected page without updating the genre data in the database, and the list of genres should be displayed without the changes.
+explanation: This test case ensures that if a user navigates away using the menu after starting but before completing the genre edit process, the changes are not saved. It directly matches the scenario of navigating away after data entry, focusing on the menu navigation aspect.
+
+Test Case: Test Case 2
+testCaseName: Successfully Edit Genre and Verify Update
+objective: Verify that after correctly entering genre data and submitting, the genre is updated in the database and the updated list of genres is displayed.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Correctly enter or modify the data in the 'Name' and 'Description' fields for the genre.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The application updates the genre in the database and displays the list of genres with the updated records.
+explanation: This test case verifies the main scenario where a user successfully updates a genre. It ensures the application behaves as expected when data is entered correctly and submitted.
+
+Test Case: Test Case 3
+testCaseName: Edit Genre and Cancel Before Submission
+objective: Verify that the user can cancel the genre edit operation before submission and ensure data is not updated in the database.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Start entering or modifying the data in the 'Name' and 'Description' fields of the genre.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The application should not update the genre in the database and should display the list of genres without the changes.
+explanation: This test case ensures that the user has the option to cancel the edit operation before submission, preventing any unintended updates. It tests the cancel operation scenario described in the use case.
+

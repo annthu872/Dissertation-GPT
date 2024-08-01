@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Publication Date Format
+objective: Verify that the system displays an error message when the user attempts to update a book with an invalid publication date format
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter or modify the details for the book, ensuring to enter an invalid format for the 'Publication date' (e.g., '2023/30/12').
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the 'Publication date' format is incorrect.
+explanation: This test case ensures that the system validates the format of the publication date and prevents the update of a book record with an invalid date format. It directly matches the scenario of updating a book with an invalid publication date.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Future Publication Date
+objective: Verify that the system displays an error message when the user attempts to update a book with a publication date set in the future
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter or modify the details for the book, ensuring to enter a future date for the 'Publication date' (e.g., '2050-12-31').
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the 'Publication date' cannot be in the future.
+explanation: This test case checks if the system correctly identifies and prevents the entry of a publication date that is in the future, ensuring data integrity for the book records. It is relevant to the scenario as it tests the validation of publication date during the update process.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Empty Publication Date
+objective: Verify that the system displays an error message when the user attempts to update a book without entering a publication date
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the edit form, enter or modify the details for the book, leaving the 'Publication date' field empty.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the 'Publication date' is required.
+explanation: This test case ensures that the system requires a publication date for updating a book record, which is crucial for maintaining complete and accurate book information. It aligns with the scenario by testing the validation of required fields, specifically the publication date.
+

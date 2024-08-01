@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Review with Image Method - Correct Answer
+objective: Verify that the system correctly handles the review process with an image method when the learner selects the right answer.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: Ensure the system randomly selects the image method for one of the words in the learner's daily review words list.
+  - Step 5: Choose the correct answer from the four selections provided.
+  - Step 6: Click on the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display a green word indicating the correct choice and increase the memory level of the word.
+explanation: This test case ensures that the review process with an image method functions correctly when the learner selects the right answer, directly matching the 'Review with Image Method' scenario.
+
+Test Case: Test Case 2
+testCaseName: Review with Image Method - Wrong Answer
+objective: Verify that the system correctly handles the review process with an image method when the learner selects the wrong answer.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: Ensure the system randomly selects the image method for one of the words in the learner's daily review words list.
+  - Step 5: Choose the wrong answer from the four selections provided.
+  - Step 6: Click on the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display a red word indicating the incorrect choice and decrease the memory level of the word.
+explanation: This test case verifies the system's behavior when a learner selects the wrong answer during a review with an image method, ensuring the system responds as expected.
+

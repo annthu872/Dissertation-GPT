@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Empty Authors List
+objective: Verify that the application correctly displays an empty list of authors when there are no authors in the database.
+testSteps:
+  - Step 1: Ensure the database of authors is empty or clear the database of authors for testing purposes.
+  - Step 2: Navigate to the 'Authors' section of the application.
+  - Step 3: Observe the list area where authors would normally be displayed.
+expectedResult: The application should display a message or indication that there are no authors to display, such as 'No authors found' or a similar message in the list area.
+explanation: This test case is created to ensure that the application can gracefully handle and inform the user when there are no authors in the database to display. It directly matches the scenario name 'DisplayEmptyAuthorsList' by testing the main functionality of displaying the authors list when it is empty.
+

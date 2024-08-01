@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Cancel Topic Addition Before Entering Data
+objective: Verify that the Administrator can cancel the addition of a new topic before entering any data
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Once redirected to the adding topic viewing page, select 'Cancel' without entering any data in the name and description fields.
+expectedResult: The system should cancel the topic addition process and redirect the Administrator to the previous page or dashboard without creating a new topic.
+explanation: This test case ensures that the cancel functionality works correctly even before any data is entered, allowing administrators to abort the process of adding a new topic at an early stage.
+
+Test Case: Test Case 2
+testCaseName: Cancel Topic Addition After Entering Data
+objective: Verify that the Administrator can cancel the addition of a new topic after entering data in the name and description fields
+testSteps:
+  - Step 1: Log in as an Administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: Once redirected to the adding topic viewing page, enter a unique name in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Cancel' to stop the addition process.
+expectedResult: The system should cancel the topic addition process and redirect the Administrator to the previous page or dashboard without saving the entered data or creating a new topic.
+explanation: This test case verifies that the cancel functionality allows administrators to abort the process of adding a new topic after they have entered some data, ensuring that no unwanted topics are added.
+

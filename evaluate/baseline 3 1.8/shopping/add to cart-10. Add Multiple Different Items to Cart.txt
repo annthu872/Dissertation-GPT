@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Add Single Item with Default Quantity to Cart
+objective: Verify that a user can add a single item with default quantity to their shopping cart successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of the item to be added.
+  - Step 3: Click the 'Add to Cart' button without adjusting the quantity.
+  - Step 4: Confirm the addition if any confirmation dialog appears.
+expectedResult: The item is added to the shopping cart successfully, and the cart icon updates to reflect the new number of items in the cart.
+explanation: This test case ensures that the basic flow of adding an item to the cart works as expected without any modifications to the quantity.
+
+Test Case: Test Case 2
+testCaseName: Add Multiple Different Items to Cart
+objective: Verify that a user can add multiple different items to their shopping cart successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of the first item to be added.
+  - Step 3: Click the 'Add to Cart' button for the first item.
+  - Step 4: Navigate to the product detail page of the second item to be added.
+  - Step 5: Click the 'Add to Cart' button for the second item.
+  - Step 6: Repeat steps 2-5 for any additional items to be added.
+expectedResult: All selected items are added to the shopping cart successfully, and the cart icon updates to reflect the total number of items in the cart.
+explanation: This test case verifies that users can add multiple different items to their cart, reflecting the scenario's requirement to add multiple different items.
+
+Test Case: Test Case 3
+testCaseName: Add Item with Selected Options to Cart
+objective: Verify that a user can add an item with selected options (e.g., size, color) to their shopping cart successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item that has multiple options.
+  - Step 3: Select one available option for the item.
+  - Step 4: Click the 'Add to Cart' button.
+  - Step 5: Confirm the addition if any confirmation dialog appears.
+expectedResult: The item, with the selected option, is added to the shopping cart successfully, and the cart icon updates to reflect the new number of items in the cart.
+explanation: This test case ensures that users can add items with specific options to their cart, covering the alternative flow where product options must be selected.
+
+Test Case: Test Case 4
+testCaseName: Add Item with Adjusted Quantity to Cart
+objective: Verify that a user can adjust the quantity of an item before adding it to their shopping cart successfully.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of the item to be added.
+  - Step 3: Adjust the quantity of the item using the plus or minus button.
+  - Step 4: Click the 'Add to Cart' button after adjusting the quantity.
+  - Step 5: Confirm the addition if any confirmation dialog appears.
+expectedResult: The item, with the adjusted quantity, is added to the shopping cart successfully, and the cart icon updates to reflect the new number of items in the cart.
+explanation: This test case checks the functionality of adjusting the quantity of an item before adding it to the cart, covering the alternative flow for quantity adjustment.
+

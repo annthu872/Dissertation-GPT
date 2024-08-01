@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Add Room with One Missing Field
+objective: Verify that the system prevents adding a room when a required field is missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Fill in all the fields except one (leave one field blank).
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that a required field is missing and prevent the room from being added to the database.
+explanation: This test case ensures that the system enforces the requirement for all fields to be filled out before a room can be added, which is crucial for maintaining data integrity and preventing incomplete room records.
+
+Test Case: Test Case 2
+testCaseName: Add Room with All Fields Missing
+objective: Verify that the system prevents adding a room when all fields are missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the 'Add Room' section.
+  - Step 3: Leave all fields blank.
+  - Step 4: Press the 'Add Room' button.
+expectedResult: The system should display an error message indicating that all fields are required and prevent the room from being added to the database.
+explanation: This test case checks the system's ability to handle cases where no information is provided for a new room, ensuring that it prompts the user to fill in all necessary information before proceeding.
+

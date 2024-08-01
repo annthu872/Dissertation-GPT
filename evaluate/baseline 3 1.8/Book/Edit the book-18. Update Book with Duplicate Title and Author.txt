@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Duplicate Title and Author
+objective: Verify that the system prevents updating a book with a title and author that already exists in the database
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter a book title and author that already exist in the database. Fill in the other fields (Genre, Description, Publication date) with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that a book with the same title and author already exists and prevent the update from being saved in the database.
+explanation: This test case ensures data integrity by preventing duplicate book records with the same title and author from being created in the database, which directly relates to the test scenario of updating a book with a duplicate title and author.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Unique Title and Author
+objective: Verify that the system allows updating a book with a unique title and author
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter a new unique book title and author that do not exist in the database. Fill in the other fields (Genre, Description, Publication date) with valid data.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should successfully update the book record in the database and display the list of books with the updated records.
+explanation: This test case verifies that the system supports the update functionality for books with unique titles and authors, ensuring that the edit functionality works as intended for non-duplicate entries.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Book
+objective: Verify that the system does not update book data in the database when the 'Cancel' button is pressed
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Start entering new data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: The system should not update the book data in the database and should display the list of book records without applying the changes.
+explanation: This test case ensures that the cancel operation works as expected, allowing users to abort the update process without making any changes to the book data in the database.
+

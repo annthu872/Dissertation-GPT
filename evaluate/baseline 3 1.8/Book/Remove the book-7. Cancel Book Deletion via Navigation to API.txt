@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Book Deletion and Navigate to API
+objective: Verify that cancelling the book deletion and then navigating to 'API' does not delete the book and the 'API' page is displayed correctly.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Delete' button next to the book intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of book records is still displayed.
+  - Step 5: Select the menu item 'API'.
+expectedResult: The book record should not be deleted from the database, and the 'API' page should be displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a book and then navigates to the 'API' page via the navigation menu, the book remains in the database, and the 'API' page is displayed correctly. It directly matches the scenario of cancelling book deletion and navigating to 'API', combining the cancel operation scenario with the specific navigation action.
+

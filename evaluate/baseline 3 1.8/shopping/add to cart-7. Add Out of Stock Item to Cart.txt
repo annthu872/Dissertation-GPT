@@ -1,0 +1,21 @@
+Test Case: Test Case 1
+testCaseName: Add Out of Stock Single Option Item to Cart
+objective: Verify that users cannot add a single option item that is out of stock to their shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item that is out of stock.
+  - Step 3: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button should be disabled or an error message should be displayed indicating that the item is out of stock and cannot be added to the cart.
+explanation: This test case ensures that users are prevented from adding items to their cart that are out of stock, maintaining the integrity of the shopping experience.
+
+Test Case: Test Case 2
+testCaseName: Add Out of Stock Option of a Multi-Option Product to Cart
+objective: Verify that users cannot add an out of stock option of a product with multiple options to their shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to the product detail page of an item with multiple options, where at least one option is out of stock.
+  - Step 3: Select the out of stock option.
+  - Step 4: Attempt to click the "Add to Cart" button.
+expectedResult: The "Add to Cart" button should be disabled for the out of stock option, or an error message should be displayed indicating that the selected option is out of stock and cannot be added to the cart.
+explanation: This test case verifies that users are prevented from adding specific out of stock options of a multi-option product to their cart, ensuring accurate stock management and user experience.
+

@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Refreshing Page During Listening Pronunciation Test
+objective: Verify that the listening pronunciation test question remains functional and retains the current state after the page is refreshed during the test.
+testSteps:
+  - Step 1: Log into the application and navigate to the review test section.
+  - Step 2: Start the listening pronunciation test question.
+  - Step 3: Click on the speaker button to listen to the word's pronunciation.
+  - Step 4: Make a guess by choosing an answer but do not submit it.
+  - Step 5: Refresh the page.
+  - Step 6: Observe if the test question is still displayed and if the chosen answer (if any) is retained.
+expectedResult: After refreshing the page, the listening pronunciation test question should still be displayed, and any previously chosen answer should remain selected.
+explanation: This test case ensures that learners can continue their test seamlessly without losing progress if they accidentally or intentionally refresh the page during a listening pronunciation test question. It directly matches the scenario of refreshing the page during the test.
+

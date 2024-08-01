@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Navigate to Next Page of Genres
+objective: Verify that clicking the 'Next' button displays the next 10 genres in the list.
+testSteps:
+  - Step 1: Navigate to the application's main page.
+  - Step 2: Select the item 'Genres' from the main menu or available options.
+  - Step 3: Observe the list of genres displayed, ensuring it shows up to 10 items.
+  - Step 4: Scroll down to the bottom of the genre list to locate the 'Next' button in the pagination block.
+  - Step 5: Click the 'Next' button.
+expectedResult: The application should display the next 10 genres in the list, starting from the 11th item, with their respective id, name, and description.
+explanation: This test case ensures that the pagination functionality works as expected, allowing users to navigate through the list of genres by clicking the 'Next' button. It directly matches the scenario name by testing the navigation to the next page of genres.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Earliest Possible Date
+objective: Verify that the system can generate a report using the earliest possible date as a parameter and display the report details correctly.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter the earliest possible date as the start date and a valid end date in the date period selection parameters.
+  - Step 5: Submit the report generation request.
+  - Step 6: Once the report is generated, click on the specific report to view its details.
+expectedResult: The system should successfully generate the report using the earliest possible date as the start date, and the user should be able to view the report details without any errors.
+explanation: This test case ensures that the system handles the boundary condition of the earliest possible date correctly when generating reports. It is directly related to the test scenario of generating reports with boundary date parameters.
+
+Test Case: Test Case 2
+testCaseName: Generate Report with Latest Possible Date
+objective: Verify that the system can generate a report using the latest possible date as a parameter and display the report details correctly.
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter a valid start date and the latest possible date as the end date in the date period selection parameters.
+  - Step 5: Submit the report generation request.
+  - Step 6: Once the report is generated, click on the specific report to view its details.
+expectedResult: The system should successfully generate the report using the latest possible date as the end date, and the user should be able to view the report details without any errors.
+explanation: This test case checks the system's ability to handle the boundary condition of the latest possible date correctly when generating reports. It aligns with the test scenario's goal of testing report generation with boundary date parameters.
+

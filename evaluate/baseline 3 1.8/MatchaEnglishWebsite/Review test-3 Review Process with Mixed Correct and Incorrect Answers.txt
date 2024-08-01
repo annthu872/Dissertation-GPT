@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Review Process with Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word and navigates to the next word when a learner selects the correct answer.
+testSteps:
+  - Step 1: Log in as a learner with a daily review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Select one of the four answer selections provided by the system, ensuring it is the correct answer.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, a green word should be displayed, indicating the word's memory level has been increased. The system should then present the next word in the review list.
+explanation: This test case ensures that the review process functions correctly when a learner selects the correct answer, including the visual feedback and memory level adjustment.
+
+Test Case: Test Case 2
+testCaseName: Review Process with Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word and navigates to the next word when a learner selects the wrong answer.
+testSteps:
+  - Step 1: Log in as a learner with a daily review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Select one of the four answer selections provided by the system, ensuring it is the wrong answer.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, a red word should be displayed, indicating the word's memory level has been decreased. The system should then present the next word in the review list.
+explanation: This test case verifies the system's behavior when a learner selects an incorrect answer, including the visual feedback and memory level adjustment.
+
+Test Case: Test Case 3
+testCaseName: Review Process Completion
+objective: Verify that the system saves the review and redirects the learner to the Home page after completing the last word in the review list.
+testSteps:
+  - Step 1: Log in as a learner with only one word left in the daily review words list.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen.
+  - Step 4: Select the correct or incorrect answer for the word.
+  - Step 5: Click the 'Continue' button after answering the last word.
+expectedResult: The system should save the review and redirect the learner to the Home page, indicating the completion of the review process.
+explanation: This test case checks the system's ability to correctly handle the end of the review process, ensuring that the learner's progress is saved and they are properly navigated back to the Home page.
+

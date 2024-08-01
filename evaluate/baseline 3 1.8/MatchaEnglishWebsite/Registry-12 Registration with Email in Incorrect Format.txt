@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Registration with Email in Incorrect Format
+objective: Verify that the system shows a notification of invalid email when a learner tries to register with an email in incorrect format
+testSteps:
+  - Step 1: Navigate to the registration page.
+  - Step 2: Click on the Mail icon to choose registration by email.
+  - Step 3: Enter a username that is valid (over 8 characters and below 30 characters).
+  - Step 4: Enter an email in incorrect format (e.g., 'testemail.com').
+  - Step 5: Enter a valid password (over 8 characters and below 30 characters, contains at least one of each kind: a normal character, a capitalize character, a number, and a special character, and cannot be the same as the username).
+  - Step 6: Press the 'Registry' button.
+expectedResult: System shows a notification that the email is invalid.
+explanation: This test case is created to directly match the scenario name 'Registration with Email in Incorrect Format' by testing the functionality of registering with an email that does not follow the correct format. It uses the exception flow 4 from the use case specification to ensure that the system correctly validates and provides feedback on the email format during the registration process.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Author Update with Valid Data
+objective: Verify that the author record is successfully updated with valid data and the updated list of authors is displayed.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter valid data for the author's Name and Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The author record is updated in the database, and the list of authors with the updated record is displayed.
+explanation: This test case ensures that when valid data is entered for an author, the system correctly updates the author's record in the database and displays the updated list of authors.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Author Update with Invalid Data
+objective: Verify that when invalid data is entered, the system displays incorrect data messages and does not update the author record.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: On the displayed form, enter invalid data for the author's Name and/or Bio.
+  - Step 4: Press the 'Submit' button.
+expectedResult: Incorrect data messages are displayed, and the author record is not updated in the database.
+explanation: This test case checks the system's ability to validate input data and ensure that incorrect data does not lead to an update in the author's record.
+
+Test Case: Test Case 3
+testCaseName: Cancel Author Update Operation
+objective: Verify that the author update operation can be canceled and no data is updated in the database.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Update' button next to the author you wish to update.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not updated in the database, and the list of author records is displayed.
+explanation: This test case ensures that users can cancel the update operation at any point before submission, preventing any unintended updates to the author's record.
+

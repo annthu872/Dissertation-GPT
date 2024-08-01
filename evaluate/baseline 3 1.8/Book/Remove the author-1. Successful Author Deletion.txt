@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Author Deletion
+objective: Verify that the user can successfully delete an author and the record is removed from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button to the right of their name.
+  - Step 3: On the confirmation dialog, press the 'Confirm' button to proceed with the deletion.
+expectedResult: The author's record should be successfully removed from the database, and the list of authors should be updated to reflect this change.
+explanation: This test case ensures that the main scenario for deleting an author functions as expected, allowing for the removal of an author's record from the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Author Deletion Operation
+objective: Verify that cancelling the delete operation does not remove the author's record from the database
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author you wish to delete and click the 'Delete' button to the right of their name.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button to abort the deletion process.
+expectedResult: The author's record should remain in the database, and the user is returned to the list of authors without any changes.
+explanation: This test case verifies that the cancel operation scenario works as intended, preventing the deletion of an author's record when the user decides not to proceed.
+
+Test Case: Test Case 3
+testCaseName: Navigation After Cancelling Author Deletion
+objective: Verify that after cancelling the deletion of an author, navigating to other sections like 'Books', 'Genres', 'Authors', 'Home', or 'API' displays updated data without deleting the author
+testSteps:
+  - Step 1: Navigate to the author list/details page and initiate the deletion of an author but press 'Cancel' on the confirmation dialog.
+  - Step 2: Select the menu item 'Books' to navigate to the Books section.
+  - Step 3: Repeat Step 2 for 'Genres', 'Authors', 'Home', and 'API' sections respectively.
+expectedResult: For each navigation, the corresponding form with updated data is displayed without the author's record being deleted from the database.
+explanation: This test case checks that after cancelling an author deletion, navigating to other sections of the application does not inadvertently delete the author's record and displays correctly updated data.
+

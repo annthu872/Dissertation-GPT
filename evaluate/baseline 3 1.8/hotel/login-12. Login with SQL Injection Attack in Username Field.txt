@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Login with SQL Injection Attack in Username Field
+objective: Verify that the system is secure against SQL Injection attacks through the username field during login
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: In the username field, enter an SQL injection code snippet (e.g., ' OR '1'='1).
+  - Step 3: In the password field, enter any random text.
+  - Step 4: Click the submit button.
+expectedResult: The system should not authenticate the user and should display an error message or redirect the user back to the login page without granting access to the main page.
+explanation: This test case is created to ensure the application's login functionality is secure against SQL Injection attacks, specifically through the username field. It directly relates to the test scenario's focus on testing the system's security measures during the login process.
+

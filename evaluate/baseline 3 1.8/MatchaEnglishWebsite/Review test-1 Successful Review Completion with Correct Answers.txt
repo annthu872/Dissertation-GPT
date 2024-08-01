@@ -1,0 +1,16 @@
+Test Case: Test Case 1
+testCaseName: Successful Review Completion with Correct Answers
+objective: Verify that the system correctly processes and displays the outcome when a learner selects the correct answers throughout the review test.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review's screen.
+  - Step 4: For each word in the review list, wait for the system to randomly select and display one of four methods (questions, sound, image, or meanings) with four selections of answers at the bottom of the screen.
+  - Step 5: Choose the correct answer by clicking on one of the four selections for each word.
+  - Step 6: After selecting the correct answer, observe the system's response.
+  - Step 7: Press the 'Continue' button to proceed to the next word in the review words list.
+  - Step 8: Repeat steps 4 to 7 until the last word in the review list is reached.
+  - Step 9: After reviewing the last word, press the 'Continue' button to complete the review and observe the redirection.
+expectedResult: For each correct answer, the system should display a green word indicating the correct selection and increase the memory level of the word. After completing the last word, the system should redirect the learner back to the Home page and save the review.
+explanation: This test case ensures that the system accurately processes correct answers during a review test, displays the appropriate feedback, updates the memory level of words accordingly, and successfully saves the review upon completion.
+

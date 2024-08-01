@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Check-In Attempt without Entering Booking ID
+objective: Verify the system behavior when a guest attempts to check-in without entering a Booking ID
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: Leave the Booking ID field empty.
+  - Step 3: Press the submit button.
+expectedResult: The system should not proceed with the check-in process and should display an error message indicating that the Booking ID is required.
+explanation: This test case is designed to validate the system's handling of check-in attempts without a Booking ID, directly addressing the scenario of checking in without entering a Booking ID. It tests the system's validation process in the basic course of events but with the specific condition of missing Booking ID input.
+

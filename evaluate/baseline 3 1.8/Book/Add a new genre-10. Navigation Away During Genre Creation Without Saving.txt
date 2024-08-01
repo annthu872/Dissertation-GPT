@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away by clicking 'Cancel' during genre creation
+objective: Ensure that when a user navigates away from the genre creation page by clicking 'Cancel', the data entered is not saved and the user is redirected to the genre list page.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to start adding a new genre.
+  - Step 3: Enter data into the 'Name' and 'Description' fields of the genre.
+  - Step 4: Click the 'Cancel' button before submitting the form.
+expectedResult: The application does not save the entered data and redirects the user to the genre list page, displaying the list of genres without the addition of the new genre.
+explanation: This test case ensures that the cancel operation works as intended, preventing any data from being saved when a user decides not to proceed with creating a new genre.
+
+Test Case: Test Case 2
+testCaseName: Verify navigation away by selecting a menu item during genre creation
+objective: To verify that when a user navigates away from the genre creation page by selecting a menu item ('Books', 'Genres', 'Authors', 'Home', or 'API'), the data entered is not saved.
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to initiate the creation of a new genre.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Without submitting the new genre, select a menu item ('Books', 'Genres', 'Authors', 'Home', or 'API').
+expectedResult: The application does not save the entered data and redirects the user to the selected page, ensuring that the new genre is not added to the database.
+explanation: This test case checks the functionality of navigation away from the genre creation page through the menu, confirming that unsaved data is not stored and the user is redirected appropriately.
+

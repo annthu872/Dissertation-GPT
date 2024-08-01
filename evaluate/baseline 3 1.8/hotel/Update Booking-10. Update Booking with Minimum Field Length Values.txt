@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Minimum Field Length Values
+objective: Verify that the system allows updating a booking with the minimum length values for each field and displays a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Load the booking details and fill in the fields that need to be updated with the minimum length values allowed for each field.
+  - Step 5: Compute the payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+expectedResult: The system validates the fields, updates the booking in the database, and displays a success message.
+explanation: This test case ensures that bookings can be updated with the minimum valid values for each field, adhering to the basic course of events described in the use case. It verifies the system's ability to handle updates with minimal input lengths and confirms successful update operations.
+
+Test Case: Test Case 2
+testCaseName: Update Booking with Minimum Field Length and Invalid Field
+objective: Verify that the system displays an error message when attempting to update a booking with an invalid field value alongside minimum length values.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Load the booking details and fill in the fields, ensuring at least one field is filled with an invalid value alongside other fields with minimum length values.
+  - Step 5: Attempt to compute the payment if applicable.
+  - Step 6: Press the update button.
+expectedResult: The system validates the fields, identifies the invalid field, and displays an error message for the invalid field entered.
+explanation: This test case checks the system's validation process when updating bookings with minimum length values but includes an invalid value for at least one field. It ensures that the system correctly identifies and reports errors in field values according to the alternative path described in the use case.
+

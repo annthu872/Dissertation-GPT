@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic with Special Characters in Name
+objective: Verify that the system allows the administrator to add a new topic with special characters in the topic name.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: In the name field, enter a topic name that includes special characters (e.g., '@#$%^&*').
+  - Step 4: Add a description for the topic in the description field.
+  - Step 5: Select 'Save' to create the new topic.
+expectedResult: The system should successfully create the new topic with special characters in its name and redirect the administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+explanation: This test case is created to ensure that the system supports the inclusion of special characters in topic names, which is a part of the 'Adding new topic' use case. It directly matches the test scenario of adding a topic with special characters in the name, focusing on the system's ability to handle special characters in topic names.
+
+Test Case: Test Case 2
+testCaseName: Adding Topic with Special Characters in Name - Name Already Used
+objective: Verify that the system prevents the administrator from adding a new topic with a name that includes special characters if the name is already used.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select the 'Add new topic' tab on the navigation bar.
+  - Step 3: In the name field, enter a topic name with special characters that is already used in the existing topics (e.g., '*UsedName*').
+  - Step 4: Add a description for the topic in the description field.
+  - Step 5: Select 'Save' to attempt to create the new topic.
+  - Step 6: Observe the notification about the name being already used.
+  - Step 7: Enter a new, unique name with special characters in the name field.
+  - Step 8: Select 'Save' to create the topic.
+expectedResult: The system should display a notification that the name is already used and prompt the administrator to enter a different name. After entering a new, unique name with special characters, the system should successfully create the topic and redirect the administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+explanation: This test case verifies the system's behavior when an administrator attempts to add a new topic with a name that includes special characters but is already used, aligning with the alternative flow of the 'adding new topic' use case. It ensures that the system correctly handles name uniqueness, even when special characters are involved.
+

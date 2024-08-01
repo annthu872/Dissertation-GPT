@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic with Long Name
+objective: Verify that the system allows the administrator to add a new topic with a long name
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a long name (more than 255 characters) for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create a new topic.
+expectedResult: The system should display an error message indicating that the name is too long and prompt the administrator to enter a shorter name.
+explanation: This test case is created to ensure that the system properly handles the scenario where an administrator attempts to add a new topic with a name exceeding the maximum length limit. It directly matches the scenario name by testing the addition of a topic with a long name.
+
+Test Case: Test Case 2
+testCaseName: Successfully Adding Topic with Long Name within Limit
+objective: Verify that the system allows the administrator to add a new topic with a long name within the acceptable limit
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a long name (just below the maximum character limit) for the topic in the name field.
+  - Step 4: Enter a description for the topic in the description field.
+  - Step 5: Select 'Save' to create a new topic.
+expectedResult: The system should successfully create the new topic with the long name and redirect the administrator to the adding vocabulary to new topic section. The new topic should appear in the topic list.
+explanation: This test case verifies that the system supports the addition of a new topic with a long name, provided the name does not exceed the maximum length limit. It is relevant to the test scenario as it tests the system's ability to handle long names for topics without errors, assuming the name is within the acceptable length.
+

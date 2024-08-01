@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information Successfully
+objective: Verify that the Hotel Owner can successfully update hotel information and is redirected to the dashboard with a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, update or change the field values.
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that a success message is displayed.
+  - Step 7: Verify that the system redirects to the Dashboard.
+expectedResult: The hotel information is updated successfully, a success message is displayed, and the Hotel Owner is redirected to the Dashboard.
+explanation: This test case ensures that the Hotel Owner can update the hotel information following the basic course of events described in the use case. It verifies the system's ability to handle the update process correctly and provide appropriate feedback to the user.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with Validation Error
+objective: Verify that the system shows an error message when the Hotel Owner tries to update hotel information with invalid data.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, enter invalid data into one or more fields.
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that an error message is displayed indicating the validation failure.
+expectedResult: The system displays an error message indicating the validation failure, and the hotel information is not updated.
+explanation: This test case checks the system's ability to validate input data during the hotel information update process. It ensures that the system prevents the update if the data does not meet the validation criteria, following the alternative path in the use case.
+

@@ -1,0 +1,42 @@
+Test Case: Test Case 1
+testCaseName: Add Single Quantity of an Item to Cart
+objective: Verify that a user can add a single quantity of an item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform feature 'View a product detail'.
+  - Step 3: Click the 'Add to Cart' button.
+expectedResult: The item is successfully added to the user's shopping cart with a quantity of one, and the cart icon updates to reflect the new number of items.
+explanation: This test case verifies the basic flow of adding an item to the cart without adjusting the quantity, ensuring the system can handle the simplest form of this action.
+
+Test Case: Test Case 2
+testCaseName: Add Multiple Quantities of an Item to Cart
+objective: Verify that a user can add multiple quantities of an item to their shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform feature 'View a product detail'.
+  - Step 3: Adjust the quantity of the product by clicking the plus button next to the quantity.
+  - Step 4: Click the 'Add to Cart' button.
+expectedResult: The item is successfully added to the user's shopping cart with the specified quantity, and the cart icon updates to reflect the new number of items.
+explanation: This test case verifies the alternative flow where a user can adjust the quantity of a product before adding it to the cart, ensuring the system supports multiple quantities of an item.
+
+Test Case: Test Case 3
+testCaseName: Prevent Adding Item with Quantity Exceeding Stock
+objective: Verify that the system prevents adding an item to the cart with a quantity that exceeds the current stock
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform feature 'View a product detail' for a product with limited stock.
+  - Step 3: Attempt to adjust the quantity of the product beyond the available stock by clicking the plus button.
+  - Step 4: Click the 'Add to Cart' button.
+expectedResult: The plus button is disabled when the maximum stock is reached, a message 'You have reached the maximum of the stock' is displayed, and the item is not added to the cart.
+explanation: This test case verifies the exception flow where the system must prevent users from adding more items to the cart than what is available in stock.
+
+Test Case: Test Case 4
+testCaseName: Prevent Adding Out of Stock Item to Cart
+objective: Verify that the system prevents adding an out-of-stock item to the shopping cart
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Perform feature 'View a product detail' for an out-of-stock product.
+  - Step 3: Attempt to click the 'Add to Cart' button.
+expectedResult: The 'Add to Cart' button is disabled or not present, preventing the user from adding the out-of-stock item to the cart.
+explanation: This test case ensures the system prevents users from adding items to the cart that have no available stock, adhering to the exception flow.
+

@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Check-In with Valid SQL Injection in Booking ID Field
+objective: Verify that the system is protected against SQL Injection attacks in the Booking ID field during the check-in process
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: In the Booking ID field, enter a SQL injection payload (e.g., ' OR '1'='1).
+  - Step 3: Press the submit button.
+expectedResult: The system should not validate the malicious input. An error message should be displayed, or the user should be redirected to the main page without any database manipulation occurring.
+explanation: This test case is created to ensure the application is secure against SQL Injection attacks, specifically in the scenario where a user is checking in. It directly tests the application's ability to handle unexpected, malicious input in a critical text field.
+
+Test Case: Test Case 2
+testCaseName: Check-In with SQL Injection to Manipulate Database in Booking ID Field
+objective: Verify that the system does not execute unauthorized database commands through SQL Injection in the Booking ID field
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: In the Booking ID field, enter a SQL injection payload intended to manipulate the database (e.g., '; DROP TABLE bookings; --).
+  - Step 3: Press the submit button.
+expectedResult: The system should not execute the malicious database command. An appropriate error message should be displayed, or the user should be redirected to the main page without affecting the database.
+explanation: This test case aims to ensure the system's resilience against SQL Injection attacks that could potentially manipulate or destroy data. It is crucial for maintaining data integrity and security during the check-in process.
+

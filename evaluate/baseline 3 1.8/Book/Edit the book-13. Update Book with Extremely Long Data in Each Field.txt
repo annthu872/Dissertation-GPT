@@ -1,0 +1,60 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Extremely Long Title
+objective: Verify that the system handles extremely long data for the Title field when updating a book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the Title field, enter an extremely long string of characters (e.g., 1000 characters).
+  - Step 4: Fill in the remaining fields (Author, Genre, Description, Publication Date) with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the Title field data is too long or update the book record if it supports long data, without crashing or showing an unexpected error.
+explanation: This test case ensures that the system can handle or appropriately reject extremely long data for the Title field during the book update process, preventing database or application errors.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Extremely Long Author Name
+objective: Verify that the system handles extremely long data for the Author field when updating a book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in the Title, Genre, Description, and Publication Date fields.
+  - Step 4: In the Author field, enter an extremely long string of characters (e.g., 1000 characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the Author field data is too long or update the book record if it supports long data, without crashing or showing an unexpected error.
+explanation: This test case checks the application's ability to handle or properly reject extremely long data for the Author field, ensuring data integrity and application stability.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Extremely Long Genre
+objective: Verify that the system handles extremely long data for the Genre field when updating a book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in the Title, Author, Description, and Publication Date fields.
+  - Step 4: In the Genre field, enter an extremely long string of characters (e.g., 1000 characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the Genre field data is too long or update the book record if it supports long data, without crashing or showing an unexpected error.
+explanation: This test case verifies the system's capability to manage or correctly reject extremely long data for the Genre field, maintaining the application's functionality and data quality.
+
+Test Case: Test Case 4
+testCaseName: Update Book with Extremely Long Description
+objective: Verify that the system handles extremely long data for the Description field when updating a book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in the Title, Author, Genre, and Publication Date fields.
+  - Step 4: In the Description field, enter an extremely long string of characters (e.g., 5000 characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the Description field data is too long or update the book record if it supports long data, without crashing or showing an unexpected error.
+explanation: This test case ensures the application's ability to process or appropriately reject extremely long data for the Description field, safeguarding against potential system failures.
+
+Test Case: Test Case 5
+testCaseName: Update Book with Extremely Long Publication Date
+objective: Verify that the system handles extremely long data for the Publication Date field when updating a book record.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Enter valid data in the Title, Author, Genre, and Description fields.
+  - Step 4: In the Publication Date field, enter an extremely long string of characters (e.g., 100 characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the Publication Date field data is too long or update the book record if it supports long data, without crashing or showing an unexpected error.
+explanation: This test case checks the system's capability to manage or correctly reject extremely long data for the Publication Date field, ensuring the application's reliability and data integrity.
+

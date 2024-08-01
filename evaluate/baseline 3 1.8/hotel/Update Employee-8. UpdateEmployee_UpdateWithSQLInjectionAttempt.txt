@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Valid Data
+objective: Verify that a manager can successfully update an employee's information using valid data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields with valid data and press the 'Update' button.
+  - Step 6: Confirm the update action if prompted.
+expectedResult: The system updates the employee information in the database and displays a confirmation message that the employee has been updated.
+explanation: This test case ensures that the basic course of events for updating an employee's information functions as intended when provided with valid data.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with SQL Injection Attempt
+objective: Verify that the system properly handles and prevents SQL Injection attempts during the employee update process
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee menu by clicking on the 'Employee' option.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Attempt to change one or more fields using SQL injection code (e.g., '105 OR 1=1') and press the 'Update' button.
+  - Step 6: Confirm the update action if prompted.
+expectedResult: The system detects the SQL injection attempt, does not update the employee information, and displays an error message indicating invalid input.
+explanation: This test case checks the system's ability to prevent SQL Injection attacks, ensuring data integrity and security during the employee update process.
+

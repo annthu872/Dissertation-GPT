@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Successful Word Sorting with Image Clue
+objective: Verify that the learner can successfully sort the letters into the correct word order using an image clue and receive a green pop-up screen indicating a correct answer.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Start the test where the screen displays an image showing a word with its letters arranged randomly.
+  - Step 4: Arrange the letters by clicking on the letter buttons in the correct order.
+  - Step 5: Press enter after finishing arranging the letters.
+  - Step 6: Observe the pop-up screen.
+expectedResult: A green pop-up screen appears, indicating the answer is correct.
+explanation: This test case ensures that learners can use image clues to correctly sort words and receive appropriate feedback. It directly tests the basic flow of the use case for a successful word sorting scenario.
+
+Test Case: Test Case 2
+testCaseName: Unsuccessful Word Sorting with Image Clue
+objective: Verify that the learner receives a red pop-up screen indicating a wrong answer when incorrectly sorting the letters into a word using an image clue.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the word sorting test section.
+  - Step 3: Start the test where the screen displays an image showing a word with its letters arranged randomly.
+  - Step 4: Intentionally arrange the letters by clicking on the letter buttons in the wrong order.
+  - Step 5: Press enter after finishing arranging the letters.
+  - Step 6: Observe the pop-up screen.
+expectedResult: A red pop-up screen appears, indicating the answer is wrong.
+explanation: This test case checks the system's ability to correctly identify and provide feedback on incorrect answers in the word sorting test, following the alternative flow for a wrong answer.
+

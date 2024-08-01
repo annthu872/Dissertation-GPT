@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Exit During Flashcard Study and Mark Topic as Incomplete
+objective: Verify that when a learner exits during flashcard study, the topic is marked as incomplete and displayed on the home page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Start studying the flashcards for the selected topic.
+  - Step 6: Press the 'back' button during the flashcard study.
+  - Step 7: In the exit confirmation dialog box, click 'exit'.
+expectedResult: The system returns the learner to the topic page, and the topic is marked as incomplete and displayed on the home page.
+explanation: This test case ensures that if a learner exits the flashcard study session prematurely, the system correctly marks the topic as incomplete and displays it on the home page for future completion.
+

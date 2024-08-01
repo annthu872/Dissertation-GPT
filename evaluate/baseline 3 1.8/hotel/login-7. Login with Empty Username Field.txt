@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Login with Empty Username Field
+objective: Verify that the system prevents login when the username field is left empty and provides an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field empty.
+  - Step 3: Enter a valid password in the password field.
+  - Step 4: Click the submit button.
+expectedResult: The system should not proceed with the login process and should display an error message indicating that the username field cannot be empty.
+explanation: This test case is designed to validate the system's behavior when the username field is left empty during the login process. It directly addresses the test scenario 'Login with Empty Username Field' by ensuring that the system enforces the requirement for a username to be entered before proceeding with authentication.
+

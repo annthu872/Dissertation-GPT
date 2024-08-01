@@ -1,0 +1,18 @@
+Test Case: Test Case 1
+testCaseName: Verify error handling when 'correct answer' field is skipped
+objective: Ensure the system prompts an error when the 'correct answer' field is skipped and prevents question submission
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the tab on the navbar.
+  - Step 3: Select a Lesson from the lesson list.
+  - Step 4: On the 'Lesson Information' page, select a Topic from the Topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button.
+  - Step 7: Choose the option 'Create questions for the selection test'.
+  - Step 8: Fill in the 'sentence' field with a valid sentence including the symbol '...'.
+  - Step 9: Leave the 'correct answer' field empty.
+  - Step 10: Fill in 'other option 1', 'other option 2', 'other option 3' fields with different wrong answers.
+  - Step 11: Press the 'Save' button.
+expectedResult: The system should display a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing 'correct answer' field.
+explanation: This test case is designed to verify that the system correctly handles the scenario where the compulsory 'correct answer' field is skipped during the creation of a question for the selection test. It ensures that the system enforces the requirement for all compulsory fields to be filled before submission.
+

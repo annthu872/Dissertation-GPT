@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Generate Report and Navigate Away Before Report Completion
+objective: Verify that the system can handle the situation where the Hotel Owner navigates away from the report generation page before the report is fully generated.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to initiate report generation.
+  - Step 4: Enter valid parameters for the report generation (e.g., date period selection) and submit.
+  - Step 5: Immediately after submission, navigate away from the Reports Page to another page within the system before the report generation process is completed.
+expectedResult: The system should either continue generating the report in the background and save it for later access or handle the interruption gracefully without causing any errors or data loss.
+explanation: This test case is created to ensure that the system can handle user actions that might interrupt long-running processes such as report generation. It directly matches the scenario name by testing the system's behavior when a user navigates away during report generation.
+

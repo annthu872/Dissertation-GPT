@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Verify display behavior with empty genres list
+objective: To verify that the application correctly handles and displays the appropriate message or UI element when there are no genres in the database.
+testSteps:
+  - Step 1: Ensure the database has no genres.
+  - Step 2: Navigate to the 'Genres' section of the application.
+  - Step 3: Observe the behavior or message displayed in the genres list section.
+expectedResult: The application should display a message or UI element indicating that there are no genres to display, such as 'No genres found' or a similar message.
+explanation: This test case is created to ensure that the application can gracefully handle scenarios where the database is empty and there are no genres to display. It directly matches the scenario name 'DisplayEmptyGenresList' by verifying the behavior when there are no genres in the database.
+

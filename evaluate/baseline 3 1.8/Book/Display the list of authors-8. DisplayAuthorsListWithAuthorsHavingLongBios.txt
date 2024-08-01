@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Authors List with Long Bios
+objective: Ensure that the application correctly displays the list of authors, including those with long bios, and that pagination functions as expected.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the list of authors displayed on the first page.
+  - Step 3: Identify authors with long bios to ensure their information is fully displayed or appropriately truncated with an option to view more.
+  - Step 4: Click the 'Next' button to navigate to the next page of authors.
+  - Step 5: Repeat steps 2 and 3 for the second page of authors.
+  - Step 6: Click on a page number in the pagination block to navigate to a specific page of authors.
+  - Step 7: Repeat steps 2 and 3 for the selected page of authors.
+expectedResult: The application displays up to 10 authors per page, including those with long bios. Bios are either fully displayed or truncated with an option to view more. Pagination allows navigation to additional pages of authors, and each page correctly displays up to 10 authors.
+explanation: This test case ensures that the application can handle displaying authors with long bios without disrupting the user interface or pagination functionality. It directly addresses the scenario of displaying a list of authors with an emphasis on handling long bios.
+

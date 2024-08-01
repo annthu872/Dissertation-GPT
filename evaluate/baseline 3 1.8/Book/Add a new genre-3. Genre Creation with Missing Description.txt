@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Missing Description
+objective: Verify that the system prevents the creation of a new genre when the description field is left blank
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Leave the 'Description' field blank.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system displays an incorrect data message indicating that the description field is required and prevents the creation of the new genre record.
+explanation: This test case ensures that the system enforces the requirement for a description when creating a new genre, which is crucial for maintaining complete and meaningful genre records in the database.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Creation with Missing Description
+objective: Verify that the system does not save the new genre record when the 'Cancel' button is pressed, even if the description is missing
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button to open the genre creation form.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Leave the 'Description' field blank.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The system does not save the new genre record and displays the list of genre records without adding the new record.
+explanation: This test case checks the functionality of the 'Cancel' button in the genre creation process, ensuring that incomplete records (missing description in this case) are not inadvertently saved.
+

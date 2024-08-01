@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Empty Title Field
+objective: Verify that the system prevents updating a book record with an empty 'Title' field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Title' field, leaving it empty.
+  - Step 4: Fill in the other fields ('Author', 'Genre', 'Description', 'Publication Date') with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the 'Title' field cannot be empty.
+explanation: This test case ensures that the system enforces the requirement for mandatory fields (in this case, 'Title') when updating a book record.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Empty Author Field
+objective: Verify that the system prevents updating a book record with an empty 'Author' field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Author' field, leaving it empty.
+  - Step 4: Fill in the other fields ('Title', 'Genre', 'Description', 'Publication Date') with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the 'Author' field cannot be empty.
+explanation: This test case checks that the system requires the 'Author' field to be filled in order to update a book record, ensuring data integrity.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Empty Genre Field
+objective: Verify that the system prevents updating a book record with an empty 'Genre' field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: Clear the 'Genre' field, leaving it empty.
+  - Step 4: Fill in the other fields ('Title', 'Author', 'Description', 'Publication Date') with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the 'Genre' field cannot be empty.
+explanation: This test case ensures that the system enforces the requirement for mandatory fields (in this case, 'Genre') when updating a book record.
+

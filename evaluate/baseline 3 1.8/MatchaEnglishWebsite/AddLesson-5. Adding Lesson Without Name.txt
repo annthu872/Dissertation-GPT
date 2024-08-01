@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Adding Lesson Without Providing Name
+objective: Verify that the system prevents adding a new lesson without a name and prompts for a name input.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown menu.
+  - Step 4: Leave the name field empty.
+  - Step 5: Fill in the description of the lesson in the description field.
+  - Step 6: Select 'Save' to attempt creating a new lesson.
+expectedResult: The system should display an error message or notification indicating that the name field is required and the lesson has not been created.
+explanation: This test case is created to ensure that the system enforces the requirement of having a lesson name when adding a new lesson, which directly relates to the scenario of adding a lesson without a name.
+
+Test Case: Test Case 2
+testCaseName: Adding Lesson With Name Field Initially Empty Then Filled
+objective: Verify that the system allows the lesson to be added after initially providing no name but then filling it upon prompt.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Lesson Management' via the navbar.
+  - Step 3: Select 'Add new Lesson' from the dropdown options.
+  - Step 4: Leave the name field empty and fill in the lesson description.
+  - Step 5: Select 'Save' to attempt creating a new lesson and receive the name field required prompt.
+  - Step 6: Fill in the name field with a unique lesson name.
+  - Step 7: Select 'Save' again to create the lesson.
+expectedResult: The system should allow the lesson to be added after the name is provided, redirecting the administrator to the adding topic to new lesson section, and the new lesson should appear in the lesson list.
+explanation: This test case ensures that the system's validation for the lesson name works correctly and allows for successful lesson creation upon receiving the necessary input, aligning with the scenario of adding a lesson without initially providing a name.
+

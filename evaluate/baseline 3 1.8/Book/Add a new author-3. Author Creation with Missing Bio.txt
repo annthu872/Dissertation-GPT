@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Author Creation with Missing Bio
+objective: Verify that the system displays an incorrect data message when trying to create a new author without entering the bio
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Enter the author's name in the 'Name' field.
+  - Step 4: Leave the 'Bio' field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An incorrect data message related to the missing bio is displayed.
+explanation: This test case ensures that the application validates the input data correctly and informs the user about the necessity of filling in all required fields, specifically the bio field, as per the scenario 'Author Creation with Missing Bio'.
+
+Test Case: Test Case 2
+testCaseName: Author Creation with All Data Entered
+objective: Verify that the system successfully adds a new author record to the database when all required data, including the bio, is entered
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Enter the author's name in the 'Name' field.
+  - Step 4: Enter a biography in the 'Bio' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new author record is successfully added to the database, and the list of authors with the added record is displayed.
+explanation: This test case verifies the system's ability to add a new author record when all required information is provided, including the bio, ensuring the system behaves as expected under normal conditions.
+
+Test Case: Test Case 3
+testCaseName: Cancel Author Creation Before Submitting
+objective: Verify that no author record is added to the database if the user cancels the creation process before submitting the form
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the form for entering author data.
+  - Step 3: Start entering data into the form fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not saved in the database, and the list of author records is displayed without the new entry.
+explanation: This test case ensures that the cancel operation works as intended, not saving any data to the database if the user decides not to proceed with creating a new author record.
+

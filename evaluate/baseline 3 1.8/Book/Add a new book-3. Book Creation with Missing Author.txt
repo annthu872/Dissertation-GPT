@@ -1,0 +1,15 @@
+Test Case: Test Case 1
+testCaseName: Book Creation with Missing Author
+objective: Verify that the system displays an incorrect data message when trying to create a book without specifying the author
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter a title for the book in the 'Title' field.
+  - Step 4: Leave the 'Author' field empty.
+  - Step 5: Enter a genre in the 'Genre' field.
+  - Step 6: Enter a description in the 'Description' field.
+  - Step 7: Enter a publication date in the 'Publication date' field.
+  - Step 8: Press the 'Submit' button.
+expectedResult: An incorrect data message is displayed indicating that the author field cannot be left blank.
+explanation: This test case ensures that the system enforces the requirement for an author to be specified when creating a new book record. It directly tests the scenario where a book creation attempt is made with the author detail missing, which should trigger validation feedback to the user.
+

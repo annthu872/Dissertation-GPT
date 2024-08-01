@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Cancel Edit and Exit Without Saving Changes
+objective: Verify that the administrator can cancel the edit and exit without saving changes to the exercises.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Make some changes to the exercises.
+  - Step 5: Press the button to exit exercise editing mode.
+  - Step 6: On the pop-up screen 'Save changes?', select 'Do not save'.
+expectedResult: The system should discard the changes made to the exercises and not record them.
+explanation: This test case ensures that when an administrator decides not to save the edits made to an exercise, the system correctly discards these changes. It directly tests the 'Cancel Edit and Exit Without Saving' scenario by following the exception flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Exit Edit Mode Without Saving - Save Prompt Verification
+objective: Verify that the system prompts the administrator with a 'Save changes?' pop-up when attempting to exit the edit mode without saving.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that has the test needed editing, then select 'Edit'.
+  - Step 4: Make some changes to the exercises.
+  - Step 5: Press the button to exit exercise editing mode.
+expectedResult: A pop-up screen should appear with the message 'Save changes?' offering 'Save' and 'Do not save' options.
+explanation: This test case verifies the functionality of the system to prompt the user to save changes before exiting the edit mode. It is crucial for preventing accidental loss of data and directly relates to the 'Cancel Edit and Exit Without Saving' scenario by testing the system's response when an exit attempt is made without saving.
+

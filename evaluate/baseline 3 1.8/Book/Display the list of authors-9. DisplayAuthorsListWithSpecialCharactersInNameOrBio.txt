@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Authors List with Special Characters in Name
+objective: Ensure that the application correctly displays authors' names containing special characters in the authors list.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the list of authors displayed on the first page.
+  - Step 3: If available, click the 'Next' button to view the next page of authors and repeat observation.
+expectedResult: All authors' names, including those with special characters, are displayed correctly without any encoding or formatting issues.
+explanation: This test case ensures that the application can handle and correctly display special characters in authors' names, which is crucial for accurate data representation and user experience.
+
+Test Case: Test Case 2
+testCaseName: Verify Display of Authors List with Special Characters in Bio
+objective: Ensure that the application correctly displays authors' biographies containing special characters in the authors list.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: Observe the list of authors displayed on the first page, focusing on the 'Bio' column.
+  - Step 3: If available, click the 'Next' button to view the next page of authors and repeat observation on the 'Bio' column.
+expectedResult: All authors' biographies, including those with special characters, are displayed correctly without any encoding or formatting issues.
+explanation: This test case verifies that the application can handle and correctly display special characters in authors' biographies, ensuring data integrity and enhancing user readability.
+

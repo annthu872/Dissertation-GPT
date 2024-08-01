@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Description
+objective: Verify that the system displays incorrect data messages when updating a book with an invalid description.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Enter an invalid value in the Description field (e.g., a string of random characters exceeding the maximum length limit).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description data is incorrect.
+explanation: This test case ensures that when a user attempts to update a book with an invalid description, the system correctly identifies and notifies the user of the invalid data. It directly matches the scenario name by focusing on updating a book with an invalid description.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Empty Description
+objective: Verify that the system displays incorrect data messages when updating a book with an empty description.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter valid data for the Title, Author, Genre, and Publication date fields.
+  - Step 4: Leave the Description field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display a message indicating that the description cannot be empty.
+explanation: This test case checks the system's response to an attempt to update a book without providing a description, ensuring that the system requires all necessary information for a book record, including a valid description.
+

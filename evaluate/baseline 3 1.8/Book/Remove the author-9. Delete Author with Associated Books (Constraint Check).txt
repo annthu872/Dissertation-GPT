@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Delete Author with Associated Books - Confirm Deletion
+objective: Verify that the application deletes an author and associated books when the user confirms the deletion.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author intended for deletion and click the 'Delete' button adjacent to their name.
+  - Step 3: On the confirmation dialog, click the 'Confirm' button.
+expectedResult: The author and any associated books are deleted from the database, and the user is redirected to the updated list of authors.
+explanation: This test case ensures that when a user confirms the deletion of an author, the author and any books associated with that author are properly removed from the database. It directly tests the main scenario of the 'Delete Author with Associated Books' use case.
+
+Test Case: Test Case 2
+testCaseName: Delete Author with Associated Books - Cancel Deletion
+objective: Verify that the application does not delete the author or associated books when the user cancels the deletion.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author intended for deletion and click the 'Delete' button adjacent to their name.
+  - Step 3: On the confirmation dialog, click the 'Cancel' button.
+expectedResult: The author and any associated books remain in the database, and the user is redirected to the updated list of authors without any changes.
+explanation: This test case ensures that when a user cancels the deletion of an author, no data is removed from the database. It tests the cancel operation scenario of the 'Delete Author with Associated Books' use case.
+
+Test Case: Test Case 3
+testCaseName: Delete Author with Associated Books - Navigate Away Without Confirmation
+objective: Verify that the application does not delete the author or associated books when the user navigates away without confirming deletion.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Locate the author intended for deletion and click the 'Delete' button adjacent to their name.
+  - Step 3: Without clicking 'Confirm' or 'Cancel', navigate to another page by selecting 'Books', 'Genres', 'Authors', 'Home', or 'API' from the menu.
+expectedResult: The author and any associated books remain in the database, and the user is shown the page they navigated to with updated data.
+explanation: This test case checks the system's behavior when a user initiates the deletion process but navigates away without making a choice. It ensures the integrity of the data in a scenario where the user might accidentally or intentionally avoid completing the deletion confirmation.
+

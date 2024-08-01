@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details with Future Publication Date
+objective: Verify that the book details page correctly displays details for a book with a future publication date
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Locate a book in the list that has a known future publication date.
+  - Step 3: Click on the 'Title' of the book with the future publication date.
+expectedResult: The application displays the book details page with the following columns correctly filled: id, Title, Author, Genre, Description, and the future Publication date.
+explanation: This test case ensures that books with future publication dates are handled correctly by the application and that their details are displayed accurately, including the publication date in the future. It directly matches the scenario name by focusing on the display of book details for books with future publication dates.
+

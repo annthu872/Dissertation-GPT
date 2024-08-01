@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Login with Blank Username Field
+objective: Verify that the system shows a notification that the username field needs to be filled when attempting to login with the username field left blank.
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Leave the username field blank.
+  - Step 3: Fill in the password field with a correct password.
+  - Step 4: Press the 'Login' button.
+expectedResult: A notification is displayed stating that the username field needs to be filled.
+explanation: This test case is created to validate the system's behavior when the username field is left blank during the login process, directly addressing the scenario of logging in with a blank username field as described in the exception flow 3 of the use case.
+

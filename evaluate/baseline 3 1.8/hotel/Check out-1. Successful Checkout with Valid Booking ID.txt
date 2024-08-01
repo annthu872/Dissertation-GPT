@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Successful Checkout with Valid Booking ID
+objective: Verify that a guest can successfully check out using a valid booking ID and is redirected to the main page with a success message.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that is linked to a valid room ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should validate the booking ID, remove the linked room ID from the booking ID, update the booking status as complete, and redirect the user to the main page with a 'check out successful' message.
+explanation: This test case ensures that the basic course of events for checking out with a valid booking ID is followed as described in the use case. It tests the happy path where all conditions are met for a successful checkout.
+
+Test Case: Test Case 2
+testCaseName: Checkout with Invalid Booking ID
+objective: Verify that entering an incorrect booking ID during checkout redirects the user to the main page with an error message.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter an invalid booking ID.
+  - Step 3: Press the submit button.
+expectedResult: The system should fail to validate the booking ID and redirect the user to the main page with an error message indicating the booking ID is incorrect.
+explanation: This test case checks the alternative path where the user enters an incorrect booking ID, ensuring the system correctly handles invalid inputs by displaying an error and not proceeding with the checkout.
+
+Test Case: Test Case 3
+testCaseName: Checkout with Valid Booking ID but No Linked Room
+objective: Verify that attempting to check out with a valid booking ID that has no linked room ID redirects the user to the main page with an error message.
+testSteps:
+  - Step 1: Navigate to the checkout page.
+  - Step 2: Enter a valid booking ID that does not have a linked room ID in the database.
+  - Step 3: Press the submit button.
+expectedResult: The system should detect that there is no room linked to the provided booking ID and redirect the user to the main page with an error message indicating the issue.
+explanation: This test case explores another alternative path where the booking ID is valid, but there is no room ID linked to it in the database, ensuring the system can handle such discrepancies gracefully.
+

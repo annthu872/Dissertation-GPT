@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Verify navigation away to Authors page during author creation
+objective: Ensure that navigating away to the Authors page during the creation of a new author cancels the operation and does not save the data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to start the process of adding a new author.
+  - Step 3: Begin entering data into the form fields for the new author (Name, Bio).
+  - Step 4: Before pressing the 'Submit' button, select the menu item 'Authors' to navigate away from the creation page.
+expectedResult: The data is not saved to the database, and the list of author records is displayed without the new author's data.
+explanation: This test case ensures that if a user accidentally or intentionally navigates away to the Authors page during the process of creating a new author, the operation is cancelled, and no incomplete data is saved. It directly matches the scenario of navigating away during author creation to the Authors page.
+
+Test Case: Test Case 2
+testCaseName: Verify cancel operation during author creation navigates to Authors list
+objective: To verify that pressing the 'Cancel' button during the author creation process discards the entered data and navigates the user back to the list of authors
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to initiate the creation of a new author.
+  - Step 3: Start entering data into the form fields (Name, Bio) for the new author.
+  - Step 4: Press the 'Cancel' button before submitting the form.
+expectedResult: The creation process is cancelled, the data is not saved, and the user is navigated back to the list of authors without the new author's data being added.
+explanation: This test case verifies the functionality of the 'Cancel' button during the author creation process, ensuring that it properly discards any entered data and returns the user to the list of authors, aligning with the scenario's focus on navigation away during author creation.
+

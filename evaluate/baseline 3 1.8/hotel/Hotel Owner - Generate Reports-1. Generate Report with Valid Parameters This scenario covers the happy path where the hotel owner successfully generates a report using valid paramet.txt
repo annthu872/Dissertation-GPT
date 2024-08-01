@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Valid Parameters
+objective: Verify that the hotel owner can successfully generate and view a report using valid parameters
+testSteps:
+  - Step 1: Log in as a hotel owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view report parameters.
+  - Step 4: Enter valid parameters for generating a report, such as a specific date period.
+  - Step 5: Submit the parameters to generate the report.
+  - Step 6: Click on the generated report to open it.
+  - Step 7: View the details of the report.
+expectedResult: The system should validate the parameters, generate the report based on the provided parameters, and display the report details to the user.
+explanation: This test case ensures that the hotel owner can generate reports using valid parameters and view them, following the basic course of events described in the use case. It verifies the system's ability to handle valid inputs and produce the expected output, which is crucial for the hotel owner to access and analyze hotel statistics.
+

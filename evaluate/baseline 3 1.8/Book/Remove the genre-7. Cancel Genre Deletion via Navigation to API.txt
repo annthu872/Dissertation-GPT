@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Deletion via Navigation to API
+objective: Verify that navigating to the API page after initiating a genre deletion and then cancelling, does not delete the genre.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre intended for deletion.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: From the list of genres page, select the 'API' menu item to navigate to the API page.
+expectedResult: The genre should not be deleted from the database, and the API page should display with updated data.
+explanation: This test case ensures that when a user initiates the deletion of a genre but decides to cancel this action and then navigates to the API page, the genre remains undeleted. It tests the cancel operation scenario's effectiveness in preventing data deletion and the correct navigation behavior.
+

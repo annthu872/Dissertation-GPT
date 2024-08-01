@@ -1,0 +1,31 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Purchase an Out-of-Stock Item from Shopping Cart
+objective: Verify that the system prevents the user from purchasing an out-of-stock item that is already in the shopping cart
+testSteps:
+  - Step 1: Log in to the system and navigate to the shopping cart page.
+  - Step 2: Ensure there is at least one out-of-stock item in the shopping cart.
+  - Step 3: Attempt to select the out-of-stock item by clicking on the checkbox before the item.
+  - Step 4: Try to click the 'Checkout' button.
+expectedResult: The checkbox for the out-of-stock item should not be selectable, and the 'Checkout' button should be disabled or not proceed with the checkout process for the out-of-stock item.
+explanation: This test case ensures that users cannot proceed to purchase items that are out of stock, as per the exception flow. It directly tests the system's behavior when attempting to purchase an out-of-stock item from the shopping cart.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Purchase an Out-of-Stock Item from Product Detail Page
+objective: Verify that the system prevents the user from purchasing an out-of-stock item from the product detail page
+testSteps:
+  - Step 1: Log in to the system and navigate to the product detail page of an out-of-stock item.
+  - Step 2: Attempt to adjust the quantity of the product, if applicable.
+  - Step 3: Try to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button should be disabled or not allow the user to proceed with the purchase of the out-of-stock item.
+explanation: This test case checks the system's behavior when a user tries to purchase an out-of-stock item directly from the product detail page, ensuring that the exception flow is correctly implemented.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Purchase a Product with Quantity Exceeding Stock from Product Detail Page
+objective: Verify that the system prevents the user from purchasing a product with a quantity that exceeds the current stock from the product detail page
+testSteps:
+  - Step 1: Log in to the system and navigate to the product detail page of an item with limited stock.
+  - Step 2: Increase the quantity of the product to exceed the available stock using the plus button next to the quantity of the product.
+  - Step 3: Try to click the 'Buy Now' button.
+expectedResult: The system should either prevent the quantity from exceeding the available stock or disable the 'Buy Now' button to prevent the purchase.
+explanation: This test case ensures that users cannot purchase a quantity of a product that exceeds the available stock, adhering to the exception flow rules.
+

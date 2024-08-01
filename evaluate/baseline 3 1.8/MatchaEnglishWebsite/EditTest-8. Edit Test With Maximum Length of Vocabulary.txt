@@ -1,0 +1,38 @@
+Test Case: Test Case 1
+testCaseName: Edit Test With Maximum Length of Vocabulary - Basic Flow
+objective: Verify that the administrator can successfully edit a test with the maximum length of vocabulary and save the changes.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: On the home page, select 'Topic' on the navbar.
+  - Step 3: Choose the topic that contains the test to be edited, then select 'Edit'.
+  - Step 4: In the editing interface, add or edit vocabulary exercises to reach the maximum allowed length of vocabulary.
+  - Step 5: Select 'Save' to save the edited exercises.
+expectedResult: The system should save all edited exercises with the maximum length of vocabulary and display a confirmation message that the changes have been saved.
+explanation: This test case ensures that the system supports editing tests with the maximum length of vocabulary, adhering to the basic flow of the use case.
+
+Test Case: Test Case 2
+testCaseName: Edit Test and Exit Without Saving - Alternative Flow
+objective: Verify that the administrator can edit a test and then exit without saving the changes.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Navigate to 'Topic' on the navbar and select the topic with the test to be edited.
+  - Step 3: Click 'Edit' to modify the test.
+  - Step 4: Make changes to the vocabulary exercises.
+  - Step 5: Press the button to exit exercise editing mode.
+  - Step 6: On the pop-up screen, select 'Do not save'.
+expectedResult: The system should discard the changes made to the exercises and not record the edited exercises.
+explanation: This test case follows the alternative flow where the administrator decides not to save the changes made to the test, ensuring the system correctly handles unsaved edits.
+
+Test Case: Test Case 3
+testCaseName: Edit Test and Save Changes - Alternative Flow
+objective: Verify that the administrator can edit a test and save the changes through the alternative flow.
+testSteps:
+  - Step 1: Log in as an administrator.
+  - Step 2: Select 'Topic' from the navbar and choose the topic with the test to edit.
+  - Step 3: Click 'Edit' to start editing the test.
+  - Step 4: Perform edits on the vocabulary exercises.
+  - Step 5: Attempt to exit the editing mode.
+  - Step 6: On the pop-up screen, choose 'Save' to save the edits.
+expectedResult: The system should save all the edits made to the exercises and confirm that the changes have been successfully saved.
+explanation: This test case verifies the alternative flow where the administrator saves the changes through the pop-up screen, ensuring the system can handle saving edits in different scenarios.
+

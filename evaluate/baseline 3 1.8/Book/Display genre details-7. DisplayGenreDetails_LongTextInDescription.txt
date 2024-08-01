@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify Display of Genre Details with Long Text in Description
+objective: Ensure that the application correctly displays genre details, including handling long text in the Description field.
+testSteps:
+  - Step 1: Navigate to the genre list page within the application.
+  - Step 2: Identify a genre from the list that is known to have a long description.
+  - Step 3: Click on the 'Name' of the genre identified in Step 2.
+  - Step 4: Observe the details displayed for the selected genre on the genre details page.
+expectedResult: The application displays the genre details page with the following columns: id (unique genre number), Name, and Description. The Description field should correctly handle and display long text without any truncation or layout issues.
+explanation: This test case is created to ensure that the application can handle and correctly display long texts in the Description field of a genre. It directly relates to the test scenario 'DisplayGenreDetails_LongTextInDescription' by focusing on the display functionality of the genre details, specifically the handling of long descriptions.
+

@@ -1,0 +1,27 @@
+Test Case: Test Case 1
+testCaseName: Update Hotel Information with Valid Data
+objective: Verify that the hotel owner can successfully update hotel information with valid data and receive a success message.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: On the Edit Hotel Information page, update the fields with valid data.
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that the system validates the fields successfully.
+  - Step 7: Confirm the success message is displayed.
+expectedResult: The hotel information is updated in the database, and the user is redirected to the dashboard with a success message displayed.
+explanation: This test case ensures that the basic flow of updating hotel information works as expected without any SQL injection attempt.
+
+Test Case: Test Case 2
+testCaseName: Update Hotel Information with SQL Injection Attempt
+objective: Verify that the system prevents SQL Injection attempts during the hotel information update process.
+testSteps:
+  - Step 1: Log in as a Hotel Owner.
+  - Step 2: Navigate to the Hotel Information page.
+  - Step 3: Press the edit hotel information button.
+  - Step 4: In one or more fields, enter an SQL injection code snippet (e.g., ' OR '1'='1').
+  - Step 5: Submit the updated information.
+  - Step 6: Verify that the system performs input validation and rejects the submission.
+expectedResult: The system should not update the hotel information in the database and should display an error message indicating that the input is invalid.
+explanation: This test case is designed to ensure that the system is secure against SQL injection attacks by validating input during the hotel information update process.
+

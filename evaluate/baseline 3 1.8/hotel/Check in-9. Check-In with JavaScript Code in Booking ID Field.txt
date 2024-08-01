@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Check-In with Valid JavaScript Code in Booking ID Field
+objective: Verify that the system properly handles JavaScript code entered in the Booking ID field during check-in, ensuring no code execution and successful validation if the code represents a valid booking ID.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: In the Booking ID field, enter a JavaScript code snippet that, when evaluated, would equate to a valid booking ID (e.g., '12345').
+  - Step 3: Press the submit button.
+expectedResult: The system should treat the JavaScript code as plain text, validate it as a valid booking ID if the code equates to one, update the booking details with room ID, and then redirect the user to the main page with a 'check in successful' message.
+explanation: This test case is created to ensure that the system securely handles input in the Booking ID field by treating it as plain text, thus preventing potential JavaScript injection attacks while still allowing for successful check-in if the JavaScript code equates to a valid booking ID. It directly matches the scenario name by testing check-in with JavaScript code in the Booking ID field.
+
+Test Case: Test Case 2
+testCaseName: Check-In with Invalid JavaScript Code in Booking ID Field
+objective: Verify that the system properly handles invalid JavaScript code entered in the Booking ID field, preventing code execution and displaying an error message.
+testSteps:
+  - Step 1: Navigate to the check-in page.
+  - Step 2: In the Booking ID field, enter a JavaScript code snippet that does not equate to a valid booking ID (e.g., 'alert("XSS")').
+  - Step 3: Press the submit button.
+expectedResult: The system should treat the JavaScript code as plain text, attempt to validate it, fail to find a corresponding booking ID, and redirect the user to the main page with an error message indicating the Booking ID is incorrect.
+explanation: This test case ensures the system's resilience against JavaScript injection attacks by validating input as plain text and properly handling cases where the JavaScript code does not correspond to a valid booking ID. It is relevant to the scenario by focusing on check-in attempts with JavaScript code in the Booking ID field.
+

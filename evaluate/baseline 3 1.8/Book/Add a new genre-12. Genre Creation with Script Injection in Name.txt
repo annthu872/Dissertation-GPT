@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Genre Creation with Valid Data
+objective: Verify that a new genre can be successfully created with valid data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter valid data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Submit' button.
+expectedResult: A new genre record is added to the database, and the list of genres with the newly added record is displayed.
+explanation: This test case verifies that the system correctly adds a new genre to the database when valid data is entered, which is the primary function of the 'Add a new genre' use case.
+
+Test Case: Test Case 2
+testCaseName: Genre Creation with Script Injection in Name
+objective: Verify that the system sanitizes input to prevent script injection when creating a new genre
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Enter a script injection code (e.g., '<script>alert('test')</script>') into the 'Name' field and valid data into the 'Description' field.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The system should either sanitize the input and save the sanitized version, or display an error message indicating that the input is invalid. The script should not be executed.
+explanation: This test case ensures that the system is secure against script injection attacks by validating and sanitizing user inputs, specifically in the 'Name' field of the genre creation form.
+
+Test Case: Test Case 3
+testCaseName: Cancel Genre Creation
+objective: Verify that the genre creation process can be canceled without saving data
+testSteps:
+  - Step 1: Navigate to the genre list page.
+  - Step 2: Click the 'Create new' button.
+  - Step 3: Start entering data into the 'Name' and 'Description' fields.
+  - Step 4: Press the 'Cancel' button before pressing 'Submit'.
+expectedResult: Data is not saved in the database, and the user is redirected to the list of genre records without the new genre being added.
+explanation: This test case verifies the cancel operation scenario, ensuring that users can cancel the genre creation process at any time before submission without affecting the database.
+

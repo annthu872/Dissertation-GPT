@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Empty Name Field
+objective: Verify that the system prevents updating a genre with an empty 'Name' field and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Enter valid data into the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the 'Name' field cannot be empty and the genre should not be updated in the database.
+explanation: This test case ensures that the system enforces the requirement for the 'Name' field to be filled out, preventing the update of a genre with incomplete data.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Empty Description Field
+objective: Verify that the system allows updating a genre with an empty 'Description' field and updates the record appropriately.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter valid data into the 'Name' field.
+  - Step 4: Clear the 'Description' field to make it empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should update the genre with the provided 'Name' and an empty 'Description', and display the updated list of genres.
+explanation: This test case checks if the system can handle updates to a genre where the 'Description' field is intentionally left blank, reflecting a valid use case scenario.
+
+Test Case: Test Case 3
+testCaseName: Update Genre with All Empty Fields
+objective: Verify that the system prevents updating a genre when all fields are empty and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Clear the 'Name' field to make it empty.
+  - Step 4: Clear the 'Description' field to make it empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the fields cannot be empty and the genre should not be updated in the database.
+explanation: This test case ensures that the system enforces data integrity by not allowing a genre to be updated with all empty fields, which would result in invalid data records.
+

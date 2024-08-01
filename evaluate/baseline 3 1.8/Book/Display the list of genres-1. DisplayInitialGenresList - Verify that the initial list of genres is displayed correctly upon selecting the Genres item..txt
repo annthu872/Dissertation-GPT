@@ -1,0 +1,19 @@
+Test Case: Test Case 1
+testCaseName: Verify Initial Display of Genres List
+objective: Verify that the initial list of genres is displayed correctly with all columns upon selecting the 'Genres' item.
+testSteps:
+  - Step 1: Launch the application.
+  - Step 2: Navigate to the 'Genres' item from the main menu.
+  - Step 3: Select the 'Genres' item.
+expectedResult: The application displays the initial list of genres, showing up to 10 items. Each item should display the columns: id, Name, and Description.
+explanation: This test case ensures that users are presented with the correct initial list of genres, including all necessary information, upon selecting the 'Genres' item. It directly matches the scenario of verifying the initial display of genres list.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality in Genres List
+objective: Verify that the user can navigate through different pages of the genres list using the pagination controls.
+testSteps:
+  - Step 1: Launch the application and navigate to the 'Genres' section as per the previous steps.
+  - Step 2: If more than 10 genres are available, click on the 'Next' button or select a specific page number from the pagination block.
+expectedResult: The application displays the next 10 records of the genres list when the 'Next' button is clicked, or the corresponding records for the selected page number. The list should maintain the columns: id, Name, and Description.
+explanation: This test case verifies the functionality of the pagination feature within the genres list, ensuring users can access additional records beyond the initial display. It is related to the scenario by testing the navigation through the list of genres.
+

@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Room Service Request with Valid Room ID and Multiple Services Selected
+objective: Verify that a guest can successfully request multiple room services with a valid room ID and view the total charges with a success message.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: From the list of room services, select multiple services.
+  - Step 5: Confirm the selection of services.
+  - Step 6: View the total charges and success message displayed.
+expectedResult: The system should calculate the total charges for the selected services, update the database, display the total charges along with a 'room service request successful' message, and then navigate to the main page.
+explanation: This test case ensures that the basic course of events is followed when a guest requests multiple room services using a valid room ID. It tests the system's ability to handle multiple selections, calculate charges, and provide feedback to the user.
+
+Test Case: Test Case 2
+testCaseName: Room Service Request with Invalid Room ID
+objective: Verify that the system displays an 'Invalid ID' message when a guest enters an invalid room ID for a room service request.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter an invalid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+expectedResult: The system should display an 'Invalid Id' message and prevent the user from proceeding to select room services.
+explanation: This test case checks the system's response to an invalid room ID during the room service request process, ensuring that the validation step correctly identifies invalid inputs and provides appropriate feedback to the user.
+
+Test Case: Test Case 3
+testCaseName: Room Service Request with No Services Selected
+objective: Verify that the system handles scenarios where no services are selected after entering a valid room ID.
+testSteps:
+  - Step 1: Navigate to the room service request page.
+  - Step 2: Enter a valid room ID into the room ID field.
+  - Step 3: Press the submit button to validate the room ID.
+  - Step 4: Do not select any services from the list of room services.
+  - Step 5: Attempt to confirm the selection of services.
+expectedResult: The system should prompt the user to select at least one service before proceeding or disable the confirmation button until a service is selected.
+explanation: This test case is designed to verify how the system responds when no services are selected after room ID validation. It ensures that the system prompts for at least one service selection, maintaining the integrity of the room service request process.
+

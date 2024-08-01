@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Invalid Name
+objective: Verify that the system displays an error message when attempting to update a genre with an invalid name
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter an invalid name for the genre (e.g., using special characters or numbers).
+  - Step 4: Fill in the 'Description' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid name input is displayed.
+explanation: This test case ensures that the system validates the 'Name' field for genre updates and prevents updates with invalid names, adhering to the scenario of updating a genre with invalid data.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Empty Name
+objective: Verify that the system prevents updating a genre when the name field is left empty
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Enter valid data in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message indicating that the name field cannot be empty is displayed.
+explanation: This test case checks if the system correctly handles attempts to update a genre without a name, ensuring that the name field is required for genre updates.
+
+Test Case: Test Case 3
+testCaseName: Update Genre with Invalid Description
+objective: Verify that the system displays an error message when attempting to update a genre with an invalid description
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: Enter a valid name in the 'Name' field.
+  - Step 4: Enter an invalid description for the genre (e.g., using unsupported characters or exceeding length limits).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid description input is displayed.
+explanation: This test case ensures that the system validates the 'Description' field for genre updates and prevents updates with invalid descriptions, which is crucial for maintaining data integrity.
+

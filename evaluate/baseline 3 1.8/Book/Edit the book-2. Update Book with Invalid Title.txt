@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Title - Missing Title
+objective: Verify that the system displays an error message when trying to update a book without entering a title
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Leave the 'Title' field empty, fill in the other fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the title field is required.
+explanation: This test case ensures that the system validates the 'Title' field as required and prevents updates with missing titles, directly addressing the scenario of updating a book with invalid title data.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Invalid Title - Exceeding Character Limit
+objective: Verify that the system displays an error message when trying to update a book with a title exceeding the character limit
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title that exceeds the maximum character limit allowed, fill in the other fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the title exceeds the character limit.
+explanation: This test case checks if the system properly validates the length of the title field and informs the user when the input exceeds the allowed character limit, which is crucial for maintaining data integrity and user experience.
+
+Test Case: Test Case 3
+testCaseName: Update Book with Invalid Title - Special Characters
+objective: Verify that the system displays an error message when trying to update a book with a title containing invalid special characters
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you want to update.
+  - Step 3: Enter a title with invalid special characters, fill in the other fields with valid data, and press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the title contains invalid characters.
+explanation: This test case ensures that the system checks for invalid characters in the title field and prevents updates that do not meet the character criteria, addressing the scenario of updating a book with an invalid title.
+

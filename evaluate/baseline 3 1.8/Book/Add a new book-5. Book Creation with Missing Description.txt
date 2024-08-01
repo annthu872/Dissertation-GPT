@@ -1,0 +1,25 @@
+Test Case: Test Case 1
+testCaseName: Book Creation with Missing Description
+objective: Verify that the system prevents the creation of a new book record when the description field is left blank and displays an appropriate error message.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the 'Title', 'Author', and 'Genre' fields.
+  - Step 4: Leave the 'Description' field blank.
+  - Step 5: Enter a valid 'Publication date'.
+  - Step 6: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating that the description field is required and the book record is not added to the database.
+explanation: This test case is created to ensure that the system enforces the requirement for a description when creating a new book record. It directly addresses the scenario of attempting to create a book with a missing description, which should not be allowed according to the use case specification.
+
+Test Case: Test Case 2
+testCaseName: Book Creation with All Fields Filled
+objective: Verify that the system allows the creation of a new book record when all fields, including the description, are filled out correctly, and displays the updated list of books.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Click the 'Create new' button to open the book creation form.
+  - Step 3: Enter valid data into the 'Title', 'Author', 'Genre', and 'Description' fields.
+  - Step 4: Enter a valid 'Publication date'.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The new book record is successfully added to the database, and the user is redirected to the updated list of books including the newly added record.
+explanation: This test case verifies the successful creation of a book record when all required fields are provided, including the description. It serves as a positive test case against the scenario to ensure that the system behaves as expected when the data is entered correctly.
+

@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Invalid Author Name
+objective: Verify that the system displays an error message when attempting to update a book with an invalid author name.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter or modify the book's title, genre, description, and publication date with valid data.
+  - Step 4: Enter an invalid author name (e.g., using numbers or special characters).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the author name is invalid.
+explanation: This test case ensures that the system validates the author name field correctly and prevents the update of a book record with an invalid author name, adhering to the scenario of updating a book with an invalid author.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Empty Author Field
+objective: Verify that the system prevents updating a book when the author field is left empty.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the displayed form, enter or modify the book's title, genre, description, and publication date with valid data.
+  - Step 4: Leave the author name field empty.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the author field cannot be empty.
+explanation: This test case checks if the system properly handles cases where the book's author field is left empty during an update operation, ensuring data integrity and adherence to the scenario of updating a book with an invalid author.
+

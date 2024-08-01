@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Minimum Field Length - Happy Path
+objective: Verify that an employee can successfully update a room's details with the minimum required field length
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated with the minimum required length of data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields, update the database, and show a success message indicating the room has been updated.
+explanation: This test case ensures that the system correctly handles updates to room details when the minimum required field length is provided, following the basic course of events.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Minimum Field Length - Room Not Found
+objective: Verify that the system shows a NOT FOUND message when trying to update a room that does not exist in the database
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Attempt to search for and select a room by an ID that does not exist in the database.
+  - Step 4: Attempt to fill in any fields (if applicable).
+  - Step 5: Press the update button (if applicable).
+expectedResult: The system should display a NOT FOUND message, indicating the room cannot be updated because it does not exist.
+explanation: This test case checks the system's behavior when an employee attempts to update a non-existent room, following the alternative path.
+
+Test Case: Test Case 3
+testCaseName: Update Room with Minimum Field Length - Invalid Field
+objective: Verify that the system shows an 'invalid field entered' message for every individual error when updating a room with invalid data
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated by its ID.
+  - Step 4: Fill in at least one field with data that is below the minimum required length or format.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an 'invalid field entered' message for each field that does not meet the requirements.
+explanation: This test case verifies the system's ability to correctly identify and report fields that do not meet the minimum required length or format during the update process.
+

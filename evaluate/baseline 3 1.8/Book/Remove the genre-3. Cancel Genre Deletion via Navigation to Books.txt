@@ -1,0 +1,23 @@
+Test Case: Test Case 1
+testCaseName: Cancel Genre Deletion and Navigate to Books
+objective: Verify that cancelling the genre deletion and then navigating to Books does not delete the genre and displays the Books page correctly.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of genres is still displayed.
+  - Step 5: Select the menu item 'Books'.
+expectedResult: The genre should not be deleted from the database, and the Books page should be displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of a genre and then navigates to the Books page via the navigation menu, the genre remains undeleted, and the Books page is displayed correctly. It directly matches the scenario of cancelling genre deletion via navigation to Books.
+
+Test Case: Test Case 2
+testCaseName: Cancel Genre Deletion and Verify Data Integrity
+objective: Verify that cancelling the genre deletion does not delete the genre and the data remains unchanged.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Delete' button next to the genre you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of genres is still displayed without any changes.
+expectedResult: The genre should not be deleted from the database, and the list of genres should be displayed without any changes to the data.
+explanation: This test case verifies that the cancel operation works as expected without deleting the genre. It ensures data integrity by confirming that no changes occur to the genre data upon cancellation.
+

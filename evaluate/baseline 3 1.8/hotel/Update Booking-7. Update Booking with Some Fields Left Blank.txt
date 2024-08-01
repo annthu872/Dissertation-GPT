@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Mandatory Fields Only
+objective: Verify that the system allows updating a booking with some non-mandatory fields left blank and displays a success message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: In the booking details, fill only the mandatory fields that need to be updated and leave some non-mandatory fields blank.
+  - Step 5: Compute payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields, update the booking in the database, and display a success message.
+explanation: This test case ensures that the system can handle updates to bookings even when some non-mandatory fields are left blank, as per the basic course of events. It verifies the system's ability to process partial updates without requiring all fields to be filled.
+
+Test Case: Test Case 2
+testCaseName: Update Booking Leaving Mandatory Fields Blank
+objective: Verify that the system prevents updating a booking when mandatory fields are left blank and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated.
+  - Step 4: Leave mandatory fields blank and fill in some non-mandatory fields.
+  - Step 5: Attempt to compute payment without updating mandatory fields.
+  - Step 6: Press the update button.
+expectedResult: The system should display an error message for each mandatory field left blank and prevent the booking from being updated.
+explanation: This test case checks the system's validation mechanism to ensure that it correctly identifies and prevents updates to bookings when mandatory fields are not filled out, aligning with the alternative path that requires all mandatory fields to be validated.
+

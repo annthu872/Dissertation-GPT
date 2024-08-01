@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Exclude a single vocabulary from review test
+objective: Verify that a learner can exclude a single vocabulary from appearing in the review test by unticking the checkbox
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the list of vocabulary to find a specific word.
+  - Step 4: Untick the checkbox next to the vocabulary word you wish to exclude from the review test.
+expectedResult: The system should mark the vocabulary as excluded, indicating it will not appear in the daily review test.
+explanation: This test case ensures that learners can customize their review tests by excluding specific vocabulary words. It directly tests the functionality described in Alternative flow 3 of the use case.
+
+Test Case: Test Case 2
+testCaseName: Include a single vocabulary in review test
+objective: Verify that a learner can include a single vocabulary in the review test by ticking the checkbox
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Select the 'Handbook' tab on the navigation bar.
+  - Step 3: Scroll through the list of vocabulary to find a specific word.
+  - Step 4: Tick the checkbox next to the vocabulary word you wish to include in the review test.
+expectedResult: The system should mark the vocabulary as included, indicating it will appear in the daily review test.
+explanation: This test case verifies the learner's ability to add specific vocabulary words back into their review tests, as described in Alternative flow 4 of the use case.
+

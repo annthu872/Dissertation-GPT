@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Verify Continue Studying After Completion
+objective: Verify that the learner can continue studying after completing a topic by selecting the 'continue studying' option.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Study all the flashcards in the topic by clicking the 'Next' button until reaching the last flashcard.
+  - Step 6: On the last flashcard, click the 'Next' button to be redirected to the 'completion notification' page.
+  - Step 7: On the 'completion notification' page, click the 'continue studying' button.
+expectedResult: The system should mark the topic as completed, mark the vocabulary words as studied, and redirect the learner to the Flashcard page for the continuous topic, allowing the learner to continue studying.
+explanation: This test case ensures that learners can seamlessly continue their study process after completing a topic, which is crucial for a continuous learning experience.
+
+Test Case: Test Case 2
+testCaseName: Verify Navigation to Lesson Page After Completion
+objective: Verify that the learner is redirected to the lesson page after completing a topic and choosing to return to the lesson page.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: Study all the flashcards in the topic by clicking the 'Next' button until reaching the last flashcard.
+  - Step 6: On the last flashcard, click the 'Next' button to be redirected to the 'completion notification' page.
+  - Step 7: On the 'completion notification' page, click the 'return to the lesson page' button.
+expectedResult: The system should redirect the learner to the lesson page, allowing them to choose another topic or lesson to study.
+explanation: This test case verifies the functionality that allows learners to navigate back to the lesson page after completing a topic, which is essential for learners who wish to study multiple topics in a session.
+
+Test Case: Test Case 3
+testCaseName: Verify Functionality of 'Previous' Button on First Flashcard
+objective: Verify that the 'Previous' button is disabled on the first flashcard of a topic.
+testSteps:
+  - Step 1: Log into the application.
+  - Step 2: Click the 'Learn New Word' tab on the navigation bar.
+  - Step 3: Select a lesson from the list displayed.
+  - Step 4: Choose a topic to study from the details of the selected lesson.
+  - Step 5: On the first flashcard of the topic, attempt to click the 'Previous' button.
+expectedResult: The system should display a message 'there is no previous vocabulary to display' and the 'Previous' button should be disabled, preventing the learner from going back further.
+explanation: This test case ensures that the application correctly handles the edge case of the 'Previous' button on the first flashcard, enhancing the user experience by preventing unnecessary errors or confusion.
+

@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: UpdateEmployee_SuccessfulUpdate
+objective: Verify that a manager can successfully update an employee's information in the system and the system reflects these changes accurately.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Search for an existing employee using their ID or from the table.
+  - Step 4: Once the employee is found, the system auto-fills all fields with the employee's current information.
+  - Step 5: Change the desired fields that are allowed to be updated.
+  - Step 6: Press the 'Update' button to submit the changes.
+  - Step 7: Observe the system's response and validation process.
+  - Step 8: Verify that the system updates the employee information in the database.
+  - Step 9: Confirm that the system displays a message or page indicating the employee has been updated.
+expectedResult: The system successfully updates the employee's information in the database and displays a confirmation message or page indicating the employee has been updated.
+explanation: This test case ensures that the basic course of events for updating an employee's information is functioning as expected. It verifies that a manager can make changes to an employee's details, and those changes are accurately reflected in the system.
+
+Test Case: Test Case 2
+testCaseName: UpdateEmployee_InvalidID
+objective: Verify that the system shows an 'incorrect value for id' message when a manager attempts to update an employee with an ID that does not exist in the database.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Attempt to search for an employee using an ID that does not exist in the database.
+  - Step 4: Observe the system's response after attempting to search for a non-existent employee ID.
+expectedResult: The system displays a message indicating 'incorrect value for id' when a manager searches for an employee with an ID that does not exist.
+explanation: This test case checks the system's handling of invalid employee IDs during the update process, ensuring that appropriate feedback is given to the manager for correction.
+
+Test Case: Test Case 3
+testCaseName: UpdateEmployee_InvalidFieldEntry
+objective: Verify that the system shows an 'invalid field entered' message when a manager attempts to update an employee's information with invalid data in any field.
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Search for an existing employee using their ID or from the table and select them.
+  - Step 4: Attempt to change any field with data that is invalid or not allowed.
+  - Step 5: Press the 'Update' button to submit the changes.
+  - Step 6: Observe the system's response and validation process.
+expectedResult: The system displays a message indicating 'invalid field entered' when a manager attempts to update an employee's information with invalid data.
+explanation: This test case ensures that the system properly validates the data entered during the employee update process and provides appropriate feedback when invalid data is submitted.
+

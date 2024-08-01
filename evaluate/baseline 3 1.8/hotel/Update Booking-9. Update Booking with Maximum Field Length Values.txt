@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Update Booking with Maximum Field Length Values
+objective: Verify that the system allows updating a booking with maximum field length values and displays a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking which needs to be updated by its ID.
+  - Step 4: Fill all the fields that need to be updated with maximum allowed length values.
+  - Step 5: Compute payment again if new services or new room types are added, ensuring the payment computation accommodates the maximum field values.
+  - Step 6: Press the update button.
+  - Step 7: Verify that all fields are validated correctly by the system.
+expectedResult: The system should update the booking with the provided maximum length values, update the database for the same booking ID, and display a success message.
+explanation: This test case ensures that the system can handle updates to bookings with fields filled to their maximum allowed lengths without errors, which is crucial for data integrity and user experience. It directly tests the system's ability to process and validate maximum length values during the booking update process as described in the use case.
+

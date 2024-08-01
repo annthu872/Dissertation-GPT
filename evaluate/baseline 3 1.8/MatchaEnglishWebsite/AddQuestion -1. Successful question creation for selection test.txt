@@ -1,0 +1,46 @@
+Test Case: Test Case 1
+testCaseName: Successful question creation for selection test
+objective: Verify that an admin can successfully create a question for the selection test following the main flow
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Press the tab 'Lesson Management' on the navbar.
+  - Step 3: Select one Lesson from the Lesson list.
+  - Step 4: Press one Topic on the Topic list of selected Lesson.
+  - Step 5: Press one word on the vocabulary word list.
+  - Step 6: Press the button 'Add new question'.
+  - Step 7: Press option 'Create questions for the selection test'.
+  - Step 8: Fill the 'sentence' field with a valid sentence that includes '...'.
+  - Step 9: Fill the 'correct answer' field with the correct word form of the blank in the sentence.
+  - Step 10: Fill 'other option 1', 'other option 2', 'other option 3' fields with 3 different wrong answer words.
+  - Step 11: Press the button 'Save'.
+expectedResult: The system saves the question and redirects Admin to the 'Word Information' page of the selected word, where the newly created question can be viewed.
+explanation: This test case ensures that the admin can successfully create a question for the selection test by following the specified steps in the main flow, verifying the system's ability to handle the creation process correctly.
+
+Test Case: Test Case 2
+testCaseName: Validation of compulsory fields during question creation
+objective: Verify that the system prompts the admin to fill all compulsory fields if any are skipped during question creation
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page via the navbar.
+  - Step 3: Select a Lesson and then a Topic from the lists provided.
+  - Step 4: Choose a word from the vocabulary word list.
+  - Step 5: Initiate the process to 'Add new question'.
+  - Step 6: Choose the 'Create questions for the selection test' option.
+  - Step 7: Skip filling one of the compulsory fields ('sentence', 'correct answer', 'other option 1', 'other option 2', 'other option 3').
+  - Step 8: Attempt to save the question by pressing the 'Save' button.
+expectedResult: The system shows a notification that 'Admin did not fill all the fields', prompting Admin to fill the missing compulsory field.
+explanation: This test case checks the system's validation mechanism for compulsory fields during the question creation process, ensuring that all necessary information is provided before a question can be successfully saved.
+
+Test Case: Test Case 3
+testCaseName: Cancel question creation and choose to stay
+objective: Verify that an admin can cancel the question creation process and choose to stay on the page
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Access the 'Lesson Management' page and select a Lesson and Topic.
+  - Step 3: Select a word to create a question for.
+  - Step 4: Begin adding a new question for the selection test.
+  - Step 5: Press the 'Cancel' button during the question creation process.
+  - Step 6: In the dialog that appears, choose the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the question creation page with the entered information preserved.
+explanation: This test case verifies that admins have the option to cancel the question creation process and decide to stay on the page, ensuring that the system provides flexibility in the question creation workflow.
+

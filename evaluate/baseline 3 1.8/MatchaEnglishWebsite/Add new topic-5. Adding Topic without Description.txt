@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Adding Topic without Description
+objective: Verify that the system prevents the addition of a new topic without a description by the administrator.
+testSteps:
+  - Step 1: Ensure the Administrator is logged into the application.
+  - Step 2: Navigate to the 'Add new topic' tab on the navigation bar.
+  - Step 3: Enter a unique name for the topic in the name field.
+  - Step 4: Leave the description field empty.
+  - Step 5: Select 'Save' to attempt to create a new topic.
+expectedResult: The system should display an error message or notification indicating that the description field cannot be left empty and the topic should not be created.
+explanation: This test case is created to ensure that the system enforces the requirement for a description when adding a new topic, as per the use case specification. It directly addresses the scenario of adding a topic without a description, ensuring data integrity and completeness.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Update Employee with Invalid ID
+objective: Verify that the system shows an error message when attempting to update an employee with an invalid ID
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Attempt to search for an employee using an invalid ID (an ID that does not exist in the database).
+expectedResult: The system should display an error message indicating 'incorrect value for id'.
+explanation: This test case is designed to validate the system's behavior when a manager attempts to update an employee using an ID that does not exist in the database. It directly relates to the alternative path mentioned in the use case specification for the scenario 'UpdateEmployee_InvalidID'.
+
+Test Case: Test Case 2
+testCaseName: Update Employee with Invalid Field Entry
+objective: Verify that the system shows an error message when attempting to update an employee with invalid field entries
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Navigate to the Employee section by clicking on 'Employee'.
+  - Step 3: Search for an employee using a valid ID.
+  - Step 4: In the employee update form, enter invalid data in one of the fields that are allowed to be changed.
+  - Step 5: Press the 'update' button to attempt updating the employee.
+expectedResult: The system should display an error message indicating 'invalid field entered'.
+explanation: This test case checks the system's response to invalid data entry in the fields during an employee update process. It is based on the alternative path where the system is expected to validate field entries and show an error message if an invalid field entry is detected.
+

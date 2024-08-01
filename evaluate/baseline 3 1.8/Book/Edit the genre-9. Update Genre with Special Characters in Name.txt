@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Update Genre with Special Characters in Name
+objective: Verify that the system allows updating a genre with special characters in its name and displays the updated record in the genre list.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a genre name containing special characters (e.g., '@#$%^&*') in the 'Name' field.
+  - Step 4: Enter a valid description in the 'Description' field.
+  - Step 5: Press the 'Submit' button.
+expectedResult: The genre should be successfully updated with the special characters in its name, and the updated genre record should be displayed in the list of genres.
+explanation: This test case ensures that the system can handle special characters in the genre name field during an update operation, which is crucial for data integrity and flexibility in naming conventions.
+
+Test Case: Test Case 2
+testCaseName: Update Genre with Special Characters in Name and Invalid Description
+objective: Verify that the system displays an error message when updating a genre with special characters in its name but with an invalid description.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a genre name containing special characters (e.g., '!@#$%^&*()') in the 'Name' field.
+  - Step 4: Enter an invalid description (e.g., leave the field blank or input characters not allowed by the system).
+  - Step 5: Press the 'Submit' button.
+expectedResult: The system should display an error message indicating that the description is invalid and prevent the genre from being updated.
+explanation: This test case checks the system's validation mechanism for the description field when updating a genre, ensuring that genres cannot be updated with invalid descriptions even if the name contains special characters.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Genre with Special Characters in Name
+objective: Verify that the update operation can be canceled after entering a genre name with special characters and that no changes are saved.
+testSteps:
+  - Step 1: Navigate to the genre list/details page.
+  - Step 2: Click the 'Update' button next to the genre you wish to update.
+  - Step 3: In the form displayed, enter a genre name with special characters (e.g., '*&^%$#@!') in the 'Name' field.
+  - Step 4: Start to enter a description but do not complete it.
+  - Step 5: Press the 'Cancel' button.
+expectedResult: The update operation should be canceled, no changes should be saved to the database, and the user should be redirected to the list of genre records without the updates being applied.
+explanation: This test case ensures that users have the option to cancel an update operation if they change their mind, especially after entering special characters in the genre name, maintaining data integrity.
+

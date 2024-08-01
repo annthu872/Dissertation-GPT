@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Verify display of book details with long description
+objective: Ensure that the application correctly displays the details of a book with a long description, including all specified columns.
+testSteps:
+  - Step 1: Navigate to the book list page on the application.
+  - Step 2: Identify a book with a long description from the list. Note: A long description is considered to be one that exceeds 1000 characters.
+  - Step 3: Click on the 'Title' of the book identified in Step 2.
+  - Step 4: Observe and review the information displayed on the book details page.
+expectedResult: The application displays the book details page with all the specified columns: id, Title, Author, Genre, Description (showing the full long description without truncation), and Publication date.
+explanation: This test case is created to verify that the application can handle and correctly display books with long descriptions in the book details view. It directly relates to the test scenario 'DisplayBookDetails_BookWithLongDescription' by focusing on the ability of the application to display extended text fields without issues.
+

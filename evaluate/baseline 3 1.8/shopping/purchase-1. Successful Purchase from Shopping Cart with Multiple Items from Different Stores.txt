@@ -1,0 +1,35 @@
+Test Case: Test Case 1
+testCaseName: Successful Purchase with Multiple Items from Different Stores
+objective: Verify that a user can successfully purchase multiple items from different stores, and the system correctly separates these into different orders based on the store.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has already added items from multiple stores.
+  - Step 2: Select multiple items from different stores by clicking on the checkbox before each item.
+  - Step 3: Review the summary costs displayed by the system.
+  - Step 4: Click the 'Checkout' button.
+  - Step 5: Verify that the user is redirected to a page showing multiple new orders, each corresponding to items from a different store.
+expectedResult: The user should see multiple new orders on the page, each order should contain items from the same store, and items from different stores should be in separate orders.
+explanation: This test case ensures that the system can handle purchases of multiple items from different stores correctly by separating them into different orders. It directly matches the scenario name by testing the basic flow of a successful purchase from the shopping cart with items from different stores.
+
+Test Case: Test Case 2
+testCaseName: Successful Purchase with Single Item from Product Detail Page
+objective: Verify that a user can successfully purchase a single item from the product detail page, including selecting options and adjusting quantity.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item that has multiple options and is available in stock.
+  - Step 2: Select an available option for the product.
+  - Step 3: Adjust the quantity of the product by clicking the plus button.
+  - Step 4: Click the 'Buy Now' button.
+  - Step 5: Click the 'Checkout' button on the page that follows.
+  - Step 6: Verify that the user is redirected to a page showing a single new order of the item chosen.
+expectedResult: The user should be redirected to a page showing a single new order that contains the item with the selected options and quantity.
+explanation: This test case verifies the alternative flow where a user purchases a product directly from the product detail page, including the selection of product options and quantity adjustment. It ensures the system processes these purchases correctly.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Purchase Out-of-Stock Item from Shopping Cart
+objective: Verify that a user cannot proceed to checkout with an out-of-stock item selected in the shopping cart.
+testSteps:
+  - Step 1: Navigate to the shopping cart page where the user has an out-of-stock item added.
+  - Step 2: Attempt to select the out-of-stock item by clicking on the checkbox before the item.
+  - Step 3: Attempt to click the 'Checkout' button.
+expectedResult: The user should not be able to select the out-of-stock item, and the 'Checkout' button should be disabled or not proceed to checkout if the out-of-stock item is selected.
+explanation: This test case covers the exception flow where an item in the user's shopping cart is out of stock. It ensures that the system prevents the user from proceeding with a purchase that includes out-of-stock items.
+

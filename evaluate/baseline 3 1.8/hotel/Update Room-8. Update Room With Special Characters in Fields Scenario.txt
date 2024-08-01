@@ -1,0 +1,39 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Special Characters in Room Name Field
+objective: Verify that the system handles special characters in the Room Name field correctly when updating room details.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: In the Room Name field, enter a name that includes special characters (e.g., Room@#202$%).
+  - Step 5: Fill other necessary fields with valid data.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and show a success message indicating the room details have been updated successfully.
+explanation: This test case ensures that the system can handle special characters in the Room Name field without errors, which is crucial for supporting a wide range of room naming conventions.
+
+Test Case: Test Case 2
+testCaseName: Update Room with Special Characters in Description Field
+objective: Verify that the system handles special characters in the Room Description field correctly when updating room details.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: In the Room Description field, enter a description that includes special characters (e.g., Best room for guests! @$%&).
+  - Step 5: Fill other necessary fields with valid data.
+  - Step 6: Press the update button.
+expectedResult: The system should validate the fields and show a success message indicating the room details have been updated successfully.
+explanation: This test case checks if the system properly handles special characters in the Room Description field, ensuring flexibility in room descriptions.
+
+Test Case: Test Case 3
+testCaseName: Update Room with Special Characters in Price Field
+objective: Verify that the system prevents special characters in the Price field when updating room details.
+testSteps:
+  - Step 1: Log in to the system as an Employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for a room that needs to be updated using its ID.
+  - Step 4: In the Price field, enter a value that includes special characters (e.g., 100$%^&*).
+  - Step 5: Fill other necessary fields with valid data.
+  - Step 6: Press the update button.
+expectedResult: The system should show an 'invalid field entered' message for the Price field and prevent the update from proceeding.
+explanation: This test case ensures that the system enforces data integrity for the Price field by not allowing special characters, which could lead to data validation issues.
+

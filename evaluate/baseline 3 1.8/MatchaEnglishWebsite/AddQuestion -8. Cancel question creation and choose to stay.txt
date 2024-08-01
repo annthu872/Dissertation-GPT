@@ -1,0 +1,17 @@
+Test Case: Test Case 1
+testCaseName: Cancel question creation and choose to stay
+objective: Verify that when an admin cancels the question creation process and chooses to stay, the work on the question is kept and not lost.
+testSteps:
+  - Step 1: Log in as Admin.
+  - Step 2: Navigate to the 'Lesson Management' page by pressing the 'Lesson Management' tab on the navbar.
+  - Step 3: Select a lesson from the lesson list.
+  - Step 4: On the 'Lesson Information' page, select a topic from the topic list.
+  - Step 5: On the 'Topic Information' page, select a word from the vocabulary word list.
+  - Step 6: Press the 'Add new question' button on the 'Word Information' page.
+  - Step 7: Choose the option 'Create questions for the selection test' when prompted.
+  - Step 8: On the 'Add new question for selection test' page, fill in the 'sentence', 'correct answer', 'other option 1', 'other option 2', and 'other option 3' fields with valid data.
+  - Step 9: Press the 'Cancel' button.
+  - Step 10: In the confirmation dialog, select the 'Stay' option.
+expectedResult: The dialog closes, and the admin remains on the 'Add new question for selection test' page with all previously entered data intact.
+explanation: This test case ensures that when an admin decides to cancel the question creation but then chooses to stay, their work is not lost, allowing them to continue working on the question without having to re-enter all the data.
+

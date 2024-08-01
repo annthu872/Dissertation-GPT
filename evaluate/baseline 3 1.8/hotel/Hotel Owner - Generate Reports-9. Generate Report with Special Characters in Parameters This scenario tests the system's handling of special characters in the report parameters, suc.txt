@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Special Characters in Date Parameters
+objective: Verify that the system can handle special characters in the date parameters when generating a report
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view parameters for reports.
+  - Step 4: Enter a date period for the report using special characters (e.g., '01/01/2023@' or '31-12-2023#').
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system should display an error message indicating that the date format is incorrect or the special characters are not allowed in the date parameters.
+explanation: This test case is created to ensure that the system properly validates the input parameters for generating reports, specifically focusing on the handling of special characters in date fields. It directly matches the scenario of testing the system's handling of special characters in report parameters.
+
+Test Case: Test Case 2
+testCaseName: Generate Report with Valid Date Parameters Containing Special Characters
+objective: Verify that the system can generate a report when the date parameters include allowed special characters (e.g., slashes or dashes in date formats)
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to view parameters for reports.
+  - Step 4: Enter a date period for the report using allowed special characters in the date format (e.g., '01/01/2023' or '31-12-2023').
+  - Step 5: Submit the parameters to generate the report.
+expectedResult: The system generates the report according to the selected date period and displays it to the user without any error messages regarding the date format.
+explanation: This test case verifies that the system can correctly process and generate reports when the date parameters are entered with allowed special characters, such as slashes or dashes, which are commonly used in date formats. It ensures that the system's handling of special characters in report parameters is in line with expected functionality.
+

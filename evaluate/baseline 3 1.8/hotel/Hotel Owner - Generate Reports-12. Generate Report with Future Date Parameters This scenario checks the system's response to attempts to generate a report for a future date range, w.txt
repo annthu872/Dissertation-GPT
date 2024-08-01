@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Generate Report with Future Date Parameters
+objective: Verify that the system does not generate a report for a future date range and handles the request appropriately
+testSteps:
+  - Step 1: Log in to the system as a Hotel Owner.
+  - Step 2: Navigate to the Reports Page.
+  - Step 3: Click on the Reports Button to initiate report generation.
+  - Step 4: Enter a future date range in the parameters for report generation.
+  - Step 5: Submit the report generation request.
+expectedResult: The system should validate the date parameters, identify that the date range is in the future, and display an appropriate error message indicating that reports cannot be generated for future dates.
+explanation: This test case is designed to ensure that the system correctly handles attempts to generate reports with future date parameters by validating the input and preventing the generation of such reports, as per the scenario requirement.
+

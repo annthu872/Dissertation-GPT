@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Update Room with Missing Mandatory Fields
+objective: Verify that the system prevents updating a room when mandatory fields are missing and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated.
+  - Step 4: Clear one or more mandatory fields that need to be updated.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message for each missing mandatory field without updating the room in the database.
+explanation: This test case ensures that the system correctly handles cases where an employee attempts to update room details without providing all mandatory fields. It is derived from the basic course of events and the alternative path where invalid fields are entered.
+
+Test Case: Test Case 2
+testCaseName: Update Room with All Mandatory Fields but One Missing
+objective: Verify that the system prevents updating a room when at least one mandatory field is missing and displays an appropriate error message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Room panel on the dashboard.
+  - Step 3: Search for and select a room that needs to be updated.
+  - Step 4: Fill in all mandatory fields except one with valid data.
+  - Step 5: Press the update button.
+expectedResult: The system should validate the fields and display an error message for the missing mandatory field without updating the room in the database.
+explanation: This test case is created to verify the system's behavior when an employee tries to update a room with all mandatory fields filled except one. It tests the system's validation process as described in the basic course of events and the alternative path for handling invalid fields.
+

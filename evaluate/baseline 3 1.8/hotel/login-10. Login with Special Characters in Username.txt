@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Login with Special Characters in Username for Hotel Owner
+objective: Verify that a Hotel Owner can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid username with special characters and a valid password for a Hotel Owner account.
+  - Step 3: Click the submit button.
+expectedResult: The Hotel Owner is redirected to the main dashboard page for the Hotel Owner role.
+explanation: This test case ensures that the login functionality supports usernames with special characters for Hotel Owners, adhering to the login use case.
+
+Test Case: Test Case 2
+testCaseName: Login with Special Characters in Username for Manager
+objective: Verify that a Manager can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid username with special characters and a valid password for a Manager account.
+  - Step 3: Click the submit button.
+expectedResult: The Manager is redirected to the main dashboard page for the Manager role.
+explanation: This test case checks if the system allows Managers to login using usernames that include special characters, following the specified login use case.
+
+Test Case: Test Case 3
+testCaseName: Login with Special Characters in Username for Employee
+objective: Verify that an Employee can login with a username containing special characters
+testSteps:
+  - Step 1: Navigate to the login page.
+  - Step 2: Enter a valid username with special characters and a valid password for an Employee account.
+  - Step 3: Click the submit button.
+expectedResult: The Employee is redirected to the main dashboard page for the Employee role.
+explanation: This test case verifies the system's capability to authenticate Employees with usernames that contain special characters, in line with the login use case.
+

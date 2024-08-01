@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Navigate Back to Author List from Author Details Page
+objective: Verify that the user can navigate back to the author list page from the author details page
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click on the 'Title' of a specific author from the list to view their details.
+  - Step 3: Once on the author details page, click on the 'Back' button or link to return to the author list page.
+expectedResult: The user should be redirected back to the author list page after clicking the 'Back' button or link on the author details page.
+explanation: This test case ensures that users can easily navigate back to the author list after viewing the details of a specific author, maintaining a smooth and intuitive navigation flow within the application.
+

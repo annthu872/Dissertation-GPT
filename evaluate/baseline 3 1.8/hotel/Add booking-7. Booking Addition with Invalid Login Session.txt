@@ -1,0 +1,14 @@
+Test Case: Test Case 1
+testCaseName: Booking Addition with Invalid Login Session
+objective: Verify that the system prevents booking addition when the employee's login session is invalid.
+testSteps:
+  - Step 1: Navigate to the application login page.
+  - Step 2: Attempt to login with valid employee credentials.
+  - Step 3: After successful login, manually invalidate the login session by either logging out in another tab or manipulating session storage to simulate an invalid session.
+  - Step 4: Navigate to the Booking panel on the dashboard.
+  - Step 5: Fill all the booking fields with valid data.
+  - Step 6: Click the calculate amount button to get the total payable payment.
+  - Step 7: Press the add booking button.
+expectedResult: The system should not add the booking to the database and should show a failure message indicating the user is not logged in or the session is invalid.
+explanation: This test case is created to ensure that the system enforces the precondition that employees must be logged in to add bookings. It directly tests the scenario where an attempt is made to add a booking with an invalid login session, which is not explicitly covered in the use case but is implied by the precondition.
+

@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Valid Past Publication Date
+objective: Verify that the system allows updating a book with a valid past publication date and displays the updated book list.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and enter a valid past date for the publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: The book is updated in the database with the provided details, including the past publication date, and the list of books with the updated records is displayed.
+explanation: This test case ensures that the system correctly processes and updates a book record with a valid past publication date, reflecting the changes in the book list.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Incorrect Publication Date Format
+objective: Verify that the system displays an error message when an incorrect publication date format is entered.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and enter an incorrect format for the publication date.
+  - Step 4: Press the 'Submit' button.
+expectedResult: An error message is displayed indicating the incorrect data format for the publication date.
+explanation: This test case checks the system's validation for the publication date field, ensuring that it rejects incorrect formats and informs the user.
+
+Test Case: Test Case 3
+testCaseName: Cancel Update Operation for Book with Past Publication Date
+objective: Verify that the system does not update the book record in the database when the 'Cancel' button is pressed after entering a past publication date.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter or modify the book's title, author, genre, description, and enter a valid past date for the publication date.
+  - Step 4: Press the 'Cancel' button.
+expectedResult: The book record is not updated in the database, and the list of book records is displayed without applying the changes.
+explanation: This test case ensures that the cancel operation works as expected, discarding any changes made to the book record, including the past publication date.
+

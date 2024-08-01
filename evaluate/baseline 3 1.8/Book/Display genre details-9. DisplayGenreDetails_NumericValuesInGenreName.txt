@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Genre Details with Numeric Values in Genre Name
+objective: Verify that the application correctly displays details for genres with numeric values in their names
+testSteps:
+  - Step 1: Navigate to the genre list page on the application.
+  - Step 2: Identify and click on a genre name that contains numeric values from the list displayed.
+  - Step 3: Observe the details displayed on the genre details page.
+expectedResult: The application should display the genre details page with the following columns correctly filled: id (unique genre number), Name (including numeric values), and Description.
+explanation: This test case ensures that genres with numeric values in their names are handled correctly by the application, displaying all relevant details without errors. It directly matches the scenario name by focusing on the display of genre details specifically for genres with numeric values in their names.
+

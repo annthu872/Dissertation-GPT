@@ -1,0 +1,30 @@
+Test Case: Test Case 1
+testCaseName: Add Item to Cart Without Selecting Available Options
+objective: Verify that the system prevents adding an item to the cart without selecting available options if the product has multiple options.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for an item with multiple options.
+  - Step 3: Without selecting any available options, click the "Add to Cart" button.
+expectedResult: The system should display a message indicating that selecting an option is required before adding the item to the cart. The item should not be added to the cart.
+explanation: This test case ensures that the system enforces the rule that for products with multiple options, an option must be selected before the product can be added to the cart. It directly addresses the scenario of attempting to add an item to the cart without selecting available options.
+
+Test Case: Test Case 2
+testCaseName: Add Item to Cart With Options But Without Selecting One
+objective: Verify that the system prevents adding an item to the cart if the product has options but none is selected.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for an item that has options.
+  - Step 3: Attempt to add the item to the cart without selecting any of the available options.
+expectedResult: The system should prevent the item from being added to the cart and display an error message prompting the user to select an option.
+explanation: This test case is created to validate the exception flow where the user attempts to add a product with options to the cart without selecting any. It ensures the system's integrity by requiring option selection.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Add Out of Stock Item to Cart
+objective: Verify that the system prevents adding an out-of-stock item to the shopping cart.
+testSteps:
+  - Step 1: Log into the Shopee account.
+  - Step 2: Navigate to a product detail page for an item that is out of stock.
+  - Step 3: Attempt to add the out-of-stock item to the cart by clicking the "Add to Cart" button.
+expectedResult: The system should display a message indicating the item is out of stock and prevent the item from being added to the cart.
+explanation: This test case checks the system's behavior when a user attempts to add an out-of-stock item to the cart, ensuring that the system properly handles stock availability.
+

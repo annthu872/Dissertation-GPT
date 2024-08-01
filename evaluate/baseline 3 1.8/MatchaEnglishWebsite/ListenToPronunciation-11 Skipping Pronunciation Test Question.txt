@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Skipping Pronunciation Test Question
+objective: Verify that the learner can skip a pronunciation test question and move to the next question without answering.
+testSteps:
+  - Step 1: Log into the application with a learner account.
+  - Step 2: Navigate to the review test function within the application.
+  - Step 3: Start a test that includes a listening pronunciation test question.
+  - Step 4: When the test question with a speaker button is displayed, do not press the speaker button or choose any answer.
+  - Step 5: Look for an option to skip the question or navigate to the next question without selecting an answer.
+expectedResult: The learner is able to move to the next question without answering the current pronunciation test question, and the skipped question is marked for review or indicated as unanswered.
+explanation: This test case is created to ensure that learners have the ability to skip questions they are unsure of and return to them later, if the application's design allows it. It directly addresses the scenario of skipping a pronunciation test question by not interacting with the question's answer choices and seeking a way to proceed without answering.
+

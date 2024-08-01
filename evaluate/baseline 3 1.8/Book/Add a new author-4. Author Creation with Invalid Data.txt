@@ -1,0 +1,36 @@
+Test Case: Test Case 1
+testCaseName: Author Creation with Invalid Name
+objective: Verify that the system displays an error message when trying to create a new author with invalid name data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Enter an invalid name (e.g., using numbers or special characters) in the 'Name' field.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid name data is displayed, and the author record is not added to the database.
+explanation: This test case ensures that the system validates the 'Name' field for correct data format and prevents the creation of an author record with invalid name data.
+
+Test Case: Test Case 2
+testCaseName: Author Creation with Empty Name Field
+objective: Verify that the system displays an error message when trying to create a new author without entering a name
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Leave the 'Name' field empty.
+  - Step 4: Fill in the 'Bio' field with valid data.
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the empty 'Name' field is displayed, and the author record is not added to the database.
+explanation: This test case checks that the system requires the 'Name' field to be filled out and prevents the creation of an author record without a name.
+
+Test Case: Test Case 3
+testCaseName: Author Creation with Invalid Bio
+objective: Verify that the system displays an error message when trying to create a new author with invalid bio data
+testSteps:
+  - Step 1: Navigate to the author list page.
+  - Step 2: Click the 'Create new' button to open the author creation form.
+  - Step 3: Fill in the 'Name' field with valid data.
+  - Step 4: Enter invalid data in the 'Bio' field (e.g., using unsupported characters or exceeding character limit).
+  - Step 5: Press the 'Submit' button.
+expectedResult: An error message related to the invalid bio data is displayed, and the author record is not added to the database.
+explanation: This test case ensures that the system validates the 'Bio' field for correct data format and content, preventing the creation of an author record with invalid biography data.
+

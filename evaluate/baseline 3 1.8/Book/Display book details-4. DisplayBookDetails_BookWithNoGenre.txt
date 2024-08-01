@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display Book Details for a Book with No Genre
+objective: Verify that the book details page correctly displays all the book information including a blank or appropriate message for the Genre when the book has no genre assigned.
+testSteps:
+  - Step 1: Navigate to the book list page.
+  - Step 2: Identify a book that is known to have no genre assigned.
+  - Step 3: Click on the 'Title' of the book identified in Step 2.
+  - Step 4: Observe the book details displayed on the book details page.
+expectedResult: The book details page should display all the columns (id, Title, Author, Genre, Description, Publication date) with the Genre column either blank or displaying a message indicating no genre is assigned.
+explanation: This test case ensures that the application can handle and correctly display books that do not have a genre assigned. It is directly related to the test scenario 'DisplayBookDetails_BookWithNoGenre' by focusing on how the application displays the genre information (or the lack thereof) for a book.
+

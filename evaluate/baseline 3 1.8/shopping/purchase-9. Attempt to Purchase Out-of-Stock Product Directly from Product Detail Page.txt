@@ -1,0 +1,29 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Purchase an Out-of-Stock Product Directly from Product Detail Page
+objective: Verify that a user cannot purchase an out-of-stock product directly from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of an out-of-stock product.
+  - Step 2: Attempt to click the 'Buy Now' button.
+expectedResult: The 'Buy Now' button should be disabled, and the user should not be able to proceed to checkout with the out-of-stock product.
+explanation: This test case ensures that users are prevented from purchasing products that are out of stock directly from the product detail page, adhering to the exception flow where the system should disable the 'Checkout' button for out-of-stock products.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Purchase a Product with Out-of-Stock Option from Product Detail Page
+objective: Verify that a user cannot purchase a product with an out-of-stock option from the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product with multiple options, where at least one option is out of stock.
+  - Step 2: Attempt to select the out-of-stock option.
+  - Step 3: Attempt to click the 'Buy Now' button after selecting the out-of-stock option.
+expectedResult: The out-of-stock option should not be selectable, or if selectable, the 'Buy Now' button should be disabled, preventing the user from proceeding to checkout.
+explanation: This test case checks that the system correctly handles products with multiple options, specifically blocking the purchase of any options that are out of stock, as per the exception flow.
+
+Test Case: Test Case 3
+testCaseName: Attempt to Adjust Quantity Beyond Stock Limit from Product Detail Page
+objective: Verify that a user cannot adjust the product quantity beyond the available stock limit on the product detail page
+testSteps:
+  - Step 1: Navigate to the product detail page of a product that is in stock.
+  - Step 2: Increase the product quantity using the plus button beyond the available stock.
+  - Step 3: Attempt to click the 'Buy Now' button.
+expectedResult: The quantity should not be adjustable beyond the stock limit, and/or the 'Buy Now' button should be disabled if the quantity exceeds the available stock.
+explanation: This test case ensures that users are prevented from purchasing more units of a product than what is available in stock, in line with the exception flow that restricts purchasing quantity beyond current stock.
+

@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Display Books List with Future Date Range
+objective: Verify that the application displays no books when the user filters the list by a future date range beyond any book's publication date.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Locate the date range input forms above the list of books.
+  - Step 3: Enter a start date and an end date that are both in the future, beyond any book's publication date.
+  - Step 4: Click the refresh button to the right of the date inputs.
+expectedResult: The application displays a message indicating no books are available within the specified future date range or an empty list of books.
+explanation: This test case ensures that the application correctly handles the scenario where users attempt to filter books by a future date range. It verifies that the system can handle date ranges that do not match any book's publication date, ensuring robustness in the filtering functionality.
+

@@ -1,0 +1,26 @@
+Test Case: Test Case 1
+testCaseName: Verify Pagination by Page Number
+objective: Verify that clicking on a specific page number in the pagination displays the corresponding 10 records of books.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Observe the list of books displayed on the first page.
+  - Step 3: Identify the pagination block below the list of books.
+  - Step 4: Click on the page number '2' in the pagination block.
+  - Step 5: Observe the list of books displayed after clicking.
+expectedResult: The application should display the second set of 10 records of books corresponding to page number '2'.
+explanation: This test case ensures that the pagination functionality works as expected by displaying the correct set of records when a specific page number is clicked. It directly matches the scenario of verifying the pagination page number functionality.
+
+Test Case: Test Case 2
+testCaseName: Verify Pagination Functionality with Date Filter Applied
+objective: Verify that applying a date filter and then using pagination displays the correct records of books within the specified date range.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Enter a specific date range in the date range input forms above the list of books.
+  - Step 3: Click the refresh button next to the date range inputs.
+  - Step 4: Observe the filtered list of books displayed.
+  - Step 5: Identify the pagination block below the list of filtered books.
+  - Step 6: Click on the page number '2' in the pagination block.
+  - Step 7: Observe the list of books displayed after clicking, ensuring they still fall within the specified date range.
+expectedResult: After applying a date filter and clicking on page number '2', the application should display the second set of 10 records of books that fall within the specified date range.
+explanation: This test case verifies that the pagination functionality works correctly in conjunction with the date filter, ensuring that users can navigate through filtered records using pagination.
+

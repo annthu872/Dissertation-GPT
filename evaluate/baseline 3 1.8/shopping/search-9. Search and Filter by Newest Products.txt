@@ -1,0 +1,13 @@
+Test Case: Test Case 1
+testCaseName: Search and Filter by Newest Products
+objective: Verify that the user can search for products and filter the results by the newest products.
+testSteps:
+  - Step 1: Navigate to the main page of the application.
+  - Step 2: Click on the search bar.
+  - Step 3: Type a keyword related to products in the search bar.
+  - Step 4: Press enter or click the search icon to initiate the search.
+  - Step 5: Once the search results are displayed, locate the filter options.
+  - Step 6: Select the radio button for 'newest product result' to filter the search results.
+expectedResult: The search results should be filtered to display products sorted by their release date, starting with the newest products.
+explanation: This test case ensures that users can effectively search for products using keywords and then filter the search results to view the newest products first. It directly matches the scenario name by combining the search functionality with the specific filter for newest products.
+

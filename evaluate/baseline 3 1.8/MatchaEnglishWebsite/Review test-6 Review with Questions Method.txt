@@ -1,0 +1,48 @@
+Test Case: Test Case 1
+testCaseName: Review with Questions Method - Correct Answer
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the right answer using the questions method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Ensure the system redirects to the review screen and randomly selects the questions method for a word.
+  - Step 4: Choose the correct answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display the word in green, indicating the memory level of the word has been increased.
+explanation: This test case ensures that the review process using the questions method functions correctly when the learner selects the right answer, directly matching the scenario name.
+
+Test Case: Test Case 2
+testCaseName: Review with Questions Method - Incorrect Answer
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong answer using the questions method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Ensure the system redirects to the review screen and randomly selects the questions method for a word.
+  - Step 4: Choose the wrong answer among the four selections provided.
+  - Step 5: Click the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display the word in red, indicating the memory level of the word has been decreased.
+explanation: This test case verifies the functionality of the review process using the questions method when the learner selects an incorrect answer, aligning with the scenario's focus.
+
+Test Case: Test Case 3
+testCaseName: Review with Questions Method - Exiting and Staying
+objective: Verify that the system allows learners to attempt to exit the review and then choose to stay, continuing with the review using the questions method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Ensure the system redirects to the review screen and randomly selects the questions method for a word.
+  - Step 4: Press the 'Exit' button.
+  - Step 5: On the pop-up, choose the 'Stay' button.
+expectedResult: After choosing to stay, the learner should be redirected back to the same question in the review process, allowing them to continue with the review.
+explanation: This test case checks the functionality of the 'Exit' and 'Stay' options during the review process, ensuring learners can opt to continue reviewing after attempting to exit.
+
+Test Case: Test Case 4
+testCaseName: Review with Questions Method - Exiting and Confirming
+objective: Verify that the system correctly exits the review and does not save progress when the learner chooses to confirm exit during the review using the questions method.
+testSteps:
+  - Step 1: Log in as a learner with a review words list available for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Ensure the system redirects to the review screen and randomly selects the questions method for a word.
+  - Step 4: Press the 'Exit' button.
+  - Step 5: On the pop-up, choose the 'Confirm' button.
+expectedResult: After confirming the exit, the learner should be redirected to the Home page, and the review progress should not be saved.
+explanation: This test case ensures that the system behaves as expected when a learner decides to exit the review process, aligning with the scenario's focus on the review with questions method.
+

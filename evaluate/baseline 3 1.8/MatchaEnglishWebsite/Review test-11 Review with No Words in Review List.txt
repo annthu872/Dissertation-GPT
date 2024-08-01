@@ -1,0 +1,45 @@
+Test Case: Test Case 1
+testCaseName: Review with No Words in Review List - Main Flow
+objective: Verify that the review process works correctly when the learner follows the main flow, including selecting the correct answer and proceeding through the review list.
+testSteps:
+  - Step 1: Log in as a learner with a populated review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Verify redirection to the review screen.
+  - Step 4: Engage with the review by selecting the correct answer for each word presented, using one of the four methods (questions, sound, image, or meanings).
+  - Step 5: Click the right answer for each word.
+  - Step 6: After selecting the right answer, verify that a green word is shown.
+  - Step 7: Press the 'Continue' button to proceed to the next word in the review list.
+  - Step 8: Repeat steps 4 to 7 until the last word in the review list is reached.
+  - Step 9: After reviewing the last word, press the 'Continue' button to go back to the Home page.
+  - Step 10: Verify that the system saved the review.
+expectedResult: The learner is able to complete the review process, with each correct answer resulting in a green word display and the memory level of the word increased. After the last word, the review is saved, and the learner is redirected to the Home page.
+explanation: This test case ensures that the main flow of the review process, including correct answer selection and progression through the review list, functions as intended. It directly matches the scenario of reviewing with words in the review list.
+
+Test Case: Test Case 2
+testCaseName: Review with No Words in Review List - Alternative Flow 1
+objective: Verify that the system correctly handles wrong answers by showing a red word, decreasing the memory level, and allowing the learner to continue the review.
+testSteps:
+  - Step 1: Log in as a learner with a populated review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Proceed to the review screen and start the review process.
+  - Step 4: For at least one word, intentionally select the wrong answer.
+  - Step 5: Verify that a red word is shown after selecting the wrong answer.
+  - Step 6: Press the 'Continue' button to proceed with the review, moving to the next word.
+  - Step 7: Complete the review process for remaining words, selecting the correct answers.
+  - Step 8: After the last word, press the 'Continue' button to finish the review and return to the Home page.
+expectedResult: The system correctly displays a red word when a wrong answer is selected, indicating the memory level of the word is decreased. The learner can continue with the review process, and upon completion, the review is saved.
+explanation: This test case verifies the alternative flow where a learner selects a wrong answer during the review process, ensuring the system's response (displaying a red word and decreasing memory level) is as expected.
+
+Test Case: Test Case 3
+testCaseName: Review with No Words in Review List - Exception Flow 1
+objective: Verify that the review process is correctly aborted and not saved when the learner decides to exit the review prematurely.
+testSteps:
+  - Step 1: Log in as a learner with a populated review words list for today.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Start the review process and then press the 'Exit' button.
+  - Step 4: On the pop-up, select the 'Confirm' button to exit the review.
+  - Step 5: Verify that the learner is redirected to the Home page.
+  - Step 6: Check if the review process was not saved.
+expectedResult: Upon selecting 'Confirm' to exit, the learner is redirected to the Home page without the review being saved, ensuring no progress is recorded.
+explanation: This test case checks the exception flow where a learner exits the review process, ensuring the system behaves as expected by not saving the review and redirecting the learner to the Home page.
+

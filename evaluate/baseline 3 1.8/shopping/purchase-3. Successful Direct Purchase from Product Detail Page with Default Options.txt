@@ -1,0 +1,33 @@
+Test Case: Test Case 1
+testCaseName: Successful Direct Purchase from Product Detail Page with Default Options
+objective: Verify that a user can successfully make a direct purchase from the product detail page using the default options and proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item that has default options and is in stock.
+  - Step 2: Verify that the default options for the product are pre-selected.
+  - Step 3: Click on the 'Buy Now' button without changing the default options or adjusting the quantity.
+  - Step 4: Click on the 'Checkout' button on the page that appears after clicking 'Buy Now'.
+expectedResult: The user is redirected to a page that shows one order of the item they have chosen with the default options, ready for checkout.
+explanation: This test case ensures that users can directly purchase an item from its detail page using the default options provided, without the need to adjust options or quantities, and can proceed to checkout successfully. It directly matches the scenario name by focusing on the direct purchase process from the product detail page.
+
+Test Case: Test Case 2
+testCaseName: Direct Purchase with Adjusted Quantity from Product Detail Page
+objective: Verify that a user can adjust the quantity of a product before making a direct purchase from the product detail page and successfully proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item that is in stock.
+  - Step 2: Adjust the quantity of the product by clicking on the plus or minus button next to the quantity field.
+  - Step 3: Click on the 'Buy Now' button after adjusting the quantity.
+  - Step 4: Click on the 'Checkout' button on the page that appears after clicking 'Buy Now'.
+expectedResult: The user is redirected to a page that shows one order of the item they have chosen with the adjusted quantity, ready for checkout.
+explanation: This test case verifies that users have the ability to adjust the quantity of an item on its product detail page before making a direct purchase and that the system correctly processes the adjusted quantity during checkout. It is relevant to the scenario as it tests a key functionality available on the product detail page.
+
+Test Case: Test Case 3
+testCaseName: Direct Purchase with Selection of Available Options from Product Detail Page
+objective: Verify that a user can select available options for a product before making a direct purchase from the product detail page and successfully proceed to checkout.
+testSteps:
+  - Step 1: Navigate to the product detail page of an item that has multiple available options and is in stock.
+  - Step 2: Select one of the available options for the product.
+  - Step 3: Click on the 'Buy Now' button after selecting an option.
+  - Step 4: Click on the 'Checkout' button on the page that appears after clicking 'Buy Now'.
+expectedResult: The user is redirected to a page that shows one order of the item they have chosen with the selected option, ready for checkout.
+explanation: This test case ensures that users can select from available options for a product on its detail page before making a direct purchase. It tests the functionality of choosing options, which is crucial for products with multiple options, and verifies that the selection is processed correctly during checkout.
+

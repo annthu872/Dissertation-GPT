@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Add Employee with Valid Data
+objective: Verify that a manager can add an employee with unique data successfully
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the fields with valid and unique data for the new employee.
+  - Step 4: Click the 'Add' button to submit the employee data.
+expectedResult: The system should validate the fields, add the employee to the database, display a message that the employee has been added, and generate an id and password for the new employee.
+explanation: This test case ensures that the system can successfully add an employee when all required fields are filled with valid and unique data, following the basic course of events.
+
+Test Case: Test Case 2
+testCaseName: Add Employee with Duplicate Data
+objective: Verify that the system prevents adding an employee with data that duplicates an existing employee's data
+testSteps:
+  - Step 1: Log in to the system with a manager account.
+  - Step 2: Click on the 'Employee' option to navigate to the Employee menu.
+  - Step 3: Fill all the fields with data that duplicates an existing employee's data.
+  - Step 4: Click the 'Add' button to submit the duplicate employee data.
+expectedResult: The system should validate the fields and display an error message indicating that an employee with the same data already exists and prevent the addition of the duplicate employee.
+explanation: This test case checks the system's ability to prevent the addition of an employee when the data provided matches that of an existing employee, ensuring data integrity and uniqueness.
+

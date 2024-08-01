@@ -1,0 +1,24 @@
+Test Case: Test Case 1
+testCaseName: Exiting Review and Returning to Continue
+objective: Verify that learners can exit the review process and choose to stay to continue the review
+testSteps:
+  - Step 1: Log in as a learner with an account that has a daily review words list.
+  - Step 2: Select the review button on the Home page to start the review.
+  - Step 3: Engage with the review process until the system presents a question, sound, image, or meaning for review.
+  - Step 4: Press the 'Exit' button during the review process.
+  - Step 5: On the pop-up, choose the 'Stay' button.
+expectedResult: The system should return the learner to the same point in the review process where they chose to exit, allowing them to continue with the review.
+explanation: This test case ensures that learners who accidentally press 'Exit' or reconsider their decision to exit can continue their review without losing progress. It directly tests the functionality described in Alternative flow 3.
+
+Test Case: Test Case 2
+testCaseName: Exiting Review and Choosing to Exit
+objective: Verify that learners can exit the review process and confirm their decision to exit, leading them back to the Home page without saving the review progress
+testSteps:
+  - Step 1: Log in as a learner with an account that has a daily review words list.
+  - Step 2: Select the review button on the Home page to start the review.
+  - Step 3: Engage with the review process until the system presents a question, sound, image, or meaning for review.
+  - Step 4: Press the 'Exit' button during the review process.
+  - Step 5: On the pop-up, choose the 'Confirm' button.
+expectedResult: The system should redirect the learner to the Home page without saving the review progress.
+explanation: This test case verifies the functionality for learners who choose to exit the review process, as described in Exception flow 1, ensuring the review progress is not saved and the learner is returned to the Home page.
+

@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Display Author Details via Direct URL Access
+objective: Verify that the application correctly displays the author details when accessed through a direct URL
+testSteps:
+  - Step 1: Copy the direct URL link to the author's detail page. This URL should be in the format of http://application/authorDetails/{authorId}, where {authorId} is the unique identifier of the author.
+  - Step 2: Open a web browser and paste the copied URL into the browser's address bar.
+  - Step 3: Press Enter to navigate to the author's detail page.
+expectedResult: The application displays the author's detail page with the following columns: id (unique author number), Name, and Bio (author's biography).
+explanation: This test case ensures that users can access an author's details page directly using a URL, which is useful for bookmarking or sharing. It directly tests the scenario's requirement of displaying author details, focusing on access through a direct URL.
+

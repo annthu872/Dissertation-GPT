@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Display Books List with Earliest Date Range
+objective: Verify that the application correctly displays books when the user filters with the earliest publication date available in the database.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Identify the earliest publication date available in the database. This information might be provided in the test data or require querying the database.
+  - Step 3: Enter the earliest publication date as both the start and end date in the date range filter inputs.
+  - Step 4: Click the 'Refresh' button next to the date range inputs.
+expectedResult: The application displays a list of books that were published on the earliest date available in the database. If there are more than 10 books, pagination should be available to navigate through the list.
+explanation: This test case ensures that the application can handle boundary conditions, specifically the earliest date range, and still display the correct list of books. It directly relates to the test scenario by testing the behavior of the application when filtering books by publication date at the boundary conditions.
+
+Test Case: Test Case 2
+testCaseName: Display Books List with Latest Date Range
+objective: Verify that the application correctly displays books when the user filters with the latest publication date available in the database.
+testSteps:
+  - Step 1: Navigate to the 'Books' section of the application.
+  - Step 2: Identify the latest publication date available in the database. This information might be provided in the test data or require querying the database.
+  - Step 3: Enter the latest publication date as both the start and end date in the date range filter inputs.
+  - Step 4: Click the 'Refresh' button next to the date range inputs.
+expectedResult: The application displays a list of books that were published on the latest date available in the database. If there are more than 10 books, pagination should be available to navigate through the list.
+explanation: This test case checks the application's ability to handle boundary conditions, in this case, the latest date range. It is crucial for verifying that the filtering functionality works correctly at the extremes of the available data, aligning with the test scenario's focus on boundary date ranges.
+

@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Review with Meanings Method - Correct Answer Selection
+objective: Verify that the system correctly increases the memory level of a word when the learner selects the correct meaning during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a daily review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the meanings method for a word.
+  - Step 4: Choose the correct meaning by clicking on one of the four selections provided.
+  - Step 5: Click the right answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the correct answer, the system should display a green word indicating the correct selection and increase the memory level of the word.
+explanation: This test case ensures that the review mechanism works correctly for the meanings method by increasing the memory level of a word when the learner selects the correct answer.
+
+Test Case: Test Case 2
+testCaseName: Review with Meanings Method - Incorrect Answer Selection
+objective: Verify that the system correctly decreases the memory level of a word when the learner selects the wrong meaning during a review session.
+testSteps:
+  - Step 1: Log in as a learner with a daily review words list available.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Wait for the system to redirect to the review screen and randomly select the meanings method for a word.
+  - Step 4: Choose the wrong meaning by clicking on one of the four selections provided.
+  - Step 5: Click the wrong answer.
+  - Step 6: Press the 'Continue' button to proceed to the next word.
+expectedResult: After selecting the wrong answer, the system should display a red word indicating the incorrect selection and decrease the memory level of the word.
+explanation: This test case verifies that the review system behaves as expected when a learner selects an incorrect answer by decreasing the memory level of the word.
+
+Test Case: Test Case 3
+testCaseName: Review with Meanings Method - Completing the Review Session
+objective: Verify that the system saves the review and updates the vocabulary status upon completion of the review session.
+testSteps:
+  - Step 1: Log in as a learner with just enough words in the daily review words list to complete a review session.
+  - Step 2: Select the review button on the Home page.
+  - Step 3: Complete the review session by going through all words in the list, selecting answers for each.
+  - Step 4: After reviewing the last word, press the 'Continue' button to finish the review session.
+expectedResult: After pressing 'Continue' on the last word, the system should redirect the learner to the Home page and save the review, updating the status of the vocabulary accordingly.
+explanation: This test case ensures that the system correctly handles the end of a review session, saving the review and updating the vocabulary status as expected.
+

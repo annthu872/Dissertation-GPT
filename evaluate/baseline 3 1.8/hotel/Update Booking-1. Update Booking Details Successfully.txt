@@ -1,0 +1,37 @@
+Test Case: Test Case 1
+testCaseName: Update Booking Details Successfully
+objective: Verify that an employee can successfully update booking details and see a success message.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that needs to be updated by its ID.
+  - Step 4: Fill in the fields that need to be updated on the booking form.
+  - Step 5: Compute payment again if new services or new room types are added.
+  - Step 6: Press the update button.
+  - Step 7: Verify that a success message is displayed.
+expectedResult: The booking details are updated in the database, and a success message is shown to the employee.
+explanation: This test case ensures that the basic course of events for updating booking details as described in the use case is followed and results in a successful update with appropriate feedback to the user.
+
+Test Case: Test Case 2
+testCaseName: Update Booking Details with Non-Existent Booking ID
+objective: Verify that the system shows a NOT FOUND message when trying to update a booking with a non-existent ID.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for a booking with an ID that does not exist in the database.
+  - Step 4: Attempt to update booking details.
+expectedResult: The system displays a NOT FOUND message.
+explanation: This test case checks the system's behavior when an employee attempts to update a booking that doesn't exist, ensuring that appropriate feedback is given.
+
+Test Case: Test Case 3
+testCaseName: Update Booking Details with Invalid Field
+objective: Verify that the system shows an invalid field entered message for each error when updating booking details with incorrect data.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search or select a booking that needs to be updated by its ID.
+  - Step 4: Fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+expectedResult: The system displays an invalid field entered message for each incorrect data entry.
+explanation: This test case ensures that the system validates the fields during the booking update process and provides specific feedback on any invalid data entered.
+

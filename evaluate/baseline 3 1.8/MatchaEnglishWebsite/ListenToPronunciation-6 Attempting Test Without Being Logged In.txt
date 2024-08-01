@@ -1,0 +1,10 @@
+Test Case: Test Case 1
+testCaseName: Attempting Listening Pronunciation Test Without Login
+objective: Verify that the system prevents a user from taking a listening pronunciation test without being logged in.
+testSteps:
+  - Step 1: Navigate to the application's homepage without logging in.
+  - Step 2: Attempt to access the listening pronunciation test directly via URL or through the application's UI, if accessible.
+  - Step 3: Try to interact with the test interface, such as clicking the speaker button or choosing an answer.
+expectedResult: The user should be redirected to the login page or receive a message indicating that login is required to access the test.
+explanation: This test case is created to ensure that the precondition of being logged in is enforced before a user can take the listening pronunciation test. It directly matches the scenario of attempting a test without being logged in by focusing on the specific use case of the listening pronunciation test.
+

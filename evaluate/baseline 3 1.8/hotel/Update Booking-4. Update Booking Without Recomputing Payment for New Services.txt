@@ -1,0 +1,40 @@
+Test Case: Test Case 1
+testCaseName: Update Booking Without Adding New Services
+objective: Verify that an employee can update booking details without adding new services and without recomputing payment.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Load the booking fields data and fill in the fields that need to be updated without adding new services or changing room types.
+  - Step 5: Press the update button without recomputing payment.
+  - Step 6: Confirm the update action if prompted.
+expectedResult: The system should update the booking details in the database without recomputing payment and display a success message.
+explanation: This test case ensures that the system allows for updates to bookings without the need for recomputing payment when no new services are added, directly addressing the scenario's requirement.
+
+Test Case: Test Case 2
+testCaseName: Attempt Update Booking With Invalid Fields
+objective: Verify that the system prevents the update of booking details when invalid fields are entered and displays appropriate error messages.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Load the booking fields data and intentionally fill in at least one field with invalid data.
+  - Step 5: Press the update button.
+  - Step 6: Observe the system's response to the invalid data entry.
+expectedResult: The system should validate the fields and display an 'invalid field entered' message for every individual error without updating the booking in the database.
+explanation: This test case checks the system's ability to handle invalid data entries during the booking update process, ensuring data integrity and user feedback.
+
+Test Case: Test Case 3
+testCaseName: Update Booking With Recomputing Payment for New Services
+objective: Verify that an employee can update booking details and recompute payment when new services or new room types are added.
+testSteps:
+  - Step 1: Log in to the system as an employee.
+  - Step 2: Navigate to the Booking panel on the dashboard.
+  - Step 3: Search for and select a booking that needs to be updated by its ID.
+  - Step 4: Load the booking fields data and fill in the fields that need to be updated, including adding new services or changing room types.
+  - Step 5: Compute payment again due to the addition of new services or change of room types.
+  - Step 6: Press the update button after recomputing payment.
+  - Step 7: Confirm the update action if prompted.
+expectedResult: The system should update the booking details and payment in the database and display a success message.
+explanation: This test case ensures that the system supports the update of bookings with the addition of new services or room types and requires payment recomputation, aligning with the use case specification.
+

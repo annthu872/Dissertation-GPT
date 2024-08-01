@@ -1,0 +1,20 @@
+Test Case: Test Case 1
+testCaseName: Attempt to Delete Non-Existent Book and Confirm
+objective: Verify that the system handles the attempt to delete a non-existent book correctly when the user confirms the deletion.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Attempt to click the "Delete" button next to a book that does not exist or has already been deleted.
+  - Step 3: If the application displays a dialog page to confirm the deletion, press the "Confirm" button.
+expectedResult: The system should display an error message or notification indicating that the book does not exist or has already been deleted, and no deletion action should be performed.
+explanation: This test case ensures that the system can gracefully handle attempts to delete books that do not exist in the database, by providing appropriate feedback to the user when they confirm the deletion.
+
+Test Case: Test Case 2
+testCaseName: Attempt to Delete Non-Existent Book and Cancel
+objective: Verify that the system does not perform any deletion action when the user attempts to delete a non-existent book and then cancels the operation.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Attempt to click the "Delete" button next to a book that does not exist or has already been deleted.
+  - Step 3: If the application displays a dialog page to confirm the deletion, press the "Cancel" button.
+expectedResult: The system should not perform any deletion action and should return the user to the book list/details page without any changes.
+explanation: This test case verifies that cancelling the deletion of a non-existent book does not cause any unintended actions or errors, ensuring the system's stability and the integrity of the database.
+

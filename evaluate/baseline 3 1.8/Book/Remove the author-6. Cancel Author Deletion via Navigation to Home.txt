@@ -1,0 +1,12 @@
+Test Case: Test Case 1
+testCaseName: Cancel Author Deletion and Navigate to Home
+objective: Verify that cancelling the author deletion and then navigating to 'Home' retains the author data and displays the Home page correctly.
+testSteps:
+  - Step 1: Navigate to the author list/details page.
+  - Step 2: Click the 'Delete' button next to the author you wish to delete.
+  - Step 3: On the confirmation dialog, press the 'Cancel' button.
+  - Step 4: Verify that the list of authors is still displayed.
+  - Step 5: Select the 'Home' menu item to navigate to the Home page.
+expectedResult: The author data is not deleted from the database, and the Home page is displayed with updated data.
+explanation: This test case ensures that when a user cancels the deletion of an author and then navigates to the Home page, the author's data remains intact, and the Home page displays correctly. It directly matches the scenario of cancelling author deletion via navigation to 'Home', focusing on the user's ability to cancel the deletion operation and verify the outcome by navigating to a different page.
+

@@ -1,0 +1,22 @@
+Test Case: Test Case 1
+testCaseName: Update Book and Press Cancel Before Submission
+objective: Verify that pressing the 'Cancel' button while updating a book's information does not save the changes.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, start entering new data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Before pressing 'Submit', click the 'Cancel' button.
+expectedResult: The application should not update the book's information in the database and should redirect the user to the list of book records without applying the changes.
+explanation: This test case ensures that the cancel operation works as intended by not saving any changes made during an update operation when the user decides to cancel before submission.
+
+Test Case: Test Case 2
+testCaseName: Navigate Away Using Menu After Updating Book Information and Before Submission
+objective: Verify that navigating away from the update page using the menu items does not save the changes.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: On the displayed form, enter new data for the book's Title, Author, Genre, Description, and Publication date.
+  - Step 4: Before pressing 'Submit', select any menu item such as 'Books', 'Genres', 'Authors', 'Home', or 'API'.
+expectedResult: The application should not update the book's information in the database and should display the selected page without applying the changes.
+explanation: This test case checks that if a user navigates away from the update page using the menu items before submitting the changes, the update operation is canceled, and no changes are saved.
+

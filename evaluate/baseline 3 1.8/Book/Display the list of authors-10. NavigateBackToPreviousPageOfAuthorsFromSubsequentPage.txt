@@ -1,0 +1,11 @@
+Test Case: Test Case 1
+testCaseName: Navigate Back to Previous Page of Authors from Subsequent Page
+objective: Verify that the user can navigate back to the previous page of authors from a subsequent page using the pagination controls.
+testSteps:
+  - Step 1: Navigate to the 'Authors' section of the application.
+  - Step 2: If not already on the first page of authors, navigate to the first page by clicking on the '1' in the pagination block.
+  - Step 3: Click on the 'Next' button or the '2' in the pagination block to navigate to the second page of authors.
+  - Step 4: Once on the second page, click on the '1' in the pagination block or the 'Previous' button (if available) to navigate back to the first page.
+expectedResult: The application navigates back to the first page of authors, displaying the first 10 records of authors in the database.
+explanation: This test case ensures that the pagination controls work as expected, allowing users to navigate back to the previous page of authors from a subsequent page. It directly matches the scenario name by testing the navigation back to the previous page of authors using the pagination controls.
+

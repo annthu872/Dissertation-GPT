@@ -1,0 +1,28 @@
+Test Case: Test Case 1
+testCaseName: Update Book with Non-Existent Genre
+objective: Verify that the system displays an error message when a user attempts to update a book with a genre that does not exist in the database.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter or modify the book's title, author, and description as required.
+  - Step 4: Enter a genre that does not exist in the database in the 'Genre' field.
+  - Step 5: Enter a valid publication date.
+  - Step 6: Click the 'Submit' button to attempt updating the book.
+expectedResult: An error message is displayed indicating that the genre does not exist.
+explanation: This test case ensures that the system validates the existence of the genre in the database before updating a book record. It directly matches the scenario name by testing the update functionality with a non-existent genre.
+
+Test Case: Test Case 2
+testCaseName: Update Book with Non-Existent Genre and Incorrect Data
+objective: Verify that the system displays multiple error messages when a user attempts to update a book with a non-existent genre and other incorrect data.
+testSteps:
+  - Step 1: Navigate to the book list/details page.
+  - Step 2: Click the 'Update' button next to the book you wish to update.
+  - Step 3: In the form displayed, enter an invalid title (e.g., using special characters).
+  - Step 4: Enter a valid author name.
+  - Step 5: Enter a genre that does not exist in the database in the 'Genre' field.
+  - Step 6: Leave the description field empty.
+  - Step 7: Enter an invalid publication date (e.g., a future date beyond the current year).
+  - Step 8: Click the 'Submit' button to attempt updating the book.
+expectedResult: Multiple error messages are displayed indicating that the genre does not exist, the title is invalid, the description cannot be empty, and the publication date is invalid.
+explanation: This test case is designed to verify that the system can handle and display multiple validation errors simultaneously, including the error for a non-existent genre. It extends the scenario by introducing additional incorrect data to ensure robust error handling.
+

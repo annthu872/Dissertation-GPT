@@ -1,0 +1,16 @@
+Use case Name
+[Admin] Administrator portal
+Brief description
+This use case outlines how the website offers a private page for the administrator to manage accounts, access the database via UI, and handle reports. The administrator can log in and perform tasks like account management, database access, and report generation.
+Actors
+Admin
+Basic Flow
+As normal users, an administrator must log in his/her account to access the portal.
+Alternative Flows
+Alternative flow 1: Administrator login successfully
+The system will move administrator to the admin portal page
+Pre-conditions
+Account for admin is predefined in the database.
+Post-conditions
+Admin can see all the list of accounts, bookings, etc.
+Admin can edit or delete any accounts, bookings.

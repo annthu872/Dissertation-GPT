@@ -1,0 +1,20 @@
+Use case Name
+[Shop] Manage booking
+Brief description
+This use case describes how coffee shop owners can view and manage customer bookings through a system. They can accept or reject bookings, and the system updates the status and notifies the customer. The process ends when the owner logs out or returns to the main menu.
+Actors
+Shops
+Basic Flow
+The actor enters his profile page at the avatar on the navigation bar.
+The actor can see the table of all previous booking or current booking. Each row views the ID, name of the customers, time of that booking.
+The actor clicks on the end of that row to confirm the booking or cancel that booking.
+Alternative Flows
+Alternative flow 1: The actor view the booking details
+From the flow #2, the actor can click on the table row.
+The website navigates the details page of that booking including which type of table that customer booked.
+Pre-conditions
+The actor has already signed in. The actor can manage booking in the manage booking page. 
+Post-conditions
+The actor successfully navigates to the Booking management screen and sees the list of all bookings, including previous, current bookings.
+The actor successfully chooses whether to accept or cancel the booking.
+The actor can view the details of any booking.

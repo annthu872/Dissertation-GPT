@@ -1,0 +1,6 @@
+1. Scenario: Edit general information with empty full name
+2. Scenario: Edit general information with empty phone number
+3. Scenario: Edit general information with empty city
+4. Scenario: Edit general information with empty district
+5. Successful Information Update
+6. Cancel Information Update

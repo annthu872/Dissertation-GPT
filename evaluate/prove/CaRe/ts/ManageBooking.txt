@@ -1,0 +1,10 @@
+1. Accept Current Booking
+2. Reject Current Booking
+3. View Previous Booking Details
+4. View Current Booking Details
+5. Accept Booking from Booking Details Page
+6. Reject Booking from Booking Details Page
+7. Navigate Back to Main Menu from Booking Management
+8. Logout from Profile Page after Managing Bookings
+9. Access Booking Management without Signing In (Negative Scenario)
+10. Manage Booking with Expired Session (Negative Scenario)

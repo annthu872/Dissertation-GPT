@@ -1,0 +1,21 @@
+Use case Name
+[User + Shop] Log in
+Brief description
+The actors can access their accounts by entering their email and password on the login page.
+Actors
+Customers (Users and shops)
+Basic Flow
+When customers access the application, customers must type their username and password to log in the application.
+The system will check and if the account is valid, the system moves customers to the homepage of the application. 
+Alternative Flows
+Alternative flow 1: Customer has not created account yet.
+Customers must create a new account by clicking a link to move to the sign up page.
+Alternative flow 2: Customer types wrong username and password.
+Customer can not access to the application until he/ she types correctly  
+Alternative flow 3: Customer logs in successfully
+Customer moves to the homepage of the application
+Pre-conditions
+Customers can only login by filling the login form on /SignIn route.
+Post-conditions
+User/ shop become active customers and go to the homepage if successfully log in otherwise stay on the Login page
+

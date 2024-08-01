@@ -1,0 +1,7 @@
+1. Successful Logout Scenario
+2. Logout and Cancel Scenario
+3. Logout from Different Pages Scenario
+4. Logout with Unsaved Changes Scenario
+5. Logout after Session Timeout Scenario
+6. Logout and Immediate Login Scenario
+7. Logout with Network Interruption Scenario

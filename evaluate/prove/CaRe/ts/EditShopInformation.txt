@@ -1,0 +1,10 @@
+1. EditContactInformation_Success
+2. EditDescription_Success
+3. EditImages_Success
+4. EditMenu_Success
+5. CancelEdit_RevertToOldInformation
+6. EditWithInvalidContactInformation_Failure
+7. EditWithInvalidDescription_Failure
+8. EditWithInvalidImages_Failure
+9. EditWithInvalidMenu_Failure
+10. EditWithoutMakingChanges_NoChangeConfirmation

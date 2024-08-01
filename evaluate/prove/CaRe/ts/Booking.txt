@@ -1,0 +1,15 @@
+1. Successful Table Booking
+2. Table Booking with Invalid Date
+3. Table Booking with Invalid Time
+4. Table Booking for Unavailable Table Size
+5. Table Booking with Maximum Number of Guests
+6. Table Booking with Special Requests
+7. Table Booking Without Specifying Number of Guests
+8. Table Booking Review Information Success
+9. Table Booking Review Information Modification
+10. Failed Table Booking Due to System Error
+11. Table Booking with Reminder Setup Success
+12. Table Booking Without Signing In (Pre-condition not met)
+13. Table Booking for Non-existent Location
+14. Successful Table Booking with Immediate Confirmation
+15. Failed Table Booking with Server Timeout

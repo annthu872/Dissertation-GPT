@@ -1,0 +1,15 @@
+1. Add a comment with exactly 150 words and a valid rating.
+2. Add a comment with less than 150 words and a valid rating.
+3. Add a comment with more than 150 words and a valid rating.
+4. Add a comment without text but with a valid rating.
+5. Add a comment with exactly 150 words without a rating.
+6. Add a comment with special characters and a valid rating.
+7. Add a comment with emojis and a valid rating.
+8. Add a rating without a comment.
+9. Add a comment and a rating with the maximum allowed rating value.
+10. Add a comment and a rating with the minimum allowed rating value.
+11. Attempt to add a comment and a rating without having booked a table.
+12. Add multiple comments and ratings for a single booking.
+13. Add a comment and a rating for a shop that does not exist.
+14. Add a comment and a rating using an account that has not signed in.
+15. Add a comment and a rating for a booking that has been canceled.

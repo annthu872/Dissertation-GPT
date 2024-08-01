@@ -1,0 +1,15 @@
+Use case Name
+[Shop] Edit shop information
+Brief description
+The use case is to manage the shop profile on the website. The shop owners can edit, update or delete their images and descriptions to showcase their products and services. This use case allows the shop owners to have control over their online presence and reputation.
+Actors
+Shops
+Basic Flow
+When actors click the edit button, they are allowed to change their information. They can edit their contact information, description, images and menu. 
+When actors click the confirmation button, the system will save new information, and show it to the profile page. Otherwise, when the actors click the cancel button, the system will re-display the old information. 
+Alternative Flows
+None
+Pre-conditions
+Actors have already signed in. They can edit their information by filling a form in the profile page. 
+Post-conditions
+Actors can edit the contact information, descriptions, images and menu. New information must be updated.

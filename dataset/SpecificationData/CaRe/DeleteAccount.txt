@@ -1,0 +1,16 @@
+Use case Name
+[User + Shop] Delete account
+Brief description
+This use case gives customers a feature to delete their account in case they don’t want to be a member anymore.
+Actors
+Customers (Users and shops)
+Basic Flow
+Customers must login and go to their profile page.
+In case they want to delete their account, there is a function in their profile in order to help them.
+When they press this button, a pop-up will be pushed up to re-confirm whether they want to delete their account or not.
+Alternative Flows
+None
+Pre-conditions
+Users/ shops have already signed in. They can delete their accounts by clicking on the delete account button in their profile page. 
+Post-conditions
+An account is deleted.

@@ -1,0 +1,28 @@
+Use case Name
+[User + Shop] Sign up
+Brief description
+Users and shops can register in the system by choosing a role and providing their email, password, phone, address and other required information. The system will verify and grant access to the registered users and shops.
+Actors
+Customers (Users and shops)
+Basic Flow
+Customers access the website through the search engine on the Internet or direct link.
+From the homepage, if customers have not had an account, customers must sign up to view content on the website by clicking sign up.
+Customers should provide all required information to sign up an account.
+Alternative Flows
+Alternative flow 1: If customers do not have any account, they should create one to view content on the website
+Customers provide information to stepper form, including: 
+Personal information (full name, email, phone number).
+Password (password, confirming password).
+Role (customers, shop management).
+Customers go back to the sign in page to log in that new account.
+After providing all necessary information, customers should submit the form to create an account.
+Alternative flow 2: If customers successfully create an account
+Users or shops will be navigated to the homepage.
+If they want to login, they should press the login button.
+Alternative flow 3: If customers already have account
+There is a button to navigate to the login account for customers who already have an account.
+Pre-conditions
+Customers can only sign up by filling the sign up form on /SignUp route
+Post-conditions
+Users/ shops become customers and go to the homepage if successfully sign up otherwise stay in the Sign up page.
+

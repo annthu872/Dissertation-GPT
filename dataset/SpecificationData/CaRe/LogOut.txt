@@ -1,0 +1,17 @@
+Use case Name
+[User  + Shop] Log out
+Brief description
+The user confirms the logout and the system redirects the user to the login page. The alternative scenario is that the user cancels the logout and the system returns to the previous page.
+Actors
+Customers (Users and shops)
+Basic Flow
+From any page, the actor hovers on the avatar on the navigation bar or clicks on it.
+From the menu options, the actors choose the “Log out” item.
+A prompt appears asking if the actor wants to sign out from the website, and the actor clicks “Yes”.
+The system validates the actor’s sign out request and replaces the actor’s avatar button with a “Sign in” and “Sign up” buttons, then the use case ends.
+Alternative Flows
+There are no alternative flows for this use case
+Pre-conditions
+Actor has already signed in. He/ she can log out from any page in the CaRe website by choosing the log out option in the user profile dropdown from the avatar in the navigation bar. 
+Post-conditions
+Actor successfully logs out from the website and is navigated back to the Log in/ Sign up page.

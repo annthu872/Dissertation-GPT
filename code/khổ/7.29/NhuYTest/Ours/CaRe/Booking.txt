@@ -1,0 +1,7 @@
+Successful Booking - User selects time and table type, then successfully books a table.
+Booking Failure Due to Full Capacity - User selects time and table type, but the booking fails because the selected time slot is fully booked.
+Booking Failure Due to Shop Closure - User selects time and table type, but the booking fails because the shop is closed at the selected time.
+Booking Failure Due to Invalid Time Selection - User selects a time that is outside of the shop's operating hours, leading to a booking failure.
+Booking Failure Due to Invalid Table Type Selection - User selects a table type that is not available in the shop, leading to a booking failure.
+Successful Booking Review Page Navigation
+Failed Booking Request Scenario

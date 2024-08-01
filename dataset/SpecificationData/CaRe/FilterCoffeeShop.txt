@@ -1,0 +1,15 @@
+Use case Name
+[User] Filter coffee shop
+Brief description
+This use case helps users easily find suitable coffee shops based on some specific conditions such as district and city.
+Actors
+Users
+Basic Flow
+From a list of recommended tags, actors can select one to see a list of cafés that correspond with the chosen tag.
+Actors can also filter and sort the results by distance, rating, price, and availability.
+Alternative Flows
+None
+Pre-conditions
+Actors have already signed in and searched. When the actors click the filter button after searching, the system will support users filter responses by tags, ratings or specific location (district, city). 
+Post-conditions
+From the previous coffee shop list, the new list will be provided with only the shops that meet filter criteria such as ratings, location, etc.

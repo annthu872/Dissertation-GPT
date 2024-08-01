@@ -1,0 +1,15 @@
+Use case Name
+[Shop] Dashboard
+Brief description
+This use case describes how a user can visualize booking and review metrics on a dashboard, filter data by various criteria, and export the data for further analysis.
+Actors
+Shops
+Basic Flow
+The homepage of the dashboard displays an overview of the shop’s performance. This could include metrics like total sales, number of customers, popular items, etc.
+The shop owner can view and manage their inventory. They can add new items (tables, photos, etc.), update existing ones, sales tracking, 
+Alternative Flows
+None
+Pre-conditions
+When the user signed in successfully, the system will direct the user to the homepage. It contains top rated, nearest or user’s favorite coffee shops. It will also show the list of shops that the user has visited recently. 
+Post-conditions
+At the home page, users can see the list of top rated coffee shops.

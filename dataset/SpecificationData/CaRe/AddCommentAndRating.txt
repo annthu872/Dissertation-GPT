@@ -1,0 +1,15 @@
+Use case Name
+[User] Add comment and rating
+Brief description
+Actors have already signed in and booked a table in one coffee shop so that they can add a comment and rating (one per order).
+Actors
+Users
+Basic Flow
+Actors write some comments or post pictures related to feedback about shops in box below the information of coffee shop
+The system saves the comments at the information in the coffee shop, so other actors can see those comments in the shop's page.
+Alternative Flows
+None
+Pre-conditions
+Actors have already signed in and booked a table in one coffee shop so that they can add a comment and rating (one per order).
+Post-conditions
+Actors can add comments of at most 150 words and set a rating for a shop. Actors’ comments and rating for a shop after 1 booking will be uploaded.

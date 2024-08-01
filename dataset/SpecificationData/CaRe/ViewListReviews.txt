@@ -1,0 +1,16 @@
+Use case Name
+[Shop] View list reviews
+Brief description
+This use case allows shops to view the list of reviews that their customers give them. The shop can see the rating, comment, date and customer name for each review. The shop can also filter, sort and search the reviews by different criteria. The shop can use this information to improve their service and products.
+Actors
+Shops
+Basic Flow
+Shops must login and go to their profile page.
+There is an option in the menu bar to get access to the list of reviews.
+When they press it, it will show all reviews have been made by users.
+Alternative Flows
+None
+Pre-conditions
+Shop has already signed in. They can view list reviews on the reviews page.
+Post-conditions
+The shop can view all the reviews (comment and rating) which their customers left to them after each booking.

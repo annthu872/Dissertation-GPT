@@ -1,0 +1,10 @@
+1. Search by Exact Coffee Shop Name
+2. Search by Partial Coffee Shop Name
+3. Search by Coffee Shop Location
+4. Search with Special Characters in Coffee Shop Name
+5. Search with Numeric Values in Coffee Shop Name
+6. Search with No Input (Empty Search)
+7. Search with Non-Existing Coffee Shop Name
+8. Search with Case Insensitive Coffee Shop Name
+9. Search Result Pagination (Assuming there's a limit to results displayed per page)
+10. Search with Mixed Characters and Spaces in Coffee Shop Name

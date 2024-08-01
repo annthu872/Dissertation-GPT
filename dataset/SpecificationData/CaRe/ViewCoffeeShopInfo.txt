@@ -1,0 +1,19 @@
+Use case Name
+[User] View coffee shop’s information
+Brief description
+This use case specification describes how users can view all the information of a selected coffee shop, such as its description, open-time, phone, price range, and more. It also covers how users can see images of the shop environment and menu, to help them decide whether to visit or order from the shop.
+Actors
+Users
+Basic Flow
+Users click on any shop card in the home page or in search result page.
+Users are moved to the page of shop details.
+System displays coffee shop details: Upon selection, the system displays detailed information about the coffee shop. This could include a description of the shop, its full address, photos, menu, and reviews from other users.
+User takes further action: After reviewing the details, the user can choose to take further action. This could include getting directions to the coffee shop, saving it to their favorites, sharing it with friends, or even placing an order if the application supports it.
+Alternative Flows
+None
+Pre-conditions
+User has already signed in and clicked into the shop's card. System will direct the user to the shop's information page. 
+Post-conditions
+The users can see all of the shop's information: shop description, contact, images.
+Users can view the menu. 
+Users can view all the ratings previous customers left.

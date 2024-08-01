@@ -1,0 +1,14 @@
+Scenario: Sign up with empty full name
+Scenario: Sign up with empty email
+Scenario: Sign up with empty phone number
+Scenario: Sign up with empty password
+Scenario: Sign up with confirming password that does not match the password
+Scenario: Sign up with empty confirming password
+Scenario: Successful Account Creation
+Scenario: Account Creation with Missing Information
+Scenario: Account Creation with Invalid Information
+Scenario: Account Creation with Already Existing Email
+Scenario: Incorrect Information Provided
+Scenario: Password Mismatch
+Scenario: Role Selection Required
+Scenario: Customer navigates to login instead of signing up due to existing account

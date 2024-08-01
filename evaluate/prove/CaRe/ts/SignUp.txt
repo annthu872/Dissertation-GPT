@@ -1,0 +1,18 @@
+1. Successful User Registration
+2. Successful Shop Registration
+3. User Registration with Missing Information
+4. Shop Registration with Missing Information
+5. User Registration with Invalid Email Format
+6. Shop Registration with Invalid Email Format
+7. User Registration with Password and Confirm Password Mismatch
+8. Shop Registration with Password and Confirm Password Mismatch
+9. User Registration with Existing Email
+10. Shop Registration with Existing Email
+11. User Registration with Invalid Phone Number
+12. Shop Registration with Invalid Phone Number
+13. Navigation to Login Page After Successful Registration
+14. Attempt to Register with Already Logged-In Account
+15. Accessing SignUp Route Directly to Register
+16. Attempt to Register Without Selecting a Role
+17. User Registration with Special Characters in Name
+18. Shop Registration with Special Characters in Name

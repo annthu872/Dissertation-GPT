@@ -1,0 +1,18 @@
+Use case Name
+[User] Report shop
+Brief description
+Actors have already signed in and booked a table in one coffee shop so that they can add a comment and rating (one per order).
+Actors
+Users
+Basic Flow
+The actor choose a shop card from home page or response search page or from another shop details page (the suggest list section)
+Next to the name of the shop, the actor chooses a “Report” button.
+A dialog opens, the actor enters the reason why he reports that shop (at left of shop’s name).
+The actor clicks on the confirm button, a report is sent, or the actor clicks “Cancel”.
+A dialog closes in both cases.
+Alternative Flows
+None
+Pre-conditions
+The actor has already signed in and booked a table in one coffee shop so that they have their rights to make a report of that shop.
+Post-conditions
+A reason which the actor adds is why he reports shops will be sent to the system.

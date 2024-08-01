@@ -1,0 +1,11 @@
+1. EditFullName_Success
+2. EditPhoneNumber_Success
+3. EditCity_Success
+4. EditDistrict_Success
+5. EditMultipleFields_Success
+6. CancelEdit_RevertToOldInformation
+7. EditWithInvalidPhoneNumber_FormatError
+8. EditWithEmptyFullName_FieldRequiredError
+9. EditWithNonexistentCity_ValidationError
+10. EditWithNonexistentDistrict_ValidationError
+11. EditWithoutChanges_NoUpdateNeeded

@@ -1,0 +1,5 @@
+Scenario: Attempt to log in with empty username
+Scenario: Attempt to log in with empty password
+Successful Login
+Incorrect Username
+Incorrect Password

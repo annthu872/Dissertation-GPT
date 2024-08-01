@@ -1,0 +1,8 @@
+1. ViewRecommendedCoffeeShops - Basic flow where the user views recommended coffee shops on the homepage.
+2. SortByRating - User sorts the list of coffee shops by rating.
+3. ViewCoffeeShopDetails - User selects a coffee shop to view more details.
+4. ViewTopRatedCoffeeShops - Alternative flow where the system suggests coffee shops based on top user ratings.
+5. ViewLocationBasedRecommendations - Alternative flow where the system suggests coffee shops based on the user's current location.
+6. ViewFavoriteCoffeeShops - Alternative flow where the system suggests coffee shops marked as favorites by the user.
+7. SignInAndViewHomePage - Pre-condition scenario where the user signs in and is directed to the homepage with recommendations.
+8. ViewHomePagePostSignIn - Post-condition scenario where the user views the homepage with top-rated coffee shops after signing in.

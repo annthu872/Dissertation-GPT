@@ -1,0 +1,18 @@
+Use case Name
+[User] Booking
+Brief description
+This use case outlines how a user can book a table at a restaurant, specifying details like date, time, table size and location, number of guests, and special requests. The system confirms the booking and sends a reminder to the user.
+Actors
+Users
+Basic Flow
+Users choose time and type of table in the shop details page.
+Users click on the booking button to confirm and send booking requests.
+Alternative Flows
+Alternative flow 1: Users click on the booking button.
+The system move users to another page to review their information booking (time, type of page, address of shops)
+Alternative flow 2: Users send booking request
+After checking information and sending a booking request, if the request is sent, users are notified whether the sending is successful or failed. Users are moved back to the shop detail page if the request is sent successfully.
+Pre-conditions
+User has already signed in and went to the shop's information page. Users can book a table by choosing time and type of tables.
+Post-conditions
+Users successfully choose time and type of table. Their orders are successfully sent to the system, the system notifies them and the chosen coffee shop receives a new order.

@@ -1,0 +1,10 @@
+1. Add comment with empty comment box
+2. Add comment exceeding 150 words limit
+3. Successful Comment Submission
+4. Successful Picture Upload and Comment Submission
+5. Comment Submission with Text Formatting
+6. Picture Upload Failure due to Unsupported Format
+7. Picture Upload Failure due to Exceeding Size Limit
+8. Comment Submission with Mention of Another User
+9. Comment Submission with External Links
+10. Submission of Comment with Emojis

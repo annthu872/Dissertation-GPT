@@ -1,0 +1,11 @@
+1. Successful Login for User
+2. Successful Login for Shop
+3. Login with Incorrect Password for User
+4. Login with Incorrect Password for Shop
+5. Login with Non-existent Username for User
+6. Login with Non-existent Username for Shop
+7. New User Account Creation
+8. New Shop Account Creation
+9. Login Attempt with Empty Username Field
+10. Login Attempt with Empty Password Field
+11. Login Attempt with Both Fields Empty

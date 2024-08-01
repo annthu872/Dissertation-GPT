@@ -1,0 +1,10 @@
+1. Successful Account Creation
+2. Account Creation with Missing Information
+3. Account Creation with Invalid Information
+4. Account Creation with Already Used Email
+5. Customer Chooses to Sign Up
+6. Customer Provides Incomplete Information
+7. Customer Provides Incorrect Format Information
+8. Customer Chooses Different Role
+9. Successful Account Creation and Login Attempt
+10. Customer Chooses to Log In Instead of Sign Up

@@ -1,0 +1,10 @@
+1. Successful Admin Login and Access to Portal
+2. Admin Login with Incorrect Credentials
+3. Admin Access and Edit Account Details
+4. Admin Access and Delete Account
+5. Admin Generates Reports Successfully
+6. Admin Access Database and Edit Bookings
+7. Admin Access Database and Delete Bookings
+8. Admin Logout Scenario
+9. Admin Access with Expired Session
+10. Admin Attempts to Access Portal Without Login

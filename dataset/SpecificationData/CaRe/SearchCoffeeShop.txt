@@ -1,0 +1,16 @@
+Use case Name
+[User] Search coffee shop
+Brief description
+This use case provides users a feature to find the coffee shops based on the name of the shop.
+Actors
+Users
+Basic Flow
+From any pages, the actor clicks on the search bar from the navigation bar.
+Actor types name of the coffee shop wanting to search or any related features such as location.
+The website returns a response page with the list of coffee shops that match the search.
+Alternative Flows
+None
+Pre-conditions
+Actor has already signed in. He can search from any page in the CaRe website by clicking on the search field on the navigation bar.
+Post-conditions
+Actor is navigated to the screen of coffee shops that meet the search criteria user entered is viewed

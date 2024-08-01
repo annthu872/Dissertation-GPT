@@ -1,0 +1,15 @@
+Use case Name
+[User  + Shop] Edit general information
+Brief description
+This use case describes how users can modify their general data such as name, profile picture, etc.
+Actors
+Customers (Users and shops)
+Basic Flow
+When actors click the edit button, they are allowed to change their information. They can edit their full name, phone number, city, and district that they are living in. 
+When actors click the confirmation button, the system will save new information, and show it to the profile page. Otherwise, when the actors click the cancel button, the system will re-display the old information. 
+Alternative Flows
+None
+Pre-conditions
+Actors have already signed in. They can edit general information by clicking the edit button in their profile page and filling a form. 
+Post-conditions
+New information such as name, phone number, city and district are updated. The email stays unchanged.

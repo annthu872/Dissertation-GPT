@@ -1,0 +1,7 @@
+1. Successful Account Deletion for User
+2. Successful Account Deletion for Shop
+3. Account Deletion Cancelled by User
+4. Account Deletion Cancelled by Shop
+5. Attempt to Delete Account Without Logging In
+6. Session Timeout During Account Deletion Process for User
+7. Session Timeout During Account Deletion Process for Shop

@@ -1,0 +1,17 @@
+Use case Name
+[User] Favorite shops
+Brief description
+This use case outlines how a user can view a list of liked shops on the app, accessed via the profile icon and "Liked Shops" option. It displays the shops' names, locations, and ratings, and allows further details to be viewed or shops to be unliked.
+Actors
+Users
+Basic Flow
+Shops must login and go to their profile page.
+There is an option in the menu bar to get access to the list of favorite shops.
+When they press it, it will show all favorite shops that have been made by users.
+Alternative Flows
+None
+Pre-conditions
+User has already signed in and clicked the favorite button to add shops to their favorite list. 
+Post-conditions
+Users can add shops to their favorites list.
+Users successfully navigate to profile/favorite shops and see all the shops they have added before.

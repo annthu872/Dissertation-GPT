@@ -1,0 +1,22 @@
+Use case Name
+[User] Home page list suggest coffee shop
+Brief description
+The use case specification describes how the user can view the list of coffee shops near their location and sort them by rating on the homepage of the app.
+Actors
+Users
+Basic Flow
+User accesses home page: The user opens the web page and lands on the home page.
+System displays recommendations: The system displays a list of recommended coffee shops on the home page. These recommendations could be based on the user’s past visits, preferences, or popular choices among other users.
+User browses recommendations: The user browses through the list of recommended coffee shops. Each listing could include information such as the shop’s name, location, hours of operation, and customer ratings.
+User selects a coffee shop: If a particular coffee shop catches the user’s interest, they can select it for more information.
+Alternative Flows
+Alternative flow 1: Top rating
+The system could suggest coffee shops based on the users’ ratings. If the coffee shops receive high ratings, the system could prioritize similar coffee shops in the suggestions.
+Alternative flow 2: Location-based
+The system could suggest coffee shops based on the user’s current location. The closer a coffee shop is to the user’s location, the higher it would be on the suggestion list
+Alternative flow 3: Favorite shops
+The system could suggest coffee shops based on the coffee shops the user has marked as favorites.
+Pre-conditions
+When the user signed in successfully, the system will direct the user to the homepage. It contains top rated, nearest or user’s favorite coffee shops. It will also show the list of shops that the user has visited recently. 
+Post-conditions
+At the home page, users can see the list of top rated coffee shops.

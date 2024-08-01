@@ -1,0 +1,15 @@
+Use case Name
+[User] Recently view shops
+Brief description
+This use case outlines how the system shows the user the coffee shops they have recently viewed. Users can access this feature from the home page.
+Actors
+Users
+Basic Flow
+Actors access home page: Actors open the web page and land on the home page.
+System displays recently viewed shops: The system displays a list of viewed coffee shops on the home page. This list will be based on the user’s past visits to shops' detail pages.  
+Alternative Flows
+None
+Pre-conditions
+Actors have already signed in and viewed some shops. So, when they visit the home page, they will see the recently viewed shops’ section. 
+Post-conditions
+In the homepage, they can see a section with a list of coffee shops recently viewed. 

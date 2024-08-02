@@ -1,0 +1,27 @@
+Use case name: Login
+Description: This feature allows users to login to system. 
+Actor: User, Seller, Admin.
+Preconditions: None
+Postconditions: user logged in.
+Basic Flow:
+Step 1: User click Login button in navbar.
+Step 2: System show login page with:
+	+ Phone number(text field): must be in format (+84) xxx xxx xxx with all the x is number.
+	+ Password (text field)
+	+ Login(button)
+	+ Forgot Password (Button)
+	+ Login with Phone number (Button)
+Step 3: User fill Phone number and Password text fields with exist account.
+Step 4: User click Login button.
+Step 5: System authenticate the account.
+
+Alterative flow: 
+1. User go to login page though sign up page
+- At first, user click 'sign in' button.
+- System show sign in page.
+- user click button Login in sign in page
+- System show login page
+
+Exception flow:
+- if phone number is not in correct format, system show message and login button is disable.
+- if authentication is not correct, system show message.
